@@ -25,7 +25,7 @@ func main() {
 	for i := range categories {
 		c := getCategory(categories[i])
 
-		solvedProblems = append(solvedProblems, c.run()...)
+		solvedProblems = append(solvedProblems, c.check()...)
 
 		total.update(c)
 		cs = append(cs, c)

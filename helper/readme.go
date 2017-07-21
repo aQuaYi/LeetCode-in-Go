@@ -10,6 +10,7 @@ import (
 func makeREADME(c Categories, s Solveds) {
 	file := "README.md"
 	os.Remove(file)
+
 	template := `%s
 
 ## 统计
@@ -18,7 +19,7 @@ func makeREADME(c Categories, s Solveds) {
 ## 已完成的题目
 %s
 
-## Helper
+## helper
 [helper](./helper)会帮助处理大部分琐碎的工作。
 `
 	head := readHead("README_HEAD.md")
@@ -38,6 +39,7 @@ func readHead(path string) string {
 		panic(err)
 	}
 	defer head.Close()
+
 	data, err := ioutil.ReadAll(head)
 	return string(data)
 }

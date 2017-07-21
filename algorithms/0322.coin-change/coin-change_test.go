@@ -6,11 +6,14 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func Test_ok(t *testing.T) {
+func Test_OK(t *testing.T) {
 	ast := assert.New(t)
 
-	expected := ""
-	actual := ""
+	questions := map[string]string{
+		"": "",
+	}
 
-	ast.Equal(expected, actual, "与预期不符")
+	for expected, parameter := range questions {
+		ast.Equal(expected, parameter, "输入:%!s(MISSING)", parameter)
+	}
 }

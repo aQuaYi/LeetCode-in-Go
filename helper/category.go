@@ -9,7 +9,7 @@ import (
 	"github.com/aQuaYi/GoKit"
 )
 
-func (c *Category) run() Solveds {
+func (c *Category) check() Solveds {
 	checkUser(c.User)
 
 	checkDir(c.Name)

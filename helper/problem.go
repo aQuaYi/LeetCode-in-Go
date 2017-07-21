@@ -12,28 +12,30 @@ import (
 )
 
 func (p Problem) checkDir(CategoryDir string) string {
-	pDir := fmt.Sprintf("%04d.%s", p.ID, p.TitleSlug)
-	dir := fmt.Sprintf("./%s/%s", CategoryDir, pDir)
+	problemDir := fmt.Sprintf("%04d.%s", p.ID, p.TitleSlug)
+	relativeProblemDir := fmt.Sprintf("./%s/%s", CategoryDir, problemDir)
 
-	if GoKit.Exist(dir) {
-		return dir
+	if GoKit.Exist(relativeProblemDir) {
+		return relativeProblemDir
 	}
 
 	mask := syscall.Umask(0)
 	defer syscall.Umask(mask)
 
-	err := os.Mkdir(dir, 0755)
+	err := os.Mkdir(relativeProblemDir, 0755)
 	if err != nil {
-		log.Fatalf("无法创建目录: %s", dir)
+		log.Fatalf("无法创建目录: %s", relativeProblemDir)
 	}
-	creatREADME(p, dir)
-	creatGo(p, dir)
-	creatGoTest(p, dir)
 
-	return dir
+	creatREADME(p, relativeProblemDir)
+	creatGo(p, relativeProblemDir)
+	creatGoTest(p, relativeProblemDir)
+
+	return relativeProblemDir
 }
 func creatREADME(p Problem, dir string) {
 	fileFormat := `# [%s](%s)
+
 ## 题目
 
 
@@ -76,13 +78,16 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func Test_ok(t *testing.T) {
+func Test_OK(t *testing.T) {
 	ast := assert.New(t)
 
-	expected := ""
-	actual := ""
+	questions := map[string]string{
+		"": "",
+	}
 
-	ast.Equal(expected, actual, "与预期不符")
+	for expected, parameter := range questions {
+		ast.Equal(expected, parameter, "输入:%s", parameter)
+	}
 }
 `
 	content := fmt.Sprintf(fileFormat, p.packageName())
@@ -114,7 +119,7 @@ type State struct {
 	ID        int    `json:"question_id"`
 	ACs       int    `json:"total_acs"`
 	Submitted int    `json:"total_submitted"`
-	PassRate  string
+	PassRate  string // 直接计算成百分比
 }
 
 // Difficulty 问题的难度
@@ -140,9 +145,9 @@ func (s Solved) String() string {
 }
 
 var degrees = map[int]string{
-	1: ` ☆ `,
-	2: ` ☆  ☆ `,
-	3: ` ☆  ☆  ☆ `,
+	1: `☆`,
+	2: `☆ ☆`,
+	3: `☆ ☆ ☆`,
 }
 
 func makeSolved(p Problem, dir string) Solved {
