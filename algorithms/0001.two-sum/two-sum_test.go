@@ -7,11 +7,12 @@ import (
 )
 
 type para struct {
-	one string
+	one []int
+	two int
 }
 
 type ans struct {
-	one string
+	one []int
 }
 
 type question struct {
@@ -25,16 +26,26 @@ func Test_OK(t *testing.T) {
 	qs := []question{
 		question{
 			p: para{
-				one: "",
+				one: []int{3, 2, 4},
+				two: 6,
 			},
 			a: ans{
-				one: "",
+				one: []int{1, 2},
+			},
+		},
+		question{
+			p: para{
+				one: []int{3, 2, 4},
+				two: 8,
+			},
+			a: ans{
+				one: nil,
 			},
 		},
 	}
 
 	for _, q := range qs {
 		a, p := q.a, q.p
-		ast.Equal(a.one, p.one, "输入:%v", p)
+		ast.Equal(a.one, twoSum(p.one, p.two), "输入:%v", p)
 	}
 }
