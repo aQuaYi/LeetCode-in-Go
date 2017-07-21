@@ -7,7 +7,7 @@ import (
 	"os"
 )
 
-func makeREADME(c Categorys, s Solveds) {
+func makeREADME(c Categories, s Solveds) {
 	file := "README.md"
 	os.Remove(file)
 	template := `%s

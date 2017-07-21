@@ -21,7 +21,7 @@ func main() {
 	}
 
 	solvedProblems := Solveds{}
-	cs := Categorys{}
+	cs := Categories{}
 	total := &Category{
 		Name: "Total",
 	}

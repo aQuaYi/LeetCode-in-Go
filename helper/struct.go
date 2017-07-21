@@ -166,9 +166,9 @@ type Category struct {
 	Problems []*Problem `json:"stat_status_pairs"`
 }
 
-type Categorys []*Category
+type Categories []*Category
 
-func (cs Categorys) String() string {
+func (cs Categories) String() string {
 	res := fmt.Sprintln("||Easy|Medium|Hard|Total|")
 	res += fmt.Sprintln("|:--|:--:|:--:|:--:|:--:|")
 	for _, c := range cs {
