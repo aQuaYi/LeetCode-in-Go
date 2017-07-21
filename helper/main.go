@@ -1,11 +1,11 @@
 package main
 
-import (
-	"fmt"
-)
 const (
+	// USER 是你在leetcode.com的用户名
+	// 登录后，在页面右上角可以看到
 	USER = "aQuaYi"
 )
+
 func main() {
 	categories := []string{
 		"algorithms",
@@ -17,6 +17,6 @@ func main() {
 	}
 
 	j := getJSON(url(categories[1]))
-
-	fmt.Println(string(j))
+	c := getCategory(j)
+	c.run()
 }

@@ -5,3 +5,4 @@ test:
 build:
 	@go build
 	@mv helper ../Aida
+	@cd .. ; ./Aida
