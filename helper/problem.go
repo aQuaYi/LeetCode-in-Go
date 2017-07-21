@@ -84,7 +84,7 @@ type para struct {
 }
 
 func (p para) String() string {
-	res := fmt.Sprintf("%v", p.one)
+	res := fmt.Sprintf("%s", p.one)
 	return res
 }
 
@@ -100,7 +100,7 @@ func Test_OK(t *testing.T) {
 	}
 }
 `
-	content := fmt.Sprintf(fileFormat, p.packageName(), `%s`)
+	content := fmt.Sprintf(fileFormat, p.packageName(), `%v`, `%s`)
 	filename := fmt.Sprintf("%s/%s_test.go", dir, p.TitleSlug)
 
 	err := ioutil.WriteFile(filename, []byte(content), 0755)

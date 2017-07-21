@@ -12,7 +12,7 @@ type para struct {
 }
 
 func (p para) String() string {
-	res := fmt.Sprintf("%s", p.one)
+	res := fmt.Sprintf("%v", p.one)
 	return res
 }
 
@@ -24,6 +24,6 @@ func Test_OK(t *testing.T) {
 	}
 
 	for expected, p := range questions {
-		ast.Equal(expected, p.one, "输入:%!s(MISSING)", p)
+		ast.Equal(expected, p.one, "输入:%s", p)
 	}
 }
