@@ -11,6 +11,8 @@ import (
 
 	"sort"
 
+	"strings"
+
 	"github.com/aQuaYi/GoKit"
 )
 
@@ -39,6 +41,7 @@ func (c *Category) compute() {
 		}
 
 		p.PassRate = fmt.Sprintf("%d%%", 100*p.ACs/p.Submitted)
+		fmt.Println(p.PassRate, p)
 	}
 
 	// 统计AC的总数
@@ -56,7 +59,7 @@ func (c *Category) analysis() Solveds {
 		pdir := p.checkDir(c.Name)
 		// 检查处理已经AC的题目
 		if p.Status == "ac" {
-			res = append(res, makeSolved(p, pdir))
+			res = append(res, makeSolved(*p, pdir))
 		}
 	}
 
@@ -81,23 +84,68 @@ func (p Problem) checkDir(CategoryDir string) string {
 		log.Fatalf("无法创建目录: %s", dir)
 	}
 	creatREADME(p, dir)
+	creatGo(p, dir)
+	creatGoTest(p, dir)
 
 	return dir
 }
 
 func creatREADME(p Problem, dir string) {
 	fileFormat := `# [%s](%s)
-
 ## 题目
+
 
 ## 解题思路
 
+
 ## 总结
+
 
 `
 	link := fmt.Sprintf("https://leetcode.com/problems/%s/", p.TitleSlug)
 	content := fmt.Sprintf(fileFormat, p.Title, link)
 	filename := fmt.Sprintf("%s/README.md", dir)
+
+	err := ioutil.WriteFile(filename, []byte(content), 0755)
+	if err != nil {
+		log.Fatal(err)
+	}
+}
+func creatGo(p Problem, dir string) {
+	packageName := strings.Replace(p.Title, " ", "", -1)
+	fileFormat := `package %s
+
+`
+	content := fmt.Sprintf(fileFormat, packageName)
+	filename := fmt.Sprintf("%s/%s.go", dir, p.TitleSlug)
+
+	err := ioutil.WriteFile(filename, []byte(content), 0755)
+	if err != nil {
+		log.Fatal(err)
+	}
+}
+
+func creatGoTest(p Problem, dir string) {
+	packageName := strings.Replace(p.Title, " ", "", -1)
+	fileFormat := `package %s
+
+import (
+	"testing"
+
+	"github.com/stretchr/testify/assert"
+)
+
+func Test_ok(t *testing.T) {
+	ast := assert.New(t)
+
+	expected := ""
+	actual := ""
+
+	ast.Equal(expected, actual, "与预期不符")
+}
+`
+	content := fmt.Sprintf(fileFormat, packageName)
+	filename := fmt.Sprintf("%s/%s_test.go", dir, p.TitleSlug)
 
 	err := ioutil.WriteFile(filename, []byte(content), 0755)
 	if err != nil {
@@ -115,8 +163,8 @@ type Category struct {
 	Easy     int
 	Medium   int
 	Hard     int
-	Total    int       `json:"num_total"`
-	Problems []Problem `json:"stat_status_pairs"`
+	Total    int        `json:"num_total"`
+	Problems []*Problem `json:"stat_status_pairs"`
 }
 
 type Problem struct {
@@ -164,6 +212,7 @@ var degrees = map[int]string{
 }
 
 func makeSolved(p Problem, dir string) Solved {
+	fmt.Println("in makeSolved", p.PassRate)
 	return Solved{
 		ID:       p.ID,
 		Title:    p.Title,
