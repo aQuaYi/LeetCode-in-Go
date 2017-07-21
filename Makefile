@@ -1,2 +1,2 @@
 run:
-	./Aida
+	./Helper

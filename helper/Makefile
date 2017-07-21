@@ -1,7 +1,7 @@
 build:
 	@go build
-	@mv helper ../Aida
-	@cd .. ; ./Aida
+	@mv helper ../Helper
+	@cd .. ; ./Helper
 	
 test:	
 	go test -v -race -cover -coverprofile cover.out 
