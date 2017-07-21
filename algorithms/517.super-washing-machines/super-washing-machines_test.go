@@ -1,4 +1,4 @@
-package SuperWashingMachines
+package Problem-SuperWashingMachines
 
 import (
 	"testing"

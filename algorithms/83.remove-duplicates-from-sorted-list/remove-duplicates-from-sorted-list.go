@@ -1,2 +1,2 @@
-package RemoveDuplicatesfromSortedList
+package Problem-RemoveDuplicatesfromSortedList
 

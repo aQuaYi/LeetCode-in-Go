@@ -1,4 +1,4 @@
-package RotateImage
+package Problem-RotateImage
 
 import (
 	"testing"

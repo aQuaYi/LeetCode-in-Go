@@ -1,2 +1,2 @@
-package PowerofTwo
+package Problem-PowerofTwo
 

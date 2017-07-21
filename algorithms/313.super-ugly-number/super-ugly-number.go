@@ -1,2 +1,2 @@
-package SuperUglyNumber
+package Problem-SuperUglyNumber
 

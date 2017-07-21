@@ -1,4 +1,4 @@
-package RangeSumQuery-Mutable
+package Problem-RangeSumQuery-Mutable
 
 import (
 	"testing"

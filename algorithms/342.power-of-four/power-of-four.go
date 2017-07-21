@@ -1,2 +1,2 @@
-package PowerofFour
+package Problem-PowerofFour
 

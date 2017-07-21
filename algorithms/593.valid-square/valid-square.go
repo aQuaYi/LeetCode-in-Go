@@ -1,2 +1,2 @@
-package ValidSquare
+package Problem-ValidSquare
 

@@ -1,2 +1,2 @@
-package MinimumMovestoEqualArrayElements
+package Problem-MinimumMovestoEqualArrayElements
 

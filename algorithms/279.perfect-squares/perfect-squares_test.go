@@ -1,4 +1,4 @@
-package PerfectSquares
+package Problem-PerfectSquares
 
 import (
 	"testing"

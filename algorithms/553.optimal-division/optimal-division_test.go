@@ -1,4 +1,4 @@
-package OptimalDivision
+package Problem-OptimalDivision
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package ExchangeSeats
+package Problem-ExchangeSeats
 
 import (
 	"testing"

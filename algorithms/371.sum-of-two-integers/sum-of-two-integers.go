@@ -1,2 +1,2 @@
-package SumofTwoIntegers
+package Problem-SumofTwoIntegers
 

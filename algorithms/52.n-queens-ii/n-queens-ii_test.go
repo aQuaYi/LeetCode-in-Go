@@ -1,4 +1,4 @@
-package N-QueensII
+package Problem-N-QueensII
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package AddStrings
+package Problem-AddStrings
 
 import (
 	"testing"

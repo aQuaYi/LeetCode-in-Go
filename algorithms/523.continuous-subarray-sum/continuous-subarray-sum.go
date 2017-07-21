@@ -1,2 +1,2 @@
-package ContinuousSubarraySum
+package Problem-ContinuousSubarraySum
 

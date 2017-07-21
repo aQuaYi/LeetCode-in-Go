@@ -1,4 +1,4 @@
-package CopyListwithRandomPointer
+package Problem-CopyListwithRandomPointer
 
 import (
 	"testing"

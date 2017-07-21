@@ -1,2 +1,2 @@
-package N-Queens
+package Problem-N-Queens
 

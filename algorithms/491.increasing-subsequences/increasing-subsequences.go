@@ -1,2 +1,2 @@
-package IncreasingSubsequences
+package Problem-IncreasingSubsequences
 

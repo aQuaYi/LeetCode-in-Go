@@ -1,4 +1,4 @@
-package ClosestBinarySearchTreeValue
+package Problem-ClosestBinarySearchTreeValue
 
 import (
 	"testing"

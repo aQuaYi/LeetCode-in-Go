@@ -1,2 +1,2 @@
-package FindAllDuplicatesinanArray
+package Problem-FindAllDuplicatesinanArray
 

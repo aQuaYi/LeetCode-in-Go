@@ -1,4 +1,4 @@
-package KthSmallestElementinaSortedMatrix
+package Problem-KthSmallestElementinaSortedMatrix
 
 import (
 	"testing"

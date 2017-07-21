@@ -1,4 +1,4 @@
-package SumofLeftLeaves
+package Problem-SumofLeftLeaves
 
 import (
 	"testing"

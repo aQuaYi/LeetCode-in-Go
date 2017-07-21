@@ -1,4 +1,4 @@
-package ErecttheFence
+package Problem-ErecttheFence
 
 import (
 	"testing"

@@ -1,2 +1,2 @@
-package PartitionEqualSubsetSum
+package Problem-PartitionEqualSubsetSum
 

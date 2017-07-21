@@ -1,4 +1,4 @@
-package SquirrelSimulation
+package Problem-SquirrelSimulation
 
 import (
 	"testing"

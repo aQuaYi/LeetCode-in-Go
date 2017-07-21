@@ -1,4 +1,4 @@
-package MinimumFactorization
+package Problem-MinimumFactorization
 
 import (
 	"testing"

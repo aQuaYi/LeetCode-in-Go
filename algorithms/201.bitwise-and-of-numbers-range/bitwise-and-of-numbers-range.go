@@ -1,2 +1,2 @@
-package BitwiseANDofNumbersRange
+package Problem-BitwiseANDofNumbersRange
 

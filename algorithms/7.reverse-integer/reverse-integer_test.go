@@ -1,4 +1,4 @@
-package ReverseInteger
+package Problem-ReverseInteger
 
 import (
 	"testing"

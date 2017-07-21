@@ -1,2 +1,2 @@
-package ExchangeSeats
+package Problem-ExchangeSeats
 

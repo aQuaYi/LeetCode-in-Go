@@ -1,2 +1,2 @@
-package WordSearch
+package Problem-WordSearch
 

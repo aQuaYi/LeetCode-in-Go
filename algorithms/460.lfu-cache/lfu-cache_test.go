@@ -1,4 +1,4 @@
-package LFUCache
+package Problem-LFUCache
 
 import (
 	"testing"

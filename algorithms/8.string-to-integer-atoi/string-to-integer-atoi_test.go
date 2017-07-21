@@ -1,4 +1,4 @@
-package StringtoInteger(atoi)
+package Problem-StringtoInteger(atoi)
 
 import (
 	"testing"

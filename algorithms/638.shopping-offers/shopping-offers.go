@@ -1,2 +1,2 @@
-package ShoppingOffers
+package Problem-ShoppingOffers
 

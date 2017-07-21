@@ -1,4 +1,4 @@
-package FizzBuzz
+package Problem-FizzBuzz
 
 import (
 	"testing"

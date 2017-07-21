@@ -1,2 +1,2 @@
-package ArithmeticSlices
+package Problem-ArithmeticSlices
 

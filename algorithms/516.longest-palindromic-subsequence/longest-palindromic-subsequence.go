@@ -1,2 +1,2 @@
-package LongestPalindromicSubsequence
+package Problem-LongestPalindromicSubsequence
 

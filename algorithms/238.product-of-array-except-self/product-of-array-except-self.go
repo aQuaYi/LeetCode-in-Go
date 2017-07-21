@@ -1,2 +1,2 @@
-package ProductofArrayExceptSelf
+package Problem-ProductofArrayExceptSelf
 

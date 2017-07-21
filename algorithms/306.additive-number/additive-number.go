@@ -1,2 +1,2 @@
-package AdditiveNumber
+package Problem-AdditiveNumber
 

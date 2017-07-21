@@ -1,2 +1,2 @@
-package 3Sum
+package Problem-3Sum
 

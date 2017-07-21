@@ -1,4 +1,4 @@
-package MergeTwoSortedLists
+package Problem-MergeTwoSortedLists
 
 import (
 	"testing"

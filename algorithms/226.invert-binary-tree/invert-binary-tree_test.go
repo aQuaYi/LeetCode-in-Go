@@ -1,4 +1,4 @@
-package InvertBinaryTree
+package Problem-InvertBinaryTree
 
 import (
 	"testing"

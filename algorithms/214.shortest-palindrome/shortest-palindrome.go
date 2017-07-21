@@ -1,2 +1,2 @@
-package ShortestPalindrome
+package Problem-ShortestPalindrome
 

@@ -1,4 +1,4 @@
-package Heaters
+package Problem-Heaters
 
 import (
 	"testing"

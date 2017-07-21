@@ -1,2 +1,2 @@
-package FirstMissingPositive
+package Problem-FirstMissingPositive
 

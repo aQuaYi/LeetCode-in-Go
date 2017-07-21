@@ -1,4 +1,4 @@
-package FlipGame
+package Problem-FlipGame
 
 import (
 	"testing"

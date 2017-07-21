@@ -1,2 +1,2 @@
-package CountofSmallerNumbersAfterSelf
+package Problem-CountofSmallerNumbersAfterSelf
 

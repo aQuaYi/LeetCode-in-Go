@@ -1,4 +1,4 @@
-package RotateArray
+package Problem-RotateArray
 
 import (
 	"testing"

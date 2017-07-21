@@ -1,4 +1,4 @@
-package ArrayPartitionI
+package Problem-ArrayPartitionI
 
 import (
 	"testing"

@@ -1,2 +1,2 @@
-package CountofRangeSum
+package Problem-CountofRangeSum
 

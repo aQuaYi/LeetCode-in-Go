@@ -1,2 +1,2 @@
-package SplitArrayLargestSum
+package Problem-SplitArrayLargestSum
 

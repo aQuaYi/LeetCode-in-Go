@@ -1,2 +1,2 @@
-package GameofLife
+package Problem-GameofLife
 

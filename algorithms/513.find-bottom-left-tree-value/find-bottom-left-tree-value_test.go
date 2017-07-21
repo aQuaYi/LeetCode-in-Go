@@ -1,4 +1,4 @@
-package FindBottomLeftTreeValue
+package Problem-FindBottomLeftTreeValue
 
 import (
 	"testing"

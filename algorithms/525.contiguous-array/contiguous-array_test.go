@@ -1,4 +1,4 @@
-package ContiguousArray
+package Problem-ContiguousArray
 
 import (
 	"testing"

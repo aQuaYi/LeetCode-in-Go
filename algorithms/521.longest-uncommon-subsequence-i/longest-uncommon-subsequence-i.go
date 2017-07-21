@@ -1,2 +1,2 @@
-package LongestUncommonSubsequenceI
+package Problem-LongestUncommonSubsequenceI
 

@@ -1,4 +1,4 @@
-package TargetSum
+package Problem-TargetSum
 
 import (
 	"testing"

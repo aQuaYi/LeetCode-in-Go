@@ -1,4 +1,4 @@
-package LRUCache
+package Problem-LRUCache
 
 import (
 	"testing"

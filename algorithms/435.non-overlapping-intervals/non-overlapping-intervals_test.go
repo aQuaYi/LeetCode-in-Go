@@ -1,4 +1,4 @@
-package Non-overlappingIntervals
+package Problem-Non-overlappingIntervals
 
 import (
 	"testing"

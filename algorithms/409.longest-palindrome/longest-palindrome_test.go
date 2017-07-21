@@ -1,4 +1,4 @@
-package LongestPalindrome
+package Problem-LongestPalindrome
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package EvaluateDivision
+package Problem-EvaluateDivision
 
 import (
 	"testing"

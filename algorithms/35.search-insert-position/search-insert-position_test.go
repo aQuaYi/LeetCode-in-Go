@@ -1,4 +1,4 @@
-package SearchInsertPosition
+package Problem-SearchInsertPosition
 
 import (
 	"testing"

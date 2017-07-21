@@ -1,4 +1,4 @@
-package InsertInterval
+package Problem-InsertInterval
 
 import (
 	"testing"

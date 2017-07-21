@@ -1,2 +1,2 @@
-package NextPermutation
+package Problem-NextPermutation
 

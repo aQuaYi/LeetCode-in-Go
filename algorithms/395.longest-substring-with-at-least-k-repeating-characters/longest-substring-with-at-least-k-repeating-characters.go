@@ -1,2 +1,2 @@
-package LongestSubstringwithAtLeastKRepeatingCharacters
+package Problem-LongestSubstringwithAtLeastKRepeatingCharacters
 

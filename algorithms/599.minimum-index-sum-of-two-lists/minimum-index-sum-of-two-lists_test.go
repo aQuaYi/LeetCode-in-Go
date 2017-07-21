@@ -1,4 +1,4 @@
-package MinimumIndexSumofTwoLists
+package Problem-MinimumIndexSumofTwoLists
 
 import (
 	"testing"

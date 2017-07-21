@@ -1,4 +1,4 @@
-package MaximumDepthofBinaryTree
+package Problem-MaximumDepthofBinaryTree
 
 import (
 	"testing"

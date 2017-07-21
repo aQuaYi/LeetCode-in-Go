@@ -1,2 +1,2 @@
-package ThirdMaximumNumber
+package Problem-ThirdMaximumNumber
 

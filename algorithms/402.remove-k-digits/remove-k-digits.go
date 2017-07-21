@@ -1,2 +1,2 @@
-package RemoveKDigits
+package Problem-RemoveKDigits
 

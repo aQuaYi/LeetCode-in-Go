@@ -1,2 +1,2 @@
-package FreedomTrail
+package Problem-FreedomTrail
 

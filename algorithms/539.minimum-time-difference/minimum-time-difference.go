@@ -1,2 +1,2 @@
-package MinimumTimeDifference
+package Problem-MinimumTimeDifference
 

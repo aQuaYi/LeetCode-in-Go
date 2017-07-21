@@ -1,4 +1,4 @@
-package IntersectionofTwoArrays
+package Problem-IntersectionofTwoArrays
 
 import (
 	"testing"

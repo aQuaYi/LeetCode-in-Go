@@ -1,4 +1,4 @@
-package CloneGraph
+package Problem-CloneGraph
 
 import (
 	"testing"

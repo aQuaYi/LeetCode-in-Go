@@ -1,2 +1,2 @@
-package SolvetheEquation
+package Problem-SolvetheEquation
 

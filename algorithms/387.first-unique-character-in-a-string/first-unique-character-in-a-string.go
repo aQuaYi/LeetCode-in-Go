@@ -1,2 +1,2 @@
-package FirstUniqueCharacterinaString
+package Problem-FirstUniqueCharacterinaString
 

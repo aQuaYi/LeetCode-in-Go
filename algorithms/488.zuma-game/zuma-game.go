@@ -1,2 +1,2 @@
-package ZumaGame
+package Problem-ZumaGame
 

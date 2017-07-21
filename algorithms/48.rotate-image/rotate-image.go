@@ -1,2 +1,2 @@
-package RotateImage
+package Problem-RotateImage
 

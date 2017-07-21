@@ -1,2 +1,2 @@
-package CanPlaceFlowers
+package Problem-CanPlaceFlowers
 

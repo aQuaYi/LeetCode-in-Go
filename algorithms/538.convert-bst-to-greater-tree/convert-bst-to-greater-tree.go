@@ -1,2 +1,2 @@
-package ConvertBSTtoGreaterTree
+package Problem-ConvertBSTtoGreaterTree
 

@@ -1,2 +1,2 @@
-package NthDigit
+package Problem-NthDigit
 

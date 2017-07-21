@@ -1,4 +1,4 @@
-package ValidWordAbbreviation
+package Problem-ValidWordAbbreviation
 
 import (
 	"testing"

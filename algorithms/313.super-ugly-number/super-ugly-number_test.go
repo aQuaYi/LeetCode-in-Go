@@ -1,4 +1,4 @@
-package SuperUglyNumber
+package Problem-SuperUglyNumber
 
 import (
 	"testing"

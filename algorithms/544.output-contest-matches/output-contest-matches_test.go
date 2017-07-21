@@ -1,4 +1,4 @@
-package OutputContestMatches
+package Problem-OutputContestMatches
 
 import (
 	"testing"

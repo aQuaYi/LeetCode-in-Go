@@ -1,2 +1,2 @@
-package RearrangeStringkDistanceApart
+package Problem-RearrangeStringkDistanceApart
 

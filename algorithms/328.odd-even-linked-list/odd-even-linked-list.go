@@ -1,2 +1,2 @@
-package OddEvenLinkedList
+package Problem-OddEvenLinkedList
 

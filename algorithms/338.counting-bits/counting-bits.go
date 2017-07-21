@@ -1,2 +1,2 @@
-package CountingBits
+package Problem-CountingBits
 

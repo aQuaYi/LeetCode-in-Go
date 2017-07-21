@@ -1,4 +1,4 @@
-package 132Pattern
+package Problem-132Pattern
 
 import (
 	"testing"

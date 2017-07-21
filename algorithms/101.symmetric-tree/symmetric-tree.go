@@ -1,2 +1,2 @@
-package SymmetricTree
+package Problem-SymmetricTree
 

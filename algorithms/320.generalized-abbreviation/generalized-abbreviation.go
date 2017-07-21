@@ -1,2 +1,2 @@
-package GeneralizedAbbreviation
+package Problem-GeneralizedAbbreviation
 

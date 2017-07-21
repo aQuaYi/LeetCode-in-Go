@@ -1,4 +1,4 @@
-package LinkedListRandomNode
+package Problem-LinkedListRandomNode
 
 import (
 	"testing"

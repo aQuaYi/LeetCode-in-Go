@@ -1,2 +1,2 @@
-package ConstructBinaryTreefromInorderandPostorderTraversal
+package Problem-ConstructBinaryTreefromInorderandPostorderTraversal
 

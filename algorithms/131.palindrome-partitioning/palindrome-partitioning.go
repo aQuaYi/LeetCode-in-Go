@@ -1,2 +1,2 @@
-package PalindromePartitioning
+package Problem-PalindromePartitioning
 

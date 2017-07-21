@@ -1,4 +1,4 @@
-package SummaryRanges
+package Problem-SummaryRanges
 
 import (
 	"testing"

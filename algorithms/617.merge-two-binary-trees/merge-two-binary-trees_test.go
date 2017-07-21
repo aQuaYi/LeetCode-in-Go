@@ -1,4 +1,4 @@
-package MergeTwoBinaryTrees
+package Problem-MergeTwoBinaryTrees
 
 import (
 	"testing"

@@ -1,2 +1,2 @@
-package 3SumClosest
+package Problem-3SumClosest
 

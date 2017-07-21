@@ -1,4 +1,4 @@
-package MaximumSubarray
+package Problem-MaximumSubarray
 
 import (
 	"testing"

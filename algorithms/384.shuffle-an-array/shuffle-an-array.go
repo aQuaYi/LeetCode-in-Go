@@ -1,2 +1,2 @@
-package ShuffleanArray
+package Problem-ShuffleanArray
 

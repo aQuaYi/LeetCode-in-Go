@@ -1,4 +1,4 @@
-package ImplementStackusingQueues
+package Problem-ImplementStackusingQueues
 
 import (
 	"testing"

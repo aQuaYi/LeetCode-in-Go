@@ -1,2 +1,2 @@
-package FindPeakElement
+package Problem-FindPeakElement
 

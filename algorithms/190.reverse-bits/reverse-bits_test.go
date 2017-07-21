@@ -1,4 +1,4 @@
-package ReverseBits
+package Problem-ReverseBits
 
 import (
 	"testing"

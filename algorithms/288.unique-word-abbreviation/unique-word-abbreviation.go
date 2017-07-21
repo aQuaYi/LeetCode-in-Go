@@ -1,2 +1,2 @@
-package UniqueWordAbbreviation
+package Problem-UniqueWordAbbreviation
 

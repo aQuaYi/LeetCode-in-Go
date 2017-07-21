@@ -1,2 +1,2 @@
-package LongestLineofConsecutiveOneinMatrix
+package Problem-LongestLineofConsecutiveOneinMatrix
 

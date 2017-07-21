@@ -1,4 +1,4 @@
-package LicenseKeyFormatting
+package Problem-LicenseKeyFormatting
 
 import (
 	"testing"

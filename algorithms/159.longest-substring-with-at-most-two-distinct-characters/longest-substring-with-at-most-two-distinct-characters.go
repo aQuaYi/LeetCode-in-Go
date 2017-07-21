@@ -1,2 +1,2 @@
-package LongestSubstringwithAtMostTwoDistinctCharacters
+package Problem-LongestSubstringwithAtMostTwoDistinctCharacters
 

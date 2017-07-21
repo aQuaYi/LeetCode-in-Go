@@ -1,2 +1,2 @@
-package PermutationSequence
+package Problem-PermutationSequence
 

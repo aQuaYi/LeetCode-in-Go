@@ -1,4 +1,4 @@
-package UglyNumberII
+package Problem-UglyNumberII
 
 import (
 	"testing"

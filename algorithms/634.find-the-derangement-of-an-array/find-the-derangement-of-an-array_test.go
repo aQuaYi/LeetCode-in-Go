@@ -1,4 +1,4 @@
-package FindtheDerangementofAnArray
+package Problem-FindtheDerangementofAnArray
 
 import (
 	"testing"

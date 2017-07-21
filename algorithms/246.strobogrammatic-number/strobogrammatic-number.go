@@ -1,2 +1,2 @@
-package StrobogrammaticNumber
+package Problem-StrobogrammaticNumber
 

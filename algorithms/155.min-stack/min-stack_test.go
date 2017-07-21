@@ -1,4 +1,4 @@
-package MinStack
+package Problem-MinStack
 
 import (
 	"testing"

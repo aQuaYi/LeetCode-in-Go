@@ -1,4 +1,4 @@
-package PaintFence
+package Problem-PaintFence
 
 import (
 	"testing"

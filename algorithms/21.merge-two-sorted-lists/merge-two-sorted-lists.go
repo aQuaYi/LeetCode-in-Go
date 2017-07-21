@@ -1,2 +1,2 @@
-package MergeTwoSortedLists
+package Problem-MergeTwoSortedLists
 

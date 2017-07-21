@@ -1,4 +1,4 @@
-package DesignSnakeGame
+package Problem-DesignSnakeGame
 
 import (
 	"testing"

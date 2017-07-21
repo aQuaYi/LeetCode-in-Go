@@ -1,2 +1,2 @@
-package DungeonGame
+package Problem-DungeonGame
 

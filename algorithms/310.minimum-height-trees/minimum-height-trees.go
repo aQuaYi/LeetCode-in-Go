@@ -1,2 +1,2 @@
-package MinimumHeightTrees
+package Problem-MinimumHeightTrees
 

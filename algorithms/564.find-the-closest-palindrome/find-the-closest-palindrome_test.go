@@ -1,4 +1,4 @@
-package FindtheClosestPalindrome
+package Problem-FindtheClosestPalindrome
 
 import (
 	"testing"

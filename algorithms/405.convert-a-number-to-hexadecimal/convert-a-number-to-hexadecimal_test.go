@@ -1,4 +1,4 @@
-package ConvertaNumbertoHexadecimal
+package Problem-ConvertaNumbertoHexadecimal
 
 import (
 	"testing"

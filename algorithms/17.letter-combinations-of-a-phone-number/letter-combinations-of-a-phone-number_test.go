@@ -1,4 +1,4 @@
-package LetterCombinationsofaPhoneNumber
+package Problem-LetterCombinationsofaPhoneNumber
 
 import (
 	"testing"

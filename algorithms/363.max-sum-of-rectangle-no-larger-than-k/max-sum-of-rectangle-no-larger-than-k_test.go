@@ -1,4 +1,4 @@
-package MaxSumofRectangleNoLargerThanK
+package Problem-MaxSumofRectangleNoLargerThanK
 
 import (
 	"testing"

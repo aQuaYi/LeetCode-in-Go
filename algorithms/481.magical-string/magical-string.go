@@ -1,2 +1,2 @@
-package MagicalString
+package Problem-MagicalString
 

@@ -1,4 +1,4 @@
-package SplitConcatenatedStrings
+package Problem-SplitConcatenatedStrings
 
 import (
 	"testing"

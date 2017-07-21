@@ -1,4 +1,4 @@
-package MajorityElement
+package Problem-MajorityElement
 
 import (
 	"testing"

@@ -1,2 +1,2 @@
-package TheMazeIII
+package Problem-TheMazeIII
 

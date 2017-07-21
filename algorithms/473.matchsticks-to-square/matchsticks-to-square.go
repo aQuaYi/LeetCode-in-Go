@@ -1,2 +1,2 @@
-package MatchstickstoSquare
+package Problem-MatchstickstoSquare
 

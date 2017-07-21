@@ -1,4 +1,4 @@
-package AddBinary
+package Problem-AddBinary
 
 import (
 	"testing"

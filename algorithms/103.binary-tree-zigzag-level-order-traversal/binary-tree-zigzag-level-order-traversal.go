@@ -1,2 +1,2 @@
-package BinaryTreeZigzagLevelOrderTraversal
+package Problem-BinaryTreeZigzagLevelOrderTraversal
 

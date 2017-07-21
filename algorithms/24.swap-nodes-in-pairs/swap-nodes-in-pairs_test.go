@@ -1,4 +1,4 @@
-package SwapNodesinPairs
+package Problem-SwapNodesinPairs
 
 import (
 	"testing"

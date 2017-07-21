@@ -1,4 +1,4 @@
-package FractiontoRecurringDecimal
+package Problem-FractiontoRecurringDecimal
 
 import (
 	"testing"

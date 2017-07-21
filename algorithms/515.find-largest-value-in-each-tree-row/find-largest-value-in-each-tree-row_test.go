@@ -1,4 +1,4 @@
-package FindLargestValueinEachTreeRow
+package Problem-FindLargestValueinEachTreeRow
 
 import (
 	"testing"

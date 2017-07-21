@@ -1,2 +1,2 @@
-package InvertBinaryTree
+package Problem-InvertBinaryTree
 

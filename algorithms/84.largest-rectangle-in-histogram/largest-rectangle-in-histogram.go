@@ -1,2 +1,2 @@
-package LargestRectangleinHistogram
+package Problem-LargestRectangleinHistogram
 

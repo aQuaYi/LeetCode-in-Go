@@ -1,2 +1,2 @@
-package CreateMaximumNumber
+package Problem-CreateMaximumNumber
 

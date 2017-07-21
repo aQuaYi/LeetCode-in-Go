@@ -1,2 +1,2 @@
-package ConstructtheRectangle
+package Problem-ConstructtheRectangle
 

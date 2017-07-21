@@ -1,2 +1,2 @@
-package SplitArraywithEqualSum
+package Problem-SplitArraywithEqualSum
 

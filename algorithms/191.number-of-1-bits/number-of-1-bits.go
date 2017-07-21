@@ -1,2 +1,2 @@
-package Numberof1Bits
+package Problem-Numberof1Bits
 

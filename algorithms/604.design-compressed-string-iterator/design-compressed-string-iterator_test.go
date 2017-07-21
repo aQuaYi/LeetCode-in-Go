@@ -1,4 +1,4 @@
-package DesignCompressedStringIterator
+package Problem-DesignCompressedStringIterator
 
 import (
 	"testing"

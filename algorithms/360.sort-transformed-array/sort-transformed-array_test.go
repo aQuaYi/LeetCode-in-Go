@@ -1,4 +1,4 @@
-package SortTransformedArray
+package Problem-SortTransformedArray
 
 import (
 	"testing"

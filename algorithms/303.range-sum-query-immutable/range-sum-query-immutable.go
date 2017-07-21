@@ -1,2 +1,2 @@
-package RangeSumQuery-Immutable
+package Problem-RangeSumQuery-Immutable
 

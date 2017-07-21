@@ -1,4 +1,4 @@
-package ValidParentheses
+package Problem-ValidParentheses
 
 import (
 	"testing"

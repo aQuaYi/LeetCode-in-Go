@@ -1,4 +1,4 @@
-package FreedomTrail
+package Problem-FreedomTrail
 
 import (
 	"testing"

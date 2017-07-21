@@ -1,2 +1,2 @@
-package MaximumSubarray
+package Problem-MaximumSubarray
 

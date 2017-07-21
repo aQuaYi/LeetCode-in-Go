@@ -1,2 +1,2 @@
-package CountNumberswithUniqueDigits
+package Problem-CountNumberswithUniqueDigits
 

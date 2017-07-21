@@ -1,2 +1,2 @@
-package LongestPalindrome
+package Problem-LongestPalindrome
 

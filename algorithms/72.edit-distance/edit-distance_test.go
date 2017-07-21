@@ -1,4 +1,4 @@
-package EditDistance
+package Problem-EditDistance
 
 import (
 	"testing"

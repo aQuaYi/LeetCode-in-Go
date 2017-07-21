@@ -1,4 +1,4 @@
-package MaximumProductofThreeNumbers
+package Problem-MaximumProductofThreeNumbers
 
 import (
 	"testing"

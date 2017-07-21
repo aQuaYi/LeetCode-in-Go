@@ -1,4 +1,4 @@
-package BinaryTreeRightSideView
+package Problem-BinaryTreeRightSideView
 
 import (
 	"testing"

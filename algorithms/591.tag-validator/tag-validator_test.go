@@ -1,4 +1,4 @@
-package TagValidator
+package Problem-TagValidator
 
 import (
 	"testing"

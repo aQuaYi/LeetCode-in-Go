@@ -1,2 +1,2 @@
-package BestTimetoBuyandSellStockwithCooldown
+package Problem-BestTimetoBuyandSellStockwithCooldown
 

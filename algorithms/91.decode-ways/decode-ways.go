@@ -1,2 +1,2 @@
-package DecodeWays
+package Problem-DecodeWays
 

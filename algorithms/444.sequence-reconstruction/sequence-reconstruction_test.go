@@ -1,4 +1,4 @@
-package SequenceReconstruction
+package Problem-SequenceReconstruction
 
 import (
 	"testing"

@@ -1,2 +1,2 @@
-package IntegertoEnglishWords
+package Problem-IntegertoEnglishWords
 

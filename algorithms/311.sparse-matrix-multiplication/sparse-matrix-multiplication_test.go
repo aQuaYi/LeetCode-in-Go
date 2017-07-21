@@ -1,4 +1,4 @@
-package SparseMatrixMultiplication
+package Problem-SparseMatrixMultiplication
 
 import (
 	"testing"

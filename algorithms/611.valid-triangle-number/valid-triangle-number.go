@@ -1,2 +1,2 @@
-package ValidTriangleNumber
+package Problem-ValidTriangleNumber
 

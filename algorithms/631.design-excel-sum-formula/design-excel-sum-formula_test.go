@@ -1,4 +1,4 @@
-package DesignExcelSumFormula
+package Problem-DesignExcelSumFormula
 
 import (
 	"testing"

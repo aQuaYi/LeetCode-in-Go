@@ -1,2 +1,2 @@
-package MaximumXORofTwoNumbersinanArray
+package Problem-MaximumXORofTwoNumbersinanArray
 

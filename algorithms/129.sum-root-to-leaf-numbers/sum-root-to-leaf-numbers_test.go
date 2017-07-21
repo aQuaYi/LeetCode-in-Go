@@ -1,4 +1,4 @@
-package SumRoottoLeafNumbers
+package Problem-SumRoottoLeafNumbers
 
 import (
 	"testing"

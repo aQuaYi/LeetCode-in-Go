@@ -1,2 +1,2 @@
-package BinaryWatch
+package Problem-BinaryWatch
 

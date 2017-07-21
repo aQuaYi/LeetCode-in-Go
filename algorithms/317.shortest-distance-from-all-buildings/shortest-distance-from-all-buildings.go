@@ -1,2 +1,2 @@
-package ShortestDistancefromAllBuildings
+package Problem-ShortestDistancefromAllBuildings
 

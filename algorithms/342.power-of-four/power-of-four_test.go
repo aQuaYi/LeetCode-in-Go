@@ -1,4 +1,4 @@
-package PowerofFour
+package Problem-PowerofFour
 
 import (
 	"testing"

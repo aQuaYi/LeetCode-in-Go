@@ -1,2 +1,2 @@
-package NumberofConnectedComponentsinanUndirectedGraph
+package Problem-NumberofConnectedComponentsinanUndirectedGraph
 

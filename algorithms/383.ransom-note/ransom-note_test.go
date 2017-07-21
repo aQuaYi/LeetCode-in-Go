@@ -1,4 +1,4 @@
-package RansomNote
+package Problem-RansomNote
 
 import (
 	"testing"

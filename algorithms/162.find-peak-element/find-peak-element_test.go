@@ -1,4 +1,4 @@
-package FindPeakElement
+package Problem-FindPeakElement
 
 import (
 	"testing"

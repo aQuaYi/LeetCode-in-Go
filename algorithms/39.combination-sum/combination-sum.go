@@ -1,2 +1,2 @@
-package CombinationSum
+package Problem-CombinationSum
 

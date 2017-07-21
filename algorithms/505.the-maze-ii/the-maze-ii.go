@@ -1,2 +1,2 @@
-package TheMazeII
+package Problem-TheMazeII
 

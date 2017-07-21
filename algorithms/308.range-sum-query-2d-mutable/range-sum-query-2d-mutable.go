@@ -1,2 +1,2 @@
-package RangeSumQuery2D-Mutable
+package Problem-RangeSumQuery2D-Mutable
 

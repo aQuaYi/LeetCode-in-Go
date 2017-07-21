@@ -1,2 +1,2 @@
-package IncreasingTripletSubsequence
+package Problem-IncreasingTripletSubsequence
 

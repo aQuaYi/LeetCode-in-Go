@@ -1,2 +1,2 @@
-package SwapNodesinPairs
+package Problem-SwapNodesinPairs
 

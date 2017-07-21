@@ -1,4 +1,4 @@
-package RecoverBinarySearchTree
+package Problem-RecoverBinarySearchTree
 
 import (
 	"testing"

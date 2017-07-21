@@ -1,4 +1,4 @@
-package GameofLife
+package Problem-GameofLife
 
 import (
 	"testing"

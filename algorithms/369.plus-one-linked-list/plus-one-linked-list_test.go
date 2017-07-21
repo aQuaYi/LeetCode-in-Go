@@ -1,4 +1,4 @@
-package PlusOneLinkedList
+package Problem-PlusOneLinkedList
 
 import (
 	"testing"

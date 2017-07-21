@@ -1,4 +1,4 @@
-package FactorCombinations
+package Problem-FactorCombinations
 
 import (
 	"testing"

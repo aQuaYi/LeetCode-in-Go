@@ -1,4 +1,4 @@
-package RepeatedDNASequences
+package Problem-RepeatedDNASequences
 
 import (
 	"testing"

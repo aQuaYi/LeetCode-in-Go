@@ -1,4 +1,4 @@
-package WordSquares
+package Problem-WordSquares
 
 import (
 	"testing"

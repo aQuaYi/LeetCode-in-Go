@@ -1,4 +1,4 @@
-package SolvetheEquation
+package Problem-SolvetheEquation
 
 import (
 	"testing"

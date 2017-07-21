@@ -1,4 +1,4 @@
-package IslandPerimeter
+package Problem-IslandPerimeter
 
 import (
 	"testing"

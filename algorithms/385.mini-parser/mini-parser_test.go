@@ -1,4 +1,4 @@
-package MiniParser
+package Problem-MiniParser
 
 import (
 	"testing"

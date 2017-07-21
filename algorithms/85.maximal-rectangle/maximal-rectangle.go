@@ -1,2 +1,2 @@
-package MaximalRectangle
+package Problem-MaximalRectangle
 

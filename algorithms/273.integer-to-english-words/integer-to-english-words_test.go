@@ -1,4 +1,4 @@
-package IntegertoEnglishWords
+package Problem-IntegertoEnglishWords
 
 import (
 	"testing"

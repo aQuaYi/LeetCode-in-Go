@@ -1,4 +1,4 @@
-package SlidingWindowMedian
+package Problem-SlidingWindowMedian
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package SudokuSolver
+package Problem-SudokuSolver
 
 import (
 	"testing"

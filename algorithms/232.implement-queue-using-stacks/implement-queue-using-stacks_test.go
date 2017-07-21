@@ -1,4 +1,4 @@
-package ImplementQueueusingStacks
+package Problem-ImplementQueueusingStacks
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package BinaryTreeLevelOrderTraversal
+package Problem-BinaryTreeLevelOrderTraversal
 
 import (
 	"testing"

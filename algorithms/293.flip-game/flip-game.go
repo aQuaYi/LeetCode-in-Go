@@ -1,2 +1,2 @@
-package FlipGame
+package Problem-FlipGame
 

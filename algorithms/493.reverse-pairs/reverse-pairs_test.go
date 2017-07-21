@@ -1,4 +1,4 @@
-package ReversePairs
+package Problem-ReversePairs
 
 import (
 	"testing"

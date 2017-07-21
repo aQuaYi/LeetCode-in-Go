@@ -1,4 +1,4 @@
-package SearchinRotatedSortedArrayII
+package Problem-SearchinRotatedSortedArrayII
 
 import (
 	"testing"

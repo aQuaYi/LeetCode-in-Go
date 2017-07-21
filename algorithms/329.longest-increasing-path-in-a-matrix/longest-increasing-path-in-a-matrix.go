@@ -1,2 +1,2 @@
-package LongestIncreasingPathinaMatrix
+package Problem-LongestIncreasingPathinaMatrix
 

@@ -1,2 +1,2 @@
-package MaximumSizeSubarraySumEqualsk
+package Problem-MaximumSizeSubarraySumEqualsk
 

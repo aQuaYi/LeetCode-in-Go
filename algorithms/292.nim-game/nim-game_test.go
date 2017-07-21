@@ -1,4 +1,4 @@
-package NimGame
+package Problem-NimGame
 
 import (
 	"testing"

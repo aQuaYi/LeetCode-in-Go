@@ -1,2 +1,2 @@
-package GenerateParentheses
+package Problem-GenerateParentheses
 

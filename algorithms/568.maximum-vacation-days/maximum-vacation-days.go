@@ -1,2 +1,2 @@
-package MaximumVacationDays
+package Problem-MaximumVacationDays
 

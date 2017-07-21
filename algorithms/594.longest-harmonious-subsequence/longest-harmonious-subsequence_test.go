@@ -1,4 +1,4 @@
-package LongestHarmoniousSubsequence
+package Problem-LongestHarmoniousSubsequence
 
 import (
 	"testing"

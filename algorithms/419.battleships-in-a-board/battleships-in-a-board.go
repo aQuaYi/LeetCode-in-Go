@@ -1,2 +1,2 @@
-package BattleshipsinaBoard
+package Problem-BattleshipsinaBoard
 

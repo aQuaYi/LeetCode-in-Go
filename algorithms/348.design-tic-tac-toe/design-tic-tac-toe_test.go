@@ -1,4 +1,4 @@
-package DesignTic-Tac-Toe
+package Problem-DesignTic-Tac-Toe
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package LargestNumber
+package Problem-LargestNumber
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package SubstringwithConcatenationofAllWords
+package Problem-SubstringwithConcatenationofAllWords
 
 import (
 	"testing"

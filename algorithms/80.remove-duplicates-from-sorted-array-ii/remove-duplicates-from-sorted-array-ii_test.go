@@ -1,4 +1,4 @@
-package RemoveDuplicatesfromSortedArrayII
+package Problem-RemoveDuplicatesfromSortedArrayII
 
 import (
 	"testing"

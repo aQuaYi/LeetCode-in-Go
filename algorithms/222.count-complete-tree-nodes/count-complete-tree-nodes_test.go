@@ -1,4 +1,4 @@
-package CountCompleteTreeNodes
+package Problem-CountCompleteTreeNodes
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package ValidSquare
+package Problem-ValidSquare
 
 import (
 	"testing"

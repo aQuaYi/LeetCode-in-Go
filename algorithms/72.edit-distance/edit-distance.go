@@ -1,2 +1,2 @@
-package EditDistance
+package Problem-EditDistance
 

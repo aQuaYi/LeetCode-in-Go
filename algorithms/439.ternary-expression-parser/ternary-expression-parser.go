@@ -1,2 +1,2 @@
-package TernaryExpressionParser
+package Problem-TernaryExpressionParser
 

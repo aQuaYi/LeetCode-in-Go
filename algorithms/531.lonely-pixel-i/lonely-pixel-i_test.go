@@ -1,4 +1,4 @@
-package LonelyPixelI
+package Problem-LonelyPixelI
 
 import (
 	"testing"

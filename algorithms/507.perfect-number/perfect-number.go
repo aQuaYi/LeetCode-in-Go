@@ -1,2 +1,2 @@
-package PerfectNumber
+package Problem-PerfectNumber
 

@@ -1,4 +1,4 @@
-package RemoveKDigits
+package Problem-RemoveKDigits
 
 import (
 	"testing"

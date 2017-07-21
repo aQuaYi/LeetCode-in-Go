@@ -1,4 +1,4 @@
-package DeleteNodeinaBST
+package Problem-DeleteNodeinaBST
 
 import (
 	"testing"

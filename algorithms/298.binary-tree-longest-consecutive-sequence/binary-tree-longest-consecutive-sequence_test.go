@@ -1,4 +1,4 @@
-package BinaryTreeLongestConsecutiveSequence
+package Problem-BinaryTreeLongestConsecutiveSequence
 
 import (
 	"testing"

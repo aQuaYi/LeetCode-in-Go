@@ -1,2 +1,2 @@
-package SuperWashingMachines
+package Problem-SuperWashingMachines
 

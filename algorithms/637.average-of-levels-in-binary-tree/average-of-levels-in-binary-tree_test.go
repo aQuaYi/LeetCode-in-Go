@@ -1,4 +1,4 @@
-package AverageofLevelsinBinaryTree
+package Problem-AverageofLevelsinBinaryTree
 
 import (
 	"testing"

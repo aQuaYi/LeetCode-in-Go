@@ -1,4 +1,4 @@
-package TwoSumIII-Datastructuredesign
+package Problem-TwoSumIII-Datastructuredesign
 
 import (
 	"testing"

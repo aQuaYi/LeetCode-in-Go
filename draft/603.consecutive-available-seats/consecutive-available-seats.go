@@ -1,2 +1,2 @@
-package ConsecutiveAvailableSeats
+package Problem-ConsecutiveAvailableSeats
 

@@ -1,4 +1,4 @@
-package KillProcess
+package Problem-KillProcess
 
 import (
 	"testing"

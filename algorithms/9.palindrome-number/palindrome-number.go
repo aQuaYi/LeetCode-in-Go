@@ -1,2 +1,2 @@
-package PalindromeNumber
+package Problem-PalindromeNumber
 

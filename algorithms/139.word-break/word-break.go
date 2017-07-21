@@ -1,2 +1,2 @@
-package WordBreak
+package Problem-WordBreak
 

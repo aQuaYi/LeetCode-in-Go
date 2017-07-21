@@ -1,4 +1,4 @@
-package PartitionList
+package Problem-PartitionList
 
 import (
 	"testing"

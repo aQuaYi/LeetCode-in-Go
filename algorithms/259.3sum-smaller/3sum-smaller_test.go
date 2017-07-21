@@ -1,4 +1,4 @@
-package 3SumSmaller
+package Problem-3SumSmaller
 
 import (
 	"testing"

@@ -1,2 +1,2 @@
-package UniquePaths
+package Problem-UniquePaths
 

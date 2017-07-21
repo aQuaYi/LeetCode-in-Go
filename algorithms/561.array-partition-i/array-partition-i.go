@@ -1,2 +1,2 @@
-package ArrayPartitionI
+package Problem-ArrayPartitionI
 

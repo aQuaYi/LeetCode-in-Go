@@ -1,2 +1,2 @@
-package BullsandCows
+package Problem-BullsandCows
 

@@ -1,2 +1,2 @@
-package TheSkylineProblem
+package Problem-TheSkylineProblem
 

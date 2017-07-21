@@ -1,2 +1,2 @@
-package ReverseVowelsofaString
+package Problem-ReverseVowelsofaString
 

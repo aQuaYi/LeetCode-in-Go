@@ -1,4 +1,4 @@
-package RegularExpressionMatching
+package Problem-RegularExpressionMatching
 
 import (
 	"testing"

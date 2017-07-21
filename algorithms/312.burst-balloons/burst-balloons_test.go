@@ -1,4 +1,4 @@
-package BurstBalloons
+package Problem-BurstBalloons
 
 import (
 	"testing"

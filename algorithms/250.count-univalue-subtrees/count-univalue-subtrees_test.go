@@ -1,4 +1,4 @@
-package CountUnivalueSubtrees
+package Problem-CountUnivalueSubtrees
 
 import (
 	"testing"

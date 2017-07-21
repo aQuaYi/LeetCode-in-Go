@@ -1,2 +1,2 @@
-package BulbSwitcher
+package Problem-BulbSwitcher
 

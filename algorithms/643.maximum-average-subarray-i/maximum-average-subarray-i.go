@@ -1,2 +1,2 @@
-package MaximumAverageSubarrayI
+package Problem-MaximumAverageSubarrayI
 

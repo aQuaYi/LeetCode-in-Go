@@ -1,4 +1,4 @@
-package DeleteOperationforTwoStrings
+package Problem-DeleteOperationforTwoStrings
 
 import (
 	"testing"

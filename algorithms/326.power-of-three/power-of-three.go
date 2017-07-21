@@ -1,2 +1,2 @@
-package PowerofThree
+package Problem-PowerofThree
 

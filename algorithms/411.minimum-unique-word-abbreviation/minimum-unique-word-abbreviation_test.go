@@ -1,4 +1,4 @@
-package MinimumUniqueWordAbbreviation
+package Problem-MinimumUniqueWordAbbreviation
 
 import (
 	"testing"

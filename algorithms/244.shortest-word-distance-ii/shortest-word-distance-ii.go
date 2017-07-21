@@ -1,2 +1,2 @@
-package ShortestWordDistanceII
+package Problem-ShortestWordDistanceII
 

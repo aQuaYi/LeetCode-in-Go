@@ -1,4 +1,4 @@
-package Candy
+package Problem-Candy
 
 import (
 	"testing"

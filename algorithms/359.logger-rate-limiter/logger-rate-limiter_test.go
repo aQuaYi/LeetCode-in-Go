@@ -1,4 +1,4 @@
-package LoggerRateLimiter
+package Problem-LoggerRateLimiter
 
 import (
 	"testing"

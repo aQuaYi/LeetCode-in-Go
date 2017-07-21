@@ -1,2 +1,2 @@
-package RemoveDuplicatesfromSortedArrayII
+package Problem-RemoveDuplicatesfromSortedArrayII
 

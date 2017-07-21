@@ -1,2 +1,2 @@
-package PerfectRectangle
+package Problem-PerfectRectangle
 

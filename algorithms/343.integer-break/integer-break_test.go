@@ -1,4 +1,4 @@
-package IntegerBreak
+package Problem-IntegerBreak
 
 import (
 	"testing"

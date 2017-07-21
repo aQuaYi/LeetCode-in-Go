@@ -1,2 +1,2 @@
-package RelativeRanks
+package Problem-RelativeRanks
 

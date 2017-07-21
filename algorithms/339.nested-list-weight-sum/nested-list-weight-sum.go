@@ -1,2 +1,2 @@
-package NestedListWeightSum
+package Problem-NestedListWeightSum
 

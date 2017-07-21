@@ -1,2 +1,2 @@
-package DetectCapital
+package Problem-DetectCapital
 

@@ -1,4 +1,4 @@
-package PopulatingNextRightPointersinEachNode
+package Problem-PopulatingNextRightPointersinEachNode
 
 import (
 	"testing"

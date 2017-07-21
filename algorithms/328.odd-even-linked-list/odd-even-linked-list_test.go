@@ -1,4 +1,4 @@
-package OddEvenLinkedList
+package Problem-OddEvenLinkedList
 
 import (
 	"testing"

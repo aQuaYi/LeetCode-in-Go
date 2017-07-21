@@ -1,2 +1,2 @@
-package MaximalSquare
+package Problem-MaximalSquare
 

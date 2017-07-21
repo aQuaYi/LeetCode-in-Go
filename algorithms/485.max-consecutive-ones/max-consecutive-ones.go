@@ -1,2 +1,2 @@
-package MaxConsecutiveOnes
+package Problem-MaxConsecutiveOnes
 

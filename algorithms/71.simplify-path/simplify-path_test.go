@@ -1,4 +1,4 @@
-package SimplifyPath
+package Problem-SimplifyPath
 
 import (
 	"testing"

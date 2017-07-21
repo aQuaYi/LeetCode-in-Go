@@ -1,4 +1,4 @@
-package ShuffleanArray
+package Problem-ShuffleanArray
 
 import (
 	"testing"

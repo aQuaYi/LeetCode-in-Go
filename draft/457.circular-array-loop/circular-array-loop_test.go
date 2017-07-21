@@ -1,4 +1,4 @@
-package CircularArrayLoop
+package Problem-CircularArrayLoop
 
 import (
 	"testing"

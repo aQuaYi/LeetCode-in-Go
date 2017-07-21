@@ -1,4 +1,4 @@
-package LongestSubstringwithAtMostTwoDistinctCharacters
+package Problem-LongestSubstringwithAtMostTwoDistinctCharacters
 
 import (
 	"testing"

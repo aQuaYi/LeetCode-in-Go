@@ -1,4 +1,4 @@
-package LargestBSTSubtree
+package Problem-LargestBSTSubtree
 
 import (
 	"testing"

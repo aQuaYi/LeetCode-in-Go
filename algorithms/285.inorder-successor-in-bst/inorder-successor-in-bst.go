@@ -1,2 +1,2 @@
-package InorderSuccessorinBST
+package Problem-InorderSuccessorinBST
 

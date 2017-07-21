@@ -1,2 +1,2 @@
-package Triangle
+package Problem-Triangle
 

@@ -1,2 +1,2 @@
-package MinimumAbsoluteDifferenceinBST
+package Problem-MinimumAbsoluteDifferenceinBST
 

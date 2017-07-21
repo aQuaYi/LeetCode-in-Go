@@ -1,4 +1,4 @@
-package BestTimetoBuyandSellStockII
+package Problem-BestTimetoBuyandSellStockII
 
 import (
 	"testing"

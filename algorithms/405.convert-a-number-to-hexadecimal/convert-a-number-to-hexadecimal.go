@@ -1,2 +1,2 @@
-package ConvertaNumbertoHexadecimal
+package Problem-ConvertaNumbertoHexadecimal
 

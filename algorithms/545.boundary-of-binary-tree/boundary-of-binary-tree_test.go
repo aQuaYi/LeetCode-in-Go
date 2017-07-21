@@ -1,4 +1,4 @@
-package BoundaryofBinaryTree
+package Problem-BoundaryofBinaryTree
 
 import (
 	"testing"

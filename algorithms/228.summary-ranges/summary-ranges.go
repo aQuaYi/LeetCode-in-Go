@@ -1,2 +1,2 @@
-package SummaryRanges
+package Problem-SummaryRanges
 

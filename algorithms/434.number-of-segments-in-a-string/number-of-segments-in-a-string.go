@@ -1,2 +1,2 @@
-package NumberofSegmentsinaString
+package Problem-NumberofSegmentsinaString
 

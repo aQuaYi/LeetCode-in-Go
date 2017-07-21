@@ -1,2 +1,2 @@
-package SingleElementinaSortedArray
+package Problem-SingleElementinaSortedArray
 

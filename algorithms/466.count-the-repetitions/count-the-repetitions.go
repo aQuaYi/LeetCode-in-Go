@@ -1,2 +1,2 @@
-package CountTheRepetitions
+package Problem-CountTheRepetitions
 

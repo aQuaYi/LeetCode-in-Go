@@ -1,4 +1,4 @@
-package EncodeandDecodeStrings
+package Problem-EncodeandDecodeStrings
 
 import (
 	"testing"

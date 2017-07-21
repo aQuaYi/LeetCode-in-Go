@@ -1,2 +1,2 @@
-package FirstBadVersion
+package Problem-FirstBadVersion
 

@@ -1,4 +1,4 @@
-package ImplementstrStr()
+package Problem-ImplementstrStr()
 
 import (
 	"testing"

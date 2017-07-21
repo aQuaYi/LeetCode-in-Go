@@ -1,4 +1,4 @@
-package ReadNCharactersGivenRead4
+package Problem-ReadNCharactersGivenRead4
 
 import (
 	"testing"

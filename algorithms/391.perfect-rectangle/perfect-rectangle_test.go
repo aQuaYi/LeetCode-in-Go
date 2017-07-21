@@ -1,4 +1,4 @@
-package PerfectRectangle
+package Problem-PerfectRectangle
 
 import (
 	"testing"

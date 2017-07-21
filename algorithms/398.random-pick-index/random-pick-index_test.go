@@ -1,4 +1,4 @@
-package RandomPickIndex
+package Problem-RandomPickIndex
 
 import (
 	"testing"

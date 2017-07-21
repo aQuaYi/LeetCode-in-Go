@@ -1,2 +1,2 @@
-package ImplementQueueusingStacks
+package Problem-ImplementQueueusingStacks
 

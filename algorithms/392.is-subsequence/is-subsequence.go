@@ -1,2 +1,2 @@
-package IsSubsequence
+package Problem-IsSubsequence
 

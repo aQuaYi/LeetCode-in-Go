@@ -1,2 +1,2 @@
-package LongestRepeatingCharacterReplacement
+package Problem-LongestRepeatingCharacterReplacement
 

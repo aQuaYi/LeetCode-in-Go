@@ -1,4 +1,4 @@
-package MaximumXORofTwoNumbersinanArray
+package Problem-MaximumXORofTwoNumbersinanArray
 
 import (
 	"testing"

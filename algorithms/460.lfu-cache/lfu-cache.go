@@ -1,2 +1,2 @@
-package LFUCache
+package Problem-LFUCache
 

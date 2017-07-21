@@ -1,2 +1,2 @@
-package RepeatedDNASequences
+package Problem-RepeatedDNASequences
 

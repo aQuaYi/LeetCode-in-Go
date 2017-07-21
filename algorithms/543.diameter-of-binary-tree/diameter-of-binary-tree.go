@@ -1,2 +1,2 @@
-package DiameterofBinaryTree
+package Problem-DiameterofBinaryTree
 

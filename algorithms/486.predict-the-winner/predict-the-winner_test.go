@@ -1,4 +1,4 @@
-package PredicttheWinner
+package Problem-PredicttheWinner
 
 import (
 	"testing"

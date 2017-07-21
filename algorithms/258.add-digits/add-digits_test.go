@@ -1,4 +1,4 @@
-package AddDigits
+package Problem-AddDigits
 
 import (
 	"testing"

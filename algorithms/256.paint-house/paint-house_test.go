@@ -1,4 +1,4 @@
-package PaintHouse
+package Problem-PaintHouse
 
 import (
 	"testing"

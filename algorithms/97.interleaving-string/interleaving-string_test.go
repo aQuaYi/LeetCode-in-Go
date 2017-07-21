@@ -1,4 +1,4 @@
-package InterleavingString
+package Problem-InterleavingString
 
 import (
 	"testing"

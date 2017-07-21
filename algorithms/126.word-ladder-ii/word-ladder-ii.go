@@ -1,2 +1,2 @@
-package WordLadderII
+package Problem-WordLadderII
 

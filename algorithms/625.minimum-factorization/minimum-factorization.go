@@ -1,2 +1,2 @@
-package MinimumFactorization
+package Problem-MinimumFactorization
 

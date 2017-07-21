@@ -1,4 +1,4 @@
-package GraphValidTree
+package Problem-GraphValidTree
 
 import (
 	"testing"

@@ -1,2 +1,2 @@
-package FizzBuzz
+package Problem-FizzBuzz
 

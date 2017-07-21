@@ -1,2 +1,2 @@
-package LetterCombinationsofaPhoneNumber
+package Problem-LetterCombinationsofaPhoneNumber
 

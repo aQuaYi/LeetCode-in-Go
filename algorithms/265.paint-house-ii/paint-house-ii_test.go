@@ -1,4 +1,4 @@
-package PaintHouseII
+package Problem-PaintHouseII
 
 import (
 	"testing"

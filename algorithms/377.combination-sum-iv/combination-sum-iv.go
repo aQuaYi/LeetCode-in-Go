@@ -1,2 +1,2 @@
-package CombinationSumIV
+package Problem-CombinationSumIV
 

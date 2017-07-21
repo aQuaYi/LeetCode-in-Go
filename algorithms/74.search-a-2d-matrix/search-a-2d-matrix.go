@@ -1,2 +1,2 @@
-package Searcha2DMatrix
+package Problem-Searcha2DMatrix
 

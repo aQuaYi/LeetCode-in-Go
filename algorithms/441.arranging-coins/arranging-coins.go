@@ -1,2 +1,2 @@
-package ArrangingCoins
+package Problem-ArrangingCoins
 

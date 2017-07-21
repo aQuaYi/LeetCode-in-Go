@@ -1,4 +1,4 @@
-package LongestWordinDictionarythroughDeleting
+package Problem-LongestWordinDictionarythroughDeleting
 
 import (
 	"testing"

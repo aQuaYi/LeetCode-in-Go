@@ -1,4 +1,4 @@
-package MissingNumber
+package Problem-MissingNumber
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package IncreasingTripletSubsequence
+package Problem-IncreasingTripletSubsequence
 
 import (
 	"testing"

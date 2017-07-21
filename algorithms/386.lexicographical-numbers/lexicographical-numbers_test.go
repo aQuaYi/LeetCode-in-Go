@@ -1,4 +1,4 @@
-package LexicographicalNumbers
+package Problem-LexicographicalNumbers
 
 import (
 	"testing"

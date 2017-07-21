@@ -1,4 +1,4 @@
-package CombinationSum
+package Problem-CombinationSum
 
 import (
 	"testing"

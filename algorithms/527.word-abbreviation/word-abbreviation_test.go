@@ -1,4 +1,4 @@
-package WordAbbreviation
+package Problem-WordAbbreviation
 
 import (
 	"testing"

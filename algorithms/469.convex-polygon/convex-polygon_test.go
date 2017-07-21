@@ -1,4 +1,4 @@
-package ConvexPolygon
+package Problem-ConvexPolygon
 
 import (
 	"testing"

@@ -1,2 +1,2 @@
-package SpiralMatrix
+package Problem-SpiralMatrix
 

@@ -1,2 +1,2 @@
-package StrongPasswordChecker
+package Problem-StrongPasswordChecker
 

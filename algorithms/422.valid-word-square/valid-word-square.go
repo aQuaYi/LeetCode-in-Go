@@ -1,2 +1,2 @@
-package ValidWordSquare
+package Problem-ValidWordSquare
 

@@ -1,2 +1,2 @@
-package FindDuplicateFileinSystem
+package Problem-FindDuplicateFileinSystem
 

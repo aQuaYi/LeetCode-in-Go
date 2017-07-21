@@ -1,2 +1,2 @@
-package MinimumPathSum
+package Problem-MinimumPathSum
 

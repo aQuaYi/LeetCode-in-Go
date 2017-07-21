@@ -1,2 +1,2 @@
-package WaterandJugProblem
+package Problem-WaterandJugProblem
 

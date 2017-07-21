@@ -1,4 +1,4 @@
-package ValidateBinarySearchTree
+package Problem-ValidateBinarySearchTree
 
 import (
 	"testing"

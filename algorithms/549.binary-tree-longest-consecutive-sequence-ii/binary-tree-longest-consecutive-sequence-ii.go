@@ -1,2 +1,2 @@
-package BinaryTreeLongestConsecutiveSequenceII
+package Problem-BinaryTreeLongestConsecutiveSequenceII
 

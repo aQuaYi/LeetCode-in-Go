@@ -1,2 +1,2 @@
-package MaximumGap
+package Problem-MaximumGap
 

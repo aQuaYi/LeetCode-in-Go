@@ -1,4 +1,4 @@
-package ValidTriangleNumber
+package Problem-ValidTriangleNumber
 
 import (
 	"testing"

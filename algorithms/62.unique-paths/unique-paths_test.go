@@ -1,4 +1,4 @@
-package UniquePaths
+package Problem-UniquePaths
 
 import (
 	"testing"

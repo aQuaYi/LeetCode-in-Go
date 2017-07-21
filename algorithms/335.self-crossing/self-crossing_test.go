@@ -1,4 +1,4 @@
-package SelfCrossing
+package Problem-SelfCrossing
 
 import (
 	"testing"

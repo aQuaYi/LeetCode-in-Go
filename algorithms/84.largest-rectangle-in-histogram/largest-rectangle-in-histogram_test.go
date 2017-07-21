@@ -1,4 +1,4 @@
-package LargestRectangleinHistogram
+package Problem-LargestRectangleinHistogram
 
 import (
 	"testing"

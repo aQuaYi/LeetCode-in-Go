@@ -1,4 +1,4 @@
-package FactorialTrailingZeroes
+package Problem-FactorialTrailingZeroes
 
 import (
 	"testing"

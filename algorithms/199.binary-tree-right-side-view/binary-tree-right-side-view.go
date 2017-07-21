@@ -1,2 +1,2 @@
-package BinaryTreeRightSideView
+package Problem-BinaryTreeRightSideView
 

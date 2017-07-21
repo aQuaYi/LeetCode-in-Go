@@ -1,2 +1,2 @@
-package SortCharactersByFrequency
+package Problem-SortCharactersByFrequency
 

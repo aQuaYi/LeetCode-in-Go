@@ -1,2 +1,2 @@
-package SquirrelSimulation
+package Problem-SquirrelSimulation
 

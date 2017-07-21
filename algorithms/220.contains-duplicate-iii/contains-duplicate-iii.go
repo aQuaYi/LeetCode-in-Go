@@ -1,2 +1,2 @@
-package ContainsDuplicateIII
+package Problem-ContainsDuplicateIII
 

@@ -1,4 +1,4 @@
-package ZigZagConversion
+package Problem-ZigZagConversion
 
 import (
 	"testing"

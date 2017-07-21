@@ -1,4 +1,4 @@
-package ShortestWordDistanceII
+package Problem-ShortestWordDistanceII
 
 import (
 	"testing"

@@ -1,2 +1,2 @@
-package TwoSumIII-Datastructuredesign
+package Problem-TwoSumIII-Datastructuredesign
 

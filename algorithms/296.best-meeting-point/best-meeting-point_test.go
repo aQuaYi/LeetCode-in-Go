@@ -1,4 +1,4 @@
-package BestMeetingPoint
+package Problem-BestMeetingPoint
 
 import (
 	"testing"

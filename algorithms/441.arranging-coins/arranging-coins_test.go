@@ -1,4 +1,4 @@
-package ArrangingCoins
+package Problem-ArrangingCoins
 
 import (
 	"testing"

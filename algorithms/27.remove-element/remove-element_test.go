@@ -1,4 +1,4 @@
-package RemoveElement
+package Problem-RemoveElement
 
 import (
 	"testing"

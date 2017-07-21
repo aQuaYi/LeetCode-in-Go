@@ -1,4 +1,4 @@
-package SplitArraywithEqualSum
+package Problem-SplitArraywithEqualSum
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package EncodeStringwithShortestLength
+package Problem-EncodeStringwithShortestLength
 
 import (
 	"testing"

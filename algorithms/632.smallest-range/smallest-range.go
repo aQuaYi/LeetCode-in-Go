@@ -1,2 +1,2 @@
-package SmallestRange
+package Problem-SmallestRange
 

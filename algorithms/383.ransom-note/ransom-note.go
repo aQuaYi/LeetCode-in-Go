@@ -1,2 +1,2 @@
-package RansomNote
+package Problem-RansomNote
 

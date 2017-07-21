@@ -1,4 +1,4 @@
-package MostFrequentSubtreeSum
+package Problem-MostFrequentSubtreeSum
 
 import (
 	"testing"

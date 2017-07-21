@@ -1,2 +1,2 @@
-package LonelyPixelI
+package Problem-LonelyPixelI
 

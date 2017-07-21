@@ -1,4 +1,4 @@
-package BinaryTreeUpsideDown
+package Problem-BinaryTreeUpsideDown
 
 import (
 	"testing"

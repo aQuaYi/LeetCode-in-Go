@@ -1,4 +1,4 @@
-package JumpGame
+package Problem-JumpGame
 
 import (
 	"testing"

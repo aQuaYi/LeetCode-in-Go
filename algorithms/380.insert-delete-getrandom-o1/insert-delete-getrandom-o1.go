@@ -1,2 +1,2 @@
-package InsertDeleteGetRandomO(1)
+package Problem-InsertDeleteGetRandomO(1)
 

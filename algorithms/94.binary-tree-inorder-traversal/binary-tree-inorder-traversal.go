@@ -1,2 +1,2 @@
-package BinaryTreeInorderTraversal
+package Problem-BinaryTreeInorderTraversal
 

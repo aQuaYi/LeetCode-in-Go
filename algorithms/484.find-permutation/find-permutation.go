@@ -1,2 +1,2 @@
-package FindPermutation
+package Problem-FindPermutation
 

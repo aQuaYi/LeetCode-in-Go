@@ -1,4 +1,4 @@
-package GuessNumberHigherorLowerII
+package Problem-GuessNumberHigherorLowerII
 
 import (
 	"testing"

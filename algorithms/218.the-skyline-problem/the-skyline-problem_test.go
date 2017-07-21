@@ -1,4 +1,4 @@
-package TheSkylineProblem
+package Problem-TheSkylineProblem
 
 import (
 	"testing"

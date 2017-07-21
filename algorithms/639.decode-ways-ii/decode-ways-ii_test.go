@@ -1,4 +1,4 @@
-package DecodeWaysII
+package Problem-DecodeWaysII
 
 import (
 	"testing"

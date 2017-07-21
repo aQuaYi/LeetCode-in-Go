@@ -1,4 +1,4 @@
-package SubarraySumEqualsK
+package Problem-SubarraySumEqualsK
 
 import (
 	"testing"

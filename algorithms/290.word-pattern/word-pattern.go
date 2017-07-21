@@ -1,2 +1,2 @@
-package WordPattern
+package Problem-WordPattern
 

@@ -1,4 +1,4 @@
-package Minesweeper
+package Problem-Minesweeper
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package Pow(x,n)
+package Problem-Pow(x,n)
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package MoveZeroes
+package Problem-MoveZeroes
 
 import (
 	"testing"

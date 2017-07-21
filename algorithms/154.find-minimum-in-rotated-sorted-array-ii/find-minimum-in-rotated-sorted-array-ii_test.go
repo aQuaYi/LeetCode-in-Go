@@ -1,4 +1,4 @@
-package FindMinimuminRotatedSortedArrayII
+package Problem-FindMinimuminRotatedSortedArrayII
 
 import (
 	"testing"

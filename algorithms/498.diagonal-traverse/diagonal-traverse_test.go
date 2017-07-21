@@ -1,4 +1,4 @@
-package DiagonalTraverse
+package Problem-DiagonalTraverse
 
 import (
 	"testing"

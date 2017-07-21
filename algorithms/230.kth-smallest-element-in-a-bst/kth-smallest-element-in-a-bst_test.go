@@ -1,4 +1,4 @@
-package KthSmallestElementinaBST
+package Problem-KthSmallestElementinaBST
 
 import (
 	"testing"

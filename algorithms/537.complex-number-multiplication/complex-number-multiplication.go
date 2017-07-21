@@ -1,2 +1,2 @@
-package ComplexNumberMultiplication
+package Problem-ComplexNumberMultiplication
 

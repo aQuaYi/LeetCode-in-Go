@@ -1,4 +1,4 @@
-package MaximumVacationDays
+package Problem-MaximumVacationDays
 
 import (
 	"testing"

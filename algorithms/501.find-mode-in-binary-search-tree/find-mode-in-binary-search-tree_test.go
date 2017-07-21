@@ -1,4 +1,4 @@
-package FindModeinBinarySearchTree
+package Problem-FindModeinBinarySearchTree
 
 import (
 	"testing"

@@ -1,2 +1,2 @@
-package MedianofTwoSortedArrays
+package Problem-MedianofTwoSortedArrays
 

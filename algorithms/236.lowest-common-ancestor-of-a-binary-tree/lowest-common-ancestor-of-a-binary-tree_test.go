@@ -1,4 +1,4 @@
-package LowestCommonAncestorofaBinaryTree
+package Problem-LowestCommonAncestorofaBinaryTree
 
 import (
 	"testing"

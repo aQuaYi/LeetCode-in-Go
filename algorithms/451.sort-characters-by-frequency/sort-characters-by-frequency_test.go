@@ -1,4 +1,4 @@
-package SortCharactersByFrequency
+package Problem-SortCharactersByFrequency
 
 import (
 	"testing"

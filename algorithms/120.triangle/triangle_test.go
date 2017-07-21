@@ -1,4 +1,4 @@
-package Triangle
+package Problem-Triangle
 
 import (
 	"testing"

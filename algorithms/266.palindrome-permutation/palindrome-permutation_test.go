@@ -1,4 +1,4 @@
-package PalindromePermutation
+package Problem-PalindromePermutation
 
 import (
 	"testing"

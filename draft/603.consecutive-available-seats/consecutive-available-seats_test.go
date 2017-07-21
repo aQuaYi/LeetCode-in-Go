@@ -1,4 +1,4 @@
-package ConsecutiveAvailableSeats
+package Problem-ConsecutiveAvailableSeats
 
 import (
 	"testing"

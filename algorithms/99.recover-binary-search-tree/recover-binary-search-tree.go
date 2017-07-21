@@ -1,2 +1,2 @@
-package RecoverBinarySearchTree
+package Problem-RecoverBinarySearchTree
 

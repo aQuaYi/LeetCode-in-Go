@@ -1,4 +1,4 @@
-package BeautifulArrangement
+package Problem-BeautifulArrangement
 
 import (
 	"testing"

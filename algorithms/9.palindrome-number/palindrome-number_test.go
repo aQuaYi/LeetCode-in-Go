@@ -1,4 +1,4 @@
-package PalindromeNumber
+package Problem-PalindromeNumber
 
 import (
 	"testing"

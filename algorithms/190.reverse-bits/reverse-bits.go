@@ -1,2 +1,2 @@
-package ReverseBits
+package Problem-ReverseBits
 

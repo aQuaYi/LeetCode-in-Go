@@ -1,4 +1,4 @@
-package ValidSudoku
+package Problem-ValidSudoku
 
 import (
 	"testing"

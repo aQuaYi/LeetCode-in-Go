@@ -1,4 +1,4 @@
-package NumberComplement
+package Problem-NumberComplement
 
 import (
 	"testing"

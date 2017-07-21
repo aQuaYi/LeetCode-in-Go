@@ -1,2 +1,2 @@
-package SplitConcatenatedStrings
+package Problem-SplitConcatenatedStrings
 

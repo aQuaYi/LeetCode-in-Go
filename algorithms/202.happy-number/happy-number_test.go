@@ -1,4 +1,4 @@
-package HappyNumber
+package Problem-HappyNumber
 
 import (
 	"testing"

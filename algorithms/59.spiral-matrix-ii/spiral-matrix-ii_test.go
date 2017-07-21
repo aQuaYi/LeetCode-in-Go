@@ -1,4 +1,4 @@
-package SpiralMatrixII
+package Problem-SpiralMatrixII
 
 import (
 	"testing"

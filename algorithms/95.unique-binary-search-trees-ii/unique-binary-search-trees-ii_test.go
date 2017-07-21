@@ -1,4 +1,4 @@
-package UniqueBinarySearchTreesII
+package Problem-UniqueBinarySearchTreesII
 
 import (
 	"testing"

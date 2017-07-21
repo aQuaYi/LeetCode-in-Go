@@ -1,4 +1,4 @@
-package ShortestPalindrome
+package Problem-ShortestPalindrome
 
 import (
 	"testing"

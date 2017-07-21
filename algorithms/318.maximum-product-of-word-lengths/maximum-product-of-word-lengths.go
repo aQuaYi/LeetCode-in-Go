@@ -1,2 +1,2 @@
-package MaximumProductofWordLengths
+package Problem-MaximumProductofWordLengths
 

@@ -1,4 +1,4 @@
-package IntegertoRoman
+package Problem-IntegertoRoman
 
 import (
 	"testing"

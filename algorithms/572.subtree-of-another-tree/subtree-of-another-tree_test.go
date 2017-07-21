@@ -1,4 +1,4 @@
-package SubtreeofAnotherTree
+package Problem-SubtreeofAnotherTree
 
 import (
 	"testing"

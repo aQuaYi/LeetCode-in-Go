@@ -1,2 +1,2 @@
-package CourseScheduleIII
+package Problem-CourseScheduleIII
 

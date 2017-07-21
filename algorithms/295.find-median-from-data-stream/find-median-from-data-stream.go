@@ -1,2 +1,2 @@
-package FindMedianfromDataStream
+package Problem-FindMedianfromDataStream
 

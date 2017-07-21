@@ -1,4 +1,4 @@
-package ConvertSortedListtoBinarySearchTree
+package Problem-ConvertSortedListtoBinarySearchTree
 
 import (
 	"testing"

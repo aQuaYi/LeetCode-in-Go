@@ -1,4 +1,4 @@
-package MaxPointsonaLine
+package Problem-MaxPointsonaLine
 
 import (
 	"testing"

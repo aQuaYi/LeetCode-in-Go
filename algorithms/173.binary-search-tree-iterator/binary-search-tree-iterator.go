@@ -1,2 +1,2 @@
-package BinarySearchTreeIterator
+package Problem-BinarySearchTreeIterator
 

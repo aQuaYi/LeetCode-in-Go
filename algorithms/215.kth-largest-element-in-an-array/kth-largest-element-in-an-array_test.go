@@ -1,4 +1,4 @@
-package KthLargestElementinanArray
+package Problem-KthLargestElementinanArray
 
 import (
 	"testing"

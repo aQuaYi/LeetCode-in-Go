@@ -1,2 +1,2 @@
-package MajorityElement
+package Problem-MajorityElement
 

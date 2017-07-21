@@ -1,2 +1,2 @@
-package PeekingIterator
+package Problem-PeekingIterator
 

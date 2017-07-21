@@ -1,4 +1,4 @@
-package LongestSubstringWithoutRepeatingCharacters
+package Problem-LongestSubstringWithoutRepeatingCharacters
 
 import (
 	"testing"

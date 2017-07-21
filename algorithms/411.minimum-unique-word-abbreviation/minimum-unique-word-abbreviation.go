@@ -1,2 +1,2 @@
-package MinimumUniqueWordAbbreviation
+package Problem-MinimumUniqueWordAbbreviation
 

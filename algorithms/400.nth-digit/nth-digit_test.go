@@ -1,4 +1,4 @@
-package NthDigit
+package Problem-NthDigit
 
 import (
 	"testing"

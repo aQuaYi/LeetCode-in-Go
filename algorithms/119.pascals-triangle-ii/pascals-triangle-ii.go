@@ -1,2 +1,2 @@
-package Pascal'sTriangleII
+package Problem-Pascal'sTriangleII
 

@@ -1,2 +1,2 @@
-package PathSumIII
+package Problem-PathSumIII
 

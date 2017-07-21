@@ -1,2 +1,2 @@
-package IntersectionofTwoLinkedLists
+package Problem-IntersectionofTwoLinkedLists
 

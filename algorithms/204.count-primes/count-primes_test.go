@@ -1,4 +1,4 @@
-package CountPrimes
+package Problem-CountPrimes
 
 import (
 	"testing"

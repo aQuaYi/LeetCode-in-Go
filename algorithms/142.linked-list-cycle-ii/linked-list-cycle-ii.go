@@ -1,2 +1,2 @@
-package LinkedListCycleII
+package Problem-LinkedListCycleII
 

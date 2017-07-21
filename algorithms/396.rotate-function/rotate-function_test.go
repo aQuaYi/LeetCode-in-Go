@@ -1,4 +1,4 @@
-package RotateFunction
+package Problem-RotateFunction
 
 import (
 	"testing"

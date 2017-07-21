@@ -1,2 +1,2 @@
-package ReverseWordsinaString
+package Problem-ReverseWordsinaString
 

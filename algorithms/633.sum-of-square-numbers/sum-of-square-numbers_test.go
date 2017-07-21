@@ -1,4 +1,4 @@
-package SumofSquareNumbers
+package Problem-SumofSquareNumbers
 
 import (
 	"testing"

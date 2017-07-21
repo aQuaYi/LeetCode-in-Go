@@ -1,2 +1,2 @@
-package SameTree
+package Problem-SameTree
 

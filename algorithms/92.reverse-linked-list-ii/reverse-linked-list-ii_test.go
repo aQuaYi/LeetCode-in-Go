@@ -1,4 +1,4 @@
-package ReverseLinkedListII
+package Problem-ReverseLinkedListII
 
 import (
 	"testing"

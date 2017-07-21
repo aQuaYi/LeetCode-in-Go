@@ -1,4 +1,4 @@
-package DiameterofBinaryTree
+package Problem-DiameterofBinaryTree
 
 import (
 	"testing"

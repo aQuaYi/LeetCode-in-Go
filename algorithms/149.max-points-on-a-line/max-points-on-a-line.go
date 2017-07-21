@@ -1,2 +1,2 @@
-package MaxPointsonaLine
+package Problem-MaxPointsonaLine
 

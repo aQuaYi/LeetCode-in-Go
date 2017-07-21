@@ -1,4 +1,4 @@
-package SetMatrixZeroes
+package Problem-SetMatrixZeroes
 
 import (
 	"testing"

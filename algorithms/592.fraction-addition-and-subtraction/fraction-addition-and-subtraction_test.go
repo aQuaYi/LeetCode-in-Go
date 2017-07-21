@@ -1,4 +1,4 @@
-package FractionAdditionandSubtraction
+package Problem-FractionAdditionandSubtraction
 
 import (
 	"testing"

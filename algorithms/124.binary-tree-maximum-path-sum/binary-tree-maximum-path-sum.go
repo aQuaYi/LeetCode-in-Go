@@ -1,2 +1,2 @@
-package BinaryTreeMaximumPathSum
+package Problem-BinaryTreeMaximumPathSum
 

@@ -1,4 +1,4 @@
-package ZumaGame
+package Problem-ZumaGame
 
 import (
 	"testing"

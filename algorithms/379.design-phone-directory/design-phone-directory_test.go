@@ -1,4 +1,4 @@
-package DesignPhoneDirectory
+package Problem-DesignPhoneDirectory
 
 import (
 	"testing"

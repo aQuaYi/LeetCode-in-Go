@@ -1,2 +1,2 @@
-package PalindromeLinkedList
+package Problem-PalindromeLinkedList
 

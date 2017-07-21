@@ -1,2 +1,2 @@
-package RemoveDuplicateLetters
+package Problem-RemoveDuplicateLetters
 

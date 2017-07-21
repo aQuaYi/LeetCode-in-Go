@@ -1,4 +1,4 @@
-package RemoveNthNodeFromEndofList
+package Problem-RemoveNthNodeFromEndofList
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package IntegerReplacement
+package Problem-IntegerReplacement
 
 import (
 	"testing"

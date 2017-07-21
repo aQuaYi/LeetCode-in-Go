@@ -1,2 +1,2 @@
-package GuessNumberHigherorLowerII
+package Problem-GuessNumberHigherorLowerII
 

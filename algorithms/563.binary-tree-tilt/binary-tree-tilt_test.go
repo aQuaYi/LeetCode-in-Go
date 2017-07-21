@@ -1,4 +1,4 @@
-package BinaryTreeTilt
+package Problem-BinaryTreeTilt
 
 import (
 	"testing"

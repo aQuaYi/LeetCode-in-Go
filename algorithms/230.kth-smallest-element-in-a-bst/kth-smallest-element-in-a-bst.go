@@ -1,2 +1,2 @@
-package KthSmallestElementinaBST
+package Problem-KthSmallestElementinaBST
 

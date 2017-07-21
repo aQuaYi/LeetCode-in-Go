@@ -1,4 +1,4 @@
-package ThirdMaximumNumber
+package Problem-ThirdMaximumNumber
 
 import (
 	"testing"

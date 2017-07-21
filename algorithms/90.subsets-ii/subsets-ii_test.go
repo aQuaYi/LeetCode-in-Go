@@ -1,4 +1,4 @@
-package SubsetsII
+package Problem-SubsetsII
 
 import (
 	"testing"

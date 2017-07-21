@@ -1,4 +1,4 @@
-package LongestPalindromicSubsequence
+package Problem-LongestPalindromicSubsequence
 
 import (
 	"testing"

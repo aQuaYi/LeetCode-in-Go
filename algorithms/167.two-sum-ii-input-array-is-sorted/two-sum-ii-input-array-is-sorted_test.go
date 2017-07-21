@@ -1,4 +1,4 @@
-package TwoSumII-Inputarrayissorted
+package Problem-TwoSumII-Inputarrayissorted
 
 import (
 	"testing"

@@ -1,2 +1,2 @@
-package JumpGameII
+package Problem-JumpGameII
 

@@ -1,2 +1,2 @@
-package ValidateBinarySearchTree
+package Problem-ValidateBinarySearchTree
 

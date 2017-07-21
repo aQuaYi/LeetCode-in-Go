@@ -1,4 +1,4 @@
-package LongestIncreasingSubsequence
+package Problem-LongestIncreasingSubsequence
 
 import (
 	"testing"

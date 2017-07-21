@@ -1,2 +1,2 @@
-package LongestAbsoluteFilePath
+package Problem-LongestAbsoluteFilePath
 

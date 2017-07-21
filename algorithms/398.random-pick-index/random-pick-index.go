@@ -1,2 +1,2 @@
-package RandomPickIndex
+package Problem-RandomPickIndex
 

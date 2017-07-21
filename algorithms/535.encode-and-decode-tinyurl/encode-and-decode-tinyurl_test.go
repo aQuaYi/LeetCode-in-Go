@@ -1,4 +1,4 @@
-package EncodeandDecodeTinyURL
+package Problem-EncodeandDecodeTinyURL
 
 import (
 	"testing"

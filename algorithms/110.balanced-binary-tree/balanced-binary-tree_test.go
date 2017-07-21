@@ -1,4 +1,4 @@
-package BalancedBinaryTree
+package Problem-BalancedBinaryTree
 
 import (
 	"testing"

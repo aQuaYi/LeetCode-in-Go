@@ -1,4 +1,4 @@
-package DetectCapital
+package Problem-DetectCapital
 
 import (
 	"testing"

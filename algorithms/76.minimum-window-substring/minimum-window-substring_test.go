@@ -1,4 +1,4 @@
-package MinimumWindowSubstring
+package Problem-MinimumWindowSubstring
 
 import (
 	"testing"

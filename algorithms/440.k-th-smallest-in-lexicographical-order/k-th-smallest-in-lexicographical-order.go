@@ -1,2 +1,2 @@
-package K-thSmallestinLexicographicalOrder
+package Problem-K-thSmallestinLexicographicalOrder
 

@@ -1,2 +1,2 @@
-package MinimumIndexSumofTwoLists
+package Problem-MinimumIndexSumofTwoLists
 

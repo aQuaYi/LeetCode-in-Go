@@ -1,2 +1,2 @@
-package ReversePairs
+package Problem-ReversePairs
 

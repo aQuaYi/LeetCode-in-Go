@@ -1,4 +1,4 @@
-package LinkedListCycle
+package Problem-LinkedListCycle
 
 import (
 	"testing"

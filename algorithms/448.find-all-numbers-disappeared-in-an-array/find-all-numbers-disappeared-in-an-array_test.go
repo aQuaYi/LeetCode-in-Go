@@ -1,4 +1,4 @@
-package FindAllNumbersDisappearedinanArray
+package Problem-FindAllNumbersDisappearedinanArray
 
 import (
 	"testing"

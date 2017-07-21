@@ -1,2 +1,2 @@
-package GrayCode
+package Problem-GrayCode
 

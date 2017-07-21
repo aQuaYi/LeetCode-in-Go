@@ -1,2 +1,2 @@
-package ConcatenatedWords
+package Problem-ConcatenatedWords
 

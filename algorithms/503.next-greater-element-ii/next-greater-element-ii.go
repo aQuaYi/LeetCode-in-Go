@@ -1,2 +1,2 @@
-package NextGreaterElementII
+package Problem-NextGreaterElementII
 

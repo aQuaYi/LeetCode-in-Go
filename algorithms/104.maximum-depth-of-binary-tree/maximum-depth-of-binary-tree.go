@@ -1,2 +1,2 @@
-package MaximumDepthofBinaryTree
+package Problem-MaximumDepthofBinaryTree
 

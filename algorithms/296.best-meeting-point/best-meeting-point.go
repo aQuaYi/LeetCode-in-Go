@@ -1,2 +1,2 @@
-package BestMeetingPoint
+package Problem-BestMeetingPoint
 

@@ -1,2 +1,2 @@
-package WordSquares
+package Problem-WordSquares
 

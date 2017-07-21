@@ -1,4 +1,4 @@
-package FlattenBinaryTreetoLinkedList
+package Problem-FlattenBinaryTreetoLinkedList
 
 import (
 	"testing"

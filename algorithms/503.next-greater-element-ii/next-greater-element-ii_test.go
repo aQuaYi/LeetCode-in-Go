@@ -1,4 +1,4 @@
-package NextGreaterElementII
+package Problem-NextGreaterElementII
 
 import (
 	"testing"

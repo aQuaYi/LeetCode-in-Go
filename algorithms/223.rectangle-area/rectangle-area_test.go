@@ -1,4 +1,4 @@
-package RectangleArea
+package Problem-RectangleArea
 
 import (
 	"testing"

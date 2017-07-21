@@ -1,4 +1,4 @@
-package ProductofArrayExceptSelf
+package Problem-ProductofArrayExceptSelf
 
 import (
 	"testing"

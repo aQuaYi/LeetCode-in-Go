@@ -1,4 +1,4 @@
-package IntersectionofTwoLinkedLists
+package Problem-IntersectionofTwoLinkedLists
 
 import (
 	"testing"

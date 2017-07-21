@@ -1,4 +1,4 @@
-package TernaryExpressionParser
+package Problem-TernaryExpressionParser
 
 import (
 	"testing"

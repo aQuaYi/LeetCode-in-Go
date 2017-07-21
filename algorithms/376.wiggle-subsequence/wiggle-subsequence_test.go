@@ -1,4 +1,4 @@
-package WiggleSubsequence
+package Problem-WiggleSubsequence
 
 import (
 	"testing"

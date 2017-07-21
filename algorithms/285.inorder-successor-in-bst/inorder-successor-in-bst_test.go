@@ -1,4 +1,4 @@
-package InorderSuccessorinBST
+package Problem-InorderSuccessorinBST
 
 import (
 	"testing"

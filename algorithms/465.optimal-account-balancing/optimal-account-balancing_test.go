@@ -1,4 +1,4 @@
-package OptimalAccountBalancing
+package Problem-OptimalAccountBalancing
 
 import (
 	"testing"

@@ -1,2 +1,2 @@
-package LongestCommonPrefix
+package Problem-LongestCommonPrefix
 

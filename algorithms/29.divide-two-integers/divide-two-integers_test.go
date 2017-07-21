@@ -1,4 +1,4 @@
-package DivideTwoIntegers
+package Problem-DivideTwoIntegers
 
 import (
 	"testing"

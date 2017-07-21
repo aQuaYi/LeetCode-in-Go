@@ -57,7 +57,7 @@ func creatREADME(p Problem, dir string) {
 
 func creatGo(p Problem, dir string) {
 	packageName := strings.Replace(p.Title, " ", "", -1)
-	fileFormat := `package %s
+	fileFormat := `package Problem-%s
 
 `
 	content := fmt.Sprintf(fileFormat, packageName)
@@ -71,7 +71,7 @@ func creatGo(p Problem, dir string) {
 
 func creatGoTest(p Problem, dir string) {
 	packageName := strings.Replace(p.Title, " ", "", -1)
-	fileFormat := `package %s
+	fileFormat := `package Problem-%s
 
 import (
 	"testing"

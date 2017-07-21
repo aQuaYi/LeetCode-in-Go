@@ -1,2 +1,2 @@
-package LongestHarmoniousSubsequence
+package Problem-LongestHarmoniousSubsequence
 

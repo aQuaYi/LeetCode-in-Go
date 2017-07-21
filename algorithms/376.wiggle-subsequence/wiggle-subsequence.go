@@ -1,2 +1,2 @@
-package WiggleSubsequence
+package Problem-WiggleSubsequence
 

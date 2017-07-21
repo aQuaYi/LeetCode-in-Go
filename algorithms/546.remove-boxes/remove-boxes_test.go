@@ -1,4 +1,4 @@
-package RemoveBoxes
+package Problem-RemoveBoxes
 
 import (
 	"testing"

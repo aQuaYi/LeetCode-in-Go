@@ -1,4 +1,4 @@
-package AlienDictionary
+package Problem-AlienDictionary
 
 import (
 	"testing"

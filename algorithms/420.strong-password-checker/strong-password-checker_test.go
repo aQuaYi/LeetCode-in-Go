@@ -1,4 +1,4 @@
-package StrongPasswordChecker
+package Problem-StrongPasswordChecker
 
 import (
 	"testing"

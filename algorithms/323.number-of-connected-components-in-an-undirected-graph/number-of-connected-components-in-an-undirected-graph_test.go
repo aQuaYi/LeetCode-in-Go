@@ -1,4 +1,4 @@
-package NumberofConnectedComponentsinanUndirectedGraph
+package Problem-NumberofConnectedComponentsinanUndirectedGraph
 
 import (
 	"testing"

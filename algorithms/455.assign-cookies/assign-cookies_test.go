@@ -1,4 +1,4 @@
-package AssignCookies
+package Problem-AssignCookies
 
 import (
 	"testing"

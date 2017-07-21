@@ -1,2 +1,2 @@
-package HammingDistance
+package Problem-HammingDistance
 

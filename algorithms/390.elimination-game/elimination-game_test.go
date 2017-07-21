@@ -1,4 +1,4 @@
-package EliminationGame
+package Problem-EliminationGame
 
 import (
 	"testing"

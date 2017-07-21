@@ -1,4 +1,4 @@
-package PalindromeLinkedList
+package Problem-PalindromeLinkedList
 
 import (
 	"testing"

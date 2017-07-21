@@ -1,2 +1,2 @@
-package FindRightInterval
+package Problem-FindRightInterval
 

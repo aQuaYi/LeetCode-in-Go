@@ -1,2 +1,2 @@
-package FactorialTrailingZeroes
+package Problem-FactorialTrailingZeroes
 

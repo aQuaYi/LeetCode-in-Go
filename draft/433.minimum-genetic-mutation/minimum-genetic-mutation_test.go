@@ -1,4 +1,4 @@
-package MinimumGeneticMutation
+package Problem-MinimumGeneticMutation
 
 import (
 	"testing"

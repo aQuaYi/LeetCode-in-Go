@@ -1,4 +1,4 @@
-package K-thSmallestinLexicographicalOrder
+package Problem-K-thSmallestinLexicographicalOrder
 
 import (
 	"testing"

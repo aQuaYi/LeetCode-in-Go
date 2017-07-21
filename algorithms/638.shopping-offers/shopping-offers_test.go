@@ -1,4 +1,4 @@
-package ShoppingOffers
+package Problem-ShoppingOffers
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package DecodeWays
+package Problem-DecodeWays
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package ReverseWordsinaString
+package Problem-ReverseWordsinaString
 
 import (
 	"testing"

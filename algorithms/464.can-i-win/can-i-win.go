@@ -1,2 +1,2 @@
-package CanIWin
+package Problem-CanIWin
 

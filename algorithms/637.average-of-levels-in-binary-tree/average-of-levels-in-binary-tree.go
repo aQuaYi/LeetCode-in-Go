@@ -1,2 +1,2 @@
-package AverageofLevelsinBinaryTree
+package Problem-AverageofLevelsinBinaryTree
 

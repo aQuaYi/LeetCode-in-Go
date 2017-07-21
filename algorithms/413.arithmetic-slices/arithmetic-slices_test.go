@@ -1,4 +1,4 @@
-package ArithmeticSlices
+package Problem-ArithmeticSlices
 
 import (
 	"testing"

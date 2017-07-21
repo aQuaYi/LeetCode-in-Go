@@ -1,2 +1,2 @@
-package PopulatingNextRightPointersinEachNodeII
+package Problem-PopulatingNextRightPointersinEachNodeII
 

@@ -1,4 +1,4 @@
-package GenerateParentheses
+package Problem-GenerateParentheses
 
 import (
 	"testing"

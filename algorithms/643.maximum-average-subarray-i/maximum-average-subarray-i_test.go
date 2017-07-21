@@ -1,4 +1,4 @@
-package MaximumAverageSubarrayI
+package Problem-MaximumAverageSubarrayI
 
 import (
 	"testing"

@@ -1,2 +1,2 @@
-package MostFrequentSubtreeSum
+package Problem-MostFrequentSubtreeSum
 

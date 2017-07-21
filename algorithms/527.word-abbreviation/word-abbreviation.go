@@ -1,2 +1,2 @@
-package WordAbbreviation
+package Problem-WordAbbreviation
 

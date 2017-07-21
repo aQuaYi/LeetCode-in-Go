@@ -1,4 +1,4 @@
-package BattleshipsinaBoard
+package Problem-BattleshipsinaBoard
 
 import (
 	"testing"

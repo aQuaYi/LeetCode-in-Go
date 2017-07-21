@@ -1,4 +1,4 @@
-package WildcardMatching
+package Problem-WildcardMatching
 
 import (
 	"testing"

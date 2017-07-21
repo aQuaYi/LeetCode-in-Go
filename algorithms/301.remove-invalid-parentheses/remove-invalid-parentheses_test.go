@@ -1,4 +1,4 @@
-package RemoveInvalidParentheses
+package Problem-RemoveInvalidParentheses
 
 import (
 	"testing"

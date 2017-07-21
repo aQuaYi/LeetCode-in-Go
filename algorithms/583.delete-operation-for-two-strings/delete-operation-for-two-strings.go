@@ -1,2 +1,2 @@
-package DeleteOperationforTwoStrings
+package Problem-DeleteOperationforTwoStrings
 

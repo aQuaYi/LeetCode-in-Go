@@ -1,4 +1,4 @@
-package 01Matrix
+package Problem-01Matrix
 
 import (
 	"testing"

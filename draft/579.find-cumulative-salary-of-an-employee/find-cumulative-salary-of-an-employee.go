@@ -1,2 +1,2 @@
-package FindCumulativeSalaryofanEmployee
+package Problem-FindCumulativeSalaryofanEmployee
 

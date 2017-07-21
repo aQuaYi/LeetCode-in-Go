@@ -1,2 +1,2 @@
-package ContainsDuplicate
+package Problem-ContainsDuplicate
 

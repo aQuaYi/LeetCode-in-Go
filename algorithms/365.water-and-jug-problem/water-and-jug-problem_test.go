@@ -1,4 +1,4 @@
-package WaterandJugProblem
+package Problem-WaterandJugProblem
 
 import (
 	"testing"

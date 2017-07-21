@@ -1,4 +1,4 @@
-package HouseRobber
+package Problem-HouseRobber
 
 import (
 	"testing"

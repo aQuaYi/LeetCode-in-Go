@@ -1,2 +1,2 @@
-package MinStack
+package Problem-MinStack
 

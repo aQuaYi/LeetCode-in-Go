@@ -1,2 +1,2 @@
-package OptimalDivision
+package Problem-OptimalDivision
 

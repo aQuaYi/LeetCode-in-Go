@@ -1,4 +1,4 @@
-package FindPermutation
+package Problem-FindPermutation
 
 import (
 	"testing"

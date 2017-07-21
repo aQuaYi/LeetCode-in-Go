@@ -1,4 +1,4 @@
-package WordLadder
+package Problem-WordLadder
 
 import (
 	"testing"

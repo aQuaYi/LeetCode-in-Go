@@ -1,4 +1,4 @@
-package FriendCircles
+package Problem-FriendCircles
 
 import (
 	"testing"

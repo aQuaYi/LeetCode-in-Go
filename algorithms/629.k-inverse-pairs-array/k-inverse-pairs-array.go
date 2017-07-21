@@ -1,2 +1,2 @@
-package KInversePairsArray
+package Problem-KInversePairsArray
 

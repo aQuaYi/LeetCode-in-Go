@@ -1,2 +1,2 @@
-package FindAllAnagramsinaString
+package Problem-FindAllAnagramsinaString
 

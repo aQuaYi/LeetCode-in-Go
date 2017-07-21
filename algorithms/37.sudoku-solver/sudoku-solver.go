@@ -1,2 +1,2 @@
-package SudokuSolver
+package Problem-SudokuSolver
 

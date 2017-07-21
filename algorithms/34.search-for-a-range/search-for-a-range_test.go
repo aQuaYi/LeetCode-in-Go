@@ -1,4 +1,4 @@
-package SearchforaRange
+package Problem-SearchforaRange
 
 import (
 	"testing"

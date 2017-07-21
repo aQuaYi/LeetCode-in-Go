@@ -1,2 +1,2 @@
-package DesignSnakeGame
+package Problem-DesignSnakeGame
 

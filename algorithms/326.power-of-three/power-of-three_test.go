@@ -1,4 +1,4 @@
-package PowerofThree
+package Problem-PowerofThree
 
 import (
 	"testing"

@@ -1,2 +1,2 @@
-package BeautifulArrangement
+package Problem-BeautifulArrangement
 

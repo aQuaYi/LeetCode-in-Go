@@ -1,4 +1,4 @@
-package ValidAnagram
+package Problem-ValidAnagram
 
 import (
 	"testing"

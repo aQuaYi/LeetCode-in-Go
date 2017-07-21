@@ -1,4 +1,4 @@
-package PerfectNumber
+package Problem-PerfectNumber
 
 import (
 	"testing"

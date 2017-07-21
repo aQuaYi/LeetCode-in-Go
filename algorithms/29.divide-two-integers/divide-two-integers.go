@@ -1,2 +1,2 @@
-package DivideTwoIntegers
+package Problem-DivideTwoIntegers
 

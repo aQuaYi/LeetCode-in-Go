@@ -1,4 +1,4 @@
-package WordBreak
+package Problem-WordBreak
 
 import (
 	"testing"

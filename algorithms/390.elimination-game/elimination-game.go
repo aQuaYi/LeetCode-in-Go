@@ -1,2 +1,2 @@
-package EliminationGame
+package Problem-EliminationGame
 

@@ -1,2 +1,2 @@
-package ContiguousArray
+package Problem-ContiguousArray
 

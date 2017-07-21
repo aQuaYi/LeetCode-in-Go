@@ -1,2 +1,2 @@
-package FrogJump
+package Problem-FrogJump
 

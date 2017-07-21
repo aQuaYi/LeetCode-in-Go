@@ -1,2 +1,2 @@
-package Flatten2DVector
+package Problem-Flatten2DVector
 

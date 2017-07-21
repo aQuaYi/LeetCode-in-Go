@@ -1,2 +1,2 @@
-package LongestSubstringWithoutRepeatingCharacters
+package Problem-LongestSubstringWithoutRepeatingCharacters
 

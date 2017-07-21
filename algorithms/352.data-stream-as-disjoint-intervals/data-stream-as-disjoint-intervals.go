@@ -1,2 +1,2 @@
-package DataStreamasDisjointIntervals
+package Problem-DataStreamasDisjointIntervals
 

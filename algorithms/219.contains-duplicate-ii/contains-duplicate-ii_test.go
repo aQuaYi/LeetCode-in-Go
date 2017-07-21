@@ -1,4 +1,4 @@
-package ContainsDuplicateII
+package Problem-ContainsDuplicateII
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package FindtheDuplicateNumber
+package Problem-FindtheDuplicateNumber
 
 import (
 	"testing"

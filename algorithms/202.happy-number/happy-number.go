@@ -1,2 +1,2 @@
-package HappyNumber
+package Problem-HappyNumber
 

@@ -1,4 +1,4 @@
-package IsSubsequence
+package Problem-IsSubsequence
 
 import (
 	"testing"

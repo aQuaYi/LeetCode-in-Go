@@ -1,2 +1,2 @@
-package MaxSumofRectangleNoLargerThanK
+package Problem-MaxSumofRectangleNoLargerThanK
 

@@ -1,2 +1,2 @@
-package NumberofDigitOne
+package Problem-NumberofDigitOne
 

@@ -1,2 +1,2 @@
-package ReverseInteger
+package Problem-ReverseInteger
 

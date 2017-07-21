@@ -1,4 +1,4 @@
-package ArrayNesting
+package Problem-ArrayNesting
 
 import (
 	"testing"

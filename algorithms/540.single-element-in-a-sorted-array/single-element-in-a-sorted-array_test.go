@@ -1,4 +1,4 @@
-package SingleElementinaSortedArray
+package Problem-SingleElementinaSortedArray
 
 import (
 	"testing"

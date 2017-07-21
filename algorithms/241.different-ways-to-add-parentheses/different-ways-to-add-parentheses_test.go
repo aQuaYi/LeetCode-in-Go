@@ -1,4 +1,4 @@
-package DifferentWaystoAddParentheses
+package Problem-DifferentWaystoAddParentheses
 
 import (
 	"testing"

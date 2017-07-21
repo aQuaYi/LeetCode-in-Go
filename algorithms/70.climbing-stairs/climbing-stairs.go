@@ -1,2 +1,2 @@
-package ClimbingStairs
+package Problem-ClimbingStairs
 

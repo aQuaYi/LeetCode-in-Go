@@ -1,2 +1,2 @@
-package SearchforaRange
+package Problem-SearchforaRange
 

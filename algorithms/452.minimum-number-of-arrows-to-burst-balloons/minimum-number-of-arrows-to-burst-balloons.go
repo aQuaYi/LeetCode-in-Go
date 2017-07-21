@@ -1,2 +1,2 @@
-package MinimumNumberofArrowstoBurstBalloons
+package Problem-MinimumNumberofArrowstoBurstBalloons
 

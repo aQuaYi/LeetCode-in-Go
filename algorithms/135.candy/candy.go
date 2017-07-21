@@ -1,2 +1,2 @@
-package Candy
+package Problem-Candy
 

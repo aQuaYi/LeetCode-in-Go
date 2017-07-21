@@ -1,4 +1,4 @@
-package AddBoldTaginString
+package Problem-AddBoldTaginString
 
 import (
 	"testing"

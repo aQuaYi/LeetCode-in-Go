@@ -1,4 +1,4 @@
-package FindMedianfromDataStream
+package Problem-FindMedianfromDataStream
 
 import (
 	"testing"

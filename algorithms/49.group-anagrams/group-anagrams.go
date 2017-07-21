@@ -1,2 +1,2 @@
-package GroupAnagrams
+package Problem-GroupAnagrams
 

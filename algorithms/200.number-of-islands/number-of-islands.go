@@ -1,2 +1,2 @@
-package NumberofIslands
+package Problem-NumberofIslands
 

@@ -1,2 +1,2 @@
-package DiagonalTraverse
+package Problem-DiagonalTraverse
 

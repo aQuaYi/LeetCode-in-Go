@@ -1,2 +1,2 @@
-package GetHighestAnswerRateQuestion
+package Problem-GetHighestAnswerRateQuestion
 

@@ -1,2 +1,2 @@
-package LargestPalindromeProduct
+package Problem-LargestPalindromeProduct
 

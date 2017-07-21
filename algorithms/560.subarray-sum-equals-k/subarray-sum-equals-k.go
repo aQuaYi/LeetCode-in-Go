@@ -1,2 +1,2 @@
-package SubarraySumEqualsK
+package Problem-SubarraySumEqualsK
 

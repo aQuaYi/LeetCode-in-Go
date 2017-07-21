@@ -1,2 +1,2 @@
-package AddDigits
+package Problem-AddDigits
 

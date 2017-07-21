@@ -1,4 +1,4 @@
-package BinaryTreeZigzagLevelOrderTraversal
+package Problem-BinaryTreeZigzagLevelOrderTraversal
 
 import (
 	"testing"

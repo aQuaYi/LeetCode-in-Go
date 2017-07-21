@@ -1,4 +1,4 @@
-package WordSearch
+package Problem-WordSearch
 
 import (
 	"testing"

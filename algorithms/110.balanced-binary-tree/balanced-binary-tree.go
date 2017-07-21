@@ -1,2 +1,2 @@
-package BalancedBinaryTree
+package Problem-BalancedBinaryTree
 

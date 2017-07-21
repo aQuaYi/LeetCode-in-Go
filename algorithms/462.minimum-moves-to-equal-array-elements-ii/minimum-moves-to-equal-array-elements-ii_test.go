@@ -1,4 +1,4 @@
-package MinimumMovestoEqualArrayElementsII
+package Problem-MinimumMovestoEqualArrayElementsII
 
 import (
 	"testing"

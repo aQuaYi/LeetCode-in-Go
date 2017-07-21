@@ -1,2 +1,2 @@
-package DistributeCandies
+package Problem-DistributeCandies
 

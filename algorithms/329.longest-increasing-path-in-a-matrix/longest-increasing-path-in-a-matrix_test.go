@@ -1,4 +1,4 @@
-package LongestIncreasingPathinaMatrix
+package Problem-LongestIncreasingPathinaMatrix
 
 import (
 	"testing"

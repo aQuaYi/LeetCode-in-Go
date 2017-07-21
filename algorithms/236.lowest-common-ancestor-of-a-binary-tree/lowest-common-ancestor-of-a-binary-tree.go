@@ -1,2 +1,2 @@
-package LowestCommonAncestorofaBinaryTree
+package Problem-LowestCommonAncestorofaBinaryTree
 

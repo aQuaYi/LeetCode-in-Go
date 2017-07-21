@@ -1,2 +1,2 @@
-package OutofBoundaryPaths
+package Problem-OutofBoundaryPaths
 

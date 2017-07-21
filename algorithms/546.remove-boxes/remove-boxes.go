@@ -1,2 +1,2 @@
-package RemoveBoxes
+package Problem-RemoveBoxes
 

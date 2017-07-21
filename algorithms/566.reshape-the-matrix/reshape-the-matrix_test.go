@@ -1,4 +1,4 @@
-package ReshapetheMatrix
+package Problem-ReshapetheMatrix
 
 import (
 	"testing"

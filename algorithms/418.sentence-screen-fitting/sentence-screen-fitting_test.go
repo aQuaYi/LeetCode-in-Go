@@ -1,4 +1,4 @@
-package SentenceScreenFitting
+package Problem-SentenceScreenFitting
 
 import (
 	"testing"

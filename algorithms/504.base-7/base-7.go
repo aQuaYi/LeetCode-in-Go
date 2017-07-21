@@ -1,2 +1,2 @@
-package Base7
+package Problem-Base7
 

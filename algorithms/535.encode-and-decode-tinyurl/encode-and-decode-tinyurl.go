@@ -1,2 +1,2 @@
-package EncodeandDecodeTinyURL
+package Problem-EncodeandDecodeTinyURL
 

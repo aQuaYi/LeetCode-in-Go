@@ -1,2 +1,2 @@
-package ScrambleString
+package Problem-ScrambleString
 

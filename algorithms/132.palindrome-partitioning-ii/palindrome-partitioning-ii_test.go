@@ -1,4 +1,4 @@
-package PalindromePartitioningII
+package Problem-PalindromePartitioningII
 
 import (
 	"testing"

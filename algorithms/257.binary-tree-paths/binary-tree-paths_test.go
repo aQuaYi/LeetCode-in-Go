@@ -1,4 +1,4 @@
-package BinaryTreePaths
+package Problem-BinaryTreePaths
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package Sqrt(x)
+package Problem-Sqrt(x)
 
 import (
 	"testing"

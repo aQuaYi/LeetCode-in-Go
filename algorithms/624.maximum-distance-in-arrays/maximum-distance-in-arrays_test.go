@@ -1,4 +1,4 @@
-package MaximumDistanceinArrays
+package Problem-MaximumDistanceinArrays
 
 import (
 	"testing"

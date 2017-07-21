@@ -1,2 +1,2 @@
-package TwoSumII-Inputarrayissorted
+package Problem-TwoSumII-Inputarrayissorted
 

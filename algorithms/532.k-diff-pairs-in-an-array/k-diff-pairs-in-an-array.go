@@ -1,2 +1,2 @@
-package K-diffPairsinanArray
+package Problem-K-diffPairsinanArray
 

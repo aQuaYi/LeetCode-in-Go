@@ -1,2 +1,2 @@
-package ImplementTrie(PrefixTree)
+package Problem-ImplementTrie(PrefixTree)
 

@@ -1,4 +1,4 @@
-package SerializeandDeserializeBST
+package Problem-SerializeandDeserializeBST
 
 import (
 	"testing"

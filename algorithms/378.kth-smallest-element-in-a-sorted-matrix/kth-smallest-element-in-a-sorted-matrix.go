@@ -1,2 +1,2 @@
-package KthSmallestElementinaSortedMatrix
+package Problem-KthSmallestElementinaSortedMatrix
 

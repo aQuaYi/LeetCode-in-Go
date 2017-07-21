@@ -1,2 +1,2 @@
-package FlattenBinaryTreetoLinkedList
+package Problem-FlattenBinaryTreetoLinkedList
 

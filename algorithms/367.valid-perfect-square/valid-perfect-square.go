@@ -1,2 +1,2 @@
-package ValidPerfectSquare
+package Problem-ValidPerfectSquare
 

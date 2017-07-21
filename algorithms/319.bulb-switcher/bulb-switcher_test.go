@@ -1,4 +1,4 @@
-package BulbSwitcher
+package Problem-BulbSwitcher
 
 import (
 	"testing"

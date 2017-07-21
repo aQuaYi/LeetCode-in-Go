@@ -1,4 +1,4 @@
-package RemoveDuplicateLetters
+package Problem-RemoveDuplicateLetters
 
 import (
 	"testing"

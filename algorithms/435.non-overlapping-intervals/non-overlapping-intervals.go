@@ -1,2 +1,2 @@
-package Non-overlappingIntervals
+package Problem-Non-overlappingIntervals
 

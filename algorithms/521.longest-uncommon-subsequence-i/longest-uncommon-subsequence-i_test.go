@@ -1,4 +1,4 @@
-package LongestUncommonSubsequenceI
+package Problem-LongestUncommonSubsequenceI
 
 import (
 	"testing"

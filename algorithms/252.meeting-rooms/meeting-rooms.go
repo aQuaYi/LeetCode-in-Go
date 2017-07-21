@@ -1,2 +1,2 @@
-package MeetingRooms
+package Problem-MeetingRooms
 

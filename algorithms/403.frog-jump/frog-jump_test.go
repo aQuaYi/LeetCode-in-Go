@@ -1,4 +1,4 @@
-package FrogJump
+package Problem-FrogJump
 
 import (
 	"testing"

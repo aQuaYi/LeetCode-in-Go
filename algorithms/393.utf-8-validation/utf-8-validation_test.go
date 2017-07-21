@@ -1,4 +1,4 @@
-package UTF-8Validation
+package Problem-UTF-8Validation
 
 import (
 	"testing"

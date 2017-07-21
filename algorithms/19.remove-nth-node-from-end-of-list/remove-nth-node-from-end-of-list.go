@@ -1,2 +1,2 @@
-package RemoveNthNodeFromEndofList
+package Problem-RemoveNthNodeFromEndofList
 

@@ -1,2 +1,2 @@
-package MiniParser
+package Problem-MiniParser
 

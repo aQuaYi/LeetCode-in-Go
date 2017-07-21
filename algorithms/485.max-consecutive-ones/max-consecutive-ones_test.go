@@ -1,4 +1,4 @@
-package MaxConsecutiveOnes
+package Problem-MaxConsecutiveOnes
 
 import (
 	"testing"

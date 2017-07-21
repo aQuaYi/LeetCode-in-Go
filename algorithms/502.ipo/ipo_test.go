@@ -1,4 +1,4 @@
-package IPO
+package Problem-IPO
 
 import (
 	"testing"

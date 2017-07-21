@@ -1,2 +1,2 @@
-package BinaryTreePaths
+package Problem-BinaryTreePaths
 

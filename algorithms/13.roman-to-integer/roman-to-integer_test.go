@@ -1,4 +1,4 @@
-package RomantoInteger
+package Problem-RomantoInteger
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package QueueReconstructionbyHeight
+package Problem-QueueReconstructionbyHeight
 
 import (
 	"testing"

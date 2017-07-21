@@ -1,4 +1,4 @@
-package ExcelSheetColumnNumber
+package Problem-ExcelSheetColumnNumber
 
 import (
 	"testing"

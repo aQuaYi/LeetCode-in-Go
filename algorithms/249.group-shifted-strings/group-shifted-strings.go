@@ -1,2 +1,2 @@
-package GroupShiftedStrings
+package Problem-GroupShiftedStrings
 

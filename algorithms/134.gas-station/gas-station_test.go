@@ -1,4 +1,4 @@
-package GasStation
+package Problem-GasStation
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package SortColors
+package Problem-SortColors
 
 import (
 	"testing"

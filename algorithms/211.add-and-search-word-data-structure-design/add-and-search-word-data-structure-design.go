@@ -1,2 +1,2 @@
-package AddandSearchWord-Datastructuredesign
+package Problem-AddandSearchWord-Datastructuredesign
 

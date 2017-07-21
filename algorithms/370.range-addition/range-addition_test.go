@@ -1,4 +1,4 @@
-package RangeAddition
+package Problem-RangeAddition
 
 import (
 	"testing"

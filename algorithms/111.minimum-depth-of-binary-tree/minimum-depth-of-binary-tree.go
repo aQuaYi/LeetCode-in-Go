@@ -1,2 +1,2 @@
-package MinimumDepthofBinaryTree
+package Problem-MinimumDepthofBinaryTree
 

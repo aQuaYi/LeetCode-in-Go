@@ -1,4 +1,4 @@
-package BinaryWatch
+package Problem-BinaryWatch
 
 import (
 	"testing"

@@ -1,2 +1,2 @@
-package DesignHitCounter
+package Problem-DesignHitCounter
 

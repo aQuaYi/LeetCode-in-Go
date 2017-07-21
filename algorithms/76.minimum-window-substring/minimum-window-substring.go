@@ -1,2 +1,2 @@
-package MinimumWindowSubstring
+package Problem-MinimumWindowSubstring
 

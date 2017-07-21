@@ -1,4 +1,4 @@
-package MinimumDepthofBinaryTree
+package Problem-MinimumDepthofBinaryTree
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package Non-negativeIntegerswithoutConsecutiveOnes
+package Problem-Non-negativeIntegerswithoutConsecutiveOnes
 
 import (
 	"testing"

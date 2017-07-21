@@ -1,4 +1,4 @@
-package MeetingRoomsII
+package Problem-MeetingRoomsII
 
 import (
 	"testing"

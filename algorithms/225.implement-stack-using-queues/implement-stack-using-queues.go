@@ -1,2 +1,2 @@
-package ImplementStackusingQueues
+package Problem-ImplementStackusingQueues
 

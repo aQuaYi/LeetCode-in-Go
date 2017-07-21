@@ -1,4 +1,4 @@
-package NumberofDigitOne
+package Problem-NumberofDigitOne
 
 import (
 	"testing"

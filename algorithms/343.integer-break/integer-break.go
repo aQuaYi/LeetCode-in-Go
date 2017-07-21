@@ -1,2 +1,2 @@
-package IntegerBreak
+package Problem-IntegerBreak
 

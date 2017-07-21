@@ -1,4 +1,4 @@
-package BasicCalculator
+package Problem-BasicCalculator
 
 import (
 	"testing"

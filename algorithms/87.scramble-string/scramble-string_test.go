@@ -1,4 +1,4 @@
-package ScrambleString
+package Problem-ScrambleString
 
 import (
 	"testing"
