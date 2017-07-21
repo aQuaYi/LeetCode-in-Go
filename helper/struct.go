@@ -238,9 +238,9 @@ func (s Solved) String() string {
 }
 
 var degrees = map[int]string{
-	1: `:star:`,
-	2: `:star::star:`,
-	3: `:star::star::star:`,
+	1: `★`,
+	2: `★★`,
+	3: `★★★`,
 }
 
 func makeSolved(p Problem, dir string) Solved {
