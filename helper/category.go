@@ -86,6 +86,7 @@ func (c *Category) analysis() Solveds {
 	return res
 }
 
+// Category 保存种类信息
 type Category struct {
 	Name     string `json:"category_slug"`
 	User     string `json:"user_name"`
@@ -100,6 +101,7 @@ type Category struct {
 	Problems []*Problem `json:"stat_status_pairs"`
 }
 
+// Categories 收集各个种类的信息
 type Categories []*Category
 
 func (cs Categories) String() string {

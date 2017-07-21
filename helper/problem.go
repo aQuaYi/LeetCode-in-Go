@@ -94,6 +94,7 @@ func Test_ok(t *testing.T) {
 	}
 }
 
+// Problem 保存单个问题的信息
 type Problem struct {
 	Status     string `json:"status"`
 	State      `json:"stat"`
@@ -101,6 +102,7 @@ type Problem struct {
 	Difficulty `json:"difficulty"`
 }
 
+// State 保存单个问题的解答状态
 type State struct {
 	Title     string `json:"question__title"`
 	TitleSlug string `json:"question__title_slug"`
@@ -111,6 +113,7 @@ type State struct {
 	PassRate  string
 }
 
+// Difficulty 问题的难度
 type Difficulty struct {
 	Level int `json:"level"`
 }
@@ -148,6 +151,7 @@ func makeSolved(p Problem, dir string) Solved {
 	}
 }
 
+// Solveds 保存所有已经解答的问题
 type Solveds []Solved
 
 func (ss Solveds) Len() int {
