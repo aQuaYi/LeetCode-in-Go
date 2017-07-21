@@ -3,7 +3,9 @@ package main
 import (
 	"fmt"
 )
-
+const (
+	USER = "aQuaYi"
+)
 func main() {
 	categories := []string{
 		"algorithms",
@@ -14,5 +16,7 @@ func main() {
 		"operating-system",
 	}
 
-	fmt.Println(categories)
+	j := getJSON(url(categories[1]))
+
+	fmt.Println(string(j))
 }
