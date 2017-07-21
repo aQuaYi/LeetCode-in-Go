@@ -13,20 +13,20 @@ const (
 func main() {
 	categories := []string{
 		"algorithms",
-		"shell",
-		"draft",
 		"database",
-		"system-design",
+		"draft",
 		"operating-system",
+		"shell",
+		"system-design",
 	}
 
-	s := Solveds{}
+	solve := Solveds{}
 
 	for i := range categories {
 		j := getJSON(url(categories[i]))
 		c := getCategory(j)
-		s = append(s, c.run()...)
+		solve = append(solve, c.run()...)
 	}
 
-	fmt.Println(s)
+	fmt.Println(solve)
 }

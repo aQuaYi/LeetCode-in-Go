@@ -41,7 +41,6 @@ func (c *Category) compute() {
 		}
 
 		p.PassRate = fmt.Sprintf("%d%%", 100*p.ACs/p.Submitted)
-		fmt.Println(p.PassRate, p)
 	}
 
 	// 统计AC的总数
