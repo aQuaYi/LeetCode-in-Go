@@ -13,30 +13,31 @@ const (
 func main() {
 	categories := []string{
 		"algorithms",
-		"database",
+		// "database",
 		"draft",
-		"operating-system",
-		"shell",
-		"system-design",
+		// "operating-system",
+		// "shell",
+		// "system-design",
 	}
 
-	solve := Solveds{}
+	solvedProblems := Solveds{}
 	cs := Categorys{}
 	total := &Category{
 		Name: "Total",
 	}
+
 	for i := range categories {
 		j := getJSON(url(categories[i]))
 		c := getCategory(j)
 
-		solve = append(solve, c.run()...)
+		solvedProblems = append(solvedProblems, c.run()...)
 
 		total.update(c)
 		cs = append(cs, c)
 	}
 	cs = append(cs, total)
-	fmt.Println(solve)
+	fmt.Println(solvedProblems)
 	fmt.Println(cs)
 
-	makeREADME(cs, solve)
+	makeREADME(cs, solvedProblems)
 }
