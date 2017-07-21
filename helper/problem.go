@@ -1,77 +1,22 @@
 package main
 
 import (
+	"fmt"
 	"io/ioutil"
 	"log"
-	"syscall"
-
 	"os"
-
-	"fmt"
-
 	"sort"
-
 	"strings"
+	"syscall"
 
 	"github.com/aQuaYi/GoKit"
 )
 
-func (c *Category) run() Solveds {
-	checkUser(c.User)
-	checkDir(c.Name)
-	c.compute()
-	res := c.analysis()
-	fmt.Println(res)
-	return res
-}
-
-// 根据已有的内容，填上空缺字段
-func (c *Category) compute() {
-	for _, p := range c.Problems {
-		// 统计各个难度的题目数量
-		switch p.Difficulty.Level {
-		case 1:
-			c.Easy++
-		case 2:
-			c.Medium++
-		case 3:
-			c.Hard++
-		default:
-			log.Fatalln("出现了第4种难度")
-		}
-
-		p.PassRate = fmt.Sprintf("%d%%", 100*p.ACs/p.Submitted)
-	}
-
-	// 统计AC的总数
-	c.AC = c.ACEasy + c.ACMedium + c.ACHard
-
-	if c.Total != c.Easy+c.Medium+c.Hard {
-		log.Fatalf("%s分类下的各难度题目数量之和，不等于Total", c.Name)
-	}
-}
-
-func (c *Category) analysis() Solveds {
-	res := Solveds{}
-
-	for _, p := range c.Problems {
-		pdir := p.checkDir(c.Name)
-		// 检查处理已经AC的题目
-		if p.Status == "ac" {
-			res = append(res, makeSolved(*p, pdir))
-		}
-	}
-
-	return res
-}
-
 func (p Problem) checkDir(CategoryDir string) string {
 	pDir := fmt.Sprintf("%d.%s", p.ID, p.TitleSlug)
 	dir := fmt.Sprintf("./%s/%s", CategoryDir, pDir)
-	fmt.Println(dir)
 
 	if GoKit.Exist(dir) {
-		fmt.Println("存在", dir)
 		return dir
 	}
 
@@ -88,7 +33,6 @@ func (p Problem) checkDir(CategoryDir string) string {
 
 	return dir
 }
-
 func creatREADME(p Problem, dir string) {
 	fileFormat := `# [%s](%s)
 ## 题目
@@ -110,6 +54,7 @@ func creatREADME(p Problem, dir string) {
 		log.Fatal(err)
 	}
 }
+
 func creatGo(p Problem, dir string) {
 	packageName := strings.Replace(p.Title, " ", "", -1)
 	fileFormat := `package %s
@@ -152,53 +97,6 @@ func Test_ok(t *testing.T) {
 	}
 }
 
-type Category struct {
-	Name     string `json:"category_slug"`
-	User     string `json:"user_name"`
-	ACEasy   int    `json:"ac_easy"`
-	ACMedium int    `json:"ac_medium"`
-	ACHard   int    `json:"ac_hard"`
-	AC       int    `json:"num_solved"`
-	Easy     int
-	Medium   int
-	Hard     int
-	Total    int        `json:"num_total"`
-	Problems []*Problem `json:"stat_status_pairs"`
-}
-
-type Categories []*Category
-
-func (cs Categories) String() string {
-	res := fmt.Sprintln("||Easy|Medium|Hard|Total|")
-	res += fmt.Sprintln("|:--|:--:|:--:|:--:|:--:|")
-	for _, c := range cs {
-		res += fmt.Sprintln(c)
-	}
-
-	return res
-}
-
-func (c *Category) update(sub *Category) {
-	c.ACEasy += sub.ACEasy
-	c.ACMedium += sub.ACMedium
-	c.ACHard += sub.ACHard
-	c.AC += sub.AC
-
-	c.Easy += sub.Easy
-	c.Medium += sub.Medium
-	c.Hard += sub.Hard
-	c.Total += sub.Total
-}
-
-func (c *Category) String() string {
-	res := fmt.Sprintf("|%s|", c.Name)
-	res += fmt.Sprintf("%d/%d|", c.ACEasy, c.Easy)
-	res += fmt.Sprintf("%d/%d|", c.ACMedium, c.Medium)
-	res += fmt.Sprintf("%d/%d|", c.ACHard, c.Hard)
-	res += fmt.Sprintf("%d/%d|", c.AC, c.Total)
-	return res
-}
-
 type Problem struct {
 	Status     string `json:"status"`
 	State      `json:"stat"`
@@ -238,13 +136,12 @@ func (s Solved) String() string {
 }
 
 var degrees = map[int]string{
-	1: `★`,
-	2: `★★`,
-	3: `★★★`,
+	1: ` ☆ `,
+	2: ` ☆  ☆ `,
+	3: ` ☆  ☆  ☆ `,
 }
 
 func makeSolved(p Problem, dir string) Solved {
-	fmt.Println("in makeSolved", p.PassRate)
 	return Solved{
 		ID:       p.ID,
 		Title:    p.Title,
@@ -276,25 +173,4 @@ func (ss Solveds) String() string {
 		res += fmt.Sprintln(s)
 	}
 	return res
-}
-
-func checkUser(u string) {
-	if u != USER {
-		log.Fatalln("下载的不是本人的数据，请按照helper的说明文档，重新获取leetcode.cookie")
-	}
-}
-
-func checkDir(dir string) {
-	if GoKit.Exist(dir) {
-		return
-	}
-
-	mask := syscall.Umask(0)
-	defer syscall.Umask(mask)
-	err := os.Mkdir(dir, 0755)
-	if err != nil {
-		log.Fatalf("无法创建文件夹%s", dir)
-	}
-
-	log.Printf("已经创建文件夹%s", dir)
 }

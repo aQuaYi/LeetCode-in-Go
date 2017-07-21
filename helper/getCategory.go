@@ -7,13 +7,20 @@ import (
 	"os/exec"
 )
 
-func getCategory(data []byte) *Category {
+func getCategory(name string) *Category {
+
+	URL := url(name)
+
+	data := getJSON(URL)
+
 	res := new(Category)
 	if err := json.Unmarshal(data, res); err != nil {
 		log.Fatal("无法把json转换成Category")
 	}
+
 	return res
 }
+
 func getJSON(URL string) []byte {
 	log.Printf("开始下载%s的数据", URL)
 	bytes, _ := exec.Command("curl", "-b", "leetcode.cookie", URL).Output()

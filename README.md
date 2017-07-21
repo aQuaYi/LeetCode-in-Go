@@ -3,7 +3,6 @@
 
 [helper](./helper)会帮助处理大部分琐碎的工作。
 
-
 ## 统计
 ||Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
@@ -15,14 +14,14 @@
 ## 已完成的题目
 |题号|题目|难度|通过率|
 |:-:| :-- | :-: | :-: |
-|1|[Two Sum](./algorithms/1.two-sum)|★|34%|
-|2|[Add Two Numbers](./algorithms/2.add-two-numbers)|★★|27%|
-|3|[Longest Substring Without Repeating Characters](./algorithms/3.longest-substring-without-repeating-characters)|★★|24%|
-|4|[Median of Two Sorted Arrays](./algorithms/4.median-of-two-sorted-arrays)|★★★|21%|
-|5|[Longest Palindromic Substring](./algorithms/5.longest-palindromic-substring)|★★|25%|
-|6|[ZigZag Conversion](./algorithms/6.zigzag-conversion)|★★|26%|
-|7|[Reverse Integer](./algorithms/7.reverse-integer)|★|24%|
-|8|[String to Integer (atoi)](./algorithms/8.string-to-integer-atoi)|★★|13%|
-|9|[Palindrome Number](./algorithms/9.palindrome-number)|★|35%|
+|1|[Two Sum](./algorithms/1.two-sum)| ☆ |34%|
+|2|[Add Two Numbers](./algorithms/2.add-two-numbers)| ☆  ☆ |27%|
+|3|[Longest Substring Without Repeating Characters](./algorithms/3.longest-substring-without-repeating-characters)| ☆  ☆ |24%|
+|4|[Median of Two Sorted Arrays](./algorithms/4.median-of-two-sorted-arrays)| ☆  ☆  ☆ |21%|
+|5|[Longest Palindromic Substring](./algorithms/5.longest-palindromic-substring)| ☆  ☆ |25%|
+|6|[ZigZag Conversion](./algorithms/6.zigzag-conversion)| ☆  ☆ |26%|
+|7|[Reverse Integer](./algorithms/7.reverse-integer)| ☆ |24%|
+|8|[String to Integer (atoi)](./algorithms/8.string-to-integer-atoi)| ☆  ☆ |13%|
+|9|[Palindrome Number](./algorithms/9.palindrome-number)| ☆ |35%|
 
 
