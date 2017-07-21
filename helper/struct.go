@@ -166,6 +166,39 @@ type Category struct {
 	Problems []*Problem `json:"stat_status_pairs"`
 }
 
+type Categorys []*Category
+
+func (cs Categorys) String() string {
+	res := fmt.Sprintln("||Easy|Medium|Hard|Total|")
+	res += fmt.Sprintln("|---|---|---|---|---|")
+	for _, c := range cs {
+		res += fmt.Sprintln(c)
+	}
+
+	return res
+}
+
+func (c *Category) update(sub *Category) {
+	c.ACEasy += sub.ACEasy
+	c.ACMedium += sub.ACMedium
+	c.ACHard += sub.ACHard
+	c.AC += sub.AC
+
+	c.Easy += sub.Easy
+	c.Medium += sub.Medium
+	c.Hard += sub.Hard
+	c.Total += sub.Total
+}
+
+func (c *Category) String() string {
+	res := fmt.Sprintf("|%s|", c.Name)
+	res += fmt.Sprintf("%d/%d|", c.ACEasy, c.Easy)
+	res += fmt.Sprintf("%d/%d|", c.ACMedium, c.Medium)
+	res += fmt.Sprintf("%d/%d|", c.ACHard, c.Hard)
+	res += fmt.Sprintf("%d/%d|", c.AC, c.Total)
+	return res
+}
+
 type Problem struct {
 	Status     string `json:"status"`
 	State      `json:"stat"`

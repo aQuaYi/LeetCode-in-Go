@@ -21,12 +21,20 @@ func main() {
 	}
 
 	solve := Solveds{}
-
+	cs := Categorys{}
+	total := &Category{
+		Name: "Total",
+	}
 	for i := range categories {
 		j := getJSON(url(categories[i]))
 		c := getCategory(j)
-		solve = append(solve, c.run()...)
-	}
 
+		solve = append(solve, c.run()...)
+
+		total.update(c)
+		cs = append(cs, c)
+	}
+	cs = append(cs, total)
 	fmt.Println(solve)
+	fmt.Println(cs)
 }
