@@ -1,4 +1,4 @@
-package Problem-SumofTwoIntegers
+package Problem371
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package Problem-PaintHouse
+package Problem256
 
 import (
 	"testing"

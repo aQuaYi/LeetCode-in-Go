@@ -1,2 +1,2 @@
-package Problem-MinimumFactorization
+package Problem625
 

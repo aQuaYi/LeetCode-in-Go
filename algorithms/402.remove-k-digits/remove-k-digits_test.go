@@ -1,4 +1,4 @@
-package Problem-RemoveKDigits
+package Problem402
 
 import (
 	"testing"

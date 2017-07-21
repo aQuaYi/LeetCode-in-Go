@@ -1,2 +1,2 @@
-package Problem-LongestSubstringwithAtMostKDistinctCharacters
+package Problem340
 

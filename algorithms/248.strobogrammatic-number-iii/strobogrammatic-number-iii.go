@@ -1,2 +1,2 @@
-package Problem-StrobogrammaticNumberIII
+package Problem248
 

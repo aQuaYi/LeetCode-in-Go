@@ -1,4 +1,4 @@
-package Problem-RemoveLinkedListElements
+package Problem203
 
 import (
 	"testing"

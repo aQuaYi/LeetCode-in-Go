@@ -1,2 +1,2 @@
-package Problem-MultiplyStrings
+package Problem43
 

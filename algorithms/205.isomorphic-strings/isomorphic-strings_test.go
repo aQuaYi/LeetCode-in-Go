@@ -1,4 +1,4 @@
-package Problem-IsomorphicStrings
+package Problem205
 
 import (
 	"testing"

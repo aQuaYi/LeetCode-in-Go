@@ -1,4 +1,4 @@
-package Problem-TheMaze
+package Problem490
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package Problem-DistinctSubsequences
+package Problem115
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package Problem-LongestConsecutiveSequence
+package Problem128
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package Problem-UniqueSubstringsinWraparoundString
+package Problem467
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package Problem-ShuffleanArray
+package Problem384
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package Problem-AndroidUnlockPatterns
+package Problem351
 
 import (
 	"testing"

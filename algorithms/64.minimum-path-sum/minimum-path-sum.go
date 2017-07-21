@@ -1,2 +1,2 @@
-package Problem-MinimumPathSum
+package Problem64
 

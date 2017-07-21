@@ -1,4 +1,4 @@
-package Problem-SameTree
+package Problem100
 
 import (
 	"testing"

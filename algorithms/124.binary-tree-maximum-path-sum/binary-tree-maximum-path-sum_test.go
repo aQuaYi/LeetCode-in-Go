@@ -1,4 +1,4 @@
-package Problem-BinaryTreeMaximumPathSum
+package Problem124
 
 import (
 	"testing"

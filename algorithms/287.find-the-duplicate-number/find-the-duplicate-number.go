@@ -1,2 +1,2 @@
-package Problem-FindtheDuplicateNumber
+package Problem287
 

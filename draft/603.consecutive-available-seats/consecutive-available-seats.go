@@ -1,2 +1,2 @@
-package Problem-ConsecutiveAvailableSeats
+package Problem603
 

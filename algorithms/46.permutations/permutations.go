@@ -1,2 +1,2 @@
-package Problem-Permutations
+package Problem46
 

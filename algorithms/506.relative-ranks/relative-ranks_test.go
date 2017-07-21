@@ -1,4 +1,4 @@
-package Problem-RelativeRanks
+package Problem506
 
 import (
 	"testing"

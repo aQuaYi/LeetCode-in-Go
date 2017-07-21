@@ -1,4 +1,4 @@
-package Problem-FindDuplicateFileinSystem
+package Problem609
 
 import (
 	"testing"

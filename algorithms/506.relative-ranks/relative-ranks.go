@@ -1,2 +1,2 @@
-package Problem-RelativeRanks
+package Problem506
 

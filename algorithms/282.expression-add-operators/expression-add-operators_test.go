@@ -1,4 +1,4 @@
-package Problem-ExpressionAddOperators
+package Problem282
 
 import (
 	"testing"

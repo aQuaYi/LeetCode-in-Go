@@ -1,2 +1,2 @@
-package Problem-CountPrimes
+package Problem204
 

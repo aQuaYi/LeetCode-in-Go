@@ -1,2 +1,2 @@
-package Problem-PaintHouse
+package Problem256
 

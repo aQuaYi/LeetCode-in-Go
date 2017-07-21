@@ -1,4 +1,4 @@
-package Problem-RearrangeStringkDistanceApart
+package Problem358
 
 import (
 	"testing"

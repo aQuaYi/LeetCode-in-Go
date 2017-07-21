@@ -1,4 +1,4 @@
-package Problem-ReverseLinkedList
+package Problem206
 
 import (
 	"testing"

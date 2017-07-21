@@ -1,4 +1,4 @@
-package Problem-ImplementTrie(PrefixTree)
+package Problem208
 
 import (
 	"testing"

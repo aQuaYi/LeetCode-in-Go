@@ -1,4 +1,4 @@
-package Problem-VerifyPreorderSequenceinBinarySearchTree
+package Problem255
 
 import (
 	"testing"

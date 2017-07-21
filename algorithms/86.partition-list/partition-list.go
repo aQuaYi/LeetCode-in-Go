@@ -1,2 +1,2 @@
-package Problem-PartitionList
+package Problem86
 

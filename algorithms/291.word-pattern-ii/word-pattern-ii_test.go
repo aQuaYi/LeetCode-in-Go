@@ -1,4 +1,4 @@
-package Problem-WordPatternII
+package Problem291
 
 import (
 	"testing"

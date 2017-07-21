@@ -1,2 +1,2 @@
-package Problem-FindModeinBinarySearchTree
+package Problem501
 

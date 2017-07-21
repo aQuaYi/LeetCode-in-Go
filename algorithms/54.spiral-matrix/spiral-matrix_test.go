@@ -1,4 +1,4 @@
-package Problem-SpiralMatrix
+package Problem54
 
 import (
 	"testing"

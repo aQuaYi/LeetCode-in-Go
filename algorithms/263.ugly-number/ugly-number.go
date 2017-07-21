@@ -1,2 +1,2 @@
-package Problem-UglyNumber
+package Problem263
 

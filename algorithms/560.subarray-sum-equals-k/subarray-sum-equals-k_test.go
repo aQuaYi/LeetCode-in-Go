@@ -1,4 +1,4 @@
-package Problem-SubarraySumEqualsK
+package Problem560
 
 import (
 	"testing"

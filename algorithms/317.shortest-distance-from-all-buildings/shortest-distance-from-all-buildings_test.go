@@ -1,4 +1,4 @@
-package Problem-ShortestDistancefromAllBuildings
+package Problem317
 
 import (
 	"testing"

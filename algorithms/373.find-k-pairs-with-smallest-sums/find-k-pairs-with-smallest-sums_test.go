@@ -1,4 +1,4 @@
-package Problem-FindKPairswithSmallestSums
+package Problem373
 
 import (
 	"testing"

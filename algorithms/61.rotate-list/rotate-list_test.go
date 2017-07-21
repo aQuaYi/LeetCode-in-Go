@@ -1,4 +1,4 @@
-package Problem-RotateList
+package Problem61
 
 import (
 	"testing"

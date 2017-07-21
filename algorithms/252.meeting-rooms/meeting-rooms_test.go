@@ -1,4 +1,4 @@
-package Problem-MeetingRooms
+package Problem252
 
 import (
 	"testing"

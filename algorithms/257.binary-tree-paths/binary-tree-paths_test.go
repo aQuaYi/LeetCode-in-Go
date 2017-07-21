@@ -1,4 +1,4 @@
-package Problem-BinaryTreePaths
+package Problem257
 
 import (
 	"testing"

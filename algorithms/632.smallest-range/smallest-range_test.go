@@ -1,4 +1,4 @@
-package Problem-SmallestRange
+package Problem632
 
 import (
 	"testing"

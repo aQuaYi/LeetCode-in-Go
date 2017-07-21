@@ -1,4 +1,4 @@
-package Problem-ReverseNodesink-Group
+package Problem25
 
 import (
 	"testing"

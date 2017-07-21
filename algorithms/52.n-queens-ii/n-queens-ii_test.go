@@ -1,4 +1,4 @@
-package Problem-N-QueensII
+package Problem52
 
 import (
 	"testing"

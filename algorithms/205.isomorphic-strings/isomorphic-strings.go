@@ -1,2 +1,2 @@
-package Problem-IsomorphicStrings
+package Problem205
 

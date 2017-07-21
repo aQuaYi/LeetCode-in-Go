@@ -1,4 +1,4 @@
-package Problem-MinimumNumberofArrowstoBurstBalloons
+package Problem452
 
 import (
 	"testing"

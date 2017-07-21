@@ -1,4 +1,4 @@
-package Problem-SmallestGoodBase
+package Problem483
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package Problem-IPO
+package Problem502
 
 import (
 	"testing"

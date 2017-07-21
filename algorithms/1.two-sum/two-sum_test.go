@@ -1,4 +1,4 @@
-package Problem-TwoSum
+package Problem1
 
 import (
 	"testing"

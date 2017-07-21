@@ -1,4 +1,4 @@
-package Problem-FirstMissingPositive
+package Problem41
 
 import (
 	"testing"

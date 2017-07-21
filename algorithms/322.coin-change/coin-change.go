@@ -1,2 +1,2 @@
-package Problem-CoinChange
+package Problem322
 

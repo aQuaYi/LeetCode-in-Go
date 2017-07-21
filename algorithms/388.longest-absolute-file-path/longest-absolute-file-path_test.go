@@ -1,4 +1,4 @@
-package Problem-LongestAbsoluteFilePath
+package Problem388
 
 import (
 	"testing"

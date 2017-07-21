@@ -1,4 +1,4 @@
-package Problem-FindCumulativeSalaryofanEmployee
+package Problem579
 
 import (
 	"testing"

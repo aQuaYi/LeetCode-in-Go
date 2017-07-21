@@ -1,4 +1,4 @@
-package Problem-Non-overlappingIntervals
+package Problem435
 
 import (
 	"testing"

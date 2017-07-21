@@ -1,4 +1,4 @@
-package Problem-PermutationSequence
+package Problem60
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package Problem-ValidWordSquare
+package Problem422
 
 import (
 	"testing"

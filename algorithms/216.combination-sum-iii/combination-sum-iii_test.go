@@ -1,4 +1,4 @@
-package Problem-CombinationSumIII
+package Problem216
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package Problem-WordSearchII
+package Problem212
 
 import (
 	"testing"

@@ -1,2 +1,2 @@
-package Problem-BeautifulArrangement
+package Problem526
 

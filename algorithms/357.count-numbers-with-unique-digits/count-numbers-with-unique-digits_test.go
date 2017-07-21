@@ -1,4 +1,4 @@
-package Problem-CountNumberswithUniqueDigits
+package Problem357
 
 import (
 	"testing"

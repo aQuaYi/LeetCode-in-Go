@@ -1,4 +1,4 @@
-package Problem-FindtheCelebrity
+package Problem277
 
 import (
 	"testing"

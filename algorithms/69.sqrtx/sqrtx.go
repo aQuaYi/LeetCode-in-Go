@@ -1,2 +1,2 @@
-package Problem-Sqrt(x)
+package Problem69
 

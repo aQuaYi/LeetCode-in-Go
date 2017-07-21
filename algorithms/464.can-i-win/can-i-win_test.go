@@ -1,4 +1,4 @@
-package Problem-CanIWin
+package Problem464
 
 import (
 	"testing"

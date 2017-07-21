@@ -1,4 +1,4 @@
-package Problem-FlattenNestedListIterator
+package Problem341
 
 import (
 	"testing"

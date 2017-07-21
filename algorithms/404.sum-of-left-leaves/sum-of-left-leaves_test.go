@@ -1,4 +1,4 @@
-package Problem-SumofLeftLeaves
+package Problem404
 
 import (
 	"testing"

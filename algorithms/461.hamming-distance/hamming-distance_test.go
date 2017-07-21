@@ -1,4 +1,4 @@
-package Problem-HammingDistance
+package Problem461
 
 import (
 	"testing"

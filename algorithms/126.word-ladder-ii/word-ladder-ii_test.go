@@ -1,4 +1,4 @@
-package Problem-WordLadderII
+package Problem126
 
 import (
 	"testing"

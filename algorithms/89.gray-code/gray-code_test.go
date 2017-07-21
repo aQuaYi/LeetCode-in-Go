@@ -1,4 +1,4 @@
-package Problem-GrayCode
+package Problem89
 
 import (
 	"testing"

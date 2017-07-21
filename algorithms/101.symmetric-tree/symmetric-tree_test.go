@@ -1,4 +1,4 @@
-package Problem-SymmetricTree
+package Problem101
 
 import (
 	"testing"

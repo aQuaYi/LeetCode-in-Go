@@ -1,4 +1,4 @@
-package Problem-GetHighestAnswerRateQuestion
+package Problem578
 
 import (
 	"testing"

@@ -1,2 +1,2 @@
-package Problem-StrongPasswordChecker
+package Problem420
 

@@ -1,4 +1,4 @@
-package Problem-CourseScheduleII
+package Problem210
 
 import (
 	"testing"

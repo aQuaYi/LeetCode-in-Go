@@ -1,4 +1,4 @@
-package Problem-StrobogrammaticNumberIII
+package Problem248
 
 import (
 	"testing"

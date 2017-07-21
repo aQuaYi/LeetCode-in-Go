@@ -1,4 +1,4 @@
-package Problem-ZigzagIterator
+package Problem281
 
 import (
 	"testing"

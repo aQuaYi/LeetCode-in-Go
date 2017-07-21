@@ -1,4 +1,4 @@
-package Problem-TopKFrequentElements
+package Problem347
 
 import (
 	"testing"

@@ -1,2 +1,2 @@
-package Problem-IntersectionofTwoLinkedLists
+package Problem160
 

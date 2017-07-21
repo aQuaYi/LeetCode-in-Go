@@ -1,4 +1,4 @@
-package Problem-ReconstructItinerary
+package Problem332
 
 import (
 	"testing"

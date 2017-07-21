@@ -1,4 +1,4 @@
-package Problem-MinimumPathSum
+package Problem64
 
 import (
 	"testing"

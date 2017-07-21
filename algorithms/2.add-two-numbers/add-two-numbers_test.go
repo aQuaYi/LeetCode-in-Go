@@ -1,4 +1,4 @@
-package Problem-AddTwoNumbers
+package Problem2
 
 import (
 	"testing"

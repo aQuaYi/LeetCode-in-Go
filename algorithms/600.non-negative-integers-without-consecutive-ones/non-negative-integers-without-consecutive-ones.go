@@ -1,2 +1,2 @@
-package Problem-Non-negativeIntegerswithoutConsecutiveOnes
+package Problem600
 

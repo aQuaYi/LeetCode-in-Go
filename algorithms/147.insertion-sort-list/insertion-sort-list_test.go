@@ -1,4 +1,4 @@
-package Problem-InsertionSortList
+package Problem147
 
 import (
 	"testing"

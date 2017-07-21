@@ -1,4 +1,4 @@
-package Problem-FindtheDifference
+package Problem389
 
 import (
 	"testing"

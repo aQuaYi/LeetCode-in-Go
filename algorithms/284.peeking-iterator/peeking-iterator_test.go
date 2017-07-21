@@ -1,4 +1,4 @@
-package Problem-PeekingIterator
+package Problem284
 
 import (
 	"testing"

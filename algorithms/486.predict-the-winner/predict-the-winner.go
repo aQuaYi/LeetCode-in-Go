@@ -1,2 +1,2 @@
-package Problem-PredicttheWinner
+package Problem486
 

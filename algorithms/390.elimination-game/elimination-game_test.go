@@ -1,4 +1,4 @@
-package Problem-EliminationGame
+package Problem390
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package Problem-ValidPalindrome
+package Problem125
 
 import (
 	"testing"

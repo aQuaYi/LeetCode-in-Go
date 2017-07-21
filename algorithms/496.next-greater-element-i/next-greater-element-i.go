@@ -1,2 +1,2 @@
-package Problem-NextGreaterElementI
+package Problem496
 

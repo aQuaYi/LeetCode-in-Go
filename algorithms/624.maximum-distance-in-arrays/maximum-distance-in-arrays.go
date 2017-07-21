@@ -1,2 +1,2 @@
-package Problem-MaximumDistanceinArrays
+package Problem624
 

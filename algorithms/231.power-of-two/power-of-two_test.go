@@ -1,4 +1,4 @@
-package Problem-PowerofTwo
+package Problem231
 
 import (
 	"testing"

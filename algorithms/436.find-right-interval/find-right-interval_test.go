@@ -1,4 +1,4 @@
-package Problem-FindRightInterval
+package Problem436
 
 import (
 	"testing"

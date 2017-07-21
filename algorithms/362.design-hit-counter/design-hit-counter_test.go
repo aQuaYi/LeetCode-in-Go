@@ -1,4 +1,4 @@
-package Problem-DesignHitCounter
+package Problem362
 
 import (
 	"testing"

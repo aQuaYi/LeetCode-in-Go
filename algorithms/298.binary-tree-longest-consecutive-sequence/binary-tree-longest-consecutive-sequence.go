@@ -1,2 +1,2 @@
-package Problem-BinaryTreeLongestConsecutiveSequence
+package Problem298
 

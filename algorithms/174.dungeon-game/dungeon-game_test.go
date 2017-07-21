@@ -1,4 +1,4 @@
-package Problem-DungeonGame
+package Problem174
 
 import (
 	"testing"

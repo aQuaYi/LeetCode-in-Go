@@ -1,4 +1,4 @@
-package Problem-OutofBoundaryPaths
+package Problem576
 
 import (
 	"testing"

@@ -1,2 +1,2 @@
-package Problem-DetectCapital
+package Problem520
 

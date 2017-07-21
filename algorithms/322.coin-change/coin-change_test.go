@@ -1,4 +1,4 @@
-package Problem-CoinChange
+package Problem322
 
 import (
 	"testing"

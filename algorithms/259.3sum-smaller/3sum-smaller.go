@@ -1,2 +1,2 @@
-package Problem-3SumSmaller
+package Problem259
 

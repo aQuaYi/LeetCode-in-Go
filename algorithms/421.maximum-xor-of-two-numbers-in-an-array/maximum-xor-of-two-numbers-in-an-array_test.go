@@ -1,4 +1,4 @@
-package Problem-MaximumXORofTwoNumbersinanArray
+package Problem421
 
 import (
 	"testing"

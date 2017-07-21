@@ -1,2 +1,2 @@
-package Problem-IncreasingTripletSubsequence
+package Problem334
 

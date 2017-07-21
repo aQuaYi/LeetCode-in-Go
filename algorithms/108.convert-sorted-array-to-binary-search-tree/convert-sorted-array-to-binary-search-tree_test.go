@@ -1,4 +1,4 @@
-package Problem-ConvertSortedArraytoBinarySearchTree
+package Problem108
 
 import (
 	"testing"

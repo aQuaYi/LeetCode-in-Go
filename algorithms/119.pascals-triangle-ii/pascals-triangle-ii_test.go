@@ -1,4 +1,4 @@
-package Problem-Pascal'sTriangleII
+package Problem119
 
 import (
 	"testing"

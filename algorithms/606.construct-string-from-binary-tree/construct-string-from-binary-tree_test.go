@@ -1,4 +1,4 @@
-package Problem-ConstructStringfromBinaryTree
+package Problem606
 
 import (
 	"testing"

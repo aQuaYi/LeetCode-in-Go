@@ -1,4 +1,4 @@
-package Problem-ContainsDuplicateII
+package Problem219
 
 import (
 	"testing"

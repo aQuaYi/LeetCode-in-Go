@@ -1,4 +1,4 @@
-package Problem-WiggleSubsequence
+package Problem376
 
 import (
 	"testing"

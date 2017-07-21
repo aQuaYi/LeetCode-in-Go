@@ -1,4 +1,4 @@
-package Problem-NumberofIslands
+package Problem200
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package Problem-MinimumSizeSubarraySum
+package Problem209
 
 import (
 	"testing"

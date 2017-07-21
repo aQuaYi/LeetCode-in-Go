@@ -1,2 +1,2 @@
-package Problem-WordLadderII
+package Problem126
 

@@ -1,4 +1,4 @@
-package Problem-MaximumSizeSubarraySumEqualsk
+package Problem325
 
 import (
 	"testing"

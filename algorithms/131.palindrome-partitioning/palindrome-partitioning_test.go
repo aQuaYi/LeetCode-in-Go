@@ -1,4 +1,4 @@
-package Problem-PalindromePartitioning
+package Problem131
 
 import (
 	"testing"

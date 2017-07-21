@@ -1,4 +1,4 @@
-package Problem-ConstructBinaryTreefromPreorderandInorderTraversal
+package Problem105
 
 import (
 	"testing"

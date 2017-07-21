@@ -1,2 +1,2 @@
-package Problem-MergeSortedArray
+package Problem88
 

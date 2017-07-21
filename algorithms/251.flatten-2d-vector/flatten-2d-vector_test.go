@@ -1,4 +1,4 @@
-package Problem-Flatten2DVector
+package Problem251
 
 import (
 	"testing"

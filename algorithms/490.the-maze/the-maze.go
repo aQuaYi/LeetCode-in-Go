@@ -1,2 +1,2 @@
-package Problem-TheMaze
+package Problem490
 

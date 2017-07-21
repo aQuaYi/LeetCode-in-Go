@@ -1,2 +1,2 @@
-package Problem-GameofLife
+package Problem289
 

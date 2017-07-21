@@ -1,4 +1,4 @@
-package Problem-DesignPhoneDirectory
+package Problem379
 
 import (
 	"testing"

@@ -1,2 +1,2 @@
-package Problem-UniquePaths
+package Problem62
 

@@ -1,2 +1,2 @@
-package Problem-MatchstickstoSquare
+package Problem473
 

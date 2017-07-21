@@ -1,4 +1,4 @@
-package Problem-MatchstickstoSquare
+package Problem473
 
 import (
 	"testing"

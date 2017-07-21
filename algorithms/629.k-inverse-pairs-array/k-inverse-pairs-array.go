@@ -1,2 +1,2 @@
-package Problem-KInversePairsArray
+package Problem629
 

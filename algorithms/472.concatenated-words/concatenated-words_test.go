@@ -1,4 +1,4 @@
-package Problem-ConcatenatedWords
+package Problem472
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package Problem-MoveZeroes
+package Problem283
 
 import (
 	"testing"

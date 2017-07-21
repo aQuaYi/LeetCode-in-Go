@@ -1,4 +1,4 @@
-package Problem-BinaryTreeLevelOrderTraversal
+package Problem102
 
 import (
 	"testing"

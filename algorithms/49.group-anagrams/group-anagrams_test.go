@@ -1,4 +1,4 @@
-package Problem-GroupAnagrams
+package Problem49
 
 import (
 	"testing"

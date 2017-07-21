@@ -1,4 +1,4 @@
-package Problem-ReconstructOriginalDigitsfromEnglish
+package Problem423
 
 import (
 	"testing"

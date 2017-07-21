@@ -1,2 +1,2 @@
-package Problem-RemoveDuplicatesfromSortedList
+package Problem83
 

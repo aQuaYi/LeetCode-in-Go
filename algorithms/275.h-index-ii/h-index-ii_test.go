@@ -1,4 +1,4 @@
-package Problem-H-IndexII
+package Problem275
 
 import (
 	"testing"

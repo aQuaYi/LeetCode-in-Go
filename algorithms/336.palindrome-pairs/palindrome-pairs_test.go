@@ -1,4 +1,4 @@
-package Problem-PalindromePairs
+package Problem336
 
 import (
 	"testing"

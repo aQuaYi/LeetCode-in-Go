@@ -1,4 +1,4 @@
-package Problem-PerfectNumber
+package Problem507
 
 import (
 	"testing"

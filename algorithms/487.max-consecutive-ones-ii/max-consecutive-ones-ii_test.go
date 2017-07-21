@@ -1,4 +1,4 @@
-package Problem-MaxConsecutiveOnesII
+package Problem487
 
 import (
 	"testing"

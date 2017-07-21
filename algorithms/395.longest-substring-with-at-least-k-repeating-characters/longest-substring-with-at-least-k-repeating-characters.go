@@ -1,2 +1,2 @@
-package Problem-LongestSubstringwithAtLeastKRepeatingCharacters
+package Problem395
 

@@ -1,4 +1,4 @@
-package Problem-PalindromePermutationII
+package Problem267
 
 import (
 	"testing"

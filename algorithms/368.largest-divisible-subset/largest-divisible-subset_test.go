@@ -1,4 +1,4 @@
-package Problem-LargestDivisibleSubset
+package Problem368
 
 import (
 	"testing"

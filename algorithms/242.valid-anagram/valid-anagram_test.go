@@ -1,4 +1,4 @@
-package Problem-ValidAnagram
+package Problem242
 
 import (
 	"testing"

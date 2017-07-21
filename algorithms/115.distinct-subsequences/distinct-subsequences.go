@@ -1,2 +1,2 @@
-package Problem-DistinctSubsequences
+package Problem115
 

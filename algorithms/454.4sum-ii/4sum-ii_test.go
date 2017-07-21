@@ -1,4 +1,4 @@
-package Problem-4SumII
+package Problem454
 
 import (
 	"testing"

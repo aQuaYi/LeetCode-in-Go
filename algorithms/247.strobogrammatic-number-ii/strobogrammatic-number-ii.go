@@ -1,2 +1,2 @@
-package Problem-StrobogrammaticNumberII
+package Problem247
 

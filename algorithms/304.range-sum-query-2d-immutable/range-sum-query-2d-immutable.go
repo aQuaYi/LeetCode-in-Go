@@ -1,2 +1,2 @@
-package Problem-RangeSumQuery2D-Immutable
+package Problem304
 

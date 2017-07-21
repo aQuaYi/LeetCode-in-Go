@@ -1,4 +1,4 @@
-package Problem-GeneralizedAbbreviation
+package Problem320
 
 import (
 	"testing"

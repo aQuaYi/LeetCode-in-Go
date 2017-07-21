@@ -1,2 +1,2 @@
-package Problem-WordSquares
+package Problem425
 

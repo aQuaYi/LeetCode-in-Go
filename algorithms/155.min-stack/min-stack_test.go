@@ -1,4 +1,4 @@
-package Problem-MinStack
+package Problem155
 
 import (
 	"testing"

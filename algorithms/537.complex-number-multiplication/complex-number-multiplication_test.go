@@ -1,4 +1,4 @@
-package Problem-ComplexNumberMultiplication
+package Problem537
 
 import (
 	"testing"

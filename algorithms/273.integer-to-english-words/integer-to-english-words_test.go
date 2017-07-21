@@ -1,4 +1,4 @@
-package Problem-IntegertoEnglishWords
+package Problem273
 
 import (
 	"testing"

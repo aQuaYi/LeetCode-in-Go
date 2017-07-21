@@ -1,4 +1,4 @@
-package Problem-OnesandZeroes
+package Problem474
 
 import (
 	"testing"

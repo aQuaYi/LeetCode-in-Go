@@ -1,2 +1,2 @@
-package Problem-IntersectionofTwoArrays
+package Problem349
 

@@ -1,4 +1,4 @@
-package Problem-AlienDictionary
+package Problem269
 
 import (
 	"testing"

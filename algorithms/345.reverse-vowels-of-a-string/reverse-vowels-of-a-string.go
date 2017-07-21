@@ -1,2 +1,2 @@
-package Problem-ReverseVowelsofaString
+package Problem345
 

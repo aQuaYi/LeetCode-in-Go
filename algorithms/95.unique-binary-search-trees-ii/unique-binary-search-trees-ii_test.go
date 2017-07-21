@@ -1,4 +1,4 @@
-package Problem-UniqueBinarySearchTreesII
+package Problem95
 
 import (
 	"testing"

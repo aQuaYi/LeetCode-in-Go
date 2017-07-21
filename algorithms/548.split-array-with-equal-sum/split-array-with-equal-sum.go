@@ -1,2 +1,2 @@
-package Problem-SplitArraywithEqualSum
+package Problem548
 

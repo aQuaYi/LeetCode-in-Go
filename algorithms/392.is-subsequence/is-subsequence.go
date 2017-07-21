@@ -1,2 +1,2 @@
-package Problem-IsSubsequence
+package Problem392
 

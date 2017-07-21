@@ -1,2 +1,2 @@
-package Problem-PerfectNumber
+package Problem507
 

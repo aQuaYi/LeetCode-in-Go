@@ -1,2 +1,2 @@
-package Problem-SumofTwoIntegers
+package Problem371
 

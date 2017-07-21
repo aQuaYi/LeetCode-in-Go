@@ -1,4 +1,4 @@
-package Problem-LongestLineofConsecutiveOneinMatrix
+package Problem562
 
 import (
 	"testing"

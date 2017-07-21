@@ -1,2 +1,2 @@
-package Problem-LongestAbsoluteFilePath
+package Problem388
 

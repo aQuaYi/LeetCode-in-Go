@@ -1,4 +1,4 @@
-package Problem-SlidingWindowMaximum
+package Problem239
 
 import (
 	"testing"

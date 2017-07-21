@@ -1,2 +1,2 @@
-package Problem-JumpGame
+package Problem55
 

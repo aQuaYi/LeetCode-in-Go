@@ -1,2 +1,2 @@
-package Problem-ExchangeSeats
+package Problem626
 

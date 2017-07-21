@@ -1,4 +1,4 @@
-package Problem-CreateMaximumNumber
+package Problem321
 
 import (
 	"testing"

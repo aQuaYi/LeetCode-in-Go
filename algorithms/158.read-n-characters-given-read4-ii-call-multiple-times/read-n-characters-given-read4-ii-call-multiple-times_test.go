@@ -1,4 +1,4 @@
-package Problem-ReadNCharactersGivenRead4II-Callmultipletimes
+package Problem158
 
 import (
 	"testing"

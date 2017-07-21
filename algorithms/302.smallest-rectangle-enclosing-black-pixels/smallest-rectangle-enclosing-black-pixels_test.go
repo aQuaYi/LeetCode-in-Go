@@ -1,4 +1,4 @@
-package Problem-SmallestRectangleEnclosingBlackPixels
+package Problem302
 
 import (
 	"testing"

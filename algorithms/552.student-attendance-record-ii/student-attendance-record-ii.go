@@ -1,2 +1,2 @@
-package Problem-StudentAttendanceRecordII
+package Problem552
 

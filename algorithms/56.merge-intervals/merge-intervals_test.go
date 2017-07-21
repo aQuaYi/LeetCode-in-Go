@@ -1,4 +1,4 @@
-package Problem-MergeIntervals
+package Problem56
 
 import (
 	"testing"

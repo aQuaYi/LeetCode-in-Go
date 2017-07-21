@@ -1,4 +1,4 @@
-package Problem-ValidNumber
+package Problem65
 
 import (
 	"testing"

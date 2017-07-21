@@ -1,4 +1,4 @@
-package Problem-GuessNumberHigherorLower
+package Problem374
 
 import (
 	"testing"

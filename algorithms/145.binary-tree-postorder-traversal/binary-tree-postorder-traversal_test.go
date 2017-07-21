@@ -1,4 +1,4 @@
-package Problem-BinaryTreePostorderTraversal
+package Problem145
 
 import (
 	"testing"

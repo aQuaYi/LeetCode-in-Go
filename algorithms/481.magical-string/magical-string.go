@@ -1,2 +1,2 @@
-package Problem-MagicalString
+package Problem481
 

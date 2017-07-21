@@ -1,4 +1,4 @@
-package Problem-KInversePairsArray
+package Problem629
 
 import (
 	"testing"

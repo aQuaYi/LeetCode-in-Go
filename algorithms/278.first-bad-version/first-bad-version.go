@@ -1,2 +1,2 @@
-package Problem-FirstBadVersion
+package Problem278
 

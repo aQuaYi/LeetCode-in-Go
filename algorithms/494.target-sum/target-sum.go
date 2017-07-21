@@ -1,2 +1,2 @@
-package Problem-TargetSum
+package Problem494
 

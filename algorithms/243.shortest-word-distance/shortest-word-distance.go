@@ -1,2 +1,2 @@
-package Problem-ShortestWordDistance
+package Problem243
 

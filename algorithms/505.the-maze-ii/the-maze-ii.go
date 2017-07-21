@@ -1,2 +1,2 @@
-package Problem-TheMazeII
+package Problem505
 

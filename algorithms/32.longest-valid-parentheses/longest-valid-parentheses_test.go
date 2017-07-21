@@ -1,4 +1,4 @@
-package Problem-LongestValidParentheses
+package Problem32
 
 import (
 	"testing"

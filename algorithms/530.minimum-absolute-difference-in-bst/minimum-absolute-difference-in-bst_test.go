@@ -1,4 +1,4 @@
-package Problem-MinimumAbsoluteDifferenceinBST
+package Problem530
 
 import (
 	"testing"

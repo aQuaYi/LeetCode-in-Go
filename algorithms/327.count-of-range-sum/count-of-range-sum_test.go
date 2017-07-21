@@ -1,4 +1,4 @@
-package Problem-CountofRangeSum
+package Problem327
 
 import (
 	"testing"

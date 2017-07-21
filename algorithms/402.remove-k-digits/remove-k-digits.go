@@ -1,2 +1,2 @@
-package Problem-RemoveKDigits
+package Problem402
 

@@ -1,4 +1,4 @@
-package Problem-LengthofLastWord
+package Problem58
 
 import (
 	"testing"

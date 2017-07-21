@@ -1,4 +1,4 @@
-package Problem-CanPlaceFlowers
+package Problem605
 
 import (
 	"testing"

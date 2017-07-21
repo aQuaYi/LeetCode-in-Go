@@ -1,4 +1,4 @@
-package Problem-WaterandJugProblem
+package Problem365
 
 import (
 	"testing"

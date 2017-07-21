@@ -1,2 +1,2 @@
-package Problem-SmallestRectangleEnclosingBlackPixels
+package Problem302
 

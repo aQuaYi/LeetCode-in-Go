@@ -1,4 +1,4 @@
-package Problem-Permutations
+package Problem46
 
 import (
 	"testing"

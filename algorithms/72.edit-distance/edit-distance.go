@@ -1,2 +1,2 @@
-package Problem-EditDistance
+package Problem72
 

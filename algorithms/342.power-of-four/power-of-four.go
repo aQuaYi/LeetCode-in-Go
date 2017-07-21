@@ -1,2 +1,2 @@
-package Problem-PowerofFour
+package Problem342
 

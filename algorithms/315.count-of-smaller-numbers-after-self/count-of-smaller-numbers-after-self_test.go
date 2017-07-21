@@ -1,4 +1,4 @@
-package Problem-CountofSmallerNumbersAfterSelf
+package Problem315
 
 import (
 	"testing"

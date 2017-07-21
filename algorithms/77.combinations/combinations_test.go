@@ -1,4 +1,4 @@
-package Problem-Combinations
+package Problem77
 
 import (
 	"testing"

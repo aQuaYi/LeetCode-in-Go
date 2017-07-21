@@ -1,4 +1,4 @@
-package Problem-DecodeWays
+package Problem91
 
 import (
 	"testing"

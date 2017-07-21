@@ -1,4 +1,4 @@
-package Problem-PartitionList
+package Problem86
 
 import (
 	"testing"

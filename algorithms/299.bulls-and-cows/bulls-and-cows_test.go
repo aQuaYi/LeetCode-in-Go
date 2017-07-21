@@ -1,4 +1,4 @@
-package Problem-BullsandCows
+package Problem299
 
 import (
 	"testing"

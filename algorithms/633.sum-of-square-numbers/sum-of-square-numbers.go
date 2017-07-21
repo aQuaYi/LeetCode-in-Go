@@ -1,2 +1,2 @@
-package Problem-SumofSquareNumbers
+package Problem633
 

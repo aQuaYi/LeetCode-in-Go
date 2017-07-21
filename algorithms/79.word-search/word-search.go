@@ -1,2 +1,2 @@
-package Problem-WordSearch
+package Problem79
 

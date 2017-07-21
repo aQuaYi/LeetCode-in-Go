@@ -1,2 +1,2 @@
-package Problem-PalindromePermutation
+package Problem266
 

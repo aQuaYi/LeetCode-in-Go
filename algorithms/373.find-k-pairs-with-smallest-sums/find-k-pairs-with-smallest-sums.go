@@ -1,2 +1,2 @@
-package Problem-FindKPairswithSmallestSums
+package Problem373
 

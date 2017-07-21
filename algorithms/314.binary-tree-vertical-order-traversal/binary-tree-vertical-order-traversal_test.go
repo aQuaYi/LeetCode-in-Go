@@ -1,4 +1,4 @@
-package Problem-BinaryTreeVerticalOrderTraversal
+package Problem314
 
 import (
 	"testing"

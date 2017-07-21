@@ -1,4 +1,4 @@
-package Problem-NumberofBoomerangs
+package Problem447
 
 import (
 	"testing"

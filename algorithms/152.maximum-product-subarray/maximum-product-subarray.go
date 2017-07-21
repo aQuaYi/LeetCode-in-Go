@@ -1,2 +1,2 @@
-package Problem-MaximumProductSubarray
+package Problem152
 

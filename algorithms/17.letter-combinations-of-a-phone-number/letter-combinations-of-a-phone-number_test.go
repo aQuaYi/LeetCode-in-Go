@@ -1,4 +1,4 @@
-package Problem-LetterCombinationsofaPhoneNumber
+package Problem17
 
 import (
 	"testing"

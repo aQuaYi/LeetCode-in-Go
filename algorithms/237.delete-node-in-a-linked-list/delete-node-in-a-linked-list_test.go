@@ -1,4 +1,4 @@
-package Problem-DeleteNodeinaLinkedList
+package Problem237
 
 import (
 	"testing"

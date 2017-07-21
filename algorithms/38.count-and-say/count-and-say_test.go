@@ -1,4 +1,4 @@
-package Problem-CountandSay
+package Problem38
 
 import (
 	"testing"

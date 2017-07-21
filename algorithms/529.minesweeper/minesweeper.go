@@ -1,2 +1,2 @@
-package Problem-Minesweeper
+package Problem529
 

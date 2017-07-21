@@ -1,4 +1,4 @@
-package Problem-TextJustification
+package Problem68
 
 import (
 	"testing"

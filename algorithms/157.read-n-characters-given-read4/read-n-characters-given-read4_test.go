@@ -1,4 +1,4 @@
-package Problem-ReadNCharactersGivenRead4
+package Problem157
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package Problem-HouseRobberIII
+package Problem337
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package Problem-BrickWall
+package Problem554
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package Problem-SetMatrixZeroes
+package Problem73
 
 import (
 	"testing"

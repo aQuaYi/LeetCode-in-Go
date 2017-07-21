@@ -1,2 +1,2 @@
-package Problem-ReverseLinkedList
+package Problem206
 

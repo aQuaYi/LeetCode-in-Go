@@ -1,2 +1,2 @@
-package Problem-LinkedListRandomNode
+package Problem382
 

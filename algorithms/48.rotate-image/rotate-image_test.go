@@ -1,4 +1,4 @@
-package Problem-RotateImage
+package Problem48
 
 import (
 	"testing"

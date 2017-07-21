@@ -1,2 +1,2 @@
-package Problem-PalindromePartitioning
+package Problem131
 

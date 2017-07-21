@@ -1,4 +1,4 @@
-package Problem-ReverseVowelsofaString
+package Problem345
 
 import (
 	"testing"

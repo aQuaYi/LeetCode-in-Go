@@ -1,4 +1,4 @@
-package Problem-SurroundedRegions
+package Problem130
 
 import (
 	"testing"

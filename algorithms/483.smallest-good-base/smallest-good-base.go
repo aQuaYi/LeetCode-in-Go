@@ -1,2 +1,2 @@
-package Problem-SmallestGoodBase
+package Problem483
 

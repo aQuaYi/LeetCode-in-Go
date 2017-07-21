@@ -1,4 +1,4 @@
-package Problem-CompareVersionNumbers
+package Problem165
 
 import (
 	"testing"

@@ -1,2 +1,2 @@
-package Problem-FactorialTrailingZeroes
+package Problem172
 

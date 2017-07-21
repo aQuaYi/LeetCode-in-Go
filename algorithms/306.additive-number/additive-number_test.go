@@ -1,4 +1,4 @@
-package Problem-AdditiveNumber
+package Problem306
 
 import (
 	"testing"

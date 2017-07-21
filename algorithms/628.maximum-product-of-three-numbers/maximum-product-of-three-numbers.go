@@ -1,2 +1,2 @@
-package Problem-MaximumProductofThreeNumbers
+package Problem628
 

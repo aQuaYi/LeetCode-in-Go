@@ -1,4 +1,4 @@
-package Problem-PatchingArray
+package Problem330
 
 import (
 	"testing"

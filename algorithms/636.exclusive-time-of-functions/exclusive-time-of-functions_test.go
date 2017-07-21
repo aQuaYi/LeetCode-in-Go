@@ -1,4 +1,4 @@
-package Problem-ExclusiveTimeofFunctions
+package Problem636
 
 import (
 	"testing"

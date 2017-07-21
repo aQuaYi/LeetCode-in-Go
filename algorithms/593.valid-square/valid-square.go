@@ -1,2 +1,2 @@
-package Problem-ValidSquare
+package Problem593
 

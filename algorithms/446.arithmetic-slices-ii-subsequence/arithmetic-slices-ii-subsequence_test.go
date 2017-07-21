@@ -1,4 +1,4 @@
-package Problem-ArithmeticSlicesII-Subsequence
+package Problem446
 
 import (
 	"testing"

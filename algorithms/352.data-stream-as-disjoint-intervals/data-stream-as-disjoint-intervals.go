@@ -1,2 +1,2 @@
-package Problem-DataStreamasDisjointIntervals
+package Problem352
 

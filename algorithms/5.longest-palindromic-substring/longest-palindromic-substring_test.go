@@ -1,4 +1,4 @@
-package Problem-LongestPalindromicSubstring
+package Problem5
 
 import (
 	"testing"

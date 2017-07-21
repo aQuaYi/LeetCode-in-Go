@@ -1,4 +1,4 @@
-package Problem-PermutationinString
+package Problem567
 
 import (
 	"testing"

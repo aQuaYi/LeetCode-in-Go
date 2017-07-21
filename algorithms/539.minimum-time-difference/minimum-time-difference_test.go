@@ -1,4 +1,4 @@
-package Problem-MinimumTimeDifference
+package Problem539
 
 import (
 	"testing"

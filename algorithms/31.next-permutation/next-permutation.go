@@ -1,2 +1,2 @@
-package Problem-NextPermutation
+package Problem31
 

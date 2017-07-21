@@ -6,7 +6,6 @@ import (
 	"log"
 	"os"
 	"sort"
-	"strings"
 	"syscall"
 
 	"github.com/aQuaYi/GoKit"
@@ -56,11 +55,10 @@ func creatREADME(p Problem, dir string) {
 }
 
 func creatGo(p Problem, dir string) {
-	packageName := strings.Replace(p.Title, " ", "", -1)
-	fileFormat := `package Problem-%s
+	fileFormat := `package Problem%d
 
 `
-	content := fmt.Sprintf(fileFormat, packageName)
+	content := fmt.Sprintf(fileFormat, p.ID)
 	filename := fmt.Sprintf("%s/%s.go", dir, p.TitleSlug)
 
 	err := ioutil.WriteFile(filename, []byte(content), 0755)
@@ -70,8 +68,7 @@ func creatGo(p Problem, dir string) {
 }
 
 func creatGoTest(p Problem, dir string) {
-	packageName := strings.Replace(p.Title, " ", "", -1)
-	fileFormat := `package Problem-%s
+	fileFormat := `package Problem%d
 
 import (
 	"testing"
@@ -88,7 +85,7 @@ func Test_ok(t *testing.T) {
 	ast.Equal(expected, actual, "与预期不符")
 }
 `
-	content := fmt.Sprintf(fileFormat, packageName)
+	content := fmt.Sprintf(fileFormat, p.ID)
 	filename := fmt.Sprintf("%s/%s_test.go", dir, p.TitleSlug)
 
 	err := ioutil.WriteFile(filename, []byte(content), 0755)

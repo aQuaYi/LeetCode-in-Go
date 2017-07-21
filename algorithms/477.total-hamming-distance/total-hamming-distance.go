@@ -1,2 +1,2 @@
-package Problem-TotalHammingDistance
+package Problem477
 

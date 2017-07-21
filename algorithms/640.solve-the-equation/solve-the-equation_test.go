@@ -1,4 +1,4 @@
-package Problem-SolvetheEquation
+package Problem640
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package Problem-MergeSortedArray
+package Problem88
 
 import (
 	"testing"

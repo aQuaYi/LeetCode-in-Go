@@ -1,4 +1,4 @@
-package Problem-LongestSubstringwithAtLeastKRepeatingCharacters
+package Problem395
 
 import (
 	"testing"

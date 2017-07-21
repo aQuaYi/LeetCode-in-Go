@@ -1,4 +1,4 @@
-package Problem-KthSmallestElementinaBST
+package Problem230
 
 import (
 	"testing"

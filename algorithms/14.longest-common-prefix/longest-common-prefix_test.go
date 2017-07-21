@@ -1,4 +1,4 @@
-package Problem-LongestCommonPrefix
+package Problem14
 
 import (
 	"testing"

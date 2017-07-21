@@ -1,2 +1,2 @@
-package Problem-EliminationGame
+package Problem390
 

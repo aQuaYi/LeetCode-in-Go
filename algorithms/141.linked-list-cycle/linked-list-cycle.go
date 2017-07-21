@@ -1,2 +1,2 @@
-package Problem-LinkedListCycle
+package Problem141
 

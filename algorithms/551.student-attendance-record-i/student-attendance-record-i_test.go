@@ -1,4 +1,4 @@
-package Problem-StudentAttendanceRecordI
+package Problem551
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package Problem-DistributeCandies
+package Problem575
 
 import (
 	"testing"

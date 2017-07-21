@@ -1,4 +1,4 @@
-package Problem-ValidWordAbbreviation
+package Problem408
 
 import (
 	"testing"

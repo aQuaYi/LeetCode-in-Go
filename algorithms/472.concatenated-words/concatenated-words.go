@@ -1,2 +1,2 @@
-package Problem-ConcatenatedWords
+package Problem472
 

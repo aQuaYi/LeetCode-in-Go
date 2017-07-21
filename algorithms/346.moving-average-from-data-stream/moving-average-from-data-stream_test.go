@@ -1,4 +1,4 @@
-package Problem-MovingAveragefromDataStream
+package Problem346
 
 import (
 	"testing"

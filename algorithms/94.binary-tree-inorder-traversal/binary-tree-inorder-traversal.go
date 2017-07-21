@@ -1,2 +1,2 @@
-package Problem-BinaryTreeInorderTraversal
+package Problem94
 

@@ -1,2 +1,2 @@
-package Problem-ZigZagConversion
+package Problem6
 

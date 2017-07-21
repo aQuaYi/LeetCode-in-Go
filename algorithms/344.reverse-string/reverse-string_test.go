@@ -1,4 +1,4 @@
-package Problem-ReverseString
+package Problem344
 
 import (
 	"testing"

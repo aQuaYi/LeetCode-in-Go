@@ -1,2 +1,2 @@
-package Problem-LexicographicalNumbers
+package Problem386
 

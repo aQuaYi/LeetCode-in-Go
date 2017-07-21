@@ -1,4 +1,4 @@
-package Problem-MaximalRectangle
+package Problem85
 
 import (
 	"testing"

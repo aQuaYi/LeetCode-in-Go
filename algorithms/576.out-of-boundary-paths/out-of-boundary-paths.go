@@ -1,2 +1,2 @@
-package Problem-OutofBoundaryPaths
+package Problem576
 

@@ -1,4 +1,4 @@
-package Problem-NumberofSegmentsinaString
+package Problem434
 
 import (
 	"testing"

@@ -1,2 +1,2 @@
-package Problem-DesignCompressedStringIterator
+package Problem604
 

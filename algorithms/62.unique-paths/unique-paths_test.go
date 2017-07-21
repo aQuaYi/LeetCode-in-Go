@@ -1,4 +1,4 @@
-package Problem-UniquePaths
+package Problem62
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package Problem-RegularExpressionMatching
+package Problem10
 
 import (
 	"testing"

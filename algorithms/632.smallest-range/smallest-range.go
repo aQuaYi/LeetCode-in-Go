@@ -1,2 +1,2 @@
-package Problem-SmallestRange
+package Problem632
 

@@ -1,4 +1,4 @@
-package Problem-ExcelSheetColumnTitle
+package Problem168
 
 import (
 	"testing"

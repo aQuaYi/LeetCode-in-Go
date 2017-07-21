@@ -1,4 +1,4 @@
-package Problem-Searcha2DMatrix
+package Problem74
 
 import (
 	"testing"

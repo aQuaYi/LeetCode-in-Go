@@ -1,4 +1,4 @@
-package Problem-FirstUniqueCharacterinaString
+package Problem387
 
 import (
 	"testing"

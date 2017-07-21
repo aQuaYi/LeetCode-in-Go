@@ -1,2 +1,2 @@
-package Problem-UniqueBinarySearchTrees
+package Problem96
 

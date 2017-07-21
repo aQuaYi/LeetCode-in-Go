@@ -1,4 +1,4 @@
-package Problem-DataStreamasDisjointIntervals
+package Problem352
 
 import (
 	"testing"

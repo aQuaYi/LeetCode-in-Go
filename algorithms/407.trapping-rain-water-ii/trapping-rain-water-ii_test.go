@@ -1,4 +1,4 @@
-package Problem-TrappingRainWaterII
+package Problem407
 
 import (
 	"testing"

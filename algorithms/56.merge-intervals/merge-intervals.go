@@ -1,2 +1,2 @@
-package Problem-MergeIntervals
+package Problem56
 

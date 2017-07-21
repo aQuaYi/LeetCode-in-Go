@@ -1,2 +1,2 @@
-package Problem-MeetingRooms
+package Problem252
 

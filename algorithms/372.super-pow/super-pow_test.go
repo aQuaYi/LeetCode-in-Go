@@ -1,4 +1,4 @@
-package Problem-SuperPow
+package Problem372
 
 import (
 	"testing"

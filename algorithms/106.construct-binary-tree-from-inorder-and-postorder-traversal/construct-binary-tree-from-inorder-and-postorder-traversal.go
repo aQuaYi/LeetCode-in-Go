@@ -1,2 +1,2 @@
-package Problem-ConstructBinaryTreefromInorderandPostorderTraversal
+package Problem106
 

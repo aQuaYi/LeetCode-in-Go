@@ -1,2 +1,2 @@
-package Problem-PathSum
+package Problem112
 

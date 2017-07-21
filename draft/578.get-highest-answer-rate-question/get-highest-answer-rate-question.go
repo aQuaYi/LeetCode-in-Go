@@ -1,2 +1,2 @@
-package Problem-GetHighestAnswerRateQuestion
+package Problem578
 

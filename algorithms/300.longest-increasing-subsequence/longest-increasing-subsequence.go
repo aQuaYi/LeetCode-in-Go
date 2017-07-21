@@ -1,2 +1,2 @@
-package Problem-LongestIncreasingSubsequence
+package Problem300
 

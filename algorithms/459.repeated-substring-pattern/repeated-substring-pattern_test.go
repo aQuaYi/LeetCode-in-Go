@@ -1,4 +1,4 @@
-package Problem-RepeatedSubstringPattern
+package Problem459
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package Problem-MinimumHeightTrees
+package Problem310
 
 import (
 	"testing"

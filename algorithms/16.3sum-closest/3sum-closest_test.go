@@ -1,4 +1,4 @@
-package Problem-3SumClosest
+package Problem16
 
 import (
 	"testing"

@@ -1,2 +1,2 @@
-package Problem-LicenseKeyFormatting
+package Problem482
 

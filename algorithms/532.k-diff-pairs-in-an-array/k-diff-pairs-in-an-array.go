@@ -1,2 +1,2 @@
-package Problem-K-diffPairsinanArray
+package Problem532
 

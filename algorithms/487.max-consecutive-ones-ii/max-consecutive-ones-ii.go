@@ -1,2 +1,2 @@
-package Problem-MaxConsecutiveOnesII
+package Problem487
 

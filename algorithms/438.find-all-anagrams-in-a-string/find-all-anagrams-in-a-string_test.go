@@ -1,4 +1,4 @@
-package Problem-FindAllAnagramsinaString
+package Problem438
 
 import (
 	"testing"

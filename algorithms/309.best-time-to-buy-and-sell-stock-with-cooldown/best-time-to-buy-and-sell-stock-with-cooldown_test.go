@@ -1,4 +1,4 @@
-package Problem-BestTimetoBuyandSellStockwithCooldown
+package Problem309
 
 import (
 	"testing"

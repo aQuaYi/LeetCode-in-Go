@@ -1,4 +1,4 @@
-package Problem-WordBreakII
+package Problem140
 
 import (
 	"testing"

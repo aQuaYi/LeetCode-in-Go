@@ -1,2 +1,2 @@
-package Problem-PlusOne
+package Problem66
 

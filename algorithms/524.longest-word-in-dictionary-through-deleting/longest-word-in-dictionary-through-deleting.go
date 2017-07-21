@@ -1,2 +1,2 @@
-package Problem-LongestWordinDictionarythroughDeleting
+package Problem524
 

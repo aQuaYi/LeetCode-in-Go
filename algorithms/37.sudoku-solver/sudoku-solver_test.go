@@ -1,4 +1,4 @@
-package Problem-SudokuSolver
+package Problem37
 
 import (
 	"testing"

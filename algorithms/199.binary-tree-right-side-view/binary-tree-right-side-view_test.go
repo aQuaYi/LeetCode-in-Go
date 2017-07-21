@@ -1,4 +1,4 @@
-package Problem-BinaryTreeRightSideView
+package Problem199
 
 import (
 	"testing"

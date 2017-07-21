@@ -1,4 +1,4 @@
-package Problem-ValidPerfectSquare
+package Problem367
 
 import (
 	"testing"

@@ -1,2 +1,2 @@
-package Problem-MajorityElement
+package Problem169
 

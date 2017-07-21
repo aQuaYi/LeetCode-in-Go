@@ -1,4 +1,4 @@
-package Problem-LinkedListCycle
+package Problem141
 
 import (
 	"testing"

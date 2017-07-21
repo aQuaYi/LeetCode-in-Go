@@ -1,4 +1,4 @@
-package Problem-RansomNote
+package Problem383
 
 import (
 	"testing"

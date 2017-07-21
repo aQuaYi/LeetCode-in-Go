@@ -1,4 +1,4 @@
-package Problem-MaximumProductSubarray
+package Problem152
 
 import (
 	"testing"

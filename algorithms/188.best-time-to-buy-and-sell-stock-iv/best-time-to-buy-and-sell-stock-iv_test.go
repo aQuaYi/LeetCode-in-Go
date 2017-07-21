@@ -1,4 +1,4 @@
-package Problem-BestTimetoBuyandSellStockIV
+package Problem188
 
 import (
 	"testing"

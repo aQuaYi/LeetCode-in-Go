@@ -1,2 +1,2 @@
-package Problem-LongestConsecutiveSequence
+package Problem128
 

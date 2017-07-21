@@ -1,4 +1,4 @@
-package Problem-DecodeString
+package Problem394
 
 import (
 	"testing"

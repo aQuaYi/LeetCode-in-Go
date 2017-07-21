@@ -1,4 +1,4 @@
-package Problem-LargestPalindromeProduct
+package Problem479
 
 import (
 	"testing"

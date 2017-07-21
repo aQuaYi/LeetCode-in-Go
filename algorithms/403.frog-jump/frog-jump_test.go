@@ -1,4 +1,4 @@
-package Problem-FrogJump
+package Problem403
 
 import (
 	"testing"

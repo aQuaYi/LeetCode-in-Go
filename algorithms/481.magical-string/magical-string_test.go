@@ -1,4 +1,4 @@
-package Problem-MagicalString
+package Problem481
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package Problem-SparseMatrixMultiplication
+package Problem311
 
 import (
 	"testing"

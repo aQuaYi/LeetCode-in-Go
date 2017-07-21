@@ -1,4 +1,4 @@
-package Problem-ConvertaNumbertoHexadecimal
+package Problem405
 
 import (
 	"testing"

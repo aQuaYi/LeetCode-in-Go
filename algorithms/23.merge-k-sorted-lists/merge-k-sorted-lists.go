@@ -1,2 +1,2 @@
-package Problem-MergekSortedLists
+package Problem23
 

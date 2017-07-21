@@ -1,4 +1,4 @@
-package Problem-EvaluateReversePolishNotation
+package Problem150
 
 import (
 	"testing"

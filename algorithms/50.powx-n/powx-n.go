@@ -1,2 +1,2 @@
-package Problem-Pow(x,n)
+package Problem50
 

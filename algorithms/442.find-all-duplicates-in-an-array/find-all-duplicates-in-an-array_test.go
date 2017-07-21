@@ -1,4 +1,4 @@
-package Problem-FindAllDuplicatesinanArray
+package Problem442
 
 import (
 	"testing"

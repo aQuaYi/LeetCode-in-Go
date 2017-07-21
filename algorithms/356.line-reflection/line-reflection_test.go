@@ -1,4 +1,4 @@
-package Problem-LineReflection
+package Problem356
 
 import (
 	"testing"

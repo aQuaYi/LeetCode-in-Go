@@ -1,2 +1,2 @@
-package Problem-RangeAddition
+package Problem370
 

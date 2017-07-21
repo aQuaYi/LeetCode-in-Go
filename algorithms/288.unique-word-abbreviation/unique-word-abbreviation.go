@@ -1,2 +1,2 @@
-package Problem-UniqueWordAbbreviation
+package Problem288
 

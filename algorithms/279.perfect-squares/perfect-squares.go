@@ -1,2 +1,2 @@
-package Problem-PerfectSquares
+package Problem279
 

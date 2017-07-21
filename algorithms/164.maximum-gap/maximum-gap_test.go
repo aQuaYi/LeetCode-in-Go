@@ -1,4 +1,4 @@
-package Problem-MaximumGap
+package Problem164
 
 import (
 	"testing"

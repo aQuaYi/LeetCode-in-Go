@@ -1,2 +1,2 @@
-package Problem-BrickWall
+package Problem554
 

@@ -1,2 +1,2 @@
-package Problem-PermutationinString
+package Problem567
 

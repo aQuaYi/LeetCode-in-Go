@@ -1,4 +1,4 @@
-package Problem-BinarySearchTreeIterator
+package Problem173
 
 import (
 	"testing"

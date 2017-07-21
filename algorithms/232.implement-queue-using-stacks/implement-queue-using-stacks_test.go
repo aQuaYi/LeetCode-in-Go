@@ -1,4 +1,4 @@
-package Problem-ImplementQueueusingStacks
+package Problem232
 
 import (
 	"testing"

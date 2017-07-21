@@ -1,4 +1,4 @@
-package Problem-PacificAtlanticWaterFlow
+package Problem417
 
 import (
 	"testing"

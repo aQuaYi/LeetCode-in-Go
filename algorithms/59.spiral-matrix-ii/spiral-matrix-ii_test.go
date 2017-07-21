@@ -1,4 +1,4 @@
-package Problem-SpiralMatrixII
+package Problem59
 
 import (
 	"testing"

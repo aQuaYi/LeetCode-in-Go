@@ -1,4 +1,4 @@
-package Problem-InorderSuccessorinBST
+package Problem285
 
 import (
 	"testing"

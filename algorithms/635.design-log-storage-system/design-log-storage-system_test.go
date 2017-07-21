@@ -1,4 +1,4 @@
-package Problem-DesignLogStorageSystem
+package Problem635
 
 import (
 	"testing"

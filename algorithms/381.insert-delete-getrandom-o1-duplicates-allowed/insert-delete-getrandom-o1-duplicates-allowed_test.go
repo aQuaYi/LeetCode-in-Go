@@ -1,4 +1,4 @@
-package Problem-InsertDeleteGetRandomO(1)-Duplicatesallowed
+package Problem381
 
 import (
 	"testing"

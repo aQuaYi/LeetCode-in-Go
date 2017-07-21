@@ -1,4 +1,4 @@
-package Problem-CountTheRepetitions
+package Problem466
 
 import (
 	"testing"

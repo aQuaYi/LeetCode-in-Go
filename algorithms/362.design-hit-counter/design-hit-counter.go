@@ -1,2 +1,2 @@
-package Problem-DesignHitCounter
+package Problem362
 

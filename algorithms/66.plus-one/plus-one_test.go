@@ -1,4 +1,4 @@
-package Problem-PlusOne
+package Problem66
 
 import (
 	"testing"

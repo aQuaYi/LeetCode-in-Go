@@ -1,4 +1,4 @@
-package Problem-MedianofTwoSortedArrays
+package Problem4
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package Problem-LicenseKeyFormatting
+package Problem482
 
 import (
 	"testing"

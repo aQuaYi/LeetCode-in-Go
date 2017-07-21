@@ -1,2 +1,2 @@
-package Problem-SubstringwithConcatenationofAllWords
+package Problem30
 

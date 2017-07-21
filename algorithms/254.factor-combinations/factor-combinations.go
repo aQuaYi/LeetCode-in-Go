@@ -1,2 +1,2 @@
-package Problem-FactorCombinations
+package Problem254
 

@@ -1,4 +1,4 @@
-package Problem-SingleNumberIII
+package Problem260
 
 import (
 	"testing"

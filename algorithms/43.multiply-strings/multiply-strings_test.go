@@ -1,4 +1,4 @@
-package Problem-MultiplyStrings
+package Problem43
 
 import (
 	"testing"

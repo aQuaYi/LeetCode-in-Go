@@ -1,4 +1,4 @@
-package Problem-SplitArrayLargestSum
+package Problem410
 
 import (
 	"testing"

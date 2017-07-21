@@ -1,2 +1,2 @@
-package Problem-ZumaGame
+package Problem488
 

@@ -1,4 +1,4 @@
-package Problem-ConstructtheRectangle
+package Problem492
 
 import (
 	"testing"

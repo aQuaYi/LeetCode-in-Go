@@ -1,2 +1,2 @@
-package Problem-MovingAveragefromDataStream
+package Problem346
 

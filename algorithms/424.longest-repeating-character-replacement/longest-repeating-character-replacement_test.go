@@ -1,4 +1,4 @@
-package Problem-LongestRepeatingCharacterReplacement
+package Problem424
 
 import (
 	"testing"

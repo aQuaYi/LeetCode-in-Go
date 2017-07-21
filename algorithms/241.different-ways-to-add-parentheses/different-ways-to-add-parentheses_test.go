@@ -1,4 +1,4 @@
-package Problem-DifferentWaystoAddParentheses
+package Problem241
 
 import (
 	"testing"

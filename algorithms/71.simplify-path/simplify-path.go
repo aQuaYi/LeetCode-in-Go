@@ -1,2 +1,2 @@
-package Problem-SimplifyPath
+package Problem71
 

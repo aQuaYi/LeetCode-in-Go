@@ -1,4 +1,4 @@
-package Problem-ReverseBits
+package Problem190
 
 import (
 	"testing"

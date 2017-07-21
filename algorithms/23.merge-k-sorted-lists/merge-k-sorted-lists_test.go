@@ -1,4 +1,4 @@
-package Problem-MergekSortedLists
+package Problem23
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package Problem-ConvertBSTtoGreaterTree
+package Problem538
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package Problem-DesignSearchAutocompleteSystem
+package Problem642
 
 import (
 	"testing"

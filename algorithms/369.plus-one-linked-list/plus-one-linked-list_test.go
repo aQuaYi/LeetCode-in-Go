@@ -1,4 +1,4 @@
-package Problem-PlusOneLinkedList
+package Problem369
 
 import (
 	"testing"

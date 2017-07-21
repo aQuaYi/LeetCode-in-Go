@@ -1,4 +1,4 @@
-package Problem-WordAbbreviation
+package Problem527
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package Problem-WallsandGates
+package Problem286
 
 import (
 	"testing"

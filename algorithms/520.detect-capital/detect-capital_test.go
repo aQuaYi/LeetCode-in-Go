@@ -1,4 +1,4 @@
-package Problem-DetectCapital
+package Problem520
 
 import (
 	"testing"

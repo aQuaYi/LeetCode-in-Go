@@ -1,4 +1,4 @@
-package Problem-ContinuousSubarraySum
+package Problem523
 
 import (
 	"testing"

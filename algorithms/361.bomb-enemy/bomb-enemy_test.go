@@ -1,4 +1,4 @@
-package Problem-BombEnemy
+package Problem361
 
 import (
 	"testing"

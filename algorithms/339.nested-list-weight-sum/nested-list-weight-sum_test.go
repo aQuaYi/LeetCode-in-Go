@@ -1,4 +1,4 @@
-package Problem-NestedListWeightSum
+package Problem339
 
 import (
 	"testing"

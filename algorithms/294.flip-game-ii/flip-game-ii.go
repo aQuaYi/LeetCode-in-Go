@@ -1,2 +1,2 @@
-package Problem-FlipGameII
+package Problem294
 

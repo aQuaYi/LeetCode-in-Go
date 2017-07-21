@@ -1,4 +1,4 @@
-package Problem-WiggleSortII
+package Problem324
 
 import (
 	"testing"

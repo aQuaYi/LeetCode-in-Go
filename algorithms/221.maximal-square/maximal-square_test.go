@@ -1,4 +1,4 @@
-package Problem-MaximalSquare
+package Problem221
 
 import (
 	"testing"

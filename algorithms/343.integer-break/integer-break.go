@@ -1,2 +1,2 @@
-package Problem-IntegerBreak
+package Problem343
 

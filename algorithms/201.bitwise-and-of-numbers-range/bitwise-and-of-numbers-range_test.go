@@ -1,4 +1,4 @@
-package Problem-BitwiseANDofNumbersRange
+package Problem201
 
 import (
 	"testing"

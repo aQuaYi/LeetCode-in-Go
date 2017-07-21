@@ -1,4 +1,4 @@
-package Problem-IncreasingTripletSubsequence
+package Problem334
 
 import (
 	"testing"

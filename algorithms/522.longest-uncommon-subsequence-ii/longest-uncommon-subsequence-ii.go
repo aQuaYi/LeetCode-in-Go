@@ -1,2 +1,2 @@
-package Problem-LongestUncommonSubsequenceII
+package Problem522
 

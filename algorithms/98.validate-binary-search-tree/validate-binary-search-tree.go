@@ -1,2 +1,2 @@
-package Problem-ValidateBinarySearchTree
+package Problem98
 

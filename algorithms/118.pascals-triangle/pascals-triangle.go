@@ -1,2 +1,2 @@
-package Problem-Pascal'sTriangle
+package Problem118
 

@@ -1,4 +1,4 @@
-package Problem-MinimumFactorization
+package Problem625
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package Problem-CountingBits
+package Problem338
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package Problem-IntegertoRoman
+package Problem12
 
 import (
 	"testing"

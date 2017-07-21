@@ -1,4 +1,4 @@
-package Problem-AllO`oneDataStructure
+package Problem432
 
 import (
 	"testing"

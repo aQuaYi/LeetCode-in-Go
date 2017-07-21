@@ -1,4 +1,4 @@
-package Problem-RepeatedDNASequences
+package Problem187
 
 import (
 	"testing"

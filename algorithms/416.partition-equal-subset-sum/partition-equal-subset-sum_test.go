@@ -1,4 +1,4 @@
-package Problem-PartitionEqualSubsetSum
+package Problem416
 
 import (
 	"testing"

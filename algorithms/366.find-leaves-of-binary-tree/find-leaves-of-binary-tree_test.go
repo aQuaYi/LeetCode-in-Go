@@ -1,4 +1,4 @@
-package Problem-FindLeavesofBinaryTree
+package Problem366
 
 import (
 	"testing"

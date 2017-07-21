@@ -1,4 +1,4 @@
-package Problem-ZumaGame
+package Problem488
 
 import (
 	"testing"

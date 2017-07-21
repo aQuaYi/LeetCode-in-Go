@@ -1,4 +1,4 @@
-package Problem-TeemoAttacking
+package Problem495
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package Problem-PathSumIII
+package Problem437
 
 import (
 	"testing"

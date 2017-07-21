@@ -1,4 +1,4 @@
-package Problem-RemoveDuplicatesfromSortedListII
+package Problem82
 
 import (
 	"testing"

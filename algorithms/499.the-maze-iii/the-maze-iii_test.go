@@ -1,4 +1,4 @@
-package Problem-TheMazeIII
+package Problem499
 
 import (
 	"testing"

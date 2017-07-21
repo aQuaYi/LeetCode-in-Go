@@ -1,4 +1,4 @@
-package Problem-MissingNumber
+package Problem268
 
 import (
 	"testing"

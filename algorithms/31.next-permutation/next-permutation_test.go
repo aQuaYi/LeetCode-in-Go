@@ -1,4 +1,4 @@
-package Problem-NextPermutation
+package Problem31
 
 import (
 	"testing"

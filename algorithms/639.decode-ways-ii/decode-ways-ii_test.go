@@ -1,4 +1,4 @@
-package Problem-DecodeWaysII
+package Problem639
 
 import (
 	"testing"

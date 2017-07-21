@@ -1,2 +1,2 @@
-package Problem-ValidPerfectSquare
+package Problem367
 

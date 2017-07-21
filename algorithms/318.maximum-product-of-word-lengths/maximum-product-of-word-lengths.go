@@ -1,2 +1,2 @@
-package Problem-MaximumProductofWordLengths
+package Problem318
 

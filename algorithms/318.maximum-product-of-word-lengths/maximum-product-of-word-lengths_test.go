@@ -1,4 +1,4 @@
-package Problem-MaximumProductofWordLengths
+package Problem318
 
 import (
 	"testing"

@@ -1,2 +1,2 @@
-package Problem-TwoSum
+package Problem1
 

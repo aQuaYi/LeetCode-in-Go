@@ -1,2 +1,2 @@
-package Problem-MaxConsecutiveOnes
+package Problem485
 

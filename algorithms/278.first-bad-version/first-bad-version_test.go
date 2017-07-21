@@ -1,4 +1,4 @@
-package Problem-FirstBadVersion
+package Problem278
 
 import (
 	"testing"

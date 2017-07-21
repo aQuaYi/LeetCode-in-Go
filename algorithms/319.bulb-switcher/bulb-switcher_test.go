@@ -1,4 +1,4 @@
-package Problem-BulbSwitcher
+package Problem319
 
 import (
 	"testing"

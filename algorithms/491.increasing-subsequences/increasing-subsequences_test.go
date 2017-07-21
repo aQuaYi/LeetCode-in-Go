@@ -1,4 +1,4 @@
-package Problem-IncreasingSubsequences
+package Problem491
 
 import (
 	"testing"

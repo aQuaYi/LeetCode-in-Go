@@ -1,4 +1,4 @@
-package Problem-GroupShiftedStrings
+package Problem249
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package Problem-DesignTwitter
+package Problem355
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package Problem-UglyNumberII
+package Problem264
 
 import (
 	"testing"

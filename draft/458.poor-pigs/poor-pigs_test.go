@@ -1,4 +1,4 @@
-package Problem-PoorPigs
+package Problem458
 
 import (
 	"testing"

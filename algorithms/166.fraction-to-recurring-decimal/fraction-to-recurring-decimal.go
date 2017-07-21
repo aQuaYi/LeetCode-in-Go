@@ -1,2 +1,2 @@
-package Problem-FractiontoRecurringDecimal
+package Problem166
 
