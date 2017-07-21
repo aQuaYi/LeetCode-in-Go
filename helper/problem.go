@@ -73,24 +73,34 @@ func creatGoTest(p Problem, dir string) {
 	fileFormat := `package %s
 
 import (
+	"fmt"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
 )
 
+type para struct {
+	one string
+}
+
+func (p para) String() string {
+	res := fmt.Sprintf("%v", p.one)
+	return res
+}
+
 func Test_OK(t *testing.T) {
 	ast := assert.New(t)
 
-	questions := map[string]string{
-		"": "",
+	questions := map[string]para{
+		"": para{""},
 	}
 
-	for expected, parameter := range questions {
-		ast.Equal(expected, parameter, "输入:%s", parameter)
+	for expected, p := range questions {
+		ast.Equal(expected, p.one, "输入:%s", p)
 	}
 }
 `
-	content := fmt.Sprintf(fileFormat, p.packageName())
+	content := fmt.Sprintf(fileFormat, p.packageName(), `%s`)
 	filename := fmt.Sprintf("%s/%s_test.go", dir, p.TitleSlug)
 
 	err := ioutil.WriteFile(filename, []byte(content), 0755)
