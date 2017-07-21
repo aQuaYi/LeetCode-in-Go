@@ -1,7 +1,6 @@
 package Problem0241
 
 import (
-	"fmt"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -11,19 +10,31 @@ type para struct {
 	one string
 }
 
-func (p para) String() string {
-	res := fmt.Sprintf("%v", p.one)
-	return res
+type ans struct {
+	one string
+}
+
+type question struct {
+	p para
+	a ans
 }
 
 func Test_OK(t *testing.T) {
 	ast := assert.New(t)
 
-	questions := map[string]para{
-		"": para{""},
+	qs := []question{
+		question{
+			p: para{
+				one: "",
+			},
+			a: ans{
+				one: "",
+			},
+		},
 	}
 
-	for expected, p := range questions {
-		ast.Equal(expected, p.one, "输入:%s", p)
+	for _, q := range qs {
+		a, p := q.a, q.p
+		ast.Equal(a.one, p.one, "输入:%v", p)
 	}
 }
