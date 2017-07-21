@@ -14,10 +14,4 @@ before_install:
   - go get -t -v ./...
 
 script:
-  - go test ./... -race -coverprofile=coverage.txt -covermode=atomic
-
-after_success:
-  - bash <(curl -s https://codecov.io/bash)
-
-notifications:
-  webhooks: https://hooks.pubu.im/services/3wp9q4yqlzm8fxr
+  - go test ./... 
