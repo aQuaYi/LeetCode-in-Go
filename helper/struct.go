@@ -170,7 +170,7 @@ type Categorys []*Category
 
 func (cs Categorys) String() string {
 	res := fmt.Sprintln("||Easy|Medium|Hard|Total|")
-	res += fmt.Sprintln("|---|---|---|---|---|")
+	res += fmt.Sprintln("|:--|:--:|:--:|:--:|:--:|")
 	for _, c := range cs {
 		res += fmt.Sprintln(c)
 	}
@@ -271,9 +271,9 @@ func (ss Solveds) Swap(i, j int) {
 func (ss Solveds) String() string {
 	sort.Sort(ss)
 	res := "|题号|题目|难度|通过率|\n"
-	res += "|---| ----- | -------- | ---------- |\n"
+	res += "|:-:| :-- | :-: | :-: |\n"
 	for _, s := range ss {
-		res += fmt.Sprintln(s) + "\n"
+		res += fmt.Sprintln(s)
 	}
 	return res
 }

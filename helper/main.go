@@ -37,4 +37,6 @@ func main() {
 	cs = append(cs, total)
 	fmt.Println(solve)
 	fmt.Println(cs)
+
+	makeREADME(cs, solve)
 }
