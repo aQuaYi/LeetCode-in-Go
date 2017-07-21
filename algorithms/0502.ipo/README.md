@@ -1,4 +1,5 @@
 # [IPO](https://leetcode.com/problems/ipo/)
+
 ## 题目
 
 

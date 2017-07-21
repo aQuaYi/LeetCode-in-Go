@@ -1,4 +1,5 @@
 # [Beautiful Arrangement](https://leetcode.com/problems/beautiful-arrangement/)
+
 ## 题目
 
 

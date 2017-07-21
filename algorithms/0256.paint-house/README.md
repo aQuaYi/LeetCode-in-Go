@@ -1,4 +1,5 @@
 # [Paint House](https://leetcode.com/problems/paint-house/)
+
 ## 题目
 
 

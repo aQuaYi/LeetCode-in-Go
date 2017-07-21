@@ -1,8 +1,8 @@
 # LeetCode-in-Golang
-[![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang.svg?branch=master)]
+[![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang)
 
-(https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang)
 [LeetCode](leetcode.com)习题的Golang解答。
+
 
 ## 统计
 ||Easy|Medium|Hard|Total|
@@ -26,5 +26,5 @@
 |9|[Palindrome Number](./algorithms/0009.palindrome-number)|☆|35%|
 
 
-## Helper
+## helper
 [helper](./helper)会帮助处理大部分琐碎的工作。

@@ -1,4 +1,5 @@
 # [Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/)
+
 ## 题目
 
 

@@ -1,4 +1,5 @@
 # [Lexicographical Numbers](https://leetcode.com/problems/lexicographical-numbers/)
+
 ## 题目
 
 

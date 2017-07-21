@@ -1,4 +1,5 @@
 # [Word Abbreviation](https://leetcode.com/problems/word-abbreviation/)
+
 ## 题目
 
 

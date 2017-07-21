@@ -1,4 +1,5 @@
 # [Word Pattern](https://leetcode.com/problems/word-pattern/)
+
 ## 题目
 
 

@@ -1,4 +1,5 @@
 # [Magical String](https://leetcode.com/problems/magical-string/)
+
 ## 题目
 
 

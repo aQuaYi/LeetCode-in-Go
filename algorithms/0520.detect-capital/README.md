@@ -1,4 +1,5 @@
 # [Detect Capital](https://leetcode.com/problems/detect-capital/)
+
 ## 题目
 
 

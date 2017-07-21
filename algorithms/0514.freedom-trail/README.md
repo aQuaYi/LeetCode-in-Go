@@ -1,4 +1,5 @@
 # [Freedom Trail](https://leetcode.com/problems/freedom-trail/)
+
 ## 题目
 
 

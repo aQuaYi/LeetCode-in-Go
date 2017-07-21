@@ -1,4 +1,5 @@
 # [Design Snake Game](https://leetcode.com/problems/design-snake-game/)
+
 ## 题目
 
 
