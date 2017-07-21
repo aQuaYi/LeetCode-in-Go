@@ -12,7 +12,7 @@ import (
 )
 
 func (p Problem) checkDir(CategoryDir string) string {
-	pDir := fmt.Sprintf("%d.%s", p.ID, p.TitleSlug)
+	pDir := fmt.Sprintf("%04d.%s", p.ID, p.TitleSlug)
 	dir := fmt.Sprintf("./%s/%s", CategoryDir, pDir)
 
 	if GoKit.Exist(dir) {
@@ -55,10 +55,10 @@ func creatREADME(p Problem, dir string) {
 }
 
 func creatGo(p Problem, dir string) {
-	fileFormat := `package Problem%d
+	fileFormat := `package %s
 
 `
-	content := fmt.Sprintf(fileFormat, p.ID)
+	content := fmt.Sprintf(fileFormat, p.packageName())
 	filename := fmt.Sprintf("%s/%s.go", dir, p.TitleSlug)
 
 	err := ioutil.WriteFile(filename, []byte(content), 0755)
@@ -68,7 +68,7 @@ func creatGo(p Problem, dir string) {
 }
 
 func creatGoTest(p Problem, dir string) {
-	fileFormat := `package Problem%d
+	fileFormat := `package %s
 
 import (
 	"testing"
@@ -85,7 +85,7 @@ func Test_ok(t *testing.T) {
 	ast.Equal(expected, actual, "与预期不符")
 }
 `
-	content := fmt.Sprintf(fileFormat, p.ID)
+	content := fmt.Sprintf(fileFormat, p.packageName())
 	filename := fmt.Sprintf("%s/%s_test.go", dir, p.TitleSlug)
 
 	err := ioutil.WriteFile(filename, []byte(content), 0755)
@@ -100,6 +100,10 @@ type Problem struct {
 	State      `json:"stat"`
 	PaidOnly   bool `json:"paid_only"`
 	Difficulty `json:"difficulty"`
+}
+
+func (p Problem) packageName() string {
+	return fmt.Sprintf("Problem%04d", p.ID)
 }
 
 // State 保存单个问题的解答状态
