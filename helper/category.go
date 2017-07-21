@@ -6,6 +6,8 @@ import (
 	"os"
 	"syscall"
 
+	"strings"
+
 	"github.com/aQuaYi/GoKit"
 )
 
@@ -127,7 +129,7 @@ func (c *Category) update(sub *Category) {
 }
 
 func (c *Category) String() string {
-	res := fmt.Sprintf("|%s|", c.Name)
+	res := fmt.Sprintf("|**%s**|", strings.Title(c.Name))
 	res += fmt.Sprintf("%d/%d|", c.ACEasy, c.Easy)
 	res += fmt.Sprintf("%d/%d|", c.ACMedium, c.Medium)
 	res += fmt.Sprintf("%d/%d|", c.ACHard, c.Hard)

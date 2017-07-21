@@ -1,4 +1,4 @@
-# LeetCode-in-Golang
+# LeetCode in Golang 
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang)
 
 [LeetCode](leetcode.com)习题的Golang解答。
@@ -7,9 +7,9 @@
 ## 统计
 ||Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|algorithms|3/154|5/300|1/115|9/569|
-|draft|0/2|0/5|0/1|0/8|
-|Total|3/156|5/305|1/116|9/577|
+|**Algorithms**|3/154|5/300|1/115|9/569|
+|**Draft**|0/2|0/5|0/1|0/8|
+|**Total**|3/156|5/305|1/116|9/577|
 
 
 ## 已完成的题目
