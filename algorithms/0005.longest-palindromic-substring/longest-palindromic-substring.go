@@ -19,7 +19,7 @@ func longestPalindrome(s string) string {
 		if len(s)-i <= maxLen/2 {
 			// 因为i是回文`正中间段`首字符的索引号
 			// 假设此时能找到的最长回文的长度为l, 则，l <= (len(s)-i)*2 - 1
-			// 如果，len(s)-i < maxLen/2 成立
+			// 如果，len(s)-i <= maxLen/2 成立
 			// 则，l <= maxLen - 1
 			// 则，l < maxLen
 			// 所以，无需再找下去了。
