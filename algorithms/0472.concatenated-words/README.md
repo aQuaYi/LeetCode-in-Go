@@ -1,4 +1,4 @@
-# [Concatenated Words](https://leetcode.com/problems/concatenated-words/)
+# [472 - Concatenated Words](https://leetcode.com/problems/concatenated-words/)
 
 ## 题目
 

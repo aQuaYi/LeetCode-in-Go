@@ -1,4 +1,4 @@
-# [Next Permutation](https://leetcode.com/problems/next-permutation/)
+# [31 - Next Permutation](https://leetcode.com/problems/next-permutation/)
 
 ## 题目
 

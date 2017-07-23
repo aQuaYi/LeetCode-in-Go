@@ -1,4 +1,4 @@
-# [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)
+# [226 - Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)
 
 ## 题目
 

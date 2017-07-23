@@ -1,4 +1,4 @@
-# [Integer Replacement](https://leetcode.com/problems/integer-replacement/)
+# [397 - Integer Replacement](https://leetcode.com/problems/integer-replacement/)
 
 ## 题目
 

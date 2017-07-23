@@ -1,4 +1,4 @@
-# [Squirrel Simulation](https://leetcode.com/problems/squirrel-simulation/)
+# [573 - Squirrel Simulation](https://leetcode.com/problems/squirrel-simulation/)
 
 ## 题目
 

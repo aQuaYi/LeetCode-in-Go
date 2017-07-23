@@ -1,4 +1,4 @@
-# [Detect Capital](https://leetcode.com/problems/detect-capital/)
+# [520 - Detect Capital](https://leetcode.com/problems/detect-capital/)
 
 ## 题目
 

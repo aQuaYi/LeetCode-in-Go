@@ -1,4 +1,4 @@
-# [Super Pow](https://leetcode.com/problems/super-pow/)
+# [372 - Super Pow](https://leetcode.com/problems/super-pow/)
 
 ## 题目
 

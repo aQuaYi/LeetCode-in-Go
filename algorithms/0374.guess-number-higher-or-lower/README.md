@@ -1,4 +1,4 @@
-# [Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/)
+# [374 - Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/)
 
 ## 题目
 

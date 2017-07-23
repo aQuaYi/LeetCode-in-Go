@@ -1,4 +1,4 @@
-# [Zuma Game](https://leetcode.com/problems/zuma-game/)
+# [488 - Zuma Game](https://leetcode.com/problems/zuma-game/)
 
 ## 题目
 

@@ -1,4 +1,4 @@
-# [Valid Word Square](https://leetcode.com/problems/valid-word-square/)
+# [422 - Valid Word Square](https://leetcode.com/problems/valid-word-square/)
 
 ## 题目
 

@@ -1,4 +1,4 @@
-# [Total Hamming Distance](https://leetcode.com/problems/total-hamming-distance/)
+# [477 - Total Hamming Distance](https://leetcode.com/problems/total-hamming-distance/)
 
 ## 题目
 

@@ -1,4 +1,4 @@
-# [Freedom Trail](https://leetcode.com/problems/freedom-trail/)
+# [514 - Freedom Trail](https://leetcode.com/problems/freedom-trail/)
 
 ## 题目
 

@@ -1,4 +1,4 @@
-# [Super Washing Machines](https://leetcode.com/problems/super-washing-machines/)
+# [517 - Super Washing Machines](https://leetcode.com/problems/super-washing-machines/)
 
 ## 题目
 

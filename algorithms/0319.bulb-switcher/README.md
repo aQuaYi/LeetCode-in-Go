@@ -1,4 +1,4 @@
-# [Bulb Switcher](https://leetcode.com/problems/bulb-switcher/)
+# [319 - Bulb Switcher](https://leetcode.com/problems/bulb-switcher/)
 
 ## 题目
 

@@ -1,4 +1,4 @@
-# [Shortest Word Distance](https://leetcode.com/problems/shortest-word-distance/)
+# [243 - Shortest Word Distance](https://leetcode.com/problems/shortest-word-distance/)
 
 ## 题目
 

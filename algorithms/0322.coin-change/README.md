@@ -1,4 +1,4 @@
-# [Coin Change](https://leetcode.com/problems/coin-change/)
+# [322 - Coin Change](https://leetcode.com/problems/coin-change/)
 
 ## 题目
 

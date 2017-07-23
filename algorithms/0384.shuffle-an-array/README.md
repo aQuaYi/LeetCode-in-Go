@@ -1,4 +1,4 @@
-# [Shuffle an Array](https://leetcode.com/problems/shuffle-an-array/)
+# [384 - Shuffle an Array](https://leetcode.com/problems/shuffle-an-array/)
 
 ## 题目
 

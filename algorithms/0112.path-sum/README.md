@@ -1,4 +1,4 @@
-# [Path Sum](https://leetcode.com/problems/path-sum/)
+# [112 - Path Sum](https://leetcode.com/problems/path-sum/)
 
 ## 题目
 

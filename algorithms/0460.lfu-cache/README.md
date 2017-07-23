@@ -1,4 +1,4 @@
-# [LFU Cache](https://leetcode.com/problems/lfu-cache/)
+# [460 - LFU Cache](https://leetcode.com/problems/lfu-cache/)
 
 ## 题目
 

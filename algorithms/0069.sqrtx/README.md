@@ -1,4 +1,4 @@
-# [Sqrt(x)](https://leetcode.com/problems/sqrtx/)
+# [69 - Sqrt(x)](https://leetcode.com/problems/sqrtx/)
 
 ## 题目
 

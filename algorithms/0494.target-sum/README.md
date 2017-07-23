@@ -1,4 +1,4 @@
-# [Target Sum](https://leetcode.com/problems/target-sum/)
+# [494 - Target Sum](https://leetcode.com/problems/target-sum/)
 
 ## 题目
 

@@ -1,4 +1,4 @@
-# [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)
+# [70 - Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)
 
 ## 题目
 

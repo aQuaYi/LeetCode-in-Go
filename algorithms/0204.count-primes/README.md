@@ -1,4 +1,4 @@
-# [Count Primes](https://leetcode.com/problems/count-primes/)
+# [204 - Count Primes](https://leetcode.com/problems/count-primes/)
 
 ## 题目
 

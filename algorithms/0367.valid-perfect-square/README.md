@@ -1,4 +1,4 @@
-# [Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/)
+# [367 - Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/)
 
 ## 题目
 

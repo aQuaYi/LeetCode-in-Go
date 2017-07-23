@@ -1,4 +1,4 @@
-# [Linked List Random Node](https://leetcode.com/problems/linked-list-random-node/)
+# [382 - Linked List Random Node](https://leetcode.com/problems/linked-list-random-node/)
 
 ## 题目
 

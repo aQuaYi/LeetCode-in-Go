@@ -1,4 +1,4 @@
-# [Count and Say](https://leetcode.com/problems/count-and-say/)
+# [38 - Count and Say](https://leetcode.com/problems/count-and-say/)
 
 ## 题目
 

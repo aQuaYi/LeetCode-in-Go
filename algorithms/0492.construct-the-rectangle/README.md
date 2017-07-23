@@ -1,4 +1,4 @@
-# [Construct the Rectangle](https://leetcode.com/problems/construct-the-rectangle/)
+# [492 - Construct the Rectangle](https://leetcode.com/problems/construct-the-rectangle/)
 
 ## 题目
 

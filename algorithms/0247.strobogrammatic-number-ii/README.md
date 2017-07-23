@@ -1,4 +1,4 @@
-# [Strobogrammatic Number II](https://leetcode.com/problems/strobogrammatic-number-ii/)
+# [247 - Strobogrammatic Number II](https://leetcode.com/problems/strobogrammatic-number-ii/)
 
 ## 题目
 

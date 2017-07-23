@@ -1,4 +1,4 @@
-# [Factor Combinations](https://leetcode.com/problems/factor-combinations/)
+# [254 - Factor Combinations](https://leetcode.com/problems/factor-combinations/)
 
 ## 题目
 

@@ -1,4 +1,4 @@
-# [Range Addition](https://leetcode.com/problems/range-addition/)
+# [370 - Range Addition](https://leetcode.com/problems/range-addition/)
 
 ## 题目
 

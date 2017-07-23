@@ -1,4 +1,4 @@
-# [The Maze](https://leetcode.com/problems/the-maze/)
+# [490 - The Maze](https://leetcode.com/problems/the-maze/)
 
 ## 题目
 

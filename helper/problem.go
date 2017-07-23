@@ -34,7 +34,7 @@ func (p Problem) checkDir(CategoryDir string) string {
 	return relativeProblemDir
 }
 func creatREADME(p Problem, dir string) {
-	fileFormat := `# [%s](%s)
+	fileFormat := `# [%d - %s](%s)
 
 ## 题目
 
@@ -47,7 +47,7 @@ func creatREADME(p Problem, dir string) {
 
 `
 	link := fmt.Sprintf("https://leetcode.com/problems/%s/", p.TitleSlug)
-	content := fmt.Sprintf(fileFormat, p.Title, link)
+	content := fmt.Sprintf(fileFormat, p.ID, p.Title, link)
 	filename := fmt.Sprintf("%s/README.md", dir)
 
 	err := ioutil.WriteFile(filename, []byte(content), 0755)

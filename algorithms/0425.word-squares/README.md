@@ -1,4 +1,4 @@
-# [Word Squares](https://leetcode.com/problems/word-squares/)
+# [425 - Word Squares](https://leetcode.com/problems/word-squares/)
 
 ## 题目
 
