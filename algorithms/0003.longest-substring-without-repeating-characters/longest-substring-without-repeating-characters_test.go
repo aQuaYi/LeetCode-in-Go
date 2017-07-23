@@ -11,7 +11,7 @@ type para struct {
 }
 
 type ans struct {
-	one string
+	one int
 }
 
 type question struct {
@@ -25,16 +25,32 @@ func Test_OK(t *testing.T) {
 	qs := []question{
 		question{
 			p: para{
-				one: "",
+				one: "abcabcbb",
 			},
 			a: ans{
-				one: "",
+				one: 3,
+			},
+		},
+		question{
+			p: para{
+				one: "bbbbbbbb",
+			},
+			a: ans{
+				one: 1,
+			},
+		},
+		question{
+			p: para{
+				one: "pwwkew",
+			},
+			a: ans{
+				one: 3,
 			},
 		},
 	}
 
 	for _, q := range qs {
 		a, p := q.a, q.p
-		ast.Equal(a.one, p.one, "输入:%v", p)
+		ast.Equal(a.one, lengthOfLongestSubstring(p.one), "输入:%v", p)
 	}
 }
