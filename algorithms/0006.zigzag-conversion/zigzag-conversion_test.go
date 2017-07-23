@@ -60,6 +60,24 @@ func Test_OK(t *testing.T) {
 				one: "AGMSYBFHLNRTXZCEIKOQUWDJPV",
 			},
 		},
+		question{
+			p: para{
+				one: "ABCDEFGHIJKLMNOPQRSTUVWX",
+				two: 5,
+			},
+			a: ans{
+				one: "AIQBHJPRXCGKOSWDFLNTVEMU",
+			},
+		},
+		question{
+			p: para{
+				one: "A",
+				two: 3,
+			},
+			a: ans{
+				one: "A",
+			},
+		},
 	}
 
 	for _, q := range qs {

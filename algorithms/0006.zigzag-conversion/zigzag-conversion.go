@@ -5,50 +5,36 @@ import (
 )
 
 func convert(s string, numRows int) string {
-	if numRows == 1 {
+	if numRows == 1 || len(s) <= numRows {
 		return s
 	}
 
-	// 准备存放字符的容器
-	temp := make([]bytes.Buffer, numRows)
-	// 准备序列号生成函数
-	index := indexFunc(numRows)
+	res := bytes.Buffer{}
+	// p pace 步距
+	p := numRows*2 - 2
 
-	// 按照序列号生成的方式，
-	// 依次把字符存入指定的容器
-	for _, c := range s {
-		i := index()
-		temp[i].WriteRune(c)
+	// 处理第一行
+	for i := 0; i < len(s); i += p {
+		res.WriteByte(s[i])
 	}
 
-	// 汇总各个容器的内容
-	res := ""
-	for i := range temp {
-		res += temp[i].String()
-	}
+	// 处理中间的行
+	for r := 1; r <= numRows-2; r++ {
+		// 添加r行的第一个字符
+		res.WriteByte(s[r])
 
-	return res
-}
-
-// indexFunc 返回一个函数index
-// index()会产生所需的容器序号
-// 当 num == 4 时
-// indexS == []int{0,1,2,3,2,1}
-func indexFunc(num int) func() int {
-	len := num*2 - 2
-	indexS := make([]int, len)
-
-	for i := 0; i < len; i++ {
-		if i < num {
-			indexS[i] = i
-		} else {
-			indexS[i] = indexS[len-i]
+		for k := p; k-r < len(s); k += p {
+			res.WriteByte(s[k-r])
+			if k+r < len(s) {
+				res.WriteByte(s[k+r])
+			}
 		}
 	}
 
-	i := -1
-	return func() int {
-		i++
-		return indexS[i%len]
+	// 处理最后一行
+	for i := numRows - 1; i < len(s); i += p {
+		res.WriteByte(s[i])
 	}
+
+	return res.String()
 }

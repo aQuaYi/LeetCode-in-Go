@@ -15,53 +15,26 @@ func convert(text string, nRows int) string
 convert("PAYPALISHIRING", 3) should return "PAHNAPLSIIGYIR".
 
 ## 解题思路
-输入"ABCDEFGHIJKLMNOPQRSTUVWXYZ"和参数4后，得到答案"AGMSYBFHLNRTXZCEIKOQUWDJPV"，
+输入"ABCDEFGHIJKLMNOPQRSTUVWXYZ"和参数5后，得到答案"AGMSYBFHLNRTXZCEIKOQUWDJPV"，
 按照题目的摆放方法，可得：
 ```
-A  G  M  S  Y
-B FH LN RT XZ
-CE IK OQ UW
-D  J  P  V
+A   I   Q   Y
+B  HJ  PR  XZ
+C G K O S W
+DF  LN  TV
+E   M   U
 ```
-这样更容易得到convert的处理过程：
-1. 按照参数4，先准备4个存放字符串的容器，编号分别为0,1,2,3
-1. 按照0,1,2,3,2,1顺序，把text中的字符，存入以上容器
-1. 上一步没有存完的话，重复一遍，直到存完为止。
-1. 把容器0,1,2,3中的内容，依次合并起来，输出。
+可以看到，各行字符在原字符串中的索引号为
+1. 0行，0,    8,         16,       24
+1. 1行，1,  7,9,      15,17,    23,25
+1. 2行，2, 6, 10,  14,   18,  22
+1. 3行，3,5,  11,13,     19,21
+1. 4行，4,    12,        20
 
+令p=numRows×2-2，可以总结出以下规律
+1. 0行， 0×p，1×p，...
+1. r行， r，1×p-r，1×p+r，2×p-r，2×p+r，...
+1. 最后一行， numRow-1, numRow-1+1×p，numRow-1+2×p，...
+
+只需编程依次处理各行即可。
 ## 总结
-
-
-## Fastest Solution
-
-```go
-func convert(s string, numRows int) string {
-	if numRows == 1 {
-		return s
-	} 
-
-	k := numRows*2 - 2
-	n := len(s)
-	buff := bytes.Buffer{}
-	for i := 0; i < n; i += k {
-		buff.WriteByte(s[i])
-	}
-	for i := 1; i < numRows-1; i++ {
-		if i >= n {
-			break
-		}
-		t := k - 2*i
-		for j := i; j < n; j += k {
-			buff.WriteByte(s[j])
-			if j+t >= n {
-				break
-			}
-			buff.WriteByte(s[j+t])
-		}
-	}
-	for i := numRows - 1; i < n; i += k {
-		buff.WriteByte(s[i])
-	}
-	return buff.String()
-}
-```
