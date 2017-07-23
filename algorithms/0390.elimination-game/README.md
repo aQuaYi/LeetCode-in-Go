@@ -1,4 +1,4 @@
-# [390 - Elimination Game](https://leetcode.com/problems/elimination-game/)
+# [390. Elimination Game](https://leetcode.com/problems/elimination-game/)
 
 ## 题目
 

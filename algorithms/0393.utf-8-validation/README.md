@@ -1,4 +1,4 @@
-# [393 - UTF-8 Validation](https://leetcode.com/problems/utf-8-validation/)
+# [393. UTF-8 Validation](https://leetcode.com/problems/utf-8-validation/)
 
 ## 题目
 

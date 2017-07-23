@@ -1,4 +1,4 @@
-# [355 - Design Twitter](https://leetcode.com/problems/design-twitter/)
+# [355. Design Twitter](https://leetcode.com/problems/design-twitter/)
 
 ## 题目
 

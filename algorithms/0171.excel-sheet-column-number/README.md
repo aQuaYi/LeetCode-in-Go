@@ -1,4 +1,4 @@
-# [171 - Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/)
+# [171. Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/)
 
 ## 题目
 

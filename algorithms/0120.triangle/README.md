@@ -1,4 +1,4 @@
-# [120 - Triangle](https://leetcode.com/problems/triangle/)
+# [120. Triangle](https://leetcode.com/problems/triangle/)
 
 ## 题目
 

@@ -1,4 +1,4 @@
-# [419 - Battleships in a Board](https://leetcode.com/problems/battleships-in-a-board/)
+# [419. Battleships in a Board](https://leetcode.com/problems/battleships-in-a-board/)
 
 ## 题目
 

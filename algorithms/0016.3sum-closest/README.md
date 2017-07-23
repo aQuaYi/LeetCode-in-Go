@@ -1,4 +1,4 @@
-# [16 - 3Sum Closest](https://leetcode.com/problems/3sum-closest/)
+# [16. 3Sum Closest](https://leetcode.com/problems/3sum-closest/)
 
 ## 题目
 

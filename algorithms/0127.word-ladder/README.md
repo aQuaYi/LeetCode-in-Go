@@ -1,4 +1,4 @@
-# [127 - Word Ladder](https://leetcode.com/problems/word-ladder/)
+# [127. Word Ladder](https://leetcode.com/problems/word-ladder/)
 
 ## 题目
 

@@ -1,4 +1,4 @@
-# [578 - Get Highest Answer Rate Question](https://leetcode.com/problems/get-highest-answer-rate-question/)
+# [578. Get Highest Answer Rate Question](https://leetcode.com/problems/get-highest-answer-rate-question/)
 
 ## 题目
 

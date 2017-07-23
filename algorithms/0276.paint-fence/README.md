@@ -1,4 +1,4 @@
-# [276 - Paint Fence](https://leetcode.com/problems/paint-fence/)
+# [276. Paint Fence](https://leetcode.com/problems/paint-fence/)
 
 ## 题目
 

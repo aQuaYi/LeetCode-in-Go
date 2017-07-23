@@ -1,4 +1,4 @@
-# [603 - Consecutive Available Seats](https://leetcode.com/problems/consecutive-available-seats/)
+# [603. Consecutive Available Seats](https://leetcode.com/problems/consecutive-available-seats/)
 
 ## 题目
 

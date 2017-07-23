@@ -1,4 +1,4 @@
-# [148 - Sort List](https://leetcode.com/problems/sort-list/)
+# [148. Sort List](https://leetcode.com/problems/sort-list/)
 
 ## 题目
 

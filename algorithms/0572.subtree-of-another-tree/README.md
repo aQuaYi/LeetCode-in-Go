@@ -1,4 +1,4 @@
-# [572 - Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/)
+# [572. Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/)
 
 ## 题目
 

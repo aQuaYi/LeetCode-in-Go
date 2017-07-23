@@ -1,4 +1,4 @@
-# [464 - Can I Win](https://leetcode.com/problems/can-i-win/)
+# [464. Can I Win](https://leetcode.com/problems/can-i-win/)
 
 ## 题目
 

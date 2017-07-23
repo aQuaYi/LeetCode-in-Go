@@ -1,4 +1,4 @@
-# [587 - Erect the Fence](https://leetcode.com/problems/erect-the-fence/)
+# [587. Erect the Fence](https://leetcode.com/problems/erect-the-fence/)
 
 ## 题目
 

@@ -1,4 +1,4 @@
-# [616 - Add Bold Tag in String](https://leetcode.com/problems/add-bold-tag-in-string/)
+# [616. Add Bold Tag in String](https://leetcode.com/problems/add-bold-tag-in-string/)
 
 ## 题目
 

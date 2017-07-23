@@ -1,4 +1,4 @@
-# [632 - Smallest Range](https://leetcode.com/problems/smallest-range/)
+# [632. Smallest Range](https://leetcode.com/problems/smallest-range/)
 
 ## 题目
 

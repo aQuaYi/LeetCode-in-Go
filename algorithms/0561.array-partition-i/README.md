@@ -1,4 +1,4 @@
-# [561 - Array Partition I](https://leetcode.com/problems/array-partition-i/)
+# [561. Array Partition I](https://leetcode.com/problems/array-partition-i/)
 
 ## 题目
 

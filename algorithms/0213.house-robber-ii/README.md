@@ -1,4 +1,4 @@
-# [213 - House Robber II](https://leetcode.com/problems/house-robber-ii/)
+# [213. House Robber II](https://leetcode.com/problems/house-robber-ii/)
 
 ## 题目
 

@@ -1,4 +1,4 @@
-# [50 - Pow(x, n)](https://leetcode.com/problems/powx-n/)
+# [50. Pow(x, n)](https://leetcode.com/problems/powx-n/)
 
 ## 题目
 

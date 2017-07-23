@@ -1,4 +1,4 @@
-# [591 - Tag Validator](https://leetcode.com/problems/tag-validator/)
+# [591. Tag Validator](https://leetcode.com/problems/tag-validator/)
 
 ## 题目
 

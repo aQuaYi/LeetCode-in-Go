@@ -1,4 +1,4 @@
-# [554 - Brick Wall](https://leetcode.com/problems/brick-wall/)
+# [554. Brick Wall](https://leetcode.com/problems/brick-wall/)
 
 ## 题目
 

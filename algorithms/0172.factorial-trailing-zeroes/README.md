@@ -1,4 +1,4 @@
-# [172 - Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/)
+# [172. Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/)
 
 ## 题目
 

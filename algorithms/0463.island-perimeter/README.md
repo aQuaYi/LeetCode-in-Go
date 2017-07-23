@@ -1,4 +1,4 @@
-# [463 - Island Perimeter](https://leetcode.com/problems/island-perimeter/)
+# [463. Island Perimeter](https://leetcode.com/problems/island-perimeter/)
 
 ## 题目
 

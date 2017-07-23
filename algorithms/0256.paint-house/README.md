@@ -1,4 +1,4 @@
-# [256 - Paint House](https://leetcode.com/problems/paint-house/)
+# [256. Paint House](https://leetcode.com/problems/paint-house/)
 
 ## 题目
 

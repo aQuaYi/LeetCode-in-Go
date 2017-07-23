@@ -1,4 +1,4 @@
-# [481 - Magical String](https://leetcode.com/problems/magical-string/)
+# [481. Magical String](https://leetcode.com/problems/magical-string/)
 
 ## 题目
 

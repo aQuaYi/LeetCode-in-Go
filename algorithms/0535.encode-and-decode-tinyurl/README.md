@@ -1,4 +1,4 @@
-# [535 - Encode and Decode TinyURL](https://leetcode.com/problems/encode-and-decode-tinyurl/)
+# [535. Encode and Decode TinyURL](https://leetcode.com/problems/encode-and-decode-tinyurl/)
 
 ## 题目
 

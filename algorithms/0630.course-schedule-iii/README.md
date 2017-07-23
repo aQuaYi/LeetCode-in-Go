@@ -1,4 +1,4 @@
-# [630 - Course Schedule III](https://leetcode.com/problems/course-schedule-iii/)
+# [630. Course Schedule III](https://leetcode.com/problems/course-schedule-iii/)
 
 ## 题目
 

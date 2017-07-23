@@ -1,4 +1,4 @@
-# [89 - Gray Code](https://leetcode.com/problems/gray-code/)
+# [89. Gray Code](https://leetcode.com/problems/gray-code/)
 
 ## 题目
 

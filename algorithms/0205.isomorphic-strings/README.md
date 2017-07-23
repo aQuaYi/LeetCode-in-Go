@@ -1,4 +1,4 @@
-# [205 - Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/)
+# [205. Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/)
 
 ## 题目
 

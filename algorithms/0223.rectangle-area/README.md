@@ -1,4 +1,4 @@
-# [223 - Rectangle Area](https://leetcode.com/problems/rectangle-area/)
+# [223. Rectangle Area](https://leetcode.com/problems/rectangle-area/)
 
 ## 题目
 

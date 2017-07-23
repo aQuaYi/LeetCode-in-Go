@@ -1,4 +1,4 @@
-# [531 - Lonely Pixel I](https://leetcode.com/problems/lonely-pixel-i/)
+# [531. Lonely Pixel I](https://leetcode.com/problems/lonely-pixel-i/)
 
 ## 题目
 

@@ -1,4 +1,4 @@
-# [576 - Out of Boundary Paths](https://leetcode.com/problems/out-of-boundary-paths/)
+# [576. Out of Boundary Paths](https://leetcode.com/problems/out-of-boundary-paths/)
 
 ## 题目
 

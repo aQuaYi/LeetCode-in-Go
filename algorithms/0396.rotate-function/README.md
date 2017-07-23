@@ -1,4 +1,4 @@
-# [396 - Rotate Function](https://leetcode.com/problems/rotate-function/)
+# [396. Rotate Function](https://leetcode.com/problems/rotate-function/)
 
 ## 题目
 

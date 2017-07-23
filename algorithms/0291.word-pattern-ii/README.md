@@ -1,4 +1,4 @@
-# [291 - Word Pattern II](https://leetcode.com/problems/word-pattern-ii/)
+# [291. Word Pattern II](https://leetcode.com/problems/word-pattern-ii/)
 
 ## 题目
 

@@ -1,4 +1,4 @@
-# [553 - Optimal Division](https://leetcode.com/problems/optimal-division/)
+# [553. Optimal Division](https://leetcode.com/problems/optimal-division/)
 
 ## 题目
 

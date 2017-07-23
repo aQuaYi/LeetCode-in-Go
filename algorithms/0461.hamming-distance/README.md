@@ -1,4 +1,4 @@
-# [461 - Hamming Distance](https://leetcode.com/problems/hamming-distance/)
+# [461. Hamming Distance](https://leetcode.com/problems/hamming-distance/)
 
 ## 题目
 

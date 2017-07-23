@@ -1,4 +1,4 @@
-# [447 - Number of Boomerangs](https://leetcode.com/problems/number-of-boomerangs/)
+# [447. Number of Boomerangs](https://leetcode.com/problems/number-of-boomerangs/)
 
 ## 题目
 

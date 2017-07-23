@@ -1,4 +1,4 @@
-# [320 - Generalized Abbreviation](https://leetcode.com/problems/generalized-abbreviation/)
+# [320. Generalized Abbreviation](https://leetcode.com/problems/generalized-abbreviation/)
 
 ## 题目
 

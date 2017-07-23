@@ -1,4 +1,4 @@
-# [403 - Frog Jump](https://leetcode.com/problems/frog-jump/)
+# [403. Frog Jump](https://leetcode.com/problems/frog-jump/)
 
 ## 题目
 

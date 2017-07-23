@@ -1,4 +1,4 @@
-# [119 - Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/)
+# [119. Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/)
 
 ## 题目
 

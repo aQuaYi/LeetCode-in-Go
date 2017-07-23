@@ -1,4 +1,4 @@
-# [146 - LRU Cache](https://leetcode.com/problems/lru-cache/)
+# [146. LRU Cache](https://leetcode.com/problems/lru-cache/)
 
 ## 题目
 

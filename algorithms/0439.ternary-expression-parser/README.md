@@ -1,4 +1,4 @@
-# [439 - Ternary Expression Parser](https://leetcode.com/problems/ternary-expression-parser/)
+# [439. Ternary Expression Parser](https://leetcode.com/problems/ternary-expression-parser/)
 
 ## 题目
 

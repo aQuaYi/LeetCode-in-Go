@@ -34,7 +34,7 @@ func (p Problem) checkDir(CategoryDir string) string {
 	return relativeProblemDir
 }
 func creatREADME(p Problem, dir string) {
-	fileFormat := `# [%d - %s](%s)
+	fileFormat := `# [%d. %s](%s)
 
 ## 题目
 

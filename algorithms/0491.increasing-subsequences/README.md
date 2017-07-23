@@ -1,4 +1,4 @@
-# [491 - Increasing Subsequences](https://leetcode.com/problems/increasing-subsequences/)
+# [491. Increasing Subsequences](https://leetcode.com/problems/increasing-subsequences/)
 
 ## 题目
 

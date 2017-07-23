@@ -1,4 +1,4 @@
-# [280 - Wiggle Sort](https://leetcode.com/problems/wiggle-sort/)
+# [280. Wiggle Sort](https://leetcode.com/problems/wiggle-sort/)
 
 ## 题目
 

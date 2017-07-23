@@ -1,4 +1,4 @@
-# [605 - Can Place Flowers](https://leetcode.com/problems/can-place-flowers/)
+# [605. Can Place Flowers](https://leetcode.com/problems/can-place-flowers/)
 
 ## 题目
 

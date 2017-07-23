@@ -1,4 +1,4 @@
-# [290 - Word Pattern](https://leetcode.com/problems/word-pattern/)
+# [290. Word Pattern](https://leetcode.com/problems/word-pattern/)
 
 ## 题目
 

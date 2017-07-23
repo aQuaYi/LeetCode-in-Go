@@ -1,4 +1,4 @@
-# [625 - Minimum Factorization](https://leetcode.com/problems/minimum-factorization/)
+# [625. Minimum Factorization](https://leetcode.com/problems/minimum-factorization/)
 
 ## 题目
 

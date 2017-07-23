@@ -1,4 +1,4 @@
-# [332 - Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/)
+# [332. Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/)
 
 ## 题目
 

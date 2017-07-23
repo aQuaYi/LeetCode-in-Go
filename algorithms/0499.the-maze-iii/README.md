@@ -1,4 +1,4 @@
-# [499 - The Maze III](https://leetcode.com/problems/the-maze-iii/)
+# [499. The Maze III](https://leetcode.com/problems/the-maze-iii/)
 
 ## 题目
 

@@ -1,4 +1,4 @@
-# [174 - Dungeon Game](https://leetcode.com/problems/dungeon-game/)
+# [174. Dungeon Game](https://leetcode.com/problems/dungeon-game/)
 
 ## 题目
 

@@ -1,4 +1,4 @@
-# [227 - Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/)
+# [227. Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/)
 
 ## 题目
 

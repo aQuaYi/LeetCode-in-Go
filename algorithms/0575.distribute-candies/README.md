@@ -1,4 +1,4 @@
-# [575 - Distribute Candies](https://leetcode.com/problems/distribute-candies/)
+# [575. Distribute Candies](https://leetcode.com/problems/distribute-candies/)
 
 ## 题目
 

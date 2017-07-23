@@ -1,4 +1,4 @@
-# [133 - Clone Graph](https://leetcode.com/problems/clone-graph/)
+# [133. Clone Graph](https://leetcode.com/problems/clone-graph/)
 
 ## 题目
 

@@ -1,4 +1,4 @@
-# [529 - Minesweeper](https://leetcode.com/problems/minesweeper/)
+# [529. Minesweeper](https://leetcode.com/problems/minesweeper/)
 
 ## 题目
 

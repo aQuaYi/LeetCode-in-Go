@@ -1,4 +1,4 @@
-# [582 - Kill Process](https://leetcode.com/problems/kill-process/)
+# [582. Kill Process](https://leetcode.com/problems/kill-process/)
 
 ## 题目
 

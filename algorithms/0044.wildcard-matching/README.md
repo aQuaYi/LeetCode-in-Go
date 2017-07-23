@@ -1,4 +1,4 @@
-# [44 - Wildcard Matching](https://leetcode.com/problems/wildcard-matching/)
+# [44. Wildcard Matching](https://leetcode.com/problems/wildcard-matching/)
 
 ## 题目
 

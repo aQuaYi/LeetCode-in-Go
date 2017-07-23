@@ -1,4 +1,4 @@
-# [507 - Perfect Number](https://leetcode.com/problems/perfect-number/)
+# [507. Perfect Number](https://leetcode.com/problems/perfect-number/)
 
 ## 题目
 

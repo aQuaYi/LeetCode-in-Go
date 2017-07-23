@@ -1,4 +1,4 @@
-# [593 - Valid Square](https://leetcode.com/problems/valid-square/)
+# [593. Valid Square](https://leetcode.com/problems/valid-square/)
 
 ## 题目
 

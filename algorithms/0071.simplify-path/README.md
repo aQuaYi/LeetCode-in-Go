@@ -1,4 +1,4 @@
-# [71 - Simplify Path](https://leetcode.com/problems/simplify-path/)
+# [71. Simplify Path](https://leetcode.com/problems/simplify-path/)
 
 ## 题目
 

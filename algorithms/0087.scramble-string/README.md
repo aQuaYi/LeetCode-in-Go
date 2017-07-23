@@ -1,4 +1,4 @@
-# [87 - Scramble String](https://leetcode.com/problems/scramble-string/)
+# [87. Scramble String](https://leetcode.com/problems/scramble-string/)
 
 ## 题目
 
