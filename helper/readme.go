@@ -18,6 +18,7 @@ func makeREADME(c Categories, s Solveds) {
 
 ## 已完成的题目
 %s
+>注意，上表中的通过率，是总体通过率，非本人的通过率。
 
 ## helper
 [helper](./helper)会帮助处理大部分琐碎的工作。

@@ -25,6 +25,7 @@
 |8|[String to Integer (atoi)](./algorithms/0008.string-to-integer-atoi)|☆ ☆|13%|
 |9|[Palindrome Number](./algorithms/0009.palindrome-number)|☆|35%|
 
+>注意，上表中的通过率，是总体通过率，非本人的通过率。
 
 ## helper
 [helper](./helper)会帮助处理大部分琐碎的工作。
