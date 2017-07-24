@@ -14,7 +14,7 @@
 
 
 ## 已完成的题目
-|题号|题目|难度|通过率|收藏|
+|题号|题目|难度|总体通过率|收藏|
 |:-:|:-|:-: | :-: | :-: |
 |1|[Two Sum](./algorithms/0001.two-sum)|☆|34%||
 |2|[Add Two Numbers](./algorithms/0002.add-two-numbers)|☆ ☆|27%||
@@ -26,6 +26,6 @@
 |8|[String to Integer (atoi)](./algorithms/0008.string-to-integer-atoi)|☆ ☆|13%||
 |9|[Palindrome Number](./algorithms/0009.palindrome-number)|☆|35%||
 |10|[Regular Expression Matching](./algorithms/0010.regular-expression-matching)|☆ ☆ ☆|24%|❤|
-> 表中通过率是总体通过率。
+
 ## helper文件夹
 [helper](./helper)会帮助处理大部分琐碎的工作。
