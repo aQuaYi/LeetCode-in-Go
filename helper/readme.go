@@ -16,7 +16,7 @@ func makeREADME(c Categories, s Solveds) {
 ## 统计
 %s
 
-## 已完成的题目
+## 已添加的题目
 %s
 %s
 `
