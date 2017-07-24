@@ -17,16 +17,14 @@ func makeREADME(c Categories, s Solveds) {
 %s
 
 ## 已完成的题目
+%s>注意，上表中的通过率，是总体通过率，非本人的通过率。
 %s
->注意，上表中的通过率，是总体通过率，非本人的通过率。
-
-## helper
-[helper](./helper)会帮助处理大部分琐碎的工作。
 `
-	head := readHead("README_HEAD.md")
+	head := read("README_HEAD.md")
 	count := c.String()
 	solved := s.String()
-	content := fmt.Sprintf(template, head, count, solved)
+	tail := read("README_TAIL.md")
+	content := fmt.Sprintf(template, head, count, solved, tail)
 
 	err := ioutil.WriteFile(file, []byte(content), 0755)
 	if err != nil {
@@ -34,7 +32,7 @@ func makeREADME(c Categories, s Solveds) {
 	}
 }
 
-func readHead(path string) string {
+func read(path string) string {
 	head, err := os.Open(path)
 	if err != nil {
 		panic(err)

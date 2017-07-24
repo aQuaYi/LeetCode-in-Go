@@ -26,8 +26,6 @@
 |8|❤|[String to Integer (atoi)](./algorithms/0008.string-to-integer-atoi)|☆ ☆|13%|
 |9||[Palindrome Number](./algorithms/0009.palindrome-number)|☆|35%|
 |10|❤|[Regular Expression Matching](./algorithms/0010.regular-expression-matching)|☆ ☆ ☆|24%|
-
 >注意，上表中的通过率，是总体通过率，非本人的通过率。
-
-## helper
+## helper文件夹
 [helper](./helper)会帮助处理大部分琐碎的工作。
