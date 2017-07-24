@@ -122,6 +122,7 @@ func Test_%s(t *testing.T) {
 type Problem struct {
 	Status     string `json:"status"`
 	State      `json:"stat"`
+	Favor      bool `json:"is_favor"`
 	PaidOnly   bool `json:"paid_only"`
 	Difficulty `json:"difficulty"`
 }
@@ -150,6 +151,7 @@ type Difficulty struct {
 type Solved struct {
 	ID       int
 	Title    string
+	Favor    bool
 	Dir      string
 	Degree   string
 	PassRate string
@@ -157,6 +159,11 @@ type Solved struct {
 
 func (s Solved) String() string {
 	res := fmt.Sprintf("|%d|", s.ID)
+	f := ""
+	if s.Favor {
+		f = "❤"
+	}
+	res += fmt.Sprintf("%s|", f)
 	res += fmt.Sprintf(`[%s](%s)|`, s.Title, s.Dir)
 	res += fmt.Sprintf("%s|", s.Degree)
 	res += fmt.Sprintf("%s|", s.PassRate)
@@ -172,6 +179,7 @@ var degrees = map[int]string{
 func makeSolved(p Problem, dir string) Solved {
 	return Solved{
 		ID:       p.ID,
+		Favor:    p.Favor,
 		Title:    p.Title,
 		Dir:      fmt.Sprintf("%s", dir),
 		Degree:   degrees[p.Difficulty.Level],
@@ -196,8 +204,8 @@ func (ss Solveds) Swap(i, j int) {
 
 func (ss Solveds) String() string {
 	sort.Sort(ss)
-	res := "|题号|题目|难度|通过率|\n"
-	res += "|:-:| :-- | :-: | :-: |\n"
+	res := "|题号|收藏|题目|难度|通过率|\n"
+	res += "|:-:|:-:|:-- | :-: | :-: |\n"
 	for _, s := range ss {
 		res += fmt.Sprintln(s)
 	}
