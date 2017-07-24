@@ -159,14 +159,14 @@ type Solved struct {
 
 func (s Solved) String() string {
 	res := fmt.Sprintf("|%d|", s.ID)
+	res += fmt.Sprintf(`[%s](%s)|`, s.Title, s.Dir)
+	res += fmt.Sprintf("%s|", s.Degree)
+	res += fmt.Sprintf("%s|", s.PassRate)
 	f := ""
 	if s.Favor {
 		f = "❤"
 	}
 	res += fmt.Sprintf("%s|", f)
-	res += fmt.Sprintf(`[%s](%s)|`, s.Title, s.Dir)
-	res += fmt.Sprintf("%s|", s.Degree)
-	res += fmt.Sprintf("%s|", s.PassRate)
 	return res
 }
 
@@ -204,8 +204,8 @@ func (ss Solveds) Swap(i, j int) {
 
 func (ss Solveds) String() string {
 	sort.Sort(ss)
-	res := "|题号|收藏|题目|难度|通过率|\n"
-	res += "|:-:|:-:|:-- | :-: | :-: |\n"
+	res := "|题号|题目|难度|通过率|收藏|\n"
+	res += "|:-:|:-|:-: | :-: | :-: |\n"
 	for _, s := range ss {
 		res += fmt.Sprintln(s)
 	}

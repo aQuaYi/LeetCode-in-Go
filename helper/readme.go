@@ -17,7 +17,7 @@ func makeREADME(c Categories, s Solveds) {
 %s
 
 ## 已完成的题目
-%s>注意，上表中的通过率，是总体通过率，非本人的通过率。
+%s> 表中通过率是总体通过率。
 %s
 `
 	head := read("README_HEAD.md")
