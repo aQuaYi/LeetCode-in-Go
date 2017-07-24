@@ -1,58 +1,37 @@
 package Problem0010
 
-import (
-	"strings"
-)
-
 // 程序中存在以下假设
 // "*" 不会出现在p的首位
 // "**" 不会出现，但会出现 ".*."" , ".*.." , ".*.*"
 
-// 从p的后面，往前检查。
-
-func isMatch(s string, p string) bool {
-	if len(s) == 0 && len(p) == 0 {
-		return true
+func isMatch(s, p string) bool {
+	if p == "" {
+		return s == ""
 	}
 
-	if s[len(s)-1] == p[len(p)-1] || p[len(p)-1] == '.' {
-		return isMatch(s[:len(s)-1], p[:len(p)-1])
-	}
-
-	if p[len(p)-1] == '*' { // 此时，len(p) >= 2
-		switch {
-		case p[len(p)-2] == '.':
-			if len(p) == 2 {
-				return true
-			}
-			switch { // 此时， len(p) >= 3
-			case p[len(p)-3] == '.':
-			switch{
-				case p[len(p)-4]==
-			}
-			}
-		default:
-			if s[len(s)-1] != p[len(p)-2] {
-				return false
-			}
-			if strings.Contains(s, p[len(p)-2:len(p)-1]) {
-				return isMatch(strEndBefore(s, p[len(p)-2]), p[:len(p)-2])
-			}
+	if len(p) == 1 || (len(p) > 1 && p[1] != '*') {
+		if s == "" || (p[0] != '.' && s[0] != p[0]) {
 			return false
 		}
 
+		return isMatch(s[1:], p[1:])
 	}
 
-	return true
-}
+	slen := len(s)
+	i := -1
 
-func strEndBefore(s string, b byte) string {
-
-	for i := len(s) - 1; i > 0; i-- {
-		if s[i] == b && s[i-1] != b {
-			return s[:i]
+	for i < slen && (i < 0 || p[0] == '.' || p[0] == s[i]) {
+		if len(p) >= 2 {
+			if isMatch(s[i+1:], p[2:]) {
+				return true
+			}
+		} else {
+			if isMatch(s[i+1:], p[1:]) {
+				return true
+			}
 		}
+		i++
 	}
 
-	return ""
+	return false
 }
