@@ -23,16 +23,12 @@ func Test_Problem0338(t *testing.T) {
 	ast := assert.New(t)
 
 	qs := []question{
-		
-		question{
-			p: para{
-				one: "",
-			},
-			a: ans{
-				one: "",
-			},
-		},
 
+		question{
+			p: para{""},
+			a: ans{""},
+		},
+		
 	}
 
 	for _, q := range qs {
