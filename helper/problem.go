@@ -204,7 +204,7 @@ func (ss Solveds) Swap(i, j int) {
 
 func (ss Solveds) String() string {
 	sort.Sort(ss)
-	res := "|题号|题目|难度|通过率|收藏|\n"
+	res := "|题号|题目|难度|总体通过率|收藏|\n"
 	res += "|:-:|:-|:-: | :-: | :-: |\n"
 	for _, s := range ss {
 		res += fmt.Sprintln(s)

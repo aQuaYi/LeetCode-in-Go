@@ -17,7 +17,7 @@ func makeREADME(c Categories, s Solveds) {
 %s
 
 ## 已完成的题目
-%s> 表中通过率是总体通过率。
+%s
 %s
 `
 	head := read("README_HEAD.md")
@@ -33,12 +33,12 @@ func makeREADME(c Categories, s Solveds) {
 }
 
 func read(path string) string {
-	head, err := os.Open(path)
+	file, err := os.Open(path)
 	if err != nil {
 		panic(err)
 	}
-	defer head.Close()
+	defer file.Close()
 
-	data, err := ioutil.ReadAll(head)
+	data, err := ioutil.ReadAll(file)
 	return string(data)
 }
