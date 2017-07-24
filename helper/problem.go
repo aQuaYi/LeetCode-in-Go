@@ -78,6 +78,11 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
+type question struct {
+	p para
+	a ans
+}
+
 type para struct {
 	one string
 }
@@ -86,15 +91,11 @@ type ans struct {
 	one string
 }
 
-type question struct {
-	p para
-	a ans
-}
-
-func Test_OK(t *testing.T) {
+func Test_%s(t *testing.T) {
 	ast := assert.New(t)
 
 	qs := []question{
+		
 		question{
 			p: para{
 				one: "",
@@ -103,6 +104,7 @@ func Test_OK(t *testing.T) {
 				one: "",
 			},
 		},
+
 	}
 
 	for _, q := range qs {
@@ -111,7 +113,7 @@ func Test_OK(t *testing.T) {
 	}
 }
 `
-	content := fmt.Sprintf(fileFormat, p.packageName(), `%v`)
+	content := fmt.Sprintf(fileFormat, p.packageName(), p.packageName(), `%v`)
 	filename := fmt.Sprintf("%s/%s_test.go", dir, p.TitleSlug)
 
 	err := ioutil.WriteFile(filename, []byte(content), 0755)

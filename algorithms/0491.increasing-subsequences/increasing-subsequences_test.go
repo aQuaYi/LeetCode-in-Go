@@ -6,6 +6,11 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
+type question struct {
+	p para
+	a ans
+}
+
 type para struct {
 	one string
 }
@@ -14,15 +19,11 @@ type ans struct {
 	one string
 }
 
-type question struct {
-	p para
-	a ans
-}
-
-func Test_OK(t *testing.T) {
+func Test_Problem0491(t *testing.T) {
 	ast := assert.New(t)
 
 	qs := []question{
+		
 		question{
 			p: para{
 				one: "",
@@ -31,6 +32,7 @@ func Test_OK(t *testing.T) {
 				one: "",
 			},
 		},
+
 	}
 
 	for _, q := range qs {
