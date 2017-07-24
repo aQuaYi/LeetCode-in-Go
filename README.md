@@ -23,7 +23,7 @@
 |5||[Longest Palindromic Substring](./algorithms/0005.longest-palindromic-substring)|☆ ☆|25%|
 |6||[ZigZag Conversion](./algorithms/0006.zigzag-conversion)|☆ ☆|26%|
 |7||[Reverse Integer](./algorithms/0007.reverse-integer)|☆|24%|
-|8|❤|[String to Integer (atoi)](./algorithms/0008.string-to-integer-atoi)|☆ ☆|13%|
+|8||[String to Integer (atoi)](./algorithms/0008.string-to-integer-atoi)|☆ ☆|13%|
 |9||[Palindrome Number](./algorithms/0009.palindrome-number)|☆|35%|
 |10|❤|[Regular Expression Matching](./algorithms/0010.regular-expression-matching)|☆ ☆ ☆|24%|
 >注意，上表中的通过率，是总体通过率，非本人的通过率。
