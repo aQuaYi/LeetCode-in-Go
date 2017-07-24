@@ -12,31 +12,45 @@ type question struct {
 }
 
 type para struct {
-	one string
+	one int
 }
 
 type ans struct {
-	one string
+	one bool
 }
 
 func Test_Problem0009(t *testing.T) {
 	ast := assert.New(t)
 
 	qs := []question{
-		
 		question{
 			p: para{
-				one: "",
+				one: 12321,
 			},
 			a: ans{
-				one: "",
+				one: true,
 			},
 		},
-
+		question{
+			p: para{
+				one: 1231,
+			},
+			a: ans{
+				one: false,
+			},
+		},
+		question{
+			p: para{
+				one: -12321,
+			},
+			a: ans{
+				one: false,
+			},
+		},
 	}
 
 	for _, q := range qs {
 		a, p := q.a, q.p
-		ast.Equal(a.one, p.one, "输入:%v", p)
+		ast.Equal(a.one, isPalindrome(p.one), "输入:%v", p)
 	}
 }
