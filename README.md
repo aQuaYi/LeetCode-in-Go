@@ -8,9 +8,9 @@
 ## 统计
 ||Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|3/155|5/303|1/115|9/573|
+|**Algorithms**|3/155|5/303|2/115|10/573|
 |**Draft**|0/2|0/5|0/1|0/8|
-|**Total**|3/157|5/308|1/116|9/581|
+|**Total**|3/157|5/308|2/116|10/581|
 
 
 ## 已完成的题目
@@ -25,6 +25,7 @@
 |7||[Reverse Integer](./algorithms/0007.reverse-integer)|☆|24%|
 |8|❤|[String to Integer (atoi)](./algorithms/0008.string-to-integer-atoi)|☆ ☆|13%|
 |9||[Palindrome Number](./algorithms/0009.palindrome-number)|☆|35%|
+|10|❤|[Regular Expression Matching](./algorithms/0010.regular-expression-matching)|☆ ☆ ☆|24%|
 
 >注意，上表中的通过率，是总体通过率，非本人的通过率。
 
