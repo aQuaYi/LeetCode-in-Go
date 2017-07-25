@@ -9,7 +9,7 @@ const (
 func main() {
 	categories := []string{
 		// TODO: tital it
-		"algorithms",
+		"Algorithms",
 		// "database",
 		"Draft",
 		// "operating-system",
