@@ -7,16 +7,18 @@ import (
 	"os"
 	"sort"
 	"syscall"
-
-	"github.com/aQuaYi/GoKit"
 )
 
 func (p Problem) checkDir(CategoryDir string) string {
-	problemDir := fmt.Sprintf("%04d.%s", p.ID, p.TitleSlug)
-	relativeProblemDir := fmt.Sprintf("./%s/%s", CategoryDir, problemDir)
+	problemDirName := fmt.Sprintf("%04d.%s", p.ID, p.TitleSlug)
+	relativeProblemDir := fmt.Sprintf("./%s/%s", CategoryDir, problemDirName)
 
-	if GoKit.Exist(relativeProblemDir) {
+	if p.Status == "ac" {
 		return relativeProblemDir
+	}
+
+	if err := os.RemoveAll(relativeProblemDir); err != nil {
+		log.Fatalln("无法删除没有解决问题的目录", relativeProblemDir)
 	}
 
 	mask := syscall.Umask(0)
