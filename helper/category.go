@@ -78,11 +78,15 @@ func (c *Category) analysis() Solveds {
 	res := Solveds{}
 
 	for _, p := range c.Problems {
-		pdir := p.checkDir(c.Name)
+		d := p.dirPath(c.Name)
+
 		// 检查处理已经AC的题目
 		if p.Status == "ac" {
-			res = append(res, makeSolved(*p, pdir))
+			res = append(res, makeSolved(*p, d))
+			continue
 		}
+
+		p.reBuild(d)
 	}
 
 	return res

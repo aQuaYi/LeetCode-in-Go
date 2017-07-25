@@ -9,31 +9,22 @@ import (
 	"syscall"
 )
 
-func (p Problem) checkDir(CategoryDir string) string {
-	problemDirName := fmt.Sprintf("%04d.%s", p.ID, p.TitleSlug)
-	relativeProblemDir := fmt.Sprintf("./%s/%s", CategoryDir, problemDirName)
-
-	if p.Status == "ac" {
-		return relativeProblemDir
-	}
-
-	if err := os.RemoveAll(relativeProblemDir); err != nil {
-		log.Fatalln("无法删除没有解决问题的目录", relativeProblemDir)
+func (p Problem) reBuild(path string) {
+	if err := os.RemoveAll(path); err != nil {
+		log.Fatalln("无法删除没有解决问题的目录", path)
 	}
 
 	mask := syscall.Umask(0)
 	defer syscall.Umask(mask)
 
-	err := os.Mkdir(relativeProblemDir, 0755)
+	err := os.Mkdir(path, 0755)
 	if err != nil {
-		log.Fatalf("无法创建目录: %s", relativeProblemDir)
+		log.Fatalf("无法创建目录: %s", path)
 	}
 
-	creatREADME(p, relativeProblemDir)
-	creatGo(p, relativeProblemDir)
-	creatGoTest(p, relativeProblemDir)
-
-	return relativeProblemDir
+	creatREADME(p, path)
+	creatGo(p, path)
+	creatGoTest(p, path)
 }
 func creatREADME(p Problem, dir string) {
 	fileFormat := `# [%d. %s](%s)
@@ -81,14 +72,18 @@ import (
 )
 
 type question struct {
-	p para
-	a ans
+	para
+	ans
 }
 
+// para 是参数
+// one 代表第一个参数
 type para struct {
 	one string
 }
 
+// ans 是答案
+// one 代表第一个答案
 type ans struct {
 	one string
 }
@@ -99,14 +94,15 @@ func Test_%s(t *testing.T) {
 	qs := []question{
 
 		question{
-			p: para{""},
-			a: ans{""},
+			para{""},
+			ans{""},
 		},
 		
 	}
 
 	for _, q := range qs {
-		a, p := q.a, q.p
+		a, p := q.ans, q.para
+		
 		ast.Equal(a.one, p.one, "输入:%s", p)
 	}
 }
@@ -127,6 +123,12 @@ type Problem struct {
 	Favor      bool `json:"is_favor"`
 	PaidOnly   bool `json:"paid_only"`
 	Difficulty `json:"difficulty"`
+}
+
+func (p Problem) dirPath(categoryName string) string {
+	dirName := fmt.Sprintf("%04d.%s", p.ID, p.TitleSlug)
+	path := fmt.Sprintf("./%s/%s", categoryName, dirName)
+	return path
 }
 
 func (p Problem) packageName() string {

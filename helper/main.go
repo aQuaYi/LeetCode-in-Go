@@ -8,9 +8,10 @@ const (
 
 func main() {
 	categories := []string{
+		// TODO: tital it
 		"algorithms",
 		// "database",
-		"draft",
+		"Draft",
 		// "operating-system",
 		// "shell",
 		// "system-design",
