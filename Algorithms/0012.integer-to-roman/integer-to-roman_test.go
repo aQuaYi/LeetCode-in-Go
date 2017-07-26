@@ -14,7 +14,7 @@ type question struct {
 // para 是参数
 // one 代表第一个参数
 type para struct {
-	one string
+	one int
 }
 
 // ans 是答案
@@ -27,17 +27,27 @@ func Test_Problem0012(t *testing.T) {
 	ast := assert.New(t)
 
 	qs := []question{
-
 		question{
-			para{""},
-			ans{""},
+			para{39},
+			ans{"XXXIX"},
 		},
-		
+		question{
+			para{1888},
+			ans{"MDCCCLXXXVIII"},
+		},
+		question{
+			para{1976},
+			ans{"MCMLXXVI"},
+		},
+		question{
+			para{3999},
+			ans{"MMMCMXCIX"},
+		},
 	}
 
 	for _, q := range qs {
 		a, p := q.ans, q.para
-		
-		ast.Equal(a.one, p.one, "输入:%v", p)
+
+		ast.Equal(a.one, intToRoman(p.one), "输入:%v", p)
 	}
 }
