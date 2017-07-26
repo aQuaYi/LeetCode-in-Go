@@ -20,25 +20,36 @@ type para struct {
 // ans 是答案
 // one 代表第一个答案
 type ans struct {
-	one string
+	one int
 }
 
 func Test_Problem0013(t *testing.T) {
 	ast := assert.New(t)
 
 	qs := []question{
-
 		question{
-			para{""},
-			ans{""},
+			para{"XXXIX"},
+			ans{39},
 		},
-	
+		question{
+			para{"MDCCCLXXXVIII"},
+			ans{1888},
+		},
+		question{
+			para{"MCMLXXVI"},
+			ans{1976},
+		},
+		question{
+			para{"MMMCMXCIX"},
+			ans{3999},
+		},
+
 		// 如需多个测试，可以复制上方元素。
 	}
 
 	for _, q := range qs {
 		a, p := q.ans, q.para
-		
-		ast.Equal(a.one, p.one, "输入:%v", p)
+
+		ast.Equal(a.one, romanToInt(p.one), "输入:%v", p)
 	}
 }
