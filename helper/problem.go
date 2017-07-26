@@ -97,7 +97,8 @@ func Test_%s(t *testing.T) {
 			para{""},
 			ans{""},
 		},
-		
+	
+		// 如需多个测试，可以复制上方元素。
 	}
 
 	for _, q := range qs {

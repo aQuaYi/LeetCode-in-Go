@@ -7,9 +7,9 @@
 ## 统计
 ||Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|3/155|6/303|2/115|11/573|
+|**Algorithms**|3/155|7/303|2/115|12/573|
 |**Draft**|0/2|0/5|0/1|0/8|
-|**Total**|3/157|6/308|2/116|11/581|
+|**Total**|3/157|7/308|2/116|12/581|
 
 
 ## 已添加的题目
@@ -26,6 +26,7 @@
 |9|[Palindrome Number](./Algorithms/0009.palindrome-number)|☆|35%||
 |10|[Regular Expression Matching](./Algorithms/0010.regular-expression-matching)|☆ ☆ ☆|24%|❤|
 |11|[Container With Most Water](./Algorithms/0011.container-with-most-water)|☆ ☆|36%||
+|12|[Integer to Roman](./Algorithms/0012.integer-to-roman)|☆ ☆|44%||
 
 ## helper文件夹
 [helper](./helper)会帮助处理大部分琐碎的工作。
