@@ -14,7 +14,7 @@ type question struct {
 // para 是参数
 // one 代表第一个参数
 type para struct {
-	one string
+	one []string
 }
 
 // ans 是答案
@@ -27,18 +27,30 @@ func Test_Problem0014(t *testing.T) {
 	ast := assert.New(t)
 
 	qs := []question{
-
 		question{
-			para{""},
+			para{
+				[]string{"abcdd", "abcde", "ab"},
+			},
+			ans{"ab"},
+		},
+		question{
+			para{
+				[]string{"abcdd", "abcde"},
+			},
+			ans{"abcd"},
+		},
+		question{
+			para{
+				[]string{},
+			},
 			ans{""},
 		},
-	
 		// 如需多个测试，可以复制上方元素。
 	}
 
 	for _, q := range qs {
 		a, p := q.ans, q.para
-		
-		ast.Equal(a.one, p.one, "输入:%v", p)
+
+		ast.Equal(a.one, longestCommonPrefix(p.one), "输入:%v", p)
 	}
 }
