@@ -2,6 +2,7 @@ package Problem0646
 
 import (
 	"testing"
+	"fmt"
 
 	"github.com/stretchr/testify/assert"
 )

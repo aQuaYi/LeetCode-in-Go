@@ -67,6 +67,7 @@ func creatGoTest(p Problem, dir string) {
 
 import (
 	"testing"
+	"fmt"
 
 	"github.com/stretchr/testify/assert"
 )
