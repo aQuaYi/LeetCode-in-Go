@@ -106,7 +106,7 @@ func Test_%s(t *testing.T) {
 		a, p := q.ans, q.para
 		fmt.Printf("~~%v~~\n", p)
 
-		ast.Equal(a.one, (p.one), "输入:%v", p)
+		ast.Equal(a.one, (p.one), "输入:%s", p)
 	}
 }
 `
