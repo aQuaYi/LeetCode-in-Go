@@ -8,7 +8,7 @@ For example, given array S = {-1 2 1 -4}, and target = 1.
 The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
 ```
 ## 解题思路
-
+这一题和15题的思路基本一致。
 
 ## 总结
 
