@@ -38,7 +38,8 @@ func Test_Problem0291(t *testing.T) {
 
 	for _, q := range qs {
 		a, p := q.ans, q.para
-		
-		ast.Equal(a.one, p.one, "输入:%v", p)
+		fmt.Printf("~~%v~~\n", p)
+
+		ast.Equal(a.one, (p.one), "输入:%!v(MISSING)", p)
 	}
 }

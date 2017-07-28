@@ -32,13 +32,14 @@ func Test_Problem0016(t *testing.T) {
 			para{""},
 			ans{""},
 		},
-
+	
 		// 如需多个测试，可以复制上方元素。
 	}
 
 	for _, q := range qs {
 		a, p := q.ans, q.para
+		fmt.Printf("~~%v~~\n", p)
 
-		ast.Equal(a.one, (p.one), "输入:%v", p)
+		ast.Equal(a.one, (p.one), "输入:%!v(MISSING)", p)
 	}
 }
