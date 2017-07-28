@@ -7,9 +7,9 @@
 ## 统计
 ||Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|5/155|8/303|2/115|15/573|
+|**Algorithms**|5/155|9/303|2/115|16/573|
 |**Draft**|0/2|0/5|0/1|0/8|
-|**Total**|5/157|8/308|2/116|15/581|
+|**Total**|5/157|9/308|2/116|16/581|
 
 
 ## 已添加的题目
@@ -30,6 +30,7 @@
 |13|[Roman to Integer](./Algorithms/0013.roman-to-integer)|☆|45%||
 |14|[Longest Common Prefix](./Algorithms/0014.longest-common-prefix)|☆|31%||
 |15|[3Sum](./Algorithms/0015.3sum)|☆ ☆|21%||
+|16|[3Sum Closest](./Algorithms/0016.3sum-closest)|☆ ☆|31%||
 
 ## helper文件夹
 [helper](./helper)会帮助处理大部分琐碎的工作。
