@@ -104,13 +104,13 @@ func Test_%s(t *testing.T) {
 
 	for _, q := range qs {
 		a, p := q.ans, q.para
-		fmt.Printf("~~%v~~\n", p)
+		fmt.Printf("~~%s~~\n", p)
 
 		ast.Equal(a.one, (p.one), "输入:%s", p)
 	}
 }
 `
-	content := fmt.Sprintf(fileFormat, p.packageName(), p.packageName(), `%v`)
+	content := fmt.Sprintf(fileFormat, p.packageName(), p.packageName(), `%v`, `%v`)
 	filename := fmt.Sprintf("%s/%s_test.go", dir, p.TitleSlug)
 
 	err := ioutil.WriteFile(filename, []byte(content), 0755)

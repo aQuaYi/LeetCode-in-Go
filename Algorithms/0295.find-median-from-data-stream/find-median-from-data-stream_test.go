@@ -41,6 +41,6 @@ func Test_Problem0295(t *testing.T) {
 		a, p := q.ans, q.para
 		fmt.Printf("~~%v~~\n", p)
 
-		ast.Equal(a.one, (p.one), "输入:%!s(MISSING)", p)
+		ast.Equal(a.one, (p.one), "输入:%v", p)
 	}
 }
