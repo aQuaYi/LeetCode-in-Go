@@ -10,13 +10,16 @@ func fourSum(nums []int, target int) [][]int {
 
 	for i := 0; i < len(nums)-3; i++ {
 		// 避免添加重复的结果
-		if i > 1 && nums[i] == nums[i-2] {
+		// i>0 是为了防止nums[i-1]溢出
+		if i > 0 && nums[i] == nums[i-1] {
 			continue
 		}
 
 		for j := i + 1; j < len(nums)-2; j++ {
 			// 避免添加重复的结果
-			if nums[j] == nums[j-1] {
+			// nums[j-1]虽然不会溢出
+			// 但是不添加 j > i+1 的话，会漏掉那些i和j为相同数值的答案
+			if j > i+1 && nums[j] == nums[j-1] {
 				continue
 			}
 
@@ -49,8 +52,9 @@ func next(nums []int, l, r int) (int, int) {
 		default:
 			l++
 			r--
-			break
+			return l, r
 		}
 	}
+
 	return l, r
 }

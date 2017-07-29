@@ -9,6 +9,7 @@ func threeSum(nums []int) [][]int {
 
 	for i := range nums {
 		// 避免添加重复的结果
+		// i>0 是为了防止nums[i-1]溢出
 		if i > 0 && nums[i] == nums[i-1] {
 			continue
 		}

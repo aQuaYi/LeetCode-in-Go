@@ -57,7 +57,13 @@ func Test_Problem0018(t *testing.T) {
 				[]int{0, 0, 0, 0},
 			}},
 		},
-
+		question{
+			para{[]int{0, -1, 0, 1, -2, -5, 3, 5, 0}, 6},
+			ans{[][]int{
+				[]int{-2, 0, 3, 5},
+				[]int{0, 0, 1, 5},
+			}},
+		},
 		// 如需多个测试，可以复制上方元素。
 	}
 
@@ -66,5 +72,26 @@ func Test_Problem0018(t *testing.T) {
 		fmt.Printf("~~%v~~\n", p)
 
 		ast.Equal(a.one, fourSum(p.one, p.two), "输入:%v", p)
+		printIntss(a.one, fourSum(p.one, p.two))
+	}
+}
+
+func printIntss(e, a [][]int) {
+	fmt.Println("expected \tactual")
+	l := len(e)
+	if l < len(a) {
+		l = len(a)
+	}
+	for i := 0; i < l; i++ {
+		if i < len(e) {
+			fmt.Print(e[i], "\t")
+		} else {
+			fmt.Print("\t\t")
+		}
+
+		if i < len(a) {
+			fmt.Print(a[i])
+		}
+		fmt.Println()
 	}
 }
