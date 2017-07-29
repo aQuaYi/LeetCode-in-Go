@@ -42,5 +42,6 @@ func getDaddy(head *ListNode, n int) (daddy *ListNode, headIsNthFromEnd bool) {
 
 	// n==0，说明链的长度等于n
 	headIsNthFromEnd = n == 0
+
 	return
 }
