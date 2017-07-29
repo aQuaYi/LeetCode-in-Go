@@ -13,8 +13,4 @@ Output: ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"]
 Although the above answer is in lexicographical order, your answer could be in any order you want.
 
 ## 解题思路
-
-
-## 总结
-
-
+见程序注释
