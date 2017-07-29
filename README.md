@@ -7,9 +7,9 @@
 ## 统计
 ||Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|5/155|10/303|2/115|17/573|
+|**Algorithms**|5/155|11/303|2/115|18/573|
 |**Draft**|0/2|0/5|0/1|0/8|
-|**Total**|5/157|10/308|2/116|17/581|
+|**Total**|5/157|11/308|2/116|18/581|
 
 
 ## 已添加的题目
@@ -32,6 +32,7 @@
 |15|[3Sum](./Algorithms/0015.3sum)|☆ ☆|21%||
 |16|[3Sum Closest](./Algorithms/0016.3sum-closest)|☆ ☆|31%||
 |17|[Letter Combinations of a Phone Number](./Algorithms/0017.letter-combinations-of-a-phone-number)|☆ ☆|34%||
+|18|[4Sum](./Algorithms/0018.4sum)|☆ ☆|26%|❤|
 
 ## helper
 [helper](./helper)会帮助处理大部分琐碎的工作。
