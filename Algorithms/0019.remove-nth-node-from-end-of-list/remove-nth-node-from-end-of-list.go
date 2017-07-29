@@ -15,22 +15,32 @@ type ListNode struct {
 }
 
 func removeNthFromEnd(head *ListNode, n int) *ListNode {
-	nd, n := getNDaddy(head, n)
-	if nd == head && n == 0 {
+	d, headIsNthFromEnd := getDaddy(head, n)
+
+	if headIsNthFromEnd {
+		// 删除head节点
 		return head.Next
 	}
-	nd.Next = nd.Next.Next
+
+	d.Next = d.Next.Next
+
 	return head
 }
 
-func getNDaddy(head *ListNode, n int) (*ListNode, int) {
-	NDaddy := head
+// 获取倒数第N个节点的父节点
+func getDaddy(head *ListNode, n int) (daddy *ListNode, headIsNthFromEnd bool) {
+	daddy = head
+
 	for head != nil {
 		if n < 0 {
-			NDaddy = NDaddy.Next
+			daddy = daddy.Next
 		}
+
 		n--
 		head = head.Next
 	}
-	return NDaddy, n
+
+	// n==0，说明链的长度等于n
+	headIsNthFromEnd = n == 0
+	return
 }

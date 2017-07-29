@@ -9,12 +9,9 @@ Given linked list: 1->2->3->4->5, and n = 2.
 After removing the second node from the end, the linked list becomes 1->2->3->5.
 ```
 **Note**:
-Given n will always be valid.
-Try to do this in one pass.
+1. Given n will always be valid. 不存在链的长度<n的情况
+1. Try to do this in one pass.
 
 ## 解题思路
-
-
-## 总结
-
-
+1. 获取倒数第n个节点的父节点
+1. 再分情况判断父节点是否为head节点，然后选取合适的删除方式。
