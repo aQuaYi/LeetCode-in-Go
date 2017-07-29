@@ -33,5 +33,5 @@
 |16|[3Sum Closest](./Algorithms/0016.3sum-closest)|☆ ☆|31%||
 |17|[Letter Combinations of a Phone Number](./Algorithms/0017.letter-combinations-of-a-phone-number)|☆ ☆|34%||
 
-## helper文件夹
+## helper
 [helper](./helper)会帮助处理大部分琐碎的工作。
