@@ -32,7 +32,7 @@
 |15|[3Sum](./Algorithms/0015.3sum)|☆ ☆|21%||
 |16|[3Sum Closest](./Algorithms/0016.3sum-closest)|☆ ☆|31%||
 |17|[Letter Combinations of a Phone Number](./Algorithms/0017.letter-combinations-of-a-phone-number)|☆ ☆|34%||
-|18|[4Sum](./Algorithms/0018.4sum)|☆ ☆|26%|❤|
+|18|[4Sum](./Algorithms/0018.4sum)|☆ ☆|26%||
 
 ## helper
 [helper](./helper)会帮助处理大部分琐碎的工作。
