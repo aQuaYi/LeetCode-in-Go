@@ -17,5 +17,5 @@
 1. 把你的leetcode.com的cookie，保存到LeetCode-in-Golang目录下，文件名为`leetcode.cookie`。
     1. 安装Chrome浏览器，及其扩展程序EditThisCookie
     1. 设置EditThisCookie，选项 → 选择cookies的导出格式 → "Netscape HTTP Cookie File"
-    1. 登录leetCode.com，点击EditThisCookie扩展，点击"导出Cookies"按钮。
+    1. 登录LeetCode.com，点击EditThisCookie扩展，点击"导出Cookies"按钮。
     1. 把剪切板中内容，保存到文件。
