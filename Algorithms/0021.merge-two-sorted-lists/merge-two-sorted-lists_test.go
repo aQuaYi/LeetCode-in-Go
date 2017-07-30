@@ -76,11 +76,6 @@ func Test_Problem0021(t *testing.T) {
 	}
 }
 
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
-
 // convert *ListNode to []int
 func l2s(head *ListNode) []int {
 	var res []int

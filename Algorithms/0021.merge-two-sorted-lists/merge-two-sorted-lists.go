@@ -7,6 +7,13 @@ package Problem0021
  *     Next *ListNode
  * }
  */
+
+// ListNode 是链接节点
+type ListNode struct {
+	Val  int
+	Next *ListNode
+}
+
 func mergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {
 	// 有一条链为nil，直接返回另一条链
 	if l1 == nil {
