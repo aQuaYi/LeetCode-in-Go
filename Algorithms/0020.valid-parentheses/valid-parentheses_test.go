@@ -46,10 +46,6 @@ func Test_Problem0020(t *testing.T) {
 			ans{true},
 		},
 		question{
-			para{"()"},
-			ans{true},
-		},
-		question{
 			para{"((([[[{{{"},
 			ans{false},
 		},
