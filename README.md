@@ -7,9 +7,9 @@
 ## 统计
 ||Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|5/155|12/303|2/115|19/573|
+|**Algorithms**|6/155|12/303|2/115|20/573|
 |**Draft**|0/2|0/5|0/1|0/8|
-|**Total**|5/157|12/308|2/116|19/581|
+|**Total**|6/157|12/308|2/116|20/581|
 
 
 ## 已添加的题目
@@ -34,6 +34,7 @@
 |17|[Letter Combinations of a Phone Number](./Algorithms/0017.letter-combinations-of-a-phone-number)|☆ ☆|34%||
 |18|[4Sum](./Algorithms/0018.4sum)|☆ ☆|26%||
 |19|[Remove Nth Node From End of List](./Algorithms/0019.remove-nth-node-from-end-of-list)|☆ ☆|33%||
+|20|[Valid Parentheses](./Algorithms/0020.valid-parentheses)|☆|33%||
 
 ## helper
 [helper](./helper)会帮助处理大部分琐碎的工作。
