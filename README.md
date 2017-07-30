@@ -7,9 +7,9 @@
 ## 统计
 ||Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|6/155|12/303|2/115|20/573|
+|**Algorithms**|7/155|12/307|2/115|21/577|
 |**Draft**|0/2|0/5|0/1|0/8|
-|**Total**|6/157|12/308|2/116|20/581|
+|**Total**|7/157|12/312|2/116|21/585|
 
 
 ## 已添加的题目
@@ -35,6 +35,11 @@
 |18|[4Sum](./Algorithms/0018.4sum)|☆ ☆|26%||
 |19|[Remove Nth Node From End of List](./Algorithms/0019.remove-nth-node-from-end-of-list)|☆ ☆|33%||
 |20|[Valid Parentheses](./Algorithms/0020.valid-parentheses)|☆|33%||
+|21|[Merge Two Sorted Lists](./Algorithms/0021.merge-two-sorted-lists)|☆|38%||
 
 ## helper
 [helper](./helper)会帮助处理大部分琐碎的工作。
+
+## kit
+在[kit](./kit)中添加了LeetCode常用的数据结构和处理函数：
+1. 为[*ListNode](./kit/ListNode.go)添加了与[]int想换转换的函数，方便添加单元测试。使用方式可以参考[21. Merge Two Sorted Lists](./Algorithms/0021.merge-two-sorted-lists/merge-two-sorted-lists_test.go)
