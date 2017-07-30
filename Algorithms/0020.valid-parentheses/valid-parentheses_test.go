@@ -1,8 +1,8 @@
 package Problem0020
 
 import (
-	"testing"
 	"fmt"
+	"testing"
 
 	"github.com/stretchr/testify/assert"
 )
@@ -21,7 +21,7 @@ type para struct {
 // ans 是答案
 // one 代表第一个答案
 type ans struct {
-	one string
+	one bool
 }
 
 func Test_Problem0020(t *testing.T) {
@@ -30,10 +30,34 @@ func Test_Problem0020(t *testing.T) {
 	qs := []question{
 
 		question{
-			para{""},
-			ans{""},
+			para{"()[]{}"},
+			ans{true},
 		},
-	
+		question{
+			para{"(]"},
+			ans{false},
+		},
+		question{
+			para{"({[]})"},
+			ans{true},
+		},
+		question{
+			para{"(){[({[]})]}"},
+			ans{true},
+		},
+		question{
+			para{"()"},
+			ans{true},
+		},
+		question{
+			para{"((([[[{{{"},
+			ans{false},
+		},
+		question{
+			para{"(())]]"},
+			ans{false},
+		},
+
 		// 如需多个测试，可以复制上方元素。
 	}
 
@@ -41,6 +65,6 @@ func Test_Problem0020(t *testing.T) {
 		a, p := q.ans, q.para
 		fmt.Printf("~~%v~~\n", p)
 
-		ast.Equal(a.one, (p.one), "输入:%v", p)
+		ast.Equal(a.one, isValid(p.one), "输入:%v", p)
 	}
 }
