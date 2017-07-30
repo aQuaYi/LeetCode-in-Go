@@ -83,7 +83,7 @@ type ListNode struct {
 
 // convert *ListNode to []int
 func l2s(head *ListNode) []int {
-	res := []int{}
+	var res []int
 
 	for head != nil {
 		res = append(res, head.Val)
