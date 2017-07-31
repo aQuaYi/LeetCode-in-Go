@@ -11,9 +11,13 @@ func swapPairs(head *ListNode) *ListNode {
 		return head
 	}
 
-	t := head.Next
-	head.Next = swapPairs(t.Next)
-	t.Next = head
+	// 让temp指向head.Next节点
+	temp := head.Next
+	// 让head.Next指向转换好了temp.Next节点
+	head.Next = swapPairs(temp.Next)
+	// 让temp.Next指向head节点
+	temp.Next = head
+	// temp成为新的head节点
 
-	return t
+	return temp
 }
