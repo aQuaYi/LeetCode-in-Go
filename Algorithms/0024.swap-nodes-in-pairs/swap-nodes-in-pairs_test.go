@@ -60,10 +60,6 @@ func Test_Problem0024(t *testing.T) {
 	}
 }
 
-func Test_swap(t *testing.T) {
-	assert.Equal(t, []int{2, 1, 3, 4}, l2s(swap(s2l([]int{1, 2, 3, 4}))), "swap没能成功转换")
-}
-
 // convert *ListNode to []int
 func l2s(head *ListNode) []int {
 	res := []int{}
