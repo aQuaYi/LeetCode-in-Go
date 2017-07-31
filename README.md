@@ -7,9 +7,9 @@
 ## 统计
 ||Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|7/155|12/307|2/115|21/577|
+|**Algorithms**|7/155|13/307|2/115|22/577|
 |**Draft**|0/2|0/5|0/1|0/8|
-|**Total**|7/157|12/312|2/116|21/585|
+|**Total**|7/157|13/312|2/116|22/585|
 
 
 ## 已添加的题目
@@ -36,6 +36,7 @@
 |19|[Remove Nth Node From End of List](./Algorithms/0019.remove-nth-node-from-end-of-list)|☆ ☆|33%||
 |20|[Valid Parentheses](./Algorithms/0020.valid-parentheses)|☆|33%||
 |21|[Merge Two Sorted Lists](./Algorithms/0021.merge-two-sorted-lists)|☆|38%||
+|22|[Generate Parentheses](./Algorithms/0022.generate-parentheses)|☆ ☆|44%|❤|
 
 ## helper
 [helper](./helper)会帮助处理大部分琐碎的工作。
