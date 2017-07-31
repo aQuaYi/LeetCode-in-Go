@@ -1,27 +1,25 @@
 package Problem0022
 
 func generateParenthesis(n int) []string {
-	if n == 0 {
-		return []string{""}
-	}
-	if n == 1 {
-		return []string{"()"}
-	}
-
-	return gen(generateParenthesis(n - 1))
+	res := []string{}
+	gen(n, n, "", &res)
+	return res
 }
 
-func gen(strs []string) []string {
-	res := make([]string, 0, len(strs)*3)
-	for _, s := range strs {
-		res = append(res, "("+s+")")
-	}
-	for i, s := range strs {
-		res = append(res, s+"()")
-		if i != len(strs)-1 {
-			res = append(res, "()"+s)
-		}
+func gen(left, right int, substr string, res *[]string) {
+	// 成功找到一个解
+	if left == 0 && right == 0 {
+		*res = append(*res, substr)
+		return
 	}
 
-	return res
+	// 因为左括号不用担心匹配问题，只要还有左括号，就可以随便加。
+	if left > 0 {
+		gen(left-1, right, substr+"(", res)
+	}
+
+	// 右括号只有在左括号剩余较少的前提下，才能加
+	if right > 0 && left < right {
+		gen(left, right-1, substr+")", res)
+	}
 }
