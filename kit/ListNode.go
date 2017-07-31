@@ -9,7 +9,7 @@ type ListNode struct {
 
 // convert *ListNode to []int
 func l2s(head *ListNode) []int {
-	var res []int
+	res := []int{}
 
 	for head != nil {
 		res = append(res, head.Val)
