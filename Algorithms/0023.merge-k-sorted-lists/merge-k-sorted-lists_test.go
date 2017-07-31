@@ -47,6 +47,19 @@ func Test_Problem0023(t *testing.T) {
 			ans{[]int{1, 2, 4, 5, 7, 8}},
 		},
 
+		question{
+			para{[][]int{
+				[]int{1, 4, 7},
+				[]int{},
+				[]int{2, 5, 8},
+			}},
+			ans{[]int{1, 2, 4, 5, 7, 8}},
+		},
+
+		question{
+			para{[][]int{}},
+			ans{[]int{}},
+		},
 		// 如需多个测试，可以复制上方元素。
 	}
 
