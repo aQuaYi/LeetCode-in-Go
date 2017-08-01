@@ -7,9 +7,9 @@
 ## 统计
 ||Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|9/155|14/307|4/115|27/577|
+|**Algorithms**|11/155|14/307|4/115|29/577|
 |**Draft**|0/2|0/5|0/1|0/8|
-|**Total**|9/157|14/312|4/116|27/585|
+|**Total**|11/157|14/312|4/116|29/585|
 
 
 ## 已添加的题目
@@ -41,6 +41,8 @@
 |24|[Swap Nodes in Pairs](./Algorithms/0024.swap-nodes-in-pairs)|☆ ☆|38%|❤|
 |25|[Reverse Nodes in k-Group](./Algorithms/0025.reverse-nodes-in-k-group)|☆ ☆ ☆|30%|❤|
 |26|[Remove Duplicates from Sorted Array](./Algorithms/0026.remove-duplicates-from-sorted-array)|☆|35%||
+|27|[Remove Element](./Algorithms/0027.remove-element)|☆|38%||
+|28|[Implement strStr()](./Algorithms/0028.implement-strstr)|☆|27%||
 |206|[Reverse Linked List](./Algorithms/0206.reverse-linked-list)|☆|45%||
 
 ## helper
