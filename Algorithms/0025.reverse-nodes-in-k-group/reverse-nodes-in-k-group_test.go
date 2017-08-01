@@ -45,8 +45,13 @@ func Test_Problem0025(t *testing.T) {
 		a, p := q.ans, q.para
 		fmt.Printf("~~%v~~\n", p)
 
-		ast.Equal(a.one, l2s(reverseKGroup(s2l (p.one),p.two)), "输入:%v", p)
+		ast.Equal(a.one, l2s(reverseKGroup(s2l(p.one), p.two)), "输入:%v", p)
 	}
+}
+
+func Test_reverse(t *testing.T) {
+	head, _ := reverse(s2l([]int{1, 2, 3}))
+	assert.Equal(t, []int{3, 2, 1}, l2s(head), "无法逆转链")
 }
 
 // convert *ListNode to []int
