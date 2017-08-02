@@ -14,9 +14,13 @@ func divide(dividend int, divisor int) int {
 
 	res := 1
 	temp := absR
-	for temp+absR <= absD {
-		res++
-		temp += absR
+	if absR == 1 {
+		res = absD
+	} else {
+		for temp+absR <= absD {
+			res++
+			temp += absR
+		}
 	}
 
 	if signD != signR {
