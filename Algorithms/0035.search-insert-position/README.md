@@ -12,7 +12,8 @@ Here are few examples.
 [1,3,5,6], 0 → 0
 ```
 ## 解题思路
-
+寻找target在nums中的位置。
+详见程序注释。
 
 ## 总结
 

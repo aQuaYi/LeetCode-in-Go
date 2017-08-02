@@ -36,23 +36,23 @@ func Test_Problem0035(t *testing.T) {
 		},
 
 		question{
-			para{[]int{1, 3, 5, 6}, 5},
-			ans{2},
+			para{[]int{1, 3, 5, 6}, 2},
+			ans{1},
 		},
 
 		question{
-			para{[]int{1, 3, 5, 6}, 5},
-			ans{2},
+			para{[]int{1, 3, 5, 6}, 7},
+			ans{4},
 		},
 
 		question{
-			para{[]int{1, 3, 5, 6}, 5},
-			ans{2},
+			para{[]int{1, 3, 5, 6}, 0},
+			ans{0},
 		},
 
 		question{
-			para{[]int{1, 3, 5, 6}, 5},
-			ans{2},
+			para{[]int{1, 3, 5, 6}, 6},
+			ans{3},
 		},
 
 		// 如需多个测试，可以复制上方元素。
