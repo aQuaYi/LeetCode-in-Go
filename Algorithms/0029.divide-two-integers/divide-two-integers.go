@@ -5,6 +5,11 @@ import (
 )
 
 func divide(m, n int) int {
+	// 防止有人把0当做除数
+	if n == 0 {
+		return math.MaxInt32
+	}
+
 	signM, absM := analysis(m)
 	signN, absN := analysis(n)
 
@@ -15,7 +20,7 @@ func divide(m, n int) int {
 		res = res - res - res
 	}
 
-	// 检查是否溢出
+	// 检查溢出
 	if res < math.MinInt32 || res > math.MaxInt32 {
 		return math.MaxInt32
 	}
@@ -37,7 +42,7 @@ func analysis(num int) (sign, abs int) {
 // d 计算m/n的值，返回结果和余数
 // m >= 0
 // n > 0
-// count == 1
+// count == 1, 代表初始n的个数，在递归过程中，count == 当前的n/初始的n
 func d(m, n, count int) (res, remainder int) {
 	switch {
 	case m < n:
@@ -45,11 +50,12 @@ func d(m, n, count int) (res, remainder int) {
 	case n <= m && m < n+n:
 		return count, m - n
 	default:
-		temp, r := d(m, n+n, count+count)
-		if r >= n {
-			return temp + count, r - n
+		res, remainder = d(m, n+n, count+count)
+		if remainder >= n {
+			return res + count, remainder - n
 		}
-		return temp, r
+
+		return
 	}
 }
 

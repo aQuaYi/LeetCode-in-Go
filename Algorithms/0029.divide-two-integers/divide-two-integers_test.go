@@ -37,6 +37,11 @@ func Test_Problem0029(t *testing.T) {
 		},
 
 		question{
+			para{2, 0},
+			ans{math.MaxInt32},
+		},
+
+		question{
 			para{1024, 3},
 			ans{341},
 		},
