@@ -4,22 +4,17 @@ import (
 	"math"
 )
 
-func divide(dividendD int, divisorR int) int {
-	signD, absD := analysis(dividendD)
-	signR, absR := analysis(divisorR)
+func divide(m, n int) int {
+	signM, absM := analysis(m)
+	signN, absN := analysis(n)
 
-	if absD < absR {
+	if absM < absN {
 		return 0
 	}
 
-	res := 1
-	if absR == 1 {
-		res = absD
-	} else {
-		res = d(absD, absR)
-	}
+	res := d(absM, absN)
 
-	if signD != signR {
+	if signM != signN {
 		res = res - res - res
 	}
 
@@ -30,12 +25,12 @@ func divide(dividendD int, divisorR int) int {
 	return res
 }
 
-func d(D, R int) int {
+func d(m, n int) int {
 	res := 0
-	rs, ress := []int{R}, []int{1}
-	temp, i := R+R, 1
+	rs, ress := []int{n}, []int{1}
+	temp, i := n+n, 1
 
-	for temp <= D {
+	for temp <= m {
 		rs = append(rs, temp)
 		ress = append(ress, ress[i-1]+ress[i-1])
 
@@ -44,8 +39,8 @@ func d(D, R int) int {
 	}
 
 	for i := len(rs) - 1; i >= 0; i-- {
-		if D >= rs[i] {
-			D -= rs[i]
+		if m >= rs[i] {
+			m -= rs[i]
 			res += ress[i]
 		}
 	}
@@ -58,7 +53,7 @@ func analysis(num int) (sign, abs int) {
 	abs = num
 	if num < 0 {
 		sign = -1
-		abs = abs - abs - abs
+		abs = num - num - num
 	}
 
 	return
