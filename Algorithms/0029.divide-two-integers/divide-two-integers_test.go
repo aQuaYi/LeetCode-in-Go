@@ -81,3 +81,14 @@ func Test_Problem0029(t *testing.T) {
 		ast.Equal(a.one, divide(p.one, p.two), "输入:%v", p)
 	}
 }
+func Test_d(t *testing.T) {
+	ast := assert.New(t)
+
+	res, remainder := d(1024, 3, 1)
+	ast.Equal(1, remainder, "余数不对")
+	ast.Equal(341, res, "结果不对")
+
+	res, remainder = d(2147483647, 1, 1)
+	ast.Equal(0, remainder, "余数不对")
+	ast.Equal(2147483647, res, "结果不对")
+}
