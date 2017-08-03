@@ -47,10 +47,10 @@ func Test_Problem0030(t *testing.T) {
 		},
 
 		// leetcode的测试中，words中的单词长度大于0
-		// question{
-		// 	para{"abc", []string{""}},
-		// 	ans{[]int{0, 1, 2, 3}},
-		// },
+		question{
+			para{"abc", []string{""}},
+			ans{[]int{}},
+		},
 
 		question{
 			para{"wordgoodgoodgoodbestword", []string{"word", "good", "best", "good"}},
