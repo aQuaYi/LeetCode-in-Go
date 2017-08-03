@@ -11,7 +11,8 @@ You should return the indices: [0,9].
 (order does not matter).
 
 ## 解题思路
-words中，会包含重复的word
+words中会包含重复的word
+
 详见程序注释。
 ## 总结
 

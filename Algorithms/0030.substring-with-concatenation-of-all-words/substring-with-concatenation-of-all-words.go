@@ -37,7 +37,7 @@ func findSubstring(s string, words []string) []int {
 				// 从 w 后面一个字符，重新开始
 				begin += lenw * (count + 1)
 				if count != 0 {
-					// wordMap 已经被修改，需要再次初始化
+					// 统计已经被修改，需要再次初始化
 					initialise(remainNum, words)
 					count = 0
 				}
