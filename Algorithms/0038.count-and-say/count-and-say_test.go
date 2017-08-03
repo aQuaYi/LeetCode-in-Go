@@ -79,21 +79,3 @@ func Test_Problem0038(t *testing.T) {
 		ast.Equal(a.one, countAndSay(p.one), "输入:%v", p)
 	}
 }
-
-func Test_say(t *testing.T) {
-	ast := assert.New(t)
-
-	ast.Equal("1211", say("21"), "没有把 21 说成 1211")
-}
-
-func Test_split(t *testing.T) {
-	ast := assert.New(t)
-
-	actual := split("333221")
-	expected := []string{"333", "22", "1"}
-	ast.Equal(expected, actual, "没能分隔字符串")
-
-	actual = split("11")
-	expected = []string{"11"}
-	ast.Equal(expected, actual, "没能分隔字符串")
-}
