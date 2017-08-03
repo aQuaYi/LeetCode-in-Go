@@ -48,7 +48,7 @@ func Test_Problem0030(t *testing.T) {
 
 		// leetcode的测试中，words中的单词长度大于0
 		question{
-			para{"abc", []string{""}},
+			para{"", []string{""}},
 			ans{[]int{}},
 		},
 

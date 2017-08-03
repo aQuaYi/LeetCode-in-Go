@@ -6,43 +6,63 @@ func findSubstring(s string, words []string) []int {
 		return res
 	}
 
-	initwMaps := func(wMaps map[string]int, words []string) {
+	initialise := func(wordMap map[string]int, words []string) {
 		for _, word := range words {
-			wMaps[word]++
+			wordMap[word] = 0
+		}
+		for _, word := range words {
+			wordMap[word]++
 		}
 	}
 
-	wMaps := make(map[string]int, len(words))
-	lens, lenws, lenw := len(s), len(words), len(words[0])
+	wordMap := make(map[string]int, len(words))
+	lens, numWords, lenw := len(s), len(words), len(words[0])
 
-	for slide := 0; slide < lenw; slide++ {
-		initwMaps(wMaps, words)
-		i, count := 0, 0
-		for i <= lens-slide-lenws*lenw {
-			tmp := s[i+slide+count*lenw : i+slide+(count+1)*lenw]
-			if num, ok := wMaps[tmp]; ok && num != 0 {
-				wMaps[tmp]--
-				count++
-				if count == lenws {
-					res = append(res, i+slide)
-					wMaps[s[i+slide:i+slide+lenw]]++
-					count--
-					i += lenw
-				}
-			} else if ok {
-				wMaps[s[i+slide:i+slide+lenw]]++
-				count--
-				i += lenw
+	for trace := 0; trace < lenw; trace++ {
+		initialise(wordMap, words)
+		begin, count := trace, 0
 
-			} else {
+		for begin+numWords*lenw <= lens {
+			w := s[begin+count*lenw : begin+(count+1)*lenw]
+
+			num, ok := wordMap[w]
+			switch {
+			case !ok:
+				// 出现了words以外的单词
+				// 从 w 后面一个字符，重新开始
+				begin += lenw * (count + 1)
 				if count != 0 {
-					initwMaps(wMaps, words)
+					// wordMap 已经被修改，需要再次初始化
+					initialise(wordMap, words)
+					count = 0
 				}
-				i += lenw * (count + 1)
-				count = 0
+			case num == 0:
+				// w 的出现次数超标了
+
+				// 修改统计记录，从 begin 后的一个 word 开始记录
+				// 增加 begin 处 word 可出现次数一次，
+				wordMap[s[begin:begin+lenw]]++
+				// 统计记录，增加一次
+				count--
+				// begin 后移一个 word 的长度
+				begin += lenw
+
+				// 这个case会连续执行，知道begin指向上一个 w 的后面一个字符
+			default:
+				// ok && num != 0
+
+				// 修改统计记录
+				wordMap[w]--
+				count++
+
+				if count == numWords {
+					res = append(res, begin)
+					wordMap[s[begin:begin+lenw]]++
+					count--
+					begin += lenw
+				}
 			}
 		}
 	}
-
 	return res
 }
