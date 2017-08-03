@@ -30,7 +30,7 @@ func findSubstring(s string, words []string) []int {
 		for begin+numWords*lenw <= lens {
 			w := s[begin+count*lenw : begin+(count+1)*lenw]
 
-			num, ok := remainNum[w]
+			remainTimes, ok := remainNum[w]
 			switch {
 			case !ok:
 				// 出现了words以外的单词
@@ -41,7 +41,7 @@ func findSubstring(s string, words []string) []int {
 					initialise(remainNum, words)
 					count = 0
 				}
-			case num == 0:
+			case remainTimes == 0:
 				// w 的出现次数超标了
 
 				// 修改统计记录，需要把 begin 后移一个单词的长度
@@ -54,7 +54,7 @@ func findSubstring(s string, words []string) []int {
 
 				// 这个case会连续执行，直到begin指向上一个 w 的后面一个字符
 			default:
-				// ok && num != 0
+				// ok && remainTimes > 0
 
 				// 修改统计记录
 				remainNum[w]--
@@ -65,6 +65,7 @@ func findSubstring(s string, words []string) []int {
 					res = append(res, begin)
 
 					// 把begin指向下一个单词
+					// 开始另一个统计
 					remainNum[s[begin:begin+lenw]]++
 					count--
 					begin += lenw
