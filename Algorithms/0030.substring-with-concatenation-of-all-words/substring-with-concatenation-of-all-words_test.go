@@ -68,51 +68,8 @@ func Test_Problem0030(t *testing.T) {
 	}
 }
 
-func Test_getRecord(t *testing.T) {
-	ast := assert.New(t)
-	record := getRecord("aAABBAAaaAAaaBBaaBBAABB", []string{"AA", "BB"})
-	ans := map[int][]int{
-		1:  []int{0, 1, 0},
-		17: []int{1, 0, 1},
-	}
-	for k, r := range record {
-		v, ok := ans[k]
-		ast.True(ok, "ans中没有键为%d", k)
-		ast.Equal(v, r, "收集的数据不对")
-	}
-}
 
-func Test_addRecord(t *testing.T) {
-	ast := assert.New(t)
-	record := map[int][]int{}
 
-	addRecord("AABBAAaaAAaaBBaaBBAABB", []string{"AA", "BB"}, 0, &record)
-	ans := map[int][]int{
-		0:  []int{0, 1, 0},
-		16: []int{1, 0, 1},
-	}
-	for k, r := range record {
-		v, ok := ans[k]
-		ast.True(ok, "ans中没有键为%d", k)
-		ast.Equal(v, r, "收集的数据不对")
-	}
-}
 
-func Test_isFound(t *testing.T) {
-	ast := assert.New(t)
 
-	ok := isFound([]int{0, 2, 1, 3})
-	ast.True(ok, "的确发现了")
 
-	ok = isFound([]int{0, 3, 0, 3})
-	ast.False(ok, "确实没有发现")
-}
-func Test_getIndex(t *testing.T) {
-	ast := assert.New(t)
-
-	id := getIndex([]string{"ab", "cd"}, "cd")
-	ast.Equal(1, id, "id不正确")
-
-	id = getIndex([]string{"ab", "cd"}, "ef")
-	ast.Equal(-1, id, "id不正确")
-}
