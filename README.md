@@ -7,9 +7,9 @@
 ## 统计
 ||Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|12/155|15/307|4/115|31/577|
+|**Algorithms**|12/155|15/307|5/115|32/577|
 |**Draft**|0/2|0/5|0/1|0/8|
-|**Total**|12/157|15/312|4/116|31/585|
+|**Total**|12/157|15/312|5/116|32/585|
 
 
 ## 已添加的题目
@@ -35,15 +35,16 @@
 |18|[4Sum](./Algorithms/0018.4sum)|☆ ☆|26%||
 |19|[Remove Nth Node From End of List](./Algorithms/0019.remove-nth-node-from-end-of-list)|☆ ☆|33%||
 |20|[Valid Parentheses](./Algorithms/0020.valid-parentheses)|☆|33%||
-|21|[Merge Two Sorted Lists](./Algorithms/0021.merge-two-sorted-lists)|☆|38%||
+|21|[Merge Two Sorted Lists](./Algorithms/0021.merge-two-sorted-lists)|☆|39%||
 |22|[Generate Parentheses](./Algorithms/0022.generate-parentheses)|☆ ☆|44%|❤|
 |23|[Merge k Sorted Lists](./Algorithms/0023.merge-k-sorted-lists)|☆ ☆ ☆|27%||
 |24|[Swap Nodes in Pairs](./Algorithms/0024.swap-nodes-in-pairs)|☆ ☆|38%|❤|
 |25|[Reverse Nodes in k-Group](./Algorithms/0025.reverse-nodes-in-k-group)|☆ ☆ ☆|30%|❤|
 |26|[Remove Duplicates from Sorted Array](./Algorithms/0026.remove-duplicates-from-sorted-array)|☆|35%||
 |27|[Remove Element](./Algorithms/0027.remove-element)|☆|38%||
-|28|[Implement strStr()](./Algorithms/0028.implement-strstr)|☆|27%||
+|28|[Implement strStr()](./Algorithms/0028.implement-strstr)|☆|28%||
 |29|[Divide Two Integers](./Algorithms/0029.divide-two-integers)|☆ ☆|15%||
+|30|[Substring with Concatenation of All Words](./Algorithms/0030.substring-with-concatenation-of-all-words)|☆ ☆ ☆|21%||
 |35|[Search Insert Position](./Algorithms/0035.search-insert-position)|☆|39%||
 |206|[Reverse Linked List](./Algorithms/0206.reverse-linked-list)|☆|45%||
 
