@@ -5,25 +5,16 @@ import "sort"
 func findSubstring(s string, words []string) []int {
 	// 题目已经确保了 len(words) > 0
 	lenWord := len(words[0])
-	numWords := len(words)
-	interval := lenWord * numWords
-
-	if lenWord == 0 {
-		res := make([]int, len(s)+1)
-		for i := range res {
-			res[i] = i
-		}
-		return res
-	}
 
 	sort.Strings(words)
+	interval := lenWord * len(words)
 
 	res := []int{}
 
 	for i := 0; i < lenWord; i++ {
 		j := i
 		for j <= len(s)-interval {
-			if equal(words, s[j:j+interval]) {
+			if isComposable(words, s[j:j+interval]) {
 				res = append(res, j)
 			}
 			j += lenWord
@@ -33,7 +24,8 @@ func findSubstring(s string, words []string) []int {
 	return res
 }
 
-func equal(words []string, s string) bool {
+// 如果words中的单词经过排列组合后，可以构成s，返回 true
+func isComposable(words []string, s string) bool {
 	temp := split(s, len(words[0]))
 	sort.Strings(temp)
 

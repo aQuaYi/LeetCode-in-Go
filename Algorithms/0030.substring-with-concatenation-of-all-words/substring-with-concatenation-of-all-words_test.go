@@ -46,10 +46,11 @@ func Test_Problem0030(t *testing.T) {
 			ans{[]int{0, 2, 4, 6}},
 		},
 
-		question{
-			para{"abc", []string{""}},
-			ans{[]int{0, 1, 2, 3}},
-		},
+		// leetcode的测试中，words中的单词长度大于0
+		// question{
+		// 	para{"abc", []string{""}},
+		// 	ans{[]int{0, 1, 2, 3}},
+		// },
 
 		question{
 			para{"wordgoodgoodgoodbestword", []string{"word", "good", "best", "good"}},
@@ -67,9 +68,3 @@ func Test_Problem0030(t *testing.T) {
 		ast.Equal(a.one, res, "输入:%v", p)
 	}
 }
-
-
-
-
-
-
