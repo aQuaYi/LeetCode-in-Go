@@ -2,85 +2,83 @@ package Problem0030
 
 func findSubstring(s string, words []string) []int {
 	res := []int{}
-	if len(s) == 0 || len(words) == 0 || len(s) < len(words)*len(words[0]) {
+
+	lens, numWords, lenw := len(s), len(words), len(words[0])
+	if lens == 0 || numWords == 0 || lens < numWords*lenw {
 		return res
 	}
-	// remainNum 用于记录 words 中单词还能出现的次数
-	remainNum := make(map[string]int, len(words))
-	lens, numWords, lenw := len(s), len(words), len(words[0])
 
-	/*
-		for slice := 0; slice < lenw; slice++ {
-			begin := slice
-			for begin+numWords*lenw <= lens {
-				begin += lenw
-			}
+	// remainNum 记录 words 中每个单词还能出现的次数
+	remainNum := make(map[string]int, numWords)
+	// count 记录符号要求的单词的连续出现次数
+	count := 0
+	initRecord := func() {
+		for _, word := range words {
+			remainNum[word] = 0
 		}
+		for _, word := range words {
+			remainNum[word]++
+		}
+		count = 0
+	} // 把这个匿名函数放在这里，可以避免繁琐的函数参数
 
-		利用上面这个结构，可以不遗漏也不重复地检查所有可能的结果
-		把 slice < lenw 改成 slice < lens 会出现 很多重复的结果
-	*/
-	for slice := 0; slice < lenw; slice++ {
-		// 利用 slice 把s转换转换成了 lenw 个 字符串去检查
-		// 例如， 当 slice == 1 时
-		// 只用依次检查 s[1:1+lenw], s[1+lenw:1+lenw*2],...,s[1+lenw*(n):1+lenw*(n+1)],...这些单词是否条件
-		initialise(remainNum, words)
-		begin, count := slice, 0
+	// 由于 index 增加的跨度是 lenw
+	// index 需要分别从{0,1,...,lenw-1}这些位置开始检查，才能不遗漏
+	for initialIndex := 0; initialIndex < lenw; initialIndex++ {
+		index := initialIndex
+		// moveIndex 让 index 指向下一个单词
+		moveIndex := func() {
+			// index 指向下一个单词的同时，需要同时修改统计记录
 
-		for begin+numWords*lenw <= lens {
-			w := s[begin+count*lenw : begin+(count+1)*lenw]
+			// 增加 index 指向的 word 可出现次数一次，
+			remainNum[s[index:index+lenw]]++
+			// 连续符合条件的单词数减少一个
+			count--
+			// index 后移一个 word 的长度
+			index += lenw
+		} // 把这个匿名函数放在这里，可以避免繁琐的函数参数
 
-			remainTimes, ok := remainNum[w]
+		initRecord()
+
+		for index+numWords*lenw <= lens { // 注意，这里是有等号的
+			word := s[index+count*lenw : index+(count+1)*lenw]
+			remainTimes, ok := remainNum[word]
+
 			switch {
 			case !ok:
-				// 出现了words以外的单词
-				// 从 w 后面一个字符，重新开始
-				begin += lenw * (count + 1)
+				// 出现了不在 words 中的单词
+				// 从 word 后面一个单词，重新开始统计
+				index += lenw * (count + 1)
 				if count != 0 {
-					// 统计已经被修改，需要再次初始化
-					initialise(remainNum, words)
-					count = 0
+					// 统计记录已经被修改，需要再次初始化
+					initRecord()
 				}
 			case remainTimes == 0:
-				// w 的出现次数超标了
-
-				// 修改统计记录，需要把 begin 后移一个单词的长度
-				// 增加 begin 处 word 可出现次数一次，
-				remainNum[s[begin:begin+lenw]]++
-				// 统计记录增加一次
-				count--
-				// begin 后移一个 word 的长度
-				begin += lenw
-
-				// 这个case会连续执行，直到begin指向上一个 w 的后面一个字符
+				// word 的出现次数上次就用完了
+				// 说明s[index:index+(count+1)*lenw]中有单词多出现了
+				moveIndex()
+				// 这个case会连续出现
+				// 直到s[index:index+(count+1)*lenw]中所有单词的出现次数都不超标
+				//
+				// 在 moveIndex() 的过程中，index+(count+1)*lenw 保持值不变
 			default:
-				// ok && remainTimes > 0
+				// ok && remainTimes > 0，word 符合出现的条件
 
-				// 修改统计记录
-				remainNum[w]--
+				// 更新统计记录
+				remainNum[word]--
 				count++
 
-				// 检查记录是否已经符合要求
+				// 检查 words 能否排列组合成 s[index:index+count*lenw]
 				if count == numWords {
-					res = append(res, begin)
+					res = append(res, index)
 
-					// 把begin指向下一个单词
-					// 开始另一个统计
-					remainNum[s[begin:begin+lenw]]++
-					count--
-					begin += lenw
+					// 把 index 指向下一个单词
+					// 开始下一个统计
+					moveIndex()
 				}
 			}
 		}
 	}
-	return res
-}
 
-func initialise(wordMap map[string]int, words []string) {
-	for _, word := range words {
-		wordMap[word] = 0
-	}
-	for _, word := range words {
-		wordMap[word]++
-	}
+	return res
 }
