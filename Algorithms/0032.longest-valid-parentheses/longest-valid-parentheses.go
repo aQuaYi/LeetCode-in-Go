@@ -1,25 +1,33 @@
 package Problem0032
 
 func longestValidParentheses(s string) int {
-	max, temp := 0, 0
-	left := 0
+	var i, j, max, temp int
+	record := make([]int, len(s))
+	lens := len(s)
 
-	for _, b := range s {
-		switch b {
-		case '(':
-			left++
-		default:
-			if left > 0 {
-				left--
-				temp += 2
+	for i < lens {
+		for i < lens-1 && !(s[i] == '(' && s[i+1] == ')') {
+			i++
+		}
+		j = i + 1
+		for i >= 0 && s[i] == '(' && j < lens && s[j] == ')' {
+			record[i], record[j] = 1, 1
+			i--
+			j++
+		}
 
-				if temp > max {
-					max = temp
-				}
-			} else {
-				temp = 0
-				left = 0
-			}
+		i = j
+	}
+
+	for _, r := range record {
+		if r == 0 {
+			temp = 0
+		} else {
+			temp++
+		}
+
+		if temp > max {
+			max = temp
 		}
 	}
 

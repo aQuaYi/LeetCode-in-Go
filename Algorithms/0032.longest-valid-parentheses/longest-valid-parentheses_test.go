@@ -30,6 +30,16 @@ func Test_Problem0032(t *testing.T) {
 	qs := []question{
 
 		question{
+			para{"(()())"},
+			ans{6},
+		},
+
+		question{
+			para{"()(()"},
+			ans{2},
+		},
+
+		question{
 			para{"(()"},
 			ans{2},
 		},
@@ -47,11 +57,6 @@ func Test_Problem0032(t *testing.T) {
 		question{
 			para{"((())))(((())))"},
 			ans{8},
-		},
-
-		question{
-			para{"()(()"},
-			ans{2},
 		},
 
 		// 如需多个测试，可以复制上方元素。
