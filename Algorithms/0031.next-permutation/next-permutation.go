@@ -1,32 +1,31 @@
 package Problem0031
 
+import "sort"
+
 func nextPermutation(nums []int) {
-	if len(nums) <= 1 {
+	var i int
+	length := len(nums)
+
+	if length <= 1 {
 		return
 	}
 
-	i := len(nums) - 2
-	for i >= 0 && nums[i] >= nums[i+1] {
-		i--
-	}
-
-	if i != -1 {
-		j := len(nums) - 1
-		for j >= 0 && nums[j] <= nums[i] {
-			j--
-		}
-		if j >= 0 {
-			nums[i], nums[j] = nums[j], nums[i]
+	for i = length - 1; i >= 1; i-- {
+		if nums[i] > nums[i-1] {
+			break
 		}
 	}
 
-	reverse(nums, i+1, len(nums)-1)
-}
-
-func reverse(nums []int, i, j int) {
-	for i < j {
-		nums[i], nums[j] = nums[j], nums[i]
-		i++
-		j--
+	if i > 0 {
+		sort.Ints(nums[i:])
+		for j := i - 1; j < length; j++ {
+			if nums[j] > nums[i-1] {
+				nums[i-1], nums[j] = nums[j], nums[i-1]
+				return
+			}
+		}
 	}
+
+	sort.Ints(nums)
+
 }
