@@ -28,15 +28,19 @@ func Test_Problem0032(t *testing.T) {
 	ast := assert.New(t)
 
 	qs := []question{
-
 		question{
-			para{"(()())"},
-			ans{6},
+			para{")(()()))((((())))("},
+			ans{8},
 		},
 
 		question{
 			para{"()(()"},
 			ans{2},
+		},
+
+		question{
+			para{"(()())"},
+			ans{6},
 		},
 
 		question{
