@@ -7,9 +7,9 @@
 ## 统计
 ||Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|13/155|15/307|5/115|33/577|
+|**Algorithms**|13/156|16/309|5/116|34/581|
 |**Draft**|0/2|0/5|0/1|0/8|
-|**Total**|13/157|15/312|5/116|33/585|
+|**Total**|13/158|16/314|5/117|34/589|
 
 
 ## 已添加的题目
@@ -45,6 +45,7 @@
 |28|[Implement strStr()](./Algorithms/0028.implement-strstr)|☆|28%||
 |29|[Divide Two Integers](./Algorithms/0029.divide-two-integers)|☆ ☆|15%||
 |30|[Substring with Concatenation of All Words](./Algorithms/0030.substring-with-concatenation-of-all-words)|☆ ☆ ☆|21%|❤|
+|31|[Next Permutation](./Algorithms/0031.next-permutation)|☆ ☆|28%|❤|
 |35|[Search Insert Position](./Algorithms/0035.search-insert-position)|☆|39%||
 |38|[Count and Say](./Algorithms/0038.count-and-say)|☆|34%||
 |206|[Reverse Linked List](./Algorithms/0206.reverse-linked-list)|☆|45%||
