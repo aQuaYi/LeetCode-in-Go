@@ -7,9 +7,9 @@
 ## 统计
 ||Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|13/156|18/309|6/116|37/581|
+|**Algorithms**|13/156|19/309|6/116|38/581|
 |**Draft**|0/2|0/5|0/1|0/8|
-|**Total**|13/158|18/314|6/117|37/589|
+|**Total**|13/158|19/314|6/117|38/589|
 
 
 ## 已添加的题目
@@ -51,6 +51,7 @@
 |34|[Search for a Range](./Algorithms/0034.search-for-a-range)|☆ ☆|31%||
 |35|[Search Insert Position](./Algorithms/0035.search-insert-position)|☆|39%||
 |38|[Count and Say](./Algorithms/0038.count-and-say)|☆|34%||
+|39|[Combination Sum](./Algorithms/0039.combination-sum)|☆ ☆|38%||
 |206|[Reverse Linked List](./Algorithms/0206.reverse-linked-list)|☆|45%||
 
 ## helper
