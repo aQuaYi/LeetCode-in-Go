@@ -22,8 +22,11 @@ func search(nums []int, target int) int {
 		if index >= length {
 			index -= length
 		}
+		// 假设nums是由升序切片old转换来的
+		// 那么，old[median] == nums[index]
 
 		// 传统二分查找法的比较判断
+		// 原先需要old[median]的地方，使用nums[index]即可
 		switch {
 		case nums[index] > target:
 			high = median - 1
