@@ -7,9 +7,9 @@
 ## 统计
 ||Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|13/156|17/309|6/116|36/581|
+|**Algorithms**|13/156|18/309|6/116|37/581|
 |**Draft**|0/2|0/5|0/1|0/8|
-|**Total**|13/158|17/314|6/117|36/589|
+|**Total**|13/158|18/314|6/117|37/589|
 
 
 ## 已添加的题目
@@ -48,6 +48,7 @@
 |31|[Next Permutation](./Algorithms/0031.next-permutation)|☆ ☆|28%|❤|
 |32|[Longest Valid Parentheses](./Algorithms/0032.longest-valid-parentheses)|☆ ☆ ☆|23%||
 |33|[Search in Rotated Sorted Array](./Algorithms/0033.search-in-rotated-sorted-array)|☆ ☆|32%|❤|
+|34|[Search for a Range](./Algorithms/0034.search-for-a-range)|☆ ☆|31%||
 |35|[Search Insert Position](./Algorithms/0035.search-insert-position)|☆|39%||
 |38|[Count and Say](./Algorithms/0038.count-and-say)|☆|34%||
 |206|[Reverse Linked List](./Algorithms/0206.reverse-linked-list)|☆|45%||
