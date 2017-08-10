@@ -44,6 +44,21 @@ func Test_Problem0036(t *testing.T) {
 			ans{true},
 		},
 
+		question{
+			para{[][]byte{
+				[]byte(".87654321"),
+				[]byte("2....4..."),
+				[]byte("3........"),
+				[]byte("4........"),
+				[]byte("5........"),
+				[]byte("6........"),
+				[]byte("7........"),
+				[]byte("8........"),
+				[]byte("9........"),
+			}},
+			ans{false},
+		},
+
 		// 如需多个测试，可以复制上方元素。
 	}
 
@@ -51,16 +66,16 @@ func Test_Problem0036(t *testing.T) {
 		a, p := q.ans, q.para
 		fmt.Printf("~~%v~~\n", p)
 
-		ast.Equal(a.one, (p.one), "输入:%v", p)
+		ast.Equal(a.one, isValidSudoku(p.one), "输入:%v", p)
 	}
 }
-func Test_makeIndex(t *testing.T) {
-	ast := assert.New(t)
 
-	ast.True(true)
-	row, column := makeIndex()
-	for i, r := range row {
-		fmt.Println(r, column[i])
-	}
+// func Test_makeIndex(t *testing.T) {
+// 	ast := assert.New(t)
 
-}
+// 	ast.True(true)
+// 	row, column := makeIndex()
+// 	for i, r := range row {
+// 		fmt.Println(r, column[i])
+// 	}
+// }

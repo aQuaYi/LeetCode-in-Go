@@ -4,7 +4,9 @@ func isValidSudoku(board [][]byte) bool {
 	row, column := makeIndex()
 
 	for i := range row {
-		if check(board, r[i], c [9]int)
+		if !check(board, row[i], column[i]) {
+			return false
+		}
 	}
 	return true
 }
@@ -16,8 +18,8 @@ func check(board [][]byte, r, c [9]int) bool {
 		if b == '.' {
 			continue
 		}
-		ok := record[b]
-		if ok {
+		had := record[b]
+		if had {
 			return false
 		}
 		record[b] = true
