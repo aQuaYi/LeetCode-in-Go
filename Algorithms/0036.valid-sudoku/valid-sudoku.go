@@ -1,63 +1,86 @@
 package Problem0036
 
-func isValidSudoku(board [][]byte) bool {
-	row, column := makeIndex()
+import "fmt"
 
-	for i := range row {
-		if !check(board, row[i], column[i]) {
+func isValidSudoku(board [][]byte) bool {
+	for row := 0; row < 9; row++ {
+		if !isValidSudokuRow(board, row) {
+			return false
+		}
+	}
+
+	for col := 0; col < 9; col++ {
+		if !isValidSudokuCol(board, col) {
+			return false
+		}
+	}
+
+	for pod := 0; pod < 9; pod++ {
+		if !isValidSudokuPod(board, pod) {
 			return false
 		}
 	}
 	return true
 }
 
-func check(board [][]byte, r, c [9]int) bool {
-	record := make(map[byte]bool, 9)
-	for i := 0; i < 9; i++ {
-		b := board[r[i]][c[i]]
-		if b == '.' {
+func isValidSudokuRow(board [][]byte, row int) bool {
+	var nums [10]bool
+	for col := 0; col < 9; col++ {
+		n := convertToNumber(board[row][col])
+		if n < 0 {
 			continue
 		}
-		had := record[b]
-		if had {
+		if nums[n] {
+			fmt.Println("Invalid row: ", row)
 			return false
 		}
-		record[b] = true
+		nums[n] = true
 	}
-
 	return true
 }
 
-func makeIndex() (row, column [][9]int) {
-	for i := 0; i < 9; i++ {
-		r := [9]int{}
-		c := [9]int{}
-		for j := 0; j < 9; j++ {
-			r[j] = i
-			c[j] = j
+func isValidSudokuCol(board [][]byte, col int) bool {
+	var nums [10]bool
+	for row := 0; row < 9; row++ {
+		n := convertToNumber(board[row][col])
+		if n < 0 {
+			continue
 		}
-		row = append(row, r, c)
-		column = append(column, c, r)
+		if nums[n] {
+			fmt.Println("Invalid col: ", col)
+			return false
+		}
+		nums[n] = true
 	}
+	return true
+}
 
-	rowBase := [][9]int{
-		[9]int{0, 0, 0, 1, 1, 1, 2, 2, 2},
-		[9]int{3, 3, 3, 4, 4, 4, 5, 5, 5},
-		[9]int{6, 6, 6, 7, 7, 7, 8, 8, 8},
-	}
+func isValidSudokuPod(board [][]byte, pod int) bool {
+	var nums [10]bool
 
-	columnBase := [][9]int{
-		[9]int{0, 1, 2, 0, 1, 2, 0, 1, 2},
-		[9]int{3, 4, 5, 3, 4, 5, 3, 4, 5},
-		[9]int{6, 7, 8, 6, 7, 8, 6, 7, 8},
-	}
+	row := (pod / 3) * 3
+	col := (pod % 3) * 3
 
-	for i := range rowBase {
-		for j := range columnBase {
-			row = append(row, rowBase[i])
-			column = append(column, columnBase[j])
+	for drow := 0; drow < 3; drow++ {
+		for dcol := 0; dcol < 3; dcol++ {
+			n := convertToNumber(board[row+drow][col+dcol])
+			if n < 0 {
+				continue
+			}
+			if nums[n] {
+				fmt.Println("Invalid pod:", pod)
+				fmt.Printf("Found duplicate number %d on row %d, col %d", n, row+drow, col+dcol)
+				return false
+			}
+			nums[n] = true
 		}
 	}
+	return true
+}
 
-	return
+func convertToNumber(b byte) int {
+	if b == '.' {
+		return -1
+	}
+	return int(b - '0')
 }

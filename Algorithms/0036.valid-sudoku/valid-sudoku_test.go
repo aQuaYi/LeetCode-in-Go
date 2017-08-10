@@ -69,13 +69,3 @@ func Test_Problem0036(t *testing.T) {
 		ast.Equal(a.one, isValidSudoku(p.one), "输入:%v", p)
 	}
 }
-
-// func Test_makeIndex(t *testing.T) {
-// 	ast := assert.New(t)
-
-// 	ast.True(true)
-// 	row, column := makeIndex()
-// 	for i, r := range row {
-// 		fmt.Println(r, column[i])
-// 	}
-// }
