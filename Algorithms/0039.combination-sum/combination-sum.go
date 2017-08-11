@@ -20,7 +20,7 @@ func cs(candidates, solution []int, target int, result *[][]int) {
 	}
 
 	if len(candidates) == 0 || target < candidates[0] {
-		// target < candidates[0] 这个是因为candidates是排序好的
+		// target < candidates[0] 因为candidates是排序好的
 		return
 	}
 
