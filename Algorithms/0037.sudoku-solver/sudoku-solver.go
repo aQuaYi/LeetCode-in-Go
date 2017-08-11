@@ -13,7 +13,7 @@ func fill(board [][]byte, n byte, block int) bool {
 	}
 
 	if n == '9'+1 {
-		// 此 block 已经被填满了，去填写下一个 block
+		// block 已经被填满了，去填写 block+1
 		return fill(board, '1', block+1)
 	}
 
@@ -59,7 +59,7 @@ func fill(board [][]byte, n byte, block int) bool {
 					return true
 				}
 
-				// 把 (r,c) 还原，把 n 移入下一个可行的位置
+				// 把 (r,c) 还原，以便以后把 n 移入下一个可行的位置
 				board[r][c] = '.'
 
 				// print(board, n, block)
