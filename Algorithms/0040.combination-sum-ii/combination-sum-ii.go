@@ -7,20 +7,18 @@ func combinationSum2(candidates []int, target int) [][]int {
 
 	res := [][]int{}
 	solution := []int{}
-	cs(candidates, solution, target, &res)
+	cs2(candidates, solution, target, &res)
 
 	return res
 }
 
-func cs(candidates, solution []int, target int, result *[][]int) {
+func cs2(candidates, solution []int, target int, result *[][]int) {
 	if target == 0 {
 		*result = append(*result, solution)
 	}
 
-	if target < 0 || len(candidates) == 0 || target < candidates[0] {
-		// target < candidates[0] 这个是因为candidates是排序好的
-		// 否则，就应该是 target < min(candidates...)
-		// 其实，不要这个判断条件，也能成功
+	if len(candidates) == 0 || target < candidates[0] {
+		// target < candidates[0] 因为candidates是排序好的
 		return
 	}
 
@@ -29,7 +27,17 @@ func cs(candidates, solution []int, target int, result *[][]int) {
 	// 可以注释掉以下语句，运行单元测试，查看错误发生。
 	solution = solution[:len(solution):len(solution)]
 
-	cs(candidates, append(solution, candidates[0]), target-candidates[0], result)
+	// 去掉已使用了的candidates[0]
+	cs2(candidates[1:], append(solution, candidates[0]), target-candidates[0], result)
 
-	cs(candidates[1:], solution, target, result)
+	// 不使用candidates[0]的话，就要把所有和candidates[0]相等的元素都去掉。
+	cs2(next(candidates), solution, target, result)
+}
+
+func next(candidates []int) []int {
+	i := 0
+	for i+1 < len(candidates) && candidates[i] == candidates[i+1] {
+		i++
+	}
+	return candidates[i+1:]
 }

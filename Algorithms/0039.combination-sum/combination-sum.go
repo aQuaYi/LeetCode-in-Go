@@ -19,10 +19,8 @@ func cs(candidates, solution []int, target int, result *[][]int) {
 		*result = append(*result, solution)
 	}
 
-	if target < 0 || len(candidates) == 0 || target < candidates[0] {
+	if len(candidates) == 0 || target < candidates[0] {
 		// target < candidates[0] 这个是因为candidates是排序好的
-		// 否则，就应该是 target < min(candidates...)
-		// 其实，不要这个判断条件，也能成功
 		return
 	}
 

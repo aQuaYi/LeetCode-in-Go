@@ -33,13 +33,19 @@ func Test_Problem0039(t *testing.T) {
 		question{
 			para{[]int{10, 1, 2, 7, 6, 1, 5}, 8},
 			ans{[][]int{
-				[]int{1, 7},
-				[]int{1, 2, 5},
-				[]int{2, 6},
 				[]int{1, 1, 6},
+				[]int{1, 2, 5},
+				[]int{1, 7},
+				[]int{2, 6},
 			}},
 		},
 
+		question{
+			para{[]int{1}, 1},
+			ans{[][]int{
+				[]int{1},
+			}},
+		},
 		// 如需多个测试，可以复制上方元素。
 	}
 
