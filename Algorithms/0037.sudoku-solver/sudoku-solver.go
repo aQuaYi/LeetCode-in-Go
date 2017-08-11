@@ -26,7 +26,7 @@ func fill(board [][]byte, n byte, block int) bool {
 		for c := colBegin; c < colBegin+3; c++ {
 			if board[r][c] == n {
 				// block 中已经有 n 了，无需填写
-				// 去填写下一个 n
+				// 去填写 n+1
 				return fill(board, n+1, block)
 			}
 		}
@@ -67,6 +67,6 @@ func fill(board [][]byte, n byte, block int) bool {
 		}
 	}
 	// n 在此 block 中无处可放。
-	// 返回 false ，让前一个 n 调整位置。
+	// 返回 false ，让 n-1 调整位置。
 	return false
 }
