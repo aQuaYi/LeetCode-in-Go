@@ -1,20 +1,23 @@
 package Problem0037
 
 func solveSudoku(board [][]byte) {
-	nums := []byte("519783426")
+	nums := []byte("123456789")
+	blocks := []int{1, 3, 5, 7, 0, 8, 4, 2, 6}
 	for _, n := range nums {
-		if !fillBlock(board, n, 0) {
+		if !fillBlock(board, n, blocks) {
 			panic("此题无解")
 		}
 	}
 }
 
-func fillBlock(board [][]byte, n byte, block int) bool {
-	print(board, n, block)
-
-	if block == 9 {
+func fillBlock(board [][]byte, n byte, blocks []int) bool {
+	if len(blocks) == 0 {
 		return true
 	}
+
+	block := blocks[0]
+
+	print(board, n, block)
 
 	rowZero := (block / 3) * 3
 	colZero := (block % 3) * 3
@@ -32,7 +35,7 @@ func fillBlock(board [][]byte, n byte, block int) bool {
 	}
 
 	if had() {
-		return fillBlock(board, n, block+1)
+		return fillBlock(board, n, blocks[1:])
 	}
 	// 检查(r,c)所在的行和列是否已经存在 b 了
 	isClear := func(r, c int) bool {
@@ -48,7 +51,7 @@ func fillBlock(board [][]byte, n byte, block int) bool {
 		for c := colZero; c < colZero+3; c++ {
 			if board[r][c] == '.' && isClear(r, c) {
 				board[r][c] = n
-				if fillBlock(board, n, block+1) {
+				if fillBlock(board, n, blocks[1:]) {
 					return true
 				}
 				// 后面的填写不成功，所以需要还原这个格子
