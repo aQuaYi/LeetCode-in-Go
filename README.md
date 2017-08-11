@@ -7,9 +7,9 @@
 ## 统计
 ||Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|13/156|20/309|6/116|39/581|
+|**Algorithms**|13/156|20/309|7/116|40/581|
 |**Draft**|0/2|0/5|0/1|0/8|
-|**Total**|13/158|20/314|6/117|39/589|
+|**Total**|13/158|20/314|7/117|40/589|
 
 
 ## 已添加的题目
@@ -50,7 +50,8 @@
 |33|[Search in Rotated Sorted Array](./Algorithms/0033.search-in-rotated-sorted-array)|☆ ☆|32%|❤|
 |34|[Search for a Range](./Algorithms/0034.search-for-a-range)|☆ ☆|31%||
 |35|[Search Insert Position](./Algorithms/0035.search-insert-position)|☆|39%||
-|36|[Valid Sudoku](./Algorithms/0036.valid-sudoku)|☆ ☆|35%||
+|36|[Valid Sudoku](./Algorithms/0036.valid-sudoku)|☆ ☆|35%|❤|
+|37|[Sudoku Solver](./Algorithms/0037.sudoku-solver)|☆ ☆ ☆|30%|❤|
 |38|[Count and Say](./Algorithms/0038.count-and-say)|☆|34%||
 |39|[Combination Sum](./Algorithms/0039.combination-sum)|☆ ☆|38%||
 |206|[Reverse Linked List](./Algorithms/0206.reverse-linked-list)|☆|45%||
