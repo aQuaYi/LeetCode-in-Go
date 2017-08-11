@@ -64,3 +64,14 @@ func Test_Problem0036(t *testing.T) {
 		ast.Equal(a.one, p.one, "输入:%v", p)
 	}
 }
+
+func print(board [][]byte, b byte, block int) {
+	fmt.Printf("\n====fill %d in block %d ====", b-'0', block)
+
+	for i := range board {
+		if i%3 == 0 {
+			fmt.Println()
+		}
+		fmt.Println(string(board[i][0:3]), " ", string(board[i][3:6]), " ", string(board[i][6:]))
+	}
+}
