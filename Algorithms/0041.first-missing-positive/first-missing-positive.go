@@ -6,14 +6,15 @@ import (
 
 func firstMissingPositive(nums []int) int {
 	for i := 0; i < len(nums); i++ {
-		index := nums[i] - 1
-		if nums[i] < 1 || nums[i] > len(nums) || index < 0 || index > len(nums) || nums[i] == i+1 {
-			// cannot swap or noused
-			continue
-		}
-		for nums[i] >= 1 && nums[i] <= len(nums) && nums[i] != nums[nums[i]-1] {
+
+		fmt.Println(i)
+
+		for 0 <= nums[i]-1 && nums[i]-1 < len(nums) && nums[i] != nums[nums[i]-1] {
+			//  0 <= nums[i]-1 && nums[i]-1 < len(nums) 是为了防止nums[nums[i]-1]溢出
 			nums[i], nums[nums[i]-1] = nums[nums[i]-1], nums[i]
+
 			fmt.Println(nums)
+
 		}
 	}
 
