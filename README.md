@@ -7,9 +7,9 @@
 ## 统计
 ||Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|13/156|21/309|9/116|43/581|
+|**Algorithms**|13/156|22/309|9/116|44/581|
 |**Draft**|0/2|0/5|0/1|0/8|
-|**Total**|13/158|21/314|9/117|43/589|
+|**Total**|13/158|22/314|9/117|44/589|
 
 
 ## 已添加的题目
@@ -57,6 +57,7 @@
 |40|[Combination Sum II](./Algorithms/0040.combination-sum-ii)|☆ ☆|33%||
 |41|[First Missing Positive](./Algorithms/0041.first-missing-positive)|☆ ☆ ☆|25%||
 |42|[Trapping Rain Water](./Algorithms/0042.trapping-rain-water)|☆ ☆ ☆|36%||
+|43|[Multiply Strings](./Algorithms/0043.multiply-strings)|☆ ☆|27%||
 |206|[Reverse Linked List](./Algorithms/0206.reverse-linked-list)|☆|45%||
 
 ## helper
