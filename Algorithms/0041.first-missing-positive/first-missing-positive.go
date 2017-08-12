@@ -1,30 +1,26 @@
 package Problem0041
 
-import "sort"
+import (
+	"fmt"
+)
 
 func firstMissingPositive(nums []int) int {
-	if len(nums) == 0 {
-		return 1
-	}
-
-	sort.Ints(nums)
-	i := sort.SearchInts(nums, 0)
-	if nums[i] == 0 {
-		i++
-	}
-
-	res := 1
-	for i < len(nums) {
-		if 0 < i && nums[i] == nums[i-1] {
-			i++
+	for i := 0; i < len(nums); i++ {
+		index := nums[i] - 1
+		if nums[i] < 1 || nums[i] > len(nums) || index < 0 || index > len(nums) || nums[i] == i+1 {
+			// cannot swap or noused
 			continue
 		}
-		if nums[i] != res {
-			return res
+		for nums[i] >= 1 && nums[i] <= len(nums) && nums[i] != nums[nums[i]-1] {
+			nums[i], nums[nums[i]-1] = nums[nums[i]-1], nums[i]
+			fmt.Println(nums)
 		}
-		i++
-		res++
 	}
 
-	return res
+	for i := range nums {
+		if nums[i] != i+1 {
+			return i + 1
+		}
+	}
+	return len(nums) + 1
 }
