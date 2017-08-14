@@ -30,6 +30,16 @@ func Test_Problem0045(t *testing.T) {
 	qs := []question{
 
 		question{
+			para{[]int{2, 3, 1, 4, 1, 1, 1, 4, 1, 5, 1, 1, 1, 1}},
+			ans{5},
+		},
+
+		question{
+			para{[]int{2, 3, 1, 1, 1, 1, 1, 4, 1, 5, 1, 1, 1, 1}},
+			ans{7},
+		},
+
+		question{
 			para{[]int{2, 3, 1, 4, 1, 5, 1, 1, 1, 1}},
 			ans{4},
 		},
@@ -50,10 +60,19 @@ func Test_Problem0045(t *testing.T) {
 		},
 
 		question{
+			para{[]int{}},
+			ans{0},
+		},
+
+		question{
 			para{[]int{5, 1, 1, 1, 1, 1, 1}},
 			ans{2},
 		},
 
+		question{
+			para{[]int{1, 1, 1, 1, 1, 1}},
+			ans{5},
+		},
 		// 如需多个测试，可以复制上方元素。
 	}
 
@@ -63,10 +82,4 @@ func Test_Problem0045(t *testing.T) {
 
 		ast.Equal(a.one, jump(p.one), "输入:%v", p)
 	}
-}
-
-func Test_panic(t *testing.T) {
-	ast := assert.New(t)
-
-	ast.Panics(func() { jump([]int{}) }, "jump的参数长度为0，却没有触发panic。")
 }
