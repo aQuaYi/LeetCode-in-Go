@@ -1,28 +1,26 @@
 package Problem0045
 
 func jump(nums []int) int {
-	ress := []int{}
+	res := len(nums)
 
-	jumpToNext(nums, &ress, 0, 0)
+	jumpToNext(nums, &res, 0, 0)
 
-	min := len(nums) + 1
-	for i := range ress {
-		if min > ress[i] {
-			min = ress[i]
-		}
-	}
-
-	return min
+	return res
 }
 
-func jumpToNext(nums []int, ress *[]int, i, temp int) {
-	if nums[i]+i >= len(nums)-1 {
-		*ress = append(*ress, temp+1)
+func jumpToNext(nums []int, res *int, i, temp int) {
+	if temp > *res {
 		return
 	}
 
-	for j := 1; j <= nums[i]; j++ {
-		jumpToNext(nums, ress, i+j, temp+1)
+	if i >= len(nums)-1 {
+		if *res > temp {
+			*res = temp
+		}
+		return
 	}
 
+	for j := nums[i]; j > 0; j-- {
+		jumpToNext(nums, res, i+j, temp+1)
+	}
 }
