@@ -9,7 +9,7 @@ Follow up:
 Could you do this in-place?
 
 ## 解题思路
-
+对应的4个点，依次互换位置。
 
 ## 总结
 
