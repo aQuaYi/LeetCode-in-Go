@@ -7,9 +7,9 @@
 ## 统计
 ||Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|13/157|24/311|10/117|47/585|
+|**Algorithms**|13/157|25/311|10/117|48/585|
 |**Draft**|0/2|0/5|0/1|0/8|
-|**Total**|13/159|24/316|10/118|47/593|
+|**Total**|13/159|25/316|10/118|48/593|
 
 
 ## 已添加的题目
@@ -61,6 +61,7 @@
 |45|[Jump Game II](./Algorithms/0045.jump-game-ii)|☆ ☆ ☆|26%||
 |46|[Permutations](./Algorithms/0046.permutations)|☆ ☆|43%||
 |47|[Permutations II](./Algorithms/0047.permutations-ii)|☆ ☆|32%||
+|48|[Rotate Image](./Algorithms/0048.rotate-image)|☆ ☆|38%||
 |206|[Reverse Linked List](./Algorithms/0206.reverse-linked-list)|☆|45%||
 
 ## helper
