@@ -7,9 +7,9 @@
 ## 统计
 ||Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|13/157|25/311|10/117|48/585|
+|**Algorithms**|13/157|26/311|10/117|49/585|
 |**Draft**|0/2|0/5|0/1|0/8|
-|**Total**|13/159|25/316|10/118|48/593|
+|**Total**|13/159|26/316|10/118|49/593|
 
 
 ## 已添加的题目
@@ -62,6 +62,7 @@
 |46|[Permutations](./Algorithms/0046.permutations)|☆ ☆|43%||
 |47|[Permutations II](./Algorithms/0047.permutations-ii)|☆ ☆|32%||
 |48|[Rotate Image](./Algorithms/0048.rotate-image)|☆ ☆|38%||
+|49|[Group Anagrams](./Algorithms/0049.group-anagrams)|☆ ☆|34%||
 |206|[Reverse Linked List](./Algorithms/0206.reverse-linked-list)|☆|45%||
 
 ## helper
