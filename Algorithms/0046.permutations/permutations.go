@@ -1,16 +1,16 @@
 package Problem0046
 
 func permute(nums []int) [][]int {
-	ress := [][]int{}
+	ans := [][]int{}
 
-	makePermute(nums, []int{}, &ress)
+	makePermute(nums, []int{}, &ans)
 
-	return ress
+	return ans
 }
 
-func makePermute(nums, res []int, ress *[][]int) {
+func makePermute(nums, res []int, ans *[][]int) {
 	if len(nums) == 0 {
-		*ress = append(*ress, res)
+		*ans = append(*ans, res)
 	}
 
 	for i, n := range nums {
@@ -18,6 +18,6 @@ func makePermute(nums, res []int, ress *[][]int) {
 		temp = append(temp, nums[:i]...)
 		temp = append(temp, nums[i+1:]...)
 
-		makePermute(temp, append(res[:len(res):len(res)], n), ress)
+		makePermute(temp, append(res[:len(res):len(res)], n), ans)
 	}
 }
