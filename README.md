@@ -7,9 +7,9 @@
 ## 统计
 ||Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|13/157|23/311|10/117|46/585|
+|**Algorithms**|13/157|24/311|10/117|47/585|
 |**Draft**|0/2|0/5|0/1|0/8|
-|**Total**|13/159|23/316|10/118|46/593|
+|**Total**|13/159|24/316|10/118|47/593|
 
 
 ## 已添加的题目
@@ -60,6 +60,7 @@
 |43|[Multiply Strings](./Algorithms/0043.multiply-strings)|☆ ☆|27%||
 |45|[Jump Game II](./Algorithms/0045.jump-game-ii)|☆ ☆ ☆|26%||
 |46|[Permutations](./Algorithms/0046.permutations)|☆ ☆|43%||
+|47|[Permutations II](./Algorithms/0047.permutations-ii)|☆ ☆|32%||
 |206|[Reverse Linked List](./Algorithms/0206.reverse-linked-list)|☆|45%||
 
 ## helper
