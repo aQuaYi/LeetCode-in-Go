@@ -7,9 +7,9 @@
 ## 统计
 ||Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|13/157|22/311|10/117|45/585|
+|**Algorithms**|13/157|23/311|10/117|46/585|
 |**Draft**|0/2|0/5|0/1|0/8|
-|**Total**|13/159|22/316|10/118|45/593|
+|**Total**|13/159|23/316|10/118|46/593|
 
 
 ## 已添加的题目
@@ -59,6 +59,7 @@
 |42|[Trapping Rain Water](./Algorithms/0042.trapping-rain-water)|☆ ☆ ☆|36%||
 |43|[Multiply Strings](./Algorithms/0043.multiply-strings)|☆ ☆|27%||
 |45|[Jump Game II](./Algorithms/0045.jump-game-ii)|☆ ☆ ☆|26%||
+|46|[Permutations](./Algorithms/0046.permutations)|☆ ☆|43%||
 |206|[Reverse Linked List](./Algorithms/0206.reverse-linked-list)|☆|45%||
 
 ## helper
