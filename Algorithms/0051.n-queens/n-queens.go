@@ -1,87 +1,39 @@
 package Problem0051
 
 func solveNQueens(n int) [][]string {
-	res := [][]string{}
-
-	m := make([][]byte, n)
-	for i := 0; i < n; i++ {
-		m[i] = make([]byte, n)
-		for j := 0; j < len(m[i]); j++ {
-			m[i][j] = '.'
-		}
+	if n == 0 {
+		return [][]string{}
 	}
-
-	solve(m, 0, &res)
-
+	cols := make([]bool, n)
+	d1 := make([]bool, 2*n)
+	d2 := make([]bool, 2*n)
+	board := make([]string, n)
+	res := [][]string{}
+	dfs(0, cols, d1, d2, board, &res)
 	return res
 }
 
-func handlBytes(bytes [][]byte, n int) []string {
-	temp := make([]string, n)
-	for i := 0; i < n; i++ {
-		temp[i] = string(bytes[i])
-	}
-
-	return temp
-}
-
-func solve(m [][]byte, row int, res *[][]string) {
-
-	if row == len(m) {
-		*res = append(*res, handlBytes(m, len(m)))
+func dfs(r int, cols []bool, d1 []bool, d2 []bool, board []string, res *[][]string) {
+	if r == len(board) {
+		tmp := make([]string, len(board))
+		copy(tmp, board)
+		*res = append(*res, tmp)
 		return
 	}
-
-	for i := 0; i < len(m); i++ {
-		if isAvaliable(m, row, i) {
-			m[row][i] = 'Q'
-			solve(m, row+1, res)
-			m[row][i] = '.'
+	n := len(board)
+	for c := 0; c < len(board); c++ {
+		id1 := r - c + n
+		id2 := 2*n - r - c - 1
+		if !cols[c] && !d1[id1] && !d2[id2] {
+			b := make([]byte, n)
+			for i := range b {
+				b[i] = '.'
+			}
+			b[c] = 'Q'
+			board[r] = string(b)
+			cols[c], d1[id1], d2[id2] = true, true, true
+			dfs(r+1, cols, d1, d2, board, res)
+			cols[c], d1[id1], d2[id2] = false, false, false
 		}
 	}
-}
-
-func isAvaliable(m [][]byte, row, col int) bool {
-	var i, j int
-	n := len(m)
-
-	// 检查 ‘/’ 方向的对角线
-	i, j = row, col
-	for i > 0 && j < n-1 {
-		i--
-		j++
-	}
-	for i < n && j >= 0 {
-		if m[i][j] == 'Q' {
-			return false
-		}
-		i++
-		j--
-	}
-
-	// 检查 ‘\’ 方向的对角线
-	i, j = row, col
-	for i > 0 && j > 0 {
-		i--
-		j--
-	}
-	for i < n && j < n {
-		if m[i][j] == 'Q' {
-			return false
-		}
-		i++
-		j++
-	}
-
-	// 按行填写，检查列即可
-	i, j = 0, 0
-	for i < len(m) && j < len(m) {
-		if m[row][j] == 'Q' || m[i][col] == 'Q' {
-			return false
-		}
-		i++
-		j++
-	}
-
-	return true
 }
