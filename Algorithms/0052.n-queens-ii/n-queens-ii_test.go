@@ -49,11 +49,6 @@ func Test_Problem0052(t *testing.T) {
 			ans{14200},
 		},
 
-		question{
-			para{13},
-			ans{73712},
-		},
-
 		// 如需多个测试，可以复制上方元素。
 	}
 
