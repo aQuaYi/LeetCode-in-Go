@@ -28,6 +28,10 @@ func Test_Problem0051(t *testing.T) {
 	ast := assert.New(t)
 
 	qs := []question{
+		question{
+			para{0},
+			ans{[][]string{}},
+		},
 
 		question{
 			para{4},

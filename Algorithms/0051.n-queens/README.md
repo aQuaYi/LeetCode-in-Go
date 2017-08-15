@@ -28,8 +28,9 @@ There exist two distinct solutions to the 4-queens puzzle:
 题目要求，在以下地方都没有其他的Queen
 1. 所在的行
 1. 所在的列
-1. 45度对角线上
+1. 两条45度对角线上
 
+和前面的数独问题一样的解题思路
 ## 总结
 
 
