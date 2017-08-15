@@ -11,7 +11,9 @@ More practice:
 
 If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is more subtle.
 ## 解题思路
+利用好`连续`这个约束
 
+详见注释
 
 ## 总结
 
