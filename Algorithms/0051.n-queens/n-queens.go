@@ -1,9 +1,5 @@
 package Problem0051
 
-import (
-	"fmt"
-)
-
 func solveNQueens(n int) [][]string {
 	res := [][]string{}
 
@@ -17,20 +13,12 @@ func solveNQueens(n int) [][]string {
 
 	solve(m, 0, &res)
 
-	for i := 0; i < len(res); i++ {
-		for j := 0; j < len(res[i]); j++ {
-			fmt.Print(res[i][j])
-			fmt.Print(" + ")
-		}
-		fmt.Println()
-	}
-
 	return res
 }
 
 func handlBytes(bytes [][]byte, n int) []string {
 	temp := make([]string, n)
-	for i := 0; i <= n; i++ {
+	for i := 0; i < n; i++ {
 		temp[i] = string(bytes[i])
 	}
 
@@ -54,13 +42,45 @@ func solve(m [][]byte, row int, res *[][]string) {
 }
 
 func isAvaliable(m [][]byte, row, col int) bool {
-	// 检查 ‘/’ 方向的对角线
+	var i, j int
+	n := len(m)
 
-	// 按行填写，检查列即可
-	for i := 1; i < len(m)-1; i++ {
-		if m[i][col] == 'Q' {
+	// 检查 ‘/’ 方向的对角线
+	i, j = row, col
+	for i > 0 && j < n-1 {
+		i--
+		j++
+	}
+	for i < n && j >= 0 {
+		if m[i][j] == 'Q' {
 			return false
 		}
+		i++
+		j--
+	}
+
+	// 检查 ‘\’ 方向的对角线
+	i, j = row, col
+	for i > 0 && j > 0 {
+		i--
+		j--
+	}
+	for i < n && j < n {
+		if m[i][j] == 'Q' {
+			return false
+		}
+		i++
+		j++
+	}
+
+	// 按行填写，检查列即可
+	i, j = 0, 0
+	for i < len(m) && j < len(m) {
+		if m[row][j] == 'Q' || m[i][col] == 'Q' {
+			return false
+		}
+		i++
+		j++
 	}
 
 	return true
