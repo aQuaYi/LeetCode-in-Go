@@ -31,10 +31,9 @@ func Test_Problem0050(t *testing.T) {
 	qs := []question{
 
 		question{
-			para{0, -1},
+			para{0, 1},
 			ans{0},
 		},
-
 
 		question{
 			para{3, 2},
@@ -42,8 +41,8 @@ func Test_Problem0050(t *testing.T) {
 		},
 
 		question{
-			para{0.1, -3},
-			ans{1000},
+			para{0.5, -3},
+			ans{8},
 		},
 
 		question{
