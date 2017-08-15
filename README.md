@@ -7,9 +7,9 @@
 ## 统计
 ||Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|13/157|27/311|11/117|51/585|
+|**Algorithms**|13/157|27/311|12/117|52/585|
 |**Draft**|0/2|0/5|0/1|0/8|
-|**Total**|13/159|27/316|11/118|51/593|
+|**Total**|13/159|27/316|12/118|52/593|
 
 
 ## 已添加的题目
@@ -65,6 +65,7 @@
 |49|[Group Anagrams](./Algorithms/0049.group-anagrams)|☆ ☆|34%|❤|
 |50|[Pow(x, n)](./Algorithms/0050.powx-n)|☆ ☆|26%||
 |51|[N-Queens](./Algorithms/0051.n-queens)|☆ ☆ ☆|30%||
+|52|[N-Queens II](./Algorithms/0052.n-queens-ii)|☆ ☆ ☆|44%||
 |206|[Reverse Linked List](./Algorithms/0206.reverse-linked-list)|☆|45%||
 
 ## helper
