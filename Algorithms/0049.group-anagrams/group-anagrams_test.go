@@ -32,9 +32,9 @@ func Test_Problem0049(t *testing.T) {
 		question{
 			para{[]string{"eat", "tea", "tan", "ate", "nat", "bat"}},
 			ans{[][]string{
-				[]string{"ate", "eat", "tea"},
-				[]string{"nat", "tan"},
 				[]string{"bat"},
+				[]string{"nat", "tan"},
+				[]string{"ate", "eat", "tea"},
 			}},
 		},
 
@@ -44,7 +44,10 @@ func Test_Problem0049(t *testing.T) {
 	for _, q := range qs {
 		a, p := q.ans, q.para
 		fmt.Printf("~~%v~~\n", p)
+		res := groupAnagrams(p.one)
+		for _, v := range res {
+			ast.Equal(a.one[len(v)-1], v, "输入:%v", p)
 
-		ast.Equal(a.one, groupAnagrams(p.one), "输入:%v", p)
+		}
 	}
 }
