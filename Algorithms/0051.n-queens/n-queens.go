@@ -11,22 +11,25 @@ func solveNQueens(n int) [][]string {
 			return res
 		}
 
-		temp := make([]string, n)
-		for i := 1; i <= n; i++ {
-			for j := 1; j <= n; j++ {
-				if ans[i][j] != 'Q' {
-					ans[i][j] = '.'
-				}
-			}
-			temp[i-1] = string(ans[i][1 : n+1])
-		}
-
 		res = append(res, temp)
 
 		col++
 	}
 
 	return res
+}
+func handlBytes(bytes [][]byte, n int) []string {
+	temp := make([]string, n)
+	for i := 1; i <= n; i++ {
+		for j := 1; j <= n; j++ {
+			if bytes[i][j] != 'Q' {
+				bytes[i][j] = '.'
+			}
+		}
+		temp[i-1] = string(bytes[i][1 : n+1])
+	}
+
+	return temp
 }
 
 func makeTemp(n int) [][]byte {
