@@ -31,6 +31,12 @@ func Test_Problem0050(t *testing.T) {
 	qs := []question{
 
 		question{
+			para{0, -1},
+			ans{0},
+		},
+
+
+		question{
 			para{3, 2},
 			ans{9},
 		},

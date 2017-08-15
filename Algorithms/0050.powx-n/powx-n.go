@@ -1,6 +1,10 @@
 package Problem0050
 
 func myPow(x float64, n int) float64 {
+	if x == 0 {
+		return 0
+	}
+
 	if n < 0 {
 		n *= -1
 		x = 1 / x
