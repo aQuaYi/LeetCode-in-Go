@@ -2,7 +2,9 @@
 
 ## 题目
 Follow up for N-Queens problem.
+
 ![8-queens](8-queens.png)
+
 Now, instead outputting board configurations, return the total number of distinct solutions.
 
 
