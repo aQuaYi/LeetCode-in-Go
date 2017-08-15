@@ -1,75 +1,64 @@
 package Problem0051
 
+import (
+	"fmt"
+)
+
 func solveNQueens(n int) [][]string {
 	res := [][]string{}
-	col := 1
-	ok := false
-	for col <= n {
-		ans := makeTemp(n)
-		col, ok = solve(ans, 1, col)
-		if !ok {
-			return res
+
+	m := make([][]byte, n)
+	for i := 0; i < n; i++ {
+		m[i] = make([]byte, n)
+		for j := 0; j < len(m[i]); j++ {
+			m[i][j] = '.'
 		}
+	}
 
-		res = append(res, temp)
+	solve(m, 0, &res)
 
-		col++
+	for i := 0; i < len(res); i++ {
+		for j := 0; j < len(res[i]); j++ {
+			fmt.Print(res[i][j])
+			fmt.Print(" + ")
+		}
+		fmt.Println()
 	}
 
 	return res
 }
+
 func handlBytes(bytes [][]byte, n int) []string {
 	temp := make([]string, n)
-	for i := 1; i <= n; i++ {
-		for j := 1; j <= n; j++ {
-			if bytes[i][j] != 'Q' {
-				bytes[i][j] = '.'
-			}
-		}
-		temp[i-1] = string(bytes[i][1 : n+1])
+	for i := 0; i <= n; i++ {
+		temp[i] = string(bytes[i])
 	}
 
 	return temp
 }
 
-func makeTemp(n int) [][]byte {
-	m := make([][]byte, n+2)
-	for i := 0; i < n+2; i++ {
-		m[i] = make([]byte, n+2)
-	}
-	return m
-}
+func solve(m [][]byte, row int, res *[][]string) {
 
-func solve(m [][]byte, row, col int) (int, bool) {
-	if row == len(m)-1 {
-		return 0, true
+	if row == len(m) {
+		*res = append(*res, handlBytes(m, len(m)))
+		return
 	}
-	for i := col; i < len(m)-1; i++ {
+
+	for i := 0; i < len(m); i++ {
 		if isAvaliable(m, row, i) {
 			m[row][i] = 'Q'
-			_, ok := solve(m, row+1, 1)
-			if ok {
-				return i, true
-			}
+			solve(m, row+1, res)
 			m[row][i] = '.'
 		}
 	}
-
-	return 0, false
 }
 
 func isAvaliable(m [][]byte, row, col int) bool {
+	// 检查 ‘/’ 方向的对角线
 
-	for i := row - 1; i <= row+1; i++ {
-		for j := col - 1; j <= col+1; j++ {
-			if m[i][j] == 'Q' {
-				return false
-			}
-		}
-	}
-
+	// 按行填写，检查列即可
 	for i := 1; i < len(m)-1; i++ {
-		if m[row][i] == 'Q' || m[i][col] == 'Q' {
+		if m[i][col] == 'Q' {
 			return false
 		}
 	}

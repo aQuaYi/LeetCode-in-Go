@@ -59,7 +59,10 @@ func Test_Problem0051(t *testing.T) {
 	for _, q := range qs {
 		a, p := q.ans, q.para
 		fmt.Printf("~~%v~~\n", p)
-
-		ast.Equal(a.one, solveNQueens(p.n), "输入:%v", p)
+		qs := solveNQueens(p.n)
+		ast.Equal(len(a.one), len(qs), "%d皇后问题，结果的个数不对", p)
+		for i, v := range qs {
+			ast.Equal(a.one[i], v, "输入:%v", p)
+		}
 	}
 }

@@ -28,7 +28,7 @@ There exist two distinct solutions to the 4-queens puzzle:
 题目要求，在以下地方都没有其他的Queen
 1. 所在的行
 1. 所在的列
-1. 周围的8个空格中
+1. 45度对角线上
 
 ## 总结
 
