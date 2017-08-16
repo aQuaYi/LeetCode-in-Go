@@ -31,6 +31,11 @@ func Test_Problem0643(t *testing.T) {
 	qs := []question{
 
 		question{
+			para{[]int{-1}, 1},
+			ans{-1},
+		},
+
+		question{
 			para{[]int{1, 12, -5, -6, 50, 3}, 4},
 			ans{12.75},
 		},

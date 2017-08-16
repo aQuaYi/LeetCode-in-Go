@@ -1,7 +1,7 @@
 package Problem0643
 
 func findMaxAverage(nums []int, k int) float64 {
-	max := 0
+	max := -10001 * k
 
 	for i := 0; i+k-1 < len(nums); i++ {
 		temp := 0
