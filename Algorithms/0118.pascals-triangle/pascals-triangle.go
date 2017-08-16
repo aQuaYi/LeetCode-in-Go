@@ -19,13 +19,12 @@ func generate(numRows int) [][]int {
 }
 
 func genNext(p []int) []int {
-	temp := make([]int, 1)
-	temp = append(temp, p...)
-	temp = append(temp, 0)
+	res := make([]int, 1, len(p)+1)
+	res = append(res, p...)
 
-	for i := len(temp) - 1; i > 0; i-- {
-		temp[i] += temp[i-1]
+	for i := 0; i < len(res)-1; i++ {
+		res[i] += res[i+1]
 	}
 
-	return temp[1:]
+	return res
 }

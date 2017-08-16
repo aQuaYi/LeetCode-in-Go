@@ -14,7 +14,7 @@ For example, given numRows = 5, Return
 ]
 ```
 ## 解题思路
-
+按照 numRows 分情况讨论
 
 ## 总结
 
