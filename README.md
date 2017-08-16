@@ -7,9 +7,9 @@
 ## 统计
 ||Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|18/157|27/311|12/117|57/585|
+|**Algorithms**|19/157|27/311|12/117|58/585|
 |**Draft**|0/2|0/5|0/1|0/8|
-|**Total**|18/159|27/316|12/118|57/593|
+|**Total**|19/159|27/316|12/118|58/593|
 
 
 ## 已添加的题目
@@ -71,6 +71,7 @@
 |88|[Merge Sorted Array](./Algorithms/0088.merge-sorted-array)|☆|31%||
 |118|[Pascal's Triangle](./Algorithms/0118.pascals-triangle)|☆|38%||
 |206|[Reverse Linked List](./Algorithms/0206.reverse-linked-list)|☆|45%||
+|628|[Maximum Product of Three Numbers](./Algorithms/0628.maximum-product-of-three-numbers)|☆|45%|❤|
 |643|[Maximum Average Subarray I](./Algorithms/0643.maximum-average-subarray-i)|☆|38%||
 
 ## helper
