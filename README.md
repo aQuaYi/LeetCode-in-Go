@@ -7,9 +7,9 @@
 ## 统计
 ||Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|14/157|27/311|12/117|53/585|
+|**Algorithms**|18/157|27/311|12/117|57/585|
 |**Draft**|0/2|0/5|0/1|0/8|
-|**Total**|14/159|27/316|12/118|53/593|
+|**Total**|18/159|27/316|12/118|57/593|
 
 
 ## 已添加的题目
@@ -67,7 +67,11 @@
 |51|[N-Queens](./Algorithms/0051.n-queens)|☆ ☆ ☆|30%||
 |52|[N-Queens II](./Algorithms/0052.n-queens-ii)|☆ ☆ ☆|44%||
 |53|[Maximum Subarray](./Algorithms/0053.maximum-subarray)|☆|39%|❤|
+|66|[Plus One](./Algorithms/0066.plus-one)|☆|38%||
+|88|[Merge Sorted Array](./Algorithms/0088.merge-sorted-array)|☆|31%||
+|118|[Pascal's Triangle](./Algorithms/0118.pascals-triangle)|☆|38%||
 |206|[Reverse Linked List](./Algorithms/0206.reverse-linked-list)|☆|45%||
+|643|[Maximum Average Subarray I](./Algorithms/0643.maximum-average-subarray-i)|☆|38%||
 
 ## helper
 [helper](./helper)会帮助处理大部分琐碎的工作。
