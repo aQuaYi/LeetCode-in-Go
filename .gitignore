@@ -14,3 +14,4 @@
 .glide/
 *.cookie
 .vscode/
+*.toml

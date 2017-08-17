@@ -29,7 +29,7 @@ func getCategory(name string) *Category {
 }
 
 func getJSON(URL string) []byte {
-	log.Printf("开始下载%s的数据", URL)
+	log.Printf("开始下载 %s 的数据", URL)
 	bytes, _ := exec.Command("curl", "-b", cookieName, URL).Output()
 	return bytes
 }

@@ -26,7 +26,7 @@ func (c *Category) check() Solveds {
 // checkUser 检查是否下载了本人的数据
 func checkUser(u string) {
 	if u != USER {
-		log.Fatalln("下载的不是本人的数据，请按照helper的说明文档，重新获取leetcode.cookie")
+		log.Fatalln("下载的不是本人的数据")
 	}
 }
 
