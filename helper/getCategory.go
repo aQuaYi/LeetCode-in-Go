@@ -6,7 +6,6 @@ import (
 	"io/ioutil"
 	"log"
 	"net/http"
-	"os"
 	"regexp"
 
 	"github.com/BurntSushi/toml"
@@ -16,6 +15,7 @@ import (
 const (
 	filename     = "leetcode.toml"
 	loginPageURL = "https://leetcode.com/accounts/login/"
+	referer      = "https://leetcode.com/"
 )
 
 var req *request.Request
@@ -27,11 +27,10 @@ func init() {
 	}
 	fmt.Println(cfg.Login)
 
-	c := new(http.Client)
-	req = request.NewRequest(c)
+	req = request.NewRequest(new(http.Client))
 	req.Headers = map[string]string{
 		"Accept-Encoding": "",
-		"Referer":         "https://leetcode.com/",
+		"Referer":         referer,
 	}
 
 	// login
@@ -51,6 +50,7 @@ func init() {
 }
 
 func getJSON(URL string) []byte {
+	log.Printf("开始下载 %s 的数据", URL)
 	resp, err := req.Get(URL)
 	if err != nil {
 		log.Fatal("getJSON: Get Error: " + err.Error())
@@ -88,9 +88,6 @@ func getCSRFToken(req *request.Request) (string, error) {
 func login(req *request.Request) error {
 	resp, err := req.Post(loginPageURL)
 	defer resp.Body.Close() // **Don't forget close the response body**
-	body, _ := ioutil.ReadAll(resp.Body)
-	fr, _ := os.Create("login.html")
-	fr.Write(body)
 	return err
 }
 
