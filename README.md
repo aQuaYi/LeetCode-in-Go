@@ -7,9 +7,9 @@
 ## 统计
 ||Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|19/157|27/311|12/117|58/585|
+|**Algorithms**|20/157|27/311|12/117|59/585|
 |**Draft**|0/2|0/5|0/1|0/8|
-|**Total**|19/159|27/316|12/118|58/593|
+|**Total**|20/159|27/316|12/118|59/593|
 
 
 ## 已添加的题目
@@ -41,7 +41,7 @@
 |24|[Swap Nodes in Pairs](./Algorithms/0024.swap-nodes-in-pairs)|☆ ☆|38%|❤|
 |25|[Reverse Nodes in k-Group](./Algorithms/0025.reverse-nodes-in-k-group)|☆ ☆ ☆|30%|❤|
 |26|[Remove Duplicates from Sorted Array](./Algorithms/0026.remove-duplicates-from-sorted-array)|☆|35%||
-|27|[Remove Element](./Algorithms/0027.remove-element)|☆|38%||
+|27|[Remove Element](./Algorithms/0027.remove-element)|☆|39%||
 |28|[Implement strStr()](./Algorithms/0028.implement-strstr)|☆|28%||
 |29|[Divide Two Integers](./Algorithms/0029.divide-two-integers)|☆ ☆|15%||
 |30|[Substring with Concatenation of All Words](./Algorithms/0030.substring-with-concatenation-of-all-words)|☆ ☆ ☆|21%|❤|
@@ -64,13 +64,14 @@
 |48|[Rotate Image](./Algorithms/0048.rotate-image)|☆ ☆|38%||
 |49|[Group Anagrams](./Algorithms/0049.group-anagrams)|☆ ☆|34%|❤|
 |50|[Pow(x, n)](./Algorithms/0050.powx-n)|☆ ☆|26%||
-|51|[N-Queens](./Algorithms/0051.n-queens)|☆ ☆ ☆|30%||
+|51|[N-Queens](./Algorithms/0051.n-queens)|☆ ☆ ☆|31%||
 |52|[N-Queens II](./Algorithms/0052.n-queens-ii)|☆ ☆ ☆|44%||
 |53|[Maximum Subarray](./Algorithms/0053.maximum-subarray)|☆|39%|❤|
 |66|[Plus One](./Algorithms/0066.plus-one)|☆|38%||
-|88|[Merge Sorted Array](./Algorithms/0088.merge-sorted-array)|☆|31%||
+|88|[Merge Sorted Array](./Algorithms/0088.merge-sorted-array)|☆|32%||
 |118|[Pascal's Triangle](./Algorithms/0118.pascals-triangle)|☆|38%||
 |206|[Reverse Linked List](./Algorithms/0206.reverse-linked-list)|☆|45%||
+|605|[Can Place Flowers](./Algorithms/0605.can-place-flowers)|☆|29%||
 |628|[Maximum Product of Three Numbers](./Algorithms/0628.maximum-product-of-three-numbers)|☆|45%|❤|
 |643|[Maximum Average Subarray I](./Algorithms/0643.maximum-average-subarray-i)|☆|38%||
 
