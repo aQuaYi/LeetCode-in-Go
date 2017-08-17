@@ -13,9 +13,9 @@
 1. 在命令行的本目录下，运行`make`
     
 ## 配置方法
-1. 设置main.go中的USER常量为你的leetcode.com的用户名。
-1. 把你的leetcode.com的cookie，保存到LeetCode-in-Golang目录下，文件名为`leetcode.cookie`。
-    1. 安装Chrome浏览器，及其扩展程序EditThisCookie
-    1. 设置EditThisCookie，选项 → 选择cookies的导出格式 → "Netscape HTTP Cookie File"
-    1. 登录LeetCode.com，点击EditThisCookie扩展，点击"导出Cookies"按钮。
-    1. 把剪切板中内容，保存到文件。
+1. 在`LeetCode-in-Golang`目录下，添加文件`leetcode.toml`。
+1. 把以下内容中的`test`分别修改为你的leetcode用户名和密码后，复制到`leetcode.toml`中。
+```toml
+Login="test"
+Password="test"
+```
