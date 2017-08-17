@@ -1,8 +1,8 @@
 package Problem0660
 
 import (
-	"testing"
 	"fmt"
+	"testing"
 
 	"github.com/stretchr/testify/assert"
 )
@@ -15,13 +15,13 @@ type question struct {
 // para 是参数
 // one 代表第一个参数
 type para struct {
-	one string
+	one int
 }
 
 // ans 是答案
 // one 代表第一个答案
 type ans struct {
-	one string
+	one int
 }
 
 func Test_Problem0660(t *testing.T) {
@@ -30,10 +30,20 @@ func Test_Problem0660(t *testing.T) {
 	qs := []question{
 
 		question{
-			para{""},
-			ans{""},
+			para{100000000},
+			ans{228145181},
 		},
-	
+
+		question{
+			para{8},
+			ans{8},
+		},
+
+		question{
+			para{9},
+			ans{10},
+		},
+
 		// 如需多个测试，可以复制上方元素。
 	}
 
@@ -41,6 +51,14 @@ func Test_Problem0660(t *testing.T) {
 		a, p := q.ans, q.para
 		fmt.Printf("~~%v~~\n", p)
 
-		ast.Equal(a.one, (p.one), "输入:%v", p)
+		ast.Equal(a.one, newInteger(p.one), "输入:%v", p)
 	}
+}
+func Test_next(t *testing.T) {
+	ast := assert.New(t)
+
+	actual := next(889)
+	expected := 1000
+	ast.Equal(expected, actual)
+
 }
