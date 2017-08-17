@@ -16,6 +16,12 @@ func Test_Problem0605(t *testing.T) {
 		errMsg   string
 	}{
 		{
+			[]int{1},
+			0,
+			true,
+			"正例测试失败",
+		},
+		{
 			[]int{0},
 			3,
 			false,

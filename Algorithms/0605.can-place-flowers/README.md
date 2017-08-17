@@ -21,8 +21,8 @@ Note:
 1. `n` is a non-negative integer which won't exceed the input array size.
 
 ## 解题思路
-根据 `input array` 和 `n` 的取值不同，分析各种情况。
 
+见注释
 ## 总结
 
 
