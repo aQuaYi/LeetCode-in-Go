@@ -16,7 +16,7 @@ Note:
 1. The input array may contain duplicates, so ascending order here means <=.
 
 ## 解题思路
-
+详见注释
 
 ## 总结
 
