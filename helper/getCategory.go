@@ -75,7 +75,6 @@ func url(s string) string {
 
 func getRanking(username string) string {
 	URL := fmt.Sprintf("https://leetcode.com/%s/", username)
-	fmt.Println(URL)
 
 	data := getRaw(URL)
 	str := string(data)
