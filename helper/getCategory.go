@@ -81,9 +81,14 @@ func getRanking(username string) string {
 	str := string(data)
 	i := strings.Index(str, "ng-init")
 	j := i + strings.Index(str[i:], "ng-cloak")
-	if i < j {
 
+	str = str[i:j]
+	i = strings.Index(str, "(")
+	j = strings.Index(str, ")")
+
+	if i < j {
 		str = str[i:j]
+
 		fmt.Println(str)
 	} else {
 		fmt.Println("i >= j ", i, j)
