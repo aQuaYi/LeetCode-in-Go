@@ -2,4 +2,4 @@
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang)
 
-[本人的LeetCode主页](https://leetcode.com/aQuaYi/)
+[我的LeetCode主页](https://leetcode.com/aQuaYi/)
