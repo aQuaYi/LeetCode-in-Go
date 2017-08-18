@@ -7,6 +7,7 @@ import (
 	"log"
 	"net/http"
 	"regexp"
+	"strings"
 
 	"github.com/BurntSushi/toml"
 	"github.com/mozillazg/request"
@@ -77,7 +78,16 @@ func getRanking(username string) string {
 	fmt.Println(URL)
 
 	data := getRaw(URL)
-	fmt.Println(string(data))
+	str := string(data)
+	i := strings.Index(str, "ng-init")
+	j := strings.Index(str, "ng-cloak")
+	if i < j {
+
+		str = str[i:j]
+		fmt.Println(str)
+	} else {
+		fmt.Println("i >= j ")
+	}
 
 	return "91823"
 }
