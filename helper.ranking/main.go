@@ -7,16 +7,18 @@ import (
 	"github.com/PuerkitoBio/goquery"
 )
 
-func ExampleScrape() {
-	doc, err := goquery.NewDocument("http://leetcode.com/aQuaYi/")
+func showRanking(username string) {
+	URL := fmt.Sprintf("https://leetcode.com/%s", username)
+	doc, err := goquery.NewDocument(URL)
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Println(doc)
-	// Find the review items
-	fmt.Println(doc.Find("panel-body").FindSelection(sel *goquery.Selection)("h4"))
+
+	ranking, _ := doc.Find("div.content-wrapper").Find("div.response-container container ng-scope").Attr("ng-app")
+
+	fmt.Printf("%s's ranking is %v", username, ranking)
 }
 
 func main() {
-	ExampleScrape()
+	showRanking("aQuaYi")
 }
