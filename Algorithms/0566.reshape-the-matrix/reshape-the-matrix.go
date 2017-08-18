@@ -1,21 +1,19 @@
 package Problem0566
 
 func matrixReshape(nums [][]int, r int, c int) [][]int {
-	length := len(nums) * len(nums[0])
-	if length != r*c {
+	if len(nums) == 0 || len(nums[0]) == 0 || len(nums)*len(nums[0]) != r*c || len(nums) == r && len(nums[0]) == c {
 		return nums
 	}
 
-	// 先降维成[]int
-	temp := make([]int, 0, r*c)
-	for i := range nums {
-		temp = append(temp, nums[i]...)
-	}
-
-	// 再升维
 	res := make([][]int, r)
-	for i := 0; i < r; i++ {
-		res[i] = temp[i*c : (i+1)*c]
+	count, col := 0, len(nums[0])
+	for i := range res {
+		res[i] = make([]int, c)
+
+		for j := range res[i] {
+			res[i][j] = nums[count/col][count%col]
+			count++
+		}
 	}
 
 	return res

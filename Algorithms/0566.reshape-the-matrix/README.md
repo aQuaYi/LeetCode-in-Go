@@ -38,10 +38,7 @@ Note:
 1. The height and width of the given matrix is in range [1, 100].
 1. The given r and c are all positive.
 
-
 ## 解题思路
-
+新旧矩阵元素的位置，存在对应关系。依次填入即可。
 
 ## 总结
-
-
