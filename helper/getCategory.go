@@ -76,9 +76,10 @@ func getRanking(username string) string {
 	URL := fmt.Sprintf("https://leetcode.com/%s/", username)
 	fmt.Println(URL)
 
-	//data := getRaw(URL)
-	// fmt.Println(string(data))
-	return "94549"
+	data := getRaw(URL)
+	fmt.Println(string(data))
+
+	return "91823"
 }
 
 func getRaw(URL string) []byte {
