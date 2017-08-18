@@ -20,6 +20,7 @@ const (
 
 var req *request.Request
 var username string
+var ranking string
 
 func init() {
 	cfg := config{}
@@ -46,6 +47,9 @@ func init() {
 		"password":            cfg.Password,
 	}
 
+	ranking = getRanking(username)
+	fmt.Println(username, "is ranking", ranking)
+
 	if err = login(req); err != nil {
 		log.Fatal(err)
 	}
@@ -54,7 +58,7 @@ func init() {
 func getCategory(name string) *Category {
 	URL := url(name)
 
-	data := getJSON(URL)
+	data := getRaw(URL)
 
 	res := new(Category)
 	if err := json.Unmarshal(data, res); err != nil {
@@ -69,7 +73,14 @@ func url(s string) string {
 	return fmt.Sprintf(format, s)
 }
 
-func getJSON(URL string) []byte {
+func getRanking(username string) string {
+	URL := fmt.Sprintf("https://leetcode.com/%s/", username)
+	data := getRaw(URL)
+	fmt.Println(string(data))
+	return "9999999"
+}
+
+func getRaw(URL string) []byte {
 	log.Printf("开始下载 %s 的数据", URL)
 	resp, err := req.Get(URL)
 	if err != nil {

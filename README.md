@@ -3,6 +3,8 @@
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang)
 
+![LeetCode Ranking](https://img.shields.io/badge/Ranking-999999999-blue.svg)
+
 ## 答题进度 
 ||Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
