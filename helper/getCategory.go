@@ -81,8 +81,8 @@ func getRanking(username string) string {
 	str := string(data)
 	i := strings.Index(str, "ng-init")
 	j := i + strings.Index(str[i:], "ng-cloak")
-
 	str = str[i:j]
+
 	i = strings.Index(str, "(")
 	j = strings.Index(str, ")")
 	str = str[i:j]
@@ -91,8 +91,8 @@ func getRanking(username string) string {
 	ans := strs[5]
 	i = strings.Index(ans, "'")
 	j = 2 + strings.Index(ans[2:], "'")
-	fmt.Println(ans[i+1 : j])
-	return "100"
+
+	return ans[i+1 : j]
 }
 
 func getRaw(URL string) []byte {
