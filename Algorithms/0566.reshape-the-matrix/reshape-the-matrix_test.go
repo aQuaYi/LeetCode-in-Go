@@ -34,12 +34,35 @@ func Test_Problem0566(t *testing.T) {
 			para{[][]int{
 				[]int{1, 2},
 				[]int{3, 4},
+			}, 2, 4},
+			ans{[][]int{
+				[]int{1, 2},
+				[]int{3, 4},
+			}},
+		},
+
+		question{
+			para{[][]int{
+				[]int{1, 2},
+				[]int{3, 4},
 			}, 1, 4},
 			ans{[][]int{
 				[]int{1, 2, 3, 4},
 			}},
 		},
 
+		question{
+			para{[][]int{
+				[]int{1, 2},
+				[]int{3, 4},
+			}, 4, 1},
+			ans{[][]int{
+				[]int{1},
+				[]int{2},
+				[]int{3},
+				[]int{4},
+			}},
+		},
 		// 如需多个测试，可以复制上方元素。
 	}
 
