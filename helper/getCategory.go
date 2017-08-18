@@ -37,6 +37,8 @@ func init() {
 		"Referer":         refererURL,
 	}
 
+	ranking = getRanking(username)
+
 	// login
 	csrfToken, err := getCSRFToken(req)
 	if err != nil {
@@ -47,8 +49,6 @@ func init() {
 		"login":               cfg.Login,
 		"password":            cfg.Password,
 	}
-
-	ranking = getRanking(username)
 
 	if err = login(req); err != nil {
 		log.Fatal(err)
