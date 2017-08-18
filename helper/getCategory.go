@@ -85,15 +85,10 @@ func getRanking(username string) string {
 	str = str[i:j]
 	i = strings.Index(str, "(")
 	j = strings.Index(str, ")")
+	str = str[i:j]
 
-	if i < j {
-		str = str[i:j]
-
-		fmt.Println(str)
-	} else {
-		fmt.Println("i >= j ", i, j)
-	}
-
+	strs := strings.Split(str, ", ")
+	fmt.Println(strs[4])
 	return "91823"
 }
 
