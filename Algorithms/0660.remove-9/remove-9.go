@@ -1,15 +1,11 @@
 package Problem0660
 
 func newInteger(n int) int {
-	i := 0
+	res, base := 0, 1
 	for n > 0 {
-		i = next(i)
-		n--
+		res += n % 9 * base
+		base *= 10
+		n /= 9
 	}
-	return i
-}
-
-func next(n int) int {
-	inc := 1
-
+	return res
 }

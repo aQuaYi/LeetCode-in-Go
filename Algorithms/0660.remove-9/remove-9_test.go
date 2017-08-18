@@ -30,6 +30,11 @@ func Test_Problem0660(t *testing.T) {
 	qs := []question{
 
 		question{
+			para{45928},
+			ans{70001},
+		},
+
+		question{
 			para{100000000},
 			ans{228145181},
 		},
@@ -53,12 +58,4 @@ func Test_Problem0660(t *testing.T) {
 
 		ast.Equal(a.one, newInteger(p.one), "输入:%v", p)
 	}
-}
-func Test_next(t *testing.T) {
-	ast := assert.New(t)
-
-	actual := next(889)
-	expected := 1000
-	ast.Equal(expected, actual)
-
 }
