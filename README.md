@@ -7,9 +7,9 @@
 ## 统计
 ||Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|21/157|27/311|12/117|60/585|
+|**Algorithms**|21/157|27/311|13/117|61/585|
 |**Draft**|0/2|0/5|0/1|0/8|
-|**Total**|21/159|27/316|12/118|60/593|
+|**Total**|21/159|27/316|13/118|61/593|
 
 
 ## 已添加的题目
@@ -75,6 +75,7 @@
 |605|[Can Place Flowers](./Algorithms/0605.can-place-flowers)|☆|29%|❤|
 |628|[Maximum Product of Three Numbers](./Algorithms/0628.maximum-product-of-three-numbers)|☆|45%|❤|
 |643|[Maximum Average Subarray I](./Algorithms/0643.maximum-average-subarray-i)|☆|38%||
+|660|[Remove 9](./Algorithms/0660.remove-9)|☆ ☆ ☆|44%||
 
 ## helper
 [helper](./helper)会帮助处理大部分琐碎的工作，特别是自动下载答题记录并统计答题信息，特别有用。
