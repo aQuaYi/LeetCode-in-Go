@@ -78,7 +78,7 @@
 |660|[Remove 9](./Algorithms/0660.remove-9)|☆ ☆ ☆|44%||
 
 ## helper
-[helper](./helper)会帮助处理大部分琐碎的工作，特别是自动下载答题记录并统计答题信息，特别有用。
+[helper](./helper)会帮助处理大部分琐碎的工作。
 
 ## kit
 在[kit](./kit)中添加了LeetCode常用的数据结构和处理函数：
