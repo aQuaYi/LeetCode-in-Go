@@ -27,7 +27,7 @@ func init() {
 		log.Fatalf(err.Error())
 	}
 	username = cfg.Login
-	fmt.Printf("Hi, %s. I'm working for you.", cfg.Login)
+	fmt.Printf("Hi, %s. I'm working for you.\n", cfg.Login)
 
 	req = request.NewRequest(new(http.Client))
 	req.Headers = map[string]string{
