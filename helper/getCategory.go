@@ -87,9 +87,12 @@ func getRanking(username string) string {
 	j = strings.Index(str, ")")
 	str = str[i:j]
 
-	strs := strings.Split(str, ", ")
-	fmt.Println(strs[4])
-	return "91823"
+	strs := strings.Split(str, ",")
+	ans := strs[5]
+	i = strings.Index(ans, "'")
+	j = 2 + strings.Index(ans[2:], "'")
+	fmt.Println(ans[i+1 : j])
+	return "100"
 }
 
 func getRaw(URL string) []byte {
