@@ -86,7 +86,7 @@ func getRanking(username string) string {
 		str = str[i:j]
 		fmt.Println(str)
 	} else {
-		fmt.Println("i >= j ")
+		fmt.Println("i >= j ", i, j)
 	}
 
 	return "91823"
