@@ -15,22 +15,24 @@ import (
 const (
 	filename     = "leetcode.toml"
 	loginPageURL = "https://leetcode.com/accounts/login/"
-	referer      = "https://leetcode.com/"
+	refererURL   = "https://leetcode.com/"
 )
 
 var req *request.Request
+var username string
 
 func init() {
 	cfg := config{}
 	if _, err := toml.DecodeFile(filename, &cfg); err != nil {
 		log.Fatalf(err.Error())
 	}
+	username = cfg.Login
 	fmt.Println(cfg.Login)
 
 	req = request.NewRequest(new(http.Client))
 	req.Headers = map[string]string{
 		"Accept-Encoding": "",
-		"Referer":         referer,
+		"Referer":         refererURL,
 	}
 
 	// login
@@ -47,6 +49,24 @@ func init() {
 	if err = login(req); err != nil {
 		log.Fatal(err)
 	}
+}
+
+func getCategory(name string) *Category {
+	URL := url(name)
+
+	data := getJSON(URL)
+
+	res := new(Category)
+	if err := json.Unmarshal(data, res); err != nil {
+		log.Fatal("无法把json转换成Category: " + err.Error())
+	}
+
+	return res
+}
+
+func url(s string) string {
+	format := "https://leetcode.com/api/problems/%s/"
+	return fmt.Sprintf(format, s)
 }
 
 func getJSON(URL string) []byte {
@@ -93,23 +113,4 @@ func login(req *request.Request) error {
 
 type config struct {
 	Login, Password string
-}
-
-func getCategory(name string) *Category {
-
-	URL := url(name)
-
-	data := getJSON(URL)
-
-	res := new(Category)
-	if err := json.Unmarshal(data, res); err != nil {
-		log.Fatal("无法把json转换成Category")
-	}
-
-	return res
-}
-
-func url(s string) string {
-	format := "https://leetcode.com/api/problems/%s/"
-	return fmt.Sprintf(format, s)
 }

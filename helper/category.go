@@ -25,7 +25,7 @@ func (c *Category) check() Solveds {
 
 // checkUser 检查是否下载了本人的数据
 func checkUser(u string) {
-	if u != USER {
+	if u != username {
 		log.Fatalln("下载的不是本人的数据")
 	}
 }
