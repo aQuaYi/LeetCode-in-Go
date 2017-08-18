@@ -13,10 +13,10 @@ func makeREADME(c Categories, s Solveds) {
 
 	template := `%s
 
-## 统计
+## 答题进度 
 %s
 
-## 已添加的题目
+## 参考解答
 %s
 %s
 `

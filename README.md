@@ -1,9 +1,9 @@
 # [LeetCode](https://leetcode.com)习题的Golang解答。
+[![LeetCode](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang)
-[![LeetCode](https://img.shields.io/badge/LeetCode-aQuaYi-green.svg)](https://leetcode.com/aQuaYi/)
 
-## 统计
+## 答题进度 
 ||Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
 |**Algorithms**|21/157|27/311|13/117|61/585|
@@ -11,7 +11,7 @@
 |**Total**|21/159|27/316|13/118|61/593|
 
 
-## 已添加的题目
+## 参考解答
 |题号|题目|难度|总体通过率|收藏|
 |:-:|:-|:-: | :-: | :-: |
 |1|[Two Sum](./Algorithms/0001.two-sum)|☆|34%||
