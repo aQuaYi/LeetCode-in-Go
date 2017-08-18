@@ -48,7 +48,6 @@ func init() {
 	}
 
 	ranking = getRanking(username)
-	fmt.Println(username, "is ranking", ranking)
 
 	if err = login(req); err != nil {
 		log.Fatal(err)
@@ -75,9 +74,11 @@ func url(s string) string {
 
 func getRanking(username string) string {
 	URL := fmt.Sprintf("https://leetcode.com/%s/", username)
-	data := getRaw(URL)
-	fmt.Println(string(data))
-	return "9999999"
+	fmt.Println(URL)
+
+	//data := getRaw(URL)
+	// fmt.Println(string(data))
+	return "94549"
 }
 
 func getRaw(URL string) []byte {
