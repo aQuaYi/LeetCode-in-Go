@@ -38,6 +38,7 @@ func init() {
 	}
 
 	ranking = getRanking(username)
+	log.Printf("%s, your ranking is %s\n", username, ranking)
 
 	// login
 	csrfToken, err := getCSRFToken(req)
