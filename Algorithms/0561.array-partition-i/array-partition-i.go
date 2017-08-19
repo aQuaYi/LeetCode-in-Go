@@ -1,14 +1,22 @@
 package Problem0561
 
-import (
-	"sort"
-)
-
 func arrayPairSum(nums []int) int {
-   sort.Ints(nums )
-   ans := 0 
-   for i:=0; i<len(nums); i+=2{
-	   ans +=nums[i     ]
-   }
-return ans 
+	var buckets [20001]int8
+	for _, num := range nums {
+		buckets[num+10000]++
+	}
+
+	sum := 0
+	needAdd := true
+	for num, count := range buckets {
+		for count > 0 {
+			if needAdd {
+				sum += num - 10000
+			}
+			needAdd = !needAdd
+			count--
+		}
+	}
+
+	return sum
 }

@@ -14,6 +14,6 @@ Note:
 1. All the integers in the array will be in the range of [-10000, 10000].
 
 ## 解题思路
-
+排序后，把序号为偶数的元素相加起来。
 
 ## 总结

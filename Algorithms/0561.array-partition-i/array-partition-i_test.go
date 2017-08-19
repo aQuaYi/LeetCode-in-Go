@@ -45,7 +45,6 @@ func Test_Problem0561(t *testing.T) {
 	for _, q := range qs {
 		a, p := q.ans, q.para
 		fmt.Printf("~~%v~~\n", p)
-
 		ast.Equal(a.one, arrayPairSum(p.one), "输入:%v", p)
 	}
 }
