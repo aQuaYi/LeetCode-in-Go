@@ -28,7 +28,7 @@ Note:
 1. All the integers in the given input belong to the range: [-1e7, 1e7].
 
 ## 解题思路
-
+按 k 与 0 的大小关系，分三种情况处理。
 
 ## 总结
 
