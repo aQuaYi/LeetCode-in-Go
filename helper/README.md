@@ -14,6 +14,7 @@
 1. 在命令行的本目录下，运行`make`
     
 ## 配置方法
+1. 在`.gitignore`中，添加一行`*.toml`。
 1. 在`LeetCode-in-Golang`目录下，添加文件`leetcode.toml`。
 1. 把以下内容中的`test`分别修改为你的leetcode用户名和密码后，复制到`leetcode.toml`中。
 ```toml

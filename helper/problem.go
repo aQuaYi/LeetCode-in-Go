@@ -7,6 +7,8 @@ import (
 	"os"
 	"sort"
 	"syscall"
+
+	"github.com/PuerkitoBio/goquery"
 )
 
 func (p Problem) reBuild(path string) {
@@ -30,7 +32,7 @@ func creatREADME(p Problem, dir string) {
 	fileFormat := `# [%d. %s](%s)
 
 ## 题目
-
+%s
 
 ## 解题思路
 
@@ -40,13 +42,22 @@ func creatREADME(p Problem, dir string) {
 
 `
 	link := fmt.Sprintf("https://leetcode.com/problems/%s/", p.TitleSlug)
-	content := fmt.Sprintf(fileFormat, p.ID, p.Title, link)
+	questionDescription := getQuestionDescription(link)
+	content := fmt.Sprintf(fileFormat, p.ID, p.Title, link, questionDescription)
 	filename := fmt.Sprintf("%s/README.md", dir)
 
 	err := ioutil.WriteFile(filename, []byte(content), 0755)
 	if err != nil {
 		log.Fatal(err)
 	}
+}
+
+func getQuestionDescription(URL string) string {
+	doc, err := goquery.NewDocument(URL)
+	if err != nil {
+		log.Fatal(err)
+	}
+	return doc.Find("div.question-description").Text()
 }
 
 func creatGo(p Problem, dir string) {
