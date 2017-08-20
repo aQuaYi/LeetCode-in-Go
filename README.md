@@ -7,9 +7,9 @@
 ## 答题进度 
 ||Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|25 / 158|27 / 313|13 / 118|65 / 589|
+|**Algorithms**|26 / 158|27 / 313|13 / 118|66 / 589|
 |**Draft**|0 / 2|0 / 5|0 / 1|0 / 8|
-|**Total**|25 / 160|27 / 318|13 / 119|65 / 597|
+|**Total**|26 / 160|27 / 318|13 / 119|66 / 597|
 
 
 ## 参考解答
@@ -80,6 +80,7 @@
 |628|[Maximum Product of Three Numbers](./Algorithms/0628.maximum-product-of-three-numbers)|☆|45%|❤|
 |643|[Maximum Average Subarray I](./Algorithms/0643.maximum-average-subarray-i)|☆|38%||
 |660|[Remove 9](./Algorithms/0660.remove-9)|☆ ☆ ☆|45%||
+|661|[Image Smoother](./Algorithms/0661.image-smoother)|☆|49%||
 
 
 ## helper
