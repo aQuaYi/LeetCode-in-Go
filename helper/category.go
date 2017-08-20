@@ -86,7 +86,10 @@ func (c *Category) analysis() Solveds {
 			continue
 		}
 
-		p.reBuild(d)
+		if !GoKit.Exist(d) {
+			p.build(d)
+		}
+
 	}
 
 	return res

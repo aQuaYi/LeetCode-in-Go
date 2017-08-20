@@ -11,7 +11,7 @@ import (
 	"github.com/PuerkitoBio/goquery"
 )
 
-func (p Problem) reBuild(path string) {
+func (p Problem) build(path string) {
 	if err := os.RemoveAll(path); err != nil {
 		log.Fatalln("无法删除没有解决问题的目录", path)
 	}
