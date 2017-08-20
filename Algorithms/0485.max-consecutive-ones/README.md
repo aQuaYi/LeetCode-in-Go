@@ -15,7 +15,9 @@ Note:
 1. The length of input array is a positive integer and will not exceed `10,000`
 
 ## 解题思路
-
+1. 标记
+2. 比较
+3. 记录
 
 ## 总结
 
