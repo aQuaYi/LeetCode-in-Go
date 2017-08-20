@@ -7,9 +7,9 @@
 ## 答题进度 
 ||Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|27 / 158|27 / 313|13 / 118|67 / 589|
+|**Algorithms**|28 / 158|27 / 313|13 / 118|68 / 589|
 |**Draft**|0 / 2|0 / 5|0 / 1|0 / 8|
-|**Total**|27 / 160|27 / 318|13 / 119|67 / 597|
+|**Total**|28 / 160|27 / 318|13 / 119|68 / 597|
 
 
 ## 参考解答
@@ -71,6 +71,7 @@
 |88|[Merge Sorted Array](./Algorithms/0088.merge-sorted-array)|☆|32%||
 |118|[Pascal's Triangle](./Algorithms/0118.pascals-triangle)|☆|38%||
 |206|[Reverse Linked List](./Algorithms/0206.reverse-linked-list)|☆|45%||
+|414|[Third Maximum Number](./Algorithms/0414.third-maximum-number)|☆|27%||
 |448|[Find All Numbers Disappeared in an Array](./Algorithms/0448.find-all-numbers-disappeared-in-an-array)|☆|51%||
 |485|[Max Consecutive Ones](./Algorithms/0485.max-consecutive-ones)|☆|54%||
 |532|[K-diff Pairs in an Array](./Algorithms/0532.k-diff-pairs-in-an-array)|☆|28%||
@@ -81,7 +82,7 @@
 |628|[Maximum Product of Three Numbers](./Algorithms/0628.maximum-product-of-three-numbers)|☆|45%|❤|
 |643|[Maximum Average Subarray I](./Algorithms/0643.maximum-average-subarray-i)|☆|38%||
 |660|[Remove 9](./Algorithms/0660.remove-9)|☆ ☆ ☆|45%||
-|661|[Image Smoother](./Algorithms/0661.image-smoother)|☆|49%||
+|661|[Image Smoother](./Algorithms/0661.image-smoother)|☆|50%||
 
 
 ## helper
