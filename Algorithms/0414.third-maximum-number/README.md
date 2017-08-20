@@ -35,8 +35,11 @@ Both numbers with value 2 are both considered as second maximum.
 ```
 
 ## 解题思路
+1. 过滤
+1. 记录
+1. 比较
 
-
+见注释
 ## 总结
 
 
