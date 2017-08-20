@@ -42,8 +42,13 @@ func creatREADME(p Problem, dir string) {
 
 `
 	link := fmt.Sprintf("https://leetcode.com/problems/%s/", p.TitleSlug)
+
+	log.Printf("正在下载 %d.%s 的问题描述\n", p.ID, p.Title)
+
 	questionDescription := getQuestionDescription(link)
+
 	content := fmt.Sprintf(fileFormat, p.ID, p.Title, link, questionDescription)
+
 	filename := fmt.Sprintf("%s/README.md", dir)
 
 	err := ioutil.WriteFile(filename, []byte(content), 0755)
