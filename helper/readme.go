@@ -22,7 +22,7 @@ func makeREADME(c Categories, s Solveds) {
 %s
 `
 	headFormat := read("README_HEAD.md")
-	head := fmt.Sprintf(headFormat, ranking)
+	head := fmt.Sprintf(headFormat, username, username, ranking, username)
 	count := c.String()
 	solved := s.String()
 	tail := read("README_TAIL.md")
