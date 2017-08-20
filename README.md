@@ -1,15 +1,15 @@
 # [LeetCode](https://leetcode.com)习题的Golang解答。
 [![LeetCode](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode Ranking](https://img.shields.io/badge/Ranking-91942-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode Ranking](https://img.shields.io/badge/Ranking-90302-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang)
 
 ## 答题进度 
 ||Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|24 / 157|27 / 311|13 / 117|64 / 585|
+|**Algorithms**|25 / 158|27 / 313|13 / 118|65 / 589|
 |**Draft**|0 / 2|0 / 5|0 / 1|0 / 8|
-|**Total**|24 / 159|27 / 316|13 / 118|64 / 593|
+|**Total**|25 / 160|27 / 318|13 / 119|65 / 597|
 
 
 ## 参考解答
@@ -36,7 +36,7 @@
 |19|[Remove Nth Node From End of List](./Algorithms/0019.remove-nth-node-from-end-of-list)|☆ ☆|33%||
 |20|[Valid Parentheses](./Algorithms/0020.valid-parentheses)|☆|33%||
 |21|[Merge Two Sorted Lists](./Algorithms/0021.merge-two-sorted-lists)|☆|39%||
-|22|[Generate Parentheses](./Algorithms/0022.generate-parentheses)|☆ ☆|44%|❤|
+|22|[Generate Parentheses](./Algorithms/0022.generate-parentheses)|☆ ☆|45%|❤|
 |23|[Merge k Sorted Lists](./Algorithms/0023.merge-k-sorted-lists)|☆ ☆ ☆|27%||
 |24|[Swap Nodes in Pairs](./Algorithms/0024.swap-nodes-in-pairs)|☆ ☆|38%|❤|
 |25|[Reverse Nodes in k-Group](./Algorithms/0025.reverse-nodes-in-k-group)|☆ ☆ ☆|30%|❤|
@@ -71,6 +71,7 @@
 |88|[Merge Sorted Array](./Algorithms/0088.merge-sorted-array)|☆|32%||
 |118|[Pascal's Triangle](./Algorithms/0118.pascals-triangle)|☆|38%||
 |206|[Reverse Linked List](./Algorithms/0206.reverse-linked-list)|☆|45%||
+|485|[Max Consecutive Ones](./Algorithms/0485.max-consecutive-ones)|☆|54%||
 |532|[K-diff Pairs in an Array](./Algorithms/0532.k-diff-pairs-in-an-array)|☆|28%||
 |561|[Array Partition I](./Algorithms/0561.array-partition-i)|☆|67%||
 |566|[Reshape the Matrix](./Algorithms/0566.reshape-the-matrix)|☆|59%||
@@ -78,7 +79,7 @@
 |605|[Can Place Flowers](./Algorithms/0605.can-place-flowers)|☆|29%|❤|
 |628|[Maximum Product of Three Numbers](./Algorithms/0628.maximum-product-of-three-numbers)|☆|45%|❤|
 |643|[Maximum Average Subarray I](./Algorithms/0643.maximum-average-subarray-i)|☆|38%||
-|660|[Remove 9](./Algorithms/0660.remove-9)|☆ ☆ ☆|44%||
+|660|[Remove 9](./Algorithms/0660.remove-9)|☆ ☆ ☆|45%||
 
 
 ## helper
