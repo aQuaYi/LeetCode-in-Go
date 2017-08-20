@@ -7,10 +7,10 @@ func findDisappearedNumbers(nums []int) []int {
 		}
 	}
 
-	res := []int{}
+	res := make([]int, 0, len(nums))
 
-	for i := 0; i < len(nums); i++ {
-		if i+1 != nums[i] {
+	for i, n := range nums {
+		if n != i+1 {
 			res = append(res, i+1)
 		}
 	}
