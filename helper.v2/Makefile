@@ -1,7 +1,7 @@
 build:
 	@go build
-	@mv helper ../Helper
-	@cd .. ; ./Helper
+	@mv helper.v2 ../helper
+	@cd .. ; ./helper
 	git commit -am '更新helper助手和README.md'
 	git push
 	git checkout master

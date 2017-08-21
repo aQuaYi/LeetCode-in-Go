@@ -86,7 +86,7 @@
 
 
 ## helper
-[helper](./helper)会帮助处理大部分琐碎的工作。
+[helper](./helper.v3)会帮助处理大部分琐碎的工作。
 
 ## kit
 在[kit](./kit)中添加了LeetCode常用的数据结构和处理函数：
