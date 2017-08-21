@@ -20,7 +20,24 @@ func newLeetCode() *leetcode {
 		Username: cfg.Login,
 	}
 }
+func (l *leetcode) totalCategory() {
+	t := category{
+		Name: "Total",
+	}
 
+	for _, c := range l.Categories {
+		t.Easy.Solved += c.Easy.Solved
+		t.Easy.Total += c.Easy.Total
+		t.Medium.Solved += c.Medium.Solved
+		t.Medium.Total += c.Medium.Total
+		t.Hard.Solved += c.Hard.Solved
+		t.Hard.Total += c.Hard.Total
+		t.Total.Solved += c.Total.Solved
+		t.Total.Total += c.Total.Total
+	}
+
+	l.Categories = append(l.Categories, t)
+}
 func (l *leetcode) update(d *data) {
 	l.check(d)
 	ps, e, m, h := countData(d)
@@ -31,9 +48,11 @@ func (l *leetcode) update(d *data) {
 
 func (l *leetcode) check(d *data) {
 	if d.User != l.Username {
-		log.Fatalln("下载的非本人数据。程序可能没有signin。")
+		log.Fatalln("下载了非本人的数据。")
 	}
+	log.Printf("%s 通过检查", d.Name)
 }
+
 func countData(d *data) (ps []problem, e, m, h int) {
 	for _, p := range d.Problems {
 		if p.IsPaid {

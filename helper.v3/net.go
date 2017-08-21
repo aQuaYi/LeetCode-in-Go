@@ -20,6 +20,8 @@ const (
 var req *request.Request
 
 func signin() {
+	log.Println("正在登录中...")
+
 	// 配置request
 	req = request.NewRequest(new(http.Client))
 	req.Headers = map[string]string{
@@ -40,7 +42,7 @@ func signin() {
 	if err = login(req); err != nil {
 		log.Fatal(err)
 	}
-	log.Println("成功登录 LeetCode")
+	log.Println("成功登录")
 }
 
 func getData(name string) *data {

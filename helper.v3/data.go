@@ -23,6 +23,8 @@ func lastest(categories []string) *leetcode {
 		lc.update(d)
 	}
 
+	lc.totalCategory()
+
 	sort.Sort(lc.Problems)
 
 	return lc
@@ -47,18 +49,30 @@ func readFile() *leetcode {
 func diff(new, old problems) {
 	lenNew := len(new)
 	lenOld := len(old)
-	if lenNew == lenOld {
-		log.Println("没有新完成习题")
-	}
-	i, j := 0, 0
-	for i < lenNew && j < lenOld {
-		if new[i].ID == old[i].ID {
-			i++
-			j++
-			continue
+	isChanged := false
+
+	i := 0
+	for i < lenOld {
+		n, o := new[i], old[i]
+
+		if n.ID != o.ID {
+			log.Fatalln("LeetCode 的 Problems 数据出现错位。")
 		}
 
-		log.Printf("新完成 %d %s", new[i].ID, new[i].Title)
+		if n.IsAccepted == true && o.IsAccepted == false {
+			log.Printf("新完成 %d %s", n.ID, n.Title)
+			isChanged = true
+		}
+
+		i++
+	}
+
+	if !isChanged {
+		log.Println("没有新完成习题～")
+	}
+
+	for i < lenNew {
+		log.Printf("新添加 %d %s", new[i].ID, new[i].Title)
 		i++
 	}
 }
