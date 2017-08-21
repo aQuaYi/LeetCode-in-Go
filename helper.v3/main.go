@@ -63,6 +63,7 @@ func main() {
 
 	for _, p := range lc.Problems {
 		if !p.IsAccepted {
+			fmt.Println("准备删除: ", p.Dir)
 			os.Remove(p.Dir)
 		}
 	}
