@@ -75,6 +75,7 @@ func countData(d *data) (ps []problem, e, m, h int) {
 		}
 		temp := problem{
 			ID:         p.ID,
+			Dir:        fmt.Sprintf("./%s/%04d.%s", d.Name, p.ID, p.TitleSlug),
 			Title:      p.Title,
 			TitleSlug:  p.TitleSlug,
 			PassRate:   fmt.Sprintf("%d%%", p.ACs*100/p.Submitted),
@@ -166,31 +167,42 @@ func (ps problems) String() string {
 	res := "|题号|题目|难度|总体通过率|收藏|\n"
 	res += "|:-:|:-|:-: | :-: | :-: |\n"
 	for _, p := range ps {
-		res += fmt.Sprintln(p)
+		if p.IsAccepted {
+			res += fmt.Sprintln(p)
+		}
 	}
 	return res
 }
 
 type problem struct {
 	ID                         int
+	Dir                        string
 	Title, TitleSlug           string
 	PassRate                   string
 	Difficulty                 int
 	IsAccepted, IsFavor, IsNew bool
 }
 
+func (p problem) String() string {
+	res := fmt.Sprintf("|%d|", p.ID)
+	res += fmt.Sprintf(`[%s](%s)|`, p.Title, p.Dir)
+	res += fmt.Sprintf("%s|", degrees[p.Difficulty])
+	res += fmt.Sprintf("%s|", p.PassRate)
+	f := ""
+	if p.IsFavor {
+		f = "❤"
+	}
+	res += fmt.Sprintf("%s|", f)
+	return res
+}
+
+var degrees = map[int]string{
+	1: `☆`,
+	2: `☆ ☆`,
+	3: `☆ ☆ ☆`,
+}
+
 func (p problem) page() string {
 	format := "https://leetcode.com/problems/%s"
 	return fmt.Sprintf(format, p.TitleSlug)
 }
-
-// TODO:  获取ranking
-// // 获取 ranking
-// temp := getRanking(username)
-// var err error
-// ranking, err = strconv.Atoi(temp)
-// if err != nil {
-// 	log.Fatalf("获取的 %s 无法转换成 ranking", temp)
-// }
-
-// log.Printf("%s, your ranking is %d\n", username, ranking)
