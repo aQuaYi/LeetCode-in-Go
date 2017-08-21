@@ -162,7 +162,7 @@ func (ps problems) Swap(i, j int) {
 	ps[i], ps[j] = ps[j], ps[i]
 }
 
-func (ps problems) String() string {
+func (ps problems) acceptedString() string {
 	sort.Sort(ps)
 	res := "|题号|题目|难度|总体通过率|收藏|\n"
 	res += "|:-:|:-|:-: | :-: | :-: |\n"

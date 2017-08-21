@@ -58,5 +58,10 @@ func main() {
 	}
 
 	lc := update(categories)
+	
 	makeREADME(lc)
+
+	if problemNum > 0 {
+		makeProblemDir(lc.Problems, problemNum)
+	}
 }

@@ -26,10 +26,10 @@ func makeREADME(lc *leetcode) {
 
 	count := lc.Categories.String()
 
-	solved := lc.Problems.String()
+	accepted := lc.Problems.acceptedString()
 
 	tail := read("README_TAIL.md")
-	content := fmt.Sprintf(template, head, count, solved, tail)
+	content := fmt.Sprintf(template, head, count, accepted, tail)
 
 	err := ioutil.WriteFile(file, []byte(content), 0755)
 	if err != nil {
