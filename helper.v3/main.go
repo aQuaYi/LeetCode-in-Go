@@ -61,15 +61,6 @@ func main() {
 
 	makeREADME(lc)
 
-	for _, p := range lc.Problems {
-		if !p.IsAccepted {
-			fmt.Println("准备删除: ", p.Dir)
-			if err := os.RemoveAll(p.Dir); err != nil {
-				fmt.Printf("无法删除%s: %s\n", p.Dir, err)
-			}
-		}
-	}
-
 	if problemNum > 0 {
 		makeProblemDir(lc.Problems, problemNum)
 	}

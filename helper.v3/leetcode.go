@@ -70,9 +70,11 @@ func (l *leetcode) check(d *data) {
 
 func countData(d *data) (ps []problem, e, m, h int) {
 	for _, p := range d.Problems {
+		
 		if p.IsPaid {
 			continue
 		}
+
 		temp := problem{
 			ID:         p.ID,
 			Dir:        fmt.Sprintf("./%s/%04d.%s", d.Name, p.ID, p.TitleSlug),
