@@ -26,7 +26,7 @@ func init() {
 	if _, err := toml.DecodeFile(cfgFile, &cfg); err != nil {
 		log.Fatalf(err.Error())
 	}
-	fmt.Printf("Hi, %s. I'm working for you.\n", cfg.Login)
+	fmt.Printf("Hi, %s. \n", cfg.Login)
 }
 
 func main() {
@@ -46,13 +46,13 @@ func main() {
 		}
 	}
 
+	signin()
+
 	if problemNum > 0 {
 		lc := readFile()
 		makeProblemDir(lc.Problems, problemNum)
 		return
 	}
-
-	signin()
 
 	categories := []string{
 		"Algorithms",

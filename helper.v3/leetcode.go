@@ -70,7 +70,7 @@ func (l *leetcode) check(d *data) {
 
 func countData(d *data) (ps []problem, e, m, h int) {
 	for _, p := range d.Problems {
-		
+
 		if p.IsPaid {
 			continue
 		}
@@ -183,6 +183,10 @@ type problem struct {
 	PassRate                   string
 	Difficulty                 int
 	IsAccepted, IsFavor, IsNew bool
+}
+
+func (p problem) link() string {
+	return fmt.Sprintf("https://leetcode.com/problems/%s/", p.TitleSlug)
 }
 
 func (p problem) String() string {

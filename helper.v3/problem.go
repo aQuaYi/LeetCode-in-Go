@@ -5,6 +5,7 @@ import (
 	"io/ioutil"
 	"log"
 	"os"
+	"strings"
 	"syscall"
 
 	"github.com/aQuaYi/GoKit"
@@ -48,10 +49,11 @@ func (p problem) build() {
 	if err != nil {
 		log.Fatalf("无法创建目录: %s", p.Dir)
 	}
+	fc, fcHead, para, ans := getFunction(p.link())
 
 	creatREADME(p)
-	creatGo(p)
-	creatGoTest(p)
+	creatGo(p, fc)
+	creatGoTest(p, fcHead, para, ans)
 }
 
 func creatREADME(p problem) {
@@ -67,13 +69,12 @@ func creatREADME(p problem) {
 
 
 `
-	link := fmt.Sprintf("https://leetcode.com/problems/%s/", p.TitleSlug)
 
 	log.Printf("正在下载 %d.%s 的问题描述\n", p.ID, p.Title)
 
-	questionDescription := getQuestionDescription(link)
+	questionDescription := getQuestionDescription(p.link())
 
-	content := fmt.Sprintf(fileFormat, p.ID, p.Title, link, questionDescription)
+	content := fmt.Sprintf(fileFormat, p.ID, p.Title, p.link(), questionDescription)
 
 	filename := fmt.Sprintf("%s/README.md", p.Dir)
 
@@ -91,11 +92,40 @@ func getQuestionDescription(URL string) string {
 	return doc.Find("div.question-description").Text()
 }
 
-func creatGo(p problem) {
+func getFunction(URL string) (fc, fcHead, p, a string) {
+	data := getRaw(URL)
+	str := string(data)
+	i := strings.Index(str, "codeDefinition:")
+	j := i + strings.Index(str[i:], "enableTestMode:")
+	str = str[i:j]
+
+	i = strings.Index(str, "'func")
+	j = i + strings.Index(str[i:], "},")
+	str = str[i:j]
+
+	i = strings.Index(str, "'")
+	j = 5 + strings.Index(str[5:], "'")
+	fc = str[i+1 : j]
+
+	k := 0
+	i0 := strings.Index(fc, " ")
+	i = strings.Index(fc, "(")
+	fcHead = fc[i0+1 : i]
+
+	j = strings.Index(fc, ")")
+	k = strings.Index(fc, "{")
+	p = strings.Replace(fc[i+1:j], ",", "\n", -1)
+	a = fc[j+1 : k]
+
+	return
+}
+
+func creatGo(p problem, fc string) {
 	fileFormat := `package %s
 
+%s
 `
-	content := fmt.Sprintf(fileFormat, p.packageName())
+	content := fmt.Sprintf(fileFormat, p.packageName(), fc)
 	filename := fmt.Sprintf("%s/%s.go", p.Dir, p.TitleSlug)
 
 	err := ioutil.WriteFile(filename, []byte(content), 0755)
@@ -104,7 +134,7 @@ func creatGo(p problem) {
 	}
 }
 
-func creatGoTest(p problem) {
+func creatGoTest(p problem, fcHead, para, ans string) {
 	fileFormat := `package %s
 
 import (
@@ -122,13 +152,13 @@ type question struct {
 // para 是参数
 // one 代表第一个参数
 type para struct {
-	one string
+	%s
 }
 
 // ans 是答案
 // one 代表第一个答案
 type ans struct {
-	one string
+	one %s
 }
 
 func Test_%s(t *testing.T) {
@@ -137,8 +167,8 @@ func Test_%s(t *testing.T) {
 	qs := []question{
 
 		question{
-			para{""},
-			ans{""},
+			para{" "},
+			ans{" "},
 		},
 	
 		// 如需多个测试，可以复制上方元素。
@@ -148,11 +178,11 @@ func Test_%s(t *testing.T) {
 		a, p := q.ans, q.para
 		fmt.Printf("~~%s~~\n", p)
 
-		ast.Equal(a.one, (p.one), "输入:%s", p)
+		ast.Equal(a.one, %s(p.one), "输入:%s", p)
 	}
 }
 `
-	content := fmt.Sprintf(fileFormat, p.packageName(), p.packageName(), `%v`, `%v`)
+	content := fmt.Sprintf(fileFormat, p.packageName(), para, ans, p.packageName(), `%v`, fcHead, `%v`)
 	filename := fmt.Sprintf("%s/%s_test.go", p.Dir, p.TitleSlug)
 
 	err := ioutil.WriteFile(filename, []byte(content), 0755)
