@@ -64,7 +64,9 @@ func main() {
 	for _, p := range lc.Problems {
 		if !p.IsAccepted {
 			fmt.Println("准备删除: ", p.Dir)
-			os.Remove(p.Dir)
+			if err := os.Remove(p.Dir); err != nil {
+				fmt.Printf("无法删除%s: %s", p.Dir, err)
+			}
 		}
 	}
 
