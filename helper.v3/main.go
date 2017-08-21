@@ -46,6 +46,12 @@ func main() {
 		}
 	}
 
+	if problemNum > 0 {
+		lc := readFile()
+		makeProblemDir(lc.Problems, problemNum)
+		return
+	}
+
 	signin()
 
 	categories := []string{
@@ -61,7 +67,4 @@ func main() {
 
 	makeREADME(lc)
 
-	if problemNum > 0 {
-		makeProblemDir(lc.Problems, problemNum)
-	}
 }
