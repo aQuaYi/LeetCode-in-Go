@@ -4,10 +4,19 @@ import (
 	"fmt"
 )
 
-func updateData(categories []string) {
+func update(categories []string) {
+	lc := lastest(categories)
+	fmt.Println(*lc)
+}
+
+func lastest(categories []string) *leetcode {
+	lc := newLeetCode()
 	for _, c := range categories {
-		fmt.Println(getData(c))
+		d := getData(c)
+		lc.update(d)
 	}
+
+	return lc
 }
 
 // data 保存API信息

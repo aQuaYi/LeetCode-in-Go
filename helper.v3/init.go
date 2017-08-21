@@ -7,15 +7,12 @@ import (
 	"log"
 	"net/http"
 	"regexp"
+	"strconv"
 	"strings"
 
 	"github.com/BurntSushi/toml"
 	"github.com/mozillazg/request"
 )
-
-func update() {
-
-}
 
 const (
 	filename     = "leetcode.toml"
@@ -25,7 +22,7 @@ const (
 
 var req *request.Request
 var username string
-var ranking string
+var ranking int
 
 func init() {
 	// 获取配置文件
@@ -44,8 +41,14 @@ func init() {
 	}
 
 	// 获取 ranking
-	ranking = getRanking(username)
-	log.Printf("%s, your ranking is %s\n", username, ranking)
+	temp := getRanking(username)
+	var err error
+	ranking, err = strconv.Atoi(temp)
+	if err != nil {
+		log.Fatalf("获取的 %s 无法转换成 ranking", temp)
+	}
+
+	log.Printf("%s, your ranking is %d\n", username, ranking)
 
 	// login
 	csrfToken, err := getCSRFToken(req)

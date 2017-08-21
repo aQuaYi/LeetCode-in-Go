@@ -44,5 +44,6 @@ func main() {
 		// "shell",
 		// "system-design",
 	}
-	updateData(categories)
+
+	update(categories)
 }
