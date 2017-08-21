@@ -5,6 +5,8 @@ import (
 	"log"
 	"os"
 	"strconv"
+
+	"github.com/BurntSushi/toml"
 )
 
 // 程序辅助设置
@@ -15,9 +17,17 @@ const (
 	2. 运行 helper 123 会生成第123题的答题文件夹。`
 )
 
-var (
-	problemNum = 0
-)
+var problemNum int
+var cfg config
+var cfgFile = "leetcode.toml"
+var lcFile = "leetcode.json"
+
+func init() {
+	if _, err := toml.DecodeFile(cfgFile, &cfg); err != nil {
+		log.Fatalf(err.Error())
+	}
+	fmt.Printf("Hi, %s. I'm working for you.\n", cfg.Login)
+}
 
 func main() {
 	if len(os.Args) > 1 {
@@ -35,6 +45,8 @@ func main() {
 			log.Fatalln(err)
 		}
 	}
+
+	signin()
 
 	categories := []string{
 		"Algorithms",

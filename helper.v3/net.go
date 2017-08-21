@@ -7,48 +7,25 @@ import (
 	"log"
 	"net/http"
 	"regexp"
-	"strconv"
 	"strings"
 
-	"github.com/BurntSushi/toml"
 	"github.com/mozillazg/request"
 )
 
 const (
-	filename     = "leetcode.toml"
 	loginPageURL = "https://leetcode.com/accounts/login/"
 	refererURL   = "https://leetcode.com/"
 )
 
 var req *request.Request
-var username string
-var ranking int
 
-func init() {
-	// 获取配置文件
-	cfg := config{}
-	if _, err := toml.DecodeFile(filename, &cfg); err != nil {
-		log.Fatalf(err.Error())
-	}
-	username = cfg.Login
-	fmt.Printf("Hi, %s. I'm working for you.\n", cfg.Login)
-
+func signin() {
 	// 配置request
 	req = request.NewRequest(new(http.Client))
 	req.Headers = map[string]string{
 		"Accept-Encoding": "",
 		"Referer":         refererURL,
 	}
-
-	// 获取 ranking
-	temp := getRanking(username)
-	var err error
-	ranking, err = strconv.Atoi(temp)
-	if err != nil {
-		log.Fatalf("获取的 %s 无法转换成 ranking", temp)
-	}
-
-	log.Printf("%s, your ranking is %d\n", username, ranking)
 
 	// login
 	csrfToken, err := getCSRFToken(req)
@@ -63,6 +40,7 @@ func init() {
 	if err = login(req); err != nil {
 		log.Fatal(err)
 	}
+	log.Println("成功登录 LeetCode")
 }
 
 func getData(name string) *data {

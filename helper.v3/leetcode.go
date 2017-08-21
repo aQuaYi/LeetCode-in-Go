@@ -3,24 +3,15 @@ package main
 import (
 	"fmt"
 	"log"
-
-	"github.com/BurntSushi/toml"
+	"sort"
 )
-
-var cfg *config
-
-func init() {
-	if _, err := toml.DecodeFile(filename, cfg); err != nil {
-		log.Fatalf(err.Error())
-	}
-}
 
 type leetcode struct {
 	Username string
 	Ranking  int
 
 	Categories []category
-	Problems   []problem
+	Problems   problems
 }
 
 // TODO: 去除 username 和 ranking 的全局变量
@@ -102,6 +93,30 @@ type count struct {
 	Solved, Total int
 }
 
+type problems []problem
+
+func (ps problems) Len() int {
+	return len(ps)
+}
+
+func (ps problems) Less(i, j int) bool {
+	return ps[i].ID < ps[j].ID
+}
+
+func (ps problems) Swap(i, j int) {
+	ps[i], ps[j] = ps[j], ps[i]
+}
+
+func (ps problems) String() string {
+	sort.Sort(ps)
+	res := "|题号|题目|难度|总体通过率|收藏|\n"
+	res += "|:-:|:-|:-: | :-: | :-: |\n"
+	for _, p := range ps {
+		res += fmt.Sprintln(p)
+	}
+	return res
+}
+
 type problem struct {
 	ID                         int
 	Title, TitleSlug           string
@@ -114,3 +129,14 @@ func (p problem) page() string {
 	format := "https://leetcode.com/problems/%s"
 	return fmt.Sprintf(format, p.TitleSlug)
 }
+
+// TODO:  获取ranking
+// // 获取 ranking
+// temp := getRanking(username)
+// var err error
+// ranking, err = strconv.Atoi(temp)
+// if err != nil {
+// 	log.Fatalf("获取的 %s 无法转换成 ranking", temp)
+// }
+
+// log.Printf("%s, your ranking is %d\n", username, ranking)

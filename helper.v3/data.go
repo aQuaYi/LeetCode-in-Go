@@ -1,12 +1,19 @@
 package main
 
 import (
-	"fmt"
+	"encoding/json"
+	"io/ioutil"
+	"log"
+	"sort"
+
+	"github.com/aQuaYi/GoKit"
 )
 
 func update(categories []string) {
-	lc := lastest(categories)
-	fmt.Println(*lc)
+	newLC := lastest(categories)
+	oldLC := readFile()
+	diff(newLC.Problems, oldLC.Problems)
+	saveLC(newLC)
 }
 
 func lastest(categories []string) *leetcode {
@@ -16,7 +23,54 @@ func lastest(categories []string) *leetcode {
 		lc.update(d)
 	}
 
+	sort.Sort(lc.Problems)
+
 	return lc
+}
+
+func readFile() *leetcode {
+	lc := leetcode{}
+	if !GoKit.Exist(lcFile) {
+		log.Printf("%s 不存在", lcFile)
+		return &lc
+	}
+
+	raw := read(lcFile)
+
+	if err := json.Unmarshal(raw, &lc); err != nil {
+		log.Fatalf("获取 %s 失败：%s", lcFile, err)
+	}
+
+	return &lc
+}
+
+func diff(new, old problems) {
+	lenNew := len(new)
+	lenOld := len(old)
+	if lenNew == lenOld {
+		log.Println("没有新完成习题")
+	}
+	i, j := 0, 0
+	for i < lenNew && j < lenOld {
+		if new[i].ID == old[i].ID {
+			i++
+			j++
+			continue
+		}
+
+		log.Printf("新完成 %d %s", new[i].ID, new[i].Title)
+		i++
+	}
+}
+
+func saveLC(lc *leetcode) {
+	raw, err := json.Marshal(lc)
+	if err != nil {
+		log.Fatal("无法把Leetcode数据转换成[]bytes: ", err)
+	}
+	if err = ioutil.WriteFile(lcFile, raw, 0666); err != nil {
+		log.Fatal("无法把Marshal后的lc保存到文件: ", err)
+	}
 }
 
 // data 保存API信息
