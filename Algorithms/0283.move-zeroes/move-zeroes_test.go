@@ -30,8 +30,12 @@ func Test_Problem0283(t *testing.T) {
 	qs := []question{
 
 		question{
-			para{" "},
-			ans{" "},
+			para{
+
+			},
+			ans{
+				
+			},
 		},
 	
 		// 如需多个测试，可以复制上方元素。

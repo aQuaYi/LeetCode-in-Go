@@ -117,6 +117,7 @@ func getFunction(URL string) (fc, fcHead, p, a string) {
 	p = strings.Replace(fc[i+1:j], ",", "\n", -1)
 	a = fc[j+1 : k]
 
+	fc = fc[:k] + "{\n\n}"
 	return
 }
 
@@ -150,13 +151,11 @@ type question struct {
 }
 
 // para 是参数
-// one 代表第一个参数
 type para struct {
 	%s
 }
 
 // ans 是答案
-// one 代表第一个答案
 type ans struct {
 	one %s
 }
@@ -167,8 +166,12 @@ func Test_%s(t *testing.T) {
 	qs := []question{
 
 		question{
-			para{" "},
-			ans{" "},
+			para{
+
+			},
+			ans{
+				
+			},
 		},
 	
 		// 如需多个测试，可以复制上方元素。

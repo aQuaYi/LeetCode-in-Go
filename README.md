@@ -1,6 +1,6 @@
 # [LeetCode](https://leetcode.com)习题的Golang解答。
 [![LeetCode](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode Ranking](https://img.shields.io/badge/Ranking-90302-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode Ranking](https://img.shields.io/badge/Ranking-87045-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang)
 
@@ -86,7 +86,7 @@
 
 
 ## helper
-[helper](./helper)会帮助处理大部分琐碎的工作。
+[helper](./helper.v3)会帮助处理大部分琐碎的工作。
 
 ## kit
 在[kit](./kit)中添加了LeetCode常用的数据结构和处理函数：
