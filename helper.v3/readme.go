@@ -15,7 +15,7 @@ func makeREADME(lc *leetcode) {
 
 ## 答题进度
 %s
-
+> 并未统计付费题
 ## 参考解答
 %s
 
