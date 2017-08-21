@@ -7,9 +7,9 @@
 ## 答题进度
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|28 / 141|27 / 246|13 / 92|68 / 479|
+|**Algorithms**|29 / 141|27 / 246|13 / 92|69 / 479|
 |**Draft**|0 / 1|0 / 4|0 / 0|0 / 5|
-|**Total**|28 / 142|27 / 250|13 / 92|68 / 484|
+|**Total**|29 / 142|27 / 250|13 / 92|69 / 484|
 
 
 ## 参考解答
@@ -71,6 +71,7 @@
 |88|[Merge Sorted Array](./Algorithms/0088.merge-sorted-array)|☆|32%||
 |118|[Pascal's Triangle](./Algorithms/0118.pascals-triangle)|☆|38%||
 |206|[Reverse Linked List](./Algorithms/0206.reverse-linked-list)|☆|45%||
+|283|[Move Zeroes](./Algorithms/0283.move-zeroes)|☆|49%||
 |414|[Third Maximum Number](./Algorithms/0414.third-maximum-number)|☆|27%||
 |448|[Find All Numbers Disappeared in an Array](./Algorithms/0448.find-all-numbers-disappeared-in-an-array)|☆|51%||
 |485|[Max Consecutive Ones](./Algorithms/0485.max-consecutive-ones)|☆|54%||
