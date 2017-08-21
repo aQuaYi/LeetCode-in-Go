@@ -1,5 +1,5 @@
 run:
-	./Helper
+	./helper
 	git commit -am '更新README.md'
 	git push
 	git checkout master
