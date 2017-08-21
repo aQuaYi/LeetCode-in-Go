@@ -65,9 +65,7 @@ func creatREADME(p problem) {
 ## 解题思路
 
 
-## 总结
-
-
+见程序注释
 `
 
 	log.Printf("正在下载 %d.%s 的问题描述\n", p.ID, p.Title)
