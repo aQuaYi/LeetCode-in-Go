@@ -11,8 +11,8 @@
 
 ## 使用方式 
 1. 在命令行的本目录下，运行`make`，会自动生成程序。
-1. 在命令行的`LeetCode-in-Golang`目录下，运行`./helper`。会自动重新生成项目的`README.md`
-1. 在命令行的`LeetCode-in-Golang`目录下，运行`./helper [题号]`。会自动生成相应的答题文件夹。
+1. 在命令行的`LeetCode-in-Golang`目录下，运行`./helper`，会自动重新生成项目的`README.md`
+1. 在命令行的`LeetCode-in-Golang`目录下，运行`./helper [题号]`，会自动生成相应的答题文件夹。
     
 ## 配置方法
 1. 在`.gitignore`中，添加一行`*.toml`。
