@@ -57,5 +57,6 @@ func main() {
 		// "system-design",
 	}
 
-	update(categories)
+	lc := update(categories)
+	makeREADME(lc)
 }

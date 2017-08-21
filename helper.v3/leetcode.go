@@ -4,13 +4,15 @@ import (
 	"fmt"
 	"log"
 	"sort"
+	"strconv"
+	"strings"
 )
 
 type leetcode struct {
 	Username string
 	Ranking  int
 
-	Categories []category
+	Categories categories
 	Problems   problems
 }
 
@@ -20,6 +22,18 @@ func newLeetCode() *leetcode {
 		Username: cfg.Login,
 	}
 }
+
+func (l *leetcode) getRanking() {
+	temp := getRanking(l.Username)
+
+	r, err := strconv.Atoi(temp)
+	if err != nil {
+		log.Fatalf("无法把 %s 转换成数字Ranking", temp)
+	}
+
+	l.Ranking = r
+}
+
 func (l *leetcode) totalCategory() {
 	t := category{
 		Name: "Total",
@@ -38,6 +52,7 @@ func (l *leetcode) totalCategory() {
 
 	l.Categories = append(l.Categories, t)
 }
+
 func (l *leetcode) update(d *data) {
 	l.check(d)
 	ps, e, m, h := countData(d)
@@ -88,6 +103,26 @@ type category struct {
 	Easy, Medium, Hard, Total count
 }
 
+func (c category) String() string {
+	res := fmt.Sprintf("|**%s**|", strings.Title(c.Name))
+	res += fmt.Sprintf("%d / %d|", c.Easy.Solved, c.Easy.Total)
+	res += fmt.Sprintf("%d / %d|", c.Medium.Solved, c.Medium.Total)
+	res += fmt.Sprintf("%d / %d|", c.Hard.Solved, c.Hard.Total)
+	res += fmt.Sprintf("%d / %d|", c.Total.Solved, c.Total.Total)
+	return res
+}
+
+type categories []category
+
+func (cs categories) String() string {
+	res := fmt.Sprintln("|Category|Easy|Medium|Hard|Total|")
+	res += fmt.Sprintln("|:--|:--:|:--:|:--:|:--:|")
+	for _, c := range cs {
+		res += fmt.Sprintln(c)
+	}
+
+	return res
+}
 func newCategory(d *data, e, m, h int) category {
 	c := category{
 		Name: d.Name,

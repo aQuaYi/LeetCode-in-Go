@@ -1,28 +1,38 @@
 package main
 
-// func makeREADME(c Categories, s Solveds) {
-// 	file := "README.md"
-// 	os.Remove(file)
+import (
+	"fmt"
+	"io/ioutil"
+	"log"
+	"os"
+)
 
-// 	template := `%s
+func makeREADME(lc *leetcode) {
+	file := "README.md"
+	os.Remove(file)
 
-// ## 答题进度
-// %s
+	template := `%s
 
-// ## 参考解答
-// %s
+## 答题进度
+%s
 
-// %s
-// `
-// 	headFormat := read("README_HEAD.md")
-// 	head := fmt.Sprintf(headFormat, username, username, ranking, username)
-// 	count := c.String()
-// 	solved := s.String()
-// 	tail := read("README_TAIL.md")
-// 	content := fmt.Sprintf(template, head, count, solved, tail)
+## 参考解答
+%s
 
-// 	err := ioutil.WriteFile(file, []byte(content), 0755)
-// 	if err != nil {
-// 		log.Fatal(err)
-// 	}
-// }
+%s
+`
+	headFormat := string(read("README_HEAD.md"))
+	head := fmt.Sprintf(headFormat, lc.Username, lc.Username, lc.Ranking, lc.Username)
+
+	count := lc.Categories.String()
+
+	solved := lc.Problems.String()
+
+	tail := read("README_TAIL.md")
+	content := fmt.Sprintf(template, head, count, solved, tail)
+
+	err := ioutil.WriteFile(file, []byte(content), 0755)
+	if err != nil {
+		log.Fatal(err)
+	}
+}

@@ -9,11 +9,13 @@ import (
 	"github.com/aQuaYi/GoKit"
 )
 
-func update(categories []string) {
+func update(categories []string) *leetcode {
 	newLC := lastest(categories)
 	oldLC := readFile()
-	diff(newLC.Problems, oldLC.Problems)
+	diff(newLC, oldLC)
 	saveLC(newLC)
+
+	return newLC
 }
 
 func lastest(categories []string) *leetcode {
@@ -24,6 +26,7 @@ func lastest(categories []string) *leetcode {
 	}
 
 	lc.totalCategory()
+	lc.getRanking()
 
 	sort.Sort(lc.Problems)
 
@@ -46,14 +49,26 @@ func readFile() *leetcode {
 	return &lc
 }
 
-func diff(new, old problems) {
-	lenNew := len(new)
-	lenOld := len(old)
+func diff(new, old *leetcode) {
+	// 对比 ranking
+	nr, or := new.Ranking, old.Ranking
+	if nr > 0 && or > 0 {
+		v, delta := "进步了", or-nr
+		if nr > or {
+			v, delta = "后退了", nr-or
+		}
+		log.Printf("当前排名 %d，%s %d 名", nr, v, delta)
+	} else {
+		log.Printf("当前排名 %d", nr)
+	}
+	// 对比 已完成的问题
+	lenNew := len(new.Problems)
+	lenOld := len(old.Problems)
 	isChanged := false
 
 	i := 0
 	for i < lenOld {
-		n, o := new[i], old[i]
+		n, o := new.Problems[i], old.Problems[i]
 
 		if n.ID != o.ID {
 			log.Fatalln("LeetCode 的 Problems 数据出现错位。")
@@ -68,11 +83,11 @@ func diff(new, old problems) {
 	}
 
 	if !isChanged {
-		log.Println("没有新完成习题～")
+		log.Println("～ 没有新完成习题 ～")
 	}
 
 	for i < lenNew {
-		log.Printf("新添加 %d %s", new[i].ID, new[i].Title)
+		log.Printf("新题 %d %s", new.Problems[i].ID, new.Problems[i].Title)
 		i++
 	}
 }
