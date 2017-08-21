@@ -58,8 +58,14 @@ func main() {
 	}
 
 	lc := update(categories)
-	
+
 	makeREADME(lc)
+
+	for _, p := range lc.Problems {
+		if !p.IsAccepted {
+			os.Remove(p.Dir)
+		}
+	}
 
 	if problemNum > 0 {
 		makeProblemDir(lc.Problems, problemNum)
