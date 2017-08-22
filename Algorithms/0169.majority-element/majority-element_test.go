@@ -29,6 +29,15 @@ func Test_Problem0169(t *testing.T) {
 
 		question{
 			para{
+				[]int{1, 1, 2, 2, 2, 1, 1, 2, 2},
+			},
+			ans{
+				2,
+			},
+		},
+
+		question{
+			para{
 				[]int{1},
 			},
 			ans{
@@ -44,7 +53,7 @@ func Test_Problem0169(t *testing.T) {
 				2,
 			},
 		},
-		
+
 		question{
 			para{
 				[]int{1, 2, 2},
