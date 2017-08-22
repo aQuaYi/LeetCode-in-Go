@@ -30,6 +30,19 @@ func Test_Problem0054(t *testing.T) {
 		question{
 			para{
 				[][]int{
+					[]int{},
+					[]int{},
+					[]int{},
+				},
+			},
+			ans{
+				[]int{},
+			},
+		},
+
+		question{
+			para{
+				[][]int{
 					[]int{7},
 					[]int{9},
 					[]int{6},

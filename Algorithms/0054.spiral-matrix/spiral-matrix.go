@@ -8,7 +8,10 @@ func spiralOrder(matrix [][]int) []int {
 	}
 
 	c := len(matrix[0])
-
+	if c == 0 {
+		return []int{}
+	}
+	
 	if len(matrix) == 1 {
 		return matrix[0]
 	}
