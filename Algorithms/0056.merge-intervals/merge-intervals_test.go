@@ -103,14 +103,6 @@ func Test_Problem0056(t *testing.T) {
 	}
 }
 
-func Test_min(t *testing.T) {
-	ast := assert.New(t)
-
-	actual := min(1, 0)
-	expected := 0
-	ast.Equal(expected, actual)
-}
-
 func Test_max(t *testing.T) {
 	ast := assert.New(t)
 

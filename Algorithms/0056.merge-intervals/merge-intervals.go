@@ -8,46 +8,28 @@ type Interval struct {
 	End   int
 }
 
-func merge(intervals []Interval) []Interval {
-	if len(intervals) <= 1 {
-		return intervals
+func merge(its []Interval) []Interval {
+	if len(its) <= 1 {
+		return its
 	}
 
-	quickSort(intervals)
+	quickSort(its)
 
-	res := make([]Interval, 0, len(intervals))
-	temp := intervals[0]
+	res := make([]Interval, 0, len(its))
+	temp := its[0]
 
-	for i := 1; i < len(intervals); i++ {
-		if isOverlap(temp, intervals[i]) {
-			temp = mergeInterval(temp, intervals[i])
+	for i := 1; i < len(its); i++ {
+		if its[i].Start <= temp.End {
+			temp.End = max(temp.End, its[i].End)
 			continue
 		}
 		res = append(res, temp)
-		temp = intervals[i]
+		temp = its[i]
 	}
 
 	res = append(res, temp)
 
 	return res
-}
-
-func isOverlap(a, b Interval) bool {
-	return (a.Start <= b.Start && b.Start <= a.End) || (a.Start <= b.End && b.End <= a.End)
-}
-
-func mergeInterval(a, b Interval) Interval {
-	return Interval{
-		Start: min(a.Start, b.Start),
-		End:   max(a.End, b.End),
-	}
-}
-
-func min(a, b int) int {
-	if a < b {
-		return a
-	}
-	return b
 }
 
 func max(a, b int) int {
@@ -56,6 +38,7 @@ func max(a, b int) int {
 	}
 	return b
 }
+
 func quickSort(is []Interval) {
 	if len(is) <= 1 {
 		return
@@ -68,7 +51,6 @@ func quickSort(is []Interval) {
 	quickSort(is[j+1:])
 }
 
-//partition 要考虑好，当a.Len()==2时，如何排好序
 func partition(is []Interval) int {
 	i, j := 1, len(is)-1
 	for {
@@ -76,7 +58,6 @@ func partition(is []Interval) int {
 			i++
 		}
 		for is[j].Start >= is[0].Start && j > 0 {
-
 			j--
 		}
 		if i >= j {
