@@ -51,9 +51,13 @@ func (p problem) build() {
 	}
 	fc, fcHead, para, ans := getFunction(p.link())
 
+	log.Printf("开始创建 %d.%s 的文件夹...\n", p.ID, p.Title)
+
 	creatREADME(p)
 	creatGo(p, fc)
 	creatGoTest(p, fcHead, para, ans)
+
+	log.Printf("%d.%s 的文件夹，创建完毕。\n", p.ID, p.Title)
 }
 
 func creatREADME(p problem) {
@@ -67,8 +71,6 @@ func creatREADME(p problem) {
 
 见程序注释
 `
-
-	log.Printf("正在下载 %d.%s 的问题描述\n", p.ID, p.Title)
 
 	questionDescription := getQuestionDescription(p.link())
 
@@ -87,7 +89,7 @@ func getQuestionDescription(URL string) string {
 	if err != nil {
 		log.Fatal(err)
 	}
-	return doc.Find("div.question-description").Text()
+	return strings.TrimSpace(doc.Find("div.question-description").Text())
 }
 
 func getFunction(URL string) (fc, fcHead, p, a string) {
