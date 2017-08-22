@@ -97,9 +97,14 @@ func getFunction(URL string) (fc, fcHead, p, a string) {
 	j := i + strings.Index(str[i:], "enableTestMode:")
 	str = str[i:j]
 
-	i = strings.Index(str, "'func")
+	i = strings.Index(str, "'Go', 'defaultCode': ") + 21
 	j = i + strings.Index(str[i:], "},")
 	str = str[i:j]
+
+	i = strings.Index(str, "func")
+	str = "'" + str[i:]
+
+	// fmt.Println("getFunction: ", str)
 
 	i = strings.Index(str, "'")
 	j = 5 + strings.Index(str[5:], "'")
