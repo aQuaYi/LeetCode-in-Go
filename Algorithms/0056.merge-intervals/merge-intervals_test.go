@@ -45,11 +45,11 @@ func Test_Problem0056(t *testing.T) {
 		question{
 			para{[]Interval{
 				Interval{1, 4},
-				Interval{0, 5},
+				Interval{0, 6},
 			},
 			},
 			ans{[]Interval{
-				Interval{0, 5},
+				Interval{0, 6},
 			},
 			},
 		},
