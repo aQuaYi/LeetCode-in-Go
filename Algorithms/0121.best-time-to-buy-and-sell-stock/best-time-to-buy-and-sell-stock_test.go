@@ -29,6 +29,15 @@ func Test_Problem0121(t *testing.T) {
 
 		question{
 			para{
+				[]int{7, 2, 1, 5, 3, 6, 4},
+			},
+			ans{
+				5,
+			},
+		},
+
+		question{
+			para{
 				[]int{7, 1, 5, 3, 6, 4},
 			},
 			ans{
