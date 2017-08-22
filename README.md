@@ -7,11 +7,11 @@
 ## 答题进度
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|29 / 141|27 / 246|13 / 92|69 / 479|
+|**Algorithms**|30 / 141|27 / 246|13 / 92|70 / 479|
 |**Draft**|0 / 1|0 / 4|0 / 0|0 / 5|
-|**Total**|29 / 142|27 / 250|13 / 92|69 / 484|
+|**Total**|30 / 142|27 / 250|13 / 92|70 / 484|
 
-> 并未统计付费题
+> 未统计付费题
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
 |:-:|:-|:-: | :-: | :-: |
@@ -71,6 +71,7 @@
 |88|[Merge Sorted Array](./Algorithms/0088.merge-sorted-array)|☆|32%||
 |118|[Pascal's Triangle](./Algorithms/0118.pascals-triangle)|☆|38%||
 |206|[Reverse Linked List](./Algorithms/0206.reverse-linked-list)|☆|45%||
+|268|[Missing Number](./Algorithms/0268.missing-number)|☆|44%||
 |283|[Move Zeroes](./Algorithms/0283.move-zeroes)|☆|49%||
 |414|[Third Maximum Number](./Algorithms/0414.third-maximum-number)|☆|27%||
 |448|[Find All Numbers Disappeared in an Array](./Algorithms/0448.find-all-numbers-disappeared-in-an-array)|☆|51%||
@@ -83,7 +84,7 @@
 |628|[Maximum Product of Three Numbers](./Algorithms/0628.maximum-product-of-three-numbers)|☆|45%|❤|
 |643|[Maximum Average Subarray I](./Algorithms/0643.maximum-average-subarray-i)|☆|38%||
 |660|[Remove 9](./Algorithms/0660.remove-9)|☆ ☆ ☆|45%||
-|661|[Image Smoother](./Algorithms/0661.image-smoother)|☆|49%||
+|661|[Image Smoother](./Algorithms/0661.image-smoother)|☆|48%||
 
 
 ## helper
