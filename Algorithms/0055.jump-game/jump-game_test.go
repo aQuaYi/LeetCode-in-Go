@@ -54,6 +54,15 @@ func Test_Problem0055(t *testing.T) {
 			},
 		},
 
+		question{
+			para{
+				[]int{3, 2, 2, 0, 0},
+			},
+			ans{
+				true,
+			},
+		},
+
 		// 如需多个测试，可以复制上方元素。
 	}
 
