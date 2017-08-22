@@ -65,6 +65,7 @@ func creatREADME(p problem) {
 
 ## 题目
 %s
+
 ## 解题思路
 
 见程序注释
