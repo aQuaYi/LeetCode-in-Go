@@ -1,12 +1,13 @@
 package Problem0217
 
 func containsDuplicate(nums []int) bool {
+	// 利用 m 记录 nums 中的元素是否出现过
 	m := make(map[int]bool, len(nums))
-	for i := 0; i < len(nums); i++ {
-		if ok := m[nums[i]]; ok {
+	for _, n := range nums {
+		if m[n] {
 			return true
 		}
-		m[nums[i]] = true
+		m[n] = true
 	}
 
 	return false
