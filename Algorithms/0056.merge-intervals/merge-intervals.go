@@ -54,10 +54,10 @@ func quickSort(is []Interval) {
 func partition(is []Interval) int {
 	i, j := 1, len(is)-1
 	for {
-		for is[0].Start >= is[i].Start && i < len(is)-1 {
+		for is[i].Start <= is[0].Start && i < len(is)-1 {
 			i++
 		}
-		for is[j].Start >= is[0].Start && j > 0 {
+		for is[0].Start <= is[j].Start && j > 0 {
 			j--
 		}
 		if i >= j {
