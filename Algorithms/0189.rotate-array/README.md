@@ -21,6 +21,3 @@ Related problem: [Reverse Words in a String II](https://leetcode.com/problems/re
 1. nums 整体翻转
 1. nums[:k] 翻转
 1. nums[k:] 翻转
-
-### 递归交换
-见程序注释
