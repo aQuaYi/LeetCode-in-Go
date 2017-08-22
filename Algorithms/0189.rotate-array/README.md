@@ -17,6 +17,10 @@ Could you do it in-place with O(1) extra space?
 Related problem: [Reverse Words in a String II](https://leetcode.com/problems/reverse-words-in-a-string-ii/)
 
 ## 解题思路
+###  三次翻转
+1. nums 整体翻转
+1. nums[:k] 翻转
+1. nums[k:] 翻转
 
-
+### 递归交换
 见程序注释
