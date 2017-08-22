@@ -7,9 +7,9 @@
 ## 答题进度
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|38 / 141|27 / 246|13 / 92|78 / 479|
+|**Algorithms**|38 / 141|28 / 246|13 / 92|79 / 479|
 |**Draft**|0 / 1|0 / 4|0 / 0|0 / 5|
-|**Total**|38 / 142|27 / 250|13 / 92|78 / 484|
+|**Total**|38 / 142|28 / 250|13 / 92|79 / 484|
 
 > 未统计付费题
 ## 参考解答
@@ -67,6 +67,7 @@
 |51|[N-Queens](./Algorithms/0051.n-queens)|☆ ☆ ☆|31%||
 |52|[N-Queens II](./Algorithms/0052.n-queens-ii)|☆ ☆ ☆|44%||
 |53|[Maximum Subarray](./Algorithms/0053.maximum-subarray)|☆|39%|❤|
+|54|[Spiral Matrix](./Algorithms/0054.spiral-matrix)|☆ ☆|25%|❤|
 |66|[Plus One](./Algorithms/0066.plus-one)|☆|38%||
 |88|[Merge Sorted Array](./Algorithms/0088.merge-sorted-array)|☆|32%||
 |118|[Pascal's Triangle](./Algorithms/0118.pascals-triangle)|☆|38%||
