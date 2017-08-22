@@ -7,9 +7,9 @@
 ## 答题进度
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|32 / 141|27 / 246|13 / 92|72 / 479|
+|**Algorithms**|33 / 141|27 / 246|13 / 92|73 / 479|
 |**Draft**|0 / 1|0 / 4|0 / 0|0 / 5|
-|**Total**|32 / 142|27 / 250|13 / 92|72 / 484|
+|**Total**|33 / 142|27 / 250|13 / 92|73 / 484|
 
 > 未统计付费题
 ## 参考解答
@@ -70,6 +70,7 @@
 |66|[Plus One](./Algorithms/0066.plus-one)|☆|38%||
 |88|[Merge Sorted Array](./Algorithms/0088.merge-sorted-array)|☆|32%||
 |118|[Pascal's Triangle](./Algorithms/0118.pascals-triangle)|☆|38%||
+|189|[Rotate Array](./Algorithms/0189.rotate-array)|☆|24%||
 |206|[Reverse Linked List](./Algorithms/0206.reverse-linked-list)|☆|45%||
 |217|[Contains Duplicate](./Algorithms/0217.contains-duplicate)|☆|45%||
 |219|[Contains Duplicate II](./Algorithms/0219.contains-duplicate-ii)|☆|32%||
