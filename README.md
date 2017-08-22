@@ -7,9 +7,9 @@
 ## 答题进度
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|30 / 141|27 / 246|13 / 92|70 / 479|
+|**Algorithms**|32 / 141|27 / 246|13 / 92|72 / 479|
 |**Draft**|0 / 1|0 / 4|0 / 0|0 / 5|
-|**Total**|30 / 142|27 / 250|13 / 92|70 / 484|
+|**Total**|32 / 142|27 / 250|13 / 92|72 / 484|
 
 > 未统计付费题
 ## 参考解答
@@ -71,6 +71,8 @@
 |88|[Merge Sorted Array](./Algorithms/0088.merge-sorted-array)|☆|32%||
 |118|[Pascal's Triangle](./Algorithms/0118.pascals-triangle)|☆|38%||
 |206|[Reverse Linked List](./Algorithms/0206.reverse-linked-list)|☆|45%||
+|217|[Contains Duplicate](./Algorithms/0217.contains-duplicate)|☆|45%||
+|219|[Contains Duplicate II](./Algorithms/0219.contains-duplicate-ii)|☆|32%||
 |268|[Missing Number](./Algorithms/0268.missing-number)|☆|44%||
 |283|[Move Zeroes](./Algorithms/0283.move-zeroes)|☆|49%||
 |414|[Third Maximum Number](./Algorithms/0414.third-maximum-number)|☆|27%||
