@@ -12,13 +12,5 @@ func majorityElement(nums []int) int {
 		m[n]++
 	}
 
-	max, res := 0, 0
-	for i, v := range m {
-		if max < v {
-			max = v
-			res = i
-		}
-	}
-
-	return res
+	return 0
 }
