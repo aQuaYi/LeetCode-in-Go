@@ -1,17 +1,13 @@
 package Problem0268
 
 func missingNumber(nums []int) int {
-	for i := 0; i < len(nums); i++ {
-		for nums[i] < len(nums) && nums[i] != i {
-			nums[i], nums[nums[i]] = nums[nums[i]], nums[i]
-		}
-	}
+	xor := 0
 
 	for i, n := range nums {
-		if i != n {
-			return i
-		}
+		xor ^= i ^ n
 	}
-
-	return len(nums)
+	// 所有的 i 再加上 len(nums)，就相当于 0,1,...,n。
+	// 利用 相同的数 异或 为0，及其交换律
+	// xor 最后的值，就是那个缺失的数
+	return xor ^ len(nums)
 }
