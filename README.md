@@ -1,15 +1,15 @@
 # [LeetCode](https://leetcode.com)习题的Golang解答。
 [![LeetCode](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode Ranking](https://img.shields.io/badge/Ranking-87045-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode Ranking](https://img.shields.io/badge/Ranking-78870-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang)
 
 ## 答题进度
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|38 / 141|28 / 246|13 / 92|79 / 479|
+|**Algorithms**|38 / 141|30 / 246|13 / 92|81 / 479|
 |**Draft**|0 / 1|0 / 4|0 / 0|0 / 5|
-|**Total**|38 / 142|28 / 250|13 / 92|79 / 484|
+|**Total**|38 / 142|30 / 250|13 / 92|81 / 484|
 
 > 未统计付费题
 ## 参考解答
@@ -68,6 +68,8 @@
 |52|[N-Queens II](./Algorithms/0052.n-queens-ii)|☆ ☆ ☆|44%||
 |53|[Maximum Subarray](./Algorithms/0053.maximum-subarray)|☆|39%|❤|
 |54|[Spiral Matrix](./Algorithms/0054.spiral-matrix)|☆ ☆|25%|❤|
+|55|[Jump Game](./Algorithms/0055.jump-game)|☆ ☆|29%||
+|56|[Merge Intervals](./Algorithms/0056.merge-intervals)|☆ ☆|30%||
 |66|[Plus One](./Algorithms/0066.plus-one)|☆|38%||
 |88|[Merge Sorted Array](./Algorithms/0088.merge-sorted-array)|☆|32%||
 |118|[Pascal's Triangle](./Algorithms/0118.pascals-triangle)|☆|38%||
