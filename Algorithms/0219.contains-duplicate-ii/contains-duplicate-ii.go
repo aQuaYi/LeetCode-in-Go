@@ -1,12 +1,14 @@
 package Problem0219
 
 func containsNearbyDuplicate(nums []int, k int) bool {
-	for i, v := range nums {
-		for j := i + 1; j <= i+k && j < len(nums); j++ {
-			if v == nums[j] {
-				return true
-			}
+	// 利用 m 记录 a[i]中的值，每次出现的(索引号+1)
+	m := make(map[int]int, len(nums))
+
+	for i, n := range nums {
+		if m[n] != 0 && i-(m[n]-1) <= k {
+			return true
 		}
+		m[n] = i + 1
 	}
 
 	return false
