@@ -38,6 +38,16 @@ func Test_Problem0167(t *testing.T) {
 			},
 		},
 
+		question{
+			para{
+				[]int{2, 7, 11, 15},
+				10,
+			},
+			ans{
+				nil,
+			},
+		},
+
 		// 如需多个测试，可以复制上方元素。
 	}
 
