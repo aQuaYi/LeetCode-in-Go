@@ -6,54 +6,40 @@ func sortColors(nums []int) {
 		return
 	}
 
-	if only2 := setHead(nums); only2 {
-		return
-	}
+	// 三路快排需要 nums[0] == 1
+	temp := nums[0]
+	nums[0] = 1
 
 	// 三路快排
+	// 排序完成后，
+	//    i 指向 0 后的 1，
+	//    j 指向 最后一个 1 后面的位置，
+	//    k 指向 2 前面的 1，
+	// 在整个排序过程中，nums[i:j]中始终都是1
 	i, j, k := 0, 1, length-1
 	for j <= k {
 		switch {
-		case nums[j] < nums[i]:
+		case nums[j] < 1:
+			// 比 1 小的，放入队列首部
 			nums[i], nums[j] = nums[j], nums[i]
 			i++
 			j++
-		case nums[i] < nums[j]:
+		case 1 < nums[j]:
+			// 比 1 大的，放入队列尾部
 			nums[j], nums[k] = nums[k], nums[j]
 			k--
 		default:
 			j++
 		}
 	}
+
+	// 分情况，还原temp
+	switch temp {
+	case 0:
+		nums[i] = temp
+	case 2:
+		nums[k] = temp
+	}
+
 	return
-}
-
-// 如果 nums 中有 1 ， nums[0] 应该为 1
-// 否则，如果 nums 中还有 0， nums[0] 应该为 0
-// 否则，说明 nums 中只有 2。
-func setHead(nums []int) bool {
-	i, l := 0, len(nums)
-	// 设置 nums[0] = 1
-	for i < l && nums[i] != 1 {
-		i++
-	}
-	if i < l {
-		nums[0], nums[i] = nums[i], nums[0]
-		return false
-	}
-
-	// nums 中没有 1
-	// 只好设置 nums[0] = 0
-	i = 0
-	for i < l && nums[i] != 0 {
-		i++
-	}
-
-	if i < l {
-		nums[0], nums[i] = nums[i], nums[0]
-		return false
-	}
-
-	// nums 中只有 2
-	return true
 }

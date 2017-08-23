@@ -53,6 +53,16 @@ func Test_Problem0075(t *testing.T) {
 				[]int{0, 0, 0, 1, 1, 1, 2, 2, 2},
 			},
 		},
+
+		question{
+			para{
+				[]int{2, 1},
+			},
+			ans{
+				[]int{1, 2},
+			},
+		},
+
 		question{
 			para{
 				[]int{},
@@ -61,6 +71,7 @@ func Test_Problem0075(t *testing.T) {
 				[]int{},
 			},
 		},
+
 		question{
 			para{
 				[]int{2, 2, 2, 2, 2, 2},
