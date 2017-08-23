@@ -10,7 +10,7 @@ func generateMatrix(n int) [][]int {
 		res[i] = make([]int, n)
 	}
 
-	// 4 条边界
+	// 4 条边界，依照题意，沿着边界填写
 	top, bottom, left, right := 0, n-1, 0, n-1
 	num := 1
 	for top <= bottom && left <= right {
