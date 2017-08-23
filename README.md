@@ -7,9 +7,9 @@
 ## 答题进度
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|38 / 141|30 / 246|13 / 92|81 / 479|
+|**Algorithms**|38 / 141|30 / 246|14 / 92|82 / 479|
 |**Draft**|0 / 1|0 / 4|0 / 0|0 / 5|
-|**Total**|38 / 142|30 / 250|13 / 92|81 / 484|
+|**Total**|38 / 142|30 / 250|14 / 92|82 / 484|
 
 > 未统计付费题
 ## 参考解答
@@ -69,7 +69,8 @@
 |53|[Maximum Subarray](./Algorithms/0053.maximum-subarray)|☆|39%|❤|
 |54|[Spiral Matrix](./Algorithms/0054.spiral-matrix)|☆ ☆|25%|❤|
 |55|[Jump Game](./Algorithms/0055.jump-game)|☆ ☆|29%||
-|56|[Merge Intervals](./Algorithms/0056.merge-intervals)|☆ ☆|30%||
+|56|[Merge Intervals](./Algorithms/0056.merge-intervals)|☆ ☆|30%|❤|
+|57|[Insert Interval](./Algorithms/0057.insert-interval)|☆ ☆ ☆|27%||
 |66|[Plus One](./Algorithms/0066.plus-one)|☆|38%||
 |88|[Merge Sorted Array](./Algorithms/0088.merge-sorted-array)|☆|32%||
 |118|[Pascal's Triangle](./Algorithms/0118.pascals-triangle)|☆|38%||
