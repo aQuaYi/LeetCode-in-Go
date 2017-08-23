@@ -20,5 +20,5 @@ The total number of unique paths is `2`.
 **Note:** m and n will be at most 100.
 
 ## 解题思路
-
+和[62. Unique Paths](../0062.unique-paths)的解题思路一样。
 见程序注释
