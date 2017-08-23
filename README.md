@@ -7,9 +7,9 @@
 ## 答题进度：17%
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|38 / 141|34 / 246|14 / 92|86 / 479|
+|**Algorithms**|38 / 141|35 / 246|14 / 92|87 / 479|
 |**Draft**|0 / 1|0 / 4|0 / 0|0 / 5|
-|**Total**|38 / 142|34 / 250|14 / 92|86 / 484|
+|**Total**|38 / 142|35 / 250|14 / 92|87 / 484|
 
 > 只统计了免费题 
 ## 参考解答
@@ -76,6 +76,7 @@
 |63|[Unique Paths II](./Algorithms/0063.unique-paths-ii)|☆ ☆|31%||
 |64|[Minimum Path Sum](./Algorithms/0064.minimum-path-sum)|☆ ☆|38%||
 |66|[Plus One](./Algorithms/0066.plus-one)|☆|38%||
+|73|[Set Matrix Zeroes](./Algorithms/0073.set-matrix-zeroes)|☆ ☆|35%|❤|
 |88|[Merge Sorted Array](./Algorithms/0088.merge-sorted-array)|☆|32%||
 |118|[Pascal's Triangle](./Algorithms/0118.pascals-triangle)|☆|38%||
 |119|[Pascal's Triangle II](./Algorithms/0119.pascals-triangle-ii)|☆|36%||
@@ -100,7 +101,7 @@
 |628|[Maximum Product of Three Numbers](./Algorithms/0628.maximum-product-of-three-numbers)|☆|45%|❤|
 |643|[Maximum Average Subarray I](./Algorithms/0643.maximum-average-subarray-i)|☆|38%||
 |660|[Remove 9](./Algorithms/0660.remove-9)|☆ ☆ ☆|45%||
-|661|[Image Smoother](./Algorithms/0661.image-smoother)|☆|48%||
+|661|[Image Smoother](./Algorithms/0661.image-smoother)|☆|47%||
 
 
 ## helper
