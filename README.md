@@ -1,17 +1,17 @@
 # [LeetCode](https://leetcode.com)习题的Golang解答。
 [![LeetCode](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode Ranking](https://img.shields.io/badge/Ranking-78870-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode Ranking](https://img.shields.io/badge/Ranking-74890-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang)
 
-## 答题进度
+## 答题进度 17%
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
 |**Algorithms**|38 / 141|33 / 246|14 / 92|85 / 479|
 |**Draft**|0 / 1|0 / 4|0 / 0|0 / 5|
 |**Total**|38 / 142|33 / 250|14 / 92|85 / 484|
 
-> 未统计付费题
+> 只统计了免费题 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
 |:-:|:-|:-: | :-: | :-: |
