@@ -26,7 +26,7 @@ func init() {
 	if _, err := toml.DecodeFile(cfgFile, &cfg); err != nil {
 		log.Fatalf(err.Error())
 	}
-	fmt.Printf("Hi, %s. \n", cfg.Login)
+	log.Printf("Hi, %s. \n", cfg.Login)
 }
 
 func main() {
