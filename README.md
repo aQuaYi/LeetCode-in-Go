@@ -7,9 +7,9 @@
 ## 答题进度：18%
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|38 / 141|36 / 246|14 / 92|88 / 479|
+|**Algorithms**|38 / 141|37 / 246|14 / 92|89 / 479|
 |**Draft**|0 / 1|0 / 4|0 / 0|0 / 5|
-|**Total**|38 / 142|36 / 250|14 / 92|88 / 484|
+|**Total**|38 / 142|37 / 250|14 / 92|89 / 484|
 
 > 只统计了免费题 
 ## 参考解答
@@ -78,6 +78,7 @@
 |66|[Plus One](./Algorithms/0066.plus-one)|☆|38%||
 |73|[Set Matrix Zeroes](./Algorithms/0073.set-matrix-zeroes)|☆ ☆|35%|❤|
 |74|[Search a 2D Matrix](./Algorithms/0074.search-a-2d-matrix)|☆ ☆|35%||
+|75|[Sort Colors](./Algorithms/0075.sort-colors)|☆ ☆|37%|❤|
 |88|[Merge Sorted Array](./Algorithms/0088.merge-sorted-array)|☆|32%||
 |118|[Pascal's Triangle](./Algorithms/0118.pascals-triangle)|☆|38%||
 |119|[Pascal's Triangle II](./Algorithms/0119.pascals-triangle-ii)|☆|36%||
