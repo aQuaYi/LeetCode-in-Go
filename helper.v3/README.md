@@ -6,6 +6,7 @@
     1. [题目].go
     1. [题目]_test.go
 1. 统计已经解答题目，在`LeetCode-in-Golang/README.md`中生成
+    1. 标题下的LeetCode主页和LeetCode排名图标
     1. 统计报表
     1. 已完成题目的目录
 
