@@ -12,5 +12,6 @@ For example, Given n = 3, You should return the following matrix:
 ]
 ```
 ## 解题思路
+依照题意，设置填充边界，沿着边界填写。
 
 见程序注释

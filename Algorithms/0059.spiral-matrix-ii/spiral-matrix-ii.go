@@ -1,37 +1,43 @@
 package Problem0059
 
 func generateMatrix(n int) [][]int {
-	total := n * n
-	num := 1
-	res := [][]int{}
-
-	// 准备矩阵
-	for i := 0; i < n; i++ {
-		res = append(res, make([]int, n))
+	if n == 0 {
+		return [][]int{}
 	}
 
-	// i 代表了从外往里的第 i 个圈
-	for i := 0; num <= total; i++ {
+	res := make([][]int, n)
+	for i := range res {
+		res[i] = make([]int, n)
+	}
+
+	// 4 条边界
+	top, bottom, left, right := 0, n-1, 0, n-1
+	num := 1
+	for top <= bottom && left <= right {
 		// →
-		for col := i; col < n-i; col++ {
-			res[i][col] = num
+		for j := left; j <= right; j++ {
+			res[top][j] = num
 			num++
 		}
+		top++
 		// ↓
-		for row := i + 1; row < n-i; row++ {
-			res[row][n-i-1] = num
+		for j := top; j <= bottom; j++ {
+			res[j][right] = num
 			num++
 		}
+		right--
 		// ←
-		for col := n - i - 2; col >= i; col-- {
-			res[n-i-1][col] = num
+		for j := right; j >= left; j-- {
+			res[bottom][j] = num
 			num++
 		}
+		bottom--
 		// ↑
-		for row := n - i - 2; row >= i+1; row-- {
-			res[row][i] = num
+		for j := bottom; j >= top; j-- {
+			res[j][left] = num
 			num++
 		}
+		left++
 	}
 
 	return res
