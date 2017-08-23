@@ -15,12 +15,14 @@ func searchMatrix(mat [][]int, target int) bool {
 		return false
 	}
 
+	// 寻找行
 	r := 0
 	for r < m && mat[r][0] <= target {
 		r++
 	}
 	r--
 
+	// 二分法寻找 target
 	i, j := 0, n-1
 	for i <= j {
 		med := (i + j) / 2
