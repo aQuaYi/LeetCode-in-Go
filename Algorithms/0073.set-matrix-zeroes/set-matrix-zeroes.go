@@ -1,33 +1,33 @@
 package Problem0073
 
-func setZeroes(matrix [][]int) {
-	m, n := len(matrix), len(matrix[0])
+func setZeroes(m [][]int) {
+	rows := make([]bool, len(m))    // rows[i] == true ，代表 i 行存在 0 元素
+	cols := make([]bool, len(m[0])) // cols[j] == true ，代表 j 列存在 0 元素
 
-	temp := make([][]int, m)
-	for i := range temp {
-		temp[i] = append([]int{}, matrix[i]...)
-	}
-
-	hasZero := func(r, c int) bool {
-		for i := 0; i < m; i++ {
-			if temp[i][c] == 0 {
-				return true
+	// 逐个检查元素
+	for i := range m {
+		for j := range m[i] {
+			if m[i][j] == 0 {
+				rows[i] = true
+				cols[j] = true
 			}
 		}
-
-		for j := 0; j < n; j++ {
-			if temp[r][j] == 0 {
-				return true
-			}
-		}
-
-		return false
 	}
 
-	for i := range matrix {
-		for j := range matrix[0] {
-			if temp[i][j] != 0 && hasZero(i, j) {
-				matrix[i][j] = 0
+	// 按行修改
+	for i := range rows {
+		if rows[i] {
+			for j := range m[i] {
+				m[i][j] = 0
+			}
+		}
+	}
+
+	// 按列修改
+	for i := range cols {
+		if cols[i] {
+			for j := range m {
+				m[j][i] = 0
 			}
 		}
 	}
