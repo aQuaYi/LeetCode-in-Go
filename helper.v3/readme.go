@@ -13,9 +13,9 @@ func makeREADME(lc *leetcode) {
 
 	template := `%s
 
-## 答题进度
+## 答题进度 %d%%
 %s
-> 未统计付费题
+> 只统计了免费题 
 ## 参考解答
 %s
 
@@ -24,12 +24,14 @@ func makeREADME(lc *leetcode) {
 	headFormat := string(read("README_HEAD.md"))
 	head := fmt.Sprintf(headFormat, lc.Username, lc.Username, lc.Ranking, lc.Username)
 
+	acceptedPercent := lc.Categories[len(lc.Categories)-1].Total.Solved * 100 / lc.Categories[len(lc.Categories)-1].Total.Total
+
 	count := lc.Categories.String()
 
 	accepted := lc.Problems.acceptedString()
 
 	tail := read("README_TAIL.md")
-	content := fmt.Sprintf(template, head, count, accepted, tail)
+	content := fmt.Sprintf(template, head, acceptedPercent, count, accepted, tail)
 
 	err := ioutil.WriteFile(file, []byte(content), 0755)
 	if err != nil {
