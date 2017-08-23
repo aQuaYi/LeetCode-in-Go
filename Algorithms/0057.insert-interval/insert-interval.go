@@ -25,9 +25,11 @@ func insert(a []Interval, newItv Interval) []Interval {
 	for i := range a {
 		if isOverlap(a[i], newItv) {
 			newItv = merge(a[i], newItv)
+
 			if i == lenA-1 {
 				res = append(res, newItv)
 			}
+
 			continue
 		}
 
