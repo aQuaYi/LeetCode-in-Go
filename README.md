@@ -4,12 +4,12 @@
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang)
 
-## 答题进度 17%
+## 答题进度：17%
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|38 / 141|33 / 246|14 / 92|85 / 479|
+|**Algorithms**|38 / 141|34 / 246|14 / 92|86 / 479|
 |**Draft**|0 / 1|0 / 4|0 / 0|0 / 5|
-|**Total**|38 / 142|33 / 250|14 / 92|85 / 484|
+|**Total**|38 / 142|34 / 250|14 / 92|86 / 484|
 
 > 只统计了免费题 
 ## 参考解答
@@ -74,6 +74,7 @@
 |59|[Spiral Matrix II](./Algorithms/0059.spiral-matrix-ii)|☆ ☆|39%|❤|
 |62|[Unique Paths](./Algorithms/0062.unique-paths)|☆ ☆|41%|❤|
 |63|[Unique Paths II](./Algorithms/0063.unique-paths-ii)|☆ ☆|31%||
+|64|[Minimum Path Sum](./Algorithms/0064.minimum-path-sum)|☆ ☆|38%||
 |66|[Plus One](./Algorithms/0066.plus-one)|☆|38%||
 |88|[Merge Sorted Array](./Algorithms/0088.merge-sorted-array)|☆|32%||
 |118|[Pascal's Triangle](./Algorithms/0118.pascals-triangle)|☆|38%||
