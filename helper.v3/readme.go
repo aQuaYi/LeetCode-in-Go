@@ -13,7 +13,7 @@ func makeREADME(lc *leetcode) {
 
 	template := `%s
 
-## 答题进度 %d%%
+## 答题进度：%d%%
 %s
 > 只统计了免费题 
 ## 参考解答
