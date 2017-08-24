@@ -15,11 +15,6 @@ func exist(board [][]byte, word string) bool {
 		return false
 	}
 
-	rec := make([][]bool, m)
-	for i := range rec {
-		rec[i] = make([]bool, n)
-	}
-
 	delta := [][2]int{
 		[2]int{0, -1},
 		[2]int{0, 1},
@@ -37,11 +32,12 @@ func exist(board [][]byte, word string) bool {
 			return false
 		}
 
-		if board[r][c] != word[0] || rec[r][c] == true {
+		if board[r][c] != word[0]  {
 			return false
 		}
 
-		rec[r][c] = true
+		temp := board[r][c]
+		board[r][c] = 0
 
 		for _, d := range delta {
 			if dfs(r+d[0], c+d[1], word[1:]) {
@@ -49,7 +45,7 @@ func exist(board [][]byte, word string) bool {
 			}
 		}
 
-		rec[r][c] = false
+		board[r][c] = temp
 
 		return false
 	}
