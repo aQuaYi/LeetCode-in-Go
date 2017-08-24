@@ -4,12 +4,12 @@
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang)
 
-## 答题进度：18%
+## 答题进度：19%
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|38 / 141|39 / 246|14 / 92|91 / 479|
+|**Algorithms**|38 / 141|40 / 246|14 / 92|92 / 479|
 |**Draft**|0 / 1|0 / 4|0 / 0|0 / 5|
-|**Total**|38 / 142|39 / 250|14 / 92|91 / 484|
+|**Total**|38 / 142|40 / 250|14 / 92|92 / 484|
 
 > 只统计了免费题 
 ## 参考解答
@@ -40,7 +40,7 @@
 |23|[Merge k Sorted Lists](./Algorithms/0023.merge-k-sorted-lists)|☆ ☆ ☆|27%||
 |24|[Swap Nodes in Pairs](./Algorithms/0024.swap-nodes-in-pairs)|☆ ☆|38%|❤|
 |25|[Reverse Nodes in k-Group](./Algorithms/0025.reverse-nodes-in-k-group)|☆ ☆ ☆|30%|❤|
-|26|[Remove Duplicates from Sorted Array](./Algorithms/0026.remove-duplicates-from-sorted-array)|☆|35%||
+|26|[Remove Duplicates from Sorted Array](./Algorithms/0026.remove-duplicates-from-sorted-array)|☆|35%|❤|
 |27|[Remove Element](./Algorithms/0027.remove-element)|☆|39%||
 |28|[Implement strStr()](./Algorithms/0028.implement-strstr)|☆|28%||
 |29|[Divide Two Integers](./Algorithms/0029.divide-two-integers)|☆ ☆|15%||
@@ -81,6 +81,7 @@
 |75|[Sort Colors](./Algorithms/0075.sort-colors)|☆ ☆|37%|❤|
 |78|[Subsets](./Algorithms/0078.subsets)|☆ ☆|40%||
 |79|[Word Search](./Algorithms/0079.word-search)|☆ ☆|26%||
+|80|[Remove Duplicates from Sorted Array II](./Algorithms/0080.remove-duplicates-from-sorted-array-ii)|☆ ☆|35%|❤|
 |88|[Merge Sorted Array](./Algorithms/0088.merge-sorted-array)|☆|32%||
 |118|[Pascal's Triangle](./Algorithms/0118.pascals-triangle)|☆|38%||
 |119|[Pascal's Triangle II](./Algorithms/0119.pascals-triangle-ii)|☆|36%||
@@ -105,7 +106,7 @@
 |628|[Maximum Product of Three Numbers](./Algorithms/0628.maximum-product-of-three-numbers)|☆|45%|❤|
 |643|[Maximum Average Subarray I](./Algorithms/0643.maximum-average-subarray-i)|☆|38%||
 |660|[Remove 9](./Algorithms/0660.remove-9)|☆ ☆ ☆|45%||
-|661|[Image Smoother](./Algorithms/0661.image-smoother)|☆|47%||
+|661|[Image Smoother](./Algorithms/0661.image-smoother)|☆|48%||
 
 
 ## helper
