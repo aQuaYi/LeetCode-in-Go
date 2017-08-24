@@ -1,6 +1,6 @@
 # [LeetCode](https://leetcode.com)习题的Golang解答。
 [![LeetCode](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode Ranking](https://img.shields.io/badge/Ranking-74890-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode Ranking](https://img.shields.io/badge/Ranking-69471-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang)
 
@@ -81,7 +81,7 @@
 |75|[Sort Colors](./Algorithms/0075.sort-colors)|☆ ☆|37%|❤|
 |78|[Subsets](./Algorithms/0078.subsets)|☆ ☆|40%|❤|
 |79|[Word Search](./Algorithms/0079.word-search)|☆ ☆|26%||
-|80|[Remove Duplicates from Sorted Array II](./Algorithms/0080.remove-duplicates-from-sorted-array-ii)|☆ ☆|35%|❤|
+|80|[Remove Duplicates from Sorted Array II](./Algorithms/0080.remove-duplicates-from-sorted-array-ii)|☆ ☆|36%|❤|
 |81|[Search in Rotated Sorted Array II](./Algorithms/0081.search-in-rotated-sorted-array-ii)|☆ ☆|32%||
 |88|[Merge Sorted Array](./Algorithms/0088.merge-sorted-array)|☆|32%||
 |90|[Subsets II](./Algorithms/0090.subsets-ii)|☆ ☆|36%|❤|
@@ -108,7 +108,7 @@
 |628|[Maximum Product of Three Numbers](./Algorithms/0628.maximum-product-of-three-numbers)|☆|45%|❤|
 |643|[Maximum Average Subarray I](./Algorithms/0643.maximum-average-subarray-i)|☆|38%||
 |660|[Remove 9](./Algorithms/0660.remove-9)|☆ ☆ ☆|45%||
-|661|[Image Smoother](./Algorithms/0661.image-smoother)|☆|48%||
+|661|[Image Smoother](./Algorithms/0661.image-smoother)|☆|47%||
 
 
 ## helper
