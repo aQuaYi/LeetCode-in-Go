@@ -6,25 +6,25 @@ func subsetsWithDup(nums []int) [][]int {
 	res := [][]int{}
 	sort.Ints(nums)
 
-	var cur func(int, []int, *[][]int)
+	var dfs func(int, []int, *[][]int)
 
-	cur = func(idx int, temp []int, res *[][]int) {
-		*res = append(*res, temp)
+	dfs = func(idx int, temp []int, res *[][]int) {
+		t := make([]int, len(temp))
+		copy(t, temp)
+		// 没有以上两行，答案就是错的
+		// 因为temp的底层数组在递归过程中，不停地修改
+		// 程序结束时，temp的底层数组的值，全部是 nums 的最大值。
+		*res = append(*res, t)
 
-		if idx == len(nums) {
-			return
-		}
-
-		cur(idx+1, append(temp[:len(temp):len(temp)], nums[idx]), res)
-
-		for i := idx + 1; i < len(nums); i++ {
-			if nums[i] != nums[i-1] {
-				cur(i+1, append(temp[:len(temp):len(temp)], nums[i]), res)
+		for i := idx; i < len(nums); i++ {
+			if i == idx || nums[i] != nums[i-1] {
+				dfs(i+1, append(temp, nums[i]), res)
 			}
 		}
 	}
 
-	cur(0, []int{}, &res)
+	temp := make([]int, 0, len(nums))
+	dfs(0, temp, &res)
 
 	return res
 }
