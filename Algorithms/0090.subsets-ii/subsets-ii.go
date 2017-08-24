@@ -7,7 +7,6 @@ func subsetsWithDup(nums []int) [][]int {
 	sort.Ints(nums)
 
 	var dfs func(int, []int)
-
 	dfs = func(idx int, temp []int) {
 		t := make([]int, len(temp))
 		copy(t, temp)
