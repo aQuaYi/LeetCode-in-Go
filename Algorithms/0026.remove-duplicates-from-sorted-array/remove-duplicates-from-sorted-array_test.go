@@ -31,7 +31,7 @@ func Test_Problem0026(t *testing.T) {
 	qs := []question{
 
 		question{
-			para{[]int{1, 2, 3, 3, 4, 5}},
+			para{[]int{1, 2, 2, 3, 3, 4, 5}},
 			ans{5, []int{1, 2, 3, 4, 5}},
 		},
 
