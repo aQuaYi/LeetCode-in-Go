@@ -1,5 +1,9 @@
 package Problem0078
 
+import (
+	"sort"
+)
+
 func subsets(nums []int) [][]int {
 	res := [][]int{}
 
@@ -9,13 +13,14 @@ func subsets(nums []int) [][]int {
 }
 
 func cur(nums, temp []int, res *[][]int) {
-	if len(nums) == 0 {
+	l := len(nums)
+	if l == 0 {
+		sort.Ints(temp)
 		*res = append(*res, temp)
 		return
 	}
 
-	cur(nums[1:], temp, res)
+	cur(nums[:l-1], temp, res)
 
-	cur(nums[1:], append(temp, nums[0]), res)
-
+	cur(nums[:l-1], append([]int{nums[l-1]}, temp...), res)
 }
