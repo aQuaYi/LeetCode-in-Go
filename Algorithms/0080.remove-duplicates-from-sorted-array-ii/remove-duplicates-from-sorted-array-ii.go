@@ -6,17 +6,12 @@ func removeDuplicates(nums []int) int {
 		return length
 	}
 
-	i, res := 2, 2
-
-	for ; i < length; i++ {
-		if nums[i] == nums[res-1] && nums[i] == nums[res-2] {
-			continue
-		}
-
-		if res != i {
+	res := 2
+	for i := 2; i < length; i++ {
+		if nums[i] != nums[res-2] {
 			nums[res] = nums[i]
+			res++
 		}
-		res++
 	}
 
 	return res
