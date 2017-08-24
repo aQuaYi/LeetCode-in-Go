@@ -15,34 +15,24 @@ func exist(board [][]byte, word string) bool {
 		return false
 	}
 
-	delta := [][2]int{
-		[2]int{0, -1},
-		[2]int{0, 1},
-		[2]int{-1, 0},
-		[2]int{1, 0},
-	}
-
-	var dfs func(int, int, string) bool
-	dfs = func(r, c int, word string) bool {
-		if len(word) == 0 {
+	var dfs func(int, int, int) bool
+	dfs = func(r, c, index int) bool {
+		if len(word) == index {
 			return true
 		}
 
-		if r < 0 || m <= r || c < 0 || n <= c {
-			return false
-		}
-
-		if board[r][c] != word[0]  {
+		if r < 0 || m <= r || c < 0 || n <= c || board[r][c] != word[index] {
 			return false
 		}
 
 		temp := board[r][c]
 		board[r][c] = 0
 
-		for _, d := range delta {
-			if dfs(r+d[0], c+d[1], word[1:]) {
-				return true
-			}
+		if dfs(r-1, c, index+1) ||
+			dfs(r+1, c, index+1) ||
+			dfs(r, c-1, index+1) ||
+			dfs(r, c+1, index+1) {
+			return true
 		}
 
 		board[r][c] = temp
@@ -52,7 +42,7 @@ func exist(board [][]byte, word string) bool {
 
 	for i := 0; i < m; i++ {
 		for j := 0; j < n; j++ {
-			if dfs(i, j, word) {
+			if dfs(i, j, 0) {
 				return true
 			}
 		}

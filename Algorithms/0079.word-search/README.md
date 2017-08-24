@@ -24,4 +24,6 @@ word = "ABCB", -> returns false.
 
 ## 解题思路
 
+使用dfs
+
 见程序注释
