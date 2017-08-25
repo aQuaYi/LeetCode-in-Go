@@ -7,9 +7,9 @@
 ## 答题进度：19%
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|38 / 141|42 / 246|14 / 92|94 / 479|
+|**Algorithms**|38 / 141|43 / 246|14 / 92|95 / 479|
 |**Draft**|0 / 1|0 / 4|0 / 0|0 / 5|
-|**Total**|38 / 142|42 / 250|14 / 92|94 / 484|
+|**Total**|38 / 142|43 / 250|14 / 92|95 / 484|
 
 > 只统计了免费题 
 ## 参考解答
@@ -87,6 +87,7 @@
 |90|[Subsets II](./Algorithms/0090.subsets-ii)|☆ ☆|36%|❤|
 |118|[Pascal's Triangle](./Algorithms/0118.pascals-triangle)|☆|38%||
 |119|[Pascal's Triangle II](./Algorithms/0119.pascals-triangle-ii)|☆|36%||
+|120|[Triangle](./Algorithms/0120.triangle)|☆ ☆|33%|❤|
 |121|[Best Time to Buy and Sell Stock](./Algorithms/0121.best-time-to-buy-and-sell-stock)|☆|41%||
 |122|[Best Time to Buy and Sell Stock II](./Algorithms/0122.best-time-to-buy-and-sell-stock-ii)|☆|47%||
 |167|[Two Sum II - Input array is sorted](./Algorithms/0167.two-sum-ii-input-array-is-sorted)|☆|47%||
