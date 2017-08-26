@@ -1,12 +1,25 @@
 package Problem0154
 
 func findMin(a []int) int {
-	Len := len(a)
+	L := len(a)
 
-	i := 1
-	for i < Len && a[i-1] <= a[i] {
-		i++
+	if a[0] < a[L-1] {
+		return a[0]
 	}
 
-	return a[i%Len]
+	i, j := 0, L-1
+	for i < j {
+		if a[i] > a[i+1] {
+			return a[i+1]
+		}
+
+		if a[j-1] > a[j] {
+			return a[j]
+		}
+
+		i++
+		j--
+	}
+
+	return a[i]
 }
