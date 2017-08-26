@@ -1,61 +1,41 @@
 package Problem0152
 
-func max(a, b int) int {
-	if a > b {
-		return a
-	}
-	return b
-}
+func maxProduct(a []int) int {
+	Len := len(a)
 
-func min(a, b int) int {
-	if a > b {
-		return b
-	}
-	return a
-}
+	// maxs 用来存放最大值
+	maxs := make([]int, Len)
+	maxs[0] = a[0]
+	// mins 用来存放最小值
+	mins := make([]int, Len)
+	mins[0] = a[0]
 
-func maxProduct(nums []int) int {
-	size := len(nums)
-
-	maxp_sub_arr := make([]int, size)
-	ng_maxp_sub_arr := make([]int, size)
-	maxp_sub_arr[0] = nums[0]
-	ng_maxp_sub_arr[0] = 1
-	if maxp_sub_arr[0] < 0 {
-		ng_maxp_sub_arr[0] = maxp_sub_arr[0]
-	}
-
-	for i := 1; i < size; i += 1 {
-		if nums[i] == 0 {
-			continue
-		}
-
-		if maxp_sub_arr[i-1] == 0 {
-			maxp_sub_arr[i] = nums[i]
-			if nums[i] < 0 {
-				ng_maxp_sub_arr[i] = maxp_sub_arr[i]
-			} else {
-				ng_maxp_sub_arr[i] = 1
+	for i := 1; i < Len; i++ {
+		if a[i] > 0 {
+			maxs[i] = a[i] * maxs[i-1]
+			// 因为有可能 masx[i-1] <= 0
+			// 所以，需要这个步骤更新答案
+			if a[i] > a[i]*maxs[i-1] {
+				maxs[i] = a[i]
+			}
+			mins[i] = a[i] * mins[i-1]
+		} else if a[i] < 0 {
+			maxs[i] = a[i] * mins[i-1]
+			mins[i] = a[i] * maxs[i-1]
+			// 因为有可能 maxs[i-1] <= 0
+			// 所以，需要这个步骤更新答案
+			if a[i] < a[i]*maxs[i-1] {
+				mins[i] = a[i]
 			}
 		}
+	}
 
-		if nums[i] > 0 {
-			maxp_sub_arr[i] = max(nums[i]*maxp_sub_arr[i-1], nums[i])
-			ng_maxp_sub_arr[i] = nums[i] * ng_maxp_sub_arr[i-1]
-		}
-
-		if nums[i] < 0 {
-			maxp_sub_arr[i] = nums[i] * ng_maxp_sub_arr[i-1]
-			ng_maxp_sub_arr[i] = min(nums[i]*maxp_sub_arr[i-1], nums[i])
+	res := maxs[0]
+	for _, m := range maxs {
+		if res < m {
+			res = m
 		}
 	}
 
-	maxp := maxp_sub_arr[0]
-	for _, subp := range maxp_sub_arr {
-		if subp > maxp {
-			maxp = subp
-		}
-	}
-
-	return maxp
+	return res
 }

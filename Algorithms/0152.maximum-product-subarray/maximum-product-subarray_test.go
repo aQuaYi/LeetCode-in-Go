@@ -26,6 +26,41 @@ func Test_Problem0152(t *testing.T) {
 	ast := assert.New(t)
 
 	qs := []question{
+		question{
+			para{
+				[]int{-5, -4, -3, -2, -1, -2, -3, -4, -5},
+			},
+			ans{
+				2880,
+			},
+		},
+
+		question{
+			para{
+				[]int{5, 4, 3, 2, 1, 2, 3, 4, 5},
+			},
+			ans{
+				14400,
+			},
+		},
+
+		question{
+			para{
+				[]int{1, 2, 3, 4, -5, 6, 7, 8, 9, 10},
+			},
+			ans{
+				30240,
+			},
+		},
+
+		question{
+			para{
+				[]int{-2, 0, -2, 0, -2, 0, -2, 0, -2, 0, -2},
+			},
+			ans{
+				0,
+			},
+		},
 
 		question{
 			para{
@@ -90,14 +125,6 @@ func Test_Problem0152(t *testing.T) {
 			},
 		},
 
-		question{
-			para{
-				[]int{-2, 0, -2, 0, -2, 0, -2, 0, -2, 0, -2},
-			},
-			ans{
-				0,
-			},
-		},
 		// 如需多个测试，可以复制上方元素。
 	}
 
