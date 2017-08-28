@@ -1,15 +1,15 @@
 # [LeetCode](https://leetcode.com)习题的Golang解答。
 [![LeetCode](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode Ranking](https://img.shields.io/badge/Ranking-67933-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode Ranking](https://img.shields.io/badge/Ranking-67505-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang)
 
 ## 答题进度：20%
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|38 / 141|45 / 246|15 / 92|98 / 479|
+|**Algorithms**|38 / 142|46 / 246|15 / 92|99 / 480|
 |**Draft**|0 / 1|0 / 4|0 / 0|0 / 5|
-|**Total**|38 / 142|45 / 250|15 / 92|98 / 484|
+|**Total**|38 / 143|46 / 250|15 / 92|99 / 485|
 
 > 只统计了免费题 
 ## 参考解答
@@ -93,6 +93,7 @@
 |152|[Maximum Product Subarray](./Algorithms/0152.maximum-product-subarray)|☆ ☆|25%|❤|
 |153|[Find Minimum in Rotated Sorted Array](./Algorithms/0153.find-minimum-in-rotated-sorted-array)|☆ ☆|39%||
 |154|[Find Minimum in Rotated Sorted Array II](./Algorithms/0154.find-minimum-in-rotated-sorted-array-ii)|☆ ☆ ☆|37%||
+|162|[Find Peak Element](./Algorithms/0162.find-peak-element)|☆ ☆|37%||
 |167|[Two Sum II - Input array is sorted](./Algorithms/0167.two-sum-ii-input-array-is-sorted)|☆|47%||
 |169|[Majority Element](./Algorithms/0169.majority-element)|☆|46%|❤|
 |189|[Rotate Array](./Algorithms/0189.rotate-array)|☆|24%||
@@ -111,7 +112,6 @@
 |605|[Can Place Flowers](./Algorithms/0605.can-place-flowers)|☆|29%|❤|
 |628|[Maximum Product of Three Numbers](./Algorithms/0628.maximum-product-of-three-numbers)|☆|45%|❤|
 |643|[Maximum Average Subarray I](./Algorithms/0643.maximum-average-subarray-i)|☆|38%||
-|660|[Remove 9](./Algorithms/0660.remove-9)|☆ ☆ ☆|45%||
 |661|[Image Smoother](./Algorithms/0661.image-smoother)|☆|47%||
 
 
