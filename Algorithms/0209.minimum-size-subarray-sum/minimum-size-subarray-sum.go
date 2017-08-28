@@ -2,11 +2,6 @@ package Problem0209
 
 func minSubArrayLen(s int, a []int) int {
 	n := len(a)
-
-	if n == 0 {
-		return 0
-	}
-
 	res, i, j, sum := n+1, 0, 0, 0
 
 	for j < n {
@@ -22,5 +17,6 @@ func minSubArrayLen(s int, a []int) int {
 		}
 	}
 
+	// res % (n+1) 是为了处理 sum(a) < s 的情况
 	return res % (n + 1)
 }

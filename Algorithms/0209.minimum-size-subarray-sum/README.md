@@ -11,5 +11,6 @@ the subarray `[4,3]` has the minimal length under the problem constraint.
 If you have figured out the O(n) solution, try coding another solution of which the time complexity is O(n log n).
 
 ## 解题思路
+充分利用题目信息，切片中的数，全部是正数。
 
 见程序注释
