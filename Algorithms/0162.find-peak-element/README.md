@@ -17,8 +17,8 @@ Note:
 Your solution should be in logarithmic complexity.
 
 
-Credits:Special thanks to @ts for adding this problem and creating all test cases.
-
 ## 解题思路
-
+注意理解题意，题目要求，
+1. 返回任意一个局部高点即可
+1. 要求程序的复杂度为O(logN)
 见程序注释

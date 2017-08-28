@@ -1,31 +1,20 @@
 package Problem0162
 
-func findPeakElement(a []int) int {
-	n := len(a)
+func findPeakElement(nums []int) int {
+	low := -1
+	high := len(nums)
+	mid := (low + high) / 2
 
-	if n <= 1 {
-		return 0
-	}
-	// gtl: greater than left
-	gtl := make([]bool, n)
-	// a[-1] == -∞
-	gtl[0] = true
-
-	// gtr: greater than right
-	gtr := make([]bool, n)
-	// a[l] == -∞
-	gtr[n-1] = true
-
-	for i := 1; i < n; i++ {
-		gtl[i] = a[i] > a[i-1]
-		gtr[n-i-1] = a[n-i-1] > a[n-i]
-	}
-
-	for i := 0; i < n; i++ {
-		if gtl[i] && gtr[i] {
-			return i
+	// low +2 < high
+	// low + 1 <= mid < high -1
+	for low+1 <= mid && mid < high-1 {
+		if nums[mid] < nums[mid+1] {
+			low = mid
+		} else {
+			high = mid + 1
 		}
+		mid = (high + low) / 2
 	}
 
-	return 0
+	return low + 1
 }
