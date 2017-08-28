@@ -18,5 +18,4 @@ Output: [[1,2,6], [1,3,5], [2,3,4]]
 Credits:Special thanks to @mithmatt for adding this problem and creating all test cases.
 
 ## 解题思路
-
-见程序注释
+常见的dfs搜索，见程序注释
