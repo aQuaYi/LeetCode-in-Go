@@ -14,23 +14,22 @@ func summaryRanges(a []int) []string {
 
 	begin := a[0]
 	str := ""
-	for i := 1; i < l; i++ {
-		if a[i-1]+1 != a[i] {
-			if a[i-1] == begin {
+
+	for i := 0; i < l; i++ {
+		if i == l-1 || a[i]+1 != a[i+1] {
+			if a[i] == begin {
 				str = fmt.Sprintf("%d", begin)
 			} else {
-				str = fmt.Sprintf("%d->%d", begin, a[i-1])
+				str = fmt.Sprintf("%d->%d", begin, a[i])
 			}
-			begin = a[i]
+
+			if i+1 < l {
+				begin = a[i+1]
+			}
+
 			res = append(res, str)
 		}
 	}
-	if a[l-1] == begin {
-		str = fmt.Sprintf("%d", begin)
-	} else {
-		str = fmt.Sprintf("%d->%d", begin, a[l-1])
-	}
-	res = append(res, str)
 
 	return res
 }
