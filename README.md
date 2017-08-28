@@ -7,9 +7,9 @@
 ## 答题进度：20%
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|38 / 142|46 / 246|15 / 92|99 / 480|
+|**Algorithms**|38 / 142|47 / 246|15 / 92|100 / 480|
 |**Draft**|0 / 1|0 / 4|0 / 0|0 / 5|
-|**Total**|38 / 143|46 / 250|15 / 92|99 / 485|
+|**Total**|38 / 143|47 / 250|15 / 92|100 / 485|
 
 > 只统计了免费题 
 ## 参考解答
@@ -98,6 +98,7 @@
 |169|[Majority Element](./Algorithms/0169.majority-element)|☆|46%|❤|
 |189|[Rotate Array](./Algorithms/0189.rotate-array)|☆|24%||
 |206|[Reverse Linked List](./Algorithms/0206.reverse-linked-list)|☆|45%||
+|209|[Minimum Size Subarray Sum](./Algorithms/0209.minimum-size-subarray-sum)|☆ ☆|30%||
 |217|[Contains Duplicate](./Algorithms/0217.contains-duplicate)|☆|45%||
 |219|[Contains Duplicate II](./Algorithms/0219.contains-duplicate-ii)|☆|32%||
 |268|[Missing Number](./Algorithms/0268.missing-number)|☆|44%||
