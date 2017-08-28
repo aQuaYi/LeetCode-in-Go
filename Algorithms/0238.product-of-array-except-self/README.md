@@ -13,3 +13,7 @@ Could you solve it with constant space complexity? (Note: The output array does 
 ## 解题思路
 
 见程序注释
+
+有一个100%，主要还是服务器的功劳，因为我同样的程序再提交一次，就只有40%了。
+
+![100%](238.png)
