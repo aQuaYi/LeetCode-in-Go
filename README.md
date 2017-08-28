@@ -1,15 +1,15 @@
 # [LeetCode](https://leetcode.com)习题的Golang解答。
 [![LeetCode](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode Ranking](https://img.shields.io/badge/Ranking-67505-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode Ranking](https://img.shields.io/badge/Ranking-64789-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang)
 
 ## 答题进度：21%
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|38 / 142|50 / 246|15 / 92|103 / 480|
+|**Algorithms**|38 / 142|51 / 246|15 / 92|104 / 480|
 |**Draft**|0 / 1|0 / 4|0 / 0|0 / 5|
-|**Total**|38 / 143|50 / 250|15 / 92|103 / 485|
+|**Total**|38 / 143|51 / 250|15 / 92|104 / 485|
 
 > 只统计了免费题 
 ## 参考解答
@@ -104,6 +104,7 @@
 |219|[Contains Duplicate II](./Algorithms/0219.contains-duplicate-ii)|☆|32%||
 |228|[Summary Ranges](./Algorithms/0228.summary-ranges)|☆ ☆|29%||
 |229|[Majority Element II](./Algorithms/0229.majority-element-ii)|☆ ☆|28%|❤|
+|238|[Product of Array Except Self](./Algorithms/0238.product-of-array-except-self)|☆ ☆|49%||
 |268|[Missing Number](./Algorithms/0268.missing-number)|☆|44%||
 |283|[Move Zeroes](./Algorithms/0283.move-zeroes)|☆|49%||
 |414|[Third Maximum Number](./Algorithms/0414.third-maximum-number)|☆|27%||
