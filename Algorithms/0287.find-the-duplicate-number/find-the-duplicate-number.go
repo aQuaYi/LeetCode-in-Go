@@ -1,14 +1,15 @@
 package Problem0287
 
 func findDuplicate(a []int) int {
-	l := len(a)
-	rec := make([]int, l)
-	for i := 0; i < l; i++ {
-		rec[a[i]]++
-		if rec[a[i]] == 2 {
-			return a[i]
-		}
+	slow, fast := a[0], a[a[0]]
+	for slow != fast {
+		slow, fast = a[slow], a[a[fast]]
 	}
 
-	return 0
+	slow = 0
+	for slow != fast {
+		slow, fast = a[slow], a[fast]
+	}
+
+	return slow
 }
