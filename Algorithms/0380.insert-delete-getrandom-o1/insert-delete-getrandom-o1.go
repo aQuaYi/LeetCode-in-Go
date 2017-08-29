@@ -1,7 +1,6 @@
 package Problem0380
 
 import "math/rand"
-import "fmt"
 
 // RandomizedSet 是一个随机获取的集合
 type RandomizedSet struct {
@@ -38,9 +37,10 @@ func (r *RandomizedSet) Remove(val int) bool {
 
 	// 把 a 的最后一个数，放入待删除的数的位置
 	r.a[r.idx[val]] = r.a[len(r.a)-1]
+	r.idx[r.a[len(r.a)-1]] = r.idx[val]
 	// 删除最后一个数
 	r.a = r.a[:len(r.a)-1]
-	// 在 r.m 中删除 val 的记录
+	// 在 r.idx 中删除 val 的记录
 	delete(r.idx, val)
 
 	return true
@@ -49,7 +49,6 @@ func (r *RandomizedSet) Remove(val int) bool {
 // GetRandom 获取随机数据
 /** Get a random element from the set. */
 func (r *RandomizedSet) GetRandom() int {
-	fmt.Println(r.a)
 	return r.a[rand.Intn(len(r.a))]
 }
 
