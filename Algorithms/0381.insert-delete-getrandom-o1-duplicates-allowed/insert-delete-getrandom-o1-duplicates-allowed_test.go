@@ -6,30 +6,55 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func Test_Problem0381(t *testing.T) {
+type question struct {
+	para
+	ans
+}
+
+// para 是参数
+type para struct {
+	orders []string
+	paras  []int
+}
+
+// ans 是答案
+type ans struct {
+	solutions []interface{}
+}
+
+func Test_Problem0382(t *testing.T) {
 	ast := assert.New(t)
 
-	rs := Constructor()
+	qs := []question{
 
-	ast.True(rs.Insert(1), "插入1")
+		question{
+			para{
+				[]string{"RandomizedCollection", "insert", "insert", "insert", "insert", "insert", "remove", "remove", "remove", "insert", "remove", "getRandom", "getRandom", "getRandom", "getRandom", "getRandom", "getRandom", "getRandom", "getRandom", "getRandom", "getRandom"},
+				[]int{0, 1, 1, 2, 2, 2, 1, 1, 2, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+			},
+			ans{
+				[]interface{}{nil, true, false, true, false, false, true, true, true, true, true, 1, 2, 2, 1, 2, 2, 1, 1, 2, 2},
+			},
+		},
 
-	ast.False(rs.Remove(2), "删除2")
-
-	ast.True(rs.Insert(2), "插入2")
-
-	ast.Contains([]int{1, 2}, rs.GetRandom(), "返回1或2")
-
-	ast.True(rs.Remove(1), "删除1")
-
-	ast.False(rs.Insert(2), "再一次插入2")
-
-	ast.Equal(2, rs.GetRandom(), "从只有2的集合中随机取出2")
-
-	length := 100
-	result := make([]int, length)
-	for i := 0; i < 100; i++ {
-		rs.Insert(i)
-		result[i] = i
+		// 如需多个测试，可以复制上方元素。
 	}
-	ast.Contains(result, rs.GetRandom(), "随机获取0~100之间的数")
+
+	for _, q := range qs {
+		sol, ord, par := q.ans.solutions, q.para.orders, q.para.paras
+		rs := Constructor()
+		for i := 1; i < len(ord); i++ {
+			switch ord[i] {
+			case "insert":
+				ast.Equal(sol[i], rs.Insert(par[i]), "Insert %d", par[i])
+			case "remove":
+				ast.Equal(sol[i], rs.Remove(par[i]), "Remove %d", par[i])
+			case "getRandom":
+				r := rs.GetRandom()
+				ast.Contains([]int{1, 2}, r, "GetRandom %d", r)
+			default:
+				ast.Fail("无法处理的命令", "%s", ord[i])
+			}
+		}
+	}
 }

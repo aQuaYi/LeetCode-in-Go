@@ -45,7 +45,7 @@ func (r *RandomizedCollection) Remove(val int) bool {
 
 	// 删除最后一个数
 	r.a = r.a[:len(r.a)-1]
-	// 在 r.idx 中删除 val 的记录
+	// 在 r.idx 中删除最后一个 val 的记录
 	if lenOfVal == 1 {
 		delete(r.idx, val)
 	} else {
