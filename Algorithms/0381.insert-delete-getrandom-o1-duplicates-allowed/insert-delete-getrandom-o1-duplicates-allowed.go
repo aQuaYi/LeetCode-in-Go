@@ -26,6 +26,7 @@ func (r *RandomizedCollection) Insert(val int) bool {
 	}
 	r.a = append(r.a, val)
 	r.idx[val] = append(r.idx[val], len(r.a)-1)
+
 	return res
 }
 
@@ -43,7 +44,7 @@ func (r *RandomizedCollection) Remove(val int) bool {
 
 	// 把 a 的最后一个数，放入最后一个 val 的位置
 	r.a[indexOfLastVal] = last
-	r.idx[last][numOfLast-1] = indexOfLastVal
+	r.idx[last] = append([]int{indexOfLastVal}, r.idx[last][:numOfLast-1]...)
 
 	// 删除最后一个数
 	r.a = r.a[:len(r.a)-1]

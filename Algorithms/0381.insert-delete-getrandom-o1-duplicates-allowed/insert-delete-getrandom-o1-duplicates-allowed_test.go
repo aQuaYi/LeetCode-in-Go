@@ -29,11 +29,11 @@ func Test_Problem0382(t *testing.T) {
 
 		question{
 			para{
-				[]string{"RandomizedCollection", "insert", "insert", "insert", "insert", "insert", "remove", "remove", "remove", "insert", "remove", "getRandom", "getRandom", "getRandom", "getRandom", "getRandom", "getRandom", "getRandom", "getRandom", "getRandom", "getRandom"},
-				[]int{0, 1, 1, 2, 2, 2, 1, 1, 2, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+				[]string{"RandomizedCollection", "insert", "insert", "insert", "insert", "insert", "remove", "remove", "remove", "insert", "remove", "getRandom", "getRandom", "getRandom", "getRandom", "getRandom", "getRandom", "getRandom", "getRandom", "getRandom", "getRandom", "remove", "remove"},
+				[]int{0, 1, 1, 2, 2, 2, 1, 1, 2, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1},
 			},
 			ans{
-				[]interface{}{nil, true, false, true, false, false, true, true, true, true, true, 1, 2, 2, 1, 2, 2, 1, 1, 2, 2},
+				[]interface{}{nil, true, false, true, false, false, true, true, true, true, true, 1, 2, 2, 1, 2, 2, 1, 1, 2, 2, true, false},
 			},
 		},
 
@@ -42,6 +42,10 @@ func Test_Problem0382(t *testing.T) {
 
 	for _, q := range qs {
 		sol, ord, par := q.ans.solutions, q.para.orders, q.para.paras
+
+		ast.Equal(len(sol), len(ord))
+		ast.Equal(len(sol), len(par))
+
 		rs := Constructor()
 		for i := 1; i < len(ord); i++ {
 			switch ord[i] {
