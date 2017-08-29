@@ -36,3 +36,6 @@ collection.getRandom();
 ## 解题思路
 
 见程序注释
+
+感谢 LeetCode 服务器，又多了一个100%
+![381](381.png)

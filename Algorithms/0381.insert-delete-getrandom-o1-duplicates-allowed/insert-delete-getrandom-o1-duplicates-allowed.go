@@ -1,6 +1,9 @@
 package Problem0381
 
-import "math/rand"
+import (
+	"math/rand"
+	"sort"
+)
 
 // RandomizedCollection 是一个随机获取的集合
 type RandomizedCollection struct {
@@ -9,7 +12,7 @@ type RandomizedCollection struct {
 }
 
 // Constructor returns RandomizedSet
-/** Initialize your data structure here. */
+// Initialize your data structure here.
 func Constructor() RandomizedCollection {
 	return RandomizedCollection{
 		a:   []int{},
@@ -18,12 +21,13 @@ func Constructor() RandomizedCollection {
 }
 
 // Insert 插入数据
-/** Inserts a value to the collection. Returns true if the collection did not already contain the specified element. */
+// Inserts a value to the collection. Returns true if the collection did not already contain the specified element.
 func (r *RandomizedCollection) Insert(val int) bool {
 	res := false
-	if _, ok := r.idx[val]; !ok {
+	if _, isContained := r.idx[val]; !isContained {
 		res = true
 	}
+
 	r.a = append(r.a, val)
 	r.idx[val] = append(r.idx[val], len(r.a)-1)
 
@@ -31,9 +35,9 @@ func (r *RandomizedCollection) Insert(val int) bool {
 }
 
 // Remove 删除数据
-/** Removes a value from the collection. Returns true if the collection contained the specified element. */
+// Removes a value from the collection. Returns true if the collection contained the specified element.
 func (r *RandomizedCollection) Remove(val int) bool {
-	if _, ok := r.idx[val]; !ok {
+	if _, isContained := r.idx[val]; !isContained {
 		return false
 	}
 
@@ -44,7 +48,9 @@ func (r *RandomizedCollection) Remove(val int) bool {
 
 	// 把 a 的最后一个数，放入最后一个 val 的位置
 	r.a[indexOfLastVal] = last
-	r.idx[last] = append([]int{indexOfLastVal}, r.idx[last][:numOfLast-1]...)
+	r.idx[last][numOfLast-1] = indexOfLastVal
+	// 保持顺序很重要
+	sort.Ints(r.idx[last])
 
 	// 删除最后一个数
 	r.a = r.a[:len(r.a)-1]
@@ -59,7 +65,7 @@ func (r *RandomizedCollection) Remove(val int) bool {
 }
 
 // GetRandom 获取随机数据
-/** Get a random element from the collection. */
+// Get a random element from the collection.
 func (r *RandomizedCollection) GetRandom() int {
 	return r.a[rand.Intn(len(r.a))]
 }
