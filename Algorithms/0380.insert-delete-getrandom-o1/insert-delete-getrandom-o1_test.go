@@ -11,8 +11,6 @@ func Test_Problem0380(t *testing.T) {
 
 	rs := Constructor()
 
-	ast.Equal(0, rs.GetRandom(), "从空集合中，只能取出0")
-
 	ast.True(rs.Insert(1), "插入1")
 
 	ast.False(rs.Remove(2), "删除2")
