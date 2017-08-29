@@ -7,9 +7,9 @@
 ## 答题进度：21%
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|38 / 142|52 / 246|15 / 92|105 / 480|
+|**Algorithms**|38 / 142|53 / 246|15 / 92|106 / 480|
 |**Draft**|0 / 1|0 / 4|0 / 0|0 / 5|
-|**Total**|38 / 143|52 / 250|15 / 92|105 / 485|
+|**Total**|38 / 143|53 / 250|15 / 92|106 / 485|
 
 > 只统计了免费题 
 ## 参考解答
@@ -108,6 +108,7 @@
 |268|[Missing Number](./Algorithms/0268.missing-number)|☆|44%||
 |283|[Move Zeroes](./Algorithms/0283.move-zeroes)|☆|49%||
 |287|[Find the Duplicate Number](./Algorithms/0287.find-the-duplicate-number)|☆ ☆|43%|❤|
+|289|[Game of Life](./Algorithms/0289.game-of-life)|☆ ☆|36%|❤|
 |414|[Third Maximum Number](./Algorithms/0414.third-maximum-number)|☆|27%||
 |448|[Find All Numbers Disappeared in an Array](./Algorithms/0448.find-all-numbers-disappeared-in-an-array)|☆|51%||
 |485|[Max Consecutive Ones](./Algorithms/0485.max-consecutive-ones)|☆|54%||
