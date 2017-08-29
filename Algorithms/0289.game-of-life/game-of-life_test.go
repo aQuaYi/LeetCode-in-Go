@@ -28,6 +28,29 @@ func Test_Problem0289(t *testing.T) {
 	qs := []question{
 
 		question{
+			para{[][]int{}},
+			ans{[][]int{}},
+		},
+
+		question{
+			para{[][]int{
+				[]int{},
+			}},
+			ans{[][]int{
+				[]int{},
+			}},
+		},
+
+		question{
+			para{[][]int{
+				[]int{0},
+			}},
+			ans{[][]int{
+				[]int{0},
+			}},
+		},
+
+		question{
 			para{[][]int{
 				[]int{1, 1},
 			}},
