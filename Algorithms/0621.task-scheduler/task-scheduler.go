@@ -12,24 +12,31 @@ func leastInterval(tasks []byte, n int) int {
 	sort.Ints(rec)
 
 	res := 0
-	remain := 0
-	begin := 0
+	intervals := 0
+	idx := 0
 	for len(rec) > 0 {
-		if remain > 0 {
-			res += remain
+		if intervals > 0 {
+			res += intervals
 		}
 
-		remain = n
+		// 新周期
+		intervals = n + 1
 
-		begin = len(rec) - 1
-		for begin >= 0 && rec[begin] > 0 {
-			rec[begin]--
-			remain--
-			begin--
+		idx = len(rec) - 1
+		for intervals > 0 && idx >= 0 && rec[idx] > 0 {
+			rec[idx]--
+			intervals--
+			idx--
 			res++
 		}
 
-		rec = rec[begin+1:]
+		sort.Ints(rec)
+		idx = len(rec) - 1
+		for idx >= 0 && rec[idx] > 0 {
+			idx--
+		}
+
+		rec = rec[idx+1:]
 	}
 
 	return res

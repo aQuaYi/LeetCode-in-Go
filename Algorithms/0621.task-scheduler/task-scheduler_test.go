@@ -47,6 +47,16 @@ func Test_Problem0621(t *testing.T) {
 				12,
 			},
 		},
+
+		question{
+			para{
+				[]byte{'A', 'A', 'A', 'A', 'A', 'A', 'B', 'B', 'B', 'C', 'C', 'C'},
+				100,
+			},
+			ans{
+				506,
+			},
+		},
 		// 如需多个测试，可以复制上方元素。
 	}
 
