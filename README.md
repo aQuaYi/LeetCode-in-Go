@@ -1,15 +1,15 @@
 # [LeetCode](https://leetcode.com)习题的Golang解答。
 [![LeetCode](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode Ranking](https://img.shields.io/badge/Ranking-62772-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode Ranking](https://img.shields.io/badge/Ranking-59350-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang)
 
 ## 答题进度：23%
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|38 / 142|60 / 246|16 / 92|114 / 480|
+|**Algorithms**|38 / 142|62 / 246|16 / 92|116 / 480|
 |**Draft**|0 / 1|0 / 4|0 / 0|0 / 5|
-|**Total**|38 / 143|60 / 250|16 / 92|114 / 485|
+|**Total**|38 / 143|62 / 250|16 / 92|116 / 485|
 
 > 只统计了免费题 
 ## 参考解答
@@ -116,6 +116,7 @@
 |448|[Find All Numbers Disappeared in an Array](./Algorithms/0448.find-all-numbers-disappeared-in-an-array)|☆|51%||
 |485|[Max Consecutive Ones](./Algorithms/0485.max-consecutive-ones)|☆|54%||
 |495|[Teemo Attacking](./Algorithms/0495.teemo-attacking)|☆ ☆|51%||
+|526|[Beautiful Arrangement](./Algorithms/0526.beautiful-arrangement)|☆ ☆|55%|❤|
 |532|[K-diff Pairs in an Array](./Algorithms/0532.k-diff-pairs-in-an-array)|☆|28%||
 |560|[Subarray Sum Equals K](./Algorithms/0560.subarray-sum-equals-k)|☆ ☆|40%|❤|
 |561|[Array Partition I](./Algorithms/0561.array-partition-i)|☆|67%||
@@ -123,11 +124,12 @@
 |566|[Reshape the Matrix](./Algorithms/0566.reshape-the-matrix)|☆|59%||
 |581|[Shortest Unsorted Continuous Subarray](./Algorithms/0581.shortest-unsorted-continuous-subarray)|☆|29%|❤|
 |605|[Can Place Flowers](./Algorithms/0605.can-place-flowers)|☆|29%|❤|
-|611|[Valid Triangle Number](./Algorithms/0611.valid-triangle-number)|☆ ☆|40%|❤|
+|611|[Valid Triangle Number](./Algorithms/0611.valid-triangle-number)|☆ ☆|41%|❤|
 |621|[Task Scheduler](./Algorithms/0621.task-scheduler)|☆ ☆|41%|❤|
 |628|[Maximum Product of Three Numbers](./Algorithms/0628.maximum-product-of-three-numbers)|☆|45%|❤|
 |643|[Maximum Average Subarray I](./Algorithms/0643.maximum-average-subarray-i)|☆|38%||
 |661|[Image Smoother](./Algorithms/0661.image-smoother)|☆|47%||
+|667|[Beautiful Arrangement II](./Algorithms/0667.beautiful-arrangement-ii)|☆ ☆|50%||
 
 
 ## helper
