@@ -51,6 +51,16 @@ func Test_Problem0621(t *testing.T) {
 		question{
 			para{
 				[]byte{'A', 'A', 'A', 'A', 'A', 'A', 'B', 'B', 'B', 'C', 'C', 'C'},
+				0,
+			},
+			ans{
+				12,
+			},
+		},
+
+		question{
+			para{
+				[]byte{'A', 'A', 'A', 'A', 'A', 'A', 'B', 'B', 'B', 'C', 'C', 'C'},
 				100,
 			},
 			ans{
