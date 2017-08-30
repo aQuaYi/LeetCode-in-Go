@@ -7,9 +7,9 @@
 ## 答题进度：23%
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|38 / 142|58 / 246|16 / 92|112 / 480|
+|**Algorithms**|38 / 142|60 / 246|16 / 92|114 / 480|
 |**Draft**|0 / 1|0 / 4|0 / 0|0 / 5|
-|**Total**|38 / 143|58 / 250|16 / 92|112 / 485|
+|**Total**|38 / 143|60 / 250|16 / 92|114 / 485|
 
 > 只统计了免费题 
 ## 参考解答
@@ -78,7 +78,7 @@
 |66|[Plus One](./Algorithms/0066.plus-one)|☆|38%||
 |73|[Set Matrix Zeroes](./Algorithms/0073.set-matrix-zeroes)|☆ ☆|35%|❤|
 |74|[Search a 2D Matrix](./Algorithms/0074.search-a-2d-matrix)|☆ ☆|35%||
-|75|[Sort Colors](./Algorithms/0075.sort-colors)|☆ ☆|37%|❤|
+|75|[Sort Colors](./Algorithms/0075.sort-colors)|☆ ☆|38%|❤|
 |78|[Subsets](./Algorithms/0078.subsets)|☆ ☆|40%|❤|
 |79|[Word Search](./Algorithms/0079.word-search)|☆ ☆|26%||
 |80|[Remove Duplicates from Sorted Array II](./Algorithms/0080.remove-duplicates-from-sorted-array-ii)|☆ ☆|36%|❤|
@@ -123,6 +123,8 @@
 |566|[Reshape the Matrix](./Algorithms/0566.reshape-the-matrix)|☆|59%||
 |581|[Shortest Unsorted Continuous Subarray](./Algorithms/0581.shortest-unsorted-continuous-subarray)|☆|29%|❤|
 |605|[Can Place Flowers](./Algorithms/0605.can-place-flowers)|☆|29%|❤|
+|611|[Valid Triangle Number](./Algorithms/0611.valid-triangle-number)|☆ ☆|40%|❤|
+|621|[Task Scheduler](./Algorithms/0621.task-scheduler)|☆ ☆|41%|❤|
 |628|[Maximum Product of Three Numbers](./Algorithms/0628.maximum-product-of-three-numbers)|☆|45%|❤|
 |643|[Maximum Average Subarray I](./Algorithms/0643.maximum-average-subarray-i)|☆|38%||
 |661|[Image Smoother](./Algorithms/0661.image-smoother)|☆|47%||
