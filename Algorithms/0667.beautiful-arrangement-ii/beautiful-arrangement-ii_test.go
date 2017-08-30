@@ -44,7 +44,7 @@ func Test_Problem0667(t *testing.T) {
 				2,
 			},
 			ans{
-				[]int{1, 3, 2},
+				[]int{3, 1, 2},
 			},
 		},
 
@@ -54,7 +54,7 @@ func Test_Problem0667(t *testing.T) {
 				2,
 			},
 			ans{
-				[]int{1, 3, 2, 4, 5},
+				[]int{5, 1, 2, 3, 4},
 			},
 		},
 
@@ -64,7 +64,7 @@ func Test_Problem0667(t *testing.T) {
 				3,
 			},
 			ans{
-				[]int{1, 4, 2, 3, 5},
+				[]int{1, 5, 2, 3, 4},
 			},
 		},
 
@@ -74,7 +74,7 @@ func Test_Problem0667(t *testing.T) {
 				4,
 			},
 			ans{
-				[]int{1, 5, 2, 4, 3},
+				[]int{5, 1, 4, 2, 3},
 			},
 		},
 		// 如需多个测试，可以复制上方元素。
