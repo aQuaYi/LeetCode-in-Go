@@ -13,6 +13,7 @@ func leastInterval(tasks []byte, n int) int {
 
 	res := 0
 	remain := 0
+	begin := 0
 	for len(rec) > 0 {
 		if remain > 0 {
 			res += remain
@@ -20,11 +21,12 @@ func leastInterval(tasks []byte, n int) int {
 
 		remain = n
 
-		begin := len(rec) - 1
-		for rec[begin] != 0 {
+		begin = len(rec) - 1
+		for begin >= 0 && rec[begin] > 0 {
 			rec[begin]--
 			remain--
 			begin--
+			res++
 		}
 
 		rec = rec[begin+1:]
