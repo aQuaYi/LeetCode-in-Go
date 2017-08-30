@@ -14,6 +14,8 @@ func triangleNumber(a []int) int {
 			for k := j + 1; k < n; k++ {
 				if a[i]+a[j] > a[k] {
 					res++
+				} else {
+					break
 				}
 			}
 		}
