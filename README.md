@@ -4,12 +4,12 @@
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang)
 
-## 答题进度：22%
+## 答题进度：23%
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|38 / 142|54 / 246|16 / 92|108 / 480|
+|**Algorithms**|38 / 142|58 / 246|16 / 92|112 / 480|
 |**Draft**|0 / 1|0 / 4|0 / 0|0 / 5|
-|**Total**|38 / 143|54 / 250|16 / 92|108 / 485|
+|**Total**|38 / 143|58 / 250|16 / 92|112 / 485|
 
 > 只统计了免费题 
 ## 参考解答
@@ -112,10 +112,14 @@
 |380|[Insert Delete GetRandom O(1)](./Algorithms/0380.insert-delete-getrandom-o1)|☆ ☆|39%|❤|
 |381|[Insert Delete GetRandom O(1) - Duplicates allowed](./Algorithms/0381.insert-delete-getrandom-o1-duplicates-allowed)|☆ ☆ ☆|28%|❤|
 |414|[Third Maximum Number](./Algorithms/0414.third-maximum-number)|☆|27%||
+|442|[Find All Duplicates in an Array](./Algorithms/0442.find-all-duplicates-in-an-array)|☆ ☆|55%||
 |448|[Find All Numbers Disappeared in an Array](./Algorithms/0448.find-all-numbers-disappeared-in-an-array)|☆|51%||
 |485|[Max Consecutive Ones](./Algorithms/0485.max-consecutive-ones)|☆|54%||
+|495|[Teemo Attacking](./Algorithms/0495.teemo-attacking)|☆ ☆|51%||
 |532|[K-diff Pairs in an Array](./Algorithms/0532.k-diff-pairs-in-an-array)|☆|28%||
+|560|[Subarray Sum Equals K](./Algorithms/0560.subarray-sum-equals-k)|☆ ☆|40%|❤|
 |561|[Array Partition I](./Algorithms/0561.array-partition-i)|☆|67%||
+|565|[Array Nesting](./Algorithms/0565.array-nesting)|☆ ☆|49%||
 |566|[Reshape the Matrix](./Algorithms/0566.reshape-the-matrix)|☆|59%||
 |581|[Shortest Unsorted Continuous Subarray](./Algorithms/0581.shortest-unsorted-continuous-subarray)|☆|29%|❤|
 |605|[Can Place Flowers](./Algorithms/0605.can-place-flowers)|☆|29%|❤|
