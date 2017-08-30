@@ -1,26 +1,32 @@
 package Problem0526
 
 func countArrangement(N int) int {
-	rec := make([]bool, N)
-	res := 0
+	count := 0
+	a := make([]int, N+1)
+	for i := 0; i <= N; i++ {
+		a[i] = i
+	}
 
 	var dfs func(int)
-	dfs = func(level int) {
-		if level == N+1 {
-			res++
+	dfs = func(idx int) {
+		if idx == 0 {
+			count++
 			return
 		}
 
-		for i := range rec {
-			if rec[i] == false && 
-			((i+1)%level == 0 ||level%(i+1)==0) {
-				rec[i] = true
-				dfs(level + 1)
-				rec[i] = false
+		for i := idx; i > 0; i-- {
+			a[idx], a[i] = a[i], a[idx]
+			if isBeautiful(a[idx], idx) {
+				dfs(idx - 1)
 			}
+			a[idx], a[i] = a[i], a[idx]
 		}
 	}
 
-	dfs(1)
-	return res
+	dfs(N)
+	return count
+}
+
+func isBeautiful(i, j int) bool {
+	return i%j == 0 || j%i == 0
 }
