@@ -36,6 +36,68 @@ func Test_Problem0084(t *testing.T) {
 			},
 		},
 
+		question{
+			para{
+				[]int{4, 2, 0, 3, 2, 4, 3, 4},
+			},
+			ans{
+				10,
+			},
+		},
+
+		question{
+			para{
+				[]int{4, 3, 4, 2, 3, 0, 2, 4},
+			},
+			ans{
+				10,
+			},
+		},
+
+		question{
+			para{
+				[]int{},
+			},
+			ans{
+				0,
+			},
+		},
+
+		question{
+			para{
+				[]int{1},
+			},
+			ans{
+				1,
+			},
+		},
+
+		question{
+			para{
+				[]int{0, 0},
+			},
+			ans{
+				0,
+			},
+		},
+
+		question{
+			para{
+				[]int{9, 0},
+			},
+			ans{
+				9,
+			},
+		},
+
+		question{
+			para{
+				[]int{2, 0, 1, 0, 1, 0},
+			},
+			ans{
+				2,
+			},
+		},
 		// 如需多个测试，可以复制上方元素。
 	}
 
