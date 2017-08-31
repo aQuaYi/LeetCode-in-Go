@@ -1,40 +1,33 @@
 package Problem0084
 
-func largestRectangleArea(heights []int) int {
-	max := 0
-	Len := len(heights)
+func largestRectangleArea(h []int) int {
+	h = append(h, -1)
+	n := len(h)
 
-	if Len == 0 {
-		return 0
-	}
+	var maxArea, height, left, right, area int
+	var stack []int
 
-	if Len == 1 {
-		return heights[0]
-	}
-
-	min := func(first, last int) int {
-		res := heights[first]
-		for i := first + 1; i <= last; i++ {
-			if res > heights[i] {
-				res = heights[i]
-			}
+	for right < n {
+		if len(stack) == 0 || h[stack[len(stack)-1]] <= h[right] {
+			stack = append(stack, right)
+			right++
+			continue
 		}
-		return res
-	}
 
-	i, j := 0, Len-1
-	for i <= j {
-		temp := (j - i + 1) * min(i, j)
-		if max < temp {
-			max = temp
-		}
-		if heights[i] < heights[j] ||
-			(i+1 < Len && 0 <= j-1 && i+1 < j-1 && heights[i+1] < heights[j-1]) {
-			i++
+		height = h[stack[len(stack)-1]]
+		stack = stack[:len(stack)-1]
+
+		if len(stack) == 0 {
+			left = -1
 		} else {
-			j--
+			left = stack[len(stack)-1]
+		}
+
+		area = (right - left - 1) * height
+		if maxArea < area {
+			maxArea = area
 		}
 	}
 
-	return max
+	return maxArea
 }

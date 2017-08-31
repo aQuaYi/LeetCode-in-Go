@@ -29,6 +29,15 @@ func Test_Problem0084(t *testing.T) {
 
 		question{
 			para{
+				[]int{2, 0, 1, 0, 1, 0},
+			},
+			ans{
+				2,
+			},
+		},
+
+		question{
+			para{
 				[]int{2, 1, 5, 6, 2, 3},
 			},
 			ans{
@@ -87,15 +96,6 @@ func Test_Problem0084(t *testing.T) {
 			},
 			ans{
 				9,
-			},
-		},
-
-		question{
-			para{
-				[]int{2, 0, 1, 0, 1, 0},
-			},
-			ans{
-				2,
 			},
 		},
 		// 如需多个测试，可以复制上方元素。
