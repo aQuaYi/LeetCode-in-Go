@@ -14,4 +14,6 @@ Return 6.
 
 ## 解题思路
 
+http://blog.csdn.net/doc_sgl/article/details/11832965
+
 见程序注释

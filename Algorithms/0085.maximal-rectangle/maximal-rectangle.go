@@ -5,6 +5,7 @@ func maximalRectangle(mat [][]byte) int {
 	if m == 0 {
 		return 0
 	}
+
 	n := len(mat[0])
 	if n == 0 {
 		return 0
