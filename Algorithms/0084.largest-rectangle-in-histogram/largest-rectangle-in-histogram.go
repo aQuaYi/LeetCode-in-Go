@@ -8,6 +8,7 @@ func largestRectangleArea(heights []int) int {
 			if lowest > heights[j] {
 				lowest = heights[j]
 			}
+
 			temp := lowest * (j - i + 1)
 			if max < temp {
 				max = temp
