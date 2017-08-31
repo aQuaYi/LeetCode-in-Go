@@ -34,6 +34,6 @@ func maximalRectangle(mat [][]byte) int {
 			}
 		}
 	}
-	
+
 	return max
 }

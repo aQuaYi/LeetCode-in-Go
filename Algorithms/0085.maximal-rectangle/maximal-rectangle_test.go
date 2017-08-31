@@ -1,7 +1,6 @@
 package Problem0085
 
 import (
-	"fmt"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -269,7 +268,6 @@ func Test_Problem0085(t *testing.T) {
 
 	for _, q := range qs {
 		a, p := q.ans, q.para
-		fmt.Printf("~~%v~~\n", p)
 
 		ast.Equal(a.one, maximalRectangle(p.matrix), "输入:%v", p)
 	}
