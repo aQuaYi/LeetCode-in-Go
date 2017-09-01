@@ -32,24 +32,24 @@ func maxProfit(k int, prices []int) int {
 			return
 		}
 
-		for i := idx; i < len(profits); i++ {
-			dfs(k-1, i, tmp+max(profits[:i]))
+		for i := idx + 2; i < len(profits)+2; i += 2 {
+			dfs(times-1, i, tmp+max(profits, idx, i))
 		}
 	}
-
 	dfs(k, 0, 0)
+
 	return res
 }
 
-func max(ps []int) int {
+func max(ps []int, begin, end int) int {
 	max, tmp := 0, 0
 
-	for _, p := range ps {
+	for i := begin; i < end && i < len(ps); i++ {
 		if tmp < 0 {
 			tmp = 0
 		}
 
-		tmp += p
+		tmp += ps[i]
 
 		if max < tmp {
 			max = tmp
