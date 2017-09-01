@@ -1,5 +1,9 @@
 package Problem0188
 
+import (
+	"fmt"
+)
+
 func maxProfit(k int, prices []int) int {
 	size := len(prices)
 	if size <= 1 {
@@ -22,6 +26,30 @@ func maxProfit(k int, prices []int) int {
 	profits = append(profits, tmp)
 
 	res := 0
+	rec := map[string]int{}
+
+	max := func(begin, end int) int {
+		key := fmt.Sprintf("%d-%d", begin, end)
+		if t, ok := rec[key]; ok {
+			return t
+		}
+
+		max, tmp := 0, 0
+		for i := begin; i < end && i < len(profits); i++ {
+			if tmp < 0 {
+				tmp = 0
+			}
+
+			tmp += profits[i]
+
+			if max < tmp {
+				max = tmp
+			}
+		}
+
+		rec[key] = max
+		return max
+	}
 
 	var dfs func(int, int, int)
 	dfs = func(times, idx, tmp int) {
@@ -34,28 +62,11 @@ func maxProfit(k int, prices []int) int {
 
 		for i := idx + 2; i < len(profits)+2; i += 2 {
 
-			dfs(times-1, i, tmp+max(profits, idx, i))
+			dfs(times-1, i, tmp+max(idx, i))
 		}
 	}
+
 	dfs(k, 0, 0)
 
 	return res
-}
-
-func max(ps []int, begin, end int) int {
-	max, tmp := 0, 0
-
-	for i := begin; i < end && i < len(ps); i++ {
-		if tmp < 0 {
-			tmp = 0
-		}
-
-		tmp += ps[i]
-
-		if max < tmp {
-			max = tmp
-		}
-	}
-
-	return max
 }
