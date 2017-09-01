@@ -4,8 +4,6 @@
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang)
 
-![Kami](Kami.gif)
-
 
 ## 答题进度：24%
 |Category|Easy|Medium|Hard|Total|
