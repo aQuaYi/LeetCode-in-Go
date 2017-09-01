@@ -1,4 +1,4 @@
-# [LeetCode](https://leetcode.com)习题的Golang解答。
+# [LeetCode](https://leetcode.com)习题的Golang解答
 [![LeetCode](https://img.shields.io/badge/LeetCode-%s-blue.svg)](https://leetcode.com/%s/)
 [![LeetCode Ranking](https://img.shields.io/badge/Ranking-%d-blue.svg)](https://leetcode.com/%s/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang)

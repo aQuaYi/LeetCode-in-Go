@@ -15,7 +15,7 @@ func makeREADME(lc *leetcode) {
 
 ## 答题进度：%d%%
 %s
-> 只统计了免费题 
+> 仅含免费题
 ## 参考解答
 %s
 
