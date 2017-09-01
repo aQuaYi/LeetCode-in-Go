@@ -33,6 +33,7 @@ func maxProfit(k int, prices []int) int {
 		}
 
 		for i := idx + 2; i < len(profits)+2; i += 2 {
+
 			dfs(times-1, i, tmp+max(profits, idx, i))
 		}
 	}
