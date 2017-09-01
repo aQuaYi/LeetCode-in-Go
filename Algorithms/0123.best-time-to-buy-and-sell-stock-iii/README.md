@@ -10,4 +10,6 @@ You may not engage in multiple transactions at the same time (ie, you must sell 
 
 ## 解题思路
 
+max = max(prices[:i]) + max(prices[i:])
+
 见程序注释

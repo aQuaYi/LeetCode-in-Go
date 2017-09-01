@@ -6,22 +6,18 @@ func maxProfit(prices []int) int {
 		return 0
 	}
 
-	diff := make([]int, size-1)
-
-	for i := 1; i < size; i++ {
-		diff[i-1] = prices[i] - prices[i-1]
-	}
-
 	profits := []int{}
-	temp := diff[0]
-	for i := 1; i < len(diff); i++ {
-		if temp*diff[i] >= 0 {
-			temp += diff[i]
+	temp := 0
+	for i := 1; i < size; i++ {
+		diff := prices[i] - prices[i-1]
+
+		if temp*diff >= 0 {
+			temp += diff
 			continue
 		}
 
 		profits = append(profits, temp)
-		temp = diff[i]
+		temp = diff
 	}
 	profits = append(profits, temp)
 
@@ -37,8 +33,7 @@ func maxProfit(prices []int) int {
 }
 
 func max(ps []int) int {
-	max := 0
-	tmp := 0
+	max, tmp := 0, 0
 
 	for _, p := range ps {
 		if tmp < 0 {
