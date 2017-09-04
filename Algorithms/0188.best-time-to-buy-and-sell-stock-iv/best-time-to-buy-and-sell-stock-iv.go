@@ -6,7 +6,7 @@ func maxProfit(k int, prices []int) int {
 		return 0
 	}
 
-	if k > size {
+	if k >= size {
 		return profits(prices)
 	}
 
