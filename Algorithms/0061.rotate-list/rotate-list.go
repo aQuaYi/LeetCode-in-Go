@@ -7,6 +7,10 @@ type ListNode struct {
 }
 
 func rotateRight(head *ListNode, k int) *ListNode {
+	if k == 0 || head == nil {
+		return head
+	}
+
 	end := head
 	// size 是 List 的长度
 	size := 1

@@ -27,6 +27,15 @@ func Test_Problem0061(t *testing.T) {
 	ast := assert.New(t)
 
 	qs := []question{
+		question{
+			para{
+				[]int{},
+				1,
+			},
+			ans{
+				[]int{},
+			},
+		},
 
 		question{
 			para{
