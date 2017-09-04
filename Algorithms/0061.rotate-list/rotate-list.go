@@ -11,27 +11,24 @@ func rotateRight(head *ListNode, k int) *ListNode {
 		return head
 	}
 
-	end := head
-	// size 是 List 的长度
-	size := 1
-	for end.Next != nil {
-		end = end.Next
-		size++
+	fast := head
+	for i := 0; i < k; i++ {
+		if fast.Next == nil {
+			// 处理 k 大于 list 的长度的情况
+			// i+1 就是 list 的长度
+			// 这一步很巧妙
+			return rotateRight(head, k%(i+1))
+		}
+		fast = fast.Next
 	}
 
-	end.Next = head
-
-	// steps 是 head 需要移动的步数
-	// k%size 因为 k 很可能大于 size
-	steps := size - k%size
-
-	for steps > 0 {
-		head = head.Next
-		end = end.Next
-		steps--
+	slow := head
+	for fast.Next != nil {
+		slow, fast = slow.Next, fast.Next
 	}
 
-	end.Next = nil
+	newHead := slow.Next
+	slow.Next, fast.Next = nil, head
 
-	return head
+	return newHead
 }
