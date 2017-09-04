@@ -8,9 +8,9 @@
 ## 答题进度：24%
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|38 / 144|62 / 248|21 / 92|121 / 484|
+|**Algorithms**|39 / 144|62 / 248|21 / 92|122 / 484|
 |**Draft**|0 / 1|0 / 4|0 / 0|0 / 5|
-|**Total**|38 / 145|62 / 252|21 / 92|121 / 489|
+|**Total**|39 / 145|62 / 252|21 / 92|122 / 489|
 
 > 只统计了免费题 
 ## 参考解答
@@ -59,7 +59,7 @@
 |41|[First Missing Positive](./Algorithms/0041.first-missing-positive)|☆ ☆ ☆|25%||
 |42|[Trapping Rain Water](./Algorithms/0042.trapping-rain-water)|☆ ☆ ☆|36%||
 |43|[Multiply Strings](./Algorithms/0043.multiply-strings)|☆ ☆|27%||
-|44|[Wildcard Matching](./Algorithms/0044.wildcard-matching)|☆ ☆ ☆|20%||
+|44|[Wildcard Matching](./Algorithms/0044.wildcard-matching)|☆ ☆ ☆|20%|❤|
 |45|[Jump Game II](./Algorithms/0045.jump-game-ii)|☆ ☆ ☆|26%||
 |46|[Permutations](./Algorithms/0046.permutations)|☆ ☆|43%||
 |47|[Permutations II](./Algorithms/0047.permutations-ii)|☆ ☆|32%||
@@ -73,6 +73,7 @@
 |55|[Jump Game](./Algorithms/0055.jump-game)|☆ ☆|29%||
 |56|[Merge Intervals](./Algorithms/0056.merge-intervals)|☆ ☆|30%|❤|
 |57|[Insert Interval](./Algorithms/0057.insert-interval)|☆ ☆ ☆|27%||
+|58|[Length of Last Word](./Algorithms/0058.length-of-last-word)|☆|31%||
 |59|[Spiral Matrix II](./Algorithms/0059.spiral-matrix-ii)|☆ ☆|39%|❤|
 |62|[Unique Paths](./Algorithms/0062.unique-paths)|☆ ☆|41%|❤|
 |63|[Unique Paths II](./Algorithms/0063.unique-paths-ii)|☆ ☆|31%||
