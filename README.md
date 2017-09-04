@@ -8,9 +8,9 @@
 ## 答题进度：25%
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|39 / 144|63 / 248|21 / 92|123 / 484|
+|**Algorithms**|39 / 144|64 / 248|21 / 92|124 / 484|
 |**Draft**|0 / 1|0 / 4|0 / 0|0 / 5|
-|**Total**|39 / 145|63 / 252|21 / 92|123 / 489|
+|**Total**|39 / 145|64 / 252|21 / 92|124 / 489|
 
 > 只统计了免费题 
 ## 参考解答
@@ -64,7 +64,7 @@
 |46|[Permutations](./Algorithms/0046.permutations)|☆ ☆|43%||
 |47|[Permutations II](./Algorithms/0047.permutations-ii)|☆ ☆|32%||
 |48|[Rotate Image](./Algorithms/0048.rotate-image)|☆ ☆|38%||
-|49|[Group Anagrams](./Algorithms/0049.group-anagrams)|☆ ☆|34%|❤|
+|49|[Group Anagrams](./Algorithms/0049.group-anagrams)|☆ ☆|35%|❤|
 |50|[Pow(x, n)](./Algorithms/0050.powx-n)|☆ ☆|26%||
 |51|[N-Queens](./Algorithms/0051.n-queens)|☆ ☆ ☆|31%||
 |52|[N-Queens II](./Algorithms/0052.n-queens-ii)|☆ ☆ ☆|45%||
@@ -76,6 +76,7 @@
 |58|[Length of Last Word](./Algorithms/0058.length-of-last-word)|☆|31%||
 |59|[Spiral Matrix II](./Algorithms/0059.spiral-matrix-ii)|☆ ☆|39%|❤|
 |60|[Permutation Sequence](./Algorithms/0060.permutation-sequence)|☆ ☆|28%||
+|61|[Rotate List](./Algorithms/0061.rotate-list)|☆ ☆|24%|❤|
 |62|[Unique Paths](./Algorithms/0062.unique-paths)|☆ ☆|41%|❤|
 |63|[Unique Paths II](./Algorithms/0063.unique-paths-ii)|☆ ☆|31%||
 |64|[Minimum Path Sum](./Algorithms/0064.minimum-path-sum)|☆ ☆|38%||
