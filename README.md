@@ -5,12 +5,12 @@
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang)
 
 
-## 答题进度：24%
+## 答题进度：25%
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|39 / 144|62 / 248|21 / 92|122 / 484|
+|**Algorithms**|39 / 144|63 / 248|21 / 92|123 / 484|
 |**Draft**|0 / 1|0 / 4|0 / 0|0 / 5|
-|**Total**|39 / 145|62 / 252|21 / 92|122 / 489|
+|**Total**|39 / 145|63 / 252|21 / 92|123 / 489|
 
 > 只统计了免费题 
 ## 参考解答
@@ -75,6 +75,7 @@
 |57|[Insert Interval](./Algorithms/0057.insert-interval)|☆ ☆ ☆|27%||
 |58|[Length of Last Word](./Algorithms/0058.length-of-last-word)|☆|31%||
 |59|[Spiral Matrix II](./Algorithms/0059.spiral-matrix-ii)|☆ ☆|39%|❤|
+|60|[Permutation Sequence](./Algorithms/0060.permutation-sequence)|☆ ☆|28%||
 |62|[Unique Paths](./Algorithms/0062.unique-paths)|☆ ☆|41%|❤|
 |63|[Unique Paths II](./Algorithms/0063.unique-paths-ii)|☆ ☆|31%||
 |64|[Minimum Path Sum](./Algorithms/0064.minimum-path-sum)|☆ ☆|38%||
