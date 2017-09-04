@@ -1,19 +1,18 @@
 # [LeetCode](https://leetcode.com)习题的Golang解答
 [![LeetCode](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode Ranking](https://img.shields.io/badge/Ranking-57160-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode Ranking](https://img.shields.io/badge/Ranking-57312-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang)
 
 
 ## 答题进度：24%
-> 仅含免费题
-
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|38 / 142|62 / 246|19 / 92|119 / 480|
+|**Algorithms**|38 / 144|62 / 248|20 / 92|120 / 484|
 |**Draft**|0 / 1|0 / 4|0 / 0|0 / 5|
-|**Total**|38 / 143|62 / 250|19 / 92|119 / 485|
+|**Total**|38 / 145|62 / 252|20 / 92|120 / 489|
 
+> 只统计了免费题 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
 |:-:|:-|:-: | :-: | :-: |
@@ -101,6 +100,7 @@
 |162|[Find Peak Element](./Algorithms/0162.find-peak-element)|☆ ☆|37%||
 |167|[Two Sum II - Input array is sorted](./Algorithms/0167.two-sum-ii-input-array-is-sorted)|☆|47%||
 |169|[Majority Element](./Algorithms/0169.majority-element)|☆|46%|❤|
+|188|[Best Time to Buy and Sell Stock IV](./Algorithms/0188.best-time-to-buy-and-sell-stock-iv)|☆ ☆ ☆|24%|❤|
 |189|[Rotate Array](./Algorithms/0189.rotate-array)|☆|24%||
 |206|[Reverse Linked List](./Algorithms/0206.reverse-linked-list)|☆|45%||
 |209|[Minimum Size Subarray Sum](./Algorithms/0209.minimum-size-subarray-sum)|☆ ☆|30%||
@@ -111,7 +111,7 @@
 |229|[Majority Element II](./Algorithms/0229.majority-element-ii)|☆ ☆|28%|❤|
 |238|[Product of Array Except Self](./Algorithms/0238.product-of-array-except-self)|☆ ☆|49%||
 |268|[Missing Number](./Algorithms/0268.missing-number)|☆|44%||
-|283|[Move Zeroes](./Algorithms/0283.move-zeroes)|☆|49%||
+|283|[Move Zeroes](./Algorithms/0283.move-zeroes)|☆|50%||
 |287|[Find the Duplicate Number](./Algorithms/0287.find-the-duplicate-number)|☆ ☆|43%|❤|
 |289|[Game of Life](./Algorithms/0289.game-of-life)|☆ ☆|36%|❤|
 |380|[Insert Delete GetRandom O(1)](./Algorithms/0380.insert-delete-getrandom-o1)|☆ ☆|39%|❤|
@@ -126,7 +126,7 @@
 |560|[Subarray Sum Equals K](./Algorithms/0560.subarray-sum-equals-k)|☆ ☆|40%|❤|
 |561|[Array Partition I](./Algorithms/0561.array-partition-i)|☆|67%||
 |565|[Array Nesting](./Algorithms/0565.array-nesting)|☆ ☆|49%||
-|566|[Reshape the Matrix](./Algorithms/0566.reshape-the-matrix)|☆|59%||
+|566|[Reshape the Matrix](./Algorithms/0566.reshape-the-matrix)|☆|58%||
 |581|[Shortest Unsorted Continuous Subarray](./Algorithms/0581.shortest-unsorted-continuous-subarray)|☆|29%|❤|
 |605|[Can Place Flowers](./Algorithms/0605.can-place-flowers)|☆|29%|❤|
 |611|[Valid Triangle Number](./Algorithms/0611.valid-triangle-number)|☆ ☆|41%|❤|
