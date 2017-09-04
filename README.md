@@ -8,9 +8,9 @@
 ## 答题进度：24%
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|38 / 144|62 / 248|20 / 92|120 / 484|
+|**Algorithms**|38 / 144|62 / 248|21 / 92|121 / 484|
 |**Draft**|0 / 1|0 / 4|0 / 0|0 / 5|
-|**Total**|38 / 145|62 / 252|20 / 92|120 / 489|
+|**Total**|38 / 145|62 / 252|21 / 92|121 / 489|
 
 > 只统计了免费题 
 ## 参考解答
@@ -59,6 +59,7 @@
 |41|[First Missing Positive](./Algorithms/0041.first-missing-positive)|☆ ☆ ☆|25%||
 |42|[Trapping Rain Water](./Algorithms/0042.trapping-rain-water)|☆ ☆ ☆|36%||
 |43|[Multiply Strings](./Algorithms/0043.multiply-strings)|☆ ☆|27%||
+|44|[Wildcard Matching](./Algorithms/0044.wildcard-matching)|☆ ☆ ☆|20%||
 |45|[Jump Game II](./Algorithms/0045.jump-game-ii)|☆ ☆ ☆|26%||
 |46|[Permutations](./Algorithms/0046.permutations)|☆ ☆|43%||
 |47|[Permutations II](./Algorithms/0047.permutations-ii)|☆ ☆|32%||
