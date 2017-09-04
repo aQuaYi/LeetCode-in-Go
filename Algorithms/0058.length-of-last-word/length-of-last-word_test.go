@@ -1,8 +1,8 @@
 package Problem0058
 
 import (
-	"testing"
 	"fmt"
+	"testing"
 
 	"github.com/stretchr/testify/assert"
 )
@@ -19,7 +19,7 @@ type para struct {
 
 // ans 是答案
 type ans struct {
-	one  int 
+	one int
 }
 
 func Test_Problem0058(t *testing.T) {
@@ -29,13 +29,40 @@ func Test_Problem0058(t *testing.T) {
 
 		question{
 			para{
-					,
+				"haha",
 			},
 			ans{
-					,
+				4,
 			},
 		},
-	
+
+		question{
+			para{
+				"haha ",
+			},
+			ans{
+				4,
+			},
+		},
+		
+		question{
+			para{
+				"",
+			},
+			ans{
+				0,
+			},
+		},
+
+		question{
+			para{
+				"Hello World",
+			},
+			ans{
+				5,
+			},
+		},
+
 		// 如需多个测试，可以复制上方元素。
 	}
 
@@ -43,6 +70,6 @@ func Test_Problem0058(t *testing.T) {
 		a, p := q.ans, q.para
 		fmt.Printf("~~%v~~\n", p)
 
-		ast.Equal(a.one, lengthOfLastWord(p.  ), "输入:%v", p)
+		ast.Equal(a.one, lengthOfLastWord(p.s), "输入:%v", p)
 	}
 }
