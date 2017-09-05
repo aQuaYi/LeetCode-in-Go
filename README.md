@@ -1,6 +1,6 @@
 # [LeetCode](https://leetcode.com)习题的Golang解答
 [![LeetCode](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode Ranking](https://img.shields.io/badge/Ranking-57312-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode Ranking](https://img.shields.io/badge/Ranking-55027-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang)
 
@@ -8,9 +8,9 @@
 ## 答题进度：25%
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|39 / 144|64 / 248|21 / 92|124 / 484|
+|**Algorithms**|39 / 144|64 / 248|22 / 92|125 / 484|
 |**Draft**|0 / 1|0 / 4|0 / 0|0 / 5|
-|**Total**|39 / 145|64 / 252|21 / 92|124 / 489|
+|**Total**|39 / 145|64 / 252|22 / 92|125 / 489|
 
 > 只统计了免费题 
 ## 参考解答
@@ -61,7 +61,7 @@
 |43|[Multiply Strings](./Algorithms/0043.multiply-strings)|☆ ☆|27%||
 |44|[Wildcard Matching](./Algorithms/0044.wildcard-matching)|☆ ☆ ☆|20%|❤|
 |45|[Jump Game II](./Algorithms/0045.jump-game-ii)|☆ ☆ ☆|26%||
-|46|[Permutations](./Algorithms/0046.permutations)|☆ ☆|43%||
+|46|[Permutations](./Algorithms/0046.permutations)|☆ ☆|44%||
 |47|[Permutations II](./Algorithms/0047.permutations-ii)|☆ ☆|32%||
 |48|[Rotate Image](./Algorithms/0048.rotate-image)|☆ ☆|38%||
 |49|[Group Anagrams](./Algorithms/0049.group-anagrams)|☆ ☆|35%|❤|
@@ -80,6 +80,7 @@
 |62|[Unique Paths](./Algorithms/0062.unique-paths)|☆ ☆|41%|❤|
 |63|[Unique Paths II](./Algorithms/0063.unique-paths-ii)|☆ ☆|31%||
 |64|[Minimum Path Sum](./Algorithms/0064.minimum-path-sum)|☆ ☆|38%||
+|65|[Valid Number](./Algorithms/0065.valid-number)|☆ ☆ ☆|12%||
 |66|[Plus One](./Algorithms/0066.plus-one)|☆|38%||
 |73|[Set Matrix Zeroes](./Algorithms/0073.set-matrix-zeroes)|☆ ☆|35%|❤|
 |74|[Search a 2D Matrix](./Algorithms/0074.search-a-2d-matrix)|☆ ☆|35%||
@@ -133,7 +134,7 @@
 |566|[Reshape the Matrix](./Algorithms/0566.reshape-the-matrix)|☆|58%||
 |581|[Shortest Unsorted Continuous Subarray](./Algorithms/0581.shortest-unsorted-continuous-subarray)|☆|29%|❤|
 |605|[Can Place Flowers](./Algorithms/0605.can-place-flowers)|☆|29%|❤|
-|611|[Valid Triangle Number](./Algorithms/0611.valid-triangle-number)|☆ ☆|41%|❤|
+|611|[Valid Triangle Number](./Algorithms/0611.valid-triangle-number)|☆ ☆|40%|❤|
 |621|[Task Scheduler](./Algorithms/0621.task-scheduler)|☆ ☆|41%|❤|
 |628|[Maximum Product of Three Numbers](./Algorithms/0628.maximum-product-of-three-numbers)|☆|45%|❤|
 |643|[Maximum Average Subarray I](./Algorithms/0643.maximum-average-subarray-i)|☆|38%||
