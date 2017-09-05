@@ -4,10 +4,12 @@ import "strings"
 
 func simplifyPath(path string) string {
 	lp := len(path)
-	stack := []string{}
-	dir := []byte{}
+	stack := make([]string, 0, lp/2)
+	dir := make([]byte, 0, lp)
 
 	for i := 0; i < lp; i++ {
+		// 使用前，清空 dir
+		dir = dir[:0]
 		// 截取 dir
 		for i < lp && path[i] != '/' {
 			dir = append(dir, path[i])
@@ -25,10 +27,7 @@ func simplifyPath(path string) string {
 			}
 		default:
 			stack = append(stack, s)
-
 		}
-
-		dir = dir[:0]
 	}
 
 	return "/" + strings.Join(stack, "/")
