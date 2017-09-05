@@ -8,9 +8,9 @@
 ## 答题进度：25%
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|40 / 144|64 / 248|22 / 92|126 / 484|
+|**Algorithms**|41 / 144|64 / 248|22 / 92|127 / 484|
 |**Draft**|0 / 1|0 / 4|0 / 0|0 / 5|
-|**Total**|40 / 145|64 / 252|22 / 92|126 / 489|
+|**Total**|41 / 145|64 / 252|22 / 92|127 / 489|
 
 > 只统计了免费题 
 ## 参考解答
@@ -83,6 +83,7 @@
 |65|[Valid Number](./Algorithms/0065.valid-number)|☆ ☆ ☆|12%||
 |66|[Plus One](./Algorithms/0066.plus-one)|☆|38%||
 |67|[Add Binary](./Algorithms/0067.add-binary)|☆|32%||
+|69|[Sqrt(x)](./Algorithms/0069.sqrtx)|☆|27%||
 |73|[Set Matrix Zeroes](./Algorithms/0073.set-matrix-zeroes)|☆ ☆|35%|❤|
 |74|[Search a 2D Matrix](./Algorithms/0074.search-a-2d-matrix)|☆ ☆|35%||
 |75|[Sort Colors](./Algorithms/0075.sort-colors)|☆ ☆|38%|❤|
