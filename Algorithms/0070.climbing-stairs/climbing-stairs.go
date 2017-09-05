@@ -1,23 +1,16 @@
 package Problem0070
 
 func climbStairs(n int) int {
-	res := 0
-
-	var dfs func(n int)
-	dfs = func(n int) {
-		switch {
-		case n < 0:
-			return
-		case n == 0:
-			res++
-			return
-		default:
-			dfs(n - 1)
-			dfs(n - 2)
-		}
+	if n < 2 {
+		return 1
 	}
 
-	dfs(n)
+	rec := make([]int, n+1)
+	rec[0], rec[1] = 1, 1
 
-	return res
+	for i := 2; i <= n; i++ {
+		rec[i] = rec[i-1] + rec[i-2]
+	}
+
+	return rec[n]
 }

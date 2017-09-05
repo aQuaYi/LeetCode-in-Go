@@ -29,6 +29,15 @@ func Test_Problem0070(t *testing.T) {
 
 		question{
 			para{
+				0,
+			},
+			ans{
+				1,
+			},
+		},
+
+		question{
+			para{
 				10,
 			},
 			ans{
@@ -41,7 +50,7 @@ func Test_Problem0070(t *testing.T) {
 				44,
 			},
 			ans{
-				89,
+				1134903170,
 			},
 		},
 
