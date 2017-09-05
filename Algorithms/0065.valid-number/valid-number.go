@@ -31,6 +31,7 @@ func isNonnegReal(s string, hasDot bool) bool {
 			continue
 		case c == '.':
 			if hasDot {
+				// 前面已经有了一个 '.' 了
 				return false
 			}
 
