@@ -185,6 +185,16 @@ func Test_Problem0065(t *testing.T) {
 				false,
 			},
 		},
+
+		question{
+			para{
+				"-",
+			},
+			ans{
+				false,
+			},
+		},
+
 		question{
 			para{
 				"3.",
@@ -209,6 +219,15 @@ func Test_Problem0065(t *testing.T) {
 			},
 			ans{
 				true,
+			},
+		},
+
+		question{
+			para{
+				"46.5e-",
+			},
+			ans{
+				false,
 			},
 		},
 

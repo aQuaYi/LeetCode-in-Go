@@ -1,26 +1,11 @@
 package Problem0065
 
 func isNumber(s string) bool {
+	// 去掉首位的空格
 	s = trim(s)
-	if len(s) == 0 {
-		return false
-	}
 
-	if yes, idx := hasE(s); yes {
-		return isReal(s[:idx]) && isInteger(s[idx+1:])
-	}
-
+	// 判断是否是实数
 	return isReal(s)
-}
-
-func hasE(s string) (bool, int) {
-	for i, c := range s {
-		if c == 'e' {
-			return true, i
-		}
-	}
-
-	return false, 0
 }
 
 func isReal(s string) bool {
@@ -29,13 +14,13 @@ func isReal(s string) bool {
 	}
 
 	if s[0] == '-' || s[0] == '+' {
-		return isNonnegReal(s[1:])
+		return isNonnegReal(s[1:], false, false)
 	}
 
-	return isNonnegReal(s)
+	return isNonnegReal(s, false, false)
 }
 
-func isNonnegReal(s string) bool {
+func isNonnegReal(s string, hasDot, hasE bool) bool {
 	if len(s) == 0 {
 		return false
 	}
@@ -45,14 +30,23 @@ func isNonnegReal(s string) bool {
 		case '0' <= c && c <= '9':
 			continue
 		case c == '.':
-			if i == len(s)-1 && i != 0 {
+			if i == len(s)-1 && i != 0 && !hasDot {
 				return true
 			}
-			return isNonnegativeInteger(s[i+1:])
+			if i+1 < len(s) && s[i+1] == 'e' {
+				return isInteger(s[i+2:])
+			}
+			return isNonnegReal(s[i+1:], true, hasE)
+		case c == 'e':
+			if i == 0 {
+				return false
+			}
+			return isInteger(s[i+1:])
 		default:
 			return false
 		}
 	}
+
 	return true
 }
 
