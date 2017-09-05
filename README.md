@@ -1,6 +1,6 @@
 # [LeetCode](https://leetcode.com)习题的Golang解答
 [![LeetCode](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode Ranking](https://img.shields.io/badge/Ranking-55027-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode Ranking](https://img.shields.io/badge/Ranking-53244-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang)
 
@@ -10,9 +10,9 @@
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|42 / 144|64 / 248|22 / 92|128 / 484|
+|**Algorithms**|42 / 144|64 / 248|23 / 92|129 / 484|
 |**Draft**|0 / 1|0 / 4|0 / 0|0 / 5|
-|**Total**|42 / 145|64 / 252|22 / 92|128 / 489|
+|**Total**|42 / 145|64 / 252|23 / 92|129 / 489|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -84,6 +84,7 @@
 |65|[Valid Number](./Algorithms/0065.valid-number)|☆ ☆ ☆|12%||
 |66|[Plus One](./Algorithms/0066.plus-one)|☆|38%||
 |67|[Add Binary](./Algorithms/0067.add-binary)|☆|32%||
+|68|[Text Justification](./Algorithms/0068.text-justification)|☆ ☆ ☆|19%||
 |69|[Sqrt(x)](./Algorithms/0069.sqrtx)|☆|27%||
 |70|[Climbing Stairs](./Algorithms/0070.climbing-stairs)|☆|40%||
 |73|[Set Matrix Zeroes](./Algorithms/0073.set-matrix-zeroes)|☆ ☆|35%|❤|
