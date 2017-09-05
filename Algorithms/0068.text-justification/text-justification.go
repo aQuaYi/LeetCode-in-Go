@@ -8,7 +8,7 @@ func fullJustify(words []string, maxWidth int) []string {
 	width := 0
 	isLast := false
 
-	for len(words) > 0 {
+	for !isLast {
 		words, temp, width, isLast = split(words, maxWidth)
 		res = append(res, combine(temp, width, maxWidth, isLast))
 	}
@@ -16,22 +16,22 @@ func fullJustify(words []string, maxWidth int) []string {
 	return res
 }
 
-// 返回待组合的单词，需要组合的单词，和这些单词的长度之和, 是否是结尾
+// 返回不组合的单词，需要组合的单词，和这些单词的长度之和, 是否是结尾
 func split(words []string, maxWidth int) ([]string, []string, int, bool) {
-	res := make([]string, 1)
-	res[0] = words[0]
+	temp := make([]string, 1)
+	temp[0] = words[0]
 	width := len(words[0])
 
 	i := 1
 	for ; i < len(words); i++ {
-		if width+len(res)+len(words[i]) > maxWidth {
+		if width+len(temp)+len(words[i]) > maxWidth {
 			break
 		}
-		res = append(res, words[i])
+		temp = append(temp, words[i])
 		width += len(words[i])
 	}
 
-	return words[i:], res, width, i == len(words)
+	return words[i:], temp, width, i == len(words)
 }
 
 func combine(words []string, width, maxWidth int, isLast bool) string {
