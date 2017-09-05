@@ -1,8 +1,10 @@
 package Problem0069
 
 func mySqrt(x int) int {
-	res := 1
-	for !(res*res <= x && x < (res+1)*(res+1)) {
+	res := x
+
+	// 牛顿法求平方根
+	for res*res > x {
 		res = (res + x/res) / 2
 	}
 
