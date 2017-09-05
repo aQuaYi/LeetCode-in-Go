@@ -1,8 +1,8 @@
 package Problem0068
 
 import (
-	"testing"
 	"fmt"
+	"testing"
 
 	"github.com/stretchr/testify/assert"
 )
@@ -14,13 +14,13 @@ type question struct {
 
 // para 是参数
 type para struct {
-	words []string
- maxWidth int
+	words    []string
+	maxWidth int
 }
 
 // ans 是答案
 type ans struct {
-	one  []string 
+	one []string
 }
 
 func Test_Problem0068(t *testing.T) {
@@ -30,13 +30,14 @@ func Test_Problem0068(t *testing.T) {
 
 		question{
 			para{
-					,
+				[]string{"This", "is", "an", "example", "of", "text", "justification."},
+				16,
 			},
 			ans{
-					,
+				[]string{"This    is    an", "example  of text", "justification.  "},
 			},
 		},
-	
+
 		// 如需多个测试，可以复制上方元素。
 	}
 
@@ -44,6 +45,6 @@ func Test_Problem0068(t *testing.T) {
 		a, p := q.ans, q.para
 		fmt.Printf("~~%v~~\n", p)
 
-		ast.Equal(a.one, fullJustify(p.  ), "输入:%v", p)
+		ast.Equal(a.one, fullJustify(p.words, p.maxWidth), "输入:%v", p)
 	}
 }
