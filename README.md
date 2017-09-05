@@ -10,9 +10,9 @@
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|42 / 144|64 / 248|23 / 92|129 / 484|
+|**Algorithms**|42 / 144|65 / 248|23 / 92|130 / 484|
 |**Draft**|0 / 1|0 / 4|0 / 0|0 / 5|
-|**Total**|42 / 145|64 / 252|23 / 92|129 / 489|
+|**Total**|42 / 145|65 / 252|23 / 92|130 / 489|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -87,6 +87,7 @@
 |68|[Text Justification](./Algorithms/0068.text-justification)|☆ ☆ ☆|19%||
 |69|[Sqrt(x)](./Algorithms/0069.sqrtx)|☆|27%||
 |70|[Climbing Stairs](./Algorithms/0070.climbing-stairs)|☆|40%||
+|71|[Simplify Path](./Algorithms/0071.simplify-path)|☆ ☆|25%||
 |73|[Set Matrix Zeroes](./Algorithms/0073.set-matrix-zeroes)|☆ ☆|35%|❤|
 |74|[Search a 2D Matrix](./Algorithms/0074.search-a-2d-matrix)|☆ ☆|35%||
 |75|[Sort Colors](./Algorithms/0075.sort-colors)|☆ ☆|38%|❤|
