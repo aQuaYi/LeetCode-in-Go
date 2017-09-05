@@ -90,3 +90,18 @@ func Test_Problem0071(t *testing.T) {
 		ast.Equal(a.one, simplifyPath(p.path), "输入:%v", p)
 	}
 }
+
+func Benchmark_NewSlice(b *testing.B) {
+	dir := make([]byte, 0, 3)
+	dir = dir[:0]
+	for i := 0; i < b.N; i++ {
+		dir = []byte{}
+	}
+}
+
+func Benchmark_CutSlice(b *testing.B) {
+	dir := make([]byte, 0, 3)
+	for i := 0; i < b.N; i++ {
+		dir = dir[:0]
+	}
+}

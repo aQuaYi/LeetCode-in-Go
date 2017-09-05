@@ -9,17 +9,19 @@ func simplifyPath(path string) string {
 
 	for i := 0; i < lp; i++ {
 		// 使用前，清空 dir
+		// 这个方法比 dir = []byte{} 快了近 8 倍
 		dir = dir[:0]
-		// 截取 dir
+		// 获取 dir
 		for i < lp && path[i] != '/' {
 			dir = append(dir, path[i])
 			i++
 		}
 
 		s := string(dir)
+
 		switch s {
 		case ".", "":
-			continue
+			// do nothing
 		case "..":
 			if len(stack) > 0 {
 				// pop
