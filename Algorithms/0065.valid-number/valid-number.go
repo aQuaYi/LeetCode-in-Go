@@ -14,13 +14,13 @@ func isReal(s string) bool {
 	}
 
 	if s[0] == '-' || s[0] == '+' {
-		return isNonnegReal(s[1:], false, false)
+		return isNonnegReal(s[1:], false)
 	}
 
-	return isNonnegReal(s, false, false)
+	return isNonnegReal(s, false)
 }
 
-func isNonnegReal(s string, hasDot, hasE bool) bool {
+func isNonnegReal(s string, hasDot bool) bool {
 	if len(s) == 0 {
 		return false
 	}
@@ -31,14 +31,18 @@ func isNonnegReal(s string, hasDot, hasE bool) bool {
 			continue
 		case c == '.':
 			if i == len(s)-1 && i != 0 && !hasDot {
+				// 以 '.' 结尾的情况
 				return true
 			}
 			if i+1 < len(s) && s[i+1] == 'e' {
+				// "2.e3" 是正确的数字表示
 				return isInteger(s[i+2:])
 			}
-			return isNonnegReal(s[i+1:], true, hasE)
+			// 继续判断是否为 非负实数
+			return isNonnegReal(s[i+1:], true)
 		case c == 'e':
 			if i == 0 {
+				// 'e' 不能开头
 				return false
 			}
 			return isInteger(s[i+1:])
