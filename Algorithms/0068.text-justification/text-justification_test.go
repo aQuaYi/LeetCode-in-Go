@@ -38,6 +38,15 @@ func Test_Problem0068(t *testing.T) {
 			},
 		},
 
+		question{
+			para{
+				[]string{"What", "must", "be", "shall", "be."},
+				12,
+			},
+			ans{
+				[]string{"What must be", "shall be.   "},
+			},
+		},
 		// 如需多个测试，可以复制上方元素。
 	}
 
