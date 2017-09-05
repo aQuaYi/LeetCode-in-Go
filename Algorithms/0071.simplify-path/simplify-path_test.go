@@ -63,6 +63,23 @@ func Test_Problem0071(t *testing.T) {
 			},
 		},
 
+		question{
+			para{
+				"/home/./foo/",
+			},
+			ans{
+				"/home/foo",
+			},
+		},
+
+		question{
+			para{
+				"/home////////////////////////foo/",
+			},
+			ans{
+				"/home/foo",
+			},
+		},
 		// 如需多个测试，可以复制上方元素。
 	}
 
