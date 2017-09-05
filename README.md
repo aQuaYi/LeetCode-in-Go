@@ -5,12 +5,12 @@
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang)
 
 
-## 答题进度：25%
+## 答题进度：26%
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|41 / 144|64 / 248|22 / 92|127 / 484|
+|**Algorithms**|42 / 144|64 / 248|22 / 92|128 / 484|
 |**Draft**|0 / 1|0 / 4|0 / 0|0 / 5|
-|**Total**|41 / 145|64 / 252|22 / 92|127 / 489|
+|**Total**|42 / 145|64 / 252|22 / 92|128 / 489|
 
 > 只统计了免费题 
 ## 参考解答
@@ -84,6 +84,7 @@
 |66|[Plus One](./Algorithms/0066.plus-one)|☆|38%||
 |67|[Add Binary](./Algorithms/0067.add-binary)|☆|32%||
 |69|[Sqrt(x)](./Algorithms/0069.sqrtx)|☆|27%||
+|70|[Climbing Stairs](./Algorithms/0070.climbing-stairs)|☆|40%||
 |73|[Set Matrix Zeroes](./Algorithms/0073.set-matrix-zeroes)|☆ ☆|35%|❤|
 |74|[Search a 2D Matrix](./Algorithms/0074.search-a-2d-matrix)|☆ ☆|35%||
 |75|[Sort Colors](./Algorithms/0075.sort-colors)|☆ ☆|38%|❤|
