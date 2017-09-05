@@ -233,6 +233,15 @@ func Test_Problem0065(t *testing.T) {
 
 		question{
 			para{
+				".e2",
+			},
+			ans{
+				false,
+			},
+		},
+
+		question{
+			para{
 				"..2",
 			},
 			ans{
