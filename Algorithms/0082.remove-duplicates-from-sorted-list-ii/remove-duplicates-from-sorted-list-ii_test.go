@@ -38,10 +38,10 @@ func Test_Problem0082(t *testing.T) {
 
 		question{
 			para{
-				[]int{1, 1, 2, 2, 3, 3, 4, 4, 5},
+				[]int{1, 1, 2, 2, 2, 2, 3, 3, 4, 4, 5, 6, 7, 8},
 			},
 			ans{
-				[]int{5},
+				[]int{5, 6, 7, 8},
 			},
 		},
 
