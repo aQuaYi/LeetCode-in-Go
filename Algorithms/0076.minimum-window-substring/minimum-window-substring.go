@@ -1,57 +1,48 @@
 package Problem0076
 
-import (
-	"sort"
-)
-
 func minWindow(s string, t string) string {
-	rec := make(map[byte][]int, len(s))
+	sLen, tLen := len(s), len(t)
 
-	for i := range s {
-		rec[s[i]] = append(rec[s[i]], i)
-	}
-
-	// 检查，t 中的字母是否都在 s 中
+	need := [256]byte{}
 	for i := range t {
-		if len(rec[t[i]]) == 0 {
-			return ""
-		}
+		need[t[i]]++
 	}
 
-	lt := len(t)
-	min := len(s) + 1
-	first, last := 0, 0
-	list := make([]int, lt)
+	has := [256]byte{}
 
-	var dfs func(int)
-	dfs = func(idx int) {
-		if idx == lt {
-			temp := deepCopy(list)
-			sort.Ints(temp)
-			dist := temp[lt-1] - temp[0]
-			if min > dist {
-				first, last = temp[0], temp[lt-1]
-				min = dist
+	min := sLen + 1
+	begin, end, winBegin, winEnd, count := 0, 0, 0, 0, 0
+
+	for ; end < sLen; end++ {
+		if need[s[end]] == 0 {
+			continue
+		}
+
+		has[s[end]]++
+		if has[s[end]] <= need[s[end]] {
+			count++
+		}
+
+		if count == tLen {
+			for need[s[begin]] == 0 || has[s[begin]] > need[s[begin]] {
+				if has[s[begin]] > need[s[begin]] {
+					has[s[begin]]--
+				}
+				begin++
 			}
-			return
-		}
 
-		indexs := deepCopy(rec[t[idx]])
-
-		for i := 0; i < len(indexs); i++ {
-			list[idx] = indexs[i]
-
-			dfs(idx + 1)
+			temp := end - begin + 1
+			if min > temp {
+				min = temp
+				winBegin = begin
+				winEnd = end
+			}
 		}
 	}
 
-	dfs(0)
+	if count != tLen {
+		return ""
+	}
 
-	return s[first : last+1]
-}
-
-func deepCopy(src []int) []int {
-	dst := make([]int, len(src))
-	copy(dst, src)
-	return dst
+	return s[winBegin : winEnd+1]
 }

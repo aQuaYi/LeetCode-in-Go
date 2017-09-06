@@ -16,5 +16,6 @@ Note:
 1. If there are multiple such windows, you are guaranteed that there will always be only one unique minimum window in S.
 
 ## 解题思路
+双指针的解法
 
 见程序注释
