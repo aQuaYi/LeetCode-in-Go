@@ -1,64 +1,42 @@
 package Problem0072
 
 func minDistance(word1 string, word2 string) int {
-	// 转换是可逆的
-	// 互换可以只实现一套逻辑
-	if len(word1) > len(word2) {
-		word1, word2 = word2, word1
+	m := len(word1)
+	n := len(word2)
+	cost := 0
+
+	dp := make([][]int, m+1)
+	for i := range dp {
+		dp[i] = make([]int, n+1)
 	}
 
-	targetSize := len(word2)
-	if targetSize == 0 {
-		return 0
+	for i := 0; i <= m; i++ {
+		dp[i][0] = i
+	}
+	for j := 0; j <= n; j++ {
+		dp[0][j] = j
 	}
 
-	origin := []byte(word1)
-	target := []byte(word2)
+	for i := 1; i <= m; i++ {
+		for j := 1; j <= n; j++ {
+			dp[i][j] = min(dp[i-1][j]+1, dp[i][j-1]+1)
 
-	originSize := len(word1)
-	if originSize == targetSize {
-		return countDiff(origin, target)
-	}
-
-	match := 0
-	min := targetSize * 2
-
-	var dfs func(int, int, int)
-
-	dfs = func(first, last, idx int) {
-		if idx == originSize {
-			temp := targetSize - match
-			if min > temp {
-				min = temp
-			}
-			return
-		}
-
-		for i := first; i <= last; i++ {
-			if target[i] == origin[idx] {
-				match++
+			if word1[i-1] == word2[j-1] {
+				cost = 0
+			} else {
+				cost = 1
 			}
 
-			dfs(i+1, last+1, idx+1)
-
-			if target[i] == origin[idx] {
-				match--
-			}
+			dp[i][j] = min(dp[i][j], dp[i-1][j-1]+cost)
 		}
 	}
 
-	dfs(0, targetSize-originSize, 0)
-
-	return min
+	return dp[m][n]
 }
 
-func countDiff(bs1, bs2 []byte) int {
-	res := 0
-	for i := range bs1 {
-		if bs1[i] != bs2[i] {
-			res++
-		}
+func min(a, b int) int {
+	if a < b {
+		return a
 	}
-
-	return res
+	return b
 }
