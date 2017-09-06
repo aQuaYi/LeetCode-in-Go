@@ -10,9 +10,9 @@
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|42 / 144|65 / 248|23 / 92|130 / 484|
+|**Algorithms**|42 / 144|65 / 248|24 / 92|131 / 484|
 |**Draft**|0 / 1|0 / 4|0 / 0|0 / 5|
-|**Total**|42 / 145|65 / 252|23 / 92|130 / 489|
+|**Total**|42 / 145|65 / 252|24 / 92|131 / 489|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -88,6 +88,7 @@
 |69|[Sqrt(x)](./Algorithms/0069.sqrtx)|☆|27%||
 |70|[Climbing Stairs](./Algorithms/0070.climbing-stairs)|☆|40%||
 |71|[Simplify Path](./Algorithms/0071.simplify-path)|☆ ☆|25%||
+|72|[Edit Distance](./Algorithms/0072.edit-distance)|☆ ☆ ☆|31%|❤|
 |73|[Set Matrix Zeroes](./Algorithms/0073.set-matrix-zeroes)|☆ ☆|35%|❤|
 |74|[Search a 2D Matrix](./Algorithms/0074.search-a-2d-matrix)|☆ ☆|35%||
 |75|[Sort Colors](./Algorithms/0075.sort-colors)|☆ ☆|38%|❤|
@@ -140,11 +141,11 @@
 |566|[Reshape the Matrix](./Algorithms/0566.reshape-the-matrix)|☆|58%||
 |581|[Shortest Unsorted Continuous Subarray](./Algorithms/0581.shortest-unsorted-continuous-subarray)|☆|29%|❤|
 |605|[Can Place Flowers](./Algorithms/0605.can-place-flowers)|☆|29%|❤|
-|611|[Valid Triangle Number](./Algorithms/0611.valid-triangle-number)|☆ ☆|40%|❤|
+|611|[Valid Triangle Number](./Algorithms/0611.valid-triangle-number)|☆ ☆|41%|❤|
 |621|[Task Scheduler](./Algorithms/0621.task-scheduler)|☆ ☆|41%|❤|
 |628|[Maximum Product of Three Numbers](./Algorithms/0628.maximum-product-of-three-numbers)|☆|45%|❤|
 |643|[Maximum Average Subarray I](./Algorithms/0643.maximum-average-subarray-i)|☆|38%||
-|661|[Image Smoother](./Algorithms/0661.image-smoother)|☆|47%||
+|661|[Image Smoother](./Algorithms/0661.image-smoother)|☆|46%||
 |667|[Beautiful Arrangement II](./Algorithms/0667.beautiful-arrangement-ii)|☆ ☆|51%||
 
 
