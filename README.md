@@ -5,14 +5,14 @@
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang)
 
 
-## 答题进度：26%
+## 答题进度：27%
 > 仅含免费题
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|42 / 144|65 / 248|24 / 92|131 / 484|
+|**Algorithms**|43 / 144|66 / 248|24 / 92|133 / 484|
 |**Draft**|0 / 1|0 / 4|0 / 0|0 / 5|
-|**Total**|42 / 145|65 / 252|24 / 92|131 / 489|
+|**Total**|43 / 145|66 / 252|24 / 92|133 / 489|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -96,6 +96,8 @@
 |79|[Word Search](./Algorithms/0079.word-search)|☆ ☆|26%||
 |80|[Remove Duplicates from Sorted Array II](./Algorithms/0080.remove-duplicates-from-sorted-array-ii)|☆ ☆|36%|❤|
 |81|[Search in Rotated Sorted Array II](./Algorithms/0081.search-in-rotated-sorted-array-ii)|☆ ☆|32%||
+|82|[Remove Duplicates from Sorted List II](./Algorithms/0082.remove-duplicates-from-sorted-list-ii)|☆ ☆|29%|❤|
+|83|[Remove Duplicates from Sorted List](./Algorithms/0083.remove-duplicates-from-sorted-list)|☆|39%||
 |84|[Largest Rectangle in Histogram](./Algorithms/0084.largest-rectangle-in-histogram)|☆ ☆ ☆|26%|❤|
 |85|[Maximal Rectangle](./Algorithms/0085.maximal-rectangle)|☆ ☆ ☆|28%|❤|
 |88|[Merge Sorted Array](./Algorithms/0088.merge-sorted-array)|☆|32%||
