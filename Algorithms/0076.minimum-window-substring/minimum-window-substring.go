@@ -18,20 +18,23 @@ func minWindow(s string, t string) string {
 		}
 	}
 
+	lt := len(t)
 	min := len(s) + 1
 	first, last := 0, 0
-	list := make([]int, len(t))
+	list := make([]int, lt)
 
 	var dfs func(int)
 	dfs = func(idx int) {
-		if idx == len(t) {
-			temp := make([]int, len(t))
+		if idx == lt {
+			temp := make([]int, lt)
 			copy(temp, list)
 			sort.Ints(temp)
-			dist := temp[len(t)-1] - temp[0]
+			dist := temp[lt-1] - temp[0]
 			if min > dist {
-				first, last = temp[0], temp[len(t)-1]
+				first, last = temp[0], temp[lt-1]
+				min = dist
 			}
+			return
 		}
 
 		for i := 0; i < len(rec[t[idx]]); i++ {

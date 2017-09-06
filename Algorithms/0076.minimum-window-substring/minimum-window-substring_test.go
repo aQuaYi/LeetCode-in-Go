@@ -30,6 +30,16 @@ func Test_Problem0076(t *testing.T) {
 
 		question{
 			para{
+				"a",
+				"aa",
+			},
+			ans{
+				"",
+			},
+		},
+
+		question{
+			para{
 				"ADOBECODEBANC",
 				"ABC",
 			},
