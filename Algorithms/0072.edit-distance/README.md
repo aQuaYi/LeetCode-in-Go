@@ -10,7 +10,7 @@ b) Delete a character
 c) Replace a character
 ```
 
-## 动态规划思想：
+## 动态规划思想：[参考源](http://www.cnblogs.com/AndyJee/p/4602817.html)
 
 假设dp[i][j]表示以S[i]结尾的字符串和以T[j]结尾的字符串转换所需的最小操作数，考虑三种操作，然后取三者最小值：
 
