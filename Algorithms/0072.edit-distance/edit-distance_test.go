@@ -30,6 +30,36 @@ func Test_Problem0072(t *testing.T) {
 
 		question{
 			para{
+				"sea",
+				"eat",
+			},
+			ans{
+				2,
+			},
+		},
+
+		question{
+			para{
+				"horse",
+				"ros",
+			},
+			ans{
+				3,
+			},
+		},
+
+		question{
+			para{
+				"",
+				"",
+			},
+			ans{
+				0,
+			},
+		},
+
+		question{
+			para{
 				"gaod",
 				"bad",
 			},

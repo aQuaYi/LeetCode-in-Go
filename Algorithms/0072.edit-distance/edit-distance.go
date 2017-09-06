@@ -7,8 +7,8 @@ func minDistance(word1 string, word2 string) int {
 		word1, word2 = word2, word1
 	}
 
-	size := len(word2)
-	if size == 0 {
+	targetSize := len(word2)
+	if targetSize == 0 {
 		return 0
 	}
 
@@ -16,49 +16,40 @@ func minDistance(word1 string, word2 string) int {
 	target := []byte(word2)
 
 	originSize := len(word1)
-	if originSize == size {
+	if originSize == targetSize {
 		return countDiff(origin, target)
 	}
 
 	match := 0
-	min := size * 2
+	min := targetSize * 2
 
 	var dfs func(int, int, int)
 
-	dfs = func(start, width, idx int) {
+	dfs = func(first, last, idx int) {
 		if idx == originSize {
-			temp := size - match
+			temp := targetSize - match
 			if min > temp {
 				min = temp
 			}
 			return
 		}
 
-		for i := start; i <= start+width; i++ {
-			if origin[idx] == target[i] {
+		for i := first; i <= last; i++ {
+			if target[i] == origin[idx] {
 				match++
 			}
 
-			if width > 0 {
-				dfs(i+1, width-1, idx+1)
-			} else {
-				dfs(i+1, 0, idx+1)
-			}
+			dfs(i+1, last+1, idx+1)
 
-			if origin[idx] == target[i] {
+			if target[i] == origin[idx] {
 				match--
 			}
-
 		}
 	}
 
-	dfs(0, size-len(word1), 0)
+	dfs(0, targetSize-originSize, 0)
 
 	return min
-}
-
-func insert() {
-
 }
 
 func countDiff(bs1, bs2 []byte) int {
