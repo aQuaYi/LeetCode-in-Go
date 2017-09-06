@@ -26,8 +26,7 @@ func minWindow(s string, t string) string {
 	var dfs func(int)
 	dfs = func(idx int) {
 		if idx == lt {
-			temp := make([]int, lt)
-			copy(temp, list)
+			temp := deepCopy(list)
 			sort.Ints(temp)
 			dist := temp[lt-1] - temp[0]
 			if min > dist {
@@ -37,8 +36,11 @@ func minWindow(s string, t string) string {
 			return
 		}
 
-		for i := 0; i < len(rec[t[idx]]); i++ {
-			list[idx] = rec[t[idx]][i]
+		indexs := deepCopy(rec[t[idx]])
+
+		for i := 0; i < len(indexs); i++ {
+			list[idx] = indexs[i]
+
 			dfs(idx + 1)
 		}
 	}
@@ -46,4 +48,10 @@ func minWindow(s string, t string) string {
 	dfs(0)
 
 	return s[first : last+1]
+}
+
+func deepCopy(src []int) []int {
+	dst := make([]int, len(src))
+	copy(dst, src)
+	return dst
 }
