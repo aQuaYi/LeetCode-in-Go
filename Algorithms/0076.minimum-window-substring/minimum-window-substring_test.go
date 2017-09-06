@@ -38,6 +38,16 @@ func Test_Problem0076(t *testing.T) {
 			},
 		},
 
+		question{
+			para{
+				"ADOBECODEBANC",
+				"ABCZ",
+			},
+			ans{
+				"",
+			},
+		},
+
 		// 如需多个测试，可以复制上方元素。
 	}
 
