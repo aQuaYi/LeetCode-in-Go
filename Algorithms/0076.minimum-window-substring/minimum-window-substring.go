@@ -3,12 +3,12 @@ package Problem0076
 func minWindow(s string, t string) string {
 	sLen, tLen := len(s), len(t)
 
-	need := [256]byte{}
+	need := [256]int{}
 	for i := range t {
 		need[t[i]]++
 	}
 
-	has := [256]byte{}
+	has := [256]int{}
 
 	min := sLen + 1
 	begin, end, winBegin, winEnd, count := 0, 0, 0, 0, 0
@@ -18,10 +18,10 @@ func minWindow(s string, t string) string {
 			continue
 		}
 
-		has[s[end]]++
-		if has[s[end]] <= need[s[end]] {
+		if has[s[end]] < need[s[end]] {
 			count++
 		}
+		has[s[end]]++
 
 		if count == tLen {
 			for need[s[begin]] == 0 || has[s[begin]] > need[s[begin]] {
@@ -40,7 +40,7 @@ func minWindow(s string, t string) string {
 		}
 	}
 
-	if count != tLen {
+	if count < tLen {
 		return ""
 	}
 
