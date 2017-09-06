@@ -1,6 +1,6 @@
 # [LeetCode](https://leetcode.com)习题的Golang解答
 [![LeetCode](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode Ranking](https://img.shields.io/badge/Ranking-53244-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode Ranking](https://img.shields.io/badge/Ranking-50992-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang)
 
@@ -10,9 +10,9 @@
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|43 / 144|66 / 248|24 / 92|133 / 484|
+|**Algorithms**|43 / 144|66 / 248|25 / 92|134 / 484|
 |**Draft**|0 / 1|0 / 4|0 / 0|0 / 5|
-|**Total**|43 / 145|66 / 252|24 / 92|133 / 489|
+|**Total**|43 / 145|66 / 252|25 / 92|134 / 489|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -92,6 +92,7 @@
 |73|[Set Matrix Zeroes](./Algorithms/0073.set-matrix-zeroes)|☆ ☆|35%|❤|
 |74|[Search a 2D Matrix](./Algorithms/0074.search-a-2d-matrix)|☆ ☆|35%||
 |75|[Sort Colors](./Algorithms/0075.sort-colors)|☆ ☆|38%|❤|
+|76|[Minimum Window Substring](./Algorithms/0076.minimum-window-substring)|☆ ☆ ☆|25%|❤|
 |78|[Subsets](./Algorithms/0078.subsets)|☆ ☆|40%|❤|
 |79|[Word Search](./Algorithms/0079.word-search)|☆ ☆|26%||
 |80|[Remove Duplicates from Sorted Array II](./Algorithms/0080.remove-duplicates-from-sorted-array-ii)|☆ ☆|36%|❤|
