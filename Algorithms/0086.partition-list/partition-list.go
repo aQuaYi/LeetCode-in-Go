@@ -33,10 +33,10 @@ func partition(head *ListNode, x int) *ListNode {
 	}
 
 	// 把两端首尾相连
-	head = lessHead.Next
 	lessEnd.Next = noLessHead.Next
 	// 注意封闭 noLessEnd
 	noLessEnd.Next = nil
 
+	head = lessHead.Next
 	return head
 }
