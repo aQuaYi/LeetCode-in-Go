@@ -10,9 +10,9 @@
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|43 / 144|68 / 248|26 / 92|137 / 484|
+|**Algorithms**|43 / 144|69 / 248|26 / 92|138 / 484|
 |**Draft**|0 / 1|0 / 4|0 / 0|0 / 5|
-|**Total**|43 / 145|68 / 252|26 / 92|137 / 489|
+|**Total**|43 / 145|69 / 252|26 / 92|138 / 489|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -105,6 +105,7 @@
 |86|[Partition List](./Algorithms/0086.partition-list)|☆ ☆|32%||
 |87|[Scramble String](./Algorithms/0087.scramble-string)|☆ ☆ ☆|29%|❤|
 |88|[Merge Sorted Array](./Algorithms/0088.merge-sorted-array)|☆|32%||
+|89|[Gray Code](./Algorithms/0089.gray-code)|☆ ☆|41%||
 |90|[Subsets II](./Algorithms/0090.subsets-ii)|☆ ☆|36%|❤|
 |118|[Pascal's Triangle](./Algorithms/0118.pascals-triangle)|☆|38%||
 |119|[Pascal's Triangle II](./Algorithms/0119.pascals-triangle-ii)|☆|36%||
