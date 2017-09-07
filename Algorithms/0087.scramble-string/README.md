@@ -44,4 +44,15 @@ Given two strings s1 and s2 of the same length, determine if s2 is a scrambled s
 
 ## 解题思路
 
-见程序注释
+[来源](http://blog.sina.com.cn/s/blog_b9285de20101gy6n.html)
+
+dp[i][j][k] 代表了s1从i开始，s2从j开始，长度为k的两个substring是否为scramble
+string。
+
+有三种情况需要考虑：
+1. 如果两个substring相等的话，则为true
+2. 如果两个substring中间某一个点，左边的substrings为scramble string，
+同时右边的substrings也为scramble string，则为true
+3. 如果两个substring中间某一个点，s1左边的substring和s2右边的substring为scramble
+string, 同时s1右边substring和s2左边的substring也为scramble
+string，则为true
