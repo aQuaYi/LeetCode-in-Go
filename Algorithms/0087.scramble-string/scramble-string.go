@@ -14,7 +14,7 @@ func isScramble(a, b string) bool {
 		rec[a[i]]++
 		rec[b[i]]--
 	}
-	for i := 0; i < 26; i++ {
+	for i := range rec {
 		if rec[i] != 0 {
 			return false
 		}
