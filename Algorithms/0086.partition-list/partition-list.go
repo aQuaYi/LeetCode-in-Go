@@ -12,11 +12,12 @@ func partition(head *ListNode, x int) *ListNode {
 		return head
 	}
 
-	// *Head 本身是空的
-	// *Head.Next 才是真正的 head
-	// 这样处理是为了 for 循环中的逻辑简单
+	// 存放 <x 的节点的链
 	lessHead := &ListNode{}
+	// 存放 >=x 的节点的链
 	noLessHead := &ListNode{}
+	// Head.Next 才是真正的 head
+	// 这样处理是为了 for 循环中的逻辑简单
 
 	lessEnd := lessHead
 	noLessEnd := noLessHead
@@ -32,7 +33,7 @@ func partition(head *ListNode, x int) *ListNode {
 		head = head.Next
 	}
 
-	// 把两端首尾相连
+	// 把两部分首尾相连
 	lessEnd.Next = noLessHead.Next
 	// 注意封闭 noLessEnd
 	noLessEnd.Next = nil
