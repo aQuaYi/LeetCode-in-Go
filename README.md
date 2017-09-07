@@ -1,6 +1,6 @@
 # [LeetCode](https://leetcode.com)习题的Golang解答
 [![LeetCode](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode Ranking](https://img.shields.io/badge/Ranking-50992-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode Ranking](https://img.shields.io/badge/Ranking-48897-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang)
 
@@ -10,9 +10,9 @@
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|43 / 144|69 / 248|26 / 92|138 / 484|
+|**Algorithms**|43 / 144|70 / 248|26 / 92|139 / 484|
 |**Draft**|0 / 1|0 / 4|0 / 0|0 / 5|
-|**Total**|43 / 145|69 / 252|26 / 92|138 / 489|
+|**Total**|43 / 145|70 / 252|26 / 92|139 / 489|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -107,6 +107,7 @@
 |88|[Merge Sorted Array](./Algorithms/0088.merge-sorted-array)|☆|32%||
 |89|[Gray Code](./Algorithms/0089.gray-code)|☆ ☆|41%||
 |90|[Subsets II](./Algorithms/0090.subsets-ii)|☆ ☆|36%|❤|
+|91|[Decode Ways](./Algorithms/0091.decode-ways)|☆ ☆|19%|❤|
 |118|[Pascal's Triangle](./Algorithms/0118.pascals-triangle)|☆|38%||
 |119|[Pascal's Triangle II](./Algorithms/0119.pascals-triangle-ii)|☆|36%||
 |120|[Triangle](./Algorithms/0120.triangle)|☆ ☆|33%|❤|
