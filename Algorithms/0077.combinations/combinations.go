@@ -1,7 +1,6 @@
 package Problem0077
 
 func combine(n int, k int) [][]int {
-	r := make([]bool, n+1)
 	combination := make([]int, k)
 	res := [][]int{}
 
@@ -15,10 +14,8 @@ func combine(n int, k int) [][]int {
 		}
 
 		for i := begin; i <= n+1-k+idx; i++ {
-			r[i] = true
 			combination[idx] = i
 			dfs(idx+1, i+1)
-			r[i] = false
 		}
 	}
 
