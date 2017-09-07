@@ -51,8 +51,5 @@ string。
 
 有三种情况需要考虑：
 1. 如果两个substring相等的话，则为true
-2. 如果两个substring中间某一个点，左边的substrings为scramble string，
-同时右边的substrings也为scramble string，则为true
-3. 如果两个substring中间某一个点，s1左边的substring和s2右边的substring为scramble
-string, 同时s1右边substring和s2左边的substring也为scramble
-string，则为true
+2. 如果两个substring中间某一个点，左边的substrings为scramble string，同时右边的substrings也为scramble string，则为true
+3. 如果两个substring中间某一个点，s1左边的substring和s2右边的substring为scramble string, 同时s1右边substring和s2左边的substring也为scramble string，则为true
