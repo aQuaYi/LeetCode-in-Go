@@ -38,6 +38,25 @@ func Test_Problem0086(t *testing.T) {
 			},
 		},
 
+		question{
+			para{
+				[]int{1, 1},
+				0,
+			},
+			ans{
+				[]int{1, 1},
+			},
+		},
+
+		question{
+			para{
+				[]int{1},
+				3,
+			},
+			ans{
+				[]int{1},
+			},
+		},
 		// 如需多个测试，可以复制上方元素。
 	}
 
@@ -52,10 +71,15 @@ func Test_Problem0086(t *testing.T) {
 // convert *ListNode to []int
 func l2s(head *ListNode) []int {
 	res := []int{}
+	length := 10
 
 	for head != nil {
+		length--
 		res = append(res, head.Val)
 		head = head.Next
+		if length < 0 {
+			panic("链表长度超过10，可能出错")
+		}
 	}
 
 	return res
