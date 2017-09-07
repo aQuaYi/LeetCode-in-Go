@@ -1,42 +1,39 @@
 package Problem0087
 
 func isScramble(a, b string) bool {
+	// 相等的话，则为true
 	if a == b {
 		return true
 	}
-	// 题目规定了， s1 与 s2 等长
+
 	n := len(a)
 
-	dp := make([][][]bool, n)
-
-	for i := n - 1; i >= 0; i-- {
-		dp[i] = make([][]bool, n)
-		for j := n - 1; j >= 0; j-- {
-			dp[i][j] = make([]bool, n+1)
-
-			maxK := n - max(i, j)
-			for k := 1; k <= maxK; k++ {
-				if a[i:i+k] == b[j:j+k] {
-					dp[i][j][k] = true
-				} else {
-					for d := 1; d < k; d++ {
-						if (dp[i][j][d] && dp[i+d][j+d][k-d]) ||
-							(dp[i][j+k-d][d] && dp[i+d][j][k-d]) {
-							dp[i][j][k] = true
-							break
-						}
-					}
-				}
-			}
+	// 检查 两个字符串是否具有相同的字符
+	rec := make([]int, 256)
+	for i := 0; i < n; i++ {
+		rec[a[i]]++
+		rec[b[i]]--
+	}
+	for i := 0; i < 26; i++ {
+		if rec[i] != 0 {
+			return false
 		}
 	}
 
-	return dp[0][0][n]
-}
+	// 检查子字符串是否 scramble
+	for i := 1; i < n; i++ {
+		// 如果两个string中间某一个点，左边的substrings为scramble string，同时右边的substrings也为scramble string，则为true
+		if isScramble(a[0:i], b[0:i]) &&
+			isScramble(a[i:], b[i:]) {
+			return true
+		}
 
-func max(a, b int) int {
-	if a > b {
-		return a
+		// 如果两个string中间某一个点，s1左边的substring和s2右边的substring为scramble string, 同时s1右边substring和s2左边的substring也为scramble string，则为true
+		if isScramble(a[0:i], b[n-i:]) &&
+			isScramble(a[i:], b[0:n-i]) {
+			return true
+		}
 	}
-	return b
+
+	return false
 }
