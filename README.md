@@ -5,14 +5,14 @@
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang)
 
 
-## 答题进度：27%
+## 答题进度：28%
 > 仅含免费题
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|43 / 144|68 / 248|25 / 92|136 / 484|
+|**Algorithms**|43 / 144|68 / 248|26 / 92|137 / 484|
 |**Draft**|0 / 1|0 / 4|0 / 0|0 / 5|
-|**Total**|43 / 145|68 / 252|25 / 92|136 / 489|
+|**Total**|43 / 145|68 / 252|26 / 92|137 / 489|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -103,6 +103,7 @@
 |84|[Largest Rectangle in Histogram](./Algorithms/0084.largest-rectangle-in-histogram)|☆ ☆ ☆|26%|❤|
 |85|[Maximal Rectangle](./Algorithms/0085.maximal-rectangle)|☆ ☆ ☆|28%|❤|
 |86|[Partition List](./Algorithms/0086.partition-list)|☆ ☆|32%||
+|87|[Scramble String](./Algorithms/0087.scramble-string)|☆ ☆ ☆|29%|❤|
 |88|[Merge Sorted Array](./Algorithms/0088.merge-sorted-array)|☆|32%||
 |90|[Subsets II](./Algorithms/0090.subsets-ii)|☆ ☆|36%|❤|
 |118|[Pascal's Triangle](./Algorithms/0118.pascals-triangle)|☆|38%||
