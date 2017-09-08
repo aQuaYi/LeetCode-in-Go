@@ -20,6 +20,10 @@ func Test_l2s(t *testing.T) {
 		},
 	}
 	ast.Equal([]int{1, 2, 3}, l2s(one2three), "没有成功地转换成[]int")
+
+	limit := 100
+	overLimitList := s2l(make([]int, limit+1))
+	ast.Panics(func() { l2s(overLimitList) }, "转换深度超过 %d 限制的链条，没有 panic", limit)
 }
 
 func Test_s2l(t *testing.T) {
