@@ -11,10 +11,10 @@ func numDecodings(s string) int {
 	dp[0], dp[1] = 1, one(s[0:1])
 	// 题目要求，返回的结果不能超过 mod
 	mod := 1000000007
+	dmap := getMap()
 
 	for i := 2; i <= n; i++ {
-		w1, w2 := one(s[i-1:i]), two(s[i-2:i])
-		dp[i] = dp[i-1]*w1 + dp[i-2]*w2
+		dp[i] = dp[i-1]*dmap[s[i-1:i]] + dp[i-2]*dmap[s[i-2:i]]
 		if dp[i] == 0 {
 			// 子字符串 s[:i+1] 的组成方式数为 0
 			// 则，s 的组成方式数肯定也为 0
@@ -25,6 +25,24 @@ func numDecodings(s string) int {
 	}
 
 	return dp[n]
+}
+
+func getMap() map[string]int {
+	ch := "1234567890*"
+	res := make(map[string]int, len(ch)+len(ch)*len(ch))
+
+	for i := range ch {
+		s := ch[i : i+1]
+		res[s] = one(s)
+	}
+	for i := range ch {
+		for j := range ch {
+			s := ch[i:i+1] + ch[j:j+1]
+			res[s] = two(s)
+		}
+	}
+
+	return res
 }
 
 // 检查 s 是否为合格的单字符
