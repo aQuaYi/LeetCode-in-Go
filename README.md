@@ -10,9 +10,9 @@
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|43 / 144|70 / 248|26 / 92|139 / 484|
+|**Algorithms**|43 / 144|71 / 248|27 / 92|141 / 484|
 |**Draft**|0 / 1|0 / 4|0 / 0|0 / 5|
-|**Total**|43 / 145|70 / 252|26 / 92|139 / 489|
+|**Total**|43 / 145|71 / 252|27 / 92|141 / 489|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -108,6 +108,7 @@
 |89|[Gray Code](./Algorithms/0089.gray-code)|☆ ☆|41%||
 |90|[Subsets II](./Algorithms/0090.subsets-ii)|☆ ☆|36%|❤|
 |91|[Decode Ways](./Algorithms/0091.decode-ways)|☆ ☆|19%|❤|
+|92|[Reverse Linked List II](./Algorithms/0092.reverse-linked-list-ii)|☆ ☆|30%||
 |118|[Pascal's Triangle](./Algorithms/0118.pascals-triangle)|☆|38%||
 |119|[Pascal's Triangle II](./Algorithms/0119.pascals-triangle-ii)|☆|36%||
 |120|[Triangle](./Algorithms/0120.triangle)|☆ ☆|33%|❤|
@@ -127,7 +128,7 @@
 |216|[Combination Sum III](./Algorithms/0216.combination-sum-iii)|☆ ☆|45%||
 |217|[Contains Duplicate](./Algorithms/0217.contains-duplicate)|☆|45%||
 |219|[Contains Duplicate II](./Algorithms/0219.contains-duplicate-ii)|☆|32%||
-|228|[Summary Ranges](./Algorithms/0228.summary-ranges)|☆ ☆|29%||
+|228|[Summary Ranges](./Algorithms/0228.summary-ranges)|☆ ☆|30%||
 |229|[Majority Element II](./Algorithms/0229.majority-element-ii)|☆ ☆|28%|❤|
 |238|[Product of Array Except Self](./Algorithms/0238.product-of-array-except-self)|☆ ☆|49%||
 |268|[Missing Number](./Algorithms/0268.missing-number)|☆|44%||
@@ -150,9 +151,10 @@
 |581|[Shortest Unsorted Continuous Subarray](./Algorithms/0581.shortest-unsorted-continuous-subarray)|☆|29%|❤|
 |605|[Can Place Flowers](./Algorithms/0605.can-place-flowers)|☆|29%|❤|
 |611|[Valid Triangle Number](./Algorithms/0611.valid-triangle-number)|☆ ☆|41%|❤|
-|621|[Task Scheduler](./Algorithms/0621.task-scheduler)|☆ ☆|41%|❤|
+|621|[Task Scheduler](./Algorithms/0621.task-scheduler)|☆ ☆|42%|❤|
 |628|[Maximum Product of Three Numbers](./Algorithms/0628.maximum-product-of-three-numbers)|☆|45%|❤|
-|643|[Maximum Average Subarray I](./Algorithms/0643.maximum-average-subarray-i)|☆|38%||
+|639|[Decode Ways II](./Algorithms/0639.decode-ways-ii)|☆ ☆ ☆|23%||
+|643|[Maximum Average Subarray I](./Algorithms/0643.maximum-average-subarray-i)|☆|37%||
 |661|[Image Smoother](./Algorithms/0661.image-smoother)|☆|46%||
 |667|[Beautiful Arrangement II](./Algorithms/0667.beautiful-arrangement-ii)|☆ ☆|51%||
 
