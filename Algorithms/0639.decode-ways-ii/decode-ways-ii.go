@@ -54,7 +54,7 @@ func two(s string) int {
 		if s[1] == '*' {
 			return 15
 		}
-		if '1' <= s[1] && s[1] <= '6' {
+		if '0' <= s[1] && s[1] <= '6' {
 			return 2
 		}
 		return 1

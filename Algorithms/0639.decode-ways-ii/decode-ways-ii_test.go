@@ -29,6 +29,15 @@ func Test_Problem0639(t *testing.T) {
 
 		question{
 			para{
+				"*********",
+			},
+			ans{
+				291868912,
+			},
+		},
+
+		question{
+			para{
 				"*1*1*0",
 			},
 			ans{
