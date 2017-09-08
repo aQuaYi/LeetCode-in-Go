@@ -14,7 +14,7 @@ Beyond that, now the encoded string can also contain the character '*', which ca
 
 Given the encoded message containing digits and the character '*', return the total number of ways to decode it.
 
-Also, since the answer may be very large, you should return the output mod 109 + 7.
+Also, since the answer may be very large, you should return the output mod 10^9 + 7.
 
 ```
 Example 1:
