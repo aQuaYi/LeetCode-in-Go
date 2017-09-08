@@ -11,34 +11,38 @@ func restoreIpAddresses(s string) []string {
 	}
 
 	res := []string{}
-	combination := []string{}
-	var dfs func(int, int)
+	combination := make([]string, 4)
 
+	var dfs func(int, int)
 	dfs = func(idx, begin int) {
 		if idx == 3 {
-			combination[3] = s[begin:]
-			if isIP(combination) {
+			temp := s[begin:]
+			if isOK(temp) {
+				combination[3] = temp
 				res = append(res, IP(combination))
 			}
+
 			return
 		}
 
-		for i := begin + 1; i <= n-(3-idx); i++ {
-			if n-i > 3*(3-idx) {
+		for end := begin + 1; end <= n-(3-idx); end++ {
+			if n-end > 3*(3-idx) {
 				// 后面的 IP 段 至少有一个超过了 3 个字符
 				// 说明此IP段短了
 				continue
 			}
 
-			if i-begin > 3 {
+			if end-begin > 3 {
 				// 此 IP 段长度，超过 3 位了
 				break
 			}
 
-			combination[idx] = s[begin:i]
-			dfs(idx+1, i)
+			temp := s[begin:end]
+			if isOK(temp) {
+				combination[idx] = temp
+				dfs(idx+1, end)
+			}
 		}
-
 	}
 
 	dfs(0, 0)
@@ -51,18 +55,11 @@ func IP(ss []string) string {
 	return fmt.Sprintf("%s.%s.%s.%s", ss[0], ss[1], ss[2], ss[3])
 }
 
-func isIP(ss []string) bool {
-	for i := range ss {
-		if !isOK(ss[i]) {
-			return false
-		}
-	}
-
-	return true
-}
-
+// 由程序其他部分保证了 len(s) <= 3
 func isOK(s string) bool {
-	if len(s) > 1 && s[0] == '0' || len(s) > 3 {
+	// "0"  可以
+	// "01" 不可以
+	if len(s) > 1 && s[0] == '0' {
 		return false
 	}
 
@@ -70,6 +67,7 @@ func isOK(s string) bool {
 		return true
 	}
 
+	// len(s) == 3 的情况
 	switch s[0] {
 	case '1':
 		return true
@@ -80,8 +78,7 @@ func isOK(s string) bool {
 		if s[1] == '5' && '0' <= s[2] && s[2] <= '5' {
 			return true
 		}
-		return false
-	default:
-		return false
 	}
+
+	return false
 }
