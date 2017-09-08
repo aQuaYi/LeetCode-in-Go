@@ -50,6 +50,15 @@ func Test_Problem0093(t *testing.T) {
 
 		question{
 			para{
+				"10111",
+			},
+			ans{
+				[]string{"1.0.1.11", "1.0.11.1", "10.1.1.1"},
+			},
+		},
+
+		question{
+			para{
 				"111111",
 			},
 			ans{
