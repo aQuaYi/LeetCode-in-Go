@@ -21,7 +21,10 @@ func numDecodings(s string) int {
 		}
 	}
 
-	return dp[n]
+	// 题目要求，返回的结果不能超过 mod
+	mod := 1000000007
+
+	return dp[n] % mod
 }
 
 // 检查 s 是否为合格的单字符

@@ -28,6 +28,15 @@ func Test_Problem0639(t *testing.T) {
 	qs := []question{
 		question{
 			para{
+				"********************",
+			},
+			ans{
+				104671669,
+			},
+		},
+
+		question{
+			para{
 				"*******",
 			},
 			ans{
