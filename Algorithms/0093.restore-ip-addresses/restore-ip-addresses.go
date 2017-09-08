@@ -21,12 +21,14 @@ func restoreIpAddresses(s string) []string {
 				combination[3] = temp
 				res = append(res, IP(combination))
 			}
-
 			return
 		}
 
+		// 剩余 IP 段，最多需要的宽度
+		maxRemain := 3 * (3 - idx)
+
 		for end := begin + 1; end <= n-(3-idx); end++ {
-			if n-end > 3*(3-idx) {
+			if end+maxRemain < n {
 				// 后面的 IP 段 至少有一个超过了 3 个字符
 				// 说明此IP段短了
 				continue
@@ -50,9 +52,9 @@ func restoreIpAddresses(s string) []string {
 	return res
 }
 
-// IP 返回 ss 代表的 IP 地址
-func IP(ss []string) string {
-	return fmt.Sprintf("%s.%s.%s.%s", ss[0], ss[1], ss[2], ss[3])
+// IP 返回 s 代表的 IP 地址
+func IP(s []string) string {
+	return fmt.Sprintf("%s.%s.%s.%s", s[0], s[1], s[2], s[3])
 }
 
 // 由程序其他部分保证了 len(s) <= 3
@@ -67,7 +69,7 @@ func isOK(s string) bool {
 		return true
 	}
 
-	// len(s) == 3 的情况
+	// len(s) == 3
 	switch s[0] {
 	case '1':
 		return true
