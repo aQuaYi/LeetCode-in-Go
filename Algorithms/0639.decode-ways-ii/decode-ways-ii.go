@@ -9,6 +9,8 @@ func numDecodings(s string) int {
 	dp := make([]int, n+1)
 	// dp[i] 表示 s[:i+1] 的组成方式数
 	dp[0], dp[1] = 1, one(s[0:1])
+	// 题目要求，返回的结果不能超过 mod
+	mod := 1000000007
 
 	for i := 2; i <= n; i++ {
 		w1, w2 := one(s[i-1:i]), two(s[i-2:i])
@@ -19,12 +21,10 @@ func numDecodings(s string) int {
 			// 这时可以提前结束
 			return 0
 		}
+		dp[i] %= mod
 	}
 
-	// 题目要求，返回的结果不能超过 mod
-	mod := 1000000007
-
-	return dp[n] % mod
+	return dp[n]
 }
 
 // 检查 s 是否为合格的单字符
