@@ -1,6 +1,6 @@
 # [LeetCode](https://leetcode.com)习题的Golang解答
 [![LeetCode](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode Ranking](https://img.shields.io/badge/Ranking-47617-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode Ranking](https://img.shields.io/badge/Ranking-47308-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang)
 
@@ -10,9 +10,9 @@
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|43 / 144|72 / 248|27 / 92|142 / 484|
+|**Algorithms**|43 / 145|75 / 250|27 / 93|145 / 488|
 |**Draft**|0 / 1|0 / 4|0 / 0|0 / 5|
-|**Total**|43 / 145|72 / 252|27 / 92|142 / 489|
+|**Total**|43 / 146|75 / 254|27 / 93|145 / 493|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -29,7 +29,7 @@
 |10|[Regular Expression Matching](./Algorithms/0010.regular-expression-matching)|☆ ☆ ☆|24%|❤|
 |11|[Container With Most Water](./Algorithms/0011.container-with-most-water)|☆ ☆|36%||
 |12|[Integer to Roman](./Algorithms/0012.integer-to-roman)|☆ ☆|44%||
-|13|[Roman to Integer](./Algorithms/0013.roman-to-integer)|☆|45%||
+|13|[Roman to Integer](./Algorithms/0013.roman-to-integer)|☆|46%||
 |14|[Longest Common Prefix](./Algorithms/0014.longest-common-prefix)|☆|31%||
 |15|[3Sum](./Algorithms/0015.3sum)|☆ ☆|21%||
 |16|[3Sum Closest](./Algorithms/0016.3sum-closest)|☆ ☆|31%||
@@ -56,7 +56,7 @@
 |37|[Sudoku Solver](./Algorithms/0037.sudoku-solver)|☆ ☆ ☆|30%|❤|
 |38|[Count and Say](./Algorithms/0038.count-and-say)|☆|34%||
 |39|[Combination Sum](./Algorithms/0039.combination-sum)|☆ ☆|38%||
-|40|[Combination Sum II](./Algorithms/0040.combination-sum-ii)|☆ ☆|33%||
+|40|[Combination Sum II](./Algorithms/0040.combination-sum-ii)|☆ ☆|34%||
 |41|[First Missing Positive](./Algorithms/0041.first-missing-positive)|☆ ☆ ☆|25%||
 |42|[Trapping Rain Water](./Algorithms/0042.trapping-rain-water)|☆ ☆ ☆|36%||
 |43|[Multiply Strings](./Algorithms/0043.multiply-strings)|☆ ☆|27%||
@@ -94,7 +94,7 @@
 |75|[Sort Colors](./Algorithms/0075.sort-colors)|☆ ☆|38%|❤|
 |76|[Minimum Window Substring](./Algorithms/0076.minimum-window-substring)|☆ ☆ ☆|25%|❤|
 |77|[Combinations](./Algorithms/0077.combinations)|☆ ☆|39%||
-|78|[Subsets](./Algorithms/0078.subsets)|☆ ☆|40%|❤|
+|78|[Subsets](./Algorithms/0078.subsets)|☆ ☆|41%|❤|
 |79|[Word Search](./Algorithms/0079.word-search)|☆ ☆|26%||
 |80|[Remove Duplicates from Sorted Array II](./Algorithms/0080.remove-duplicates-from-sorted-array-ii)|☆ ☆|36%|❤|
 |81|[Search in Rotated Sorted Array II](./Algorithms/0081.search-in-rotated-sorted-array-ii)|☆ ☆|32%||
@@ -110,14 +110,17 @@
 |91|[Decode Ways](./Algorithms/0091.decode-ways)|☆ ☆|19%|❤|
 |92|[Reverse Linked List II](./Algorithms/0092.reverse-linked-list-ii)|☆ ☆|30%||
 |93|[Restore IP Addresses](./Algorithms/0093.restore-ip-addresses)|☆ ☆|27%|❤|
+|94|[Binary Tree Inorder Traversal](./Algorithms/0094.binary-tree-inorder-traversal)|☆ ☆|46%||
+|105|[Construct Binary Tree from Preorder and Inorder Traversal](./Algorithms/0105.construct-binary-tree-from-preorder-and-inorder-traversal)|☆ ☆|32%|❤|
+|106|[Construct Binary Tree from Inorder and Postorder Traversal](./Algorithms/0106.construct-binary-tree-from-inorder-and-postorder-traversal)|☆ ☆|32%|❤|
 |118|[Pascal's Triangle](./Algorithms/0118.pascals-triangle)|☆|38%||
-|119|[Pascal's Triangle II](./Algorithms/0119.pascals-triangle-ii)|☆|36%||
+|119|[Pascal's Triangle II](./Algorithms/0119.pascals-triangle-ii)|☆|37%||
 |120|[Triangle](./Algorithms/0120.triangle)|☆ ☆|33%|❤|
 |121|[Best Time to Buy and Sell Stock](./Algorithms/0121.best-time-to-buy-and-sell-stock)|☆|41%||
 |122|[Best Time to Buy and Sell Stock II](./Algorithms/0122.best-time-to-buy-and-sell-stock-ii)|☆|47%||
 |123|[Best Time to Buy and Sell Stock III](./Algorithms/0123.best-time-to-buy-and-sell-stock-iii)|☆ ☆ ☆|29%||
 |152|[Maximum Product Subarray](./Algorithms/0152.maximum-product-subarray)|☆ ☆|25%|❤|
-|153|[Find Minimum in Rotated Sorted Array](./Algorithms/0153.find-minimum-in-rotated-sorted-array)|☆ ☆|39%||
+|153|[Find Minimum in Rotated Sorted Array](./Algorithms/0153.find-minimum-in-rotated-sorted-array)|☆ ☆|40%||
 |154|[Find Minimum in Rotated Sorted Array II](./Algorithms/0154.find-minimum-in-rotated-sorted-array-ii)|☆ ☆ ☆|37%||
 |162|[Find Peak Element](./Algorithms/0162.find-peak-element)|☆ ☆|37%||
 |167|[Two Sum II - Input array is sorted](./Algorithms/0167.two-sum-ii-input-array-is-sorted)|☆|47%||
@@ -169,3 +172,4 @@
 ## kit
 在[kit](./kit)中添加了LeetCode常用的数据结构和处理函数：
 1. 为[*ListNode](./kit/ListNode.go)添加了与[]int相互转换的函数，方便添加单元测试。使用方式可以参考[21. Merge Two Sorted Lists](./Algorithms/0021.merge-two-sorted-lists/merge-two-sorted-lists_test.go)
+1. 为[*TreeNode](./kit/TreeNode.go)添加了与[]int相互转换的函数，方便添加单元测试。
