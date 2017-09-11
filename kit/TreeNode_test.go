@@ -6,12 +6,6 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
-}
-
 var (
 	preOrder  = []int{1, 2, 4, 5, 3, 6, 7}
 	inOrder   = []int{4, 2, 5, 1, 6, 3, 7}
@@ -21,38 +15,45 @@ var (
 func Test_preIn2Tree(t *testing.T) {
 	ast := assert.New(t)
 
-	actual := tree2postorder(preIn2Tree(preOrder, inOrder))
+	actual := Tree2Postorder(PreIn2Tree(preOrder, inOrder))
 	expected := postOrder
 	ast.Equal(expected, actual)
 
-	ast.Panics(func() { preIn2Tree([]int{1}, []int{}) })
+	ast.Panics(func() { PreIn2Tree([]int{1}, []int{}) })
 
-	ast.Nil(preIn2Tree([]int{}, []int{}))
+	ast.Nil(PreIn2Tree([]int{}, []int{}))
 }
 
 func Test_inPost2Tree(t *testing.T) {
 	ast := assert.New(t)
 
-	actual := tree2preorder(inPost2Tree(inOrder, postOrder))
+	actual := Tree2Preorder(InPost2Tree(inOrder, postOrder))
 	expected := preOrder
 	ast.Equal(expected, actual)
 
-	ast.Panics(func() { inPost2Tree([]int{1}, []int{}) })
+	ast.Panics(func() { InPost2Tree([]int{1}, []int{}) })
 
-	ast.Nil(inPost2Tree([]int{}, []int{}))
+	ast.Nil(InPost2Tree([]int{}, []int{}))
 }
 
 func Test_tree2Ints(t *testing.T) {
 	ast := assert.New(t)
-	root := preIn2Tree(preOrder, inOrder)
+	root := PreIn2Tree(preOrder, inOrder)
 
-	ast.Equal(preOrder, tree2preorder(root))
-	ast.Equal(inOrder, tree2inorder(root))
-	ast.Equal(postOrder, tree2postorder(root))
+	ast.Equal(preOrder, Tree2Preorder(root))
+	ast.Nil(Tree2Preorder(nil))
+
+	ast.Equal(inOrder, Tree2Inorder(root))
+	ast.Nil(Tree2Inorder(nil))
+
+	ast.Equal(postOrder, Tree2Postorder(root))
+	ast.Nil(Tree2Postorder(nil))
 }
 
 func Test_indexOf(t *testing.T) {
 	ast := assert.New(t)
+
+	ast.Equal(1, indexOf(1, []int{0, 1, 2, 3}))
 
 	ast.Panics(func() { indexOf(0, []int{1, 2, 3}) })
 }
