@@ -6,25 +6,28 @@ func isInterleave(s1 string, s2 string, s3 string) bool {
 		return false
 	}
 
-	dp := make([]bool, m+n+1)
-	dp[0] = true
-	i, j, k := 0, 0, 0
-	for i <= m && j <= n && k < m+n+1 {
-		switch {
-		case i < m && s1[i] == s3[k]:
-			dp[k] = true
-			i++
-			k++
-		case j < n && s2[j] == s3[k]:
-			dp[k] = true
-			j++
-			k++
-		default:
-			return false
-		}
-		if i == m && j == n {
-			return true
+	dp := make([][][]bool, m+1)
+	for i := 0; i <= m; i++ {
+		dp[i] = make([][]bool, n+1)
+		for j := 0; j <= n; j++ {
+			dp[i][j] = make([]bool, m+n+1)
 		}
 	}
-	return false
+	dp[0][0][0] = true
+
+	for i := 1; i <= m; i++ {
+		dp[i][0][i] = dp[i-1][0][i-1] && s1[i-1] == s3[i-1]
+	}
+
+	for j := 1; j <= n; j++ {
+		dp[0][j][j] = dp[0][j-1][j-1] && s2[j-1] == s3[j-1]
+	}
+
+	for i := 1; i <= m; i++ {
+		for j := 1; j <= n; j++ {
+			dp[i][j][i+j] = (dp[i-1][j][i+j-1] && s1[i-1] == s3[i+j-1]) || (dp[i][j-1][i+j-1] && s2[j-1] == s3[i+j-1])
+		}
+	}
+
+	return dp[m][n][m+n]
 }
