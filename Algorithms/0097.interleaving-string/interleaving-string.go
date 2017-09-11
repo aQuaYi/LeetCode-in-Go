@@ -6,6 +6,7 @@ func isInterleave(s1 string, s2 string, s3 string) bool {
 		return false
 	}
 
+	// dp[i][j][i+j] == true 表示 s1[:i] 和 s2[:j] 可以生成 s3[:i+j]
 	dp := make([][][]bool, m+1)
 	for i := 0; i <= m; i++ {
 		dp[i] = make([][]bool, n+1)
