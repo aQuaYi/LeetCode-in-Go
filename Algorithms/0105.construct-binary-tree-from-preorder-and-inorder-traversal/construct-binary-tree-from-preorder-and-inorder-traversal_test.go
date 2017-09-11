@@ -49,4 +49,8 @@ func Test_Problem0105(t *testing.T) {
 
 		ast.Equal(a.postorder, kit.Tree2Postorder(buildTree(p.preorder, p.inorder)), "输入:%v", p)
 	}
+
+	ast.Nil(buildTree([]int{}, []int{}))
+
+	ast.Equal(0, indexOf(3, []int{0, 1, 2}))
 }
