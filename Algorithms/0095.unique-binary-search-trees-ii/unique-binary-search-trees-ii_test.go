@@ -81,8 +81,8 @@ func Test_Problem0095(t *testing.T) {
 	ast.Nil(generateTrees(0), "generateTrees(0) == nil")
 }
 
-func Test_indexOf (t *testing.T) {
+func Test_indexOf(t *testing.T) {
 	ast := assert.New(t)
 
-ast.Panics(func(){indexOf(3, []int{0,1,2})} )
+	ast.Panics(func() { indexOf(3, []int{0, 1, 2}) })
 }
