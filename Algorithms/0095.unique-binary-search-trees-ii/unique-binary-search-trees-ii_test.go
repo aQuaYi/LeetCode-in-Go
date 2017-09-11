@@ -1,8 +1,10 @@
 package Problem0095
 
 import (
-	"testing"
 	"fmt"
+	"testing"
+
+	"github.com/aQuaYi/LeetCode-in-Golang/kit"
 
 	"github.com/stretchr/testify/assert"
 )
@@ -19,7 +21,7 @@ type para struct {
 
 // ans 是答案
 type ans struct {
-	one  []*TreeNode 
+	in []int
 }
 
 func Test_Problem0095(t *testing.T) {
@@ -29,13 +31,40 @@ func Test_Problem0095(t *testing.T) {
 
 		question{
 			para{
-					,
+				3,
 			},
 			ans{
-					,
+				[]int{1, 2, 3},
 			},
 		},
-	
+
+		question{
+			para{
+				4,
+			},
+			ans{
+				[]int{1, 2, 3, 4},
+			},
+		},
+
+		question{
+			para{
+				5,
+			},
+			ans{
+				[]int{1, 2, 3, 4, 5},
+			},
+		},
+
+		question{
+			para{
+				6,
+			},
+			ans{
+				[]int{1, 2, 3, 4, 5, 6},
+			},
+		},
+
 		// 如需多个测试，可以复制上方元素。
 	}
 
@@ -43,6 +72,17 @@ func Test_Problem0095(t *testing.T) {
 		a, p := q.ans, q.para
 		fmt.Printf("~~%v~~\n", p)
 
-		ast.Equal(a.one, generateTrees(p.  ), "输入:%v", p)
+		roots := generateTrees(p.n)
+		for _, root := range roots {
+			ast.Equal(a.in, kit.Tree2Inorder(root), "输入:%d", p.n)
+		}
 	}
+
+	ast.Nil(generateTrees(0), "generateTrees(0) == nil")
+}
+
+func Test_indexOf (t *testing.T) {
+	ast := assert.New(t)
+
+ast.Panics(func(){indexOf(3, []int{0,1,2})} )
 }

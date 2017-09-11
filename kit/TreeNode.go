@@ -11,6 +11,17 @@ type TreeNode struct {
 	Right *TreeNode
 }
 
+func indexOf(val int, nums []int) int {
+	for i, v := range nums {
+		if v == val {
+			return i
+		}
+	}
+
+	msg := fmt.Sprintf("%d 不存在于 %v 中", val, nums)
+	panic(msg)
+}
+
 // PreIn2Tree 把 preorder 和 inorder 切片转换成 二叉树
 func PreIn2Tree(pre, in []int) *TreeNode {
 	if len(pre) != len(in) {
@@ -112,15 +123,4 @@ func Tree2Postorder(root *TreeNode) []int {
 	res = append(res, root.Val)
 
 	return res
-}
-
-func indexOf(val int, nums []int) int {
-	for i, v := range nums {
-		if v == val {
-			return i
-		}
-	}
-
-	msg := fmt.Sprintf("%d 不存在于 %v 中", val, nums)
-	panic(msg)
 }
