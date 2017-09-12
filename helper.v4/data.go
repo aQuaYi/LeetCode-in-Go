@@ -71,6 +71,7 @@ func diff(new, old *leetcode) {
 		n, o := new.Problems[i], old.Problems[i]
 
 		if n.ID != o.ID {
+			log.Println(n, o)
 			log.Fatalln("LeetCode 的 Problems 数据出现错位。")
 		}
 

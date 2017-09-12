@@ -11,7 +11,7 @@ import (
 
 // 程序辅助设置
 const (
-	VERSION = "3.2.0"
+	VERSION = "4.0.0"
 	USAGE   = `使用方法：
 	1. 运行 helper 会重新生成项目的README.md。
 	2. 运行 helper 123 会生成第123题的答题文件夹。`
@@ -23,6 +23,7 @@ var cfgFile = "leetcode.toml"
 var lcFile = "leetcode.json"
 
 func init() {
+	// 启动时，导入配置
 	if _, err := toml.DecodeFile(cfgFile, &cfg); err != nil {
 		log.Fatalf(err.Error())
 	}
@@ -46,13 +47,14 @@ func main() {
 		}
 	}
 
-	signin()
-
+	// 下载题目资料不需要登录 leetcode
 	if problemNum > 0 {
 		lc := readFile()
 		makeProblemDir(lc.Problems, problemNum)
 		return
 	}
+
+	signin()
 
 	categories := []string{
 		"Algorithms",

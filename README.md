@@ -11,8 +11,8 @@
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
 |**Algorithms**|44 / 145|77 / 250|28 / 93|149 / 488|
-|**Draft**|0 / 1|0 / 4|0 / 0|0 / 5|
-|**Total**|44 / 146|77 / 254|28 / 93|149 / 493|
+|**Draft**|0 / 1|0 / 3|0 / 0|0 / 4|
+|**Total**|44 / 146|77 / 253|28 / 93|149 / 492|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -46,7 +46,7 @@
 |27|[Remove Element](./Algorithms/0027.remove-element)|☆|39%||
 |28|[Implement strStr()](./Algorithms/0028.implement-strstr)|☆|28%||
 |29|[Divide Two Integers](./Algorithms/0029.divide-two-integers)|☆ ☆|15%||
-|30|[Substring with Concatenation of All Words](./Algorithms/0030.substring-with-concatenation-of-all-words)|☆ ☆ ☆|22%|❤|
+|30|[Substring with Concatenation of All Words](./Algorithms/0030.substring-with-concatenation-of-all-words)|☆ ☆ ☆|21%|❤|
 |31|[Next Permutation](./Algorithms/0031.next-permutation)|☆ ☆|28%|❤|
 |32|[Longest Valid Parentheses](./Algorithms/0032.longest-valid-parentheses)|☆ ☆ ☆|23%||
 |33|[Search in Rotated Sorted Array](./Algorithms/0033.search-in-rotated-sorted-array)|☆ ☆|32%|❤|
@@ -148,7 +148,7 @@
 |414|[Third Maximum Number](./Algorithms/0414.third-maximum-number)|☆|27%||
 |442|[Find All Duplicates in an Array](./Algorithms/0442.find-all-duplicates-in-an-array)|☆ ☆|55%||
 |448|[Find All Numbers Disappeared in an Array](./Algorithms/0448.find-all-numbers-disappeared-in-an-array)|☆|51%||
-|485|[Max Consecutive Ones](./Algorithms/0485.max-consecutive-ones)|☆|54%||
+|485|[Max Consecutive Ones](./Algorithms/0485.max-consecutive-ones)|☆|53%||
 |495|[Teemo Attacking](./Algorithms/0495.teemo-attacking)|☆ ☆|51%||
 |526|[Beautiful Arrangement](./Algorithms/0526.beautiful-arrangement)|☆ ☆|55%|❤|
 |532|[K-diff Pairs in an Array](./Algorithms/0532.k-diff-pairs-in-an-array)|☆|28%||
@@ -157,7 +157,7 @@
 |565|[Array Nesting](./Algorithms/0565.array-nesting)|☆ ☆|49%||
 |566|[Reshape the Matrix](./Algorithms/0566.reshape-the-matrix)|☆|58%||
 |581|[Shortest Unsorted Continuous Subarray](./Algorithms/0581.shortest-unsorted-continuous-subarray)|☆|29%|❤|
-|605|[Can Place Flowers](./Algorithms/0605.can-place-flowers)|☆|29%|❤|
+|605|[Can Place Flowers](./Algorithms/0605.can-place-flowers)|☆|30%|❤|
 |611|[Valid Triangle Number](./Algorithms/0611.valid-triangle-number)|☆ ☆|41%|❤|
 |621|[Task Scheduler](./Algorithms/0621.task-scheduler)|☆ ☆|42%|❤|
 |628|[Maximum Product of Three Numbers](./Algorithms/0628.maximum-product-of-three-numbers)|☆|45%|❤|

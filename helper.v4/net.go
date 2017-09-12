@@ -14,11 +14,12 @@ import (
 
 const (
 	loginPageURL = "https://leetcode.com/accounts/login/"
-	refererURL   = "https://leetcode.com/"
 )
 
+// req 带有 cookie ，用来请求 leetcode 上的个人数据
 var req *request.Request
 
+// 登录 leetcode
 func signin() {
 	log.Println("正在登录中...")
 
@@ -26,7 +27,7 @@ func signin() {
 	req = request.NewRequest(new(http.Client))
 	req.Headers = map[string]string{
 		"Accept-Encoding": "",
-		"Referer":         refererURL,
+		"Referer":         "https://leetcode.com/",
 	}
 
 	// login

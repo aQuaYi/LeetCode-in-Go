@@ -1,6 +1,6 @@
 build:
 	@go build
-	@mv helper.v3 ../helper
+	@mv helper.v4 ../helper
 	
 test:	
 	@go build
