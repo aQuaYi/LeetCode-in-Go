@@ -19,9 +19,27 @@ func Test_Problem0098(t *testing.T) {
 	}{
 
 		{
+			[]int{},
+			[]int{},
+			true,
+		},
+
+		{
 			[]int{2, 1, 3},
 			[]int{1, 2, 3},
 			true,
+		},
+
+		{
+			[]int{10, 5, 15, 6, 20},
+			[]int{5, 10, 6, 15, 20},
+			false,
+		},
+
+		{
+			[]int{3, 2, 1},
+			[]int{2, 3, 1},
+			false,
 		},
 
 		{
