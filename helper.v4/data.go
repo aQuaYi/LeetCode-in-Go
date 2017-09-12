@@ -2,6 +2,8 @@ package main
 
 import (
 	"encoding/json"
+	"errors"
+	"fmt"
 	"io/ioutil"
 	"log"
 	"sort"
@@ -11,8 +13,13 @@ import (
 
 func update(categories []string) *leetcode {
 	newLC := lastest(categories)
-	oldLC := readFile()
-	diff(newLC, oldLC)
+	oldLC, err := readLeetCodeRecord()
+	if err != nil {
+		log.Println("LeetCode 记录读取失败，无法与新记录对比:", err)
+	} else {
+		diff(newLC, oldLC)
+	}
+
 	saveLC(newLC)
 
 	return newLC
@@ -33,20 +40,20 @@ func lastest(categories []string) *leetcode {
 	return lc
 }
 
-func readFile() *leetcode {
-	lc := leetcode{}
+func readLeetCodeRecord() (*leetcode, error) {
 	if !GoKit.Exist(lcFile) {
-		log.Printf("%s 不存在", lcFile)
-		return &lc
+		msg := fmt.Sprintf("%s 不存在", lcFile)
+		return nil, errors.New(msg)
 	}
 
 	raw := read(lcFile)
-
+	lc := leetcode{}
 	if err := json.Unmarshal(raw, &lc); err != nil {
-		log.Fatalf("获取 %s 失败：%s", lcFile, err)
+		msg := fmt.Sprintf("获取 %s 失败：%s", lcFile, err)
+		return nil, errors.New(msg)
 	}
 
-	return &lc
+	return &lc, nil
 }
 
 func diff(new, old *leetcode) {
@@ -101,6 +108,8 @@ func saveLC(lc *leetcode) {
 	if err = ioutil.WriteFile(lcFile, raw, 0666); err != nil {
 		log.Fatal("无法把Marshal后的lc保存到文件: ", err)
 	}
+
+	log.Println("最新的 LeetCode 记录已经保存。")
 }
 
 // data 保存API信息

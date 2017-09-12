@@ -157,7 +157,7 @@
 |565|[Array Nesting](./Algorithms/0565.array-nesting)|☆ ☆|49%||
 |566|[Reshape the Matrix](./Algorithms/0566.reshape-the-matrix)|☆|58%||
 |581|[Shortest Unsorted Continuous Subarray](./Algorithms/0581.shortest-unsorted-continuous-subarray)|☆|29%|❤|
-|605|[Can Place Flowers](./Algorithms/0605.can-place-flowers)|☆|30%|❤|
+|605|[Can Place Flowers](./Algorithms/0605.can-place-flowers)|☆|29%|❤|
 |611|[Valid Triangle Number](./Algorithms/0611.valid-triangle-number)|☆ ☆|41%|❤|
 |621|[Task Scheduler](./Algorithms/0621.task-scheduler)|☆ ☆|42%|❤|
 |628|[Maximum Product of Three Numbers](./Algorithms/0628.maximum-product-of-three-numbers)|☆|45%|❤|

@@ -3,10 +3,12 @@ package main
 import (
 	"fmt"
 	"log"
+	"net/http"
 	"os"
 	"strconv"
 
 	"github.com/BurntSushi/toml"
+	"github.com/mozillazg/request"
 )
 
 // 程序辅助设置
@@ -28,6 +30,9 @@ func init() {
 		log.Fatalf(err.Error())
 	}
 	log.Printf("Hi, %s. \n", cfg.Login)
+
+	// 对 req 赋值
+	req = request.NewRequest(new(http.Client))
 }
 
 func main() {
@@ -49,7 +54,10 @@ func main() {
 
 	// 下载题目资料不需要登录 leetcode
 	if problemNum > 0 {
-		lc := readFile()
+		lc, err := readLeetCodeRecord()
+		if err != nil {
+			log.Fatalln("读取 LeetCode 记录失败: ", err)
+		}
 		makeProblemDir(lc.Problems, problemNum)
 		return
 	}

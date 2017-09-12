@@ -16,6 +16,8 @@ import (
 func makeProblemDir(ps problems, problemNum int) {
 	var pb problem
 	var isFound bool
+
+	// 根据题号，获取题目信息
 	for _, p := range ps {
 		if p.ID == problemNum {
 			pb = p
@@ -25,12 +27,7 @@ func makeProblemDir(ps problems, problemNum int) {
 	}
 
 	if !isFound {
-		log.Printf("没有发现 %d 题，此题不存在，或者需要付费，或者不在已关注的种类中。", problemNum)
-		return
-	}
-
-	if pb.IsAccepted && GoKit.Exist(pb.Dir) {
-		log.Printf("第 %d 题已经accepted，请删除 %s 文件夹后，再尝试。", pb.ID, pb.Dir)
+		log.Printf("没有发现 %d 题，存在以下可能：1.此题不存在；2.需要付费；3.不在已关注的种类中。", problemNum)
 		return
 	}
 
@@ -38,8 +35,8 @@ func makeProblemDir(ps problems, problemNum int) {
 }
 
 func (p problem) build() {
-	if err := os.RemoveAll(p.Dir); err != nil {
-		log.Fatalln("无法删除目录", p.Dir)
+	if p.IsAccepted && GoKit.Exist(p.Dir) {
+		log.Fatalf("第 %d 题已经accepted，请**删除**或**重命名**  %s 文件夹后，再尝试。", p.ID, p.Dir)
 	}
 
 	mask := syscall.Umask(0)

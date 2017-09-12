@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"io/ioutil"
 	"log"
-	"net/http"
 	"regexp"
 	"strings"
 
@@ -24,7 +23,6 @@ func signin() {
 	log.Println("正在登录中...")
 
 	// 配置request
-	req = request.NewRequest(new(http.Client))
 	req.Headers = map[string]string{
 		"Accept-Encoding": "",
 		"Referer":         "https://leetcode.com/",
@@ -89,12 +87,12 @@ func getRaw(URL string) []byte {
 	log.Printf("开始下载 %s 的数据", URL)
 	resp, err := req.Get(URL)
 	if err != nil {
-		log.Fatal("getJSON: Get Error: " + err.Error())
+		log.Fatal("getRaw: Get Error: " + err.Error())
 	}
 
 	body, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
-		log.Fatal("getJSON: Read Error: " + err.Error())
+		log.Fatal("getRaw: Read Error: " + err.Error())
 	}
 	return body
 }
