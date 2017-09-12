@@ -16,7 +16,6 @@ type leetcode struct {
 	Problems   problems
 }
 
-// TODO: 去除 username 和 ranking 的全局变量
 func newLeetCode() *leetcode {
 	return &leetcode{
 		Username: cfg.Login,

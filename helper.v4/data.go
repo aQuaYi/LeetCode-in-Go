@@ -71,6 +71,8 @@ func diff(new, old *leetcode) {
 	// 对比 已完成的问题
 	lenNew := len(new.Problems)
 	lenOld := len(old.Problems)
+	// TODO: 处理数据错位问题
+	//	isOrderChanged := false
 	isChanged := false
 
 	i := 0
@@ -95,7 +97,7 @@ func diff(new, old *leetcode) {
 	}
 
 	for i < lenNew {
-		log.Printf("新题 %d %s", new.Problems[i].ID, new.Problems[i].Title)
+		log.Printf("出现新题: %d %s", new.Problems[i].ID, new.Problems[i].Title)
 		i++
 	}
 }

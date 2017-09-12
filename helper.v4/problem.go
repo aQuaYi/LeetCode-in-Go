@@ -31,12 +31,17 @@ func makeProblemDir(ps problems, problemNum int) {
 		return
 	}
 
-	pb.build()
+	build(pb)
 }
 
-func (p problem) build() {
+func build(p problem) {
 	if p.IsAccepted && GoKit.Exist(p.Dir) {
 		log.Fatalf("第 %d 题已经accepted，请**删除**或**重命名**  %s 文件夹后，再尝试。", p.ID, p.Dir)
+	}
+
+	// 对于没有 accepted 的题目，直接删除重建
+	if err := os.RemoveAll(p.Dir); err != nil {
+		log.Fatalln("无法删除目录", p.Dir)
 	}
 
 	mask := syscall.Umask(0)
@@ -44,15 +49,16 @@ func (p problem) build() {
 
 	err := os.Mkdir(p.Dir, 0755)
 	if err != nil {
-		log.Fatalf("无法创建目录: %s", p.Dir)
+		log.Fatalf("无法创建目录，%s ：%s", p.Dir, err)
 	}
-	fc, fcHead, para, ans := getFunction(p.link())
 
-	log.Printf("开始创建 %d.%s 的文件夹...\n", p.ID, p.Title)
+	log.Printf("开始创建 %d %s 的文件夹...\n", p.ID, p.Title)
 
 	creatREADME(p)
+
+	fc, fcName, para, ans := getFunction(p.link())
 	creatGo(p, fc)
-	creatGoTest(p, fcHead, para, ans)
+	creatGoTest(p, fcName, para, ans)
 
 	log.Printf("%d.%s 的文件夹，创建完毕。\n", p.ID, p.Title)
 }
@@ -82,15 +88,18 @@ func creatREADME(p problem) {
 
 func getQuestionDescription(URL string) string {
 	doc, err := goquery.NewDocument(URL)
+
 	if err != nil {
 		log.Fatal(err)
 	}
+
 	return strings.TrimSpace(doc.Find("div.question-description").Text())
 }
 
-func getFunction(URL string) (fc, fcHead, p, a string) {
+func getFunction(URL string) (fc, fcName, para, ansType string) {
 	data := getRaw(URL)
 	str := string(data)
+
 	i := strings.Index(str, "codeDefinition:")
 	j := i + strings.Index(str[i:], "enableTestMode:")
 	str = str[i:j]
@@ -111,23 +120,24 @@ func getFunction(URL string) (fc, fcHead, p, a string) {
 	k := 0
 	i0 := strings.Index(fc, " ")
 	i = strings.Index(fc, "(")
-	fcHead = fc[i0+1 : i]
+	fcName = fc[i0+1 : i]
 
 	j = strings.Index(fc, ")")
 	k = strings.Index(fc, "{")
-	p = strings.Replace(fc[i+1:j], ",", "\n", -1)
-	a = fc[j+1 : k]
+	para = strings.Replace(fc[i+1:j], ",", "\n", -1)
+	ansType = fc[j+1 : k]
 
 	fc = fc[:k] + "{\n\n}"
+
 	return
 }
 
-func creatGo(p problem, fc string) {
+func creatGo(p problem, function string) {
 	fileFormat := `package %s
 
 %s
 `
-	content := fmt.Sprintf(fileFormat, p.packageName(), fc)
+	content := fmt.Sprintf(fileFormat, p.packageName(), function)
 	filename := fmt.Sprintf("%s/%s.go", p.Dir, p.TitleSlug)
 
 	err := ioutil.WriteFile(filename, []byte(content), 0755)
@@ -136,63 +146,67 @@ func creatGo(p problem, fc string) {
 	}
 }
 
-func creatGoTest(p problem, fcHead, para, ans string) {
+func creatGoTest(p problem, fcName, para, ansType string) {
 	fileFormat := `package %s
 
 import (
-	"testing"
 	"fmt"
+	"testing"
 
 	"github.com/stretchr/testify/assert"
 )
 
-type question struct {
-	para
-	ans
-}
-
-// para 是参数
-type para struct {
-	%s
-}
-
-// ans 是答案
-type ans struct {
-	one %s
-}
-
 func Test_%s(t *testing.T) {
 	ast := assert.New(t)
 
-	qs := []question{
+	// tcs is testcase slice
+	tcs := []struct {
+		%s
+		ans %s
+	}{
 
-		question{
-			para{
-					,
-			},
-			ans{
-					,
-			},
+		{
+			,
+
 		},
-	
-		// 如需多个测试，可以复制上方元素。
 	}
 
-	for _, q := range qs {
-		a, p := q.ans, q.para
-		fmt.Printf("~~%s~~\n", p)
+	for _, tc := range tcs {
+		fmt.Printf("~~%s~~\n", tc)
 
-		ast.Equal(a.one, %s(p.  ), "输入:%s", p)
+		ast.Equal(tc.ans, %s(%s), "输入:%s", tc)
 	}
 }
 `
-	content := fmt.Sprintf(fileFormat, p.packageName(), para, ans, p.packageName(), `%v`, fcHead, `%v`)
+	tcPara := getTcPara(para)
+
+	content := fmt.Sprintf(fileFormat, p.packageName(), p.packageName(), para, ansType, `%v`, fcName, tcPara, `%v`)
 	filename := fmt.Sprintf("%s/%s_test.go", p.Dir, p.TitleSlug)
 
 	err := ioutil.WriteFile(filename, []byte(content), 0755)
 	if err != nil {
 		log.Fatal(err)
 	}
+}
+
+// 把 函数的参数 变成 tc 的参数
+func getTcPara(para string) string {
+	// 把 para 按行切分
+	paras := strings.Split(para, `\n`)
+
+	// 把单个参数按空格，切分成参数名和参数类型
+	temp := make([][]string, len(paras))
+	for i := range paras {
+		temp[i] = strings.Split(paras[i], ` `)
+	}
+
+	// 在参数名称前添加 "tc." 并组合在一起
+	res := "tc." + temp[0][0]
+	for i := 1; i < len(temp); i++ {
+		res += "," + " tc." + temp[i][0]
+	}
+
+	return res
 }
 
 func (p problem) packageName() string {

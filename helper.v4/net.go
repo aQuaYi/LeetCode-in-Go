@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"log"
+	"net/http"
 	"regexp"
 	"strings"
 
@@ -21,7 +22,9 @@ var req *request.Request
 // 登录 leetcode
 func signin() {
 	log.Println("正在登录中...")
-
+	
+	// 对 req 赋值
+	req = request.NewRequest(new(http.Client))
 	// 配置request
 	req.Headers = map[string]string{
 		"Accept-Encoding": "",

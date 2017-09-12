@@ -3,17 +3,15 @@ package main
 import (
 	"fmt"
 	"log"
-	"net/http"
 	"os"
 	"strconv"
 
 	"github.com/BurntSushi/toml"
-	"github.com/mozillazg/request"
 )
 
 // 程序辅助设置
 const (
-	VERSION = "4.0.0"
+	VERSION = "4.1.0"
 	USAGE   = `使用方法：
 	1. 运行 helper 会重新生成项目的README.md。
 	2. 运行 helper 123 会生成第123题的答题文件夹。`
@@ -31,8 +29,6 @@ func init() {
 	}
 	log.Printf("Hi, %s. \n", cfg.Login)
 
-	// 对 req 赋值
-	req = request.NewRequest(new(http.Client))
 }
 
 func main() {
@@ -52,7 +48,9 @@ func main() {
 		}
 	}
 
-	// 下载题目资料不需要登录 leetcode
+	// 由于网络原因，有时候 signin 比较慢
+	signin()
+
 	if problemNum > 0 {
 		lc, err := readLeetCodeRecord()
 		if err != nil {
@@ -61,8 +59,6 @@ func main() {
 		makeProblemDir(lc.Problems, problemNum)
 		return
 	}
-
-	signin()
 
 	categories := []string{
 		"Algorithms",
