@@ -1,6 +1,6 @@
 # [LeetCode](https://leetcode.com)习题的Golang解答
 [![LeetCode](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode Ranking](https://img.shields.io/badge/Ranking-45051-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode Ranking](https://img.shields.io/badge/Ranking-43464-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang)
 
@@ -10,9 +10,9 @@
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|45 / 145|77 / 250|28 / 93|150 / 488|
+|**Algorithms**|45 / 145|78 / 250|28 / 93|151 / 488|
 |**Draft**|0 / 1|0 / 3|0 / 0|0 / 4|
-|**Total**|45 / 146|77 / 253|28 / 93|150 / 492|
+|**Total**|45 / 146|78 / 253|28 / 93|151 / 492|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -46,7 +46,7 @@
 |27|[Remove Element](./Algorithms/0027.remove-element)|☆|39%||
 |28|[Implement strStr()](./Algorithms/0028.implement-strstr)|☆|28%||
 |29|[Divide Two Integers](./Algorithms/0029.divide-two-integers)|☆ ☆|15%||
-|30|[Substring with Concatenation of All Words](./Algorithms/0030.substring-with-concatenation-of-all-words)|☆ ☆ ☆|22%|❤|
+|30|[Substring with Concatenation of All Words](./Algorithms/0030.substring-with-concatenation-of-all-words)|☆ ☆ ☆|21%|❤|
 |31|[Next Permutation](./Algorithms/0031.next-permutation)|☆ ☆|28%|❤|
 |32|[Longest Valid Parentheses](./Algorithms/0032.longest-valid-parentheses)|☆ ☆ ☆|23%||
 |33|[Search in Rotated Sorted Array](./Algorithms/0033.search-in-rotated-sorted-array)|☆ ☆|32%|❤|
@@ -114,6 +114,7 @@
 |95|[Unique Binary Search Trees II](./Algorithms/0095.unique-binary-search-trees-ii)|☆ ☆|31%|❤|
 |96|[Unique Binary Search Trees](./Algorithms/0096.unique-binary-search-trees)|☆ ☆|41%||
 |97|[Interleaving String](./Algorithms/0097.interleaving-string)|☆ ☆ ☆|24%|❤|
+|98|[Validate Binary Search Tree](./Algorithms/0098.validate-binary-search-tree)|☆ ☆|23%|❤|
 |100|[Same Tree](./Algorithms/0100.same-tree)|☆|46%||
 |101|[Symmetric Tree](./Algorithms/0101.symmetric-tree)|☆|38%|❤|
 |105|[Construct Binary Tree from Preorder and Inorder Traversal](./Algorithms/0105.construct-binary-tree-from-preorder-and-inorder-traversal)|☆ ☆|32%|❤|
