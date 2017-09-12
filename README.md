@@ -46,7 +46,7 @@
 |27|[Remove Element](./Algorithms/0027.remove-element)|☆|39%||
 |28|[Implement strStr()](./Algorithms/0028.implement-strstr)|☆|28%||
 |29|[Divide Two Integers](./Algorithms/0029.divide-two-integers)|☆ ☆|15%||
-|30|[Substring with Concatenation of All Words](./Algorithms/0030.substring-with-concatenation-of-all-words)|☆ ☆ ☆|21%|❤|
+|30|[Substring with Concatenation of All Words](./Algorithms/0030.substring-with-concatenation-of-all-words)|☆ ☆ ☆|22%|❤|
 |31|[Next Permutation](./Algorithms/0031.next-permutation)|☆ ☆|28%|❤|
 |32|[Longest Valid Parentheses](./Algorithms/0032.longest-valid-parentheses)|☆ ☆ ☆|23%||
 |33|[Search in Rotated Sorted Array](./Algorithms/0033.search-in-rotated-sorted-array)|☆ ☆|32%|❤|
@@ -63,7 +63,7 @@
 |44|[Wildcard Matching](./Algorithms/0044.wildcard-matching)|☆ ☆ ☆|20%|❤|
 |45|[Jump Game II](./Algorithms/0045.jump-game-ii)|☆ ☆ ☆|26%||
 |46|[Permutations](./Algorithms/0046.permutations)|☆ ☆|44%||
-|47|[Permutations II](./Algorithms/0047.permutations-ii)|☆ ☆|32%||
+|47|[Permutations II](./Algorithms/0047.permutations-ii)|☆ ☆|33%||
 |48|[Rotate Image](./Algorithms/0048.rotate-image)|☆ ☆|38%||
 |49|[Group Anagrams](./Algorithms/0049.group-anagrams)|☆ ☆|35%|❤|
 |50|[Pow(x, n)](./Algorithms/0050.powx-n)|☆ ☆|26%||
@@ -157,7 +157,7 @@
 |565|[Array Nesting](./Algorithms/0565.array-nesting)|☆ ☆|49%||
 |566|[Reshape the Matrix](./Algorithms/0566.reshape-the-matrix)|☆|58%||
 |581|[Shortest Unsorted Continuous Subarray](./Algorithms/0581.shortest-unsorted-continuous-subarray)|☆|29%|❤|
-|605|[Can Place Flowers](./Algorithms/0605.can-place-flowers)|☆|29%|❤|
+|605|[Can Place Flowers](./Algorithms/0605.can-place-flowers)|☆|30%|❤|
 |611|[Valid Triangle Number](./Algorithms/0611.valid-triangle-number)|☆ ☆|41%|❤|
 |621|[Task Scheduler](./Algorithms/0621.task-scheduler)|☆ ☆|42%|❤|
 |628|[Maximum Product of Three Numbers](./Algorithms/0628.maximum-product-of-three-numbers)|☆|45%|❤|
