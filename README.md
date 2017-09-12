@@ -89,7 +89,7 @@
 |70|[Climbing Stairs](./Algorithms/0070.climbing-stairs)|☆|40%||
 |71|[Simplify Path](./Algorithms/0071.simplify-path)|☆ ☆|25%||
 |72|[Edit Distance](./Algorithms/0072.edit-distance)|☆ ☆ ☆|31%|❤|
-|73|[Set Matrix Zeroes](./Algorithms/0073.set-matrix-zeroes)|☆ ☆|35%|❤|
+|73|[Set Matrix Zeroes](./Algorithms/0073.set-matrix-zeroes)|☆ ☆|36%|❤|
 |74|[Search a 2D Matrix](./Algorithms/0074.search-a-2d-matrix)|☆ ☆|34%||
 |75|[Sort Colors](./Algorithms/0075.sort-colors)|☆ ☆|38%|❤|
 |76|[Minimum Window Substring](./Algorithms/0076.minimum-window-substring)|☆ ☆ ☆|25%|❤|
@@ -168,7 +168,7 @@
 
 
 ## helper
-[helper](./helper.v3)会帮助处理大部分琐碎的工作。
+[helper](./helper.v4)会帮助处理大部分琐碎的工作。
 
 ## notes
 [notes](./notes)记录了我答题过程中，对知识点的总结。
