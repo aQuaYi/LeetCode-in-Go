@@ -19,6 +19,12 @@ func Test_Problem0098(t *testing.T) {
 	}{
 
 		{
+			[]int{1, 2, 3},
+			[]int{2, 1, 3},
+			false,
+		},
+
+		{
 			[]int{},
 			[]int{},
 			true,
@@ -41,13 +47,6 @@ func Test_Problem0098(t *testing.T) {
 			[]int{2, 3, 1},
 			false,
 		},
-
-		{
-			[]int{1, 2, 3},
-			[]int{2, 1, 3},
-			false,
-		},
-
 		// 可以多个 testcase
 	}
 
