@@ -10,9 +10,9 @@
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|45 / 145|78 / 250|28 / 93|151 / 488|
+|**Algorithms**|45 / 145|78 / 250|29 / 93|152 / 488|
 |**Draft**|0 / 1|0 / 3|0 / 0|0 / 4|
-|**Total**|45 / 146|78 / 253|28 / 93|151 / 492|
+|**Total**|45 / 146|78 / 253|29 / 93|152 / 492|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -55,7 +55,7 @@
 |36|[Valid Sudoku](./Algorithms/0036.valid-sudoku)|☆ ☆|35%|❤|
 |37|[Sudoku Solver](./Algorithms/0037.sudoku-solver)|☆ ☆ ☆|30%|❤|
 |38|[Count and Say](./Algorithms/0038.count-and-say)|☆|34%||
-|39|[Combination Sum](./Algorithms/0039.combination-sum)|☆ ☆|38%||
+|39|[Combination Sum](./Algorithms/0039.combination-sum)|☆ ☆|39%||
 |40|[Combination Sum II](./Algorithms/0040.combination-sum-ii)|☆ ☆|34%||
 |41|[First Missing Positive](./Algorithms/0041.first-missing-positive)|☆ ☆ ☆|25%||
 |42|[Trapping Rain Water](./Algorithms/0042.trapping-rain-water)|☆ ☆ ☆|36%||
@@ -115,6 +115,7 @@
 |96|[Unique Binary Search Trees](./Algorithms/0096.unique-binary-search-trees)|☆ ☆|41%||
 |97|[Interleaving String](./Algorithms/0097.interleaving-string)|☆ ☆ ☆|24%|❤|
 |98|[Validate Binary Search Tree](./Algorithms/0098.validate-binary-search-tree)|☆ ☆|23%|❤|
+|99|[Recover Binary Search Tree](./Algorithms/0099.recover-binary-search-tree)|☆ ☆ ☆|29%|❤|
 |100|[Same Tree](./Algorithms/0100.same-tree)|☆|46%||
 |101|[Symmetric Tree](./Algorithms/0101.symmetric-tree)|☆|38%|❤|
 |105|[Construct Binary Tree from Preorder and Inorder Traversal](./Algorithms/0105.construct-binary-tree-from-preorder-and-inorder-traversal)|☆ ☆|32%|❤|
