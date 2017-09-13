@@ -5,14 +5,14 @@
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang)
 
 
-## 答题进度：30%
+## 答题进度：31%
 > 仅含免费题
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|45 / 145|78 / 250|29 / 93|152 / 488|
+|**Algorithms**|45 / 145|79 / 250|29 / 93|153 / 488|
 |**Draft**|0 / 1|0 / 3|0 / 0|0 / 4|
-|**Total**|45 / 146|78 / 253|29 / 93|152 / 492|
+|**Total**|45 / 146|79 / 253|29 / 93|153 / 492|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -46,7 +46,7 @@
 |27|[Remove Element](./Algorithms/0027.remove-element)|☆|39%||
 |28|[Implement strStr()](./Algorithms/0028.implement-strstr)|☆|28%||
 |29|[Divide Two Integers](./Algorithms/0029.divide-two-integers)|☆ ☆|15%||
-|30|[Substring with Concatenation of All Words](./Algorithms/0030.substring-with-concatenation-of-all-words)|☆ ☆ ☆|21%|❤|
+|30|[Substring with Concatenation of All Words](./Algorithms/0030.substring-with-concatenation-of-all-words)|☆ ☆ ☆|22%|❤|
 |31|[Next Permutation](./Algorithms/0031.next-permutation)|☆ ☆|28%|❤|
 |32|[Longest Valid Parentheses](./Algorithms/0032.longest-valid-parentheses)|☆ ☆ ☆|23%||
 |33|[Search in Rotated Sorted Array](./Algorithms/0033.search-in-rotated-sorted-array)|☆ ☆|32%|❤|
@@ -118,6 +118,7 @@
 |99|[Recover Binary Search Tree](./Algorithms/0099.recover-binary-search-tree)|☆ ☆ ☆|29%|❤|
 |100|[Same Tree](./Algorithms/0100.same-tree)|☆|46%||
 |101|[Symmetric Tree](./Algorithms/0101.symmetric-tree)|☆|38%|❤|
+|102|[Binary Tree Level Order Traversal](./Algorithms/0102.binary-tree-level-order-traversal)|☆ ☆|40%||
 |105|[Construct Binary Tree from Preorder and Inorder Traversal](./Algorithms/0105.construct-binary-tree-from-preorder-and-inorder-traversal)|☆ ☆|32%|❤|
 |106|[Construct Binary Tree from Inorder and Postorder Traversal](./Algorithms/0106.construct-binary-tree-from-inorder-and-postorder-traversal)|☆ ☆|32%|❤|
 |118|[Pascal's Triangle](./Algorithms/0118.pascals-triangle)|☆|38%||
