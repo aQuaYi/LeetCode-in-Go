@@ -7,14 +7,14 @@ import (
 type TreeNode = kit.TreeNode
 
 func sortedArrayToBST(nums []int) *TreeNode {
-	n := len(nums)
-	if n == 0 {
+	if len(nums) == 0 {
 		return nil
 	}
 
+	mid := len(nums) / 2
 	return &TreeNode{
-		Val:   nums[n/2],
-		Left:  sortedArrayToBST(nums[:n/2]),
-		Right: sortedArrayToBST(nums[n/2+1:]),
+		Val:   nums[mid],
+		Left:  sortedArrayToBST(nums[:mid]),
+		Right: sortedArrayToBST(nums[mid+1:]),
 	}
 }
