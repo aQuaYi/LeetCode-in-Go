@@ -15,7 +15,8 @@ func levelOrder(root *TreeNode) [][]int {
 			return
 		}
 
-		if len(res) <= level  {
+		// 出现了新的 level
+		if  level >= len(res)   {
 			res = append(res, []int{})
 		}
 		res[level] = append(res[level], root.Val)
