@@ -30,6 +30,12 @@ func Test_Problem0104(t *testing.T) {
 			3,
 		},
 
+		{
+			[]int{3, 9, 20, 15, 10, 7},
+			[]int{9, 3, 10, 15, 20, 7},
+			4,
+		},
+
 		// 可以多个 testcase
 	}
 

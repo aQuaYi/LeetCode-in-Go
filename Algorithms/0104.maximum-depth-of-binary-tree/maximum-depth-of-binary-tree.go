@@ -7,24 +7,16 @@ import (
 type TreeNode = kit.TreeNode
 
 func maxDepth(root *TreeNode) int {
-	res := 0 
-
-	var dfs func(*TreeNode, int)
-	dfs = func(root *TreeNode, level int) {
-		if root == nil {
-			return
-		}
-
-		// 出现了新的 level
-		if res < level {
-			res = level
-		}
-
-		dfs(root.Left, level+1)
-		dfs(root.Right, level+1)
+	if root == nil {
+		return 0
 	}
 
-	dfs(root, 1)
+	return 1 + max(maxDepth(root.Left), maxDepth(root.Right))
+}
 
-	return res
+func max(a, b int) int {
+	if a > b {
+		return a
+	}
+	return b
 }
