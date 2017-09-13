@@ -17,10 +17,7 @@ func levelOrderBottom(root *TreeNode) [][]int {
 
 		// 出现了新的 level
 		if  level >= len(res)   {
-			temp := make([][]int, len(res )+1)
-			temp[0]= []int{}
-			copy(temp[1:], res )
-			res = temp 
+			res = append([][]int{[]int{}}, res... )
 		}
 		n := len(res )
 		res[n-level-1] = append(res[n-level-1], root.Val)
