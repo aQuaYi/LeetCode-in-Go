@@ -24,6 +24,12 @@ func Test_Problem0114(t *testing.T) {
 			[]int{6, 5, 4, 3, 2, 1},
 		},
 
+		{
+			[]int{1, 2, 3},
+			[]int{1, 2, 3},
+			[]int{3, 2, 1},
+		},
+
 		// 可以多个 testcase
 	}
 

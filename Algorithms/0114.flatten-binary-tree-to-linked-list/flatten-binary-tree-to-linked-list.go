@@ -17,6 +17,10 @@ func cur(root *TreeNode) *TreeNode {
 		return root
 	}
 
+	if root.Left == nil {
+		return cur(root.Right)
+	}
+
 	res := cur(root.Right)
 	cur(root.Left).Right = root.Right
 	root.Right = root.Left
