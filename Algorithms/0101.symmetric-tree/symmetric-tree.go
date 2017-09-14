@@ -11,10 +11,10 @@ func isSymmetric(root *TreeNode) bool {
 		return true 
 	}
 
-	return cur(root.Left, root.Right)
+	return recur(root.Left, root.Right)
 }
 
-func cur(left, right *TreeNode) bool {
+func recur(left, right *TreeNode) bool {
 	if left == nil && right == nil {
 		return true
 	}
@@ -23,5 +23,5 @@ func cur(left, right *TreeNode) bool {
 		return false
 	}
 
-	return left.Val == right.Val && cur(left.Left, right.Right) && cur(left.Right, right.Left)
+	return left.Val == right.Val && recur(left.Left, right.Right) && recur(left.Right, right.Left)
 }
