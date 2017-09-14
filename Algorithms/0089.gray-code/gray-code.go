@@ -1,10 +1,10 @@
 package Problem0089
 
 func grayCode(n int) []int {
-	return cur(n, 1, []int{0})
+	return recur(n, 1, []int{0})
 }
 
-func cur(n, base int, nums []int) []int {
+func recur(n, base int, nums []int) []int {
 	if n == 0 {
 		return nums
 	}
@@ -15,5 +15,5 @@ func cur(n, base int, nums []int) []int {
 		temp[length-i-1] = nums[i] + base
 	}
 
-	return cur(n-1, base*2, append(nums, temp...))
+	return recur(n-1, base*2, append(nums, temp...))
 }
