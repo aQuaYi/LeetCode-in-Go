@@ -24,6 +24,12 @@ func Test_Problem0115(t *testing.T) {
 		},
 
 		{
+			"adbdadeecadeadeccaeaabdabdbcdabddddabcaaadbabaaedeeddeaeebcdeabcaaaeeaeeabcddcebddebeebedaecccbdcbcedbdaeaedcdebeecdaaedaacadbdccabddaddacdddc",
+			"bcddceeeebecbc",
+			700531452,
+		},
+
+		{
 			"",
 			"a",
 			0,
