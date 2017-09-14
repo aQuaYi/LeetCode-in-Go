@@ -16,12 +16,12 @@ func cur(root *TreeNode) (int, bool) {
 		return 0, true
 	}
 
-	leftDeepth, leftIsBalanced := cur(root.Left)
-	rightDeepth, rightIsBalanced := cur(root.Right)
+	leftDepth, leftIsBalanced := cur(root.Left)
+	rightDepth, rightIsBalanced := cur(root.Right)
 
 	if leftIsBalanced && rightIsBalanced &&
-		-1 <= leftDeepth-rightDeepth  && leftDeepth - rightDeepth <= 1 {
-		return max(leftDeepth, rightDeepth) + 1, true
+		-1 <= leftDepth-rightDepth  && leftDepth - rightDepth <= 1 {
+		return max(leftDepth, rightDepth) + 1, true
 	}
 
 	return 0, false
