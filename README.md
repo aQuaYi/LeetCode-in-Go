@@ -5,14 +5,14 @@
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang)
 
 
-## 答题进度：32%
+## 答题进度：33%
 > 仅含免费题
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|51 / 145|82 / 250|29 / 93|162 / 488|
+|**Algorithms**|52 / 145|82 / 250|29 / 93|163 / 488|
 |**Draft**|0 / 1|0 / 3|0 / 0|0 / 4|
-|**Total**|51 / 146|82 / 253|29 / 93|162 / 492|
+|**Total**|52 / 146|82 / 253|29 / 93|163 / 492|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -155,10 +155,11 @@
 |268|[Missing Number](./Algorithms/0268.missing-number)|☆|44%||
 |283|[Move Zeroes](./Algorithms/0283.move-zeroes)|☆|50%||
 |287|[Find the Duplicate Number](./Algorithms/0287.find-the-duplicate-number)|☆ ☆|43%|❤|
-|289|[Game of Life](./Algorithms/0289.game-of-life)|☆ ☆|36%|❤|
+|289|[Game of Life](./Algorithms/0289.game-of-life)|☆ ☆|37%|❤|
 |380|[Insert Delete GetRandom O(1)](./Algorithms/0380.insert-delete-getrandom-o1)|☆ ☆|39%|❤|
 |381|[Insert Delete GetRandom O(1) - Duplicates allowed](./Algorithms/0381.insert-delete-getrandom-o1-duplicates-allowed)|☆ ☆ ☆|28%|❤|
 |414|[Third Maximum Number](./Algorithms/0414.third-maximum-number)|☆|27%||
+|437|[Path Sum III](./Algorithms/0437.path-sum-iii)|☆|39%||
 |442|[Find All Duplicates in an Array](./Algorithms/0442.find-all-duplicates-in-an-array)|☆ ☆|55%||
 |448|[Find All Numbers Disappeared in an Array](./Algorithms/0448.find-all-numbers-disappeared-in-an-array)|☆|51%||
 |485|[Max Consecutive Ones](./Algorithms/0485.max-consecutive-ones)|☆|53%||
