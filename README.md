@@ -1,6 +1,6 @@
 # [LeetCode](https://leetcode.com)习题的Golang解答
 [![LeetCode](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode Ranking](https://img.shields.io/badge/Ranking-39037-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode Ranking](https://img.shields.io/badge/Ranking-36934-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang)
 
@@ -10,9 +10,9 @@
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|52 / 145|83 / 250|29 / 93|164 / 488|
+|**Algorithms**|52 / 145|83 / 250|30 / 93|165 / 488|
 |**Draft**|0 / 1|0 / 3|0 / 0|0 / 4|
-|**Total**|52 / 146|83 / 253|29 / 93|164 / 492|
+|**Total**|52 / 146|83 / 253|30 / 93|165 / 492|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -89,7 +89,7 @@
 |70|[Climbing Stairs](./Algorithms/0070.climbing-stairs)|☆|40%||
 |71|[Simplify Path](./Algorithms/0071.simplify-path)|☆ ☆|25%||
 |72|[Edit Distance](./Algorithms/0072.edit-distance)|☆ ☆ ☆|31%|❤|
-|73|[Set Matrix Zeroes](./Algorithms/0073.set-matrix-zeroes)|☆ ☆|36%|❤|
+|73|[Set Matrix Zeroes](./Algorithms/0073.set-matrix-zeroes)|☆ ☆|35%|❤|
 |74|[Search a 2D Matrix](./Algorithms/0074.search-a-2d-matrix)|☆ ☆|34%||
 |75|[Sort Colors](./Algorithms/0075.sort-colors)|☆ ☆|38%|❤|
 |76|[Minimum Window Substring](./Algorithms/0076.minimum-window-substring)|☆ ☆ ☆|25%|❤|
@@ -131,6 +131,7 @@
 |112|[Path Sum](./Algorithms/0112.path-sum)|☆|34%||
 |113|[Path Sum II](./Algorithms/0113.path-sum-ii)|☆ ☆|33%||
 |114|[Flatten Binary Tree to Linked List](./Algorithms/0114.flatten-binary-tree-to-linked-list)|☆ ☆|35%|❤|
+|115|[Distinct Subsequences](./Algorithms/0115.distinct-subsequences)|☆ ☆ ☆|31%|❤|
 |118|[Pascal's Triangle](./Algorithms/0118.pascals-triangle)|☆|38%||
 |119|[Pascal's Triangle II](./Algorithms/0119.pascals-triangle-ii)|☆|37%||
 |120|[Triangle](./Algorithms/0120.triangle)|☆ ☆|33%|❤|
