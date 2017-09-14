@@ -7,17 +7,17 @@ import (
 type TreeNode = kit.TreeNode
 
 func isBalanced(root *TreeNode) bool {
-	_, isBalanced := cur(root)
+	_, isBalanced := recur(root)
 	return isBalanced
 }
 
-func cur(root *TreeNode) (int, bool) {
+func recur(root *TreeNode) (int, bool) {
 	if root == nil {
 		return 0, true
 	}
 
-	leftDepth, leftIsBalanced := cur(root.Left)
-	rightDepth, rightIsBalanced := cur(root.Right)
+	leftDepth, leftIsBalanced := recur(root.Left)
+	rightDepth, rightIsBalanced := recur(root.Right)
 
 	if leftIsBalanced && rightIsBalanced &&
 		-1 <= leftDepth-rightDepth  && leftDepth - rightDepth <= 1 {
