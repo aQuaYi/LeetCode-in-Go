@@ -10,9 +10,9 @@
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|52 / 145|82 / 250|29 / 93|163 / 488|
+|**Algorithms**|52 / 145|83 / 250|29 / 93|164 / 488|
 |**Draft**|0 / 1|0 / 3|0 / 0|0 / 4|
-|**Total**|52 / 146|82 / 253|29 / 93|163 / 492|
+|**Total**|52 / 146|83 / 253|29 / 93|164 / 492|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -130,6 +130,7 @@
 |111|[Minimum Depth of Binary Tree](./Algorithms/0111.minimum-depth-of-binary-tree)|☆|33%||
 |112|[Path Sum](./Algorithms/0112.path-sum)|☆|34%||
 |113|[Path Sum II](./Algorithms/0113.path-sum-ii)|☆ ☆|33%||
+|114|[Flatten Binary Tree to Linked List](./Algorithms/0114.flatten-binary-tree-to-linked-list)|☆ ☆|35%|❤|
 |118|[Pascal's Triangle](./Algorithms/0118.pascals-triangle)|☆|38%||
 |119|[Pascal's Triangle II](./Algorithms/0119.pascals-triangle-ii)|☆|37%||
 |120|[Triangle](./Algorithms/0120.triangle)|☆ ☆|33%|❤|
@@ -159,7 +160,7 @@
 |380|[Insert Delete GetRandom O(1)](./Algorithms/0380.insert-delete-getrandom-o1)|☆ ☆|39%|❤|
 |381|[Insert Delete GetRandom O(1) - Duplicates allowed](./Algorithms/0381.insert-delete-getrandom-o1-duplicates-allowed)|☆ ☆ ☆|28%|❤|
 |414|[Third Maximum Number](./Algorithms/0414.third-maximum-number)|☆|27%||
-|437|[Path Sum III](./Algorithms/0437.path-sum-iii)|☆|39%||
+|437|[Path Sum III](./Algorithms/0437.path-sum-iii)|☆|39%|❤|
 |442|[Find All Duplicates in an Array](./Algorithms/0442.find-all-duplicates-in-an-array)|☆ ☆|55%||
 |448|[Find All Numbers Disappeared in an Array](./Algorithms/0448.find-all-numbers-disappeared-in-an-array)|☆|51%||
 |485|[Max Consecutive Ones](./Algorithms/0485.max-consecutive-ones)|☆|53%||
