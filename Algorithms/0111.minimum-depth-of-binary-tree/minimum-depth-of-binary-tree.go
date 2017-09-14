@@ -8,21 +8,21 @@ type TreeNode = kit.TreeNode
 
 // 注意审题，没有子节点的 node 才是 leaf
 func minDepth(root *TreeNode) int {
-	if root == nil {
+	switch {
+	case root == nil:
 		return 0
+	case root.Left == nil:
+		return 1 + minDepth(root.Right)
+	case root.Right == nil:
+		return 1 + minDepth(root.Left)
+	default:
+		return 1 + min(minDepth(root.Left), minDepth(root.Right))
 	}
-
-	return sonDepth(minDepth(root.Left),minDepth(root.Right ))+1
 }
 
-func sonDepth(a, b int) int {
-	if a == 0 || b == 0 {
-		return a+b 
-	}
-
+func min(a, b int) int {
 	if a < b {
 		return a
 	}
-
 	return b
 }
