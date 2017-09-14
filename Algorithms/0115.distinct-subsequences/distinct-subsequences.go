@@ -27,8 +27,8 @@ func numDistinct(s string, t string) int {
 			} else {
 				dp[i][j] = dp[i-1][j]
 			}
-		
-	}
 
+		}
+	}
 	return dp[m][n]
 }
