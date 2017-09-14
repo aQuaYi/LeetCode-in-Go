@@ -194,21 +194,21 @@ func Test_%s(t *testing.T) {
 // 把 函数的参数 变成 tc 的参数
 func getTcPara(para string) string {
 	// 把 para 按行切分
-	paras := strings.Split(para, `\n`)
+	paras := strings.Split(para, "\n")
 
 	// 把单个参数按空格，切分成参数名和参数类型
 	temp := make([][]string, len(paras))
 	for i := range paras {
-		temp[i] = strings.Split(paras[i], ` `)
+		temp[i] = strings.Split(strings.TrimSpace(paras[i]), ` `)
 	}
 
 	// 在参数名称前添加 "tc." 并组合在一起
-	res := "tc." + temp[0][0]
-	for i := 1; i < len(temp); i++ {
+	res := ""
+	for i := 0; i < len(temp); i++ {
 		res += "," + " tc." + temp[i][0]
 	}
 
-	return res
+	return res[2:]
 }
 
 func (p problem) packageName() string {
