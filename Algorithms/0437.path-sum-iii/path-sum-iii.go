@@ -11,7 +11,7 @@ func pathSum(root *TreeNode, sum int) int {
 		return 0
 	}
 
-	res := 0
+	cnt := 0
 
 	var dfs func(*TreeNode, int)
 	dfs = func(node *TreeNode, sum int) {
@@ -21,7 +21,7 @@ func pathSum(root *TreeNode, sum int) int {
 
 		sum -= node.Val
 		if sum == 0 {
-			res++
+			cnt++
 		}
 
 		dfs(node.Left, sum)
@@ -30,7 +30,7 @@ func pathSum(root *TreeNode, sum int) int {
 
 	dfs(root, sum)
 
-	return res +
+	return cnt +
 		pathSum(root.Left, sum) +
 		pathSum(root.Right, sum)
 }
