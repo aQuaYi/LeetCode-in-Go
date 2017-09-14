@@ -14,9 +14,14 @@ func Test_Problem0114(t *testing.T) {
 
 	// tcs is testcase slice
 	tcs := []struct {
-		pre, in []int
-		ans     []int
+		pre, in, post []int
 	}{
+
+		{
+			[]int{1, 2, 3},
+			[]int{3, 2, 1},
+			[]int{3, 2, 1},
+		},
 
 		{
 			[]int{1, 2, 3, 4, 5, 6},
@@ -38,6 +43,6 @@ func Test_Problem0114(t *testing.T) {
 
 		root := kit.PreIn2Tree(tc.pre, tc.in)
 		flatten(root)
-		ast.Equal(tc.ans, kit.Tree2Postorder(root), "输入:%v", tc)
+		ast.Equal(tc.post, kit.Tree2Postorder(root), "输入:%v", tc)
 	}
 }
