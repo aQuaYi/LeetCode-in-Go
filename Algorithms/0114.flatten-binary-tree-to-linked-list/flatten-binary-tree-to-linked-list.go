@@ -24,6 +24,8 @@ func cur(root *TreeNode) *TreeNode {
 	res := cur(root.Right)
 	cur(root.Left).Right = root.Right
 	root.Right = root.Left
+	// 不要忘记封闭 left 节点
+	root.Left = nil
 
 	return res
 }
