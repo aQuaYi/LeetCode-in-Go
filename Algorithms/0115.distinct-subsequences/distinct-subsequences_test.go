@@ -18,6 +18,30 @@ func Test_Problem0115(t *testing.T) {
 	}{
 
 		{
+			"aaaaaa",
+			"aa",
+			15,
+		},
+
+		{
+			"bbb",
+			"bb",
+			3,
+		},
+
+		{
+			"abbabc",
+			"abc",
+			4,
+		},
+
+		{
+			"abbabcc",
+			"abc",
+			8,
+		},
+
+		{
 			"abcabcabc",
 			"abc",
 			10,
@@ -33,12 +57,6 @@ func Test_Problem0115(t *testing.T) {
 			"",
 			"a",
 			0,
-		},
-
-		{
-			"bbb",
-			"bb",
-			3,
 		},
 
 		{
