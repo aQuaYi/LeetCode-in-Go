@@ -11,10 +11,10 @@ func hasPathSum(root *TreeNode, sum int) bool {
 		return false
 	}
 
-	return cur(root, sum)
+	return dfs(root, sum)
 }
 
-func cur(root *TreeNode, sum int) bool {
+func dfs(root *TreeNode, sum int) bool {
 	if root == nil {
 		if sum == 0 {
 			return true
@@ -22,9 +22,13 @@ func cur(root *TreeNode, sum int) bool {
 		return false
 	}
 
-	if root.Val > sum {
-		return false
+	temp := sum - root.Val
+	switch {
+	case root.Left == nil:
+		return dfs(root.Right, temp)
+	case root.Right == nil:
+		return dfs(root.Left, temp)
+	default:
+		return dfs(root.Left, temp) || dfs(root.Right, temp)
 	}
-
-	return cur(root.Left, sum-root.Val) || cur(root.Right, sum-root.Val)
 }
