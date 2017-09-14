@@ -7,10 +7,6 @@ import (
 type TreeNode = kit.TreeNode
 
 func pathSum(root *TreeNode, sum int) [][]int {
-	if root == nil {
-		return nil
-	}
-
 	res := [][]int{}
 	path := []int{}
 
@@ -20,6 +16,7 @@ func pathSum(root *TreeNode, sum int) [][]int {
 			return
 		}
 
+		// 根据 level 来更新 path
 		if level >= len(path) {
 			path = append(path, node.Val)
 		} else {
@@ -27,12 +24,13 @@ func pathSum(root *TreeNode, sum int) [][]int {
 		}
 		sum -= node.Val
 
-		if node.Left == nil && node.Right == nil {
-			if sum == 0 {
-				temp := make([]int, level+1)
-				copy(temp, path)
-				res = append(res, temp)
-			}
+		// 到达 leaf
+		// 并且，此条路径符合要求
+		if node.Left == nil && node.Right == nil && sum == 0 {
+			temp := make([]int, level+1)
+			// copy 不会复制 path[len(temp):]，如果 len(path) > len(temp) 的话
+			copy(temp, path)
+			res = append(res, temp)
 		}
 
 		dfs(node.Left, level+1, sum)

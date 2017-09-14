@@ -49,7 +49,7 @@ func Test_Problem0113(t *testing.T) {
 			[]int{},
 			[]int{},
 			4,
-			nil,
+			[][]int{},
 		},
 
 		// 可以多个 testcase
