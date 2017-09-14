@@ -7,12 +7,12 @@ import (
 func subsets(nums []int) [][]int {
 	res := [][]int{}
 
-	cur(nums, []int{}, &res)
+	recur(nums, []int{}, &res)
 
 	return res
 }
 
-func cur(nums, temp []int, res *[][]int) {
+func recur(nums, temp []int, res *[][]int) {
 	l := len(nums)
 	if l == 0 {
 		sort.Ints(temp)
@@ -20,7 +20,7 @@ func cur(nums, temp []int, res *[][]int) {
 		return
 	}
 
-	cur(nums[:l-1], temp, res)
+	recur(nums[:l-1], temp, res)
 
-	cur(nums[:l-1], append([]int{nums[l-1]}, temp...), res)
+	recur(nums[:l-1], append([]int{nums[l-1]}, temp...), res)
 }
