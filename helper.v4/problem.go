@@ -205,7 +205,7 @@ func getTcPara(para string) string {
 	// 在参数名称前添加 "tc." 并组合在一起
 	res := ""
 	for i := 0; i < len(temp); i++ {
-		res += "," + " tc." + temp[i][0]
+		res += ", tc." + temp[i][0]
 	}
 
 	return res[2:]
