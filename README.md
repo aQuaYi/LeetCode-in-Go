@@ -10,9 +10,9 @@
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|51 / 145|81 / 250|29 / 93|161 / 488|
+|**Algorithms**|51 / 145|82 / 250|29 / 93|162 / 488|
 |**Draft**|0 / 1|0 / 3|0 / 0|0 / 4|
-|**Total**|51 / 146|81 / 253|29 / 93|161 / 492|
+|**Total**|51 / 146|82 / 253|29 / 93|162 / 492|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -129,6 +129,7 @@
 |110|[Balanced Binary Tree](./Algorithms/0110.balanced-binary-tree)|☆|37%||
 |111|[Minimum Depth of Binary Tree](./Algorithms/0111.minimum-depth-of-binary-tree)|☆|33%||
 |112|[Path Sum](./Algorithms/0112.path-sum)|☆|34%||
+|113|[Path Sum II](./Algorithms/0113.path-sum-ii)|☆ ☆|33%||
 |118|[Pascal's Triangle](./Algorithms/0118.pascals-triangle)|☆|38%||
 |119|[Pascal's Triangle II](./Algorithms/0119.pascals-triangle-ii)|☆|37%||
 |120|[Triangle](./Algorithms/0120.triangle)|☆ ☆|33%|❤|
