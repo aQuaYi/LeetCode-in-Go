@@ -11,19 +11,14 @@ func minDepth(root *TreeNode) int {
 		return 0
 	}
 
+	// 题目很奇葩的规定
+	//     inorder[1]     的最短深度为 1
+	//     inorder[1, 2]  的最短深度为 2
 	if root.Left == nil && root.Right == nil {
 		return 1
 	}
 
-	return max(2, cur(root))
-}
-
-func cur(node *TreeNode) int {
-	if node == nil {
-		return 1
-	}
-
-	return min(minDepth(node.Left), minDepth(node.Right)) +1
+	return max(2, min(minDepth(root.Left),minDepth(root.Right ))+1)
 }
 
 func max(a, b int) int {
