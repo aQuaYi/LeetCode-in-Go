@@ -19,6 +19,12 @@ func Test_Problem0115(t *testing.T) {
 
 		{
 			"aaaaaa",
+			"",
+			1,
+		},
+
+		{
+			"aaaaaa",
 			"aa",
 			15,
 		},
