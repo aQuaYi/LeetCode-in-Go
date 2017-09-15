@@ -5,14 +5,14 @@
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang)
 
 
-## 答题进度：33%
+## 答题进度：34%
 > 仅含免费题
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|52 / 145|83 / 250|31 / 93|166 / 488|
+|**Algorithms**|53 / 145|83 / 250|31 / 93|167 / 488|
 |**Draft**|0 / 1|0 / 3|0 / 0|0 / 4|
-|**Total**|52 / 146|83 / 253|31 / 93|166 / 492|
+|**Total**|53 / 146|83 / 253|31 / 93|167 / 492|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -139,6 +139,7 @@
 |122|[Best Time to Buy and Sell Stock II](./Algorithms/0122.best-time-to-buy-and-sell-stock-ii)|☆|47%||
 |123|[Best Time to Buy and Sell Stock III](./Algorithms/0123.best-time-to-buy-and-sell-stock-iii)|☆ ☆ ☆|29%||
 |124|[Binary Tree Maximum Path Sum](./Algorithms/0124.binary-tree-maximum-path-sum)|☆ ☆ ☆|26%|❤|
+|125|[Valid Palindrome](./Algorithms/0125.valid-palindrome)|☆|26%||
 |152|[Maximum Product Subarray](./Algorithms/0152.maximum-product-subarray)|☆ ☆|25%|❤|
 |153|[Find Minimum in Rotated Sorted Array](./Algorithms/0153.find-minimum-in-rotated-sorted-array)|☆ ☆|40%||
 |154|[Find Minimum in Rotated Sorted Array II](./Algorithms/0154.find-minimum-in-rotated-sorted-array-ii)|☆ ☆ ☆|37%||
