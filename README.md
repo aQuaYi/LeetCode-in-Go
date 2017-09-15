@@ -10,9 +10,9 @@
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|53 / 145|83 / 250|31 / 93|167 / 488|
+|**Algorithms**|53 / 145|83 / 250|32 / 93|168 / 488|
 |**Draft**|0 / 1|0 / 3|0 / 0|0 / 4|
-|**Total**|53 / 146|83 / 253|31 / 93|167 / 492|
+|**Total**|53 / 146|83 / 253|32 / 93|168 / 492|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -140,6 +140,7 @@
 |123|[Best Time to Buy and Sell Stock III](./Algorithms/0123.best-time-to-buy-and-sell-stock-iii)|☆ ☆ ☆|29%||
 |124|[Binary Tree Maximum Path Sum](./Algorithms/0124.binary-tree-maximum-path-sum)|☆ ☆ ☆|26%|❤|
 |125|[Valid Palindrome](./Algorithms/0125.valid-palindrome)|☆|26%||
+|126|[Word Ladder II](./Algorithms/0126.word-ladder-ii)|☆ ☆ ☆|14%||
 |152|[Maximum Product Subarray](./Algorithms/0152.maximum-product-subarray)|☆ ☆|25%|❤|
 |153|[Find Minimum in Rotated Sorted Array](./Algorithms/0153.find-minimum-in-rotated-sorted-array)|☆ ☆|40%||
 |154|[Find Minimum in Rotated Sorted Array II](./Algorithms/0154.find-minimum-in-rotated-sorted-array-ii)|☆ ☆ ☆|37%||
