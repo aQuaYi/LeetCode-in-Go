@@ -17,6 +17,16 @@ func Test_Problem0125(t *testing.T) {
 	}{
 
 		{
+			"0p",
+			false,
+		},
+
+		{
+			"0",
+			true,
+		},
+
+		{
 			"race a car",
 			false,
 		},
