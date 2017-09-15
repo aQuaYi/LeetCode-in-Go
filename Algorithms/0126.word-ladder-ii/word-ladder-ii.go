@@ -1,85 +1,79 @@
 package Problem0126
 
+import (
+	"fmt"
+)
+
 func findLadders(beginWord string, endWord string, words []string) [][]string {
 	res := [][]string{}
+	// 因为 beginWord 不能做 transformed word
+	// 很碍事，就先删掉，好让后面的逻辑简明一些
+	words = deleteBeginWord(words, beginWord)
 
-	isUsed := map[string]bool{}
+	trans := map[string][]string{}
+	isMatchedEndWord := false
+	var bfs func([]string, []string)
 
-	transMap := map[string][]string{}
-	for i := 0; i < len(words); i++ {
-		if words[i] == beginWord {
-			// Note that beginWord is not a transformed word.
-			continue
-		}
-
-		if isTransable(words[i], beginWord) {
-			transMap[beginWord] = append(transMap[beginWord], words[i])
-		}
-
-		for j := i + 1; j < len(words); j++ {
-			if words[j] == beginWord {
-				// Note that beginWord is not a transformed word.
-				continue
+	bfs = func(words, nodes []string) {
+		newWords := make([]string, 0, len(words))
+		newNodes := make([]string, 0, len(words))
+		for _, w := range words {
+			isMatched := false
+			for _, n := range nodes {
+				if isTransable(w, n) {
+					isMatched = true
+					trans[n] = append(trans[n], w)
+				}
 			}
-
-			a, b := words[i], words[j]
-			if isTransable(a, b) {
-				transMap[a] = append(transMap[a], b)
-				transMap[b] = append(transMap[b], a)
+			if isMatched {
+				newNodes = append(newNodes, w)
+				if w == endWord {
+					isMatchedEndWord = true
+				}
+			} else {
+				newWords = append(newWords, w)
 			}
 		}
-	}
 
-	minLen := 1<<63 - 1
-
-	var dfs func(string, []string, int)
-	dfs = func(word string, path []string, idx int) {
-		tempLen := idx + 1
-		if minLen < tempLen {
+		if isMatchedEndWord || len(newWords) == 0 || len(newNodes) == 0 {
 			return
 		}
 
-		for _, w := range transMap[word] {
-			if isUsed[w] {
-				continue
-			}
-
-			path[idx] = w
-			if w == endWord {
-				temp := make([]string, tempLen)
-				copy(temp, path)
-
-				if minLen > tempLen {
-					minLen = tempLen
-					res = [][]string{temp}
-				} else {
-					// minLen == tempLen
-					res = append(res, temp)
-				}
-				return
-			}
-			isUsed[w] = true
-			dfs(w, path, idx+1)
-			isUsed[w] = false
-		}
+		bfs(newWords, newNodes)
 	}
 
-	path := make([]string, len(words)*2)
-	path[0] = beginWord
-	dfs(beginWord, path, 1)
+	nodes := make([]string, len(words)*2)
+	nodes[0] = beginWord
+	bfs(words, nodes)
 
+	fmt.Println(trans)
 	return res
 }
 
+func deleteBeginWord(words []string, beginWord string) []string {
+	i := 0
+	for ; i < len(words); i++ {
+		if words[i] == beginWord {
+			break
+		}
+	}
+
+	if i == len(words) {
+		return words
+	}
+
+	return append(words[:i], words[i+1:]...)
+}
+
 func isTransable(a, b string) bool {
-	diff := false
+	// onceAgain == true 说明已经出现过不同的字符了
+	onceAgain := false
 	for i := range a {
 		if a[i] != b[i] {
-			if !diff {
-				diff = true
-			} else {
+			if onceAgain {
 				return false
 			}
+			onceAgain = true
 		}
 	}
 
