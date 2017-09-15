@@ -1,9 +1,5 @@
 package Problem0126
 
-import (
-	"fmt"
-)
-
 func findLadders(beginWord string, endWord string, words []string) [][]string {
 	res := [][]string{}
 	// 因为 beginWord 不能做 transformed word
@@ -12,9 +8,11 @@ func findLadders(beginWord string, endWord string, words []string) [][]string {
 
 	trans := map[string][]string{}
 	isMatchedEndWord := false
+	cnt := 1
 	var bfs func([]string, []string)
 
 	bfs = func(words, nodes []string) {
+		cnt++
 		newWords := make([]string, 0, len(words))
 		newNodes := make([]string, 0, len(words))
 		for _, w := range words {
@@ -42,12 +40,39 @@ func findLadders(beginWord string, endWord string, words []string) [][]string {
 		bfs(newWords, newNodes)
 	}
 
-	nodes := make([]string, len(words)*2)
-	nodes[0] = beginWord
+	nodes := []string{beginWord}
 	bfs(words, nodes)
 
-	fmt.Println(trans)
+	if !isMatchedEndWord {
+		return res
+	}
+
+	var dfs func([]string, int)
+	dfs = func(path []string, idx int) {
+		if idx == cnt {
+			if path[idx-1] == endWord {
+				res = append(res, deepCopy(path))
+			}
+			return
+		}
+
+		word := path[idx-1]
+		for _, w := range trans[word] {
+			path[idx] = w
+			dfs(path, idx+1)
+		}
+	}
+	path := make([]string, cnt)
+	path[0] = beginWord
+	dfs(path, 1)
+
 	return res
+}
+
+func deepCopy(src []string) []string {
+	temp := make([]string, len(src))
+	copy(temp, src)
+	return temp
 }
 
 func deleteBeginWord(words []string, beginWord string) []string {
