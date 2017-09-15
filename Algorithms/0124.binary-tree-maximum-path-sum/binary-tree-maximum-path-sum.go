@@ -8,44 +8,31 @@ type TreeNode = kit.TreeNode
 
 func maxPathSum(root *TreeNode) int {
 	if root == nil {
-		return -1<<31 
+		return 0
 	}
 
-	sum := root.Val +
-		max(0, maxSince(root.Left)) +
-		max(0, maxSince(root.Right))
+	maxSum := root.Val
 
-	return max(
-		sum,
-		max(
-			maxPathSum(root.Left), 
-			maxPathSum(root.Right),
-		),
-	)
-}
-
-// 返回，从 root 出发，包含 root 在内的所有可能路径的最大的 sum 值
-func maxSince(root *TreeNode) int {
-	res := -1 << 31
-
-	var dfs func(*TreeNode, int)
-	dfs = func(root *TreeNode, sum int) {
+	// 返回，从 root 出发，包含 root 在内的所有可能路径的最大的 sum 值
+	var dfs func(*TreeNode) int
+	dfs = func(root *TreeNode) int {
 		if root == nil {
-			return
+			return 0
 		}
 
-		sum += root.Val
-		if res < sum {
-			res = sum
+		left := max(0, dfs(root.Left))
+		right := max(0, dfs(root.Right))
+		sum := left + root.Val + right
+		if maxSum < sum {
+			maxSum = sum
 		}
 
-		dfs(root.Left, sum)
-		dfs(root.Right, sum)
+		return max(left, right) + root.Val
 	}
 
-	dfs(root, 0)
+	dfs(root)
 
-	return res
+	return maxSum
 }
 
 func max(a, b int) int {
