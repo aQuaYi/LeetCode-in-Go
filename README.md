@@ -183,9 +183,9 @@
 |667|[Beautiful Arrangement II](./Algorithms/0667.beautiful-arrangement-ii)|☆ ☆|51%||
 
 
-### Leetcode 暂时不提供以下题目的 Golang 解答方式
-1. [116. Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)
-1. [117. Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)
+ 以下题目，暂时不能使用 Golang 解答
+- [116. Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)
+- [117. Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)
 
 
 ## helper
