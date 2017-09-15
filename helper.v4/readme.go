@@ -25,7 +25,9 @@ func makeREADME(lc *leetcode) {
 	headFormat := string(read("README_HEAD.md"))
 	head := fmt.Sprintf(headFormat, lc.Username, lc.Username, lc.Ranking, lc.Username)
 
-	acceptedPercent := lc.Categories[len(lc.Categories)-1].Total.Solved * 100 / lc.Categories[len(lc.Categories)-1].Total.Total
+	// 没有提供 Golang 解答方法的题目
+	canNotSolve := 2
+	acceptedPercent := lc.Categories[len(lc.Categories)-1].Total.Solved * 100 / (lc.Categories[len(lc.Categories)-1].Total.Total - canNotSolve)
 
 	count := lc.Categories.String()
 
