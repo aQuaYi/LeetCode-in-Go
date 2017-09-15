@@ -10,9 +10,9 @@
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|52 / 145|83 / 250|30 / 93|165 / 488|
+|**Algorithms**|52 / 145|83 / 250|31 / 93|166 / 488|
 |**Draft**|0 / 1|0 / 3|0 / 0|0 / 4|
-|**Total**|52 / 146|83 / 253|30 / 93|165 / 492|
+|**Total**|52 / 146|83 / 253|31 / 93|166 / 492|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -138,6 +138,7 @@
 |121|[Best Time to Buy and Sell Stock](./Algorithms/0121.best-time-to-buy-and-sell-stock)|☆|41%||
 |122|[Best Time to Buy and Sell Stock II](./Algorithms/0122.best-time-to-buy-and-sell-stock-ii)|☆|47%||
 |123|[Best Time to Buy and Sell Stock III](./Algorithms/0123.best-time-to-buy-and-sell-stock-iii)|☆ ☆ ☆|29%||
+|124|[Binary Tree Maximum Path Sum](./Algorithms/0124.binary-tree-maximum-path-sum)|☆ ☆ ☆|26%|❤|
 |152|[Maximum Product Subarray](./Algorithms/0152.maximum-product-subarray)|☆ ☆|25%|❤|
 |153|[Find Minimum in Rotated Sorted Array](./Algorithms/0153.find-minimum-in-rotated-sorted-array)|☆ ☆|40%||
 |154|[Find Minimum in Rotated Sorted Array II](./Algorithms/0154.find-minimum-in-rotated-sorted-array-ii)|☆ ☆ ☆|37%||
@@ -166,7 +167,7 @@
 |448|[Find All Numbers Disappeared in an Array](./Algorithms/0448.find-all-numbers-disappeared-in-an-array)|☆|51%||
 |485|[Max Consecutive Ones](./Algorithms/0485.max-consecutive-ones)|☆|53%||
 |495|[Teemo Attacking](./Algorithms/0495.teemo-attacking)|☆ ☆|51%||
-|526|[Beautiful Arrangement](./Algorithms/0526.beautiful-arrangement)|☆ ☆|55%|❤|
+|526|[Beautiful Arrangement](./Algorithms/0526.beautiful-arrangement)|☆ ☆|54%|❤|
 |532|[K-diff Pairs in an Array](./Algorithms/0532.k-diff-pairs-in-an-array)|☆|28%||
 |560|[Subarray Sum Equals K](./Algorithms/0560.subarray-sum-equals-k)|☆ ☆|40%|❤|
 |561|[Array Partition I](./Algorithms/0561.array-partition-i)|☆|67%||
