@@ -141,7 +141,7 @@
 |123|[Best Time to Buy and Sell Stock III](./Algorithms/0123.best-time-to-buy-and-sell-stock-iii)|☆ ☆ ☆|29%||
 |124|[Binary Tree Maximum Path Sum](./Algorithms/0124.binary-tree-maximum-path-sum)|☆ ☆ ☆|26%|❤|
 |125|[Valid Palindrome](./Algorithms/0125.valid-palindrome)|☆|26%||
-|126|[Word Ladder II](./Algorithms/0126.word-ladder-ii)|☆ ☆ ☆|14%||
+|126|[Word Ladder II](./Algorithms/0126.word-ladder-ii)|☆ ☆ ☆|14%|❤|
 |127|[Word Ladder](./Algorithms/0127.word-ladder)|☆ ☆|19%||
 |152|[Maximum Product Subarray](./Algorithms/0152.maximum-product-subarray)|☆ ☆|25%|❤|
 |153|[Find Minimum in Rotated Sorted Array](./Algorithms/0153.find-minimum-in-rotated-sorted-array)|☆ ☆|40%||
