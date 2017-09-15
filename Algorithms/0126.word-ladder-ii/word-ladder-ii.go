@@ -1,14 +1,18 @@
 package Problem0126
 
 func findLadders(beginWord string, endWord string, words []string) [][]string {
-	// 因为 beginWord 不能做 transformed word 很碍事，就先删掉，好让后面的逻辑简明一些
+	// 因为 beginWord 不能做 transformed word
+	// 先删掉 words 中的 beginWord，
+	// 可以让后面的 trans 少很多的断头 path，会加快程序。
+	// 也更符合题意
+	// 删除下面这句，程序也能 accepted，但是会从 269ms 减慢到 319ms
 	words = deleteBeginWord(words, beginWord)
 
-	// trans 用来记录 k -> v[i] 的转换关系。
+	// trans 用来查找 k->？
 	trans := map[string][]string{}
-	// isMatchedEndWord 用于在生成 trans 的过程中，存在 -> endWord 的转换关系
+	// isTransedEndWord 用于在生成 trans 的过程中标记，存在 ->endWord 的转换关系
 	// 用于提前结束
-	isMatchedEndWord := false
+	isTransedEndWord := false
 	// cnt 用于记录生成trans的迭代次数
 	// 其实也是最短路径的长度
 	cnt := 1
@@ -17,43 +21,46 @@ func findLadders(beginWord string, endWord string, words []string) [][]string {
 	bfs = func(words, nodes []string) {
 		cnt++
 		// words 中的 w
-		//     与 nodes 中的 n -> w，在 w 会被放入 newNodes
+		//     与 nodes 中的 n ，可以实现 n->w 的转换，
+		//       则，w 会被放入 newNodes
 		//     否则，w 会被放入 newWords
 		newWords := make([]string, 0, len(words))
 		newNodes := make([]string, 0, len(words))
 		for _, w := range words {
-			isMatched := false
+			isTransed := false
 			for _, n := range nodes {
-				if isTransable(w, n) {
-					isMatched = true
+				if isTransable(n, w) {
 					trans[n] = append(trans[n], w)
+					isTransed = true
 				}
 			}
-			if isMatched {
+
+			if isTransed {
 				newNodes = append(newNodes, w)
 				if w == endWord {
-					isMatchedEndWord = true
+					isTransedEndWord = true
 				}
 			} else {
 				newWords = append(newWords, w)
 			}
 		}
 
-		if isMatchedEndWord || // 匹配到 endWord 说明已经找到了所有的最短路径
-			len(newWords) == 0 || // 全部匹配完成
+		if isTransedEndWord || // 转换到了 endWord 说明已经找到了所有的最短路径
+			len(newWords) == 0 || // words 的所有单词都已经可以从 beginWord trans 到
 			len(newNodes) == 0 { // newWords 中单词，是 beginWord 无法 trans 到的
 			return
 		}
 
-		// 继续完善 trans
+		// 上面没有 return，要继续完善 trans
 		bfs(newWords, newNodes)
 	}
 
+	// 第一代 nodes 含有且仅含有 beginWord
 	nodes := []string{beginWord}
 	bfs(words, nodes)
 
 	res := [][]string{}
-	if !isMatchedEndWord {
+	if !isTransedEndWord {
 		// beginWord 无法 trans 到 endWord
 		return res
 	}
@@ -75,7 +82,7 @@ func findLadders(beginWord string, endWord string, words []string) [][]string {
 
 		prev := path[idx-1]
 		for _, w := range trans[prev] {
-			// 利用 prev -> w 填充 path[idx]
+			// 利用 prev->w 填充 path[idx]
 			path[idx] = w
 			dfs(idx + 1)
 		}
@@ -92,6 +99,8 @@ func deepCopy(src []string) []string {
 	return temp
 }
 
+// 题目中说了，words 中没有重复的单词，
+// 所以，beginWord 最多出现一次
 func deleteBeginWord(words []string, beginWord string) []string {
 	i := 0
 	for ; i < len(words); i++ {
