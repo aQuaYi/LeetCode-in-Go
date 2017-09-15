@@ -102,18 +102,19 @@ func deepCopy(src []string) []string {
 // 题目中说了，words 中没有重复的单词，
 // 所以，beginWord 最多出现一次
 func deleteBeginWord(words []string, beginWord string) []string {
-	i := 0
-	for ; i < len(words); i++ {
+	i, size := 0, len(words)
+	for ; i < size; i++ {
 		if words[i] == beginWord {
 			break
 		}
 	}
 
-	if i == len(words) {
+	if i == size {
 		return words
 	}
 
-	return append(words[:i], words[i+1:]...)
+	words[i] = words[size-1]
+	return words[:size-1]
 }
 
 func isTransable(a, b string) bool {
