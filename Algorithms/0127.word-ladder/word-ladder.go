@@ -13,12 +13,11 @@ func ladderLength(beginWord string, endWord string, words []string) int {
 	isTransedEndWord := false
 	// cnt 用于记录生成trans的迭代次数
 	// 其实也是最短路径的长度
-	// TODO: 修改 cnt 为 res
-	cnt := 1
+	res := 1
 	var bfs func([]string, []string)
 	// 使用 bfs 方法，递归地生成 trans
 	bfs = func(words, nodes []string) {
-		cnt++
+		res++
 		// words 中的 w
 		//     与 nodes 中的 n ，可以实现 n->w 的转换，
 		//       则，w 会被放入 newNodes
@@ -36,6 +35,7 @@ func ladderLength(beginWord string, endWord string, words []string) int {
 
 			if isTransed {
 				if w == endWord {
+					isTransedEndWord = true
 					return
 				}
 				newNodes = append(newNodes, w)
@@ -62,30 +62,25 @@ func ladderLength(beginWord string, endWord string, words []string) int {
 		return 0
 	}
 
-	return cnt
-}
-
-func deepCopy(src []string) []string {
-	temp := make([]string, len(src))
-	copy(temp, src)
-	return temp
+	return res
 }
 
 // 题目中说了，words 中没有重复的单词，
 // 所以，beginWord 最多出现一次
 func deleteBeginWord(words []string, beginWord string) []string {
-	i := 0
-	for ; i < len(words); i++ {
+	i, size := 0, len(words)
+	for ; i < size; i++ {
 		if words[i] == beginWord {
 			break
 		}
 	}
 
-	if i == len(words) {
+	if i == size {
 		return words
 	}
 
-	return append(words[:i], words[i+1:]...)
+	words[i] = words[size-1]
+	return words[:size-1]
 }
 
 func isTransable(a, b string) bool {
