@@ -13,8 +13,8 @@ func maxPathSum(root *TreeNode) int {
 
 	maxSum := root.Val
 
-	// 返回，从 root 出发，包含 root 在内的所有可能路径的最大的 sum 值
 	var dfs func(*TreeNode) int
+	// 返回，以 root 为起点，所有可能路径的 sum 值中的最大值。
 	dfs = func(root *TreeNode) int {
 		if root == nil {
 			return 0
