@@ -30,7 +30,8 @@ UPDATE (2017/1/20):
 The wordList parameter had been changed to a list of strings (instead of a set of strings). Please reload the code definition to get the latest changes.
 
 ## 解题思路
-这一次，我不想感谢服务器。
-![100%](126.100%.png)
 
 见程序注释
+
+这一次，我不想感谢服务器。
+![100%](126.100%.png)

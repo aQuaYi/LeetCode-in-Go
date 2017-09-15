@@ -58,24 +58,30 @@ func findLadders(beginWord string, endWord string, words []string) [][]string {
 		return res
 	}
 
-	var dfs func([]string, int)
-	dfs = func(path []string, idx int) {
+	path := make([]string, cnt)
+	path[0] = beginWord
+
+	var dfs func(int)
+	// 使用 dfs 方法，生成最短路径
+	dfs = func(idx int) {
 		if idx == cnt {
+			// path 已经填充完毕
 			if path[idx-1] == endWord {
+				// 最后一个单词是 endWord，说明这是一条最短路径
 				res = append(res, deepCopy(path))
 			}
 			return
 		}
 
-		word := path[idx-1]
-		for _, w := range trans[word] {
+		prev := path[idx-1]
+		for _, w := range trans[prev] {
+			// 利用 prev -> w 填充 path[idx]
 			path[idx] = w
-			dfs(path, idx+1)
+			dfs(idx + 1)
 		}
 	}
-	path := make([]string, cnt)
-	path[0] = beginWord
-	dfs(path, 1)
+
+	dfs(1)
 
 	return res
 }
