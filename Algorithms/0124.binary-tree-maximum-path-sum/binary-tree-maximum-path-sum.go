@@ -15,8 +15,13 @@ func maxPathSum(root *TreeNode) int {
 		max(0, maxSince(root.Left)) +
 		max(0, maxSince(root.Right))
 
-	return max(sum,
-		max(maxPathSum(root.Left), maxPathSum(root.Right)))
+	return max(
+		sum,
+		max(
+			maxPathSum(root.Left), 
+			maxPathSum(root.Right),
+		),
+	)
 }
 
 // 返回，从 root 出发，包含 root 在内的所有可能路径的最大的 sum 值
