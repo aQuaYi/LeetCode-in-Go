@@ -1,12 +1,6 @@
 package Problem0127
 
 func ladderLength(beginWord string, endWord string, words []string) int {
-	// 因为 beginWord 不能做 transformed word
-	// 先删掉 words 中的 beginWord，
-	// 可以让后面的 trans 少很多的断头 path，会加快程序。
-	// 也更符合题意
-	// 删除下面这句，程序也能 accepted，但是会从 269ms 减慢到 319ms
-	words = deleteBeginWord(words, beginWord)
 
 	// isTransedEndWord 用于在生成 trans 的过程中标记，存在 ->endWord 的转换关系
 	// 用于提前结束
@@ -65,25 +59,10 @@ func ladderLength(beginWord string, endWord string, words []string) int {
 	return res
 }
 
-// 题目中说了，words 中没有重复的单词，
-// 所以，beginWord 最多出现一次
-func deleteBeginWord(words []string, beginWord string) []string {
-	i, size := 0, len(words)
-	for ; i < size; i++ {
-		if words[i] == beginWord {
-			break
-		}
-	}
-
-	if i == size {
-		return words
-	}
-
-	words[i] = words[size-1]
-	return words[:size-1]
-}
-
 func isTransable(a, b string) bool {
+	if a == b {
+		return false
+	}
 	// onceAgain == true 说明已经出现过不同的字符了
 	onceAgain := false
 	for i := range a {
