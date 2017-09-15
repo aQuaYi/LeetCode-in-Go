@@ -23,7 +23,7 @@ func ladderLength(beginWord string, endWord string, words []string) int {
 			for _, n := range nodes {
 				if isTransable(n, w) {
 					isTransed = true
-					break
+
 				}
 			}
 
