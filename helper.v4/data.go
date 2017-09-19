@@ -85,7 +85,7 @@ func diff(new, old *leetcode) {
 		}
 
 		if n.IsAccepted == true && o.IsAccepted == false {
-			log.Printf("新完成 %d %s", n.ID, n.Title)
+			log.Printf("新完成 %d.%s", n.ID, n.Title)
 			isChanged = true
 		}
 
