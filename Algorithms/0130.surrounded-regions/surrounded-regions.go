@@ -17,12 +17,12 @@ func solve(board [][]byte) {
 			return board[i][j] == 'O'
 		}
 
-		if i < 0 || i >= m || j < 0 || j >= n || board[i][j] == 'X' {
+		if board[i][j] == 'X' {
 			return false
 		}
 
 		board[i][j] = 'X'
-		if dfs(i-1, j) || dfs(i+1, j) || dfs(i, j-1) || dfs(i, j+1) {
+		if board[i-1][j] == 'O' || board[i][j-1] == 'O' || dfs(i, j+1) || dfs(i+1, j) {
 			board[i][j] = 'O'
 			return true
 		}
