@@ -15,6 +15,25 @@ var tcs = []struct {
 
 	{
 		[][]byte{
+			[]byte("OXOOXX"),
+			[]byte("OXXXOX"),
+			[]byte("XOOXOO"),
+			[]byte("XOXXXX"),
+			[]byte("OOXOXX"),
+			[]byte("XXOOOO"),
+		},
+		[][]byte{
+			[]byte("OXOOXX"),
+			[]byte("OXXXOX"),
+			[]byte("XOOXOO"),
+			[]byte("XOXXXX"),
+			[]byte("OOXOXX"),
+			[]byte("XXOOOO"),
+		},
+	},
+
+	{
+		[][]byte{
 			[]byte("XOXOXOOOXO"),
 			[]byte("XOOXXXOOOX"),
 			[]byte("OOOOOOOOXX"),
