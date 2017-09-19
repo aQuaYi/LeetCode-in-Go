@@ -28,11 +28,19 @@ func ladderLength(beginWord string, endWord string, words []string) int {
 				}
 
 				bytes[i] = b
+				// 此时 bytes 为 word 所 trans 的单词
+
+				// 令 temp := string(bytes)，会增加 70% 的时间
 
 				if dict[string(bytes)] {
+					// words 中存在 string(bytes)
 					if string(bytes) == endWord {
+						// trans 到了 endWord
+						// 提前结束
 						return true
 					}
+
+					// 把 string(bytes) 放入 queue 的尾部
 					queue = append(queue, string(bytes))
 					delete(dict, string(bytes))
 				}
@@ -43,25 +51,25 @@ func ladderLength(beginWord string, endWord string, words []string) int {
 		return false
 	}
 
-	dist := 2
-	isMeetEndWord := false
-	trans(beginWord)
+	queue = append(queue, beginWord)
+	dist := 1
 	for len(queue) > 0 {
 		qLen := len(queue)
+
+		// 这个 for 循环，是按照每个 word 的 dist 值，来切分 queue 的
 		for i := 0; i < qLen; i++ {
+			// word 出列
 			word := queue[0]
 			queue = queue[1:]
+
 			if trans(word) {
-				isMeetEndWord = true
-				break
+				// word 能够 trans 到 endWord
+				// 提前结束
+				return dist + 1
 			}
 		}
 
 		dist++
-
-		if isMeetEndWord {
-			return dist
-		}
 	}
 
 	return 0

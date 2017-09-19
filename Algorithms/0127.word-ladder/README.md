@@ -26,3 +26,6 @@ The wordList parameter had been changed to a list of strings (instead of a set o
 ## 解题思路
 
 见程序注释
+
+反复尝试以后，将最短时间降低了 2 毫秒。
+![100%](127.100.png)
