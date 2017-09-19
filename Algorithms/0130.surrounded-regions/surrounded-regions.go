@@ -11,75 +11,77 @@ func solve(board [][]byte) {
 		return
 	}
 
-	isUncaptured := make([][]bool, m)
+	// isEscaped[i][j] == true，表示 (i,j) 点是联通的。
+	// 也可以用来查看点 (i,j) 是否已经检查过了
+	isEscaped := make([][]bool, m)
 	for i := 0; i < m; i++ {
-		isUncaptured[i] = make([]bool, n)
+		isEscaped[i] = make([]bool, n)
 	}
 
+	// idxM，idxN 分别记录点 (i,j) 的坐标值
 	idxM := make([]int, 0, m*n)
 	idxN := make([]int, 0, m*n)
 
 	bfs := func(i, j int) {
-		isUncaptured[i][j] = true
+		isEscaped[i][j] = true
 		idxM = append(idxM, i)
 		idxN = append(idxN, j)
 
 		for len(idxM) > 0 {
 			i := idxM[0]
-			idxM = idxM[1:]
 			j := idxN[0]
+			idxM = idxM[1:]
 			idxN = idxN[1:]
 
-			if 0 <= i-1 && board[i-1][j] == 'O' && !isUncaptured[i-1][j] {
+			if 0 <= i-1 && board[i-1][j] == 'O' && !isEscaped[i-1][j] {
 				idxM = append(idxM, i-1)
 				idxN = append(idxN, j)
-				isUncaptured[i-1][j] = true
+				isEscaped[i-1][j] = true
 			}
 
-			if 0 <= j-1 && board[i][j-1] == 'O' && !isUncaptured[i][j-1] {
+			if 0 <= j-1 && board[i][j-1] == 'O' && !isEscaped[i][j-1] {
 				idxM = append(idxM, i)
 				idxN = append(idxN, j-1)
-				isUncaptured[i][j-1] = true
+				isEscaped[i][j-1] = true
 			}
 
-			if i+1 < m && board[i+1][j] == 'O' && !isUncaptured[i+1][j] {
+			if i+1 < m && board[i+1][j] == 'O' && !isEscaped[i+1][j] {
 				idxM = append(idxM, i+1)
 				idxN = append(idxN, j)
-				isUncaptured[i+1][j] = true
+				isEscaped[i+1][j] = true
 			}
 
-			if j+1 < n && board[i][j+1] == 'O' && !isUncaptured[i][j+1] {
-				isUncaptured[i][j+1] = true
+			if j+1 < n && board[i][j+1] == 'O' && !isEscaped[i][j+1] {
 				idxM = append(idxM, i)
 				idxN = append(idxN, j+1)
+				isEscaped[i][j+1] = true
 			}
 		}
 	}
 
 	for j := 0; j < n; j++ {
-		if board[0][j] == 'O' && !isUncaptured[0][j] {
+		if board[0][j] == 'O' && !isEscaped[0][j] {
 			bfs(0, j)
 		}
-		if board[m-1][j] == 'O' && !isUncaptured[m-1][j] {
+		if board[m-1][j] == 'O' && !isEscaped[m-1][j] {
 			bfs(m-1, j)
 		}
 	}
 
 	for i := 0; i < m; i++ {
-		if board[i][0] == 'O' && !isUncaptured[i][0] {
+		if board[i][0] == 'O' && !isEscaped[i][0] {
 			bfs(i, 0)
 		}
-		if board[i][n-1] == 'O' && !isUncaptured[i][n-1] {
+		if board[i][n-1] == 'O' && !isEscaped[i][n-1] {
 			bfs(i, n-1)
 		}
 	}
 
 	for i := 1; i < m-1; i++ {
 		for j := 1; j < n-1; j++ {
-			if board[i][j] == 'O' && !isUncaptured[i][j] {
+			if board[i][j] == 'O' && !isEscaped[i][j] {
 				board[i][j] = 'X'
 			}
 		}
 	}
-	return
 }
