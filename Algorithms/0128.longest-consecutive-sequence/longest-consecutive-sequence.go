@@ -1,6 +1,24 @@
 package Problem0128
 
-func longestConsecutive(nums []int) int {
+import (
+	"sort"
+)
 
-	return 4
+func longestConsecutive(nums []int) int {
+	if len(nums) <= 1 {
+		return len(nums)
+	}
+
+	sort.Ints(nums)
+
+	max, temp := 0, 1
+	for i := 1; i < len(nums); i++ {
+		if nums[i]-1 == nums[i-1] {
+			temp++
+		} else if max < temp {
+			max = temp
+		}
+	}
+
+	return max
 }
