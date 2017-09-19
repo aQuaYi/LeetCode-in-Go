@@ -172,7 +172,7 @@ func Test_%s(t *testing.T) {
 	}
 }`
 	tcPara := getTcPara(para)
-	testFunc := fmt.Sprintf(testFuncFormat, fcName, `%v`, fcName, tcPara)
+	testFunc := fmt.Sprintf(testFuncFormat, fcName, `%v`, fcName, tcPara, `%v`)
 
 	benchFuncFormat := `
 func Benchmark_%s(b *testing.B) {
@@ -195,9 +195,7 @@ import (
 
 // tcs is testcase slice
 %s
-
 %s
-
 %s
 `
 
