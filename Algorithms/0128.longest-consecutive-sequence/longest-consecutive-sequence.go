@@ -20,5 +20,9 @@ func longestConsecutive(nums []int) int {
 		}
 	}
 
+	if temp == len(nums) {
+		return len(nums)
+	}
+
 	return max
 }
