@@ -15,6 +15,23 @@ var tcs = []struct {
 
 	{
 		[][]byte{
+			[]byte("OXXOX"),
+			[]byte("XOOXO"),
+			[]byte("XOXOX"),
+			[]byte("OXOOO"),
+			[]byte("XXOXO"),
+		},
+		[][]byte{
+			[]byte("OXXOX"),
+			[]byte("XXXXO"),
+			[]byte("XXXOX"),
+			[]byte("OXOOO"),
+			[]byte("XXOXO"),
+		},
+	},
+
+	{
+		[][]byte{
 			[]byte("XXXX"),
 			[]byte("XOOX"),
 			[]byte("XXOX"),
@@ -25,6 +42,43 @@ var tcs = []struct {
 			[]byte("XXXX"),
 			[]byte("XXXX"),
 			[]byte("XOXX"),
+		},
+	},
+
+	{
+		[][]byte{
+			[]byte("XXXX"),
+			[]byte("XOOX"),
+			[]byte("XOOX"),
+			[]byte("XXXX"),
+		},
+		[][]byte{
+			[]byte("XXXX"),
+			[]byte("XXXX"),
+			[]byte("XXXX"),
+			[]byte("XXXX"),
+		},
+	},
+
+	{
+		[][]byte{
+			[]byte("XXXX"),
+		},
+		[][]byte{
+			[]byte("XXXX"),
+		},
+	},
+
+	{
+		[][]byte{
+			[]byte("X"),
+			[]byte("X"),
+			[]byte("X"),
+		},
+		[][]byte{
+			[]byte("X"),
+			[]byte("X"),
+			[]byte("X"),
 		},
 	},
 
