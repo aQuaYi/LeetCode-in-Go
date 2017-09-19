@@ -25,15 +25,15 @@ func solve(board [][]byte) {
 			j := idxN[0]
 			idxN = idxN[1:]
 
-			// if i-1 == 0 && board[i-1][j] == 'O' {
-			// return true
-			// }
+			if i-1 == 0 && board[i-1][j] == 'O' {
+				return true
+			}
 
 			if 0 == j-1 && board[i][j-1] == 'O' {
 				return true
 			}
 
-			if (i == m-1 || j == 0 || j == n-1) && board[i][j] == 'O' {
+			if (i == m-1 || j == n-1) && board[i][j] == 'O' {
 				return true
 			}
 
@@ -60,4 +60,5 @@ func solve(board [][]byte) {
 			}
 		}
 	}
+	return
 }
