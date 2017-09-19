@@ -1,6 +1,6 @@
 # [LeetCode](https://leetcode.com)习题的Golang解答
 [![LeetCode](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode Ranking](https://img.shields.io/badge/Ranking-35576-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode Ranking](https://img.shields.io/badge/Ranking-35401-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang)
 
@@ -11,9 +11,9 @@
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|53 / 145|84 / 250|32 / 93|169 / 488|
+|**Algorithms**|53 / 146|84 / 252|32 / 94|169 / 492|
 |**Draft**|0 / 1|0 / 3|0 / 0|0 / 4|
-|**Total**|53 / 146|84 / 253|32 / 93|169 / 492|
+|**Total**|53 / 147|84 / 255|32 / 94|169 / 496|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -53,9 +53,9 @@
 |33|[Search in Rotated Sorted Array](./Algorithms/0033.search-in-rotated-sorted-array)|☆ ☆|32%|❤|
 |34|[Search for a Range](./Algorithms/0034.search-for-a-range)|☆ ☆|31%||
 |35|[Search Insert Position](./Algorithms/0035.search-insert-position)|☆|39%||
-|36|[Valid Sudoku](./Algorithms/0036.valid-sudoku)|☆ ☆|35%|❤|
+|36|[Valid Sudoku](./Algorithms/0036.valid-sudoku)|☆ ☆|36%|❤|
 |37|[Sudoku Solver](./Algorithms/0037.sudoku-solver)|☆ ☆ ☆|30%|❤|
-|38|[Count and Say](./Algorithms/0038.count-and-say)|☆|34%||
+|38|[Count and Say](./Algorithms/0038.count-and-say)|☆|35%||
 |39|[Combination Sum](./Algorithms/0039.combination-sum)|☆ ☆|39%||
 |40|[Combination Sum II](./Algorithms/0040.combination-sum-ii)|☆ ☆|34%||
 |41|[First Missing Positive](./Algorithms/0041.first-missing-positive)|☆ ☆ ☆|25%||
@@ -90,13 +90,13 @@
 |70|[Climbing Stairs](./Algorithms/0070.climbing-stairs)|☆|40%||
 |71|[Simplify Path](./Algorithms/0071.simplify-path)|☆ ☆|25%||
 |72|[Edit Distance](./Algorithms/0072.edit-distance)|☆ ☆ ☆|31%|❤|
-|73|[Set Matrix Zeroes](./Algorithms/0073.set-matrix-zeroes)|☆ ☆|35%|❤|
+|73|[Set Matrix Zeroes](./Algorithms/0073.set-matrix-zeroes)|☆ ☆|36%|❤|
 |74|[Search a 2D Matrix](./Algorithms/0074.search-a-2d-matrix)|☆ ☆|34%||
 |75|[Sort Colors](./Algorithms/0075.sort-colors)|☆ ☆|38%|❤|
 |76|[Minimum Window Substring](./Algorithms/0076.minimum-window-substring)|☆ ☆ ☆|25%|❤|
 |77|[Combinations](./Algorithms/0077.combinations)|☆ ☆|39%||
 |78|[Subsets](./Algorithms/0078.subsets)|☆ ☆|41%|❤|
-|79|[Word Search](./Algorithms/0079.word-search)|☆ ☆|26%||
+|79|[Word Search](./Algorithms/0079.word-search)|☆ ☆|27%||
 |80|[Remove Duplicates from Sorted Array II](./Algorithms/0080.remove-duplicates-from-sorted-array-ii)|☆ ☆|36%|❤|
 |81|[Search in Rotated Sorted Array II](./Algorithms/0081.search-in-rotated-sorted-array-ii)|☆ ☆|32%||
 |82|[Remove Duplicates from Sorted List II](./Algorithms/0082.remove-duplicates-from-sorted-list-ii)|☆ ☆|29%|❤|
@@ -111,14 +111,14 @@
 |91|[Decode Ways](./Algorithms/0091.decode-ways)|☆ ☆|19%|❤|
 |92|[Reverse Linked List II](./Algorithms/0092.reverse-linked-list-ii)|☆ ☆|30%||
 |93|[Restore IP Addresses](./Algorithms/0093.restore-ip-addresses)|☆ ☆|27%|❤|
-|94|[Binary Tree Inorder Traversal](./Algorithms/0094.binary-tree-inorder-traversal)|☆ ☆|46%||
+|94|[Binary Tree Inorder Traversal](./Algorithms/0094.binary-tree-inorder-traversal)|☆ ☆|47%||
 |95|[Unique Binary Search Trees II](./Algorithms/0095.unique-binary-search-trees-ii)|☆ ☆|31%|❤|
 |96|[Unique Binary Search Trees](./Algorithms/0096.unique-binary-search-trees)|☆ ☆|41%||
 |97|[Interleaving String](./Algorithms/0097.interleaving-string)|☆ ☆ ☆|24%|❤|
 |98|[Validate Binary Search Tree](./Algorithms/0098.validate-binary-search-tree)|☆ ☆|23%|❤|
-|99|[Recover Binary Search Tree](./Algorithms/0099.recover-binary-search-tree)|☆ ☆ ☆|29%|❤|
+|99|[Recover Binary Search Tree](./Algorithms/0099.recover-binary-search-tree)|☆ ☆ ☆|30%|❤|
 |100|[Same Tree](./Algorithms/0100.same-tree)|☆|46%||
-|101|[Symmetric Tree](./Algorithms/0101.symmetric-tree)|☆|38%|❤|
+|101|[Symmetric Tree](./Algorithms/0101.symmetric-tree)|☆|39%|❤|
 |102|[Binary Tree Level Order Traversal](./Algorithms/0102.binary-tree-level-order-traversal)|☆ ☆|40%||
 |103|[Binary Tree Zigzag Level Order Traversal](./Algorithms/0103.binary-tree-zigzag-level-order-traversal)|☆ ☆|34%||
 |104|[Maximum Depth of Binary Tree](./Algorithms/0104.maximum-depth-of-binary-tree)|☆|52%||
@@ -142,7 +142,7 @@
 |124|[Binary Tree Maximum Path Sum](./Algorithms/0124.binary-tree-maximum-path-sum)|☆ ☆ ☆|26%|❤|
 |125|[Valid Palindrome](./Algorithms/0125.valid-palindrome)|☆|26%||
 |126|[Word Ladder II](./Algorithms/0126.word-ladder-ii)|☆ ☆ ☆|14%|❤|
-|127|[Word Ladder](./Algorithms/0127.word-ladder)|☆ ☆|19%||
+|127|[Word Ladder](./Algorithms/0127.word-ladder)|☆ ☆|19%|❤|
 |152|[Maximum Product Subarray](./Algorithms/0152.maximum-product-subarray)|☆ ☆|25%|❤|
 |153|[Find Minimum in Rotated Sorted Array](./Algorithms/0153.find-minimum-in-rotated-sorted-array)|☆ ☆|40%||
 |154|[Find Minimum in Rotated Sorted Array II](./Algorithms/0154.find-minimum-in-rotated-sorted-array-ii)|☆ ☆ ☆|37%||
@@ -162,14 +162,14 @@
 |268|[Missing Number](./Algorithms/0268.missing-number)|☆|44%||
 |283|[Move Zeroes](./Algorithms/0283.move-zeroes)|☆|50%||
 |287|[Find the Duplicate Number](./Algorithms/0287.find-the-duplicate-number)|☆ ☆|43%|❤|
-|289|[Game of Life](./Algorithms/0289.game-of-life)|☆ ☆|37%|❤|
+|289|[Game of Life](./Algorithms/0289.game-of-life)|☆ ☆|36%|❤|
 |380|[Insert Delete GetRandom O(1)](./Algorithms/0380.insert-delete-getrandom-o1)|☆ ☆|39%|❤|
 |381|[Insert Delete GetRandom O(1) - Duplicates allowed](./Algorithms/0381.insert-delete-getrandom-o1-duplicates-allowed)|☆ ☆ ☆|28%|❤|
 |414|[Third Maximum Number](./Algorithms/0414.third-maximum-number)|☆|27%||
 |437|[Path Sum III](./Algorithms/0437.path-sum-iii)|☆|39%|❤|
 |442|[Find All Duplicates in an Array](./Algorithms/0442.find-all-duplicates-in-an-array)|☆ ☆|55%||
 |448|[Find All Numbers Disappeared in an Array](./Algorithms/0448.find-all-numbers-disappeared-in-an-array)|☆|51%||
-|485|[Max Consecutive Ones](./Algorithms/0485.max-consecutive-ones)|☆|53%||
+|485|[Max Consecutive Ones](./Algorithms/0485.max-consecutive-ones)|☆|54%||
 |495|[Teemo Attacking](./Algorithms/0495.teemo-attacking)|☆ ☆|51%||
 |526|[Beautiful Arrangement](./Algorithms/0526.beautiful-arrangement)|☆ ☆|54%|❤|
 |532|[K-diff Pairs in an Array](./Algorithms/0532.k-diff-pairs-in-an-array)|☆|28%||
