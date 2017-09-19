@@ -22,7 +22,7 @@ func solve(board [][]byte) {
 		}
 
 		board[i][j] = 'X'
-		if board[i-1][j] == 'O' || board[i][j-1] == 'O' || dfs(i, j+1) || dfs(i+1, j) {
+		if board[i-1][j] == 'O' || dfs(i, j-1) || dfs(i, j+1) || dfs(i+1, j) {
 			board[i][j] = 'O'
 			return true
 		}
