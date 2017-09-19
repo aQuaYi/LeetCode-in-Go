@@ -11,10 +11,16 @@ func solve(board [][]byte) {
 		return
 	}
 
+	isUncaptured := make([][]bool, m)
+	for i := 0; i < m; i++ {
+		isUncaptured[i] = make([]bool, n)
+	}
+
 	idxM := make([]int, 0, m*n)
 	idxN := make([]int, 0, m*n)
 
-	bfs := func(i, j int) bool {
+	bfs := func(i, j int) {
+		isUncaptured[i][j] = true
 		idxM = append(idxM, i)
 		idxN = append(idxN, j)
 
@@ -24,46 +30,54 @@ func solve(board [][]byte) {
 			j := idxN[0]
 			idxN = idxN[1:]
 
-			if i-1 == 0 && board[i-1][j] == 'O' {
-
-				return true
+			if 0 <= i-1 && board[i-1][j] == 'O' && !isUncaptured[i-1][j] {
+				idxM = append(idxM, i-1)
+				idxN = append(idxN, j)
+				isUncaptured[i-1][j] = true
 			}
 
-			if 0 == j-1 && board[i][j-1] == 'O' {
-
-				return true
+			if 0 <= j-1 && board[i][j-1] == 'O' && !isUncaptured[i][j-1] {
+				idxM = append(idxM, i)
+				idxN = append(idxN, j-1)
+				isUncaptured[i][j-1] = true
 			}
 
-			if (i == 0 || i == m-1 || j == 0 || j == n-1) && board[i][j] == 'O' {
-
-				return true
-			}
-
-			if i+1 < m && board[i+1][j] == 'O' {
+			if i+1 < m && board[i+1][j] == 'O' && !isUncaptured[i+1][j] {
 				idxM = append(idxM, i+1)
 				idxN = append(idxN, j)
+				isUncaptured[i+1][j] = true
 			}
 
-			if j+1 < n && board[i][j+1] == 'O' {
+			if j+1 < n && board[i][j+1] == 'O' && !isUncaptured[i][j+1] {
+				isUncaptured[i][j+1] = true
 				idxM = append(idxM, i)
 				idxN = append(idxN, j+1)
 			}
 		}
+	}
 
-		return false
+	for j := 0; j < n; j++ {
+		if board[0][j] == 'O' && !isUncaptured[0][j] {
+			bfs(0, j)
+		}
+		if board[m-1][j] == 'O' && !isUncaptured[m-1][j] {
+			bfs(m-1, j)
+		}
+	}
+
+	for i := 0; i < m; i++ {
+		if board[i][0] == 'O' && !isUncaptured[i][0] {
+			bfs(i, 0)
+		}
+		if board[i][n-1] == 'O' && !isUncaptured[i][n-1] {
+			bfs(i, n-1)
+		}
 	}
 
 	for i := 1; i < m-1; i++ {
 		for j := 1; j < n-1; j++ {
-			if board[i-1][j] == 'X' && board[i][j-1] == 'X' && board[i][j] == 'O' {
-
-				if !bfs(i, j) {
-					board[i][j] = 'X'
-				}
-
-				// bfs 以后要清空 idxM 和 idxN
-				idxM = idxM[len(idxM):]
-				idxN = idxN[len(idxN):]
+			if board[i][j] == 'O' && !isUncaptured[i][j] {
+				board[i][j] = 'X'
 			}
 		}
 	}
