@@ -127,7 +127,7 @@ func getFunction(URL string) (fc, fcName, para, ansType string) {
 	para = strings.Replace(fc[i+1:j], ",", "\n", -1)
 	ansType = fc[j+1 : k]
 
-	fc = fc[:k] + "{\n\n}"
+	fc = fc[:k] + "{\n\n\treturn\n}"
 
 	return
 }
@@ -153,7 +153,7 @@ func creatGoTest(p problem, fcName, para, ansType string) {
 }{
 
 	{
-			
+		,
 		,
 	},
 
