@@ -61,6 +61,7 @@ func solve(board [][]byte) {
 					board[i][j] = 'X'
 				}
 
+				// bfs 以后要清空 idxM 和 idxN
 				idxM = idxM[len(idxM):]
 				idxN = idxN[len(idxN):]
 			}
