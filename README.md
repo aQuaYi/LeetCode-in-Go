@@ -11,9 +11,9 @@
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|53 / 146|84 / 252|32 / 94|169 / 492|
+|**Algorithms**|53 / 146|84 / 252|33 / 94|170 / 492|
 |**Draft**|0 / 1|0 / 3|0 / 0|0 / 4|
-|**Total**|53 / 147|84 / 255|32 / 94|169 / 496|
+|**Total**|53 / 147|84 / 255|33 / 94|170 / 496|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -65,7 +65,7 @@
 |45|[Jump Game II](./Algorithms/0045.jump-game-ii)|☆ ☆ ☆|26%||
 |46|[Permutations](./Algorithms/0046.permutations)|☆ ☆|44%||
 |47|[Permutations II](./Algorithms/0047.permutations-ii)|☆ ☆|33%||
-|48|[Rotate Image](./Algorithms/0048.rotate-image)|☆ ☆|38%||
+|48|[Rotate Image](./Algorithms/0048.rotate-image)|☆ ☆|39%||
 |49|[Group Anagrams](./Algorithms/0049.group-anagrams)|☆ ☆|35%|❤|
 |50|[Pow(x, n)](./Algorithms/0050.powx-n)|☆ ☆|26%||
 |51|[N-Queens](./Algorithms/0051.n-queens)|☆ ☆ ☆|31%||
@@ -143,6 +143,7 @@
 |125|[Valid Palindrome](./Algorithms/0125.valid-palindrome)|☆|26%||
 |126|[Word Ladder II](./Algorithms/0126.word-ladder-ii)|☆ ☆ ☆|14%|❤|
 |127|[Word Ladder](./Algorithms/0127.word-ladder)|☆ ☆|19%|❤|
+|128|[Longest Consecutive Sequence](./Algorithms/0128.longest-consecutive-sequence)|☆ ☆ ☆|37%||
 |152|[Maximum Product Subarray](./Algorithms/0152.maximum-product-subarray)|☆ ☆|25%|❤|
 |153|[Find Minimum in Rotated Sorted Array](./Algorithms/0153.find-minimum-in-rotated-sorted-array)|☆ ☆|40%||
 |154|[Find Minimum in Rotated Sorted Array II](./Algorithms/0154.find-minimum-in-rotated-sorted-array-ii)|☆ ☆ ☆|37%||
