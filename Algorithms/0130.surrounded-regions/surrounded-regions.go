@@ -1,5 +1,9 @@
 package Problem0130
 
+import (
+	"fmt"
+)
+
 func solve(board [][]byte) {
 	m := len(board)
 	if m <= 2 {
@@ -54,8 +58,14 @@ func solve(board [][]byte) {
 	for i := 1; i < m-1; i++ {
 		for j := 1; j < n-1; j++ {
 			if board[i-1][j] == 'X' && board[i][j-1] == 'X' && board[i][j] == 'O' {
+				if i == 4 && j == 4 {
+					fmt.Println(i, j, board[i][j])
+				}
 				if !bfs(i, j) {
 					board[i][j] = 'X'
+				}
+				if i == 4 && j == 4 {
+					fmt.Println(i, j, board[i][j])
 				}
 			}
 		}
