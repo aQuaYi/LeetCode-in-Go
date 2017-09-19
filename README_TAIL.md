@@ -10,6 +10,6 @@
 [notes](./notes)记录了我答题过程中，对知识点的总结。
 
 ## kit
-在[kit](./kit)中添加了LeetCode常用的数据结构和处理函数：
-1. 为[*ListNode](./kit/ListNode.go)添加了与[]int相互转换的函数，方便添加单元测试。使用方式可以参考[21. Merge Two Sorted Lists](./Algorithms/0021.merge-two-sorted-lists/merge-two-sorted-lists_test.go)
-1. 为[*TreeNode](./kit/TreeNode.go)添加了与[]int相互转换的函数，方便添加单元测试。
+针对 LeetCode 中经常出现的以下数据结构，在[kit](./kit)中进行了定义，并添加了与 []int 相互转换的函数。利用 Golang 1.9 新添加的 [type alias](https://github.com/golang/proposal/blob/master/design/18130-type-alias.md)功能，易于添加单元测试。 
+1. [*ListNode](./kit/ListNode.go)
+1. [*TreeNode](./kit/TreeNode.go)
