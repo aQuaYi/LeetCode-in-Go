@@ -11,9 +11,9 @@
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|53 / 146|84 / 252|33 / 94|170 / 492|
+|**Algorithms**|53 / 146|85 / 252|33 / 94|171 / 492|
 |**Draft**|0 / 1|0 / 3|0 / 0|0 / 4|
-|**Total**|53 / 147|84 / 255|33 / 94|170 / 496|
+|**Total**|53 / 147|85 / 255|33 / 94|171 / 496|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -144,6 +144,7 @@
 |126|[Word Ladder II](./Algorithms/0126.word-ladder-ii)|☆ ☆ ☆|14%|❤|
 |127|[Word Ladder](./Algorithms/0127.word-ladder)|☆ ☆|19%|❤|
 |128|[Longest Consecutive Sequence](./Algorithms/0128.longest-consecutive-sequence)|☆ ☆ ☆|37%||
+|129|[Sum Root to Leaf Numbers](./Algorithms/0129.sum-root-to-leaf-numbers)|☆ ☆|36%||
 |152|[Maximum Product Subarray](./Algorithms/0152.maximum-product-subarray)|☆ ☆|25%|❤|
 |153|[Find Minimum in Rotated Sorted Array](./Algorithms/0153.find-minimum-in-rotated-sorted-array)|☆ ☆|40%||
 |154|[Find Minimum in Rotated Sorted Array II](./Algorithms/0154.find-minimum-in-rotated-sorted-array-ii)|☆ ☆ ☆|37%||
