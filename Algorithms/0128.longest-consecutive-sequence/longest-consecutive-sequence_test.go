@@ -29,6 +29,11 @@ var tcs = []struct {
 	},
 
 	{
+		[]int{0, 0},
+		1,
+	},
+
+	{
 		[]int{0},
 		1,
 	},
@@ -46,7 +51,7 @@ func Test_longestConsecutive(t *testing.T) {
 
 	for _, tc := range tcs {
 		fmt.Printf("~~%v~~\n", tc)
-		ast.Equal(tc.ans, longestConsecutive(tc.nums), "输入:%!s(MISSING)", tc)
+		ast.Equal(tc.ans, longestConsecutive(tc.nums), "输入:%v", tc)
 	}
 }
 

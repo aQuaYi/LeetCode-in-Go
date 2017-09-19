@@ -15,13 +15,14 @@ func longestConsecutive(nums []int) int {
 	for i := 1; i < len(nums); i++ {
 		if nums[i]-1 == nums[i-1] {
 			temp++
-		} else if max < temp {
+		} else if nums[i] != nums[i-1] {
+			// [0,1,1,2]　仍然可以视为连续
+			temp = 1
+		}
+		//　更新　max
+		if max < temp {
 			max = temp
 		}
-	}
-
-	if temp == len(nums) {
-		return len(nums)
 	}
 
 	return max
