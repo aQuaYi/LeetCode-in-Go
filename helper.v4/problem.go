@@ -147,6 +147,43 @@ func creatGo(p problem, function string) {
 }
 
 func creatGoTest(p problem, fcName, para, ansType string) {
+	testCasesFormat := `var tcs = []struct {
+	%s
+	ans %s
+}{
+
+	{
+			
+		,
+	},
+
+	// 可以有多个 testcase
+}`
+
+	testCases := fmt.Sprintf(testCasesFormat, para, ansType)
+
+	testFuncFormat := `
+func Test_%s(t *testing.T) {
+	ast := assert.New(t)
+	
+	for _, tc := range tcs {
+		fmt.Printf("~~%s~~\n", tc)
+		ast.Equal(tc.ans, %s(%s), "输入:%s", tc)
+	}
+}`
+	tcPara := getTcPara(para)
+	testFunc := fmt.Sprintf(testFuncFormat, fcName, `%v`, fcName, tcPara)
+
+	benchFuncFormat := `
+func Benchmark_%s(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		for _, tc := range tcs {
+			%s(%s)
+		}
+	}
+}`
+	benchFunc := fmt.Sprintf(benchFuncFormat, fcName, fcName, tcPara)
+
 	fileFormat := `package %s
 
 import (
@@ -156,33 +193,16 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func Test_%s(t *testing.T) {
-	ast := assert.New(t)
+// tcs is testcase slice
+%s
 
-	// tcs is testcase slice
-	tcs := []struct {
-		%s
-		ans %s
-	}{
+%s
 
-		{
-			
-			,
-		},
-
-		// 可以多个 testcase
-	}
-
-	for _, tc := range tcs {
-		fmt.Printf("~~%s~~\n", tc)
-
-		ast.Equal(tc.ans, %s(%s), "输入:%s", tc)
-	}
-}
+%s
 `
-	tcPara := getTcPara(para)
 
-	content := fmt.Sprintf(fileFormat, p.packageName(), p.packageName(), para, ansType, `%v`, fcName, tcPara, `%v`)
+	content := fmt.Sprintf(fileFormat, p.packageName(), testCases, testFunc, benchFunc)
+
 	filename := fmt.Sprintf("%s/%s_test.go", p.Dir, p.TitleSlug)
 
 	err := ioutil.WriteFile(filename, []byte(content), 0755)

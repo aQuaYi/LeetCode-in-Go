@@ -11,7 +11,7 @@ import (
 
 // 程序辅助设置
 const (
-	VERSION = "4.1.0"
+	VERSION = "4.2.0"
 	USAGE   = `使用方法：
 	1. 运行 helper 会重新生成项目的README.md。
 	2. 运行 helper 123 会生成第123题的答题文件夹。`
