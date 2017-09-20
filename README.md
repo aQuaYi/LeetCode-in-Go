@@ -6,14 +6,14 @@
 
 
 
-## 答题进度：34%
+## 答题进度：35%
 > 仅含免费题
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|53 / 146|86 / 252|33 / 94|172 / 492|
+|**Algorithms**|53 / 146|87 / 252|33 / 94|173 / 492|
 |**Draft**|0 / 1|0 / 3|0 / 0|0 / 4|
-|**Total**|53 / 147|86 / 255|33 / 94|172 / 496|
+|**Total**|53 / 147|87 / 255|33 / 94|173 / 496|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -146,6 +146,7 @@
 |128|[Longest Consecutive Sequence](./Algorithms/0128.longest-consecutive-sequence)|☆ ☆ ☆|37%||
 |129|[Sum Root to Leaf Numbers](./Algorithms/0129.sum-root-to-leaf-numbers)|☆ ☆|36%||
 |130|[Surrounded Regions](./Algorithms/0130.surrounded-regions)|☆ ☆|18%|❤|
+|131|[Palindrome Partitioning](./Algorithms/0131.palindrome-partitioning)|☆ ☆|33%|❤|
 |152|[Maximum Product Subarray](./Algorithms/0152.maximum-product-subarray)|☆ ☆|25%|❤|
 |153|[Find Minimum in Rotated Sorted Array](./Algorithms/0153.find-minimum-in-rotated-sorted-array)|☆ ☆|40%||
 |154|[Find Minimum in Rotated Sorted Array II](./Algorithms/0154.find-minimum-in-rotated-sorted-array-ii)|☆ ☆ ☆|37%||
