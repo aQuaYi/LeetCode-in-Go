@@ -2,6 +2,7 @@ package Problem0260
 
 import (
 	"fmt"
+	"sort"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -30,7 +31,10 @@ func Test_singleNumber(t *testing.T) {
 
 	for _, tc := range tcs {
 		fmt.Printf("~~%v~~\n", tc)
-		ast.Equal(tc.ans, singleNumber(tc.nums), "输入:%v", tc)
+
+		ans := singleNumber(tc.nums)
+		sort.Ints(ans)
+		ast.Equal(tc.ans, ans, "输入:%v", tc)
 	}
 }
 
