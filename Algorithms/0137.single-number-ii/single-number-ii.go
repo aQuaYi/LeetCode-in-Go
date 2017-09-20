@@ -1,13 +1,12 @@
 package Problem0137
 
-// 假设 nums 中的数字为 32 bit
+// Golang 中的 int 为 64 bit
 func singleNumber(nums []int) int {
 	n := len(nums)
 	res := 0
 	base := 1
 
-	var i uint
-	for ; i < 32; i++ {
+	for i := 0; i < 64; i++ {
 		temp := 0
 		for j := 0; j < n; j++ {
 			temp += nums[j] % 2 //首先把输入数字的第i位加起来。
