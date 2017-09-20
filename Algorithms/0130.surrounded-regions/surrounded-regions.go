@@ -33,6 +33,8 @@ func solve(board [][]byte) {
 			idxM = idxM[1:]
 			idxN = idxN[1:]
 
+			// 依次对 (i,j) 的上左下右点进行，bfs检查
+
 			if 0 <= i-1 && board[i-1][j] == 'O' && !isEscaped[i-1][j] {
 				idxM = append(idxM, i-1)
 				idxN = append(idxN, j)
@@ -59,6 +61,7 @@ func solve(board [][]byte) {
 		}
 	}
 
+	// 联通的区域一定会到达四周，所以从4周开始检查所有的联通区域
 	for j := 0; j < n; j++ {
 		if board[0][j] == 'O' && !isEscaped[0][j] {
 			bfs(0, j)
@@ -67,7 +70,6 @@ func solve(board [][]byte) {
 			bfs(m-1, j)
 		}
 	}
-
 	for i := 0; i < m; i++ {
 		if board[i][0] == 'O' && !isEscaped[i][0] {
 			bfs(i, 0)
@@ -79,6 +81,7 @@ func solve(board [][]byte) {
 
 	for i := 1; i < m-1; i++ {
 		for j := 1; j < n-1; j++ {
+			// 修改内部被占领的 'O'
 			if board[i][j] == 'O' && !isEscaped[i][j] {
 				board[i][j] = 'X'
 			}
