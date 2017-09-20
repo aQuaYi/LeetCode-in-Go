@@ -1,23 +1,32 @@
 package Problem0132
 
 func minCut(s string) int {
-	if isPalindrome(s) {
-		return 0
-	}
-
 	min := len(s)
-	for i := len(s) - 1; i > 0; i-- {
-		if isPalindrome(s[:i]) {
-			temp := minCut(s[i:])
-			if min > temp {
-				min = temp
+	var dfs func(int, int)
+	dfs = func(i, count int) {
+		if isPalindrome(s[i:]) {
+			if min > count {
+				min = count
 			}
-			// 提前结束
-			break
+			return
+		}
+
+		if count > min {
+			// 划分次数已经大于了已有的 min，可以提前结束了
+			return
+		}
+
+		j := len(s) - 1
+		for ; i < j; j-- {
+			if isPalindrome(s[i:j]) {
+				dfs(j, count+1)
+			}
 		}
 	}
 
-	return min + 1
+	dfs(0, 0)
+
+	return min
 }
 
 func isPalindrome(s string) bool {
