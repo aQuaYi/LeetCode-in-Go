@@ -14,6 +14,21 @@ var tcs = []struct {
 }{
 
 	{
+		"cbbbcc",
+		[][]string{
+			[]string{"c", "b", "b", "b", "c", "c"},
+			[]string{"c", "b", "b", "b", "cc"},
+			[]string{"c", "b", "bb", "c", "c"},
+			[]string{"c", "b", "bb", "cc"},
+			[]string{"c", "bb", "b", "c", "c"},
+			[]string{"c", "bb", "b", "cc"},
+			[]string{"c", "bbb", "c", "c"},
+			[]string{"c", "bbb", "cc"},
+			[]string{"cbbbc", "c"},
+		},
+	},
+
+	{
 		"efe",
 		[][]string{
 			[]string{"e", "f", "e"},
