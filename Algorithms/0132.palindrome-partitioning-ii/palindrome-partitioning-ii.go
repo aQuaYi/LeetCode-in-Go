@@ -12,6 +12,8 @@ func minCut(s string) int {
 			if min > temp {
 				min = temp
 			}
+			// 提前结束
+			break
 		}
 	}
 
