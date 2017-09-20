@@ -1,39 +1,37 @@
 package Problem0132
 
 func minCut(s string) int {
-	min := len(s)
-	var dfs func(int, int)
-	dfs = func(i, count int) {
-		if isPalindrome(s[i:]) {
-			if min > count {
-				min = count
-			}
-			return
+	n := len(s)
+	if n == 0 {
+		return 0
+	}
+
+	// dp[i] == minCut(s[:i])
+	dp := make([]int, n+1)
+	for i := 0; i < n+1; i++ {
+		dp[i] = i - 1
+	}
+
+	for i := 0; i < n+1; i++ {
+		// With char at i as the center to check palindrome and set the new min cut number for
+		// the up-boundary of the palindrome to be minimum of its current number and the min of
+		// the low-boundary plus 1.
+		// Need to check char at i to be the center for odd and event length of palindrome.
+		for j := 0; 0 <= i-j && i+j < n && s[i-j] == s[i+j]; j++ {
+			dp[i+j+1] = min(dp[i-j]+1, dp[i+j+1])
 		}
 
-		if count > min {
-			// 划分次数已经大于了已有的 min，可以提前结束了
-			return
-		}
-
-		j := len(s) - 1
-		for ; i < j; j-- {
-			if isPalindrome(s[i:j]) {
-				dfs(j, count+1)
-			}
+		for j := 1; 0 <= i-j+1 && i+j < n && s[i-j+1] == s[i+j]; j++ {
+			dp[i+j+1] = min(dp[i-j+1]+1, dp[i+j+1])
 		}
 	}
 
-	dfs(0, 0)
-
-	return min
+	return dp[n]
 }
 
-func isPalindrome(s string) bool {
-	for i, j := 0, len(s)-1; i < j; i, j = i+1, j-1 {
-		if s[i] != s[j] {
-			return false
-		}
+func min(a int, b int) int {
+	if a < b {
+		return a
 	}
-	return true
+	return b
 }
