@@ -4,9 +4,9 @@ func minCut(s string) int {
 	if isPalindrome(s) {
 		return 0
 	}
-	
+
 	min := len(s)
-	for i := 1; i < len(s); i++ {
+	for i := len(s) - 1; i > 0; i-- {
 		if isPalindrome(s[:i]) {
 			temp := minCut(s[i:])
 			if min > temp {
@@ -14,6 +14,7 @@ func minCut(s string) int {
 			}
 		}
 	}
+
 	return min + 1
 }
 
