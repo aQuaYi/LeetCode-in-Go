@@ -11,9 +11,9 @@
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|53 / 146|88 / 252|35 / 94|176 / 492|
+|**Algorithms**|54 / 146|88 / 252|35 / 94|177 / 492|
 |**Draft**|0 / 1|0 / 3|0 / 0|0 / 4|
-|**Total**|53 / 147|88 / 255|35 / 94|176 / 496|
+|**Total**|54 / 147|88 / 255|35 / 94|177 / 496|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -150,6 +150,7 @@
 |132|[Palindrome Partitioning II](./Algorithms/0132.palindrome-partitioning-ii)|☆ ☆ ☆|24%|❤|
 |134|[Gas Station](./Algorithms/0134.gas-station)|☆ ☆|29%|❤|
 |135|[Candy](./Algorithms/0135.candy)|☆ ☆ ☆|24%||
+|136|[Single Number](./Algorithms/0136.single-number)|☆|54%||
 |152|[Maximum Product Subarray](./Algorithms/0152.maximum-product-subarray)|☆ ☆|25%|❤|
 |153|[Find Minimum in Rotated Sorted Array](./Algorithms/0153.find-minimum-in-rotated-sorted-array)|☆ ☆|40%||
 |154|[Find Minimum in Rotated Sorted Array II](./Algorithms/0154.find-minimum-in-rotated-sorted-array-ii)|☆ ☆ ☆|37%||
