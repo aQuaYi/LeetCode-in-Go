@@ -14,22 +14,31 @@ func partition(s string) [][]string {
 	}
 	res = append(res, basic)
 
-	var dfs func([]string)
-	dfs = func(ss []string) {
-		for i := 0; i+1 < len(ss); i++ {
-			if isPalindrome(ss[i] + ss[i+1]) {
-				temp := make([]string, len(ss)-1)
+	search := func(ss []string, k int) {
+		for i := 0; i+k < len(ss); i++ {
+			s := sum(ss, i, i+k)
+			if isPalindrome(s) {
+				temp := make([]string, len(ss)-k)
 				copy(temp[:i], ss)
-				temp[i] = ss[i] + ss[i+1]
-				copy(temp[i+1:], ss[i+2:])
+				temp[i] = s
+				copy(temp[i+1:], ss[i+k+1:])
 				res = append(res, temp)
-				dfs(temp)
 			}
 		}
 	}
 
-	dfs(basic)
+	for i := 1; i < len(basic); i++ {
+		search(basic, i)
+	}
 
+	return res
+}
+
+func sum(ss []string, first, last int) string {
+	res := ""
+	for i := first; i <= last; i++ {
+		res += ss[i]
+	}
 	return res
 }
 
