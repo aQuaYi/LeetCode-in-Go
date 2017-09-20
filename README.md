@@ -11,9 +11,9 @@
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|54 / 146|89 / 252|35 / 94|178 / 492|
+|**Algorithms**|54 / 146|90 / 252|35 / 94|179 / 492|
 |**Draft**|0 / 1|0 / 3|0 / 0|0 / 4|
-|**Total**|54 / 147|89 / 255|35 / 94|178 / 496|
+|**Total**|54 / 147|90 / 255|35 / 94|179 / 496|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -168,6 +168,7 @@
 |228|[Summary Ranges](./Algorithms/0228.summary-ranges)|☆ ☆|30%||
 |229|[Majority Element II](./Algorithms/0229.majority-element-ii)|☆ ☆|28%|❤|
 |238|[Product of Array Except Self](./Algorithms/0238.product-of-array-except-self)|☆ ☆|49%||
+|260|[Single Number III](./Algorithms/0260.single-number-iii)|☆ ☆|51%|❤|
 |268|[Missing Number](./Algorithms/0268.missing-number)|☆|44%||
 |283|[Move Zeroes](./Algorithms/0283.move-zeroes)|☆|50%||
 |287|[Find the Duplicate Number](./Algorithms/0287.find-the-duplicate-number)|☆ ☆|43%|❤|
