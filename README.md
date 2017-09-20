@@ -1,19 +1,19 @@
 # [LeetCode](https://leetcode.com)习题的Golang解答
 [![LeetCode](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode Ranking](https://img.shields.io/badge/Ranking-34817-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode Ranking](https://img.shields.io/badge/Ranking-32987-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang)
 
 
 
-## 答题进度：35%
+## 答题进度：36%
 > 仅含免费题
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|54 / 146|88 / 252|35 / 94|177 / 492|
+|**Algorithms**|54 / 146|89 / 252|35 / 94|178 / 492|
 |**Draft**|0 / 1|0 / 3|0 / 0|0 / 4|
-|**Total**|54 / 147|88 / 255|35 / 94|177 / 496|
+|**Total**|54 / 147|89 / 255|35 / 94|178 / 496|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -151,6 +151,7 @@
 |134|[Gas Station](./Algorithms/0134.gas-station)|☆ ☆|29%|❤|
 |135|[Candy](./Algorithms/0135.candy)|☆ ☆ ☆|24%||
 |136|[Single Number](./Algorithms/0136.single-number)|☆|54%||
+|137|[Single Number II](./Algorithms/0137.single-number-ii)|☆ ☆|41%|❤|
 |152|[Maximum Product Subarray](./Algorithms/0152.maximum-product-subarray)|☆ ☆|25%|❤|
 |153|[Find Minimum in Rotated Sorted Array](./Algorithms/0153.find-minimum-in-rotated-sorted-array)|☆ ☆|40%||
 |154|[Find Minimum in Rotated Sorted Array II](./Algorithms/0154.find-minimum-in-rotated-sorted-array-ii)|☆ ☆ ☆|37%||
