@@ -14,6 +14,12 @@ var tcs = []struct {
 	ans      bool
 }{
 	{
+		"bb",
+		[]string{"a", "b", "bbb", "bbbb"},
+		true,
+	},
+
+	{
 		"a",
 		[]string{},
 		false,
