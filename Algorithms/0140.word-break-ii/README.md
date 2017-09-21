@@ -17,4 +17,6 @@ The wordDict parameter had been changed to a list of strings (instead of a set o
 
 ## 解题思路
 
+从这一题要学会估算复杂度
+
 见程序注释

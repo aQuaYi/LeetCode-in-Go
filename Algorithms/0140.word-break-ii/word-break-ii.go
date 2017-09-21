@@ -7,6 +7,7 @@ func wordBreak(s string, wordDict []string) []string {
 		return []string{}
 	}
 
+	// dict 方便查找 wordDict 中的单词
 	dict := make(map[string]bool, len(wordDict))
 	length := make(map[int]bool, len(wordDict))
 
@@ -15,16 +16,19 @@ func wordBreak(s string, wordDict []string) []string {
 		length[len(w)] = true
 	}
 
+	// sizes 是 wordDict 中单词长度的集合
+	// sizes 可以加快 for 循环
 	sizes := make([]int, 0, len(length))
 	for k := range length {
 		sizes = append(sizes, k)
 	}
 	sort.Ints(sizes)
 
-	// dp[i] 等于 wordBreak(s[:i+1], wordDict)
-	dp := make([]int, len(s)+1)
-	dp[0] = 1
 	n := len(s)
+
+	// dp[i] 等于 len(wordBreak(s[:i+1], wordDict))
+	dp := make([]float64, len(s)+1)
+	dp[0] = 1
 
 	for i := 0; i <= n; i++ {
 		if dp[i] == 0 {
@@ -38,12 +42,16 @@ func wordBreak(s string, wordDict []string) []string {
 		}
 	}
 
+	// 利用 dp[n] 统计解的数量，可以避免无用功
+	// 取消下一行的注释符号，看看各个 test case 的 dp
+	// fmt.Println(dp)
 	if dp[n] == 0 {
 		return []string{}
 	}
 
-	res := make([]string, 0, dp[n])
+	res := make([]string, 0, int(dp[n]))
 
+	// 利用 dfs 获取所有的解
 	var dfs func(int, string)
 	dfs = func(i int, str string) {
 		if i == len(s) {
