@@ -34,6 +34,6 @@ func Test_Problem0109(t *testing.T) {
 	for _, tc := range tcs {
 		fmt.Printf("~~%v~~\n", tc)
 
-		ast.Equal(tc.ans, kit.Tree2Inorder(sortedListToBST(kit.Slice2List(tc.head))), "输入:%v", tc)
+		ast.Equal(tc.ans, kit.Tree2Inorder(sortedListToBST(kit.Ints2List(tc.head))), "输入:%v", tc)
 	}
 }

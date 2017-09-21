@@ -11,8 +11,8 @@ type ListNode struct {
 	Next *ListNode
 }
 
-// List2Slice convert List to []int
-func List2Slice(head *ListNode) []int {
+// List2Ints convert List to []int
+func List2Ints(head *ListNode) []int {
 	// 链条深度限制，链条深度超出此限制，会 panic
 	limit := 100
 
@@ -33,8 +33,8 @@ func List2Slice(head *ListNode) []int {
 	return res
 }
 
-// Slice2List convert []int to List
-func Slice2List(nums []int) *ListNode {
+// Ints2List convert []int to List
+func Ints2List(nums []int) *ListNode {
 	if len(nums) == 0 {
 		return nil
 	}

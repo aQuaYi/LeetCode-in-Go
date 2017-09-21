@@ -29,9 +29,9 @@ func Test_reorderList(t *testing.T) {
 	for _, tc := range tcs {
 		fmt.Printf("~~%v~~\n", tc)
 
-		head := kit.Slice2List(tc.head)
+		head := kit.Ints2List(tc.head)
 		reorderList(head)
-		ans := kit.List2Slice(head)
+		ans := kit.List2Ints(head)
 
 		ast.Equal(tc.ans, ans, "输入:%v", tc)
 	}
@@ -40,7 +40,7 @@ func Test_reorderList(t *testing.T) {
 func Benchmark_reorderList(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		for _, tc := range tcs {
-			reorderList(kit.Slice2List(tc.head))
+			reorderList(kit.Ints2List(tc.head))
 		}
 	}
 }
