@@ -15,6 +15,12 @@ var tcs = []struct {
 }{
 
 	{
+		"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+		[]string{"a", "aa", "aaa", "aaaa", "aaaaa", "aaaaaa", "aaaaaaa", "aaaaaaaa", "aaaaaaaaa", "aaaaaaaaaa"},
+		[]string{},
+	},
+
+	{
 		"catsanddog",
 		[]string{"cat", "cats", "and", "sand", "dog"},
 		[]string{"cat sand dog", "cats and dog"},
@@ -23,7 +29,7 @@ var tcs = []struct {
 	{
 		"catsanddog",
 		[]string{},
-		nil,
+		[]string{},
 	},
 
 	// 可以有多个 testcase

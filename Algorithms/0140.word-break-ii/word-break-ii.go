@@ -4,7 +4,7 @@ import "sort"
 
 func wordBreak(s string, wordDict []string) []string {
 	if len(wordDict) == 0 {
-		return nil
+		return []string{}
 	}
 
 	dict := make(map[string]bool, len(wordDict))
@@ -21,23 +21,30 @@ func wordBreak(s string, wordDict []string) []string {
 	}
 	sort.Ints(sizes)
 
-	res := make([]string, 0, len(s))
+	// dp[i] 等于 wordBreak(s[:i+1], wordDict)
+	dp := make([][]string, len(s)+1)
+	dp[0] = []string{""}
+	n := len(s)
 
-	var dfs func(int, string)
-	dfs = func(i int, str string) {
-		if i == len(s) {
-			res = append(res, str[1:])
-			return
+	for i := 0; i <= n; i++ {
+		if dp[i] == nil {
+			continue
 		}
 
 		for _, size := range sizes {
-			if i+size <= len(s) && dict[s[i:i+size]] {
-				dfs(i+size, str+" "+s[i:i+size])
+			if i+size <= n && dict[s[i:i+size]] {
+				for _, str := range dp[i] {
+					if str == "" {
+						str = s[i : i+size]
+					} else {
+						str += " " + s[i:i+size]
+					}
+
+					dp[i+size] = append(dp[i+size], str)
+				}
 			}
 		}
 	}
 
-	dfs(0, "")
-
-	return res
+	return dp[n]
 }
