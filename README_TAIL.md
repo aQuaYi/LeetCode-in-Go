@@ -3,6 +3,8 @@
 - [117. Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)
 - [133. Clone Graph](https://leetcode.com/problems/clone-graph/)
 - [138. Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/)
+- [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)
+- [142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)
 
 
 ## helper
