@@ -39,7 +39,6 @@ func wordBreak(s string, wordDict []string) []string {
 					} else {
 						str += " " + s[i:i+size]
 					}
-
 					dp[i+size] = append(dp[i+size], str)
 				}
 			}
