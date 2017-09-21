@@ -22,28 +22,43 @@ func wordBreak(s string, wordDict []string) []string {
 	sort.Ints(sizes)
 
 	// dp[i] 等于 wordBreak(s[:i+1], wordDict)
-	dp := make([][]string, len(s)+1)
-	dp[0] = []string{""}
+	dp := make([]int, len(s)+1)
+	dp[0] = 1
 	n := len(s)
 
 	for i := 0; i <= n; i++ {
-		if dp[i] == nil {
+		if dp[i] == 0 {
 			continue
 		}
 
 		for _, size := range sizes {
 			if i+size <= n && dict[s[i:i+size]] {
-				for _, str := range dp[i] {
-					if str == "" {
-						str = s[i : i+size]
-					} else {
-						str += " " + s[i:i+size]
-					}
-					dp[i+size] = append(dp[i+size], str)
-				}
+				dp[i+size] += dp[i]
 			}
 		}
 	}
 
-	return dp[n]
+	if dp[n] == 0 {
+		return []string{}
+	}
+
+	res := make([]string, 0, dp[n])
+
+	var dfs func(int, string)
+	dfs = func(i int, str string) {
+		if i == len(s) {
+			res = append(res, str[1:])
+			return
+		}
+
+		for _, size := range sizes {
+			if i+size <= len(s) && dict[s[i:i+size]] {
+				dfs(i+size, str+" "+s[i:i+size])
+			}
+		}
+	}
+
+	dfs(0, "")
+
+	return res
 }
