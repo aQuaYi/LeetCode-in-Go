@@ -130,7 +130,7 @@
 |110|[Balanced Binary Tree](./Algorithms/0110.balanced-binary-tree)|☆|37%||
 |111|[Minimum Depth of Binary Tree](./Algorithms/0111.minimum-depth-of-binary-tree)|☆|33%||
 |112|[Path Sum](./Algorithms/0112.path-sum)|☆|34%||
-|113|[Path Sum II](./Algorithms/0113.path-sum-ii)|☆ ☆|33%||
+|113|[Path Sum II](./Algorithms/0113.path-sum-ii)|☆ ☆|34%||
 |114|[Flatten Binary Tree to Linked List](./Algorithms/0114.flatten-binary-tree-to-linked-list)|☆ ☆|35%|❤|
 |115|[Distinct Subsequences](./Algorithms/0115.distinct-subsequences)|☆ ☆ ☆|31%|❤|
 |118|[Pascal's Triangle](./Algorithms/0118.pascals-triangle)|☆|38%||
@@ -202,6 +202,7 @@
 - [116. Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)
 - [117. Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)
 - [133. Clone Graph](https://leetcode.com/problems/clone-graph/)
+- [138. Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/)
 
 
 ## helper
