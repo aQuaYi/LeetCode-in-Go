@@ -1,8 +1,6 @@
 package Problem0139
 
-import (
-	"sort"
-)
+import "sort"
 
 func wordBreak(s string, wordDict []string) bool {
 	if len(wordDict) == 0 {
@@ -22,21 +20,16 @@ func wordBreak(s string, wordDict []string) bool {
 		sizes = append(sizes, k)
 	}
 
-	sort.Ints(sizes)
-	min, max := sizes[0], sizes[len(sizes)-1]
+	sort.Sort(sort.Reverse(sort.IntSlice(sizes)))
 
 	var dfs func(int) bool
 	dfs = func(i int) bool {
-		if len(s) < i+min {
-			return false
-		}
-
-		if i+min <= len(s) && len(s) <= i+max {
-			return dict[s[i:]]
+		if i == len(s) {
+			return true
 		}
 
 		for _, size := range sizes {
-			if dict[s[i:i+size]] && dfs(i+size) {
+			if i+size <= len(s) && dict[s[i:i+size]] && dfs(i+size) {
 				return true
 			}
 		}
