@@ -20,22 +20,23 @@ func wordBreak(s string, wordDict []string) bool {
 		sizes = append(sizes, k)
 	}
 
-	sort.Sort(sort.Reverse(sort.IntSlice(sizes)))
+	sort.Ints(sizes)
 
-	var dfs func(int) bool
-	dfs = func(i int) bool {
-		if i == len(s) {
-			return true
+	// dp[i] == true，等于 wordBreak(s[:i+1], wordDict) == true
+	dp := make([]bool, len(s)+1)
+	dp[0] = true
+	n := len(s)
+	for i := 0; i <= n; i++ {
+		if !dp[i] {
+			continue
 		}
 
 		for _, size := range sizes {
-			if i+size <= len(s) && dict[s[i:i+size]] && dfs(i+size) {
-				return true
+			if i+size <= n {
+				dp[i+size] = dp[i+size] || dict[s[i:i+size]]
 			}
 		}
-
-		return false
 	}
 
-	return dfs(0)
+	return dp[n]
 }
