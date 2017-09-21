@@ -23,6 +23,9 @@ func wordBreak(s string, wordDict []string) bool {
 
 	var dfs func(int) bool
 	dfs = func(i int) bool {
+		if len(s) < i+min {
+			return false
+		}
 
 		if i+min <= len(s) && len(s) <= i+max {
 			return dict[s[i:]]
