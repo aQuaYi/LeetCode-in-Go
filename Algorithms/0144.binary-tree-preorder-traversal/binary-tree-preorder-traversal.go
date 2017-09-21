@@ -7,17 +7,28 @@ import (
 type TreeNode = kit.TreeNode
 
 func preorderTraversal(root *TreeNode) []int {
-	if root == nil {
-		return nil
-	}
-
-	if root.Left == nil && root.Right == nil {
-		return []int{root.Val}
-	}
-
-	res := []int{root.Val}
-	res = append(res, preorderTraversal(root.Left)...)
-	res = append(res, preorderTraversal(root.Right)...)
-
-	return res
+    var right []*TreeNode
+    var out []int
+    for cur := root; cur != nil; {
+        out = append(out, cur.Val)
+        if cur.Left == nil && cur.Right == nil {
+            if len(right) == 0 {
+                break
+            }
+            cur = right[len(right) - 1]
+            right = right[:len(right) - 1]
+            continue
+		}
+		
+        if cur.Left != nil && cur.Right != nil {
+            right = append(right, cur.Right)
+		}
+		
+        if cur.Left != nil {
+            cur = cur.Left
+            continue
+        }
+        cur = cur.Right
+    }
+    return out
 }
