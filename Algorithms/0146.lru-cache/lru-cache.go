@@ -33,68 +33,85 @@ func Constructor(capacity int) LRUCache {
 
 // Get 获取 cache 中的数据
 func (c *LRUCache) Get(key int) int {
+	// 利用 hashTable 查询 key
 	if node, ok := c.nodes[key]; ok {
-		c.moveToHead(node)
+		// key 存在的话
+		// 把对应的 node 移动到 cache 的双向链的 first 位
+		c.moveToFirst(node)
 		return node.val
 	}
+
+	// key 不存在，按照题意，返回 -1
 	return -1
 }
 
-func (c *LRUCache) removeLast() {
+// Put is 放入新数据
+func (c *LRUCache) Put(key int, value int) {
+	node, ok := c.nodes[key]
 
-	if c.last.prev != nil {
+	if ok { // 更新旧 node
+		// 更新 node 中的值
+		node.val = value
+		// 把 node 放入双向链的 first 位
+		c.moveToFirst(node)
+	} else { // 放入新 node
+		if c.len == c.cap {
+			// cache 已满，删除 last 位，为新 node 腾地方
+			// 删除 hashTable 中的记录
+			delete(c.nodes, c.last.key)
+			// 删除双向链中的 last 位
+			c.removeLast()
+		} else {
+			c.len++
+		}
+		// 为 key 和 value 新建一个节点
+		node = &doublyLinkedNode{
+			key: key,
+			val: value,
+		}
+		// 在 hashTable 中添加记录
+		c.nodes[key] = node
+		// 把新 node 放入 first 位
+		c.insertToFirst(node)
+	}
+}
+
+func (c *LRUCache) removeLast() {
+	if c.last.prev != nil { // 双向链长度 >1
 		c.last.prev.next = nil
-	} else {
+	} else { // 双向链长度 == 1，firt，last 指向同一个节点
 		c.first = nil
 	}
 
 	c.last = c.last.prev
 }
 
-func (c *LRUCache) moveToHead(nd *doublyLinkedNode) {
-	if nd == c.first {
+func (c *LRUCache) moveToFirst(node *doublyLinkedNode) {
+	switch node {
+	case c.first:
 		return
+	case c.last:
+		c.removeLast()
+	default:
+		// 在双向链中，删除 node 节点
+		node.prev.next = node.next
+		node.next.prev = node.prev
 	}
 
-	if nd.prev != nil {
-		nd.prev.next = nd.next
-	}
-
-	if nd.next != nil {
-		nd.next.prev = nd.prev
-	}
-
-	if nd == c.last {
-		c.last = nd.prev
-	}
-	if c.first != nil {
-		nd.next = c.first
-		c.first.prev = nd
-	}
-
-	c.first = nd
-	nd.prev = nil
-	if c.last == nil {
-		c.last = c.first
-	}
+	// 策略是
+	// 如果需要移动 node 的话
+	// 先删除，再插入
+	c.insertToFirst(node)
 }
 
-// Put is 放入新数据
-func (c *LRUCache) Put(key int, value int) {
-	nd, ok := c.nodes[key]
-
-	if !ok {
-		if c.len == c.cap {
-			delete(c.nodes, c.last.key)
-			c.removeLast()
-		} else {
-			c.len++
-		}
-		nd = &doublyLinkedNode{}
+func (c *LRUCache) insertToFirst(node *doublyLinkedNode) {
+	if c.last == nil { // **空**双向链
+		c.last = node
+	} else { // **非空**双向链
+		// 默认 node != nil
+		node.next = c.first
+		c.first.prev = node
 	}
 
-	nd.val = value
-	nd.key = key
-	c.moveToHead(nd)
-	c.nodes[key] = nd
+	c.first = node
 }

@@ -70,4 +70,7 @@ func Test_1(t *testing.T) {
 
 	cache.Put(3, 3)
 	// [(3,3)]
+
+	cache.Put(3, 33)
+	// [(3,33)]
 }
