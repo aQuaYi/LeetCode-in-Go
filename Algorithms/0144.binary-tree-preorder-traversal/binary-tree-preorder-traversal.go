@@ -7,28 +7,34 @@ import (
 type TreeNode = kit.TreeNode
 
 func preorderTraversal(root *TreeNode) []int {
-    var right []*TreeNode
-    var out []int
-    for cur := root; cur != nil; {
-        out = append(out, cur.Val)
-        if cur.Left == nil && cur.Right == nil {
-            if len(right) == 0 {
-                break
-            }
-            cur = right[len(right) - 1]
-            right = right[:len(right) - 1]
-            continue
+	// rightStack 用来暂存右侧节点
+	var rightStack []*TreeNode
+	var res []int
+
+	for cur := root; cur != nil; {
+		res = append(res, cur.Val)
+
+		if cur.Left != nil {
+			if cur.Right != nil {
+				rightStack = append(rightStack, cur.Right)
+			}
+			cur = cur.Left
+		} else { // cur.Left == nil 
+			if cur.Right != nil {
+				cur = cur.Right
+			} else { // cur.Left == cur.Right == nil
+				// stack 已空
+				// 说明已经完成遍历了
+				if len(rightStack) == 0 {
+					break
+                }
+                // 否则
+				// 取出最后放入的右侧节点，继续 for 循环
+				cur = rightStack[len(rightStack)-1]
+				rightStack = rightStack[:len(rightStack)-1]
+			}
 		}
-		
-        if cur.Left != nil && cur.Right != nil {
-            right = append(right, cur.Right)
-		}
-		
-        if cur.Left != nil {
-            cur = cur.Left
-            continue
-        }
-        cur = cur.Right
     }
-    return out
+
+	return res
 }
