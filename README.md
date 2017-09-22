@@ -1,6 +1,6 @@
 # [LeetCode](https://leetcode.com)习题的Golang解答
 [![LeetCode](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode Ranking](https://img.shields.io/badge/Ranking-32987-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode Ranking](https://img.shields.io/badge/Ranking-31336-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang)
 
@@ -11,9 +11,9 @@
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|54 / 146|93 / 252|36 / 94|183 / 492|
+|**Algorithms**|54 / 146|93 / 252|37 / 94|184 / 492|
 |**Draft**|0 / 1|0 / 3|0 / 0|0 / 4|
-|**Total**|54 / 147|93 / 255|36 / 94|183 / 496|
+|**Total**|54 / 147|93 / 255|37 / 94|184 / 496|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -135,7 +135,7 @@
 |115|[Distinct Subsequences](./Algorithms/0115.distinct-subsequences)|☆ ☆ ☆|31%|❤|
 |118|[Pascal's Triangle](./Algorithms/0118.pascals-triangle)|☆|38%||
 |119|[Pascal's Triangle II](./Algorithms/0119.pascals-triangle-ii)|☆|37%||
-|120|[Triangle](./Algorithms/0120.triangle)|☆ ☆|33%|❤|
+|120|[Triangle](./Algorithms/0120.triangle)|☆ ☆|34%|❤|
 |121|[Best Time to Buy and Sell Stock](./Algorithms/0121.best-time-to-buy-and-sell-stock)|☆|41%||
 |122|[Best Time to Buy and Sell Stock II](./Algorithms/0122.best-time-to-buy-and-sell-stock-ii)|☆|47%||
 |123|[Best Time to Buy and Sell Stock III](./Algorithms/0123.best-time-to-buy-and-sell-stock-iii)|☆ ☆ ☆|29%||
@@ -156,6 +156,7 @@
 |140|[Word Break II](./Algorithms/0140.word-break-ii)|☆ ☆ ☆|23%|❤|
 |143|[Reorder List](./Algorithms/0143.reorder-list)|☆ ☆|25%|❤|
 |144|[Binary Tree Preorder Traversal](./Algorithms/0144.binary-tree-preorder-traversal)|☆ ☆|45%|❤|
+|145|[Binary Tree Postorder Traversal](./Algorithms/0145.binary-tree-postorder-traversal)|☆ ☆ ☆|40%||
 |152|[Maximum Product Subarray](./Algorithms/0152.maximum-product-subarray)|☆ ☆|25%|❤|
 |153|[Find Minimum in Rotated Sorted Array](./Algorithms/0153.find-minimum-in-rotated-sorted-array)|☆ ☆|40%||
 |154|[Find Minimum in Rotated Sorted Array II](./Algorithms/0154.find-minimum-in-rotated-sorted-array-ii)|☆ ☆ ☆|37%||
