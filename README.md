@@ -11,9 +11,9 @@
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|54 / 146|93 / 252|37 / 94|184 / 492|
+|**Algorithms**|54 / 146|93 / 252|38 / 94|185 / 492|
 |**Draft**|0 / 1|0 / 3|0 / 0|0 / 4|
-|**Total**|54 / 147|93 / 255|37 / 94|184 / 496|
+|**Total**|54 / 147|93 / 255|38 / 94|185 / 496|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -157,6 +157,7 @@
 |143|[Reorder List](./Algorithms/0143.reorder-list)|☆ ☆|25%|❤|
 |144|[Binary Tree Preorder Traversal](./Algorithms/0144.binary-tree-preorder-traversal)|☆ ☆|45%|❤|
 |145|[Binary Tree Postorder Traversal](./Algorithms/0145.binary-tree-postorder-traversal)|☆ ☆ ☆|40%||
+|146|[LRU Cache](./Algorithms/0146.lru-cache)|☆ ☆ ☆|18%|❤|
 |152|[Maximum Product Subarray](./Algorithms/0152.maximum-product-subarray)|☆ ☆|25%|❤|
 |153|[Find Minimum in Rotated Sorted Array](./Algorithms/0153.find-minimum-in-rotated-sorted-array)|☆ ☆|40%||
 |154|[Find Minimum in Rotated Sorted Array II](./Algorithms/0154.find-minimum-in-rotated-sorted-array-ii)|☆ ☆ ☆|37%||
@@ -184,7 +185,7 @@
 |437|[Path Sum III](./Algorithms/0437.path-sum-iii)|☆|39%|❤|
 |442|[Find All Duplicates in an Array](./Algorithms/0442.find-all-duplicates-in-an-array)|☆ ☆|55%||
 |448|[Find All Numbers Disappeared in an Array](./Algorithms/0448.find-all-numbers-disappeared-in-an-array)|☆|51%||
-|485|[Max Consecutive Ones](./Algorithms/0485.max-consecutive-ones)|☆|54%||
+|485|[Max Consecutive Ones](./Algorithms/0485.max-consecutive-ones)|☆|53%||
 |495|[Teemo Attacking](./Algorithms/0495.teemo-attacking)|☆ ☆|51%||
 |526|[Beautiful Arrangement](./Algorithms/0526.beautiful-arrangement)|☆ ☆|54%|❤|
 |532|[K-diff Pairs in an Array](./Algorithms/0532.k-diff-pairs-in-an-array)|☆|28%||
