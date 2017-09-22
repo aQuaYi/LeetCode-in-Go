@@ -6,24 +6,28 @@ package Problem0146
  * param_1 := obj.Get(key);
  * obj.Put(key,value);
  */
-type node struct {
-	prev, next *node
+
+// doublyLinkedNode 是双向链节点
+type doublyLinkedNode struct {
+	prev, next *doublyLinkedNode
 	key, val   int
 }
 
-// LRUCache is LRU 方法的具体实现
+// LRUCache 利用 双向链条 + hashtabl 实现
 type LRUCache struct {
-	len, cap    int
-	first, last *node
-	nodes       map[int]*node
+	// cache 的 长度 和 容量
+	len, cap int
+	// 分别指向双向链的首尾节点
+	first, last *doublyLinkedNode
+	// 节点的 hashTable，方便查找节点是否存在
+	nodes map[int]*doublyLinkedNode
 }
 
 // Constructor 创建容量为 capacity 的 cache
 func Constructor(capacity int) LRUCache {
 	return LRUCache{
-		cap: capacity,
-		// TODO: 检查这样设置的必要性
-		nodes: make(map[int]*node, capacity),
+		cap:   capacity,
+		nodes: make(map[int]*doublyLinkedNode, capacity),
 	}
 }
 
@@ -36,31 +40,7 @@ func (c *LRUCache) Get(key int) int {
 	return -1
 }
 
-func (c *LRUCache) remove(key int) {
-	nd, ok := c.nodes[key]
-	if ok {
-		if nd.prev != nil {
-			nd.prev.next = nd.next
-		}
-
-		if nd.next != nil {
-			nd.next.prev = nd.prev
-		}
-
-		if c.last == nd {
-			c.last = nd.prev
-		}
-
-		if nd == c.first {
-			c.first = nd.next
-		}
-	}
-}
-
 func (c *LRUCache) removeLast() {
-	if c.last == nil {
-		return
-	}
 
 	if c.last.prev != nil {
 		c.last.prev.next = nil
@@ -71,7 +51,7 @@ func (c *LRUCache) removeLast() {
 	c.last = c.last.prev
 }
 
-func (c *LRUCache) moveToHead(nd *node) {
+func (c *LRUCache) moveToHead(nd *doublyLinkedNode) {
 	if nd == c.first {
 		return
 	}
@@ -83,7 +63,7 @@ func (c *LRUCache) moveToHead(nd *node) {
 	if nd.next != nil {
 		nd.next.prev = nd.prev
 	}
-	
+
 	if nd == c.last {
 		c.last = nd.prev
 	}
@@ -104,16 +84,13 @@ func (c *LRUCache) Put(key int, value int) {
 	nd, ok := c.nodes[key]
 
 	if !ok {
-		if c.len >= c.cap {
-			// TODO: 是否可以删除这个 if
-			if c.last != nil {
-				delete(c.nodes, c.last.key)
-				c.removeLast()
-			}
+		if c.len == c.cap {
+			delete(c.nodes, c.last.key)
+			c.removeLast()
 		} else {
 			c.len++
 		}
-		nd = &node{}
+		nd = &doublyLinkedNode{}
 	}
 
 	nd.val = value
