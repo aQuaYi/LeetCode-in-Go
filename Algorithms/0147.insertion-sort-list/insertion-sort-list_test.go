@@ -35,13 +35,8 @@ func Test_insertionSortList(t *testing.T) {
 }
 
 func Benchmark_insertionSortList(b *testing.B) {
-	head := &ListNode{}
+	head := kit.Ints2List([]int{9, 6, 3, 1, 4, 8, 2, 5, 7, 19, 16, 13, 11, 14, 18, 12, 15, 17, 29, 26, 23, 21, 24, 28, 22, 25, 27, 39, 36, 33, 31, 34, 38, 32, 35, 37, 49, 46, 43, 41, 44, 48, 42, 45, 47})
 	for i := 0; i < b.N; i++ {
-		for _, tc := range tcs {
-			b.StopTimer()
-			head = kit.Ints2List(tc.head)
-			b.StartTimer()
-			insertionSortList(head)
-		}
+		insertionSortList(head)
 	}
 }
