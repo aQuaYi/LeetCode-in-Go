@@ -6,19 +6,20 @@ import (
 
 type ListNode = kit.ListNode
 
-func sortList(head *ListNode) *ListNode{
-    if head == nil || head.Next == nil {
+func sortList(head *ListNode) *ListNode {
+	if head == nil || head.Next == nil {
 		return head
 	}
-	secHead := Split(head)
-	return MergeList(sortList(head), sortList(secHead))
+
+	secHead := split(head)
+	return merge(sortList(head), sortList(secHead))
 }
 
 // 从中间位置，切分 list
-func Split(head *ListNode) *ListNode {
-    if head == nil||head.Next == nil{
-        return nil
-	}
+func split(head *ListNode) *ListNode {
+	// head.Next != nil
+	// 因为， sortList 已经帮忙检查过了
+
 	// fast 的变化速度是 slow 的两倍
 	// 当 fast 到达末尾的时候，slow 正好在 list 的中间
 	slow, fast := head, head
@@ -28,18 +29,20 @@ func Split(head *ListNode) *ListNode {
 		slow = slow.Next
 		fast = fast.Next.Next
 	}
+	// 斩断 list
 	tail.Next = nil
 	return slow
 }
 
-func MergeList(left, right *ListNode) *ListNode {
-	if left == nil {
-		return right
-	} else if right == nil {
-		return left
-	}
-	var head, cur, p *ListNode
+// 把已经排序好了的两个 list left 和 right
+// 进行合并
+func merge(left, right *ListNode) *ListNode {
+	// left != nil , right != nil
+	// 因为， sortList 已经帮忙检查过了
+
+	var head, cur, pre *ListNode
 	for left != nil && right != nil {
+		// cur 指向 left 和 right 中最小的节点
 		if left.Val < right.Val {
 			cur = left
 			left = left.Next
@@ -47,17 +50,23 @@ func MergeList(left, right *ListNode) *ListNode {
 			cur = right
 			right = right.Next
 		}
+		// 生成 head 节点
+		// 或者 链接 pre 节点
 		if head == nil {
 			head = cur
 		} else {
-			p.Next = cur
+			pre.Next = cur
 		}
-		p = cur
+		// 移动 pre 节点
+		pre = cur
 	}
+
+	// 处理 left 或 right 中，剩下的节点
 	if left == nil {
-		p.Next = right
+		pre.Next = right
 	} else {
-		p.Next = left
+		pre.Next = left
 	}
+
 	return head
 }
