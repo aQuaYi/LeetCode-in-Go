@@ -47,9 +47,4 @@ func Test_Problem155_2(t *testing.T) {
 	// [-2, 0]
 	s.Pop()
 	// [-2]
-	s.Pop()
-	// []
-	s.Pop()
-	// []
-	s.Top()
 }
