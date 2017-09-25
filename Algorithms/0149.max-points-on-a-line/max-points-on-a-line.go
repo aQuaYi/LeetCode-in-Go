@@ -20,14 +20,25 @@ func maxPoints(ps points) int {
 	i, j, k, temp := 0, 0, 0, 0
 	for i < n-1 {
 		j = i + 1
+		used := make([]bool, n)
 		for j < n {
-			if equal(ps[i], ps[j]) {
+			for j < n && equal(ps[i], ps[j]) {
+				used[j] = true
 				j++
 				if i == 0 && j == n {
 					return n
 				}
 				continue
 			}
+
+			for j < n && used[j] {
+				j++
+			}
+
+			if j == n {
+				break
+			}
+
 			check := checkFunc(ps[i], ps[j])
 
 			for k = 0; k < n; k++ {
