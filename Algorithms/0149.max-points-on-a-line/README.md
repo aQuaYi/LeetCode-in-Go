@@ -6,3 +6,5 @@ Given n points on a 2D plane, find the maximum number of points that lie on the 
 ## 解题思路
 
 见程序注释
+
+![100%](149.100.png)
