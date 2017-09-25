@@ -11,9 +11,9 @@
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|54 / 147|94 / 254|38 / 95|186 / 496|
+|**Algorithms**|54 / 147|95 / 254|38 / 95|187 / 496|
 |**Draft**|0 / 1|0 / 3|0 / 0|0 / 4|
-|**Total**|54 / 148|94 / 257|38 / 95|186 / 500|
+|**Total**|54 / 148|95 / 257|38 / 95|187 / 500|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -159,6 +159,7 @@
 |145|[Binary Tree Postorder Traversal](./Algorithms/0145.binary-tree-postorder-traversal)|☆ ☆ ☆|40%||
 |146|[LRU Cache](./Algorithms/0146.lru-cache)|☆ ☆ ☆|18%|❤|
 |147|[Insertion Sort List](./Algorithms/0147.insertion-sort-list)|☆ ☆|33%|❤|
+|148|[Sort List](./Algorithms/0148.sort-list)|☆ ☆|28%||
 |152|[Maximum Product Subarray](./Algorithms/0152.maximum-product-subarray)|☆ ☆|25%|❤|
 |153|[Find Minimum in Rotated Sorted Array](./Algorithms/0153.find-minimum-in-rotated-sorted-array)|☆ ☆|40%||
 |154|[Find Minimum in Rotated Sorted Array II](./Algorithms/0154.find-minimum-in-rotated-sorted-array-ii)|☆ ☆ ☆|37%||
@@ -168,7 +169,7 @@
 |188|[Best Time to Buy and Sell Stock IV](./Algorithms/0188.best-time-to-buy-and-sell-stock-iv)|☆ ☆ ☆|24%|❤|
 |189|[Rotate Array](./Algorithms/0189.rotate-array)|☆|24%||
 |206|[Reverse Linked List](./Algorithms/0206.reverse-linked-list)|☆|45%||
-|209|[Minimum Size Subarray Sum](./Algorithms/0209.minimum-size-subarray-sum)|☆ ☆|30%||
+|209|[Minimum Size Subarray Sum](./Algorithms/0209.minimum-size-subarray-sum)|☆ ☆|31%||
 |216|[Combination Sum III](./Algorithms/0216.combination-sum-iii)|☆ ☆|45%||
 |217|[Contains Duplicate](./Algorithms/0217.contains-duplicate)|☆|45%||
 |219|[Contains Duplicate II](./Algorithms/0219.contains-duplicate-ii)|☆|32%||
