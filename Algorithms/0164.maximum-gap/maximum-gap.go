@@ -1,12 +1,13 @@
 package Problem0164
 
 func maximumGap(nums []int) int {
-	if len(nums) == 0 {
+	if len(nums) < 2 {
 		return 0
 	}
 
-	var sort func(i, j int)
-	sort = func(i, j int) {
+	// 自己实现了一个简易的快排
+	var quickSort func(i, j int)
+	quickSort = func(i, j int) {
 		ci, cj := i, j
 		c := i
 		for i < j {
@@ -21,13 +22,14 @@ func maximumGap(nums []int) int {
 		nums[i], nums[c] = nums[c], nums[i]
 		c = i
 		if ci < c {
-			sort(ci, c)
+			quickSort(ci, c)
 		}
 		if c+1 < cj {
-			sort(c+1, cj)
+			quickSort(c+1, cj)
 		}
 	}
-	sort(0, len(nums)-1)
+
+	quickSort(0, len(nums)-1)
 
 	ret := 0
 	for i := 1; i < len(nums); i++ {
