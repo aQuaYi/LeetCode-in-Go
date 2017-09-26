@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"log"
+	"os"
 	"sort"
 
 	"github.com/aQuaYi/GoKit"
@@ -71,8 +72,6 @@ func diff(new, old *leetcode) {
 	// 对比 已完成的问题
 	lenNew := len(new.Problems)
 	lenOld := len(old.Problems)
-	// TODO: 处理数据错位问题
-	//	isOrderChanged := false
 	isChanged := false
 
 	i := 0
@@ -80,8 +79,8 @@ func diff(new, old *leetcode) {
 		n, o := new.Problems[i], old.Problems[i]
 
 		if n.ID != o.ID {
-			log.Println(n, o)
-			log.Fatalln("LeetCode 的 Problems 数据出现错位。")
+			os.Remove("leetcode.json")
+			log.Fatalln("LeetCode 的 Problems 数据出现错位。已经删除 leetcode.json。 请重试")
 		}
 
 		if n.IsAccepted == true && o.IsAccepted == false {
