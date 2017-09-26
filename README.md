@@ -11,9 +11,9 @@
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|55 / 147|95 / 253|39 / 95|189 / 495|
+|**Algorithms**|55 / 147|95 / 253|40 / 95|190 / 495|
 |**Draft**|0 / 1|0 / 3|0 / 0|0 / 4|
-|**Total**|55 / 148|95 / 256|39 / 95|189 / 499|
+|**Total**|55 / 148|95 / 256|40 / 95|190 / 499|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -167,6 +167,7 @@
 |154|[Find Minimum in Rotated Sorted Array II](./Algorithms/0154.find-minimum-in-rotated-sorted-array-ii)|☆ ☆ ☆|37%||
 |155|[Min Stack](./Algorithms/0155.min-stack)|☆|29%||
 |162|[Find Peak Element](./Algorithms/0162.find-peak-element)|☆ ☆|37%||
+|164|[Maximum Gap](./Algorithms/0164.maximum-gap)|☆ ☆ ☆|29%||
 |167|[Two Sum II - Input array is sorted](./Algorithms/0167.two-sum-ii-input-array-is-sorted)|☆|47%||
 |169|[Majority Element](./Algorithms/0169.majority-element)|☆|46%|❤|
 |188|[Best Time to Buy and Sell Stock IV](./Algorithms/0188.best-time-to-buy-and-sell-stock-iv)|☆ ☆ ☆|24%|❤|
