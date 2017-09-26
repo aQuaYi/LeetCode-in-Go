@@ -12,10 +12,13 @@ func evalRPN(tokens []string) int {
 			s == "-" ||
 			s == "*" ||
 			s == "/" {
+			// 遇到操作符， 数字出栈
 			b, a := nums[len(nums)-1], nums[len(nums)-2]
 			nums = nums[:len(nums)-2]
+			// 运算后的结果，重新入栈
 			nums = append(nums, compute(a, b, s))
 		} else {
+			// 遇到数字，则直接入栈
 			temp, _ := strconv.Atoi(s)
 			nums = append(nums, temp)
 		}
@@ -24,6 +27,7 @@ func evalRPN(tokens []string) int {
 	return nums[0]
 }
 
+// 计算
 func compute(a, b int, opt string) int {
 	switch opt {
 	case "+":
