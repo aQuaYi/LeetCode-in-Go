@@ -1,6 +1,6 @@
 # [LeetCode](https://leetcode.com)习题的Golang解答
 [![LeetCode](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode Ranking](https://img.shields.io/badge/Ranking-29305-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode Ranking](https://img.shields.io/badge/Ranking-28890-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang)
 
@@ -11,9 +11,9 @@
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|56 / 147|97 / 253|40 / 96|193 / 496|
+|**Algorithms**|56 / 147|97 / 253|41 / 96|194 / 496|
 |**Draft**|0 / 1|0 / 3|0 / 0|0 / 4|
-|**Total**|56 / 148|97 / 256|40 / 96|193 / 500|
+|**Total**|56 / 148|97 / 256|41 / 96|194 / 500|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -120,7 +120,7 @@
 |100|[Same Tree](./Algorithms/0100.same-tree)|☆|46%||
 |101|[Symmetric Tree](./Algorithms/0101.symmetric-tree)|☆|39%|❤|
 |102|[Binary Tree Level Order Traversal](./Algorithms/0102.binary-tree-level-order-traversal)|☆ ☆|40%||
-|103|[Binary Tree Zigzag Level Order Traversal](./Algorithms/0103.binary-tree-zigzag-level-order-traversal)|☆ ☆|34%||
+|103|[Binary Tree Zigzag Level Order Traversal](./Algorithms/0103.binary-tree-zigzag-level-order-traversal)|☆ ☆|35%||
 |104|[Maximum Depth of Binary Tree](./Algorithms/0104.maximum-depth-of-binary-tree)|☆|52%||
 |105|[Construct Binary Tree from Preorder and Inorder Traversal](./Algorithms/0105.construct-binary-tree-from-preorder-and-inorder-traversal)|☆ ☆|32%|❤|
 |106|[Construct Binary Tree from Inorder and Postorder Traversal](./Algorithms/0106.construct-binary-tree-from-inorder-and-postorder-traversal)|☆ ☆|32%|❤|
@@ -173,6 +173,7 @@
 |167|[Two Sum II - Input array is sorted](./Algorithms/0167.two-sum-ii-input-array-is-sorted)|☆|47%||
 |168|[Excel Sheet Column Title](./Algorithms/0168.excel-sheet-column-title)|☆|26%|❤|
 |169|[Majority Element](./Algorithms/0169.majority-element)|☆|46%|❤|
+|174|[Dungeon Game](./Algorithms/0174.dungeon-game)|☆ ☆ ☆|23%|❤|
 |188|[Best Time to Buy and Sell Stock IV](./Algorithms/0188.best-time-to-buy-and-sell-stock-iv)|☆ ☆ ☆|24%|❤|
 |189|[Rotate Array](./Algorithms/0189.rotate-array)|☆|24%||
 |206|[Reverse Linked List](./Algorithms/0206.reverse-linked-list)|☆|45%||
@@ -199,7 +200,7 @@
 |526|[Beautiful Arrangement](./Algorithms/0526.beautiful-arrangement)|☆ ☆|54%|❤|
 |532|[K-diff Pairs in an Array](./Algorithms/0532.k-diff-pairs-in-an-array)|☆|28%||
 |560|[Subarray Sum Equals K](./Algorithms/0560.subarray-sum-equals-k)|☆ ☆|40%|❤|
-|561|[Array Partition I](./Algorithms/0561.array-partition-i)|☆|67%||
+|561|[Array Partition I](./Algorithms/0561.array-partition-i)|☆|66%||
 |566|[Reshape the Matrix](./Algorithms/0566.reshape-the-matrix)|☆|58%||
 |581|[Shortest Unsorted Continuous Subarray](./Algorithms/0581.shortest-unsorted-continuous-subarray)|☆|29%|❤|
 |605|[Can Place Flowers](./Algorithms/0605.can-place-flowers)|☆|30%|❤|
