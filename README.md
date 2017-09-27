@@ -1,19 +1,19 @@
 # [LeetCode](https://leetcode.com)习题的Golang解答
 [![LeetCode](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode Ranking](https://img.shields.io/badge/Ranking-30229-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode Ranking](https://img.shields.io/badge/Ranking-29305-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang)
 
 
 
-## 答题进度：38%
+## 答题进度：39%
 > 仅含免费题
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|55 / 147|96 / 253|40 / 96|191 / 496|
+|**Algorithms**|55 / 147|97 / 253|40 / 96|192 / 496|
 |**Draft**|0 / 1|0 / 3|0 / 0|0 / 4|
-|**Total**|55 / 148|96 / 256|40 / 96|191 / 500|
+|**Total**|55 / 148|97 / 256|40 / 96|192 / 500|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -169,6 +169,7 @@
 |162|[Find Peak Element](./Algorithms/0162.find-peak-element)|☆ ☆|37%||
 |164|[Maximum Gap](./Algorithms/0164.maximum-gap)|☆ ☆ ☆|29%||
 |165|[Compare Version Numbers](./Algorithms/0165.compare-version-numbers)|☆ ☆|20%||
+|166|[Fraction to Recurring Decimal](./Algorithms/0166.fraction-to-recurring-decimal)|☆ ☆|17%|❤|
 |167|[Two Sum II - Input array is sorted](./Algorithms/0167.two-sum-ii-input-array-is-sorted)|☆|47%||
 |169|[Majority Element](./Algorithms/0169.majority-element)|☆|46%|❤|
 |188|[Best Time to Buy and Sell Stock IV](./Algorithms/0188.best-time-to-buy-and-sell-stock-iv)|☆ ☆ ☆|24%|❤|
