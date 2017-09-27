@@ -39,6 +39,8 @@ func (b bytes) Less(i, j int) bool {
 	for k := 0; k < size; k++ {
 		if bi[k] < bj[k] {
 			return true
+		} else if bi[k] > bj[k] {
+			return false
 		}
 	}
 
