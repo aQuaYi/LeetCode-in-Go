@@ -24,17 +24,19 @@ func fractionToDecimal(n int, d int) string {
 		return strconv.Itoa(n/d) + ds[1:]
 	}
 
-	// rec 记录所有出现过的 n
-	rec := make(map[int]int, 1024)
 	// digits 用来保存 n/d 的结果
-	digits := make([]byte, 0, 1024)
+	digits := make([]byte, 2, 1024)
+	digits[0] = '0'
+	digits[1] = '.'
 	// idx 是 n/d 的结果的在 digits 的索引号
-	idx := 0
+	idx := 2
+	// rec[n] = idx
+	rec := make(map[int]int, 1024)
 	for {
 		if i, ok := rec[n]; ok {
 			// n 重复出现，则说明 n/d 是下一个循环的开始
 			// 循环部分的起点，就是 n 上次出现的 idx 值
-			return fmt.Sprintf("0.%s(%s)", string(digits[:i]), string(digits[i:]))
+			return fmt.Sprintf("%s(%s)", string(digits[:i]), string(digits[i:]))
 		}
 
 		rec[n] = idx
@@ -47,7 +49,7 @@ func fractionToDecimal(n int, d int) string {
 
 		if n == 0 {
 			// 不会有循环部分
-			return "0." + string(digits)
+			return string(digits)
 		}
 	}
 }
