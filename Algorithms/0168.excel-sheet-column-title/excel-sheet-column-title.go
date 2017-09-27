@@ -1,12 +1,9 @@
 package Problem0168
 
 func convertToTitle(n int) string {
-	if n == 0 {
-		return ""
+	if n <= 26 {
+		return string(byte(64 + n))
 	}
 
-	// byte('A') == 65
-	str := string(byte(64 + n%26))
-
-	return convertToTitle(n/26) + str
+	return convertToTitle(n/26) + convertToTitle(n%26)
 }
