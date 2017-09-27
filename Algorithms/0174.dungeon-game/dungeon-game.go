@@ -21,10 +21,11 @@ func calculateMinimumHP(dungeon [][]int) int {
 	}
 
 	init[0][0] = 1
+	health[0][0] = dungeon[0][0] + 1
 	if dungeon[0][0] < 0 {
 		init[0][0] = 1 - dungeon[0][0]
+		health[0][0] = 1
 	}
-	health[0][0] = 1
 
 	for i := 1; i < m; i++ {
 		health[i][0] = health[i-1][0] + dungeon[i][0]
