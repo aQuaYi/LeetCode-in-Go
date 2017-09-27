@@ -24,23 +24,17 @@ func fractionToDecimal(numerator int, denominator int) string {
 	if n < d {
 		rec := make(map[int]int)
 		idx := 0
-		digit := 0
 		for {
 			if i, ok := rec[n]; ok {
 				return fmt.Sprintf("0.%s(%s)", ds[:i], ds[i:])
 			}
 
-			idx += digit
 			rec[n] = idx
+			idx++
 
-			digit = 0
-			for n < d {
-				n *= 10
-				digit++
-			}
+			n *= 10
 
-			format := fmt.Sprintf("%%0%dd", digit)
-			ds += fmt.Sprintf(format, n/d)
+			ds += string(n/d + '0')
 			n %= d
 
 			if n == 0 {
