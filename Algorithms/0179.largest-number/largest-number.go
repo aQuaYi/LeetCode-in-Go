@@ -36,15 +36,20 @@ func (b bytes) Len() int {
 }
 
 func (b bytes) Less(i, j int) bool {
-	bi, bj := b[i], b[j]
-	if len(bi) != len(bj) {
-		bi, bj = toSameLen(bi, bj)
-	}
-	size := len(bi)
+	size := len(b[i]) + len(b[j])
+
+	bij := make([]byte, 0, size)
+	bij = append(bij, b[i]...)
+	bij = append(bij, b[j]...)
+
+	bji := make([]byte, 0, size)
+	bji = append(bji, b[j]...)
+	bji = append(bji, b[i]...)
+
 	for k := 0; k < size; k++ {
-		if bi[k] < bj[k] {
+		if bij[k] < bji[k] {
 			return true
-		} else if bi[k] > bj[k] {
+		} else if bij[k] > bji[k] {
 			return false
 		}
 	}
@@ -54,18 +59,4 @@ func (b bytes) Less(i, j int) bool {
 
 func (b bytes) Swap(i, j int) {
 	b[i], b[j] = b[j], b[i]
-}
-
-func toSameLen(a, b []byte) ([]byte, []byte) {
-	if len(a) > len(b) {
-		tail := make([]byte, len(a)-len(b))
-		for i := range tail {
-			tail[i] = b[len(b)-1]
-		}
-
-		return a, append(b, tail...)
-	}
-
-	rb, ra := toSameLen(b, a)
-	return ra, rb
 }
