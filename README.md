@@ -11,9 +11,9 @@
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|56 / 147|97 / 253|41 / 96|194 / 496|
+|**Algorithms**|56 / 147|98 / 253|41 / 96|195 / 496|
 |**Draft**|0 / 1|0 / 3|0 / 0|0 / 4|
-|**Total**|56 / 148|97 / 256|41 / 96|194 / 500|
+|**Total**|56 / 148|98 / 256|41 / 96|195 / 500|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -174,6 +174,7 @@
 |168|[Excel Sheet Column Title](./Algorithms/0168.excel-sheet-column-title)|☆|26%|❤|
 |169|[Majority Element](./Algorithms/0169.majority-element)|☆|46%|❤|
 |174|[Dungeon Game](./Algorithms/0174.dungeon-game)|☆ ☆ ☆|23%|❤|
+|179|[Largest Number](./Algorithms/0179.largest-number)|☆ ☆|22%||
 |188|[Best Time to Buy and Sell Stock IV](./Algorithms/0188.best-time-to-buy-and-sell-stock-iv)|☆ ☆ ☆|24%|❤|
 |189|[Rotate Array](./Algorithms/0189.rotate-array)|☆|24%||
 |206|[Reverse Linked List](./Algorithms/0206.reverse-linked-list)|☆|45%||
