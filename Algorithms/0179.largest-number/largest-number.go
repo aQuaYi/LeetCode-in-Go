@@ -21,6 +21,7 @@ func largestNumber(nums []int) string {
 		res = append(res, b[i]...)
 	}
 
+	// 处理 res 以 0 开头的情况
 	i := 0
 	for i < resSize-1 && res[i] == '0' {
 		i++
