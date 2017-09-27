@@ -21,7 +21,12 @@ func largestNumber(nums []int) string {
 		res = append(res, b[i]...)
 	}
 
-	return string(res)
+	i := 0
+	for i < resSize-1 && res[i] == '0' {
+		i++
+	}
+
+	return string(res[i:])
 }
 
 type bytes [][]byte
