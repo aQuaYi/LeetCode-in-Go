@@ -28,23 +28,14 @@ func calculateMinimumHP(dungeon [][]int) int {
 	}
 
 	for i := 1; i < m; i++ {
-		health[i][0] = health[i-1][0] + dungeon[i][0]
-		if health[i][0] < 1 {
-			init[i][0] = init[i-1][0] - health[i][0] + 1
-			health[i][0] = 1
-		} else {
-			init[i][0] = init[i-1][0]
-		}
+		init[i][0] = init[i-1][0] - min(health[i-1][0]+dungeon[i][0]-1, 0)
+		health[i][0] = max(1, health[i-1][0]+dungeon[i][0])
 	}
 
 	for j := 1; j < n; j++ {
-		health[0][j] = health[0][j-1] + dungeon[0][j]
-		if health[0][j] < 0 {
-			init[0][j] = init[0][j-1] - health[0][j] + 1
-			health[0][j] = 1
-		} else {
-			init[0][j] = init[0][j-1]
-		}
+		init[0][j] = init[0][j-1] - min(health[0][j-1]+dungeon[0][j]-1, 0)
+		health[0][j] = max(1, health[0][j-1]+dungeon[0][j])
+
 	}
 	iRight, hRight, iDown, hDown := 0, 0, 0, 0
 	for i := 1; i < m; i++ {
