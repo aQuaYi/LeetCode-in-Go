@@ -9,19 +9,24 @@ func largestNumber(nums []int) string {
 	size := len(nums)
 	b := make(bytes, size)
 	resSize := 0
+
+	// 转换 nums
 	for i := range b {
 		b[i] = []byte(strconv.Itoa(nums[i]))
 		resSize += len(b[i])
 	}
 
+	// 按照题意的规则，对 b 进行排序
 	sort.Sort(b)
 
+	// 串联 b 成 res
 	res := make([]byte, 0, resSize)
 	for i := size - 1; i >= 0; i-- {
 		res = append(res, b[i]...)
 	}
 
 	// 处理 res 以 0 开头的情况
+	// 比如，[0, 0, 0] 的结果是 "000"
 	i := 0
 	for i < resSize-1 && res[i] == '0' {
 		i++
