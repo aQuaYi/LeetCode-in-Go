@@ -11,54 +11,23 @@ func calculateMinimumHP(dungeon [][]int) int {
 		return 1
 	}
 
-	// init[i][j] 到达 (i,j) 后还活着，需要的最小初始健康值
-	init := make([][]int, m)
-	// health[i][j] 到达 (i,j) 后的健康值
-	health := make([][]int, m)
-	for i := 0; i < m; i++ {
-		init[i] = make([]int, n)
-		health[i] = make([]int, n)
-	}
-
-	init[0][0] = 1
-	health[0][0] = dungeon[0][0] + 1
-	if dungeon[0][0] < 0 {
-		init[0][0] = 1 - dungeon[0][0]
-		health[0][0] = 1
-	}
-
-	for i := 1; i < m; i++ {
-		init[i][0] = init[i-1][0] - min(health[i-1][0]+dungeon[i][0]-1, 0)
-		health[i][0] = max(1, health[i-1][0]+dungeon[i][0])
-	}
-
-	for j := 1; j < n; j++ {
-		init[0][j] = init[0][j-1] - min(health[0][j-1]+dungeon[0][j]-1, 0)
-		health[0][j] = max(1, health[0][j-1]+dungeon[0][j])
-
-	}
-	iRight, hRight, iDown, hDown := 0, 0, 0, 0
-	for i := 1; i < m; i++ {
-		for j := 1; j < n; j++ {
-			iRight = init[i][j-1] - min(health[i][j-1]+dungeon[i][j]-1, 0)
-			hRight = max(1, health[i][j-1]+dungeon[i][j])
-			iDown = init[i-1][j] - min(health[i-1][j]+dungeon[i][j]-1, 0)
-			hDown = max(1, health[i-1][j]+dungeon[i][j])
-			switch {
-			case iRight == iDown:
-				init[i][j] = iRight
-				health[i][j] = max(hRight, hDown)
-			case iRight < iDown:
-				init[i][j] = iRight
-				health[i][j] = hRight
-			default:
-				init[i][j] = iDown
-				health[i][j] = hDown
-			}
+	intMax := 1<<63 - 1
+	dp := make([][]int, m+1)
+	for i := range dp {
+		dp[i] = make([]int, n+1)
+		for j := range dp[i] {
+			dp[i][j] = intMax
 		}
 	}
 
-	return init[m-1][n-1]
+	dp[m][n-1] = 1
+	for i := m - 1; i >= 0; i-- {
+		for j := n - 1; j >= 0; j-- {
+			dp[i][j] = max(min(dp[i+1][j], dp[i][j+1])-dungeon[i][j], 1)
+		}
+	}
+
+	return dp[0][0]
 }
 
 func min(a, b int) int {
