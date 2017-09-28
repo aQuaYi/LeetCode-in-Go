@@ -7,49 +7,41 @@ func numIslands(grid [][]byte) int {
 	}
 
 	n := len(grid[0])
-	if n == 0 {
-		return 0
-	}
 
 	x := make([]int, 0, m*n)
 	y := make([]int, 0, m*n)
+
+	var add = func(i, j int) {
+		x = append(x, i)
+		y = append(y, j)
+		grid[i][j] = '0'
+	}
+
+	var pop = func() (int, int) {
+		i := x[0]
+		x = x[1:]
+		j := y[0]
+		y = y[1:]
+
+		return i, j
+	}
 
 	var bfs = func(col, row int) int {
 		if grid[col][row] == '0' {
 			return 0
 		}
-		x = append(x, col)
-		y = append(y, row)
-		grid[col][row] = '0'
+
+		add(col, row)
 
 		for len(x) > 0 {
-			i := x[0]
-			x = x[1:]
-			j := y[0]
-			y = y[1:]
-
-			if 0 <= i-1 && grid[i-1][j] == '1' {
-				x = append(x, i-1)
-				y = append(y, j)
-				grid[i-1][j] = '0'
-			}
+			i, j := pop()
 
 			if i+1 < m && grid[i+1][j] == '1' {
-				x = append(x, i+1)
-				y = append(y, j)
-				grid[i+1][j] = '0'
-			}
-
-			if 0 <= j-1 && grid[i][j-1] == '1' {
-				x = append(x, i)
-				y = append(y, j-1)
-				grid[i][j-1] = '0'
+				add(i+1, j)
 			}
 
 			if j+1 < n && grid[i][j+1] == '1' {
-				x = append(x, i)
-				y = append(y, j+1)
-				grid[i][j+1] = '0'
+				add(i, j+1)
 			}
 		}
 
