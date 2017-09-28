@@ -9,4 +9,22 @@ Credits:Special thanks to @amrsaqr for adding this problem and creating all test
 
 ## 解题思路
 
-见程序注释
+在草稿纸上，演算以下两组参数，就可以明白程序的用意了。
+1.
+```
+m = 5, n = 7
+5 : 0101
+6 : 0110
+7 : 0111
+结果
+4 : 0100
+```
+2.
+```
+m = 6, n = 8
+6 : 0110
+7 : 0111
+8 : 1000
+结果
+0 : 0000
+```

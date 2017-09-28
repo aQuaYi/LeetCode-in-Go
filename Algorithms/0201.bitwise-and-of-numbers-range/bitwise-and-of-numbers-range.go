@@ -1,11 +1,17 @@
 package Problem0201
 
 func rangeBitwiseAnd(m int, n int) int {
-	res := m
+	res := uint(0)
 
-	for i := m + 1; i <= n; i++ {
-		res &= i
+	for m >= 1 && n >= 1 {
+		if m == n {
+			return m << res
+		}
+
+		m >>= 1
+		n >>= 1
+		res++
 	}
 
-	return res
+	return 0
 }
