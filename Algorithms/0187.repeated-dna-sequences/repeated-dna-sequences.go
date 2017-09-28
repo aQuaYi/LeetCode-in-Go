@@ -1,6 +1,27 @@
 package Problem0187
 
-func findRepeatedDnaSequences(s string) []string {
+import (
+	"sort"
+)
 
-	return []string{"AAAAACCCCC", "CCCCCAAAAA"}
+func findRepeatedDnaSequences(s string) []string {
+	var res []string
+	if len(s) <= 10 {
+		return nil
+	}
+
+	rec := make(map[string]int, len(s)-9)
+	for i := 0; i+10 <= len(s); i++ {
+		rec[s[i:i+10]]++
+	}
+
+	for s, v := range rec {
+		if v > 1 {
+			res = append(res, s)
+		}
+	}
+
+	sort.Strings(res)
+
+	return res
 }

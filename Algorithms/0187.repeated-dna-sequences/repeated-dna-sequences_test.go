@@ -14,6 +14,21 @@ var tcs = []struct {
 }{
 
 	{
+		"",
+		nil,
+	},
+
+	{
+		"ACACA",
+		nil,
+	},
+
+	{
+		"ACACACACACACA",
+		[]string{"ACACACACAC", "CACACACACA"},
+	},
+
+	{
 		"AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT",
 		[]string{"AAAAACCCCC", "CCCCCAAAAA"},
 	},
