@@ -11,9 +11,9 @@
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|56 / 147|98 / 253|41 / 96|195 / 496|
+|**Algorithms**|56 / 147|99 / 253|41 / 96|196 / 496|
 |**Draft**|0 / 1|0 / 3|0 / 0|0 / 4|
-|**Total**|56 / 148|98 / 256|41 / 96|195 / 500|
+|**Total**|56 / 148|99 / 256|41 / 96|196 / 500|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -94,7 +94,7 @@
 |74|[Search a 2D Matrix](./Algorithms/0074.search-a-2d-matrix)|☆ ☆|34%||
 |75|[Sort Colors](./Algorithms/0075.sort-colors)|☆ ☆|38%|❤|
 |76|[Minimum Window Substring](./Algorithms/0076.minimum-window-substring)|☆ ☆ ☆|25%|❤|
-|77|[Combinations](./Algorithms/0077.combinations)|☆ ☆|39%||
+|77|[Combinations](./Algorithms/0077.combinations)|☆ ☆|40%||
 |78|[Subsets](./Algorithms/0078.subsets)|☆ ☆|41%|❤|
 |79|[Word Search](./Algorithms/0079.word-search)|☆ ☆|27%||
 |80|[Remove Duplicates from Sorted Array II](./Algorithms/0080.remove-duplicates-from-sorted-array-ii)|☆ ☆|36%|❤|
@@ -174,7 +174,8 @@
 |168|[Excel Sheet Column Title](./Algorithms/0168.excel-sheet-column-title)|☆|26%|❤|
 |169|[Majority Element](./Algorithms/0169.majority-element)|☆|46%|❤|
 |174|[Dungeon Game](./Algorithms/0174.dungeon-game)|☆ ☆ ☆|23%|❤|
-|179|[Largest Number](./Algorithms/0179.largest-number)|☆ ☆|22%||
+|179|[Largest Number](./Algorithms/0179.largest-number)|☆ ☆|22%|❤|
+|187|[Repeated DNA Sequences](./Algorithms/0187.repeated-dna-sequences)|☆ ☆|31%||
 |188|[Best Time to Buy and Sell Stock IV](./Algorithms/0188.best-time-to-buy-and-sell-stock-iv)|☆ ☆ ☆|24%|❤|
 |189|[Rotate Array](./Algorithms/0189.rotate-array)|☆|24%||
 |206|[Reverse Linked List](./Algorithms/0206.reverse-linked-list)|☆|45%||
