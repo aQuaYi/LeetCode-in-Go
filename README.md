@@ -6,14 +6,14 @@
 
 
 
-## 答题进度：39%
+## 答题进度：40%
 > 仅含免费题
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|56 / 147|99 / 253|41 / 96|196 / 496|
+|**Algorithms**|58 / 147|101 / 253|41 / 96|200 / 496|
 |**Draft**|0 / 1|0 / 3|0 / 0|0 / 4|
-|**Total**|56 / 148|99 / 256|41 / 96|196 / 500|
+|**Total**|58 / 148|101 / 256|41 / 96|200 / 500|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -173,11 +173,15 @@
 |167|[Two Sum II - Input array is sorted](./Algorithms/0167.two-sum-ii-input-array-is-sorted)|☆|47%||
 |168|[Excel Sheet Column Title](./Algorithms/0168.excel-sheet-column-title)|☆|26%|❤|
 |169|[Majority Element](./Algorithms/0169.majority-element)|☆|46%|❤|
+|171|[Excel Sheet Column Number](./Algorithms/0171.excel-sheet-column-number)|☆|47%||
+|172|[Factorial Trailing Zeroes](./Algorithms/0172.factorial-trailing-zeroes)|☆|36%||
 |174|[Dungeon Game](./Algorithms/0174.dungeon-game)|☆ ☆ ☆|23%|❤|
 |179|[Largest Number](./Algorithms/0179.largest-number)|☆ ☆|22%|❤|
 |187|[Repeated DNA Sequences](./Algorithms/0187.repeated-dna-sequences)|☆ ☆|31%||
 |188|[Best Time to Buy and Sell Stock IV](./Algorithms/0188.best-time-to-buy-and-sell-stock-iv)|☆ ☆ ☆|24%|❤|
 |189|[Rotate Array](./Algorithms/0189.rotate-array)|☆|24%||
+|199|[Binary Tree Right Side View](./Algorithms/0199.binary-tree-right-side-view)|☆ ☆|41%||
+|200|[Number of Islands](./Algorithms/0200.number-of-islands)|☆ ☆|34%||
 |206|[Reverse Linked List](./Algorithms/0206.reverse-linked-list)|☆|45%||
 |209|[Minimum Size Subarray Sum](./Algorithms/0209.minimum-size-subarray-sum)|☆ ☆|31%||
 |216|[Combination Sum III](./Algorithms/0216.combination-sum-iii)|☆ ☆|45%||
