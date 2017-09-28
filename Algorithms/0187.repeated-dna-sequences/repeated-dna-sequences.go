@@ -10,15 +10,14 @@ func findRepeatedDnaSequences(s string) []string {
 		return nil
 	}
 
+	str := ""
 	rec := make(map[string]int, len(s)-9)
 	for i := 0; i+10 <= len(s); i++ {
-		rec[s[i:i+10]]++
-	}
-
-	for s, v := range rec {
-		if v > 1 {
-			res = append(res, s)
+		str = s[i : i+10]
+		if v := rec[str]; v == 1 {
+			res = append(res, str)
 		}
+		rec[str]++
 	}
 
 	sort.Strings(res)
