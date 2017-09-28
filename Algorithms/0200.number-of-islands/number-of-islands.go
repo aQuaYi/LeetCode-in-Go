@@ -36,6 +36,14 @@ func numIslands(grid [][]byte) int {
 		for len(x) > 0 {
 			i, j := pop()
 
+			if 0 <= i-1 && grid[i-1][j] == '1' {
+				add(i-1, j)
+			}
+
+			if 0 <= j-1 && grid[i][j-1] == '1' {
+				add(i, j-1)
+			}
+
 			if i+1 < m && grid[i+1][j] == '1' {
 				add(i+1, j)
 			}
