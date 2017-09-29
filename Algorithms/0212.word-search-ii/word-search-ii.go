@@ -17,46 +17,44 @@ func findWords(board [][]byte, words []string) []string {
 
 	for i := 0; i < m; i++ {
 		for j := 0; j < n; j++ {
-			results = dfs(board, i, j, trie, results)
+			dfs(board, i, j, trie, &results)
 		}
 	}
 
 	return results
 }
 
-func dfs(board [][]byte, i int, j int, trie *TrieNode, results []string) []string {
+func dfs(board [][]byte, i int, j int, trie *TrieNode, results *[]string) {
 	c := board[i][j]
 	if c == '#' || trie.next[int(c-'a')] == nil {
-		return results
+		return
 	}
 
 	trie = trie.next[int(c-'a')]
 	if len(trie.word) > 0 {
 		// Found one
-		results = append(results, trie.word)
+		*results = append(*results, trie.word)
 		trie.word = ""
 	}
 
 	board[i][j] = '#'
 	if i > 0 {
-		results = dfs(board, i-1, j, trie, results)
+		dfs(board, i-1, j, trie, results)
 	}
 
 	if i < len(board)-1 {
-		results = dfs(board, i+1, j, trie, results)
+		dfs(board, i+1, j, trie, results)
 	}
 
 	if j > 0 {
-		results = dfs(board, i, j-1, trie, results)
+		dfs(board, i, j-1, trie, results)
 	}
 
 	if j < len(board[0])-1 {
-		results = dfs(board, i, j+1, trie, results)
+		dfs(board, i, j+1, trie, results)
 	}
 
 	board[i][j] = c
-
-	return results
 }
 
 func buildTrie(words []string) *TrieNode {
@@ -76,6 +74,7 @@ func buildTrie(words []string) *TrieNode {
 	return root
 }
 
+// TrieNode 是 trie 的节点
 type TrieNode struct {
 	next [26]*TrieNode
 	word string
