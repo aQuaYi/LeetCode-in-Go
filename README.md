@@ -11,9 +11,9 @@
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|58 / 148|103 / 253|41 / 96|202 / 497|
+|**Algorithms**|58 / 148|105 / 253|41 / 96|204 / 497|
 |**Draft**|0 / 1|0 / 3|0 / 0|0 / 4|
-|**Total**|58 / 149|103 / 256|41 / 96|202 / 501|
+|**Total**|58 / 149|105 / 256|41 / 96|204 / 501|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -185,7 +185,9 @@
 |201|[Bitwise AND of Numbers Range](./Algorithms/0201.bitwise-and-of-numbers-range)|☆ ☆|34%|❤|
 |206|[Reverse Linked List](./Algorithms/0206.reverse-linked-list)|☆|45%||
 |207|[Course Schedule](./Algorithms/0207.course-schedule)|☆ ☆|32%|❤|
+|208|[Implement Trie (Prefix Tree)](./Algorithms/0208.implement-trie-prefix-tree)|☆ ☆|28%|❤|
 |209|[Minimum Size Subarray Sum](./Algorithms/0209.minimum-size-subarray-sum)|☆ ☆|31%||
+|210|[Course Schedule II](./Algorithms/0210.course-schedule-ii)|☆ ☆|28%||
 |216|[Combination Sum III](./Algorithms/0216.combination-sum-iii)|☆ ☆|45%||
 |217|[Contains Duplicate](./Algorithms/0217.contains-duplicate)|☆|45%||
 |219|[Contains Duplicate II](./Algorithms/0219.contains-duplicate-ii)|☆|32%||
