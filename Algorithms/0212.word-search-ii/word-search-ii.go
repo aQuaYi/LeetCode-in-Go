@@ -36,7 +36,7 @@ func findWords(board [][]byte, words []string) []string {
 		}
 
 		res := false
-		if board[i][j] == word[k] {
+		if !used[i][j] && board[i][j] == word[k] {
 			used[i][j] = true
 			res = dfs(word, k+1, i-1, j) ||
 				dfs(word, k+1, i+1, j) ||
@@ -47,7 +47,7 @@ func findWords(board [][]byte, words []string) []string {
 
 		return res
 	}
-
+	words = unique(words)
 	res := make([]string, 0, len(words))
 	for _, w := range words {
 		ws := []byte(w)
@@ -67,5 +67,17 @@ func findWords(board [][]byte, words []string) []string {
 
 	sort.Strings(res)
 
+	return res
+}
+
+func unique(words []string) []string {
+	temp := make(map[string]bool, len(words))
+	for _, w := range words {
+		temp[w] = true
+	}
+	res := make([]string, 0, len(temp))
+	for w := range temp {
+		res = append(res, w)
+	}
 	return res
 }
