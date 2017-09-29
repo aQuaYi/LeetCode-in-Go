@@ -26,7 +26,8 @@ func makeREADME(lc *leetcode) {
 	head := fmt.Sprintf(headFormat, lc.Username, lc.Username, lc.Ranking, lc.Username)
 
 	// 没有提供 Golang 解答方法的题目
-	canNotSolve := 9
+	// TODO: 让这个方法自动化
+	canNotSolve := 10
 	acceptedPercent := lc.Categories[len(lc.Categories)-1].Total.Solved * 100 / (lc.Categories[len(lc.Categories)-1].Total.Total - canNotSolve)
 
 	count := lc.Categories.String()
