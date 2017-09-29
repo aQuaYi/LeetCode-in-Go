@@ -21,7 +21,7 @@ var tcs = []struct {
 			[]byte("ihkr"),
 			[]byte("iflv"),
 		},
-		[]string{"oath", "pea", "eat", "rain"},
+		[]string{"oath", "pea", "eat", "rain", "eakat"},
 		[]string{"eat", "oath"},
 	},
 
