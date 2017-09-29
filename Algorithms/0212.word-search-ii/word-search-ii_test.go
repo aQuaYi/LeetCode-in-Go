@@ -25,7 +25,7 @@ var tcs = []struct {
 	{
 		[][]byte{},
 		[]string{"a", "a"},
-		nil,
+		[]string{},
 	},
 
 	{
@@ -33,7 +33,7 @@ var tcs = []struct {
 			[]byte{},
 		},
 		[]string{"a", "a"},
-		nil,
+		[]string{},
 	},
 
 	{

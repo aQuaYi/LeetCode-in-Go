@@ -5,12 +5,9 @@ import "sort"
 func findWords(board [][]byte, words []string) []string {
 	m := len(board)
 	if m == 0 {
-		return nil
+		return []string{}
 	}
 	n := len(board[0])
-	if n == 0 {
-		return nil
-	}
 
 	used := make([][]bool, m)
 	indexs := make([][][2]int, 26)
