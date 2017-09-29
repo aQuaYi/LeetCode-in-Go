@@ -27,7 +27,7 @@ func canFinish(num int, prerequisites [][]int) bool {
 			return true
 		}
 
-		for c := range before[i] {
+		for _, c := range before[i] {
 			if !dfs(c, level+1) {
 				return false
 			}
