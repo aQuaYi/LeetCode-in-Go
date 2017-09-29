@@ -23,6 +23,20 @@ var tcs = []struct {
 	},
 
 	{
+		[][]byte{},
+		[]string{"a", "a"},
+		nil,
+	},
+
+	{
+		[][]byte{
+			[]byte{},
+		},
+		[]string{"a", "a"},
+		nil,
+	},
+
+	{
 		[][]byte{
 			[]byte("oaan"),
 			[]byte("etae"),

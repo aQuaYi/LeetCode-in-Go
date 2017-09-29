@@ -8,7 +8,6 @@ func findWords(board [][]byte, words []string) []string {
 		return nil
 	}
 	n := len(board[0])
-	// TODO: 删除此处内容
 	if n == 0 {
 		return nil
 	}
