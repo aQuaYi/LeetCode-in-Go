@@ -1,44 +1,48 @@
 package Problem0207
 
-func canFinish(num int, prerequisites [][]int) bool {
-	before := make([][]int, num)
-	needPre := make([]bool, num)
-	taken := make([]bool, num)
+func canFinish(numCourses int, prerequisites [][]int) bool {
+	graph := buildGraph(numCourses, prerequisites)
+	degrees := buildDegrees(graph)
 
-	for _, p := range prerequisites {
-		// 题目说了，没有重复的 p
-		before[p[0]] = append(before[p[0]], p[1])
-		needPre[p[0]] = true
-	}
-
-	var dfs func(int, int) bool
-	dfs = func(i, level int) bool {
-		if level == num {
-			// 出现了环路
-			return false
-		}
-
-		if taken[i] {
-			return true
-		}
-
-		if !needPre[i] {
-			taken[i] = true
-			return true
-		}
-
-		for _, c := range before[i] {
-			if !dfs(c, level+1) {
-				return false
+	for i := 0; i < numCourses; i++ {
+		var j int
+		for j = 0; j < numCourses; j++ {
+			if degrees[j] == 0 {
+				break
 			}
 		}
-		return true
-	}
 
-	for i := 0; i < num; i++ {
-		if !dfs(i, 0) {
+		if j >= numCourses {
 			return false
 		}
+
+		degrees[j] = -1
+		for _, n := range graph[j] {
+			degrees[n]--
+		}
 	}
+
 	return true
+}
+
+func buildGraph(n int, prereq [][]int) [][]int {
+	graph := make([][]int, n)
+
+	for _, pair := range prereq {
+		graph[pair[1]] = append(graph[pair[1]], pair[0])
+	}
+
+	return graph
+}
+
+func buildDegrees(graph [][]int) []int {
+	degrees := make([]int, len(graph))
+
+	for _, neighbours := range graph {
+		for _, n := range neighbours {
+			degrees[n]++
+		}
+	}
+
+	return degrees
 }
