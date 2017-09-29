@@ -25,7 +25,7 @@ var tcs = []struct {
 	{
 		[][]byte{},
 		[]string{"a", "a"},
-		[]string{},
+		nil,
 	},
 
 	{
@@ -33,7 +33,7 @@ var tcs = []struct {
 			[]byte{},
 		},
 		[]string{"a", "a"},
-		[]string{},
+		nil,
 	},
 
 	{
@@ -44,7 +44,7 @@ var tcs = []struct {
 			[]byte("iflv"),
 		},
 		[]string{"oath", "pea", "eat", "rain", "eakat"},
-		[]string{"eat", "oath"},
+		[]string{"oath", "eat"},
 	},
 
 	// 可以有多个 testcase
