@@ -75,11 +75,12 @@ func countData(d *data) (ps []problem, e, m, h int) {
 		}
 
 		temp := problem{
-			ID:         p.ID,
-			Dir:        fmt.Sprintf("./%s/%04d.%s", d.Name, p.ID, p.TitleSlug),
-			Title:      p.Title,
-			TitleSlug:  p.TitleSlug,
-			PassRate:   fmt.Sprintf("%d%%", p.ACs*100/p.Submitted),
+			ID:        p.ID,
+			Dir:       fmt.Sprintf("./%s/%04d.%s", d.Name, p.ID, p.TitleSlug),
+			Title:     p.Title,
+			TitleSlug: p.TitleSlug,
+			// p.Submitted + 1 是因为新题的 submitted 有可能为 0
+			PassRate:   fmt.Sprintf("%d%%", p.ACs*100/(p.Submitted+1)),
 			Difficulty: p.Difficulty.Level,
 			IsAccepted: p.Status == "ac",
 			IsFavor:    p.IsFavor,
