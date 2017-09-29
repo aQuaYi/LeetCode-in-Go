@@ -24,16 +24,20 @@ func (d *WordDictionary) Search(word string) bool {
 	size := len(word)
 	i := 0
 	for _, w := range d.dict {
-		if len(w) == size {
-			i = 0
-			for ; i < size; i++ {
-				if word[i] != '.' && word[i] != w[i] {
-					break
-				}
+		// w 和 word 的长度要一致
+		if len(w) != size {
+			continue
+		}
+
+		i = 0
+		for ; i < size; i++ {
+			if word[i] != '.' && word[i] != w[i] {
+				break
 			}
-			if i == size {
-				return true
-			}
+		}
+		// 匹配完成
+		if i == size {
+			return true
 		}
 	}
 
