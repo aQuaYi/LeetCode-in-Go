@@ -1,22 +1,18 @@
 package Problem0198
 
 func rob(nums []int) int {
-	switch len(nums) {
-	case 0:
-		return 0
-	case 1:
-		return nums[0]
+	// a 对于偶数位上的最大值的记录
+	// b 对于奇数位上的最大值的记录
+	var a, b int
+	for i, v := range nums {
+		if i%2 == 0 {
+			a = max(a+v, b)
+		} else {
+			b = max(a, b+v)
+		}
 	}
 
-	dp := make([]int, len(nums)+1)
-	nums = append(nums, 0)
-	dp[0] = nums[0]
-	dp[1] = max(nums[0], nums[1])
-	for i := 2; i < len(nums); i++ {
-		dp[i] = max(dp[i-1], dp[i-2]+nums[i])
-	}
-
-	return dp[len(nums)-1]
+	return max(a, b)
 }
 
 func max(a, b int) int {
