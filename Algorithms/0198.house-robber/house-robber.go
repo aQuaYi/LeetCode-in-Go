@@ -1,10 +1,16 @@
 package Problem0198
 
 func rob(nums []int) int {
-	if len(nums) == 0 {
+	switch len(nums) {
+	case 0:
 		return 0
+	case 1:
+		return nums[0]
+	case 2:
+		return max(nums[0], nums[1])
+	default:
+		return max(nums[0]+rob(nums[2:]), nums[1]+rob(nums[3:]))
 	}
-	return max(robbing(nums), robbing(nums[1:]))
 }
 
 func max(a, b int) int {
@@ -12,12 +18,4 @@ func max(a, b int) int {
 		return a
 	}
 	return b
-}
-
-func robbing(nums []int) int {
-	res := 0
-	for i := 0; i < len(nums); i += 2 {
-		res += nums[i]
-	}
-	return res
 }
