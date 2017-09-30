@@ -1,6 +1,9 @@
 package Problem0198
 
 func rob(nums []int) int {
+	if len(nums) == 0 {
+		return 0
+	}
 	return max(robbing(nums), robbing(nums[1:]))
 }
 
