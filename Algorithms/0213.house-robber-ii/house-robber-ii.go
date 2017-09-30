@@ -1,11 +1,16 @@
 package Problem0213
 
 func rob(nums []int) int {
-	if len(nums) == 0 {
+	size := len(nums)
+	switch size {
+	case 0:
 		return 0
+	case 1:
+		return nums[0]
 	}
-
-	return max(robbing(nums[1:]), robbing(nums[:len(nums)-1]))
+	// 把环斩断，就变成了 198 题
+	// 斩断的方式分为，在 0 位和不在 0 位 两种。
+	return max(robbing(nums[1:]), robbing(nums[:size-1]))
 }
 
 func max(a, b int) int {
