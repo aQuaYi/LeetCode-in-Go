@@ -9,6 +9,7 @@
 - [160. Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)
 - [173. Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/)
 - [190. Reverse Bits](https://leetcode.com/problems/reverse-bits/)
+- [191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)
 
 
 ## helper
