@@ -1,28 +1,49 @@
 package Problem0214
 
 func shortestPalindrome(s string) string {
-	begin := 1
-	i := len(s) - 1
-	for ; i >= 0; i-- {
-		if s[i] == s[0] {
-			l, r := 1, i-1
-			for l <= r {
-				if s[l] != s[r] {
-					break
-				}
-				l++
-				r--
-			}
-			if l > r {
-				begin = i
-				break
+	if len(s) <= 1 {
+		return s
+	}
+
+	tmp := s + "#" + reverse(s)
+	table := buildTable(tmp)
+
+	return reverse(s[table[len(tmp)-1]:]) + s
+}
+
+func reverse(s string) string {
+	size := len(s)
+	bytes := make([]byte, size)
+	for i := 0; i < size; i++ {
+		bytes[i] = s[size-1-i]
+	}
+
+	return string(bytes)
+}
+
+func buildTable(s string) []int {
+	size := len(s)
+	// table[i] 是 s[:i+1] 的前缀集与后缀集中，最长公共元素的长度
+	// "abcd" 的前缀集是 ["", "a", "ab", "abc"]
+	// "abcd" 的后缀集是 ["", "d", "cd", "bcd"]
+	// "abcd" 的前缀集与后缀集的最长公共元素是"", 它的长度是 0
+	table := make([]int, size)
+	klen, i := 0, 1
+
+	for i < size {
+		if s[i] == s[klen] {
+			klen++
+			table[i] = klen
+			i++
+		} else {
+			if klen == 0 {
+				table[i] = 0
+				i++
+			} else {
+				klen = table[klen-1]
 			}
 		}
 	}
-	res := s
-	for i := begin + 1; i < len(s); i++ {
-		res = s[i:i+1] + res
-	}
 
-	return res
+	return table
 }
