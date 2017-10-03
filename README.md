@@ -11,9 +11,9 @@
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|59 / 150|108 / 254|43 / 97|210 / 501|
+|**Algorithms**|59 / 150|109 / 254|43 / 97|211 / 501|
 |**Draft**|0 / 1|0 / 3|0 / 0|0 / 4|
-|**Total**|59 / 151|108 / 257|43 / 97|210 / 505|
+|**Total**|59 / 151|109 / 257|43 / 97|211 / 505|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -121,7 +121,7 @@
 |101|[Symmetric Tree](./Algorithms/0101.symmetric-tree)|☆|39%|❤|
 |102|[Binary Tree Level Order Traversal](./Algorithms/0102.binary-tree-level-order-traversal)|☆ ☆|40%||
 |103|[Binary Tree Zigzag Level Order Traversal](./Algorithms/0103.binary-tree-zigzag-level-order-traversal)|☆ ☆|35%||
-|104|[Maximum Depth of Binary Tree](./Algorithms/0104.maximum-depth-of-binary-tree)|☆|52%||
+|104|[Maximum Depth of Binary Tree](./Algorithms/0104.maximum-depth-of-binary-tree)|☆|53%||
 |105|[Construct Binary Tree from Preorder and Inorder Traversal](./Algorithms/0105.construct-binary-tree-from-preorder-and-inorder-traversal)|☆ ☆|32%|❤|
 |106|[Construct Binary Tree from Inorder and Postorder Traversal](./Algorithms/0106.construct-binary-tree-from-inorder-and-postorder-traversal)|☆ ☆|32%|❤|
 |107|[Binary Tree Level Order Traversal II](./Algorithms/0107.binary-tree-level-order-traversal-ii)|☆|40%||
@@ -193,6 +193,7 @@
 |212|[Word Search II](./Algorithms/0212.word-search-ii)|☆ ☆ ☆|23%|❤|
 |213|[House Robber II](./Algorithms/0213.house-robber-ii)|☆ ☆|34%||
 |214|[Shortest Palindrome](./Algorithms/0214.shortest-palindrome)|☆ ☆ ☆|24%|❤|
+|215|[Kth Largest Element in an Array](./Algorithms/0215.kth-largest-element-in-an-array)|☆ ☆|39%|❤|
 |216|[Combination Sum III](./Algorithms/0216.combination-sum-iii)|☆ ☆|45%||
 |217|[Contains Duplicate](./Algorithms/0217.contains-duplicate)|☆|45%||
 |219|[Contains Duplicate II](./Algorithms/0219.contains-duplicate-ii)|☆|32%||
