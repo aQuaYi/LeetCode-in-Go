@@ -1,6 +1,6 @@
 # [LeetCode](https://leetcode.com)习题的Golang解答
 [![LeetCode](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode Ranking](https://img.shields.io/badge/Ranking-24912-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode Ranking](https://img.shields.io/badge/Ranking-24739-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang)
 
@@ -11,9 +11,9 @@
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|59 / 150|109 / 254|43 / 97|211 / 501|
+|**Algorithms**|59 / 150|109 / 254|44 / 97|212 / 501|
 |**Draft**|0 / 1|0 / 3|0 / 0|0 / 4|
-|**Total**|59 / 151|109 / 257|43 / 97|211 / 505|
+|**Total**|59 / 151|109 / 257|44 / 97|212 / 505|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -195,7 +195,8 @@
 |214|[Shortest Palindrome](./Algorithms/0214.shortest-palindrome)|☆ ☆ ☆|24%|❤|
 |215|[Kth Largest Element in an Array](./Algorithms/0215.kth-largest-element-in-an-array)|☆ ☆|39%|❤|
 |216|[Combination Sum III](./Algorithms/0216.combination-sum-iii)|☆ ☆|45%||
-|217|[Contains Duplicate](./Algorithms/0217.contains-duplicate)|☆|45%||
+|217|[Contains Duplicate](./Algorithms/0217.contains-duplicate)|☆|46%||
+|218|[The Skyline Problem](./Algorithms/0218.the-skyline-problem)|☆ ☆ ☆|27%|❤|
 |219|[Contains Duplicate II](./Algorithms/0219.contains-duplicate-ii)|☆|32%||
 |228|[Summary Ranges](./Algorithms/0228.summary-ranges)|☆ ☆|30%||
 |229|[Majority Element II](./Algorithms/0229.majority-element-ii)|☆ ☆|28%|❤|
