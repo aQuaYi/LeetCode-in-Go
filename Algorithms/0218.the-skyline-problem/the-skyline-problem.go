@@ -5,6 +5,55 @@ import (
 	"sort"
 )
 
+func getSkyline(buildings [][]int) [][]int {
+	points := [][]int{}
+
+	highs := new(highHeap)
+	heap.Init(highs)
+	// pre 是 天际线 最左边的高度
+	pre := 0
+	heap.Push(highs, pre)
+
+	edges := make([][3]int, 0, 2*len(buildings))
+	for _, b := range buildings {
+		// e[2] == -1 为 进入边
+		edges = append(edges, [3]int{b[0], b[2], -1})
+		// e[2] == 1 为 退出边
+		edges = append(edges, [3]int{b[1], b[2], 1})
+	}
+	sort.Sort(edgeSlice(edges))
+
+	// 从左往右，依次扫描 edges
+	for _, e := range edges {
+		if e[2] < 0 {
+			// 遇到 进入边
+			// 添加 e[1] 到 high
+			heap.Push(highs, e[1])
+		} else {
+			// 遇到 退出边
+			i := 0
+			for i < len(*highs) {
+				if (*highs)[i] == e[1] {
+					break
+				}
+				i++
+			}
+			// 从 high 中删除 e[1]
+			heap.Remove(highs, i)
+		}
+		// now 是当前的 high 中的最大值
+		now := (*highs)[0]
+		if pre != now {
+			// 天际线的高度发生变化
+			// 需要添加 key point
+			points = append(points, []int{e[0], now})
+			pre = now
+		}
+	}
+
+	return points
+}
+
 // highHeap 实现了 heap 的接口
 type highHeap []int
 
@@ -51,44 +100,4 @@ func (es edgeSlice) Less(i, j int) bool {
 }
 func (es edgeSlice) Swap(i, j int) {
 	es[i], es[j] = es[j], es[i]
-}
-
-func getSkyline(buildings [][]int) [][]int {
-	res := [][]int{}
-
-	edges := make([][3]int, 0, 2*len(buildings))
-	for _, b := range buildings {
-		// e[2] == -1 为 进入边
-		edges = append(edges, [3]int{b[0], b[2], -1})
-		// e[2] == 1 为 退出边
-		edges = append(edges, [3]int{b[1], b[2], 1})
-	}
-	sort.Sort(edgeSlice(edges))
-
-	high := new(highHeap)
-	heap.Init(high)
-	pre := 0
-	heap.Push(high, 0)
-
-	for _, e := range edges {
-		if e[2] < 0 {
-			heap.Push(high, e[1])
-		} else {
-			i := 0
-			for i < len(*high) {
-				if (*high)[i] == e[1] {
-					break
-				}
-				i++
-			}
-			heap.Remove(high, i)
-		}
-		now := (*high)[0]
-		if pre != now {
-			res = append(res, []int{e[0], now})
-			pre = now
-		}
-	}
-
-	return res
 }
