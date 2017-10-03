@@ -55,26 +55,27 @@ func getSkyline(buildings [][]int) [][]int {
 	}
 	sort.Sort(edgeSlice(edges))
 
-	h := new(highHeap)
-	heap.Init(h)
+	high := new(highHeap)
+	heap.Init(high)
 	pre := 0
-	heap.Push(h, 0)
+	heap.Push(high, 0)
 
-	for i := 0; i < len(edges); i++ {
-		if edges[i][1] < 0 {
-			heap.Push(h, -edges[i][1])
+	for _, e := range edges {
+		if e[1] < 0 {
+			heap.Push(high, -e[1])
 		} else {
-			idx := 0
-			for idx = 0; idx < len(*h); idx++ {
-				if (*h)[idx] == edges[i][1] {
+			i := 0
+			for i < len(*high) {
+				if (*high)[i] == e[1] {
 					break
 				}
+				i++
 			}
-			heap.Remove(h, idx)
+			heap.Remove(high, i)
 		}
-		cur := (*h)[0]
+		cur := (*high)[0]
 		if pre != cur {
-			res = append(res, []int{edges[i][0], cur})
+			res = append(res, []int{e[0], cur})
 			pre = cur
 		}
 	}
