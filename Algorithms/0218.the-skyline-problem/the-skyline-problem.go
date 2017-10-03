@@ -51,6 +51,8 @@ func getSkyline(buildings [][]int) [][]int {
 		}
 	}
 
+	// 结题的关键是监控 最高线 的变化
+	// 出现新的最高线时，就可以添加关键点了
 	return points
 }
 
