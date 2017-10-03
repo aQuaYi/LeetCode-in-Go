@@ -5,41 +5,45 @@ import (
 	"sort"
 )
 
-type ints []int
+// highHeap 实现了 heap 的接口
+type highHeap []int
 
-func (s ints) Less(i, j int) bool {
-	return s[i] > s[j]
+func (h highHeap) Len() int {
+	return len(h)
 }
-func (s ints) Swap(i, j int) {
-	s[i], s[j] = s[j], s[i]
+func (h highHeap) Less(i, j int) bool {
+	return h[i] > h[j]
 }
-func (s ints) Len() int {
-	return len(s)
+func (h highHeap) Swap(i, j int) {
+	h[i], h[j] = h[j], h[i]
 }
-func (s *ints) Push(x interface{}) {
-	// Push 使用 *s，是因为
-	// Push 增加了 s 的长度
-	*s = append(*s, x.(int))
+func (h *highHeap) Push(x interface{}) {
+	// Push 使用 *h，是因为
+	// Push 增加了 h 的长度
+	*h = append(*h, x.(int))
 }
-func (s *ints) Pop() interface{} {
-	// Pop 使用 *s，是因为
-	// Pop 减短了 s 的长度
-	x := (*s)[len(*s)-1]
-	*s = (*s)[0 : len(*s)-1]
-	return x
+func (h *highHeap) Pop() interface{} {
+	// Pop 使用 *h ，是因为
+	// Pop 减短了 h 的长度
+	res := (*h)[len(*h)-1]
+	*h = (*h)[0 : len(*h)-1]
+	return res
 }
 
-type bdHeap [][]int
+type edgeSlice [][]int
 
-func (h bdHeap) Len() int { return len(h) }
-func (h bdHeap) Less(i, j int) bool {
-	if h[i][0] != h[j][0] {
-		return h[i][0] < h[j][0]
+func (e edgeSlice) Len() int {
+	return len(e)
+}
+func (e edgeSlice) Less(i, j int) bool {
+	if e[i][0] != e[j][0] {
+		return e[i][0] < e[j][0]
 	}
-	return h[i][1] < h[j][1]
+	return e[i][1] < e[j][1]
 }
-
-func (h bdHeap) Swap(i, j int) { h[i], h[j] = h[j], h[i] }
+func (e edgeSlice) Swap(i, j int) {
+	e[i], e[j] = e[j], e[i]
+}
 
 func getSkyline(buildings [][]int) [][]int {
 	res := [][]int{}
@@ -49,9 +53,9 @@ func getSkyline(buildings [][]int) [][]int {
 		edges = append(edges, []int{t[0], -t[2]})
 		edges = append(edges, []int{t[1], t[2]})
 	}
-	sort.Sort(bdHeap(edges))
+	sort.Sort(edgeSlice(edges))
 
-	h := new(ints)
+	h := new(highHeap)
 	heap.Init(h)
 	pre := 0
 	heap.Push(h, 0)
