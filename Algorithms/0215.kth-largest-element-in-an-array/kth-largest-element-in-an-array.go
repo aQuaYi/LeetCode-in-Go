@@ -1,42 +1,47 @@
 package Problem0215
 
-import "math/rand"
+func findKthLargest(nums []int, k int) int {
+	heapify(nums)
 
-func findKthLargest(a []int, k int) int {
-	quickSort(a)
-	return a[k-1]
-}
-
-func quickSort(a []int) {
-	if len(a) <= 1 {
-		return
+	if k == 1 {
+		return nums[0]
 	}
-	i := partition(a)
-	quickSort(a[:i])
-	quickSort(a[i+1:])
+
+	for i := 1; i < k; i++ {
+		nums = nums[1:]
+		fixDown(nums, 0)
+	}
+
+	return nums[0]
 }
 
-func partition(a []int) int {
+func heapify(a []int) {
 	size := len(a)
-	i := rand.Intn(size)
+	for i := size/2 - 1; i >= 0; i-- {
+		fixDown(a, i)
+	}
+}
 
-	a[0], a[i] = a[i], a[0]
-	t := a[0]
+func fixDown(a []int, i int) {
+	size := len(a)
+	tmp := a[i]
+	j := i*2 + 1
+	if j+1 < size && a[j] < a[j+1] {
+		j++
+	}
 
-	lo, hi := 1, size-1
-	for {
-		for lo < size-1 && a[lo] >= t {
-			lo++
-		}
-		for 0 < hi && t >= a[hi] {
-			hi--
-		}
-		if lo >= hi {
+	for j < size {
+		if tmp > a[j] {
 			break
 		}
-		a[lo], a[hi] = a[hi], a[lo]
+
+		a[i] = a[j]
+		i = j
+		j = j*2 + 1
+		if j+1 < size && a[j] < a[j+1] {
+			j++
+		}
 	}
 
-	a[hi], a[0] = a[0], a[hi]
-	return hi
+	a[i] = tmp
 }

@@ -13,4 +13,6 @@ Credits:Special thanks to @mithmatt for adding this problem and creating all tes
 
 ## 解题思路
 
+利用堆排序的特性，依次找出最大值。
+
 见程序注释
