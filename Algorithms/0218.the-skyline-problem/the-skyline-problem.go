@@ -12,6 +12,7 @@ func (h highHeap) Len() int {
 	return len(h)
 }
 func (h highHeap) Less(i, j int) bool {
+	// h[i] > h[j] 使得 h[0] == max(h...)
 	return h[i] > h[j]
 }
 func (h highHeap) Swap(i, j int) {
@@ -30,28 +31,37 @@ func (h *highHeap) Pop() interface{} {
 	return res
 }
 
-type edgeSlice [][]int
+type edgeSlice [][3]int
 
-func (e edgeSlice) Len() int {
-	return len(e)
+func (es edgeSlice) Len() int {
+	return len(es)
 }
-func (e edgeSlice) Less(i, j int) bool {
-	if e[i][0] != e[j][0] {
-		return e[i][0] < e[j][0]
+func (es edgeSlice) Less(i, j int) bool {
+	if es[i][0] != es[j][0] {
+		return es[i][0] < es[j][0]
 	}
-	return e[i][1] < e[j][1]
+	// 当 es[i][0] == es[j][0] 的时候
+	// i,j 分别为 进入边 与 退出边
+	//     则，进入边应在前
+	// i,j 同为 进入边
+	//     则，e[1] 高的在前
+	// i,j 同为 退出边
+	//     则，e[1] 低的在前
+	return es[i][1]*es[i][2] < es[j][1]*es[j][2]
 }
-func (e edgeSlice) Swap(i, j int) {
-	e[i], e[j] = e[j], e[i]
+func (es edgeSlice) Swap(i, j int) {
+	es[i], es[j] = es[j], es[i]
 }
 
 func getSkyline(buildings [][]int) [][]int {
 	res := [][]int{}
 
-	edges := make([][]int, 0, 2*len(buildings))
-	for _, t := range buildings {
-		edges = append(edges, []int{t[0], -t[2]})
-		edges = append(edges, []int{t[1], t[2]})
+	edges := make([][3]int, 0, 2*len(buildings))
+	for _, b := range buildings {
+		// e[2] == -1 为 进入边
+		edges = append(edges, [3]int{b[0], b[2], -1})
+		// e[2] == 1 为 退出边
+		edges = append(edges, [3]int{b[1], b[2], 1})
 	}
 	sort.Sort(edgeSlice(edges))
 
@@ -61,8 +71,8 @@ func getSkyline(buildings [][]int) [][]int {
 	heap.Push(high, 0)
 
 	for _, e := range edges {
-		if e[1] < 0 {
-			heap.Push(high, -e[1])
+		if e[2] < 0 {
+			heap.Push(high, e[1])
 		} else {
 			i := 0
 			for i < len(*high) {
@@ -73,10 +83,10 @@ func getSkyline(buildings [][]int) [][]int {
 			}
 			heap.Remove(high, i)
 		}
-		cur := (*high)[0]
-		if pre != cur {
-			res = append(res, []int{e[0], cur})
-			pre = cur
+		now := (*high)[0]
+		if pre != now {
+			res = append(res, []int{e[0], now})
+			pre = now
 		}
 	}
 
