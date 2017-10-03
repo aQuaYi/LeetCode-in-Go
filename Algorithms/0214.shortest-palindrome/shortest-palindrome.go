@@ -5,10 +5,9 @@ func shortestPalindrome(s string) string {
 		return s
 	}
 
-	tmp := s + "#" + reverse(s)
-	table := buildTable(tmp)
+	i := getIndex(s + "#" + reverse(s))
 
-	return reverse(s[table[len(tmp)-1]:]) + s
+	return reverse(s[i:]) + s
 }
 
 func reverse(s string) string {
@@ -21,7 +20,7 @@ func reverse(s string) string {
 	return string(bytes)
 }
 
-func buildTable(s string) []int {
+func getIndex(s string) int {
 	size := len(s)
 	// table[i] 是 s[:i+1] 的前缀集与后缀集中，最长公共元素的长度
 	// "abcd" 的前缀集是 ["", "a", "ab", "abc"]
@@ -45,5 +44,5 @@ func buildTable(s string) []int {
 		}
 	}
 
-	return table
+	return table[len(s)-1]
 }
