@@ -25,10 +25,10 @@ func partition(a []int) int {
 
 	lo, hi := 1, size-1
 	for {
-		for lo < size-1 && a[lo] > t {
+		for lo < size-1 && a[lo] >= t {
 			lo++
 		}
-		for 0 < hi && t > a[hi] {
+		for 0 < hi && t >= a[hi] {
 			hi--
 		}
 		if lo >= hi {
