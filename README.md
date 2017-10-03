@@ -1,6 +1,6 @@
 # [LeetCode](https://leetcode.com)习题的Golang解答
 [![LeetCode](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode Ranking](https://img.shields.io/badge/Ranking-25106-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode Ranking](https://img.shields.io/badge/Ranking-24912-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang)
 
@@ -11,9 +11,9 @@
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|59 / 150|108 / 254|42 / 97|209 / 501|
+|**Algorithms**|59 / 150|108 / 254|43 / 97|210 / 501|
 |**Draft**|0 / 1|0 / 3|0 / 0|0 / 4|
-|**Total**|59 / 151|108 / 257|42 / 97|209 / 505|
+|**Total**|59 / 151|108 / 257|43 / 97|210 / 505|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -192,6 +192,7 @@
 |211|[Add and Search Word - Data structure design](./Algorithms/0211.add-and-search-word-data-structure-design)|☆ ☆|23%|❤|
 |212|[Word Search II](./Algorithms/0212.word-search-ii)|☆ ☆ ☆|23%|❤|
 |213|[House Robber II](./Algorithms/0213.house-robber-ii)|☆ ☆|34%||
+|214|[Shortest Palindrome](./Algorithms/0214.shortest-palindrome)|☆ ☆ ☆|24%|❤|
 |216|[Combination Sum III](./Algorithms/0216.combination-sum-iii)|☆ ☆|45%||
 |217|[Contains Duplicate](./Algorithms/0217.contains-duplicate)|☆|45%||
 |219|[Contains Duplicate II](./Algorithms/0219.contains-duplicate-ii)|☆|32%||
@@ -205,7 +206,7 @@
 |289|[Game of Life](./Algorithms/0289.game-of-life)|☆ ☆|36%|❤|
 |337|[House Robber III](./Algorithms/0337.house-robber-iii)|☆ ☆|43%|❤|
 |380|[Insert Delete GetRandom O(1)](./Algorithms/0380.insert-delete-getrandom-o1)|☆ ☆|39%|❤|
-|381|[Insert Delete GetRandom O(1) - Duplicates allowed](./Algorithms/0381.insert-delete-getrandom-o1-duplicates-allowed)|☆ ☆ ☆|28%|❤|
+|381|[Insert Delete GetRandom O(1) - Duplicates allowed](./Algorithms/0381.insert-delete-getrandom-o1-duplicates-allowed)|☆ ☆ ☆|29%|❤|
 |414|[Third Maximum Number](./Algorithms/0414.third-maximum-number)|☆|27%||
 |437|[Path Sum III](./Algorithms/0437.path-sum-iii)|☆|39%|❤|
 |442|[Find All Duplicates in an Array](./Algorithms/0442.find-all-duplicates-in-an-array)|☆ ☆|55%||
