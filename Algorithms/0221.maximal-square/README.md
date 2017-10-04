@@ -18,4 +18,4 @@ Credits:Special thanks to @Freezen for adding this problem and creating all test
 
 ## 解题思路
 
-见程序注释
+[[解题报告] LeetCode 221. Maximal Square](http://zxi.mytechroad.com/blog/dynamic-programming/leetcode-221-maximal-square/)

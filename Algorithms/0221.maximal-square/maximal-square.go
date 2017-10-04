@@ -10,21 +10,23 @@ func maximalSquare(matrix [][]byte) int {
 		return 0
 	}
 
+	maxEdge := 0
 	// dp[i][j] == 以 (i,j) 点为右下角点的符合题意的最大正方形的边长
+	// TODO: 由于 dp[i][j] 只与上，左上，左的数据有关，可以把 dp 压缩成一维的
 	dp := make([][]int, m)
 	for i := range dp {
 		dp[i] = make([]int, n)
 		if matrix[i][0] == '1' {
 			dp[i][0] = 1
+			maxEdge = 1
 		}
 	}
 	for j := 1; j < n; j++ {
 		if matrix[0][j] == '1' {
 			dp[0][j] = 1
+			maxEdge = 1
 		}
 	}
-
-	maxEdge := dp[0][0]
 
 	for i := 1; i < m; i++ {
 		for j := 1; j < n; j++ {
@@ -37,7 +39,6 @@ func maximalSquare(matrix [][]byte) int {
 							dp[i][j-1],
 						),
 					)
-
 				maxEdge = max(maxEdge, dp[i][j])
 			}
 		}
