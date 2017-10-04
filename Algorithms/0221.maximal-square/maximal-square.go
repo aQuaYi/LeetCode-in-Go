@@ -18,13 +18,13 @@ func maximalSquare(matrix [][]byte) int {
 			dp[i][0] = 1
 		}
 	}
-	for j := 0; j < n; j++ {
+	for j := 1; j < n; j++ {
 		if matrix[0][j] == '1' {
 			dp[0][j] = 1
 		}
 	}
 
-	maxEdge := 0
+	maxEdge := dp[0][0]
 
 	for i := 1; i < m; i++ {
 		for j := 1; j < n; j++ {
