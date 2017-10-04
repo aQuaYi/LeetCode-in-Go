@@ -227,7 +227,7 @@
 |628|[Maximum Product of Three Numbers](./Algorithms/0628.maximum-product-of-three-numbers)|☆|45%|❤|
 |639|[Decode Ways II](./Algorithms/0639.decode-ways-ii)|☆ ☆ ☆|23%||
 |643|[Maximum Average Subarray I](./Algorithms/0643.maximum-average-subarray-i)|☆|37%||
-|661|[Image Smoother](./Algorithms/0661.image-smoother)|☆|46%||
+|661|[Image Smoother](./Algorithms/0661.image-smoother)|☆|45%||
 |667|[Beautiful Arrangement II](./Algorithms/0667.beautiful-arrangement-ii)|☆ ☆|51%||
 
 
