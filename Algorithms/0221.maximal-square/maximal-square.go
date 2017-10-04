@@ -59,10 +59,10 @@ func maximalSquare(matrix [][]byte) int {
 					return
 				}
 
-				if j-b >= i-a {
+				if i-a <= j-b {
 					push(i, j+1)
 				}
-				if i == j {
+				if i-a == j-b {
 					push(i+1, j+1)
 				}
 				if i-a >= j-b {
