@@ -1,91 +1,61 @@
 package Problem0221
 
 func maximalSquare(matrix [][]byte) int {
-	max := 0
 	m := len(matrix)
 	if m == 0 {
-		return max
+		return 0
 	}
 	n := len(matrix[0])
 	if n == 0 {
-		return max
+		return 0
 	}
 
-	checked := make([][]bool, m)
-	for i := range checked {
-		checked[i] = make([]bool, n)
+	// dp[i][j] == 以 (i,j) 点为右下角点的符合题意的最大正方形的边长
+	dp := make([][]int, m)
+	for i := range dp {
+		dp[i] = make([]int, n)
+		if matrix[i][0] == '1' {
+			dp[i][0] = 1
+		}
+	}
+	for j := 0; j < n; j++ {
+		if matrix[0][j] == '1' {
+			dp[0][j] = 1
+		}
 	}
 
-	x := make([]int, 0, m*n*2)
-	y := make([]int, 0, m*n*2)
+	maxEdge := 0
 
-	push := func(i, j int) {
-		x = append(x, i)
-		y = append(y, j)
-	}
+	for i := 1; i < m; i++ {
+		for j := 1; j < n; j++ {
+			if matrix[i][j] == '1' {
+				dp[i][j] = 1 +
+					min(
+						dp[i-1][j-1],
+						min(
+							dp[i-1][j],
+							dp[i][j-1],
+						),
+					)
 
-	pop := func() (i, j int) {
-		i = x[0]
-		x = x[1:]
-		j = y[0]
-		y = y[1:]
-		return
-	}
-
-	isEmpty := func() bool {
-		return len(x) == 0
-	}
-
-	clean := func() {
-		x = x[len(x):]
-		y = y[len(y):]
-	}
-
-	size := func() int {
-		return len(x)
-	}
-
-	bfs := func(a, b int) {
-		temp := 0
-		push(a, b)
-		var i, j, k int
-		for !isEmpty() {
-			k = size()
-			for k > 0 {
-				i, j = pop()
-				k--
-				if matrix[i][j] == '0' {
-					clean()
-					return
-				}
-
-				if i-a <= j-b {
-					push(i, j+1)
-				}
-				if i-a == j-b {
-					push(i+1, j+1)
-				}
-				if i-a >= j-b {
-					push(i+1, j)
-				}
-			}
-			temp++
-			if max < temp {
-				max = temp
-			}
-
-			if a+temp >= m || b+temp >= n {
-				clean()
-				return
+				maxEdge = max(maxEdge, dp[i][j])
 			}
 		}
 	}
 
-	for i := 0; i+max < m; i++ {
-		for j := 0; j+max < n; j++ {
-			bfs(i, j)
-		}
-	}
+	return maxEdge * maxEdge
+}
 
-	return max * max
+func min(a int, b int) int {
+	if a < b {
+		return a
+	}
+	return b
+}
+
+func max(a int, b int) int {
+	if a > b {
+		return a
+	}
+	return b
 }
