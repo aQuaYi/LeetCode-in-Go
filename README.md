@@ -6,14 +6,14 @@
 
 
 
-## 答题进度：42%
+## 答题进度：43%
 > 仅含免费题
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|59 / 150|109 / 254|44 / 97|212 / 501|
+|**Algorithms**|59 / 150|110 / 254|44 / 97|213 / 501|
 |**Draft**|0 / 1|0 / 3|0 / 0|0 / 4|
-|**Total**|59 / 151|109 / 257|44 / 97|212 / 505|
+|**Total**|59 / 151|110 / 257|44 / 97|213 / 505|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -198,6 +198,7 @@
 |217|[Contains Duplicate](./Algorithms/0217.contains-duplicate)|☆|46%||
 |218|[The Skyline Problem](./Algorithms/0218.the-skyline-problem)|☆ ☆ ☆|27%|❤|
 |219|[Contains Duplicate II](./Algorithms/0219.contains-duplicate-ii)|☆|32%||
+|220|[Contains Duplicate III](./Algorithms/0220.contains-duplicate-iii)|☆ ☆|19%||
 |228|[Summary Ranges](./Algorithms/0228.summary-ranges)|☆ ☆|30%||
 |229|[Majority Element II](./Algorithms/0229.majority-element-ii)|☆ ☆|28%|❤|
 |238|[Product of Array Except Self](./Algorithms/0238.product-of-array-except-self)|☆ ☆|49%||
