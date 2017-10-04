@@ -1,47 +1,48 @@
 package Problem0215
 
+import "container/heap"
+
 func findKthLargest(nums []int, k int) int {
-	heapify(nums)
+	temp := highHeap(nums)
+	h := &temp
+	heap.Init(h)
 
 	if k == 1 {
-		return nums[0]
+		return (*h)[0]
 	}
 
 	for i := 1; i < k; i++ {
-		nums = nums[1:]
-		fixDown(nums, 0)
+		heap.Remove(h, 0)
 	}
 
-	return nums[0]
+	return (*h)[0]
 }
 
-func heapify(a []int) {
-	size := len(a)
-	for i := size/2 - 1; i >= 0; i-- {
-		fixDown(a, i)
-	}
+// highHeap 实现了 heap 的接口
+type highHeap []int
+
+func (h highHeap) Len() int {
+	return len(h)
 }
+func (h highHeap) Less(i, j int) bool {
+	// h[i] > h[j] 使得 h[0] == max(h...)
+	return h[i] > h[j]
+}
+func (h highHeap) Swap(i, j int) {
+	h[i], h[j] = h[j], h[i]
+}
+func (h *highHeap) Push(x interface{}) {
+	// Push 使用 *h，是因为
+	// Push 增加了 h 的长度
+	// *h = append(*h, x.(int))
 
-func fixDown(a []int, i int) {
-	size := len(a)
-	tmp := a[i]
-	j := i*2 + 1
-	if j+1 < size && a[j] < a[j+1] {
-		j++
-	}
-
-	for j < size {
-		if tmp > a[j] {
-			break
-		}
-
-		a[i] = a[j]
-		i = j
-		j = j*2 + 1
-		if j+1 < size && a[j] < a[j+1] {
-			j++
-		}
-	}
-
-	a[i] = tmp
+	// 注释掉上一行，是因为没有程序中，没有用到这个方法。
+	// 注释掉可以提高覆盖率
+}
+func (h *highHeap) Pop() interface{} {
+	// Pop 使用 *h ，是因为
+	// Pop 减短了 h 的长度
+	res := (*h)[len(*h)-1]
+	*h = (*h)[0 : len(*h)-1]
+	return res
 }
