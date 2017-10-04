@@ -5,6 +5,6 @@ Given an array of integers, find out whether there are two distinct indices i an
 
 ## 解题思路
 ```
-当 | i - j | <= k 时，| nums[i] - nums[j] | <= t
+存在 | i - j | <= k 使得 | nums[i] - nums[j] | <= t
 ```
 见程序注释
