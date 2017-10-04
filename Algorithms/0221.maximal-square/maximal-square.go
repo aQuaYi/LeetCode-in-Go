@@ -70,8 +70,8 @@ func maximalSquare(matrix [][]byte) int {
 				}
 			}
 			temp++
-			if max < temp*temp {
-				max = temp * temp
+			if max < temp {
+				max = temp
 			}
 
 			if a+temp >= m || b+temp >= n {
@@ -87,5 +87,5 @@ func maximalSquare(matrix [][]byte) int {
 		}
 	}
 
-	return max
+	return max * max
 }
