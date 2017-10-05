@@ -11,9 +11,9 @@
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|59 / 150|112 / 254|44 / 97|215 / 501|
+|**Algorithms**|59 / 150|112 / 254|45 / 97|216 / 501|
 |**Draft**|0 / 1|0 / 3|0 / 0|0 / 4|
-|**Total**|59 / 151|112 / 257|44 / 97|215 / 505|
+|**Total**|59 / 151|112 / 257|45 / 97|216 / 505|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -201,6 +201,7 @@
 |220|[Contains Duplicate III](./Algorithms/0220.contains-duplicate-iii)|☆ ☆|19%|❤|
 |221|[Maximal Square](./Algorithms/0221.maximal-square)|☆ ☆|29%|❤|
 |223|[Rectangle Area](./Algorithms/0223.rectangle-area)|☆ ☆|33%||
+|224|[Basic Calculator](./Algorithms/0224.basic-calculator)|☆ ☆ ☆|27%||
 |228|[Summary Ranges](./Algorithms/0228.summary-ranges)|☆ ☆|30%||
 |229|[Majority Element II](./Algorithms/0229.majority-element-ii)|☆ ☆|28%|❤|
 |238|[Product of Array Except Self](./Algorithms/0238.product-of-array-except-self)|☆ ☆|49%||
