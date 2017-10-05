@@ -23,8 +23,9 @@ func calculate(s string) int {
 		}
 	}
 
-	return num
+	return operate(num, temp, opt)
 }
+
 func cut(s string, begin int) (string, int) {
 	num := 1
 	i := begin + 1
