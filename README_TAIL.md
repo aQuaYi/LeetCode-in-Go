@@ -10,7 +10,7 @@
 - [173. Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/)
 - [190. Reverse Bits](https://leetcode.com/problems/reverse-bits/)
 - [191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)
-
+- [222. Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/)
 
 ## helper
 [helper](./helper.v4) 会帮助处理大部分琐碎的工作。

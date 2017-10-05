@@ -1,6 +1,6 @@
 # [LeetCode](https://leetcode.com)习题的Golang解答
 [![LeetCode](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode Ranking](https://img.shields.io/badge/Ranking-24739-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode Ranking](https://img.shields.io/badge/Ranking-24090-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang)
 
@@ -76,7 +76,7 @@
 |56|[Merge Intervals](./Algorithms/0056.merge-intervals)|☆ ☆|30%|❤|
 |57|[Insert Interval](./Algorithms/0057.insert-interval)|☆ ☆ ☆|27%||
 |58|[Length of Last Word](./Algorithms/0058.length-of-last-word)|☆|31%||
-|59|[Spiral Matrix II](./Algorithms/0059.spiral-matrix-ii)|☆ ☆|39%|❤|
+|59|[Spiral Matrix II](./Algorithms/0059.spiral-matrix-ii)|☆ ☆|40%|❤|
 |60|[Permutation Sequence](./Algorithms/0060.permutation-sequence)|☆ ☆|28%||
 |61|[Rotate List](./Algorithms/0061.rotate-list)|☆ ☆|24%|❤|
 |62|[Unique Paths](./Algorithms/0062.unique-paths)|☆ ☆|41%|❤|
@@ -207,7 +207,7 @@
 |268|[Missing Number](./Algorithms/0268.missing-number)|☆|44%||
 |283|[Move Zeroes](./Algorithms/0283.move-zeroes)|☆|50%||
 |287|[Find the Duplicate Number](./Algorithms/0287.find-the-duplicate-number)|☆ ☆|43%|❤|
-|289|[Game of Life](./Algorithms/0289.game-of-life)|☆ ☆|36%|❤|
+|289|[Game of Life](./Algorithms/0289.game-of-life)|☆ ☆|37%|❤|
 |337|[House Robber III](./Algorithms/0337.house-robber-iii)|☆ ☆|43%|❤|
 |380|[Insert Delete GetRandom O(1)](./Algorithms/0380.insert-delete-getrandom-o1)|☆ ☆|39%|❤|
 |381|[Insert Delete GetRandom O(1) - Duplicates allowed](./Algorithms/0381.insert-delete-getrandom-o1-duplicates-allowed)|☆ ☆ ☆|29%|❤|
@@ -245,7 +245,7 @@
 - [173. Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/)
 - [190. Reverse Bits](https://leetcode.com/problems/reverse-bits/)
 - [191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)
-
+- [222. Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/)
 
 ## helper
 [helper](./helper.v4) 会帮助处理大部分琐碎的工作。
