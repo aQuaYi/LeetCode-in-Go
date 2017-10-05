@@ -37,7 +37,16 @@ func Test_findKthLargest(t *testing.T) {
 		ast.Equal(tc.ans, findKthLargest(tc.nums, tc.k), "输入:%v", tc)
 	}
 }
+func Test_heap(t *testing.T) {
+	ast := assert.New(t)
 
+	h := new(highHeap)
+
+	i := 5
+	h.Push(i)
+	ast.Equal(i, h.Pop(), "Pop() after Push(%d)", i)
+
+}
 func Benchmark_findKthLargest(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		for _, tc := range tcs {

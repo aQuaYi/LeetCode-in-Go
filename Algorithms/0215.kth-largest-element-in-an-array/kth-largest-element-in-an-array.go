@@ -34,11 +34,9 @@ func (h highHeap) Swap(i, j int) {
 func (h *highHeap) Push(x interface{}) {
 	// Push 使用 *h，是因为
 	// Push 增加了 h 的长度
-	// *h = append(*h, x.(int))
-
-	// 注释掉上一行，是因为没有程序中，没有用到这个方法。
-	// 注释掉可以提高覆盖率
+	*h = append(*h, x.(int))
 }
+
 func (h *highHeap) Pop() interface{} {
 	// Pop 使用 *h ，是因为
 	// Pop 减短了 h 的长度
