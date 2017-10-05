@@ -9,7 +9,8 @@ func area(A, B, C, D int) int {
 }
 
 func edge(A, C int) int {
-
+	// 边长应该大于 0
+	// 这样做就统一了两个正方形相交或者不相交的情况
 	return max(0, C-A)
 }
 
