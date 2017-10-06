@@ -11,9 +11,9 @@
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|60 / 150|114 / 254|46 / 97|220 / 501|
+|**Algorithms**|61 / 150|114 / 254|46 / 97|221 / 501|
 |**Draft**|0 / 1|0 / 3|0 / 0|0 / 4|
-|**Total**|60 / 151|114 / 257|46 / 97|220 / 505|
+|**Total**|61 / 151|114 / 257|46 / 97|221 / 505|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -185,6 +185,7 @@
 |200|[Number of Islands](./Algorithms/0200.number-of-islands)|☆ ☆|35%||
 |201|[Bitwise AND of Numbers Range](./Algorithms/0201.bitwise-and-of-numbers-range)|☆ ☆|34%|❤|
 |202|[Happy Number](./Algorithms/0202.happy-number)|☆|40%||
+|203|[Remove Linked List Elements](./Algorithms/0203.remove-linked-list-elements)|☆|32%||
 |206|[Reverse Linked List](./Algorithms/0206.reverse-linked-list)|☆|45%||
 |207|[Course Schedule](./Algorithms/0207.course-schedule)|☆ ☆|32%|❤|
 |208|[Implement Trie (Prefix Tree)](./Algorithms/0208.implement-trie-prefix-tree)|☆ ☆|28%|❤|
