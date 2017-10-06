@@ -1,19 +1,19 @@
 # [LeetCode](https://leetcode.com)习题的Golang解答
 [![LeetCode](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode Ranking](https://img.shields.io/badge/Ranking-24090-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode Ranking](https://img.shields.io/badge/Ranking-23639-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang)
 
 
 
-## 答题进度：43%
+## 答题进度：44%
 > 仅含免费题
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|59 / 150|112 / 254|45 / 97|216 / 501|
+|**Algorithms**|59 / 150|113 / 254|45 / 97|217 / 501|
 |**Draft**|0 / 1|0 / 3|0 / 0|0 / 4|
-|**Total**|59 / 151|112 / 257|45 / 97|216 / 505|
+|**Total**|59 / 151|113 / 257|45 / 97|217 / 505|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -159,7 +159,7 @@
 |145|[Binary Tree Postorder Traversal](./Algorithms/0145.binary-tree-postorder-traversal)|☆ ☆ ☆|40%||
 |146|[LRU Cache](./Algorithms/0146.lru-cache)|☆ ☆ ☆|18%|❤|
 |147|[Insertion Sort List](./Algorithms/0147.insertion-sort-list)|☆ ☆|33%|❤|
-|148|[Sort List](./Algorithms/0148.sort-list)|☆ ☆|28%|❤|
+|148|[Sort List](./Algorithms/0148.sort-list)|☆ ☆|29%|❤|
 |149|[Max Points on a Line](./Algorithms/0149.max-points-on-a-line)|☆ ☆ ☆|15%|❤|
 |150|[Evaluate Reverse Polish Notation](./Algorithms/0150.evaluate-reverse-polish-notation)|☆ ☆|27%||
 |152|[Maximum Product Subarray](./Algorithms/0152.maximum-product-subarray)|☆ ☆|25%|❤|
@@ -202,6 +202,7 @@
 |221|[Maximal Square](./Algorithms/0221.maximal-square)|☆ ☆|29%|❤|
 |223|[Rectangle Area](./Algorithms/0223.rectangle-area)|☆ ☆|33%||
 |224|[Basic Calculator](./Algorithms/0224.basic-calculator)|☆ ☆ ☆|27%||
+|227|[Basic Calculator II](./Algorithms/0227.basic-calculator-ii)|☆ ☆|29%||
 |228|[Summary Ranges](./Algorithms/0228.summary-ranges)|☆ ☆|30%||
 |229|[Majority Element II](./Algorithms/0229.majority-element-ii)|☆ ☆|28%|❤|
 |238|[Product of Array Except Self](./Algorithms/0238.product-of-array-except-self)|☆ ☆|49%||
@@ -215,7 +216,7 @@
 |381|[Insert Delete GetRandom O(1) - Duplicates allowed](./Algorithms/0381.insert-delete-getrandom-o1-duplicates-allowed)|☆ ☆ ☆|29%|❤|
 |414|[Third Maximum Number](./Algorithms/0414.third-maximum-number)|☆|27%||
 |437|[Path Sum III](./Algorithms/0437.path-sum-iii)|☆|39%|❤|
-|442|[Find All Duplicates in an Array](./Algorithms/0442.find-all-duplicates-in-an-array)|☆ ☆|55%||
+|442|[Find All Duplicates in an Array](./Algorithms/0442.find-all-duplicates-in-an-array)|☆ ☆|56%||
 |448|[Find All Numbers Disappeared in an Array](./Algorithms/0448.find-all-numbers-disappeared-in-an-array)|☆|51%||
 |485|[Max Consecutive Ones](./Algorithms/0485.max-consecutive-ones)|☆|53%||
 |495|[Teemo Attacking](./Algorithms/0495.teemo-attacking)|☆ ☆|51%||
