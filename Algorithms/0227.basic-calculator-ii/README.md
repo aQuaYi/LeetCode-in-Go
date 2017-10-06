@@ -19,3 +19,5 @@ Note: Do not use the eval built-in library function.
 ## 解题思路
 
 见程序注释
+
+![100](227.100.png)
