@@ -3,8 +3,8 @@ package Problem0202
 func isHappy(n int) bool {
 	slow, fast := n, trans(n)
 	for slow != fast {
-		slow = trans(n)
-		fast = trans(trans(n))
+		slow = trans(slow)
+		fast = trans(trans(fast))
 	}
 	if slow == 1 {
 		return true
