@@ -14,6 +14,11 @@ var tcs = []struct {
 }{
 
 	{
+		2,
+		false,
+	},
+
+	{
 		77,
 		false,
 	},
@@ -41,4 +46,21 @@ func Benchmark_isHappy(b *testing.B) {
 			isHappy(tc.n)
 		}
 	}
+}
+
+func Benchmark_mult(b *testing.B) {
+	n := 12345
+	for i := 0; i < b.N; i++ {
+		_ = (n % 10) * (n % 10)
+	}
+}
+func Benchmark_square(b *testing.B) {
+	n := 12345
+	for i := 0; i < b.N; i++ {
+		_ = square(n % 10)
+	}
+}
+
+func square(a int) int {
+	return a * a
 }
