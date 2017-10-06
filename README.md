@@ -11,9 +11,9 @@
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|59 / 150|114 / 254|46 / 97|219 / 501|
+|**Algorithms**|60 / 150|114 / 254|46 / 97|220 / 501|
 |**Draft**|0 / 1|0 / 3|0 / 0|0 / 4|
-|**Total**|59 / 151|114 / 257|46 / 97|219 / 505|
+|**Total**|60 / 151|114 / 257|46 / 97|220 / 505|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -86,7 +86,7 @@
 |66|[Plus One](./Algorithms/0066.plus-one)|☆|38%||
 |67|[Add Binary](./Algorithms/0067.add-binary)|☆|32%||
 |68|[Text Justification](./Algorithms/0068.text-justification)|☆ ☆ ☆|19%||
-|69|[Sqrt(x)](./Algorithms/0069.sqrtx)|☆|28%||
+|69|[Sqrt(x)](./Algorithms/0069.sqrtx)|☆|27%||
 |70|[Climbing Stairs](./Algorithms/0070.climbing-stairs)|☆|40%||
 |71|[Simplify Path](./Algorithms/0071.simplify-path)|☆ ☆|25%||
 |72|[Edit Distance](./Algorithms/0072.edit-distance)|☆ ☆ ☆|31%|❤|
@@ -184,6 +184,7 @@
 |199|[Binary Tree Right Side View](./Algorithms/0199.binary-tree-right-side-view)|☆ ☆|41%||
 |200|[Number of Islands](./Algorithms/0200.number-of-islands)|☆ ☆|35%||
 |201|[Bitwise AND of Numbers Range](./Algorithms/0201.bitwise-and-of-numbers-range)|☆ ☆|34%|❤|
+|202|[Happy Number](./Algorithms/0202.happy-number)|☆|40%||
 |206|[Reverse Linked List](./Algorithms/0206.reverse-linked-list)|☆|45%||
 |207|[Course Schedule](./Algorithms/0207.course-schedule)|☆ ☆|32%|❤|
 |208|[Implement Trie (Prefix Tree)](./Algorithms/0208.implement-trie-prefix-tree)|☆ ☆|28%|❤|
