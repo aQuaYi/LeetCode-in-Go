@@ -11,9 +11,9 @@
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|59 / 150|113 / 254|45 / 97|217 / 501|
+|**Algorithms**|59 / 150|114 / 254|45 / 97|218 / 501|
 |**Draft**|0 / 1|0 / 3|0 / 0|0 / 4|
-|**Total**|59 / 151|113 / 257|45 / 97|217 / 505|
+|**Total**|59 / 151|114 / 257|45 / 97|218 / 505|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -86,7 +86,7 @@
 |66|[Plus One](./Algorithms/0066.plus-one)|☆|38%||
 |67|[Add Binary](./Algorithms/0067.add-binary)|☆|32%||
 |68|[Text Justification](./Algorithms/0068.text-justification)|☆ ☆ ☆|19%||
-|69|[Sqrt(x)](./Algorithms/0069.sqrtx)|☆|27%||
+|69|[Sqrt(x)](./Algorithms/0069.sqrtx)|☆|28%||
 |70|[Climbing Stairs](./Algorithms/0070.climbing-stairs)|☆|40%||
 |71|[Simplify Path](./Algorithms/0071.simplify-path)|☆ ☆|25%||
 |72|[Edit Distance](./Algorithms/0072.edit-distance)|☆ ☆ ☆|31%|❤|
@@ -205,6 +205,7 @@
 |227|[Basic Calculator II](./Algorithms/0227.basic-calculator-ii)|☆ ☆|29%||
 |228|[Summary Ranges](./Algorithms/0228.summary-ranges)|☆ ☆|30%||
 |229|[Majority Element II](./Algorithms/0229.majority-element-ii)|☆ ☆|28%|❤|
+|230|[Kth Smallest Element in a BST](./Algorithms/0230.kth-smallest-element-in-a-bst)|☆ ☆|44%||
 |238|[Product of Array Except Self](./Algorithms/0238.product-of-array-except-self)|☆ ☆|49%||
 |260|[Single Number III](./Algorithms/0260.single-number-iii)|☆ ☆|51%|❤|
 |268|[Missing Number](./Algorithms/0268.missing-number)|☆|44%||
