@@ -1,6 +1,6 @@
 # [LeetCode](https://leetcode.com)习题的Golang解答
 [![LeetCode](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode Ranking](https://img.shields.io/badge/Ranking-23639-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode Ranking](https://img.shields.io/badge/Ranking-22567-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang)
 
@@ -74,7 +74,7 @@
 |54|[Spiral Matrix](./Algorithms/0054.spiral-matrix)|☆ ☆|26%|❤|
 |55|[Jump Game](./Algorithms/0055.jump-game)|☆ ☆|29%||
 |56|[Merge Intervals](./Algorithms/0056.merge-intervals)|☆ ☆|30%|❤|
-|57|[Insert Interval](./Algorithms/0057.insert-interval)|☆ ☆ ☆|27%||
+|57|[Insert Interval](./Algorithms/0057.insert-interval)|☆ ☆ ☆|28%||
 |58|[Length of Last Word](./Algorithms/0058.length-of-last-word)|☆|31%||
 |59|[Spiral Matrix II](./Algorithms/0059.spiral-matrix-ii)|☆ ☆|40%|❤|
 |60|[Permutation Sequence](./Algorithms/0060.permutation-sequence)|☆ ☆|28%||
@@ -253,6 +253,7 @@
 - [190. Reverse Bits](https://leetcode.com/problems/reverse-bits/)
 - [191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)
 - [222. Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/)
+- [236. Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)
 
 ## helper
 [helper](./helper.v4) 会帮助处理大部分琐碎的工作。
