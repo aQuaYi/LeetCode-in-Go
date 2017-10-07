@@ -6,15 +6,21 @@ func isUgly(num int) bool {
 	}
 
 	if num <= 6 {
+		// 1,2,3,4,5,6 确实都是 ugly 的
 		return true
 	}
 
-	a := []int{2, 3, 5}
-	for _, n := range a {
-		for num%n == 0 {
-			num /= n
-		}
+	if num%2 == 0 {
+		return isUgly(num / 2)
 	}
 
-	return num == 1
+	if num%3 == 0 {
+		return isUgly(num / 3)
+	}
+
+	if num%5 == 0 {
+		return isUgly(num / 5)
+	}
+
+	return false
 }

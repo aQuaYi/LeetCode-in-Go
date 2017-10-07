@@ -23,6 +23,11 @@ var tcs = []struct {
 	},
 
 	{
+		2123366402,
+		false,
+	},
+
+	{
 		23,
 		false,
 	},
@@ -37,6 +42,10 @@ var tcs = []struct {
 		true,
 	},
 
+	{
+		2123366400,
+		true,
+	},
 	// 可以有多个 testcase
 }
 
