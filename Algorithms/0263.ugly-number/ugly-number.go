@@ -1,7 +1,7 @@
 package Problem0263
 
 func isUgly(num int) bool {
-	if num < 0 {
+	if num <= 0 {
 		return false
 	}
 
