@@ -1,6 +1,9 @@
 package Problem0239
 
 func maxSlidingWindow(nums []int, k int) []int {
+	if k == 0 {
+		return nil
+	}
 	res := make([]int, len(nums)-k+1)
 	for i := 0; i+k <= len(nums); i++ {
 		res[i] = maxOf(nums[i : i+k])
