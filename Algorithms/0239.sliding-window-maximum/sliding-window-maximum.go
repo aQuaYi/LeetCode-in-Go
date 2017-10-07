@@ -1,6 +1,20 @@
 package Problem0239
 
 func maxSlidingWindow(nums []int, k int) []int {
+	res := make([]int, len(nums)-k+1)
+	for i := 0; i+k <= len(nums); i++ {
+		res[i] = maxOf(nums[i : i+k])
+	}
 
-	return []int{3, 3, 5, 5, 6, 7}
+	return res
+}
+
+func maxOf(nums []int) int {
+	max := nums[0]
+	for i := 1; i < len(nums); i++ {
+		if max < nums[i] {
+			max = nums[i]
+		}
+	}
+	return max
 }
