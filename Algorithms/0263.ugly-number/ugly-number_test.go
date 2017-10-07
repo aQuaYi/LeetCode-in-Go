@@ -10,12 +10,22 @@ import (
 // tcs is testcase slice
 var tcs = []struct {
 	num int
-	ans  bool 
+	ans bool
 }{
 
 	{
-	1	,
-		true ,
+		23,
+		false,
+	},
+
+	{
+		12,
+		true,
+	},
+
+	{
+		1,
+		true,
 	},
 
 	// 可以有多个 testcase
@@ -23,7 +33,7 @@ var tcs = []struct {
 
 func Test_isUgly(t *testing.T) {
 	ast := assert.New(t)
-	
+
 	for _, tc := range tcs {
 		fmt.Printf("~~%v~~\n", tc)
 		ast.Equal(tc.ans, isUgly(tc.num), "输入:%v", tc)
