@@ -14,8 +14,9 @@ func makeREADME(lc *leetcode) {
 	template := `%s
 
 ## 答题进度：%d%%
-> 仅含免费题
-
+统计规则
+> 1. 免费题
+> 2. 可以使用Go语言解答
 %s
 ## 参考解答
 %s
