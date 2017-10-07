@@ -1,6 +1,6 @@
 # [LeetCode](https://leetcode.com)习题的Golang解答
 [![LeetCode](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode Ranking](https://img.shields.io/badge/Ranking-22567-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode Ranking](https://img.shields.io/badge/Ranking-22171-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang)
 
@@ -11,9 +11,9 @@
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|61 / 150|115 / 254|47 / 97|223 / 501|
+|**Algorithms**|61 / 150|116 / 254|47 / 97|224 / 501|
 |**Draft**|0 / 1|0 / 3|0 / 0|0 / 4|
-|**Total**|61 / 151|115 / 257|47 / 97|223 / 505|
+|**Total**|61 / 151|116 / 257|47 / 97|224 / 505|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -212,6 +212,7 @@
 |238|[Product of Array Except Self](./Algorithms/0238.product-of-array-except-self)|☆ ☆|49%||
 |239|[Sliding Window Maximum](./Algorithms/0239.sliding-window-maximum)|☆ ☆ ☆|33%|❤|
 |240|[Search a 2D Matrix II](./Algorithms/0240.search-a-2d-matrix-ii)|☆ ☆|38%|❤|
+|241|[Different Ways to Add Parentheses](./Algorithms/0241.different-ways-to-add-parentheses)|☆ ☆|44%||
 |260|[Single Number III](./Algorithms/0260.single-number-iii)|☆ ☆|52%|❤|
 |268|[Missing Number](./Algorithms/0268.missing-number)|☆|44%||
 |283|[Move Zeroes](./Algorithms/0283.move-zeroes)|☆|50%||
