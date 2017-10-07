@@ -18,6 +18,11 @@ var tcs = []struct {
 	},
 
 	{
+		0,
+		false,
+	},
+
+	{
 		23,
 		false,
 	},

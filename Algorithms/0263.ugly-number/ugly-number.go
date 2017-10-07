@@ -1,6 +1,10 @@
 package Problem0263
 
 func isUgly(num int) bool {
+	if num < 0 {
+		return false
+	}
+
 	if num <= 6 {
 		return true
 	}
