@@ -24,16 +24,32 @@ var tcs = []struct {
 
 	{
 		m,
+		5,
+		true,
+	},
+
+	{
+		m,
+		15,
+		true,
+	},
+	{
+		m,
 		20,
 		false,
 	},
 
 	{
-		m,
+		[][]int{},
 		5,
-		true,
+		false,
 	},
 
+	{
+		[][]int{[]int{}},
+		5,
+		false,
+	},
 	// 可以有多个 testcase
 }
 
