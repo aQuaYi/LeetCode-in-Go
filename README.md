@@ -6,14 +6,14 @@
 
 
 
-## 答题进度：45%
+## 答题进度：46%
 > 仅含免费题
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|62 / 150|117 / 254|47 / 97|226 / 501|
+|**Algorithms**|62 / 150|118 / 254|47 / 97|227 / 501|
 |**Draft**|0 / 1|0 / 3|0 / 0|0 / 4|
-|**Total**|62 / 151|117 / 257|47 / 97|226 / 505|
+|**Total**|62 / 151|118 / 257|47 / 97|227 / 505|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -220,6 +220,7 @@
 |283|[Move Zeroes](./Algorithms/0283.move-zeroes)|☆|50%||
 |287|[Find the Duplicate Number](./Algorithms/0287.find-the-duplicate-number)|☆ ☆|43%|❤|
 |289|[Game of Life](./Algorithms/0289.game-of-life)|☆ ☆|37%|❤|
+|313|[Super Ugly Number](./Algorithms/0313.super-ugly-number)|☆ ☆|37%|❤|
 |337|[House Robber III](./Algorithms/0337.house-robber-iii)|☆ ☆|43%|❤|
 |380|[Insert Delete GetRandom O(1)](./Algorithms/0380.insert-delete-getrandom-o1)|☆ ☆|39%|❤|
 |381|[Insert Delete GetRandom O(1) - Duplicates allowed](./Algorithms/0381.insert-delete-getrandom-o1-duplicates-allowed)|☆ ☆ ☆|29%|❤|
