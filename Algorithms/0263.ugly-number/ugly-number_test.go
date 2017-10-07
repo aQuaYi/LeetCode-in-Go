@@ -12,6 +12,10 @@ var tcs = []struct {
 	num int
 	ans bool
 }{
+	{
+		-2147483648,
+		false,
+	},
 
 	{
 		23,
