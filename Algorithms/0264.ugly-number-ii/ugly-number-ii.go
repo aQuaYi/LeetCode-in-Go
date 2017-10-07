@@ -5,45 +5,39 @@ func nthUglyNumber(n int) int {
 		return n
 	}
 
-	nums := make([]int, 6, n)
-	for i := 0; i < 6; i++ {
-		nums[i] = i + 1
-	}
+	pos := []int{0, 0, 0}
+	candidates := []int{2, 3, 5}
+	pNums := []int{2, 3, 5}
+	result := make([]int, n)
 
-	var search func(int, int, int)
-	search = func(left, right, max int) {
-		if left > right {
-			return
-		}
-		min := nums[len(nums)-1]
-		temp := 0
+	result[0] = 1
 
-		for left <= right {
-			temp = nums[left] * nums[right]
-
-			if max <= temp {
-				right--
-			} else if temp <= min {
-				left++
-			} else {
-				search(left, right-1, temp)
-				if len(nums) < n {
-					nums = append(nums, temp)
-				}
-				return
+	for i := 1; i < n; i++ {
+		result[i] = minc(candidates)
+		for j := 0; j < 3; j++ {
+			if result[i] == candidates[j] {
+				pos[j]++
+				candidates[j] = result[pos[j]] * pNums[j]
 			}
 		}
 	}
 
-	k := 3
-	for {
-		search(2, k-1, 2*nums[k])
-		if len(nums) >= n {
-			break
-		}
-		nums = append(nums, 2*nums[k])
-		k++
-	}
+	return result[n-1]
+}
 
-	return nums[n-1]
+func minc(candidates []int) int {
+
+	min := candidates[0]
+	for i := 1; i < 3; i++ {
+		if min > candidates[i] {
+			min = candidates[i]
+		}
+	}
+	return min
+}
+func min3(a, b int) int {
+	if a < b {
+		return a
+	}
+	return b
 }
