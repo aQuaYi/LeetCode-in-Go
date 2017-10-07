@@ -11,9 +11,9 @@
 
 |Category|Easy|Medium|Hard|Total|
 |:--|:--:|:--:|:--:|:--:|
-|**Algorithms**|61 / 150|116 / 254|47 / 97|224 / 501|
+|**Algorithms**|61 / 150|117 / 254|47 / 97|225 / 501|
 |**Draft**|0 / 1|0 / 3|0 / 0|0 / 4|
-|**Total**|61 / 151|116 / 257|47 / 97|224 / 505|
+|**Total**|61 / 151|117 / 257|47 / 97|225 / 505|
 
 ## 参考解答
 |题号|题目|难度|总体通过率|收藏|
@@ -214,6 +214,7 @@
 |240|[Search a 2D Matrix II](./Algorithms/0240.search-a-2d-matrix-ii)|☆ ☆|38%|❤|
 |241|[Different Ways to Add Parentheses](./Algorithms/0241.different-ways-to-add-parentheses)|☆ ☆|44%||
 |260|[Single Number III](./Algorithms/0260.single-number-iii)|☆ ☆|52%|❤|
+|264|[Ugly Number II](./Algorithms/0264.ugly-number-ii)|☆ ☆|32%|❤|
 |268|[Missing Number](./Algorithms/0268.missing-number)|☆|44%||
 |283|[Move Zeroes](./Algorithms/0283.move-zeroes)|☆|50%||
 |287|[Find the Duplicate Number](./Algorithms/0287.find-the-duplicate-number)|☆ ☆|43%|❤|
