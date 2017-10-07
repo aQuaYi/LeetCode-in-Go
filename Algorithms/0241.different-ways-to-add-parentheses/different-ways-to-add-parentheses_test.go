@@ -2,6 +2,7 @@ package Problem0241
 
 import (
 	"fmt"
+	"sort"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -12,6 +13,11 @@ var tcs = []struct {
 	input string
 	ans   []int
 }{
+
+	{
+		"2+2+2+2",
+		[]int{8, 8, 8, 8, 8},
+	},
 
 	{
 		"2-1-1",
@@ -31,7 +37,9 @@ func Test_diffWaysToCompute(t *testing.T) {
 
 	for _, tc := range tcs {
 		fmt.Printf("~~%v~~\n", tc)
-		ast.Equal(tc.ans, diffWaysToCompute(tc.input), "输入:%v", tc)
+		ans := diffWaysToCompute(tc.input)
+		sort.Ints(ans)
+		ast.Equal(tc.ans, ans, "输入:%v", tc)
 	}
 }
 
