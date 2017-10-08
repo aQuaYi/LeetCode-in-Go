@@ -1,7 +1,7 @@
 package Problem0203
 
 import (
-	"github.com/aQuaYi/LeetCode-in-Golang/kit"
+	"github.com/aQuaYi/LeetCode-in-Go/kit"
 )
 
 type ListNode = kit.ListNode

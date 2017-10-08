@@ -1,16 +1,16 @@
-# [推荐]LeetCode习题的Golang解答
-[LeetCode习题的Golang解答](https://github.com/aQuaYi/LeetCode-in-Golang#leetcode习题的golang解答)
+# [推荐]LeetCode习题的Go解答
+[LeetCode习题的Go解答](https://github.com/aQuaYi/LeetCode-in-Go#leetcode习题的golang解答)
 
 ## 我为什么要刷LeetCode
 1. 刷 LeetCode 有用：它收集了各大公司的经典算法面试题，可以进行代码的在线编写、编译和调试。LeetCode是注重算法的刷题工具，在考算法的笔试面试中，碰见原题的概率非常大。
-1. LeetCode 支持 Golang 刷题：虽然算法与语言无关，但解答算法，却可以深入语言的一些细节。
+1. LeetCode 支持 Go 刷题：虽然算法与语言无关，但解答算法，却可以深入语言的一些细节。
 
 ## 项目的特点
 1. 完善的答题记录
     1. 高效优雅的解答
     1. 大量的中文注释
     1. 100%覆盖的单元测试
-    1. 注重 Golang Style，不是其他编程语言的 Go 翻译版
+    1. 注重 Go Style，不是其他编程语言的 Go 翻译版
 1. 省心的辅助程序——helper
     1. 自动生成项目 README，会自动更新以下内容：
         - 个人的 LeetCode 排名
@@ -27,4 +27,4 @@
 ## 推广的原因
 希望可以给有缘人一些帮助，也希望有缘人可以帮我加 star。
 
-[LeetCode习题的Golang解答](https://github.com/aQuaYi/LeetCode-in-Golang#leetcode习题的golang解答)
+[LeetCode习题的Go解答](https://github.com/aQuaYi/LeetCode-in-Go#leetcode习题的golang解答)

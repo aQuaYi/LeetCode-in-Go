@@ -33,7 +33,7 @@ func multiply(num1 string, num2 string) string {
 
 	// 转换结果
 	// temp 选用为[]int，而不是[]byte，是因为
-	// golang中，byte的基础结构是uint8，最大值为255。
+	// Go中，byte的基础结构是uint8，最大值为255。
 	// 不考虑进位的话，temp会溢出
 	res := make([]byte, len(temp))
 	for i := 0; i < len(temp); i++ {

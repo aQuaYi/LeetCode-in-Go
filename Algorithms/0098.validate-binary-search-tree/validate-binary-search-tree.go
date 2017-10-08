@@ -1,13 +1,13 @@
 package Problem0098
 
 import (
-	"github.com/aQuaYi/LeetCode-in-Golang/kit"
+	"github.com/aQuaYi/LeetCode-in-Go/kit"
 )
 
 type TreeNode = kit.TreeNode
 
 func isValidBST(root *TreeNode) bool {
-	// Golang int 类型的最小值与最大值
+	// Go int 类型的最小值与最大值
 	MIN, MAX := -1<<63, 1<<63-1
 
 	return recur(MIN, MAX, root)
