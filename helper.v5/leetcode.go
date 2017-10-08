@@ -1,9 +1,12 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"log"
 	"sort"
+
+	"github.com/aQuaYi/GoKit"
 )
 
 type leetcode struct {
@@ -32,6 +35,8 @@ func newLeetCode() *leetcode {
 func newAlgorithms() (problems, category) {
 	d := getData("Algorithms")
 	check(d)
+	// TODO: 读取不可用的题目
+
 	ps, e, m, h := countData(d)
 	c := newCategory(d, e, m, h)
 	return ps, c
@@ -159,12 +164,12 @@ func (ps problems) list() string {
 }
 
 type problem struct {
-	ID                         int
-	Dir                        string
-	Title, TitleSlug           string
-	PassRate                   string
-	Difficulty                 int
-	IsAccepted, IsFavor, IsNew bool
+	ID                                      int
+	Dir                                     string
+	Title, TitleSlug                        string
+	PassRate                                string
+	Difficulty                              int
+	IsAccepted, IsFavor, IsNew, IsAvailable bool
 }
 
 func (p problem) link() string {
@@ -192,4 +197,36 @@ var degrees = map[int]string{
 
 func (p problem) listLine() string {
 	return fmt.Sprintf("[%d. %s](%s)", p.ID, p.Title, p.link())
+}
+
+type unavailable struct {
+	List []int
+}
+
+func readUnavailable() *unavailable {
+	if !GoKit.Exist(unavailableFile) {
+		log.Printf("%s 不存在，没有不能解答的题目", unavailableFile)
+		return &unavailable{[]int{}}
+	}
+
+	raw := read(unavailableFile)
+	u := unavailable{}
+	if err := json.Unmarshal(raw, &u); err != nil {
+		log.Fatalf("获取 %s 失败：%s", unavailableFile, err)
+	}
+
+	return &u
+}
+
+func (u *unavailable) save() {
+
+}
+
+func (u *unavailable) withIn(id int) bool {
+	for _, num := range u.List {
+		if id == num {
+			return true
+		}
+	}
+	return false
 }

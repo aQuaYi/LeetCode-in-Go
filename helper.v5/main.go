@@ -17,6 +17,9 @@ const (
 	3. helper -v 查看helper的版本`
 )
 
+
+
+
 var cfg config
 var cfgFile = "leetcode.toml"
 var lcFile = "leetcode.json"

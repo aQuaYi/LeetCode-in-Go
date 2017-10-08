@@ -22,17 +22,7 @@ func lastestLeetCode() *leetcode {
 	return newLC
 }
 
-func lastest() *leetcode {
-	lc := newLeetCode()
-	
-	lc.update(d)
 
-	lc.getRanking()
-
-	sort.Sort(lc.Problems)
-
-	return lc
-}
 
 func readLeetCodeRecord() (*leetcode, error) {
 	if !GoKit.Exist(lcFile) {
