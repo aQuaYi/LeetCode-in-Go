@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"io/ioutil"
 	"log"
 	"sort"
 
@@ -196,7 +197,7 @@ var degrees = map[int]string{
 }
 
 func (p problem) listLine() string {
-	return fmt.Sprintf("[%d. %s](%s)", p.ID, p.Title, p.link())
+	return fmt.Sprintf("- [%d. %s](%s)", p.ID, p.Title, p.link())
 }
 
 type unavailable struct {
@@ -219,7 +220,16 @@ func readUnavailable() *unavailable {
 }
 
 func (u *unavailable) save() {
+	raw, err := json.Marshal(u)
+	if err != nil {
+		log.Fatal("无法把 unavailable 的数据转换成[]bytes: ", err)
+	}
 
+	if err = ioutil.WriteFile(unavailableFile, raw, 0666); err != nil {
+		log.Fatal("无法把 Marshal 后的 unavailable 保存到文件: ", err)
+	}
+
+	log.Println("最新的 unavailable 记录已经保存。")
 }
 
 func (u *unavailable) withIn(id int) bool {

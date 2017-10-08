@@ -7,7 +7,6 @@ import (
 	"io/ioutil"
 	"log"
 	"os"
-	"sort"
 
 	"github.com/aQuaYi/GoKit"
 )
@@ -21,8 +20,6 @@ func lastestLeetCode() *leetcode {
 
 	return newLC
 }
-
-
 
 func readLeetCodeRecord() (*leetcode, error) {
 	if !GoKit.Exist(lcFile) {

@@ -17,9 +17,6 @@ const (
 	3. helper -v 查看helper的版本`
 )
 
-
-
-
 var cfg config
 var cfgFile = "leetcode.toml"
 var lcFile = "leetcode.json"
@@ -44,7 +41,7 @@ func main() {
 		fmt.Printf("helper version %s\n", VERSION)
 	case "-h", "-help":
 		fmt.Println(USAGE)
-	case "readme":
+	case "readme", "r":
 		rebuildReadme()
 	default:
 		buildProblemDir(os.Args[1])
