@@ -83,8 +83,7 @@ func build(p problem) {
 			// 添加 p.ID 到 unavailableFile
 			u := readUnavailable()
 			u.add(p.ID)
-			u.save()
-// 删除刚刚创建的目录
+			// 删除刚刚创建的目录
 			if err := os.RemoveAll(p.Dir); err != nil {
 				log.Fatalln("无法删除目录", p.Dir)
 			}

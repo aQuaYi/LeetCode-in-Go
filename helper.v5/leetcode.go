@@ -244,6 +244,7 @@ func (u *unavailable) add(id int) {
 	if !u.has(id) {
 		u.List = append(u.List, id)
 		sort.Ints(u.List)
+		u.save()
 	}
 	log.Printf("第 %d 题，无法使用 Go 语言解答", id)
 }
