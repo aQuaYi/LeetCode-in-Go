@@ -71,7 +71,7 @@ func countData(d *data) (ps []problem, e, m, h int) {
 			IsAccepted:  p.Status == "ac",
 			IsFavor:     p.IsFavor,
 			IsNew:       p.IsNew,
-			IsAvailable: !u.withIn(p.ID),
+			IsAvailable: !u.has(p.ID),
 		}
 
 		ps = append(ps, temp)
@@ -241,8 +241,10 @@ func readUnavailable() *unavailable {
 }
 
 func (u *unavailable) add(id int) {
-	u.List = append(u.List, id)
-	sort.Ints(u.List)
+	if !u.has(id) {
+		u.List = append(u.List, id)
+		sort.Ints(u.List)
+	}
 	log.Printf("第 %d 题，无法使用 Go 语言解答", id)
 }
 
@@ -259,7 +261,7 @@ func (u *unavailable) save() {
 	log.Println("最新的 unavailable 记录已经保存。")
 }
 
-func (u *unavailable) withIn(id int) bool {
+func (u *unavailable) has(id int) bool {
 	for _, num := range u.List {
 		if id == num {
 			return true
