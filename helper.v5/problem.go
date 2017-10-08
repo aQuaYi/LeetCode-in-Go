@@ -16,9 +16,10 @@ import (
 
 func buildProblemDir(s string) {
 	var err error
+	// 获取问题编号
 	problemNum := 0
 	if problemNum, err = strconv.Atoi(os.Args[1]); err != nil {
-		log.Fatalln(err)
+		log.Fatalln("无法获取问题编号：", err)
 	}
 
 	// 需要创建答题文件夹
@@ -35,11 +36,12 @@ func makeProblemDir(ps problems, problemNum int) {
 	var pb problem
 	var isFound bool
 
-	// TODO: 检查是否在unavailable list 中
-
 	// 根据题号，获取题目信息
 	for _, p := range ps {
 		if p.ID == problemNum {
+			if !p.IsAvailable {
+				log.Fatalln(`此题被标记为"不能使用 Go 语言解答"。请核查后，修改 unavailable.json 中的记录`)
+			}
 			pb = p
 			isFound = true
 			break
@@ -47,16 +49,17 @@ func makeProblemDir(ps problems, problemNum int) {
 	}
 
 	if !isFound {
-		log.Printf("没有发现 %d 题，存在以下可能：1.此题不存在；2.此题需要付费；3.此题暂时无法使用Go解答。", problemNum)
+		log.Printf("没有发现第 %d 题，存在以下可能：1.此题不存在；2.此题需要付费。", problemNum)
 		return
 	}
 
+	// 创建目录
 	build(pb)
 }
 
 func build(p problem) {
 	if p.IsAccepted && GoKit.Exist(p.Dir) {
-		log.Fatalf("第 %d 题已经accepted，请**删除**或**重命名**  %s 文件夹后，再尝试。", p.ID, p.Dir)
+		log.Fatalf("第 %d 题已经accepted，请**移除**  %s 文件夹后，再尝试。", p.ID, p.Dir)
 	}
 
 	// 对于没有 accepted 的题目，直接删除重建
@@ -67,6 +70,7 @@ func build(p problem) {
 	mask := syscall.Umask(0)
 	defer syscall.Umask(mask)
 
+	// 创建目录
 	err := os.Mkdir(p.Dir, 0755)
 	if err != nil {
 		log.Fatalf("无法创建目录，%s ：%s", p.Dir, err)
@@ -90,6 +94,7 @@ func build(p problem) {
 		}
 	}()
 	fc, fcName, para, ans := getFunction(p.link())
+
 	creatGo(p, fc)
 	creatGoTest(p, fcName, para, ans)
 

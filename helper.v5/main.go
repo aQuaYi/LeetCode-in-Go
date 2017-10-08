@@ -9,7 +9,7 @@ import (
 const (
 	VERSION = "5.1.0"
 
-	cfgFile         = "leetcode.toml"
+	configFile      = "leetcode.toml"
 	leetCodeFile    = "leetcode.json"
 	unavailableFile = "unavailable.json"
 

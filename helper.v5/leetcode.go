@@ -36,7 +36,7 @@ func newLeetCode() *leetcode {
 }
 
 func newAlgorithms() (problems, category) {
-	d := getData("Algorithms")
+	d := getCategoryData("Algorithms")
 	check(d)
 	ps, e, m, h := countData(d)
 	c := newCategory(d, e, m, h)

@@ -21,22 +21,6 @@ func lastestLeetCode() *leetcode {
 	return newLC
 }
 
-func readLeetCodeRecord() (*leetcode, error) {
-	if !GoKit.Exist(leetCodeFile) {
-		msg := fmt.Sprintf("%s 不存在", leetCodeFile)
-		return nil, errors.New(msg)
-	}
-
-	raw := read(leetCodeFile)
-	lc := leetcode{}
-	if err := json.Unmarshal(raw, &lc); err != nil {
-		msg := fmt.Sprintf("获取 %s 失败：%s", leetCodeFile, err)
-		return nil, errors.New(msg)
-	}
-
-	return &lc, nil
-}
-
 func showChange(new *leetcode) {
 	// 获取 oldLC
 	old, err := readLeetCodeRecord()
@@ -56,6 +40,7 @@ func showChange(new *leetcode) {
 	} else {
 		log.Printf("当前排名 %d", nr)
 	}
+
 	// 对比 已完成的问题
 	lenNew := len(new.Problems)
 	lenOld := len(old.Problems)
@@ -83,9 +68,25 @@ func showChange(new *leetcode) {
 	}
 
 	for i < lenNew {
-		log.Printf("出现新题: %d %s", new.Problems[i].ID, new.Problems[i].Title)
+		log.Printf("新题: %d.%s", new.Problems[i].ID, new.Problems[i].Title)
 		i++
 	}
+}
+
+func readLeetCodeRecord() (*leetcode, error) {
+	if !GoKit.Exist(leetCodeFile) {
+		msg := fmt.Sprintf("%s 不存在", leetCodeFile)
+		return nil, errors.New(msg)
+	}
+
+	raw := read(leetCodeFile)
+	lc := leetcode{}
+	if err := json.Unmarshal(raw, &lc); err != nil {
+		msg := fmt.Sprintf("获取 %s 失败：%s", leetCodeFile, err)
+		return nil, errors.New(msg)
+	}
+
+	return &lc, nil
 }
 
 func saveLC(lc *leetcode) {

@@ -23,8 +23,8 @@ var req *request.Request
 
 // 登录 leetcode
 func signin() {
-	// signin 前，导入配置
-	if _, err := toml.DecodeFile(cfgFile, &cfg); err != nil {
+	// 先导入配置
+	if _, err := toml.DecodeFile(configFile, &cfg); err != nil {
 		log.Fatalf(err.Error())
 	}
 	log.Printf("Hi, %s. \n", cfg.Login)
@@ -33,6 +33,7 @@ func signin() {
 
 	// 对 req 赋值
 	req = request.NewRequest(new(http.Client))
+
 	// 配置request
 	req.Headers = map[string]string{
 		"Accept-Encoding": "",
@@ -52,10 +53,11 @@ func signin() {
 	if err = login(req); err != nil {
 		log.Fatal(err)
 	}
+
 	log.Println("成功登录")
 }
 
-func getData(name string) *data {
+func getCategoryData(name string) *data {
 	URL := url(name)
 
 	raw := getRaw(URL)
@@ -106,6 +108,7 @@ func getRaw(URL string) []byte {
 
 	if req == nil {
 		// 单独下载题目内容时，无需登录，可以加快速度
+		// 但此时 req == nil，所以需要赋值
 		req = request.NewRequest(new(http.Client))
 	}
 
