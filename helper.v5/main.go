@@ -7,7 +7,7 @@ import (
 
 // 程序辅助设置
 const (
-	VERSION = "5.1.0"
+	VERSION = "5.2.0"
 
 	configFile      = "leetcode.toml"
 	leetCodeFile    = "leetcode.json"
@@ -22,6 +22,11 @@ const (
 // cfg 用于保存 LeetCode.com 的用户名和密码
 // 程序中会有多处地方需要核对 用户名 ，所以设置成全局变量
 var cfg config
+
+func init() {
+	// 由于网络原因，有时候 signin 比较慢
+	signin()
+}
 
 func main() {
 	if len(os.Args) == 1 {

@@ -84,6 +84,7 @@ func build(p problem) {
 	// 此 defer 就是用于处理此种情况
 	defer func() {
 		if err := recover(); err != nil {
+			log.Printf("获取第 %d 题的 getFunction() 出错：%s", p.ID, err)
 			// 添加 p.ID 到 unavailableFile
 			u := readUnavailable()
 			u.add(p.ID)

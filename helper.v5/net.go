@@ -106,12 +106,6 @@ func getRanking(username string) int {
 func getRaw(URL string) []byte {
 	log.Printf("开始下载 %s 的数据", URL)
 
-	if req == nil {
-		// 单独下载题目内容时，无需登录，可以加快速度
-		// 但此时 req == nil，所以需要赋值
-		req = request.NewRequest(new(http.Client))
-	}
-
 	resp, err := req.Get(URL)
 	if err != nil {
 		log.Fatal("getRaw: Get Error: " + err.Error())
