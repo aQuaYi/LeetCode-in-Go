@@ -10,11 +10,11 @@ import (
 
 // 程序辅助设置
 const (
-	VERSION = "5.0.0"
+	VERSION = "5.1.0"
 	USAGE   = `使用方法：
-	1. helper readme 会重新生成项目的README.md文件。
-	2. helper n 会生成第n题的答题文件夹。
-	3. helper -v 查看helper的版本`
+    1. helper readme : 重新生成项目的 README.md 文件。
+    2. helper n      : 生成第 n 题的答题文件夹。
+    3. helper -v     : 查看 helper 的版本`
 )
 
 var cfg config
