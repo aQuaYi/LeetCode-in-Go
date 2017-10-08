@@ -20,7 +20,7 @@ func makeREADME(lc *leetcode) {
 	template := `%s
 ## 进度
 %s
-> 统计规则：1.免费，2.属于算法类，3.能用 Go 语言解答 
+> 统计规则：1.免费，2.属于算法类，3.能用 Go 解答 
 ## 题解 
 %s
 以下题目，暂时不能使用 Golang 解答
