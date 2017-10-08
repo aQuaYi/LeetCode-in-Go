@@ -38,13 +38,13 @@ func makeREADME(lc *leetcode) {
 
 	progressTable := lc.Algorithms.progressTable()
 
-	acceptedTable := lc.AllProblems.accepted().table()
+	acceptedTable := lc.Problems.accepted().table()
 
-	unavailList := lc.UnavailProblem.list()
+	unavailList := lc.Problems.unavailable().list()
 
 	tail := read("README_TAIL.md")
 
-	content := fmt.Sprintf(template, head, acceptedPercent, count, accepted, tail)
+	content := fmt.Sprintf(template, head, progressTable, acceptedTable, unavailList, tail)
 
 	// 保存 README.md 文件
 	err := ioutil.WriteFile(file, []byte(content), 0755)
@@ -55,5 +55,8 @@ func makeREADME(lc *leetcode) {
 
 func getHead(lc *leetcode) string {
 	headFormat := string(read("README_HEAD.md"))
-	return fmt.Sprintf(headFormat, lc.Username, lc.Username, lc.Ranking, lc.Username)
+	return fmt.Sprintf(headFormat,
+		lc.Username, lc.Username,
+		lc.Progress, lc.Username,
+		lc.Ranking, lc.Username)
 }

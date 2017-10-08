@@ -36,8 +36,6 @@ func newLeetCode() *leetcode {
 func newAlgorithms() (problems, category) {
 	d := getData("Algorithms")
 	check(d)
-	// TODO: 读取不可用的题目
-
 	ps, e, m, h := countData(d)
 	c := newCategory(d, e, m, h)
 	return ps, c
@@ -51,8 +49,11 @@ func check(d *data) {
 }
 
 func countData(d *data) (ps []problem, e, m, h int) {
-	for _, p := range d.Problems {
+	// 获取不可用的题目题号清单
+	u := readUnavailable()
 
+	for _, p := range d.Problems {
+		// 删除掉付费题
 		if p.IsPaid {
 			continue
 		}
@@ -63,22 +64,28 @@ func countData(d *data) (ps []problem, e, m, h int) {
 			Title:     p.Title,
 			TitleSlug: p.TitleSlug,
 			// p.Submitted + 1 是因为刚刚添加的新题的 submitted 为 0
-			PassRate:   fmt.Sprintf("%d%%", p.ACs*100/(p.Submitted+1)),
-			Difficulty: p.Difficulty.Level,
-			IsAccepted: p.Status == "ac",
-			IsFavor:    p.IsFavor,
-			IsNew:      p.IsNew,
+			PassRate:    fmt.Sprintf("%d%%", p.ACs*100/(p.Submitted+1)),
+			Difficulty:  p.Difficulty.Level,
+			IsAccepted:  p.Status == "ac",
+			IsFavor:     p.IsFavor,
+			IsNew:       p.IsNew,
+			IsAvailable: !u.withIn(p.ID),
 		}
+
 		ps = append(ps, temp)
-		switch temp.Difficulty {
-		case 1:
-			e++
-		case 2:
-			m++
-		case 3:
-			h++
-		default:
-			log.Fatalln("题目出现了第4种难度", p.ID, p.Title)
+
+		// 只统计可用的题目
+		if temp.IsAvailable {
+			switch temp.Difficulty {
+			case 1:
+				e++
+			case 2:
+				m++
+			case 3:
+				h++
+			default:
+				log.Fatalln("题目出现了第4种难度", p.ID, p.Title)
+			}
 		}
 	}
 	return
@@ -145,6 +152,16 @@ func (ps problems) accepted() problems {
 	return res
 }
 
+func (ps problems) unavailable() problems {
+	res := make([]problem, 0, len(ps))
+	for _, p := range ps {
+		if !p.IsAvailable {
+			res = append(res, p)
+		}
+	}
+	return res
+}
+
 func (ps problems) table() string {
 	sort.Sort(ps)
 	res := "|题号|题目|难度|总体通过率|收藏|\n"
@@ -186,7 +203,7 @@ func (p problem) tableLine() string {
 	if p.IsFavor {
 		f = "❤"
 	}
-	res += fmt.Sprintf("%s|", f)
+	res += fmt.Sprintf("%s|\n", f)
 	return res
 }
 
@@ -197,7 +214,7 @@ var degrees = map[int]string{
 }
 
 func (p problem) listLine() string {
-	return fmt.Sprintf("- [%d. %s](%s)", p.ID, p.Title, p.link())
+	return fmt.Sprintf("- [%d. %s](%s)\n", p.ID, p.Title, p.link())
 }
 
 type unavailable struct {
@@ -207,7 +224,9 @@ type unavailable struct {
 func readUnavailable() *unavailable {
 	if !GoKit.Exist(unavailableFile) {
 		log.Printf("%s 不存在，没有不能解答的题目", unavailableFile)
-		return &unavailable{[]int{}}
+
+		// TODO: 清除 return 中 []int 的内容
+		return &unavailable{[]int{116, 117, 133, 138, 141, 142, 151, 160, 173, 190, 191, 222}}
 	}
 
 	raw := read(unavailableFile)
