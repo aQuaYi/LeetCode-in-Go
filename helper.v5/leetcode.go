@@ -216,7 +216,7 @@ var degrees = map[int]string{
 }
 
 func (p problem) listLine() string {
-	return fmt.Sprintf("- [%d. %s](%s)\n", p.ID, p.Title, p.link())
+	return fmt.Sprintf("- [%d.%s](%s)\n", p.ID, p.Title, p.link())
 }
 
 type unavailable struct {
