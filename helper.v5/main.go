@@ -46,6 +46,4 @@ func main() {
 	default:
 		buildProblemDir(os.Args[1])
 	}
-
-	readUnavailable().save()
 }
