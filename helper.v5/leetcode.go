@@ -28,6 +28,8 @@ func newLeetCode() *leetcode {
 
 	lc.Problems, lc.Algorithms = newAlgorithms()
 
+	lc.Progress = lc.Algorithms.Total.Solved * 100 / lc.Algorithms.Total.Total
+
 	lc.Ranking = getRanking(lc.Username)
 
 	return lc
