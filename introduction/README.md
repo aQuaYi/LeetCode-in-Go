@@ -1,4 +1,4 @@
-# [推荐]LeetCode习题的Go解答
+# [推荐]LeetCode 的 Go 解答
 [LeetCode 的 Go 解答](https://github.com/aQuaYi/LeetCode-in-Go#leetcode-的-go-解答)
 
 ## 刷 LeetCode 的理由
