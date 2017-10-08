@@ -10,6 +10,7 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/BurntSushi/toml"
 	"github.com/mozillazg/request"
 )
 
@@ -22,6 +23,12 @@ var req *request.Request
 
 // 登录 leetcode
 func signin() {
+	// signin 前，导入配置
+	if _, err := toml.DecodeFile(cfgFile, &cfg); err != nil {
+		log.Fatalf(err.Error())
+	}
+	log.Printf("Hi, %s. \n", cfg.Login)
+
 	log.Println("正在登录中...")
 
 	// 对 req 赋值

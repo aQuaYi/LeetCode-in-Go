@@ -2,37 +2,26 @@ package main
 
 import (
 	"fmt"
-	"log"
 	"os"
-
-	"github.com/BurntSushi/toml"
 )
 
 // 程序辅助设置
 const (
 	VERSION = "5.1.0"
-	USAGE   = `使用方法：
+
+	cfgFile         = "leetcode.toml"
+	leetCodeFile    = "leetcode.json"
+	unavailableFile = "unavailable.json"
+
+	USAGE = `使用方法：
     1. helper readme : 重新生成项目的 README.md 文件。
     2. helper n      : 生成第 n 题的答题文件夹。
     3. helper -v     : 查看 helper 的版本`
 )
 
+// cfg 用于保存 LeetCode.com 的用户名和密码
+// 程序中会有多处地方需要核对 用户名 ，所以设置成全局变量
 var cfg config
-
-const (
-	cfgFile         = "leetcode.toml"
-	leetCodeFile    = "leetcode.json"
-	unavailableFile = "unavailable.json"
-)
-
-func init() {
-	// TODO: 这样真的有必要吗
-	// 启动时，导入配置
-	if _, err := toml.DecodeFile(cfgFile, &cfg); err != nil {
-		log.Fatalf(err.Error())
-	}
-	log.Printf("Hi, %s. \n", cfg.Login)
-}
 
 func main() {
 	if len(os.Args) == 1 {
