@@ -6,12 +6,12 @@
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang)
 
 
-## 答题进度：
+## 进度
 |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|
 |62 / 148|118 / 246|47 / 98|227 / 492|
-> 仅含能用 Go 语言解答的 Algorithms 类别的免费题
-## 参考解答
+> 统计规则：1.免费，2.属于算法类，3.能用 Go 语言解答 
+## 题解 
 |题号|题目|难度|总体通过率|收藏|
 |:-:|:-|:-: | :-: | :-: |
 |1|[Two Sum](./Algorithms/0001.two-sum)|☆|35%| |
@@ -255,21 +255,6 @@
 - [191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)
 - [222. Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/)
 
-
-以下题目，暂时不能使用 Golang 解答
-- [116. Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)
-- [117. Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)
-- [133. Clone Graph](https://leetcode.com/problems/clone-graph/)
-- [138. Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/)
-- [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)
-- [142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)
-- [151. Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/)
-- [160. Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)
-- [173. Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/)
-- [190. Reverse Bits](https://leetcode.com/problems/reverse-bits/)
-- [191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)
-- [222. Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/)
-- [236. Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)
 
 ## helper
 [helper](./helper.v4) 会帮助处理大部分琐碎的工作。

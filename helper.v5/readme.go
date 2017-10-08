@@ -23,10 +23,10 @@ func makeREADME(lc *leetcode) {
 	// 更新 README.md 的内容
 	template := `%s
 
-## 答题进度：
+## 进度
 %s
-> 仅含能用 Go 语言解答的 Algorithms 类别的免费题
-## 参考解答
+> 统计规则：1.免费，2.属于算法类，3.能用 Go 语言解答 
+## 题解 
 %s
 以下题目，暂时不能使用 Golang 解答
 %s
