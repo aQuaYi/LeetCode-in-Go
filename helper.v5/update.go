@@ -12,28 +12,21 @@ import (
 	"github.com/aQuaYi/GoKit"
 )
 
-func update(categories []string) *leetcode {
-	newLC := lastest(categories)
-	oldLC, err := readLeetCodeRecord()
-	if err != nil {
-		log.Println("LeetCode 记录读取失败，无法与新记录对比:", err)
-	} else {
-		diff(newLC, oldLC)
-	}
+func lastestLeetCode() *leetcode {
+	newLC := newLeetCode()
+
+	showChange(newLC)
 
 	saveLC(newLC)
 
 	return newLC
 }
 
-func lastest(categories []string) *leetcode {
+func lastest() *leetcode {
 	lc := newLeetCode()
-	for _, c := range categories {
-		d := getData(c)
-		lc.update(d)
-	}
+	
+	lc.update(d)
 
-	lc.totalCategory()
 	lc.getRanking()
 
 	sort.Sort(lc.Problems)
@@ -57,7 +50,14 @@ func readLeetCodeRecord() (*leetcode, error) {
 	return &lc, nil
 }
 
-func diff(new, old *leetcode) {
+func showChange(new *leetcode) {
+	// 获取 oldLC
+	old, err := readLeetCodeRecord()
+	if err != nil {
+		log.Println("LeetCode 记录读取失败，无法与新记录对比:", err)
+		return
+	}
+
 	// 对比 ranking
 	nr, or := new.Ranking, old.Ranking
 	if nr > 0 && or > 0 {

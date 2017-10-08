@@ -7,6 +7,7 @@ import (
 	"log"
 	"net/http"
 	"regexp"
+	"strconv"
 	"strings"
 
 	"github.com/mozillazg/request"
@@ -22,7 +23,7 @@ var req *request.Request
 // 登录 leetcode
 func signin() {
 	log.Println("正在登录中...")
-	
+
 	// 对 req 赋值
 	req = request.NewRequest(new(http.Client))
 	// 配置request
@@ -65,7 +66,7 @@ func url(s string) string {
 	return fmt.Sprintf(format, s)
 }
 
-func getRanking(username string) string {
+func getRanking(username string) int {
 	URL := fmt.Sprintf("https://leetcode.com/%s/", username)
 
 	data := getRaw(URL)
@@ -83,7 +84,14 @@ func getRanking(username string) string {
 	i = strings.Index(ans, "'")
 	j = 2 + strings.Index(ans[2:], "'")
 
-	return ans[i+1 : j]
+	temp := ans[i+1 : j]
+
+	r, err := strconv.Atoi(temp)
+	if err != nil {
+		log.Fatalf("无法把 %s 转换成数字Ranking", temp)
+	}
+
+	return r
 }
 
 func getRaw(URL string) []byte {

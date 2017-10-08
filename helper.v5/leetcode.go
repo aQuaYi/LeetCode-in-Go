@@ -4,64 +4,41 @@ import (
 	"fmt"
 	"log"
 	"sort"
-	"strconv"
 )
 
 type leetcode struct {
 	Username string
-	Ranking  int
 
-	Algorithms     category
-	AllProblems    problems
-	UnavailProblem problems
+	Problems   problems
+	Algorithms category
+
+	Progress int
+
+	Ranking int
 }
 
 func newLeetCode() *leetcode {
-	return &leetcode{
-		Username: cfg.Login,
-	}
+	lc := &leetcode{}
+
+	lc.Username = cfg.Login
+
+	lc.Problems, lc.Algorithms = newAlgorithms()
+
+	lc.Ranking = getRanking(lc.Username)
+
+	return lc
 }
 
-func (l *leetcode) getRanking() {
-	temp := getRanking(l.Username)
-
-	r, err := strconv.Atoi(temp)
-	if err != nil {
-		log.Fatalf("无法把 %s 转换成数字Ranking", temp)
-	}
-
-	l.Ranking = r
-}
-
-func (l *leetcode) totalCategory() {
-	t := category{
-		Name: "Total",
-	}
-
-	for _, c := range l.Categories {
-		t.Easy.Solved += c.Easy.Solved
-		t.Easy.Total += c.Easy.Total
-		t.Medium.Solved += c.Medium.Solved
-		t.Medium.Total += c.Medium.Total
-		t.Hard.Solved += c.Hard.Solved
-		t.Hard.Total += c.Hard.Total
-		t.Total.Solved += c.Total.Solved
-		t.Total.Total += c.Total.Total
-	}
-
-	l.Categories = append(l.Categories, t)
-}
-
-func (l *leetcode) update(d *data) {
-	l.check(d)
+func newAlgorithms() (problems, category) {
+	d := getData("Algorithms")
+	check(d)
 	ps, e, m, h := countData(d)
-	l.Problems = append(l.Problems, ps...)
 	c := newCategory(d, e, m, h)
-	l.Categories = append(l.Categories, c)
+	return ps, c
 }
 
-func (l *leetcode) check(d *data) {
-	if d.User != l.Username {
+func check(d *data) {
+	if d.User != cfg.Login {
 		log.Fatalln("下载了非本人的数据。")
 	}
 	log.Printf("%s 通过检查", d.Name)
@@ -108,6 +85,7 @@ type category struct {
 
 func (c category) progressTable() string {
 	res := fmt.Sprintln("|Easy|Medium|Hard|Total|")
+	res += fmt.Sprintln("|:---:|:---:|:---:|:---:|")
 	res += fmt.Sprintf("%d / %d|", c.Easy.Solved, c.Easy.Total)
 	res += fmt.Sprintf("%d / %d|", c.Medium.Solved, c.Medium.Total)
 	res += fmt.Sprintf("%d / %d|", c.Hard.Solved, c.Hard.Total)

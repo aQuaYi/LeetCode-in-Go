@@ -12,9 +12,9 @@ import (
 const (
 	VERSION = "5.0.0"
 	USAGE   = `使用方法：
-	0. helper -v 查看helper的版本
 	1. helper readme 会重新生成项目的README.md文件。
-	2. helper n 会生成第n题的答题文件夹。`
+	2. helper n 会生成第n题的答题文件夹。
+	3. helper -v 查看helper的版本`
 )
 
 var cfg config

@@ -35,6 +35,8 @@ func makeProblemDir(ps problems, problemNum int) {
 	var pb problem
 	var isFound bool
 
+	// TODO: 检查是否在unavailable list 中
+
 	// 根据题号，获取题目信息
 	for _, p := range ps {
 		if p.ID == problemNum {
