@@ -6,14 +6,14 @@
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 
-	## 进度
+## 进度
 
 |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|
 |62 / 148|118 / 245|47 / 98|227 / 491|
-> 统计规则：1.免费，2.属于算法类，3.能用 Go 解答 
+> 统计规则：1.免费，2.属于算法类，3.能用 Go 解答
 
-## 题解 
+## 题解
 
 |题号|题目|难度|总体通过率|收藏|
 |:-:|:-|:-: | :-: | :-: |
@@ -260,7 +260,6 @@
 - [222. Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/)
 - [236. Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)
 
-
 ## helper
 
 [helper](./helper.v4) 会帮助处理大部分琐碎的工作。
@@ -271,8 +270,7 @@
 
 ## kit
 
-针对 LeetCode 中经常出现的以下数据结构，在 [kit](./kit) 中进行了定义，并添加了与 []int 相互转换的函数。利用 Go 1.9 新添加的 [type alias](https://github.com/golang/proposal/blob/master/design/18130-type-alias.md) 功能，易于添加单元测试。 
+针对 LeetCode 中经常出现的以下数据结构，在 [kit](./kit) 中进行了定义，并添加了与 []int 相互转换的函数。利用 Go 1.9 新添加的 [type alias](https://github.com/golang/proposal/blob/master/design/18130-type-alias.md) 功能，易于添加单元测试。
 
 1. [*ListNode](./kit/ListNode.go)
 1. [*TreeNode](./kit/TreeNode.go)
-
