@@ -18,11 +18,15 @@ const (
 )
 
 var cfg config
-var cfgFile = "leetcode.toml"
-var lcFile = "leetcode.json"
-var unavailableFile = "unavailable.json"
+
+const (
+	cfgFile         = "leetcode.toml"
+	leetCodeFile    = "leetcode.json"
+	unavailableFile = "unavailable.json"
+)
 
 func init() {
+	// TODO: 这样真的有必要吗
 	// 启动时，导入配置
 	if _, err := toml.DecodeFile(cfgFile, &cfg); err != nil {
 		log.Fatalf(err.Error())

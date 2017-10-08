@@ -5,11 +5,10 @@
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Golang)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Golang)
 
-
 ## 进度
 |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|
-|62 / 148|118 / 246|47 / 98|227 / 492|
+|62 / 148|118 / 245|47 / 98|227 / 491|
 > 统计规则：1.免费，2.属于算法类，3.能用 Go 语言解答 
 ## 题解 
 |题号|题目|难度|总体通过率|收藏|
@@ -254,6 +253,7 @@
 - [190. Reverse Bits](https://leetcode.com/problems/reverse-bits/)
 - [191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)
 - [222. Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/)
+- [236. Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)
 
 
 ## helper

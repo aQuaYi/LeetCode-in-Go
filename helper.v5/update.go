@@ -22,15 +22,15 @@ func lastestLeetCode() *leetcode {
 }
 
 func readLeetCodeRecord() (*leetcode, error) {
-	if !GoKit.Exist(lcFile) {
-		msg := fmt.Sprintf("%s 不存在", lcFile)
+	if !GoKit.Exist(leetCodeFile) {
+		msg := fmt.Sprintf("%s 不存在", leetCodeFile)
 		return nil, errors.New(msg)
 	}
 
-	raw := read(lcFile)
+	raw := read(leetCodeFile)
 	lc := leetcode{}
 	if err := json.Unmarshal(raw, &lc); err != nil {
-		msg := fmt.Sprintf("获取 %s 失败：%s", lcFile, err)
+		msg := fmt.Sprintf("获取 %s 失败：%s", leetCodeFile, err)
 		return nil, errors.New(msg)
 	}
 
@@ -93,7 +93,7 @@ func saveLC(lc *leetcode) {
 	if err != nil {
 		log.Fatal("无法把Leetcode数据转换成[]bytes: ", err)
 	}
-	if err = ioutil.WriteFile(lcFile, raw, 0666); err != nil {
+	if err = ioutil.WriteFile(leetCodeFile, raw, 0666); err != nil {
 		log.Fatal("无法把Marshal后的lc保存到文件: ", err)
 	}
 

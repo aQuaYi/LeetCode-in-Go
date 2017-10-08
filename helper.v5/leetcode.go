@@ -240,6 +240,12 @@ func readUnavailable() *unavailable {
 	return &u
 }
 
+func (u *unavailable) add(id int) {
+	u.List = append(u.List, id)
+	sort.Ints(u.List)
+	log.Printf("第 %d 题，无法使用 Go 语言解答", id)
+}
+
 func (u *unavailable) save() {
 	raw, err := json.Marshal(u)
 	if err != nil {

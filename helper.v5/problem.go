@@ -76,6 +76,20 @@ func build(p problem) {
 
 	creatREADME(p)
 
+	// 若本题无法使用 Go 语言解答，getFunction 会 panic
+	// 此 defer 就是用于处理此种情况
+	defer func() {
+		if err := recover(); err != nil {
+			// 添加 p.ID 到 unavailableFile
+			u := readUnavailable()
+			u.add(p.ID)
+			u.save()
+// 删除刚刚创建的目录
+			if err := os.RemoveAll(p.Dir); err != nil {
+				log.Fatalln("无法删除目录", p.Dir)
+			}
+		}
+	}()
 	fc, fcName, para, ans := getFunction(p.link())
 	creatGo(p, fc)
 	creatGoTest(p, fcName, para, ans)
