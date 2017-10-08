@@ -1,11 +1,14 @@
 # [推荐]LeetCode 的 Go 解答
+
 [LeetCode 的 Go 解答](https://github.com/aQuaYi/LeetCode-in-Go#leetcode-的-go-解答)
 
 ## 刷 LeetCode 的理由
+
 1. 刷 LeetCode 有用：它收集了各大公司的经典算法面试题，可以进行代码的在线编写、编译和调试。LeetCode是注重算法的刷题工具，在考算法的笔试面试中，碰见原题的概率非常大。
 1. LeetCode 支持 Go 刷题：虽然算法与语言无关，但解答算法，却可以深入语言的一些细节。
 
 ## 项目特点
+
 1. 完善的答题记录
     1. 高效优雅的解答
     1. 大量的中文注释
@@ -25,6 +28,7 @@
     1. TreeNode
 
 ## 推广原因
+
 希望可以给有缘人一些帮助，也希望有缘人可以帮我加 star。
 
 [LeetCode 的 Go 解答](https://github.com/aQuaYi/LeetCode-in-Go#leetcode-的-go-解答)

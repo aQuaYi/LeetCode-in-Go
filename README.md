@@ -1,15 +1,20 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
+
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 答题进度](https://img.shields.io/badge/Progress-46%25-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 排名](https://img.shields.io/badge/Ranking-21390-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
-## 进度
+
+	## 进度
+
 |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|
 |62 / 148|118 / 245|47 / 98|227 / 491|
 > 统计规则：1.免费，2.属于算法类，3.能用 Go 解答 
+
 ## 题解 
+
 |题号|题目|难度|总体通过率|收藏|
 |:-:|:-|:-: | :-: | :-: |
 |1|[Two Sum](./Algorithms/0001.two-sum)|☆|35%| |
@@ -240,6 +245,7 @@
 |667|[Beautiful Arrangement II](./Algorithms/0667.beautiful-arrangement-ii)|☆ ☆|51%| |
 
 以下题目，暂时不能使用 Go 解答
+
 - [116. Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)
 - [117. Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)
 - [133. Clone Graph](https://leetcode.com/problems/clone-graph/)
@@ -254,12 +260,19 @@
 - [222. Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/)
 - [236. Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)
 
+
 ## helper
+
 [helper](./helper.v4) 会帮助处理大部分琐碎的工作。
+
 ## notes
+
 [notes](./notes) 记录了我答题过程中，对知识点的总结。
+
 ## kit
+
 针对 LeetCode 中经常出现的以下数据结构，在 [kit](./kit) 中进行了定义，并添加了与 []int 相互转换的函数。利用 Go 1.9 新添加的 [type alias](https://github.com/golang/proposal/blob/master/design/18130-type-alias.md) 功能，易于添加单元测试。 
+
 1. [*ListNode](./kit/ListNode.go)
 1. [*TreeNode](./kit/TreeNode.go)
 
