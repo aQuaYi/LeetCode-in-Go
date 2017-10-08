@@ -24,7 +24,7 @@
     1. ListNode
     1. TreeNode
 
-## 推广的原因
+## 推广原因
 希望可以给有缘人一些帮助，也希望有缘人可以帮我加 star。
 
 [LeetCode 的 Go 解答](https://github.com/aQuaYi/LeetCode-in-Go#leetcode-的-go-解答)
