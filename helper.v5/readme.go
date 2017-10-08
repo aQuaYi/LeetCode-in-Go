@@ -22,7 +22,6 @@ func makeREADME(lc *leetcode) {
 
 	// 更新 README.md 的内容
 	template := `%s
-
 ## 进度
 %s
 > 统计规则：1.免费，2.属于算法类，3.能用 Go 语言解答 
@@ -30,7 +29,6 @@ func makeREADME(lc *leetcode) {
 %s
 以下题目，暂时不能使用 Golang 解答
 %s
-
 %s
 `
 
@@ -58,5 +56,6 @@ func getHead(lc *leetcode) string {
 	return fmt.Sprintf(headFormat,
 		lc.Username, lc.Username,
 		lc.Progress, lc.Username,
-		lc.Ranking, lc.Username)
+		lc.Ranking, lc.Username,
+	)
 }
