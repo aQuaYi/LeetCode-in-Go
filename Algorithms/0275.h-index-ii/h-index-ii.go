@@ -1,6 +1,10 @@
 package Problem0275
 
 func hIndex(citations []int) int {
-
-	return 3
+	size := len(citations)
+	h := 0
+	for h < size && citations[size-h-1] > h {
+		h++
+	}
+	return h
 }
