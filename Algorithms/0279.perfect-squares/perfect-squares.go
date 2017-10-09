@@ -12,7 +12,6 @@ func numSquares(n int) int {
 
 	// dp[i] 表示 the least number of perfect square numbers which sum to i
 	dp := make([]int, n+1)
-
 	for i := 1; i < len(dp); i++ {
 		dp[i] = math.MaxInt32
 	}
