@@ -9,12 +9,17 @@ import (
 
 // tcs is testcase slice
 var tcs = []struct {
-	n int
-	ans  int 
+	n   int
+	ans int
 }{
 
 	{
-	12	,
+		13,
+		2,
+	},
+
+	{
+		12,
 		3,
 	},
 
@@ -23,7 +28,7 @@ var tcs = []struct {
 
 func Test_numSquares(t *testing.T) {
 	ast := assert.New(t)
-	
+
 	for _, tc := range tcs {
 		fmt.Printf("~~%v~~\n", tc)
 		ast.Equal(tc.ans, numSquares(tc.n), "输入:%v", tc)
