@@ -1,7 +1,7 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 答题进度](https://img.shields.io/badge/Progress-46%25-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 答题进度](https://img.shields.io/badge/Progress-47%25-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 排名](https://img.shields.io/badge/Ranking-21390-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
@@ -10,7 +10,7 @@
 
 |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|
-|63 / 148|120 / 245|47 / 98|230 / 491|
+|63 / 148|121 / 245|47 / 98|231 / 491|
 > 统计规则：1.免费题，2.算法题，3.能用 Go 解答
 
 ## 题解
@@ -219,6 +219,7 @@
 |268|[Missing Number](./Algorithms/0268.missing-number)|44%|:smile:| |
 |274|[H-Index](./Algorithms/0274.h-index)|33%|:sweat_smile:| |
 |275|[H-Index II](./Algorithms/0275.h-index-ii)|34%|:sweat_smile:|:heart:|
+|279|[Perfect Squares](./Algorithms/0279.perfect-squares)|37%|:sweat_smile:|:heart:|
 |283|[Move Zeroes](./Algorithms/0283.move-zeroes)|50%|:smile:| |
 |287|[Find the Duplicate Number](./Algorithms/0287.find-the-duplicate-number)|43%|:sweat_smile:|:heart:|
 |289|[Game of Life](./Algorithms/0289.game-of-life)|37%|:sweat_smile:|:heart:|
@@ -247,7 +248,7 @@
 |661|[Image Smoother](./Algorithms/0661.image-smoother)|45%|:smile:| |
 |667|[Beautiful Arrangement II](./Algorithms/0667.beautiful-arrangement-ii)|51%|:sweat_smile:| |
 
-以下题目，暂时不能使用 Go 解答
+以下免费的算法题，暂时不能使用 Go 解答
 
 - [116.Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)
 - [117.Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)
@@ -265,7 +266,7 @@
 
 ## helper
 
-[helper](./helper.v4) 会帮助处理大部分琐碎的工作。
+[helper](./helper.v5) 会帮助处理大部分琐碎的工作。
 
 ## notes
 
