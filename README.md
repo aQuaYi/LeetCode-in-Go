@@ -10,7 +10,7 @@
 
 |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|
-|62 / 148|118 / 245|47 / 98|227 / 491|
+|63 / 148|118 / 245|47 / 98|228 / 491|
 > 统计规则：1.免费题，2.算法题，3.能用 Go 解答的题
 
 ## 题解
@@ -185,6 +185,7 @@
 |201|[Bitwise AND of Numbers Range](./Algorithms/0201.bitwise-and-of-numbers-range)|☆ ☆|34%|❤|
 |202|[Happy Number](./Algorithms/0202.happy-number)|☆|40%| |
 |203|[Remove Linked List Elements](./Algorithms/0203.remove-linked-list-elements)|☆|32%| |
+|204|[Count Primes](./Algorithms/0204.count-primes)|☆|26%|❤|
 |206|[Reverse Linked List](./Algorithms/0206.reverse-linked-list)|☆|45%| |
 |207|[Course Schedule](./Algorithms/0207.course-schedule)|☆ ☆|32%|❤|
 |208|[Implement Trie (Prefix Tree)](./Algorithms/0208.implement-trie-prefix-tree)|☆ ☆|28%|❤|
