@@ -2,17 +2,22 @@ package Problem0274
 
 import "sort"
 
-func hIndex(citations []int) int {
+func hIndex(d []int) int {
 	// 对 citations 进行降序排列
-	sort.Sort(sort.Reverse(sort.IntSlice(citations)))
+	sort.Sort(sort.Reverse(sort.IntSlice(d)))
+	size := len(d)
 
-	size := len(citations)
-	h := 0
-	// h 的含义是
-	// 前 h 个的 citation 都 > h
-	for h < size && citations[h] > h {
-		h++
+	// 二分查找法
+	lo, hi := 0, size-1
+	var mi int
+	for lo <= hi {
+		mi = (lo + hi) / 2
+		if d[mi] > mi {
+			lo = mi + 1
+		} else {
+			hi = mi - 1
+		}
 	}
 
-	return h
+	return lo
 }
