@@ -10,7 +10,7 @@
 
 |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|
-|63 / 148|118 / 245|47 / 98|228 / 491|
+|63 / 148|119 / 245|47 / 98|229 / 491|
 > 统计规则：1.免费题，2.算法题，3.能用 Go 解答的题
 
 ## 题解
@@ -217,6 +217,7 @@
 |263|[Ugly Number](./Algorithms/0263.ugly-number)|☆|39%| |
 |264|[Ugly Number II](./Algorithms/0264.ugly-number-ii)|☆ ☆|32%|❤|
 |268|[Missing Number](./Algorithms/0268.missing-number)|☆|44%| |
+|274|[H-Index](./Algorithms/0274.h-index)|☆ ☆|33%| |
 |283|[Move Zeroes](./Algorithms/0283.move-zeroes)|☆|50%| |
 |287|[Find the Duplicate Number](./Algorithms/0287.find-the-duplicate-number)|☆ ☆|43%|❤|
 |289|[Game of Life](./Algorithms/0289.game-of-life)|☆ ☆|37%|❤|
