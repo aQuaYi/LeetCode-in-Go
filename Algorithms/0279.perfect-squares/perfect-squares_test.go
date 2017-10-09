@@ -2,6 +2,7 @@ package Problem0279
 
 import (
 	"fmt"
+	"math"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -54,6 +55,24 @@ func Benchmark_numSquares(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		for _, tc := range tcs {
 			numSquares(tc.n)
+		}
+	}
+}
+
+var max = 10000000
+
+func Benchmark_math_sqrt(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		for j := 10; j <= max; j++ {
+			_ = int(math.Sqrt(float64(j)))
+		}
+	}
+}
+
+func Benchmark_intSqrt(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		for j := 10; j <= max; j *= 10 {
+			_ = intSqrt(j)
 		}
 	}
 }
