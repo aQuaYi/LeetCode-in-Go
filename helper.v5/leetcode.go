@@ -166,7 +166,7 @@ func (ps problems) unavailable() problems {
 
 func (ps problems) table() string {
 	sort.Sort(ps)
-	res := "|题号|题目|难度|总体通过率|收藏|\n"
+	res := "|题号|题目|通过率|难度|收藏|\n"
 	res += "|:-:|:-|:-: | :-: | :-: |\n"
 	for _, p := range ps {
 		res += p.tableLine()
@@ -199,8 +199,8 @@ func (p problem) link() string {
 func (p problem) tableLine() string {
 	res := fmt.Sprintf("|%d|", p.ID)
 	res += fmt.Sprintf(`[%s](%s)|`, p.Title, p.Dir)
-	res += fmt.Sprintf("%s|", degrees[p.Difficulty])
 	res += fmt.Sprintf("%s|", p.PassRate)
+	res += fmt.Sprintf("%s|", degrees[p.Difficulty])
 	f := " "
 	if p.IsFavor {
 		f = ":heart:" // ❤
