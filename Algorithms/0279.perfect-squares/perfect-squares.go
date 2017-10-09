@@ -1,22 +1,25 @@
 package Problem0279
 
 func numSquares(n int) int {
-	perfects := make([]int, intSqrt(n)+1)
-	for i := 1; i*i <= n; i++ {
-		perfects[i] = i * i
+	perfects := make([]int, intSqrt(n))
+	for i := 0; (i+1)*(i+1) <= n; i++ {
+		perfects[i] = (i + 1) * (i + 1)
 	}
 
 	// dp[i] 表示 the least number of perfect square numbers which sum to i
 	var dp = make([]int, n+1)
-	max := 1<<63 - 2 // 1<<63 -1 的话，后面会溢出
+	maxInt := 1<<63 - 1
+
 	dp[1] = 1
 	for i := 2; i < len(dp); i++ {
-		dp[i] = max
+		dp[i] = maxInt
 	}
 
 	for _, p := range perfects {
 		for i := p; i < len(dp); i++ {
-			if dp[i] > dp[i-p]+1 {
+			if dp[i]-1 > dp[i-p] {
+				// 因为 i = ( i - p ) + p，p 是 平方数
+				// 所以 dp[i] = dp[i-p] + 1
 				dp[i] = dp[i-p] + 1
 			}
 		}
