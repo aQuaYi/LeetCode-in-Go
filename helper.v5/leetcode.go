@@ -203,16 +203,16 @@ func (p problem) tableLine() string {
 	res += fmt.Sprintf("%s|", p.PassRate)
 	f := " "
 	if p.IsFavor {
-		f = ":heart_decoration:" // ❤
+		f = ":heart:" // ❤
 	}
 	res += fmt.Sprintf("%s|\n", f)
 	return res
 }
 
 var degrees = map[int]string{
-	1: `☆`,
-	2: `☆ ☆`,
-	3: `☆ ☆ ☆`,
+	1: ":smile:",
+	2: ":sweat:",
+	3: ":joy:",
 }
 
 func (p problem) listLine() string {
