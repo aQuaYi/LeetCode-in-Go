@@ -13,6 +13,9 @@ func countPrimes(n int) int {
 			if num%p == 0 {
 				return false
 			}
+			if p*p > num {
+				break
+			}
 		}
 		return true
 	}
