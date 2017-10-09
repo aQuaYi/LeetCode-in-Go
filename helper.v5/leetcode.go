@@ -203,7 +203,7 @@ func (p problem) tableLine() string {
 	res += fmt.Sprintf("%s|", p.PassRate)
 	f := " "
 	if p.IsFavor {
-		f = "❤"
+		f = ":heart_decoration:" // ❤
 	}
 	res += fmt.Sprintf("%s|\n", f)
 	return res
