@@ -27,7 +27,7 @@ func makeREADME(lc *leetcode) {
 ## 题解
 
 %s
-以下题目，暂时不能使用 Go 解答
+以下免费的算法题，暂时不能使用 Go 解答
 
 %s
 #%s
