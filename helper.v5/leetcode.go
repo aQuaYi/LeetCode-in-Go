@@ -211,7 +211,7 @@ func (p problem) tableLine() string {
 
 var degrees = map[int]string{
 	1: ":smile:",
-	2: ":sweat:",
+	2: ":sweat_smile:",
 	3: ":joy:",
 }
 
