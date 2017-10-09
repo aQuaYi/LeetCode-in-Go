@@ -1,31 +1,25 @@
 package Problem0275
 
-// citations 为升序排列
-func hIndex(nums []int) int {
-	size := len(nums)
+// a 为升序排列
+func hIndex(a []int) int {
+	size := len(a)
 
-	if size == 1 {
-		return min(1, nums[0])
-	}
-
+	// 二分查找法
 	lo, hi := 0, size-1
-	var mid, midAO int // mid + midAO +1 == size
+	// lo, miD, hi 都是降序切片 d 中的序列号
+	// 因为 a 是 d 的逆序，即 a 是升序切片
+	// d[miD] , a[miA] 是同一个数
+	// 所以，存在数量关系，miD + miA +1 == size
+	var miD, miA int
 	for lo <= hi {
-		mid = (lo + hi) / 2
-		midAO = size - mid - 1
-		if nums[midAO] > mid {
-			lo = mid + 1
+		miD = (lo + hi) / 2
+		miA = size - miD - 1
+		if a[miA] > miD {
+			lo = miD + 1
 		} else {
-			hi = mid - 1
+			hi = miD - 1
 		}
 	}
 
-	return size - lo
-}
-
-func min(a, b int) int {
-	if a < b {
-		return a
-	}
-	return b
+	return lo
 }
