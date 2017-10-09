@@ -6,18 +6,19 @@ func numSquares(n int) int {
 	}
 
 	max := intSqrt(n)
-	min := n
+	min := intSqrt(max) + 1
+	res := n
 	var i2, temp int
 
-	for i := 2; i <= max; i++ {
+	for i := min; i <= max; i++ {
 		i2 = i * i
 		temp = n/i2 + numSquares(n%i2)
-		if min > temp {
-			min = temp
+		if res > temp {
+			res = temp
 		}
 	}
 
-	return min
+	return res
 }
 
 // 返回 x 的平方根的整数部分
