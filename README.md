@@ -1,8 +1,8 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 答题进度](https://img.shields.io/badge/Progress-47%25-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 排名](https://img.shields.io/badge/Ranking-20649-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 答题进度](https://img.shields.io/badge/Progress-48%25-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/Ranking-19907-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 
@@ -10,7 +10,7 @@
 
 |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|
-|64 / 148|123 / 244|48 / 98|235 / 490|
+|64 / 143|123 / 240|48 / 97|235 / 480|
 > 统计规则：1.免费题，2.算法题，3.能用 Go 解答
 
 ## 题解
@@ -266,8 +266,18 @@
 - [190.Reverse Bits](https://leetcode.com/problems/reverse-bits/)
 - [191.Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)
 - [222.Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/)
+- [235.Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)
 - [236.Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)
+- [237.Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)
+- [278.First Bad Version](https://leetcode.com/problems/first-bad-version/)
 - [284.Peeking Iterator](https://leetcode.com/problems/peeking-iterator/)
+- [297.Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)
+- [341.Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/)
+- [374.Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/)
+- [386.Lexicographical Numbers](https://leetcode.com/problems/lexicographical-numbers/)
+- [449.Serialize and Deserialize BST](https://leetcode.com/problems/serialize-and-deserialize-bst/)
+- [535.Encode and Decode TinyURL](https://leetcode.com/problems/encode-and-decode-tinyurl/)
+- [690.Employee Importance](https://leetcode.com/problems/employee-importance/)
 
 ## helper
 
