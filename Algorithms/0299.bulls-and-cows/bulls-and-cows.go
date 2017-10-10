@@ -1,39 +1,30 @@
 package Problem0299
 
-import "fmt"
+import "strconv"
 
 func getHint(secret string, guess string) string {
-	var A, B int
-	s := []byte(secret)
-	g := []byte(guess)
+	var bulls, cows int
+	var counts [10]int
 
-	// 寻找 bulls
-	for i := range s {
-		if g[i] == s[i] {
-			A++
-			g[i] = 'x'
-			s[i] = 'x'
+	size := len(secret)
+	for i := 0; i < size; i++ {
+		ns := int(secret[i] - '0')
+		ng := int(guess[i] - '0')
+
+		if ns == ng {
+			bulls++
+		} else {
+			if counts[ns] < 0 {
+				cows++
+			}
+			counts[ns]++
+
+			if counts[ng] > 0 {
+				cows++
+			}
+			counts[ng]--
 		}
 	}
 
-	// 寻找 cows
-	for i := range s {
-		if s[i] == 'x' {
-			continue
-		}
-
-		for j := range g {
-			if g[j] == 'x' {
-				continue
-			}
-
-			if s[i] == g[j] {
-				B++
-				g[j] = 'x'
-				break
-			}
-		}
-	}
-
-	return fmt.Sprintf("%dA%dB", A, B)
+	return strconv.Itoa(bulls) + "A" + strconv.Itoa(cows) + "B"
 }
