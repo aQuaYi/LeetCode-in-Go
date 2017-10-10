@@ -186,7 +186,7 @@
 |202|[Happy Number](./Algorithms/0202.happy-number)|40%|:smile:| |
 |203|[Remove Linked List Elements](./Algorithms/0203.remove-linked-list-elements)|32%|:smile:| |
 |204|[Count Primes](./Algorithms/0204.count-primes)|26%|:smile:|:heart:|
-|205|[Isomorphic Strings](./Algorithms/0205.isomorphic-strings)|34%|:smile:| |
+|205|[Isomorphic Strings](./Algorithms/0205.isomorphic-strings)|34%|:smile:|:heart:|
 |206|[Reverse Linked List](./Algorithms/0206.reverse-linked-list)|45%|:smile:| |
 |207|[Course Schedule](./Algorithms/0207.course-schedule)|32%|:sweat_smile:|:heart:|
 |208|[Implement Trie (Prefix Tree)](./Algorithms/0208.implement-trie-prefix-tree)|28%|:sweat_smile:|:heart:|
