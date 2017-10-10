@@ -10,7 +10,7 @@
 
 |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|
-|63 / 148|122 / 244|48 / 98|233 / 490|
+|63 / 148|123 / 244|48 / 98|234 / 490|
 > 统计规则：1.免费题，2.算法题，3.能用 Go 解答
 
 ## 题解
@@ -225,6 +225,7 @@
 |287|[Find the Duplicate Number](./Algorithms/0287.find-the-duplicate-number)|43%|:sweat_smile:|:heart:|
 |289|[Game of Life](./Algorithms/0289.game-of-life)|37%|:sweat_smile:|:heart:|
 |299|[Bulls and Cows](./Algorithms/0299.bulls-and-cows)|35%|:sweat_smile:| |
+|300|[Longest Increasing Subsequence](./Algorithms/0300.longest-increasing-subsequence)|38%|:sweat_smile:|:heart:|
 |313|[Super Ugly Number](./Algorithms/0313.super-ugly-number)|37%|:sweat_smile:|:heart:|
 |337|[House Robber III](./Algorithms/0337.house-robber-iii)|43%|:sweat_smile:|:heart:|
 |380|[Insert Delete GetRandom O(1)](./Algorithms/0380.insert-delete-getrandom-o1)|39%|:sweat_smile:|:heart:|
