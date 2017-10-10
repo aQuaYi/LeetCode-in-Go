@@ -10,7 +10,7 @@
 
 |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|
-|63 / 148|121 / 245|48 / 98|232 / 491|
+|63 / 148|121 / 244|48 / 98|232 / 490|
 > 统计规则：1.免费题，2.算法题，3.能用 Go 解答
 
 ## 题解
@@ -264,6 +264,7 @@
 - [191.Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)
 - [222.Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/)
 - [236.Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)
+- [284.Peeking Iterator](https://leetcode.com/problems/peeking-iterator/)
 
 ## helper
 
