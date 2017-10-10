@@ -1,40 +1,22 @@
 package Problem0300
 
+import "sort"
+
 func lengthOfLIS(nums []int) int {
 	tails := make([]int, 0, len(nums))
 
 	for _, n := range nums {
-		at := search(tails, n)
+		at := sort.SearchInts(tails, n)
 		if at == len(tails) {
+			// n 比 tails 中所有的数都大
+			// 把 n 放入 tails 的尾部
 			tails = append(tails, n)
 		} else if tails[at] > n {
+			// tails[at-1] < n < tails[at]
+			// tails[at] = n, 不会改变 tail 的递增性，却增加了加入更多数的可能性
 			tails[at] = n
 		}
 	}
 
 	return len(tails)
-}
-
-func search(nums []int, n int) int {
-	if len(nums) == 0 || n < nums[0] {
-		return 0
-	}
-
-	if nums[len(nums)-1] < n {
-		return len(nums)
-	}
-
-	lo, hi := 0, len(nums)-1
-
-	for lo <= hi {
-		mid := (lo + hi) / 2
-		if nums[mid] == n {
-			return mid
-		} else if n < nums[mid] {
-			hi = mid - 1
-		} else {
-			lo = mid + 1
-		}
-	}
-	return lo
 }
