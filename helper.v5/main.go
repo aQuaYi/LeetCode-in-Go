@@ -17,7 +17,7 @@ const (
 	1. helper readme : 重新生成项目的 README.md 文件
 	2. helper n      : 生成第 n 题的答题文件夹
 	3. helper check  : 检查出不能用 Go 解答的题目，并保存题号到 unavailable.json
-	4. helper -v     : 查看 helper 的版本`
+	4. helper v      : 查看 helper 的版本`
 )
 
 // cfg 用于保存 LeetCode.com 的用户名和密码
@@ -34,9 +34,9 @@ func main() {
 	signin()
 
 	switch os.Args[1] {
-	case "-v", "-version":
+	case "v", "version":
 		fmt.Printf("helper version %s\n", VERSION)
-	case "-h", "-help":
+	case "h", "help":
 		fmt.Println(USAGE)
 	case "check":
 		checkAvailable()
