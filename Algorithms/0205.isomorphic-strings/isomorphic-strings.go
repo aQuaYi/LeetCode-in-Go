@@ -1,29 +1,23 @@
 package Problem0205
 
-import (
-	"sort"
-)
-
 func isIsomorphic(s1, s2 string) bool {
-	ints1 := makeInts(s1)
-	ints2 := makeInts(s2)
-	for i := 255; i >= 0; i-- {
-		if ints1[i] == 0 && ints2[i] == 0 {
-			break
-		}
-		if ints1[i] != ints2[i] {
+	t := make(map[byte]byte, 256)
+
+	for i := range s1 {
+
+		if s1[i] == s2[i] {
 			return false
 		}
+
+		b2, ok := t[s1[i]]
+		if ok {
+			if b2 != s2[i] {
+				return false
+			}
+		} else {
+			t[s1[i]] = s2[i]
+		}
 	}
+
 	return true
-}
-
-func makeInts(s string) []int {
-	ints := make([]int, 256)
-
-	for i := 0; i < len(s); i++ {
-		ints[int(s[i])]++
-	}
-	sort.Ints(ints)
-	return ints
 }
