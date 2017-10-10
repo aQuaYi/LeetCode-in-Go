@@ -1,32 +1,32 @@
 package Problem0282
 
-func addOperators(num string, target int) []string {
+import (
+	"fmt"
+)
+
+func addOperators(s string, target int) []string {
 	res := []string{}
 
-	ss := make([]string, 0, len(num)*2)
+	ss := make([]string, 0, len(s)*2)
 
 	var dfs func(int, []string)
 
 	split := func(begin, end int, strs []string) {
 		for i := begin + 1; i <= end; i++ {
-			dfs(i, append(strs, num[begin:i], "+"))
-			dfs(i, append(strs, num[begin:i], "-"))
-			dfs(i, append(strs, num[begin:i], "*"))
+			dfs(i, append(strs, s[begin:i], "+"))
+			dfs(i, append(strs, s[begin:i], "-"))
+			dfs(i, append(strs, s[begin:i], "*"))
 		}
 	}
 
-	dfs = func(idx int, strs []string) {
-		if idx == len(num) && compute(strs) == target {
+	dfs = func(strs []string) {
+		if len(s) == 0 && compute(strs) == target {
 			res = append(res, connect(strs))
 		}
-		if num[idx] == '0' {
-			split(idx, idx+1, strs)
-		} else {
-			split(idx, len(num), strs)
-		}
+
 	}
 
-	dfs(0, ss)
+	dfs(s, ss)
 
 	return res
 }
@@ -40,8 +40,8 @@ func compute(ss []string) int {
 	n1, opt1, n2 = 0, "+", integer(ss[0])
 
 	for i := 1; i < len(ss); i += 2 {
-		opt2, n3 = ss[i], 1
-		integer(ss[i+1])
+		fmt.Println(ss)
+		opt2, n3 = ss[i], integer(ss[i+1])
 		if opt2 == "*" {
 			n2 = operate(n2, n3, opt2)
 		} else {
@@ -50,6 +50,7 @@ func compute(ss []string) int {
 			n2 = n3
 		}
 	}
+
 	return operate(n1, n2, opt1)
 }
 
