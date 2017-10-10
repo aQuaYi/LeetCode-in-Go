@@ -91,17 +91,17 @@ func getRanking(username string) int {
 	j = strings.Index(str, ")")
 	str = str[i:j]
 
-	fmt.Println("2\n", str)
+	//	fmt.Println("2\n", str)
 
 	strs := strings.Split(str, ",")
 	str = strs[6]
 
-	fmt.Println("1\n", str)
+	//	fmt.Println("1\n", str)
 
 	i = strings.Index(str, "'")
 	j = 2 + strings.Index(str[2:], "'")
 
-	fmt.Println("0\n", str)
+	//	fmt.Println("0\n", str)
 
 	str = str[i+1 : j]
 
