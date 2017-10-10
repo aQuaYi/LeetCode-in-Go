@@ -2,7 +2,7 @@
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 答题进度](https://img.shields.io/badge/Progress-47%25-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 排名](https://img.shields.io/badge/Ranking-21390-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/Ranking-20649-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 
@@ -10,7 +10,7 @@
 
 |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|
-|63 / 148|121 / 245|47 / 98|231 / 491|
+|63 / 148|121 / 245|48 / 98|232 / 491|
 > 统计规则：1.免费题，2.算法题，3.能用 Go 解答
 
 ## 题解
@@ -220,13 +220,14 @@
 |274|[H-Index](./Algorithms/0274.h-index)|33%|:sweat_smile:| |
 |275|[H-Index II](./Algorithms/0275.h-index-ii)|34%|:sweat_smile:|:heart:|
 |279|[Perfect Squares](./Algorithms/0279.perfect-squares)|37%|:sweat_smile:|:heart:|
+|282|[Expression Add Operators](./Algorithms/0282.expression-add-operators)|30%|:joy:|:heart:|
 |283|[Move Zeroes](./Algorithms/0283.move-zeroes)|50%|:smile:| |
 |287|[Find the Duplicate Number](./Algorithms/0287.find-the-duplicate-number)|43%|:sweat_smile:|:heart:|
 |289|[Game of Life](./Algorithms/0289.game-of-life)|37%|:sweat_smile:|:heart:|
 |313|[Super Ugly Number](./Algorithms/0313.super-ugly-number)|37%|:sweat_smile:|:heart:|
 |337|[House Robber III](./Algorithms/0337.house-robber-iii)|43%|:sweat_smile:|:heart:|
 |380|[Insert Delete GetRandom O(1)](./Algorithms/0380.insert-delete-getrandom-o1)|39%|:sweat_smile:|:heart:|
-|381|[Insert Delete GetRandom O(1) - Duplicates allowed](./Algorithms/0381.insert-delete-getrandom-o1-duplicates-allowed)|29%|:joy:|:heart:|
+|381|[Insert Delete GetRandom O(1) - Duplicates allowed](./Algorithms/0381.insert-delete-getrandom-o1-duplicates-allowed)|28%|:joy:|:heart:|
 |414|[Third Maximum Number](./Algorithms/0414.third-maximum-number)|27%|:smile:| |
 |437|[Path Sum III](./Algorithms/0437.path-sum-iii)|39%|:smile:|:heart:|
 |442|[Find All Duplicates in an Array](./Algorithms/0442.find-all-duplicates-in-an-array)|56%|:sweat_smile:| |

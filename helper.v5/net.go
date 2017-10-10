@@ -80,6 +80,9 @@ func getRanking(username string) int {
 
 	data := getRaw(URL)
 	str := string(data)
+
+	// fmt.Println(str)
+
 	i := strings.Index(str, "ng-init")
 	j := i + strings.Index(str[i:], "ng-cloak")
 	str = str[i:j]
@@ -88,16 +91,23 @@ func getRanking(username string) int {
 	j = strings.Index(str, ")")
 	str = str[i:j]
 
+	fmt.Println("2\n", str)
+
 	strs := strings.Split(str, ",")
-	ans := strs[5]
-	i = strings.Index(ans, "'")
-	j = 2 + strings.Index(ans[2:], "'")
+	str = strs[6]
 
-	temp := ans[i+1 : j]
+	fmt.Println("1\n", str)
 
-	r, err := strconv.Atoi(temp)
+	i = strings.Index(str, "'")
+	j = 2 + strings.Index(str[2:], "'")
+
+	fmt.Println("0\n", str)
+
+	str = str[i+1 : j]
+
+	r, err := strconv.Atoi(str)
 	if err != nil {
-		log.Fatalf("无法把 %s 转换成数字Ranking", temp)
+		log.Fatalf("无法把 %s 转换成数字Ranking", str)
 	}
 
 	return r
