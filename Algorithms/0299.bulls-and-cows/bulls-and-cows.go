@@ -3,8 +3,10 @@ package Problem0299
 import "strconv"
 
 func getHint(secret string, guess string) string {
-	var bulls, cows int
-	var counts [10]int
+	var bull, cow int
+	// countS[n] > 0 表示 数字 n 在 secret 前面出现过，且没有被匹配为 bull
+	// countG[n] > 0 表示 数字 n 在 guess  前面出现过，且没有被匹配为 bull
+	var countS, countG [10]int
 
 	size := len(secret)
 	for i := 0; i < size; i++ {
@@ -12,19 +14,25 @@ func getHint(secret string, guess string) string {
 		ng := int(guess[i] - '0')
 
 		if ns == ng {
-			bulls++
+			bull++
 		} else {
-			if counts[ns] < 0 {
-				cows++
+			// 检查 ns 能否在 guess[:i] 中匹配为 cow
+			if countG[ns] > 0 {
+				cow++
+				countG[ns]--
+			} else {
+				countS[ns]++
 			}
-			counts[ns]++
 
-			if counts[ng] > 0 {
-				cows++
+			// 检查 ng 能否在 secret[:i] 中匹配为 cow
+			if countS[ng] > 0 {
+				cow++
+				countS[ng]--
+			} else {
+				countG[ng]++
 			}
-			counts[ng]--
 		}
 	}
 
-	return strconv.Itoa(bulls) + "A" + strconv.Itoa(cows) + "B"
+	return strconv.Itoa(bull) + "A" + strconv.Itoa(cow) + "B"
 }
