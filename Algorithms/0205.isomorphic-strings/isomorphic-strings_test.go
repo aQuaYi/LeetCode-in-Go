@@ -13,7 +13,8 @@ var tcs = []struct {
 	t   string
 	ans bool
 }{
-
+	{"aba", "baa", false},
+	{"ab", "aa", false},
 	{"egg", "add", true},
 	{"foo", "bar", false},
 	{"paper", "title", true},
