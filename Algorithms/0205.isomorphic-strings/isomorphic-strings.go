@@ -1,22 +1,20 @@
 package Problem0205
 
-func isIsomorphic(s1, s2 string) bool {
-	t := make(map[byte]byte, 256)
-	r := make(map[byte]bool, 256)
+func isIsomorphic(s string, t string) bool {
+	if len(s) != len(t) {
+		return false
+	}
 
-	for i := range s1 {
-		s2i, ok := t[s1[i]]
-		if ok {
-			if s2i != s2[i] {
-				return false
-			}
-		} else {
-			if r[s2[i]] {
-				return false
-			}
-			t[s1[i]] = s2[i]
-			r[s2[i]] = true
+	m1 := make([]int, 256)
+	m2 := make([]int, 256)
+
+	for i := 0; i < len(s); i++ {
+		if m1[int(s[i])] != m2[int(t[i])] {
+			return false
 		}
+
+		m1[int(s[i])] = i + 1
+		m2[int(t[i])] = i + 1
 	}
 
 	return true
