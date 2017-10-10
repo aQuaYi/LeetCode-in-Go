@@ -2,52 +2,81 @@ package Problem0282
 
 func addOperators(num string, target int) []string {
 	res := []string{}
-	if len(num) == 0 {
-		return res
-	}
 
-	if len(num) == 1 && i(num) == target {
-		res = append(res, num)
-		return res
-	}
+	ss := make([]string, 0, len(num)*2)
 
-	if len(num) == 2 {
-		a, b := i(num[0:1]), i(num[1:])
-		if a+b == target {
-			res = append(res, num[0:1]+"+"+num[1:])
-		}
+	var dfs func(int, []string)
 
-		if a-b == target {
-			res = append(res, num[0:1]+"-"+num[1:])
-		}
-
-		if a*b == target {
-			res = append(res, num[0:1]+"*"+num[1:])
+	split := func(begin, end int, strs []string) {
+		for i := begin + 1; i <= end; i++ {
+			dfs(i, append(strs, num[begin:i], "+"))
+			dfs(i, append(strs, num[begin:i], "-"))
+			dfs(i, append(strs, num[begin:i], "*"))
 		}
 	}
 
-	if num[0] == '0' {
-
+	dfs = func(idx int, strs []string) {
+		if idx == len(num) && compute(strs) == target {
+			res = append(res, connect(strs))
+		}
+		if num[idx] == '0' {
+			split(idx, idx+1, strs)
+		} else {
+			split(idx, len(num), strs)
+		}
 	}
-	
-	return
+
+	dfs(0, ss)
+
+	return res
+}
+
+func compute(ss []string) int {
+	var n1, n2, n3 int
+	var opt1, opt2 string
+	// n1 opt1 n2 opt2 n3
+	// ↓   ↓   ↓   ↓   ↓
+	// 1   +   2   *   3
+	n1, opt1, n2 = 0, "+", integer(ss[0])
+
+	for i := 1; i < len(ss); i += 2 {
+		opt2, n3 = ss[i], 1
+		integer(ss[i+1])
+		if opt2 == "*" {
+			n2 = operate(n2, n3, opt2)
+		} else {
+			n1 = operate(n1, n2, opt1)
+			opt1 = opt2
+			n2 = n3
+		}
+	}
+	return operate(n1, n2, opt1)
+}
+
+func connect(ss []string) string {
+	res := ss[0]
+	for i := 1; i < len(ss); i++ {
+		res += ss[i]
+	}
+	return res
 }
 
 // 把 string 转换成 int
-func i(s string) int {
-	bs := []byte(s)
-	res := int(bs[0] - '0')
-	for i := 1; i < len(bs); i++ {
-		res = res*10 + int(bs[i]-'0')
+func integer(s string) int {
+	res := int(s[0] - '0')
+	for i := 1; i < len(s); i++ {
+		res = res*10 + int(s[i]-'0')
 	}
 	return res
 }
 
-// 给 ss 中的每个字符串加上 prefix 作为前缀
-func add(prefix string, ss []string) []string {
-	res := make([]string, len(ss))
-	for i, s := range ss {
-		res[i] = prefix + s
+func operate(a, b int, opt string) int {
+	switch opt[0] {
+	case '+':
+		return a + b
+	case '-':
+		return a - b
+	default:
+		return a * b
 	}
-	return res
 }
