@@ -2,6 +2,7 @@ package Problem0282
 
 import (
 	"fmt"
+	"sort"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -15,15 +16,21 @@ var tcs = []struct {
 }{
 
 	{
-		"011",
-		0,
-		[]string{"0*1*1", "0*11", "0+1-1", "0-1+1"},
+		"1210",
+		120,
+		[]string{"12*10"},
 	},
 
 	{
 		"100100",
 		10000,
 		[]string{"100*100"},
+	},
+
+	{
+		"011",
+		0,
+		[]string{"0*1*1", "0*11", "0+1-1", "0-1+1"},
 	},
 
 	{
@@ -94,7 +101,10 @@ func Test_addOperators(t *testing.T) {
 
 	for _, tc := range tcs {
 		fmt.Printf("~~%v~~\n", tc)
-		ast.Equal(tc.ans, addOperators(tc.num, tc.target), "输入:%v", tc)
+		sort.Strings(tc.ans)
+		ans := addOperators(tc.num, tc.target)
+		sort.Strings(ans)
+		ast.Equal(tc.ans, ans, "输入:%v", tc)
 	}
 }
 

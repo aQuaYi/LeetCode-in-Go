@@ -7,26 +7,40 @@ import (
 func addOperators(s string, target int) []string {
 	res := []string{}
 
-	ss := make([]string, 0, len(s)*2)
+	var dfs func(string, string, int, int)
 
-	var dfs func(int, []string)
+	dfs = func(s, resStr string, currRes, prevNum int) {
+		var currStr, nextS string
+		var currNum int
+		if len(s) == 0 {
+			if currRes == target {
+				res = append(res, resStr)
+			}
+			return
+		}
 
-	split := func(begin, end int, strs []string) {
-		for i := begin + 1; i <= end; i++ {
-			dfs(i, append(strs, s[begin:i], "+"))
-			dfs(i, append(strs, s[begin:i], "-"))
-			dfs(i, append(strs, s[begin:i], "*"))
+		for i := 1; i <= len(s); i++ {
+			currStr = s[:i]
+			if currStr[0] == '0' && len(currStr) > 1 {
+				// 不是 continue
+				return
+			}
+
+			currNum = integer(currStr)
+			nextS = s[i:]
+
+			if len(resStr) == 0 {
+				dfs(nextS, currStr, currNum, currNum)
+				continue
+			}
+
+			dfs(nextS, resStr+"+"+currStr, currRes+currNum, currNum)
+			dfs(nextS, resStr+"-"+currStr, currRes-currNum, -currNum)
+			dfs(nextS, resStr+"*"+currStr, (currRes-prevNum)+prevNum*currNum, prevNum*currNum)
 		}
 	}
 
-	dfs = func(strs []string) {
-		if len(s) == 0 && compute(strs) == target {
-			res = append(res, connect(strs))
-		}
-
-	}
-
-	dfs(s, ss)
+	dfs(s, "", 0, 0)
 
 	return res
 }
