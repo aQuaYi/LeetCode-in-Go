@@ -1,50 +1,60 @@
 package Problem0273
 
+import (
+	"strings"
+)
+
 func numberToWords(num int) string {
 	if num == 0 {
 		return "Zero"
 	}
 
-	res := ""
-	i := -1
-	for num > 0 {
-		temp := lessK(num % 1000)
-		if i >= 0 {
-			temp += " " + en3[i]
-		}
+	res := make([]string, 0, 20)
+	i := 3
+	k := 1000
+	base := k * k * k
 
-		if len(res) == 0 {
-			res = temp
-		} else {
-			res = temp + " " + res
+	for i >= 0 {
+		if num/base > 0 {
+			res = append(res, lessK(num/base)...)
+			if i > 0 {
+				res = append(res, en3[i])
+			}
 		}
-
-		num /= 1000
-		i++
+		num %= base
+		base /= k
+		i--
 	}
 
-	return res
+	return strings.Join(res, " ")
 }
 
 // 处理小于 1000 的数字
-func lessK(num int) string {
-	res := ""
+func lessK(num int) []string {
+	res := make([]string, 0, 5)
+
 	if num/100 > 0 {
-		res += en[num/100] + " Hundred"
+		res = append(res, en[num/100], "Hundred")
 	}
 
 	num %= 100
 
 	if num <= 20 {
-		if len(res) > 0 {
-			return res + " " + en[num]
-		}
-		return en[num]
+		res = append(res, en[num])
+		return res
 	}
-	if len(res) > 0 {
-		return res + " " + en2[num/10] + " " + en[num%10]
+
+	if num/10 > 0 {
+		res = append(res, en2[num/10])
 	}
-	return en2[num/10] + " " + en[num%10]
+
+	num %= 10
+
+	if num > 0 {
+		res = append(res, en[num])
+	}
+
+	return res
 }
 
 var en = []string{
@@ -85,6 +95,7 @@ var en2 = []string{
 }
 
 var en3 = []string{
+	"",
 	"Thousand",
 	"Million",
 	"Billion",

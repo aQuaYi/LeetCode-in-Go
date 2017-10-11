@@ -12,6 +12,7 @@ var tcs = []struct {
 	num int
 	ans string
 }{
+	{100, "One Hundred"},
 	{30, "Thirty"},
 	{21, "Twenty One"},
 	{0, "Zero"},
@@ -29,6 +30,7 @@ var tcs = []struct {
 	{11111111, "Eleven Million One Hundred Eleven Thousand One Hundred Eleven"},
 	{111111111, "One Hundred Eleven Million One Hundred Eleven Thousand One Hundred Eleven"},
 	{1111111111, "One Billion One Hundred Eleven Million One Hundred Eleven Thousand One Hundred Eleven"},
+	{1000000000, "One Billion"},
 
 	// 可以有多个 testcase
 }
