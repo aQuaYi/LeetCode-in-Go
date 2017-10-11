@@ -35,9 +35,13 @@ func lessK(num int) []string {
 
 	if num/100 > 0 {
 		res = append(res, en[num/100], "Hundred")
+
 	}
 
 	num %= 100
+	if num == 0 {
+		return res
+	}
 
 	if num <= 20 {
 		res = append(res, en[num])
