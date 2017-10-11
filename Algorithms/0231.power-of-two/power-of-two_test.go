@@ -13,10 +13,10 @@ var tcs = []struct {
 	ans bool
 }{
 
-	{
-		1,
-		true,
-	},
+	{1, true},
+	{2, true},
+	{3, false},
+	{-1, false},
 
 	// 可以有多个 testcase
 }
