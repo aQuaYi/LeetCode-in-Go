@@ -41,8 +41,10 @@ func lessK(num int) string {
 		}
 		return en[num]
 	}
-
-	return res + " " + en2[num/10] + " " + en[num%10]
+	if len(res) > 0 {
+		return res + " " + en2[num/10] + " " + en[num%10]
+	}
+	return en2[num/10] + " " + en[num%10]
 }
 
 var en = []string{
