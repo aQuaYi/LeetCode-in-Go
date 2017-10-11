@@ -33,7 +33,7 @@
 |14|[Longest Common Prefix](./Algorithms/0014.longest-common-prefix)|31%|:smile:| |
 |15|[3Sum](./Algorithms/0015.3sum)|21%|:sweat_smile:| |
 |16|[3Sum Closest](./Algorithms/0016.3sum-closest)|31%|:sweat_smile:| |
-|17|[Letter Combinations of a Phone Number](./Algorithms/0017.letter-combinations-of-a-phone-number)|34%|:sweat_smile:| |
+|17|[Letter Combinations of a Phone Number](./Algorithms/0017.letter-combinations-of-a-phone-number)|35%|:sweat_smile:| |
 |18|[4Sum](./Algorithms/0018.4sum)|26%|:sweat_smile:| |
 |19|[Remove Nth Node From End of List](./Algorithms/0019.remove-nth-node-from-end-of-list)|33%|:sweat_smile:| |
 |20|[Valid Parentheses](./Algorithms/0020.valid-parentheses)|33%|:smile:| |
