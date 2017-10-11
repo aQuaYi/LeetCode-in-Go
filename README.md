@@ -10,7 +10,7 @@
 
 |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|
-|66 / 143|125 / 240|49 / 97|240 / 480|
+|68 / 143|125 / 240|49 / 97|242 / 480|
 > 统计规则：1.免费题，2.算法题，3.能用 Go 解答
 
 ## 题解
@@ -233,7 +233,9 @@
 |304|[Range Sum Query 2D - Immutable](./Algorithms/0304.range-sum-query-2d-immutable)|25%|:sweat_smile:| |
 |306|[Additive Number](./Algorithms/0306.additive-number)|27%|:sweat_smile:| |
 |313|[Super Ugly Number](./Algorithms/0313.super-ugly-number)|37%|:sweat_smile:|:heart:|
+|326|[Power of Three](./Algorithms/0326.power-of-three)|40%|:smile:|:heart:|
 |337|[House Robber III](./Algorithms/0337.house-robber-iii)|43%|:sweat_smile:|:heart:|
+|342|[Power of Four](./Algorithms/0342.power-of-four)|38%|:smile:| |
 |380|[Insert Delete GetRandom O(1)](./Algorithms/0380.insert-delete-getrandom-o1)|39%|:sweat_smile:|:heart:|
 |381|[Insert Delete GetRandom O(1) - Duplicates allowed](./Algorithms/0381.insert-delete-getrandom-o1-duplicates-allowed)|28%|:joy:|:heart:|
 |414|[Third Maximum Number](./Algorithms/0414.third-maximum-number)|27%|:smile:| |
