@@ -7,7 +7,13 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-var matrix = [][]int{}
+var matrix = [][]int{
+	[]int{3, 0, 1, 4, 2},
+	[]int{5, 6, 3, 2, 1},
+	[]int{1, 2, 0, 1, 5},
+	[]int{4, 1, 0, 1, 7},
+	[]int{1, 0, 3, 0, 5},
+}
 
 // tcs is testcase slice
 var tcs = []struct {
@@ -20,10 +26,20 @@ var tcs = []struct {
 		8,
 	},
 
+	{
+		1, 1, 2, 2,
+		11,
+	},
+
+	{
+		1, 2, 2, 4,
+		12,
+	},
+
 	// 可以有多个 testcase
 }
 
-func Test_Constructor(t *testing.T) {
+func Test_SumRegion(t *testing.T) {
 	ast := assert.New(t)
 
 	nm := Constructor(matrix)
@@ -34,7 +50,16 @@ func Test_Constructor(t *testing.T) {
 	}
 }
 
-func Benchmark_Constructor(b *testing.B) {
+func Test_Constructor(t *testing.T) {
+	ast := assert.New(t)
+
+	actual := Constructor([][]int{})
+	expected := [][]int{[]int{0}}
+
+	ast.Equal(expected, actual.dp)
+}
+
+func Benchmark_SumRegion(b *testing.B) {
 	nm := Constructor(matrix)
 
 	for i := 0; i < b.N; i++ {
