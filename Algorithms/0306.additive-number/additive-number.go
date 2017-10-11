@@ -32,13 +32,15 @@ func isAdditiveNumber(num string) bool {
 	}
 
 	max := len(num) * 2 / 3
-	for i := 1; i <= max-1; i++ {
-		for i < len(num) && num[i] == '0' {
-			i++
+	var i, j int
+
+	for i = 1; i <= max-1; i++ {
+		if len(num[:i]) > 1 && num[0] == '0' {
+			return false
 		}
-		for j := i + 1; j <= max; j++ {
-			for j < len(num) && num[j] == '0' {
-				j++
+		for j = i + 1; j <= max; j++ {
+			if len(num[i:j]) > 1 && num[i] == '0' {
+				break
 			}
 			n1, _ := strconv.Atoi(num[:i])
 			n2, _ := strconv.Atoi(num[i:j])
