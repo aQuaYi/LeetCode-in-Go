@@ -60,6 +60,7 @@ func numberToWords(num int) string {
 		if num%1000 != 0 {
 			res = lessK(num%1000) + thousand[i] + " " + res
 		}
+
 		num /= 1000
 		i++
 	}
@@ -78,9 +79,8 @@ func lessK(num int) string {
 	}
 
 	if num < 100 {
-		return ten[num/10] + " " + lessThan21[num%10] + " "
+		return ten[num/10] + " " + lessK(num%10)
 	}
 
 	return lessThan21[num/100] + " Hundred " + lessK(num%100)
-
 }
