@@ -15,6 +15,17 @@ var tcs = []struct {
 	{123, "One Hundred Twenty Three"},
 	{12345, "Twelve Thousand Three Hundred Forty Five"},
 	{1234567, "One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven"},
+	{101, "One Hundred One"},
+	{1, "One"},
+	{11, "Eleven"},
+	{111, "One Hundred Eleven"},
+	{1111, "One Thousand One Hundred Eleven"},
+	{11111, "Eleven Thousand One Hundred Eleven"},
+	{111111, "One Hundred Eleven Thousand One Hundred Eleven"},
+	{1111111, "One Million One Hundred Eleven Thousand One Hundred Eleven"},
+	{11111111, "Eleven Million One Hundred Eleven Thousand One Hundred Eleven"},
+	{111111111, "One Hundred Eleven Million One Hundred Eleven Thousand One Hundred Eleven"},
+	{1111111111, "One Billion One Hundred Eleven Million One Hundred Eleven Thousand One Hundred Eleven"},
 
 	// 可以有多个 testcase
 }
