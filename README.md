@@ -10,7 +10,7 @@
 
 |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|
-|64 / 143|123 / 240|49 / 97|236 / 480|
+|64 / 143|124 / 240|49 / 97|237 / 480|
 > 统计规则：1.免费题，2.算法题，3.能用 Go 解答
 
 ## 题解
@@ -228,6 +228,7 @@
 |289|[Game of Life](./Algorithms/0289.game-of-life)|37%|:sweat_smile:|:heart:|
 |299|[Bulls and Cows](./Algorithms/0299.bulls-and-cows)|35%|:sweat_smile:| |
 |300|[Longest Increasing Subsequence](./Algorithms/0300.longest-increasing-subsequence)|38%|:sweat_smile:|:heart:|
+|304|[Range Sum Query 2D - Immutable](./Algorithms/0304.range-sum-query-2d-immutable)|25%|:sweat_smile:| |
 |313|[Super Ugly Number](./Algorithms/0313.super-ugly-number)|37%|:sweat_smile:|:heart:|
 |337|[House Robber III](./Algorithms/0337.house-robber-iii)|43%|:sweat_smile:|:heart:|
 |380|[Insert Delete GetRandom O(1)](./Algorithms/0380.insert-delete-getrandom-o1)|39%|:sweat_smile:|:heart:|
