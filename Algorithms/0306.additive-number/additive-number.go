@@ -31,14 +31,24 @@ func isAdditiveNumber(num string) bool {
 		return dfs(n2, n3, num[len(s3):])
 	}
 
-	max := len(num) * 2 / 3
+	// n1 = num[:i]
+	// n2 = num[i:j]
+	// n3 = num[j:j+x], x = 1,2,3..
 	var i, j int
+	// Jmax 是 j 的最大值
+	// n1, n2 中较大数的 size 的最小值为 (j+1)/2
+	// n3 的 size 的最大值为 len(num)-j
+	// 当 (j+1)/2 <= len(num)-j 才有可能使得 n1+n2==n3 成立
+	// 可得 j <= (2* len(num)-1)/3 < len(num) * 2 / 3
+	// 考虑到 int 除法的特性
+	// Jmax = len(num) * 2 / 3
+	Jmax := len(num) * 2 / 3
 
-	for i = 1; i <= max-1; i++ {
+	for i = 1; i <= Jmax-1; i++ {
 		if len(num[:i]) > 1 && num[0] == '0' {
 			return false
 		}
-		for j = i + 1; j <= max; j++ {
+		for j = i + 1; j <= Jmax; j++ {
 			if len(num[i:j]) > 1 && num[i] == '0' {
 				break
 			}
