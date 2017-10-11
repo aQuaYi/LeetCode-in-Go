@@ -5,12 +5,6 @@ func numberToWords(num int) string {
 		return "Zero"
 	}
 
-	en3 := []string{
-		"thousand",
-		"million",
-		"billion",
-	}
-
 	res := ""
 	i := -1
 	for num > 0 {
@@ -25,6 +19,7 @@ func numberToWords(num int) string {
 			res = temp + " " + res
 		}
 
+		num /= 1000
 		i++
 	}
 
@@ -33,31 +28,6 @@ func numberToWords(num int) string {
 
 // 处理小于 1000 的数字
 func lessK(num int) string {
-
-	en := []string{
-		"",
-		"one",
-		"two",
-		"three",
-		"four",
-		"five",
-		"six",
-		"seven",
-		"eight",
-		"nine",
-		"ten",
-		"eleven",
-		"twelve",
-		"thirteen",
-		"fourteen",
-		"fifteen",
-		"sixteen",
-		"seventeen",
-		"eighteen",
-		"nineteen",
-		"twenty",
-	}
-
 	res := ""
 	if num/100 > 0 {
 		res += en[num/100] + " Hundred"
@@ -66,21 +36,54 @@ func lessK(num int) string {
 	num %= 100
 
 	if num <= 20 {
-		return res + " " + en[num]
-	}
-
-	en2 := []string{
-		"",
-		"",
-		"twenty",
-		"thirty",
-		"forty",
-		"fifty",
-		"sixty",
-		"seventy",
-		"eighty",
-		"ninety",
+		if len(res) > 0 {
+			return res + " " + en[num]
+		}
+		return en[num]
 	}
 
 	return res + " " + en2[num/10] + " " + en[num%10]
+}
+
+var en = []string{
+	"",
+	"One",
+	"Two",
+	"Three",
+	"Four",
+	"Five",
+	"Six",
+	"Seven",
+	"Eight",
+	"Nine",
+	"Ten",
+	"Eleven",
+	"Twelve",
+	"Thirteen",
+	"Fourteen",
+	"Fifteen",
+	"Sixteen",
+	"Seventeen",
+	"Eighteen",
+	"Nineteen",
+	"Twenty",
+}
+
+var en2 = []string{
+	"",
+	"",
+	"Twenty",
+	"Thirty",
+	"Forty",
+	"Fifty",
+	"Sixty",
+	"Seventy",
+	"Eighty",
+	"Ninety",
+}
+
+var en3 = []string{
+	"Thousand",
+	"Million",
+	"Billion",
 }
