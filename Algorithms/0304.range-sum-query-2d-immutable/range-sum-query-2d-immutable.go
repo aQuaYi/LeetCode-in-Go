@@ -21,14 +21,6 @@ func Constructor(matrix [][]int) NumMatrix {
 	}
 
 	for i := 1; i <= m; i++ {
-		dp[i][0] = dp[i-1][0] + matrix[i-1][0]
-	}
-
-	for j := 1; j <= n; j++ {
-		dp[0][j] = dp[0][j-1] + matrix[0][j-1]
-	}
-
-	for i := 1; i <= m; i++ {
 		for j := 1; j <= n; j++ {
 			dp[i][j] = matrix[i-1][j-1] + dp[i-1][j] + dp[i][j-1] - dp[i-1][j-1]
 		}
