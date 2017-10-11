@@ -5,12 +5,9 @@ func isPowerOfThree(n int) bool {
 		return false
 	}
 
-	for n > 1 {
-		if n%3 != 0 {
-			return false
-		}
+	for n%3 == 0 {
 		n /= 3
 	}
 
-	return true
+	return n == 1
 }
