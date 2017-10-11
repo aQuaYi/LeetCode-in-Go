@@ -7,6 +7,7 @@ type NumArray struct {
 
 // Constructor 返回 NumArray
 func Constructor(nums []int) NumArray {
+	// dp[i+1] == SumRange(0,i)
 	dp := make([]int, len(nums)+1)
 	for i := 0; i < len(nums); i++ {
 		dp[i+1] = dp[i] + nums[i]
