@@ -4,64 +4,7 @@ import (
 	"strings"
 )
 
-func numberToWords(num int) string {
-	if num == 0 {
-		return "Zero"
-	}
-
-	res := make([]string, 0, 20)
-	i := 3
-	k := 1000
-	base := k * k * k
-
-	for i >= 0 {
-		if num/base > 0 {
-			res = append(res, lessK(num/base)...)
-			if i > 0 {
-				res = append(res, en3[i])
-			}
-		}
-		num %= base
-		base /= k
-		i--
-	}
-
-	return strings.Join(res, " ")
-}
-
-// 处理小于 1000 的数字
-func lessK(num int) []string {
-	res := make([]string, 0, 5)
-
-	if num/100 > 0 {
-		res = append(res, en[num/100], "Hundred")
-
-	}
-
-	num %= 100
-	if num == 0 {
-		return res
-	}
-
-	if num <= 20 {
-		res = append(res, en[num])
-		return res
-	}
-
-	if num/10 > 0 {
-		res = append(res, en2[num/10])
-	}
-
-	num %= 10
-
-	if num > 0 {
-		res = append(res, en[num])
-	}
-
-	return res
-}
-
-var en = []string{
+var lessThan21 = []string{
 	"",
 	"One",
 	"Two",
@@ -85,7 +28,7 @@ var en = []string{
 	"Twenty",
 }
 
-var en2 = []string{
+var ten = []string{
 	"",
 	"",
 	"Twenty",
@@ -98,9 +41,46 @@ var en2 = []string{
 	"Ninety",
 }
 
-var en3 = []string{
+var thousand = []string{
 	"",
 	"Thousand",
 	"Million",
 	"Billion",
+}
+
+func numberToWords(num int) string {
+	if num == 0 {
+		return "Zero"
+	}
+
+	res := ""
+	i := 0
+
+	for num > 0 {
+		if num%1000 != 0 {
+			res = lessK(num%1000) + thousand[i] + " " + res
+		}
+		num /= 1000
+		i++
+	}
+
+	return strings.TrimRight(res, " ")
+}
+
+// 处理小于 1000 的数字
+func lessK(num int) string {
+	if num == 0 {
+		return ""
+	}
+
+	if num <= 20 {
+		return lessThan21[num] + " "
+	}
+
+	if num < 100 {
+		return ten[num/10] + " " + lessThan21[num%10] + " "
+	}
+
+	return lessThan21[num/100] + " Hundred " + lessK(num%100)
+
 }
