@@ -6,6 +6,7 @@ import (
 
 // MedianFinder 用于寻找 Median
 type MedianFinder struct {
+	// nums 按个数被平均分配到 left 和 right 中。left.Len() >= right.Len()
 	left  *maxHeap
 	right *minHeap
 }
@@ -53,6 +54,7 @@ func (mf *MedianFinder) FindMedian() float64 {
  * param_2 := obj.FindMedian();
  */
 
+// maxHeap.intHeap[0] == max(maxHeap.intHeap)
 type maxHeap struct {
 	intHeap
 }
@@ -61,19 +63,20 @@ func (h maxHeap) Less(i, j int) bool {
 	return h.intHeap[i] > h.intHeap[j]
 }
 
+// minHeap.intHeap[0] == min(minHeap.intHeap)
 type minHeap struct {
 	intHeap
 }
 
-func (h minHeap) Less(i, j int) bool {
-	return h.intHeap[i] < h.intHeap[j]
-}
-
-// myHeap 实现了 heap 的接口
+// intHeap 实现了 heap 的接口
 type intHeap []int
 
 func (h intHeap) Len() int {
 	return len(h)
+}
+
+func (h intHeap) Less(i, j int) bool {
+	return h[i] < h[j]
 }
 
 func (h intHeap) Swap(i, j int) {

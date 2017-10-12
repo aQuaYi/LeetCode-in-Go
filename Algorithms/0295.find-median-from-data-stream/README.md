@@ -31,3 +31,7 @@ Credits:Special thanks to @Louis1992 for adding this problem and creating all te
 ## 解题思路
 
 见程序注释
+
+感谢 LeetCode 服务器
+
+![100](295.100.png)
