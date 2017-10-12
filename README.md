@@ -10,7 +10,7 @@
 
 |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|
-|70 / 143|125 / 240|49 / 97|244 / 480|
+|70 / 143|125 / 241|50 / 97|245 / 481|
 > 统计规则：1.免费题，2.算法题，3.能用 Go 解答
 
 ## 题解
@@ -229,6 +229,7 @@
 |283|[Move Zeroes](./Algorithms/0283.move-zeroes)|50%|:smile:| |
 |287|[Find the Duplicate Number](./Algorithms/0287.find-the-duplicate-number)|43%|:sweat_smile:|:heart:|
 |289|[Game of Life](./Algorithms/0289.game-of-life)|37%|:sweat_smile:|:heart:|
+|295|[Find Median from Data Stream](./Algorithms/0295.find-median-from-data-stream)|27%|:joy:|:heart:|
 |299|[Bulls and Cows](./Algorithms/0299.bulls-and-cows)|35%|:sweat_smile:| |
 |300|[Longest Increasing Subsequence](./Algorithms/0300.longest-increasing-subsequence)|38%|:sweat_smile:|:heart:|
 |303|[Range Sum Query - Immutable](./Algorithms/0303.range-sum-query-immutable)|30%|:smile:| |
@@ -304,3 +305,4 @@
 1. [TreeNode](./kit/TreeNode.go)
 1. [Queue](./kit/Queue.go)
 1. [Stack](./kit/Stack.go)
+1. [Heap](./kit/Heap.go)
