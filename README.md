@@ -2,7 +2,7 @@
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 答题进度](https://img.shields.io/badge/Progress-50%25-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 排名](https://img.shields.io/badge/Ranking-19907-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/Ranking-18684-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 
@@ -10,7 +10,7 @@
 
 |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|
-|68 / 143|125 / 240|49 / 97|242 / 480|
+|70 / 143|125 / 240|49 / 97|244 / 480|
 > 统计规则：1.免费题，2.算法题，3.能用 Go 解答
 
 ## 题解
@@ -205,11 +205,13 @@
 |221|[Maximal Square](./Algorithms/0221.maximal-square)|29%|:sweat_smile:|:heart:|
 |223|[Rectangle Area](./Algorithms/0223.rectangle-area)|33%|:sweat_smile:| |
 |224|[Basic Calculator](./Algorithms/0224.basic-calculator)|27%|:joy:| |
+|225|[Implement Stack using Queues](./Algorithms/0225.implement-stack-using-queues)|33%|:smile:| |
 |227|[Basic Calculator II](./Algorithms/0227.basic-calculator-ii)|29%|:sweat_smile:| |
 |228|[Summary Ranges](./Algorithms/0228.summary-ranges)|30%|:sweat_smile:| |
 |229|[Majority Element II](./Algorithms/0229.majority-element-ii)|28%|:sweat_smile:|:heart:|
 |230|[Kth Smallest Element in a BST](./Algorithms/0230.kth-smallest-element-in-a-bst)|44%|:sweat_smile:| |
 |231|[Power of Two](./Algorithms/0231.power-of-two)|40%|:smile:| |
+|232|[Implement Queue using Stacks](./Algorithms/0232.implement-queue-using-stacks)|37%|:smile:| |
 |233|[Number of Digit One](./Algorithms/0233.number-of-digit-one)|28%|:joy:|:heart:|
 |238|[Product of Array Except Self](./Algorithms/0238.product-of-array-except-self)|49%|:sweat_smile:| |
 |239|[Sliding Window Maximum](./Algorithms/0239.sliding-window-maximum)|33%|:joy:|:heart:|
@@ -298,5 +300,7 @@
 
 针对 LeetCode 中经常出现的以下数据结构，在 [kit](./kit) 中进行了定义，并添加了与 []int 相互转换的函数。利用 Go 1.9 新添加的 [type alias](https://github.com/golang/proposal/blob/master/design/18130-type-alias.md) 功能，易于添加单元测试。
 
-1. [*ListNode](./kit/ListNode.go)
-1. [*TreeNode](./kit/TreeNode.go)
+1. [ListNode](./kit/ListNode.go)
+1. [TreeNode](./kit/TreeNode.go)
+1. [Queue](./kit/Queue.go)
+1. [Stack](./kit/Stack.go)
