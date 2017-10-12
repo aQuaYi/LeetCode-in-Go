@@ -32,10 +32,9 @@ func (mf *MedianFinder) AddNum(n int) {
 	}
 
 	if mf.right.Len() > 0 && mf.left.intHeap[0] > mf.right.intHeap[0] {
-		l := heap.Pop(mf.left)
-		r := heap.Pop(mf.right)
-		heap.Push(mf.left, r)
-		heap.Push(mf.right, l)
+		mf.left.intHeap[0], mf.right.intHeap[0] = mf.right.intHeap[0], mf.left.intHeap[0]
+		heap.Fix(mf.left, 0)
+		heap.Fix(mf.right, 0)
 	}
 }
 
