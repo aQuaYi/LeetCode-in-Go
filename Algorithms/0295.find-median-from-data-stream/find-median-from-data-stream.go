@@ -7,16 +7,16 @@ import (
 // MedianFinder 用于寻找 Median
 type MedianFinder struct {
 	isEven bool
-	left   *leftHeap
-	right  *rightHeap
+	left   *maxHeap
+	right  *minHeap
 }
 
 // Constructor initialize your data structure here.
 func Constructor() MedianFinder {
 	isEven := true
-	left := new(leftHeap)
+	left := new(maxHeap)
 	heap.Init(left)
-	right := new(rightHeap)
+	right := new(minHeap)
 	heap.Init(right)
 
 	return MedianFinder{
@@ -30,21 +30,21 @@ func Constructor() MedianFinder {
 func (mf *MedianFinder) AddNum(n int) {
 
 	if mf.isEven {
-		if len(mf.left.myHeap) == 0 {
+		if len(mf.left.intHeap) == 0 {
 			heap.Push(mf.left, n)
-		} else if n <= mf.right.myHeap[0] {
+		} else if n <= mf.right.intHeap[0] {
 			heap.Push(mf.left, n)
 		} else {
-			heap.Push(mf.left, mf.right.myHeap[0])
-			mf.right.myHeap[0] = n
+			heap.Push(mf.left, mf.right.intHeap[0])
+			mf.right.intHeap[0] = n
 			heap.Fix(mf.right, 0)
 		}
 	} else {
-		if mf.left.myHeap[0] <= n {
+		if mf.left.intHeap[0] <= n {
 			heap.Push(mf.right, n)
 		} else {
-			heap.Push(mf.right, mf.left.myHeap[0])
-			mf.left.myHeap[0] = n
+			heap.Push(mf.right, mf.left.intHeap[0])
+			mf.left.intHeap[0] = n
 			heap.Fix(mf.left, 0)
 		}
 	}
@@ -55,9 +55,9 @@ func (mf *MedianFinder) AddNum(n int) {
 // FindMedian 给出 Median
 func (mf *MedianFinder) FindMedian() float64 {
 	if mf.isEven {
-		return float64(mf.left.myHeap[0]+mf.right.myHeap[0]) / 2
+		return float64(mf.left.intHeap[0]+mf.right.intHeap[0]) / 2
 	}
-	return float64(mf.left.myHeap[0])
+	return float64(mf.left.intHeap[0])
 }
 
 /**
@@ -67,39 +67,39 @@ func (mf *MedianFinder) FindMedian() float64 {
  * param_2 := obj.FindMedian();
  */
 
-type leftHeap struct {
-	myHeap
+type maxHeap struct {
+	intHeap
 }
 
-func (l leftHeap) Less(i, j int) bool {
-	return l.myHeap[i] > l.myHeap[j]
+func (h maxHeap) Less(i, j int) bool {
+	return h.intHeap[i] > h.intHeap[j]
 }
 
-type rightHeap struct {
-	myHeap
+type minHeap struct {
+	intHeap
 }
 
-func (r rightHeap) Less(i, j int) bool {
-	return r.myHeap[i] < r.myHeap[j]
+func (h minHeap) Less(i, j int) bool {
+	return h.intHeap[i] < h.intHeap[j]
 }
 
 // myHeap 实现了 heap 的接口
-type myHeap []int
+type intHeap []int
 
-func (h myHeap) Len() int {
+func (h intHeap) Len() int {
 	return len(h)
 }
 
-func (h myHeap) Swap(i, j int) {
+func (h intHeap) Swap(i, j int) {
 	h[i], h[j] = h[j], h[i]
 }
-func (h *myHeap) Push(x interface{}) {
+func (h *intHeap) Push(x interface{}) {
 	// Push 使用 *h，是因为
 	// Push 增加了 h 的长度
 	*h = append(*h, x.(int))
 }
 
-func (h *myHeap) Pop() interface{} {
+func (h *intHeap) Pop() interface{} {
 	// Pop 使用 *h ，是因为
 	// Pop 减短了 h 的长度
 	res := (*h)[len(*h)-1]

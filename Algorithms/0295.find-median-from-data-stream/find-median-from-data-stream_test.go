@@ -14,13 +14,13 @@ func Test_MedianFinder(t *testing.T) {
 
 	for i := 1; i < 10; i++ {
 		mf.AddNum(i)
-		ast.Equal(float64(1+i)/2, mf.FindMedian(), "median of %v %v", mf.left.myHeap, mf.right.myHeap)
+		ast.Equal(float64(1+i)/2, mf.FindMedian(), "median of %v %v", mf.left.intHeap, mf.right.intHeap)
 	}
 
 	mf = Constructor()
 	for i := -1; i >= -10; i-- {
 		mf.AddNum(i)
-		ast.Equal(float64(-1+i)/2, mf.FindMedian(), "median of %v %v", mf.left.myHeap, mf.right.myHeap)
+		ast.Equal(float64(-1+i)/2, mf.FindMedian(), "median of %v %v", mf.left.intHeap, mf.right.intHeap)
 	}
 
 }
