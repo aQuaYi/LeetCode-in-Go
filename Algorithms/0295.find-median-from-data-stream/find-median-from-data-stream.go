@@ -6,55 +6,42 @@ import (
 
 // MedianFinder 用于寻找 Median
 type MedianFinder struct {
-	isEven bool
-	left   *maxHeap
-	right  *minHeap
+	left  *maxHeap
+	right *minHeap
 }
 
 // Constructor initialize your data structure here.
 func Constructor() MedianFinder {
-	isEven := true
 	left := new(maxHeap)
 	heap.Init(left)
 	right := new(minHeap)
 	heap.Init(right)
 
 	return MedianFinder{
-		isEven: isEven,
-		left:   left,
-		right:  right,
+		left:  left,
+		right: right,
 	}
 }
 
 // AddNum 给 MedianFinder 添加数
 func (mf *MedianFinder) AddNum(n int) {
-
-	if mf.isEven {
-		if len(mf.left.intHeap) == 0 {
-			heap.Push(mf.left, n)
-		} else if n <= mf.right.intHeap[0] {
-			heap.Push(mf.left, n)
-		} else {
-			heap.Push(mf.left, mf.right.intHeap[0])
-			mf.right.intHeap[0] = n
-			heap.Fix(mf.right, 0)
-		}
+	if mf.left.Len() == mf.right.Len() {
+		heap.Push(mf.left, n)
 	} else {
-		if mf.left.intHeap[0] <= n {
-			heap.Push(mf.right, n)
-		} else {
-			heap.Push(mf.right, mf.left.intHeap[0])
-			mf.left.intHeap[0] = n
-			heap.Fix(mf.left, 0)
-		}
+		heap.Push(mf.right, n)
 	}
 
-	mf.isEven = !mf.isEven
+	if mf.right.Len() > 0 && mf.left.intHeap[0] > mf.right.intHeap[0] {
+		l := heap.Pop(mf.left)
+		r := heap.Pop(mf.right)
+		heap.Push(mf.left, r)
+		heap.Push(mf.right, l)
+	}
 }
 
 // FindMedian 给出 Median
 func (mf *MedianFinder) FindMedian() float64 {
-	if mf.isEven {
+	if mf.left.Len() == mf.right.Len() {
 		return float64(mf.left.intHeap[0]+mf.right.intHeap[0]) / 2
 	}
 	return float64(mf.left.intHeap[0])
