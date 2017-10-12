@@ -14,3 +14,4 @@
 1. [TreeNode](./kit/TreeNode.go)
 1. [Queue](./kit/Queue.go)
 1. [Stack](./kit/Stack.go)
+1. [Heap](./kit/Heap.go)
