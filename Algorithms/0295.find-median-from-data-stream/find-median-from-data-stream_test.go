@@ -12,14 +12,11 @@ func Test_MedianFinder(t *testing.T) {
 
 	mf := Constructor()
 
-	mf.AddNum(1)
-	// [1]
-	mf.AddNum(2)
-	// [1,2]
-	ast.Equal(1.5, mf.FindMedian(), "median of %v", mf.nums)
-	mf.AddNum(3)
-	// [1,2,3]
-	ast.Equal(2.0, mf.FindMedian(), "median of %v", mf.nums)
+	for i := 1; i < 10; i++ {
+		mf.AddNum(i)
+		ast.Equal(float64(1+i)/2, mf.FindMedian(), "median of %v %v", mf.left.nums[1:], mf.right.nums[1:])
+	}
+
 }
 
 func Benchmark_MedianFinder(b *testing.B) {
