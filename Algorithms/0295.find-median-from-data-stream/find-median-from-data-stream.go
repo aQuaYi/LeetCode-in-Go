@@ -1,16 +1,23 @@
 package Problem0295
 
+import (
+	"container/heap"
+)
+
 // MedianFinder 用于寻找 Median
 type MedianFinder struct {
-	isEven      bool
-	left, right *heap
+	isEven bool
+	left   *leftHeap
+	right  *rightHeap
 }
 
 // Constructor initialize your data structure here.
 func Constructor() MedianFinder {
 	isEven := true
-	left := newHeap(less)
-	right := newHeap(bigger)
+	left := new(leftHeap)
+	heap.Init(left)
+	right := new(rightHeap)
+	heap.Init(right)
 
 	return MedianFinder{
 		isEven: isEven,
@@ -21,8 +28,25 @@ func Constructor() MedianFinder {
 
 // AddNum 给 MedianFinder 添加数
 func (mf *MedianFinder) AddNum(n int) {
-	if mf.isEven && n < mf.left.Root() {
-		mf.left.Add(n)
+
+	if mf.isEven {
+		if len(mf.left.myHeap) == 0 {
+			heap.Push(mf.left, n)
+		} else if n <= mf.right.myHeap[0] {
+			heap.Push(mf.left, n)
+		} else {
+			heap.Push(mf.left, mf.right.myHeap[0])
+			mf.right.myHeap[0] = n
+			heap.Fix(mf.right, 0)
+		}
+	} else {
+		if mf.left.myHeap[0] <= n {
+			heap.Push(mf.right, n)
+		} else {
+			heap.Push(mf.right, mf.left.myHeap[0])
+			mf.left.myHeap[0] = n
+			heap.Fix(mf.left, 0)
+		}
 	}
 
 	mf.isEven = !mf.isEven
@@ -31,9 +55,9 @@ func (mf *MedianFinder) AddNum(n int) {
 // FindMedian 给出 Median
 func (mf *MedianFinder) FindMedian() float64 {
 	if mf.isEven {
-		return float64(mf.left.Root()+mf.right.Root()) / 2
+		return float64(mf.left.myHeap[0]+mf.right.myHeap[0]) / 2
 	}
-	return float64(mf.left.Root())
+	return float64(mf.left.myHeap[0])
 }
 
 /**
@@ -43,38 +67,42 @@ func (mf *MedianFinder) FindMedian() float64 {
  * param_2 := obj.FindMedian();
  */
 
-type heap struct {
-	nums []int
-	less func(int, int) bool
+type leftHeap struct {
+	myHeap
 }
 
-// newHeap 返回 *heap
-func newHeap(compareFunc func(int, int) bool) *heap {
-	// nums[0] 保留不用
-	nums := make([]int, 1, 1024)
-	return &heap{
-		nums: nums,
-		less: compareFunc,
-	}
+func (l leftHeap) Less(i, j int) bool {
+	return l.myHeap[i] > l.myHeap[j]
 }
 
-func (h *heap) Add(n int) {
-	k := len(h.nums)
-	h.nums = append(h.nums, n)
-	for k > 1 && h.less(h.nums[k/2], h.nums[k]) {
-		h.nums[k/2], h.nums[k] = h.nums[k], h.nums[k/2]
-		k /= 2
-	}
+type rightHeap struct {
+	myHeap
 }
 
-func (h *heap) Root() int {
-	return h.nums[1]
+func (r rightHeap) Less(i, j int) bool {
+	return r.myHeap[i] < r.myHeap[j]
 }
 
-func less(a, b int) bool {
-	return a < b
+// myHeap 实现了 heap 的接口
+type myHeap []int
+
+func (h myHeap) Len() int {
+	return len(h)
 }
 
-func bigger(a, b int) bool {
-	return a > b
+func (h myHeap) Swap(i, j int) {
+	h[i], h[j] = h[j], h[i]
+}
+func (h *myHeap) Push(x interface{}) {
+	// Push 使用 *h，是因为
+	// Push 增加了 h 的长度
+	*h = append(*h, x.(int))
+}
+
+func (h *myHeap) Pop() interface{} {
+	// Pop 使用 *h ，是因为
+	// Pop 减短了 h 的长度
+	res := (*h)[len(*h)-1]
+	*h = (*h)[0 : len(*h)-1]
+	return res
 }
