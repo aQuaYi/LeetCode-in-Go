@@ -1,5 +1,7 @@
 package Problem0301
 
+import "sort"
+
 func removeInvalidParentheses(s string) []string {
 	res := []string{}
 	var dfs func(string, int, int)
@@ -39,7 +41,16 @@ func removeInvalidParentheses(s string) []string {
 	l, r := count(s)
 	dfs(s, l, r)
 
-	return res
+	sort.Strings(res)
+	temp := make([]string, 1, len(res))
+	temp[0] = res[0]
+	for i := 1; i < len(res); i++ {
+		if res[i] != res[i-1] {
+			temp = append(temp, res[i])
+		}
+	}
+
+	return temp
 }
 
 func count(s string) (left, right int) {

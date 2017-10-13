@@ -13,11 +13,11 @@ var tcs = []struct {
 	s   string
 	ans []string
 }{
+	{")d))", []string{"d"}},
 	{")(", []string{""}},
 	{"()())()", []string{"()()()", "(())()"}},
 	{"(a)())()", []string{"(a)()()", "(a())()"}},
 	{"((())))))((()", []string{"((()))()"}},
-	{")d))", []string{"d"}},
 
 	// 可以有多个 testcase
 }
