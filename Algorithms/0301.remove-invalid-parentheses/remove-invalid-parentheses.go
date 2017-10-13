@@ -1,76 +1,49 @@
 package Problem0301
 
-import "sort"
+var pairLR = []byte{'(', ')'}
+var pairRL = []byte{')', '('}
+
+func reverse(s string) string {
+	buf := []byte(s)
+	i, j := 0, len(buf)-1
+	for i < j {
+		buf[i], buf[j] = buf[j], buf[i]
+		i++
+		j--
+	}
+	return string(buf)
+}
+
+func remove(s string, last_i, last_j int, ans []string, pair []byte) []string {
+	stack := 0
+	for i := last_i; i < len(s); i++ {
+		if s[i] == pair[0] {
+			stack++
+		} else if s[i] == pair[1] {
+			stack--
+		}
+		if stack >= 0 {
+			continue
+		}
+		for j := last_j; j <= i; j++ {
+			if s[j] == pair[1] && (j == last_j || s[j-1] != pair[1]) {
+				s1 := s[:j] + s[j+1:]
+				ans = remove(s1, i, j, ans, pair)
+			}
+		}
+		return ans
+	}
+	reversed := reverse(s)
+	if pair[0] == '(' {
+		ans = remove(reversed, 0, 0, ans, pairRL)
+	} else {
+		ans = append(ans, reverse(s))
+	}
+	return ans
+}
 
 func removeInvalidParentheses(s string) []string {
-	res := []string{}
-	var dfs func(string, int, int)
-	dfs = func(s string, l, r int) {
-		if l+r == 0 && isOK(s) {
-			res = append(res, s)
-			return
-		}
-
-		last, temp := s, ""
-		if r > 0 {
-			for i := range s {
-				if s[i] == ')' {
-					temp = s[:i] + s[i+1:]
-					if temp == last {
-						continue
-					}
-
-					last = temp
-					dfs(temp, l, r-1)
-				}
-			}
-		} else if l > 0 {
-			for i := len(s) - 1; i >= 0; i-- {
-				if s[i] == '(' {
-					temp = s[:i] + s[i+1:]
-					if temp == last {
-						continue
-					}
-					last = temp
-					dfs(temp, l-1, r)
-				}
-			}
-		}
-	}
-
-	l, r := count(s)
-	dfs(s, l, r)
-
-	sort.Strings(res)
-	temp := make([]string, 1, len(res))
-	temp[0] = res[0]
-	for i := 1; i < len(res); i++ {
-		if res[i] != res[i-1] {
-			temp = append(temp, res[i])
-		}
-	}
-
-	return temp
-}
-
-func count(s string) (left, right int) {
-	for i := range s {
-		switch s[i] {
-		case '(':
-			left++
-		case ')':
-			if left > 0 {
-				left--
-			} else {
-				right++
-			}
-		}
-	}
-
-	return
-}
-
-func isOK(s string) bool {
-	l, r := count(s)
-	return l+r == 0
+	ans := []string{}
+	ans = remove(s, 0, 0, ans, pairLR)
+	return ans
 }
