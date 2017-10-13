@@ -14,9 +14,9 @@ func reverse(s string) string {
 	return string(buf)
 }
 
-func remove(s string, last_i, last_j int, ans []string, pair []byte) []string {
+func remove(s string, lastI, lastJ int, ans []string, pair []byte) []string {
 	stack := 0
-	for i := last_i; i < len(s); i++ {
+	for i := lastI; i < len(s); i++ {
 		if s[i] == pair[0] {
 			stack++
 		} else if s[i] == pair[1] {
@@ -25,8 +25,8 @@ func remove(s string, last_i, last_j int, ans []string, pair []byte) []string {
 		if stack >= 0 {
 			continue
 		}
-		for j := last_j; j <= i; j++ {
-			if s[j] == pair[1] && (j == last_j || s[j-1] != pair[1]) {
+		for j := lastJ; j <= i; j++ {
+			if s[j] == pair[1] && (j == lastJ || s[j-1] != pair[1]) {
 				s1 := s[:j] + s[j+1:]
 				ans = remove(s1, i, j, ans, pair)
 			}
