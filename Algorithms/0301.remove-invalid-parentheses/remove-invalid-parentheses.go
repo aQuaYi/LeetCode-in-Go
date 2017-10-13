@@ -9,8 +9,9 @@ func removeInvalidParentheses(s string) []string {
 }
 
 func dfs(s string, lastI, lastJ int, ans []string, pair []byte) []string {
-	stack := 0
-	for i := lastI; i < len(s); i++ {
+	var i, j, stack int
+	var temp string
+	for i = lastI; i < len(s); i++ {
 		if s[i] == pair[0] {
 			stack++
 		} else if s[i] == pair[1] {
@@ -19,10 +20,10 @@ func dfs(s string, lastI, lastJ int, ans []string, pair []byte) []string {
 		if stack >= 0 {
 			continue
 		}
-		for j := lastJ; j <= i; j++ {
+		for j = lastJ; j <= i; j++ {
 			if s[j] == pair[1] && (j == lastJ || s[j-1] != pair[1]) {
-				s1 := s[:j] + s[j+1:]
-				ans = dfs(s1, i, j, ans, pair)
+				temp = s[:j] + s[j+1:]
+				ans = dfs(temp, i, j, ans, pair)
 			}
 		}
 		return ans
