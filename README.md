@@ -1,8 +1,8 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 答题进度](https://img.shields.io/badge/Progress-50%25-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 排名](https://img.shields.io/badge/Ranking-18684-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 答题进度](https://img.shields.io/badge/Progress-51%25-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/Ranking-18250-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 
@@ -10,7 +10,7 @@
 
 |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|
-|70 / 143|125 / 241|50 / 97|245 / 481|
+|70 / 143|125 / 241|51 / 97|246 / 481|
 > 统计规则：1.免费题，2.算法题，3.能用 Go 解答
 
 ## 题解
@@ -232,6 +232,7 @@
 |295|[Find Median from Data Stream](./Algorithms/0295.find-median-from-data-stream)|27%|:joy:|:heart:|
 |299|[Bulls and Cows](./Algorithms/0299.bulls-and-cows)|35%|:sweat_smile:| |
 |300|[Longest Increasing Subsequence](./Algorithms/0300.longest-increasing-subsequence)|38%|:sweat_smile:|:heart:|
+|301|[Remove Invalid Parentheses](./Algorithms/0301.remove-invalid-parentheses)|35%|:joy:|:heart:|
 |303|[Range Sum Query - Immutable](./Algorithms/0303.range-sum-query-immutable)|30%|:smile:| |
 |304|[Range Sum Query 2D - Immutable](./Algorithms/0304.range-sum-query-2d-immutable)|25%|:sweat_smile:| |
 |306|[Additive Number](./Algorithms/0306.additive-number)|27%|:sweat_smile:| |
@@ -240,7 +241,7 @@
 |337|[House Robber III](./Algorithms/0337.house-robber-iii)|43%|:sweat_smile:|:heart:|
 |342|[Power of Four](./Algorithms/0342.power-of-four)|38%|:smile:| |
 |380|[Insert Delete GetRandom O(1)](./Algorithms/0380.insert-delete-getrandom-o1)|39%|:sweat_smile:|:heart:|
-|381|[Insert Delete GetRandom O(1) - Duplicates allowed](./Algorithms/0381.insert-delete-getrandom-o1-duplicates-allowed)|28%|:joy:|:heart:|
+|381|[Insert Delete GetRandom O(1) - Duplicates allowed](./Algorithms/0381.insert-delete-getrandom-o1-duplicates-allowed)|29%|:joy:|:heart:|
 |414|[Third Maximum Number](./Algorithms/0414.third-maximum-number)|27%|:smile:| |
 |437|[Path Sum III](./Algorithms/0437.path-sum-iii)|39%|:smile:|:heart:|
 |442|[Find All Duplicates in an Array](./Algorithms/0442.find-all-duplicates-in-an-array)|56%|:sweat_smile:| |
