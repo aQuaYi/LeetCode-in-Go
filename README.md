@@ -10,7 +10,7 @@
 
 |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|
-|70 / 143|125 / 241|51 / 97|246 / 481|
+|71 / 143|125 / 241|51 / 97|247 / 481|
 > 统计规则：1.免费题，2.算法题，3.能用 Go 解答
 
 ## 题解
@@ -161,7 +161,7 @@
 |148|[Sort List](./Algorithms/0148.sort-list)|29%|:sweat_smile:|:heart:|
 |149|[Max Points on a Line](./Algorithms/0149.max-points-on-a-line)|15%|:joy:|:heart:|
 |150|[Evaluate Reverse Polish Notation](./Algorithms/0150.evaluate-reverse-polish-notation)|27%|:sweat_smile:| |
-|152|[Maximum Product Subarray](./Algorithms/0152.maximum-product-subarray)|25%|:sweat_smile:|:heart:|
+|152|[Maximum Product Subarray](./Algorithms/0152.maximum-product-subarray)|26%|:sweat_smile:|:heart:|
 |153|[Find Minimum in Rotated Sorted Array](./Algorithms/0153.find-minimum-in-rotated-sorted-array)|40%|:sweat_smile:| |
 |154|[Find Minimum in Rotated Sorted Array II](./Algorithms/0154.find-minimum-in-rotated-sorted-array-ii)|37%|:joy:| |
 |155|[Min Stack](./Algorithms/0155.min-stack)|29%|:smile:| |
@@ -206,6 +206,7 @@
 |223|[Rectangle Area](./Algorithms/0223.rectangle-area)|33%|:sweat_smile:| |
 |224|[Basic Calculator](./Algorithms/0224.basic-calculator)|27%|:joy:| |
 |225|[Implement Stack using Queues](./Algorithms/0225.implement-stack-using-queues)|33%|:smile:| |
+|226|[Invert Binary Tree](./Algorithms/0226.invert-binary-tree)|52%|:smile:| |
 |227|[Basic Calculator II](./Algorithms/0227.basic-calculator-ii)|29%|:sweat_smile:| |
 |228|[Summary Ranges](./Algorithms/0228.summary-ranges)|30%|:sweat_smile:| |
 |229|[Majority Element II](./Algorithms/0229.majority-element-ii)|28%|:sweat_smile:|:heart:|
