@@ -11,6 +11,7 @@ func removeInvalidParentheses(s string) []string {
 func dfs(s string, lastI, lastJ int, ans []string, pair []byte) []string {
 	var i, j, stack int
 	var temp string
+
 	for i = lastI; i < len(s); i++ {
 		if s[i] == pair[0] {
 			stack++
@@ -28,6 +29,7 @@ func dfs(s string, lastI, lastJ int, ans []string, pair []byte) []string {
 		}
 		return ans
 	}
+
 	reversed := reverse(s)
 
 	if pair[0] == '(' {
