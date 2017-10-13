@@ -3,15 +3,9 @@ package Problem0301
 var pairLR = []byte{'(', ')'}
 var pairRL = []byte{')', '('}
 
-func reverse(s string) string {
-	buf := []byte(s)
-	i, j := 0, len(buf)-1
-	for i < j {
-		buf[i], buf[j] = buf[j], buf[i]
-		i++
-		j--
-	}
-	return string(buf)
+func removeInvalidParentheses(s string) []string {
+	ans := []string{}
+	return remove(s, 0, 0, ans, pairLR)
 }
 
 func remove(s string, lastI, lastJ int, ans []string, pair []byte) []string {
@@ -42,8 +36,13 @@ func remove(s string, lastI, lastJ int, ans []string, pair []byte) []string {
 	return ans
 }
 
-func removeInvalidParentheses(s string) []string {
-	ans := []string{}
-	ans = remove(s, 0, 0, ans, pairLR)
-	return ans
+func reverse(s string) string {
+	buf := []byte(s)
+	i, j := 0, len(buf)-1
+	for i < j {
+		buf[i], buf[j] = buf[j], buf[i]
+		i++
+		j--
+	}
+	return string(buf)
 }
