@@ -1,7 +1,6 @@
 package Problem0310
 
 import (
-	"fmt"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -13,6 +12,11 @@ var tcs = []struct {
 	edges [][]int
 	ans   []int
 }{
+
+	{
+		3, [][]int{[]int{0, 1}, []int{0, 2}},
+		[]int{},
+	},
 
 	{
 		6,
@@ -31,10 +35,6 @@ var tcs = []struct {
 		[]int{2499, 2500},
 	},
 
-	{
-		3, [][]int{[]int{0, 1}, []int{0, 2}},
-		[]int{0}},
-
 	// 可以有多个 testcase
 }
 
@@ -42,8 +42,8 @@ func Test_findMinHeightTrees(t *testing.T) {
 	ast := assert.New(t)
 
 	for _, tc := range tcs {
-		fmt.Printf("~~%v~~\n", tc)
-		ast.Equal(tc.ans, findMinHeightTrees(tc.n, tc.edges), "输入:%v", tc)
+		// fmt.Printf("~~%v~~\n", tc)
+		ast.Equal(tc.ans, findMinHeightTrees(tc.n, tc.edges))
 	}
 }
 
