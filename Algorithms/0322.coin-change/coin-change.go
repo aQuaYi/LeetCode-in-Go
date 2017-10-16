@@ -19,17 +19,14 @@ func coinChange(coins []int, amount int) int {
 			continue
 		}
 
-		if k == amount {
-			return 1
-		}
-
 		i := k
 		dp[i] = 1
 		for i+k <= amount {
 			dp[i+k] = min(dp[i+k], dp[i]+1)
 			i += k
 		}
-		if i == k {
+
+		if i == amount {
 			break
 		}
 	}
@@ -40,6 +37,7 @@ func coinChange(coins []int, amount int) int {
 
 	return dp[amount]
 }
+
 func min(a, b int) int {
 	if a < b {
 		return a
