@@ -10,7 +10,7 @@
 
 |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|
-|72 / 145|126 / 242|52 / 98|250 / 485|
+|72 / 145|127 / 242|52 / 98|251 / 485|
 > 统计规则：1.免费题，2.算法题，3.能用 Go 解答
 
 ## 题解
@@ -241,6 +241,7 @@
 |309|[Best Time to Buy and Sell Stock with Cooldown](./Algorithms/0309.best-time-to-buy-and-sell-stock-with-cooldown)|41%|:sweat_smile:|:heart:|
 |312|[Burst Balloons](./Algorithms/0312.burst-balloons)|43%|:joy:|:heart:|
 |313|[Super Ugly Number](./Algorithms/0313.super-ugly-number)|37%|:sweat_smile:|:heart:|
+|322|[Coin Change](./Algorithms/0322.coin-change)|26%|:sweat_smile:|:heart:|
 |326|[Power of Three](./Algorithms/0326.power-of-three)|40%|:smile:|:heart:|
 |337|[House Robber III](./Algorithms/0337.house-robber-iii)|43%|:sweat_smile:|:heart:|
 |342|[Power of Four](./Algorithms/0342.power-of-four)|38%|:smile:| |
@@ -261,7 +262,7 @@
 |605|[Can Place Flowers](./Algorithms/0605.can-place-flowers)|30%|:smile:|:heart:|
 |611|[Valid Triangle Number](./Algorithms/0611.valid-triangle-number)|41%|:sweat_smile:|:heart:|
 |621|[Task Scheduler](./Algorithms/0621.task-scheduler)|42%|:sweat_smile:|:heart:|
-|628|[Maximum Product of Three Numbers](./Algorithms/0628.maximum-product-of-three-numbers)|45%|:smile:|:heart:|
+|628|[Maximum Product of Three Numbers](./Algorithms/0628.maximum-product-of-three-numbers)|44%|:smile:|:heart:|
 |639|[Decode Ways II](./Algorithms/0639.decode-ways-ii)|23%|:joy:| |
 |643|[Maximum Average Subarray I](./Algorithms/0643.maximum-average-subarray-i)|37%|:smile:| |
 |661|[Image Smoother](./Algorithms/0661.image-smoother)|45%|:smile:| |
