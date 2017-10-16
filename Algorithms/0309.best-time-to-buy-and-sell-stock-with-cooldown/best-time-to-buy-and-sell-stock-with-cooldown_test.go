@@ -15,6 +15,7 @@ var tcs = []struct {
 
 	{[]int{1, 2, 3, 0, 2}, 3},
 	{[]int{}, 0},
+	{[]int{3, 3}, 0},
 
 	// 可以有多个 testcase
 }

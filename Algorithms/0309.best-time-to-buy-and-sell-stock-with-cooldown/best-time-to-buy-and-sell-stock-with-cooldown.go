@@ -2,6 +2,9 @@ package Problem0309
 
 func maxProfit(prices []int) int {
 	n := len(prices)
+	if n == 0 {
+		return 0
+	}
 	// buy[i] 表示，按照 prices[i-1] 的价格 买 后的利润
 	buy := make([]int, n+1)
 	// sell[i] 表示，按照 prices[i-1] 的价格 卖 后的利润
