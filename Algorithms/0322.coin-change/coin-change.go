@@ -3,35 +3,24 @@ package Problem0322
 import "sort"
 
 func coinChange(coins []int, amount int) int {
-	if amount == 0 {
-		return 0
-	}
-
 	dp := make([]int, amount+1)
 	for i := range dp {
-		dp[i] = 1<<31 - 1
+		dp[i] = amount + 1
 	}
+	dp[0] = 0
 
-	sort.Sort(sort.Reverse(sort.IntSlice(coins)))
+	sort.Ints(coins)
 
-	for _, k := range coins {
-		if k > amount {
-			continue
-		}
-
-		i := k
-		dp[i] = 1
-		for i+k <= amount {
-			dp[i+k] = min(dp[i+k], dp[i]+1)
-			i += k
-		}
-
-		if i == amount {
-			break
+	for i := 1; i <= amount; i++ {
+		for _, c := range coins {
+			if i-c < 0 {
+				break
+			}
+			dp[i] = min(dp[i], dp[i-c]+1)
 		}
 	}
 
-	if dp[amount] == 1<<31-1 {
+	if dp[amount] > amount {
 		return -1
 	}
 
