@@ -2,13 +2,6 @@ package Problem0312
 
 func maxCoins(nums []int) int {
 	n := len(nums)
-	if n == 0 {
-		return 0
-	}
-
-	if n == 1 {
-		return nums[0]
-	}
 
 	newNums := make([]int, n+2)
 	newNums[0] = 1
