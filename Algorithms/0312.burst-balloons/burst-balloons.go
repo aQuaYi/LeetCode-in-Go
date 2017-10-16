@@ -3,7 +3,7 @@ package Problem0312
 func maxCoins(nums []int) int {
 	n := len(nums)
 	if n == 0 {
-		return 1
+		return 0
 	}
 
 	if n == 1 {
@@ -29,9 +29,10 @@ func maxCoins(nums []int) int {
 	var i, j, k, max int
 	for i = n; 1 <= i; i-- {
 		for j = i; j <= n; j++ {
-			max = nums[i-1]*nums[i]*nums[j+1] + dp[i+1][j]
+			max = nums[i-1]*nums[i]*nums[j+1] + dp[i+1][j] // k == i 时
 			for k = i + 1; k <= j; k++ {
-				temp := nums[i-1]*nums[k]*nums[j+1] + dp[i][k-1] + dp[k+1][j]
+				// dp[i][j] = max(dp[i][k-1]+k点的值 + dp[k+1][j]) , i<=k<=j
+				temp := dp[i][k-1] + nums[i-1]*nums[k]*nums[j+1] + dp[k+1][j]
 				if max < temp {
 					max = temp
 				}
