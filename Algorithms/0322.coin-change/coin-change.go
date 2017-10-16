@@ -1,18 +1,18 @@
 package Problem0322
 
-import (
-	"fmt"
-	"sort"
-)
+import "sort"
 
 func coinChange(coins []int, amount int) int {
+	if amount == 0 {
+		return 0
+	}
+
 	dp := make([]int, amount+1)
 	for i := range dp {
 		dp[i] = 1<<31 - 1
 	}
 
 	sort.Sort(sort.Reverse(sort.IntSlice(coins)))
-	fmt.Println(coins[0])
 
 	for _, k := range coins {
 		if k > amount {
@@ -22,6 +22,7 @@ func coinChange(coins []int, amount int) int {
 		if k == amount {
 			return 1
 		}
+
 		i := k
 		dp[i] = 1
 		for i+k <= amount {
