@@ -1,7 +1,7 @@
 package Problem0310
 
 func findMinHeightTrees(n int, edges [][]int) []int {
-	edgeMap := make([][]int, 0, n)
+	edgeMap := make([][]int, n)
 	for i := range edgeMap {
 		edgeMap[i] = make([]int, 0, n)
 	}
@@ -24,12 +24,16 @@ func findMinHeightTrees(n int, edges [][]int) []int {
 			for _, node := range edgeMap[nodes[0]] {
 				if !rec[node] {
 					nodes = append(nodes, node)
+					rec[node] = true
 				}
 			}
 			nodes = nodes[1:]
 			count--
 			if count == 0 {
 				tempHeight++
+				if tempHeight > minHeight {
+					break
+				}
 				count = len(nodes)
 			}
 
