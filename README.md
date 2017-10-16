@@ -2,7 +2,7 @@
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 答题进度](https://img.shields.io/badge/Progress-51%25-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 排名](https://img.shields.io/badge/Ranking-18015-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/Ranking-17380-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 
@@ -143,7 +143,7 @@
 |126|[Word Ladder II](./Algorithms/0126.word-ladder-ii)|14%|:joy:|:heart:|
 |127|[Word Ladder](./Algorithms/0127.word-ladder)|19%|:sweat_smile:|:heart:|
 |128|[Longest Consecutive Sequence](./Algorithms/0128.longest-consecutive-sequence)|37%|:joy:| |
-|129|[Sum Root to Leaf Numbers](./Algorithms/0129.sum-root-to-leaf-numbers)|36%|:sweat_smile:| |
+|129|[Sum Root to Leaf Numbers](./Algorithms/0129.sum-root-to-leaf-numbers)|37%|:sweat_smile:| |
 |130|[Surrounded Regions](./Algorithms/0130.surrounded-regions)|18%|:sweat_smile:|:heart:|
 |131|[Palindrome Partitioning](./Algorithms/0131.palindrome-partitioning)|33%|:sweat_smile:|:heart:|
 |132|[Palindrome Partitioning II](./Algorithms/0132.palindrome-partitioning-ii)|24%|:joy:|:heart:|
@@ -262,7 +262,7 @@
 |605|[Can Place Flowers](./Algorithms/0605.can-place-flowers)|30%|:smile:|:heart:|
 |611|[Valid Triangle Number](./Algorithms/0611.valid-triangle-number)|41%|:sweat_smile:|:heart:|
 |621|[Task Scheduler](./Algorithms/0621.task-scheduler)|42%|:sweat_smile:|:heart:|
-|628|[Maximum Product of Three Numbers](./Algorithms/0628.maximum-product-of-three-numbers)|44%|:smile:|:heart:|
+|628|[Maximum Product of Three Numbers](./Algorithms/0628.maximum-product-of-three-numbers)|45%|:smile:|:heart:|
 |639|[Decode Ways II](./Algorithms/0639.decode-ways-ii)|23%|:joy:| |
 |643|[Maximum Average Subarray I](./Algorithms/0643.maximum-average-subarray-i)|37%|:smile:| |
 |661|[Image Smoother](./Algorithms/0661.image-smoother)|45%|:smile:| |
