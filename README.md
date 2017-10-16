@@ -10,7 +10,7 @@
 
 |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|
-|71 / 145|125 / 242|52 / 98|248 / 485|
+|72 / 145|126 / 242|52 / 98|250 / 485|
 > 统计规则：1.免费题，2.算法题，3.能用 Go 解答
 
 ## 题解
@@ -214,6 +214,7 @@
 |231|[Power of Two](./Algorithms/0231.power-of-two)|40%|:smile:| |
 |232|[Implement Queue using Stacks](./Algorithms/0232.implement-queue-using-stacks)|37%|:smile:| |
 |233|[Number of Digit One](./Algorithms/0233.number-of-digit-one)|28%|:joy:|:heart:|
+|234|[Palindrome Linked List](./Algorithms/0234.palindrome-linked-list)|33%|:smile:| |
 |238|[Product of Array Except Self](./Algorithms/0238.product-of-array-except-self)|49%|:sweat_smile:| |
 |239|[Sliding Window Maximum](./Algorithms/0239.sliding-window-maximum)|33%|:joy:|:heart:|
 |240|[Search a 2D Matrix II](./Algorithms/0240.search-a-2d-matrix-ii)|38%|:sweat_smile:|:heart:|
@@ -237,7 +238,8 @@
 |303|[Range Sum Query - Immutable](./Algorithms/0303.range-sum-query-immutable)|30%|:smile:| |
 |304|[Range Sum Query 2D - Immutable](./Algorithms/0304.range-sum-query-2d-immutable)|25%|:sweat_smile:| |
 |306|[Additive Number](./Algorithms/0306.additive-number)|27%|:sweat_smile:| |
-|312|[Burst Balloons](./Algorithms/0312.burst-balloons)|43%|:joy:| |
+|309|[Best Time to Buy and Sell Stock with Cooldown](./Algorithms/0309.best-time-to-buy-and-sell-stock-with-cooldown)|41%|:sweat_smile:|:heart:|
+|312|[Burst Balloons](./Algorithms/0312.burst-balloons)|43%|:joy:|:heart:|
 |313|[Super Ugly Number](./Algorithms/0313.super-ugly-number)|37%|:sweat_smile:|:heart:|
 |326|[Power of Three](./Algorithms/0326.power-of-three)|40%|:smile:|:heart:|
 |337|[House Robber III](./Algorithms/0337.house-robber-iii)|43%|:sweat_smile:|:heart:|
