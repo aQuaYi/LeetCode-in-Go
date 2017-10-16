@@ -31,7 +31,7 @@ func findMinHeightTrees(n int, edges [][]int) []int {
 			count--
 			if count == 0 {
 				tempHeight++
-				if tempHeight > minHeight || tempHeight  n/2+1 {
+				if tempHeight > minHeight {
 					break
 				}
 				count = len(nodes)
