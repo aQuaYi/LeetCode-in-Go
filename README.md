@@ -2,7 +2,7 @@
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 答题进度](https://img.shields.io/badge/Progress-51%25-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 排名](https://img.shields.io/badge/Ranking-17945-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/Ranking-18015-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 
@@ -10,7 +10,7 @@
 
 |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|
-|71 / 143|125 / 241|51 / 97|247 / 481|
+|71 / 145|125 / 242|52 / 98|248 / 485|
 > 统计规则：1.免费题，2.算法题，3.能用 Go 解答
 
 ## 题解
@@ -58,7 +58,7 @@
 |39|[Combination Sum](./Algorithms/0039.combination-sum)|39%|:sweat_smile:| |
 |40|[Combination Sum II](./Algorithms/0040.combination-sum-ii)|34%|:sweat_smile:| |
 |41|[First Missing Positive](./Algorithms/0041.first-missing-positive)|25%|:joy:| |
-|42|[Trapping Rain Water](./Algorithms/0042.trapping-rain-water)|36%|:joy:| |
+|42|[Trapping Rain Water](./Algorithms/0042.trapping-rain-water)|37%|:joy:| |
 |43|[Multiply Strings](./Algorithms/0043.multiply-strings)|27%|:sweat_smile:| |
 |44|[Wildcard Matching](./Algorithms/0044.wildcard-matching)|20%|:joy:|:heart:|
 |45|[Jump Game II](./Algorithms/0045.jump-game-ii)|26%|:joy:| |
@@ -132,7 +132,7 @@
 |113|[Path Sum II](./Algorithms/0113.path-sum-ii)|34%|:sweat_smile:| |
 |114|[Flatten Binary Tree to Linked List](./Algorithms/0114.flatten-binary-tree-to-linked-list)|35%|:sweat_smile:|:heart:|
 |115|[Distinct Subsequences](./Algorithms/0115.distinct-subsequences)|31%|:joy:|:heart:|
-|118|[Pascal's Triangle](./Algorithms/0118.pascals-triangle)|38%|:smile:| |
+|118|[Pascal's Triangle](./Algorithms/0118.pascals-triangle)|39%|:smile:| |
 |119|[Pascal's Triangle II](./Algorithms/0119.pascals-triangle-ii)|37%|:smile:| |
 |120|[Triangle](./Algorithms/0120.triangle)|34%|:sweat_smile:|:heart:|
 |121|[Best Time to Buy and Sell Stock](./Algorithms/0121.best-time-to-buy-and-sell-stock)|41%|:smile:| |
@@ -189,7 +189,7 @@
 |205|[Isomorphic Strings](./Algorithms/0205.isomorphic-strings)|34%|:smile:|:heart:|
 |206|[Reverse Linked List](./Algorithms/0206.reverse-linked-list)|45%|:smile:| |
 |207|[Course Schedule](./Algorithms/0207.course-schedule)|32%|:sweat_smile:|:heart:|
-|208|[Implement Trie (Prefix Tree)](./Algorithms/0208.implement-trie-prefix-tree)|28%|:sweat_smile:|:heart:|
+|208|[Implement Trie (Prefix Tree)](./Algorithms/0208.implement-trie-prefix-tree)|29%|:sweat_smile:|:heart:|
 |209|[Minimum Size Subarray Sum](./Algorithms/0209.minimum-size-subarray-sum)|31%|:sweat_smile:| |
 |210|[Course Schedule II](./Algorithms/0210.course-schedule-ii)|28%|:sweat_smile:| |
 |211|[Add and Search Word - Data structure design](./Algorithms/0211.add-and-search-word-data-structure-design)|23%|:sweat_smile:|:heart:|
@@ -237,6 +237,7 @@
 |303|[Range Sum Query - Immutable](./Algorithms/0303.range-sum-query-immutable)|30%|:smile:| |
 |304|[Range Sum Query 2D - Immutable](./Algorithms/0304.range-sum-query-2d-immutable)|25%|:sweat_smile:| |
 |306|[Additive Number](./Algorithms/0306.additive-number)|27%|:sweat_smile:| |
+|312|[Burst Balloons](./Algorithms/0312.burst-balloons)|43%|:joy:| |
 |313|[Super Ugly Number](./Algorithms/0313.super-ugly-number)|37%|:sweat_smile:|:heart:|
 |326|[Power of Three](./Algorithms/0326.power-of-three)|40%|:smile:|:heart:|
 |337|[House Robber III](./Algorithms/0337.house-robber-iii)|43%|:sweat_smile:|:heart:|
