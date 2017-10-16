@@ -31,6 +31,10 @@ var tcs = []struct {
 		[]int{2499, 2500},
 	},
 
+	{
+		3, [][]int{[]int{0, 1}, []int{0, 2}},
+		[]int{0}},
+
 	// 可以有多个 testcase
 }
 
