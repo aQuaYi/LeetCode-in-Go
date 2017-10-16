@@ -7,30 +7,19 @@ import (
 type ListNode = kit.ListNode
 
 func isPalindrome(head *ListNode) bool {
-	r := reverse(head)
-
+	nums := make([]int, 0, 64)
 	for head != nil {
-		if head.Val != r.Val {
+		nums = append(nums, head.Val)
+		head = head.Next
+	}
+
+	l, r := 0, len(nums)-1
+	for l < r {
+		if nums[l] != nums[r] {
 			return false
 		}
-		head , r = head.Next, r.Next
+		l++
+		r--
 	}
 	return true
-}
-
-func reverse(head *ListNode)  *ListNode {
-var r *ListNode
-
-for head != nil {
-	temp := &ListNode{Val: head.Val}
-	if r == nil {
-		r = temp
-	}else{
-		temp.Next = r
-		r = temp 
-	}
-	head = head.Next
-}
-
-return r 
 }
