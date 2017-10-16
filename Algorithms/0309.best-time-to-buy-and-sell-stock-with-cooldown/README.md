@@ -23,3 +23,5 @@ Credits:Special thanks to @dietpepsi for adding this problem and creating all te
 ## 解题思路
 
 见程序注释
+
+[别人的答题笔记](http://www.bijishequ.com/detail/464527)
