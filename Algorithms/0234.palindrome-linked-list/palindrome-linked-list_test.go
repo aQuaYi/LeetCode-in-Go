@@ -4,6 +4,8 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/aQuaYi/LeetCode-in-Go/kit"
+
 	"github.com/stretchr/testify/assert"
 )
 
@@ -24,14 +26,16 @@ func Test_isPalindrome(t *testing.T) {
 
 	for _, tc := range tcs {
 		fmt.Printf("~~%v~~\n", tc)
-		ast.Equal(tc.ans, isPalindrome(tc.head), "输入:%v", tc)
+		head := kit.Ints2List(tc.nums)
+		ast.Equal(tc.ans, isPalindrome(head), "输入:%v", tc)
 	}
 }
 
 func Benchmark_isPalindrome(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		for _, tc := range tcs {
-			isPalindrome(tc.head)
+			head := kit.Ints2List(tc.nums)
+			isPalindrome(head)
 		}
 	}
 }
