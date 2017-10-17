@@ -2,7 +2,7 @@ package Problem0310
 
 func findMinHeightTrees(n int, edges [][]int) []int {
 	if n == 1 {
-		return []int{}
+		return []int{0}
 	}
 
 	eMap := make(map[int][]int, n)
