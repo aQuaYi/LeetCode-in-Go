@@ -1,6 +1,7 @@
 package Problem0310
 
 import (
+	"sort"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -44,7 +45,10 @@ func Test_findMinHeightTrees(t *testing.T) {
 
 	for _, tc := range tcs {
 		// fmt.Printf("~~%v~~\n", tc)
-		ast.Equal(tc.ans, findMinHeightTrees(tc.n, tc.edges))
+		sort.Ints(tc.ans)
+		ans := findMinHeightTrees(tc.n, tc.edges)
+		sort.Ints(ans)
+		ast.Equal(tc.ans, ans)
 	}
 }
 
