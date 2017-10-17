@@ -16,6 +16,9 @@ var tcs = []struct {
 
 	{"anagram", "nagaram", true},
 	{"rat", "car", false},
+	{"at", "car", false},
+	{"", "", true},
+	{"世界和平", "和平世界", true},
 
 	// 可以有多个 testcase
 }
