@@ -1,7 +1,7 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 答题进度](https://img.shields.io/badge/Progress-51%25-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 答题进度](https://img.shields.io/badge/Progress-52%25-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 排名](https://img.shields.io/badge/Ranking-17380-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
@@ -10,7 +10,7 @@
 
 |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|
-|72 / 145|128 / 242|52 / 98|252 / 485|
+|72 / 145|128 / 242|53 / 98|253 / 485|
 > 统计规则：1.免费题，2.算法题，3.能用 Go 解答
 
 ## 题解
@@ -171,7 +171,7 @@
 |166|[Fraction to Recurring Decimal](./Algorithms/0166.fraction-to-recurring-decimal)|17%|:sweat_smile:|:heart:|
 |167|[Two Sum II - Input array is sorted](./Algorithms/0167.two-sum-ii-input-array-is-sorted)|47%|:smile:| |
 |168|[Excel Sheet Column Title](./Algorithms/0168.excel-sheet-column-title)|26%|:smile:|:heart:|
-|169|[Majority Element](./Algorithms/0169.majority-element)|46%|:smile:|:heart:|
+|169|[Majority Element](./Algorithms/0169.majority-element)|47%|:smile:|:heart:|
 |171|[Excel Sheet Column Number](./Algorithms/0171.excel-sheet-column-number)|47%|:smile:| |
 |172|[Factorial Trailing Zeroes](./Algorithms/0172.factorial-trailing-zeroes)|36%|:smile:| |
 |174|[Dungeon Game](./Algorithms/0174.dungeon-game)|23%|:joy:|:heart:|
@@ -242,6 +242,7 @@
 |310|[Minimum Height Trees](./Algorithms/0310.minimum-height-trees)|28%|:sweat_smile:| |
 |312|[Burst Balloons](./Algorithms/0312.burst-balloons)|43%|:joy:|:heart:|
 |313|[Super Ugly Number](./Algorithms/0313.super-ugly-number)|37%|:sweat_smile:|:heart:|
+|315|[Count of Smaller Numbers After Self](./Algorithms/0315.count-of-smaller-numbers-after-self)|34%|:joy:|:heart:|
 |322|[Coin Change](./Algorithms/0322.coin-change)|26%|:sweat_smile:|:heart:|
 |326|[Power of Three](./Algorithms/0326.power-of-three)|40%|:smile:|:heart:|
 |337|[House Robber III](./Algorithms/0337.house-robber-iii)|43%|:sweat_smile:|:heart:|
