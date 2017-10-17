@@ -7,7 +7,7 @@ func findMinHeightTrees(n int, edges [][]int) []int {
 
 	eMap := make([][]int, n)
 	for i := 0; i < n; i++ {
-		eMap[i] = []int{}
+		eMap[i] = make([]int, 0, 5)
 	}
 	degrees := make([]int, n)
 	for _, e := range edges {
