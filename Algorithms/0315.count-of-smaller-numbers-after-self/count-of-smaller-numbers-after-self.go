@@ -6,14 +6,22 @@ type treeNode struct {
 }
 
 func countSmaller(nums []int) []int {
+	root := buildTree(nums)
+
 	res := make([]int, len(nums))
-	for i := 0; i < len(nums); i++ {
-		for j := i + 1; j < len(nums); j++ {
-			if nums[i] > nums[j] {
-				res[i]++
-			}
+
+	var search func(*treeNode)
+	search = func(root *treeNode) {
+		if root == nil {
+			return
 		}
+		res[root.idx] = root.count
+		search(root.left)
+		search(root.right)
 	}
+
+	search(root)
+
 	return res
 }
 
@@ -30,8 +38,6 @@ func buildTree(nums []int) *treeNode {
 			addNode(root, &node)
 		}
 	}
-
-	// TODO: 遍历树，获取 idx 和 count
 
 	return root
 }
