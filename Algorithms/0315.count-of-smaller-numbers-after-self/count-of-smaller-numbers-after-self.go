@@ -1,13 +1,20 @@
 package Problem0315
 
+import (
+	"sort"
+)
+
 func countSmaller(nums []int) []int {
-	res := make([]int, len(nums))
-	for i := 0; i < len(nums); i++ {
-		for j := i + 1; j < len(nums); j++ {
-			if nums[j] < nums[i] {
-				res[i]++
-			}
-		}
+	size := len(nums)
+	temp := make([]int, size)
+	res := make([]int, size)
+	for i := 0; i < size; i++ {
+		temp = temp[:size-i-1]
+		copy(temp, nums[i+1:])
+		sort.Ints(temp)
+
+		res[i] = sort.SearchInts(temp, nums[i])
 	}
+
 	return res
 }
