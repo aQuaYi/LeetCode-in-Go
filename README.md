@@ -10,7 +10,7 @@
 
 |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|
-|72 / 145|127 / 242|52 / 98|251 / 485|
+|72 / 145|128 / 242|52 / 98|252 / 485|
 > 统计规则：1.免费题，2.算法题，3.能用 Go 解答
 
 ## 题解
@@ -34,7 +34,7 @@
 |15|[3Sum](./Algorithms/0015.3sum)|21%|:sweat_smile:| |
 |16|[3Sum Closest](./Algorithms/0016.3sum-closest)|31%|:sweat_smile:| |
 |17|[Letter Combinations of a Phone Number](./Algorithms/0017.letter-combinations-of-a-phone-number)|35%|:sweat_smile:| |
-|18|[4Sum](./Algorithms/0018.4sum)|26%|:sweat_smile:| |
+|18|[4Sum](./Algorithms/0018.4sum)|27%|:sweat_smile:| |
 |19|[Remove Nth Node From End of List](./Algorithms/0019.remove-nth-node-from-end-of-list)|33%|:sweat_smile:| |
 |20|[Valid Parentheses](./Algorithms/0020.valid-parentheses)|33%|:smile:| |
 |21|[Merge Two Sorted Lists](./Algorithms/0021.merge-two-sorted-lists)|39%|:smile:| |
@@ -145,7 +145,7 @@
 |128|[Longest Consecutive Sequence](./Algorithms/0128.longest-consecutive-sequence)|37%|:joy:| |
 |129|[Sum Root to Leaf Numbers](./Algorithms/0129.sum-root-to-leaf-numbers)|37%|:sweat_smile:| |
 |130|[Surrounded Regions](./Algorithms/0130.surrounded-regions)|18%|:sweat_smile:|:heart:|
-|131|[Palindrome Partitioning](./Algorithms/0131.palindrome-partitioning)|33%|:sweat_smile:|:heart:|
+|131|[Palindrome Partitioning](./Algorithms/0131.palindrome-partitioning)|34%|:sweat_smile:|:heart:|
 |132|[Palindrome Partitioning II](./Algorithms/0132.palindrome-partitioning-ii)|24%|:joy:|:heart:|
 |134|[Gas Station](./Algorithms/0134.gas-station)|29%|:sweat_smile:|:heart:|
 |135|[Candy](./Algorithms/0135.candy)|24%|:joy:| |
@@ -239,6 +239,7 @@
 |304|[Range Sum Query 2D - Immutable](./Algorithms/0304.range-sum-query-2d-immutable)|25%|:sweat_smile:| |
 |306|[Additive Number](./Algorithms/0306.additive-number)|27%|:sweat_smile:| |
 |309|[Best Time to Buy and Sell Stock with Cooldown](./Algorithms/0309.best-time-to-buy-and-sell-stock-with-cooldown)|41%|:sweat_smile:|:heart:|
+|310|[Minimum Height Trees](./Algorithms/0310.minimum-height-trees)|28%|:sweat_smile:| |
 |312|[Burst Balloons](./Algorithms/0312.burst-balloons)|43%|:joy:|:heart:|
 |313|[Super Ugly Number](./Algorithms/0313.super-ugly-number)|37%|:sweat_smile:|:heart:|
 |322|[Coin Change](./Algorithms/0322.coin-change)|26%|:sweat_smile:|:heart:|
