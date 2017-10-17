@@ -10,7 +10,7 @@
 
 |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|
-|72 / 145|128 / 242|53 / 98|253 / 485|
+|73 / 145|130 / 242|53 / 98|256 / 485|
 > 统计规则：1.免费题，2.算法题，3.能用 Go 解答
 
 ## 题解
@@ -219,6 +219,7 @@
 |239|[Sliding Window Maximum](./Algorithms/0239.sliding-window-maximum)|33%|:joy:|:heart:|
 |240|[Search a 2D Matrix II](./Algorithms/0240.search-a-2d-matrix-ii)|38%|:sweat_smile:|:heart:|
 |241|[Different Ways to Add Parentheses](./Algorithms/0241.different-ways-to-add-parentheses)|44%|:sweat_smile:| |
+|242|[Valid Anagram](./Algorithms/0242.valid-anagram)|46%|:smile:| |
 |260|[Single Number III](./Algorithms/0260.single-number-iii)|52%|:sweat_smile:|:heart:|
 |263|[Ugly Number](./Algorithms/0263.ugly-number)|39%|:smile:| |
 |264|[Ugly Number II](./Algorithms/0264.ugly-number-ii)|32%|:sweat_smile:|:heart:|
@@ -243,6 +244,8 @@
 |312|[Burst Balloons](./Algorithms/0312.burst-balloons)|43%|:joy:|:heart:|
 |313|[Super Ugly Number](./Algorithms/0313.super-ugly-number)|37%|:sweat_smile:|:heart:|
 |315|[Count of Smaller Numbers After Self](./Algorithms/0315.count-of-smaller-numbers-after-self)|34%|:joy:|:heart:|
+|318|[Maximum Product of Word Lengths](./Algorithms/0318.maximum-product-of-word-lengths)|44%|:sweat_smile:|:heart:|
+|319|[Bulb Switcher](./Algorithms/0319.bulb-switcher)|42%|:sweat_smile:|:heart:|
 |322|[Coin Change](./Algorithms/0322.coin-change)|26%|:sweat_smile:|:heart:|
 |326|[Power of Three](./Algorithms/0326.power-of-three)|40%|:smile:|:heart:|
 |337|[House Robber III](./Algorithms/0337.house-robber-iii)|43%|:sweat_smile:|:heart:|
