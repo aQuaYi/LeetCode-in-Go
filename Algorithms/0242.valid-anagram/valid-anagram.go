@@ -9,6 +9,8 @@ func isAnagram(s string, t string) bool {
 	sr := []rune(s)
 	tr := []rune(t)
 
+	// 因为使用了 []rune，rec 只好使用 map
+	// 不然的话，使用 [26]int 数组，效率更高
 	rec := make(map[rune]int, len(sr))
 	for i := range sr {
 		rec[sr[i]]++
