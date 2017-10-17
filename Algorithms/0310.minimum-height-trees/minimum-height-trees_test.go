@@ -13,6 +13,11 @@ var tcs = []struct {
 	edges [][]int
 	ans   []int
 }{
+	{
+		1,
+		[][]int{},
+		[]int{0},
+	},
 
 	{
 		6,
@@ -48,7 +53,7 @@ func Test_findMinHeightTrees(t *testing.T) {
 		sort.Ints(tc.ans)
 		ans := findMinHeightTrees(tc.n, tc.edges)
 		sort.Ints(ans)
-		ast.Equal(tc.ans, ans)
+		ast.Equal(tc.ans, ans, "输入：%v", tc)
 	}
 }
 
