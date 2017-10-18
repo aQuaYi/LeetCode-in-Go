@@ -9,7 +9,7 @@ func wiggleSort(nums []int) {
 	sort.Sort(sort.Reverse(sort.IntSlice(temp)))
 
 	var i, j int
-
+	// 把 大数 按照降序，排列在奇数位
 	i = 0
 	j = 1
 	for j < n {
@@ -17,7 +17,7 @@ func wiggleSort(nums []int) {
 		i++
 		j += 2
 	}
-
+	// 把 小数 按照降序，排列在偶数位
 	i, j = n-1, n-1
 	if j%2 != 0 {
 		j--
