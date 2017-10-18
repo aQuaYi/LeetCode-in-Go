@@ -15,7 +15,6 @@ func scheduleCourse(courses [][]int) int {
 			count++
 		}
 	}
-
 	return count
 }
 
