@@ -10,7 +10,7 @@
 
 |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|
-|73 / 145|130 / 242|53 / 98|256 / 485|
+|73 / 145|130 / 242|54 / 98|257 / 485|
 > 统计规则：1.免费题，2.算法题，3.能用 Go 解答
 
 ## 题解
@@ -100,7 +100,7 @@
 |81|[Search in Rotated Sorted Array II](./Algorithms/0081.search-in-rotated-sorted-array-ii)|32%|:sweat_smile:| |
 |82|[Remove Duplicates from Sorted List II](./Algorithms/0082.remove-duplicates-from-sorted-list-ii)|29%|:sweat_smile:|:heart:|
 |83|[Remove Duplicates from Sorted List](./Algorithms/0083.remove-duplicates-from-sorted-list)|39%|:smile:| |
-|84|[Largest Rectangle in Histogram](./Algorithms/0084.largest-rectangle-in-histogram)|26%|:joy:|:heart:|
+|84|[Largest Rectangle in Histogram](./Algorithms/0084.largest-rectangle-in-histogram)|27%|:joy:|:heart:|
 |85|[Maximal Rectangle](./Algorithms/0085.maximal-rectangle)|28%|:joy:|:heart:|
 |86|[Partition List](./Algorithms/0086.partition-list)|32%|:sweat_smile:| |
 |87|[Scramble String](./Algorithms/0087.scramble-string)|29%|:joy:|:heart:|
@@ -268,6 +268,7 @@
 |611|[Valid Triangle Number](./Algorithms/0611.valid-triangle-number)|41%|:sweat_smile:|:heart:|
 |621|[Task Scheduler](./Algorithms/0621.task-scheduler)|42%|:sweat_smile:|:heart:|
 |628|[Maximum Product of Three Numbers](./Algorithms/0628.maximum-product-of-three-numbers)|45%|:smile:|:heart:|
+|630|[Course Schedule III](./Algorithms/0630.course-schedule-iii)|27%|:joy:|:heart:|
 |639|[Decode Ways II](./Algorithms/0639.decode-ways-ii)|23%|:joy:| |
 |643|[Maximum Average Subarray I](./Algorithms/0643.maximum-average-subarray-i)|37%|:smile:| |
 |661|[Image Smoother](./Algorithms/0661.image-smoother)|45%|:smile:| |
