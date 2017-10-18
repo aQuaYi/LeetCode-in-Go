@@ -18,6 +18,11 @@ var tcs = []struct {
 		3,
 	},
 
+	{
+		[][]int{[]int{5, 5}, []int{4, 6}, []int{2, 6}},
+		2,
+	},
+
 	// 可以有多个 testcase
 }
 
