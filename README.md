@@ -1,7 +1,7 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 答题进度](https://img.shields.io/badge/Progress-52%25-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 答题进度](https://img.shields.io/badge/Progress-53%25-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 排名](https://img.shields.io/badge/Ranking-16598-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
@@ -10,7 +10,7 @@
 
 |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|
-|73 / 145|130 / 242|54 / 98|257 / 485|
+|74 / 145|133 / 242|54 / 98|261 / 485|
 > 统计规则：1.免费题，2.算法题，3.能用 Go 解答
 
 ## 题解
@@ -220,6 +220,7 @@
 |240|[Search a 2D Matrix II](./Algorithms/0240.search-a-2d-matrix-ii)|38%|:sweat_smile:|:heart:|
 |241|[Different Ways to Add Parentheses](./Algorithms/0241.different-ways-to-add-parentheses)|44%|:sweat_smile:| |
 |242|[Valid Anagram](./Algorithms/0242.valid-anagram)|46%|:smile:| |
+|257|[Binary Tree Paths](./Algorithms/0257.binary-tree-paths)|39%|:smile:| |
 |260|[Single Number III](./Algorithms/0260.single-number-iii)|52%|:sweat_smile:|:heart:|
 |263|[Ugly Number](./Algorithms/0263.ugly-number)|39%|:smile:| |
 |264|[Ugly Number II](./Algorithms/0264.ugly-number-ii)|32%|:sweat_smile:|:heart:|
@@ -247,8 +248,11 @@
 |318|[Maximum Product of Word Lengths](./Algorithms/0318.maximum-product-of-word-lengths)|44%|:sweat_smile:|:heart:|
 |319|[Bulb Switcher](./Algorithms/0319.bulb-switcher)|42%|:sweat_smile:|:heart:|
 |322|[Coin Change](./Algorithms/0322.coin-change)|26%|:sweat_smile:|:heart:|
+|324|[Wiggle Sort II](./Algorithms/0324.wiggle-sort-ii)|26%|:sweat_smile:| |
 |326|[Power of Three](./Algorithms/0326.power-of-three)|40%|:smile:|:heart:|
+|328|[Odd Even Linked List](./Algorithms/0328.odd-even-linked-list)|43%|:sweat_smile:|:heart:|
 |337|[House Robber III](./Algorithms/0337.house-robber-iii)|43%|:sweat_smile:|:heart:|
+|338|[Counting Bits](./Algorithms/0338.counting-bits)|61%|:sweat_smile:| |
 |342|[Power of Four](./Algorithms/0342.power-of-four)|38%|:smile:| |
 |380|[Insert Delete GetRandom O(1)](./Algorithms/0380.insert-delete-getrandom-o1)|39%|:sweat_smile:|:heart:|
 |381|[Insert Delete GetRandom O(1) - Duplicates allowed](./Algorithms/0381.insert-delete-getrandom-o1-duplicates-allowed)|29%|:joy:|:heart:|
