@@ -43,10 +43,8 @@ func Test_oddEvenList(t *testing.T) {
 }
 
 func Benchmark_oddEvenList(b *testing.B) {
+	head := kit.Ints2List([]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9})
 	for i := 0; i < b.N; i++ {
-		for _, tc := range tcs {
-			head := kit.Ints2List(tc.head)
-			oddEvenList(head)
-		}
+		oddEvenList(head)
 	}
 }
