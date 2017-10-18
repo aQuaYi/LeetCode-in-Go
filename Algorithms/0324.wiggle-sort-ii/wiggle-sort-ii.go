@@ -12,8 +12,10 @@ func wiggleSort(nums []int) {
 
 	for i := 0; i < n; i++ {
 		if i < mid {
+			// 把较大的数，按照降序插入 nums 的奇数位
 			nums[2*i+1] = temp[n-1-i]
 		} else {
+			// 把较小的数，按照降序插入 nums 的偶数位
 			nums[2*(i-mid)] = temp[n-1-i]
 		}
 	}
