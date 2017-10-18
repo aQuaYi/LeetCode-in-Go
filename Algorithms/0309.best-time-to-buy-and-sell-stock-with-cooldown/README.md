@@ -12,7 +12,7 @@ Design an algorithm to find the maximum profit. You may complete as many transac
 
 Example:
 
-```shell
+```text
 prices = [1, 2, 3, 0, 2]
 maxProfit = 3
 transactions = [buy, sell, cooldown, buy, sell]

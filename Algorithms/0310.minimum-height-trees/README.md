@@ -14,7 +14,7 @@ You can assume that no duplicate edges will appear in edges. Since all edges are
 
 Example 1:
 
-```shell
+```text
 Given n = 4, edges = [[1, 0], [1, 2], [1, 3]]
 
         0
@@ -28,7 +28,7 @@ return  [1]
 
 Example 2:
 
-```shell
+```text
 Given n = 6, edges = [[0, 3], [1, 3], [2, 3], [4, 3], [5, 4]]
 
      0  1  2

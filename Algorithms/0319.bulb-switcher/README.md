@@ -8,7 +8,7 @@ Find how many bulbs are on after n rounds.
 
 Example:
 
-```shell
+```text
 Given n = 3.
 
 At first, the three bulbs are [off, off, off].

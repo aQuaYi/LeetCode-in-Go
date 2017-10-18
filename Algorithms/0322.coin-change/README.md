@@ -6,14 +6,14 @@ You are given coins of different denominations and a total amount of money amoun
 
 Example 1:
 
-```shell
+```text
 coins = [1, 2, 5], amount = 11
 return 3 (11 = 5 + 5 + 1)
 ```
 
 Example 2:
 
-```shell
+```text
 coins = [2], amount = 3
 return -1.
 ```

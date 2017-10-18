@@ -6,7 +6,7 @@ You are playing the following Bulls and Cows game with your friend: You write do
 
 For example:
 
-```shell
+```text
 Secret number:  "1807"
 Friend's guess: "7810"
 ```
@@ -17,7 +17,7 @@ Write a function to return a hint according to the secret number and friend's gu
 
 Please note that both secret number and friend's guess may contain duplicate digits, for example:
 
-```shell
+```text
 Secret number:  "1123"
 Friend's guess: "0111"
 ```

@@ -10,13 +10,13 @@ For example:
 
 "112358" is an additive number because the digits can form an additive sequence: 1, 1, 2, 3, 5, 8.
 
-```shell
+```text
 1 + 1 = 2, 1 + 2 = 3, 2 + 3 = 5, 3 + 5 = 8
 ```
 
 "199100199" is also an additive number, the additive sequence is: 1, 99, 100, 199.
 
-```shell
+```text
 1 + 99 = 100, 99 + 100 = 199
 ```
 

@@ -6,7 +6,7 @@ Given an integer array nums, find the sum of the elements between indices i and 
 
 Example:
 
-```shell
+```text
 Given nums = [-2, 0, 3, -5, 2, -1]
 
 sumRange(0, 2) -> 1

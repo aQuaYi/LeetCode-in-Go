@@ -13,7 +13,7 @@ Note:
 
 Example:
 
-```shell
+```text
 Given [3, 1, 5, 8]
 
 Return 167

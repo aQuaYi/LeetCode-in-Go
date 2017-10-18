@@ -8,7 +8,7 @@ Note: The input string may contain letters other than the parentheses ( and ).
 
 Examples:
 
-```shell
+```text
 "()())()" -> ["()()()", "(())()"]
 "(a)())()" -> ["(a)()()", "(a())()"]
 ")(" -> [""]

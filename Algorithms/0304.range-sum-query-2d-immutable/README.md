@@ -10,7 +10,7 @@ The above rectangle (with the red border) is defined by (row1, col1) = (2, 1) an
 
 Example:
 
-```shell
+```text
 Given matrix = [
   [3, 0, 1, 4, 2],
   [5, 6, 3, 2, 1],

@@ -4,7 +4,7 @@
 
 Invert a binary tree.
 
-```shell
+```text
      4
    /   \
   2     7
@@ -14,7 +14,7 @@ Invert a binary tree.
 
 to
 
-```shell
+```text
      4
    /   \
   7     2

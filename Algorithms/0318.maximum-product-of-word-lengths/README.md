@@ -8,7 +8,7 @@ If no such two words exist, return 0.
 
 Example 1:
 
-```shell
+```text
 Given ["abcw", "baz", "foo", "bar", "xtfn", "abcdef"]
 Return 16
 The two words can be "abcw", "xtfn".
@@ -16,7 +16,7 @@ The two words can be "abcw", "xtfn".
 
 Example 2:
 
-```shell
+```text
 Given ["a", "ab", "abc", "d", "cd", "bcd", "abcd"]
 Return 4
 The two words can be "ab", "cd".
@@ -24,7 +24,7 @@ The two words can be "ab", "cd".
 
 Example 3:
 
-```shell
+```text
 Given ["a", "aa", "aaa", "aaaa"]
 Return 0
 No such pair of words.

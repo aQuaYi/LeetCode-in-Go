@@ -7,7 +7,7 @@ The counts array has the property where counts[i] is the number of smaller eleme
 
 Example:
 
-```shell
+```text
 Given nums = [5, 2, 6, 1]
 
 To the right of 5 there are 2 smaller elements (2 and 1).
