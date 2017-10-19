@@ -10,7 +10,7 @@
 
 |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|
-|74 / 145|134 / 242|55 / 98|263 / 485|
+|75 / 145|134 / 242|55 / 98|264 / 485|
 > 统计规则：1.免费题，2.算法题，3.能用 Go 解答
 
 ## 题解
@@ -221,6 +221,7 @@
 |241|[Different Ways to Add Parentheses](./Algorithms/0241.different-ways-to-add-parentheses)|44%|:sweat_smile:| |
 |242|[Valid Anagram](./Algorithms/0242.valid-anagram)|46%|:smile:| |
 |257|[Binary Tree Paths](./Algorithms/0257.binary-tree-paths)|39%|:smile:| |
+|258|[Add Digits](./Algorithms/0258.add-digits)|51%|:smile:| |
 |260|[Single Number III](./Algorithms/0260.single-number-iii)|52%|:sweat_smile:|:heart:|
 |263|[Ugly Number](./Algorithms/0263.ugly-number)|39%|:smile:| |
 |264|[Ugly Number II](./Algorithms/0264.ugly-number-ii)|32%|:sweat_smile:|:heart:|
