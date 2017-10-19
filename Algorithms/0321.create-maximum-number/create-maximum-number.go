@@ -4,27 +4,18 @@ func maxNumber(nums1 []int, nums2 []int, k int) []int {
 	size1 := len(nums1)
 	size2 := len(nums2)
 
-	if size1 > size2 {
-		return maxNumber(nums2, nums1, k)
-	}
-
 	res := make([]int, k)
-	temp := make([]int, 0, k)
+	var temp, temp1, temp2 []int
 
-	isBigger := func(temp []int) bool {
-		for i := range temp {
-			if temp[i] > res[i] {
-				return true
-			} else if temp[i] < res[i] {
-				return false
-			}
+	var i int
+	for i = 0; i <= size1 && i <= k; i++ {
+		if size2 < k-i { // nums2 不够长
+			continue
 		}
-		return false
-	}
-
-	for i := 0; i < size1 && size1+size2-i >= k; i++ {
-		temp = combine(outOf(nums1, size1-i), outOf(nums2, k-(size1-i)))
-		if isBigger(temp) {
+		temp1 = outOf(nums1, i)
+		temp2 = outOf(nums2, k-i)
+		temp = combine(temp1, temp2)
+		if isBigger(temp, res) {
 			copy(res, temp)
 		}
 	}
@@ -34,6 +25,14 @@ func maxNumber(nums1 []int, nums2 []int, k int) []int {
 
 // 从 nums 当中挑选 k 个数，其组成的 []int 最大
 func outOf(nums []int, k int) []int {
+	if k == 0 {
+		return []int{}
+	}
+
+	if k == len(nums) {
+		return nums
+	}
+
 	res := make([]int, k)
 	var idx = -1
 	for i := 0; i < k; i++ {
@@ -51,13 +50,17 @@ func outOf(nums []int, k int) []int {
 
 // 混合 nums1 和 nums2 使得其组成的 []int 最大
 func combine(nums1, nums2 []int) []int {
+	if isBigger(nums1, nums2) {
+		return combine(nums2, nums1)
+	}
+
 	size1 := len(nums1)
 	size2 := len(nums2)
 	res := make([]int, 0, size1+size2)
 
 	var i, j int
 	for i < size1 && j < size2 {
-		if nums1[i] > nums2[j] {
+		if nums1[i] > nums2[j] || isBigger(nums1[i:], nums2[j:]) {
 			res = append(res, nums1[i])
 			i++
 		} else {
@@ -70,4 +73,22 @@ func combine(nums1, nums2 []int) []int {
 	res = append(res, nums2[j:]...)
 
 	return res
+}
+
+func isBigger(a1, a2 []int) bool {
+	s1 := len(a1)
+	s2 := len(a2)
+	if s1 > s2 {
+		return !isBigger(a2, a1)
+	}
+
+	for i := 0; i < s1; i++ {
+		if a1[i] > a2[i] {
+			return true
+		} else if a1[i] < a2[i] {
+			return false
+		}
+	}
+
+	return false
 }

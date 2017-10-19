@@ -38,3 +38,5 @@ dits:Special thanks to @dietpepsi for adding this problem and creating all test 
 ## 解题思路
 
 见程序注释
+
+![100](321.100.png)

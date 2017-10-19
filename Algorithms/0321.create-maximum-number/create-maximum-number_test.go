@@ -16,6 +16,20 @@ var tcs = []struct {
 }{
 
 	{
+		[]int{1, 6, 5, 4, 7, 3, 9, 5, 3, 7, 8, 4, 1, 1, 4},
+		[]int{4, 3, 1, 3, 5, 9},
+		21,
+		[]int{4, 3, 1, 6, 5, 4, 7, 3, 9, 5, 3, 7, 8, 4, 1, 3, 5, 9, 1, 1, 4},
+	},
+
+	{
+		[]int{6, 7},
+		[]int{6, 0, 4},
+		5,
+		[]int{6, 7, 6, 0, 4},
+	},
+
+	{
 
 		[]int{1, 1, 1},
 		[]int{9, 9, 9},
@@ -31,13 +45,6 @@ var tcs = []struct {
 	},
 
 	{
-		[]int{1, 6, 5, 4, 7, 3, 9, 5, 3, 7, 8, 4, 1, 1, 4},
-		[]int{4, 3, 1, 3, 5, 9},
-		21,
-		[]int{4, 3, 1, 6, 5, 4, 7, 3, 9, 5, 3, 7, 8, 4, 1, 3, 5, 9, 1, 1, 4},
-	},
-
-	{
 		[]int{3, 4, 6, 5},
 		[]int{9, 1, 2, 5, 8, 3},
 		5,
@@ -50,14 +57,6 @@ var tcs = []struct {
 		[]int{8, 9},
 		3,
 		[]int{9, 8, 9},
-	},
-
-	{
-
-		[]int{6, 7},
-		[]int{6, 0, 4},
-		5,
-		[]int{6, 7, 6, 0, 4},
 	},
 
 	// 可以有多个 testcase
@@ -83,10 +82,10 @@ func Test_outOf(t *testing.T) {
 func Test_combine(t *testing.T) {
 	ast := assert.New(t)
 
-	nums1 := []int{7, 5, 3}
-	nums2 := []int{8, 6, 4}
+	nums1 := []int{6, 7}
+	nums2 := []int{6, 0, 4}
 	actual := combine(nums1, nums2)
-	expected := []int{8, 7, 6, 5, 4, 3}
+	expected := []int{6, 7, 6, 0, 4}
 	ast.Equal(expected, actual, "输入，%v,%v", nums1, nums2)
 }
 
