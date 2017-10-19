@@ -71,6 +71,24 @@ func Test_maxNumber(t *testing.T) {
 		ast.Equal(tc.ans, maxNumber(tc.nums1, tc.nums2, tc.k), "输入:%v", tc)
 	}
 }
+func Test_outOf(t *testing.T) {
+	ast := assert.New(t)
+
+	nums, k := []int{3, 8, 4, 6, 5, 8}, 3
+	actual := outOf(nums, k)
+	expected := []int{8, 6, 8}
+	ast.Equal(expected, actual, "输入，%v, %d", nums, k)
+}
+
+func Test_combine(t *testing.T) {
+	ast := assert.New(t)
+
+	nums1 := []int{7, 5, 3}
+	nums2 := []int{8, 6, 4}
+	actual := combine(nums1, nums2)
+	expected := []int{8, 7, 6, 5, 4, 3}
+	ast.Equal(expected, actual, "输入，%v,%v", nums1, nums2)
+}
 
 func Benchmark_maxNumber(b *testing.B) {
 	for i := 0; i < b.N; i++ {
