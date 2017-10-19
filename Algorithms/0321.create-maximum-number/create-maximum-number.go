@@ -60,6 +60,8 @@ func combine(nums1, nums2 []int) []int {
 
 	var i, j int
 	for i < size1 && j < size2 {
+		// nums1[i] > nums2[j]: 优先使用较大的值
+		// isBigger(nums1[i:], nums2[j:]): 当 nums1[i] == nums2[j]时，优先使用后面的值较大的那组
 		if nums1[i] > nums2[j] || isBigger(nums1[i:], nums2[j:]) {
 			res = append(res, nums1[i])
 			i++
