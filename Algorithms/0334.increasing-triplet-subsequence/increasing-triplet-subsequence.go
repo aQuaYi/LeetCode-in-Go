@@ -1,6 +1,10 @@
 package Problem0334
 
 func increasingTriplet(nums []int) bool {
+	if len(nums) < 3 {
+		return false
+	}
+
 	var i, n int
 	rec := [][]int{[]int{nums[0]}}
 	for _, n = range nums {
