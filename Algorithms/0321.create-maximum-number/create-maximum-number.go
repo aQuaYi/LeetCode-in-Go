@@ -5,16 +5,20 @@ func maxNumber(nums1 []int, nums2 []int, k int) []int {
 	size2 := len(nums2)
 
 	res := make([]int, k)
-	var temp, temp1, temp2 []int
+	var temp []int
 
 	var i int
+	// for 循环作用是，每次
+	//   从 nums1 中取 i   个数，得到temp1，在保证顺序的前提下，其值最大
+	//   从 nums2 中取 k-i 个数，得到temp2，在保证顺序的前提下，其值最大
+	//   把 temp1 和 temp2 混合成 temp，使其值最大。
+	//   记录 最大的 temp 值，就是答案
 	for i = 0; i <= size1 && i <= k; i++ {
 		if size2 < k-i { // nums2 不够长
 			continue
 		}
-		temp1 = outOf(nums1, i)
-		temp2 = outOf(nums2, k-i)
-		temp = combine(temp1, temp2)
+
+		temp = combine(selecting(i, nums1), selecting(k-i, nums2))
 		if isBigger(temp, res) {
 			copy(res, temp)
 		}
@@ -24,36 +28,32 @@ func maxNumber(nums1 []int, nums2 []int, k int) []int {
 }
 
 // 从 nums 当中挑选 k 个数，其组成的 []int 最大
-func outOf(nums []int, k int) []int {
-	if k == 0 {
-		return []int{}
-	}
-
+// 不满足 0 <= k <= len(nums) 会 panic
+func selecting(k int, nums []int) []int {
 	if k == len(nums) {
 		return nums
 	}
 
 	res := make([]int, k)
-	var idx = -1
+	// idx 是 res 上次获取的 nums 的值的索引号
+	idx := -1
 	for i := 0; i < k; i++ {
 		idx++
+		// res[i] 是 nums[idx:len(nums)-k+i+1] 中的最大值
 		res[i] = nums[idx]
-		for j := idx; j <= len(nums)-k+i; j++ {
+		for j := idx + 1; j <= len(nums)-k+i; j++ {
 			if res[i] < nums[j] {
 				res[i] = nums[j]
 				idx = j
 			}
 		}
 	}
+
 	return res
 }
 
 // 混合 nums1 和 nums2 使得其组成的 []int 最大
 func combine(nums1, nums2 []int) []int {
-	if isBigger(nums1, nums2) {
-		return combine(nums2, nums1)
-	}
-
 	size1 := len(nums1)
 	size2 := len(nums2)
 	res := make([]int, 0, size1+size2)
@@ -82,7 +82,7 @@ func isBigger(a1, a2 []int) bool {
 		return !isBigger(a2, a1)
 	}
 
-	for i := 0; i < s1; i++ {
+	for i := 0; i < s1 && i < s2; i++ {
 		if a1[i] > a2[i] {
 			return true
 		} else if a1[i] < a2[i] {

@@ -74,7 +74,7 @@ func Test_outOf(t *testing.T) {
 	ast := assert.New(t)
 
 	nums, k := []int{3, 8, 4, 6, 5, 8}, 3
-	actual := outOf(nums, k)
+	actual := selecting(k, nums)
 	expected := []int{8, 6, 8}
 	ast.Equal(expected, actual, "输入，%v, %d", nums, k)
 }
