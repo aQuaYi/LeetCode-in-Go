@@ -10,7 +10,7 @@
 
 |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|
-|74 / 145|133 / 242|55 / 98|262 / 485|
+|74 / 145|134 / 242|55 / 98|263 / 485|
 > 统计规则：1.免费题，2.算法题，3.能用 Go 解答
 
 ## 题解
@@ -252,6 +252,7 @@
 |324|[Wiggle Sort II](./Algorithms/0324.wiggle-sort-ii)|26%|:sweat_smile:| |
 |326|[Power of Three](./Algorithms/0326.power-of-three)|40%|:smile:|:heart:|
 |328|[Odd Even Linked List](./Algorithms/0328.odd-even-linked-list)|43%|:sweat_smile:|:heart:|
+|334|[Increasing Triplet Subsequence](./Algorithms/0334.increasing-triplet-subsequence)|39%|:sweat_smile:|:heart:|
 |337|[House Robber III](./Algorithms/0337.house-robber-iii)|43%|:sweat_smile:|:heart:|
 |338|[Counting Bits](./Algorithms/0338.counting-bits)|61%|:sweat_smile:| |
 |342|[Power of Four](./Algorithms/0342.power-of-four)|38%|:smile:| |
