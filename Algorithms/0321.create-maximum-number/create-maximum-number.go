@@ -8,22 +8,24 @@ func maxNumber(nums1 []int, nums2 []int, k int) []int {
 	temp := make([]int, 0, k)
 
 	isBigger := func(temp []int) bool {
-		for i := range res {
+		for i := range temp {
 			if temp[i] > res[i] {
 				return true
 			} else if temp[i] < res[i] {
 				return false
 			}
 		}
-		return false
+		return true
 	}
 
 	var dfs func(int, int, []int)
 	dfs = func(i1, i2 int, temp []int) {
+		if !isBigger(temp) {
+			return
+		}
+
 		if len(temp) == k {
-			if isBigger(temp) {
-				copy(res, temp)
-			}
+			copy(res, temp)
 			return
 		}
 
