@@ -1,8 +1,8 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 答题进度](https://img.shields.io/badge/Progress-53%25-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 排名](https://img.shields.io/badge/Ranking-16598-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 答题进度](https://img.shields.io/badge/Progress-54%25-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/Ranking-15889-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 
@@ -10,7 +10,7 @@
 
 |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|
-|74 / 145|133 / 242|54 / 98|261 / 485|
+|74 / 145|133 / 242|55 / 98|262 / 485|
 > 统计规则：1.免费题，2.算法题，3.能用 Go 解答
 
 ## 题解
@@ -247,6 +247,7 @@
 |315|[Count of Smaller Numbers After Self](./Algorithms/0315.count-of-smaller-numbers-after-self)|34%|:joy:|:heart:|
 |318|[Maximum Product of Word Lengths](./Algorithms/0318.maximum-product-of-word-lengths)|44%|:sweat_smile:|:heart:|
 |319|[Bulb Switcher](./Algorithms/0319.bulb-switcher)|42%|:sweat_smile:|:heart:|
+|321|[Create Maximum Number](./Algorithms/0321.create-maximum-number)|24%|:joy:|:heart:|
 |322|[Coin Change](./Algorithms/0322.coin-change)|26%|:sweat_smile:|:heart:|
 |324|[Wiggle Sort II](./Algorithms/0324.wiggle-sort-ii)|26%|:sweat_smile:| |
 |326|[Power of Three](./Algorithms/0326.power-of-three)|40%|:smile:|:heart:|
