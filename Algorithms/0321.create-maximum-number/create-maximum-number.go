@@ -78,9 +78,6 @@ func combine(nums1, nums2 []int) []int {
 func isBigger(a1, a2 []int) bool {
 	s1 := len(a1)
 	s2 := len(a2)
-	if s1 > s2 {
-		return !isBigger(a2, a1)
-	}
 
 	for i := 0; i < s1 && i < s2; i++ {
 		if a1[i] > a2[i] {
