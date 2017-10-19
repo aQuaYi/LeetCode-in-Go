@@ -3,6 +3,7 @@ package Problem0321
 func maxNumber(nums1 []int, nums2 []int, k int) []int {
 	size1 := len(nums1)
 	size2 := len(nums2)
+
 	if size1 > size2 {
 		return maxNumber(nums2, nums1, k)
 	}
