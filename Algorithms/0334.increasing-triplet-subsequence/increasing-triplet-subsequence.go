@@ -10,6 +10,11 @@ func increasingTriplet(nums []int) bool {
 		} else if k < n {
 			k, j, i = -1<<31, -1<<31, n
 		}
+
+		if k > -1<<31 {
+			return true
+		}
 	}
-	return k > -1<<31
+
+	return false
 }
