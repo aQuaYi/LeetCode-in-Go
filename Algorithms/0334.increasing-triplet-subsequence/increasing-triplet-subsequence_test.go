@@ -13,6 +13,7 @@ var tcs = []struct {
 	ans  bool
 }{
 
+	{[]int{1, 2, 3, 1, 2, 1}, true},
 	{[]int{1, 4, 3, 2, 5}, true},
 	{[]int{2, 5, 3, 4, 5}, true},
 	{[]int{1, 2, -10, -8, -7}, true},
