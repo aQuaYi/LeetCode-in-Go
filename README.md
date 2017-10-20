@@ -2,7 +2,7 @@
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 答题进度](https://img.shields.io/badge/Progress-54%25-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 排名](https://img.shields.io/badge/Ranking-15889-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/Ranking-15487-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 
@@ -10,7 +10,7 @@
 
 |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|
-|75 / 145|134 / 242|55 / 98|264 / 485|
+|75 / 145|134 / 242|56 / 98|265 / 485|
 > 统计规则：1.免费题，2.算法题，3.能用 Go 解答
 
 ## 题解
@@ -246,6 +246,7 @@
 |312|[Burst Balloons](./Algorithms/0312.burst-balloons)|43%|:joy:|:heart:|
 |313|[Super Ugly Number](./Algorithms/0313.super-ugly-number)|37%|:sweat_smile:|:heart:|
 |315|[Count of Smaller Numbers After Self](./Algorithms/0315.count-of-smaller-numbers-after-self)|34%|:joy:|:heart:|
+|316|[Remove Duplicate Letters](./Algorithms/0316.remove-duplicate-letters)|29%|:joy:|:heart:|
 |318|[Maximum Product of Word Lengths](./Algorithms/0318.maximum-product-of-word-lengths)|44%|:sweat_smile:|:heart:|
 |319|[Bulb Switcher](./Algorithms/0319.bulb-switcher)|42%|:sweat_smile:|:heart:|
 |321|[Create Maximum Number](./Algorithms/0321.create-maximum-number)|24%|:joy:|:heart:|
