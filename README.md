@@ -1,7 +1,7 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 答题进度](https://img.shields.io/badge/Progress-54%25-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 答题进度](https://img.shields.io/badge/Progress-55%25-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 排名](https://img.shields.io/badge/Ranking-15487-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
@@ -10,7 +10,7 @@
 
 |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|
-|75 / 145|135 / 242|56 / 98|266 / 485|
+|75 / 145|138 / 242|56 / 98|269 / 485|
 > 统计规则：1.免费题，2.算法题，3.能用 Go 解答
 
 ## 题解
@@ -259,6 +259,9 @@
 |338|[Counting Bits](./Algorithms/0338.counting-bits)|61%|:sweat_smile:| |
 |342|[Power of Four](./Algorithms/0342.power-of-four)|38%|:smile:| |
 |343|[Integer Break](./Algorithms/0343.integer-break)|46%|:sweat_smile:| |
+|347|[Top K Frequent Elements](./Algorithms/0347.top-k-frequent-elements)|48%|:sweat_smile:| |
+|357|[Count Numbers with Unique Digits](./Algorithms/0357.count-numbers-with-unique-digits)|46%|:sweat_smile:|:heart:|
+|365|[Water and Jug Problem](./Algorithms/0365.water-and-jug-problem)|27%|:sweat_smile:|:heart:|
 |380|[Insert Delete GetRandom O(1)](./Algorithms/0380.insert-delete-getrandom-o1)|39%|:sweat_smile:|:heart:|
 |381|[Insert Delete GetRandom O(1) - Duplicates allowed](./Algorithms/0381.insert-delete-getrandom-o1-duplicates-allowed)|29%|:joy:|:heart:|
 |414|[Third Maximum Number](./Algorithms/0414.third-maximum-number)|27%|:smile:| |
