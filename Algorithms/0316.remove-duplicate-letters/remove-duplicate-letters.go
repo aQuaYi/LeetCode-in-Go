@@ -6,13 +6,21 @@ import (
 )
 
 func removeDuplicateLetters(s string) string {
+	var i, j, k, l int
 	// rec 记录字母每次出现的位置
-	rec := make(map[int][]int, 26)
-	for i := range s {
-		b := int(s[i] - 'a')
-		rec[b] = append(rec[b], i)
+	rec := make(map[byte][]int, 26)
+	for i = range s {
+		rec[s[i]] = append(rec[s[i]], i)
 	}
+	base := byte(255)
+	i, j, k = -1, 0, 0
+	for ; k < len(s); k++ {
+		if len(s[k]) == 1 {
+			j = k
+			base = s[k]
 
+		}
+	}
 	// bytes 出现过的字母
 	bytes := make([]int, 0, len(rec))
 	for k := range rec {
@@ -21,7 +29,7 @@ func removeDuplicateLetters(s string) string {
 	// 字母升序
 	sort.Ints(bytes)
 
-	var i, k, bi, bj, base int
+	var k, bi, bj, base int
 	for i, bi = range bytes {
 		base = rec[bi][0]
 		for _, bj = range bytes[i+1:] {
