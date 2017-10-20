@@ -1,6 +1,10 @@
 package Problem0365
 
 func canMeasureWater(x int, y int, z int) bool {
+	if z == 0 {
+		return true
+	}
+
 	if x > y {
 		return canMeasureWater(y, x, z)
 	}
@@ -9,7 +13,7 @@ func canMeasureWater(x int, y int, z int) bool {
 		return false
 	}
 
-	if z%x == 0 || z == y || z == x+y {
+	if z == x+y || z%x == 0 || z == y {
 		return true
 	}
 

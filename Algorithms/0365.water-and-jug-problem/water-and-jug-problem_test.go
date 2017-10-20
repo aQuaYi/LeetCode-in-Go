@@ -20,6 +20,7 @@ var tcs = []struct {
 	{4, 6, 8, true},
 	{3, 5, 1, true},
 	{2, 6, 5, false},
+	{0, 2, 1, false},
 
 	// 可以有多个 testcase
 }
