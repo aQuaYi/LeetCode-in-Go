@@ -18,6 +18,7 @@ func topKFrequent(nums []int, k int) []int {
 	// min 是 前 k 个高频数字的底线
 	min := counts[len(counts)-k]
 
+	// 收集所有　不低于　底线的数字
 	for n, c := range rec {
 		if c >= min {
 			res = append(res, n)

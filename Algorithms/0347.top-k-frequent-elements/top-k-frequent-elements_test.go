@@ -2,6 +2,7 @@ package Problem0347
 
 import (
 	"fmt"
+	"sort"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -24,7 +25,9 @@ func Test_topKFrequent(t *testing.T) {
 
 	for _, tc := range tcs {
 		fmt.Printf("~~%v~~\n", tc)
-		ast.Equal(tc.ans, topKFrequent(tc.nums, tc.k), "输入:%v", tc)
+		ans := topKFrequent(tc.nums, tc.k)
+		sort.Ints(ans)
+		ast.Equal(tc.ans, ans, "输入:%v", tc)
 	}
 }
 
