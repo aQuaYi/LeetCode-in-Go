@@ -15,7 +15,6 @@ func canMeasureWater(x int, y int, z int) bool {
 	}
 
 	a, b := y, x
-
 	for a%b != 0 {
 		b, a = a%b, b
 	}
