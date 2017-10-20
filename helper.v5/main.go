@@ -7,7 +7,7 @@ import (
 
 // 程序辅助设置
 const (
-	VERSION = "5.3.0"
+	VERSION = "5.3.1"
 
 	configFile      = "leetcode.toml"
 	leetCodeFile    = "leetcode.json"
@@ -27,6 +27,12 @@ var cfg config
 func main() {
 	if len(os.Args) == 1 {
 		fmt.Println(USAGE)
+		fmt.Printf("helper version %s\n", VERSION)
+		return
+	}
+
+	if os.Args[1] == "v" || os.Args[1] == "version" {
+		fmt.Printf("helper version %s\n", VERSION)
 		return
 	}
 
@@ -34,8 +40,6 @@ func main() {
 	signin()
 
 	switch os.Args[1] {
-	case "v", "version":
-		fmt.Printf("helper version %s\n", VERSION)
 	case "h", "help":
 		fmt.Println(USAGE)
 	case "check":
