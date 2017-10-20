@@ -6,6 +6,7 @@ func canMeasureWater(x int, y int, z int) bool {
 	}
 
 	if x > y {
+		// 保证 x <= y
 		return canMeasureWater(y, x, z)
 	}
 
@@ -13,23 +14,11 @@ func canMeasureWater(x int, y int, z int) bool {
 		return y == z
 	}
 
-	if z > x+y {
-		return false
+	a, b := y, x
+
+	for a%b != 0 {
+		b, a = a%b, b
 	}
 
-	if z > y {
-		return canMeasureWater(x, y, z%y)
-	}
-
-	if z == x+y || z%x == 0 || z == y {
-		return true
-	}
-
-	for i := 2; i < y; i++ {
-		if x*i%y == z {
-			return true
-		}
-	}
-
-	return false
+	return z%b == 0 && x+y >= z
 }
