@@ -12,16 +12,9 @@ var tcs = []struct {
 	s   string
 	ans string
 }{
-
-	{
-		"bcabc",
-		"abc",
-	},
-
-	{
-		"cbacdcbc",
-		"acdb",
-	},
+	{"cbacdcbc", "acdb"},
+	{"cbac", "bac"},
+	{"bcabc", "abc"},
 
 	// 可以有多个 testcase
 }
