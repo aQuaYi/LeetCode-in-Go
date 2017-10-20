@@ -12,7 +12,7 @@ var tcs = []struct {
 	s   string
 	ans string
 }{
-
+	{"bbbacacca", "bac"},
 	{"ccacbaba", "acb"},
 	{"cbacdcbc", "acdb"},
 	{"cbac", "bac"},

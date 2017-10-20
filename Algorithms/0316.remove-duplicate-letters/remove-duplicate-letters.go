@@ -55,6 +55,7 @@ func removeDuplicateLetters(s string) string {
 
 		} else {
 			bytes[j] = 0
+			count[s[j]-'a']--
 			j++
 			for j < len(s) && bytes[j] == 0 {
 				j++
