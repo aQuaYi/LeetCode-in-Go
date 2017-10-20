@@ -18,6 +18,11 @@ var tcs = []struct {
 		"abc",
 	},
 
+	{
+		"cbacdcbc",
+		"acdb",
+	},
+
 	// 可以有多个 testcase
 }
 

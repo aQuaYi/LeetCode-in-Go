@@ -18,4 +18,6 @@ Credits:Special thanks to @dietpepsi for adding this problem and creating all te
 
 ## 解题思路
 
+lexicographical: :字典排序(lexicographical order)是一种对于随机变量形成序列的排序方法。其方法是,按照字母顺序,或者数字小大顺序,由小到大的形成序列。
+
 见程序注释
