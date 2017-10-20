@@ -17,6 +17,10 @@ func canMeasureWater(x int, y int, z int) bool {
 		return false
 	}
 
+	if z > y {
+		return canMeasureWater(x, y, z%y)
+	}
+
 	if z == x+y || z%x == 0 || z == y {
 		return true
 	}
