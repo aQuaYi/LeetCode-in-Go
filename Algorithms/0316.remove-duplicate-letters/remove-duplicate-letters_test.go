@@ -12,6 +12,8 @@ var tcs = []struct {
 	s   string
 	ans string
 }{
+
+	{"ccacbaba", "acb"},
 	{"cbacdcbc", "acdb"},
 	{"cbac", "bac"},
 	{"bcabc", "abc"},

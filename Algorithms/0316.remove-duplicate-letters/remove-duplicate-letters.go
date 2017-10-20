@@ -1,52 +1,73 @@
 package Problem0316
 
-import (
-	"sort"
-	"strings"
-)
-
 func removeDuplicateLetters(s string) string {
-	var i, j, k, l int
-	// rec 记录字母每次出现的位置
-	rec := make(map[byte][]int, 26)
-	for i = range s {
-		rec[s[i]] = append(rec[s[i]], i)
+	count := make([]int, 26)
+	bytes := []byte(s)
+	for _, b := range bytes {
+		count[b-'a']++
 	}
-	base := byte(255)
-	i, j, k = -1, 0, 0
-	for ; k < len(s); k++ {
-		if len(s[k]) == 1 {
-			j = k
-			base = s[k]
 
+	var i, j, k int
+	i, j = 0, 1
+
+	for j < len(s) {
+		if s[i] > s[j] {
+			if count[s[i]-'a'] > 1 {
+				bytes[i] = 0
+				count[s[i]-'a']--
+			}
+			i++
+			for i < len(s) && bytes[i] == 0 {
+				i++
+			}
+
+			j++
+			for j < len(s) && bytes[j] == 0 {
+				j++
+			}
+		} else if s[i] < s[j] {
+			if count[s[j]-'a'] == 1 {
+				for k = j + 1; k < len(s); k++ {
+					if bytes[k] == s[i] {
+						bytes[k] = 0
+						count[s[i]-'a']--
+					}
+				}
+			}
+
+			if count[s[i]-'a'] == 1 {
+				for k = i - 1; 0 <= k; k-- {
+					if bytes[k] == s[j] {
+						bytes[k] = 0
+						count[s[j]-'a']--
+					}
+				}
+			}
+			i++
+			for i < len(s) && bytes[i] == 0 {
+				i++
+			}
+
+			j++
+			for j < len(s) && bytes[j] == 0 {
+				j++
+			}
+
+		} else {
+			bytes[j] = 0
+			j++
+			for j < len(s) && bytes[j] == 0 {
+				j++
+			}
 		}
 	}
-	// bytes 出现过的字母
-	bytes := make([]int, 0, len(rec))
-	for k := range rec {
-		bytes = append(bytes, k)
-	}
-	// 字母升序
-	sort.Ints(bytes)
 
-	var k, bi, bj, base int
-	for i, bi = range bytes {
-		base = rec[bi][0]
-		for _, bj = range bytes[i+1:] {
-			k = 0
-			for k+1 < len(rec[bj]) && rec[bj][k] < base {
-				k++
-			}
-			if k > 0 {
-				rec[bj] = rec[bj][k:]
-			}
+	res := ""
+	for _, b := range bytes {
+		if b != 0 {
+			res += string(b)
 		}
 	}
 
-	res := make([]string, len(s))
-	for b, idxs := range rec {
-		res[idxs[0]] = string(b + 'a')
-	}
-
-	return strings.Join(res, "")
+	return res
 }
