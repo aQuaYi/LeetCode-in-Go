@@ -26,7 +26,7 @@ func removeDuplicateLetters(s string) string {
 				j++
 			}
 		} else if s[i] < s[j] {
-			if count[s[j]-'a'] == 1 {
+			if count[s[i]-'a'] > 1 {
 				for k = j + 1; k < len(s); k++ {
 					if bytes[k] == s[i] {
 						bytes[k] = 0
@@ -35,7 +35,7 @@ func removeDuplicateLetters(s string) string {
 				}
 			}
 
-			if count[s[i]-'a'] == 1 {
+			if count[s[j]-'a'] > 1 {
 				for k = i - 1; 0 <= k; k-- {
 					if bytes[k] == s[j] {
 						bytes[k] = 0
