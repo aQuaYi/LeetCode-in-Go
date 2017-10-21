@@ -55,6 +55,10 @@ func (t *Twitter) GetNewsFeed(userID int) []int {
 
 // Follow followee. If the operation is invalid, it should be a no-op.
 func (t *Twitter) Follow(followerID int, followeeID int) {
+	if followerID == followeeID {
+		return
+	}
+
 	for _, id := range t.follow[followerID] {
 		if id == followeeID {
 			return
