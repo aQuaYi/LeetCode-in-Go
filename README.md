@@ -10,8 +10,8 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-**Accepted**|75|139|57|271|
-**Total**|145|242|98|485|
+|**Accepted**|75|139|57|271|
+|**Total**|145|242|98|485|
 
 > 统计规则：1.免费题，2.算法题，3.能用 Go 解答
 
@@ -134,6 +134,8 @@
 |113|[Path Sum II](./Algorithms/0113.path-sum-ii)|34%|:sweat_smile:| |
 |114|[Flatten Binary Tree to Linked List](./Algorithms/0114.flatten-binary-tree-to-linked-list)|35%|:sweat_smile:|:heart:|
 |115|[Distinct Subsequences](./Algorithms/0115.distinct-subsequences)|31%|:joy:|:heart:|
+|116|Populating Next Right Pointers in Each Node|36%|:sweat_smile:| |
+|117|Populating Next Right Pointers in Each Node II|33%|:sweat_smile:| |
 |118|[Pascal's Triangle](./Algorithms/0118.pascals-triangle)|39%|:smile:| |
 |119|[Pascal's Triangle II](./Algorithms/0119.pascals-triangle-ii)|37%|:smile:| |
 |120|[Triangle](./Algorithms/0120.triangle)|34%|:sweat_smile:|:heart:|
@@ -149,12 +151,16 @@
 |130|[Surrounded Regions](./Algorithms/0130.surrounded-regions)|18%|:sweat_smile:|:heart:|
 |131|[Palindrome Partitioning](./Algorithms/0131.palindrome-partitioning)|34%|:sweat_smile:|:heart:|
 |132|[Palindrome Partitioning II](./Algorithms/0132.palindrome-partitioning-ii)|24%|:joy:|:heart:|
+|133|Clone Graph|25%|:sweat_smile:| |
 |134|[Gas Station](./Algorithms/0134.gas-station)|29%|:sweat_smile:|:heart:|
 |135|[Candy](./Algorithms/0135.candy)|24%|:joy:| |
 |136|[Single Number](./Algorithms/0136.single-number)|54%|:smile:| |
 |137|[Single Number II](./Algorithms/0137.single-number-ii)|41%|:sweat_smile:|:heart:|
+|138|Copy List with Random Pointer|26%|:sweat_smile:| |
 |139|[Word Break](./Algorithms/0139.word-break)|30%|:sweat_smile:|:heart:|
 |140|[Word Break II](./Algorithms/0140.word-break-ii)|23%|:joy:|:heart:|
+|141|Linked List Cycle|35%|:smile:| |
+|142|Linked List Cycle II|30%|:sweat_smile:| |
 |143|[Reorder List](./Algorithms/0143.reorder-list)|25%|:sweat_smile:|:heart:|
 |144|[Binary Tree Preorder Traversal](./Algorithms/0144.binary-tree-preorder-traversal)|45%|:sweat_smile:|:heart:|
 |145|[Binary Tree Postorder Traversal](./Algorithms/0145.binary-tree-postorder-traversal)|40%|:joy:| |
@@ -163,10 +169,12 @@
 |148|[Sort List](./Algorithms/0148.sort-list)|29%|:sweat_smile:|:heart:|
 |149|[Max Points on a Line](./Algorithms/0149.max-points-on-a-line)|15%|:joy:|:heart:|
 |150|[Evaluate Reverse Polish Notation](./Algorithms/0150.evaluate-reverse-polish-notation)|27%|:sweat_smile:| |
+|151|Reverse Words in a String|15%|:sweat_smile:| |
 |152|[Maximum Product Subarray](./Algorithms/0152.maximum-product-subarray)|26%|:sweat_smile:|:heart:|
 |153|[Find Minimum in Rotated Sorted Array](./Algorithms/0153.find-minimum-in-rotated-sorted-array)|40%|:sweat_smile:| |
 |154|[Find Minimum in Rotated Sorted Array II](./Algorithms/0154.find-minimum-in-rotated-sorted-array-ii)|37%|:joy:| |
 |155|[Min Stack](./Algorithms/0155.min-stack)|29%|:smile:| |
+|160|Intersection of Two Linked Lists|30%|:smile:| |
 |162|[Find Peak Element](./Algorithms/0162.find-peak-element)|37%|:sweat_smile:| |
 |164|[Maximum Gap](./Algorithms/0164.maximum-gap)|29%|:joy:| |
 |165|[Compare Version Numbers](./Algorithms/0165.compare-version-numbers)|20%|:sweat_smile:| |
@@ -176,11 +184,14 @@
 |169|[Majority Element](./Algorithms/0169.majority-element)|47%|:smile:|:heart:|
 |171|[Excel Sheet Column Number](./Algorithms/0171.excel-sheet-column-number)|47%|:smile:| |
 |172|[Factorial Trailing Zeroes](./Algorithms/0172.factorial-trailing-zeroes)|36%|:smile:| |
+|173|Binary Search Tree Iterator|42%|:sweat_smile:| |
 |174|[Dungeon Game](./Algorithms/0174.dungeon-game)|23%|:joy:|:heart:|
 |179|[Largest Number](./Algorithms/0179.largest-number)|22%|:sweat_smile:|:heart:|
 |187|[Repeated DNA Sequences](./Algorithms/0187.repeated-dna-sequences)|32%|:sweat_smile:| |
 |188|[Best Time to Buy and Sell Stock IV](./Algorithms/0188.best-time-to-buy-and-sell-stock-iv)|24%|:joy:|:heart:|
 |189|[Rotate Array](./Algorithms/0189.rotate-array)|24%|:smile:| |
+|190|Reverse Bits|29%|:smile:| |
+|191|Number of 1 Bits|39%|:smile:| |
 |198|[House Robber](./Algorithms/0198.house-robber)|39%|:smile:|:heart:|
 |199|[Binary Tree Right Side View](./Algorithms/0199.binary-tree-right-side-view)|41%|:sweat_smile:| |
 |200|[Number of Islands](./Algorithms/0200.number-of-islands)|35%|:sweat_smile:| |
@@ -205,6 +216,7 @@
 |219|[Contains Duplicate II](./Algorithms/0219.contains-duplicate-ii)|32%|:smile:| |
 |220|[Contains Duplicate III](./Algorithms/0220.contains-duplicate-iii)|19%|:sweat_smile:|:heart:|
 |221|[Maximal Square](./Algorithms/0221.maximal-square)|29%|:sweat_smile:|:heart:|
+|222|Count Complete Tree Nodes|27%|:sweat_smile:| |
 |223|[Rectangle Area](./Algorithms/0223.rectangle-area)|33%|:sweat_smile:| |
 |224|[Basic Calculator](./Algorithms/0224.basic-calculator)|27%|:joy:| |
 |225|[Implement Stack using Queues](./Algorithms/0225.implement-stack-using-queues)|33%|:smile:| |
@@ -217,6 +229,9 @@
 |232|[Implement Queue using Stacks](./Algorithms/0232.implement-queue-using-stacks)|37%|:smile:| |
 |233|[Number of Digit One](./Algorithms/0233.number-of-digit-one)|28%|:joy:|:heart:|
 |234|[Palindrome Linked List](./Algorithms/0234.palindrome-linked-list)|33%|:smile:| |
+|235|Lowest Common Ancestor of a Binary Search Tree|39%|:smile:| |
+|236|Lowest Common Ancestor of a Binary Tree|29%|:sweat_smile:| |
+|237|Delete Node in a Linked List|46%|:smile:| |
 |238|[Product of Array Except Self](./Algorithms/0238.product-of-array-except-self)|49%|:sweat_smile:| |
 |239|[Sliding Window Maximum](./Algorithms/0239.sliding-window-maximum)|33%|:joy:|:heart:|
 |240|[Search a 2D Matrix II](./Algorithms/0240.search-a-2d-matrix-ii)|38%|:sweat_smile:|:heart:|
@@ -231,18 +246,24 @@
 |273|[Integer to English Words](./Algorithms/0273.integer-to-english-words)|22%|:joy:|:heart:|
 |274|[H-Index](./Algorithms/0274.h-index)|33%|:sweat_smile:| |
 |275|[H-Index II](./Algorithms/0275.h-index-ii)|34%|:sweat_smile:|:heart:|
+|278|First Bad Version|25%|:smile:| |
 |279|[Perfect Squares](./Algorithms/0279.perfect-squares)|37%|:sweat_smile:|:heart:|
 |282|[Expression Add Operators](./Algorithms/0282.expression-add-operators)|30%|:joy:|:heart:|
 |283|[Move Zeroes](./Algorithms/0283.move-zeroes)|50%|:smile:| |
+|284|Peeking Iterator|35%|:sweat_smile:| |
 |287|[Find the Duplicate Number](./Algorithms/0287.find-the-duplicate-number)|43%|:sweat_smile:|:heart:|
 |289|[Game of Life](./Algorithms/0289.game-of-life)|37%|:sweat_smile:|:heart:|
+|290|Word Pattern|33%|:smile:| |
+|292|Nim Game|55%|:smile:| |
 |295|[Find Median from Data Stream](./Algorithms/0295.find-median-from-data-stream)|27%|:joy:|:heart:|
+|297|Serialize and Deserialize Binary Tree|33%|:joy:| |
 |299|[Bulls and Cows](./Algorithms/0299.bulls-and-cows)|35%|:sweat_smile:| |
 |300|[Longest Increasing Subsequence](./Algorithms/0300.longest-increasing-subsequence)|38%|:sweat_smile:|:heart:|
 |301|[Remove Invalid Parentheses](./Algorithms/0301.remove-invalid-parentheses)|35%|:joy:|:heart:|
 |303|[Range Sum Query - Immutable](./Algorithms/0303.range-sum-query-immutable)|30%|:smile:| |
 |304|[Range Sum Query 2D - Immutable](./Algorithms/0304.range-sum-query-2d-immutable)|25%|:sweat_smile:| |
 |306|[Additive Number](./Algorithms/0306.additive-number)|27%|:sweat_smile:| |
+|307|Range Sum Query - Mutable|21%|:sweat_smile:| |
 |309|[Best Time to Buy and Sell Stock with Cooldown](./Algorithms/0309.best-time-to-buy-and-sell-stock-with-cooldown)|41%|:sweat_smile:|:heart:|
 |310|[Minimum Height Trees](./Algorithms/0310.minimum-height-trees)|28%|:sweat_smile:| |
 |312|[Burst Balloons](./Algorithms/0312.burst-balloons)|43%|:joy:|:heart:|
@@ -257,40 +278,259 @@
 |326|[Power of Three](./Algorithms/0326.power-of-three)|40%|:smile:|:heart:|
 |327|[Count of Range Sum](./Algorithms/0327.count-of-range-sum)|30%|:joy:|:heart:|
 |328|[Odd Even Linked List](./Algorithms/0328.odd-even-linked-list)|43%|:sweat_smile:|:heart:|
+|329|Longest Increasing Path in a Matrix|36%|:joy:| |
+|330|Patching Array|32%|:joy:| |
+|331|Verify Preorder Serialization of a Binary Tree|36%|:sweat_smile:| |
+|332|Reconstruct Itinerary|29%|:sweat_smile:| |
 |334|[Increasing Triplet Subsequence](./Algorithms/0334.increasing-triplet-subsequence)|39%|:sweat_smile:|:heart:|
+|335|Self Crossing|25%|:joy:| |
+|336|Palindrome Pairs|26%|:joy:| |
 |337|[House Robber III](./Algorithms/0337.house-robber-iii)|43%|:sweat_smile:|:heart:|
 |338|[Counting Bits](./Algorithms/0338.counting-bits)|61%|:sweat_smile:| |
+|341|Flatten Nested List Iterator|42%|:sweat_smile:| |
 |342|[Power of Four](./Algorithms/0342.power-of-four)|38%|:smile:| |
 |343|[Integer Break](./Algorithms/0343.integer-break)|46%|:sweat_smile:| |
+|344|Reverse String|59%|:smile:| |
+|345|Reverse Vowels of a String|38%|:smile:| |
 |347|[Top K Frequent Elements](./Algorithms/0347.top-k-frequent-elements)|48%|:sweat_smile:| |
+|349|Intersection of Two Arrays|47%|:smile:| |
+|350|Intersection of Two Arrays II|44%|:smile:| |
+|352|Data Stream as Disjoint Intervals|40%|:joy:| |
+|354|Russian Doll Envelopes|32%|:joy:| |
 |355|[Design Twitter](./Algorithms/0355.design-twitter)|25%|:sweat_smile:|:heart:|
 |357|[Count Numbers with Unique Digits](./Algorithms/0357.count-numbers-with-unique-digits)|46%|:sweat_smile:|:heart:|
+|363|Max Sum of Rectangle No Larger Than K|33%|:joy:| |
 |365|[Water and Jug Problem](./Algorithms/0365.water-and-jug-problem)|27%|:sweat_smile:|:heart:|
+|367|Valid Perfect Square|38%|:smile:| |
+|368|Largest Divisible Subset|33%|:sweat_smile:| |
+|371|Sum of Two Integers|51%|:smile:| |
+|372|Super Pow|34%|:sweat_smile:| |
+|373|Find K Pairs with Smallest Sums|30%|:sweat_smile:| |
+|374|Guess Number Higher or Lower|35%|:smile:| |
+|375|Guess Number Higher or Lower II|35%|:sweat_smile:| |
+|376|Wiggle Subsequence|35%|:sweat_smile:| |
+|377|Combination Sum IV|42%|:sweat_smile:| |
+|378|Kth Smallest Element in a Sorted Matrix|45%|:sweat_smile:| |
 |380|[Insert Delete GetRandom O(1)](./Algorithms/0380.insert-delete-getrandom-o1)|39%|:sweat_smile:|:heart:|
 |381|[Insert Delete GetRandom O(1) - Duplicates allowed](./Algorithms/0381.insert-delete-getrandom-o1-duplicates-allowed)|29%|:joy:|:heart:|
+|382|Linked List Random Node|47%|:sweat_smile:| |
+|383|Ransom Note|47%|:smile:| |
+|384|Shuffle an Array|46%|:sweat_smile:| |
+|385|Mini Parser|30%|:sweat_smile:| |
+|386|Lexicographical Numbers|41%|:sweat_smile:| |
+|387|First Unique Character in a String|46%|:smile:| |
+|388|Longest Absolute File Path|36%|:sweat_smile:| |
+|389|Find the Difference|50%|:smile:| |
+|390|Elimination Game|42%|:sweat_smile:| |
+|391|Perfect Rectangle|26%|:joy:| |
+|392|Is Subsequence|44%|:sweat_smile:| |
+|393|UTF-8 Validation|34%|:sweat_smile:| |
+|394|Decode String|41%|:sweat_smile:| |
+|395|Longest Substring with At Least K Repeating Characters|35%|:sweat_smile:| |
+|396|Rotate Function|33%|:sweat_smile:| |
+|397|Integer Replacement|30%|:sweat_smile:| |
+|398|Random Pick Index|43%|:sweat_smile:| |
+|399|Evaluate Division|41%|:sweat_smile:| |
+|400|Nth Digit|30%|:smile:| |
+|401|Binary Watch|44%|:smile:| |
+|402|Remove K Digits|26%|:sweat_smile:| |
+|403|Frog Jump|32%|:joy:| |
+|404|Sum of Left Leaves|47%|:smile:| |
+|405|Convert a Number to Hexadecimal|41%|:smile:| |
+|406|Queue Reconstruction by Height|55%|:sweat_smile:| |
+|407|Trapping Rain Water II|37%|:joy:| |
+|409|Longest Palindrome|45%|:smile:| |
+|410|Split Array Largest Sum|38%|:joy:| |
+|412|Fizz Buzz|58%|:smile:| |
+|413|Arithmetic Slices|54%|:sweat_smile:| |
 |414|[Third Maximum Number](./Algorithms/0414.third-maximum-number)|27%|:smile:| |
+|415|Add Strings|41%|:smile:| |
+|416|Partition Equal Subset Sum|39%|:sweat_smile:| |
+|417|Pacific Atlantic Water Flow|33%|:sweat_smile:| |
+|419|Battleships in a Board|62%|:sweat_smile:| |
+|420|Strong Password Checker|20%|:joy:| |
+|421|Maximum XOR of Two Numbers in an Array|46%|:sweat_smile:| |
+|423|Reconstruct Original Digits from English|44%|:sweat_smile:| |
+|424|Longest Repeating Character Replacement|42%|:sweat_smile:| |
+|432|All O`one Data Structure|28%|:joy:| |
+|434|Number of Segments in a String|36%|:smile:| |
+|435|Non-overlapping Intervals|41%|:sweat_smile:| |
+|436|Find Right Interval|41%|:sweat_smile:| |
 |437|[Path Sum III](./Algorithms/0437.path-sum-iii)|39%|:smile:|:heart:|
+|438|Find All Anagrams in a String|33%|:smile:| |
+|440|K-th Smallest in Lexicographical Order|25%|:joy:| |
+|441|Arranging Coins|36%|:smile:| |
 |442|[Find All Duplicates in an Array](./Algorithms/0442.find-all-duplicates-in-an-array)|56%|:sweat_smile:| |
+|445|Add Two Numbers II|45%|:sweat_smile:| |
+|446|Arithmetic Slices II - Subsequence|27%|:joy:| |
+|447|Number of Boomerangs|45%|:smile:| |
 |448|[Find All Numbers Disappeared in an Array](./Algorithms/0448.find-all-numbers-disappeared-in-an-array)|51%|:smile:| |
+|449|Serialize and Deserialize BST|42%|:sweat_smile:| |
+|450|Delete Node in a BST|37%|:sweat_smile:| |
+|451|Sort Characters By Frequency|51%|:sweat_smile:| |
+|452|Minimum Number of Arrows to Burst Balloons|44%|:sweat_smile:| |
+|453|Minimum Moves to Equal Array Elements|47%|:smile:| |
+|454|4Sum II|47%|:sweat_smile:| |
+|455|Assign Cookies|47%|:smile:| |
+|456|132 Pattern|28%|:sweat_smile:| |
+|459|Repeated Substring Pattern|38%|:smile:| |
+|460|LFU Cache|24%|:joy:| |
+|461|Hamming Distance|69%|:smile:| |
+|462|Minimum Moves to Equal Array Elements II|51%|:sweat_smile:| |
+|463|Island Perimeter|57%|:smile:| |
+|464|Can I Win|25%|:sweat_smile:| |
+|466|Count The Repetitions|27%|:joy:| |
+|467|Unique Substrings in Wraparound String|32%|:sweat_smile:| |
+|468|Validate IP Address|20%|:sweat_smile:| |
+|472|Concatenated Words|30%|:joy:| |
+|473|Matchsticks to Square|35%|:sweat_smile:| |
+|474|Ones and Zeroes|38%|:sweat_smile:| |
+|475|Heaters|29%|:smile:| |
+|476|Number Complement|60%|:smile:| |
+|477|Total Hamming Distance|47%|:sweat_smile:| |
+|479|Largest Palindrome Product|23%|:smile:| |
+|480|Sliding Window Median|31%|:joy:| |
+|481|Magical String|45%|:sweat_smile:| |
+|482|License Key Formatting|41%|:sweat_smile:| |
+|483|Smallest Good Base|33%|:joy:| |
 |485|[Max Consecutive Ones](./Algorithms/0485.max-consecutive-ones)|53%|:smile:| |
+|486|Predict the Winner|45%|:sweat_smile:| |
+|488|Zuma Game|37%|:joy:| |
+|491|Increasing Subsequences|38%|:sweat_smile:| |
+|492|Construct the Rectangle|48%|:smile:| |
+|493|Reverse Pairs|20%|:joy:| |
+|494|Target Sum|43%|:sweat_smile:| |
 |495|[Teemo Attacking](./Algorithms/0495.teemo-attacking)|51%|:sweat_smile:| |
+|496|Next Greater Element I|56%|:smile:| |
+|498|Diagonal Traverse|45%|:sweat_smile:| |
+|500|Keyboard Row|59%|:smile:| |
+|501|Find Mode in Binary Search Tree|37%|:smile:| |
+|502|IPO|36%|:joy:| |
+|503|Next Greater Element II|47%|:sweat_smile:| |
+|504|Base 7|44%|:smile:| |
+|506|Relative Ranks|46%|:smile:| |
+|507|Perfect Number|33%|:smile:| |
+|508|Most Frequent Subtree Sum|52%|:sweat_smile:| |
+|513|Find Bottom Left Tree Value|56%|:sweat_smile:| |
+|514|Freedom Trail|39%|:joy:| |
+|515|Find Largest Value in Each Tree Row|55%|:sweat_smile:| |
+|516|Longest Palindromic Subsequence|42%|:sweat_smile:| |
+|517|Super Washing Machines|36%|:joy:| |
+|520|Detect Capital|51%|:smile:| |
+|521|Longest Uncommon Subsequence I |55%|:smile:| |
+|522|Longest Uncommon Subsequence II|31%|:sweat_smile:| |
+|523|Continuous Subarray Sum|23%|:sweat_smile:| |
+|524|Longest Word in Dictionary through Deleting|42%|:sweat_smile:| |
+|525|Contiguous Array|40%|:sweat_smile:| |
 |526|[Beautiful Arrangement](./Algorithms/0526.beautiful-arrangement)|54%|:sweat_smile:|:heart:|
+|529|Minesweeper|49%|:sweat_smile:| |
+|530|Minimum Absolute Difference in BST|47%|:smile:| |
 |532|[K-diff Pairs in an Array](./Algorithms/0532.k-diff-pairs-in-an-array)|28%|:smile:| |
+|535|Encode and Decode TinyURL|74%|:sweat_smile:| |
+|537|Complex Number Multiplication|63%|:sweat_smile:| |
+|538|Convert BST to Greater Tree|49%|:smile:| |
+|539|Minimum Time Difference|45%|:sweat_smile:| |
+|540|Single Element in a Sorted Array|55%|:sweat_smile:| |
+|541|Reverse String II|43%|:smile:| |
+|542|01 Matrix|33%|:sweat_smile:| |
+|543|Diameter of Binary Tree|44%|:smile:| |
+|546|Remove Boxes|33%|:joy:| |
+|547|Friend Circles|49%|:sweat_smile:| |
+|551|Student Attendance Record I|44%|:smile:| |
+|552|Student Attendance Record II|31%|:joy:| |
+|553|Optimal Division|55%|:sweat_smile:| |
+|554|Brick Wall|45%|:sweat_smile:| |
+|556|Next Greater Element III|28%|:sweat_smile:| |
+|557|Reverse Words in a String III|59%|:smile:| |
 |560|[Subarray Sum Equals K](./Algorithms/0560.subarray-sum-equals-k)|40%|:sweat_smile:|:heart:|
 |561|[Array Partition I](./Algorithms/0561.array-partition-i)|66%|:smile:| |
+|563|Binary Tree Tilt|47%|:smile:| |
+|564|Find the Closest Palindrome|17%|:joy:| |
 |566|[Reshape the Matrix](./Algorithms/0566.reshape-the-matrix)|58%|:smile:| |
+|567|Permutation in String|36%|:sweat_smile:| |
+|572|Subtree of Another Tree|40%|:smile:| |
+|575|Distribute Candies|58%|:smile:| |
+|576|Out of Boundary Paths|30%|:sweat_smile:| |
 |581|[Shortest Unsorted Continuous Subarray](./Algorithms/0581.shortest-unsorted-continuous-subarray)|29%|:smile:|:heart:|
+|583|Delete Operation for Two Strings|43%|:sweat_smile:| |
+|587|Erect the Fence|32%|:joy:| |
+|591|Tag Validator|29%|:joy:| |
+|592|Fraction Addition and Subtraction|46%|:sweat_smile:| |
+|593|Valid Square|40%|:sweat_smile:| |
+|594|Longest Harmonious Subsequence|40%|:smile:| |
+|598|Range Addition II|48%|:smile:| |
+|599|Minimum Index Sum of Two Lists|46%|:smile:| |
+|600|Non-negative Integers without Consecutive Ones|30%|:joy:| |
 |605|[Can Place Flowers](./Algorithms/0605.can-place-flowers)|30%|:smile:|:heart:|
+|606|Construct String from Binary Tree|49%|:smile:| |
+|609|Find Duplicate File in System|52%|:sweat_smile:| |
 |611|[Valid Triangle Number](./Algorithms/0611.valid-triangle-number)|41%|:sweat_smile:|:heart:|
+|617|Merge Two Binary Trees|67%|:smile:| |
 |621|[Task Scheduler](./Algorithms/0621.task-scheduler)|42%|:sweat_smile:|:heart:|
+|623|Add One Row to Tree|46%|:sweat_smile:| |
 |628|[Maximum Product of Three Numbers](./Algorithms/0628.maximum-product-of-three-numbers)|45%|:smile:|:heart:|
+|629|K Inverse Pairs Array|26%|:joy:| |
 |630|[Course Schedule III](./Algorithms/0630.course-schedule-iii)|27%|:joy:|:heart:|
+|632|Smallest Range|42%|:joy:| |
+|633|Sum of Square Numbers|32%|:smile:| |
+|636|Exclusive Time of Functions|43%|:sweat_smile:| |
+|637|Average of Levels in Binary Tree|55%|:smile:| |
+|638|Shopping Offers|42%|:sweat_smile:| |
 |639|[Decode Ways II](./Algorithms/0639.decode-ways-ii)|23%|:joy:| |
+|640|Solve the Equation|38%|:sweat_smile:| |
 |643|[Maximum Average Subarray I](./Algorithms/0643.maximum-average-subarray-i)|37%|:smile:| |
+|645|Set Mismatch|40%|:smile:| |
+|646|Maximum Length of Pair Chain|47%|:sweat_smile:| |
+|647|Palindromic Substrings|55%|:sweat_smile:| |
+|648|Replace Words|47%|:sweat_smile:| |
+|649|Dota2 Senate|35%|:sweat_smile:| |
+|650|2 Keys Keyboard|44%|:sweat_smile:| |
+|652|Find Duplicate Subtrees|35%|:sweat_smile:| |
+|653|Two Sum IV - Input is a BST|50%|:smile:| |
+|654|Maximum Binary Tree|70%|:sweat_smile:| |
+|655|Print Binary Tree|50%|:sweat_smile:| |
+|657|Judge Route Circle|68%|:smile:| |
+|658|Find K Closest Elements|35%|:sweat_smile:| |
+|659|Split Array into Consecutive Subsequences|35%|:sweat_smile:| |
 |661|[Image Smoother](./Algorithms/0661.image-smoother)|45%|:smile:| |
+|662|Maximum Width of Binary Tree|37%|:sweat_smile:| |
+|664|Strange Printer|31%|:joy:| |
+|665|Non-decreasing Array|21%|:smile:| |
 |667|[Beautiful Arrangement II](./Algorithms/0667.beautiful-arrangement-ii)|51%|:sweat_smile:| |
+|668|Kth Smallest Number in Multiplication Table|37%|:joy:| |
+|669|Trim a Binary Search Tree|58%|:smile:| |
+|670|Maximum Swap|38%|:sweat_smile:| |
+|671|Second Minimum Node In a Binary Tree|41%|:smile:| |
+|672|Bulb Switcher II|47%|:sweat_smile:| |
+|673|Number of Longest Increasing Subsequence|30%|:sweat_smile:| |
+|674|Longest Continuous Increasing Subsequence|42%|:smile:| |
+|675|Cut Off Trees for Golf Event|27%|:joy:| |
+|676|Implement Magic Dictionary|50%|:sweat_smile:| |
+|677|Map Sum Pairs|52%|:sweat_smile:| |
+|678|Valid Parenthesis String|28%|:sweat_smile:| |
+|679|24 Game|38%|:joy:| |
+|680|Valid Palindrome II|31%|:smile:| |
+|681|Next Closest Time|43%|:sweat_smile:| |
+|682|Baseball Game|58%|:smile:| |
+|683|K Empty Slots|36%|:joy:| |
+|684|Redundant Connection|35%|:sweat_smile:| |
+|685|Redundant Connection II|28%|:joy:| |
+|686|Repeated String Match|30%|:smile:| |
+|687|Longest Univalue Path|32%|:smile:| |
+|688|Knight Probability in Chessboard|38%|:sweat_smile:| |
+|689|Maximum Sum of 3 Non-Overlapping Subarrays|42%|:joy:| |
+|690|Employee Importance|55%|:smile:| |
+|691|Stickers to Spell Word|31%|:joy:| |
+|692|Top K Frequent Words|41%|:sweat_smile:| |
+|693|Binary Number with Alternating Bits|54%|:smile:| |
+|695|Max Area of Island|53%|:smile:| |
+|696|Count Binary Substrings|51%|:smile:| |
+|697|Degree of an Array|48%|:smile:| |
+|698|Partition to K Equal Sum Subsets|35%|:sweat_smile:| |
+|699|Falling Squares|36%|:joy:| |
 
-以下免费的算法题，暂时不能使用 Go 解答
+
+##以下免费的算法题，暂时不能使用 Go 解答
 
 - [116.Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)
 - [117.Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)

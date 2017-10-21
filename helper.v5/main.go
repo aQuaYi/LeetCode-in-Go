@@ -7,7 +7,7 @@ import (
 
 // 程序辅助设置
 const (
-	VERSION = "5.3.3"
+	VERSION = "5.3.5"
 
 	configFile      = "leetcode.toml"
 	leetCodeFile    = "leetcode.json"
