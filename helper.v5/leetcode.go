@@ -102,12 +102,12 @@ func (c category) progressTable() string {
 	res := fmt.Sprintln("|     |Easy|Medium|Hard|Total|")
 	res += fmt.Sprintln("|:---:|:---:|:---:|:---:|:---:|")
 
-	res += fmt.Sprintf("Accepted|%d|", c.Easy.Solved)
+	res += fmt.Sprintf("**Accepted**|%d|", c.Easy.Solved)
 	res += fmt.Sprintf("%d|", c.Medium.Solved)
 	res += fmt.Sprintf("%d|", c.Hard.Solved)
 	res += fmt.Sprintf("%d|\n", c.Total.Solved)
 
-	res += fmt.Sprintf("Total|%d|", c.Easy.Total)
+	res += fmt.Sprintf("**Total**|%d|", c.Easy.Total)
 	res += fmt.Sprintf("%d|", c.Medium.Total)
 	res += fmt.Sprintf("%d|", c.Hard.Total)
 	res += fmt.Sprintf("%d|\n", c.Total.Total)
