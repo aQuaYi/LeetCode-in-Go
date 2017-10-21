@@ -8,5 +8,20 @@ import (
 
 func Test_Constructor(t *testing.T) {
 	ast := assert.New(t)
+	twitter := Constructor()
 
+	twitter.PostTweet(1, 5)
+
+	ast.Equal([]int{5}, twitter.GetNewsFeed(1))
+
+	twitter.Follow(1, 2)
+
+	twitter.PostTweet(2, 6)
+
+	ast.Equal([]int{6, 5}, twitter.GetNewsFeed(1))
+
+	twitter.Follow(1, 2)
+	twitter.Unfollow(1, 2)
+
+	ast.Equal([]int{5}, twitter.GetNewsFeed(1))
 }
