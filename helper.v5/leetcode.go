@@ -224,16 +224,16 @@ func (p problem) tableLine() string {
 	res += fmt.Sprintf("%s|", degrees[p.Difficulty])
 	f := " "
 	if p.IsFavor {
-		f = ":heart:" // ❤
+		f = "[❤](https://leetcode.com/list/oussv5j)"
 	}
 	res += fmt.Sprintf("%s|\n", f)
 	return res
 }
 
 var degrees = map[int]string{
-	1: ":smile:",
-	2: ":sweat_smile:",
-	3: ":joy:",
+	1: "Easy",
+	2: "Medium",
+	3: "Hard",
 }
 
 func (p problem) listLine() string {
