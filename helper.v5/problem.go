@@ -192,10 +192,8 @@ func creatGoTest(p problem, fcName, para, ansType string) {
 	ans %s
 }{
 
-	{
-		,
-		,
-	},
+	{ },
+	{ },
 
 	// 可以有多个 testcase
 }`
