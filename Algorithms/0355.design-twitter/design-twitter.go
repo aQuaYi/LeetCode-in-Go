@@ -1,38 +1,41 @@
 package Problem0355
 
+// Twitter is twitter user
 type Twitter struct {
 }
 
-/** Initialize your data structure here. */
+// Constructor initialize your data structure here.
 func Constructor() Twitter {
 
+	return Twitter{}
 }
 
-/** Compose a new tweet. */
-func (this *Twitter) PostTweet(userId int, tweetId int) {
-
-}
-
-/** Retrieve the 10 most recent tweet ids in the user's news feed. Each item in the news feed must be posted by users who the user followed or by the user herself. Tweets must be ordered from most recent to least recent. */
-func (this *Twitter) GetNewsFeed(userId int) []int {
+// PostTweet compose a new tweet.
+func (t *Twitter) PostTweet(userID int, tweetID int) {
 
 }
 
-/** Follower follows a followee. If the operation is invalid, it should be a no-op. */
-func (this *Twitter) Follow(followerId int, followeeId int) {
+// GetNewsFeed retrieve the 10 most recent tweet ids in the user's news feed. Each item in the news feed must be posted by users who the user followed or by the user herself. Tweets must be ordered from most recent to least recent.
+func (t *Twitter) GetNewsFeed(userID int) []int {
+
+	return []int{}
+}
+
+// Follow followee. If the operation is invalid, it should be a no-op.
+func (t *Twitter) Follow(followerID int, followeeID int) {
 
 }
 
-/** Follower unfollows a followee. If the operation is invalid, it should be a no-op. */
-func (this *Twitter) Unfollow(followerId int, followeeId int) {
+// Unfollow follower unfollows a followee. If the operation is invalid, it should be a no-op.
+func (t *Twitter) Unfollow(followerID int, followeeID int) {
 
 }
 
 /**
  * Your Twitter object will be instantiated and called as such:
  * obj := Constructor();
- * obj.PostTweet(userId,tweetId);
- * param_2 := obj.GetNewsFeed(userId);
- * obj.Follow(followerId,followeeId);
- * obj.Unfollow(followerId,followeeId);
+ * obj.PostTweet(userID,tweetID);
+ * param_2 := obj.GetNewsFeed(userID);
+ * obj.Follow(followerID,followeeID);
+ * obj.Unfollow(followerID,followeeID);
  */
