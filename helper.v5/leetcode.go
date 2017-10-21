@@ -218,7 +218,7 @@ func (p problem) tableLine() string {
 	if p.IsAccepted {
 		res += fmt.Sprintf(`[%s](%s)|`, p.Title, p.Dir)
 	} else {
-		res += fmt.Sprintf(`%s|`, p.Title)
+		res += fmt.Sprintf(`%s * |`, p.Title)
 	}
 	res += fmt.Sprintf("%s|", p.PassRate)
 	res += fmt.Sprintf("%s|", degrees[p.Difficulty])
