@@ -11,6 +11,7 @@ func Test_Constructor(t *testing.T) {
 	twitter := Constructor()
 
 	twitter.PostTweet(1, 5)
+	twitter.Follow(1, 1)
 
 	ast.Equal([]int{5}, twitter.GetNewsFeed(1))
 

@@ -1,37 +1,54 @@
 package Problem0355
 
-import (
-	"sort"
-)
+import "sort"
+import "time"
+
+type tweet struct {
+	id   int
+	time int64
+}
+
+type tweets []tweet
+
+func (t tweets) Len() int {
+	return len(t)
+}
+func (t tweets) Less(i, j int) bool {
+	return t[i].time > t[j].time
+}
+func (t tweets) Swap(i, j int) {
+	t[i], t[j] = t[j], t[i]
+}
 
 // Twitter is twitter user
 type Twitter struct {
-	tweets map[int][]int
-	follow map[int][]int
+	userTweets map[int]tweets
+	follow     map[int][]int
 }
 
 // Constructor initialize your data structure here.
 func Constructor() Twitter {
-	t := make(map[int][]int)
+	t := make(map[int]tweets)
 	f := make(map[int][]int)
-	return Twitter{tweets: t, follow: f}
+	return Twitter{userTweets: t, follow: f}
 }
 
 // PostTweet compose a new tweet.
 func (t *Twitter) PostTweet(userID int, tweetID int) {
-	t.tweets[userID] = append(t.tweets[userID], tweetID)
+	t.userTweets[userID] = append(t.userTweets[userID], tweet{id: tweetID, time: time.Now().UnixNano()})
 }
 
 // GetNewsFeed retrieve the 10 most recent tweet ids in the user's news feed. Each item in the news feed must be posted by users who the user followed or by the user herself. Tweets must be ordered from most recent to least recent.
 func (t *Twitter) GetNewsFeed(userID int) []int {
-	res := make([]int, len(t.tweets[userID]))
-	copy(res, t.tweets[userID])
+	temp := make(tweets, len(t.userTweets[userID]))
+	copy(temp, t.userTweets[userID])
 	for _, id := range t.follow[userID] {
-		res = append(res, t.tweets[id]...)
+		temp = append(temp, t.userTweets[id]...)
 	}
-	sort.Sort(sort.Reverse(sort.IntSlice(res)))
-	if len(res) > 10 {
-		return res[:10]
+	sort.Sort(temp)
+	res := make([]int, 0, 10)
+	for i := 0; i < len(temp) && i < 10; i++ {
+		res = append(res, temp[i].id)
 	}
 	return res
 }
