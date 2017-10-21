@@ -16,9 +16,9 @@ func Test_Constructor(t *testing.T) {
 
 	twitter.Follow(1, 2)
 
-	twitter.PostTweet(2, 6)
+	twitter.PostTweet(2, 4)
 
-	ast.Equal([]int{6, 5}, twitter.GetNewsFeed(1))
+	ast.Equal([]int{4, 5}, twitter.GetNewsFeed(1))
 
 	twitter.Follow(1, 2)
 	twitter.Unfollow(1, 2)

@@ -12,7 +12,9 @@ type Twitter struct {
 
 // Constructor initialize your data structure here.
 func Constructor() Twitter {
-	return Twitter{}
+	t := make(map[int][]int)
+	f := make(map[int][]int)
+	return Twitter{tweets: t, follow: f}
 }
 
 // PostTweet compose a new tweet.
