@@ -161,6 +161,16 @@ func (ps problems) accepted() problems {
 	return res
 }
 
+func (ps problems) available() problems {
+	res := make([]problem, 0, len(ps))
+	for _, p := range ps {
+		if p.IsAvailable {
+			res = append(res, p)
+		}
+	}
+	return res
+}
+
 func (ps problems) unavailable() problems {
 	res := make([]problem, 0, len(ps))
 	for _, p := range ps {
