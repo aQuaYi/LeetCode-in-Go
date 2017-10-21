@@ -362,7 +362,7 @@
 |468|Validate IP Address|20%|:sweat_smile:| |
 |472|Concatenated Words|30%|:joy:| |
 |473|Matchsticks to Square|35%|:sweat_smile:| |
-|474|Ones and Zeroes|38%|:sweat_smile:| |
+|474|Ones and Zeroes|39%|:sweat_smile:| |
 |475|Heaters|29%|:smile:| |
 |476|Number Complement|60%|:smile:| |
 |477|Total Hamming Distance|47%|:sweat_smile:| |
