@@ -101,10 +101,10 @@ type category struct {
 func (c category) progressTable() string {
 	res := fmt.Sprintln("|Easy|Medium|Hard|Total|")
 	res += fmt.Sprintln("|:---:|:---:|:---:|:---:|")
-	res += fmt.Sprintf("|%d / %d|", c.Easy.Solved, c.Easy.Total)
-	res += fmt.Sprintf("%d / %d|", c.Medium.Solved, c.Medium.Total)
-	res += fmt.Sprintf("%d / %d|", c.Hard.Solved, c.Hard.Total)
-	res += fmt.Sprintf("%d / %d|", c.Total.Solved, c.Total.Total)
+	res += fmt.Sprintf("|%d/%d|", c.Easy.Solved, c.Easy.Total)
+	res += fmt.Sprintf("%d/%d|", c.Medium.Solved, c.Medium.Total)
+	res += fmt.Sprintf("%d/%d|", c.Hard.Solved, c.Hard.Total)
+	res += fmt.Sprintf("%d/%d|", c.Total.Solved, c.Total.Total)
 	return res
 }
 
