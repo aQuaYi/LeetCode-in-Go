@@ -10,7 +10,7 @@
 
 |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|
-|75 / 145|138 / 242|57 / 98|270 / 485|
+|75 / 145|139 / 242|57 / 98|271 / 485|
 > 统计规则：1.免费题，2.算法题，3.能用 Go 解答
 
 ## 题解
@@ -261,6 +261,7 @@
 |342|[Power of Four](./Algorithms/0342.power-of-four)|38%|:smile:| |
 |343|[Integer Break](./Algorithms/0343.integer-break)|46%|:sweat_smile:| |
 |347|[Top K Frequent Elements](./Algorithms/0347.top-k-frequent-elements)|48%|:sweat_smile:| |
+|355|[Design Twitter](./Algorithms/0355.design-twitter)|25%|:sweat_smile:|:heart:|
 |357|[Count Numbers with Unique Digits](./Algorithms/0357.count-numbers-with-unique-digits)|46%|:sweat_smile:|:heart:|
 |365|[Water and Jug Problem](./Algorithms/0365.water-and-jug-problem)|27%|:sweat_smile:|:heart:|
 |380|[Insert Delete GetRandom O(1)](./Algorithms/0380.insert-delete-getrandom-o1)|39%|:sweat_smile:|:heart:|
