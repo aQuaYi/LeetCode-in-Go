@@ -10,7 +10,7 @@
 
 |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|
-|75 / 145|138 / 242|56 / 98|269 / 485|
+|75 / 145|138 / 242|57 / 98|270 / 485|
 > 统计规则：1.免费题，2.算法题，3.能用 Go 解答
 
 ## 题解
@@ -176,7 +176,7 @@
 |172|[Factorial Trailing Zeroes](./Algorithms/0172.factorial-trailing-zeroes)|36%|:smile:| |
 |174|[Dungeon Game](./Algorithms/0174.dungeon-game)|23%|:joy:|:heart:|
 |179|[Largest Number](./Algorithms/0179.largest-number)|22%|:sweat_smile:|:heart:|
-|187|[Repeated DNA Sequences](./Algorithms/0187.repeated-dna-sequences)|31%|:sweat_smile:| |
+|187|[Repeated DNA Sequences](./Algorithms/0187.repeated-dna-sequences)|32%|:sweat_smile:| |
 |188|[Best Time to Buy and Sell Stock IV](./Algorithms/0188.best-time-to-buy-and-sell-stock-iv)|24%|:joy:|:heart:|
 |189|[Rotate Array](./Algorithms/0189.rotate-array)|24%|:smile:| |
 |198|[House Robber](./Algorithms/0198.house-robber)|39%|:smile:|:heart:|
@@ -253,6 +253,7 @@
 |322|[Coin Change](./Algorithms/0322.coin-change)|26%|:sweat_smile:|:heart:|
 |324|[Wiggle Sort II](./Algorithms/0324.wiggle-sort-ii)|26%|:sweat_smile:| |
 |326|[Power of Three](./Algorithms/0326.power-of-three)|40%|:smile:|:heart:|
+|327|[Count of Range Sum](./Algorithms/0327.count-of-range-sum)|30%|:joy:|:heart:|
 |328|[Odd Even Linked List](./Algorithms/0328.odd-even-linked-list)|43%|:sweat_smile:|:heart:|
 |334|[Increasing Triplet Subsequence](./Algorithms/0334.increasing-triplet-subsequence)|39%|:sweat_smile:|:heart:|
 |337|[House Robber III](./Algorithms/0337.house-robber-iii)|43%|:sweat_smile:|:heart:|
