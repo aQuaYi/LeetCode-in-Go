@@ -2,12 +2,14 @@ package Problem0344
 
 func reverseString(s string) string {
 	bytes := []byte(s)
-	size := len(s)
-	res := make([]byte, size)
 
-	for i := range bytes {
-		res[i] = bytes[size-i-1]
+	i, j := 0, len(s)-1
+
+	for i < j {
+		bytes[i], bytes[j] = bytes[j], bytes[i]
+		i++
+		j--
 	}
 
-	return string(res)
+	return string(bytes)
 }
