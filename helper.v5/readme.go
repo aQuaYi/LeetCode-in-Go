@@ -21,8 +21,8 @@ func makeREADME(lc *leetcode) {
 
 ## 进度
 
-%s
 > 统计规则：1.免费题，2.算法题，3.能用 Go 解答
+%s
 
 ## 题解
 
