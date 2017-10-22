@@ -10,8 +10,8 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|75|139|57|271|
-|**Total**|145|242|98|485|
+|**Accepted**|75|139|58|272|
+|**Total**|145|245|99|489|
 
 > 统计规则：1.免费题，2.算法题，3.能用 Go 解答
 
@@ -260,7 +260,7 @@
 |326|[Power of Three](./Algorithms/0326.power-of-three)|40%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |327|[Count of Range Sum](./Algorithms/0327.count-of-range-sum)|30%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |328|[Odd Even Linked List](./Algorithms/0328.odd-even-linked-list)|43%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|329| * Longest Increasing Path in a Matrix|36%|Hard| |
+|329|[Longest Increasing Path in a Matrix](./Algorithms/0329.longest-increasing-path-in-a-matrix)|36%|Hard| |
 |330| * Patching Array|32%|Hard| |
 |331| * Verify Preorder Serialization of a Binary Tree|36%|Medium| |
 |332| * Reconstruct Itinerary|29%|Medium| |
@@ -490,7 +490,7 @@
 |681| * Next Closest Time|43%|Medium| |
 |682| * Baseball Game|58%|Easy| |
 |683| * K Empty Slots|36%|Hard| |
-|684| * Redundant Connection|35%|Medium| |
+|684| * Redundant Connection|36%|Medium| |
 |685| * Redundant Connection II|28%|Hard| |
 |686| * Repeated String Match|30%|Easy| |
 |687| * Longest Univalue Path|32%|Easy| |
@@ -504,6 +504,10 @@
 |697| * Degree of an Array|48%|Easy| |
 |698| * Partition to K Equal Sum Subsets|35%|Medium| |
 |699| * Falling Squares|36%|Hard| |
+|712| * Minimum ASCII Delete Sum for Two Strings|38%|Medium| |
+|713| * Subarray Product Less Than K|33%|Medium| |
+|714| * Best Time to Buy and Sell Stock with Transaction Fee|16%|Medium| |
+|715| * Range Module|18%|Hard| |
 
 以下免费的算法题，暂时不能使用 Go 解答
 
