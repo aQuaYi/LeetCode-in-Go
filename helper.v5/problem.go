@@ -167,7 +167,7 @@ func getFunction(URL string) (fc, fcName, para, ansType string) {
 	para = strings.Replace(fc[i+1:j], ",", "\n", -1)
 	ansType = fc[j+1 : k]
 
-	fc = fc[:k] + "{\n\n\treturn\n}"
+	fc = fc[:k] + "{\n\n\treturn res\n}"
 
 	return
 }
