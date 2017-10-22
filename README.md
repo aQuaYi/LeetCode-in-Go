@@ -1,7 +1,7 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 答题进度](https://img.shields.io/badge/Progress-56%25-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 答题进度](https://img.shields.io/badge/Progress-57%25-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 排名](https://img.shields.io/badge/Ranking-13805-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
@@ -10,7 +10,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|80|140|58|278|
+|**Accepted**|82|140|58|280|
 |**Total**|145|245|99|489|
 
 > 统计规则：1.免费题，2.算法题，3.能用 Go 解答
@@ -282,9 +282,9 @@
 |357|[Count Numbers with Unique Digits](./Algorithms/0357.count-numbers-with-unique-digits)|46%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |363| * Max Sum of Rectangle No Larger Than K|33%|Hard| |
 |365|[Water and Jug Problem](./Algorithms/0365.water-and-jug-problem)|27%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|367| * Valid Perfect Square|38%|Easy| |
+|367|[Valid Perfect Square](./Algorithms/0367.valid-perfect-square)|38%|Easy| |
 |368|[Largest Divisible Subset](./Algorithms/0368.largest-divisible-subset)|33%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|371| * Sum of Two Integers|51%|Easy| |
+|371| * Sum of Two Integers|51%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |372| * Super Pow|34%|Medium| |
 |373| * Find K Pairs with Smallest Sums|30%|Medium| |
 |375| * Guess Number Higher or Lower II|35%|Medium| |
@@ -294,7 +294,7 @@
 |380|[Insert Delete GetRandom O(1)](./Algorithms/0380.insert-delete-getrandom-o1)|39%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |381|[Insert Delete GetRandom O(1) - Duplicates allowed](./Algorithms/0381.insert-delete-getrandom-o1-duplicates-allowed)|29%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |382| * Linked List Random Node|47%|Medium| |
-|383| * Ransom Note|47%|Easy| |
+|383|[Ransom Note](./Algorithms/0383.ransom-note)|47%|Easy| |
 |384| * Shuffle an Array|46%|Medium| |
 |385| * Mini Parser|30%|Medium| |
 |387| * First Unique Character in a String|46%|Easy| |
@@ -362,12 +362,12 @@
 |468| * Validate IP Address|20%|Medium| |
 |472| * Concatenated Words|30%|Hard| |
 |473| * Matchsticks to Square|35%|Medium| |
-|474| * Ones and Zeroes|39%|Medium| |
+|474| * Ones and Zeroes|38%|Medium| |
 |475| * Heaters|29%|Easy| |
 |476| * Number Complement|60%|Easy| |
 |477| * Total Hamming Distance|47%|Medium| |
 |479| * Largest Palindrome Product|23%|Easy| |
-|480| * Sliding Window Median|31%|Hard| |
+|480| * Sliding Window Median|30%|Hard| |
 |481| * Magical String|45%|Medium| |
 |482| * License Key Formatting|41%|Medium| |
 |483| * Smallest Good Base|33%|Hard| |
