@@ -2,7 +2,7 @@
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 答题进度](https://img.shields.io/badge/Progress-56%25-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 排名](https://img.shields.io/badge/Ranking-14606-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/Ranking-13805-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 
@@ -10,7 +10,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|77|140|58|275|
+|**Accepted**|80|140|58|278|
 |**Total**|145|245|99|489|
 
 > 统计规则：1.免费题，2.算法题，3.能用 Go 解答
@@ -271,11 +271,11 @@
 |338|[Counting Bits](./Algorithms/0338.counting-bits)|61%|Medium| |
 |342|[Power of Four](./Algorithms/0342.power-of-four)|38%|Easy| |
 |343|[Integer Break](./Algorithms/0343.integer-break)|46%|Medium| |
-|344| * Reverse String|59%|Easy| |
+|344|[Reverse String](./Algorithms/0344.reverse-string)|59%|Easy| |
 |345| * Reverse Vowels of a String|38%|Easy| |
 |347|[Top K Frequent Elements](./Algorithms/0347.top-k-frequent-elements)|48%|Medium| |
-|349| * Intersection of Two Arrays|47%|Easy| |
-|350| * Intersection of Two Arrays II|44%|Easy| |
+|349|[Intersection of Two Arrays](./Algorithms/0349.intersection-of-two-arrays)|47%|Easy| |
+|350|[Intersection of Two Arrays II](./Algorithms/0350.intersection-of-two-arrays-ii)|44%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |352| * Data Stream as Disjoint Intervals|40%|Hard| |
 |354| * Russian Doll Envelopes|32%|Hard| |
 |355|[Design Twitter](./Algorithms/0355.design-twitter)|25%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -500,7 +500,7 @@
 |692| * Top K Frequent Words|41%|Medium| |
 |693| * Binary Number with Alternating Bits|54%|Easy| |
 |695| * Max Area of Island|53%|Easy| |
-|696| * Count Binary Substrings|51%|Easy| |
+|696| * Count Binary Substrings|52%|Easy| |
 |697| * Degree of an Array|48%|Easy| |
 |698| * Partition to K Equal Sum Subsets|35%|Medium| |
 |699| * Falling Squares|36%|Hard| |
