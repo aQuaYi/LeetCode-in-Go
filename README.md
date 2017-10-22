@@ -1,7 +1,7 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 答题进度](https://img.shields.io/badge/Progress-55%25-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 答题进度](https://img.shields.io/badge/Progress-56%25-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 排名](https://img.shields.io/badge/Ranking-14606-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
@@ -10,7 +10,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|75|140|58|273|
+|**Accepted**|76|140|58|274|
 |**Total**|145|245|99|489|
 
 > 统计规则：1.免费题，2.算法题，3.能用 Go 解答
@@ -237,7 +237,7 @@
 |287|[Find the Duplicate Number](./Algorithms/0287.find-the-duplicate-number)|43%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |289|[Game of Life](./Algorithms/0289.game-of-life)|37%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |290| * Word Pattern|33%|Easy| |
-|292| * Nim Game|55%|Easy| |
+|292|[Nim Game](./Algorithms/0292.nim-game)|55%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |295|[Find Median from Data Stream](./Algorithms/0295.find-median-from-data-stream)|27%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |299|[Bulls and Cows](./Algorithms/0299.bulls-and-cows)|35%|Medium| |
 |300|[Longest Increasing Subsequence](./Algorithms/0300.longest-increasing-subsequence)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -500,11 +500,11 @@
 |692| * Top K Frequent Words|41%|Medium| |
 |693| * Binary Number with Alternating Bits|54%|Easy| |
 |695| * Max Area of Island|53%|Easy| |
-|696| * Count Binary Substrings|51%|Easy| |
+|696| * Count Binary Substrings|52%|Easy| |
 |697| * Degree of an Array|48%|Easy| |
 |698| * Partition to K Equal Sum Subsets|35%|Medium| |
 |699| * Falling Squares|36%|Hard| |
-|712| * Minimum ASCII Delete Sum for Two Strings|40%|Medium| |
+|712| * Minimum ASCII Delete Sum for Two Strings|41%|Medium| |
 |713| * Subarray Product Less Than K|36%|Medium| |
 |714| * Best Time to Buy and Sell Stock with Transaction Fee|20%|Medium| |
 |715| * Range Module|23%|Hard| |
