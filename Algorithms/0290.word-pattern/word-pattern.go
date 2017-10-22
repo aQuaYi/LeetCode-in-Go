@@ -7,9 +7,11 @@ import (
 func wordPattern(pattern string, str string) bool {
 	ps := strings.Split(pattern, "")
 	ss := strings.Split(str, " ")
+
 	if len(ps) != len(ss) {
 		return false
 	}
+
 	return isMatch(ps, ss) && isMatch(ss, ps)
 }
 
