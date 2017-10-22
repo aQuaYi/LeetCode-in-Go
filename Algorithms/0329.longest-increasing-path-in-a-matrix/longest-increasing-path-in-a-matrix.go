@@ -43,9 +43,6 @@ func longestIncreasingPath(mat [][]int) int {
 	for i := 0; i < m; i++ {
 		for j := 0; j < n; j++ {
 			dfs(i, j, 1)
-			if res >= m*n/2 {
-				return res
-			}
 		}
 	}
 
