@@ -4,15 +4,14 @@ import "sort"
 
 func largestDivisibleSubset(a []int) []int {
 	size := len(a)
-	res := make([]int, 0, size)
 	if size == 0 {
-		return res
+		return []int{}
 	}
 
-	sort.Sort(sort.Reverse(sort.IntSlice(a)))
+	sort.Ints(a)
 
-	curMax := 1
-	k := 0
+	max := 1
+	idx := 0
 
 	dp := make([]int, size)
 	for i := range dp {
@@ -24,8 +23,8 @@ func largestDivisibleSubset(a []int) []int {
 		par[i] = i
 	}
 
-	for i := 1; i < size; i++ {
-		for j := 0; j < i; j++ {
+	for i := size - 2; 0 <= i; i-- {
+		for j := size - 1; i < j; j-- {
 			if a[j]%a[i] != 0 {
 				continue
 			}
@@ -33,18 +32,19 @@ func largestDivisibleSubset(a []int) []int {
 				par[i] = j
 				dp[i] = dp[j] + 1
 			}
-			if dp[i] > curMax {
-				curMax = dp[i]
-				k = i
+			if max < dp[i] {
+				max = dp[i]
+				idx = i
 			}
 		}
 	}
 
-	for par[k] != k {
-		res = append(res, a[k])
-		k = par[k]
+	res := make([]int, 0, max)
+	for par[idx] != idx {
+		res = append(res, a[idx])
+		idx = par[idx]
 	}
-	res = append(res, a[k])
+	res = append(res, a[idx])
 
 	return res
 }
