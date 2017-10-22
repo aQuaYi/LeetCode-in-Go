@@ -7,44 +7,50 @@ func longestIncreasingPath(mat [][]int) int {
 
 	m, n := len(mat), len(mat[0])
 
-	path := make([][]bool, m)
+	// path[i][j] 从 (i,j) 点出发，能到达的最长路径
+	path := make([][]int, m)
+	visited := make([][]bool, m)
 	for i := range path {
-		path[i] = make([]bool, n)
+		path[i] = make([]int, n)
+		visited[i] = make([]bool, n)
 	}
 
 	res := 0
-	var dfs func(int, int, int)
-	dfs = func(i, j, count int) {
-		if res < count {
-			res = count
+	dx := []int{-1, 1, 0, 0}
+	dy := []int{0, 0, -1, 1}
+
+	var dfs func(int, int) int
+	dfs = func(x, y int) int {
+		if visited[x][y] {
+			return path[x][y]
 		}
 
-		path[i][j] = true
+		path[x][y] = 1
 
-		if 0 <= i-1 && !path[i-1][j] && mat[i-1][j] > mat[i][j] {
-			dfs(i-1, j, count+1)
+		for i := 0; i < 4; i++ {
+			nx := x + dx[i]
+			ny := y + dy[i]
+			if 0 <= nx && nx < m && 0 <= ny && ny < n && mat[x][y] < mat[nx][ny] {
+				path[x][y] = max(path[x][y], dfs(nx, ny)+1)
+			}
 		}
 
-		if 0 <= j-1 && !path[i][j-1] && mat[i][j-1] > mat[i][j] {
-			dfs(i, j-1, count+1)
-		}
-
-		if i+1 < m && !path[i+1][j] && mat[i+1][j] > mat[i][j] {
-			dfs(i+1, j, count+1)
-		}
-
-		if j+1 < n && !path[i][j+1] && mat[i][j+1] > mat[i][j] {
-			dfs(i, j+1, count+1)
-		}
-
-		path[i][j] = false
+		visited[x][y] = true
+		return path[x][y]
 	}
 
 	for i := 0; i < m; i++ {
 		for j := 0; j < n; j++ {
-			dfs(i, j, 1)
+			res = max(res, dfs(i, j))
 		}
 	}
 
 	return res
+}
+
+func max(a, b int) int {
+	if a > b {
+		return a
+	}
+	return b
 }
