@@ -7,9 +7,9 @@ func longestIncreasingPath(mat [][]int) int {
 
 	m, n := len(mat), len(mat[0])
 
-	isChecked := make([][]bool, m)
-	for i := range isChecked {
-		isChecked[i] = make([]bool, n)
+	path := make([][]bool, m)
+	for i := range path {
+		path[i] = make([]bool, n)
 	}
 
 	res := 0
@@ -19,25 +19,25 @@ func longestIncreasingPath(mat [][]int) int {
 			res = count
 		}
 
-		isChecked[i][j] = true
+		path[i][j] = true
 
-		if 0 <= i-1 && !isChecked[i-1][j] && mat[i-1][j] > mat[i][j] {
+		if 0 <= i-1 && !path[i-1][j] && mat[i-1][j] > mat[i][j] {
 			dfs(i-1, j, count+1)
 		}
 
-		if 0 <= j-1 && !isChecked[i][j-1] && mat[i][j-1] > mat[i][j] {
+		if 0 <= j-1 && !path[i][j-1] && mat[i][j-1] > mat[i][j] {
 			dfs(i, j-1, count+1)
 		}
 
-		if i+1 < m && !isChecked[i+1][j] && mat[i+1][j] > mat[i][j] {
+		if i+1 < m && !path[i+1][j] && mat[i+1][j] > mat[i][j] {
 			dfs(i+1, j, count+1)
 		}
 
-		if j+1 < n && !isChecked[i][j+1] && mat[i][j+1] > mat[i][j] {
+		if j+1 < n && !path[i][j+1] && mat[i][j+1] > mat[i][j] {
 			dfs(i, j+1, count+1)
 		}
 
-		isChecked[i][j] = false
+		path[i][j] = false
 	}
 
 	for i := 0; i < m; i++ {
