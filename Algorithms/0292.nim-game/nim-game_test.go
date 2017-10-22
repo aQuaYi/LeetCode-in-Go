@@ -27,6 +27,7 @@ func Test_canWinNim(t *testing.T) {
 		fmt.Printf("~~%v~~\n", tc)
 		ast.Equal(tc.ans, canWinNim(tc.n), "输入:%v", tc)
 	}
+
 }
 
 func Benchmark_canWinNim(b *testing.B) {
