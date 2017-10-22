@@ -3,33 +3,25 @@ package Problem0368
 import "sort"
 
 func largestDivisibleSubset(a []int) []int {
-	var res []int
-
 	size := len(a)
-
 	sort.Ints(a)
 
-	var i, j, k int
+	temps := make([][]int, 1, size-1)
+	temps[0] = []int{a[0]}
 
-	for i = 0; i < size; i++ {
-		temp := make([]int, 0, size-i)
-		temp = append(temp, a[i])
-		for j = i + 1; j < size; j++ {
-			ok := true
-			for k = 0; k < len(temp); k++ {
-				if a[j]%temp[k] != 0 {
-					ok = false
+	var i, j, k, t int
+	for i = 1; i < size; i++ {
+		for _, temp := range temps {
+			for j, t = range temp {
+				if a[i]%t != 0 {
 					break
 				}
 			}
-			if ok {
-				temp = append(temp, a[j])
-			}
-		}
-		if len(res) < len(temp) {
-			res = temp
+
 		}
 	}
+
+	var res []int
 
 	return res
 }
