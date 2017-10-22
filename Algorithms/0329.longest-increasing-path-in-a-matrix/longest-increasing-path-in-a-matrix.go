@@ -7,12 +7,10 @@ func longestIncreasingPath(mat [][]int) int {
 
 	m, n := len(mat), len(mat[0])
 
-	// path[i][j] 从 (i,j) 点出发，能到达的最长路径
+	// path[i][j] 从 (i,j) 点出发的最长路径长度
 	path := make([][]int, m)
-	visited := make([][]bool, m)
 	for i := range path {
 		path[i] = make([]int, n)
-		visited[i] = make([]bool, n)
 	}
 
 	res := 0
@@ -21,7 +19,8 @@ func longestIncreasingPath(mat [][]int) int {
 
 	var dfs func(int, int) int
 	dfs = func(x, y int) int {
-		if visited[x][y] {
+		if path[x][y] > 0 {
+			// 已经访问过 (x,y) 点了，可以直接返回历史记录
 			return path[x][y]
 		}
 
@@ -30,12 +29,13 @@ func longestIncreasingPath(mat [][]int) int {
 		for i := 0; i < 4; i++ {
 			nx := x + dx[i]
 			ny := y + dy[i]
-			if 0 <= nx && nx < m && 0 <= ny && ny < n && mat[x][y] < mat[nx][ny] {
+			if 0 <= nx && nx < m &&
+				0 <= ny && ny < n &&
+				mat[x][y] < mat[nx][ny] {
 				path[x][y] = max(path[x][y], dfs(nx, ny)+1)
 			}
 		}
 
-		visited[x][y] = true
 		return path[x][y]
 	}
 
