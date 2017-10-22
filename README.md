@@ -10,7 +10,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|75|139|58|272|
+|**Accepted**|75|140|58|273|
 |**Total**|145|245|99|489|
 
 > 统计规则：1.免费题，2.算法题，3.能用 Go 解答
@@ -260,7 +260,7 @@
 |326|[Power of Three](./Algorithms/0326.power-of-three)|40%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |327|[Count of Range Sum](./Algorithms/0327.count-of-range-sum)|30%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |328|[Odd Even Linked List](./Algorithms/0328.odd-even-linked-list)|43%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|329|[Longest Increasing Path in a Matrix](./Algorithms/0329.longest-increasing-path-in-a-matrix)|36%|Hard| |
+|329|[Longest Increasing Path in a Matrix](./Algorithms/0329.longest-increasing-path-in-a-matrix)|36%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |330| * Patching Array|32%|Hard| |
 |331| * Verify Preorder Serialization of a Binary Tree|36%|Medium| |
 |332| * Reconstruct Itinerary|29%|Medium| |
@@ -283,7 +283,7 @@
 |363| * Max Sum of Rectangle No Larger Than K|33%|Hard| |
 |365|[Water and Jug Problem](./Algorithms/0365.water-and-jug-problem)|27%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |367| * Valid Perfect Square|38%|Easy| |
-|368| * Largest Divisible Subset|33%|Medium| |
+|368|[Largest Divisible Subset](./Algorithms/0368.largest-divisible-subset)|33%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |371| * Sum of Two Integers|51%|Easy| |
 |372| * Super Pow|34%|Medium| |
 |373| * Find K Pairs with Smallest Sums|30%|Medium| |
@@ -481,7 +481,7 @@
 |672| * Bulb Switcher II|47%|Medium| |
 |673| * Number of Longest Increasing Subsequence|30%|Medium| |
 |674| * Longest Continuous Increasing Subsequence|42%|Easy| |
-|675| * Cut Off Trees for Golf Event|27%|Hard| |
+|675| * Cut Off Trees for Golf Event|26%|Hard| |
 |676| * Implement Magic Dictionary|50%|Medium| |
 |677| * Map Sum Pairs|52%|Medium| |
 |678| * Valid Parenthesis String|28%|Medium| |
@@ -504,10 +504,10 @@
 |697| * Degree of an Array|48%|Easy| |
 |698| * Partition to K Equal Sum Subsets|35%|Medium| |
 |699| * Falling Squares|36%|Hard| |
-|712| * Minimum ASCII Delete Sum for Two Strings|38%|Medium| |
-|713| * Subarray Product Less Than K|33%|Medium| |
-|714| * Best Time to Buy and Sell Stock with Transaction Fee|16%|Medium| |
-|715| * Range Module|18%|Hard| |
+|712| * Minimum ASCII Delete Sum for Two Strings|40%|Medium| |
+|713| * Subarray Product Less Than K|36%|Medium| |
+|714| * Best Time to Buy and Sell Stock with Transaction Fee|20%|Medium| |
+|715| * Range Module|23%|Hard| |
 
 以下免费的算法题，暂时不能使用 Go 解答
 
