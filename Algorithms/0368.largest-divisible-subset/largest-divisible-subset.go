@@ -9,18 +9,23 @@ func largestDivisibleSubset(a []int) []int {
 	}
 
 	sort.Ints(a)
+	// 注意：下面的 a 是升序的啦
 
+	// max 是符合题意的 largest subset 的长度
+	// idx 是这个 largest subset 中最小值的 index
 	max := 1
 	idx := 0
 
+	// dp[i] 是 a[i:] 中包含 a[i] 的 largest subset 的长度
 	dp := make([]int, size)
 	for i := range dp {
 		dp[i] = 1
 	}
 
-	par := make([]int, size)
-	for i := range par {
-		par[i] = i
+	// next[i]==j 说明
+	next := make([]int, size)
+	for i := range next {
+		next[i] = i
 	}
 
 	for i := size - 2; 0 <= i; i-- {
@@ -29,7 +34,7 @@ func largestDivisibleSubset(a []int) []int {
 				continue
 			}
 			if dp[i] < dp[j]+1 {
-				par[i] = j
+				next[i] = j
 				dp[i] = dp[j] + 1
 			}
 			if max < dp[i] {
@@ -40,9 +45,9 @@ func largestDivisibleSubset(a []int) []int {
 	}
 
 	res := make([]int, 0, max)
-	for par[idx] != idx {
+	for next[idx] != idx {
 		res = append(res, a[idx])
-		idx = par[idx]
+		idx = next[idx]
 	}
 	res = append(res, a[idx])
 
