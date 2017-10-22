@@ -1,14 +1,15 @@
 package Problem0383
 
 func canConstruct(ransomNote string, magazine string) bool {
-	rc := getCount(ransomNote)
 	mc := getCount(magazine)
 
-	for i, c := range rc {
-		if mc[i] < c {
+	for _, b := range ransomNote {
+		mc[b-'a']--
+		if mc[b-'a'] < 0 {
 			return false
 		}
 	}
+
 	return true
 }
 
