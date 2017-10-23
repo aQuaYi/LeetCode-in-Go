@@ -37,19 +37,20 @@ func maxSumSubmatrix(mat [][]int, target int) int {
 		// 可以避免不必要的检查
 		for l < mid && r < end {
 			temp := sums[r] - sums[l]
-			if temp < target {
+			switch {
+			case temp < target:
 				res = max(res, temp)
 				// r++ 可以让 temp 变大
 				// 这样才可能找到 更大的 res
 				r++
-			} else if temp == target {
-				// 命中 target
-				// 结束程序
-				return target
-			} else {
+			case temp > target:
 				// temp > target
 				// l++ 能让 temp 变小
 				l++
+			default:
+				// 命中 target
+				// 结束程序
+				return target
 			}
 		}
 
@@ -97,10 +98,10 @@ func maxSumSubmatrix(mat [][]int, target int) int {
 			// 分 3 中情况讨论 maxSub 的值
 			switch {
 			case maxSub < target:
+				// 可知，此时，maxSub == findTarget(sums,0,N+1)
+				// 这时就体现了 maxSub 的巨大作用了
+				// 省掉了运行 findTarget 的时间
 				ans = max(ans, maxSub)
-			case maxSub == target:
-				// 找到答案，可以结束程序了
-				return target
 			case maxSub > target:
 				// mat[iFirst:iLast+1][:] 中可能有个子矩阵的所有元素之和，
 				// 比 ans 更接近 target
@@ -111,6 +112,9 @@ func maxSumSubmatrix(mat [][]int, target int) int {
 					return target
 				}
 				ans = max(ans, tempAns)
+			default:
+				// 找到答案，可以结束程序了
+				return target
 			}
 		}
 	}
@@ -150,9 +154,7 @@ func merge(a, b []int) []int {
 
 	if i == lenA {
 		copy(temp[k:], b[j:])
-	}
-
-	if j == lenB {
+	} else {
 		copy(temp[k:], a[i:])
 	}
 

@@ -26,3 +26,5 @@ Credits:Special thanks to @fujiaozhu for adding this problem and creating all te
 ## 解题思路
 
 见程序注释
+
+![100](363.100.png)
