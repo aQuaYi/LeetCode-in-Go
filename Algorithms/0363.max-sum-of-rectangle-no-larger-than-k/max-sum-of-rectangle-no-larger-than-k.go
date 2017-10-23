@@ -10,12 +10,7 @@ func maxSumSubmatrix(mat [][]int, k int) int {
 	}
 
 	m, n := len(mat), len(mat[0])
-	var M, N int
-	if m < n {
-		M, N = m, n
-	} else {
-		M, N = n, m
-	}
+	M, N := min(m, n), max(m, n)
 
 	ans := -1 << 63
 
