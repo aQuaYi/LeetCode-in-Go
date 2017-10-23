@@ -29,21 +29,27 @@ func maxSumSubmatrix(mat [][]int, target int) int {
 			return res
 		}
 
-		var l, r int
-		r = mid
-		for l = beg; l < mid; l++ {
-			for r < end && sums[r]-sums[l] <= target {
-				// sums[mid:end] 中任意的的 sums[r] 和
-				// sums[beg:mid] 中任意的的 sums[l] 相减
-				// 都是某个子矩阵的所有元素之和
-				// 此时，由于 sums[beg:mid] 和 sums[mid:end] 都是递增的
-				// 可以避免不必要的检查
-				temp := sums[r] - sums[l]
-				if temp == target {
-					return target
-				}
+		l, r := beg, mid
+		// sums[mid:end] 中任意的的 sums[r] 和
+		// sums[beg:mid] 中任意的的 sums[l] 相减
+		// temp = sums[r] - sums[l]都是某个子矩阵的所有元素之和
+		// 此时，由于 sums[beg:mid] 和 sums[mid:end] 都是递增的
+		// 可以避免不必要的检查
+		for l < mid && r < end {
+			temp := sums[r] - sums[l]
+			if temp < target {
 				res = max(res, temp)
+				// r++ 可以让 temp 变大
+				// 这样才可能找到 更大的 res
 				r++
+			} else if temp == target {
+				// 命中 target
+				// 结束程序
+				return target
+			} else {
+				// temp > target
+				// l++ 能让 temp 变小
+				l++
 			}
 		}
 
@@ -69,7 +75,9 @@ func maxSumSubmatrix(mat [][]int, target int) int {
 			// maxSub 是 mat[iFirst:iLast+1][:] 中所有子矩阵中，所有元素之和的 最大值
 			maxSub = -1 << 63
 			// minSum 是 sums 中的 最小值
+			// TODO: 为什么 minSum 初始化的时候，不能为 0
 			minSum = 1<<63 - 1
+
 			for j = 0; j < N; j++ {
 				// 分情况更新 temp[j]
 				if m < n {
@@ -79,9 +87,9 @@ func maxSumSubmatrix(mat [][]int, target int) int {
 				}
 
 				sums = append(sums, sums[len(sums)-1]+temp[j])
-
+				// TODO: 如何实现的
 				maxSub = max(maxSub, sums[len(sums)-1]-minSum)
-
+				// TODO: 如何实现的
 				minSum = min(minSum, sums[len(sums)-1])
 			}
 
