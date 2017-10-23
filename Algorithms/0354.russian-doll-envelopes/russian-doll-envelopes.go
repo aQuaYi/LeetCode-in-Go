@@ -2,59 +2,49 @@ package Problem0354
 
 import "sort"
 
-func maxEnvelopes(es [][]int) int {
-	size := len(es)
-	if size == 0 {
-		return 0
+func maxEnvelopes(envelopes [][]int) int {
+	if len(envelopes) <= 1 {
+		return len(envelopes)
 	}
 
-	e := envelopes(es)
-	sort.Sort(e)
+	sort.Sort(sortedEnvelopes(envelopes))
 
-	// dp[i] 表示 envelopes[i] 能放入的最大 doll 的信封数量-1
-	dp := make([]int, size)
+	var tails []int
 
-	var i, j, maxLen int
-	for i = size - 2; 0 <= i; i-- {
-		for j = size - 1; i < j; j-- {
-			if isFit(e[i], e[j]) {
-				dp[i] = max(dp[i], dp[j]+1)
-				if maxLen < dp[i] {
-					maxLen = dp[i]
-				}
+	for i := 0; i < len(envelopes); i++ {
+		lo, hi := 0, len(tails)
+		for lo < hi {
+			mid := (lo + hi) / 2
+			if envelopes[i][1] <= tails[mid] {
+				hi = mid
+			} else {
+				lo = mid + 1
 			}
+		}
+
+		if lo == len(tails) {
+			tails = append(tails, envelopes[i][1])
+		} else {
+			tails[lo] = envelopes[i][1]
 		}
 	}
 
-	// +1 是因为不想给 dp 初始化全为 1
-	return maxLen + 1
+	return len(tails)
 }
 
-func max(a, b int) int {
-	if a > b {
-		return a
+type sortedEnvelopes [][]int
+
+func (s sortedEnvelopes) Len() int {
+	return len(s)
+}
+
+func (s sortedEnvelopes) Less(i, j int) bool {
+	if s[i][0] != s[j][0] {
+		return s[i][0] < s[j][0]
 	}
-	return b
+	return s[i][1] > s[j][1]
 }
 
-// return true 当 ei 可以放入 ej 的时候
-func isFit(ei, ej []int) bool {
-	return ei[0] < ej[0] && ei[1] < ej[1]
-}
-
-type envelopes [][]int
-
-func (e envelopes) Len() int {
-	return len(e)
-}
-
-func (e envelopes) Less(i, j int) bool {
-	if e[i][0] == e[j][0] {
-		return e[i][1] < e[j][1]
-	}
-	return e[i][0] < e[j][0]
-}
-
-func (e envelopes) Swap(i, j int) {
-	e[i], e[j] = e[j], e[i]
+func (s sortedEnvelopes) Swap(i, j int) {
+	s[i], s[j] = s[j], s[i]
 }
