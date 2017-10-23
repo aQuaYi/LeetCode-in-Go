@@ -2,20 +2,20 @@ package Problem0354
 
 import "sort"
 
-func maxEnvelopes(envelopes [][]int) int {
-	if len(envelopes) <= 1 {
-		return len(envelopes)
+func maxEnvelopes(e [][]int) int {
+	if len(e) <= 1 {
+		return len(e)
 	}
 
-	sort.Sort(sortedEnvelopes(envelopes))
+	sort.Sort(sortedEnvelopes(e))
 
 	var tails []int
 
-	for i := 0; i < len(envelopes); i++ {
+	for i := 0; i < len(e); i++ {
 		lo, hi := 0, len(tails)
 		for lo < hi {
 			mid := (lo + hi) / 2
-			if envelopes[i][1] <= tails[mid] {
+			if e[i][1] <= tails[mid] {
 				hi = mid
 			} else {
 				lo = mid + 1
@@ -23,9 +23,9 @@ func maxEnvelopes(envelopes [][]int) int {
 		}
 
 		if lo == len(tails) {
-			tails = append(tails, envelopes[i][1])
+			tails = append(tails, e[i][1])
 		} else {
-			tails[lo] = envelopes[i][1]
+			tails[lo] = e[i][1]
 		}
 	}
 
