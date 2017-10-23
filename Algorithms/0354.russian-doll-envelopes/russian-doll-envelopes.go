@@ -11,19 +11,23 @@ func maxEnvelopes(es [][]int) int {
 	e := envelopes(es)
 	sort.Sort(e)
 
-	// dp[i] 表示 envelopes[i] 能放入的最大 doll
+	// dp[i] 表示 envelopes[i] 能放入的最大 doll 的信封数量-1
 	dp := make([]int, size)
 
-	var i, j int
+	var i, j, maxLen int
 	for i = size - 2; 0 <= i; i-- {
 		for j = size - 1; i < j; j-- {
 			if isFit(e[i], e[j]) {
 				dp[i] = max(dp[i], dp[j]+1)
+				if maxLen < dp[i] {
+					maxLen = dp[i]
+				}
 			}
 		}
 	}
 
-	return dp[0] + 1
+	// +1 是因为不想给 dp 初始化全为 1
+	return maxLen + 1
 }
 
 func max(a, b int) int {
