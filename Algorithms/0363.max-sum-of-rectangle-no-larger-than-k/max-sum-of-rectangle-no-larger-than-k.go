@@ -92,14 +92,16 @@ func maxSumSubmatrix(mat [][]int, target int) int {
 				minSum = min(minSum, sums[len(sums)-1])
 			}
 
-			if maxSub <= ans {
-				// mat[iFirst:iLast+1][:] 中不可能有比 ans 更接近 target 的数
-				// 可以开始下一轮了
+			// ans < target
+			// ---- ans ---- target --->
+			// 分 3 中情况讨论 maxSub 的值
+
+			if maxSub < target {
+				ans = max(ans, maxSub)
 				continue
 			}
 
 			if maxSub == target {
-				// mat[iFirst:iLast+1][:] 中有一个子矩阵的所有元素之和，正好就是 target
 				// 找到答案，可以结束程序了
 				return target
 			}
@@ -114,8 +116,6 @@ func maxSumSubmatrix(mat [][]int, target int) int {
 					return target
 				}
 				ans = max(ans, tempAns)
-			} else {
-				ans = max(ans, maxSub)
 			}
 		}
 	}
