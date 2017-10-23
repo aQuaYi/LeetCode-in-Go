@@ -67,6 +67,7 @@ func maxSumSubmatrix(mat [][]int, target int) int {
 			sums = []int{0}
 			// maxArea 是 mat[iFirst:iLast+1][:] 中所有子矩阵中，所有元素之和的 最大值
 			maxArea = -1 << 63
+			// minArea 是 mat[iFirst:iLast+1][:] 中所有子矩阵中，所有元素之和的 最小值
 			minArea = 1<<63 - 1
 			for j = 0; j < N; j++ {
 				// 分情况更新 temp[j]
