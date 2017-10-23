@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|82|140|58|280|
+|**Accepted**|82|140|59|281|
 |**Total**|145|245|99|489|
 
 ## 题解
@@ -277,7 +277,7 @@
 |349|[Intersection of Two Arrays](./Algorithms/0349.intersection-of-two-arrays)|47%|Easy| |
 |350|[Intersection of Two Arrays II](./Algorithms/0350.intersection-of-two-arrays-ii)|44%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |352| * Data Stream as Disjoint Intervals|40%|Hard| |
-|354| * Russian Doll Envelopes|32%|Hard| |
+|354|[Russian Doll Envelopes](./Algorithms/0354.russian-doll-envelopes)|32%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |355|[Design Twitter](./Algorithms/0355.design-twitter)|25%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |357|[Count Numbers with Unique Digits](./Algorithms/0357.count-numbers-with-unique-digits)|46%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |363| * Max Sum of Rectangle No Larger Than K|33%|Hard| |
@@ -367,7 +367,7 @@
 |476| * Number Complement|60%|Easy| |
 |477| * Total Hamming Distance|47%|Medium| |
 |479| * Largest Palindrome Product|23%|Easy| |
-|480| * Sliding Window Median|30%|Hard| |
+|480| * Sliding Window Median|31%|Hard| |
 |481| * Magical String|45%|Medium| |
 |482| * License Key Formatting|41%|Medium| |
 |483| * Smallest Good Base|33%|Hard| |
@@ -413,11 +413,11 @@
 |543| * Diameter of Binary Tree|44%|Easy| |
 |546| * Remove Boxes|33%|Hard| |
 |547| * Friend Circles|49%|Medium| |
-|551| * Student Attendance Record I|44%|Easy| |
+|551| * Student Attendance Record I|43%|Easy| |
 |552| * Student Attendance Record II|31%|Hard| |
 |553| * Optimal Division|55%|Medium| |
 |554| * Brick Wall|45%|Medium| |
-|556| * Next Greater Element III|28%|Medium| |
+|556| * Next Greater Element III|29%|Medium| |
 |557| * Reverse Words in a String III|59%|Easy| |
 |560|[Subarray Sum Equals K](./Algorithms/0560.subarray-sum-equals-k)|40%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |561|[Array Partition I](./Algorithms/0561.array-partition-i)|66%|Easy| |
@@ -434,7 +434,7 @@
 |591| * Tag Validator|29%|Hard| |
 |592| * Fraction Addition and Subtraction|46%|Medium| |
 |593| * Valid Square|40%|Medium| |
-|594| * Longest Harmonious Subsequence|40%|Easy| |
+|594| * Longest Harmonious Subsequence|41%|Easy| |
 |598| * Range Addition II|48%|Easy| |
 |599| * Minimum Index Sum of Two Lists|46%|Easy| |
 |600| * Non-negative Integers without Consecutive Ones|30%|Hard| |
@@ -492,7 +492,7 @@
 |683| * K Empty Slots|36%|Hard| |
 |684| * Redundant Connection|36%|Medium| |
 |685| * Redundant Connection II|28%|Hard| |
-|686| * Repeated String Match|30%|Easy| |
+|686| * Repeated String Match|31%|Easy| |
 |687| * Longest Univalue Path|32%|Easy| |
 |688| * Knight Probability in Chessboard|38%|Medium| |
 |689| * Maximum Sum of 3 Non-Overlapping Subarrays|42%|Hard| |
@@ -504,10 +504,10 @@
 |697| * Degree of an Array|48%|Easy| |
 |698| * Partition to K Equal Sum Subsets|35%|Medium| |
 |699| * Falling Squares|36%|Hard| |
-|712| * Minimum ASCII Delete Sum for Two Strings|41%|Medium| |
+|712| * Minimum ASCII Delete Sum for Two Strings|46%|Medium| |
 |713| * Subarray Product Less Than K|36%|Medium| |
-|714| * Best Time to Buy and Sell Stock with Transaction Fee|21%|Medium| |
-|715| * Range Module|24%|Hard| |
+|714| * Best Time to Buy and Sell Stock with Transaction Fee|26%|Medium| |
+|715| * Range Module|29%|Hard| |
 
 以下免费的算法题，暂时不能使用 Go 解答
 
