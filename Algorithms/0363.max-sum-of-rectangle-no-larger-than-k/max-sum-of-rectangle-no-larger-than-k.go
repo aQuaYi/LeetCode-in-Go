@@ -29,19 +29,30 @@ func maxSumSubmatrix(mat [][]int, target int) int {
 			return res
 		}
 
-		i := mid
-		for _, l := range sums[beg:mid] {
-			for i < len(sums) && sums[i]-l <= target {
-				res = max(res, sums[i]-l)
-				i++
+		var l, r int
+		r = mid
+		for l = beg; l < mid; l++ {
+			for r < len(sums) && sums[r]-sums[l] <= target {
+				// sums[mid:end] 中任意的的 sums[r] 和
+				// sums[beg:mid] 中任意的的 sums[l] 相减
+				// 都是某个子矩阵的所有元素之和
+				// 此时，由于 sums[beg:mid] 和 sums[mid:beg] 都是递增的
+				// 可以避免不必要的检查
+				temp := sums[r] - sums[l]
+				if temp == target {
+					return target
+				}
+				res = max(res, temp)
+				r++
 			}
 		}
 
+		// 虽然没有使用归并排序，但是这样的程序更简洁
 		sort.Ints(sums[beg:end])
 		return res
 	}
 
-	var iFirst, iLast, j, low, maxArea int
+	var iFirst, iLast, j, minArea, maxArea int
 	var temp, sums []int
 
 	for iFirst = 0; iFirst < M; iFirst++ {
@@ -56,7 +67,7 @@ func maxSumSubmatrix(mat [][]int, target int) int {
 			sums = []int{0}
 			// maxArea 是 mat[iFirst:iLast+1][:] 中所有子矩阵中，所有元素之和的 最大值
 			maxArea = -1 << 63
-			low = 1<<63 - 1
+			minArea = 1<<63 - 1
 			for j = 0; j < N; j++ {
 				// 分情况更新 temp[j]
 				if m < n {
@@ -67,9 +78,9 @@ func maxSumSubmatrix(mat [][]int, target int) int {
 
 				sums = append(sums, sums[len(sums)-1]+temp[j])
 
-				maxArea = max(maxArea, sums[len(sums)-1]-low)
+				maxArea = max(maxArea, sums[len(sums)-1]-minArea)
 
-				low = min(low, sums[len(sums)-1])
+				minArea = min(minArea, sums[len(sums)-1])
 			}
 
 			if maxArea <= ans {
