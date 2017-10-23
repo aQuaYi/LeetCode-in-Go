@@ -1,10 +1,8 @@
 package Problem0363
 
-import (
-	"sort"
-)
+import "sort"
 
-func maxSumSubmatrix(mat [][]int, k int) int {
+func maxSumSubmatrix(mat [][]int, target int) int {
 	if len(mat) == 0 || len(mat[0]) == 0 {
 		return 0
 	}
@@ -14,7 +12,7 @@ func maxSumSubmatrix(mat [][]int, k int) int {
 	// 让 N = max(m,n) 可以加快程序
 	M, N := min(m, n), max(m, n)
 
-	ans := 0
+	ans := -1 << 63
 
 	var findMaxArea func([]int, int, int) int
 	findMaxArea = func(sums []int, beg, end int) int {
@@ -28,7 +26,7 @@ func maxSumSubmatrix(mat [][]int, k int) int {
 
 		i := mid
 		for _, l := range sums[beg:mid] {
-			for i < len(sums) && sums[i]-l <= k {
+			for i < len(sums) && sums[i]-l <= target {
 				res = max(res, sums[i]-l)
 				i++
 			}
@@ -37,13 +35,15 @@ func maxSumSubmatrix(mat [][]int, k int) int {
 		return res
 	}
 
-	var i1, i2, j int
+	var i1, i2, j, low, maxArea int
+	var tmp, sums []int
+
 	for i1 = 0; i1 < M; i1++ {
-		tmp := make([]int, N)
+		tmp = make([]int, N)
 		for i2 = i1; i2 < M; i2++ {
-			sums := []int{0}
-			low := 0
-			maxArea := -1 << 63
+			sums = []int{0}
+			low = 1<<63 - 1
+			maxArea = -1 << 63
 			for j = 0; j < N; j++ {
 				if m < n {
 					tmp[j] += mat[i2][j]
@@ -56,17 +56,21 @@ func maxSumSubmatrix(mat [][]int, k int) int {
 				maxArea = max(maxArea, sums[len(sums)-1]-low)
 
 				low = min(low, sums[len(sums)-1])
-
 			}
+
 			if maxArea <= ans {
 				continue
 			}
-			if maxArea == k {
-				return k
+
+			if maxArea == target {
+				// 找到 和为 k 的子矩阵，可以提前结束
+				return target
 			}
-			if maxArea > k {
+
+			if maxArea > target {
 				maxArea = findMaxArea(sums, 0, N+1)
 			}
+
 			ans = max(ans, maxArea)
 		}
 	}
