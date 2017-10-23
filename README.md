@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|82|140|59|281|
+|**Accepted**|82|140|60|282|
 |**Total**|145|245|99|489|
 
 ## 题解
@@ -280,7 +280,7 @@
 |354|[Russian Doll Envelopes](./Algorithms/0354.russian-doll-envelopes)|32%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |355|[Design Twitter](./Algorithms/0355.design-twitter)|25%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |357|[Count Numbers with Unique Digits](./Algorithms/0357.count-numbers-with-unique-digits)|46%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|363| * Max Sum of Rectangle No Larger Than K|33%|Hard| |
+|363|[Max Sum of Rectangle No Larger Than K](./Algorithms/0363.max-sum-of-rectangle-no-larger-than-k)|33%|Hard| |
 |365|[Water and Jug Problem](./Algorithms/0365.water-and-jug-problem)|27%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |367|[Valid Perfect Square](./Algorithms/0367.valid-perfect-square)|38%|Easy| |
 |368|[Largest Divisible Subset](./Algorithms/0368.largest-divisible-subset)|33%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -362,7 +362,7 @@
 |468| * Validate IP Address|20%|Medium| |
 |472| * Concatenated Words|30%|Hard| |
 |473| * Matchsticks to Square|35%|Medium| |
-|474| * Ones and Zeroes|38%|Medium| |
+|474| * Ones and Zeroes|39%|Medium| |
 |475| * Heaters|29%|Easy| |
 |476| * Number Complement|60%|Easy| |
 |477| * Total Hamming Distance|47%|Medium| |
@@ -417,7 +417,7 @@
 |552| * Student Attendance Record II|31%|Hard| |
 |553| * Optimal Division|55%|Medium| |
 |554| * Brick Wall|45%|Medium| |
-|556| * Next Greater Element III|29%|Medium| |
+|556| * Next Greater Element III|28%|Medium| |
 |557| * Reverse Words in a String III|59%|Easy| |
 |560|[Subarray Sum Equals K](./Algorithms/0560.subarray-sum-equals-k)|40%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |561|[Array Partition I](./Algorithms/0561.array-partition-i)|66%|Easy| |
@@ -481,13 +481,13 @@
 |672| * Bulb Switcher II|47%|Medium| |
 |673| * Number of Longest Increasing Subsequence|30%|Medium| |
 |674| * Longest Continuous Increasing Subsequence|42%|Easy| |
-|675| * Cut Off Trees for Golf Event|26%|Hard| |
+|675| * Cut Off Trees for Golf Event|27%|Hard| |
 |676| * Implement Magic Dictionary|50%|Medium| |
 |677| * Map Sum Pairs|52%|Medium| |
 |678| * Valid Parenthesis String|28%|Medium| |
 |679| * 24 Game|38%|Hard| |
 |680| * Valid Palindrome II|31%|Easy| |
-|681| * Next Closest Time|43%|Medium| |
+|681| * Next Closest Time|42%|Medium| |
 |682| * Baseball Game|58%|Easy| |
 |683| * K Empty Slots|36%|Hard| |
 |684| * Redundant Connection|36%|Medium| |
@@ -504,10 +504,10 @@
 |697| * Degree of an Array|48%|Easy| |
 |698| * Partition to K Equal Sum Subsets|35%|Medium| |
 |699| * Falling Squares|36%|Hard| |
-|712| * Minimum ASCII Delete Sum for Two Strings|46%|Medium| |
-|713| * Subarray Product Less Than K|36%|Medium| |
-|714| * Best Time to Buy and Sell Stock with Transaction Fee|26%|Medium| |
-|715| * Range Module|29%|Hard| |
+|712| * Minimum ASCII Delete Sum for Two Strings|47%|Medium| |
+|713| * Subarray Product Less Than K|35%|Medium| |
+|714| * Best Time to Buy and Sell Stock with Transaction Fee|27%|Medium| |
+|715| * Range Module|30%|Hard| |
 
 以下免费的算法题，暂时不能使用 Go 解答
 
