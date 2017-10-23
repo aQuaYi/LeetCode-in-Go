@@ -13,6 +13,13 @@ var tcs = []struct {
 	k      int
 	ans    int
 }{
+	{
+		[][]int{
+			[]int{2, 2, -1},
+		},
+		3,
+		3,
+	},
 
 	{
 		[][]int{
