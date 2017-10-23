@@ -10,9 +10,11 @@ func maxSumSubmatrix(mat [][]int, k int) int {
 	}
 
 	m, n := len(mat), len(mat[0])
+	// 本算法的复杂度是 O(M*M*N*logN)
+	// 让 N = max(m,n) 可以加快程序
 	M, N := min(m, n), max(m, n)
 
-	ans := -1 << 63
+	ans := 0
 
 	var findMaxArea func([]int, int, int) int
 	findMaxArea = func(sums []int, beg, end int) int {
