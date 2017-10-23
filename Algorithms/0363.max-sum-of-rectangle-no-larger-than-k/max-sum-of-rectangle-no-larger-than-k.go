@@ -95,24 +95,19 @@ func maxSumSubmatrix(mat [][]int, target int) int {
 			// ans < target
 			// ---- ans ---- target --->
 			// 分 3 中情况讨论 maxSub 的值
-
-			if maxSub < target {
+			switch {
+			case maxSub < target:
 				ans = max(ans, maxSub)
-				continue
-			}
-
-			if maxSub == target {
+			case maxSub == target:
 				// 找到答案，可以结束程序了
 				return target
-			}
-
-			if maxSub > target {
+			case maxSub > target:
 				// mat[iFirst:iLast+1][:] 中可能有个子矩阵的所有元素之和，
-				// 比 ans 更接近 target 需要运行 findTarget 查找
+				// 比 ans 更接近 target
+				// 需要运行 findTarget 查找
 				tempAns := findTarget(sums, 0, N+1)
 				if tempAns == target {
-					// 找到了 target
-					// 直接结束程序
+					// 找到答案，可以结束程序了
 					return target
 				}
 				ans = max(ans, tempAns)
