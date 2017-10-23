@@ -75,8 +75,7 @@ func maxSumSubmatrix(mat [][]int, target int) int {
 			// maxSub 是 mat[iFirst:iLast+1][:] 中所有子矩阵中，所有元素之和的 最大值
 			maxSub = -1 << 63
 			// minSum 是 sums 中的 最小值
-			// TODO: 为什么 minSum 初始化的时候，不能为 0
-			minSum = 1<<63 - 1
+			minSum = 0
 
 			for j = 0; j < N; j++ {
 				// 分情况更新 temp[j]
@@ -87,9 +86,9 @@ func maxSumSubmatrix(mat [][]int, target int) int {
 				}
 
 				sums = append(sums, sums[len(sums)-1]+temp[j])
-				// TODO: 如何实现的
+				// 求解 maxSub 的算法解释，看这里
+				// https://www.youtube.com/watch?v=yCQN096CwWM
 				maxSub = max(maxSub, sums[len(sums)-1]-minSum)
-				// TODO: 如何实现的
 				minSum = min(minSum, sums[len(sums)-1])
 			}
 
@@ -115,6 +114,8 @@ func maxSumSubmatrix(mat [][]int, target int) int {
 					return target
 				}
 				ans = max(ans, tempAns)
+			} else {
+				ans = max(ans, maxSub)
 			}
 		}
 	}
