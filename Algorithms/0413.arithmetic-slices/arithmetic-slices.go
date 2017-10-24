@@ -4,16 +4,18 @@ func numberOfArithmeticSlices(a []int) int {
 	if len(a) < 3 {
 		return 0
 	}
+	res := 0
 
-	if a[1]-a[0] != a[2]-a[1] {
-		return numberOfArithmeticSlices(a[1:])
+	var i, j = 0, 0
+	for i < len(a) {
+		j = i + 2
+		for j < len(a) && a[j]-a[j-1] == a[j-1]-a[j-2] {
+			j++
+		}
+		j--
+		res += (j - i - 1) * (j - i) / 2
+		i = j
 	}
 
-	var i = 3
-	diff := a[1] - a[0]
-	for i < len(a) && a[i]-a[i-1] == diff {
-		i++
-	}
-
-	return (i*i-3*i+2)>>1 + numberOfArithmeticSlices(a[i:])
+	return res
 }
