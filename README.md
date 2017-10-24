@@ -1,8 +1,8 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 答题进度](https://img.shields.io/badge/Progress-58%25-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 排名](https://img.shields.io/badge/Ranking-13235-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 答题进度](https://img.shields.io/badge/Progress-59%25-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/Ranking-12573-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 
@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|82|145|61|288|
+|**Accepted**|82|146|61|289|
 |**Total**|145|245|99|489|
 
 ## 题解
@@ -292,7 +292,7 @@
 |377|[Combination Sum IV](./Algorithms/0377.combination-sum-iv)|42%|Medium| |
 |378| * Kth Smallest Element in a Sorted Matrix|45%|Medium| |
 |380|[Insert Delete GetRandom O(1)](./Algorithms/0380.insert-delete-getrandom-o1)|39%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|381|[Insert Delete GetRandom O(1) - Duplicates allowed](./Algorithms/0381.insert-delete-getrandom-o1-duplicates-allowed)|28%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|381|[Insert Delete GetRandom O(1) - Duplicates allowed](./Algorithms/0381.insert-delete-getrandom-o1-duplicates-allowed)|29%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |382| * Linked List Random Node|47%|Medium| |
 |383|[Ransom Note](./Algorithms/0383.ransom-note)|47%|Easy| |
 |384| * Shuffle an Array|46%|Medium| |
@@ -324,7 +324,7 @@
 |413|[Arithmetic Slices](./Algorithms/0413.arithmetic-slices)|54%|Medium| |
 |414|[Third Maximum Number](./Algorithms/0414.third-maximum-number)|27%|Easy| |
 |415| * Add Strings|41%|Easy| |
-|416| * Partition Equal Subset Sum|39%|Medium| |
+|416|[Partition Equal Subset Sum](./Algorithms/0416.partition-equal-subset-sum)|39%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |417| * Pacific Atlantic Water Flow|33%|Medium| |
 |419| * Battleships in a Board|62%|Medium| |
 |420| * Strong Password Checker|20%|Hard| |
@@ -434,7 +434,7 @@
 |591| * Tag Validator|29%|Hard| |
 |592| * Fraction Addition and Subtraction|46%|Medium| |
 |593| * Valid Square|40%|Medium| |
-|594| * Longest Harmonious Subsequence|41%|Easy| |
+|594| * Longest Harmonious Subsequence|40%|Easy| |
 |598| * Range Addition II|48%|Easy| |
 |599| * Minimum Index Sum of Two Lists|46%|Easy| |
 |600| * Non-negative Integers without Consecutive Ones|30%|Hard| |
@@ -506,7 +506,7 @@
 |699| * Falling Squares|36%|Hard| |
 |712| * Minimum ASCII Delete Sum for Two Strings|48%|Medium| |
 |713| * Subarray Product Less Than K|34%|Medium| |
-|714| * Best Time to Buy and Sell Stock with Transaction Fee|29%|Medium| |
+|714| * Best Time to Buy and Sell Stock with Transaction Fee|30%|Medium| |
 |715| * Range Module|30%|Hard| |
 
 以下免费的算法题，暂时不能使用 Go 解答
