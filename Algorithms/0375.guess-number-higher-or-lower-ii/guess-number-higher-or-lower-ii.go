@@ -4,28 +4,21 @@ func getMoneyAmount(n int) int {
 
 	// dp[i][j] 保证能猜出 i<=x<=j 中 x 的具体值的最小金额
 	// dp[1][n] 是答案
-	dp := make([][]int, n+1)
-	for i := range dp {
-		dp[i] = make([]int, n+1)
-	}
+	dp := make([]int, n+1)
 
 	MIN := 1<<63 - 1
 
 	var i, j, k int
 	for j = 2; j <= n; j++ {
-		for i = j - 1; 0 < i; i-- {
-			dp[i][j] = MIN
-			// 为了猜出 i<=x<=j 中的 x
-			// 第一次，我们可以猜 x 为，i，i+1，...,j
-			// 所有这些可能性中的最小值就是 dp[i][j] 的值
-			for k = i; k < j; k++ {
-				// k+max(dp[i][k-1], dp[k+1][j])) 猜 x 为 k 所花费的最小费用
-				dp[i][j] = min(dp[i][j], k+max(dp[i][k-1], dp[k+1][j]))
+		for i = 1; i < j; i++ {
+			dp[j] = MIN
+			for k = 1; k < i; k++ {
+				dp[j] = min(dp[j], k+max(dp[k-1], k+dp[i-k]))
 			}
 		}
 	}
 
-	return dp[1][n]
+	return dp[n]
 }
 
 func max(a, b int) int {
