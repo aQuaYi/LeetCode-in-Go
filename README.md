@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|82|144|61|287|
+|**Accepted**|82|145|61|288|
 |**Total**|145|245|99|489|
 
 ## 题解
@@ -321,7 +321,7 @@
 |409| * Longest Palindrome|45%|Easy| |
 |410| * Split Array Largest Sum|38%|Hard| |
 |412| * Fizz Buzz|58%|Easy| |
-|413| * Arithmetic Slices|54%|Medium| |
+|413|[Arithmetic Slices](./Algorithms/0413.arithmetic-slices)|54%|Medium| |
 |414|[Third Maximum Number](./Algorithms/0414.third-maximum-number)|27%|Easy| |
 |415| * Add Strings|41%|Easy| |
 |416| * Partition Equal Subset Sum|39%|Medium| |
