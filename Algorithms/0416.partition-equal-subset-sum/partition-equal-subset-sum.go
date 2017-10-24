@@ -29,13 +29,16 @@ func canPartition(nums []int) bool {
 }
 
 func dfs(nums []int, sum, target int) bool {
-	for i := range nums {
+	var i int
+
+	for i = range nums {
 		if sum-nums[i] == target {
 			return true
 		}
 	}
-	for i := range nums {
-		if sum-nums[i] > target && dfs(append(nums[:i], nums[i+1:]...), sum-nums[i], target) {
+
+	for i = range nums {
+		if sum-nums[i] > target && dfs(append(nums[:i:i], nums[i+1:]...), sum-nums[i], target) {
 			return true
 		}
 	}
