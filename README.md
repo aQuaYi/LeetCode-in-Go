@@ -1,7 +1,7 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 答题进度](https://img.shields.io/badge/Progress-57%25-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 答题进度](https://img.shields.io/badge/Progress-58%25-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 排名](https://img.shields.io/badge/Ranking-13235-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|82|141|60|283|
+|**Accepted**|82|144|60|286|
 |**Total**|145|245|99|489|
 
 ## 题解
@@ -67,7 +67,7 @@
 |46|[Permutations](./Algorithms/0046.permutations)|44%|Medium| |
 |47|[Permutations II](./Algorithms/0047.permutations-ii)|33%|Medium| |
 |48|[Rotate Image](./Algorithms/0048.rotate-image)|39%|Medium| |
-|49|[Group Anagrams](./Algorithms/0049.group-anagrams)|35%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|49|[Group Anagrams](./Algorithms/0049.group-anagrams)|36%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |50|[Pow(x, n)](./Algorithms/0050.powx-n)|26%|Medium| |
 |51|[N-Queens](./Algorithms/0051.n-queens)|31%|Hard| |
 |52|[N-Queens II](./Algorithms/0052.n-queens-ii)|45%|Hard| |
@@ -288,8 +288,8 @@
 |372| * Super Pow|34%|Medium| |
 |373| * Find K Pairs with Smallest Sums|30%|Medium| |
 |375|[Guess Number Higher or Lower II](./Algorithms/0375.guess-number-higher-or-lower-ii)|35%|Medium| |
-|376| * Wiggle Subsequence|35%|Medium| |
-|377| * Combination Sum IV|42%|Medium| |
+|376|[Wiggle Subsequence](./Algorithms/0376.wiggle-subsequence)|35%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|377|[Combination Sum IV](./Algorithms/0377.combination-sum-iv)|42%|Medium| |
 |378| * Kth Smallest Element in a Sorted Matrix|45%|Medium| |
 |380|[Insert Delete GetRandom O(1)](./Algorithms/0380.insert-delete-getrandom-o1)|39%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |381|[Insert Delete GetRandom O(1) - Duplicates allowed](./Algorithms/0381.insert-delete-getrandom-o1-duplicates-allowed)|28%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -302,7 +302,7 @@
 |389| * Find the Difference|50%|Easy| |
 |390| * Elimination Game|42%|Medium| |
 |391| * Perfect Rectangle|26%|Hard| |
-|392| * Is Subsequence|44%|Medium| |
+|392|[Is Subsequence](./Algorithms/0392.is-subsequence)|44%|Medium| |
 |393| * UTF-8 Validation|34%|Medium| |
 |394| * Decode String|41%|Medium| |
 |395| * Longest Substring with At Least K Repeating Characters|35%|Medium| |
@@ -427,7 +427,7 @@
 |567| * Permutation in String|36%|Medium| |
 |572| * Subtree of Another Tree|40%|Easy| |
 |575| * Distribute Candies|58%|Easy| |
-|576| * Out of Boundary Paths|30%|Medium| |
+|576| * Out of Boundary Paths|31%|Medium| |
 |581|[Shortest Unsorted Continuous Subarray](./Algorithms/0581.shortest-unsorted-continuous-subarray)|29%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |583| * Delete Operation for Two Strings|44%|Medium| |
 |587| * Erect the Fence|32%|Hard| |
@@ -481,7 +481,7 @@
 |672| * Bulb Switcher II|47%|Medium| |
 |673| * Number of Longest Increasing Subsequence|30%|Medium| |
 |674| * Longest Continuous Increasing Subsequence|42%|Easy| |
-|675| * Cut Off Trees for Golf Event|27%|Hard| |
+|675| * Cut Off Trees for Golf Event|26%|Hard| |
 |676| * Implement Magic Dictionary|50%|Medium| |
 |677| * Map Sum Pairs|52%|Medium| |
 |678| * Valid Parenthesis String|28%|Medium| |
@@ -505,7 +505,7 @@
 |698| * Partition to K Equal Sum Subsets|35%|Medium| |
 |699| * Falling Squares|36%|Hard| |
 |712| * Minimum ASCII Delete Sum for Two Strings|48%|Medium| |
-|713| * Subarray Product Less Than K|35%|Medium| |
+|713| * Subarray Product Less Than K|34%|Medium| |
 |714| * Best Time to Buy and Sell Stock with Transaction Fee|29%|Medium| |
 |715| * Range Module|30%|Hard| |
 
