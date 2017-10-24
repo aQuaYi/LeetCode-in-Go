@@ -1,7 +1,13 @@
 package Problem0392
 
 func isSubsequence(s string, t string) bool {
-	res :=
+	var i, j = 0, 0
 
-	return res
+	for i < len(s) && j < len(t) {
+		if s[i] == t[j] {
+			i++
+		}
+		j++
+	}
+	return i == len(s)
 }
