@@ -1,47 +1,49 @@
 package Problem0416
 
-import "sort"
-
 func canPartition(nums []int) bool {
 	sum := 0
 	for _, n := range nums {
 		sum += n
 	}
 
-	if sum%2 == 1 {
+	if sum&1 == 1 {
 		return false
 	}
 
-	half := sum >> 1
-	left := 0
-	sort.Ints(nums)
-	i := 0
-	for left < half {
-		left += nums[i]
-		i++
+	sum = sum >> 1
+	n := len(nums)
+
+	var i, j int
+
+	// dp[i][j] 表示 nums[:i] 中的元素，可以找出一些，他们的和为 j
+	dp := make([][]bool, n+1)
+	for i = range dp {
+		dp[i] = make([]bool, sum+1)
 	}
 
-	if left == half {
-		return true
+	// 从任意多个元素中，挑选 0 个元素出来，其和总是 0
+	dp[0][0] = true
+	for i = 1; i < n+1; i++ {
+		dp[i][0] = true
 	}
 
-	return dfs(nums[:i], left, half)
-}
+	for j = 1; j < sum+1; j++ {
+		// 从包含 0 个元素的 nums 中，挑不出来元素，使得其和为 j
+		dp[0][j] = false
+	}
 
-func dfs(nums []int, sum, target int) bool {
-	var i int
-
-	for i = range nums {
-		if sum-nums[i] == target {
-			return true
+	for i = 1; i < n+1; i++ {
+		for j = 1; j < sum+1; j++ {
+			dp[i][j] = dp[i-1][j]
+			if j >= nums[i-1] {
+				// nums[:i] 比 nums[:i-1] 多了 nums[i-1]，所以
+				// 要么，nums[:i-1] 中有元素可以合成 j-nums[i-1]
+				// 要么，nums[:i-1] 中有元素可以合成 j
+				// nums[:i] 中才可能有元素合成 j
+				dp[i][j] = dp[i][j] || dp[i-1][j-nums[i-1]]
+			}
 		}
 	}
 
-	for i = range nums {
-		if sum-nums[i] > target && dfs(append(nums[:i:i], nums[i+1:]...), sum-nums[i], target) {
-			return true
-		}
-	}
-
-	return false
+	return dp[n][sum]
 }
