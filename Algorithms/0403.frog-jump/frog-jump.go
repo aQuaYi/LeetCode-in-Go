@@ -27,21 +27,17 @@ func canCross(stones []int) bool {
 		if pos+jump-1 == last || pos+jump == last || pos+jump+1 == last {
 			return true
 		}
-		if hs[pos+jump+1] {
-			if dfs(hs, pos+jump+1, jump+1) {
-				return true
+		var i int
+		// i--
+		// 先跨大步
+		for i = 1; -1 <= i; i-- {
+			if jump+i > 0 && hs[pos+jump+i] {
+				if dfs(hs, pos+jump+i, jump+i) {
+					return true
+				}
 			}
 		}
-		if hs[pos+jump] {
-			if dfs(hs, pos+jump, jump) {
-				return true
-			}
-		}
-		if jump > 1 && hs[pos+jump-1] {
-			if dfs(hs, pos+jump-1, jump-1) {
-				return true
-			}
-		}
+
 		return false
 	}
 
