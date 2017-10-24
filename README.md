@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|82|140|60|282|
+|**Accepted**|82|141|60|283|
 |**Total**|145|245|99|489|
 
 ## 题解
@@ -287,7 +287,7 @@
 |371| * Sum of Two Integers|51%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |372| * Super Pow|34%|Medium| |
 |373| * Find K Pairs with Smallest Sums|30%|Medium| |
-|375| * Guess Number Higher or Lower II|35%|Medium| |
+|375|[Guess Number Higher or Lower II](./Algorithms/0375.guess-number-higher-or-lower-ii)|35%|Medium| |
 |376| * Wiggle Subsequence|35%|Medium| |
 |377| * Combination Sum IV|42%|Medium| |
 |378| * Kth Smallest Element in a Sorted Matrix|45%|Medium| |
@@ -367,7 +367,7 @@
 |476| * Number Complement|60%|Easy| |
 |477| * Total Hamming Distance|47%|Medium| |
 |479| * Largest Palindrome Product|23%|Easy| |
-|480| * Sliding Window Median|31%|Hard| |
+|480| * Sliding Window Median|30%|Hard| |
 |481| * Magical String|45%|Medium| |
 |482| * License Key Formatting|41%|Medium| |
 |483| * Smallest Good Base|33%|Hard| |
@@ -417,7 +417,7 @@
 |552| * Student Attendance Record II|31%|Hard| |
 |553| * Optimal Division|55%|Medium| |
 |554| * Brick Wall|45%|Medium| |
-|556| * Next Greater Element III|28%|Medium| |
+|556| * Next Greater Element III|29%|Medium| |
 |557| * Reverse Words in a String III|59%|Easy| |
 |560|[Subarray Sum Equals K](./Algorithms/0560.subarray-sum-equals-k)|40%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |561|[Array Partition I](./Algorithms/0561.array-partition-i)|66%|Easy| |
@@ -429,7 +429,7 @@
 |575| * Distribute Candies|58%|Easy| |
 |576| * Out of Boundary Paths|30%|Medium| |
 |581|[Shortest Unsorted Continuous Subarray](./Algorithms/0581.shortest-unsorted-continuous-subarray)|29%|Easy|[❤](https://leetcode.com/list/oussv5j)|
-|583| * Delete Operation for Two Strings|43%|Medium| |
+|583| * Delete Operation for Two Strings|44%|Medium| |
 |587| * Erect the Fence|32%|Hard| |
 |591| * Tag Validator|29%|Hard| |
 |592| * Fraction Addition and Subtraction|46%|Medium| |
@@ -448,7 +448,7 @@
 |628|[Maximum Product of Three Numbers](./Algorithms/0628.maximum-product-of-three-numbers)|45%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |629| * K Inverse Pairs Array|26%|Hard| |
 |630|[Course Schedule III](./Algorithms/0630.course-schedule-iii)|27%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|632| * Smallest Range|42%|Hard| |
+|632| * Smallest Range|41%|Hard| |
 |633| * Sum of Square Numbers|32%|Easy| |
 |636| * Exclusive Time of Functions|43%|Medium| |
 |637| * Average of Levels in Binary Tree|55%|Easy| |
@@ -496,7 +496,7 @@
 |687| * Longest Univalue Path|32%|Easy| |
 |688| * Knight Probability in Chessboard|38%|Medium| |
 |689| * Maximum Sum of 3 Non-Overlapping Subarrays|42%|Hard| |
-|691| * Stickers to Spell Word|32%|Hard| |
+|691| * Stickers to Spell Word|31%|Hard| |
 |692| * Top K Frequent Words|41%|Medium| |
 |693| * Binary Number with Alternating Bits|54%|Easy| |
 |695| * Max Area of Island|53%|Easy| |
@@ -504,10 +504,10 @@
 |697| * Degree of an Array|48%|Easy| |
 |698| * Partition to K Equal Sum Subsets|35%|Medium| |
 |699| * Falling Squares|36%|Hard| |
-|712| * Minimum ASCII Delete Sum for Two Strings|47%|Medium| |
+|712| * Minimum ASCII Delete Sum for Two Strings|48%|Medium| |
 |713| * Subarray Product Less Than K|35%|Medium| |
-|714| * Best Time to Buy and Sell Stock with Transaction Fee|27%|Medium| |
-|715| * Range Module|29%|Hard| |
+|714| * Best Time to Buy and Sell Stock with Transaction Fee|29%|Medium| |
+|715| * Range Module|30%|Hard| |
 
 以下免费的算法题，暂时不能使用 Go 解答
 
