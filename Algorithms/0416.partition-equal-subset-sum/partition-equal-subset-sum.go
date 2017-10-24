@@ -1,5 +1,6 @@
 package Problem0416
 
+// 01背包问题
 func canPartition(nums []int) bool {
 	sum := 0
 	for _, n := range nums {
