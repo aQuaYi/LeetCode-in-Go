@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|82|144|60|286|
+|**Accepted**|82|144|61|287|
 |**Total**|145|245|99|489|
 
 ## 题解
@@ -302,7 +302,7 @@
 |389| * Find the Difference|50%|Easy| |
 |390| * Elimination Game|42%|Medium| |
 |391| * Perfect Rectangle|26%|Hard| |
-|392|[Is Subsequence](./Algorithms/0392.is-subsequence)|44%|Medium| |
+|392|[Is Subsequence](./Algorithms/0392.is-subsequence)|44%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |393| * UTF-8 Validation|34%|Medium| |
 |394| * Decode String|41%|Medium| |
 |395| * Longest Substring with At Least K Repeating Characters|35%|Medium| |
@@ -313,7 +313,7 @@
 |400| * Nth Digit|30%|Easy| |
 |401| * Binary Watch|44%|Easy| |
 |402| * Remove K Digits|26%|Medium| |
-|403| * Frog Jump|32%|Hard| |
+|403|[Frog Jump](./Algorithms/0403.frog-jump)|32%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |404| * Sum of Left Leaves|47%|Easy| |
 |405| * Convert a Number to Hexadecimal|41%|Easy| |
 |406| * Queue Reconstruction by Height|55%|Medium| |
@@ -427,7 +427,7 @@
 |567| * Permutation in String|36%|Medium| |
 |572| * Subtree of Another Tree|40%|Easy| |
 |575| * Distribute Candies|58%|Easy| |
-|576| * Out of Boundary Paths|31%|Medium| |
+|576| * Out of Boundary Paths|30%|Medium| |
 |581|[Shortest Unsorted Continuous Subarray](./Algorithms/0581.shortest-unsorted-continuous-subarray)|29%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |583| * Delete Operation for Two Strings|44%|Medium| |
 |587| * Erect the Fence|32%|Hard| |
