@@ -22,9 +22,8 @@ func canPartition(nums []int) bool {
 		dp[i] = make([]bool, sum+1)
 	}
 
-	// 从任意多个元素中，挑选 0 个元素出来，其和总是 0
-	dp[0][0] = true
-	for i = 1; i < n+1; i++ {
+	for i = 0; i < n+1; i++ {
+		// 从任意多个元素中，挑选 0 个元素出来，其和是 0
 		dp[i][0] = true
 	}
 
