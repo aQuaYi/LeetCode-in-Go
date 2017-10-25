@@ -46,16 +46,20 @@ func main() {
 	case "h", "help":
 		fmt.Println(USAGE)
 	case "check":
-		log.Println("~~ 开始检查剩余的题目...")
+		log.Println("~~ 开始检查剩余的题目 ~~")
 		checkAvailable()
+		log.Println("~~ 检查完成 ~~")
 	case "readme", "r":
-		log.Println("~~ 开始重制 README.md 文档...")
+		log.Println("~~ 开始重制 README.md 文档 ~~")
 		rebuildReadme()
+		log.Println("~~ 重制 READ.md 完成 ~~")
 	case "tasks", "t":
-		log.Println("~~ 开始制作任务清单...")
+		log.Println("~~ 开始制作任务清单 ~~")
 		printTasks()
+		log.Println("~~ 制作任务清单完成 ~~")
 	default:
-		log.Println("~~ 开始生成答题文件夹...")
+		log.Println("~~ 开始生成答题文件夹 ~~")
 		buildProblemDir(os.Args[1])
+		log.Println("~~ 已经生成答题文件夹 ~~")
 	}
 }
