@@ -482,7 +482,7 @@
 |673| * Number of Longest Increasing Subsequence|30%|Medium| |
 |674| * Longest Continuous Increasing Subsequence|42%|Easy| |
 |675| * Cut Off Trees for Golf Event|26%|Hard| |
-|676| * Implement Magic Dictionary|50%|Medium| |
+|676| * Implement Magic Dictionary|49%|Medium| |
 |677| * Map Sum Pairs|52%|Medium| |
 |678| * Valid Parenthesis String|28%|Medium| |
 |679| * 24 Game|38%|Hard| |
