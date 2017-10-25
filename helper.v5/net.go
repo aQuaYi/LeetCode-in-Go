@@ -27,7 +27,7 @@ func signin() {
 	if _, err := toml.DecodeFile(configFile, &cfg); err != nil {
 		log.Fatalf(err.Error())
 	}
-	log.Printf("Hi, %s. \n", cfg.Login)
+	log.Printf("Hi, %s. I'm %s\n", cfg.Login, VERSION)
 
 	log.Println("正在登录中...")
 
