@@ -1,23 +1,51 @@
 package Problem0410
 
 func splitArray(nums []int, m int) int {
-	var Max, n, size, i, sum int
-	for _, n := range nums {
+	var Max, n, sum int
+	for _, n = range nums {
+		Max = max(Max, n)
 		sum += n
-		if Max < n {
-			Max = n
-		}
+	}
+
+	if m == 1 {
+		return sum
 	}
 
 	if Max > sum/m {
 		return Max
 	}
 
-	sum /= m
-	size = len(nums)
+	valid := func(target, m int) bool {
+		count, total := 1, 0
+		for _, n = range nums {
+			total += n
+			if total > target {
+				total = n
+				count++
+				if count > m {
+					return false
+				}
+			}
+		}
+		return true
+	}
 
-	// 从此开始，在 nums 找到一个子集，使得其和为 >=sum 的最小值
+	l, r := Max, sum
+	var mid int
+	for l <= r {
+		mid = (l + r) >> 1
+		if valid(mid, m) {
+			r = mid - 1
+		} else {
+			l = mid + 1
+		}
+	}
+	return l
+}
 
-	// dp[i][j][k] 表示 在 nums[i:j] 中
-	return res
+func max(a, b int) int {
+	if a > b {
+		return a
+	}
+	return b
 }
