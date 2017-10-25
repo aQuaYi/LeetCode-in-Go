@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|82|146|62|290|
+|**Accepted**|83|146|62|291|
 |**Total**|145|245|99|489|
 
 ## 题解
@@ -297,7 +297,7 @@
 |383|[Ransom Note](./Algorithms/0383.ransom-note)|47%|Easy| |
 |384| * Shuffle an Array|46%|Medium| |
 |385| * Mini Parser|30%|Medium| |
-|387| * First Unique Character in a String|46%|Easy| |
+|387|[First Unique Character in a String](./Algorithms/0387.first-unique-character-in-a-string)|46%|Easy| |
 |388| * Longest Absolute File Path|36%|Medium| |
 |389| * Find the Difference|50%|Easy| |
 |390| * Elimination Game|42%|Medium| |
