@@ -2,7 +2,7 @@
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 答题进度](https://img.shields.io/badge/Progress-59%25-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 排名](https://img.shields.io/badge/Ranking-12573-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/Ranking-12479-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 
@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|82|146|61|289|
+|**Accepted**|82|146|62|290|
 |**Total**|145|245|99|489|
 
 ## 题解
@@ -20,7 +20,7 @@
 |题号|题目|通过率|难度|收藏|
 |:-:|:-|:-: | :-: | :-: |
 |1|[Two Sum](./Algorithms/0001.two-sum)|35%|Easy| |
-|2|[Add Two Numbers](./Algorithms/0002.add-two-numbers)|27%|Medium| |
+|2|[Add Two Numbers](./Algorithms/0002.add-two-numbers)|28%|Medium| |
 |3|[Longest Substring Without Repeating Characters](./Algorithms/0003.longest-substring-without-repeating-characters)|24%|Medium| |
 |4|[Median of Two Sorted Arrays](./Algorithms/0004.median-of-two-sorted-arrays)|22%|Hard| |
 |5|[Longest Palindromic Substring](./Algorithms/0005.longest-palindromic-substring)|25%|Medium| |
@@ -40,7 +40,7 @@
 |19|[Remove Nth Node From End of List](./Algorithms/0019.remove-nth-node-from-end-of-list)|33%|Medium| |
 |20|[Valid Parentheses](./Algorithms/0020.valid-parentheses)|33%|Easy| |
 |21|[Merge Two Sorted Lists](./Algorithms/0021.merge-two-sorted-lists)|39%|Easy| |
-|22|[Generate Parentheses](./Algorithms/0022.generate-parentheses)|45%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|22|[Generate Parentheses](./Algorithms/0022.generate-parentheses)|46%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |23|[Merge k Sorted Lists](./Algorithms/0023.merge-k-sorted-lists)|27%|Hard| |
 |24|[Swap Nodes in Pairs](./Algorithms/0024.swap-nodes-in-pairs)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |25|[Reverse Nodes in k-Group](./Algorithms/0025.reverse-nodes-in-k-group)|30%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -319,7 +319,7 @@
 |406| * Queue Reconstruction by Height|55%|Medium| |
 |407| * Trapping Rain Water II|37%|Hard| |
 |409| * Longest Palindrome|45%|Easy| |
-|410| * Split Array Largest Sum|38%|Hard| |
+|410|[Split Array Largest Sum](./Algorithms/0410.split-array-largest-sum)|38%|Hard| |
 |412| * Fizz Buzz|58%|Easy| |
 |413|[Arithmetic Slices](./Algorithms/0413.arithmetic-slices)|54%|Medium| |
 |414|[Third Maximum Number](./Algorithms/0414.third-maximum-number)|27%|Easy| |
@@ -362,7 +362,7 @@
 |468| * Validate IP Address|20%|Medium| |
 |472| * Concatenated Words|30%|Hard| |
 |473| * Matchsticks to Square|35%|Medium| |
-|474| * Ones and Zeroes|38%|Medium| |
+|474| * Ones and Zeroes|39%|Medium| |
 |475| * Heaters|29%|Easy| |
 |476| * Number Complement|60%|Easy| |
 |477| * Total Hamming Distance|47%|Medium| |
@@ -471,7 +471,7 @@
 |659| * Split Array into Consecutive Subsequences|35%|Medium| |
 |661|[Image Smoother](./Algorithms/0661.image-smoother)|45%|Easy| |
 |662| * Maximum Width of Binary Tree|37%|Medium| |
-|664| * Strange Printer|31%|Hard| |
+|664| * Strange Printer|32%|Hard| |
 |665| * Non-decreasing Array|21%|Easy| |
 |667|[Beautiful Arrangement II](./Algorithms/0667.beautiful-arrangement-ii)|51%|Medium| |
 |668| * Kth Smallest Number in Multiplication Table|37%|Hard| |
@@ -495,7 +495,7 @@
 |686| * Repeated String Match|31%|Easy| |
 |687| * Longest Univalue Path|32%|Easy| |
 |688| * Knight Probability in Chessboard|38%|Medium| |
-|689| * Maximum Sum of 3 Non-Overlapping Subarrays|42%|Hard| |
+|689| * Maximum Sum of 3 Non-Overlapping Subarrays|41%|Hard| |
 |691| * Stickers to Spell Word|31%|Hard| |
 |692| * Top K Frequent Words|41%|Medium| |
 |693| * Binary Number with Alternating Bits|54%|Easy| |
@@ -504,10 +504,10 @@
 |697| * Degree of an Array|48%|Easy| |
 |698| * Partition to K Equal Sum Subsets|35%|Medium| |
 |699| * Falling Squares|36%|Hard| |
-|712| * Minimum ASCII Delete Sum for Two Strings|48%|Medium| |
+|712| * Minimum ASCII Delete Sum for Two Strings|49%|Medium| |
 |713| * Subarray Product Less Than K|34%|Medium| |
-|714| * Best Time to Buy and Sell Stock with Transaction Fee|30%|Medium| |
-|715| * Range Module|29%|Hard| |
+|714| * Best Time to Buy and Sell Stock with Transaction Fee|31%|Medium| |
+|715| * Range Module|30%|Hard| |
 
 以下免费的算法题，暂时不能使用 Go 解答
 
