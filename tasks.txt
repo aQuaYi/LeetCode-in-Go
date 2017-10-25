@@ -1,513 +1,513 @@
-3 - 29%% - 715 - Range Module
-2 - 30%% - 714 - Best Time to Buy and Sell Stock with Transaction Fee
-2 - 34%% - 713 - Subarray Product Less Than K
-2 - 48%% - 712 - Minimum ASCII Delete Sum for Two Strings
-3 - 36%% - 699 - Falling Squares
-2 - 35%% - 698 - Partition to K Equal Sum Subsets
-1 - 48%% - 697 - Degree of an Array
-1 - 52%% - 696 - Count Binary Substrings
-1 - 53%% - 695 - Max Area of Island
-1 - 54%% - 693 - Binary Number with Alternating Bits
-2 - 41%% - 692 - Top K Frequent Words
-3 - 31%% - 691 - Stickers to Spell Word
-1 - 54%% - 690 - Employee Importance
-3 - 42%% - 689 - Maximum Sum of 3 Non-Overlapping Subarrays
-2 - 38%% - 688 - Knight Probability in Chessboard
-1 - 32%% - 687 - Longest Univalue Path
-1 - 31%% - 686 - Repeated String Match
-3 - 28%% - 685 - Redundant Connection II
-2 - 36%% - 684 - Redundant Connection
-3 - 36%% - 683 - K Empty Slots
-1 - 58%% - 682 - Baseball Game
-2 - 42%% - 681 - Next Closest Time
-1 - 31%% - 680 - Valid Palindrome II
-3 - 38%% - 679 - 24 Game
-2 - 28%% - 678 - Valid Parenthesis String
-2 - 52%% - 677 - Map Sum Pairs
-2 - 50%% - 676 - Implement Magic Dictionary
-3 - 26%% - 675 - Cut Off Trees for Golf Event
-1 - 42%% - 674 - Longest Continuous Increasing Subsequence
-2 - 30%% - 673 - Number of Longest Increasing Subsequence
-2 - 47%% - 672 - Bulb Switcher II
-1 - 41%% - 671 - Second Minimum Node In a Binary Tree
-2 - 38%% - 670 - Maximum Swap
-1 - 58%% - 669 - Trim a Binary Search Tree
-3 - 37%% - 668 - Kth Smallest Number in Multiplication Table
-2 - 51%% - 667 - Beautiful Arrangement II
-1 - 21%% - 665 - Non-decreasing Array
-3 - 31%% - 664 - Strange Printer
-2 - 37%% - 662 - Maximum Width of Binary Tree
-1 - 45%% - 661 - Image Smoother
-2 - 35%% - 659 - Split Array into Consecutive Subsequences
-2 - 35%% - 658 - Find K Closest Elements
-1 - 68%% - 657 - Judge Route Circle
-2 - 50%% - 655 - Print Binary Tree
-2 - 70%% - 654 - Maximum Binary Tree
-1 - 50%% - 653 - Two Sum IV - Input is a BST
-2 - 35%% - 652 - Find Duplicate Subtrees
-2 - 44%% - 650 - 2 Keys Keyboard
-2 - 35%% - 649 - Dota2 Senate
-2 - 47%% - 648 - Replace Words
-2 - 55%% - 647 - Palindromic Substrings
-2 - 47%% - 646 - Maximum Length of Pair Chain
-1 - 40%% - 645 - Set Mismatch
-1 - 37%% - 643 - Maximum Average Subarray I
-2 - 38%% - 640 - Solve the Equation
-3 - 23%% - 639 - Decode Ways II
-2 - 42%% - 638 - Shopping Offers
-1 - 55%% - 637 - Average of Levels in Binary Tree
-2 - 43%% - 636 - Exclusive Time of Functions
-1 - 32%% - 633 - Sum of Square Numbers
-3 - 41%% - 632 - Smallest Range
-3 - 27%% - 630 - Course Schedule III
-3 - 26%% - 629 - K Inverse Pairs Array
-1 - 45%% - 628 - Maximum Product of Three Numbers
-2 - 46%% - 623 - Add One Row to Tree
-2 - 42%% - 621 - Task Scheduler
-1 - 67%% - 617 - Merge Two Binary Trees
-2 - 41%% - 611 - Valid Triangle Number
-2 - 52%% - 609 - Find Duplicate File in System
-1 - 49%% - 606 - Construct String from Binary Tree
-1 - 30%% - 605 - Can Place Flowers
-3 - 30%% - 600 - Non-negative Integers without Consecutive Ones
-1 - 46%% - 599 - Minimum Index Sum of Two Lists
-1 - 48%% - 598 - Range Addition II
-1 - 40%% - 594 - Longest Harmonious Subsequence
-2 - 40%% - 593 - Valid Square
-2 - 46%% - 592 - Fraction Addition and Subtraction
-3 - 29%% - 591 - Tag Validator
-3 - 32%% - 587 - Erect the Fence
-2 - 44%% - 583 - Delete Operation for Two Strings
-1 - 29%% - 581 - Shortest Unsorted Continuous Subarray
-2 - 30%% - 576 - Out of Boundary Paths
-1 - 58%% - 575 - Distribute Candies
-1 - 40%% - 572 - Subtree of Another Tree
-2 - 36%% - 567 - Permutation in String
-1 - 58%% - 566 - Reshape the Matrix
-3 - 17%% - 564 - Find the Closest Palindrome
-1 - 47%% - 563 - Binary Tree Tilt
-1 - 66%% - 561 - Array Partition I
-2 - 40%% - 560 - Subarray Sum Equals K
-1 - 59%% - 557 - Reverse Words in a String III
-2 - 29%% - 556 - Next Greater Element III
-2 - 45%% - 554 - Brick Wall
-2 - 55%% - 553 - Optimal Division
-3 - 31%% - 552 - Student Attendance Record II
-1 - 43%% - 551 - Student Attendance Record I
-2 - 49%% - 547 - Friend Circles
-3 - 33%% - 546 - Remove Boxes
-1 - 44%% - 543 - Diameter of Binary Tree
-2 - 33%% - 542 - 01 Matrix
-1 - 43%% - 541 - Reverse String II
-2 - 55%% - 540 - Single Element in a Sorted Array
-2 - 45%% - 539 - Minimum Time Difference
-1 - 49%% - 538 - Convert BST to Greater Tree
-2 - 63%% - 537 - Complex Number Multiplication
-2 - 74%% - 535 - Encode and Decode TinyURL
-1 - 28%% - 532 - K-diff Pairs in an Array
-1 - 47%% - 530 - Minimum Absolute Difference in BST
-2 - 49%% - 529 - Minesweeper
-2 - 54%% - 526 - Beautiful Arrangement
-2 - 40%% - 525 - Contiguous Array
-2 - 42%% - 524 - Longest Word in Dictionary through Deleting
-2 - 23%% - 523 - Continuous Subarray Sum
-2 - 31%% - 522 - Longest Uncommon Subsequence II
-1 - 55%% - 521 - Longest Uncommon Subsequence I 
-1 - 51%% - 520 - Detect Capital
-3 - 36%% - 517 - Super Washing Machines
-2 - 42%% - 516 - Longest Palindromic Subsequence
-2 - 55%% - 515 - Find Largest Value in Each Tree Row
-3 - 39%% - 514 - Freedom Trail
-2 - 56%% - 513 - Find Bottom Left Tree Value
-2 - 52%% - 508 - Most Frequent Subtree Sum
-1 - 33%% - 507 - Perfect Number
-1 - 46%% - 506 - Relative Ranks
-1 - 44%% - 504 - Base 7
-2 - 47%% - 503 - Next Greater Element II
-3 - 36%% - 502 - IPO
-1 - 37%% - 501 - Find Mode in Binary Search Tree
-1 - 59%% - 500 - Keyboard Row
-2 - 45%% - 498 - Diagonal Traverse
-1 - 56%% - 496 - Next Greater Element I
-2 - 51%% - 495 - Teemo Attacking
-2 - 43%% - 494 - Target Sum
-3 - 20%% - 493 - Reverse Pairs
-1 - 48%% - 492 - Construct the Rectangle
-2 - 38%% - 491 - Increasing Subsequences
-3 - 37%% - 488 - Zuma Game
-2 - 45%% - 486 - Predict the Winner
-1 - 53%% - 485 - Max Consecutive Ones
-3 - 33%% - 483 - Smallest Good Base
-2 - 41%% - 482 - License Key Formatting
-2 - 45%% - 481 - Magical String
-3 - 30%% - 480 - Sliding Window Median
-1 - 23%% - 479 - Largest Palindrome Product
-2 - 47%% - 477 - Total Hamming Distance
-1 - 60%% - 476 - Number Complement
-1 - 29%% - 475 - Heaters
-2 - 38%% - 474 - Ones and Zeroes
-2 - 35%% - 473 - Matchsticks to Square
-3 - 30%% - 472 - Concatenated Words
-2 - 20%% - 468 - Validate IP Address
-2 - 32%% - 467 - Unique Substrings in Wraparound String
-3 - 27%% - 466 - Count The Repetitions
-2 - 25%% - 464 - Can I Win
-1 - 57%% - 463 - Island Perimeter
-2 - 51%% - 462 - Minimum Moves to Equal Array Elements II
-1 - 69%% - 461 - Hamming Distance
-3 - 24%% - 460 - LFU Cache
-1 - 38%% - 459 - Repeated Substring Pattern
-2 - 28%% - 456 - 132 Pattern
-1 - 47%% - 455 - Assign Cookies
-2 - 47%% - 454 - 4Sum II
-1 - 47%% - 453 - Minimum Moves to Equal Array Elements
-2 - 44%% - 452 - Minimum Number of Arrows to Burst Balloons
-2 - 51%% - 451 - Sort Characters By Frequency
-2 - 37%% - 450 - Delete Node in a BST
-2 - 42%% - 449 - Serialize and Deserialize BST
-1 - 51%% - 448 - Find All Numbers Disappeared in an Array
-1 - 45%% - 447 - Number of Boomerangs
-3 - 27%% - 446 - Arithmetic Slices II - Subsequence
-2 - 45%% - 445 - Add Two Numbers II
-2 - 56%% - 442 - Find All Duplicates in an Array
-1 - 36%% - 441 - Arranging Coins
-3 - 25%% - 440 - K-th Smallest in Lexicographical Order
-1 - 33%% - 438 - Find All Anagrams in a String
-1 - 39%% - 437 - Path Sum III
-2 - 41%% - 436 - Find Right Interval
-2 - 41%% - 435 - Non-overlapping Intervals
-1 - 36%% - 434 - Number of Segments in a String
-3 - 28%% - 432 - All O`one Data Structure
-2 - 42%% - 424 - Longest Repeating Character Replacement
-2 - 44%% - 423 - Reconstruct Original Digits from English
-2 - 46%% - 421 - Maximum XOR of Two Numbers in an Array
-3 - 20%% - 420 - Strong Password Checker
-2 - 62%% - 419 - Battleships in a Board
-2 - 33%% - 417 - Pacific Atlantic Water Flow
-2 - 39%% - 416 - Partition Equal Subset Sum
-1 - 41%% - 415 - Add Strings
-1 - 27%% - 414 - Third Maximum Number
-2 - 54%% - 413 - Arithmetic Slices
-1 - 58%% - 412 - Fizz Buzz
-3 - 38%% - 410 - Split Array Largest Sum
-1 - 45%% - 409 - Longest Palindrome
-3 - 37%% - 407 - Trapping Rain Water II
-2 - 55%% - 406 - Queue Reconstruction by Height
-1 - 41%% - 405 - Convert a Number to Hexadecimal
-1 - 47%% - 404 - Sum of Left Leaves
-3 - 32%% - 403 - Frog Jump
-2 - 26%% - 402 - Remove K Digits
-1 - 44%% - 401 - Binary Watch
-1 - 30%% - 400 - Nth Digit
-2 - 41%% - 399 - Evaluate Division
-2 - 43%% - 398 - Random Pick Index
-2 - 30%% - 397 - Integer Replacement
-2 - 33%% - 396 - Rotate Function
-2 - 35%% - 395 - Longest Substring with At Least K Repeating Characters
-2 - 41%% - 394 - Decode String
-2 - 34%% - 393 - UTF-8 Validation
-2 - 44%% - 392 - Is Subsequence
-3 - 26%% - 391 - Perfect Rectangle
-2 - 42%% - 390 - Elimination Game
-1 - 50%% - 389 - Find the Difference
-2 - 36%% - 388 - Longest Absolute File Path
-1 - 46%% - 387 - First Unique Character in a String
-2 - 41%% - 386 - Lexicographical Numbers
-2 - 30%% - 385 - Mini Parser
-2 - 46%% - 384 - Shuffle an Array
-1 - 47%% - 383 - Ransom Note
-2 - 47%% - 382 - Linked List Random Node
-3 - 29%% - 381 - Insert Delete GetRandom O(1) - Duplicates allowed
-2 - 39%% - 380 - Insert Delete GetRandom O(1)
-2 - 45%% - 378 - Kth Smallest Element in a Sorted Matrix
-2 - 42%% - 377 - Combination Sum IV
-2 - 35%% - 376 - Wiggle Subsequence
-2 - 35%% - 375 - Guess Number Higher or Lower II
-1 - 35%% - 374 - Guess Number Higher or Lower
-2 - 30%% - 373 - Find K Pairs with Smallest Sums
-2 - 34%% - 372 - Super Pow
-1 - 51%% - 371 - Sum of Two Integers
-2 - 33%% - 368 - Largest Divisible Subset
-1 - 38%% - 367 - Valid Perfect Square
-2 - 27%% - 365 - Water and Jug Problem
-3 - 33%% - 363 - Max Sum of Rectangle No Larger Than K
-2 - 46%% - 357 - Count Numbers with Unique Digits
-2 - 25%% - 355 - Design Twitter
-3 - 32%% - 354 - Russian Doll Envelopes
-3 - 40%% - 352 - Data Stream as Disjoint Intervals
-1 - 44%% - 350 - Intersection of Two Arrays II
-1 - 47%% - 349 - Intersection of Two Arrays
-2 - 48%% - 347 - Top K Frequent Elements
-1 - 38%% - 345 - Reverse Vowels of a String
-1 - 59%% - 344 - Reverse String
-2 - 46%% - 343 - Integer Break
-1 - 38%% - 342 - Power of Four
-2 - 42%% - 341 - Flatten Nested List Iterator
-2 - 61%% - 338 - Counting Bits
-2 - 43%% - 337 - House Robber III
-3 - 26%% - 336 - Palindrome Pairs
-3 - 25%% - 335 - Self Crossing
-2 - 39%% - 334 - Increasing Triplet Subsequence
-2 - 29%% - 332 - Reconstruct Itinerary
-2 - 36%% - 331 - Verify Preorder Serialization of a Binary Tree
-3 - 32%% - 330 - Patching Array
-3 - 36%% - 329 - Longest Increasing Path in a Matrix
-2 - 43%% - 328 - Odd Even Linked List
-3 - 30%% - 327 - Count of Range Sum
-1 - 40%% - 326 - Power of Three
-2 - 26%% - 324 - Wiggle Sort II
-2 - 26%% - 322 - Coin Change
-3 - 24%% - 321 - Create Maximum Number
-2 - 42%% - 319 - Bulb Switcher
-2 - 44%% - 318 - Maximum Product of Word Lengths
-3 - 29%% - 316 - Remove Duplicate Letters
-3 - 34%% - 315 - Count of Smaller Numbers After Self
-2 - 37%% - 313 - Super Ugly Number
-3 - 43%% - 312 - Burst Balloons
-2 - 28%% - 310 - Minimum Height Trees
-2 - 41%% - 309 - Best Time to Buy and Sell Stock with Cooldown
-2 - 21%% - 307 - Range Sum Query - Mutable
-2 - 27%% - 306 - Additive Number
-2 - 25%% - 304 - Range Sum Query 2D - Immutable
-1 - 30%% - 303 - Range Sum Query - Immutable
-3 - 35%% - 301 - Remove Invalid Parentheses
-2 - 38%% - 300 - Longest Increasing Subsequence
-2 - 35%% - 299 - Bulls and Cows
-3 - 33%% - 297 - Serialize and Deserialize Binary Tree
-3 - 27%% - 295 - Find Median from Data Stream
-1 - 55%% - 292 - Nim Game
-1 - 33%% - 290 - Word Pattern
-2 - 37%% - 289 - Game of Life
-2 - 43%% - 287 - Find the Duplicate Number
-2 - 35%% - 284 - Peeking Iterator
-1 - 50%% - 283 - Move Zeroes
-3 - 30%% - 282 - Expression Add Operators
-2 - 37%% - 279 - Perfect Squares
-1 - 25%% - 278 - First Bad Version
-2 - 34%% - 275 - H-Index II
-2 - 33%% - 274 - H-Index
-3 - 22%% - 273 - Integer to English Words
-1 - 44%% - 268 - Missing Number
-2 - 32%% - 264 - Ugly Number II
-1 - 39%% - 263 - Ugly Number
-2 - 52%% - 260 - Single Number III
-1 - 51%% - 258 - Add Digits
-1 - 39%% - 257 - Binary Tree Paths
-1 - 46%% - 242 - Valid Anagram
-2 - 44%% - 241 - Different Ways to Add Parentheses
-2 - 38%% - 240 - Search a 2D Matrix II
-3 - 33%% - 239 - Sliding Window Maximum
-2 - 49%% - 238 - Product of Array Except Self
-1 - 46%% - 237 - Delete Node in a Linked List
-2 - 29%% - 236 - Lowest Common Ancestor of a Binary Tree
-1 - 39%% - 235 - Lowest Common Ancestor of a Binary Search Tree
-1 - 33%% - 234 - Palindrome Linked List
-3 - 28%% - 233 - Number of Digit One
-1 - 37%% - 232 - Implement Queue using Stacks
-1 - 40%% - 231 - Power of Two
-2 - 44%% - 230 - Kth Smallest Element in a BST
-2 - 28%% - 229 - Majority Element II
-2 - 30%% - 228 - Summary Ranges
-2 - 29%% - 227 - Basic Calculator II
-1 - 52%% - 226 - Invert Binary Tree
-1 - 33%% - 225 - Implement Stack using Queues
-3 - 27%% - 224 - Basic Calculator
-2 - 33%% - 223 - Rectangle Area
-2 - 27%% - 222 - Count Complete Tree Nodes
-2 - 29%% - 221 - Maximal Square
-2 - 19%% - 220 - Contains Duplicate III
-1 - 32%% - 219 - Contains Duplicate II
-3 - 27%% - 218 - The Skyline Problem
-1 - 46%% - 217 - Contains Duplicate
-2 - 45%% - 216 - Combination Sum III
-2 - 39%% - 215 - Kth Largest Element in an Array
-3 - 24%% - 214 - Shortest Palindrome
-2 - 34%% - 213 - House Robber II
-3 - 23%% - 212 - Word Search II
-2 - 23%% - 211 - Add and Search Word - Data structure design
-2 - 28%% - 210 - Course Schedule II
-2 - 31%% - 209 - Minimum Size Subarray Sum
-2 - 29%% - 208 - Implement Trie (Prefix Tree)
-2 - 32%% - 207 - Course Schedule
-1 - 45%% - 206 - Reverse Linked List
-1 - 34%% - 205 - Isomorphic Strings
-1 - 26%% - 204 - Count Primes
-1 - 32%% - 203 - Remove Linked List Elements
-1 - 40%% - 202 - Happy Number
-2 - 34%% - 201 - Bitwise AND of Numbers Range
-2 - 35%% - 200 - Number of Islands
-2 - 41%% - 199 - Binary Tree Right Side View
-1 - 39%% - 198 - House Robber
-1 - 39%% - 191 - Number of 1 Bits
-1 - 29%% - 190 - Reverse Bits
-1 - 24%% - 189 - Rotate Array
-3 - 24%% - 188 - Best Time to Buy and Sell Stock IV
-2 - 32%% - 187 - Repeated DNA Sequences
-2 - 22%% - 179 - Largest Number
-3 - 23%% - 174 - Dungeon Game
-2 - 42%% - 173 - Binary Search Tree Iterator
-1 - 36%% - 172 - Factorial Trailing Zeroes
-1 - 47%% - 171 - Excel Sheet Column Number
-1 - 47%% - 169 - Majority Element
-1 - 26%% - 168 - Excel Sheet Column Title
-1 - 47%% - 167 - Two Sum II - Input array is sorted
-2 - 17%% - 166 - Fraction to Recurring Decimal
-2 - 20%% - 165 - Compare Version Numbers
-3 - 29%% - 164 - Maximum Gap
-2 - 37%% - 162 - Find Peak Element
-1 - 30%% - 160 - Intersection of Two Linked Lists
-1 - 29%% - 155 - Min Stack
-3 - 37%% - 154 - Find Minimum in Rotated Sorted Array II
-2 - 40%% - 153 - Find Minimum in Rotated Sorted Array
-2 - 26%% - 152 - Maximum Product Subarray
-2 - 15%% - 151 - Reverse Words in a String
-2 - 27%% - 150 - Evaluate Reverse Polish Notation
-3 - 15%% - 149 - Max Points on a Line
-2 - 29%% - 148 - Sort List
-2 - 33%% - 147 - Insertion Sort List
-3 - 18%% - 146 - LRU Cache
-3 - 40%% - 145 - Binary Tree Postorder Traversal
-2 - 45%% - 144 - Binary Tree Preorder Traversal
-2 - 25%% - 143 - Reorder List
-2 - 30%% - 142 - Linked List Cycle II
-1 - 35%% - 141 - Linked List Cycle
-3 - 23%% - 140 - Word Break II
-2 - 30%% - 139 - Word Break
-2 - 26%% - 138 - Copy List with Random Pointer
-2 - 41%% - 137 - Single Number II
-1 - 54%% - 136 - Single Number
-3 - 24%% - 135 - Candy
-2 - 29%% - 134 - Gas Station
-2 - 25%% - 133 - Clone Graph
-3 - 24%% - 132 - Palindrome Partitioning II
-2 - 34%% - 131 - Palindrome Partitioning
-2 - 18%% - 130 - Surrounded Regions
-2 - 37%% - 129 - Sum Root to Leaf Numbers
-3 - 37%% - 128 - Longest Consecutive Sequence
-2 - 19%% - 127 - Word Ladder
-3 - 14%% - 126 - Word Ladder II
-1 - 26%% - 125 - Valid Palindrome
-3 - 26%% - 124 - Binary Tree Maximum Path Sum
-3 - 29%% - 123 - Best Time to Buy and Sell Stock III
-1 - 47%% - 122 - Best Time to Buy and Sell Stock II
-1 - 41%% - 121 - Best Time to Buy and Sell Stock
-2 - 34%% - 120 - Triangle
-1 - 37%% - 119 - Pascal's Triangle II
-1 - 39%% - 118 - Pascal's Triangle
-2 - 33%% - 117 - Populating Next Right Pointers in Each Node II
-2 - 36%% - 116 - Populating Next Right Pointers in Each Node
-3 - 31%% - 115 - Distinct Subsequences
-2 - 35%% - 114 - Flatten Binary Tree to Linked List
-2 - 34%% - 113 - Path Sum II
-1 - 34%% - 112 - Path Sum
-1 - 33%% - 111 - Minimum Depth of Binary Tree
-1 - 37%% - 110 - Balanced Binary Tree
-2 - 34%% - 109 - Convert Sorted List to Binary Search Tree
-1 - 42%% - 108 - Convert Sorted Array to Binary Search Tree
-1 - 40%% - 107 - Binary Tree Level Order Traversal II
-2 - 32%% - 106 - Construct Binary Tree from Inorder and Postorder Traversal
-2 - 32%% - 105 - Construct Binary Tree from Preorder and Inorder Traversal
-1 - 53%% - 104 - Maximum Depth of Binary Tree
-2 - 35%% - 103 - Binary Tree Zigzag Level Order Traversal
-2 - 40%% - 102 - Binary Tree Level Order Traversal
-1 - 39%% - 101 - Symmetric Tree
-1 - 46%% - 100 - Same Tree
-3 - 30%% - 99 - Recover Binary Search Tree
-2 - 23%% - 98 - Validate Binary Search Tree
-3 - 24%% - 97 - Interleaving String
-2 - 41%% - 96 - Unique Binary Search Trees
-2 - 31%% - 95 - Unique Binary Search Trees II
-2 - 47%% - 94 - Binary Tree Inorder Traversal
-2 - 27%% - 93 - Restore IP Addresses
-2 - 30%% - 92 - Reverse Linked List II
-2 - 19%% - 91 - Decode Ways
-2 - 36%% - 90 - Subsets II
-2 - 41%% - 89 - Gray Code
-1 - 32%% - 88 - Merge Sorted Array
-3 - 29%% - 87 - Scramble String
-2 - 32%% - 86 - Partition List
-3 - 28%% - 85 - Maximal Rectangle
-3 - 27%% - 84 - Largest Rectangle in Histogram
-1 - 39%% - 83 - Remove Duplicates from Sorted List
-2 - 29%% - 82 - Remove Duplicates from Sorted List II
-2 - 32%% - 81 - Search in Rotated Sorted Array II
-2 - 36%% - 80 - Remove Duplicates from Sorted Array II
-2 - 27%% - 79 - Word Search
-2 - 41%% - 78 - Subsets
-2 - 40%% - 77 - Combinations
-3 - 25%% - 76 - Minimum Window Substring
-2 - 38%% - 75 - Sort Colors
-2 - 34%% - 74 - Search a 2D Matrix
-2 - 36%% - 73 - Set Matrix Zeroes
-3 - 31%% - 72 - Edit Distance
-2 - 25%% - 71 - Simplify Path
-1 - 40%% - 70 - Climbing Stairs
-1 - 28%% - 69 - Sqrt(x)
-3 - 19%% - 68 - Text Justification
-1 - 33%% - 67 - Add Binary
-1 - 38%% - 66 - Plus One
-3 - 12%% - 65 - Valid Number
-2 - 38%% - 64 - Minimum Path Sum
-2 - 31%% - 63 - Unique Paths II
-2 - 41%% - 62 - Unique Paths
-2 - 24%% - 61 - Rotate List
-2 - 28%% - 60 - Permutation Sequence
-2 - 40%% - 59 - Spiral Matrix II
-1 - 31%% - 58 - Length of Last Word
-3 - 28%% - 57 - Insert Interval
-2 - 30%% - 56 - Merge Intervals
-2 - 29%% - 55 - Jump Game
-2 - 26%% - 54 - Spiral Matrix
-1 - 39%% - 53 - Maximum Subarray
-3 - 45%% - 52 - N-Queens II
-3 - 31%% - 51 - N-Queens
-2 - 26%% - 50 - Pow(x, n)
-2 - 36%% - 49 - Group Anagrams
-2 - 39%% - 48 - Rotate Image
-2 - 33%% - 47 - Permutations II
-2 - 44%% - 46 - Permutations
-3 - 26%% - 45 - Jump Game II
-3 - 20%% - 44 - Wildcard Matching
-2 - 27%% - 43 - Multiply Strings
-3 - 37%% - 42 - Trapping Rain Water
-3 - 25%% - 41 - First Missing Positive
-2 - 34%% - 40 - Combination Sum II
-2 - 39%% - 39 - Combination Sum
-1 - 35%% - 38 - Count and Say
-3 - 30%% - 37 - Sudoku Solver
-2 - 36%% - 36 - Valid Sudoku
-1 - 39%% - 35 - Search Insert Position
-2 - 31%% - 34 - Search for a Range
-2 - 32%% - 33 - Search in Rotated Sorted Array
-3 - 23%% - 32 - Longest Valid Parentheses
-2 - 28%% - 31 - Next Permutation
-3 - 22%% - 30 - Substring with Concatenation of All Words
-2 - 15%% - 29 - Divide Two Integers
-1 - 28%% - 28 - Implement strStr()
-1 - 39%% - 27 - Remove Element
-1 - 35%% - 26 - Remove Duplicates from Sorted Array
-3 - 30%% - 25 - Reverse Nodes in k-Group
-2 - 38%% - 24 - Swap Nodes in Pairs
-3 - 27%% - 23 - Merge k Sorted Lists
-2 - 45%% - 22 - Generate Parentheses
-1 - 39%% - 21 - Merge Two Sorted Lists
-1 - 33%% - 20 - Valid Parentheses
-2 - 33%% - 19 - Remove Nth Node From End of List
-2 - 27%% - 18 - 4Sum
-2 - 35%% - 17 - Letter Combinations of a Phone Number
-2 - 31%% - 16 - 3Sum Closest
-2 - 21%% - 15 - 3Sum
-1 - 31%% - 14 - Longest Common Prefix
-1 - 46%% - 13 - Roman to Integer
-2 - 45%% - 12 - Integer to Roman
-2 - 36%% - 11 - Container With Most Water
-3 - 24%% - 10 - Regular Expression Matching
-1 - 35%% - 9 - Palindrome Number
-2 - 13%% - 8 - String to Integer (atoi)
-1 - 24%% - 7 - Reverse Integer
-2 - 26%% - 6 - ZigZag Conversion
-2 - 25%% - 5 - Longest Palindromic Substring
-3 - 22%% - 4 - Median of Two Sorted Arrays
-2 - 24%% - 3 - Longest Substring Without Repeating Characters
-2 - 27%% - 2 - Add Two Numbers
-1 - 35%% - 1 - Two Sum
+3 - 29% - 715 - Range Module
+2 - 30% - 714 - Best Time to Buy and Sell Stock with Transaction Fee
+2 - 34% - 713 - Subarray Product Less Than K
+2 - 48% - 712 - Minimum ASCII Delete Sum for Two Strings
+3 - 36% - 699 - Falling Squares
+2 - 35% - 698 - Partition to K Equal Sum Subsets
+1 - 48% - 697 - Degree of an Array
+1 - 52% - 696 - Count Binary Substrings
+1 - 53% - 695 - Max Area of Island
+1 - 54% - 693 - Binary Number with Alternating Bits
+2 - 41% - 692 - Top K Frequent Words
+3 - 31% - 691 - Stickers to Spell Word
+1 - 54% - 690 - Employee Importance
+3 - 42% - 689 - Maximum Sum of 3 Non-Overlapping Subarrays
+2 - 38% - 688 - Knight Probability in Chessboard
+1 - 32% - 687 - Longest Univalue Path
+1 - 31% - 686 - Repeated String Match
+3 - 28% - 685 - Redundant Connection II
+2 - 36% - 684 - Redundant Connection
+3 - 36% - 683 - K Empty Slots
+1 - 58% - 682 - Baseball Game
+2 - 42% - 681 - Next Closest Time
+1 - 31% - 680 - Valid Palindrome II
+3 - 38% - 679 - 24 Game
+2 - 28% - 678 - Valid Parenthesis String
+2 - 52% - 677 - Map Sum Pairs
+2 - 50% - 676 - Implement Magic Dictionary
+3 - 26% - 675 - Cut Off Trees for Golf Event
+1 - 42% - 674 - Longest Continuous Increasing Subsequence
+2 - 30% - 673 - Number of Longest Increasing Subsequence
+2 - 47% - 672 - Bulb Switcher II
+1 - 41% - 671 - Second Minimum Node In a Binary Tree
+2 - 38% - 670 - Maximum Swap
+1 - 58% - 669 - Trim a Binary Search Tree
+3 - 37% - 668 - Kth Smallest Number in Multiplication Table
+2 - 51% - 667 - Beautiful Arrangement II
+1 - 21% - 665 - Non-decreasing Array
+3 - 31% - 664 - Strange Printer
+2 - 37% - 662 - Maximum Width of Binary Tree
+1 - 45% - 661 - Image Smoother
+2 - 35% - 659 - Split Array into Consecutive Subsequences
+2 - 35% - 658 - Find K Closest Elements
+1 - 68% - 657 - Judge Route Circle
+2 - 50% - 655 - Print Binary Tree
+2 - 70% - 654 - Maximum Binary Tree
+1 - 50% - 653 - Two Sum IV - Input is a BST
+2 - 35% - 652 - Find Duplicate Subtrees
+2 - 44% - 650 - 2 Keys Keyboard
+2 - 35% - 649 - Dota2 Senate
+2 - 47% - 648 - Replace Words
+2 - 55% - 647 - Palindromic Substrings
+2 - 47% - 646 - Maximum Length of Pair Chain
+1 - 40% - 645 - Set Mismatch
+1 - 37% - 643 - Maximum Average Subarray I
+2 - 38% - 640 - Solve the Equation
+3 - 23% - 639 - Decode Ways II
+2 - 42% - 638 - Shopping Offers
+1 - 55% - 637 - Average of Levels in Binary Tree
+2 - 43% - 636 - Exclusive Time of Functions
+1 - 32% - 633 - Sum of Square Numbers
+3 - 41% - 632 - Smallest Range
+3 - 27% - 630 - Course Schedule III
+3 - 26% - 629 - K Inverse Pairs Array
+1 - 45% - 628 - Maximum Product of Three Numbers
+2 - 46% - 623 - Add One Row to Tree
+2 - 42% - 621 - Task Scheduler
+1 - 67% - 617 - Merge Two Binary Trees
+2 - 41% - 611 - Valid Triangle Number
+2 - 52% - 609 - Find Duplicate File in System
+1 - 49% - 606 - Construct String from Binary Tree
+1 - 30% - 605 - Can Place Flowers
+3 - 30% - 600 - Non-negative Integers without Consecutive Ones
+1 - 46% - 599 - Minimum Index Sum of Two Lists
+1 - 48% - 598 - Range Addition II
+1 - 40% - 594 - Longest Harmonious Subsequence
+2 - 40% - 593 - Valid Square
+2 - 46% - 592 - Fraction Addition and Subtraction
+3 - 29% - 591 - Tag Validator
+3 - 32% - 587 - Erect the Fence
+2 - 44% - 583 - Delete Operation for Two Strings
+1 - 29% - 581 - Shortest Unsorted Continuous Subarray
+2 - 30% - 576 - Out of Boundary Paths
+1 - 58% - 575 - Distribute Candies
+1 - 40% - 572 - Subtree of Another Tree
+2 - 36% - 567 - Permutation in String
+1 - 58% - 566 - Reshape the Matrix
+3 - 17% - 564 - Find the Closest Palindrome
+1 - 47% - 563 - Binary Tree Tilt
+1 - 66% - 561 - Array Partition I
+2 - 40% - 560 - Subarray Sum Equals K
+1 - 59% - 557 - Reverse Words in a String III
+2 - 29% - 556 - Next Greater Element III
+2 - 45% - 554 - Brick Wall
+2 - 55% - 553 - Optimal Division
+3 - 31% - 552 - Student Attendance Record II
+1 - 43% - 551 - Student Attendance Record I
+2 - 49% - 547 - Friend Circles
+3 - 33% - 546 - Remove Boxes
+1 - 44% - 543 - Diameter of Binary Tree
+2 - 33% - 542 - 01 Matrix
+1 - 43% - 541 - Reverse String II
+2 - 55% - 540 - Single Element in a Sorted Array
+2 - 45% - 539 - Minimum Time Difference
+1 - 49% - 538 - Convert BST to Greater Tree
+2 - 63% - 537 - Complex Number Multiplication
+2 - 74% - 535 - Encode and Decode TinyURL
+1 - 28% - 532 - K-diff Pairs in an Array
+1 - 47% - 530 - Minimum Absolute Difference in BST
+2 - 49% - 529 - Minesweeper
+2 - 54% - 526 - Beautiful Arrangement
+2 - 40% - 525 - Contiguous Array
+2 - 42% - 524 - Longest Word in Dictionary through Deleting
+2 - 23% - 523 - Continuous Subarray Sum
+2 - 31% - 522 - Longest Uncommon Subsequence II
+1 - 55% - 521 - Longest Uncommon Subsequence I 
+1 - 51% - 520 - Detect Capital
+3 - 36% - 517 - Super Washing Machines
+2 - 42% - 516 - Longest Palindromic Subsequence
+2 - 55% - 515 - Find Largest Value in Each Tree Row
+3 - 39% - 514 - Freedom Trail
+2 - 56% - 513 - Find Bottom Left Tree Value
+2 - 52% - 508 - Most Frequent Subtree Sum
+1 - 33% - 507 - Perfect Number
+1 - 46% - 506 - Relative Ranks
+1 - 44% - 504 - Base 7
+2 - 47% - 503 - Next Greater Element II
+3 - 36% - 502 - IPO
+1 - 37% - 501 - Find Mode in Binary Search Tree
+1 - 59% - 500 - Keyboard Row
+2 - 45% - 498 - Diagonal Traverse
+1 - 56% - 496 - Next Greater Element I
+2 - 51% - 495 - Teemo Attacking
+2 - 43% - 494 - Target Sum
+3 - 20% - 493 - Reverse Pairs
+1 - 48% - 492 - Construct the Rectangle
+2 - 38% - 491 - Increasing Subsequences
+3 - 37% - 488 - Zuma Game
+2 - 45% - 486 - Predict the Winner
+1 - 53% - 485 - Max Consecutive Ones
+3 - 33% - 483 - Smallest Good Base
+2 - 41% - 482 - License Key Formatting
+2 - 45% - 481 - Magical String
+3 - 30% - 480 - Sliding Window Median
+1 - 23% - 479 - Largest Palindrome Product
+2 - 47% - 477 - Total Hamming Distance
+1 - 60% - 476 - Number Complement
+1 - 29% - 475 - Heaters
+2 - 38% - 474 - Ones and Zeroes
+2 - 35% - 473 - Matchsticks to Square
+3 - 30% - 472 - Concatenated Words
+2 - 20% - 468 - Validate IP Address
+2 - 32% - 467 - Unique Substrings in Wraparound String
+3 - 27% - 466 - Count The Repetitions
+2 - 25% - 464 - Can I Win
+1 - 57% - 463 - Island Perimeter
+2 - 51% - 462 - Minimum Moves to Equal Array Elements II
+1 - 69% - 461 - Hamming Distance
+3 - 24% - 460 - LFU Cache
+1 - 38% - 459 - Repeated Substring Pattern
+2 - 28% - 456 - 132 Pattern
+1 - 47% - 455 - Assign Cookies
+2 - 47% - 454 - 4Sum II
+1 - 47% - 453 - Minimum Moves to Equal Array Elements
+2 - 44% - 452 - Minimum Number of Arrows to Burst Balloons
+2 - 51% - 451 - Sort Characters By Frequency
+2 - 37% - 450 - Delete Node in a BST
+2 - 42% - 449 - Serialize and Deserialize BST
+1 - 51% - 448 - Find All Numbers Disappeared in an Array
+1 - 45% - 447 - Number of Boomerangs
+3 - 27% - 446 - Arithmetic Slices II - Subsequence
+2 - 45% - 445 - Add Two Numbers II
+2 - 56% - 442 - Find All Duplicates in an Array
+1 - 36% - 441 - Arranging Coins
+3 - 25% - 440 - K-th Smallest in Lexicographical Order
+1 - 33% - 438 - Find All Anagrams in a String
+1 - 39% - 437 - Path Sum III
+2 - 41% - 436 - Find Right Interval
+2 - 41% - 435 - Non-overlapping Intervals
+1 - 36% - 434 - Number of Segments in a String
+3 - 28% - 432 - All O`one Data Structure
+2 - 42% - 424 - Longest Repeating Character Replacement
+2 - 44% - 423 - Reconstruct Original Digits from English
+2 - 46% - 421 - Maximum XOR of Two Numbers in an Array
+3 - 20% - 420 - Strong Password Checker
+2 - 62% - 419 - Battleships in a Board
+2 - 33% - 417 - Pacific Atlantic Water Flow
+2 - 39% - 416 - Partition Equal Subset Sum
+1 - 41% - 415 - Add Strings
+1 - 27% - 414 - Third Maximum Number
+2 - 54% - 413 - Arithmetic Slices
+1 - 58% - 412 - Fizz Buzz
+3 - 38% - 410 - Split Array Largest Sum
+1 - 45% - 409 - Longest Palindrome
+3 - 37% - 407 - Trapping Rain Water II
+2 - 55% - 406 - Queue Reconstruction by Height
+1 - 41% - 405 - Convert a Number to Hexadecimal
+1 - 47% - 404 - Sum of Left Leaves
+3 - 32% - 403 - Frog Jump
+2 - 26% - 402 - Remove K Digits
+1 - 44% - 401 - Binary Watch
+1 - 30% - 400 - Nth Digit
+2 - 41% - 399 - Evaluate Division
+2 - 43% - 398 - Random Pick Index
+2 - 30% - 397 - Integer Replacement
+2 - 33% - 396 - Rotate Function
+2 - 35% - 395 - Longest Substring with At Least K Repeating Characters
+2 - 41% - 394 - Decode String
+2 - 34% - 393 - UTF-8 Validation
+2 - 44% - 392 - Is Subsequence
+3 - 26% - 391 - Perfect Rectangle
+2 - 42% - 390 - Elimination Game
+1 - 50% - 389 - Find the Difference
+2 - 36% - 388 - Longest Absolute File Path
+1 - 46% - 387 - First Unique Character in a String
+2 - 41% - 386 - Lexicographical Numbers
+2 - 30% - 385 - Mini Parser
+2 - 46% - 384 - Shuffle an Array
+1 - 47% - 383 - Ransom Note
+2 - 47% - 382 - Linked List Random Node
+3 - 29% - 381 - Insert Delete GetRandom O(1) - Duplicates allowed
+2 - 39% - 380 - Insert Delete GetRandom O(1)
+2 - 45% - 378 - Kth Smallest Element in a Sorted Matrix
+2 - 42% - 377 - Combination Sum IV
+2 - 35% - 376 - Wiggle Subsequence
+2 - 35% - 375 - Guess Number Higher or Lower II
+1 - 35% - 374 - Guess Number Higher or Lower
+2 - 30% - 373 - Find K Pairs with Smallest Sums
+2 - 34% - 372 - Super Pow
+1 - 51% - 371 - Sum of Two Integers
+2 - 33% - 368 - Largest Divisible Subset
+1 - 38% - 367 - Valid Perfect Square
+2 - 27% - 365 - Water and Jug Problem
+3 - 33% - 363 - Max Sum of Rectangle No Larger Than K
+2 - 46% - 357 - Count Numbers with Unique Digits
+2 - 25% - 355 - Design Twitter
+3 - 32% - 354 - Russian Doll Envelopes
+3 - 40% - 352 - Data Stream as Disjoint Intervals
+1 - 44% - 350 - Intersection of Two Arrays II
+1 - 47% - 349 - Intersection of Two Arrays
+2 - 48% - 347 - Top K Frequent Elements
+1 - 38% - 345 - Reverse Vowels of a String
+1 - 59% - 344 - Reverse String
+2 - 46% - 343 - Integer Break
+1 - 38% - 342 - Power of Four
+2 - 42% - 341 - Flatten Nested List Iterator
+2 - 61% - 338 - Counting Bits
+2 - 43% - 337 - House Robber III
+3 - 26% - 336 - Palindrome Pairs
+3 - 25% - 335 - Self Crossing
+2 - 39% - 334 - Increasing Triplet Subsequence
+2 - 29% - 332 - Reconstruct Itinerary
+2 - 36% - 331 - Verify Preorder Serialization of a Binary Tree
+3 - 32% - 330 - Patching Array
+3 - 36% - 329 - Longest Increasing Path in a Matrix
+2 - 43% - 328 - Odd Even Linked List
+3 - 30% - 327 - Count of Range Sum
+1 - 40% - 326 - Power of Three
+2 - 26% - 324 - Wiggle Sort II
+2 - 26% - 322 - Coin Change
+3 - 24% - 321 - Create Maximum Number
+2 - 42% - 319 - Bulb Switcher
+2 - 44% - 318 - Maximum Product of Word Lengths
+3 - 29% - 316 - Remove Duplicate Letters
+3 - 34% - 315 - Count of Smaller Numbers After Self
+2 - 37% - 313 - Super Ugly Number
+3 - 43% - 312 - Burst Balloons
+2 - 28% - 310 - Minimum Height Trees
+2 - 41% - 309 - Best Time to Buy and Sell Stock with Cooldown
+2 - 21% - 307 - Range Sum Query - Mutable
+2 - 27% - 306 - Additive Number
+2 - 25% - 304 - Range Sum Query 2D - Immutable
+1 - 30% - 303 - Range Sum Query - Immutable
+3 - 35% - 301 - Remove Invalid Parentheses
+2 - 38% - 300 - Longest Increasing Subsequence
+2 - 35% - 299 - Bulls and Cows
+3 - 33% - 297 - Serialize and Deserialize Binary Tree
+3 - 27% - 295 - Find Median from Data Stream
+1 - 55% - 292 - Nim Game
+1 - 33% - 290 - Word Pattern
+2 - 37% - 289 - Game of Life
+2 - 43% - 287 - Find the Duplicate Number
+2 - 35% - 284 - Peeking Iterator
+1 - 50% - 283 - Move Zeroes
+3 - 30% - 282 - Expression Add Operators
+2 - 37% - 279 - Perfect Squares
+1 - 25% - 278 - First Bad Version
+2 - 34% - 275 - H-Index II
+2 - 33% - 274 - H-Index
+3 - 22% - 273 - Integer to English Words
+1 - 44% - 268 - Missing Number
+2 - 32% - 264 - Ugly Number II
+1 - 39% - 263 - Ugly Number
+2 - 52% - 260 - Single Number III
+1 - 51% - 258 - Add Digits
+1 - 39% - 257 - Binary Tree Paths
+1 - 46% - 242 - Valid Anagram
+2 - 44% - 241 - Different Ways to Add Parentheses
+2 - 38% - 240 - Search a 2D Matrix II
+3 - 33% - 239 - Sliding Window Maximum
+2 - 49% - 238 - Product of Array Except Self
+1 - 46% - 237 - Delete Node in a Linked List
+2 - 29% - 236 - Lowest Common Ancestor of a Binary Tree
+1 - 39% - 235 - Lowest Common Ancestor of a Binary Search Tree
+1 - 33% - 234 - Palindrome Linked List
+3 - 28% - 233 - Number of Digit One
+1 - 37% - 232 - Implement Queue using Stacks
+1 - 40% - 231 - Power of Two
+2 - 44% - 230 - Kth Smallest Element in a BST
+2 - 28% - 229 - Majority Element II
+2 - 30% - 228 - Summary Ranges
+2 - 29% - 227 - Basic Calculator II
+1 - 52% - 226 - Invert Binary Tree
+1 - 33% - 225 - Implement Stack using Queues
+3 - 27% - 224 - Basic Calculator
+2 - 33% - 223 - Rectangle Area
+2 - 27% - 222 - Count Complete Tree Nodes
+2 - 29% - 221 - Maximal Square
+2 - 19% - 220 - Contains Duplicate III
+1 - 32% - 219 - Contains Duplicate II
+3 - 27% - 218 - The Skyline Problem
+1 - 46% - 217 - Contains Duplicate
+2 - 45% - 216 - Combination Sum III
+2 - 39% - 215 - Kth Largest Element in an Array
+3 - 24% - 214 - Shortest Palindrome
+2 - 34% - 213 - House Robber II
+3 - 23% - 212 - Word Search II
+2 - 23% - 211 - Add and Search Word - Data structure design
+2 - 28% - 210 - Course Schedule II
+2 - 31% - 209 - Minimum Size Subarray Sum
+2 - 29% - 208 - Implement Trie (Prefix Tree)
+2 - 32% - 207 - Course Schedule
+1 - 45% - 206 - Reverse Linked List
+1 - 34% - 205 - Isomorphic Strings
+1 - 26% - 204 - Count Primes
+1 - 32% - 203 - Remove Linked List Elements
+1 - 40% - 202 - Happy Number
+2 - 34% - 201 - Bitwise AND of Numbers Range
+2 - 35% - 200 - Number of Islands
+2 - 41% - 199 - Binary Tree Right Side View
+1 - 39% - 198 - House Robber
+1 - 39% - 191 - Number of 1 Bits
+1 - 29% - 190 - Reverse Bits
+1 - 24% - 189 - Rotate Array
+3 - 24% - 188 - Best Time to Buy and Sell Stock IV
+2 - 32% - 187 - Repeated DNA Sequences
+2 - 22% - 179 - Largest Number
+3 - 23% - 174 - Dungeon Game
+2 - 42% - 173 - Binary Search Tree Iterator
+1 - 36% - 172 - Factorial Trailing Zeroes
+1 - 47% - 171 - Excel Sheet Column Number
+1 - 47% - 169 - Majority Element
+1 - 26% - 168 - Excel Sheet Column Title
+1 - 47% - 167 - Two Sum II - Input array is sorted
+2 - 17% - 166 - Fraction to Recurring Decimal
+2 - 20% - 165 - Compare Version Numbers
+3 - 29% - 164 - Maximum Gap
+2 - 37% - 162 - Find Peak Element
+1 - 30% - 160 - Intersection of Two Linked Lists
+1 - 29% - 155 - Min Stack
+3 - 37% - 154 - Find Minimum in Rotated Sorted Array II
+2 - 40% - 153 - Find Minimum in Rotated Sorted Array
+2 - 26% - 152 - Maximum Product Subarray
+2 - 15% - 151 - Reverse Words in a String
+2 - 27% - 150 - Evaluate Reverse Polish Notation
+3 - 15% - 149 - Max Points on a Line
+2 - 29% - 148 - Sort List
+2 - 33% - 147 - Insertion Sort List
+3 - 18% - 146 - LRU Cache
+3 - 40% - 145 - Binary Tree Postorder Traversal
+2 - 45% - 144 - Binary Tree Preorder Traversal
+2 - 25% - 143 - Reorder List
+2 - 30% - 142 - Linked List Cycle II
+1 - 35% - 141 - Linked List Cycle
+3 - 23% - 140 - Word Break II
+2 - 30% - 139 - Word Break
+2 - 26% - 138 - Copy List with Random Pointer
+2 - 41% - 137 - Single Number II
+1 - 54% - 136 - Single Number
+3 - 24% - 135 - Candy
+2 - 29% - 134 - Gas Station
+2 - 25% - 133 - Clone Graph
+3 - 24% - 132 - Palindrome Partitioning II
+2 - 34% - 131 - Palindrome Partitioning
+2 - 18% - 130 - Surrounded Regions
+2 - 37% - 129 - Sum Root to Leaf Numbers
+3 - 37% - 128 - Longest Consecutive Sequence
+2 - 19% - 127 - Word Ladder
+3 - 14% - 126 - Word Ladder II
+1 - 26% - 125 - Valid Palindrome
+3 - 26% - 124 - Binary Tree Maximum Path Sum
+3 - 29% - 123 - Best Time to Buy and Sell Stock III
+1 - 47% - 122 - Best Time to Buy and Sell Stock II
+1 - 41% - 121 - Best Time to Buy and Sell Stock
+2 - 34% - 120 - Triangle
+1 - 37% - 119 - Pascal's Triangle II
+1 - 39% - 118 - Pascal's Triangle
+2 - 33% - 117 - Populating Next Right Pointers in Each Node II
+2 - 36% - 116 - Populating Next Right Pointers in Each Node
+3 - 31% - 115 - Distinct Subsequences
+2 - 35% - 114 - Flatten Binary Tree to Linked List
+2 - 34% - 113 - Path Sum II
+1 - 34% - 112 - Path Sum
+1 - 33% - 111 - Minimum Depth of Binary Tree
+1 - 37% - 110 - Balanced Binary Tree
+2 - 34% - 109 - Convert Sorted List to Binary Search Tree
+1 - 42% - 108 - Convert Sorted Array to Binary Search Tree
+1 - 40% - 107 - Binary Tree Level Order Traversal II
+2 - 32% - 106 - Construct Binary Tree from Inorder and Postorder Traversal
+2 - 32% - 105 - Construct Binary Tree from Preorder and Inorder Traversal
+1 - 53% - 104 - Maximum Depth of Binary Tree
+2 - 35% - 103 - Binary Tree Zigzag Level Order Traversal
+2 - 40% - 102 - Binary Tree Level Order Traversal
+1 - 39% - 101 - Symmetric Tree
+1 - 46% - 100 - Same Tree
+3 - 30% - 99 - Recover Binary Search Tree
+2 - 23% - 98 - Validate Binary Search Tree
+3 - 24% - 97 - Interleaving String
+2 - 41% - 96 - Unique Binary Search Trees
+2 - 31% - 95 - Unique Binary Search Trees II
+2 - 47% - 94 - Binary Tree Inorder Traversal
+2 - 27% - 93 - Restore IP Addresses
+2 - 30% - 92 - Reverse Linked List II
+2 - 19% - 91 - Decode Ways
+2 - 36% - 90 - Subsets II
+2 - 41% - 89 - Gray Code
+1 - 32% - 88 - Merge Sorted Array
+3 - 29% - 87 - Scramble String
+2 - 32% - 86 - Partition List
+3 - 28% - 85 - Maximal Rectangle
+3 - 27% - 84 - Largest Rectangle in Histogram
+1 - 39% - 83 - Remove Duplicates from Sorted List
+2 - 29% - 82 - Remove Duplicates from Sorted List II
+2 - 32% - 81 - Search in Rotated Sorted Array II
+2 - 36% - 80 - Remove Duplicates from Sorted Array II
+2 - 27% - 79 - Word Search
+2 - 41% - 78 - Subsets
+2 - 40% - 77 - Combinations
+3 - 25% - 76 - Minimum Window Substring
+2 - 38% - 75 - Sort Colors
+2 - 34% - 74 - Search a 2D Matrix
+2 - 36% - 73 - Set Matrix Zeroes
+3 - 31% - 72 - Edit Distance
+2 - 25% - 71 - Simplify Path
+1 - 40% - 70 - Climbing Stairs
+1 - 28% - 69 - Sqrt(x)
+3 - 19% - 68 - Text Justification
+1 - 33% - 67 - Add Binary
+1 - 38% - 66 - Plus One
+3 - 12% - 65 - Valid Number
+2 - 38% - 64 - Minimum Path Sum
+2 - 31% - 63 - Unique Paths II
+2 - 41% - 62 - Unique Paths
+2 - 24% - 61 - Rotate List
+2 - 28% - 60 - Permutation Sequence
+2 - 40% - 59 - Spiral Matrix II
+1 - 31% - 58 - Length of Last Word
+3 - 28% - 57 - Insert Interval
+2 - 30% - 56 - Merge Intervals
+2 - 29% - 55 - Jump Game
+2 - 26% - 54 - Spiral Matrix
+1 - 39% - 53 - Maximum Subarray
+3 - 45% - 52 - N-Queens II
+3 - 31% - 51 - N-Queens
+2 - 26% - 50 - Pow(x, n)
+2 - 36% - 49 - Group Anagrams
+2 - 39% - 48 - Rotate Image
+2 - 33% - 47 - Permutations II
+2 - 44% - 46 - Permutations
+3 - 26% - 45 - Jump Game II
+3 - 20% - 44 - Wildcard Matching
+2 - 27% - 43 - Multiply Strings
+3 - 37% - 42 - Trapping Rain Water
+3 - 25% - 41 - First Missing Positive
+2 - 34% - 40 - Combination Sum II
+2 - 39% - 39 - Combination Sum
+1 - 35% - 38 - Count and Say
+3 - 30% - 37 - Sudoku Solver
+2 - 36% - 36 - Valid Sudoku
+1 - 39% - 35 - Search Insert Position
+2 - 31% - 34 - Search for a Range
+2 - 32% - 33 - Search in Rotated Sorted Array
+3 - 23% - 32 - Longest Valid Parentheses
+2 - 28% - 31 - Next Permutation
+3 - 22% - 30 - Substring with Concatenation of All Words
+2 - 15% - 29 - Divide Two Integers
+1 - 28% - 28 - Implement strStr()
+1 - 39% - 27 - Remove Element
+1 - 35% - 26 - Remove Duplicates from Sorted Array
+3 - 30% - 25 - Reverse Nodes in k-Group
+2 - 38% - 24 - Swap Nodes in Pairs
+3 - 27% - 23 - Merge k Sorted Lists
+2 - 45% - 22 - Generate Parentheses
+1 - 39% - 21 - Merge Two Sorted Lists
+1 - 33% - 20 - Valid Parentheses
+2 - 33% - 19 - Remove Nth Node From End of List
+2 - 27% - 18 - 4Sum
+2 - 35% - 17 - Letter Combinations of a Phone Number
+2 - 31% - 16 - 3Sum Closest
+2 - 21% - 15 - 3Sum
+1 - 31% - 14 - Longest Common Prefix
+1 - 46% - 13 - Roman to Integer
+2 - 45% - 12 - Integer to Roman
+2 - 36% - 11 - Container With Most Water
+3 - 24% - 10 - Regular Expression Matching
+1 - 35% - 9 - Palindrome Number
+2 - 13% - 8 - String to Integer (atoi)
+1 - 24% - 7 - Reverse Integer
+2 - 26% - 6 - ZigZag Conversion
+2 - 25% - 5 - Longest Palindromic Substring
+3 - 22% - 4 - Median of Two Sorted Arrays
+2 - 24% - 3 - Longest Substring Without Repeating Characters
+2 - 27% - 2 - Add Two Numbers
+1 - 35% - 1 - Two Sum
