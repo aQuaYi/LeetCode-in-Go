@@ -20,7 +20,7 @@ func minPatches(nums []int, n int) (count int) {
 			// 如果还 max += nums[i] 的话
 			// 会导致 x ∈ [max, nums[i]) 无法获取
 			// 需要添加 max 来实现，来让 自然数的集合达到 [1, 2*max)
-			max = max << 1
+			max <<= 1
 			count++
 		}
 	}
