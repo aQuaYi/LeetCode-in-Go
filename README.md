@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|83|147|62|292|
+|**Accepted**|83|147|63|293|
 |**Total**|145|245|99|489|
 
 ## 题解
@@ -96,7 +96,7 @@
 |75|[Sort Colors](./Algorithms/0075.sort-colors)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |76|[Minimum Window Substring](./Algorithms/0076.minimum-window-substring)|25%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |77|[Combinations](./Algorithms/0077.combinations)|40%|Medium| |
-|78|[Subsets](./Algorithms/0078.subsets)|41%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|78|[Subsets](./Algorithms/0078.subsets)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |79|[Word Search](./Algorithms/0079.word-search)|27%|Medium| |
 |80|[Remove Duplicates from Sorted Array II](./Algorithms/0080.remove-duplicates-from-sorted-array-ii)|36%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |81|[Search in Rotated Sorted Array II](./Algorithms/0081.search-in-rotated-sorted-array-ii)|32%|Medium| |
@@ -261,7 +261,7 @@
 |327|[Count of Range Sum](./Algorithms/0327.count-of-range-sum)|30%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |328|[Odd Even Linked List](./Algorithms/0328.odd-even-linked-list)|43%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |329|[Longest Increasing Path in a Matrix](./Algorithms/0329.longest-increasing-path-in-a-matrix)|36%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|330| * Patching Array|32%|Hard| |
+|330|[Patching Array](./Algorithms/0330.patching-array)|32%|Hard| |
 |331| * Verify Preorder Serialization of a Binary Tree|36%|Medium| |
 |332| * Reconstruct Itinerary|29%|Medium| |
 |334|[Increasing Triplet Subsequence](./Algorithms/0334.increasing-triplet-subsequence)|39%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -367,7 +367,7 @@
 |476| * Number Complement|60%|Easy| |
 |477| * Total Hamming Distance|47%|Medium| |
 |479| * Largest Palindrome Product|23%|Easy| |
-|480| * Sliding Window Median|30%|Hard| |
+|480| * Sliding Window Median|31%|Hard| |
 |481| * Magical String|45%|Medium| |
 |482| * License Key Formatting|41%|Medium| |
 |483| * Smallest Good Base|33%|Hard| |
@@ -504,7 +504,7 @@
 |697| * Degree of an Array|48%|Easy| |
 |698| * Partition to K Equal Sum Subsets|35%|Medium| |
 |699| * Falling Squares|36%|Hard| |
-|712| * Minimum ASCII Delete Sum for Two Strings|48%|Medium| |
+|712| * Minimum ASCII Delete Sum for Two Strings|49%|Medium| |
 |713| * Subarray Product Less Than K|34%|Medium| |
 |714| * Best Time to Buy and Sell Stock with Transaction Fee|32%|Medium| |
 |715| * Range Module|30%|Hard| |
