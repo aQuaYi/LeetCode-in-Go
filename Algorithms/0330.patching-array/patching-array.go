@@ -1,8 +1,8 @@
 package Problem0330
 
 func minPatches(nums []int, n int) int {
-	remain, count := n, 0
-	isGetted := make([]bool, n+1)
+	remain, count := log2(n), 0
+	isGetted := make([]bool, remain)
 
 	// 利用 nums 已有的元素，填充isGetted
 	var dfs func(int, int)
@@ -43,4 +43,14 @@ func minPatches(nums []int, n int) int {
 	}
 
 	return count
+}
+
+// log2(n) 返回 n 以 2 为底的对数的整数部分
+func log2(n int) int {
+	res := 0
+	for n > 1 {
+		n = n >> 1
+		res++
+	}
+	return res
 }
