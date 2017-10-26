@@ -1,56 +1,34 @@
 package Problem0330
 
+import "sort"
+
 func minPatches(nums []int, n int) int {
-	var i int
+	var i, idx, size int
 
-	remain, count := log2(n)+1, 0
-	isGetted := make([]bool, remain)
+	idxLen, count := log2(n)+1, 0
 
-	pow2 := make([]int, 1, remain)
+	pow2 := make([]int, 1, idxLen)
 	pow2[0] = 1
-	for i = 1; i < remain; i++ {
+	for i = 1; i < idxLen; i++ {
 		pow2[i] = pow2[i-1] * 2
 	}
 
-	// 利用 nums 已有的元素，填充isGetted
-	var dfs func(int, int)
-	var idx int 
-	dfs = func(sum, idx int) {
-		if idx == len(nums) {
-			if 0 < sum && sum <= n {
-				idx = log2(sum)
-				if !isGetted[idx] && pow2[idx] == sum  {
-				isGetted[sum] = true
-				remain--
-			}
-			return
+	sort.Ints(nums)
+
+	i, idx, size = 0, 0, len(nums)
+	for i < size && idx < idxLen {
+		if nums[i] > pow2[idx] {
+			count++
+			idx++
+			continue
 		}
-		dfs(sum, idx+1)
-		dfs(sum+nums[idx], idx+1)
-	}
 
-	dfs(0, 0)
-
-	if remain == 0 {
-		return 0
-	}
-
-	var i, j int
-	i = 1
-	for remain > 0 {
-		for isGetted[i] {
+		if nums[i] == pow2[idx] {
+			idx++
 			i++
+			continue
 		}
 
-		count++
-		remain--
-
-		for j = n; 1 <= j-i; j-- {
-			if !isGetted[j] && isGetted[j-i] {
-				isGetted[j] = true
-				remain--
-			}
-		}
 	}
 
 	return count
