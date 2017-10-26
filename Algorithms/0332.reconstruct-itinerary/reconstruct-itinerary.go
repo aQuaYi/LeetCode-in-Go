@@ -24,9 +24,10 @@ func findItinerary(tickets [][]string) []string {
 			return true
 		}
 
-		size := len(nexts[res[idx-1]])
 		old := nexts[res[idx-1]]
+		size := len(old)
 		var i int
+
 		for i = 0; i < size; i++ {
 			res[idx] = old[i]
 			nexts[res[idx-1]] = append(old[:i:i], old[i+1:]...)
