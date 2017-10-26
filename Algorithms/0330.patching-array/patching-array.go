@@ -1,10 +1,7 @@
 package Problem0330
 
-import "sort"
-import "fmt"
-
 func minPatches(nums []int, n int) int {
-	count := n
+	remain, count := n, 0
 	isGetted := make([]bool, n+1)
 
 	// 利用 nums 已有的元素，填充isGetted
@@ -13,7 +10,7 @@ func minPatches(nums []int, n int) int {
 		if idx == len(nums) {
 			if 0 < sum && sum <= n && !isGetted[sum] {
 				isGetted[sum] = true
-				count--
+				remain--
 			}
 			return
 		}
@@ -21,32 +18,29 @@ func minPatches(nums []int, n int) int {
 		dfs(sum+nums[idx], idx+1)
 	}
 
-	check := func(x int) {
-		var i, j int
-		for i = 0; i < len(nums) && nums[i] <= x; i++ {
-			sum := 0
-			for j = i; j < len(nums) && nums[j] <= x; j++ {
-				sum += nums[j]
-				if sum == x {
-					return
-				}
-				if sum > x {
-					break
-				}
+	dfs(0, 0)
+
+	if remain == 0 {
+		return 0
+	}
+
+	var i, j int
+	i = 1
+	for remain > 0 {
+		for isGetted[i] {
+			i++
+		}
+
+		count++
+		remain--
+
+		for j = n; 1 <= j-i; j-- {
+			if !isGetted[j] && isGetted[j-i] {
+				isGetted[j] = true
+				remain--
 			}
 		}
-		nums = append(nums, x)
-		count++
-		sort.Ints(nums)
 	}
 
-	sort.Ints(nums)
-
-	var i int
-	for i = 1; i <= n; i++ {
-		check(i)
-	}
-
-	fmt.Println(nums)
 	return count
 }
