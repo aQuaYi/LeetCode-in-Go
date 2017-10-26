@@ -12,15 +12,6 @@ var tcs = []struct {
 	tickets [][]string
 	ans     []string
 }{
-	{
-		[][]string{
-			[]string{"MUC", "LHR"},
-			[]string{"JFK", "MUC"},
-			[]string{"SFO", "SJC"},
-			[]string{"LHR", "SFO"},
-		},
-		[]string{"JFK", "MUC", "LHR", "SFO", "SJC"},
-	},
 
 	{
 		[][]string{
@@ -31,6 +22,16 @@ var tcs = []struct {
 			[]string{"ATL", "SFO"},
 		},
 		[]string{"JFK", "ATL", "JFK", "SFO", "ATL", "SFO"},
+	},
+
+	{
+		[][]string{
+			[]string{"MUC", "LHR"},
+			[]string{"JFK", "MUC"},
+			[]string{"SFO", "SJC"},
+			[]string{"LHR", "SFO"},
+		},
+		[]string{"JFK", "MUC", "LHR", "SFO", "SJC"},
 	},
 
 	{
