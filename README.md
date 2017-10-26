@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|83|146|62|291|
+|**Accepted**|83|147|62|292|
 |**Total**|145|245|99|489|
 
 ## 题解
@@ -293,7 +293,7 @@
 |378| * Kth Smallest Element in a Sorted Matrix|45%|Medium| |
 |380|[Insert Delete GetRandom O(1)](./Algorithms/0380.insert-delete-getrandom-o1)|39%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |381|[Insert Delete GetRandom O(1) - Duplicates allowed](./Algorithms/0381.insert-delete-getrandom-o1-duplicates-allowed)|29%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|382| * Linked List Random Node|47%|Medium| |
+|382|[Linked List Random Node](./Algorithms/0382.linked-list-random-node)|47%|Medium| |
 |383|[Ransom Note](./Algorithms/0383.ransom-note)|47%|Easy| |
 |384| * Shuffle an Array|46%|Medium| |
 |385| * Mini Parser|30%|Medium| |
@@ -362,7 +362,7 @@
 |468| * Validate IP Address|20%|Medium| |
 |472| * Concatenated Words|30%|Hard| |
 |473| * Matchsticks to Square|35%|Medium| |
-|474| * Ones and Zeroes|39%|Medium| |
+|474| * Ones and Zeroes|38%|Medium| |
 |475| * Heaters|29%|Easy| |
 |476| * Number Complement|60%|Easy| |
 |477| * Total Hamming Distance|47%|Medium| |
@@ -479,7 +479,7 @@
 |670| * Maximum Swap|38%|Medium| |
 |671| * Second Minimum Node In a Binary Tree|41%|Easy| |
 |672| * Bulb Switcher II|47%|Medium| |
-|673| * Number of Longest Increasing Subsequence|30%|Medium| |
+|673| * Number of Longest Increasing Subsequence|31%|Medium| |
 |674| * Longest Continuous Increasing Subsequence|42%|Easy| |
 |675| * Cut Off Trees for Golf Event|26%|Hard| |
 |676| * Implement Magic Dictionary|49%|Medium| |
@@ -496,7 +496,7 @@
 |687| * Longest Univalue Path|32%|Easy| |
 |688| * Knight Probability in Chessboard|38%|Medium| |
 |689| * Maximum Sum of 3 Non-Overlapping Subarrays|41%|Hard| |
-|691| * Stickers to Spell Word|31%|Hard| |
+|691| * Stickers to Spell Word|32%|Hard| |
 |692| * Top K Frequent Words|41%|Medium| |
 |693| * Binary Number with Alternating Bits|54%|Easy| |
 |695| * Max Area of Island|53%|Easy| |
@@ -504,9 +504,9 @@
 |697| * Degree of an Array|48%|Easy| |
 |698| * Partition to K Equal Sum Subsets|35%|Medium| |
 |699| * Falling Squares|36%|Hard| |
-|712| * Minimum ASCII Delete Sum for Two Strings|49%|Medium| |
+|712| * Minimum ASCII Delete Sum for Two Strings|48%|Medium| |
 |713| * Subarray Product Less Than K|34%|Medium| |
-|714| * Best Time to Buy and Sell Stock with Transaction Fee|31%|Medium| |
+|714| * Best Time to Buy and Sell Stock with Transaction Fee|32%|Medium| |
 |715| * Range Module|30%|Hard| |
 
 以下免费的算法题，暂时不能使用 Go 解答
