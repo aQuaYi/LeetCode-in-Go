@@ -1,8 +1,8 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 答题进度](https://img.shields.io/badge/Progress-59%25-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 排名](https://img.shields.io/badge/Ranking-12479-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 答题进度](https://img.shields.io/badge/Progress-60%25-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/Ranking-11795-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 
@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|83|147|63|293|
+|**Accepted**|84|149|63|296|
 |**Total**|145|245|99|489|
 
 ## 题解
@@ -245,7 +245,7 @@
 |303|[Range Sum Query - Immutable](./Algorithms/0303.range-sum-query-immutable)|30%|Easy| |
 |304|[Range Sum Query 2D - Immutable](./Algorithms/0304.range-sum-query-2d-immutable)|25%|Medium| |
 |306|[Additive Number](./Algorithms/0306.additive-number)|27%|Medium| |
-|307| * Range Sum Query - Mutable|21%|Medium| |
+|307|[Range Sum Query - Mutable](./Algorithms/0307.range-sum-query-mutable)|21%|Medium| |
 |309|[Best Time to Buy and Sell Stock with Cooldown](./Algorithms/0309.best-time-to-buy-and-sell-stock-with-cooldown)|41%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |310|[Minimum Height Trees](./Algorithms/0310.minimum-height-trees)|28%|Medium| |
 |312|[Burst Balloons](./Algorithms/0312.burst-balloons)|43%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -263,7 +263,7 @@
 |329|[Longest Increasing Path in a Matrix](./Algorithms/0329.longest-increasing-path-in-a-matrix)|36%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |330|[Patching Array](./Algorithms/0330.patching-array)|32%|Hard| |
 |331| * Verify Preorder Serialization of a Binary Tree|36%|Medium| |
-|332| * Reconstruct Itinerary|29%|Medium| |
+|332|[Reconstruct Itinerary](./Algorithms/0332.reconstruct-itinerary)|29%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |334|[Increasing Triplet Subsequence](./Algorithms/0334.increasing-triplet-subsequence)|39%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |335| * Self Crossing|25%|Hard| |
 |336| * Palindrome Pairs|26%|Hard| |
@@ -272,7 +272,7 @@
 |342|[Power of Four](./Algorithms/0342.power-of-four)|38%|Easy| |
 |343|[Integer Break](./Algorithms/0343.integer-break)|46%|Medium| |
 |344|[Reverse String](./Algorithms/0344.reverse-string)|59%|Easy| |
-|345| * Reverse Vowels of a String|38%|Easy| |
+|345|[Reverse Vowels of a String](./Algorithms/0345.reverse-vowels-of-a-string)|38%|Easy| |
 |347|[Top K Frequent Elements](./Algorithms/0347.top-k-frequent-elements)|48%|Medium| |
 |349|[Intersection of Two Arrays](./Algorithms/0349.intersection-of-two-arrays)|47%|Easy| |
 |350|[Intersection of Two Arrays II](./Algorithms/0350.intersection-of-two-arrays-ii)|44%|Easy|[❤](https://leetcode.com/list/oussv5j)|
@@ -482,7 +482,7 @@
 |673| * Number of Longest Increasing Subsequence|31%|Medium| |
 |674| * Longest Continuous Increasing Subsequence|42%|Easy| |
 |675| * Cut Off Trees for Golf Event|26%|Hard| |
-|676| * Implement Magic Dictionary|49%|Medium| |
+|676| * Implement Magic Dictionary|50%|Medium| |
 |677| * Map Sum Pairs|52%|Medium| |
 |678| * Valid Parenthesis String|28%|Medium| |
 |679| * 24 Game|38%|Hard| |
@@ -504,7 +504,7 @@
 |697| * Degree of an Array|48%|Easy| |
 |698| * Partition to K Equal Sum Subsets|35%|Medium| |
 |699| * Falling Squares|36%|Hard| |
-|712| * Minimum ASCII Delete Sum for Two Strings|49%|Medium| |
+|712| * Minimum ASCII Delete Sum for Two Strings|48%|Medium| |
 |713| * Subarray Product Less Than K|34%|Medium| |
 |714| * Best Time to Buy and Sell Stock with Transaction Fee|32%|Medium| |
 |715| * Range Module|30%|Hard| |
