@@ -18,7 +18,7 @@ func Constructor(nums []int) NumArray {
 
 // Update 更新 nums
 func (na *NumArray) Update(i int, v int) {
-	for idx := i + 1; idx < len(na.dp); idx++ {
+	for idx := i; idx < len(na.dp); idx++ {
 		na.dp[idx] += v - na.nums[i]
 	}
 }

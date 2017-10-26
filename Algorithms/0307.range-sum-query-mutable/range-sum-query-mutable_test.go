@@ -19,3 +19,17 @@ func Test_SumRange(t *testing.T) {
 
 	ast.Equal(8, na.SumRange(0, 2), "update 后，SumRange(0, 2)")
 }
+
+func Test_SumRange_2(t *testing.T) {
+	ast := assert.New(t)
+
+	nums := []int{-1}
+
+	na := Constructor(nums)
+
+	ast.Equal(-1, na.SumRange(0, 0), "update 前，SumRange(0, 0)")
+
+	na.Update(0, 1)
+
+	ast.Equal(1, na.SumRange(0, 0), "update 后，SumRange(0, 2)")
+}
