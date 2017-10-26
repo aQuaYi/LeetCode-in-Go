@@ -1,45 +1,29 @@
 package Problem0330
 
-import "sort"
+// nums 是升序排列的
+func minPatches(nums []int, n int) (count int) {
+	var max, i int
 
-func minPatches(nums []int, n int) int {
-	var i, idx, size int
+	// nums[:i] 的所有 子数组 的和的集合，等于 <max 内的所有自然数的集合
+	max = 1
 
-	idxLen, count := log2(n)+1, 0
-
-	pow2 := make([]int, 1, idxLen)
-	pow2[0] = 1
-	for i = 1; i < idxLen; i++ {
-		pow2[i] = pow2[i-1] * 2
-	}
-
-	sort.Ints(nums)
-
-	i, idx, size = 0, 0, len(nums)
-	for i < size && idx < idxLen {
-		if nums[i] > pow2[idx] {
-			count++
-			idx++
-			continue
-		}
-
-		if nums[i] == pow2[idx] {
-			idx++
+	for max <= n {
+		if i < len(nums) && nums[i] <= max {
+			// 根据 max 的定义
+			// nums[:i]   --> max
+			// nums[:i+1] --> max+nums[i]
+			max += nums[i]
 			i++
-			continue
+		} else {
+			// 此时
+			// nums[i] > max
+			// 如果还 max += nums[i] 的话
+			// 会导致 x ∈ [max, nums[i]) 无法获取
+			// 需要添加 max 来实现，来让 自然数的集合达到 [1, 2*max)
+			max = max << 1
+			count++
 		}
-
 	}
 
-	return count
-}
-
-// log2(n) 返回 n 以 2 为底的对数的整数部分
-func log2(n int) int {
-	res := 0
-	for n > 1 {
-		n = n >> 1
-		res++
-	}
-	return res
+	return
 }
