@@ -1,25 +1,36 @@
 package Problem0332
 
-import (
-	"sort"
-)
+import "strings"
 
 func findItinerary(tickets [][]string) []string {
-	res := []string{}
+	res := string('Z' + 1)
 
-	nexts := make(map[string][]string, len(tickets))
+	var dfs func(string, [][]string)
+	dfs = func(departs string, tickets [][]string) {
+		if departs > res {
+			return
+		}
 
-	for _, t := range tickets {
-		nexts[t[0]] = append(nexts[t[0]], t[1])
+		if len(tickets) == 0 && res > departs {
+			res = departs
+		}
+
+		for i, t := range tickets {
+			if lastDep(departs) == t[0] {
+				dfs(departs+" "+t[1], append(tickets[:i:i], tickets[i+1:]...))
+			}
+		}
 	}
 
-	for dep := range nexts {
-		sort.Strings(nexts[dep])
+	for i, t := range tickets {
+		if t[0] == "JFK" {
+			dfs("JFK "+t[1], append(tickets[:i:i], tickets[i+1:]...))
+		}
 	}
 
-	return res
+	return strings.Split(res, " ")
 }
 
 func lastDep(temp string) string {
-	return temp[len(temp)-3 : len(temp)-1]
+	return temp[len(temp)-3:]
 }
