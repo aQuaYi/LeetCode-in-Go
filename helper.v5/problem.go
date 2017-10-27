@@ -58,8 +58,8 @@ func makeProblemDir(ps problems, problemNum int) {
 }
 
 func build(p problem) {
-	if p.IsAccepted && GoKit.Exist(p.Dir) {
-		log.Fatalf("第 %d 题已经accepted，请**移除**  %s 文件夹后，再尝试。", p.ID, p.Dir)
+	if GoKit.Exist(p.Dir) {
+		log.Fatalf("第 %d 题的文件夹已经存在，请**移除**  %s 文件夹后，再尝试。", p.ID, p.Dir)
 	}
 
 	// 对于没有 accepted 的题目，直接删除重建
