@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|84|149|63|296|
+|**Accepted**|84|149|64|297|
 |**Total**|145|245|99|489|
 
 ## 题解
@@ -265,7 +265,7 @@
 |331| * Verify Preorder Serialization of a Binary Tree|36%|Medium| |
 |332|[Reconstruct Itinerary](./Algorithms/0332.reconstruct-itinerary)|29%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |334|[Increasing Triplet Subsequence](./Algorithms/0334.increasing-triplet-subsequence)|39%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|335| * Self Crossing|25%|Hard| |
+|335|[Self Crossing](./Algorithms/0335.self-crossing)|25%|Hard| |
 |336| * Palindrome Pairs|26%|Hard| |
 |337|[House Robber III](./Algorithms/0337.house-robber-iii)|43%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |338|[Counting Bits](./Algorithms/0338.counting-bits)|61%|Medium| |
@@ -413,7 +413,7 @@
 |543| * Diameter of Binary Tree|44%|Easy| |
 |546| * Remove Boxes|33%|Hard| |
 |547| * Friend Circles|49%|Medium| |
-|551| * Student Attendance Record I|43%|Easy| |
+|551| * Student Attendance Record I|44%|Easy| |
 |552| * Student Attendance Record II|31%|Hard| |
 |553| * Optimal Division|55%|Medium| |
 |554| * Brick Wall|45%|Medium| |
@@ -452,7 +452,7 @@
 |633| * Sum of Square Numbers|32%|Easy| |
 |636| * Exclusive Time of Functions|43%|Medium| |
 |637| * Average of Levels in Binary Tree|55%|Easy| |
-|638| * Shopping Offers|42%|Medium| |
+|638| * Shopping Offers|43%|Medium| |
 |639|[Decode Ways II](./Algorithms/0639.decode-ways-ii)|23%|Hard| |
 |640| * Solve the Equation|38%|Medium| |
 |643|[Maximum Average Subarray I](./Algorithms/0643.maximum-average-subarray-i)|37%|Easy| |
@@ -482,7 +482,7 @@
 |673| * Number of Longest Increasing Subsequence|31%|Medium| |
 |674| * Longest Continuous Increasing Subsequence|42%|Easy| |
 |675| * Cut Off Trees for Golf Event|26%|Hard| |
-|676| * Implement Magic Dictionary|50%|Medium| |
+|676| * Implement Magic Dictionary|49%|Medium| |
 |677| * Map Sum Pairs|52%|Medium| |
 |678| * Valid Parenthesis String|28%|Medium| |
 |679| * 24 Game|38%|Hard| |
@@ -504,7 +504,7 @@
 |697| * Degree of an Array|48%|Easy| |
 |698| * Partition to K Equal Sum Subsets|35%|Medium| |
 |699| * Falling Squares|36%|Hard| |
-|712| * Minimum ASCII Delete Sum for Two Strings|48%|Medium| |
+|712| * Minimum ASCII Delete Sum for Two Strings|49%|Medium| |
 |713| * Subarray Product Less Than K|34%|Medium| |
 |714| * Best Time to Buy and Sell Stock with Transaction Fee|32%|Medium| |
 |715| * Range Module|30%|Hard| |
