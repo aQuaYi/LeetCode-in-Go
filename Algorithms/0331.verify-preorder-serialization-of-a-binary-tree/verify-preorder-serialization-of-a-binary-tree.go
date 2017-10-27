@@ -5,10 +5,6 @@ import (
 )
 
 func isValidSerialization(preorder string) bool {
-	if preorder == "#" {
-		return true
-	}
-
 	ss := strings.Split(preorder, ",")
 
 	if (len(ss)-3)%2 != 0 {
@@ -21,17 +17,8 @@ func isValidSerialization(preorder string) bool {
 func check(ss []string) bool {
 	n := len(ss)
 
-	if n < 3 {
-		return false
-	}
-
-	if n == 3 {
-		if ss[0] != "#" &&
-			ss[1] == "#" &&
-			ss[2] == "#" {
-			return true
-		}
-		return false
+	if n == 1 && ss[0] == "#" {
+		return true
 	}
 
 	temp := make([]string, 0, n)
@@ -39,6 +26,8 @@ func check(ss []string) bool {
 	var i = 0
 	for i < n {
 		if i+2 < n && ss[i] != "#" && ss[i+1] == "#" && ss[i+2] == "#" {
+			// ss[i] 的两个子节点都是 叶子 节点
+			// 把 ss[i] 变成 叶子 节点，删除其子节点
 			temp = append(temp, "#")
 			i += 3
 			continue
@@ -48,5 +37,5 @@ func check(ss []string) bool {
 		i++
 	}
 
-	return check(temp)
+	return len(temp) < n && check(temp)
 }
