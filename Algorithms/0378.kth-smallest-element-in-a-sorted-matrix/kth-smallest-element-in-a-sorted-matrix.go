@@ -18,10 +18,12 @@ func kthSmallest(mat [][]int, k int) int {
 			count += j + 1
 		}
 
+		// 移动 lo 或 hi
 		if count < k {
 			lo = mid + 1
 		} else {
-			hi = mid - 1
+			// 没有 -1
+			hi = mid
 		}
 	}
 
