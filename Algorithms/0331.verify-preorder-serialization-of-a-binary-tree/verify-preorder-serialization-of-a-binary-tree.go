@@ -30,6 +30,12 @@ func check(ss []string) bool {
 		return true
 	}
 
+	if ss[0] != "#" &&
+		ss[1] == "#" &&
+		ss[2] != "#" {
+		return check(ss[2:])
+	}
+
 	if ss[n-3] == "#" &&
 		ss[n-2] == "#" &&
 		ss[n-1] == "#" {
