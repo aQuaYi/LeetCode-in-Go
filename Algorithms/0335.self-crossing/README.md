@@ -38,3 +38,7 @@ Credits:Special thanks to @dietpepsi for adding this problem and creating all te
 ## 解题思路
 
 见程序注释
+只会出现下面三种情况
+![335](335.png)
+
+![100](335.100.png)

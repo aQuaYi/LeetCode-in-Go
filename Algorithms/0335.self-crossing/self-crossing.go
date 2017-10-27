@@ -1,19 +1,26 @@
 package Problem0335
 
 func isSelfCrossing(x []int) bool {
-	var n, w, s, e int
-	for i := range x {
-		switch i % 4 {
-		case 0:
-			n += x[i]
-		case 1:
-			w += x[i]
-		case 2:
-			s += x[i]
-		default:
-			e += x[i]
+	size := len(x)
+
+	cross4Line := func(i int) bool {
+		return i >= 3 && x[i] >= x[i-2] && x[i-1] <= x[i-3]
+	}
+
+	cross5Line := func(i int) bool {
+		return i >= 4 && x[i-1] == x[i-3] && x[i]+x[i-4] >= x[i-2]
+	}
+
+	cross6Line := func(i int) bool {
+		return i >= 5 && x[i-2] >= x[i-4] && x[i]+x[i-4] >= x[i-2] && x[i-1] <= x[i-3] && x[i-1]+x[i-5] >= x[i-3]
+	}
+
+	var i int
+	for i = 3; i < size; i++ {
+		if cross4Line(i) || cross5Line(i) || cross6Line(i) {
+			return true
 		}
 	}
 
-	return (n-s >= 0) && (e-w >= 0)
+	return false
 }
