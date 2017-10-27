@@ -36,7 +36,7 @@ func Test_kthSmallest(t *testing.T) {
 func Benchmark_kthSmallest(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		for _, tc := range tcs {
-			kthSmallest(tc.matrix, tc.k)
+			kthSmallest(mat, tc.k)
 		}
 	}
 }
