@@ -9,43 +9,41 @@ import (
 
 // tcs is testcase slice
 var tcs = []struct {
-	x []int
-	ans  bool 
+	x   []int
+	ans bool
 }{
-	Given x = [2, 1, 1, 2],
-	?????
-	?   ?
-	???????>
-		?
-	
-	Return true (self crossing)
-	
-	Example 2:
-	Given x = [1, 2, 3, 4],
-	????????
-	?      ?
-	?
-	?
-	?????????????>
-	
-	Return false (not self crossing)
-	
-	Example 3:
-	Given x = [1, 1, 1, 1],
-	?????
-	?   ?
-	?????>
-	
-	Return true (self crossing)
-	{ },
-	{ },
+
+	{
+		[]int{2, 1, 3, 2, 2, 1},
+		true,
+	},
+
+	{
+		[]int{2, 1, 1, 2},
+		true,
+	},
+
+	{
+		[]int{1, 2, 2, 3, 4},
+		false,
+	},
+
+	{
+		[]int{1, 2, 3, 4},
+		false,
+	},
+
+	{
+		[]int{1, 1, 1, 1},
+		true,
+	},
 
 	// 可以有多个 testcase
 }
 
 func Test_isSelfCrossing(t *testing.T) {
 	ast := assert.New(t)
-	
+
 	for _, tc := range tcs {
 		fmt.Printf("~~%v~~\n", tc)
 		ast.Equal(tc.ans, isSelfCrossing(tc.x), "输入:%v", tc)
