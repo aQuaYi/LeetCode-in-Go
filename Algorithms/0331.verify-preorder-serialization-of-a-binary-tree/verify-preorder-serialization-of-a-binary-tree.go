@@ -5,8 +5,12 @@ import (
 )
 
 func isValidSerialization(preorder string) bool {
+	if preorder == "#" {
+		return true
+	}
+
 	preorder = strings.Replace(preorder, ",", "", -1)
-	
+
 	if (len(preorder)-3)%2 != 0 {
 		return false
 	}
