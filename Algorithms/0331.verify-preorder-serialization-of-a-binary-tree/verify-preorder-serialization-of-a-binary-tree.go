@@ -9,28 +9,33 @@ func isValidSerialization(preorder string) bool {
 		return true
 	}
 
-	preorder = strings.Replace(preorder, ",", "", -1)
+	ss := strings.Split(preorder, ",")
 
-	if (len(preorder)-3)%2 != 0 {
+	if (len(ss)-3)%2 != 0 {
 		return false
 	}
 
-	return check(preorder)
+	return check(ss)
 }
 
-func check(bs string) bool {
-	n := len(bs)
-	if n < 3 || bs[0] == '#' {
+func check(ss []string) bool {
+	n := len(ss)
+	if n < 3 || ss[0] == "#" {
 		return false
 	}
 
-	if n == 3 && bs[1:] == "##" {
+	if n == 3 &&
+		ss[1] == "#" &&
+		ss[2] == "#" {
 		return true
 	}
 
-	if bs[n-3:] == "###" {
-		return check(bs[1 : n-1])
+	if ss[n-3] == "#" &&
+		ss[n-2] == "#" &&
+		ss[n-1] == "#" {
+		return check(ss[1 : n-1])
 	}
 
-	return check(bs[:n-3] + "#")
+	ss[n-3] = "#"
+	return check(ss[:n-2])
 }
