@@ -20,28 +20,33 @@ func isValidSerialization(preorder string) bool {
 
 func check(ss []string) bool {
 	n := len(ss)
-	if n < 3 || ss[0] == "#" {
+
+	if n < 3 {
 		return false
 	}
 
-	if n == 3 &&
-		ss[1] == "#" &&
-		ss[2] == "#" {
-		return true
+	if n == 3 {
+		if ss[0] != "#" &&
+			ss[1] == "#" &&
+			ss[2] == "#" {
+			return true
+		}
+		return false
 	}
 
-	if ss[0] != "#" &&
-		ss[1] == "#" &&
-		ss[2] != "#" {
-		return check(ss[2:])
+	temp := make([]string, 0, n)
+
+	var i = 0
+	for i < n {
+		if i+2 < n && ss[i] != "#" && ss[i+1] == "#" && ss[i+2] == "#" {
+			temp = append(temp, "#")
+			i += 3
+			continue
+		}
+
+		temp = append(temp, ss[i])
+		i++
 	}
 
-	if ss[n-3] == "#" &&
-		ss[n-2] == "#" &&
-		ss[n-1] == "#" {
-		return check(ss[1 : n-1])
-	}
-
-	ss[n-3] = "#"
-	return check(ss[:n-2])
+	return check(temp)
 }
