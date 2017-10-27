@@ -19,6 +19,8 @@ var tcs = []struct {
 	ans int
 }{
 
+	{3, 2},
+
 	{8, 13},
 
 	// 可以有多个 testcase
