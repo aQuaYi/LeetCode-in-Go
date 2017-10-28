@@ -1,31 +1,67 @@
 package Problem0373
 
+import "container/heap"
+
+type pair struct {
+	i     int
+	j     int
+	sum   int
+	index int
+}
+
+type priorityQueue []*pair
+
+func (pq priorityQueue) Len() int { return len(pq) }
+
+func (pq priorityQueue) Less(i, j int) bool {
+	return pq[i].sum < pq[j].sum
+}
+
+func (pq priorityQueue) Swap(i, j int) {
+	pq[i], pq[j] = pq[j], pq[i]
+	pq[i].index = i
+	pq[j].index = j
+}
+
+func (pq *priorityQueue) Push(x interface{}) {
+	n := len(*pq)
+	p := x.(*pair)
+	p.index = n
+	*pq = append(*pq, p)
+}
+
+func (pq *priorityQueue) Pop() interface{} {
+	old := *pq
+	n := len(old)
+	p := old[n-1]
+	p.index = -1
+	*pq = old[0 : n-1]
+	return p
+}
+
 func kSmallestPairs(a, b []int, k int) [][]int {
-	res := make([][]int, 0, k)
-	m, n := len(a), len(b)
-	if m == 0 || n == 0 || k == 0 {
+	var res [][]int
+	if len(a) == 0 || len(b) == 0 {
 		return res
 	}
 
-	res = append(res, []int{a[0], b[0]})
-	k--
-	var i, j int
+	pqLen := k
+	if pqLen > len(a) {
+		pqLen = len(a)
+	}
 
-	for i < m && j < n {
-		if k == 0 {
-			return res
-		}
+	// 先把每个 a[i] 与 b[0] 结合，放入 pq
+	pq := make(priorityQueue, pqLen)
+	for l := 0; l < k && l < len(a); l++ {
+		pq[l] = &pair{i: l, j: 0, sum: a[l] + b[0], index: l}
+	}
+	heap.Init(&pq)
 
-		if i == m-1 {
-			if j+1 < n {
-				res = append(res, []int{a[i], b[j+1]})
-			}
-			j++
-
-			continue
-		}
-		if i+1 < m && j+1 < n && a[i+1]+b[j] < a[i]+b[j+1] {
-
+	for m := k; m > 0 && len(pq) > 0; m-- {
+		current := heap.Pop(&pq).(*pair)
+		res = append(res, []int{a[current.i], b[current.j]})
+		if current.j+1 < len(b) {
+			heap.Push(&pq, &pair{i: current.i, j: current.j + 1, sum: a[current.i] + b[current.j+1]})
 		}
 	}
 
