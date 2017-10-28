@@ -1146,6 +1146,13 @@ var tcs = []struct {
 	{
 		[]string{
 			"bat",
+		},
+		[][]int{},
+	},
+
+	{
+		[]string{
+			"bat",
 			"tab",
 			"cat",
 		},
