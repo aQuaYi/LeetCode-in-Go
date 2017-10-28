@@ -9,7 +9,7 @@ func palindromePairs(words []string) [][]int {
 
 	hash := make(map[string]int, size)
 
-	var i, j, jj int
+	var i, j, k int
 	var ok bool
 
 	for i = 0; i < size; i++ {
@@ -17,21 +17,27 @@ func palindromePairs(words []string) [][]int {
 	}
 
 	for i = 0; i < len(words); i++ {
-		for j = 0; j <= len(words[i]); j++ {
-			str1 := words[i][:j]
-			str2 := words[i][j:]
+		for k = 0; k <= len(words[i]); k++ {
+			right := words[i][k:]
+			left := words[i][:k]
 
-			if isPalindrome(str2) {
-				str1rvs := reverse(str1)
-				if jj, ok = hash[str1rvs]; ok && jj != i {
-					res = append(res, []int{i, jj})
+			if isPalindrome(right) {
+				leftRev := reverse(left)
+				if j, ok = hash[leftRev]; ok && i != j {
+					res = append(res, []int{i, j})
 				}
 			}
 
-			if isPalindrome(str1) {
-				str2rvs := reverse(str2)
-				if jj, ok = hash[str2rvs]; ok && jj != i && len(str1) != 0 {
-					res = append(res, []int{jj, i})
+			// 因为
+			//   k == 0             的 right
+			//   和
+			//   k == len(words[i]) 的 left
+			//   相等，会导致重复答案
+			// 需要，len(left) != 0 来过滤掉这种情况
+			if len(left) != 0 && isPalindrome(left) {
+				rightRev := reverse(right)
+				if j, ok = hash[rightRev]; ok && i != j {
+					res = append(res, []int{j, i})
 				}
 			}
 
@@ -55,9 +61,9 @@ func isPalindrome(s string) bool {
 
 // 反转字符串
 func reverse(s string) string {
-	runes := []rune(s)
-	for i, j := 0, len(runes)-1; i < j; i, j = i+1, j-1 {
-		runes[i], runes[j] = runes[j], runes[i]
+	bs := []byte(s)
+	for i, j := 0, len(bs)-1; i < j; i, j = i+1, j-1 {
+		bs[i], bs[j] = bs[j], bs[i]
 	}
-	return string(runes)
+	return string(bs)
 }
