@@ -3,10 +3,9 @@ package Problem0373
 import "container/heap"
 
 type pair struct {
-	i     int
-	j     int
-	sum   int
-	index int
+	i   int
+	j   int
+	sum int
 }
 
 type priorityQueue []*pair
@@ -19,14 +18,10 @@ func (pq priorityQueue) Less(i, j int) bool {
 
 func (pq priorityQueue) Swap(i, j int) {
 	pq[i], pq[j] = pq[j], pq[i]
-	pq[i].index = i
-	pq[j].index = j
 }
 
 func (pq *priorityQueue) Push(x interface{}) {
-	n := len(*pq)
 	p := x.(*pair)
-	p.index = n
 	*pq = append(*pq, p)
 }
 
@@ -34,7 +29,6 @@ func (pq *priorityQueue) Pop() interface{} {
 	old := *pq
 	n := len(old)
 	p := old[n-1]
-	p.index = -1
 	*pq = old[0 : n-1]
 	return p
 }
@@ -45,21 +39,32 @@ func kSmallestPairs(a, b []int, k int) [][]int {
 		return res
 	}
 
-	pqLen := min(k, len(a))
+	// 可以想象一下，存在一个 len(a) * len(b) 的矩阵 mat
+	// mat[i][j]  == a[i]+b[j]
+	// res 就是 mat 中前 k 项值的坐标对
+	// 由题意可知，a，b 递增，那么 mat 中的每一行和每一列也是递增的。
 
-	// 先把每个 a[i] 与 b[0] 结合，放入 pq
+	pqLen := min(k, len(a))
+	// 先把 mat[:][0] 的值放入 pq
 	pq := make(priorityQueue, pqLen)
 	for l := 0; l < k && l < len(a); l++ {
-		pq[l] = &pair{i: l, j: 0, sum: a[l] + b[0], index: l}
+		pq[l] = &pair{i: l, j: 0, sum: a[l] + b[0]}
 	}
 	// 初始化 pq
 	heap.Init(&pq)
 
-	for m := k; m > 0 && len(pq) > 0; m-- {
-		current := heap.Pop(&pq).(*pair)
-		res = append(res, []int{a[current.i], b[current.j]})
-		if current.j+1 < len(b) {
-			heap.Push(&pq, &pair{i: current.i, j: current.j + 1, sum: a[current.i] + b[current.j+1]})
+	var min *pair
+
+	for ; k > 0 && len(pq) > 0; k-- {
+		// 获取 heap 中 sum 值最小的 pair
+		min = heap.Pop(&pq).(*pair)
+		// 加入到 res
+		res = append(res, []int{a[min.i], b[min.j]})
+		// mat[i][j] 被 pop 出去了，就把 mat[i][j+1] push 到 pq
+		// 保证 mat 中每一行都有一个最小的在 pq 中，
+		// 就可以保证 pq 中的 min 就是下一个 sum值最小的元素
+		if min.j+1 < len(b) {
+			heap.Push(&pq, &pair{i: min.i, j: min.j + 1, sum: a[min.i] + b[min.j+1]})
 		}
 	}
 
