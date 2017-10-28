@@ -45,16 +45,14 @@ func kSmallestPairs(a, b []int, k int) [][]int {
 		return res
 	}
 
-	pqLen := k
-	if pqLen > len(a) {
-		pqLen = len(a)
-	}
+	pqLen := min(k, len(a))
 
 	// 先把每个 a[i] 与 b[0] 结合，放入 pq
 	pq := make(priorityQueue, pqLen)
 	for l := 0; l < k && l < len(a); l++ {
 		pq[l] = &pair{i: l, j: 0, sum: a[l] + b[0], index: l}
 	}
+	// 初始化 pq
 	heap.Init(&pq)
 
 	for m := k; m > 0 && len(pq) > 0; m-- {
@@ -66,4 +64,11 @@ func kSmallestPairs(a, b []int, k int) [][]int {
 	}
 
 	return res
+}
+
+func min(a, b int) int {
+	if a < b {
+		return a
+	}
+	return b
 }
