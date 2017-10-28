@@ -1,7 +1,7 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 答题进度](https://img.shields.io/badge/Progress-61%25-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 答题进度](https://img.shields.io/badge/Progress-62%25-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 排名](https://img.shields.io/badge/Ranking-11145-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|85|153|65|303|
+|**Accepted**|86|155|65|306|
 |**Total**|145|245|99|489|
 
 ## 题解
@@ -299,13 +299,13 @@
 |385| * Mini Parser|30%|Medium| |
 |387|[First Unique Character in a String](./Algorithms/0387.first-unique-character-in-a-string)|46%|Easy| |
 |388| * Longest Absolute File Path|36%|Medium| |
-|389| * Find the Difference|50%|Easy| |
+|389|[Find the Difference](./Algorithms/0389.find-the-difference)|50%|Easy| |
 |390| * Elimination Game|42%|Medium| |
 |391| * Perfect Rectangle|26%|Hard| |
 |392|[Is Subsequence](./Algorithms/0392.is-subsequence)|44%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |393| * UTF-8 Validation|34%|Medium| |
-|394| * Decode String|41%|Medium| |
-|395| * Longest Substring with At Least K Repeating Characters|35%|Medium| |
+|394|[Decode String](./Algorithms/0394.decode-string)|41%|Medium| |
+|395|[Longest Substring with At Least K Repeating Characters](./Algorithms/0395.longest-substring-with-at-least-k-repeating-characters)|35%|Medium| |
 |396| * Rotate Function|33%|Medium| |
 |397| * Integer Replacement|30%|Medium| |
 |398| * Random Pick Index|43%|Medium| |
