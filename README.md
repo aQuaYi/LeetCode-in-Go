@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|85|152|64|301|
+|**Accepted**|85|152|65|302|
 |**Total**|145|245|99|489|
 
 ## 题解
@@ -266,7 +266,7 @@
 |332|[Reconstruct Itinerary](./Algorithms/0332.reconstruct-itinerary)|29%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |334|[Increasing Triplet Subsequence](./Algorithms/0334.increasing-triplet-subsequence)|39%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |335|[Self Crossing](./Algorithms/0335.self-crossing)|25%|Hard| |
-|336| * Palindrome Pairs|26%|Hard| |
+|336|[Palindrome Pairs](./Algorithms/0336.palindrome-pairs)|26%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |337|[House Robber III](./Algorithms/0337.house-robber-iii)|43%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |338|[Counting Bits](./Algorithms/0338.counting-bits)|61%|Medium| |
 |342|[Power of Four](./Algorithms/0342.power-of-four)|38%|Easy| |
@@ -433,7 +433,7 @@
 |587| * Erect the Fence|32%|Hard| |
 |591| * Tag Validator|29%|Hard| |
 |592| * Fraction Addition and Subtraction|46%|Medium| |
-|593| * Valid Square|40%|Medium| |
+|593| * Valid Square|39%|Medium| |
 |594| * Longest Harmonious Subsequence|40%|Easy| |
 |598| * Range Addition II|48%|Easy| |
 |599| * Minimum Index Sum of Two Lists|46%|Easy| |
@@ -482,7 +482,7 @@
 |673| * Number of Longest Increasing Subsequence|31%|Medium| |
 |674| * Longest Continuous Increasing Subsequence|42%|Easy| |
 |675| * Cut Off Trees for Golf Event|26%|Hard| |
-|676| * Implement Magic Dictionary|49%|Medium| |
+|676| * Implement Magic Dictionary|50%|Medium| |
 |677| * Map Sum Pairs|52%|Medium| |
 |678| * Valid Parenthesis String|28%|Medium| |
 |679| * 24 Game|38%|Hard| |
@@ -501,10 +501,10 @@
 |693| * Binary Number with Alternating Bits|54%|Easy| |
 |695| * Max Area of Island|53%|Easy| |
 |696| * Count Binary Substrings|52%|Easy| |
-|697| * Degree of an Array|48%|Easy| |
+|697| * Degree of an Array|47%|Easy| |
 |698| * Partition to K Equal Sum Subsets|35%|Medium| |
 |699| * Falling Squares|36%|Hard| |
-|712| * Minimum ASCII Delete Sum for Two Strings|48%|Medium| |
+|712| * Minimum ASCII Delete Sum for Two Strings|49%|Medium| |
 |713| * Subarray Product Less Than K|34%|Medium| |
 |714| * Best Time to Buy and Sell Stock with Transaction Fee|33%|Medium| |
 |715| * Range Module|30%|Hard| |
