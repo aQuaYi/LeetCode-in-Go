@@ -1,33 +1,53 @@
 package Problem0394
 
-func decodeString(s string) string {
-	var i, beg, end int
-	for i = 0; i < len(s); i++ {
-		if s[i] == '[' {
-			beg = i
-			break
-		}
-	}
+import (
+	"strconv"
+)
 
-	if i == len(s) {
+func decodeString(s string) string {
+	n := len(s)
+
+	// i 是第一个数字的位置
+	i := 0
+	for i < n && (s[i] < '0' || '9' < s[i]) {
+		i++
+	}
+	if i == n {
+		// 没有数字，直接返回 s
 		return s
 	}
 
+	// j 是第一个 '[' 的位置
+	j := i + 1
+	// 由题意可知，s 很规范
+	// 存在数字的话，必定存在 '[' 和 ']'
+	for s[j] != '[' {
+		j++
+	}
+
+	// k 是与 j 的 '[' 对应的 ']' 的位置
+	k := j
 	count := 1
+	for count > 0 {
+		k++
 
-	for end = i + 1; end < len(s); end++ {
-		if s[end] == '[' {
+		if s[k] == '[' {
 			count++
-		} else if s[end] == ']' {
+		} else if s[k] == ']' {
 			count--
-		}
-
-		if count == 0 {
-			break
 		}
 	}
 
-	return ""
+	//      i：第一个数字的位置
+	//      |  j：第一个 '[' 的位置
+	//      |  |       k：与 j 的 '[' 对应的 ']' 的位置
+	//      ↓  ↓       ↓
+	// "abcd234[*******]efg"
+
+	// 题目说了， s 很规范
+	num, _ := strconv.Atoi(s[i:j])
+
+	return s[:i] + times(num, decodeString(s[j+1:k])) + decodeString(s[k+1:])
 }
 
 func times(n int, s string) string {
