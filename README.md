@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|85|152|65|302|
+|**Accepted**|85|153|65|303|
 |**Total**|145|245|99|489|
 
 ## 题解
@@ -189,7 +189,7 @@
 |203|[Remove Linked List Elements](./Algorithms/0203.remove-linked-list-elements)|32%|Easy| |
 |204|[Count Primes](./Algorithms/0204.count-primes)|26%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |205|[Isomorphic Strings](./Algorithms/0205.isomorphic-strings)|34%|Easy|[❤](https://leetcode.com/list/oussv5j)|
-|206|[Reverse Linked List](./Algorithms/0206.reverse-linked-list)|45%|Easy| |
+|206|[Reverse Linked List](./Algorithms/0206.reverse-linked-list)|46%|Easy| |
 |207|[Course Schedule](./Algorithms/0207.course-schedule)|32%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |208|[Implement Trie (Prefix Tree)](./Algorithms/0208.implement-trie-prefix-tree)|29%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |209|[Minimum Size Subarray Sum](./Algorithms/0209.minimum-size-subarray-sum)|31%|Medium| |
@@ -286,7 +286,7 @@
 |368|[Largest Divisible Subset](./Algorithms/0368.largest-divisible-subset)|33%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |371|[Sum of Two Integers](./Algorithms/0371.sum-of-two-integers)|51%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |372|[Super Pow](./Algorithms/0372.super-pow)|34%|Medium| |
-|373| * Find K Pairs with Smallest Sums|30%|Medium| |
+|373|[Find K Pairs with Smallest Sums](./Algorithms/0373.find-k-pairs-with-smallest-sums)|30%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |375|[Guess Number Higher or Lower II](./Algorithms/0375.guess-number-higher-or-lower-ii)|35%|Medium| |
 |376|[Wiggle Subsequence](./Algorithms/0376.wiggle-subsequence)|35%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |377|[Combination Sum IV](./Algorithms/0377.combination-sum-iv)|42%|Medium| |
