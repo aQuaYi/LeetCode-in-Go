@@ -22,29 +22,37 @@ func longestSubstring(s string, k int) int {
 		return 0
 	}
 
-	lessLetters := ""
-	for b, c := range count {
+	var b byte
+	var c int
+
+	// useless 收集了所有没有达到 k 次的字母
+	useless := make([]string, 0, len(count))
+	for b, c = range count {
 		if c < k {
-			lessLetters += string(b)
+			useless = append(useless, string(b))
 		}
 	}
 
-	if len(lessLetters) == 0 {
+	if len(useless) == 0 {
+		// 所有的字母都达到了 k 次
 		return len(s)
 	}
 
-	i := 0
-	for !strings.Contains(lessLetters, string(s[i])) {
-		i++
-	}
-	j := i + 1
-	for j < len(s) && strings.Contains(lessLetters, string(s[j])) {
-		j++
+	var strB string
+	for _, strB = range useless {
+		s = strings.Replace(s, strB, ",", -1)
 	}
 
-	// s[i:j] 中所有的字母的个数都 <k
-	// 所以，以 s[i:j] 分割 s，在两边寻找 longestSubstring
-	return max(longestSubstring(s[:i], k), longestSubstring(s[j:], k))
+	ss := strings.Split(s, ",")
+// ss 中
+	maxLen := 0
+	for _, s = range ss {
+		if len(s) >= k {
+			maxLen = max(maxLen, len(s))
+		}
+	}
+
+	return maxLen
 }
 
 func max(a, b int) int {
