@@ -25,7 +25,7 @@ func longestSubstring(s string, k int) int {
 	var b byte
 	var c int
 
-	// useless 收集了所有没有达到 k 次的字母
+	// useless 收集了没有达到 k 次的字母
 	useless := make([]string, 0, len(count))
 	for b, c = range count {
 		if c < k {
@@ -38,18 +38,17 @@ func longestSubstring(s string, k int) int {
 		return len(s)
 	}
 
-	var strB string
-	for _, strB = range useless {
-		s = strings.Replace(s, strB, ",", -1)
+	var u string
+	for _, u = range useless {
+		s = strings.Replace(s, u, ",", -1)
 	}
 
 	ss := strings.Split(s, ",")
-// ss 中
+
+	// 递归求解
 	maxLen := 0
 	for _, s = range ss {
-		if len(s) >= k {
-			maxLen = max(maxLen, len(s))
-		}
+		maxLen = max(maxLen, longestSubstring(s, k))
 	}
 
 	return maxLen
