@@ -56,6 +56,7 @@ func (sr *SummaryRanges) Addnum(val int) {
 		sr.is[0] = ni
 		return
 	}
+
 	if lo == len(sr.is) {
 		if sr.is[lo-1].End+1 == val {
 			sr.is[lo-1].End++
