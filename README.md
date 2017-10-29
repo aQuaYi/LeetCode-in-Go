@@ -2,7 +2,7 @@
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 答题进度](https://img.shields.io/badge/Progress-62%25-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 排名](https://img.shields.io/badge/Ranking-11145-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/Ranking-10631-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 
@@ -90,7 +90,7 @@
 |69|[Sqrt(x)](./Algorithms/0069.sqrtx)|28%|Easy| |
 |70|[Climbing Stairs](./Algorithms/0070.climbing-stairs)|40%|Easy| |
 |71|[Simplify Path](./Algorithms/0071.simplify-path)|25%|Medium| |
-|72|[Edit Distance](./Algorithms/0072.edit-distance)|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|72|[Edit Distance](./Algorithms/0072.edit-distance)|32%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |73|[Set Matrix Zeroes](./Algorithms/0073.set-matrix-zeroes)|36%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |74|[Search a 2D Matrix](./Algorithms/0074.search-a-2d-matrix)|34%|Medium| |
 |75|[Sort Colors](./Algorithms/0075.sort-colors)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -417,7 +417,7 @@
 |552| * Student Attendance Record II|31%|Hard| |
 |553| * Optimal Division|55%|Medium| |
 |554| * Brick Wall|45%|Medium| |
-|556| * Next Greater Element III|29%|Medium| |
+|556| * Next Greater Element III|28%|Medium| |
 |557| * Reverse Words in a String III|59%|Easy| |
 |560|[Subarray Sum Equals K](./Algorithms/0560.subarray-sum-equals-k)|40%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |561|[Array Partition I](./Algorithms/0561.array-partition-i)|66%|Easy| |
@@ -433,7 +433,7 @@
 |587| * Erect the Fence|32%|Hard| |
 |591| * Tag Validator|29%|Hard| |
 |592| * Fraction Addition and Subtraction|46%|Medium| |
-|593| * Valid Square|39%|Medium| |
+|593| * Valid Square|40%|Medium| |
 |594| * Longest Harmonious Subsequence|40%|Easy| |
 |598| * Range Addition II|48%|Easy| |
 |599| * Minimum Index Sum of Two Lists|46%|Easy| |
@@ -479,17 +479,17 @@
 |670| * Maximum Swap|38%|Medium| |
 |671| * Second Minimum Node In a Binary Tree|41%|Easy| |
 |672| * Bulb Switcher II|47%|Medium| |
-|673| * Number of Longest Increasing Subsequence|31%|Medium| |
+|673| * Number of Longest Increasing Subsequence|30%|Medium| |
 |674| * Longest Continuous Increasing Subsequence|42%|Easy| |
 |675| * Cut Off Trees for Golf Event|26%|Hard| |
-|676| * Implement Magic Dictionary|50%|Medium| |
+|676| * Implement Magic Dictionary|49%|Medium| |
 |677| * Map Sum Pairs|52%|Medium| |
 |678| * Valid Parenthesis String|28%|Medium| |
 |679| * 24 Game|38%|Hard| |
 |680| * Valid Palindrome II|31%|Easy| |
-|681| * Next Closest Time|42%|Medium| |
+|681| * Next Closest Time|43%|Medium| |
 |682| * Baseball Game|58%|Easy| |
-|683| * K Empty Slots|36%|Hard| |
+|683| * K Empty Slots|37%|Hard| |
 |684| * Redundant Connection|37%|Medium| |
 |685| * Redundant Connection II|28%|Hard| |
 |686| * Repeated String Match|31%|Easy| |
@@ -501,7 +501,7 @@
 |693| * Binary Number with Alternating Bits|54%|Easy| |
 |695| * Max Area of Island|53%|Easy| |
 |696| * Count Binary Substrings|52%|Easy| |
-|697| * Degree of an Array|47%|Easy| |
+|697| * Degree of an Array|48%|Easy| |
 |698| * Partition to K Equal Sum Subsets|35%|Medium| |
 |699| * Falling Squares|36%|Hard| |
 |712| * Minimum ASCII Delete Sum for Two Strings|49%|Medium| |
