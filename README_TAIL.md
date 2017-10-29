@@ -10,8 +10,9 @@
 
 针对 LeetCode 中经常出现的以下数据结构，在 [kit](./kit) 中进行了定义，并添加了与 []int 相互转换的函数。利用 Go 1.9 新添加的 [type alias](https://github.com/golang/proposal/blob/master/design/18130-type-alias.md) 功能，易于添加单元测试。
 
+- [Heap](./kit/Heap.go)
+- [Interval](./kit/Interval.go)
 - [ListNode](./kit/ListNode.go)
-- [TreeNode](./kit/TreeNode.go)
 - [Queue](./kit/Queue.go)
 - [Stack](./kit/Stack.go)
-- [Heap](./kit/Heap.go)
+- [TreeNode](./kit/TreeNode.go)
