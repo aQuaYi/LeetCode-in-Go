@@ -45,6 +45,15 @@ for lo<= hi {
 	}
 }
 
+if lo == len(sr.is) {
+	if sr.is[lo-1].End+1==val {
+		sr.is[lo-1].End++
+		return 
+	}
+	sr.is = append(sr.is , Interval{Start:val, End:val})
+	return 
+}
+
 if sr.is[lo-1].End+1< val && val < sr.is[lo].Start-1 {
 	sr.is= append(sr.is, Interval{})
 	copy(sr.is[lo+1:],sr.is[lo:])
