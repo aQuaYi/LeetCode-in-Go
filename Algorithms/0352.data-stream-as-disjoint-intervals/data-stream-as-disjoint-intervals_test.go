@@ -87,4 +87,13 @@ func Test_Constructor(t *testing.T) {
 		sr.Getintervals(),
 	)
 
+	sr.Addnum(-2)
+	ast.Equal([]Interval{
+		Interval{Start: -2, End: -2},
+		Interval{Start: 0, End: 4},
+		Interval{Start: 6, End: 8},
+	},
+		sr.Getintervals(),
+	)
+
 }

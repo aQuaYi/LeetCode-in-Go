@@ -33,47 +33,58 @@ func (sr *SummaryRanges) Addnum(val int) {
 		return
 	}
 
-lo,hi:=0,len(sr.is) -1
-for lo<= hi {
-	mid := lo+(hi-lo)>>1
-	if sr.is[mid].Start <= val && val <=   sr.is[mid].End {
-		return 
-	}else 	if val < sr.is[mid].Start {
-		hi= mid-1
-	}else{
-		lo= mid+1 
+	lo, hi := 0, len(sr.is)-1
+	for lo <= hi {
+		mid := lo + (hi-lo)>>1
+		if sr.is[mid].Start <= val && val <= sr.is[mid].End {
+			return
+		} else if val < sr.is[mid].Start {
+			hi = mid - 1
+		} else {
+			lo = mid + 1
+		}
 	}
-}
 
-if lo == len(sr.is) {
-	if sr.is[lo-1].End+1==val {
+	if lo == 0 {
+		if sr.is[0].Start-1 == val {
+			sr.is[0].Start--
+			return
+		}
+		ni := Interval{Start: val, End: val}
+		sr.is = append(sr.is, ni)
+		copy(sr.is[1:], sr.is)
+		sr.is[0] = ni
+		return
+	}
+	if lo == len(sr.is) {
+		if sr.is[lo-1].End+1 == val {
+			sr.is[lo-1].End++
+			return
+		}
+		sr.is = append(sr.is, Interval{Start: val, End: val})
+		return
+	}
+
+	if sr.is[lo-1].End+1 < val && val < sr.is[lo].Start-1 {
+		sr.is = append(sr.is, Interval{})
+		copy(sr.is[lo+1:], sr.is[lo:])
+		sr.is[lo] = Interval{Start: val, End: val}
+		return
+	}
+
+	if sr.is[lo-1].End == val-1 && val+1 == sr.is[lo].Start {
+		sr.is[lo-1].End = sr.is[lo].End
+		n := len(sr.is)
+		copy(sr.is[lo:], sr.is[lo+1:])
+		sr.is = sr.is[:n-1]
+		return
+	}
+
+	if sr.is[lo-1].End == val-1 {
 		sr.is[lo-1].End++
-		return 
+	} else {
+		sr.is[lo].Start--
 	}
-	sr.is = append(sr.is , Interval{Start:val, End:val})
-	return 
-}
-
-if sr.is[lo-1].End+1< val && val < sr.is[lo].Start-1 {
-	sr.is= append(sr.is, Interval{})
-	copy(sr.is[lo+1:],sr.is[lo:])
-	sr.is[lo] = Interval{Start:val,End:val }
-	return
-}
-
-if sr.is[lo-1].End== val-1 &&  val +1 == sr.is[lo].Start {
-	sr.is[lo-1].End = sr.is[lo].End
-	n := len(sr.is)
-	copy(sr.is[lo:],sr.is[lo+1:])
-	sr.is = sr.is[:n-1]
-	return
-}
-
-if sr.is[lo-1].End == val-1 {
-	sr.is[lo-1].End++
-}else {
-	sr.is[lo].Start-- 
-}
 }
 
 func (sr *SummaryRanges) Getintervals() []Interval {
