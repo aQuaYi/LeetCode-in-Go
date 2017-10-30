@@ -45,3 +45,9 @@ Notice that a/aa/aaa/file1.txt is not the longest file path, if there is another
 ## 解题思路
 
 见程序注释
+
+请注意
+
+```go
+len("\n") == 1
+```

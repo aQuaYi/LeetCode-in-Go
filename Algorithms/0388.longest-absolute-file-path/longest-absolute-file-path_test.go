@@ -13,13 +13,13 @@ var tcs = []struct {
 	ans   int
 }{
 
-	{"dir\n\tsubdir1\n\t\tfile1.ext\n\t\tsubsubdir1\n\tsubdir2\n\t\tsubsubdir2\n\t\t\tfile2.ext\ndirasubdir2asubsubdir2aafile2.ext", 33},
+	{"dir\n\tsubdir1\n\tsubdir2\n\t\tfile.ext", 20},
+
+	{"dir\n\tsubdir1\n\t\tfile1.ext\n\t\tsubsubdir1\n\tsubdir2\n\t\tsubsubdir2\n\t\t\tfile2.ext\ndirasubdir2asubsubdir2aafile2.ext\n", 33},
 
 	{"a\n\tb.c\n\tddddddddddddddddddddddddd", 5},
 
 	{"dir\n\tsubdir1\n\tsubdir2", 0},
-
-	{"dir\n\tsubdir1\n\tsubdir2\n\t\tfile.ext", 20},
 
 	{"dir\n\tsubdir1\n\t\tfile1.ext\n\t\tsubsubdir1\n\tsubdir2\n\t\tsubsubdir2\n\t\t\tfile2.ext", 32},
 
