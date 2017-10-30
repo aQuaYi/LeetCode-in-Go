@@ -2,7 +2,7 @@
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 答题进度](https://img.shields.io/badge/Progress-62%25-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 排名](https://img.shields.io/badge/Ranking-10631-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/Ranking-10437-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 
@@ -12,8 +12,8 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|86|155|65|306|
-|**Total**|145|245|99|489|
+|**Accepted**|86|157|66|309|
+|**Total**|147|246|100|493|
 
 ## 题解
 
@@ -203,7 +203,7 @@
 |217|[Contains Duplicate](./Algorithms/0217.contains-duplicate)|46%|Easy| |
 |218|[The Skyline Problem](./Algorithms/0218.the-skyline-problem)|27%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |219|[Contains Duplicate II](./Algorithms/0219.contains-duplicate-ii)|32%|Easy| |
-|220|[Contains Duplicate III](./Algorithms/0220.contains-duplicate-iii)|19%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|220|[Contains Duplicate III](./Algorithms/0220.contains-duplicate-iii)|18%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |221|[Maximal Square](./Algorithms/0221.maximal-square)|29%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |223|[Rectangle Area](./Algorithms/0223.rectangle-area)|33%|Medium| |
 |224|[Basic Calculator](./Algorithms/0224.basic-calculator)|27%|Hard| |
@@ -276,7 +276,7 @@
 |347|[Top K Frequent Elements](./Algorithms/0347.top-k-frequent-elements)|48%|Medium| |
 |349|[Intersection of Two Arrays](./Algorithms/0349.intersection-of-two-arrays)|47%|Easy| |
 |350|[Intersection of Two Arrays II](./Algorithms/0350.intersection-of-two-arrays-ii)|44%|Easy|[❤](https://leetcode.com/list/oussv5j)|
-|352| * Data Stream as Disjoint Intervals|40%|Hard| |
+|352|[Data Stream as Disjoint Intervals](./Algorithms/0352.data-stream-as-disjoint-intervals)|40%|Hard| |
 |354|[Russian Doll Envelopes](./Algorithms/0354.russian-doll-envelopes)|32%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |355|[Design Twitter](./Algorithms/0355.design-twitter)|25%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |357|[Count Numbers with Unique Digits](./Algorithms/0357.count-numbers-with-unique-digits)|46%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -297,13 +297,13 @@
 |383|[Ransom Note](./Algorithms/0383.ransom-note)|47%|Easy| |
 |384| * Shuffle an Array|46%|Medium| |
 |385| * Mini Parser|30%|Medium| |
-|387|[First Unique Character in a String](./Algorithms/0387.first-unique-character-in-a-string)|46%|Easy| |
-|388| * Longest Absolute File Path|36%|Medium| |
+|387|[First Unique Character in a String](./Algorithms/0387.first-unique-character-in-a-string)|47%|Easy| |
+|388|[Longest Absolute File Path](./Algorithms/0388.longest-absolute-file-path)|36%|Medium| |
 |389|[Find the Difference](./Algorithms/0389.find-the-difference)|50%|Easy| |
 |390| * Elimination Game|42%|Medium| |
 |391| * Perfect Rectangle|26%|Hard| |
 |392|[Is Subsequence](./Algorithms/0392.is-subsequence)|44%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|393| * UTF-8 Validation|34%|Medium| |
+|393|[UTF-8 Validation](./Algorithms/0393.utf-8-validation)|34%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |394|[Decode String](./Algorithms/0394.decode-string)|41%|Medium| |
 |395|[Longest Substring with At Least K Repeating Characters](./Algorithms/0395.longest-substring-with-at-least-k-repeating-characters)|35%|Medium| |
 |396| * Rotate Function|33%|Medium| |
@@ -316,7 +316,7 @@
 |403|[Frog Jump](./Algorithms/0403.frog-jump)|32%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |404| * Sum of Left Leaves|47%|Easy| |
 |405| * Convert a Number to Hexadecimal|41%|Easy| |
-|406| * Queue Reconstruction by Height|55%|Medium| |
+|406| * Queue Reconstruction by Height|56%|Medium| |
 |407| * Trapping Rain Water II|37%|Hard| |
 |409| * Longest Palindrome|45%|Easy| |
 |410|[Split Array Largest Sum](./Algorithms/0410.split-array-largest-sum)|38%|Hard| |
@@ -340,6 +340,7 @@
 |440| * K-th Smallest in Lexicographical Order|25%|Hard| |
 |441| * Arranging Coins|36%|Easy| |
 |442|[Find All Duplicates in an Array](./Algorithms/0442.find-all-duplicates-in-an-array)|56%|Medium| |
+|443| * String Compression|38%|Easy| |
 |445| * Add Two Numbers II|45%|Medium| |
 |446| * Arithmetic Slices II - Subsequence|27%|Hard| |
 |447| * Number of Boomerangs|45%|Easy| |
@@ -479,7 +480,7 @@
 |670| * Maximum Swap|38%|Medium| |
 |671| * Second Minimum Node In a Binary Tree|41%|Easy| |
 |672| * Bulb Switcher II|47%|Medium| |
-|673| * Number of Longest Increasing Subsequence|30%|Medium| |
+|673| * Number of Longest Increasing Subsequence|31%|Medium| |
 |674| * Longest Continuous Increasing Subsequence|42%|Easy| |
 |675| * Cut Off Trees for Golf Event|26%|Hard| |
 |676| * Implement Magic Dictionary|49%|Medium| |
@@ -500,14 +501,17 @@
 |692| * Top K Frequent Words|41%|Medium| |
 |693| * Binary Number with Alternating Bits|54%|Easy| |
 |695| * Max Area of Island|53%|Easy| |
-|696| * Count Binary Substrings|52%|Easy| |
-|697| * Degree of an Array|48%|Easy| |
+|696| * Count Binary Substrings|51%|Easy| |
+|697| * Degree of an Array|47%|Easy| |
 |698| * Partition to K Equal Sum Subsets|35%|Medium| |
 |699| * Falling Squares|36%|Hard| |
 |712| * Minimum ASCII Delete Sum for Two Strings|49%|Medium| |
-|713| * Subarray Product Less Than K|34%|Medium| |
-|714| * Best Time to Buy and Sell Stock with Transaction Fee|33%|Medium| |
+|713| * Subarray Product Less Than K|33%|Medium| |
+|714| * Best Time to Buy and Sell Stock with Transaction Fee|34%|Medium| |
 |715| * Range Module|30%|Hard| |
+|717| * 1-bit and 2-bit Characters|53%|Easy| |
+|718| * Maximum Length of Repeated Subarray|33%|Medium| |
+|719| * Find K-th Smallest Pair Distance|20%|Hard| |
 
 以下免费的算法题，暂时不能使用 Go 解答
 
@@ -548,8 +552,9 @@
 
 针对 LeetCode 中经常出现的以下数据结构，在 [kit](./kit) 中进行了定义，并添加了与 []int 相互转换的函数。利用 Go 1.9 新添加的 [type alias](https://github.com/golang/proposal/blob/master/design/18130-type-alias.md) 功能，易于添加单元测试。
 
+- [Heap](./kit/Heap.go)
+- [Interval](./kit/Interval.go)
 - [ListNode](./kit/ListNode.go)
-- [TreeNode](./kit/TreeNode.go)
 - [Queue](./kit/Queue.go)
 - [Stack](./kit/Stack.go)
-- [Heap](./kit/Heap.go)
+- [TreeNode](./kit/TreeNode.go)
