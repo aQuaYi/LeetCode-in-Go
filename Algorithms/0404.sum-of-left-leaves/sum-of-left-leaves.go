@@ -7,9 +7,12 @@ import (
 type TreeNode = kit.TreeNode
 
 func sumOfLeftLeaves(root *TreeNode) int {
-	if root==nil ||
-	(root.Left == nil && root.Right == nil ) {
+	if root==nil {
 		return 0
+	}
+
+	if root.Left == nil{
+		return sumOfLeftLeaves(root.Right) 
 	}
 
 	if root.Left.Left == nil && root.Left.Right==nil {
