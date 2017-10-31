@@ -2,7 +2,7 @@
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 答题进度](https://img.shields.io/badge/Progress-62%25-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 排名](https://img.shields.io/badge/Ranking-10437-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/Ranking-10367-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 
@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|86|157|66|309|
+|**Accepted**|86|157|67|310|
 |**Total**|147|246|100|493|
 
 ## 题解
@@ -104,7 +104,7 @@
 |83|[Remove Duplicates from Sorted List](./Algorithms/0083.remove-duplicates-from-sorted-list)|39%|Easy| |
 |84|[Largest Rectangle in Histogram](./Algorithms/0084.largest-rectangle-in-histogram)|27%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |85|[Maximal Rectangle](./Algorithms/0085.maximal-rectangle)|28%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|86|[Partition List](./Algorithms/0086.partition-list)|32%|Medium| |
+|86|[Partition List](./Algorithms/0086.partition-list)|33%|Medium| |
 |87|[Scramble String](./Algorithms/0087.scramble-string)|29%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |88|[Merge Sorted Array](./Algorithms/0088.merge-sorted-array)|32%|Easy| |
 |89|[Gray Code](./Algorithms/0089.gray-code)|41%|Medium| |
@@ -259,7 +259,7 @@
 |324|[Wiggle Sort II](./Algorithms/0324.wiggle-sort-ii)|26%|Medium| |
 |326|[Power of Three](./Algorithms/0326.power-of-three)|40%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |327|[Count of Range Sum](./Algorithms/0327.count-of-range-sum)|30%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|328|[Odd Even Linked List](./Algorithms/0328.odd-even-linked-list)|43%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|328|[Odd Even Linked List](./Algorithms/0328.odd-even-linked-list)|44%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |329|[Longest Increasing Path in a Matrix](./Algorithms/0329.longest-increasing-path-in-a-matrix)|36%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |330|[Patching Array](./Algorithms/0330.patching-array)|32%|Hard| |
 |331|[Verify Preorder Serialization of a Binary Tree](./Algorithms/0331.verify-preorder-serialization-of-a-binary-tree)|36%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -301,7 +301,7 @@
 |388|[Longest Absolute File Path](./Algorithms/0388.longest-absolute-file-path)|36%|Medium| |
 |389|[Find the Difference](./Algorithms/0389.find-the-difference)|50%|Easy| |
 |390| * Elimination Game|42%|Medium| |
-|391| * Perfect Rectangle|26%|Hard| |
+|391|[Perfect Rectangle](./Algorithms/0391.perfect-rectangle)|26%|Hard| |
 |392|[Is Subsequence](./Algorithms/0392.is-subsequence)|44%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |393|[UTF-8 Validation](./Algorithms/0393.utf-8-validation)|34%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |394|[Decode String](./Algorithms/0394.decode-string)|41%|Medium| |
@@ -340,7 +340,7 @@
 |440| * K-th Smallest in Lexicographical Order|25%|Hard| |
 |441| * Arranging Coins|36%|Easy| |
 |442|[Find All Duplicates in an Array](./Algorithms/0442.find-all-duplicates-in-an-array)|56%|Medium| |
-|443| * String Compression|38%|Easy| |
+|443| * String Compression|37%|Easy| |
 |445| * Add Two Numbers II|45%|Medium| |
 |446| * Arithmetic Slices II - Subsequence|27%|Hard| |
 |447| * Number of Boomerangs|45%|Easy| |
@@ -430,7 +430,7 @@
 |575| * Distribute Candies|58%|Easy| |
 |576| * Out of Boundary Paths|30%|Medium| |
 |581|[Shortest Unsorted Continuous Subarray](./Algorithms/0581.shortest-unsorted-continuous-subarray)|29%|Easy|[❤](https://leetcode.com/list/oussv5j)|
-|583| * Delete Operation for Two Strings|44%|Medium| |
+|583| * Delete Operation for Two Strings|43%|Medium| |
 |587| * Erect the Fence|32%|Hard| |
 |591| * Tag Validator|29%|Hard| |
 |592| * Fraction Addition and Subtraction|46%|Medium| |
@@ -488,7 +488,7 @@
 |678| * Valid Parenthesis String|28%|Medium| |
 |679| * 24 Game|38%|Hard| |
 |680| * Valid Palindrome II|31%|Easy| |
-|681| * Next Closest Time|43%|Medium| |
+|681| * Next Closest Time|42%|Medium| |
 |682| * Baseball Game|58%|Easy| |
 |683| * K Empty Slots|37%|Hard| |
 |684| * Redundant Connection|37%|Medium| |
@@ -510,8 +510,8 @@
 |714| * Best Time to Buy and Sell Stock with Transaction Fee|34%|Medium| |
 |715| * Range Module|30%|Hard| |
 |717| * 1-bit and 2-bit Characters|53%|Easy| |
-|718| * Maximum Length of Repeated Subarray|33%|Medium| |
-|719| * Find K-th Smallest Pair Distance|20%|Hard| |
+|718| * Maximum Length of Repeated Subarray|38%|Medium| |
+|719| * Find K-th Smallest Pair Distance|21%|Hard| |
 
 以下免费的算法题，暂时不能使用 Go 解答
 
