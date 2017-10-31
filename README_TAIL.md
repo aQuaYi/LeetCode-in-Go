@@ -13,6 +13,7 @@
 - [Heap](./kit/Heap.go)
 - [Interval](./kit/Interval.go)
 - [ListNode](./kit/ListNode.go)
+- [NestedInteger](./kit/NestedInteger.go)
 - [Queue](./kit/Queue.go)
 - [Stack](./kit/Stack.go)
 - [TreeNode](./kit/TreeNode.go)

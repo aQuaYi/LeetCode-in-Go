@@ -16,15 +16,15 @@ func Test_NestedInteger(t *testing.T) {
 	n.SetInteger(1)
 	ast.Equal(1, n.GetInteger())
 
-	elem := NestedInteger{num: 1}
+	elem := NestedInteger{Num: 1}
 
 	expected := NestedInteger{
-		num: 1,
-		ns:  []*NestedInteger{&elem},
+		Num: 1,
+		Ns:  []*NestedInteger{&elem},
 	}
 	n.Add(elem)
 
 	ast.Equal(expected, n)
 
-	ast.Equal(expected.ns, n.GetList())
+	ast.Equal(expected.Ns, n.GetList())
 }
