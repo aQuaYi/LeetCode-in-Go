@@ -1,6 +1,9 @@
 package Problem0385
 
-import "strconv"
+import (
+	"strconv"
+	"github.com/aQuaYi/LeetCode-in-Go/kit"
+)
 
 /**
  * // This is the interface that allows for creating nested lists.
@@ -27,6 +30,9 @@ import "strconv"
  * // You can access NestedInteger's List element directly if you want to modify it
  * func (n NestedInteger) GetList() []*NestedInteger {}
  */
+
+type NestedInteger = kit.NestedInteger
+
 func deserialize(s string) *NestedInteger {
 	if len(s) == 0 {
 		return nil
@@ -99,6 +105,6 @@ func (s *stackChars) Empty() bool {
 	return len(s.chars) == 0
 }
 
-func (s *stackChars) Peek() *NestedInteger {
-	return s.chars[len(s.chars)-1]
-}
+// func (s *stackChars) Peek() *NestedInteger {
+// 	return s.chars[len(s.chars)-1]
+// }

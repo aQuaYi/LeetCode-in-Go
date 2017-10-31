@@ -9,28 +9,40 @@ import (
 
 // tcs is testcase slice
 var tcs = []struct {
-	n NestedInteger
-	ans  IsInteger() bool 
+	s   string
+	ans *NestedInteger
 }{
 
+	{"", nil},
 
-	
+	{"324", &NestedInteger{Num: 324}},
+
+	{"[123,[456,[789]]]",
+		&NestedInteger{
+			Ns: []*NestedInteger{
+				&NestedInteger{Num: 123},
+				&NestedInteger{
+					Ns: []*NestedInteger{
+						&NestedInteger{Num: 456},
+						&NestedInteger{
+							Ns: []*NestedInteger{
+								&NestedInteger{Num: 789},
+							},
+						},
+					},
+				},
+			},
+		},
+	},
+
 	// 可以有多个 testcase
 }
 
-func Test_(t *testing.T) {
+func Test_deserialize(t *testing.T) {
 	ast := assert.New(t)
-	
+
 	for _, tc := range tcs {
 		fmt.Printf("~~%v~~\n", tc)
-		ast.Equal(tc.ans, (tc.n), "输入:%v", tc)
-	}
-}
-
-func Benchmark_(b *testing.B) {
-	for i := 0; i < b.N; i++ {
-		for _, tc := range tcs {
-			(tc.n)
-		}
+		ast.Equal(tc.ans, deserialize(tc.s), "输入:%v", tc)
 	}
 }
