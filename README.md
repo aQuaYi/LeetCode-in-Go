@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|86|158|67|311|
+|**Accepted**|86|159|67|312|
 |**Total**|147|246|100|493|
 
 ## 题解
@@ -306,7 +306,7 @@
 |393|[UTF-8 Validation](./Algorithms/0393.utf-8-validation)|34%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |394|[Decode String](./Algorithms/0394.decode-string)|41%|Medium| |
 |395|[Longest Substring with At Least K Repeating Characters](./Algorithms/0395.longest-substring-with-at-least-k-repeating-characters)|35%|Medium| |
-|396| * Rotate Function|33%|Medium| |
+|396|[Rotate Function](./Algorithms/0396.rotate-function)|33%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |397| * Integer Replacement|30%|Medium| |
 |398| * Random Pick Index|43%|Medium| |
 |399| * Evaluate Division|41%|Medium| |
