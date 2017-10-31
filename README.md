@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|86|159|67|312|
+|**Accepted**|87|160|67|314|
 |**Total**|147|246|100|493|
 
 ## 题解
@@ -43,7 +43,7 @@
 |22|[Generate Parentheses](./Algorithms/0022.generate-parentheses)|46%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |23|[Merge k Sorted Lists](./Algorithms/0023.merge-k-sorted-lists)|27%|Hard| |
 |24|[Swap Nodes in Pairs](./Algorithms/0024.swap-nodes-in-pairs)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|25|[Reverse Nodes in k-Group](./Algorithms/0025.reverse-nodes-in-k-group)|30%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|25|[Reverse Nodes in k-Group](./Algorithms/0025.reverse-nodes-in-k-group)|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |26|[Remove Duplicates from Sorted Array](./Algorithms/0026.remove-duplicates-from-sorted-array)|35%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |27|[Remove Element](./Algorithms/0027.remove-element)|39%|Easy| |
 |28|[Implement strStr()](./Algorithms/0028.implement-strstr)|28%|Easy| |
@@ -108,7 +108,7 @@
 |87|[Scramble String](./Algorithms/0087.scramble-string)|29%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |88|[Merge Sorted Array](./Algorithms/0088.merge-sorted-array)|32%|Easy| |
 |89|[Gray Code](./Algorithms/0089.gray-code)|41%|Medium| |
-|90|[Subsets II](./Algorithms/0090.subsets-ii)|36%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|90|[Subsets II](./Algorithms/0090.subsets-ii)|37%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |91|[Decode Ways](./Algorithms/0091.decode-ways)|19%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |92|[Reverse Linked List II](./Algorithms/0092.reverse-linked-list-ii)|30%|Medium| |
 |93|[Restore IP Addresses](./Algorithms/0093.restore-ip-addresses)|27%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -307,11 +307,11 @@
 |394|[Decode String](./Algorithms/0394.decode-string)|41%|Medium| |
 |395|[Longest Substring with At Least K Repeating Characters](./Algorithms/0395.longest-substring-with-at-least-k-repeating-characters)|35%|Medium| |
 |396|[Rotate Function](./Algorithms/0396.rotate-function)|33%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|397| * Integer Replacement|30%|Medium| |
+|397|[Integer Replacement](./Algorithms/0397.integer-replacement)|30%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |398| * Random Pick Index|43%|Medium| |
 |399| * Evaluate Division|41%|Medium| |
 |400| * Nth Digit|30%|Easy| |
-|401| * Binary Watch|44%|Easy| |
+|401|[Binary Watch](./Algorithms/0401.binary-watch)|44%|Easy| |
 |402| * Remove K Digits|26%|Medium| |
 |403|[Frog Jump](./Algorithms/0403.frog-jump)|32%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |404| * Sum of Left Leaves|47%|Easy| |
@@ -430,7 +430,7 @@
 |575| * Distribute Candies|58%|Easy| |
 |576| * Out of Boundary Paths|30%|Medium| |
 |581|[Shortest Unsorted Continuous Subarray](./Algorithms/0581.shortest-unsorted-continuous-subarray)|29%|Easy|[❤](https://leetcode.com/list/oussv5j)|
-|583| * Delete Operation for Two Strings|43%|Medium| |
+|583| * Delete Operation for Two Strings|44%|Medium| |
 |587| * Erect the Fence|32%|Hard| |
 |591| * Tag Validator|29%|Hard| |
 |592| * Fraction Addition and Subtraction|46%|Medium| |
@@ -511,7 +511,7 @@
 |715| * Range Module|30%|Hard| |
 |717| * 1-bit and 2-bit Characters|53%|Easy| |
 |718| * Maximum Length of Repeated Subarray|38%|Medium| |
-|719| * Find K-th Smallest Pair Distance|21%|Hard| |
+|719| * Find K-th Smallest Pair Distance|22%|Hard| |
 
 以下免费的算法题，暂时不能使用 Go 解答
 
