@@ -1,7 +1,7 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 答题进度](https://img.shields.io/badge/Progress-62%25-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 答题进度](https://img.shields.io/badge/Progress-63%25-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 排名](https://img.shields.io/badge/Ranking-10367-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|86|157|67|310|
+|**Accepted**|86|158|67|311|
 |**Total**|147|246|100|493|
 
 ## 题解
@@ -296,7 +296,7 @@
 |382|[Linked List Random Node](./Algorithms/0382.linked-list-random-node)|47%|Medium| |
 |383|[Ransom Note](./Algorithms/0383.ransom-note)|47%|Easy| |
 |384| * Shuffle an Array|46%|Medium| |
-|385| * Mini Parser|30%|Medium| |
+|385|[Mini Parser](./Algorithms/0385.mini-parser)|30%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |387|[First Unique Character in a String](./Algorithms/0387.first-unique-character-in-a-string)|47%|Easy| |
 |388|[Longest Absolute File Path](./Algorithms/0388.longest-absolute-file-path)|36%|Medium| |
 |389|[Find the Difference](./Algorithms/0389.find-the-difference)|50%|Easy| |
@@ -555,6 +555,7 @@
 - [Heap](./kit/Heap.go)
 - [Interval](./kit/Interval.go)
 - [ListNode](./kit/ListNode.go)
+- [NestedInteger](./kit/NestedInteger.go)
 - [Queue](./kit/Queue.go)
 - [Stack](./kit/Stack.go)
 - [TreeNode](./kit/TreeNode.go)
