@@ -1,7 +1,6 @@
 package Problem0391
 
 import (
-	"fmt"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -12,6 +11,17 @@ var tcs = []struct {
 	rectangles [][]int
 	ans        bool
 }{
+
+	{
+		[][]int{
+			[]int{1, 1, 3, 3},
+			[]int{3, 1, 4, 2},
+			[]int{3, 2, 4, 4},
+			[]int{1, 3, 2, 4},
+			[]int{2, 3, 3, 4},
+		},
+		true,
+	},
 
 	{
 		[][]int{
@@ -4003,17 +4013,6 @@ var tcs = []struct {
 
 	{
 		[][]int{
-			[]int{1, 1, 3, 3},
-			[]int{3, 1, 4, 2},
-			[]int{3, 2, 4, 4},
-			[]int{1, 3, 2, 4},
-			[]int{2, 3, 3, 4},
-		},
-		true,
-	},
-
-	{
-		[][]int{
 			[]int{1, 1, 2, 3},
 			[]int{1, 3, 2, 4},
 			[]int{3, 1, 4, 2},
@@ -4049,7 +4048,7 @@ func Test_isRectangleCover(t *testing.T) {
 	ast := assert.New(t)
 
 	for _, tc := range tcs {
-		fmt.Printf("~~%v~~\n", tc)
+		// fmt.Printf("~~%v~~\n", tc)
 		ast.Equal(tc.ans, isRectangleCover(tc.rectangles), "输入:%v", tc)
 	}
 }

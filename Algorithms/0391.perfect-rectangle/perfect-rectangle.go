@@ -1,90 +1,85 @@
 package Problem0391
 
-import (
-	"sort"
-)
+import "fmt"
 
-func isRectangleCover(rectangles [][]int) bool {
-	var bs blps
-
-	for _, r := range rectangles {
-		bs = append(bs, makeBlps(r)...)
-	}
-
-	sort.Sort(bs)
-
-	return !isOverlap(bs) && !hasGap(bs)
-}
-
-func hasGap(bs blps) bool {
-	i := 1
-	for i < len(bs) && bs[i][0] == bs[i-1][0] {
-		i++
-	}
-
-	if i == len(bs) {
+func isRectangleCover(rects [][]int) bool {
+	if len(rects) == 0 || len(rects[0]) == 0 {
 		return false
 	}
 
-	h := i
-	if len(bs)%h != 0 {
-		return true
-	}
+	x1, x2 := 1<<63-1, -1<<63
+	y1, y2 := x1, x2
 
-	for i < len(bs) {
-		if bs[i][0] != bs[0][0]+i/h {
-			return true
+	set := make(map[string]bool)
+	area := 0
+
+	var s1, s2, s3, s4 string
+
+	for _, r := range rects {
+		x1 = min(r[0], x1)
+		y1 = min(r[1], y1)
+		x2 = max(r[2], x2)
+		y2 = max(r[3], y2)
+
+		area += (r[2] - r[0]) * (r[3] - r[1])
+
+		s1 = fmt.Sprintf("%d %d", r[0], r[1])
+		s2 = fmt.Sprintf("%d %d", r[0], r[3])
+		s3 = fmt.Sprintf("%d %d", r[2], r[3])
+		s4 = fmt.Sprintf("%d %d", r[2], r[1])
+
+		if set[s1] {
+			delete(set, s1)
+		} else {
+			set[s1] = true
 		}
-		i++
-	}
 
-	return false
-}
-
-func isOverlap(bs blps) bool {
-	var i int
-	for i = 1; i < len(bs); i++ {
-		if isEqual(bs[i-1], bs[i]) {
-			return true
+		if set[s2] {
+			delete(set, s2)
+		} else {
+			set[s2] = true
 		}
-	}
-	return false
-}
 
-func makeBlps(r []int) blps {
-	bs := make(blps, (r[2]-r[0])*(r[3]-r[1]))
-
-	var i, j, k int
-	for i = r[0]; i < r[2]; i++ {
-		for j = r[1]; j < r[3]; j++ {
-			bs[k] = []int{i, j}
-			k++
+		if set[s3] {
+			delete(set, s3)
+		} else {
+			set[s3] = true
 		}
+
+		if set[s4] {
+			delete(set, s4)
+		} else {
+			set[s4] = true
+		}
+
 	}
 
-	return bs
-}
+	s1 = fmt.Sprintf("%d %d", x1, y1)
+	s2 = fmt.Sprintf("%d %d", x1, y2)
+	s3 = fmt.Sprintf("%d %d", x2, y1)
+	s4 = fmt.Sprintf("%d %d", x2, y2)
 
-// blp is bottom-left point
-type blp []int
-
-func isEqual(a, b blp) bool {
-	return a[0] == b[0] && a[1] == b[1]
-}
-
-type blps [][]int
-
-func (b blps) Len() int {
-	return len(b)
-}
-
-func (b blps) Less(i, j int) bool {
-	if b[i][0] == b[j][0] {
-		return b[i][1] < b[j][1]
+	if !set[s1] ||
+		!set[s2] ||
+		!set[s3] ||
+		!set[s4] ||
+		len(set) != 4 {
+		return false
 	}
-	return b[i][0] < b[j][0]
+
+	return area == (x2-x1)*(y2-y1)
 }
 
-func (b blps) Swap(i, j int) {
-	b[i], b[j] = b[j], b[i]
+func max(a, b int) int {
+	if a > b {
+		return a
+	}
+	return b
+}
+
+func min(a, b int) int {
+	if a < b {
+		return a
+	}
+	return b
 }
