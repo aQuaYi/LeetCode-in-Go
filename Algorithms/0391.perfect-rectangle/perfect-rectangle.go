@@ -1,73 +1,67 @@
 package Problem0391
 
-import "fmt"
+type point struct {
+	x, y int
+}
 
 func isRectangleCover(rects [][]int) bool {
 	if len(rects) == 0 || len(rects[0]) == 0 {
 		return false
 	}
 
-	x1, x2 := 1<<63-1, -1<<63
-	y1, y2 := x1, x2
-
-	set := make(map[string]bool)
+	// 记录最后合成的正方形的 四个顶点 的坐标
+	minX, maxX := 1<<63-1, -1<<63
+	minY, maxY := minX, maxX
+	// 最后合成正方形的面积
 	area := 0
 
-	var s1, s2, s3, s4 string
+	// 记录添加的正方形的 四个顶点 位置
+	isCorner := make(map[point]bool)
+
+	var p, p1, p2, p3, p4 point
+	var x, y, x1, x2, y1, y2 int
 
 	for _, r := range rects {
-		x1 = min(r[0], x1)
-		y1 = min(r[1], y1)
-		x2 = max(r[2], x2)
-		y2 = max(r[3], y2)
+		x1, y1, x2, y2 = r[0], r[1], r[2], r[3]
 
-		area += (r[2] - r[0]) * (r[3] - r[1])
+		minX = min(x1, minX)
+		minY = min(y1, minY)
+		maxX = max(x2, maxX)
+		maxY = max(y2, maxY)
 
-		s1 = fmt.Sprintf("%d %d", r[0], r[1])
-		s2 = fmt.Sprintf("%d %d", r[0], r[3])
-		s3 = fmt.Sprintf("%d %d", r[2], r[3])
-		s4 = fmt.Sprintf("%d %d", r[2], r[1])
+		area += (x2 - x1) * (y2 - y1)
 
-		if set[s1] {
-			delete(set, s1)
-		} else {
-			set[s1] = true
-		}
+		for _, x = range []int{x1, x2} {
+			for _, y = range []int{y1, y2} {
+				p = point{x, y}
 
-		if set[s2] {
-			delete(set, s2)
-		} else {
-			set[s2] = true
-		}
+				// 如果想要最后能够合成一个矩形
+				// 除了大矩形的四个顶点外，其余的小矩形的四个顶点会出现两次
+				if isCorner[p] {
+					delete(isCorner, p)
+				} else {
+					isCorner[p] = true
+				}
 
-		if set[s3] {
-			delete(set, s3)
-		} else {
-			set[s3] = true
-		}
-
-		if set[s4] {
-			delete(set, s4)
-		} else {
-			set[s4] = true
+			}
 		}
 
 	}
 
-	s1 = fmt.Sprintf("%d %d", x1, y1)
-	s2 = fmt.Sprintf("%d %d", x1, y2)
-	s3 = fmt.Sprintf("%d %d", x2, y1)
-	s4 = fmt.Sprintf("%d %d", x2, y2)
+	p1 = point{minX, minY}
+	p2 = point{minX, maxY}
+	p3 = point{maxX, minY}
+	p4 = point{maxX, maxY}
 
-	if !set[s1] ||
-		!set[s2] ||
-		!set[s3] ||
-		!set[s4] ||
-		len(set) != 4 {
+	if !isCorner[p1] ||
+		!isCorner[p2] ||
+		!isCorner[p3] ||
+		!isCorner[p4] ||
+		len(isCorner) != 4 {
 		return false
 	}
 
-	return area == (x2-x1)*(y2-y1)
+	return area == (maxX-minX)*(maxY-minY)
 }
 
 func max(a, b int) int {
