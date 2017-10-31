@@ -20,20 +20,16 @@ var h = []string{
 }
 
 func toHex(num int) string {
-	if num < 0 {
-		return toHex(num + 1<<32)
-	}
-
 	if num == 0 {
 		return "0"
 	}
 
-	res := ""
-
-	for num > 0 {
-		res = h[num%16] + res
-		num /= 16
+	hex := ""
+	var i int
+	for i = 0; i < 8 && num != 0; i++ {
+		hex = h[num&15] + hex
+		num >>= 4
 	}
 
-	return res
+	return hex
 }
