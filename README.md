@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|87|160|67|314|
+|**Accepted**|88|160|67|315|
 |**Total**|147|246|100|493|
 
 ## 题解
@@ -315,7 +315,7 @@
 |402| * Remove K Digits|26%|Medium| |
 |403|[Frog Jump](./Algorithms/0403.frog-jump)|32%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |404| * Sum of Left Leaves|47%|Easy| |
-|405| * Convert a Number to Hexadecimal|41%|Easy| |
+|405|[Convert a Number to Hexadecimal](./Algorithms/0405.convert-a-number-to-hexadecimal)|41%|Easy| |
 |406| * Queue Reconstruction by Height|56%|Medium| |
 |407| * Trapping Rain Water II|37%|Hard| |
 |409| * Longest Palindrome|45%|Easy| |
@@ -430,7 +430,7 @@
 |575| * Distribute Candies|58%|Easy| |
 |576| * Out of Boundary Paths|30%|Medium| |
 |581|[Shortest Unsorted Continuous Subarray](./Algorithms/0581.shortest-unsorted-continuous-subarray)|29%|Easy|[❤](https://leetcode.com/list/oussv5j)|
-|583| * Delete Operation for Two Strings|44%|Medium| |
+|583| * Delete Operation for Two Strings|43%|Medium| |
 |587| * Erect the Fence|32%|Hard| |
 |591| * Tag Validator|29%|Hard| |
 |592| * Fraction Addition and Subtraction|46%|Medium| |
@@ -502,7 +502,7 @@
 |693| * Binary Number with Alternating Bits|54%|Easy| |
 |695| * Max Area of Island|53%|Easy| |
 |696| * Count Binary Substrings|51%|Easy| |
-|697| * Degree of an Array|47%|Easy| |
+|697| * Degree of an Array|48%|Easy| |
 |698| * Partition to K Equal Sum Subsets|35%|Medium| |
 |699| * Falling Squares|36%|Hard| |
 |712| * Minimum ASCII Delete Sum for Two Strings|49%|Medium| |
