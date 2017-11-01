@@ -1,20 +1,19 @@
 package Problem0384
 
+import (
+	"math/rand"
+)
+
 // Solution 是答案
 type Solution struct {
 	original []int
-	rec      map[int]bool
 }
 
 // Constructor 构建 Solution
 func Constructor(nums []int) Solution {
 	o := make([]int, len(nums))
 	copy(o, nums)
-	r := make(map[int]bool, len(nums))
-	for _, n := range nums {
-		r[n] = true
-	}
-	return Solution{original: o, rec: r}
+	return Solution{original: o}
 }
 
 // Reset the array to its original configuration and return it.
@@ -24,10 +23,16 @@ func (s Solution) Reset() []int {
 
 // Shuffle returns a random shuffling of the array.
 func (s Solution) Shuffle() []int {
-	temp := make([]int, 0, len(s.original))
-	for n := range s.rec {
-		temp = append(temp, n)
+	temp := make([]int, len(s.original))
+	copy(temp, s.original)
+
+	i, j := len(s.original), 0
+	for 1 < i {
+		j = rand.Intn(i)
+		temp[i-1], temp[j] = temp[j], temp[i-1]
+		i--
 	}
+
 	return temp
 }
 
