@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|90|160|67|317|
+|**Accepted**|90|160|68|318|
 |**Total**|147|246|100|493|
 
 ## 题解
@@ -317,7 +317,7 @@
 |404|[Sum of Left Leaves](./Algorithms/0404.sum-of-left-leaves)|47%|Easy| |
 |405|[Convert a Number to Hexadecimal](./Algorithms/0405.convert-a-number-to-hexadecimal)|41%|Easy| |
 |406| * Queue Reconstruction by Height|56%|Medium| |
-|407| * Trapping Rain Water II|37%|Hard| |
+|407|[Trapping Rain Water II](./Algorithms/0407.trapping-rain-water-ii)|37%|Hard| |
 |409| * Longest Palindrome|45%|Easy| |
 |410|[Split Array Largest Sum](./Algorithms/0410.split-array-largest-sum)|38%|Hard| |
 |412| * Fizz Buzz|58%|Easy| |
@@ -430,7 +430,7 @@
 |575| * Distribute Candies|58%|Easy| |
 |576| * Out of Boundary Paths|30%|Medium| |
 |581|[Shortest Unsorted Continuous Subarray](./Algorithms/0581.shortest-unsorted-continuous-subarray)|29%|Easy|[❤](https://leetcode.com/list/oussv5j)|
-|583| * Delete Operation for Two Strings|43%|Medium| |
+|583| * Delete Operation for Two Strings|44%|Medium| |
 |587| * Erect the Fence|32%|Hard| |
 |591| * Tag Validator|29%|Hard| |
 |592| * Fraction Addition and Subtraction|46%|Medium| |
@@ -488,13 +488,13 @@
 |678| * Valid Parenthesis String|28%|Medium| |
 |679| * 24 Game|38%|Hard| |
 |680| * Valid Palindrome II|31%|Easy| |
-|681| * Next Closest Time|42%|Medium| |
+|681| * Next Closest Time|43%|Medium| |
 |682| * Baseball Game|58%|Easy| |
 |683| * K Empty Slots|36%|Hard| |
 |684| * Redundant Connection|37%|Medium| |
 |685| * Redundant Connection II|28%|Hard| |
 |686| * Repeated String Match|31%|Easy| |
-|687| * Longest Univalue Path|32%|Easy| |
+|687| * Longest Univalue Path|33%|Easy| |
 |688| * Knight Probability in Chessboard|38%|Medium| |
 |689| * Maximum Sum of 3 Non-Overlapping Subarrays|41%|Hard| |
 |691| * Stickers to Spell Word|32%|Hard| |
@@ -506,7 +506,7 @@
 |698| * Partition to K Equal Sum Subsets|35%|Medium| |
 |699| * Falling Squares|36%|Hard| |
 |712| * Minimum ASCII Delete Sum for Two Strings|50%|Medium| |
-|713| * Subarray Product Less Than K|33%|Medium| |
+|713| * Subarray Product Less Than K|32%|Medium| |
 |714| * Best Time to Buy and Sell Stock with Transaction Fee|34%|Medium| |
 |715| * Range Module|30%|Hard| |
 |717| * 1-bit and 2-bit Characters|53%|Easy| |
@@ -556,6 +556,7 @@
 - [Interval](./kit/Interval.go)
 - [ListNode](./kit/ListNode.go)
 - [NestedInteger](./kit/NestedInteger.go)
+- [PriorityQueue](./kit/PriorityQueue.go)
 - [Queue](./kit/Queue.go)
 - [Stack](./kit/Stack.go)
 - [TreeNode](./kit/TreeNode.go)
