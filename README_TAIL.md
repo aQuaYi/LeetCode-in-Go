@@ -14,6 +14,7 @@
 - [Interval](./kit/Interval.go)
 - [ListNode](./kit/ListNode.go)
 - [NestedInteger](./kit/NestedInteger.go)
+- [PriorityQueue](./kit/PriorityQueue.go)
 - [Queue](./kit/Queue.go)
 - [Stack](./kit/Stack.go)
 - [TreeNode](./kit/TreeNode.go)
