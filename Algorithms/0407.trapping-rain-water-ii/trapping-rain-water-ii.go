@@ -19,7 +19,7 @@ func trapRainWater(hs [][]int) int {
 
 	for i = 1; i < m-1; i++ {
 		for j = n - 2; 0 <= j; j-- {
-			if hs[i][j] < hs[i][j+1] {
+			if hs[i][j] <= hs[i][j+1] {
 				hh[i][j] = hh[i][j+1]
 			}
 		}
@@ -27,7 +27,7 @@ func trapRainWater(hs [][]int) int {
 
 	for j = 1; j < n-1; j++ {
 		for i = m - 2; 0 <= i; i-- {
-			if hs[i][j] < hs[i+1][j] {
+			if hs[i][j] <= hs[i+1][j] {
 				vh[i][j] = vh[i+1][j]
 			}
 		}
@@ -38,7 +38,7 @@ func trapRainWater(hs [][]int) int {
 
 	for i = 1; i < m-1; i++ {
 		for j = 1; j < n-1; j++ {
-			wall = min4(hh[i-1][j], hh[i+1][j], vh[i][j-1], vh[i][j+1])
+			wall = min4(hh[i][j-1], hh[i][j+1], vh[i-1][j], vh[i+1][j])
 			vol += max(wall-hs[i][j], 0)
 			hh[i][j] = max(wall, hs[i][j])
 			vh[i][j] = max(wall, hs[i][j])
