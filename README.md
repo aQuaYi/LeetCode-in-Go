@@ -1,7 +1,7 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 答题进度](https://img.shields.io/badge/Progress-64%25-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 答题进度](https://img.shields.io/badge/Progress-65%25-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 排名](https://img.shields.io/badge/Ranking-9772-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|90|160|68|318|
+|**Accepted**|91|162|68|321|
 |**Total**|147|246|100|493|
 
 ## 题解
@@ -295,12 +295,12 @@
 |381|[Insert Delete GetRandom O(1) - Duplicates allowed](./Algorithms/0381.insert-delete-getrandom-o1-duplicates-allowed)|29%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |382|[Linked List Random Node](./Algorithms/0382.linked-list-random-node)|47%|Medium| |
 |383|[Ransom Note](./Algorithms/0383.ransom-note)|47%|Easy| |
-|384| * Shuffle an Array|46%|Medium| |
+|384|[Shuffle an Array](./Algorithms/0384.shuffle-an-array)|46%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |385|[Mini Parser](./Algorithms/0385.mini-parser)|30%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |387|[First Unique Character in a String](./Algorithms/0387.first-unique-character-in-a-string)|47%|Easy| |
 |388|[Longest Absolute File Path](./Algorithms/0388.longest-absolute-file-path)|36%|Medium| |
 |389|[Find the Difference](./Algorithms/0389.find-the-difference)|50%|Easy| |
-|390| * Elimination Game|42%|Medium| |
+|390|[Elimination Game](./Algorithms/0390.elimination-game)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |391|[Perfect Rectangle](./Algorithms/0391.perfect-rectangle)|26%|Hard| |
 |392|[Is Subsequence](./Algorithms/0392.is-subsequence)|44%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |393|[UTF-8 Validation](./Algorithms/0393.utf-8-validation)|34%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -310,7 +310,7 @@
 |397|[Integer Replacement](./Algorithms/0397.integer-replacement)|30%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |398| * Random Pick Index|43%|Medium| |
 |399| * Evaluate Division|41%|Medium| |
-|400| * Nth Digit|30%|Easy| |
+|400|[Nth Digit](./Algorithms/0400.nth-digit)|30%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |401|[Binary Watch](./Algorithms/0401.binary-watch)|44%|Easy| |
 |402| * Remove K Digits|26%|Medium| |
 |403|[Frog Jump](./Algorithms/0403.frog-jump)|32%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -488,9 +488,9 @@
 |678| * Valid Parenthesis String|28%|Medium| |
 |679| * 24 Game|38%|Hard| |
 |680| * Valid Palindrome II|31%|Easy| |
-|681| * Next Closest Time|43%|Medium| |
+|681| * Next Closest Time|42%|Medium| |
 |682| * Baseball Game|58%|Easy| |
-|683| * K Empty Slots|36%|Hard| |
+|683| * K Empty Slots|37%|Hard| |
 |684| * Redundant Connection|37%|Medium| |
 |685| * Redundant Connection II|28%|Hard| |
 |686| * Repeated String Match|31%|Easy| |
