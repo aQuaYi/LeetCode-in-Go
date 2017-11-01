@@ -1,8 +1,8 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 答题进度](https://img.shields.io/badge/Progress-63%25-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 排名](https://img.shields.io/badge/Ranking-10367-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 答题进度](https://img.shields.io/badge/Progress-64%25-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/Ranking-9772-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 
@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|88|160|67|315|
+|**Accepted**|90|160|67|317|
 |**Total**|147|246|100|493|
 
 ## 题解
@@ -82,7 +82,7 @@
 |61|[Rotate List](./Algorithms/0061.rotate-list)|24%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |62|[Unique Paths](./Algorithms/0062.unique-paths)|41%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |63|[Unique Paths II](./Algorithms/0063.unique-paths-ii)|31%|Medium| |
-|64|[Minimum Path Sum](./Algorithms/0064.minimum-path-sum)|38%|Medium| |
+|64|[Minimum Path Sum](./Algorithms/0064.minimum-path-sum)|39%|Medium| |
 |65|[Valid Number](./Algorithms/0065.valid-number)|12%|Hard| |
 |66|[Plus One](./Algorithms/0066.plus-one)|38%|Easy| |
 |67|[Add Binary](./Algorithms/0067.add-binary)|33%|Easy| |
@@ -314,7 +314,7 @@
 |401|[Binary Watch](./Algorithms/0401.binary-watch)|44%|Easy| |
 |402| * Remove K Digits|26%|Medium| |
 |403|[Frog Jump](./Algorithms/0403.frog-jump)|32%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|404| * Sum of Left Leaves|47%|Easy| |
+|404|[Sum of Left Leaves](./Algorithms/0404.sum-of-left-leaves)|47%|Easy| |
 |405|[Convert a Number to Hexadecimal](./Algorithms/0405.convert-a-number-to-hexadecimal)|41%|Easy| |
 |406| * Queue Reconstruction by Height|56%|Medium| |
 |407| * Trapping Rain Water II|37%|Hard| |
@@ -323,7 +323,7 @@
 |412| * Fizz Buzz|58%|Easy| |
 |413|[Arithmetic Slices](./Algorithms/0413.arithmetic-slices)|54%|Medium| |
 |414|[Third Maximum Number](./Algorithms/0414.third-maximum-number)|27%|Easy| |
-|415| * Add Strings|41%|Easy| |
+|415|[Add Strings](./Algorithms/0415.add-strings)|41%|Easy| |
 |416|[Partition Equal Subset Sum](./Algorithms/0416.partition-equal-subset-sum)|39%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |417| * Pacific Atlantic Water Flow|33%|Medium| |
 |419| * Battleships in a Board|62%|Medium| |
@@ -381,7 +381,7 @@
 |494| * Target Sum|43%|Medium| |
 |495|[Teemo Attacking](./Algorithms/0495.teemo-attacking)|51%|Medium| |
 |496| * Next Greater Element I|56%|Easy| |
-|498| * Diagonal Traverse|45%|Medium| |
+|498| * Diagonal Traverse|46%|Medium| |
 |500| * Keyboard Row|59%|Easy| |
 |501| * Find Mode in Binary Search Tree|37%|Easy| |
 |502| * IPO|36%|Hard| |
@@ -490,7 +490,7 @@
 |680| * Valid Palindrome II|31%|Easy| |
 |681| * Next Closest Time|42%|Medium| |
 |682| * Baseball Game|58%|Easy| |
-|683| * K Empty Slots|37%|Hard| |
+|683| * K Empty Slots|36%|Hard| |
 |684| * Redundant Connection|37%|Medium| |
 |685| * Redundant Connection II|28%|Hard| |
 |686| * Repeated String Match|31%|Easy| |
@@ -505,7 +505,7 @@
 |697| * Degree of an Array|48%|Easy| |
 |698| * Partition to K Equal Sum Subsets|35%|Medium| |
 |699| * Falling Squares|36%|Hard| |
-|712| * Minimum ASCII Delete Sum for Two Strings|49%|Medium| |
+|712| * Minimum ASCII Delete Sum for Two Strings|50%|Medium| |
 |713| * Subarray Product Less Than K|33%|Medium| |
 |714| * Best Time to Buy and Sell Stock with Transaction Fee|34%|Medium| |
 |715| * Range Module|30%|Hard| |
