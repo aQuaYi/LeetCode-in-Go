@@ -6,34 +6,33 @@ import (
 
 // Solution 是答案
 type Solution struct {
-	original []int
+	origNums, nums []int
 }
 
 // Constructor 构建 Solution
 func Constructor(nums []int) Solution {
 	o := make([]int, len(nums))
+	n := make([]int, len(nums))
 	copy(o, nums)
-	return Solution{original: o}
+	copy(n, nums)
+	return Solution{origNums: o, nums: n}
 }
 
 // Reset the array to its original configuration and return it.
 func (s Solution) Reset() []int {
-	return s.original
+	return s.origNums
 }
 
 // Shuffle returns a random shuffling of the array.
 func (s Solution) Shuffle() []int {
-	temp := make([]int, len(s.original))
-	copy(temp, s.original)
-
-	i, j := len(s.original), 0
+	i, j := len(s.nums), 0
 	for 1 < i {
 		j = rand.Intn(i)
-		temp[i-1], temp[j] = temp[j], temp[i-1]
+		s.nums[i-1], s.nums[j] = s.nums[j], s.nums[i-1]
 		i--
 	}
 
-	return temp
+	return s.nums
 }
 
 /**
