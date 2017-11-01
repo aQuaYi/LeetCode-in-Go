@@ -21,9 +21,11 @@ Return 4.
 ```
 
 ![p1](https://leetcode.com/static/images/problemset/rainwater_empty.png)
+
 The above image represents the elevation map [[1,4,3,1,3,2],[3,2,1,3,2,4],[2,3,3,2,3,1]] before the rain.
 
 ![p2](https://leetcode.com/static/images/problemset/rainwater_fill.png)
+
 After the rain, water are trapped between the blocks. The total volume of water trapped is 4.
 
 ## 解题思路
