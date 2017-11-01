@@ -11,6 +11,8 @@ func lastRemaining(n int) int {
 	step := 1
 	for remain > 1 {
 		if isLeftStart || remain%2 == 1 {
+			// 最小的数字被删除
+			// 原先第二小的数字，变成了最小的啦
 			min += step
 		}
 
