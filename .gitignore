@@ -18,3 +18,4 @@
 helper
 *.zip
 tasks.txt
+testDir/
