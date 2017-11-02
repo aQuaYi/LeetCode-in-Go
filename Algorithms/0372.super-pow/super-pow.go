@@ -8,8 +8,8 @@ func superPow(a int, b []int) int {
 	powmod := func(a, k int) int {
 		a %= base
 		res := 1
-		var i int
-		for i = 0; i < k; i++ {
+
+		for i := 0; i < k; i++ {
 			res = (res * a) % base
 		}
 		return res
