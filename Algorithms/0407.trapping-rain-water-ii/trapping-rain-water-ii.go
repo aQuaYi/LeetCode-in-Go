@@ -17,15 +17,14 @@ func trapRainWater(hs [][]int) int {
 		isVisited[i] = make([]bool, n)
 	}
 
-	var i, j int
 	// 把四周的格子先放入 pq
-	for i = 0; i < m; i++ {
+	for i := 0; i < m; i++ {
 		isVisited[i][0] = true
 		isVisited[i][n-1] = true
 		pq = append(pq, cell{row: i, col: 0, height: hs[i][0]})
 		pq = append(pq, cell{row: i, col: n - 1, height: hs[i][n-1]})
 	}
-	for j = 0; j < n; j++ {
+	for j := 0; j < n; j++ {
 		isVisited[0][j] = true
 		isVisited[m-1][j] = true
 		pq = append(pq, cell{row: 0, col: j, height: hs[0][j]})
@@ -47,8 +46,8 @@ func trapRainWater(hs [][]int) int {
 		c := heap.Pop(&pq).(cell)
 		// 依次检查 c 周围的 4 个方向的 cell
 		for _, d := range dirs {
-			i = c.row + d[0]
-			j = c.col + d[1]
+			i := c.row + d[0]
+			j := c.col + d[1]
 
 			if 0 <= i && i < m && 0 <= j && j < n && !isVisited[i][j] {
 				isVisited[i][j] = true
