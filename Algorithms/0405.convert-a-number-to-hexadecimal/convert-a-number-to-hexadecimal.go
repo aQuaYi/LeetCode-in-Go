@@ -25,8 +25,7 @@ func toHex(num int) string {
 	}
 
 	hex := ""
-	var i int
-	for i = 0; i < 8 && num != 0; i++ {
+	for i := 0; i < 8 && num != 0; i++ {
 		hex = h[num&15] + hex
 		num >>= 4
 	}
