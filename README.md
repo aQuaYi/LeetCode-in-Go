@@ -2,7 +2,7 @@
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 答题进度](https://img.shields.io/badge/Progress-65%25-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 排名](https://img.shields.io/badge/Ranking-9772-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/Ranking-9228-blue.svg)](https://leetcode.com/aQuaYi/)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 
@@ -64,7 +64,7 @@
 |43|[Multiply Strings](./Algorithms/0043.multiply-strings)|27%|Medium| |
 |44|[Wildcard Matching](./Algorithms/0044.wildcard-matching)|20%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |45|[Jump Game II](./Algorithms/0045.jump-game-ii)|26%|Hard| |
-|46|[Permutations](./Algorithms/0046.permutations)|44%|Medium| |
+|46|[Permutations](./Algorithms/0046.permutations)|45%|Medium| |
 |47|[Permutations II](./Algorithms/0047.permutations-ii)|33%|Medium| |
 |48|[Rotate Image](./Algorithms/0048.rotate-image)|39%|Medium| |
 |49|[Group Anagrams](./Algorithms/0049.group-anagrams)|36%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -201,7 +201,7 @@
 |215|[Kth Largest Element in an Array](./Algorithms/0215.kth-largest-element-in-an-array)|39%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |216|[Combination Sum III](./Algorithms/0216.combination-sum-iii)|45%|Medium| |
 |217|[Contains Duplicate](./Algorithms/0217.contains-duplicate)|46%|Easy| |
-|218|[The Skyline Problem](./Algorithms/0218.the-skyline-problem)|27%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|218|[The Skyline Problem](./Algorithms/0218.the-skyline-problem)|28%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |219|[Contains Duplicate II](./Algorithms/0219.contains-duplicate-ii)|32%|Easy| |
 |220|[Contains Duplicate III](./Algorithms/0220.contains-duplicate-iii)|18%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |221|[Maximal Square](./Algorithms/0221.maximal-square)|29%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -490,28 +490,28 @@
 |680| * Valid Palindrome II|31%|Easy| |
 |681| * Next Closest Time|42%|Medium| |
 |682| * Baseball Game|58%|Easy| |
-|683| * K Empty Slots|37%|Hard| |
+|683| * K Empty Slots|36%|Hard| |
 |684| * Redundant Connection|37%|Medium| |
 |685| * Redundant Connection II|28%|Hard| |
 |686| * Repeated String Match|31%|Easy| |
-|687| * Longest Univalue Path|33%|Easy| |
-|688| * Knight Probability in Chessboard|38%|Medium| |
+|687| * Longest Univalue Path|32%|Easy| |
+|688| * Knight Probability in Chessboard|39%|Medium| |
 |689| * Maximum Sum of 3 Non-Overlapping Subarrays|41%|Hard| |
 |691| * Stickers to Spell Word|32%|Hard| |
 |692| * Top K Frequent Words|41%|Medium| |
 |693| * Binary Number with Alternating Bits|54%|Easy| |
 |695| * Max Area of Island|53%|Easy| |
 |696| * Count Binary Substrings|51%|Easy| |
-|697| * Degree of an Array|48%|Easy| |
+|697| * Degree of an Array|47%|Easy| |
 |698| * Partition to K Equal Sum Subsets|35%|Medium| |
 |699| * Falling Squares|36%|Hard| |
 |712| * Minimum ASCII Delete Sum for Two Strings|50%|Medium| |
 |713| * Subarray Product Less Than K|32%|Medium| |
-|714| * Best Time to Buy and Sell Stock with Transaction Fee|34%|Medium| |
+|714| * Best Time to Buy and Sell Stock with Transaction Fee|35%|Medium| |
 |715| * Range Module|30%|Hard| |
 |717| * 1-bit and 2-bit Characters|53%|Easy| |
 |718| * Maximum Length of Repeated Subarray|38%|Medium| |
-|719| * Find K-th Smallest Pair Distance|22%|Hard| |
+|719| * Find K-th Smallest Pair Distance|23%|Hard| |
 
 以下免费的算法题，暂时不能使用 Go 解答
 
