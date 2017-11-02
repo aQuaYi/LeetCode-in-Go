@@ -56,7 +56,7 @@ func getHead(lc *leetcode) string {
 	headFormat := string(read("README_HEAD.md"))
 	return fmt.Sprintf(headFormat,
 		lc.Username, lc.Username,
-		lc.Progress, lc.Username,
 		lc.Ranking, lc.Username,
+		lc.Progress, lc.Username,
 	)
 }
