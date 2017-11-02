@@ -7,13 +7,12 @@ func maxNumber(nums1 []int, nums2 []int, k int) []int {
 	res := make([]int, k)
 	var temp []int
 
-	var i int
 	// for 循环作用是，每次
 	//   从 nums1 中取 i   个数，得到temp1，在保证顺序的前提下，其值最大
 	//   从 nums2 中取 k-i 个数，得到temp2，在保证顺序的前提下，其值最大
 	//   把 temp1 和 temp2 混合成 temp，使其值最大。
 	//   记录 最大的 temp 值，就是答案
-	for i = 0; i <= size1 && i <= k; i++ {
+	for i := 0; i <= size1 && i <= k; i++ {
 		if size2 < k-i { // nums2 不够长
 			continue
 		}
