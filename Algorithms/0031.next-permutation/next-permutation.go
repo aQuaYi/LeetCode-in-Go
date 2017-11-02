@@ -3,13 +3,13 @@ package Problem0031
 import "sort"
 
 func nextPermutation(nums []int) {
-	var i int
 	length := len(nums)
 
 	if length <= 1 {
 		return
 	}
 
+	var i int
 	for i = length - 1; i >= 1; i-- {
 		if nums[i] > nums[i-1] {
 			break
