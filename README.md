@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|91|162|68|321|
+|**Accepted**|92|162|68|322|
 |**Total**|147|246|100|493|
 
 ## 题解
@@ -101,7 +101,7 @@
 |80|[Remove Duplicates from Sorted Array II](./Algorithms/0080.remove-duplicates-from-sorted-array-ii)|36%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |81|[Search in Rotated Sorted Array II](./Algorithms/0081.search-in-rotated-sorted-array-ii)|32%|Medium| |
 |82|[Remove Duplicates from Sorted List II](./Algorithms/0082.remove-duplicates-from-sorted-list-ii)|29%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|83|[Remove Duplicates from Sorted List](./Algorithms/0083.remove-duplicates-from-sorted-list)|39%|Easy| |
+|83|[Remove Duplicates from Sorted List](./Algorithms/0083.remove-duplicates-from-sorted-list)|40%|Easy| |
 |84|[Largest Rectangle in Histogram](./Algorithms/0084.largest-rectangle-in-histogram)|27%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |85|[Maximal Rectangle](./Algorithms/0085.maximal-rectangle)|28%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |86|[Partition List](./Algorithms/0086.partition-list)|33%|Medium| |
@@ -320,7 +320,7 @@
 |407|[Trapping Rain Water II](./Algorithms/0407.trapping-rain-water-ii)|37%|Hard| |
 |409| * Longest Palindrome|45%|Easy| |
 |410|[Split Array Largest Sum](./Algorithms/0410.split-array-largest-sum)|38%|Hard| |
-|412| * Fizz Buzz|58%|Easy| |
+|412|[Fizz Buzz](./Algorithms/0412.fizz-buzz)|58%|Easy| |
 |413|[Arithmetic Slices](./Algorithms/0413.arithmetic-slices)|54%|Medium| |
 |414|[Third Maximum Number](./Algorithms/0414.third-maximum-number)|27%|Easy| |
 |415|[Add Strings](./Algorithms/0415.add-strings)|41%|Easy| |
@@ -494,7 +494,7 @@
 |684| * Redundant Connection|37%|Medium| |
 |685| * Redundant Connection II|28%|Hard| |
 |686| * Repeated String Match|31%|Easy| |
-|687| * Longest Univalue Path|32%|Easy| |
+|687| * Longest Univalue Path|33%|Easy| |
 |688| * Knight Probability in Chessboard|39%|Medium| |
 |689| * Maximum Sum of 3 Non-Overlapping Subarrays|41%|Hard| |
 |691| * Stickers to Spell Word|32%|Hard| |
