@@ -5,9 +5,9 @@ func combinationSum4(nums []int, target int) int {
 	// dp[target] 是答案
 	dp := make([]int, target+1)
 	dp[0] = 1
-	var i, j int
-	for i = 1; i <= target; i++ {
-		for j = range nums {
+
+	for i := 1; i <= target; i++ {
+		for j := range nums {
 			if nums[j] <= i {
 				dp[i] += dp[i-nums[j]]
 			}
