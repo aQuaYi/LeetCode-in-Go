@@ -9,21 +9,18 @@ func palindromePairs(words []string) [][]int {
 
 	hash := make(map[string]int, size)
 
-	var i, j, k int
-	var ok bool
-
-	for i = 0; i < size; i++ {
+	for i := 0; i < size; i++ {
 		hash[words[i]] = i
 	}
 
-	for i = 0; i < len(words); i++ {
-		for k = 0; k <= len(words[i]); k++ {
+	for i := 0; i < len(words); i++ {
+		for k := 0; k <= len(words[i]); k++ {
 			right := words[i][k:]
 			left := words[i][:k]
 
 			if isPalindrome(right) {
 				leftRev := reverse(left)
-				if j, ok = hash[leftRev]; ok && i != j {
+				if j, ok := hash[leftRev]; ok && i != j {
 					res = append(res, []int{i, j})
 				}
 			}
@@ -36,7 +33,7 @@ func palindromePairs(words []string) [][]int {
 			// 需要，len(left) != 0 来过滤掉这种情况
 			if len(left) != 0 && isPalindrome(left) {
 				rightRev := reverse(right)
-				if j, ok = hash[rightRev]; ok && i != j {
+				if j, ok := hash[rightRev]; ok && i != j {
 					res = append(res, []int{j, i})
 				}
 			}
