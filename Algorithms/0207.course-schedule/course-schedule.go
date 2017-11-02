@@ -33,6 +33,7 @@ func buildPres(next [][]int) []int {
 
 func check(next [][]int, pres []int, numCourses int) bool {
 	var i, j int
+
 	// 第 i 个完成的课程的代号是 j
 	for i = 0; i < numCourses; i++ {
 		// 完成首先遇到的，无需先修课程的课程
