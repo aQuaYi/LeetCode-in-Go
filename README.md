@@ -542,7 +542,7 @@
 
 ## helper
 
-[helper](./helper.v5) 会帮助处理大部分琐碎的工作。
+[helper](./helper.v5) 会处理大部分琐碎的工作。
 
 ## notes
 
