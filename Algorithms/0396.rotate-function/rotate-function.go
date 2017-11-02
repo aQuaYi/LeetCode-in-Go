@@ -3,14 +3,14 @@ package Problem0396
 func maxRotateFunction(a []int) int {
 	n := len(a)
 
-	var i, F, sum int
-	for i = 0; i < n; i++ {
+	var F, sum int
+	for i := 0; i < n; i++ {
 		F += i * a[i]
 		sum += a[i]
 	}
 
 	maxF := F
-	for i = n - 1; 1 <= i; i-- {
+	for i := n - 1; 1 <= i; i-- {
 		F += sum - n*a[i]
 		maxF = max(F, maxF)
 	}
