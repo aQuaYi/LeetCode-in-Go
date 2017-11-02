@@ -3,23 +3,20 @@ package Problem0412
 import "strconv"
 
 func fizzBuzz(n int) []string {
-	res := make([]string, 0, n)
-	for i := 1; i <= n; i++ {
-		temp := ""
+	res := make([]string, n)
 
-		if i%3 == 0 {
-			temp = "Fizz"
+	for i := range res {
+		x := i + 1
+		switch {
+		case x%3 == 0:
+			res[i] = "Fizz"
+		case x%5 == 0:
+			res[i] = "Buzz"
+		case x%15 == 0:
+			res[i] = "FizzBuzz"
+		default:
+			res[i] = strconv.Itoa(x)
 		}
-
-		if i%5 == 0 {
-			temp += "Buzz"
-		}
-
-		if temp == "" {
-			temp = strconv.Itoa(i)
-		}
-
-		res = append(res, temp)
 	}
 
 	return res
