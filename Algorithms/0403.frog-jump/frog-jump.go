@@ -14,8 +14,7 @@ func canCross(stones []int) bool {
 
 	hs := make(map[int]bool, n)
 
-	var i int
-	for i = 0; i < n; i++ {
+	for i := 0; i < n; i++ {
 		if i > 3 && stones[i] > stones[i-1]*2 {
 			return false
 		}
@@ -27,10 +26,9 @@ func canCross(stones []int) bool {
 		if pos+jump-1 == last || pos+jump == last || pos+jump+1 == last {
 			return true
 		}
-		var i int
 		// i--
 		// 先跨大步
-		for i = 1; -1 <= i; i-- {
+		for i := 1; -1 <= i; i-- {
 			if jump+i > 0 && hs[pos+jump+i] {
 				if dfs(hs, pos+jump+i, jump+i) {
 					return true
