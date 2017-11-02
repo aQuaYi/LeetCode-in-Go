@@ -20,8 +20,7 @@ func readBinaryWatch(n int) []string {
 			return
 		}
 
-		var i int
-		for i = idx; i < len(leds)-n+1; i++ {
+		for i := idx; i < len(leds)-n+1; i++ {
 			leds[i] = true
 			dfs(i+1, n-1)
 			leds[i] = false
