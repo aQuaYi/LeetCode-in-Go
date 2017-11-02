@@ -18,8 +18,7 @@ func removeDuplicateLetters(s string) string {
 
 	// index of min character
 	imc := 0
-	var i int
-	for i = range s {
+	for i := range s {
 		if s[imc] > s[i] {
 			imc = i
 		}
