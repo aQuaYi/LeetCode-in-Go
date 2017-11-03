@@ -35,6 +35,13 @@ var tcs = []struct {
 		[][]string{[]string{"a", "c"}, []string{"b", "d"}, []string{"b", "a"}, []string{"d", "c"}},
 		[]float64{-1.00000, -1.00000, 1.00000, 1.00000},
 	},
+
+	{
+		[][]string{[]string{"x1", "x2"}, []string{"x2", "x3"}, []string{"x1", "x4"}, []string{"x2", "x5"}},
+		[]float64{3.0, 0.5, 3.4, 5.6},
+		[][]string{[]string{"x2", "x4"}, []string{"x1", "x5"}, []string{"x1", "x3"}, []string{"x5", "x5"}, []string{"x5", "x1"}, []string{"x3", "x4"}, []string{"x4", "x3"}, []string{"x6", "x6"}, []string{"x0", "x0"}},
+		[]float64{1.13333, 16.80000, 1.50000, 1.00000, 0.05952, 2.26667, 0.44118, -1.00000, -1.00000},
+	},
 	// 可以有多个 testcase
 }
 
