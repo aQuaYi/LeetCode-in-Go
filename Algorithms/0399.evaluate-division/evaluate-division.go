@@ -5,29 +5,18 @@ import "sort"
 func calcEquation(equations [][]string, values []float64, queries [][]string) []float64 {
 	m := make(map[string]float64, len(equations)*2)
 
-	sort.Sort(equationSlice(equations))
+	ev := equationsAndValues{e: equations, v: values}
 
-	for i, e := range equations {
-		v0, ok0 := m[e[0]]
-		v1, ok1 := m[e[1]]
+	sort.Sort(ev)
 
-		if ok0 && ok1 {
-			continue
-		}
-
-		if ok0 {
-			m[e[1]] = v0 / values[i]
-			continue
-		}
-
+	for i := len(ev.e) - 1; 0 <= i; i-- {
+		v1, ok1 := m[ev.e[i][1]]
 		if ok1 {
-			m[e[0]] = v1 * values[i]
-			continue
+			m[ev.e[i][0]] = v1 * ev.v[i]
+		} else {
+			m[ev.e[i][1]] = 1.0
+			m[ev.e[i][0]] = ev.v[i]
 		}
-
-		m[e[1]] = 1.0
-		m[e[0]] = values[i]
-
 	}
 
 	res := make([]float64, len(queries))
@@ -45,16 +34,20 @@ func calcEquation(equations [][]string, values []float64, queries [][]string) []
 	return res
 }
 
-type equationSlice [][]string
-
-func (e equationSlice) Len() int {
-	return len(e)
+type equationsAndValues struct {
+	e [][]string
+	v []float64
 }
 
-func (e equationSlice) Less(i, j int) bool {
-	return e[i][0] < e[j][0]
+func (ev equationsAndValues) Len() int {
+	return len(ev.e)
 }
 
-func (e equationSlice) Swap(i, j int) {
-	e[i], e[j] = e[j], e[i]
+func (ev equationsAndValues) Less(i, j int) bool {
+	return ev.e[i][0] < ev.e[j][0]
+}
+
+func (ev equationsAndValues) Swap(i, j int) {
+	ev.e[i], ev.e[j] = ev.e[j], ev.e[i]
+	ev.v[i], ev.v[j] = ev.v[j], ev.v[i]
 }
