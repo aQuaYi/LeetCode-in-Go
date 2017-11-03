@@ -8,12 +8,12 @@ func fizzBuzz(n int) []string {
 	for i := range res {
 		x := i + 1
 		switch {
-		case x%3 == 0:
-			res[i] = "Fizz"
-		case x%5 == 0:
-			res[i] = "Buzz"
 		case x%15 == 0:
 			res[i] = "FizzBuzz"
+		case x%5 == 0:
+			res[i] = "Buzz"
+		case x%3 == 0:
+			res[i] = "Fizz"
 		default:
 			res[i] = strconv.Itoa(x)
 		}
