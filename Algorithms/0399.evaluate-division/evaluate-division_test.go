@@ -51,7 +51,10 @@ func Test_calcEquation(t *testing.T) {
 
 	for _, tc := range tcs {
 		fmt.Printf("~~%v~~\n", tc)
-		ast.Equal(tc.ans, calcEquation(tc.equations, tc.values, tc.queries), "输入:%v", tc)
+		ans := calcEquation(tc.equations, tc.values, tc.queries)
+		for i := range ans {
+			ast.InDelta(tc.ans[i], ans[i], 0.0001)
+		}
 	}
 }
 
