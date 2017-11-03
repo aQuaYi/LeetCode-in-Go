@@ -6,7 +6,7 @@ func removeKdigits(num string, k int) string {
 	}
 	res := make([]byte, len(num)-k)
 	var i, j int
-	for 0 < k && i+1 < len(num) {
+	for 0 < k && i+1 < len(num) && j < len(res) {
 		if num[i] <= num[i+1] {
 			res[j] = num[i]
 			i++
