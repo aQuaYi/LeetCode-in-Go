@@ -13,6 +13,8 @@ var tcs = []struct {
 	ans int
 }{
 
+	{" Hello, my name is John", 5},
+
 	{"Hello, my name is John", 5},
 
 	// 可以有多个 testcase
