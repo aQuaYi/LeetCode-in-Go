@@ -1,7 +1,11 @@
 package Problem0399
 
+import "sort"
+
 func calcEquation(equations [][]string, values []float64, queries [][]string) []float64 {
 	m := make(map[string]float64, len(equations)*2)
+
+	sort.Sort(equationSlice(equations))
 
 	for i, e := range equations {
 		v0, ok0 := m[e[0]]
@@ -39,4 +43,18 @@ func calcEquation(equations [][]string, values []float64, queries [][]string) []
 	}
 
 	return res
+}
+
+type equationSlice [][]string
+
+func (e equationSlice) Len() int {
+	return len(e)
+}
+
+func (e equationSlice) Less(i, j int) bool {
+	return e[i][0] < e[j][0]
+}
+
+func (e equationSlice) Swap(i, j int) {
+	e[i], e[j] = e[j], e[i]
 }
