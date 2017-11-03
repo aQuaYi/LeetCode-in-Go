@@ -13,7 +13,10 @@ func calcEquation(equations [][]string, values []float64, queries [][]string) []
 
 	for i := len(ev.e) - 1; 0 <= i; i-- {
 		v1, ok1 := m[ev.e[i][1]]
-		if ok1 {
+		_, ok0 := m[ev.e[i][0]]
+		if ok0 {
+			continue
+		} else if ok1 {
 			m[ev.e[i][0]] = v1 * ev.v[i]
 			z[ev.e[i][0]] = zi
 		} else {
