@@ -22,6 +22,13 @@ var tcs = []struct {
 		[]float64{6.0, 0.5, -1.0, 1.0, -1.0},
 	},
 
+	{
+		[][]string{[]string{"a", "b"}, []string{"e", "f"}, []string{"b", "e"}},
+		[]float64{3.4, 1.4, 2.3},
+		[][]string{[]string{"b", "a"}, []string{"a", "f"}, []string{"f", "f"}, []string{"e", "e"}, []string{"c", "c"}, []string{"a", "c"}, []string{"f", "e"}},
+		[]float64{0.29412, 10.94800, 1.00000, 1.00000, -1.00000, -1.00000, 0.71429},
+	},
+
 	// 可以有多个 testcase
 }
 
