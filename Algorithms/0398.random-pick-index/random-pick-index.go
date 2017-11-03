@@ -13,7 +13,6 @@ func Constructor(nums []int) Solution {
 	for i, v := range nums {
 		m[v] = append(m[v], i)
 	}
-
 	return Solution{m: m}
 }
 
