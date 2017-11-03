@@ -1,28 +1,30 @@
 package Problem0402
 
 func removeKdigits(num string, k int) string {
-	if len(num) <= k {
-		return "0"
-	}
-	res := make([]byte, len(num)-k)
-	i, j := len(num)-1, len(res)-1
-	for 0 < k && 0 < i && 0 <= j {
-		if num[i-1] > num[i] {
-			res[j] = num[i]
-			i--
-			j--
-			continue
+	// 返回值的长度
+	digits := len(num) - k
+	stack := make([]byte, len(num))
+	top := 0
+
+	for i := range num {
+		// 在还能删除的前提下
+		// 从上往下，删除 stack 中所有比 num[i] 大的数
+		for top > 0 && stack[top-1] > num[i] && k > 0 {
+			top--
+			k--
 		}
-		i--
-		k--
-	}
-	if 0 < j {
-		copy(res[:j], num[:i])
+		stack[top] = num[i]
+		top++
 	}
 
-	i = 0
-	for i < len(res)-1 && res[i] == '0' {
+	// 处理开头的　'0'
+	i := 0
+	for i < digits && stack[i] == '0' {
 		i++
 	}
-	return string(res[i:])
+
+	if i == digits {
+		return "0"
+	}
+	return string(stack[i:digits])
 }
