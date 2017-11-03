@@ -13,6 +13,8 @@ var tcs = []struct {
 	ans int
 }{
 
+	{"", 0},
+
 	{" Hello, my name is John", 5},
 
 	{"Hello, my name is John", 5},
