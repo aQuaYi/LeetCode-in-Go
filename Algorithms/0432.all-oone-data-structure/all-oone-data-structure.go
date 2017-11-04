@@ -4,14 +4,14 @@ import "container/heap"
 
 // AllOne 是解题所需的结构
 type AllOne struct {
-	m   map[string]*item
+	m   map[string]*entry
 	max maxPQ
 	min minPQ
 }
 
 // Constructor initialize your data structure here.
 func Constructor() AllOne {
-	return AllOne{m: make(map[string]*item),
+	return AllOne{m: make(map[string]*entry),
 		max: maxPQ{},
 		min: minPQ{},
 	}
@@ -19,29 +19,29 @@ func Constructor() AllOne {
 
 // Inc inserts a new key <Key> with value 1. Or increments an existing key by 1.
 func (a *AllOne) Inc(key string) {
-	if _, ok := a.m[key]; ok {
-		a.m[key].value++
-		heap.Fix(&a.max, a.m[key].maxIndex)
-		heap.Fix(&a.min, a.m[key].minIndex)
+	if ep, ok := a.m[key]; ok {
+		ep.value++
+		heap.Fix(&a.max, ep.maxIndex)
+		heap.Fix(&a.min, ep.maxIndex)
 	} else {
-		ip := &item{key: key, value: 1}
-		a.m[key] = ip
-		heap.Push(&a.max, ip)
-		heap.Push(&a.min, ip)
+		ep = &entry{key: key, value: 1}
+		a.m[key] = ep
+		heap.Push(&a.max, ep)
+		heap.Push(&a.min, ep)
 	}
 }
 
 // Dec decrements an existing key by 1. If Key's value is 1, remove it from the data structure.
 func (a *AllOne) Dec(key string) {
-	if _, ok := a.m[key]; !ok {
+	if ep, ok := a.m[key]; !ok {
 		return
-	} else if a.m[key].value == 1 {
-		heap.Remove(&a.max, a.m[key].maxIndex)
-		heap.Remove(&a.min, a.m[key].minIndex)
+	} else if ep.value == 1 {
+		heap.Remove(&a.max, ep.maxIndex)
+		heap.Remove(&a.min, ep.minIndex)
 	} else {
-		a.m[key].value--
-		heap.Fix(&a.max, a.m[key].maxIndex)
-		heap.Fix(&a.min, a.m[key].minIndex)
+		ep.value--
+		heap.Fix(&a.max, ep.maxIndex)
+		heap.Fix(&a.min, ep.minIndex)
 	}
 }
 
@@ -70,8 +70,8 @@ func (a *AllOne) GetMinKey() string {
  * param_4 := obj.GetMinKey();
  */
 
-// item 是 priorityQueue 中的元素
-type item struct {
+// entry 是 priorityQueue 中的元素
+type entry struct {
 	key   string
 	value int
 	// index 是 item 在 heap 中的索引号
@@ -82,7 +82,7 @@ type item struct {
 }
 
 // priorityQueue implements heap.Interface and holds items.
-type minPQ []*item
+type minPQ []*entry
 
 func (pq minPQ) Len() int { return len(pq) }
 
@@ -99,7 +99,7 @@ func (pq minPQ) Swap(i, j int) {
 // Push 往 pq 中放 item
 func (pq *minPQ) Push(x interface{}) {
 	n := len(*pq)
-	item := x.(*item)
+	item := x.(*entry)
 	item.minIndex = n
 	*pq = append(*pq, item)
 }
@@ -115,7 +115,7 @@ func (pq *minPQ) Pop() interface{} {
 }
 
 // priorityQueue implements heap.Interface and holds items.
-type maxPQ []*item
+type maxPQ []*entry
 
 func (pq maxPQ) Len() int { return len(pq) }
 
@@ -132,7 +132,7 @@ func (pq maxPQ) Swap(i, j int) {
 // Push 往 pq 中放 item
 func (pq *maxPQ) Push(x interface{}) {
 	n := len(*pq)
-	item := x.(*item)
+	item := x.(*entry)
 	item.maxIndex = n
 	*pq = append(*pq, item)
 }
