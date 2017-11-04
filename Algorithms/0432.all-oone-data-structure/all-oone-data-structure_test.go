@@ -20,6 +20,11 @@ func Test_AllOne(t *testing.T) {
 	ast.Equal("6", a.GetMaxKey())
 	ast.Equal("6", a.GetMinKey())
 
+	a.Dec("6")
+
+	ast.Equal("", a.GetMaxKey())
+	ast.Equal("", a.GetMinKey())
+
 	maxKeys := []string{"7", "8", "9"}
 	minKeys := []string{"1", "2", "3"}
 
@@ -49,4 +54,8 @@ func Test_AllOne(t *testing.T) {
 
 	a.Dec("1")
 	ast.Equal("1", a.GetMinKey(), "无法获取 唯一的 min key")
+
+	// 以下是为了单元覆盖率
+	a.Dec("100")
+
 }
