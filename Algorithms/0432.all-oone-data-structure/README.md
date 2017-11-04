@@ -14,3 +14,4 @@ Challenge: Perform all these in O(1) time complexity.
 ## 解题思路
 
 见程序注释
+![100](432.100.png)
