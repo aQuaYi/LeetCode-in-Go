@@ -1,7 +1,7 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 排名](https://img.shields.io/badge/Ranking-9228-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/Ranking-8732-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 答题进度](https://img.shields.io/badge/Progress-66%25-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|93|165|69|327|
+|**Accepted**|93|165|70|328|
 |**Total**|147|246|100|493|
 
 ## 题解
@@ -94,7 +94,7 @@
 |73|[Set Matrix Zeroes](./Algorithms/0073.set-matrix-zeroes)|36%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |74|[Search a 2D Matrix](./Algorithms/0074.search-a-2d-matrix)|34%|Medium| |
 |75|[Sort Colors](./Algorithms/0075.sort-colors)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|76|[Minimum Window Substring](./Algorithms/0076.minimum-window-substring)|25%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|76|[Minimum Window Substring](./Algorithms/0076.minimum-window-substring)|26%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |77|[Combinations](./Algorithms/0077.combinations)|40%|Medium| |
 |78|[Subsets](./Algorithms/0078.subsets)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |79|[Word Search](./Algorithms/0079.word-search)|27%|Medium| |
@@ -331,7 +331,7 @@
 |421| * Maximum XOR of Two Numbers in an Array|46%|Medium| |
 |423| * Reconstruct Original Digits from English|44%|Medium| |
 |424| * Longest Repeating Character Replacement|42%|Medium| |
-|432| * All O`one Data Structure|28%|Hard| |
+|432|[All O`one Data Structure](./Algorithms/0432.all-oone-data-structure)|28%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |434|[Number of Segments in a String](./Algorithms/0434.number-of-segments-in-a-string)|36%|Easy| |
 |435| * Non-overlapping Intervals|41%|Medium| |
 |436| * Find Right Interval|41%|Medium| |
@@ -410,7 +410,7 @@
 |539| * Minimum Time Difference|45%|Medium| |
 |540| * Single Element in a Sorted Array|55%|Medium| |
 |541| * Reverse String II|43%|Easy| |
-|542| * 01 Matrix|33%|Medium| |
+|542| * 01 Matrix|32%|Medium| |
 |543| * Diameter of Binary Tree|44%|Easy| |
 |546| * Remove Boxes|33%|Hard| |
 |547| * Friend Circles|49%|Medium| |
@@ -430,10 +430,10 @@
 |575| * Distribute Candies|58%|Easy| |
 |576| * Out of Boundary Paths|30%|Medium| |
 |581|[Shortest Unsorted Continuous Subarray](./Algorithms/0581.shortest-unsorted-continuous-subarray)|29%|Easy|[❤](https://leetcode.com/list/oussv5j)|
-|583| * Delete Operation for Two Strings|44%|Medium| |
+|583| * Delete Operation for Two Strings|43%|Medium| |
 |587| * Erect the Fence|32%|Hard| |
 |591| * Tag Validator|29%|Hard| |
-|592| * Fraction Addition and Subtraction|46%|Medium| |
+|592| * Fraction Addition and Subtraction|45%|Medium| |
 |593| * Valid Square|40%|Medium| |
 |594| * Longest Harmonious Subsequence|40%|Easy| |
 |598| * Range Addition II|48%|Easy| |
@@ -448,7 +448,7 @@
 |623| * Add One Row to Tree|46%|Medium| |
 |628|[Maximum Product of Three Numbers](./Algorithms/0628.maximum-product-of-three-numbers)|45%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |629| * K Inverse Pairs Array|26%|Hard| |
-|630|[Course Schedule III](./Algorithms/0630.course-schedule-iii)|28%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|630|[Course Schedule III](./Algorithms/0630.course-schedule-iii)|27%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |632| * Smallest Range|41%|Hard| |
 |633| * Sum of Square Numbers|32%|Easy| |
 |636| * Exclusive Time of Functions|43%|Medium| |
@@ -494,13 +494,13 @@
 |684| * Redundant Connection|37%|Medium| |
 |685| * Redundant Connection II|28%|Hard| |
 |686| * Repeated String Match|31%|Easy| |
-|687| * Longest Univalue Path|32%|Easy| |
-|688| * Knight Probability in Chessboard|39%|Medium| |
+|687| * Longest Univalue Path|33%|Easy| |
+|688| * Knight Probability in Chessboard|38%|Medium| |
 |689| * Maximum Sum of 3 Non-Overlapping Subarrays|41%|Hard| |
 |691| * Stickers to Spell Word|32%|Hard| |
 |692| * Top K Frequent Words|41%|Medium| |
 |693| * Binary Number with Alternating Bits|54%|Easy| |
-|695| * Max Area of Island|53%|Easy| |
+|695| * Max Area of Island|52%|Easy| |
 |696| * Count Binary Substrings|51%|Easy| |
 |697| * Degree of an Array|47%|Easy| |
 |698| * Partition to K Equal Sum Subsets|35%|Medium| |
