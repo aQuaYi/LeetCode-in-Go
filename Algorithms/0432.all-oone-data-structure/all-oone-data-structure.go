@@ -5,8 +5,8 @@ import "container/heap"
 // AllOne 是解题所需的结构
 type AllOne struct {
 	m   map[string]*item
-	max maxPQ
-	min minPQ
+	max *maxPQ
+	min *minPQ
 }
 
 // Constructor initialize your data structure here.
