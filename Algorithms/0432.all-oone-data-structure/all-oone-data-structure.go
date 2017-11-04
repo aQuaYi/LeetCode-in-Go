@@ -4,7 +4,8 @@ import "container/heap"
 
 // AllOne 是解题所需的结构
 type AllOne struct {
-	m   map[string]*entry
+	m map[string]*entry
+	// 利用优先队列来维护 拥有极值的 key
 	max maxPQ
 	min minPQ
 }
@@ -72,16 +73,13 @@ func (a *AllOne) GetMinKey() string {
 
 // entry 是 priorityQueue 中的元素
 type entry struct {
-	key   string
-	value int
-	// index 是 item 在 heap 中的索引号
-	// item 加入 Priority Queue 后， Priority 会变化时，很有用
-	// 如果 item.priority 一直不变的话，可以删除 index
+	key      string
+	value    int
 	maxIndex int
 	minIndex int
 }
 
-// priorityQueue implements heap.Interface and holds items.
+// priorityQueue implements heap.Interface and holds entrys.
 type minPQ []*entry
 
 func (pq minPQ) Len() int { return len(pq) }
@@ -96,25 +94,25 @@ func (pq minPQ) Swap(i, j int) {
 	pq[j].minIndex = j
 }
 
-// Push 往 pq 中放 item
+// Push 往 pq 中放 entry
 func (pq *minPQ) Push(x interface{}) {
 	n := len(*pq)
-	item := x.(*entry)
-	item.minIndex = n
-	*pq = append(*pq, item)
+	entry := x.(*entry)
+	entry.minIndex = n
+	*pq = append(*pq, entry)
 }
 
-// Pop 从 pq 中取出最优先的 item
+// Pop 从 pq 中取出最优先的 entry
 func (pq *minPQ) Pop() interface{} {
 	old := *pq
 	n := len(old)
-	item := old[n-1]
-	item.minIndex = -1 // for safety
+	entry := old[n-1]
+	entry.minIndex = -1 // for safety
 	*pq = old[0 : n-1]
-	return item
+	return entry
 }
 
-// priorityQueue implements heap.Interface and holds items.
+// priorityQueue implements heap.Interface and holds entrys.
 type maxPQ []*entry
 
 func (pq maxPQ) Len() int { return len(pq) }
@@ -129,20 +127,20 @@ func (pq maxPQ) Swap(i, j int) {
 	pq[j].maxIndex = j
 }
 
-// Push 往 pq 中放 item
+// Push 往 pq 中放 entry
 func (pq *maxPQ) Push(x interface{}) {
 	n := len(*pq)
-	item := x.(*entry)
-	item.maxIndex = n
-	*pq = append(*pq, item)
+	entry := x.(*entry)
+	entry.maxIndex = n
+	*pq = append(*pq, entry)
 }
 
-// Pop 从 pq 中取出最优先的 item
+// Pop 从 pq 中取出最优先的 entry
 func (pq *maxPQ) Pop() interface{} {
 	old := *pq
 	n := len(old)
-	item := old[n-1]
-	item.maxIndex = -1 // for safety
+	entry := old[n-1]
+	entry.maxIndex = -1 // for safety
 	*pq = old[0 : n-1]
-	return item
+	return entry
 }
