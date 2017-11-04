@@ -1,21 +1,15 @@
 package Problem0432
 
-type item struct {
-	key   string
-	value int
-	index int
-}
-
 // AllOne 是解题所需的结构
 type AllOne struct {
-	m              map[string]*item
+	m              map[string]int
 	max, min       int
 	maxKey, minKey string
 }
 
 // Constructor initialize your data structure here.
 func Constructor() AllOne {
-	return AllOne{m: make(map[string]*item),
+	return AllOne{m: make(map[string]int),
 		max: -1 << 63,
 		min: 1<<63 - 1,
 	}
@@ -24,15 +18,19 @@ func Constructor() AllOne {
 // Inc inserts a new key <Key> with value 1. Or increments an existing key by 1.
 func (a *AllOne) Inc(key string) {
 	if _, ok := a.m[key]; ok {
-		a.m[key].value++
+		a.m[key]++
+		if a.max < a.m[key] {
+			a.max = a.m[key]
+			a.maxKey = key
+		}
 	} else {
-		a.m[key] = &item{key: key, value: 1}
+		a.m[key] = 1
+		if a.min > 1 {
+			a.min = 1
+			a.minKey = key
+		}
 	}
 
-	if a.max < a.m[key].value {
-		a.max = a.m[key].value
-		a.maxKey = key
-	}
 }
 
 // Dec decrements an existing key by 1. If Key's value is 1, remove it from the data structure.
@@ -41,10 +39,10 @@ func (a *AllOne) Dec(key string) {
 		return
 	}
 
-	a.m[key].value--
+	a.m[key]--
 
-	if a.min > a.m[key].value {
-		a.min = a.m[key].value
+	if a.min > a.m[key] {
+		a.min = a.m[key]
 		a.minKey = key
 	}
 }

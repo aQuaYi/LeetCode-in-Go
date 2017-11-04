@@ -15,15 +15,15 @@ func Test_AllOne(t *testing.T) {
 	ast.Equal("", a.GetMaxKey())
 	ast.Equal("", a.GetMinKey())
 
-	a.Inc("100")
+	a.Inc("6")
 
-	ast.Equal("100", a.GetMaxKey())
-	ast.Equal("100", a.GetMinKey())
+	ast.Equal("6", a.GetMaxKey())
+	ast.Equal("6", a.GetMinKey())
 
 	maxKeys := []string{"7", "8", "9"}
 	minKeys := []string{"1", "2", "3"}
 
-	for i := 0; i < 3; i++ {
+	for i := 0; i < 5; i++ {
 		for j := 1; j < 10; j++ {
 			a.Inc(strconv.Itoa(j))
 		}
@@ -31,9 +31,12 @@ func Test_AllOne(t *testing.T) {
 
 	for _, key := range maxKeys {
 		a.Inc(key)
+		a.Inc(key)
+		a.Inc(key)
 	}
 
 	for _, key := range minKeys {
+		a.Dec(key)
 		a.Dec(key)
 	}
 
