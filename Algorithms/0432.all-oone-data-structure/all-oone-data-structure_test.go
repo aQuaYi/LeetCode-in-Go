@@ -15,6 +15,11 @@ func Test_AllOne(t *testing.T) {
 	ast.Equal("", a.GetMaxKey())
 	ast.Equal("", a.GetMinKey())
 
+	a.Inc("100")
+
+	ast.Equal("100", a.GetMaxKey())
+	ast.Equal("100", a.GetMinKey())
+
 	maxKeys := []string{"7", "8", "9"}
 	minKeys := []string{"1", "2", "3"}
 
