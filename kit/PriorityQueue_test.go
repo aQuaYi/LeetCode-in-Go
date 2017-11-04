@@ -17,11 +17,11 @@ func Test_priorityQueue(t *testing.T) {
 
 	// Create a priority queue, put the items in it, and
 	// establish the priority queue (heap) invariants.
-	pq := make(priorityQueue, len(items))
+	pq := make(PQ, len(items))
 	i := 0
 	for value, priority := range items {
-		pq[i] = &item{
-			value:    value,
+		pq[i] = &entry{
+			key:      value,
 			priority: priority,
 			index:    i,
 		}
@@ -30,12 +30,12 @@ func Test_priorityQueue(t *testing.T) {
 	heap.Init(&pq)
 
 	// Insert a new item and then modify its priority.
-	it := &item{
-		value:    "orange",
+	it := &entry{
+		key:      "orange",
 		priority: 5,
 	}
 	heap.Push(&pq, it)
-	pq.update(it, it.value, 0)
+	pq.update(it, it.key, 0)
 
 	// Some items and their priorities.
 	expected := []string{
@@ -47,7 +47,7 @@ func Test_priorityQueue(t *testing.T) {
 
 	// Take the items out; they arrive in decreasing priority order.
 	for pq.Len() > 0 {
-		it := heap.Pop(&pq).(*item)
-		ast.Equal(expected[it.priority], it.value)
+		it := heap.Pop(&pq).(*entry)
+		ast.Equal(expected[it.priority], it.key)
 	}
 }
