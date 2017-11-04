@@ -20,8 +20,9 @@ func Constructor() AllOne {
 // Inc inserts a new key <Key> with value 1. Or increments an existing key by 1.
 func (a *AllOne) Inc(key string) {
 	if _, ok := a.m[key]; ok {
-		a.max.update(a.m[key], 1)
-		a.min.update(a.m[key], 0)
+		a.m[key].value++
+		heap.Fix(&a.max, a.m[key].maxIndex)
+		heap.Fix(&a.min, a.m[key].minIndex)
 	} else {
 		ip := &item{key: key, value: 1}
 		a.m[key] = ip
@@ -34,10 +35,14 @@ func (a *AllOne) Inc(key string) {
 func (a *AllOne) Dec(key string) {
 	if _, ok := a.m[key]; !ok {
 		return
+	} else if a.m[key].value == 1 {
+		heap.Remove(&a.max, a.m[key].maxIndex)
+		heap.Remove(&a.min, a.m[key].minIndex)
+	} else {
+		a.m[key].value--
+		heap.Fix(&a.max, a.m[key].maxIndex)
+		heap.Fix(&a.min, a.m[key].minIndex)
 	}
-
-	a.min.update(a.m[key], -1)
-	a.max.update(a.m[key], 0)
 }
 
 // GetMaxKey returns one of the keys with maximal value.
@@ -109,12 +114,6 @@ func (pq *minPQ) Pop() interface{} {
 	return item
 }
 
-// update modifies the priority and value of an item in the queue.
-func (pq *minPQ) update(item *item, delta int) {
-	item.value += delta
-	heap.Fix(pq, item.minIndex)
-}
-
 // priorityQueue implements heap.Interface and holds items.
 type maxPQ []*item
 
@@ -146,10 +145,4 @@ func (pq *maxPQ) Pop() interface{} {
 	item.maxIndex = -1 // for safety
 	*pq = old[0 : n-1]
 	return item
-}
-
-// update modifies the priority and value of an item in the queue.
-func (pq *maxPQ) update(item *item, delta int) {
-	item.value += delta
-	heap.Fix(pq, item.maxIndex)
 }
