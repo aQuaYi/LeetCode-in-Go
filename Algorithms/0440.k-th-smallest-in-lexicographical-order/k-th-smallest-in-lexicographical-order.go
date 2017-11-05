@@ -26,16 +26,18 @@ func findKthNumber(n int, k int) int {
 
 		if count <= k {
 			// 答案不在以 res 开头的数中
+			// 排除以 res 开头的 count 个数
+			k -= count
 			// 去下一个开头中查找
 			res++
-			k -= count
 		} else {
 			// 答案在以 res 开头的数中
-			// 但是不在 [res, res+1) 中，因为在的话，k 在上一个 for 结束时，就是 0 了
+			// 但是不在 [res, res+1) 中，
+			// 因为在的话，k 在上一个 for 循环结束时，就是 0 了
+			// 排除了 [res, res+1) 中只有一个数字
+			k--
 			// 在 res*10 + [0, 9] 这些开头中，重新开始查找
 			res *= 10
-			// [res, res+1) 中只有一个数字，所以 -1
-			k--
 		}
 
 		// 每个 for 循环都可以
