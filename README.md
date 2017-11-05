@@ -1,7 +1,7 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 排名](https://img.shields.io/badge/Ranking-8732-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/Ranking-8581-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 答题进度](https://img.shields.io/badge/Progress-66%25-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
@@ -12,8 +12,8 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|93|165|70|328|
-|**Total**|147|246|100|493|
+|**Accepted**|93|165|71|329|
+|**Total**|148|249|100|497|
 
 ## 题解
 
@@ -337,7 +337,7 @@
 |436| * Find Right Interval|41%|Medium| |
 |437|[Path Sum III](./Algorithms/0437.path-sum-iii)|39%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |438| * Find All Anagrams in a String|33%|Easy| |
-|440| * K-th Smallest in Lexicographical Order|25%|Hard| |
+|440|[K-th Smallest in Lexicographical Order](./Algorithms/0440.k-th-smallest-in-lexicographical-order)|25%|Hard| |
 |441| * Arranging Coins|36%|Easy| |
 |442|[Find All Duplicates in an Array](./Algorithms/0442.find-all-duplicates-in-an-array)|56%|Medium| |
 |443| * String Compression|37%|Easy| |
@@ -412,7 +412,7 @@
 |541| * Reverse String II|43%|Easy| |
 |542| * 01 Matrix|32%|Medium| |
 |543| * Diameter of Binary Tree|44%|Easy| |
-|546| * Remove Boxes|33%|Hard| |
+|546| * Remove Boxes|34%|Hard| |
 |547| * Friend Circles|49%|Medium| |
 |551| * Student Attendance Record I|44%|Easy| |
 |552| * Student Attendance Record II|31%|Hard| |
@@ -433,7 +433,7 @@
 |583| * Delete Operation for Two Strings|43%|Medium| |
 |587| * Erect the Fence|32%|Hard| |
 |591| * Tag Validator|29%|Hard| |
-|592| * Fraction Addition and Subtraction|45%|Medium| |
+|592| * Fraction Addition and Subtraction|46%|Medium| |
 |593| * Valid Square|40%|Medium| |
 |594| * Longest Harmonious Subsequence|40%|Easy| |
 |598| * Range Addition II|48%|Easy| |
@@ -494,8 +494,8 @@
 |684| * Redundant Connection|37%|Medium| |
 |685| * Redundant Connection II|28%|Hard| |
 |686| * Repeated String Match|31%|Easy| |
-|687| * Longest Univalue Path|33%|Easy| |
-|688| * Knight Probability in Chessboard|38%|Medium| |
+|687| * Longest Univalue Path|32%|Easy| |
+|688| * Knight Probability in Chessboard|39%|Medium| |
 |689| * Maximum Sum of 3 Non-Overlapping Subarrays|41%|Hard| |
 |691| * Stickers to Spell Word|32%|Hard| |
 |692| * Top K Frequent Words|41%|Medium| |
@@ -512,6 +512,10 @@
 |717| * 1-bit and 2-bit Characters|52%|Easy| |
 |718| * Maximum Length of Repeated Subarray|39%|Medium| |
 |719| * Find K-th Smallest Pair Distance|23%|Hard| |
+|720| * Longest Word in Dictionary|33%|Easy| |
+|721| * Accounts Merge|14%|Medium| |
+|722| * Remove Comments|18%|Medium| |
+|723| * Candy Crush|37%|Medium| |
 
 以下免费的算法题，暂时不能使用 Go 解答
 
