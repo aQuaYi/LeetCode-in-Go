@@ -337,7 +337,7 @@
 |436| * Find Right Interval|41%|Medium| |
 |437|[Path Sum III](./Algorithms/0437.path-sum-iii)|39%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |438| * Find All Anagrams in a String|33%|Easy| |
-|440|[K-th Smallest in Lexicographical Order](./Algorithms/0440.k-th-smallest-in-lexicographical-order)|25%|Hard| |
+|440|[K-th Smallest in Lexicographical Order](./Algorithms/0440.k-th-smallest-in-lexicographical-order)|25%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |441| * Arranging Coins|36%|Easy| |
 |442|[Find All Duplicates in an Array](./Algorithms/0442.find-all-duplicates-in-an-array)|56%|Medium| |
 |443| * String Compression|37%|Easy| |
