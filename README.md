@@ -2,7 +2,7 @@
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 排名](https://img.shields.io/badge/Ranking-8581-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 答题进度](https://img.shields.io/badge/Progress-66%25-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 答题进度](https://img.shields.io/badge/Progress-67%25-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 
@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|93|165|72|330|
+|**Accepted**|94|168|72|334|
 |**Total**|148|249|100|497|
 
 ## 题解
@@ -316,7 +316,7 @@
 |403|[Frog Jump](./Algorithms/0403.frog-jump)|32%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |404|[Sum of Left Leaves](./Algorithms/0404.sum-of-left-leaves)|47%|Easy| |
 |405|[Convert a Number to Hexadecimal](./Algorithms/0405.convert-a-number-to-hexadecimal)|41%|Easy| |
-|406| * Queue Reconstruction by Height|56%|Medium| |
+|406|[Queue Reconstruction by Height](./Algorithms/0406.queue-reconstruction-by-height)|56%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |407|[Trapping Rain Water II](./Algorithms/0407.trapping-rain-water-ii)|37%|Hard| |
 |409| * Longest Palindrome|45%|Easy| |
 |410|[Split Array Largest Sum](./Algorithms/0410.split-array-largest-sum)|38%|Hard| |
@@ -325,8 +325,8 @@
 |414|[Third Maximum Number](./Algorithms/0414.third-maximum-number)|27%|Easy| |
 |415|[Add Strings](./Algorithms/0415.add-strings)|41%|Easy| |
 |416|[Partition Equal Subset Sum](./Algorithms/0416.partition-equal-subset-sum)|39%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|417| * Pacific Atlantic Water Flow|33%|Medium| |
-|419| * Battleships in a Board|62%|Medium| |
+|417|[Pacific Atlantic Water Flow](./Algorithms/0417.pacific-atlantic-water-flow)|33%|Medium| |
+|419|[Battleships in a Board](./Algorithms/0419.battleships-in-a-board)|62%|Medium| |
 |420|[Strong Password Checker](./Algorithms/0420.strong-password-checker)|20%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |421| * Maximum XOR of Two Numbers in an Array|46%|Medium| |
 |423| * Reconstruct Original Digits from English|44%|Medium| |
@@ -336,13 +336,13 @@
 |435| * Non-overlapping Intervals|41%|Medium| |
 |436| * Find Right Interval|41%|Medium| |
 |437|[Path Sum III](./Algorithms/0437.path-sum-iii)|39%|Easy|[❤](https://leetcode.com/list/oussv5j)|
-|438| * Find All Anagrams in a String|33%|Easy| |
+|438|[Find All Anagrams in a String](./Algorithms/0438.find-all-anagrams-in-a-string)|33%|Easy| |
 |440|[K-th Smallest in Lexicographical Order](./Algorithms/0440.k-th-smallest-in-lexicographical-order)|25%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |441| * Arranging Coins|36%|Easy| |
 |442|[Find All Duplicates in an Array](./Algorithms/0442.find-all-duplicates-in-an-array)|56%|Medium| |
 |443| * String Compression|37%|Easy| |
 |445| * Add Two Numbers II|45%|Medium| |
-|446|[Arithmetic Slices II - Subsequence](./Algorithms/0446.arithmetic-slices-ii-subsequence)|27%|Hard| |
+|446|[Arithmetic Slices II - Subsequence](./Algorithms/0446.arithmetic-slices-ii-subsequence)|27%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |447| * Number of Boomerangs|45%|Easy| |
 |448|[Find All Numbers Disappeared in an Array](./Algorithms/0448.find-all-numbers-disappeared-in-an-array)|51%|Easy| |
 |450| * Delete Node in a BST|37%|Medium| |
@@ -433,7 +433,7 @@
 |583| * Delete Operation for Two Strings|43%|Medium| |
 |587| * Erect the Fence|32%|Hard| |
 |591| * Tag Validator|29%|Hard| |
-|592| * Fraction Addition and Subtraction|46%|Medium| |
+|592| * Fraction Addition and Subtraction|45%|Medium| |
 |593| * Valid Square|40%|Medium| |
 |594| * Longest Harmonious Subsequence|40%|Easy| |
 |598| * Range Addition II|48%|Easy| |
@@ -494,7 +494,7 @@
 |684| * Redundant Connection|37%|Medium| |
 |685| * Redundant Connection II|28%|Hard| |
 |686| * Repeated String Match|32%|Easy| |
-|687| * Longest Univalue Path|32%|Easy| |
+|687| * Longest Univalue Path|33%|Easy| |
 |688| * Knight Probability in Chessboard|39%|Medium| |
 |689| * Maximum Sum of 3 Non-Overlapping Subarrays|41%|Hard| |
 |691| * Stickers to Spell Word|32%|Hard| |
@@ -512,10 +512,10 @@
 |717| * 1-bit and 2-bit Characters|52%|Easy| |
 |718| * Maximum Length of Repeated Subarray|39%|Medium| |
 |719| * Find K-th Smallest Pair Distance|23%|Hard| |
-|720| * Longest Word in Dictionary|36%|Easy| |
-|721| * Accounts Merge|19%|Medium| |
-|722| * Remove Comments|21%|Medium| |
-|723| * Candy Crush|46%|Medium| |
+|720| * Longest Word in Dictionary|37%|Easy| |
+|721| * Accounts Merge|20%|Medium| |
+|722| * Remove Comments|22%|Medium| |
+|723| * Candy Crush|49%|Medium| |
 
 以下免费的算法题，暂时不能使用 Go 解答
 
