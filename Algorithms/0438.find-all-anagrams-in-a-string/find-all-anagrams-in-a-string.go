@@ -1,27 +1,31 @@
 package Problem0438
 
 func findAnagrams(s string, p string) []int {
-	res := []int{}
-	for i := 0; i+len(p) <= len(s); i++ {
-		if isAnagram(p, s[i:i+len(p)]) {
+	var res []int
+	if len(s) < len(p) {
+		return res
+	}
+
+	var target, window [26]int
+	for i := 0; i < len(p); i++ {
+		target[p[i]-'a']++
+	}
+
+	check := func(i int) {
+		if target == window {
 			res = append(res, i)
 		}
 	}
 
-	return res
-}
-
-func isAnagram(a, b string) bool {
-	rec := [26]int{}
-	for i := range a {
-		rec[a[i]-'a']++
-		rec[b[i]-'a']--
-	}
-	for _, r := range rec {
-		if r != 0 {
-			return false
+	for i := 0; i < len(s); i++ {
+		window[s[i]-'a']++
+		if i == len(p)-1 {
+			check(0)
+		} else if len(p) <= i {
+			window[s[i-len(p)]-'a']--
+			check(i - len(p) + 1)
 		}
 	}
 
-	return true
+	return res
 }
