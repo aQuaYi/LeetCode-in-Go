@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|93|165|71|329|
+|**Accepted**|93|165|72|330|
 |**Total**|148|249|100|497|
 
 ## 题解
@@ -84,7 +84,7 @@
 |63|[Unique Paths II](./Algorithms/0063.unique-paths-ii)|31%|Medium| |
 |64|[Minimum Path Sum](./Algorithms/0064.minimum-path-sum)|39%|Medium| |
 |65|[Valid Number](./Algorithms/0065.valid-number)|12%|Hard| |
-|66|[Plus One](./Algorithms/0066.plus-one)|38%|Easy| |
+|66|[Plus One](./Algorithms/0066.plus-one)|39%|Easy| |
 |67|[Add Binary](./Algorithms/0067.add-binary)|33%|Easy| |
 |68|[Text Justification](./Algorithms/0068.text-justification)|19%|Hard| |
 |69|[Sqrt(x)](./Algorithms/0069.sqrtx)|28%|Easy| |
@@ -167,7 +167,7 @@
 |153|[Find Minimum in Rotated Sorted Array](./Algorithms/0153.find-minimum-in-rotated-sorted-array)|40%|Medium| |
 |154|[Find Minimum in Rotated Sorted Array II](./Algorithms/0154.find-minimum-in-rotated-sorted-array-ii)|37%|Hard| |
 |155|[Min Stack](./Algorithms/0155.min-stack)|29%|Easy| |
-|162|[Find Peak Element](./Algorithms/0162.find-peak-element)|37%|Medium| |
+|162|[Find Peak Element](./Algorithms/0162.find-peak-element)|38%|Medium| |
 |164|[Maximum Gap](./Algorithms/0164.maximum-gap)|29%|Hard| |
 |165|[Compare Version Numbers](./Algorithms/0165.compare-version-numbers)|20%|Medium| |
 |166|[Fraction to Recurring Decimal](./Algorithms/0166.fraction-to-recurring-decimal)|17%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -342,7 +342,7 @@
 |442|[Find All Duplicates in an Array](./Algorithms/0442.find-all-duplicates-in-an-array)|56%|Medium| |
 |443| * String Compression|37%|Easy| |
 |445| * Add Two Numbers II|45%|Medium| |
-|446| * Arithmetic Slices II - Subsequence|27%|Hard| |
+|446|[Arithmetic Slices II - Subsequence](./Algorithms/0446.arithmetic-slices-ii-subsequence)|27%|Hard| |
 |447| * Number of Boomerangs|45%|Easy| |
 |448|[Find All Numbers Disappeared in an Array](./Algorithms/0448.find-all-numbers-disappeared-in-an-array)|51%|Easy| |
 |450| * Delete Node in a BST|37%|Medium| |
@@ -367,7 +367,7 @@
 |475| * Heaters|29%|Easy| |
 |476| * Number Complement|60%|Easy| |
 |477| * Total Hamming Distance|47%|Medium| |
-|479| * Largest Palindrome Product|23%|Easy| |
+|479| * Largest Palindrome Product|24%|Easy| |
 |480| * Sliding Window Median|31%|Hard| |
 |481| * Magical String|45%|Medium| |
 |482| * License Key Formatting|41%|Medium| |
@@ -399,7 +399,7 @@
 |521| * Longest Uncommon Subsequence I |55%|Easy| |
 |522| * Longest Uncommon Subsequence II|31%|Medium| |
 |523| * Continuous Subarray Sum|23%|Medium| |
-|524| * Longest Word in Dictionary through Deleting|42%|Medium| |
+|524| * Longest Word in Dictionary through Deleting|43%|Medium| |
 |525| * Contiguous Array|40%|Medium| |
 |526|[Beautiful Arrangement](./Algorithms/0526.beautiful-arrangement)|54%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |529| * Minesweeper|49%|Medium| |
@@ -448,7 +448,7 @@
 |623| * Add One Row to Tree|46%|Medium| |
 |628|[Maximum Product of Three Numbers](./Algorithms/0628.maximum-product-of-three-numbers)|45%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |629| * K Inverse Pairs Array|26%|Hard| |
-|630|[Course Schedule III](./Algorithms/0630.course-schedule-iii)|27%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|630|[Course Schedule III](./Algorithms/0630.course-schedule-iii)|28%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |632| * Smallest Range|41%|Hard| |
 |633| * Sum of Square Numbers|32%|Easy| |
 |636| * Exclusive Time of Functions|43%|Medium| |
@@ -466,7 +466,7 @@
 |652| * Find Duplicate Subtrees|35%|Medium| |
 |653| * Two Sum IV - Input is a BST|50%|Easy| |
 |654| * Maximum Binary Tree|70%|Medium| |
-|655| * Print Binary Tree|50%|Medium| |
+|655| * Print Binary Tree|49%|Medium| |
 |657| * Judge Route Circle|68%|Easy| |
 |658| * Find K Closest Elements|35%|Medium| |
 |659| * Split Array into Consecutive Subsequences|35%|Medium| |
@@ -493,7 +493,7 @@
 |683| * K Empty Slots|36%|Hard| |
 |684| * Redundant Connection|37%|Medium| |
 |685| * Redundant Connection II|28%|Hard| |
-|686| * Repeated String Match|31%|Easy| |
+|686| * Repeated String Match|32%|Easy| |
 |687| * Longest Univalue Path|32%|Easy| |
 |688| * Knight Probability in Chessboard|39%|Medium| |
 |689| * Maximum Sum of 3 Non-Overlapping Subarrays|41%|Hard| |
@@ -512,10 +512,10 @@
 |717| * 1-bit and 2-bit Characters|52%|Easy| |
 |718| * Maximum Length of Repeated Subarray|39%|Medium| |
 |719| * Find K-th Smallest Pair Distance|23%|Hard| |
-|720| * Longest Word in Dictionary|33%|Easy| |
-|721| * Accounts Merge|14%|Medium| |
-|722| * Remove Comments|18%|Medium| |
-|723| * Candy Crush|37%|Medium| |
+|720| * Longest Word in Dictionary|36%|Easy| |
+|721| * Accounts Merge|19%|Medium| |
+|722| * Remove Comments|21%|Medium| |
+|723| * Candy Crush|46%|Medium| |
 
 以下免费的算法题，暂时不能使用 Go 解答
 
