@@ -1,10 +1,7 @@
 package Problem0438
 
 func findAnagrams(s string, p string) []int {
-	var res []int
-	if len(s) < len(p) {
-		return res
-	}
+	var res = []int{}
 
 	var target, window [26]int
 	for i := 0; i < len(p); i++ {
@@ -12,7 +9,7 @@ func findAnagrams(s string, p string) []int {
 	}
 
 	check := func(i int) {
-		if target == window {
+		if window == target {
 			res = append(res, i)
 		}
 	}
