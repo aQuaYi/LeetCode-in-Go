@@ -1,49 +1,21 @@
 package Problem0419
 
 func countBattleships(board [][]byte) int {
-	res := 0
-	if len(board) == 0 || len(board[0]) == 0 {
-		return res
+	if len(board) == 0 {
+		return 0
 	}
+
 	m, n := len(board), len(board[0])
 
-	r := make([][]bool, m)
-	for i := 0; i < m; i++ {
-		r[i] = make([]bool, n)
-	}
-
-	ds := [][]int{
-		{-1, 0},
-		{1, 0},
-		{0, 1},
-		{0, -1},
-	}
-
-	bfs := func(queue [][]int) {
-		for len(queue) > 0 {
-			p := queue[0]
-			queue = queue[1:]
-			for _, d := range ds {
-				i, j := p[0]+d[0], p[1]+d[1]
-				if 0 <= i && i < m &&
-					0 <= j && j < n &&
-					!r[i][j] &&
-					board[i][j] != '.' {
-					r[i][j] = true
-					queue = append(queue, []int{i, j})
-				}
-			}
-		}
-	}
-
+	count := 0
 	for i := 0; i < m; i++ {
 		for j := 0; j < n; j++ {
-			if !r[i][j] && board[i][j] == 'X' {
-				res++
-				bfs([][]int{{i, j}})
+			if board[i][j] == 'X' && (i == 0 || board[i-1][j] == '.') && (j == 0 || board[i][j-1] == '.') {
+				// count 只有在遇到的 battleship 的左上角的 'X' 后，才会 ++
+				count++
 			}
 		}
 	}
 
-	return res
+	return count
 }
