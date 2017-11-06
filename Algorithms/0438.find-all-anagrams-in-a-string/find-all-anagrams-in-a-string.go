@@ -2,8 +2,8 @@ package Problem0438
 
 func findAnagrams(s string, p string) []int {
 	res := []int{}
-	for i := 0; i+len(s) <= len(p); i++ {
-		if isAnagram(s, p[i:len(s)]) {
+	for i := 0; i+len(p) <= len(s); i++ {
+		if isAnagram(p, s[i:i+len(p)]) {
 			res = append(res, i)
 		}
 	}
