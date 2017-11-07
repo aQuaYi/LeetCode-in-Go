@@ -5,6 +5,7 @@ import "time"
 
 // LFUCache 实现了 Least Frequently Used (LFU) cache
 type LFUCache struct {
+	// 用于检查 key 的存在性
 	m   map[int]*entry
 	pq  PQ
 	cap int
@@ -12,7 +13,6 @@ type LFUCache struct {
 
 // Constructor 构建了 LFUCache
 func Constructor(capacity int) LFUCache {
-
 	return LFUCache{
 		m:   make(map[int]*entry, capacity),
 		pq:  make(PQ, 0, capacity),
@@ -36,8 +36,16 @@ func (c *LFUCache) Put(key int, value int) {
 	if c.cap <= 0 {
 		return
 	}
+	ep, ok := c.m[key]
+	// key 已存在，就更新 value
+	if ok {
+		c.m[key].value = value
+		c.pq.update(ep)
+		return
+	}
 
-	ep := &entry{key: key, value: value, date: time.Now()}
+	ep = &entry{key: key, value: value}
+	// pq 已满的话，需要先删除，再插入
 	if len(c.pq) == c.cap {
 		temp := heap.Pop(&c.pq).(*entry)
 		delete(c.m, temp.key)
@@ -55,8 +63,10 @@ func (c *LFUCache) Put(key int, value int) {
 
 // entry 是 priorityQueue 中的元素
 type entry struct {
-	key, value, frequence, index int
-	date                         time.Time
+	key, value int
+	// 以下是辅助参数，由 heap.Interface 实现的函数自动处理
+	frequence, index int
+	date             time.Time
 }
 
 // PQ implements heap.Interface and holds entries.
@@ -83,6 +93,7 @@ func (pq *PQ) Push(x interface{}) {
 	n := len(*pq)
 	entry := x.(*entry)
 	entry.index = n
+	entry.date = time.Now()
 	*pq = append(*pq, entry)
 }
 
@@ -99,5 +110,6 @@ func (pq *PQ) Pop() interface{} {
 // update modifies the priority of an entry in the queue.
 func (pq *PQ) update(entry *entry) {
 	entry.frequence++
+	entry.date = time.Now()
 	heap.Fix(pq, entry.index)
 }

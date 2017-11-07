@@ -39,7 +39,7 @@ func Test_LFUCache2(t *testing.T) {
 
 	cache.Put(0, 0)
 
-	ast.Equal(-1, cache.Get(0))
+	ast.Equal(-1, cache.Get(0), "没能正确处理好， cap <= 0 的情况")
 }
 
 func Test_LFUCache3(t *testing.T) {
