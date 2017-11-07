@@ -39,17 +39,14 @@ func originalDigits(s string) string {
 	counts[1] -= counts[2] + counts[0] + counts[4]
 	counts[9] -= counts[5] + counts[6] + counts[8]
 
-	var result []byte
+	res := make([]byte, 0, len(s)/3)
 
-	for i := 0; i < 10; i++ {
-		if counts[i] == 0 {
-			continue
-		}
-
-		for j := 0; j < counts[i]; j++ {
-			result = append(result, byte(i+'0'))
+	for b := byte(0); b < 10; b++ {
+		for counts[b] > 0 {
+			res = append(res, b+'0')
+			counts[b]--
 		}
 	}
 
-	return string(result)
+	return string(res)
 }
