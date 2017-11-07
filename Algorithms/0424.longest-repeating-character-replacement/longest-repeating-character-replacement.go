@@ -8,8 +8,8 @@ func characterReplacement(s string, k int) int {
 		count[s[end]]++
 		maxLen = max(maxLen, count[s[end]])
 		if maxLen+k <= end-start {
-			start++
 			count[s[start]]--
+			start++
 		}
 	}
 
