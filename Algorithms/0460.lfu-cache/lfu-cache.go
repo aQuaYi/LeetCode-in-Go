@@ -1,27 +1,49 @@
 package Problem0460
 
 import "container/heap"
+import "time"
 
 // LFUCache 实现了 Least Frequently Used (LFU) cache
 type LFUCache struct {
+	m   map[int]*entry
+	pq  PQ
+	cap int
 }
 
 // Constructor 构建了 LFUCache
 func Constructor(capacity int) LFUCache {
 
-	return LFUCache{}
+	return LFUCache{
+		m:   make(map[int]*entry, capacity),
+		pq:  make(PQ, 0, capacity),
+		cap: capacity,
+	}
 }
 
 // Get 获取 key 的值
 func (c *LFUCache) Get(key int) int {
-
-	return 0
+	ep, ok := c.m[key]
+	if ok {
+		c.pq.update(ep)
+		return ep.value
+	}
+	return -1
 }
 
 // Put 把 key， value 成对地放入 LFUCache
 // 如果 LFUCache 已满的话，会删除掉 LFUCache 中使用最少的 key
 func (c *LFUCache) Put(key int, value int) {
+	if c.cap <= 0 {
+		return
+	}
 
+	ep := &entry{key: key, value: value, date: time.Now()}
+	if len(c.pq) == c.cap {
+		temp := heap.Pop(&c.pq).(*entry)
+		delete(c.m, temp.key)
+	}
+	c.m[key] = ep
+	heap.Push(&c.pq, ep)
 }
 
 /**
@@ -33,12 +55,8 @@ func (c *LFUCache) Put(key int, value int) {
 
 // entry 是 priorityQueue 中的元素
 type entry struct {
-	key      string
-	priority int
-	// index 是 entry 在 heap 中的索引号
-	// entry 加入 Priority Queue 后， Priority 会变化时，很有用
-	// 如果 entry.priority 一直不变的话，可以删除 index
-	index int
+	key, value, frequence, index int
+	date                         time.Time
 }
 
 // PQ implements heap.Interface and holds entries.
@@ -47,7 +65,11 @@ type PQ []*entry
 func (pq PQ) Len() int { return len(pq) }
 
 func (pq PQ) Less(i, j int) bool {
-	return pq[i].priority < pq[j].priority
+	if pq[i].frequence == pq[j].frequence {
+		return pq[i].date.Before(pq[j].date)
+	}
+
+	return pq[i].frequence < pq[j].frequence
 }
 
 func (pq PQ) Swap(i, j int) {
@@ -74,9 +96,8 @@ func (pq *PQ) Pop() interface{} {
 	return entry
 }
 
-// update modifies the priority and value of an entry in the queue.
-func (pq *PQ) update(entry *entry, value string, priority int) {
-	entry.key = value
-	entry.priority = priority
+// update modifies the priority of an entry in the queue.
+func (pq *PQ) update(entry *entry) {
+	entry.frequence++
 	heap.Fix(pq, entry.index)
 }
