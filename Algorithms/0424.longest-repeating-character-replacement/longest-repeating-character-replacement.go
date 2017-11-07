@@ -16,7 +16,8 @@ func characterReplacement(s string, k int) int {
 		}
 	}
 
-	return max + k
+	// len(s) == right + 1
+	return len(s) - left
 }
 
 // Max 返回 a 和 b 中的较大值
