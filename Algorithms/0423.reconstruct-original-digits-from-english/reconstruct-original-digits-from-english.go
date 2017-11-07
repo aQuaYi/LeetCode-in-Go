@@ -1,56 +1,55 @@
 package Problem0423
 
-import (
-	"strings"
-)
-
-type digit struct {
-	b       byte
-	key     string
-	letters []string
-}
-
-var digits = []digit{
-	{'2', "w", []string{"t", "w", "o"}},
-	{'0', "z", []string{"z", "e", "r", "o"}},
-	{'8', "g", []string{"e", "i", "g", "h", "t"}},
-	{'3', "h", []string{"t", "h", "r", "e", "e"}},
-	{'6', "x", []string{"s", "i", "x"}},
-	{'7', "s", []string{"s", "e", "v", "e", "n"}},
-	{'5', "v", []string{"f", "i", "v", "e"}},
-	{'4', "f", []string{"f", "o", "u", "r"}},
-	{'1', "o", []string{"o", "n", "e"}},
-}
-
 func originalDigits(s string) string {
-	size := 0
-	count := [10]int{}
+	if len(s) == 0 {
+		return ""
+	}
 
-	countFor := func(d digit) {
-		c := strings.Count(s, d.key)
-		if c == 0 {
-			return
-		}
-		count[d.b-'0'] = c
-		size += c
-		for _, l := range d.letters {
-			s = strings.Replace(s, l, "", c)
+	var counts [10]int
+
+	for i := 0; i < len(s); i++ {
+		c := s[i]
+		switch c {
+		case 'z':
+			counts[0]++ // 0
+		case 'w':
+			counts[2]++ // 2
+		case 'x':
+			counts[6]++ // 6
+		case 'u':
+			counts[4]++ // 4
+		case 'g':
+			counts[8]++ // 8
+		case 's':
+			counts[7]++ // 7 & 6
+		case 'v':
+			counts[5]++ // 5 & 7
+		case 'h':
+			counts[3]++ // 3 & 8
+		case 'i':
+			counts[9]++ // 5 & 6 & 8 & 9
+		case 'o':
+			counts[1]++ // 1 & 2 & 4 & 0
 		}
 	}
 
-	for _, d := range digits {
-		countFor(d)
-	}
+	counts[3] -= counts[8]
+	counts[7] -= counts[6]
+	counts[5] -= counts[7]
+	counts[1] -= counts[2] + counts[0] + counts[4]
+	counts[9] -= counts[5] + counts[6] + counts[8]
 
-	count[9] = len(s) / 4
-	size += count[9]
+	var result []byte
 
-	res := make([]byte, 0, size)
-	for b := byte(0); b <= 9; b++ {
-		for count[b] > 0 {
-			res = append(res, b+'0')
-			count[b]--
+	for i := 0; i < 10; i++ {
+		if counts[i] == 0 {
+			continue
+		}
+
+		for j := 0; j < counts[i]; j++ {
+			result = append(result, byte(i+'0'))
 		}
 	}
-	return string(res)
+
+	return string(result)
 }
