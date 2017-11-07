@@ -2,7 +2,7 @@
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 排名](https://img.shields.io/badge/Ranking-8215-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 答题进度](https://img.shields.io/badge/Progress-67%25-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 答题进度](https://img.shields.io/badge/Progress-68%25-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 
@@ -12,8 +12,8 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|95|168|72|335|
-|**Total**|148|249|100|497|
+|**Accepted**|95|170|73|338|
+|**Total**|148|247|99|494|
 
 ## 题解
 
@@ -185,7 +185,7 @@
 |199|[Binary Tree Right Side View](./Algorithms/0199.binary-tree-right-side-view)|41%|Medium| |
 |200|[Number of Islands](./Algorithms/0200.number-of-islands)|35%|Medium| |
 |201|[Bitwise AND of Numbers Range](./Algorithms/0201.bitwise-and-of-numbers-range)|34%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|202|[Happy Number](./Algorithms/0202.happy-number)|40%|Easy| |
+|202|[Happy Number](./Algorithms/0202.happy-number)|41%|Easy| |
 |203|[Remove Linked List Elements](./Algorithms/0203.remove-linked-list-elements)|32%|Easy| |
 |204|[Count Primes](./Algorithms/0204.count-primes)|26%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |205|[Isomorphic Strings](./Algorithms/0205.isomorphic-strings)|34%|Easy|[❤](https://leetcode.com/list/oussv5j)|
@@ -329,8 +329,8 @@
 |419|[Battleships in a Board](./Algorithms/0419.battleships-in-a-board)|62%|Medium| |
 |420|[Strong Password Checker](./Algorithms/0420.strong-password-checker)|20%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |421| * Maximum XOR of Two Numbers in an Array|46%|Medium| |
-|423| * Reconstruct Original Digits from English|44%|Medium| |
-|424| * Longest Repeating Character Replacement|42%|Medium| |
+|423|[Reconstruct Original Digits from English](./Algorithms/0423.reconstruct-original-digits-from-english)|44%|Medium| |
+|424|[Longest Repeating Character Replacement](./Algorithms/0424.longest-repeating-character-replacement)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |432|[All O`one Data Structure](./Algorithms/0432.all-oone-data-structure)|28%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |434|[Number of Segments in a String](./Algorithms/0434.number-of-segments-in-a-string)|36%|Easy| |
 |435| * Non-overlapping Intervals|41%|Medium| |
@@ -353,7 +353,7 @@
 |455| * Assign Cookies|47%|Easy| |
 |456| * 132 Pattern|28%|Medium| |
 |459| * Repeated Substring Pattern|38%|Easy| |
-|460| * LFU Cache|24%|Hard| |
+|460|[LFU Cache](./Algorithms/0460.lfu-cache)|24%|Hard| |
 |461| * Hamming Distance|69%|Easy| |
 |462| * Minimum Moves to Equal Array Elements II|51%|Medium| |
 |463| * Island Perimeter|57%|Easy| |
@@ -430,10 +430,10 @@
 |575| * Distribute Candies|58%|Easy| |
 |576| * Out of Boundary Paths|30%|Medium| |
 |581|[Shortest Unsorted Continuous Subarray](./Algorithms/0581.shortest-unsorted-continuous-subarray)|29%|Easy|[❤](https://leetcode.com/list/oussv5j)|
-|583| * Delete Operation for Two Strings|43%|Medium| |
+|583| * Delete Operation for Two Strings|44%|Medium| |
 |587| * Erect the Fence|32%|Hard| |
 |591| * Tag Validator|29%|Hard| |
-|592| * Fraction Addition and Subtraction|45%|Medium| |
+|592| * Fraction Addition and Subtraction|46%|Medium| |
 |593| * Valid Square|40%|Medium| |
 |594| * Longest Harmonious Subsequence|40%|Easy| |
 |598| * Range Addition II|48%|Easy| |
@@ -461,7 +461,7 @@
 |646| * Maximum Length of Pair Chain|47%|Medium| |
 |647| * Palindromic Substrings|55%|Medium| |
 |648| * Replace Words|47%|Medium| |
-|649| * Dota2 Senate|35%|Medium| |
+|649| * Dota2 Senate|36%|Medium| |
 |650| * 2 Keys Keyboard|44%|Medium| |
 |652| * Find Duplicate Subtrees|35%|Medium| |
 |653| * Two Sum IV - Input is a BST|50%|Easy| |
@@ -488,14 +488,12 @@
 |678| * Valid Parenthesis String|28%|Medium| |
 |679| * 24 Game|38%|Hard| |
 |680| * Valid Palindrome II|31%|Easy| |
-|681| * Next Closest Time|42%|Medium| |
 |682| * Baseball Game|58%|Easy| |
-|683| * K Empty Slots|36%|Hard| |
-|684| * Redundant Connection|37%|Medium| |
+|684| * Redundant Connection|38%|Medium| |
 |685| * Redundant Connection II|28%|Hard| |
 |686| * Repeated String Match|32%|Easy| |
 |687| * Longest Univalue Path|33%|Easy| |
-|688| * Knight Probability in Chessboard|39%|Medium| |
+|688| * Knight Probability in Chessboard|38%|Medium| |
 |689| * Maximum Sum of 3 Non-Overlapping Subarrays|41%|Hard| |
 |691| * Stickers to Spell Word|32%|Hard| |
 |692| * Top K Frequent Words|41%|Medium| |
@@ -503,19 +501,18 @@
 |695| * Max Area of Island|52%|Easy| |
 |696| * Count Binary Substrings|51%|Easy| |
 |697| * Degree of an Array|47%|Easy| |
-|698| * Partition to K Equal Sum Subsets|35%|Medium| |
+|698| * Partition to K Equal Sum Subsets|36%|Medium| |
 |699| * Falling Squares|36%|Hard| |
 |712| * Minimum ASCII Delete Sum for Two Strings|50%|Medium| |
 |713| * Subarray Product Less Than K|32%|Medium| |
-|714| * Best Time to Buy and Sell Stock with Transaction Fee|36%|Medium| |
+|714| * Best Time to Buy and Sell Stock with Transaction Fee|37%|Medium| |
 |715| * Range Module|30%|Hard| |
 |717| * 1-bit and 2-bit Characters|52%|Easy| |
-|718| * Maximum Length of Repeated Subarray|39%|Medium| |
-|719| * Find K-th Smallest Pair Distance|23%|Hard| |
-|720| * Longest Word in Dictionary|37%|Easy| |
-|721| * Accounts Merge|20%|Medium| |
-|722| * Remove Comments|22%|Medium| |
-|723| * Candy Crush|50%|Medium| |
+|718| * Maximum Length of Repeated Subarray|40%|Medium| |
+|719| * Find K-th Smallest Pair Distance|24%|Hard| |
+|720| * Longest Word in Dictionary|38%|Easy| |
+|721| * Accounts Merge|22%|Medium| |
+|722| * Remove Comments|23%|Medium| |
 
 以下免费的算法题，暂时不能使用 Go 解答
 
