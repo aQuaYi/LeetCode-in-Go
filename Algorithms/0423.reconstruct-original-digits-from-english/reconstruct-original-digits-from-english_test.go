@@ -14,6 +14,11 @@ var tcs = []struct {
 }{
 
 	{
+		"",
+		"",
+	},
+
+	{
 		"owoztneoer",
 		"012",
 	},
