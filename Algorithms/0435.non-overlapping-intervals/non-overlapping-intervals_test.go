@@ -26,7 +26,7 @@ var tcs = []struct {
 	},
 
 	{
-		[][]int{{1, 2}, {2, 3}},
+		[][]int{{2, 3}},
 		0,
 	},
 
@@ -45,7 +45,7 @@ func Test_eraseOverlapIntervals(t *testing.T) {
 func Benchmark_eraseOverlapIntervals(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		for _, tc := range tcs {
-			eraseOverlapIntervals(tc.intervals)
+			eraseOverlapIntervals(kit.Intss2IntervalSlice(tc.intervals))
 		}
 	}
 }
