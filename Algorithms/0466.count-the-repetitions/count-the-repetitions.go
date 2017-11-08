@@ -18,7 +18,7 @@ func getMaxRepetitions(s1 string, n1 int, s2 string, n2 int) int {
 		i1++
 	}
 
-	return (i2 + 1) / len2 / n2
+	return i2 / len2 / n2
 }
 
 // s1 可以重组成 s2 时，返回 true
