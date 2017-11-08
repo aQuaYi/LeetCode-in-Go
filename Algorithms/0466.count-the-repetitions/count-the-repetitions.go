@@ -1,7 +1,6 @@
 package Problem0466
 
 func getMaxRepetitions(s1 string, n1 int, s2 string, n2 int) int {
-
 	if !isPossible(s1, s2) {
 		return 0
 	}
@@ -14,21 +13,18 @@ func getMaxRepetitions(s1 string, n1 int, s2 string, n2 int) int {
 
 	i1, I2 := 0, 0
 	len1 := len(s1)
-	for {
-		if s1[i1%len1] == S2[I2] {
+	Len2 := len(S2)
+	for i1 < n1*len1 {
+		if s1[i1%len1] == S2[I2%Len2] {
+			if I2%Len2 == Len2-1 && i1%len1 == len1-1 {
+				return n1 * ((I2 + 1) / Len2) / ((i1 + 1) / len1)
+			}
 			I2++
 		}
-
-		if I2 == len(S2) {
-			break
-		}
-
 		i1++
 	}
 
-	C2 := i1/len1 + 1
-
-	return n1 / C2
+	return (I2 + 1) / Len2
 }
 
 // s1 可以重组成 s2 时，返回 true
