@@ -1,10 +1,6 @@
 package Problem0466
 
 func getMaxRepetitions(s1 string, n1 int, s2 string, n2 int) int {
-	if !isPossible(s1, s2) {
-		return 0
-	}
-
 	S2 := ""
 	for n2 > 0 {
 		S2 += s2
