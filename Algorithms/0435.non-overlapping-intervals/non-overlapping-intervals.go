@@ -7,7 +7,7 @@ import (
 type Interval = kit.Interval
 
 func eraseOverlapIntervals(intervals []Interval) int {
-	res :=
+	res :=2 
 
 	return res
 }

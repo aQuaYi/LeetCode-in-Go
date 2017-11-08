@@ -4,26 +4,41 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/aQuaYi/LeetCode-in-Go/kit"
+
 	"github.com/stretchr/testify/assert"
 )
 
 // tcs is testcase slice
 var tcs = []struct {
-	intervals []Interval
-	ans  int 
+	intervals [][]int
+	ans       int
 }{
 
+	{
+		[][]int{{1, 2}, {2, 3}, {3, 4}, {1, 3}},
+		1,
+	},
 
-	
+	{
+		[][]int{{1, 2}, {1, 2}, {1, 2}},
+		2,
+	},
+
+	{
+		[][]int{{1, 2}, {2, 3}},
+		0,
+	},
+
 	// 可以有多个 testcase
 }
 
 func Test_eraseOverlapIntervals(t *testing.T) {
 	ast := assert.New(t)
-	
+
 	for _, tc := range tcs {
 		fmt.Printf("~~%v~~\n", tc)
-		ast.Equal(tc.ans, eraseOverlapIntervals(tc.intervals), "输入:%v", tc)
+		ast.Equal(tc.ans, eraseOverlapIntervals(kit.Intss2IntervalSlice(tc.intervals)), "输入:%v", tc)
 	}
 }
 
