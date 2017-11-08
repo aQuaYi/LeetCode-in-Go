@@ -2,7 +2,7 @@
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 排名](https://img.shields.io/badge/Ranking-7946-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 答题进度](https://img.shields.io/badge/Progress-68%25-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 答题进度](https://img.shields.io/badge/Progress-69%25-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 
@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|96|171|73|340|
+|**Accepted**|97|173|74|344|
 |**Total**|148|247|99|494|
 
 ## 题解
@@ -155,7 +155,7 @@
 |137|[Single Number II](./Algorithms/0137.single-number-ii)|41%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |139|[Word Break](./Algorithms/0139.word-break)|30%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |140|[Word Break II](./Algorithms/0140.word-break-ii)|23%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|143|[Reorder List](./Algorithms/0143.reorder-list)|25%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|143|[Reorder List](./Algorithms/0143.reorder-list)|26%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |144|[Binary Tree Preorder Traversal](./Algorithms/0144.binary-tree-preorder-traversal)|45%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |145|[Binary Tree Postorder Traversal](./Algorithms/0145.binary-tree-postorder-traversal)|40%|Hard| |
 |146|[LRU Cache](./Algorithms/0146.lru-cache)|18%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -267,7 +267,7 @@
 |334|[Increasing Triplet Subsequence](./Algorithms/0334.increasing-triplet-subsequence)|39%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |335|[Self Crossing](./Algorithms/0335.self-crossing)|25%|Hard| |
 |336|[Palindrome Pairs](./Algorithms/0336.palindrome-pairs)|26%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|337|[House Robber III](./Algorithms/0337.house-robber-iii)|43%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|337|[House Robber III](./Algorithms/0337.house-robber-iii)|44%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |338|[Counting Bits](./Algorithms/0338.counting-bits)|61%|Medium| |
 |342|[Power of Four](./Algorithms/0342.power-of-four)|38%|Easy| |
 |343|[Integer Break](./Algorithms/0343.integer-break)|46%|Medium| |
@@ -333,7 +333,7 @@
 |424|[Longest Repeating Character Replacement](./Algorithms/0424.longest-repeating-character-replacement)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |432|[All O`one Data Structure](./Algorithms/0432.all-oone-data-structure)|28%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |434|[Number of Segments in a String](./Algorithms/0434.number-of-segments-in-a-string)|36%|Easy| |
-|435| * Non-overlapping Intervals|41%|Medium| |
+|435|[Non-overlapping Intervals](./Algorithms/0435.non-overlapping-intervals)|41%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |436| * Find Right Interval|41%|Medium| |
 |437|[Path Sum III](./Algorithms/0437.path-sum-iii)|39%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |438|[Find All Anagrams in a String](./Algorithms/0438.find-all-anagrams-in-a-string)|33%|Easy| |
@@ -341,9 +341,9 @@
 |441|[Arranging Coins](./Algorithms/0441.arranging-coins)|36%|Easy| |
 |442|[Find All Duplicates in an Array](./Algorithms/0442.find-all-duplicates-in-an-array)|56%|Medium| |
 |443| * String Compression|37%|Easy| |
-|445| * Add Two Numbers II|45%|Medium| |
+|445|[Add Two Numbers II](./Algorithms/0445.add-two-numbers-ii)|45%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |446|[Arithmetic Slices II - Subsequence](./Algorithms/0446.arithmetic-slices-ii-subsequence)|27%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|447| * Number of Boomerangs|45%|Easy| |
+|447|[Number of Boomerangs](./Algorithms/0447.number-of-boomerangs)|45%|Easy| |
 |448|[Find All Numbers Disappeared in an Array](./Algorithms/0448.find-all-numbers-disappeared-in-an-array)|51%|Easy| |
 |450| * Delete Node in a BST|37%|Medium| |
 |451| * Sort Characters By Frequency|51%|Medium| |
@@ -358,8 +358,8 @@
 |462| * Minimum Moves to Equal Array Elements II|51%|Medium| |
 |463| * Island Perimeter|57%|Easy| |
 |464| * Can I Win|25%|Medium| |
-|466| * Count The Repetitions|27%|Hard| |
-|467| * Unique Substrings in Wraparound String|33%|Medium| |
+|466|[Count The Repetitions](./Algorithms/0466.count-the-repetitions)|27%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|467| * Unique Substrings in Wraparound String|32%|Medium| |
 |468| * Validate IP Address|20%|Medium| |
 |472| * Concatenated Words|30%|Hard| |
 |473| * Matchsticks to Square|35%|Medium| |
@@ -432,8 +432,8 @@
 |581|[Shortest Unsorted Continuous Subarray](./Algorithms/0581.shortest-unsorted-continuous-subarray)|29%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |583| * Delete Operation for Two Strings|44%|Medium| |
 |587| * Erect the Fence|32%|Hard| |
-|591| * Tag Validator|29%|Hard| |
-|592| * Fraction Addition and Subtraction|46%|Medium| |
+|591| * Tag Validator|30%|Hard| |
+|592| * Fraction Addition and Subtraction|45%|Medium| |
 |593| * Valid Square|40%|Medium| |
 |594| * Longest Harmonious Subsequence|40%|Easy| |
 |598| * Range Addition II|48%|Easy| |
@@ -487,7 +487,7 @@
 |677| * Map Sum Pairs|52%|Medium| |
 |678| * Valid Parenthesis String|28%|Medium| |
 |679| * 24 Game|38%|Hard| |
-|680| * Valid Palindrome II|31%|Easy| |
+|680| * Valid Palindrome II|32%|Easy| |
 |682| * Baseball Game|58%|Easy| |
 |684| * Redundant Connection|38%|Medium| |
 |685| * Redundant Connection II|28%|Hard| |
@@ -509,10 +509,10 @@
 |715| * Range Module|30%|Hard| |
 |717| * 1-bit and 2-bit Characters|52%|Easy| |
 |718| * Maximum Length of Repeated Subarray|40%|Medium| |
-|719| * Find K-th Smallest Pair Distance|23%|Hard| |
+|719| * Find K-th Smallest Pair Distance|24%|Hard| |
 |720| * Longest Word in Dictionary|38%|Easy| |
 |721| * Accounts Merge|22%|Medium| |
-|722| * Remove Comments|23%|Medium| |
+|722| * Remove Comments|24%|Medium| |
 
 以下免费的算法题，暂时不能使用 Go 解答
 
