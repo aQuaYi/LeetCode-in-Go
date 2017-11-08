@@ -17,6 +17,14 @@ var tcs = []struct {
 }{
 
 	{
+		"phqghumeaylnlfdxfircvscxggbwkfnqduxwfnfozvsrtkjprepggxrpnrvystmwcysyycqpevikeffmznimkkasvwsrenzkycxf",
+		100,
+		"xtlsgypsfa",
+		1,
+		49,
+	},
+
+	{
 		"lovelive",
 		100000,
 		"lovelive",
