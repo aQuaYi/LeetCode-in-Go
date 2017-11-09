@@ -4,6 +4,8 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/aQuaYi/LeetCode-in-Go/kit"
+
 	"github.com/stretchr/testify/assert"
 )
 
@@ -13,6 +15,13 @@ var tcs = []struct {
 	key     int
 	ans     []int
 }{
+
+	{
+		[]int{0},
+		[]int{0},
+		0,
+		[]int{},
+	},
 
 	{
 		[]int{5, 3, 2, 4, 6, 7},
@@ -29,14 +38,16 @@ func Test_deleteNode(t *testing.T) {
 
 	for _, tc := range tcs {
 		fmt.Printf("~~%v~~\n", tc)
-		ast.Equal(tc.ans, deleteNode(tc.root, tc.key), "输入:%v", tc)
+		root := kit.PreIn2Tree(tc.pre, tc.in)
+		ast.Equal(tc.ans, kit.Tree2Preorder(deleteNode(root, tc.key)), "输入:%v", tc)
 	}
 }
 
 func Benchmark_deleteNode(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		for _, tc := range tcs {
-			deleteNode(tc.root, tc.key)
+			root := kit.PreIn2Tree(tc.pre, tc.in)
+			deleteNode(root, tc.key)
 		}
 	}
 }
