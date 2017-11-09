@@ -22,3 +22,5 @@ One way is to shoot one arrow for example at x = 6 (bursting the balloons [2,8] 
 ## 解题思路
 
 见程序注释
+
+![100](452.100.png)
