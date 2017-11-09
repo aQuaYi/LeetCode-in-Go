@@ -5,34 +5,36 @@ import (
 )
 
 type TreeNode = kit.TreeNode
-
 func deleteNode(root *TreeNode, key int) *TreeNode {
-	if root == nil {
-		return nil
+    if root == nil {
+        return root  
 	}
 
-	if key < root.Val {
-		root.Left = deleteNode(root.Left, key)
-	} else if root.Val < key {
-		root.Right = deleteNode(root.Right, key)
-	} else {
-		if root.Left == nil {
-			return root.Right
-		}
-		if root.Right == nil {
-			return root.Left
-		}
-		min := getMin(root.Right)
-		root.Val = min.Val
-		root.Right = deleteNode(root.Right, min.Val)
-	}
-
-	return root
+    if root.Val == key {
+        if root.Left == nil && root.Right == nil {
+            return nil
+        } else if root.Left == nil {
+            return root.Right
+        } else if root.Right == nil {
+            return root.Left
+        } else {
+            max := findMax(root.Left)
+            root.Val = max
+            root.Left = deleteNode(root.Left, max)
+        }
+    } else if root.Val > key {
+        root.Left = deleteNode(root.Left, key)
+    } else {
+        root.Right = deleteNode(root.Right, key)
+    }
+    
+    return root
 }
 
-func getMin(root *TreeNode) *TreeNode {
-	for root.Left != nil {
-		root = root.Left
-	}
-	return root
+func findMax(node *TreeNode)int  {
+    if node.Right == nil {
+        return node.Val
+    }
+    return findMax(node.Right)
 }
+
