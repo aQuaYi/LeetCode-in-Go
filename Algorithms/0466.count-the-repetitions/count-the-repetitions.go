@@ -1,45 +1,37 @@
 package Problem0466
 
-type pair struct {
-	fi int
-	se int
-}
-
 func getMaxRepetitions(s1 string, n1 int, s2 string, n2 int) int {
-	dp := make(map[pair]pair)
-	m1, m2, i, j := 0, 0, 0, 0
-	for m1 < n1 {
-		for s1[i] != s2[j] {
-			i++
-			if i == len(s1) {
-				m1++
-				i = 0
-			}
-			if m1 == n1 {
-				return m2 / n2
-			}
-		}
-		p := pair{i, j}
-		if l, ok := dp[p]; ok {
-			d := n1 - m1 - 1
-			if d < 0 {
-				d = 0
-			}
-			m2 += d / (m1 - l.fi) * (m2 - l.se)
-			m1 += d / (m1 - l.fi) * (m1 - l.fi)
-		}
-		dp[p] = pair{m1, m2}
 
-		i++
-		j++
-		if i == len(s1) {
-			m1++
-			i = 0
+	repeatCount := make([]int, len(s2)+1)
+	visited := make([]int, len(s2)+1)
+
+	j, cnt := 0, 0
+
+	for k := 1; k <= n1; k++ {
+		for i := 0; i < len(s1); i++ {
+			if s1[i] == s2[j] {
+				j++
+				if j == len(s2) {
+					j = 0
+					cnt++
+				}
+			}
 		}
-		if j == len(s2) {
-			m2++
-			j = 0
+
+		if visited[j] == 0 {
+			repeatCount[k] = cnt
+			visited[j] = k
+		} else {
+			start := visited[j]
+			p := k - start
+			t := cnt - repeatCount[start]
+
+			ans := (n1-start)/p*t + repeatCount[(n1-start)%p+start]
+			return ans / n2
 		}
+
 	}
-	return m2 / n2
+
+	return cnt / n2
+
 }

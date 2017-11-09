@@ -17,6 +17,14 @@ var tcs = []struct {
 }{
 
 	{
+		"aaa",
+		3,
+		"aa",
+		1,
+		4,
+	},
+
+	{
 		"phqghumeaylnlfdxfircvscxggbwkfnqduxwfnfozvsrtkjprepggxrpnrvystmwcysyycqpevikeffmznimkkasvwsrenzkycxf",
 		1000000,
 		"xtlsgypsfadpooefxzbcoejuvpvaboygpoeylfpbnpljvrvipyamyehwqnqrqpmxujjloovaowuxwhmsncbxcoksfzkvatxdknly",
@@ -62,14 +70,6 @@ var tcs = []struct {
 		"aa",
 		2,
 		10,
-	},
-
-	{
-		"aaa",
-		3,
-		"aa",
-		1,
-		4,
 	},
 
 	{
