@@ -12,8 +12,10 @@ func deleteNode(root *TreeNode, key int) *TreeNode {
 	}
 
 	if root.Val == key {
-		newRight := insert2Left(root.Right, root.Left.Right)
-		root.Left.Right = newRight
+		if root.Left != nil {
+			newRight := insert2Left(root.Right, root.Left.Right)
+			root.Left.Right = newRight
+		}
 		return root.Left
 	}
 
