@@ -1,6 +1,7 @@
 package Problem0450
 
 import (
+	"fmt"
 	"github.com/aQuaYi/LeetCode-in-Go/kit"
 )
 
@@ -12,10 +13,11 @@ func deleteNode(root *TreeNode, key int) *TreeNode {
 	}
 
 	if root.Val == key {
-		if root.Left != nil {
-			newRight := insert2Left(root.Right, root.Left.Right)
-			root.Left.Right = newRight
+		if root.Left == nil {
+			return root.Right
 		}
+		newRight := insert2Left(root.Right, root.Left.Right)
+		root.Left.Right = newRight
 		return root.Left
 	}
 
@@ -35,5 +37,6 @@ func insert2Left(root, node *TreeNode) *TreeNode {
 		return root
 	}
 
-	return insert2Left(root.Left, node)
+	 insert2Left(root.Left, node)
+	return root
 }
