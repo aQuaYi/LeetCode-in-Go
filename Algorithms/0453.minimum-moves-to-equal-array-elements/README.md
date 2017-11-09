@@ -21,4 +21,22 @@ Only three moves are needed (remember each move increments two elements):
 
 ## 解题思路
 
-见程序注释
+n = len(nums)
+
+经过 m 次移动后，每个数字都是 x，可得
+
+```text
+sum + m * (n - 1) = x * n
+```
+
+每次移动，都会往最小的数字 min 上加一，所以
+
+```text
+x = min + m
+```
+
+通过以上两个等式，可得
+
+```text
+m = sum - min * n
+```
