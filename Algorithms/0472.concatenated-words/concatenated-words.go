@@ -1,51 +1,35 @@
 package Problem0472
 
-import (
-	"sort"
-)
-
 func findAllConcatenatedWordsInADict(words []string) []string {
-	res := []string{}
-
-	size := len(words)
-	if size <= 1 {
-		return res
+	dict := make(map[int]map[string]bool)
+	for _, word := range words {
+		if _, ok := dict[len(word)]; !ok {
+			dict[len(word)] = make(map[string]bool)
+		}
+		dict[len(word)][word] = true
 	}
 
-	sort.Strings(words)
-	r := make(map[byte]int, 26)
-	head := byte(0)
-	for i := 0; i < size; i++ {
-		if len(words[i]) == 0 || words[i][0] == head {
-			continue
-		}
-		head = words[i][0]
-		r[head] = i
-	}
-
-	var isCheck func(string, bool) bool
-	isCheck = func(s string, isFirst bool) bool {
-		i, ok := r[s[0]]
-		for ok && i < size && words[i] < s {
-			wLen := len(words[i])
-			if wLen < len(s) && s[:wLen] == words[i] && isCheck(s[wLen:], false) {
-				return true
-			}
-			i++
-		}
-
-		if !isFirst && i < size && words[i] == s {
-			return true
-		}
-
-		return false
-	}
-
-	for i := 1; i < size; i++ {
-		if isCheck(words[i], true) {
-			res = append(res, words[i])
+	res := make([]string, 0, len(words))
+	for _, word := range words {
+		if isConcatenated(word, dict, true) {
+			res = append(res, word)
 		}
 	}
 
 	return res
+}
+
+func isConcatenated(word string, dict map[int]map[string]bool, isWordComplete bool) bool {
+	for wLen := 1; wLen < len(word); wLen++ {
+		wordMap, ok := dict[wLen]
+		if ok &&
+			wordMap[word[:wLen]] &&
+			isConcatenated(word[wLen:], dict, false) {
+			return true
+		}
+	}
+
+	// 单词是完整的时候，会匹配到自己, 需要剔除这种情况
+	return !isWordComplete &&
+		dict[len(word)][word]
 }
