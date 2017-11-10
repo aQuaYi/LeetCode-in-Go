@@ -4,12 +4,5 @@
 	"onDidAddBookmarkEmitter": {},
 	"onDidRemoveBookmarkEmitter": {},
 	"onDidUpdateBookmarkEmitter": {},
-	"bookmarks": [
-		{
-			"fsPath": "$ROOTPATH$/Algorithms/0472.concatenated-words/concatenated-words.go",
-			"bookmarks": [
-				3
-			]
-		}
-	]
+	"bookmarks": []
 }

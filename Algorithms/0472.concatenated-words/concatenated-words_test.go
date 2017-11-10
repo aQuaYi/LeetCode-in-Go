@@ -14,6 +14,16 @@ var tcs = []struct {
 }{
 
 	{
+		[]string{"a", "b", "ab", "abc"},
+		[]string{"ab"},
+	},
+
+	{
+		[]string{},
+		[]string{},
+	},
+
+	{
 		[]string{"cat", "cats", "catsdogcats", "dog", "dogcatsdog", "hippopotamuses", "rat", "ratcatdogcat"},
 		[]string{"catsdogcats", "dogcatsdog", "ratcatdogcat"},
 	},
