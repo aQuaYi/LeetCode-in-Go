@@ -1,7 +1,7 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 排名](https://img.shields.io/badge/Ranking-7517-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/Ranking-7236-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 答题进度](https://img.shields.io/badge/Progress-70%25-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|98|176|74|348|
+|**Accepted**|98|176|75|349|
 |**Total**|148|247|99|494|
 
 ## 题解
@@ -295,7 +295,7 @@
 |381|[Insert Delete GetRandom O(1) - Duplicates allowed](./Algorithms/0381.insert-delete-getrandom-o1-duplicates-allowed)|29%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |382|[Linked List Random Node](./Algorithms/0382.linked-list-random-node)|47%|Medium| |
 |383|[Ransom Note](./Algorithms/0383.ransom-note)|47%|Easy| |
-|384|[Shuffle an Array](./Algorithms/0384.shuffle-an-array)|46%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|384|[Shuffle an Array](./Algorithms/0384.shuffle-an-array)|47%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |385|[Mini Parser](./Algorithms/0385.mini-parser)|30%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |387|[First Unique Character in a String](./Algorithms/0387.first-unique-character-in-a-string)|47%|Easy| |
 |388|[Longest Absolute File Path](./Algorithms/0388.longest-absolute-file-path)|36%|Medium| |
@@ -361,7 +361,7 @@
 |466|[Count The Repetitions](./Algorithms/0466.count-the-repetitions)|27%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |467| * Unique Substrings in Wraparound String|32%|Medium| |
 |468| * Validate IP Address|20%|Medium| |
-|472| * Concatenated Words|30%|Hard| |
+|472|[Concatenated Words](./Algorithms/0472.concatenated-words)|30%|Hard| |
 |473| * Matchsticks to Square|35%|Medium| |
 |474| * Ones and Zeroes|39%|Medium| |
 |475| * Heaters|29%|Easy| |
@@ -391,7 +391,7 @@
 |507| * Perfect Number|33%|Easy| |
 |508| * Most Frequent Subtree Sum|52%|Medium| |
 |513| * Find Bottom Left Tree Value|56%|Medium| |
-|514| * Freedom Trail|39%|Hard| |
+|514| * Freedom Trail|38%|Hard| |
 |515| * Find Largest Value in Each Tree Row|55%|Medium| |
 |516| * Longest Palindromic Subsequence|42%|Medium| |
 |517| * Super Washing Machines|36%|Hard| |
@@ -410,7 +410,7 @@
 |539| * Minimum Time Difference|45%|Medium| |
 |540| * Single Element in a Sorted Array|55%|Medium| |
 |541| * Reverse String II|43%|Easy| |
-|542| * 01 Matrix|33%|Medium| |
+|542| * 01 Matrix|32%|Medium| |
 |543| * Diameter of Binary Tree|44%|Easy| |
 |546| * Remove Boxes|34%|Hard| |
 |547| * Friend Circles|49%|Medium| |
@@ -471,7 +471,7 @@
 |658| * Find K Closest Elements|35%|Medium| |
 |659| * Split Array into Consecutive Subsequences|35%|Medium| |
 |661|[Image Smoother](./Algorithms/0661.image-smoother)|45%|Easy| |
-|662| * Maximum Width of Binary Tree|37%|Medium| |
+|662| * Maximum Width of Binary Tree|38%|Medium| |
 |664| * Strange Printer|32%|Hard| |
 |665| * Non-decreasing Array|21%|Easy| |
 |667|[Beautiful Arrangement II](./Algorithms/0667.beautiful-arrangement-ii)|51%|Medium| |
@@ -511,7 +511,7 @@
 |718| * Maximum Length of Repeated Subarray|40%|Medium| |
 |719| * Find K-th Smallest Pair Distance|24%|Hard| |
 |720| * Longest Word in Dictionary|38%|Easy| |
-|721| * Accounts Merge|23%|Medium| |
+|721| * Accounts Merge|24%|Medium| |
 |722| * Remove Comments|24%|Medium| |
 
 以下免费的算法题，暂时不能使用 Go 解答
