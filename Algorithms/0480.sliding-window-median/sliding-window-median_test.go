@@ -33,6 +33,12 @@ var tcs = []struct {
 	},
 
 	{
+		[]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14},
+		14,
+		[]float64{7.5},
+	},
+
+	{
 		[]int{9, 8, 7, 6, 5, 4, 3, 2, 1},
 		3,
 		[]float64{8, 7, 6, 5, 4, 3, 2},
@@ -56,4 +62,13 @@ func Benchmark_medianSlidingWindow(b *testing.B) {
 			medianSlidingWindow(tc.nums, tc.k)
 		}
 	}
+}
+
+// 这个是为了覆盖率
+func Test_pop(t *testing.T) {
+	nums := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14}
+	k := 14
+	w := newWindow(nums, k)
+	w.min.Pop()
+	w.max.Pop()
 }
