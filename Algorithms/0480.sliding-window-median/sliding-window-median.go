@@ -35,7 +35,7 @@ func newWindow(nums []int, k int) window {
 		m[i] = ep
 	}
 
-	for len(max) >= len(min) {
+	for len(max) > len(min) {
 		heap.Push(&min, heap.Pop(&max).(*entry))
 	}
 
