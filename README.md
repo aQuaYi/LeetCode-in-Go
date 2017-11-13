@@ -1,8 +1,8 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 排名](https://img.shields.io/badge/Ranking-7206-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 答题进度](https://img.shields.io/badge/Progress-70%25-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/Ranking-7021-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 答题进度](https://img.shields.io/badge/Progress-71%25-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 
@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|99|177|76|352|
+|**Accepted**|99|178|76|353|
 |**Total**|149|248|100|497|
 
 ## 题解
@@ -301,7 +301,7 @@
 |388|[Longest Absolute File Path](./Algorithms/0388.longest-absolute-file-path)|37%|Medium| |
 |389|[Find the Difference](./Algorithms/0389.find-the-difference)|50%|Easy| |
 |390|[Elimination Game](./Algorithms/0390.elimination-game)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|391|[Perfect Rectangle](./Algorithms/0391.perfect-rectangle)|26%|Hard| |
+|391|[Perfect Rectangle](./Algorithms/0391.perfect-rectangle)|27%|Hard| |
 |392|[Is Subsequence](./Algorithms/0392.is-subsequence)|44%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |393|[UTF-8 Validation](./Algorithms/0393.utf-8-validation)|34%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |394|[Decode String](./Algorithms/0394.decode-string)|41%|Medium| |
@@ -334,7 +334,7 @@
 |432|[All O`one Data Structure](./Algorithms/0432.all-oone-data-structure)|28%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |434|[Number of Segments in a String](./Algorithms/0434.number-of-segments-in-a-string)|36%|Easy| |
 |435|[Non-overlapping Intervals](./Algorithms/0435.non-overlapping-intervals)|41%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|436| * Find Right Interval|41%|Medium| |
+|436|[Find Right Interval](./Algorithms/0436.find-right-interval)|41%|Medium| |
 |437|[Path Sum III](./Algorithms/0437.path-sum-iii)|40%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |438|[Find All Anagrams in a String](./Algorithms/0438.find-all-anagrams-in-a-string)|33%|Easy| |
 |440|[K-th Smallest in Lexicographical Order](./Algorithms/0440.k-th-smallest-in-lexicographical-order)|25%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -513,7 +513,7 @@
 |720| * Longest Word in Dictionary|39%|Easy| |
 |721| * Accounts Merge|25%|Medium| |
 |722| * Remove Comments|25%|Medium| |
-|724| * Find Pivot Index|43%|Easy| |
+|724| * Find Pivot Index|42%|Easy| |
 |725| * Split Linked List in Parts|50%|Medium| |
 |726| * Number of Atoms|46%|Hard| |
 
