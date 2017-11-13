@@ -8,29 +8,27 @@ import (
 type Interval = kit.Interval
 
 func findRightInterval(intervals []Interval) []int {
-	if len(intervals) == 0 {
-		return []int{}
-	}
+	size := len(intervals)
 
-	starts := make([]int, len(intervals))
-	indexes := make(map[int]int, len(intervals))
-	result := make([]int, len(intervals))
+	starts := make([]int, size)
+	idxs := make(map[int]int, size)
+	res := make([]int, size)
 
 	for i, v := range intervals {
 		starts[i] = v.Start
-		indexes[v.Start] = i
+		idxs[v.Start] = i
 	}
 
 	sort.Ints(starts)
 
 	for i, v := range intervals {
 		idx := sort.SearchInts(starts, v.End)
-		if idx < len(intervals) {
-			result[i] = indexes[starts[idx]]
+		if idx < size {
+			res[i] = idxs[starts[idx]]
 		} else {
-			result[i] = -1
+			res[i] = -1
 		}
 	}
 
-	return result
+	return res
 }
