@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|98|176|76|350|
+|**Accepted**|99|177|76|352|
 |**Total**|149|248|100|497|
 
 ## 题解
@@ -349,8 +349,8 @@
 |451|[Sort Characters By Frequency](./Algorithms/0451.sort-characters-by-frequency)|51%|Medium| |
 |452|[Minimum Number of Arrows to Burst Balloons](./Algorithms/0452.minimum-number-of-arrows-to-burst-balloons)|44%|Medium| |
 |453|[Minimum Moves to Equal Array Elements](./Algorithms/0453.minimum-moves-to-equal-array-elements)|47%|Easy| |
-|454| * 4Sum II|47%|Medium| |
-|455| * Assign Cookies|47%|Easy| |
+|454|[4Sum II](./Algorithms/0454.4sum-ii)|47%|Medium| |
+|455|[Assign Cookies](./Algorithms/0455.assign-cookies)|47%|Easy| |
 |456| * 132 Pattern|28%|Medium| |
 |459| * Repeated Substring Pattern|38%|Easy| |
 |460|[LFU Cache](./Algorithms/0460.lfu-cache)|24%|Hard| |
@@ -513,7 +513,7 @@
 |720| * Longest Word in Dictionary|39%|Easy| |
 |721| * Accounts Merge|25%|Medium| |
 |722| * Remove Comments|25%|Medium| |
-|724| * Find Pivot Index|42%|Easy| |
+|724| * Find Pivot Index|43%|Easy| |
 |725| * Split Linked List in Parts|50%|Medium| |
 |726| * Number of Atoms|46%|Hard| |
 
