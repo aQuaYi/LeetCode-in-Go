@@ -2,16 +2,17 @@ package Problem0454
 
 func fourSumCount(A []int, B []int, C []int, D []int) int {
 	res := 0
-	dHas := make(map[int]int, len(D))
-	for i := 0; i < len(D); i++ {
-		dHas[D[i]]++
+	n := len(A)
+	sum := make(map[int]int, n*n)
+	for i := 0; i < n; i++ {
+		for j := 0; j < n; j++ {
+			sum[C[i]+D[j]]++
+		}
 	}
 
-	for i := 0; i < len(A); i++ {
-		for j := 0; j < len(B); j++ {
-			for k := 0; k < len(C); k++ {
-				res += dHas[0-(A[i]+B[j]+C[k])]
-			}
+	for i := 0; i < n; i++ {
+		for j := 0; j < n; j++ {
+			res += sum[-(A[i] + B[j])]
 		}
 	}
 
