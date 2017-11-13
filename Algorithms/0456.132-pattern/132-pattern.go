@@ -1,36 +1,23 @@
 package Problem0456
 
 func find132pattern(nums []int) bool {
-	size := len(nums)
-	if size < 3 {
-		return false
-	}
+	ak := -1 << 31
+	ajs := make([]int, 0, len(nums))
 
-	Min := min(nums[0], nums[1])
-	Max := max(nums[0], nums[1])
+	for i := len(nums) - 1; 0 <= i; i-- {
 
-	for i := 2; i < size; i++ {
-		if Min < nums[i] && nums[i] < Max {
+		if nums[i] < ak {
 			return true
 		}
 
-		Min = min(Min, nums[i])
-		Max = max(Max, nums[i])
+		for len(ajs) > 0 &&
+			ajs[len(ajs)-1] < nums[i] {
+			ak = ajs[len(ajs)-1]
+			ajs = ajs[:len(ajs)-1]
+		}
+
+		ajs = append(ajs, nums[i])
 	}
 
 	return false
-}
-
-func max(a, b int) int {
-	if a > b {
-		return a
-	}
-	return b
-}
-
-func min(a, b int) int {
-	if a < b {
-		return a
-	}
-	return b
 }
