@@ -5,17 +5,20 @@ import (
 )
 
 func findContentChildren(g []int, s []int) int {
-	sort.Ints(g)
+	sort.Sort(sort.Reverse(sort.IntSlice(g)))
 	sort.Ints(s)
 
-	var i, j, res int
-	for i < len(g) && j < len(s) {
-		if g[i] <= s[j] {
-			res++
-			i++
-		}
-		j++
-	}
+	n := len(s)
 
-	return res
+	content := 0
+	for _, greed := range g {
+		if len(s) == 0 {
+			break
+		}
+		if greed <= s[n-1] {
+			n--
+			content++
+		}
+	}
+	return content
 }
