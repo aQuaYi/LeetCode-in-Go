@@ -1,7 +1,21 @@
 package Problem0455
 
+import (
+	"sort"
+)
+
 func findContentChildren(g []int, s []int) int {
-	res :=
+	sort.Ints(g)
+	sort.Ints(s)
+
+	var i, j, res int
+	for i < len(g) && j < len(s) {
+		if g[i] <= s[j] {
+			res++
+			i++
+		}
+		j++
+	}
 
 	return res
 }
