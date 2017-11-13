@@ -1,42 +1,54 @@
 package Problem0480
 
 import "container/heap"
+import "time"
 
 func medianSlidingWindow(nums []int, k int) []float64 {
 	res := make([]float64, len(nums)-k+1)
 	w := newWindow(nums, k)
+
 	for i := 0; i+k < len(nums); i++ {
 		res[i] = w.median()
-		w.update(i, nums[i], i+k, nums[i+k])
+		w.update(i, i+k, nums)
 	}
+
 	res[len(nums)-k] = w.median()
 
 	return res
 }
 
 type window struct {
-	k   int
-	m   map[int]*entry
-	max maxPQ
-	min minPQ
+	k     int
+	medX2 int
+	m     map[int]*entry
+	max   maxPQ
+	min   minPQ
 }
 
 func newWindow(nums []int, k int) window {
 	max := make(maxPQ, 0, k)
 	min := make(minPQ, 0, k)
-	m := make(map[int]*entry, k+1)
+	m := make(map[int]*entry, len(nums))
 
 	for i := 0; i < k; i++ {
 		ep := &entry{
 			idx: i,
 			val: nums[i],
 		}
-		heap.Push(&max, ep)
+
 		m[i] = ep
+
+		if min.Len() == max.Len() {
+			heap.Push(&min, ep)
+		} else {
+			heap.Push(&max, ep)
+		}
 	}
 
-	for len(max) > len(min) {
-		heap.Push(&min, heap.Pop(&max).(*entry))
+	for len(max) > 0 && max[0].val > min[0].val {
+		max[0], min[0] = min[0], max[0]
+		heap.Fix(&max, 0)
+		heap.Fix(&min, 0)
 	}
 
 	return window{
@@ -48,18 +60,17 @@ func newWindow(nums []int, k int) window {
 }
 
 func (w window) median() float64 {
-	if w.k%2 == 1 {
+	if w.k&1 == 1 {
 		return float64(w.min[0].val)
 	}
 	return float64(w.max[0].val+w.min[0].val) / 2
 }
 
-func (w *window) update(popIdx, popVal, pushIdx, pushVal int) {
+func (w *window) update(popIdx, pushIdx int, nums []int) {
 	ep := w.m[popIdx]
-	delete(w.m, popIdx)
 
 	ep.idx = pushIdx
-	ep.val = pushVal
+	ep.val = nums[pushIdx]
 	w.m[pushIdx] = ep
 
 	if ep.index < len(w.max) {
@@ -70,6 +81,7 @@ func (w *window) update(popIdx, popVal, pushIdx, pushVal int) {
 		heap.Fix(&w.min, ep.index)
 	}
 
+	time.Sleep(time.Millisecond * 10)
 	if len(w.max) > 0 && w.max[0].val > w.min[0].val {
 		w.max[0], w.min[0] = w.min[0], w.max[0]
 		heap.Fix(&w.max, 0)
@@ -120,13 +132,6 @@ func (pq *minPQ) Pop() interface{} {
 	return entry
 }
 
-// update modifies the priority and value of an entry in the queue.
-func (pq *minPQ) update(entry *entry, value, priority int) {
-	entry.idx = value
-	entry.val = priority
-	heap.Fix(pq, entry.index)
-}
-
 // maxPQ implements heap.Interface and holds entries.
 type maxPQ []*entry
 
@@ -158,11 +163,4 @@ func (pq *maxPQ) Pop() interface{} {
 	entry.index = -1 // for safety
 	*pq = old[0 : n-1]
 	return entry
-}
-
-// update modifies the priority and value of an entry in the queue.
-func (pq *maxPQ) update(entry *entry, value, priority int) {
-	entry.idx = value
-	entry.val = priority
-	heap.Fix(pq, entry.index)
 }
