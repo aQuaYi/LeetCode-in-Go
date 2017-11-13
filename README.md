@@ -1,7 +1,7 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 排名](https://img.shields.io/badge/Ranking-7177-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/Ranking-7206-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 答题进度](https://img.shields.io/badge/Progress-70%25-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
@@ -12,8 +12,8 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|98|176|75|349|
-|**Total**|148|247|99|494|
+|**Accepted**|98|176|76|350|
+|**Total**|149|248|100|497|
 
 ## 题解
 
@@ -109,7 +109,7 @@
 |88|[Merge Sorted Array](./Algorithms/0088.merge-sorted-array)|32%|Easy| |
 |89|[Gray Code](./Algorithms/0089.gray-code)|41%|Medium| |
 |90|[Subsets II](./Algorithms/0090.subsets-ii)|37%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|91|[Decode Ways](./Algorithms/0091.decode-ways)|19%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|91|[Decode Ways](./Algorithms/0091.decode-ways)|20%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |92|[Reverse Linked List II](./Algorithms/0092.reverse-linked-list-ii)|30%|Medium| |
 |93|[Restore IP Addresses](./Algorithms/0093.restore-ip-addresses)|27%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |94|[Binary Tree Inorder Traversal](./Algorithms/0094.binary-tree-inorder-traversal)|47%|Medium| |
@@ -193,13 +193,13 @@
 |207|[Course Schedule](./Algorithms/0207.course-schedule)|32%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |208|[Implement Trie (Prefix Tree)](./Algorithms/0208.implement-trie-prefix-tree)|29%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |209|[Minimum Size Subarray Sum](./Algorithms/0209.minimum-size-subarray-sum)|31%|Medium| |
-|210|[Course Schedule II](./Algorithms/0210.course-schedule-ii)|28%|Medium| |
+|210|[Course Schedule II](./Algorithms/0210.course-schedule-ii)|29%|Medium| |
 |211|[Add and Search Word - Data structure design](./Algorithms/0211.add-and-search-word-data-structure-design)|23%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |212|[Word Search II](./Algorithms/0212.word-search-ii)|23%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |213|[House Robber II](./Algorithms/0213.house-robber-ii)|34%|Medium| |
 |214|[Shortest Palindrome](./Algorithms/0214.shortest-palindrome)|24%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |215|[Kth Largest Element in an Array](./Algorithms/0215.kth-largest-element-in-an-array)|39%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|216|[Combination Sum III](./Algorithms/0216.combination-sum-iii)|45%|Medium| |
+|216|[Combination Sum III](./Algorithms/0216.combination-sum-iii)|46%|Medium| |
 |217|[Contains Duplicate](./Algorithms/0217.contains-duplicate)|46%|Easy| |
 |218|[The Skyline Problem](./Algorithms/0218.the-skyline-problem)|28%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |219|[Contains Duplicate II](./Algorithms/0219.contains-duplicate-ii)|32%|Easy| |
@@ -298,7 +298,7 @@
 |384|[Shuffle an Array](./Algorithms/0384.shuffle-an-array)|47%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |385|[Mini Parser](./Algorithms/0385.mini-parser)|30%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |387|[First Unique Character in a String](./Algorithms/0387.first-unique-character-in-a-string)|47%|Easy| |
-|388|[Longest Absolute File Path](./Algorithms/0388.longest-absolute-file-path)|36%|Medium| |
+|388|[Longest Absolute File Path](./Algorithms/0388.longest-absolute-file-path)|37%|Medium| |
 |389|[Find the Difference](./Algorithms/0389.find-the-difference)|50%|Easy| |
 |390|[Elimination Game](./Algorithms/0390.elimination-game)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |391|[Perfect Rectangle](./Algorithms/0391.perfect-rectangle)|26%|Hard| |
@@ -335,7 +335,7 @@
 |434|[Number of Segments in a String](./Algorithms/0434.number-of-segments-in-a-string)|36%|Easy| |
 |435|[Non-overlapping Intervals](./Algorithms/0435.non-overlapping-intervals)|41%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |436| * Find Right Interval|41%|Medium| |
-|437|[Path Sum III](./Algorithms/0437.path-sum-iii)|39%|Easy|[❤](https://leetcode.com/list/oussv5j)|
+|437|[Path Sum III](./Algorithms/0437.path-sum-iii)|40%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |438|[Find All Anagrams in a String](./Algorithms/0438.find-all-anagrams-in-a-string)|33%|Easy| |
 |440|[K-th Smallest in Lexicographical Order](./Algorithms/0440.k-th-smallest-in-lexicographical-order)|25%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |441|[Arranging Coins](./Algorithms/0441.arranging-coins)|36%|Easy| |
@@ -368,7 +368,7 @@
 |476| * Number Complement|60%|Easy| |
 |477| * Total Hamming Distance|47%|Medium| |
 |479| * Largest Palindrome Product|24%|Easy| |
-|480| * Sliding Window Median|31%|Hard| |
+|480|[Sliding Window Median](./Algorithms/0480.sliding-window-median)|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |481| * Magical String|45%|Medium| |
 |482| * License Key Formatting|41%|Medium| |
 |483| * Smallest Good Base|33%|Hard| |
@@ -410,14 +410,14 @@
 |539| * Minimum Time Difference|45%|Medium| |
 |540| * Single Element in a Sorted Array|55%|Medium| |
 |541| * Reverse String II|43%|Easy| |
-|542| * 01 Matrix|32%|Medium| |
+|542| * 01 Matrix|33%|Medium| |
 |543| * Diameter of Binary Tree|44%|Easy| |
 |546| * Remove Boxes|34%|Hard| |
 |547| * Friend Circles|49%|Medium| |
 |551| * Student Attendance Record I|44%|Easy| |
 |552| * Student Attendance Record II|31%|Hard| |
 |553| * Optimal Division|55%|Medium| |
-|554| * Brick Wall|45%|Medium| |
+|554| * Brick Wall|46%|Medium| |
 |556| * Next Greater Element III|28%|Medium| |
 |557| * Reverse Words in a String III|59%|Easy| |
 |560|[Subarray Sum Equals K](./Algorithms/0560.subarray-sum-equals-k)|40%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -454,7 +454,7 @@
 |636| * Exclusive Time of Functions|43%|Medium| |
 |637| * Average of Levels in Binary Tree|55%|Easy| |
 |638| * Shopping Offers|43%|Medium| |
-|639|[Decode Ways II](./Algorithms/0639.decode-ways-ii)|23%|Hard| |
+|639|[Decode Ways II](./Algorithms/0639.decode-ways-ii)|24%|Hard| |
 |640| * Solve the Equation|38%|Medium| |
 |643|[Maximum Average Subarray I](./Algorithms/0643.maximum-average-subarray-i)|37%|Easy| |
 |645| * Set Mismatch|40%|Easy| |
@@ -466,17 +466,17 @@
 |652| * Find Duplicate Subtrees|35%|Medium| |
 |653| * Two Sum IV - Input is a BST|50%|Easy| |
 |654| * Maximum Binary Tree|70%|Medium| |
-|655| * Print Binary Tree|50%|Medium| |
+|655| * Print Binary Tree|49%|Medium| |
 |657| * Judge Route Circle|68%|Easy| |
 |658| * Find K Closest Elements|35%|Medium| |
 |659| * Split Array into Consecutive Subsequences|35%|Medium| |
 |661|[Image Smoother](./Algorithms/0661.image-smoother)|45%|Easy| |
-|662| * Maximum Width of Binary Tree|38%|Medium| |
+|662| * Maximum Width of Binary Tree|37%|Medium| |
 |664| * Strange Printer|32%|Hard| |
 |665| * Non-decreasing Array|21%|Easy| |
 |667|[Beautiful Arrangement II](./Algorithms/0667.beautiful-arrangement-ii)|51%|Medium| |
 |668| * Kth Smallest Number in Multiplication Table|37%|Hard| |
-|669| * Trim a Binary Search Tree|58%|Easy| |
+|669| * Trim a Binary Search Tree|57%|Easy| |
 |670| * Maximum Swap|38%|Medium| |
 |671| * Second Minimum Node In a Binary Tree|41%|Easy| |
 |672| * Bulb Switcher II|47%|Medium| |
@@ -492,7 +492,7 @@
 |684| * Redundant Connection|38%|Medium| |
 |685| * Redundant Connection II|28%|Hard| |
 |686| * Repeated String Match|32%|Easy| |
-|687| * Longest Univalue Path|33%|Easy| |
+|687| * Longest Univalue Path|32%|Easy| |
 |688| * Knight Probability in Chessboard|38%|Medium| |
 |689| * Maximum Sum of 3 Non-Overlapping Subarrays|41%|Hard| |
 |691| * Stickers to Spell Word|32%|Hard| |
@@ -505,14 +505,17 @@
 |699| * Falling Squares|36%|Hard| |
 |712| * Minimum ASCII Delete Sum for Two Strings|50%|Medium| |
 |713| * Subarray Product Less Than K|32%|Medium| |
-|714| * Best Time to Buy and Sell Stock with Transaction Fee|37%|Medium| |
-|715| * Range Module|30%|Hard| |
+|714| * Best Time to Buy and Sell Stock with Transaction Fee|38%|Medium| |
+|715| * Range Module|31%|Hard| |
 |717| * 1-bit and 2-bit Characters|52%|Easy| |
 |718| * Maximum Length of Repeated Subarray|40%|Medium| |
 |719| * Find K-th Smallest Pair Distance|24%|Hard| |
-|720| * Longest Word in Dictionary|38%|Easy| |
-|721| * Accounts Merge|24%|Medium| |
-|722| * Remove Comments|24%|Medium| |
+|720| * Longest Word in Dictionary|39%|Easy| |
+|721| * Accounts Merge|25%|Medium| |
+|722| * Remove Comments|25%|Medium| |
+|724| * Find Pivot Index|43%|Easy| |
+|725| * Split Linked List in Parts|50%|Medium| |
+|726| * Number of Atoms|46%|Hard| |
 
 以下免费的算法题，暂时不能使用 Go 解答
 
