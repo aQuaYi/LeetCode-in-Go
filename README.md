@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|99|178|76|353|
+|**Accepted**|99|179|76|354|
 |**Total**|149|248|100|497|
 
 ## 题解
@@ -351,7 +351,7 @@
 |453|[Minimum Moves to Equal Array Elements](./Algorithms/0453.minimum-moves-to-equal-array-elements)|47%|Easy| |
 |454|[4Sum II](./Algorithms/0454.4sum-ii)|47%|Medium| |
 |455|[Assign Cookies](./Algorithms/0455.assign-cookies)|47%|Easy| |
-|456| * 132 Pattern|28%|Medium| |
+|456|[132 Pattern](./Algorithms/0456.132-pattern)|28%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |459| * Repeated Substring Pattern|38%|Easy| |
 |460|[LFU Cache](./Algorithms/0460.lfu-cache)|24%|Hard| |
 |461| * Hamming Distance|69%|Easy| |
