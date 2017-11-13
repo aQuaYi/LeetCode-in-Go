@@ -70,7 +70,7 @@ func (w *window) update(popIdx, popVal, pushIdx, pushVal int) {
 		heap.Fix(&w.min, ep.index)
 	}
 
-	if w.max[0].val > w.min[0].val {
+	if len(w.max) > 0 && w.max[0].val > w.min[0].val {
 		w.max[0], w.min[0] = w.min[0], w.max[0]
 		heap.Fix(&w.max, 0)
 		heap.Fix(&w.min, 0)
