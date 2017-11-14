@@ -1,18 +1,20 @@
 package Problem0462
 
+import "sort"
+
 func minMoves2(nums []int) int {
-	sum := 0
+	sort.Ints(nums)
 	size := len(nums)
 
-	for _, n := range nums {
-		sum += n
+	median := nums[size/2]
+	if size&1 == 0 {
+		median += (nums[size/2-1] - median) / 2
 	}
-
-	ave := int(float64(sum)/float64(size) + 0.5)
 
 	res := 0
 	for _, n := range nums {
-		res += diff(ave, n)
+		// 把所有的元素都调整到 中位数 才是最优解
+		res += diff(median, n)
 	}
 
 	return res
