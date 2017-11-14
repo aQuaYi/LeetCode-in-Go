@@ -39,3 +39,26 @@ Note:
 ## 解题思路
 
 见程序注释
+
+```golang
+func smallestGoodBase(n string) string {
+    num, _ := strconv.Atoi(n)
+
+    mMax := int(math.Log2(float64(num)))
+
+    for m := mMax; 1 < m; m-- {
+        k := int(math.Pow(float64(num), 1.0/float64(m)))
+
+        tmp := int(math.Pow(float64(k), float64(m)+1)-1) / (k - 1)
+
+        if tmp == num {
+            return strconv.Itoa(k)
+        }
+    }
+
+    return strconv.Itoa(num - 1)
+}
+```
+
+以上程序在逻辑和数学上都是完全正确的，但是无法得出正确的解。
+例如，当输入"16035713712910627"，其解为"502"，但是当　for 循环中的 k == 502 时，temp == 16035713712910626 与 num 不相等。这是由于精度不够引起的错误。
