@@ -6,20 +6,19 @@ import (
 )
 
 func smallestGoodBase(n string) string {
-	numInt, _ := strconv.Atoi(n)
-	num := float64(numInt)
+	num, _ := strconv.Atoi(n)
 
-	mMax := math.Floor(math.Log2(num))
+	mMax := int(math.Log2(float64(num)))
 
 	for m := mMax; 1 < m; m-- {
-		k := int(math.Pow(num, 1.0/m))
+		k := int(math.Pow(float64(num), 1.0/float64(m)))
 
-		tmp := int(math.Pow(float64(k), m+1)-1) / (k - 1)
+		tmp := int(math.Pow(float64(k), float64(m)+1)-1) / (k - 1)
 
-		if tmp == numInt {
+		if tmp == num {
 			return strconv.Itoa(k)
 		}
 	}
 
-	return strconv.Itoa(numInt - 1)
+	return strconv.Itoa(num - 1)
 }
