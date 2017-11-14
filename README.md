@@ -194,7 +194,7 @@
 |208|[Implement Trie (Prefix Tree)](./Algorithms/0208.implement-trie-prefix-tree)|29%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |209|[Minimum Size Subarray Sum](./Algorithms/0209.minimum-size-subarray-sum)|31%|Medium| |
 |210|[Course Schedule II](./Algorithms/0210.course-schedule-ii)|29%|Medium| |
-|211|[Add and Search Word - Data structure design](./Algorithms/0211.add-and-search-word-data-structure-design)|23%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|211|[Add and Search Word - Data structure design](./Algorithms/0211.add-and-search-word-data-structure-design)|24%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |212|[Word Search II](./Algorithms/0212.word-search-ii)|23%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |213|[House Robber II](./Algorithms/0213.house-robber-ii)|34%|Medium| |
 |214|[Shortest Palindrome](./Algorithms/0214.shortest-palindrome)|24%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -417,7 +417,7 @@
 |551| * Student Attendance Record I|44%|Easy| |
 |552| * Student Attendance Record II|31%|Hard| |
 |553| * Optimal Division|55%|Medium| |
-|554| * Brick Wall|46%|Medium| |
+|554| * Brick Wall|45%|Medium| |
 |556| * Next Greater Element III|28%|Medium| |
 |557| * Reverse Words in a String III|59%|Easy| |
 |560|[Subarray Sum Equals K](./Algorithms/0560.subarray-sum-equals-k)|40%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -465,7 +465,7 @@
 |650| * 2 Keys Keyboard|44%|Medium| |
 |652| * Find Duplicate Subtrees|35%|Medium| |
 |653| * Two Sum IV - Input is a BST|50%|Easy| |
-|654| * Maximum Binary Tree|69%|Medium| |
+|654| * Maximum Binary Tree|70%|Medium| |
 |655| * Print Binary Tree|49%|Medium| |
 |657| * Judge Route Circle|68%|Easy| |
 |658| * Find K Closest Elements|35%|Medium| |
@@ -476,7 +476,7 @@
 |665| * Non-decreasing Array|21%|Easy| |
 |667|[Beautiful Arrangement II](./Algorithms/0667.beautiful-arrangement-ii)|51%|Medium| |
 |668| * Kth Smallest Number in Multiplication Table|37%|Hard| |
-|669| * Trim a Binary Search Tree|57%|Easy| |
+|669| * Trim a Binary Search Tree|58%|Easy| |
 |670| * Maximum Swap|38%|Medium| |
 |671| * Second Minimum Node In a Binary Tree|41%|Easy| |
 |672| * Bulb Switcher II|47%|Medium| |
@@ -514,7 +514,7 @@
 |721| * Accounts Merge|25%|Medium| |
 |722| * Remove Comments|25%|Medium| |
 |724| * Find Pivot Index|42%|Easy| |
-|725| * Split Linked List in Parts|50%|Medium| |
+|725| * Split Linked List in Parts|51%|Medium| |
 |726| * Number of Atoms|46%|Hard| |
 
 以下免费的算法题，暂时不能使用 Go 解答
