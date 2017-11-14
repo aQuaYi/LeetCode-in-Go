@@ -1,7 +1,7 @@
 package Problem0459
 
 func repeatedSubstringPattern(s string) bool {
-	primes := getPrimes(len(s) / 2)
+	primes := getPrimes(len(s))
 
 	for _, p := range primes {
 		if len(s)%p != 0 {
