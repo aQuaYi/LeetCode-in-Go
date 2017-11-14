@@ -13,7 +13,7 @@ func smallestGoodBase(n string) string {
 	// k 最小可以是 2，即是 二进制
 	// k == 2 时，m == mMax
 	mMax := int(math.Log2(float64(num)))
-	oldK := uint64(1)
+
 	// 从 mMax 开始往下检查，对应的 k 能否满足题意
 	for m := mMax; m >= 1; m-- {
 		// k^m < num = k^m + k^(m-1) + ... + k + 1
@@ -24,11 +24,6 @@ func smallestGoodBase(n string) string {
 		// k < num^(1/m) < k+1，即
 		// k == int(num^(1/m))
 		k := uint64(math.Pow(float64(num), 1.0/float64(m)))
-		if k == oldK {
-			// isFound 比较
-			continue
-		}
-		oldK = k
 		// 这样就确定了 k 的取值，只需要验证 k 是否满足题意即可
 		if isFound(num, k, m) {
 			return strconv.FormatUint(k, 10)
