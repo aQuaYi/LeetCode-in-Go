@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|99|179|76|354|
+|**Accepted**|99|180|76|355|
 |**Total**|149|248|100|497|
 
 ## 题解
@@ -355,7 +355,7 @@
 |459| * Repeated Substring Pattern|38%|Easy| |
 |460|[LFU Cache](./Algorithms/0460.lfu-cache)|24%|Hard| |
 |461| * Hamming Distance|69%|Easy| |
-|462| * Minimum Moves to Equal Array Elements II|51%|Medium| |
+|462|[Minimum Moves to Equal Array Elements II](./Algorithms/0462.minimum-moves-to-equal-array-elements-ii)|51%|Medium| |
 |463| * Island Perimeter|57%|Easy| |
 |464| * Can I Win|25%|Medium| |
 |466|[Count The Repetitions](./Algorithms/0466.count-the-repetitions)|27%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -465,7 +465,7 @@
 |650| * 2 Keys Keyboard|44%|Medium| |
 |652| * Find Duplicate Subtrees|35%|Medium| |
 |653| * Two Sum IV - Input is a BST|50%|Easy| |
-|654| * Maximum Binary Tree|70%|Medium| |
+|654| * Maximum Binary Tree|69%|Medium| |
 |655| * Print Binary Tree|49%|Medium| |
 |657| * Judge Route Circle|68%|Easy| |
 |658| * Find K Closest Elements|35%|Medium| |
@@ -501,7 +501,7 @@
 |695| * Max Area of Island|52%|Easy| |
 |696| * Count Binary Substrings|51%|Easy| |
 |697| * Degree of an Array|47%|Easy| |
-|698| * Partition to K Equal Sum Subsets|36%|Medium| |
+|698| * Partition to K Equal Sum Subsets|37%|Medium| |
 |699| * Falling Squares|36%|Hard| |
 |712| * Minimum ASCII Delete Sum for Two Strings|50%|Medium| |
 |713| * Subarray Product Less Than K|32%|Medium| |
