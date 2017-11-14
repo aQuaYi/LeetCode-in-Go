@@ -12,14 +12,14 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|99|180|76|355|
+|**Accepted**|100|180|77|357|
 |**Total**|149|248|100|497|
 
 ## 题解
 
 |题号|题目|通过率|难度|收藏|
 |:-:|:-|:-: | :-: | :-: |
-|1|[Two Sum](./Algorithms/0001.two-sum)|35%|Easy| |
+|1|[Two Sum](./Algorithms/0001.two-sum)|36%|Easy| |
 |2|[Add Two Numbers](./Algorithms/0002.add-two-numbers)|28%|Medium| |
 |3|[Longest Substring Without Repeating Characters](./Algorithms/0003.longest-substring-without-repeating-characters)|24%|Medium| |
 |4|[Median of Two Sorted Arrays](./Algorithms/0004.median-of-two-sorted-arrays)|22%|Hard| |
@@ -137,7 +137,7 @@
 |118|[Pascal's Triangle](./Algorithms/0118.pascals-triangle)|39%|Easy| |
 |119|[Pascal's Triangle II](./Algorithms/0119.pascals-triangle-ii)|37%|Easy| |
 |120|[Triangle](./Algorithms/0120.triangle)|34%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|121|[Best Time to Buy and Sell Stock](./Algorithms/0121.best-time-to-buy-and-sell-stock)|41%|Easy| |
+|121|[Best Time to Buy and Sell Stock](./Algorithms/0121.best-time-to-buy-and-sell-stock)|42%|Easy| |
 |122|[Best Time to Buy and Sell Stock II](./Algorithms/0122.best-time-to-buy-and-sell-stock-ii)|47%|Easy| |
 |123|[Best Time to Buy and Sell Stock III](./Algorithms/0123.best-time-to-buy-and-sell-stock-iii)|29%|Hard| |
 |124|[Binary Tree Maximum Path Sum](./Algorithms/0124.binary-tree-maximum-path-sum)|26%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -352,7 +352,7 @@
 |454|[4Sum II](./Algorithms/0454.4sum-ii)|47%|Medium| |
 |455|[Assign Cookies](./Algorithms/0455.assign-cookies)|47%|Easy| |
 |456|[132 Pattern](./Algorithms/0456.132-pattern)|28%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|459| * Repeated Substring Pattern|38%|Easy| |
+|459|[Repeated Substring Pattern](./Algorithms/0459.repeated-substring-pattern)|38%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |460|[LFU Cache](./Algorithms/0460.lfu-cache)|24%|Hard| |
 |461| * Hamming Distance|69%|Easy| |
 |462|[Minimum Moves to Equal Array Elements II](./Algorithms/0462.minimum-moves-to-equal-array-elements-ii)|51%|Medium| |
@@ -371,7 +371,7 @@
 |480|[Sliding Window Median](./Algorithms/0480.sliding-window-median)|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |481| * Magical String|45%|Medium| |
 |482| * License Key Formatting|41%|Medium| |
-|483| * Smallest Good Base|33%|Hard| |
+|483|[Smallest Good Base](./Algorithms/0483.smallest-good-base)|33%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |485|[Max Consecutive Ones](./Algorithms/0485.max-consecutive-ones)|53%|Easy| |
 |486| * Predict the Winner|45%|Medium| |
 |488| * Zuma Game|37%|Hard| |
@@ -391,7 +391,7 @@
 |507| * Perfect Number|33%|Easy| |
 |508| * Most Frequent Subtree Sum|52%|Medium| |
 |513| * Find Bottom Left Tree Value|56%|Medium| |
-|514| * Freedom Trail|38%|Hard| |
+|514| * Freedom Trail|39%|Hard| |
 |515| * Find Largest Value in Each Tree Row|55%|Medium| |
 |516| * Longest Palindromic Subsequence|42%|Medium| |
 |517| * Super Washing Machines|36%|Hard| |
@@ -432,7 +432,7 @@
 |581|[Shortest Unsorted Continuous Subarray](./Algorithms/0581.shortest-unsorted-continuous-subarray)|29%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |583| * Delete Operation for Two Strings|44%|Medium| |
 |587| * Erect the Fence|32%|Hard| |
-|591| * Tag Validator|29%|Hard| |
+|591| * Tag Validator|30%|Hard| |
 |592| * Fraction Addition and Subtraction|45%|Medium| |
 |593| * Valid Square|40%|Medium| |
 |594| * Longest Harmonious Subsequence|40%|Easy| |
@@ -503,7 +503,7 @@
 |697| * Degree of an Array|47%|Easy| |
 |698| * Partition to K Equal Sum Subsets|37%|Medium| |
 |699| * Falling Squares|36%|Hard| |
-|712| * Minimum ASCII Delete Sum for Two Strings|50%|Medium| |
+|712| * Minimum ASCII Delete Sum for Two Strings|51%|Medium| |
 |713| * Subarray Product Less Than K|32%|Medium| |
 |714| * Best Time to Buy and Sell Stock with Transaction Fee|38%|Medium| |
 |715| * Range Module|31%|Hard| |
