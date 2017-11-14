@@ -14,10 +14,10 @@ func find132pattern(a []int) bool {
 			return true
 		}
 
+		// ajStack 中的数字的 index 都比 i 大
+		// 从 ajStack 中挑选一个仅次于 a[i] 的数字作为新的 ak
+		// 然后，把 a[i] 当做下一轮 for 的 aj 放入 ajStack
 		for len(ajStack) > 0 &&
-			// ajStack 中的数字的 index 都比 i 大
-			// 从 ajStack 中挑选一个仅次于 a[i] 的数字作为新的 ak
-			// 然后，把 a[i] 当做下一轮 for 的 aj 放入 ajStack
 			ajStack[len(ajStack)-1] < a[i] {
 			ak = ajStack[len(ajStack)-1]
 			ajStack = ajStack[:len(ajStack)-1]
