@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|100|181|78|359|
+|**Accepted**|101|181|78|360|
 |**Total**|149|248|100|497|
 
 ## 题解
@@ -354,7 +354,7 @@
 |456|[132 Pattern](./Algorithms/0456.132-pattern)|28%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |459|[Repeated Substring Pattern](./Algorithms/0459.repeated-substring-pattern)|38%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |460|[LFU Cache](./Algorithms/0460.lfu-cache)|24%|Hard| |
-|461| * Hamming Distance|69%|Easy| |
+|461|[Hamming Distance](./Algorithms/0461.hamming-distance)|69%|Easy| |
 |462|[Minimum Moves to Equal Array Elements II](./Algorithms/0462.minimum-moves-to-equal-array-elements-ii)|51%|Medium| |
 |463| * Island Perimeter|57%|Easy| |
 |464| * Can I Win|25%|Medium| |
