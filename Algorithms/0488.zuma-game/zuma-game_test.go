@@ -15,6 +15,11 @@ var tcs = []struct {
 }{
 
 	{
+		// TODO: 这个 test case 官方程序会返回 -1
+		// 实际上正确答案是 2
+		// RRWWRRBBRR -> RRWWRRBBR[W]R -> RRWWRRBB[B]RWR -> RRWWRRRWR -> RRWWWR -> RRR -> <empty>
+		// 这也是我暂时没有做这个题目的原因
+
 		"RRWWRRBBRR",
 		"WB",
 		2,
