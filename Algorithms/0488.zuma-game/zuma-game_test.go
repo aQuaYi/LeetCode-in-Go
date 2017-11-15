@@ -15,6 +15,12 @@ var tcs = []struct {
 }{
 
 	{
+		"RRWWRRBBRR",
+		"WB",
+		-1,
+	},
+
+	{
 		"WRRBBW",
 		"RB",
 		-1,
