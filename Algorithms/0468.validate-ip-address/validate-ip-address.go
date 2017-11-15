@@ -76,6 +76,12 @@ func isV6Num(s string) bool {
 		return false
 	}
 
+	if !('0' <= s[0] && s[0] <= '9') &&
+		!('a' <= s[0] && s[0] <= 'z') &&
+		!('A' <= s[0] && s[0] <= 'Z') {
+		return false
+	}
+
 	n, err := strconv.ParseInt(s, 16, 64)
 
 	return err == nil && 0 <= n && n < 1<<16
