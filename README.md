@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|100|180|78|358|
+|**Accepted**|100|181|78|359|
 |**Total**|149|248|100|497|
 
 ## 题解
@@ -360,7 +360,7 @@
 |464| * Can I Win|25%|Medium| |
 |466|[Count The Repetitions](./Algorithms/0466.count-the-repetitions)|27%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |467| * Unique Substrings in Wraparound String|32%|Medium| |
-|468| * Validate IP Address|20%|Medium| |
+|468|[Validate IP Address](./Algorithms/0468.validate-ip-address)|20%|Medium| |
 |472|[Concatenated Words](./Algorithms/0472.concatenated-words)|30%|Hard| |
 |473| * Matchsticks to Square|35%|Medium| |
 |474| * Ones and Zeroes|39%|Medium| |
@@ -476,7 +476,7 @@
 |665| * Non-decreasing Array|21%|Easy| |
 |667|[Beautiful Arrangement II](./Algorithms/0667.beautiful-arrangement-ii)|51%|Medium| |
 |668| * Kth Smallest Number in Multiplication Table|37%|Hard| |
-|669| * Trim a Binary Search Tree|57%|Easy| |
+|669| * Trim a Binary Search Tree|58%|Easy| |
 |670| * Maximum Swap|38%|Medium| |
 |671| * Second Minimum Node In a Binary Tree|41%|Easy| |
 |672| * Bulb Switcher II|47%|Medium| |
@@ -504,7 +504,7 @@
 |698| * Partition to K Equal Sum Subsets|37%|Medium| |
 |699| * Falling Squares|36%|Hard| |
 |712| * Minimum ASCII Delete Sum for Two Strings|51%|Medium| |
-|713| * Subarray Product Less Than K|33%|Medium| |
+|713| * Subarray Product Less Than K|32%|Medium| |
 |714| * Best Time to Buy and Sell Stock with Transaction Fee|38%|Medium| |
 |715| * Range Module|31%|Hard| |
 |717| * 1-bit and 2-bit Characters|52%|Easy| |
@@ -515,7 +515,7 @@
 |722| * Remove Comments|25%|Medium| |
 |724| * Find Pivot Index|42%|Easy| |
 |725| * Split Linked List in Parts|51%|Medium| |
-|726| * Number of Atoms|45%|Hard| |
+|726| * Number of Atoms|46%|Hard| |
 
 以下免费的算法题，暂时不能使用 Go 解答
 
