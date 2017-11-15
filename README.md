@@ -1,8 +1,8 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 排名](https://img.shields.io/badge/Ranking-7021-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 答题进度](https://img.shields.io/badge/Progress-71%25-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/Ranking-6725-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 答题进度](https://img.shields.io/badge/Progress-72%25-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 
@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|100|180|77|357|
+|**Accepted**|100|180|78|358|
 |**Total**|149|248|100|497|
 
 ## 题解
@@ -55,7 +55,7 @@
 |34|[Search for a Range](./Algorithms/0034.search-for-a-range)|31%|Medium| |
 |35|[Search Insert Position](./Algorithms/0035.search-insert-position)|39%|Easy| |
 |36|[Valid Sudoku](./Algorithms/0036.valid-sudoku)|36%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|37|[Sudoku Solver](./Algorithms/0037.sudoku-solver)|30%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|37|[Sudoku Solver](./Algorithms/0037.sudoku-solver)|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |38|[Count and Say](./Algorithms/0038.count-and-say)|35%|Easy| |
 |39|[Combination Sum](./Algorithms/0039.combination-sum)|39%|Medium| |
 |40|[Combination Sum II](./Algorithms/0040.combination-sum-ii)|34%|Medium| |
@@ -69,7 +69,7 @@
 |48|[Rotate Image](./Algorithms/0048.rotate-image)|39%|Medium| |
 |49|[Group Anagrams](./Algorithms/0049.group-anagrams)|36%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |50|[Pow(x, n)](./Algorithms/0050.powx-n)|26%|Medium| |
-|51|[N-Queens](./Algorithms/0051.n-queens)|31%|Hard| |
+|51|[N-Queens](./Algorithms/0051.n-queens)|32%|Hard| |
 |52|[N-Queens II](./Algorithms/0052.n-queens-ii)|45%|Hard| |
 |53|[Maximum Subarray](./Algorithms/0053.maximum-subarray)|39%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |54|[Spiral Matrix](./Algorithms/0054.spiral-matrix)|26%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -374,7 +374,7 @@
 |483|[Smallest Good Base](./Algorithms/0483.smallest-good-base)|33%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |485|[Max Consecutive Ones](./Algorithms/0485.max-consecutive-ones)|53%|Easy| |
 |486| * Predict the Winner|45%|Medium| |
-|488| * Zuma Game|37%|Hard| |
+|488| * Zuma Game|37%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |491| * Increasing Subsequences|38%|Medium| |
 |492| * Construct the Rectangle|48%|Easy| |
 |493| * Reverse Pairs|20%|Hard| |
@@ -384,7 +384,7 @@
 |498| * Diagonal Traverse|46%|Medium| |
 |500| * Keyboard Row|59%|Easy| |
 |501| * Find Mode in Binary Search Tree|37%|Easy| |
-|502| * IPO|36%|Hard| |
+|502|[IPO](./Algorithms/0502.ipo)|36%|Hard| |
 |503| * Next Greater Element II|47%|Medium| |
 |504| * Base 7|44%|Easy| |
 |506| * Relative Ranks|46%|Easy| |
@@ -417,7 +417,7 @@
 |551| * Student Attendance Record I|44%|Easy| |
 |552| * Student Attendance Record II|31%|Hard| |
 |553| * Optimal Division|55%|Medium| |
-|554| * Brick Wall|45%|Medium| |
+|554| * Brick Wall|46%|Medium| |
 |556| * Next Greater Element III|28%|Medium| |
 |557| * Reverse Words in a String III|59%|Easy| |
 |560|[Subarray Sum Equals K](./Algorithms/0560.subarray-sum-equals-k)|40%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -466,7 +466,7 @@
 |652| * Find Duplicate Subtrees|35%|Medium| |
 |653| * Two Sum IV - Input is a BST|50%|Easy| |
 |654| * Maximum Binary Tree|69%|Medium| |
-|655| * Print Binary Tree|49%|Medium| |
+|655| * Print Binary Tree|50%|Medium| |
 |657| * Judge Route Circle|68%|Easy| |
 |658| * Find K Closest Elements|35%|Medium| |
 |659| * Split Array into Consecutive Subsequences|35%|Medium| |
@@ -476,7 +476,7 @@
 |665| * Non-decreasing Array|21%|Easy| |
 |667|[Beautiful Arrangement II](./Algorithms/0667.beautiful-arrangement-ii)|51%|Medium| |
 |668| * Kth Smallest Number in Multiplication Table|37%|Hard| |
-|669| * Trim a Binary Search Tree|58%|Easy| |
+|669| * Trim a Binary Search Tree|57%|Easy| |
 |670| * Maximum Swap|38%|Medium| |
 |671| * Second Minimum Node In a Binary Tree|41%|Easy| |
 |672| * Bulb Switcher II|47%|Medium| |
@@ -504,18 +504,18 @@
 |698| * Partition to K Equal Sum Subsets|37%|Medium| |
 |699| * Falling Squares|36%|Hard| |
 |712| * Minimum ASCII Delete Sum for Two Strings|51%|Medium| |
-|713| * Subarray Product Less Than K|32%|Medium| |
+|713| * Subarray Product Less Than K|33%|Medium| |
 |714| * Best Time to Buy and Sell Stock with Transaction Fee|38%|Medium| |
 |715| * Range Module|31%|Hard| |
 |717| * 1-bit and 2-bit Characters|52%|Easy| |
-|718| * Maximum Length of Repeated Subarray|40%|Medium| |
+|718| * Maximum Length of Repeated Subarray|39%|Medium| |
 |719| * Find K-th Smallest Pair Distance|24%|Hard| |
 |720| * Longest Word in Dictionary|39%|Easy| |
-|721| * Accounts Merge|25%|Medium| |
+|721| * Accounts Merge|26%|Medium| |
 |722| * Remove Comments|25%|Medium| |
 |724| * Find Pivot Index|42%|Easy| |
 |725| * Split Linked List in Parts|51%|Medium| |
-|726| * Number of Atoms|46%|Hard| |
+|726| * Number of Atoms|45%|Hard| |
 
 以下免费的算法题，暂时不能使用 Go 解答
 
