@@ -7,9 +7,9 @@ import (
 
 func findMaximizedCapital(k int, W int, Profits []int, Capital []int) int {
 	size := len(Profits)
-	pros := make(proPQ, 0, size)
-	caps := make(capQueue, size)
 
+	// caps 按照 capital 的升序排列 project
+	caps := make(capQueue, size)
 	for i := range Profits {
 		p := &project{
 			profit:  Profits[i],
@@ -17,10 +17,11 @@ func findMaximizedCapital(k int, W int, Profits []int, Capital []int) int {
 		}
 		caps[i] = p
 	}
-
 	sort.Sort(caps)
-	var i int
 
+	// pros 是高 profit 优先的队列
+	pros := make(proPQ, 0, size)
+	var i int
 	for {
 		// 把所有可以做的 project 存入 pros
 		for i < len(caps) && caps[i].capital <= W {
