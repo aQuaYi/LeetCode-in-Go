@@ -33,20 +33,17 @@ func (pq PQ) Swap(i, j int) {
 
 // Push 往 pq 中放 entry
 func (pq *PQ) Push(x interface{}) {
-	n := len(*pq)
-	entry := x.(*entry)
-	entry.index = n
-	*pq = append(*pq, entry)
+	temp := x.(*entry)
+	temp.index = len(*pq)
+	*pq = append(*pq, temp)
 }
 
 // Pop 从 pq 中取出最优先的 entry
 func (pq *PQ) Pop() interface{} {
-	old := *pq
-	n := len(old)
-	entry := old[n-1]
-	entry.index = -1 // for safety
-	*pq = old[0 : n-1]
-	return entry
+	temp := (*pq)[len(*pq)-1]
+	temp.index = -1 // for safety
+	*pq = (*pq)[0 : len(*pq)-1]
+	return temp
 }
 
 // update modifies the priority and value of an entry in the queue.
