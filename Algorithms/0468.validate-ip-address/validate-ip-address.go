@@ -72,11 +72,7 @@ func isIPv6(IP string) bool {
 }
 
 func isV6Num(s string) bool {
-	if len(s) == 0 {
-		return false
-	}
-
-	if len(s) > 2 && s[0] == '0' && s[1] == '0' {
+	if len(s) == 0 || len(s) > 4 {
 		return false
 	}
 
