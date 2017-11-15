@@ -1,14 +1,14 @@
 package Problem0461
 
 func hammingDistance(x int, y int) int {
-	if x > y {
-		x, y = y, x
-	}
+	x ^= y
 
 	res := 0
-	for x < y {
-		x <<= 1
-		res++
+	for x > 0 {
+		if x&1 == 1 {
+			res++
+		}
+		x >>= 1
 	}
 
 	return res
