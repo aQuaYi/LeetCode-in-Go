@@ -41,7 +41,8 @@ func isV4Num(s string) bool {
 		return false
 	}
 
-	if len(s) > 1 && s[0] == '0' {
+	if len(s) > 1 &&
+		(s[0] < '1' || '9' < s[0]) {
 		return false
 	}
 
