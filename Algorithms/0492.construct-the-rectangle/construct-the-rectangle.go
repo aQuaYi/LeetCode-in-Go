@@ -13,5 +13,9 @@ func constructRectangle(area int) []int {
 		W = area / L
 	}
 
+	if L < W {
+		L, W = W, L
+	}
+
 	return []int{L, W}
 }
