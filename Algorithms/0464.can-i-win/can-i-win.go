@@ -42,10 +42,13 @@ func dfs(used, remains, max int, dp map[int]bool, bit []int) bool {
 		return res
 	}
 
-	// 轮到我选的时候，对手已经让总数达到 desiredTotal 了
-	if remains <= 0 {
-		dp[used] = false
-		return false
+	if remains <= max {
+		for i := max; i >= remains; i-- {
+			if (remains & bit[i]) == 0 {
+				dp[used] = true
+				return true
+			}
+		}
 	}
 
 	for i := max; i > 0; i-- {

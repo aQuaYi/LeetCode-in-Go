@@ -45,6 +45,12 @@ var tcs = []struct {
 	},
 
 	{
+		11,
+		25,
+		true,
+	},
+
+	{
 		10,
 		20,
 		true,
