@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|101|182|78|361|
+|**Accepted**|101|182|79|362|
 |**Total**|149|248|100|497|
 
 ## 题解
@@ -377,7 +377,7 @@
 |488| * Zuma Game|37%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |491| * Increasing Subsequences|38%|Medium| |
 |492| * Construct the Rectangle|48%|Easy| |
-|493| * Reverse Pairs|20%|Hard| |
+|493|[Reverse Pairs](./Algorithms/0493.reverse-pairs)|20%|Hard| |
 |494| * Target Sum|43%|Medium| |
 |495|[Teemo Attacking](./Algorithms/0495.teemo-attacking)|51%|Medium| |
 |496| * Next Greater Element I|56%|Easy| |
@@ -489,7 +489,7 @@
 |679| * 24 Game|38%|Hard| |
 |680| * Valid Palindrome II|32%|Easy| |
 |682| * Baseball Game|58%|Easy| |
-|684| * Redundant Connection|39%|Medium| |
+|684| * Redundant Connection|38%|Medium| |
 |685| * Redundant Connection II|28%|Hard| |
 |686| * Repeated String Match|32%|Easy| |
 |687| * Longest Univalue Path|33%|Easy| |
