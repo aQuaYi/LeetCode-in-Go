@@ -18,20 +18,20 @@ package Problem0464
 
 func canIWin(maxChoosableInteger int, desiredTotal int) bool {
 	dp := make(map[int]bool)
-	sum := 0
-	bitmap := make([]int, maxChoosableInteger+1)
-	for i := maxChoosableInteger; i > 0; i-- {
-		sum += i
-		bitmap[i] = 1 << uint8(i)
-	}
+	sum := (1 + maxChoosableInteger) * maxChoosableInteger / 2
 	if sum < desiredTotal {
 		return false
 	}
-	return helper(maxChoosableInteger, desiredTotal, 0, dp, bitmap)
+	bitmap := make([]int, maxChoosableInteger+1)
+	for i := maxChoosableInteger; i > 0; i-- {
+		bitmap[i] = 1 << uint8(i)
+	}
+
+	return dfs(maxChoosableInteger, desiredTotal, 0, dp, bitmap)
 
 }
 
-func helper(maxInt int, left int, bit int, dp map[int]bool, bitmap []int) bool {
+func dfs(maxInt int, left int, bit int, dp map[int]bool, bitmap []int) bool {
 	if val, ok := dp[bit]; ok {
 		return val
 	}
@@ -48,7 +48,7 @@ func helper(maxInt int, left int, bit int, dp map[int]bool, bitmap []int) bool {
 			continue
 		}
 		bit |= bitmap[i]
-		ret := helper(maxInt, left-i, bit, dp, bitmap)
+		ret := dfs(maxInt, left-i, bit, dp, bitmap)
 		bit &= (^bitmap[i])
 		if ret == false {
 			dp[bit] = true
