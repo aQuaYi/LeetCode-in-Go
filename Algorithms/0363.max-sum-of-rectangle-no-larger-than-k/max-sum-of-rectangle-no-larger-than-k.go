@@ -137,6 +137,8 @@ func min(a, b int) int {
 	return b
 }
 
+// a, b 都是升序的切片
+// merge 把 a，b 合并起来，并保持升序
 func merge(a, b []int) []int {
 	lenA, lenB := len(a), len(b)
 	temp := make([]int, lenA+lenB)
