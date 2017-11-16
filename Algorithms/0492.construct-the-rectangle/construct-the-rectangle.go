@@ -5,17 +5,11 @@ import (
 )
 
 func constructRectangle(area int) []int {
-	L := int(math.Sqrt(float64(area)))
-	W := area / L
-
-	for L*W != area {
-		L++
-		W = area / L
+	for i := int(math.Sqrt(float64(area))); i > 1; i-- {
+		if area%i == 0 {
+			return []int{area / i, i}
+		}
 	}
 
-	if L < W {
-		L, W = W, L
-	}
-
-	return []int{L, W}
+	return []int{area, 1}
 }
