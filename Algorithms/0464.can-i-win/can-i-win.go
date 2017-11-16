@@ -46,7 +46,7 @@ func dfs(used, remains, max int, dp map[int]bool, bit []int) bool {
 
 	if remains <= max {
 		for i := max; i >= remains; i-- {
-			if (remains & bit[i]) == 0 {
+			if remains&bit[i] == 0 {
 				dp[used] = true
 				return true
 			}
@@ -59,13 +59,13 @@ func dfs(used, remains, max int, dp map[int]bool, bit []int) bool {
 			continue
 		}
 
-		// old := used
-		// 我选择 i ，往 used 中添加 i
+		old := used
+		// 暂时选择 i ，往 used 中添加 i
 		used |= bit[i]
 		res := dfs(used, remains-i, max, dp, bit)
 		// 在 used 中删除 i
-		// used = old
-		used &= (^bit[i])
+		used = old
+		// used &= (^bit[i])
 
 		if res == false { // 对手输了
 			// 所以，是我赢了
@@ -78,5 +78,10 @@ func dfs(used, remains, max int, dp map[int]bool, bit []int) bool {
 	}
 
 	dp[used] = false
+
+	// if used == 0 {
+	// 	fmt.Println("dp[0] = ", dp[0])
+	// }
+
 	return false
 }
