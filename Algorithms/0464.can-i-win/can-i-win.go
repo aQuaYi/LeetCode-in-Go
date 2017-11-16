@@ -20,8 +20,10 @@ func canIWin(maxChoosableInteger int, desiredTotal int) bool {
 	// dp[42] == true 表示
 	// 当 1，3,5 被选择后，我还有机会赢
 	dp := make(map[int]bool)
+
 	// sum 是所有能选数之和
 	sum := (1 + maxChoosableInteger) * maxChoosableInteger / 2
+
 	// bit[i] 等于，仅在第 i 个 bit 位为 1 的整数值
 	bit := make([]int, maxChoosableInteger+1)
 	for i := maxChoosableInteger; i > 0; i-- {
@@ -57,12 +59,13 @@ func dfs(used, remains, max int, dp map[int]bool, bit []int) bool {
 			continue
 		}
 
-		old := used
+		// old := used
 		// 我选择 i ，往 used 中添加 i
 		used |= bit[i]
 		res := dfs(used, remains-i, max, dp, bit)
 		// 在 used 中删除 i
-		used = old
+		// used = old
+		used &= (^bit[i])
 
 		if res == false { // 对手输了
 			// 所以，是我赢了
