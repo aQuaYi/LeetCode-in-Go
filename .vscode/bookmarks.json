@@ -4,5 +4,12 @@
 	"onDidAddBookmarkEmitter": {},
 	"onDidRemoveBookmarkEmitter": {},
 	"onDidUpdateBookmarkEmitter": {},
-	"bookmarks": []
+	"bookmarks": [
+		{
+			"fsPath": "$ROOTPATH$/Algorithms/0464.can-i-win/can-i-win_test.go",
+			"bookmarks": [
+				21
+			]
+		}
+	]
 }
