@@ -33,3 +33,5 @@ Same with other integers chosen by the first player, the second player will alwa
 ## 解题思路
 
 见程序注释
+
+![100](464.100.png)

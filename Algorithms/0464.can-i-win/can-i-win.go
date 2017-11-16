@@ -17,108 +17,65 @@ package Problem0464
 // 42 的第 1,3,5 个 bit 位上的数字为 1
 
 func canIWin(maxChoosableInteger int, desiredTotal int) bool {
-	dp := make(map[int]bool)
+	// sum 是所有能选数之和
 	sum := (1 + maxChoosableInteger) * maxChoosableInteger / 2
+	// 这种情况下，双方都不能赢
 	if sum < desiredTotal {
 		return false
 	}
-	bitmap := make([]int, maxChoosableInteger+1)
+
+	// bit[i] 等于，仅在第 i 个 bit 位为 1 的整数值
+	bit := make([]int, maxChoosableInteger+1)
 	for i := maxChoosableInteger; i > 0; i-- {
-		bitmap[i] = 1 << uint8(i)
+		bit[i] = 1 << uint8(i)
 	}
 
-	return dfs(maxChoosableInteger, desiredTotal, 0, dp, bitmap)
+	// dp[42] == true 表示
+	// 面临 1,3,5 被选择的人，有机会赢
+	dp := make(map[int]bool, maxChoosableInteger*maxChoosableInteger)
 
+	return dfs(0, desiredTotal, maxChoosableInteger, dp, bit)
 }
 
-func dfs(maxInt int, left int, bit int, dp map[int]bool, bitmap []int) bool {
-	if val, ok := dp[bit]; ok {
-		return val
+func dfs(usedBit, remains, max int, dp map[int]bool, bit []int) bool {
+	// 已经计算过 usedBit 这种状态了，直接返回结果
+	if res, ok := dp[usedBit]; ok {
+		return res
 	}
-	if left <= maxInt {
-		for i := maxInt; i >= left; i-- {
-			if (bit & bitmap[i]) == 0 {
-				dp[bit] = true
+
+	if remains <= max {
+		for i := max; i >= remains; i-- {
+			if usedBit&bit[i] == 0 {
+				dp[usedBit] = true
 				return true
 			}
 		}
 	}
-	for i := maxInt; i > 0; i-- {
-		if (bit & bitmap[i]) > 0 {
+
+	for i := max; i > 0; i-- {
+		if usedBit&bit[i] > 0 {
+			// i 已经被使用过了
 			continue
 		}
-		bit |= bitmap[i]
-		ret := dfs(maxInt, left-i, bit, dp, bitmap)
-		bit &= (^bitmap[i])
-		if ret == false {
-			dp[bit] = true
+
+		old := usedBit
+		// 暂时选择 i ，往 usedBit 中添加 i
+		usedBit |= bit[i]
+		isOpponentWin := dfs(usedBit, remains-i, max, dp, bit)
+		// 在 usedBit 中删除 i
+		usedBit = old
+		// usedBit &= (^bit[i])
+
+		if isOpponentWin == false { // 对手输了
+			// 所以，是我赢了
+			// 请注意，下面的 usedBit 是删除了 i 的
+			// 此时的 dp[usedBit] = true 表示
+			// 我在面临 usedBit 这种状态下能赢，因为可以选择 i
+			dp[usedBit] = true
 			return true
 		}
 	}
-	dp[bit] = false
+
+	dp[usedBit] = false
 	return false
 }
-
-// func canIWin(maxChoosableInteger int, desiredTotal int) bool {
-// 	// sum 是所有能选数之和
-// 	sum := (1 + maxChoosableInteger) * maxChoosableInteger / 2
-// 	// 这种情况下，双方都不能赢
-// 	if sum < desiredTotal {
-// 		return false
-// 	}
-
-// 	// bit[i] 等于，仅在第 i 个 bit 位为 1 的整数值
-// 	bit := make([]int, maxChoosableInteger+1)
-// 	for i := maxChoosableInteger; i > 0; i-- {
-// 		bit[i] = 1 << uint8(i)
-// 	}
-
-// 	// dp[42] == true 表示
-// 	// 面临 1,3,5 被选择的人，有机会赢
-// 	dp := make(map[int]bool, maxChoosableInteger*maxChoosableInteger)
-
-// 	return dfs(0, desiredTotal, maxChoosableInteger, dp, bit)
-// }
-
-// func dfs(used, remains, max int, dp map[int]bool, bit []int) bool {
-// 	// 已经计算过 used 这种状态了，直接返回结果
-// 	if res, ok := dp[used]; ok {
-// 		return res
-// 	}
-
-// 	if remains <= max {
-// 		for i := max; i >= remains; i-- {
-// 			if remains&bit[i] == 0 {
-// 				dp[used] = true
-// 				return true
-// 			}
-// 		}
-// 	}
-
-// 	for i := max; i > 0; i-- {
-// 		if used&bit[i] > 0 {
-// 			// i 已经被使用过了
-// 			continue
-// 		}
-
-// 		old := used
-// 		// 暂时选择 i ，往 used 中添加 i
-// 		used |= bit[i]
-// 		isOpponentWin := dfs(used, remains-i, max, dp, bit)
-// 		// 在 used 中删除 i
-// 		used = old
-// 		// used &= (^bit[i])
-
-// 		if isOpponentWin == false { // 对手输了
-// 			// 所以，是我赢了
-// 			// 请注意，下面的 used 是删除了 i 的
-// 			// 此时的 dp[used] = true 表示
-// 			// 我在面临 used 这种状态下能赢，因为可以选择 i
-// 			dp[used] = true
-// 			return true
-// 		}
-// 	}
-
-// 	dp[used] = false
-// 	return false
-// }
