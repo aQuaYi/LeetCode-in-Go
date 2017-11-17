@@ -4,9 +4,9 @@ func findSubstringInWraproundString(p string) int {
 	m := make(map[string]bool, len(p))
 
 	isContinuous := func(i, j int) bool {
-		a := p[i] - 'a'
-		b := p[j] - 'a'
-		return (a+byte(j-i))%26 == b
+		a := int(p[i] - 'a')
+		b := int(p[j] - 'a')
+		return (a+j-i)%26 == b
 	}
 
 	var first, last int
