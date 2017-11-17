@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|104|182|79|365|
+|**Accepted**|104|182|80|366|
 |**Total**|149|248|100|497|
 
 ## 题解
@@ -372,7 +372,7 @@
 |481| * Magical String|45%|Medium| |
 |482| * License Key Formatting|41%|Medium| |
 |483|[Smallest Good Base](./Algorithms/0483.smallest-good-base)|33%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|485|[Max Consecutive Ones](./Algorithms/0485.max-consecutive-ones)|53%|Easy| |
+|485|[Max Consecutive Ones](./Algorithms/0485.max-consecutive-ones)|54%|Easy| |
 |486| * Predict the Winner|45%|Medium| |
 |488| * Zuma Game|37%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |491| * Increasing Subsequences|38%|Medium| |
@@ -391,7 +391,7 @@
 |507| * Perfect Number|33%|Easy| |
 |508| * Most Frequent Subtree Sum|52%|Medium| |
 |513| * Find Bottom Left Tree Value|56%|Medium| |
-|514| * Freedom Trail|39%|Hard| |
+|514|[Freedom Trail](./Algorithms/0514.freedom-trail)|39%|Hard| |
 |515| * Find Largest Value in Each Tree Row|55%|Medium| |
 |516| * Longest Palindromic Subsequence|42%|Medium| |
 |517| * Super Washing Machines|36%|Hard| |
@@ -405,12 +405,12 @@
 |529| * Minesweeper|49%|Medium| |
 |530| * Minimum Absolute Difference in BST|47%|Easy| |
 |532|[K-diff Pairs in an Array](./Algorithms/0532.k-diff-pairs-in-an-array)|28%|Easy| |
-|537| * Complex Number Multiplication|64%|Medium| |
+|537| * Complex Number Multiplication|63%|Medium| |
 |538| * Convert BST to Greater Tree|49%|Easy| |
 |539| * Minimum Time Difference|45%|Medium| |
 |540| * Single Element in a Sorted Array|55%|Medium| |
 |541| * Reverse String II|43%|Easy| |
-|542| * 01 Matrix|33%|Medium| |
+|542| * 01 Matrix|32%|Medium| |
 |543| * Diameter of Binary Tree|44%|Easy| |
 |546| * Remove Boxes|34%|Hard| |
 |547| * Friend Circles|49%|Medium| |
@@ -432,7 +432,7 @@
 |581|[Shortest Unsorted Continuous Subarray](./Algorithms/0581.shortest-unsorted-continuous-subarray)|29%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |583| * Delete Operation for Two Strings|44%|Medium| |
 |587| * Erect the Fence|32%|Hard| |
-|591| * Tag Validator|30%|Hard| |
+|591| * Tag Validator|29%|Hard| |
 |592| * Fraction Addition and Subtraction|45%|Medium| |
 |593| * Valid Square|40%|Medium| |
 |594| * Longest Harmonious Subsequence|40%|Easy| |
@@ -489,19 +489,19 @@
 |679| * 24 Game|38%|Hard| |
 |680| * Valid Palindrome II|32%|Easy| |
 |682| * Baseball Game|58%|Easy| |
-|684| * Redundant Connection|38%|Medium| |
+|684| * Redundant Connection|39%|Medium| |
 |685| * Redundant Connection II|28%|Hard| |
 |686| * Repeated String Match|32%|Easy| |
 |687| * Longest Univalue Path|33%|Easy| |
 |688| * Knight Probability in Chessboard|38%|Medium| |
 |689| * Maximum Sum of 3 Non-Overlapping Subarrays|41%|Hard| |
 |691| * Stickers to Spell Word|32%|Hard| |
-|692| * Top K Frequent Words|40%|Medium| |
+|692| * Top K Frequent Words|41%|Medium| |
 |693| * Binary Number with Alternating Bits|54%|Easy| |
 |695| * Max Area of Island|52%|Easy| |
 |696| * Count Binary Substrings|51%|Easy| |
 |697| * Degree of an Array|47%|Easy| |
-|698| * Partition to K Equal Sum Subsets|37%|Medium| |
+|698| * Partition to K Equal Sum Subsets|36%|Medium| |
 |699| * Falling Squares|36%|Hard| |
 |712| * Minimum ASCII Delete Sum for Two Strings|50%|Medium| |
 |713| * Subarray Product Less Than K|32%|Medium| |
@@ -514,7 +514,7 @@
 |721| * Accounts Merge|26%|Medium| |
 |722| * Remove Comments|25%|Medium| |
 |724| * Find Pivot Index|42%|Easy| |
-|725| * Split Linked List in Parts|51%|Medium| |
+|725| * Split Linked List in Parts|50%|Medium| |
 |726| * Number of Atoms|46%|Hard| |
 
 以下免费的算法题，暂时不能使用 Go 解答
