@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|104|182|80|366|
+|**Accepted**|104|183|80|367|
 |**Total**|149|248|100|497|
 
 ## 题解
@@ -359,7 +359,7 @@
 |463|[Island Perimeter](./Algorithms/0463.island-perimeter)|57%|Easy| |
 |464|[Can I Win](./Algorithms/0464.can-i-win)|25%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |466|[Count The Repetitions](./Algorithms/0466.count-the-repetitions)|27%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|467| * Unique Substrings in Wraparound String|32%|Medium| |
+|467|[Unique Substrings in Wraparound String](./Algorithms/0467.unique-substrings-in-wraparound-string)|32%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |468|[Validate IP Address](./Algorithms/0468.validate-ip-address)|20%|Medium| |
 |472|[Concatenated Words](./Algorithms/0472.concatenated-words)|30%|Hard| |
 |473| * Matchsticks to Square|35%|Medium| |
@@ -405,7 +405,7 @@
 |529| * Minesweeper|49%|Medium| |
 |530| * Minimum Absolute Difference in BST|47%|Easy| |
 |532|[K-diff Pairs in an Array](./Algorithms/0532.k-diff-pairs-in-an-array)|28%|Easy| |
-|537| * Complex Number Multiplication|63%|Medium| |
+|537| * Complex Number Multiplication|64%|Medium| |
 |538| * Convert BST to Greater Tree|49%|Easy| |
 |539| * Minimum Time Difference|45%|Medium| |
 |540| * Single Element in a Sorted Array|55%|Medium| |
@@ -432,7 +432,7 @@
 |581|[Shortest Unsorted Continuous Subarray](./Algorithms/0581.shortest-unsorted-continuous-subarray)|29%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |583| * Delete Operation for Two Strings|44%|Medium| |
 |587| * Erect the Fence|32%|Hard| |
-|591| * Tag Validator|29%|Hard| |
+|591| * Tag Validator|30%|Hard| |
 |592| * Fraction Addition and Subtraction|45%|Medium| |
 |593| * Valid Square|40%|Medium| |
 |594| * Longest Harmonious Subsequence|40%|Easy| |
@@ -471,7 +471,7 @@
 |658| * Find K Closest Elements|35%|Medium| |
 |659| * Split Array into Consecutive Subsequences|35%|Medium| |
 |661|[Image Smoother](./Algorithms/0661.image-smoother)|45%|Easy| |
-|662| * Maximum Width of Binary Tree|38%|Medium| |
+|662| * Maximum Width of Binary Tree|37%|Medium| |
 |664| * Strange Printer|32%|Hard| |
 |665| * Non-decreasing Array|21%|Easy| |
 |667|[Beautiful Arrangement II](./Algorithms/0667.beautiful-arrangement-ii)|51%|Medium| |
@@ -506,7 +506,7 @@
 |712| * Minimum ASCII Delete Sum for Two Strings|50%|Medium| |
 |713| * Subarray Product Less Than K|32%|Medium| |
 |714| * Best Time to Buy and Sell Stock with Transaction Fee|38%|Medium| |
-|715| * Range Module|31%|Hard| |
+|715| * Range Module|30%|Hard| |
 |717| * 1-bit and 2-bit Characters|51%|Easy| |
 |718| * Maximum Length of Repeated Subarray|39%|Medium| |
 |719| * Find K-th Smallest Pair Distance|24%|Hard| |
