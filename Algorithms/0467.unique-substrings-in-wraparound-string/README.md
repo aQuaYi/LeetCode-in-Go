@@ -36,3 +36,5 @@ Explanation: There are six substrings "z", "a", "b", "za", "ab", "zab" of string
 ## 解题思路
 
 见程序注释
+
+![100](467.100.png)

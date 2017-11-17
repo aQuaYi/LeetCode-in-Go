@@ -1,28 +1,33 @@
 package Problem0467
 
 func findSubstringInWraproundString(p string) int {
-	m := make(map[string]bool, len(p))
+	count := [26]int{}
 
-	isContinuous := func(i, j int) bool {
-		a := int(p[i] - 'a')
-		b := int(p[j] - 'a')
-		return (a+j-i)%26 == b
-	}
+	length := 0
 
-	var first, last int
-
-	for last < len(p) {
-		if !isContinuous(first, last) {
-			first = last
-			continue
+	for i := 0; i < len(p); i++ {
+		if 0 < i &&
+			(p[i-1]+1 == p[i] || p[i-1] == p[i]+25) {
+			length++
+		} else {
+			length = 1
 		}
 
-		for i := last; first <= i; i-- {
-			m[p[i:last+1]] = true
-		}
-
-		last++
+		b := p[i] - 'a'
+		count[b] = max(count[b], length)
 	}
 
-	return len(m)
+	res := 0
+	for i := 0; i < 26; i++ {
+		res += count[i]
+	}
+
+	return res
+}
+
+func max(a, b int) int {
+	if a > b {
+		return a
+	}
+	return b
 }
