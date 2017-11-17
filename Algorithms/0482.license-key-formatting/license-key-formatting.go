@@ -20,11 +20,11 @@ func licenseKeyFormatting(s string, k int) string {
 
 	// (countAN+k-1)/k-1 是 res 中 '-' 的个数
 	res := make([]byte, (countAN+k-1)/k-1+countAN)
-	bytes := []byte(s)
 
-	i, j := len(res), len(bytes)
+	i, j := len(res), len(s)
 	for 0 <= j-k {
-		copy(res[i-k:i], bytes[j-k:j])
+		copy(res[i-k:i], s[j-k:j])
+
 		if 0 <= i-k-1 {
 			res[i-k-1] = '-'
 		}
@@ -33,8 +33,9 @@ func licenseKeyFormatting(s string, k int) string {
 		j -= k
 	}
 
+	// 处理头部不完整的字符
 	if j > 0 {
-		copy(res[:j], bytes[:j])
+		copy(res[:j], s[:j])
 	}
 
 	return string(res)
