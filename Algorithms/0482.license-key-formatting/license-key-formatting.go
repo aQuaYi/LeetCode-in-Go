@@ -5,40 +5,36 @@ import (
 )
 
 func licenseKeyFormatting(s string, k int) string {
+	// 统计 s 中的 "-" 的个数
 	countDashs := strings.Count(s, "-")
+	// 统计 s 中字母和数字的个数
 	countAN := len(s) - countDashs
 
 	if countAN == 0 {
 		return ""
 	}
 
+	// 删除 '-' ，并把所有的字母改成大写
 	s = strings.Replace(s, "-", "", -1)
 	s = strings.ToUpper(s)
 
-	remain := countAN % k
-	if remain == 0 {
-		remain = k
+	// (countAN+k-1)/k-1 是 res 中 '-' 的个数
+	res := make([]byte, (countAN+k-1)/k-1+countAN)
+	bytes := []byte(s)
+
+	i, j := len(res), len(bytes)
+	for 0 <= j-k {
+		copy(res[i-k:i], bytes[j-k:j])
+		if 0 <= i-k-1 {
+			res[i-k-1] = '-'
+		}
+
+		i -= k + 1
+		j -= k
 	}
 
-	res := make([]byte, (countAN+k-1)/k-1+countAN)
-
-	i, j := len(res)-1, 1
-	n := len(s)
-	count := 0
-	for {
-		res[i] = s[n-j]
-		j++
-		count++
-		i--
-
-		if 0 <= i && count%k == 0 {
-			res[i] = '-'
-			i--
-		}
-
-		if i < 0 {
-			break
-		}
+	if j > 0 {
+		copy(res[:j], bytes[:j])
 	}
 
 	return string(res)
