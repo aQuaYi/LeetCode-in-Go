@@ -1,6 +1,10 @@
 package Problem0467
 
 func findSubstringInWraproundString(p string) int {
+	// count[0] = 4 表示，以 'a' 结尾的连续字符串的最大长度为 4
+	// 那么，在符合题意的 subString 中以 'a' 结尾的个数为 4
+	// 这样统计起来，既不会遗漏也不会重复
+	//
 	count := [26]int{}
 
 	length := 0
