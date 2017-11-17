@@ -24,6 +24,16 @@ var tcs = []struct {
 	},
 
 	{
+		"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",
+		2379,
+	},
+
+	{
+		"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",
+		1027,
+	},
+
+	{
 		"abce",
 		7,
 	},
