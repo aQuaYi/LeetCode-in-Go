@@ -8,6 +8,10 @@ func licenseKeyFormatting(s string, k int) string {
 	countDashs := strings.Count(s, "-")
 	countAN := len(s) - countDashs
 
+	if countAN == 0 {
+		return ""
+	}
+
 	s = strings.Replace(s, "-", "", -1)
 	s = strings.ToUpper(s)
 
