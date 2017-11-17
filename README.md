@@ -2,7 +2,7 @@
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 排名](https://img.shields.io/badge/Ranking-6386-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 答题进度](https://img.shields.io/badge/Progress-73%25-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 答题进度](https://img.shields.io/badge/Progress-74%25-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 
@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|104|183|80|367|
+|**Accepted**|104|185|80|369|
 |**Total**|149|248|100|497|
 
 ## 题解
@@ -369,8 +369,8 @@
 |477| * Total Hamming Distance|47%|Medium| |
 |479|[Largest Palindrome Product](./Algorithms/0479.largest-palindrome-product)|24%|Easy| |
 |480|[Sliding Window Median](./Algorithms/0480.sliding-window-median)|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|481| * Magical String|45%|Medium| |
-|482| * License Key Formatting|41%|Medium| |
+|481|[Magical String](./Algorithms/0481.magical-string)|45%|Medium| |
+|482|[License Key Formatting](./Algorithms/0482.license-key-formatting)|41%|Medium| |
 |483|[Smallest Good Base](./Algorithms/0483.smallest-good-base)|33%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |485|[Max Consecutive Ones](./Algorithms/0485.max-consecutive-ones)|54%|Easy| |
 |486| * Predict the Winner|45%|Medium| |
@@ -471,7 +471,7 @@
 |658| * Find K Closest Elements|35%|Medium| |
 |659| * Split Array into Consecutive Subsequences|35%|Medium| |
 |661|[Image Smoother](./Algorithms/0661.image-smoother)|45%|Easy| |
-|662| * Maximum Width of Binary Tree|37%|Medium| |
+|662| * Maximum Width of Binary Tree|38%|Medium| |
 |664| * Strange Printer|32%|Hard| |
 |665| * Non-decreasing Array|21%|Easy| |
 |667|[Beautiful Arrangement II](./Algorithms/0667.beautiful-arrangement-ii)|51%|Medium| |
@@ -479,7 +479,7 @@
 |669| * Trim a Binary Search Tree|57%|Easy| |
 |670| * Maximum Swap|38%|Medium| |
 |671| * Second Minimum Node In a Binary Tree|41%|Easy| |
-|672| * Bulb Switcher II|47%|Medium| |
+|672| * Bulb Switcher II|48%|Medium| |
 |673| * Number of Longest Increasing Subsequence|31%|Medium| |
 |674| * Longest Continuous Increasing Subsequence|42%|Easy| |
 |675| * Cut Off Trees for Golf Event|26%|Hard| |
@@ -513,7 +513,7 @@
 |720| * Longest Word in Dictionary|39%|Easy| |
 |721| * Accounts Merge|26%|Medium| |
 |722| * Remove Comments|25%|Medium| |
-|724| * Find Pivot Index|42%|Easy| |
+|724| * Find Pivot Index|41%|Easy| |
 |725| * Split Linked List in Parts|50%|Medium| |
 |726| * Number of Atoms|46%|Hard| |
 
