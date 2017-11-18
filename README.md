@@ -1,7 +1,7 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 排名](https://img.shields.io/badge/Ranking-6386-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/Ranking-6005-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 答题进度](https://img.shields.io/badge/Progress-74%25-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|104|185|80|369|
+|**Accepted**|104|185|81|370|
 |**Total**|149|248|100|497|
 
 ## 题解
@@ -125,7 +125,7 @@
 |104|[Maximum Depth of Binary Tree](./Algorithms/0104.maximum-depth-of-binary-tree)|53%|Easy| |
 |105|[Construct Binary Tree from Preorder and Inorder Traversal](./Algorithms/0105.construct-binary-tree-from-preorder-and-inorder-traversal)|32%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |106|[Construct Binary Tree from Inorder and Postorder Traversal](./Algorithms/0106.construct-binary-tree-from-inorder-and-postorder-traversal)|32%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|107|[Binary Tree Level Order Traversal II](./Algorithms/0107.binary-tree-level-order-traversal-ii)|40%|Easy| |
+|107|[Binary Tree Level Order Traversal II](./Algorithms/0107.binary-tree-level-order-traversal-ii)|41%|Easy| |
 |108|[Convert Sorted Array to Binary Search Tree](./Algorithms/0108.convert-sorted-array-to-binary-search-tree)|42%|Easy| |
 |109|[Convert Sorted List to Binary Search Tree](./Algorithms/0109.convert-sorted-list-to-binary-search-tree)|34%|Medium| |
 |110|[Balanced Binary Tree](./Algorithms/0110.balanced-binary-tree)|37%|Easy| |
@@ -372,7 +372,7 @@
 |481|[Magical String](./Algorithms/0481.magical-string)|45%|Medium| |
 |482|[License Key Formatting](./Algorithms/0482.license-key-formatting)|41%|Medium| |
 |483|[Smallest Good Base](./Algorithms/0483.smallest-good-base)|33%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|485|[Max Consecutive Ones](./Algorithms/0485.max-consecutive-ones)|54%|Easy| |
+|485|[Max Consecutive Ones](./Algorithms/0485.max-consecutive-ones)|53%|Easy| |
 |486| * Predict the Winner|45%|Medium| |
 |488| * Zuma Game|37%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |491| * Increasing Subsequences|38%|Medium| |
@@ -412,7 +412,7 @@
 |541| * Reverse String II|43%|Easy| |
 |542| * 01 Matrix|32%|Medium| |
 |543| * Diameter of Binary Tree|44%|Easy| |
-|546| * Remove Boxes|34%|Hard| |
+|546|[Remove Boxes](./Algorithms/0546.remove-boxes)|34%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |547| * Friend Circles|49%|Medium| |
 |551| * Student Attendance Record I|44%|Easy| |
 |552| * Student Attendance Record II|31%|Hard| |
@@ -432,7 +432,7 @@
 |581|[Shortest Unsorted Continuous Subarray](./Algorithms/0581.shortest-unsorted-continuous-subarray)|29%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |583| * Delete Operation for Two Strings|44%|Medium| |
 |587| * Erect the Fence|32%|Hard| |
-|591| * Tag Validator|30%|Hard| |
+|591| * Tag Validator|29%|Hard| |
 |592| * Fraction Addition and Subtraction|45%|Medium| |
 |593| * Valid Square|40%|Medium| |
 |594| * Longest Harmonious Subsequence|40%|Easy| |
@@ -461,7 +461,7 @@
 |646| * Maximum Length of Pair Chain|47%|Medium| |
 |647| * Palindromic Substrings|55%|Medium| |
 |648| * Replace Words|47%|Medium| |
-|649| * Dota2 Senate|36%|Medium| |
+|649| * Dota2 Senate|35%|Medium| |
 |650| * 2 Keys Keyboard|44%|Medium| |
 |652| * Find Duplicate Subtrees|35%|Medium| |
 |653| * Two Sum IV - Input is a BST|50%|Easy| |
@@ -479,7 +479,7 @@
 |669| * Trim a Binary Search Tree|57%|Easy| |
 |670| * Maximum Swap|38%|Medium| |
 |671| * Second Minimum Node In a Binary Tree|41%|Easy| |
-|672| * Bulb Switcher II|48%|Medium| |
+|672| * Bulb Switcher II|47%|Medium| |
 |673| * Number of Longest Increasing Subsequence|31%|Medium| |
 |674| * Longest Continuous Increasing Subsequence|42%|Easy| |
 |675| * Cut Off Trees for Golf Event|26%|Hard| |
@@ -495,7 +495,7 @@
 |687| * Longest Univalue Path|33%|Easy| |
 |688| * Knight Probability in Chessboard|38%|Medium| |
 |689| * Maximum Sum of 3 Non-Overlapping Subarrays|41%|Hard| |
-|691| * Stickers to Spell Word|32%|Hard| |
+|691| * Stickers to Spell Word|33%|Hard| |
 |692| * Top K Frequent Words|41%|Medium| |
 |693| * Binary Number with Alternating Bits|54%|Easy| |
 |695| * Max Area of Island|52%|Easy| |
@@ -503,7 +503,7 @@
 |697| * Degree of an Array|47%|Easy| |
 |698| * Partition to K Equal Sum Subsets|36%|Medium| |
 |699| * Falling Squares|36%|Hard| |
-|712| * Minimum ASCII Delete Sum for Two Strings|50%|Medium| |
+|712| * Minimum ASCII Delete Sum for Two Strings|51%|Medium| |
 |713| * Subarray Product Less Than K|32%|Medium| |
 |714| * Best Time to Buy and Sell Stock with Transaction Fee|38%|Medium| |
 |715| * Range Module|30%|Hard| |
@@ -515,7 +515,7 @@
 |722| * Remove Comments|25%|Medium| |
 |724| * Find Pivot Index|41%|Easy| |
 |725| * Split Linked List in Parts|50%|Medium| |
-|726| * Number of Atoms|46%|Hard| |
+|726| * Number of Atoms|45%|Hard| |
 
 以下免费的算法题，暂时不能使用 Go 解答
 
