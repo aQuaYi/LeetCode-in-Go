@@ -29,3 +29,5 @@ The number of boxes n would not exceed 100.
 ## 解题思路
 
 见程序注释
+
+![100](546.100.png)
