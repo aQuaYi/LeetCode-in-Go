@@ -1,7 +1,7 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 排名](https://img.shields.io/badge/Ranking-6005-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/Ranking-5987-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 答题进度](https://img.shields.io/badge/Progress-74%25-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
@@ -12,8 +12,8 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|104|185|81|370|
-|**Total**|149|248|100|497|
+|**Accepted**|105|185|81|371|
+|**Total**|151|249|101|501|
 
 ## 题解
 
@@ -220,7 +220,7 @@
 |238|[Product of Array Except Self](./Algorithms/0238.product-of-array-except-self)|49%|Medium| |
 |239|[Sliding Window Maximum](./Algorithms/0239.sliding-window-maximum)|33%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |240|[Search a 2D Matrix II](./Algorithms/0240.search-a-2d-matrix-ii)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|241|[Different Ways to Add Parentheses](./Algorithms/0241.different-ways-to-add-parentheses)|44%|Medium| |
+|241|[Different Ways to Add Parentheses](./Algorithms/0241.different-ways-to-add-parentheses)|45%|Medium| |
 |242|[Valid Anagram](./Algorithms/0242.valid-anagram)|46%|Easy| |
 |257|[Binary Tree Paths](./Algorithms/0257.binary-tree-paths)|39%|Easy| |
 |258|[Add Digits](./Algorithms/0258.add-digits)|51%|Easy| |
@@ -364,7 +364,7 @@
 |472|[Concatenated Words](./Algorithms/0472.concatenated-words)|30%|Hard| |
 |473| * Matchsticks to Square|35%|Medium| |
 |474| * Ones and Zeroes|39%|Medium| |
-|475| * Heaters|29%|Easy| |
+|475|[Heaters](./Algorithms/0475.heaters)|29%|Easy| |
 |476| * Number Complement|60%|Easy| |
 |477| * Total Hamming Distance|47%|Medium| |
 |479|[Largest Palindrome Product](./Algorithms/0479.largest-palindrome-product)|24%|Easy| |
@@ -372,7 +372,7 @@
 |481|[Magical String](./Algorithms/0481.magical-string)|45%|Medium| |
 |482|[License Key Formatting](./Algorithms/0482.license-key-formatting)|41%|Medium| |
 |483|[Smallest Good Base](./Algorithms/0483.smallest-good-base)|33%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|485|[Max Consecutive Ones](./Algorithms/0485.max-consecutive-ones)|53%|Easy| |
+|485|[Max Consecutive Ones](./Algorithms/0485.max-consecutive-ones)|54%|Easy| |
 |486| * Predict the Winner|45%|Medium| |
 |488| * Zuma Game|37%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |491| * Increasing Subsequences|38%|Medium| |
@@ -432,7 +432,7 @@
 |581|[Shortest Unsorted Continuous Subarray](./Algorithms/0581.shortest-unsorted-continuous-subarray)|29%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |583| * Delete Operation for Two Strings|44%|Medium| |
 |587| * Erect the Fence|32%|Hard| |
-|591| * Tag Validator|29%|Hard| |
+|591| * Tag Validator|30%|Hard| |
 |592| * Fraction Addition and Subtraction|45%|Medium| |
 |593| * Valid Square|40%|Medium| |
 |594| * Longest Harmonious Subsequence|40%|Easy| |
@@ -457,7 +457,7 @@
 |639|[Decode Ways II](./Algorithms/0639.decode-ways-ii)|24%|Hard| |
 |640| * Solve the Equation|38%|Medium| |
 |643|[Maximum Average Subarray I](./Algorithms/0643.maximum-average-subarray-i)|37%|Easy| |
-|645| * Set Mismatch|40%|Easy| |
+|645| * Set Mismatch|39%|Easy| |
 |646| * Maximum Length of Pair Chain|47%|Medium| |
 |647| * Palindromic Substrings|55%|Medium| |
 |648| * Replace Words|47%|Medium| |
@@ -496,7 +496,7 @@
 |688| * Knight Probability in Chessboard|38%|Medium| |
 |689| * Maximum Sum of 3 Non-Overlapping Subarrays|41%|Hard| |
 |691| * Stickers to Spell Word|33%|Hard| |
-|692| * Top K Frequent Words|41%|Medium| |
+|692| * Top K Frequent Words|40%|Medium| |
 |693| * Binary Number with Alternating Bits|54%|Easy| |
 |695| * Max Area of Island|52%|Easy| |
 |696| * Count Binary Substrings|51%|Easy| |
@@ -505,17 +505,21 @@
 |699| * Falling Squares|36%|Hard| |
 |712| * Minimum ASCII Delete Sum for Two Strings|51%|Medium| |
 |713| * Subarray Product Less Than K|32%|Medium| |
-|714| * Best Time to Buy and Sell Stock with Transaction Fee|38%|Medium| |
+|714| * Best Time to Buy and Sell Stock with Transaction Fee|39%|Medium| |
 |715| * Range Module|30%|Hard| |
 |717| * 1-bit and 2-bit Characters|51%|Easy| |
 |718| * Maximum Length of Repeated Subarray|39%|Medium| |
-|719| * Find K-th Smallest Pair Distance|24%|Hard| |
-|720| * Longest Word in Dictionary|39%|Easy| |
-|721| * Accounts Merge|26%|Medium| |
+|719| * Find K-th Smallest Pair Distance|25%|Hard| |
+|720| * Longest Word in Dictionary|40%|Easy| |
+|721| * Accounts Merge|27%|Medium| |
 |722| * Remove Comments|25%|Medium| |
 |724| * Find Pivot Index|41%|Easy| |
-|725| * Split Linked List in Parts|50%|Medium| |
+|725| * Split Linked List in Parts|49%|Medium| |
 |726| * Number of Atoms|45%|Hard| |
+|728| * Self Dividing Numbers|73%|Easy| |
+|729| * My Calendar I|34%|Medium| |
+|730| * Count Different Palindromic Subsequences|24%|Hard| |
+|731| * My Calendar II|30%|Easy| |
 
 以下免费的算法题，暂时不能使用 Go 解答
 
