@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|106|185|81|372|
+|**Accepted**|107|185|81|373|
 |**Total**|151|249|101|501|
 
 ## 题解
@@ -386,7 +386,7 @@
 |501| * Find Mode in Binary Search Tree|37%|Easy| |
 |502|[IPO](./Algorithms/0502.ipo)|36%|Hard| |
 |503| * Next Greater Element II|47%|Medium| |
-|504| * Base 7|44%|Easy| |
+|504|[Base 7](./Algorithms/0504.base-7)|44%|Easy| |
 |506| * Relative Ranks|46%|Easy| |
 |507| * Perfect Number|33%|Easy| |
 |508| * Most Frequent Subtree Sum|52%|Medium| |
