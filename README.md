@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|105|185|81|371|
+|**Accepted**|106|185|81|372|
 |**Total**|151|249|101|501|
 
 ## 题解
@@ -382,7 +382,7 @@
 |495|[Teemo Attacking](./Algorithms/0495.teemo-attacking)|51%|Medium| |
 |496| * Next Greater Element I|56%|Easy| |
 |498| * Diagonal Traverse|46%|Medium| |
-|500| * Keyboard Row|59%|Easy| |
+|500|[Keyboard Row](./Algorithms/0500.keyboard-row)|59%|Easy| |
 |501| * Find Mode in Binary Search Tree|37%|Easy| |
 |502|[IPO](./Algorithms/0502.ipo)|36%|Hard| |
 |503| * Next Greater Element II|47%|Medium| |
