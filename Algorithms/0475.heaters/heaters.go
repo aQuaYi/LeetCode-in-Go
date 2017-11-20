@@ -22,9 +22,9 @@ func findRadius(houses []int, heaters []int) int {
 			iHeater++
 		}
 
-		if iHeater == len(heaters) {
-			return max(res, houses[len(houses)-1]-heaters[iHeater-1])
-		}
+		// if iHeater == len(heaters) {
+		// 	return max(res, houses[len(houses)-1]-heaters[iHeater-1])
+		// }
 
 		left := 1<<31 - 1
 		if 0 <= iHeater-1 {
@@ -33,7 +33,9 @@ func findRadius(houses []int, heaters []int) int {
 		right := heaters[iHeater] - houses[iHouse]
 		res = max(res, min(left, right))
 
-		for iHouse < len(houses) && houses[iHouse] <= heaters[iHeater]+res {
+		for iHouse < len(houses) &&
+			((0 <= iHeater-1 && houses[iHouse] <= heaters[iHeater-1]+res) ||
+				(0 == iHeater)) {
 			iHouse++
 		}
 	}
