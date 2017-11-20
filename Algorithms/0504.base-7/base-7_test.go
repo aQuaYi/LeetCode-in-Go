@@ -12,6 +12,12 @@ var tcs = []struct {
 	num int
 	ans string
 }{
+
+	{
+		0,
+		"0",
+	},
+
 	{
 		100,
 		"202",
