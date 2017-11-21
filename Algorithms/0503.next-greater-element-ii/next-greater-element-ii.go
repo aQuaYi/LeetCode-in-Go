@@ -2,25 +2,20 @@ package Problem0503
 
 func nextGreaterElements(nums []int) []int {
 	size := len(nums)
+
 	res := make([]int, size)
-
-	for i, n := range nums {
+	for i := range res {
 		res[i] = -1
+	}
 
-		j := i + 1
-		for {
-			if n < nums[j%size] {
-				res[i] = nums[j%size]
-				break
-			}
+	stack := make([]int, 0, size)
 
-			if size <= j && n == nums[j%size] {
-				res[i] = res[j%size]
-				break
-			}
-
-			j++
+	for i := 0; i < size*2; i++ {
+		for len(stack) > 0 && nums[stack[len(stack)-1]] < nums[i] {
+			res[stack[len(stack)-1]] = nums[i]
+			stack = stack[:len(stack)-1]
 		}
+		stack = append(stack, i)
 	}
 
 	return res
