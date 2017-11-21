@@ -1,22 +1,20 @@
 package Problem0496
 
 func nextGreaterElement(findNums []int, nums []int) []int {
-	m := make(map[int]int)
-	var j int
+	indexOf := make(map[int]int)
 	for i, n := range nums {
-		for j = i + 1; j < len(nums) && n >= nums[j]; j++ {
-		}
-
-		if j == len(nums) {
-			m[n] = -1
-		} else {
-			m[n] = nums[j]
-		}
+		indexOf[n] = i
 	}
 
 	res := make([]int, len(findNums))
 	for i, n := range findNums {
-		res[i] = m[n]
+		res[i] = -1
+		for j := indexOf[n] + 1; j < len(nums); j++ {
+			if n < nums[j] {
+				res[i] = nums[j]
+				break
+			}
+		}
 	}
 
 	return res
