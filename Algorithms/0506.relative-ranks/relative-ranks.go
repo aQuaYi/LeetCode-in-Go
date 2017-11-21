@@ -1,8 +1,8 @@
 package Problem0506
 
 import (
-	"fmt"
 	"sort"
+	"strconv"
 )
 
 func findRelativeRanks(nums []int) []string {
@@ -27,7 +27,7 @@ func findRelativeRanks(nums []int) []string {
 		case 2:
 			res[a.index] = "Bronze Medal"
 		default:
-			res[a.index] = fmt.Sprint(i + 1)
+			res[a.index] = strconv.Itoa(i + 1)
 		}
 	}
 
