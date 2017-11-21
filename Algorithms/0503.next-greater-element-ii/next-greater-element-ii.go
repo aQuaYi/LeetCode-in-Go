@@ -13,7 +13,7 @@ func nextGreaterElements(nums []int) []int {
 	// 在遇到 6 以前，stack = {9,8,7,3,2,1} 的索引号
 	// 在遇到 6 以后，stack = {9,8,7,6} 的索引号，
 	// 此次已经得知了，{3,2,1} 的 nextGreater 是 6
-	stack := make([]int, 1, size)
+	stack := make([]int, 0, size)
 
 	// i < size*2 是为了避免 stack 中留有的最大值无法取出导致的无限循环。因为
 	// 当 i < size 时，如果存在 nums[i] < nums[j%size]， 定有 j < i+size < size*2
