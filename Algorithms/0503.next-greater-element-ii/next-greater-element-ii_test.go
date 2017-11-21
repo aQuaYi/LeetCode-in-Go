@@ -1,7 +1,7 @@
 package Problem0503
 
 import (
-	"fmt"
+	// "fmt"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -50,7 +50,7 @@ func Test_nextGreaterElements(t *testing.T) {
 	ast := assert.New(t)
 
 	for _, tc := range tcs {
-		fmt.Printf("~~%v~~\n", tc)
+		// fmt.Printf("~~%v~~\n", tc)
 		ast.Equal(tc.ans, nextGreaterElements(tc.nums), "输入:%v", tc)
 	}
 }
