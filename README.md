@@ -12,8 +12,8 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|107|185|81|373|
-|**Total**|151|249|101|501|
+|**Accepted**|108|185|82|375|
+|**Total**|150|250|101|501|
 
 ## 题解
 
@@ -380,7 +380,7 @@
 |493|[Reverse Pairs](./Algorithms/0493.reverse-pairs)|20%|Hard| |
 |494| * Target Sum|43%|Medium| |
 |495|[Teemo Attacking](./Algorithms/0495.teemo-attacking)|51%|Medium| |
-|496| * Next Greater Element I|56%|Easy| |
+|496|[Next Greater Element I](./Algorithms/0496.next-greater-element-i)|56%|Easy| |
 |498| * Diagonal Traverse|46%|Medium| |
 |500|[Keyboard Row](./Algorithms/0500.keyboard-row)|59%|Easy| |
 |501| * Find Mode in Binary Search Tree|37%|Easy| |
@@ -394,7 +394,7 @@
 |514|[Freedom Trail](./Algorithms/0514.freedom-trail)|39%|Hard| |
 |515| * Find Largest Value in Each Tree Row|55%|Medium| |
 |516| * Longest Palindromic Subsequence|42%|Medium| |
-|517| * Super Washing Machines|36%|Hard| |
+|517|[Super Washing Machines](./Algorithms/0517.super-washing-machines)|36%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |520| * Detect Capital|51%|Easy| |
 |521| * Longest Uncommon Subsequence I |55%|Easy| |
 |522| * Longest Uncommon Subsequence II|31%|Medium| |
@@ -457,7 +457,7 @@
 |639|[Decode Ways II](./Algorithms/0639.decode-ways-ii)|24%|Hard| |
 |640| * Solve the Equation|38%|Medium| |
 |643|[Maximum Average Subarray I](./Algorithms/0643.maximum-average-subarray-i)|37%|Easy| |
-|645| * Set Mismatch|39%|Easy| |
+|645| * Set Mismatch|40%|Easy| |
 |646| * Maximum Length of Pair Chain|47%|Medium| |
 |647| * Palindromic Substrings|55%|Medium| |
 |648| * Replace Words|47%|Medium| |
@@ -466,7 +466,7 @@
 |652| * Find Duplicate Subtrees|35%|Medium| |
 |653| * Two Sum IV - Input is a BST|50%|Easy| |
 |654| * Maximum Binary Tree|69%|Medium| |
-|655| * Print Binary Tree|50%|Medium| |
+|655| * Print Binary Tree|49%|Medium| |
 |657| * Judge Route Circle|68%|Easy| |
 |658| * Find K Closest Elements|35%|Medium| |
 |659| * Split Array into Consecutive Subsequences|35%|Medium| |
@@ -483,7 +483,7 @@
 |673| * Number of Longest Increasing Subsequence|31%|Medium| |
 |674| * Longest Continuous Increasing Subsequence|42%|Easy| |
 |675| * Cut Off Trees for Golf Event|26%|Hard| |
-|676| * Implement Magic Dictionary|49%|Medium| |
+|676| * Implement Magic Dictionary|50%|Medium| |
 |677| * Map Sum Pairs|52%|Medium| |
 |678| * Valid Parenthesis String|28%|Medium| |
 |679| * 24 Game|38%|Hard| |
@@ -516,10 +516,10 @@
 |724| * Find Pivot Index|41%|Easy| |
 |725| * Split Linked List in Parts|49%|Medium| |
 |726| * Number of Atoms|45%|Hard| |
-|728| * Self Dividing Numbers|73%|Easy| |
-|729| * My Calendar I|34%|Medium| |
-|730| * Count Different Palindromic Subsequences|24%|Hard| |
-|731| * My Calendar II|30%|Easy| |
+|728| * Self Dividing Numbers|71%|Easy| |
+|729| * My Calendar I|36%|Medium| |
+|730| * Count Different Palindromic Subsequences|25%|Hard| |
+|731| * My Calendar II|31%|Medium| |
 
 以下免费的算法题，暂时不能使用 Go 解答
 
