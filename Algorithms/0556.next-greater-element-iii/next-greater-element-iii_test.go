@@ -9,9 +9,24 @@ import (
 
 // tcs is testcase slice
 var tcs = []struct {
-	n int
-	ans  int 
+	n   int
+	ans int
 }{
+
+	{
+		2321,
+		3122,
+	},
+
+	{
+		2147483467,
+		2147483476,
+	},
+
+	{
+		2147483647,
+		-1,
+	},
 
 	{
 		12,
@@ -23,15 +38,12 @@ var tcs = []struct {
 		-1,
 	},
 
-	
-
-	
 	// 可以有多个 testcase
 }
 
 func Test_nextGreaterElement(t *testing.T) {
 	ast := assert.New(t)
-	
+
 	for _, tc := range tcs {
 		fmt.Printf("~~%v~~\n", tc)
 		ast.Equal(tc.ans, nextGreaterElement(tc.n), "输入:%v", tc)
