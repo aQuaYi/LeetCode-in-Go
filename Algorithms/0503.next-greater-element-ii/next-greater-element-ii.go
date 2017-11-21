@@ -9,17 +9,17 @@ func nextGreaterElements(nums []int) []int {
 
 		j := i + 1
 		for {
-			if n > nums[j%size] {
-				j++
-				continue
+			if n < nums[j%size] {
+				res[i] = nums[j%size]
+				break
 			}
 
-			if n == nums[j%size] {
+			if size <= j && n == nums[j%size] {
 				res[i] = res[j%size]
-			} else {
-				res[i] = nums[j%size]
+				break
 			}
-			break
+
+			j++
 		}
 	}
 
