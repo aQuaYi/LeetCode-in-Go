@@ -1,18 +1,29 @@
 package Problem0517
 
 func findMinMoves(machines []int) int {
-	res := 0
-
-	ok, ave := isOK(machines)
+	ok, avg := isOK(machines)
 	if !ok {
 		return -1
 	}
 
+	cnt := 0
+	res := 0
+
 	for _, m := range machines {
-		res += max(0, m-ave)
+		cnt += m - avg
+		res = max(max(res, abs(cnt)), m-avg)
 	}
+	// 解题思路
+	// https://leetcode.com/problems/super-washing-machines/discuss/
 
 	return res
+}
+
+func abs(a int) int {
+	if a < 0 {
+		return -a
+	}
+	return a
 }
 
 func max(a, b int) int {
