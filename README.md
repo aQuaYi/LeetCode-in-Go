@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|109|186|82|377|
+|**Accepted**|110|186|82|378|
 |**Total**|150|250|101|501|
 
 ## 题解
@@ -395,7 +395,7 @@
 |515| * Find Largest Value in Each Tree Row|55%|Medium| |
 |516| * Longest Palindromic Subsequence|42%|Medium| |
 |517|[Super Washing Machines](./Algorithms/0517.super-washing-machines)|36%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|520| * Detect Capital|51%|Easy| |
+|520|[Detect Capital](./Algorithms/0520.detect-capital)|51%|Easy| |
 |521| * Longest Uncommon Subsequence I |55%|Easy| |
 |522| * Longest Uncommon Subsequence II|31%|Medium| |
 |523| * Continuous Subarray Sum|23%|Medium| |
@@ -519,7 +519,7 @@
 |728| * Self Dividing Numbers|70%|Easy| |
 |729| * My Calendar I|36%|Medium| |
 |730| * Count Different Palindromic Subsequences|27%|Hard| |
-|731| * My Calendar II|31%|Medium| |
+|731| * My Calendar II|32%|Medium| |
 
 以下免费的算法题，暂时不能使用 Go 解答
 
