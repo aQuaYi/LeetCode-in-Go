@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|110|187|82|379|
+|**Accepted**|111|187|82|380|
 |**Total**|150|250|101|501|
 
 ## 题解
@@ -365,7 +365,7 @@
 |473| * Matchsticks to Square|35%|Medium| |
 |474| * Ones and Zeroes|39%|Medium| |
 |475|[Heaters](./Algorithms/0475.heaters)|29%|Easy| |
-|476| * Number Complement|60%|Easy| |
+|476|[Number Complement](./Algorithms/0476.number-complement)|60%|Easy| |
 |477| * Total Hamming Distance|47%|Medium| |
 |479|[Largest Palindrome Product](./Algorithms/0479.largest-palindrome-product)|24%|Easy| |
 |480|[Sliding Window Median](./Algorithms/0480.sliding-window-median)|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -517,7 +517,7 @@
 |725| * Split Linked List in Parts|49%|Medium| |
 |726| * Number of Atoms|45%|Hard| |
 |728| * Self Dividing Numbers|69%|Easy| |
-|729| * My Calendar I|37%|Medium| |
+|729| * My Calendar I|36%|Medium| |
 |730| * Count Different Palindromic Subsequences|28%|Hard| |
 |731| * My Calendar II|32%|Medium| |
 
