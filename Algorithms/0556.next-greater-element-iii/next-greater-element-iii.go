@@ -52,15 +52,28 @@ func reverse(ss []string) {
 
 func exchange(ss []string) int {
 	var i, j int
-	for j = len(ss) - 1; 1 <= j; j-- {
-		for i = j - 1; 0 <= i; i-- {
-			if ss[i] < ss[j] {
-				ss[i], ss[j] = ss[j], ss[i]
-				return i + 1
+	maxStr := string('9' + 1)
+
+	for i = len(ss) - 2; 0 <= i; i-- {
+		n := ss[i]
+		minGreater := maxStr
+		minIndex := i
+		for j = i + 1; j < len(ss); j++ {
+			if n < ss[j] && ss[j] < minGreater {
+				minGreater = ss[j]
+				minIndex = j
 			}
 		}
+
+		if i < minIndex {
+			ss[i], ss[minIndex] = ss[minIndex], ss[i]
+			return i + 1
+		}
 	}
-	return -1
+
+	// 因为主函数前面的有 isAValiable 检查过了
+	// 所以，总会出现交换的情况
+	panic("NEVER BE HERE")
 }
 
 func combine(ss []string) string {
