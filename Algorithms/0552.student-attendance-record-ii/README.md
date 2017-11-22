@@ -29,3 +29,5 @@ The value of n won't exceed 100,000.
 ## 解题思路
 
 见程序注释
+
+![100](552.100.png)
