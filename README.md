@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|110|186|82|378|
+|**Accepted**|110|187|82|379|
 |**Total**|150|250|101|501|
 
 ## 题解
@@ -68,7 +68,7 @@
 |47|[Permutations II](./Algorithms/0047.permutations-ii)|33%|Medium| |
 |48|[Rotate Image](./Algorithms/0048.rotate-image)|39%|Medium| |
 |49|[Group Anagrams](./Algorithms/0049.group-anagrams)|36%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|50|[Pow(x, n)](./Algorithms/0050.powx-n)|26%|Medium| |
+|50|[Pow(x, n)](./Algorithms/0050.powx-n)|25%|Medium| |
 |51|[N-Queens](./Algorithms/0051.n-queens)|32%|Hard| |
 |52|[N-Queens II](./Algorithms/0052.n-queens-ii)|45%|Hard| |
 |53|[Maximum Subarray](./Algorithms/0053.maximum-subarray)|39%|Easy|[❤](https://leetcode.com/list/oussv5j)|
@@ -418,7 +418,7 @@
 |552| * Student Attendance Record II|31%|Hard| |
 |553| * Optimal Division|55%|Medium| |
 |554| * Brick Wall|46%|Medium| |
-|556| * Next Greater Element III|28%|Medium| |
+|556|[Next Greater Element III](./Algorithms/0556.next-greater-element-iii)|28%|Medium| |
 |557| * Reverse Words in a String III|59%|Easy| |
 |560|[Subarray Sum Equals K](./Algorithms/0560.subarray-sum-equals-k)|40%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |561|[Array Partition I](./Algorithms/0561.array-partition-i)|66%|Easy| |
@@ -442,7 +442,7 @@
 |605|[Can Place Flowers](./Algorithms/0605.can-place-flowers)|30%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |606| * Construct String from Binary Tree|49%|Easy| |
 |609| * Find Duplicate File in System|52%|Medium| |
-|611|[Valid Triangle Number](./Algorithms/0611.valid-triangle-number)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|611|[Valid Triangle Number](./Algorithms/0611.valid-triangle-number)|41%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |617| * Merge Two Binary Trees|67%|Easy| |
 |621|[Task Scheduler](./Algorithms/0621.task-scheduler)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |623| * Add One Row to Tree|46%|Medium| |
@@ -457,7 +457,7 @@
 |639|[Decode Ways II](./Algorithms/0639.decode-ways-ii)|24%|Hard| |
 |640| * Solve the Equation|38%|Medium| |
 |643|[Maximum Average Subarray I](./Algorithms/0643.maximum-average-subarray-i)|37%|Easy| |
-|645| * Set Mismatch|40%|Easy| |
+|645| * Set Mismatch|39%|Easy| |
 |646| * Maximum Length of Pair Chain|47%|Medium| |
 |647| * Palindromic Substrings|55%|Medium| |
 |648| * Replace Words|47%|Medium| |
@@ -466,7 +466,7 @@
 |652| * Find Duplicate Subtrees|35%|Medium| |
 |653| * Two Sum IV - Input is a BST|50%|Easy| |
 |654| * Maximum Binary Tree|69%|Medium| |
-|655| * Print Binary Tree|49%|Medium| |
+|655| * Print Binary Tree|50%|Medium| |
 |657| * Judge Route Circle|68%|Easy| |
 |658| * Find K Closest Elements|35%|Medium| |
 |659| * Split Array into Consecutive Subsequences|35%|Medium| |
@@ -479,7 +479,7 @@
 |669| * Trim a Binary Search Tree|57%|Easy| |
 |670| * Maximum Swap|38%|Medium| |
 |671| * Second Minimum Node In a Binary Tree|41%|Easy| |
-|672| * Bulb Switcher II|47%|Medium| |
+|672| * Bulb Switcher II|48%|Medium| |
 |673| * Number of Longest Increasing Subsequence|31%|Medium| |
 |674| * Longest Continuous Increasing Subsequence|42%|Easy| |
 |675| * Cut Off Trees for Golf Event|26%|Hard| |
@@ -516,9 +516,9 @@
 |724| * Find Pivot Index|41%|Easy| |
 |725| * Split Linked List in Parts|49%|Medium| |
 |726| * Number of Atoms|45%|Hard| |
-|728| * Self Dividing Numbers|70%|Easy| |
-|729| * My Calendar I|36%|Medium| |
-|730| * Count Different Palindromic Subsequences|27%|Hard| |
+|728| * Self Dividing Numbers|69%|Easy| |
+|729| * My Calendar I|37%|Medium| |
+|730| * Count Different Palindromic Subsequences|28%|Hard| |
 |731| * My Calendar II|32%|Medium| |
 
 以下免费的算法题，暂时不能使用 Go 解答
