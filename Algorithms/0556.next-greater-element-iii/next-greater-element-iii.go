@@ -6,35 +6,42 @@ func nextGreaterElement(n int) int {
 	nums := make([]int, 0, 10)
 
 	lastTail := n % 10
-	isAvaliable := false
+	// 用于标记 n 已经为其能表现的最大值
+	// 例如, n == 4321，就不可能变得更大了
+	isMax := true
 	for n > 0 {
 		tail := n % 10
 		if tail < lastTail {
-			isAvaliable = true
+			// 较高位上存在较小的值
+			// n 还可以变大
+			isMax = false
 		}
 		lastTail = tail
-
 		nums = append(nums, tail)
-
 		n /= 10
 	}
 
-	if !isAvaliable {
+	// 由于 n 不可能再变大了，所以，提前结束
+	if isMax {
 		return -1
 	}
 
+	// nums 中 digit 的存入顺序与实际顺序相反
+	// 需要逆转一下 nums
 	reverse(nums)
 
+	// 按照题意，交换 nums 中，两个数的位子
 	beg := exchange(nums)
 
+	// 重新排列 nums 尾部的数字，使得 nums 更小
 	sort.Ints(nums[beg:])
 
-	s := combine(nums)
+	res := combine(nums)
 
-	if s > 1<<31-1 {
+	if res > 1<<31-1 {
 		return -1
 	}
-	return s
+	return res
 }
 
 func reverse(ss []int) {
@@ -46,36 +53,38 @@ func reverse(ss []int) {
 	}
 }
 
-func exchange(ss []int) int {
+// 找到最大的 i 使得
+// s[j] 是 s[i+1:] 中大于 s[i] 的最小值
+// s[i], s[j] 互换后
+// 返回 i+1
+func exchange(a []int) int {
 	var i, j int
-	maxStr := 10
 
-	for i = len(ss) - 2; 0 <= i; i-- {
-		n := ss[i]
-		minGreater := maxStr
-		minIndex := i
-		for j = i + 1; j < len(ss); j++ {
-			if n < ss[j] && ss[j] < minGreater {
-				minGreater = ss[j]
-				minIndex = j
+	for i = len(a) - 2; 0 <= i; i-- {
+		n := a[i]
+		min := 10
+		index := i
+		for j = i + 1; j < len(a); j++ {
+			if n < a[j] && a[j] < min {
+				min = a[j]
+				index = j
 			}
 		}
 
-		if i < minIndex {
-			ss[i], ss[minIndex] = ss[minIndex], ss[i]
-			return i + 1
+		if i < index {
+			a[i], a[index] = a[index], a[i]
+			break
 		}
 	}
 
-	// 因为主函数前面的有 isAValiable 检查过了
-	// 所以，总会出现交换的情况
-	panic("NEVER BE HERE")
+	return i + 1
 }
 
-func combine(ss []int) int {
-	str := 0
-	for i := range ss {
-		str = str*10 + ss[i]
+// 把 a 整合成一个 int
+func combine(a []int) int {
+	num := 0
+	for i := range a {
+		num = num*10 + a[i]
 	}
-	return str
+	return num
 }
