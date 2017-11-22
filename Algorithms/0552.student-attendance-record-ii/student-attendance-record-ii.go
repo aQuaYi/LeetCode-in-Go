@@ -3,6 +3,7 @@ package Problem0552
 var m = 1000000007
 
 func checkRecord(n int) int {
+	// 为了后面的迭代，先分类讨论一下 n
 	switch n {
 	case 0:
 		return 1
