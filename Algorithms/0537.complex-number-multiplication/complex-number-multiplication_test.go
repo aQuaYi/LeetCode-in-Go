@@ -9,19 +9,29 @@ import (
 
 // tcs is testcase slice
 var tcs = []struct {
-	a string
- b string
-	ans  string 
+	a   string
+	b   string
+	ans string
 }{
 
+	{
+		"1+1i",
+		"1+1i",
+		"0+2i",
+	},
 
-	
+	{
+		"1+-1i",
+		"1+-1i",
+		"0+-2i",
+	},
+
 	// 可以有多个 testcase
 }
 
 func Test_complexNumberMultiply(t *testing.T) {
 	ast := assert.New(t)
-	
+
 	for _, tc := range tcs {
 		fmt.Printf("~~%v~~\n", tc)
 		ast.Equal(tc.ans, complexNumberMultiply(tc.a, tc.b), "输入:%v", tc)
