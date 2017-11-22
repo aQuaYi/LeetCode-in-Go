@@ -2,7 +2,7 @@
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 排名](https://img.shields.io/badge/Ranking-5671-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 答题进度](https://img.shields.io/badge/Progress-75%25-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 答题进度](https://img.shields.io/badge/Progress-76%25-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 
@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|111|187|82|380|
+|**Accepted**|111|187|83|381|
 |**Total**|150|250|101|501|
 
 ## 题解
@@ -405,7 +405,7 @@
 |529| * Minesweeper|49%|Medium| |
 |530| * Minimum Absolute Difference in BST|47%|Easy| |
 |532|[K-diff Pairs in an Array](./Algorithms/0532.k-diff-pairs-in-an-array)|28%|Easy| |
-|537| * Complex Number Multiplication|64%|Medium| |
+|537| * Complex Number Multiplication|63%|Medium| |
 |538| * Convert BST to Greater Tree|49%|Easy| |
 |539| * Minimum Time Difference|45%|Medium| |
 |540| * Single Element in a Sorted Array|55%|Medium| |
@@ -415,7 +415,7 @@
 |546|[Remove Boxes](./Algorithms/0546.remove-boxes)|34%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |547| * Friend Circles|49%|Medium| |
 |551| * Student Attendance Record I|44%|Easy| |
-|552| * Student Attendance Record II|31%|Hard| |
+|552|[Student Attendance Record II](./Algorithms/0552.student-attendance-record-ii)|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |553| * Optimal Division|55%|Medium| |
 |554| * Brick Wall|46%|Medium| |
 |556|[Next Greater Element III](./Algorithms/0556.next-greater-element-iii)|28%|Medium| |
@@ -442,7 +442,7 @@
 |605|[Can Place Flowers](./Algorithms/0605.can-place-flowers)|30%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |606| * Construct String from Binary Tree|49%|Easy| |
 |609| * Find Duplicate File in System|52%|Medium| |
-|611|[Valid Triangle Number](./Algorithms/0611.valid-triangle-number)|41%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|611|[Valid Triangle Number](./Algorithms/0611.valid-triangle-number)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |617| * Merge Two Binary Trees|67%|Easy| |
 |621|[Task Scheduler](./Algorithms/0621.task-scheduler)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |623| * Add One Row to Tree|46%|Medium| |
@@ -491,7 +491,7 @@
 |682| * Baseball Game|58%|Easy| |
 |684| * Redundant Connection|39%|Medium| |
 |685| * Redundant Connection II|28%|Hard| |
-|686| * Repeated String Match|32%|Easy| |
+|686| * Repeated String Match|33%|Easy| |
 |687| * Longest Univalue Path|33%|Easy| |
 |688| * Knight Probability in Chessboard|38%|Medium| |
 |689| * Maximum Sum of 3 Non-Overlapping Subarrays|41%|Hard| |
@@ -517,7 +517,7 @@
 |725| * Split Linked List in Parts|49%|Medium| |
 |726| * Number of Atoms|45%|Hard| |
 |728| * Self Dividing Numbers|69%|Easy| |
-|729| * My Calendar I|36%|Medium| |
+|729| * My Calendar I|37%|Medium| |
 |730| * Count Different Palindromic Subsequences|28%|Hard| |
 |731| * My Calendar II|32%|Medium| |
 
