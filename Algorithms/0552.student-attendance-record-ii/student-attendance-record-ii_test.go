@@ -13,6 +13,10 @@ var tcs = []struct {
 	ans int
 }{
 
+	{0, 1},
+
+	{1, 3},
+
 	{3, 19},
 
 	{2, 8},
@@ -23,9 +27,13 @@ var tcs = []struct {
 
 	{10, 3536},
 
-	// {100, 985598218},
+	{100, 985598218},
 
-	// {100000, 749184020},
+	{1000, 250434094},
+
+	{10000, 67802379},
+
+	{100000, 749184020},
 
 	// 可以有多个 testcase
 }
@@ -37,14 +45,6 @@ func Test_checkRecord(t *testing.T) {
 		fmt.Printf("~~%v~~\n", tc)
 		ast.Equal(tc.ans, checkRecord(tc.n), "输入:%v", tc)
 	}
-}
-
-func Test_afterL(t *testing.T) {
-	ast := assert.New(t)
-
-	actual := afterL(2)
-	expected := 7
-	ast.Equal(expected, actual)
 }
 
 func Benchmark_checkRecord(b *testing.B) {
