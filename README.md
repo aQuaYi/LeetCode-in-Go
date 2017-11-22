@@ -1,8 +1,8 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 排名](https://img.shields.io/badge/Ranking-5987-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 答题进度](https://img.shields.io/badge/Progress-74%25-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/Ranking-5671-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 答题进度](https://img.shields.io/badge/Progress-75%25-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 
@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|108|185|82|375|
+|**Accepted**|110|186|82|378|
 |**Total**|150|250|101|501|
 
 ## 题解
@@ -385,9 +385,9 @@
 |500|[Keyboard Row](./Algorithms/0500.keyboard-row)|59%|Easy| |
 |501| * Find Mode in Binary Search Tree|37%|Easy| |
 |502|[IPO](./Algorithms/0502.ipo)|36%|Hard| |
-|503| * Next Greater Element II|47%|Medium| |
+|503|[Next Greater Element II](./Algorithms/0503.next-greater-element-ii)|47%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |504|[Base 7](./Algorithms/0504.base-7)|44%|Easy| |
-|506| * Relative Ranks|46%|Easy| |
+|506|[Relative Ranks](./Algorithms/0506.relative-ranks)|46%|Easy| |
 |507| * Perfect Number|33%|Easy| |
 |508| * Most Frequent Subtree Sum|52%|Medium| |
 |513| * Find Bottom Left Tree Value|56%|Medium| |
@@ -395,7 +395,7 @@
 |515| * Find Largest Value in Each Tree Row|55%|Medium| |
 |516| * Longest Palindromic Subsequence|42%|Medium| |
 |517|[Super Washing Machines](./Algorithms/0517.super-washing-machines)|36%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|520| * Detect Capital|51%|Easy| |
+|520|[Detect Capital](./Algorithms/0520.detect-capital)|51%|Easy| |
 |521| * Longest Uncommon Subsequence I |55%|Easy| |
 |522| * Longest Uncommon Subsequence II|31%|Medium| |
 |523| * Continuous Subarray Sum|23%|Medium| |
@@ -442,7 +442,7 @@
 |605|[Can Place Flowers](./Algorithms/0605.can-place-flowers)|30%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |606| * Construct String from Binary Tree|49%|Easy| |
 |609| * Find Duplicate File in System|52%|Medium| |
-|611|[Valid Triangle Number](./Algorithms/0611.valid-triangle-number)|41%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|611|[Valid Triangle Number](./Algorithms/0611.valid-triangle-number)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |617| * Merge Two Binary Trees|67%|Easy| |
 |621|[Task Scheduler](./Algorithms/0621.task-scheduler)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |623| * Add One Row to Tree|46%|Medium| |
@@ -483,7 +483,7 @@
 |673| * Number of Longest Increasing Subsequence|31%|Medium| |
 |674| * Longest Continuous Increasing Subsequence|42%|Easy| |
 |675| * Cut Off Trees for Golf Event|26%|Hard| |
-|676| * Implement Magic Dictionary|50%|Medium| |
+|676| * Implement Magic Dictionary|49%|Medium| |
 |677| * Map Sum Pairs|52%|Medium| |
 |678| * Valid Parenthesis String|28%|Medium| |
 |679| * 24 Game|38%|Hard| |
@@ -516,10 +516,10 @@
 |724| * Find Pivot Index|41%|Easy| |
 |725| * Split Linked List in Parts|49%|Medium| |
 |726| * Number of Atoms|45%|Hard| |
-|728| * Self Dividing Numbers|71%|Easy| |
+|728| * Self Dividing Numbers|70%|Easy| |
 |729| * My Calendar I|36%|Medium| |
-|730| * Count Different Palindromic Subsequences|25%|Hard| |
-|731| * My Calendar II|31%|Medium| |
+|730| * Count Different Palindromic Subsequences|27%|Hard| |
+|731| * My Calendar II|32%|Medium| |
 
 以下免费的算法题，暂时不能使用 Go 解答
 
