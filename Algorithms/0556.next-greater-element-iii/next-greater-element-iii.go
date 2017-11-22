@@ -1,12 +1,9 @@
 package Problem0556
 
-import (
-	"sort"
-	"strconv"
-)
+import "sort"
 
 func nextGreaterElement(n int) int {
-	ss := make([]string, 0, 10)
+	nums := make([]int, 0, 10)
 
 	lastTail := n % 10
 	isAvaliable := false
@@ -17,7 +14,7 @@ func nextGreaterElement(n int) int {
 		}
 		lastTail = tail
 
-		ss = append(ss, strconv.Itoa(tail))
+		nums = append(nums, tail)
 
 		n /= 10
 	}
@@ -26,22 +23,21 @@ func nextGreaterElement(n int) int {
 		return -1
 	}
 
-	reverse(ss)
+	reverse(nums)
 
-	beg := exchange(ss)
+	beg := exchange(nums)
 
-	sort.Strings(ss[beg:])
+	sort.Ints(nums[beg:])
 
-	s := combine(ss)
+	s := combine(nums)
 
-	res, err := strconv.ParseInt(s, 10, 32)
-	if err != nil {
+	if s > 1<<31-1 {
 		return -1
 	}
-	return int(res)
+	return s
 }
 
-func reverse(ss []string) {
+func reverse(ss []int) {
 	i, j := 0, len(ss)-1
 	for i < j {
 		ss[i], ss[j] = ss[j], ss[i]
@@ -50,9 +46,9 @@ func reverse(ss []string) {
 	}
 }
 
-func exchange(ss []string) int {
+func exchange(ss []int) int {
 	var i, j int
-	maxStr := string('9' + 1)
+	maxStr := 10
 
 	for i = len(ss) - 2; 0 <= i; i-- {
 		n := ss[i]
@@ -76,10 +72,10 @@ func exchange(ss []string) int {
 	panic("NEVER BE HERE")
 }
 
-func combine(ss []string) string {
-	str := ""
+func combine(ss []int) int {
+	str := 0
 	for i := range ss {
-		str += ss[i]
+		str = str*10 + ss[i]
 	}
 	return str
 }
