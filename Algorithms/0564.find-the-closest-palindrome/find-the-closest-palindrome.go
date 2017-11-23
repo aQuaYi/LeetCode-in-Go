@@ -49,7 +49,7 @@ func getCanidates(n string) []int {
 		p2 /= 10
 	}
 
-	for p0 > 0 {
+	for p2 > 0 {
 		res[0] = res[0]*10 + p0%10
 		res[1] = res[1]*10 + p1%10
 		res[2] = res[2]*10 + p2%10
