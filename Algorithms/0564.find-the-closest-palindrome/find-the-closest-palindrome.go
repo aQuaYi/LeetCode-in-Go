@@ -1,90 +1,75 @@
 package Problem0564
 
-import "strconv"
+import (
+	"strconv"
+)
 
 func nearestPalindromic(n string) string {
-	if !isPalindrome(n) {
-		return palindromefy(n)
-	}
-
-	diff := 1
-	if len(n)%2 == 0 {
-		diff = 11
-	}
-	i := len(n)/2 + 1
-	for i < len(n) {
-		diff *= 10
-		i++
-	}
+	size := len(n)
+	candidates := getBitChangeCandidates(size)
+	candidates = append(candidates, getCanidates(n)...)
 
 	num, _ := strconv.Atoi(n)
-
-	nb := num + diff
-	ns := num - diff
-
-	nbpStr := palindrome2(strconv.Itoa(nb), min)
-	nbp, _ := strconv.Atoi(nbpStr)
-
-	nspStr := palindrome2(strconv.Itoa(ns), max)
-	nsp, _ := strconv.Atoi(nspStr)
-
-	avg := (nbp + nsp) / 2
-
-	if avg < num {
-		return nbpStr
-	}
-	return nspStr
-}
-
-func isPalindrome(s string) bool {
-	i, j := 0, len(s)-1
-	for i < j {
-		if s[i] != s[j] {
-			return false
+	delta := func(x int) int {
+		if x > num {
+			return x - num
 		}
-		i++
-		j--
+		return num - x
 	}
-	return true
-}
 
-func palindromefy(n string) string {
-	bytes := []byte(n)
-	i, j := 0, len(bytes)-1
-	for i < j {
-		if bytes[i] != bytes[j] {
-			bytes[j] = bytes[i]
+	res := 1<<63 - 1
+	for _, cand := range candidates {
+		if cand == num {
+			continue
 		}
-		i++
-		j--
-	}
-	return string(bytes)
-}
 
-func palindrome2(n string, f func(byte, byte) byte) string {
-	bytes := []byte(n)
-	i, j := 0, len(bytes)-1
-	for i < j {
-		if bytes[i] != bytes[j] {
-			bytes[i] = f(bytes[i], bytes[j])
-			bytes[j] = f(bytes[i], bytes[j])
+		if delta(cand) < delta(res) ||
+			(delta(cand) == delta(res) && cand < res) {
+			res = cand
 		}
-		i++
-		j--
 	}
-	return string(bytes)
+
+	return strconv.Itoa(res)
 }
 
-func min(a, b byte) byte {
-	if a < b {
-		return a
+func getCanidates(n string) []int {
+	size := len(n)
+	prefix := n[:(size+1)/2]
+	p, _ := strconv.Atoi(prefix)
+
+	res := make([]int, 3)
+	res[0] = p - 1
+	res[1] = p
+	res[2] = p + 1
+
+	if size%2 == 1 {
+		p /= 10
 	}
-	return b
+
+	for p > 0 {
+		res[0] = res[0]*10 + p%10
+		res[1] = res[1]*10 + p%10
+		res[2] = res[2]*10 + p%10
+		p /= 10
+	}
+
+	return res
 }
 
-func max(a, b byte) byte {
-	if a > b {
-		return a
+func getBitChangeCandidates(size int) []int {
+	base := 1
+	for i := 1; i < size; i++ {
+		base *= 10
 	}
-	return b
+
+	res := make([]int, 4)
+	res[0] = base - 1
+	res[1] = base + 1
+
+	base *= 10
+
+	res[2] = base - 1
+	res[3] = base + 1
+
+	return res
 }
