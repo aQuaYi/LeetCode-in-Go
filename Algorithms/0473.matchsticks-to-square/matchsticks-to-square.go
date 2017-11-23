@@ -6,6 +6,10 @@ import (
 )
 
 func makesquare(nums []int) bool {
+	if len(nums) < 4 {
+		return false
+	}
+
 	sort.Sort(sort.Reverse(sort.IntSlice(nums)))
 
 	edges := make(PQ, 4)
