@@ -6,6 +6,8 @@ import (
 
 func nearestPalindromic(n string) string {
 	size := len(n)
+
+	// 收集所有可能的数
 	candidates := getBitChangeCandidates(size)
 	candidates = append(candidates, getCanidates(n)...)
 
@@ -17,6 +19,7 @@ func nearestPalindromic(n string) string {
 		return num - x
 	}
 
+	// 从中挑选符合题意的那一个
 	res := 1<<63 - 1
 	for _, cand := range candidates {
 		if cand == num {
@@ -35,27 +38,25 @@ func nearestPalindromic(n string) string {
 func getCanidates(n string) []int {
 	size := len(n)
 	prefix := n[:(size+1)/2]
-	p1, _ := strconv.Atoi(prefix)
-	p0, p2 := p1-1, p1+1
+	p, _ := strconv.Atoi(prefix)
 
 	res := make([]int, 3)
-	res[0] = p0
-	res[1] = p1
-	res[2] = p2
+	ps := make([]int, 3)
+	res[0], ps[0] = p-1, p-1
+	res[1], ps[1] = p, p
+	res[2], ps[2] = p+1, p+1
 
 	if size%2 == 1 {
-		p0 /= 10
-		p1 /= 10
-		p2 /= 10
+		for i := range ps {
+			ps[i] /= 10
+		}
 	}
 
-	for p2 > 0 {
-		res[0] = res[0]*10 + p0%10
-		res[1] = res[1]*10 + p1%10
-		res[2] = res[2]*10 + p2%10
-		p0 /= 10
-		p1 /= 10
-		p2 /= 10
+	for i := range res {
+		for ps[i] > 0 {
+			res[i] = res[i]*10 + ps[i]%10
+			ps[i] /= 10
+		}
 	}
 
 	return res
