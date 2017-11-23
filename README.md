@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|111|188|83|382|
+|**Accepted**|111|188|84|383|
 |**Total**|150|250|101|501|
 
 ## 题解
@@ -68,7 +68,7 @@
 |47|[Permutations II](./Algorithms/0047.permutations-ii)|33%|Medium| |
 |48|[Rotate Image](./Algorithms/0048.rotate-image)|39%|Medium| |
 |49|[Group Anagrams](./Algorithms/0049.group-anagrams)|36%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|50|[Pow(x, n)](./Algorithms/0050.powx-n)|25%|Medium| |
+|50|[Pow(x, n)](./Algorithms/0050.powx-n)|26%|Medium| |
 |51|[N-Queens](./Algorithms/0051.n-queens)|32%|Hard| |
 |52|[N-Queens II](./Algorithms/0052.n-queens-ii)|45%|Hard| |
 |53|[Maximum Subarray](./Algorithms/0053.maximum-subarray)|39%|Easy|[❤](https://leetcode.com/list/oussv5j)|
@@ -110,7 +110,7 @@
 |89|[Gray Code](./Algorithms/0089.gray-code)|41%|Medium| |
 |90|[Subsets II](./Algorithms/0090.subsets-ii)|37%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |91|[Decode Ways](./Algorithms/0091.decode-ways)|20%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|92|[Reverse Linked List II](./Algorithms/0092.reverse-linked-list-ii)|30%|Medium| |
+|92|[Reverse Linked List II](./Algorithms/0092.reverse-linked-list-ii)|31%|Medium| |
 |93|[Restore IP Addresses](./Algorithms/0093.restore-ip-addresses)|27%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |94|[Binary Tree Inorder Traversal](./Algorithms/0094.binary-tree-inorder-traversal)|47%|Medium| |
 |95|[Unique Binary Search Trees II](./Algorithms/0095.unique-binary-search-trees-ii)|31%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -423,7 +423,7 @@
 |560|[Subarray Sum Equals K](./Algorithms/0560.subarray-sum-equals-k)|40%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |561|[Array Partition I](./Algorithms/0561.array-partition-i)|66%|Easy| |
 |563| * Binary Tree Tilt|47%|Easy| |
-|564| * Find the Closest Palindrome|17%|Hard| |
+|564|[Find the Closest Palindrome](./Algorithms/0564.find-the-closest-palindrome)|17%|Hard| |
 |566|[Reshape the Matrix](./Algorithms/0566.reshape-the-matrix)|58%|Easy| |
 |567| * Permutation in String|36%|Medium| |
 |572| * Subtree of Another Tree|40%|Easy| |
@@ -457,7 +457,7 @@
 |639|[Decode Ways II](./Algorithms/0639.decode-ways-ii)|24%|Hard| |
 |640| * Solve the Equation|38%|Medium| |
 |643|[Maximum Average Subarray I](./Algorithms/0643.maximum-average-subarray-i)|37%|Easy| |
-|645| * Set Mismatch|39%|Easy| |
+|645| * Set Mismatch|40%|Easy| |
 |646| * Maximum Length of Pair Chain|47%|Medium| |
 |647| * Palindromic Substrings|55%|Medium| |
 |648| * Replace Words|47%|Medium| |
@@ -466,7 +466,7 @@
 |652| * Find Duplicate Subtrees|35%|Medium| |
 |653| * Two Sum IV - Input is a BST|50%|Easy| |
 |654| * Maximum Binary Tree|69%|Medium| |
-|655| * Print Binary Tree|50%|Medium| |
+|655| * Print Binary Tree|49%|Medium| |
 |657| * Judge Route Circle|68%|Easy| |
 |658| * Find K Closest Elements|35%|Medium| |
 |659| * Split Array into Consecutive Subsequences|35%|Medium| |
@@ -479,7 +479,7 @@
 |669| * Trim a Binary Search Tree|57%|Easy| |
 |670| * Maximum Swap|38%|Medium| |
 |671| * Second Minimum Node In a Binary Tree|41%|Easy| |
-|672| * Bulb Switcher II|48%|Medium| |
+|672| * Bulb Switcher II|47%|Medium| |
 |673| * Number of Longest Increasing Subsequence|31%|Medium| |
 |674| * Longest Continuous Increasing Subsequence|42%|Easy| |
 |675| * Cut Off Trees for Golf Event|26%|Hard| |
@@ -500,26 +500,26 @@
 |693| * Binary Number with Alternating Bits|54%|Easy| |
 |695| * Max Area of Island|52%|Easy| |
 |696| * Count Binary Substrings|51%|Easy| |
-|697| * Degree of an Array|47%|Easy| |
+|697| * Degree of an Array|46%|Easy| |
 |698| * Partition to K Equal Sum Subsets|36%|Medium| |
 |699| * Falling Squares|36%|Hard| |
 |712| * Minimum ASCII Delete Sum for Two Strings|51%|Medium| |
 |713| * Subarray Product Less Than K|32%|Medium| |
 |714| * Best Time to Buy and Sell Stock with Transaction Fee|39%|Medium| |
-|715| * Range Module|30%|Hard| |
+|715| * Range Module|31%|Hard| |
 |717| * 1-bit and 2-bit Characters|51%|Easy| |
 |718| * Maximum Length of Repeated Subarray|39%|Medium| |
 |719| * Find K-th Smallest Pair Distance|25%|Hard| |
 |720| * Longest Word in Dictionary|40%|Easy| |
 |721| * Accounts Merge|27%|Medium| |
-|722| * Remove Comments|25%|Medium| |
+|722| * Remove Comments|26%|Medium| |
 |724| * Find Pivot Index|41%|Easy| |
 |725| * Split Linked List in Parts|49%|Medium| |
 |726| * Number of Atoms|45%|Hard| |
-|728| * Self Dividing Numbers|69%|Easy| |
+|728| * Self Dividing Numbers|68%|Easy| |
 |729| * My Calendar I|37%|Medium| |
-|730| * Count Different Palindromic Subsequences|28%|Hard| |
-|731| * My Calendar II|32%|Medium| |
+|730| * Count Different Palindromic Subsequences|29%|Hard| |
+|731| * My Calendar II|33%|Medium| |
 
 以下免费的算法题，暂时不能使用 Go 解答
 
