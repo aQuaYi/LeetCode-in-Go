@@ -15,7 +15,7 @@ func makeTasksFile(problems problems) {
 	content := ""
 	for _, p := range problems {
 		if !p.IsAccepted && p.IsAvailable {
-			content = fmt.Sprintf("%d - %d - %s - %s\n", p.ID, p.Difficulty, p.PassRate, p.Title) + content
+			content = fmt.Sprintf("%d - #%d分 - %s - %s \n", p.ID, p.Difficulty, p.PassRate, p.Title) + content
 		}
 	}
 	// 保存 taskFile 文件
