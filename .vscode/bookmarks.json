@@ -4,5 +4,12 @@
 	"onDidAddBookmarkEmitter": {},
 	"onDidRemoveBookmarkEmitter": {},
 	"onDidUpdateBookmarkEmitter": {},
-	"bookmarks": []
+	"bookmarks": [
+		{
+			"fsPath": "$ROOTPATH$/Algorithms/0564.find-the-closest-palindrome/find-the-closest-palindrome_test.go",
+			"bookmarks": [
+				19
+			]
+		}
+	]
 }
