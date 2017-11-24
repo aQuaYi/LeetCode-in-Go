@@ -2,8 +2,6 @@ package Problem0587
 
 import (
 	"github.com/aQuaYi/LeetCode-in-Go/kit"
-	"math"
-	"fmt"
 )
 
 type Point = kit.Point
@@ -14,99 +12,53 @@ func outerTrees(points []Point) []Point {
 		return points
 	}
 
-	res := []Point{}
-	isUsed := make([]bool, size)
+	return dfs(points) 
+}
 
-	cx := points[0]
-	idx := 0
-	for i := 1; i < size; i++ {
-		if cx.X==0 && cx.Y==0 {
-			break
-		}
-		cx, idx = cloest2X(cx, points[i], idx, i)
+// 当 p 在 points 围起来的范围内时，返回 true
+func isIn(ps []Point, i, j, k, l int) (bool, int) {
+	switch {
+	case isInTrangle(ps, i, j, k, l):
+		return true, l
+	case isInTrangle(ps, l, i, j, k):
+		return true, k
+	case isInTrangle(ps, k, l, i, j):
+		return true, j
+	case isInTrangle(ps, j, k, l, i):
+		return true, i
 	}
+	return false, -1
+}
 
-	res = append(res, cx)
-	isUsed[idx] = true
+func isInTrangle(ps []Point, i, j, k, l int) bool {
+	a, b, c, p := ps[i], ps[j], ps[k], ps[l]
+	std := area(a, b, c)
+	pa := area(a, b, p) + area(b, c, p) + area(c, a, p)
+	return pa == std
+}
 
-	var dfs func(Point, vector, int)
-	dfs = func(o Point, b vector, index int) {
+// 返回由 a，b，c 三点组成的三角形的面积的 2 倍
+func area(a, b, c Point) int {
+	return b.X*c.Y + a.X*b.Y + a.Y*c.X - b.X*a.Y - c.X*b.Y - c.Y*a.X
+}
 
-		max := -2.
-		idx := index
-		for i, p := range points {
-			if i == index {
-				continue
+func dfs(ps []Point) []Point {
+	size := len(ps)
+
+	for i := 0; i < size-3; i++ {
+		for j := i + 1; j < size-2; j++ {
+			for k := j + 1; k < size-1; k++ {
+				for l := k + 1; l < size; l++ {
+					in, idx := isIn(ps, i, j, k, l)
+					if in {
+						temp := make([]Point, size-1)
+						copy(temp[:idx], ps)
+						copy(temp[idx:], ps[idx+1:])
+						return dfs(temp)
+					}
+				}
 			}
-				
-			if o.X== 96	&& o.Y== 99 && p.X ==84 && p.Y== 99 {
-			fmt.Print(o,p)
 		}
-			v := makeVector(o, p)
-			tmp := angle(v, b)
-			if max < tmp ||
-				(max == tmp && distance(p, o) < distance(points[idx], o)) {
-				max = tmp
-				idx = i
-			}
-		}
-
-		if isUsed[idx] {
-			return
-		}
-
-		isUsed[idx] = true
-		res = append(res, points[idx])
-		dfs(points[idx], makeVector(o, points[idx]), idx)
 	}
-
-	v := makeVector(Point{X: 0, Y: 0}, cx)
-	if cx.X == 0 && cx.Y == 0 {
-		v = vector{x: 1, y: 0}
-	}
-
-	dfs(cx, v, idx)
-
-	return res
-}
-
-// 返回更靠近 X 轴的点
-func cloest2X(a, b Point, ia, ib int) (Point, int) {
-	A, B := a.Y*b.X, b.Y*a.X
-	if A < B ||
-		(A == B && a.X*a.X+a.Y*a.Y < b.X*b.X+b.Y*b.Y) {
-		return a, ia
-	}
-	return b, ib
-}
-
-
-type vector struct {
-	x, y float64
-}
-
-// 返回 a→b 的向量
-func makeVector(a, b Point) vector {
-	return vector{
-		x: float64(b.X - a.X),
-		y: float64(b.Y - a.Y),
-	}
-}
-
-// 返回两个向量的夹角
-func angle(a, b vector) float64 {
-	ab := a.x*b.x + a.y*b.y
-	aNorm := math.Sqrt(a.x*a.x + a.y*a.y)
-	bNorm := math.Sqrt(b.x*b.x + b.y*b.y)
-	return ab / (aNorm * bNorm)
-}
-
-func distance(a, b Point) int {
-	x := a.X - b.X
-	y := a.Y - b.Y
-	return x*x + y*y
-}
-
-type angle struct {
-	ab
+	return ps
 }
