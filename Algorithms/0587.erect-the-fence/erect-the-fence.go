@@ -40,6 +40,7 @@ dfs = func(o Point, b vector){
 	}
 	}
 	isUsed[idx]=true
+
 }
 
 	return res

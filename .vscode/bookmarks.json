@@ -4,5 +4,12 @@
 	"onDidAddBookmarkEmitter": {},
 	"onDidRemoveBookmarkEmitter": {},
 	"onDidUpdateBookmarkEmitter": {},
-	"bookmarks": []
+	"bookmarks": [
+		{
+			"fsPath": "$ROOTPATH$/Algorithms/0587.erect-the-fence/erect-the-fence.go",
+			"bookmarks": [
+				42
+			]
+		}
+	]
 }
