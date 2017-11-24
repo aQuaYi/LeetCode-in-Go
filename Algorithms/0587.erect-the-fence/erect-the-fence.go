@@ -33,7 +33,8 @@ func outerTrees(points []Point) []Point {
 			if i == index {
 				continue
 			}
-			tmp := angle(makeVector(o, p), b)
+			v :=makeVector(o, p)
+			tmp := angle(v, b)
 			if max < tmp ||
 				(max == tmp && distance(p, o) < distance(points[idx], o)) {
 				max = tmp
@@ -46,6 +47,7 @@ func outerTrees(points []Point) []Point {
 		}
 
 		isUsed[idx] = true
+		res = append(res, points[idx])
 		dfs(points[idx], makeVector(o, points[idx]), idx)
 	}
 
@@ -78,7 +80,7 @@ func makeVector(a, b Point) vector {
 
 // 返回两个向量的夹角
 func angle(a, b vector) float64 {
-	ab := a.x*a.x + a.y*a.y
+	ab := a.x*b.x + a.y*b.y
 	aNorm := math.Sqrt(a.x*a.x + a.y*a.y)
 	bNorm := math.Sqrt(b.x*b.x + b.y*b.y)
 	return ab / (aNorm * bNorm)
