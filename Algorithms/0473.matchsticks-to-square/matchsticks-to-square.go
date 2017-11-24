@@ -7,15 +7,16 @@ func makesquare(nums []int) bool {
 		return false
 	}
 
-	ok, avg := isOK(nums)
+	// 先对nums中的数做一个基本的分析
+	ok, avg := analyze(nums)
 	if !ok {
 		return false
 	}
 
+	// 降序排列可以大大加快 dfs 的速度
 	sort.Sort(sort.Reverse(sort.IntSlice(nums)))
 
 	edges := make([]int, 4)
-
 	return dfs(nums, edges, 0, avg)
 }
 
@@ -43,7 +44,8 @@ func dfs(nums, edges []int, index, target int) bool {
 	return false
 }
 
-func isOK(nums []int) (ok bool, avg int) {
+// analyze 统计了 nums 中数的总和，能否被 4 整除
+func analyze(nums []int) (ok bool, avg int) {
 	sum := 0
 	for _, n := range nums {
 		sum += n
