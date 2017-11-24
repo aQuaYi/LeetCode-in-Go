@@ -12,7 +12,17 @@ func outerTrees(points []Point) []Point {
 		return points
 	}
 
-	return dfs(points)
+	temp := dfs(points)
+	c := getCenter(temp)
+	res := make([]Point, 0, size)
+	for _, p := range temp {
+		if p == c {
+			continue
+		}
+		res = append(res, p)
+	}
+
+	return res
 }
 
 // 当 p 在 points 围起来的范围内时，返回 true
@@ -32,21 +42,21 @@ func isIn(ps []Point, i, j, k, l int) (bool, int) {
 
 func isInTrangle(ps []Point, i, j, k, l int) bool {
 	a, b, c, p := ps[i], ps[j], ps[k], ps[l]
-	
+
 	// 当 p 在三角形 abc 的边上时，返回 false
-	aa,ab,ac := area(b, c, p),area(c, p, a),area(p, a, b)
-	if aa*ab*ac==0{
+	aa, ab, ac := area(b, c, p), area(c, p, a), area(p, a, b)
+	if aa*ab*ac == 0 {
 		return false
 	}
-	
+
 	std := area(a, b, c)
-	pa:=aa+ab+ac
+	pa := aa + ab + ac
 	return pa == std
 }
 
 // 返回由 a，b，c 三点组成的三角形的面积的 2 倍
 func area(a, b, c Point) int {
-	return abs(b.X*c.Y-c.X*b.Y + a.X*b.Y-b.X*a.Y + a.Y*c.X-c.Y*a.X)
+	return abs(b.X*c.Y - c.X*b.Y + a.X*b.Y - b.X*a.Y + a.Y*c.X - c.Y*a.X)
 }
 
 func dfs(ps []Point) []Point {
@@ -75,4 +85,16 @@ func abs(n int) int {
 		return -n
 	}
 	return n
+}
+
+func getCenter(ps []Point) Point {
+	xs, ys := 0, 0
+	for _, p := range ps {
+		xs += p.X
+		ys += p.Y
+	}
+	return Point{
+		X: xs / len(ps),
+		Y: ys / len(ps),
+	}
 }
