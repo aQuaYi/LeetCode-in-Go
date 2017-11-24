@@ -3,6 +3,7 @@ package Problem0587
 import (
 	"github.com/aQuaYi/LeetCode-in-Go/kit"
 	"math"
+	"fmt"
 )
 
 type Point = kit.Point
@@ -30,12 +31,17 @@ func outerTrees(points []Point) []Point {
 
 	var dfs func(Point, vector, int)
 	dfs = func(o Point, b vector, index int) {
+
 		max := -2.
 		idx := index
 		for i, p := range points {
 			if i == index {
 				continue
 			}
+				
+			if o.X== 96	&& o.Y== 99 && p.X ==84 && p.Y== 99 {
+			fmt.Print(o,p)
+		}
 			v := makeVector(o, p)
 			tmp := angle(v, b)
 			if max < tmp ||
@@ -99,4 +105,8 @@ func distance(a, b Point) int {
 	x := a.X - b.X
 	y := a.Y - b.Y
 	return x*x + y*y
+}
+
+type angle struct {
+	ab
 }
