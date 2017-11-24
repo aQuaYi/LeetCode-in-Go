@@ -28,12 +28,12 @@ func outerTrees(points []Point) []Point {
 	var dfs func(Point, vector, int)
 	dfs = func(o Point, b vector, index int) {
 		max := -2.
-		idx := -1
+		idx := index
 		for i, p := range points {
 			if i == index {
 				continue
 			}
-			v :=makeVector(o, p)
+			v := makeVector(o, p)
 			tmp := angle(v, b)
 			if max < tmp ||
 				(max == tmp && distance(p, o) < distance(points[idx], o)) {
@@ -51,7 +51,12 @@ func outerTrees(points []Point) []Point {
 		dfs(points[idx], makeVector(o, points[idx]), idx)
 	}
 
-	dfs(cx, makeVector(Point{X: 0, Y: 0}, cx), idx)
+	v := makeVector(Point{X: 0, Y: 0}, cx)
+	if cx.X == 0 && cx.Y == 0 {
+		v = vector{x: 1, y: 0}
+	}
+
+	dfs(cx, v, idx)
 
 	return res
 }
