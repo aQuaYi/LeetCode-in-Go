@@ -93,8 +93,14 @@ func getCenter(ps []Point) Point {
 		xs += p.X
 		ys += p.Y
 	}
+
+	size := len(ps)
+	x, y := -1, -1
+	if xs%size == 0 && ys%size == 0 {
+		x, y = xs/size, ys/size
+	}
 	return Point{
-		X: xs / len(ps),
-		Y: ys / len(ps),
+		X: x,
+		Y: y,
 	}
 }
