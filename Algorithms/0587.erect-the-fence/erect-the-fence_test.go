@@ -4,13 +4,15 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/aQuaYi/LeetCode-in-Go/kit"
+
 	"github.com/stretchr/testify/assert"
 )
 
 // tcs is testcase slice
 var tcs = []struct {
-	points []Point
-	ans    []Point
+	points [][]int
+	ans    [][]int
 }{
 
 	{
@@ -31,14 +33,17 @@ func Test_outerTrees(t *testing.T) {
 
 	for _, tc := range tcs {
 		fmt.Printf("~~%v~~\n", tc)
-		ast.Equal(tc.ans, outerTrees(tc.points), "输入:%v", tc)
+		points := kit.Intss2Points(tc.points)
+		ans := kit.Intss2Points(tc.ans)
+		ast.Equal(ans, outerTrees(points), "输入:%v", tc)
 	}
 }
 
 func Benchmark_outerTrees(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		for _, tc := range tcs {
-			outerTrees(tc.points)
+			points := kit.Intss2Points(tc.points)
+			outerTrees(points)
 		}
 	}
 }
