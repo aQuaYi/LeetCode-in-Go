@@ -19,6 +19,9 @@ func outerTrees(points []Point) []Point {
 	cx := points[0]
 	idx := 0
 	for i := 1; i < size; i++ {
+		if cx.X==0 && cx.Y==0 {
+			break
+		}
 		cx, idx = cloest2X(cx, points[i], idx, i)
 	}
 
@@ -65,11 +68,12 @@ func outerTrees(points []Point) []Point {
 func cloest2X(a, b Point, ia, ib int) (Point, int) {
 	A, B := a.Y*b.X, b.Y*a.X
 	if A < B ||
-		(A == B && a.X < b.X) {
+		(A == B && a.X*a.X+a.Y*a.Y < b.X*b.X+b.Y*b.Y) {
 		return a, ia
 	}
 	return b, ib
 }
+
 
 type vector struct {
 	x, y float64
