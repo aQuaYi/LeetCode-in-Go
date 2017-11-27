@@ -1,27 +1,31 @@
 package Problem0443
 
+import "strconv"
+
 func compress(chars []byte) int {
-	res := 0
-	i, j := 0, 0
+	end, count := 0, 1
 
-	for i < len(chars) {
-		res++
-		for j < len(chars) && chars[i] == chars[j] {
-			j++
-		}
+	for i, char := range chars {
+		if i+1 < len(chars) && char == chars[i+1] {
+			// 统计相同字符的个数
+			count++
+		} else { // 出现不同的字符
+			// 在 end 处填写被压缩的字符
+			chars[end] = char
+			end++
 
-		t := j - i
-		i = j
+			// 从 end 处填写被压缩字符的个数
+			if count > 1 {
+				for _, num := range strconv.Itoa(count) {
+					chars[end] = byte(num)
+					end++
+				}
+			}
 
-		if t == 1 {
-			continue
-		}
-
-		for t > 0 {
-			res++
-			t /= 10
+			// 把 count 重置为 1
+			count = 1
 		}
 	}
 
-	return res
+	return end
 }

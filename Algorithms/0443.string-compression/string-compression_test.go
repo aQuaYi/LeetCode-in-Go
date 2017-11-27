@@ -47,6 +47,8 @@ func Test_compress(t *testing.T) {
 	for _, tc := range tcs {
 		fmt.Printf("~~%v~~\n", tc)
 		ast.Equal(tc.ans, compress(tc.chars))
+
+		// 检查 inPlace 修改的情况
 		ast.Equal(string(tc.ansInPlace), string(tc.chars)[:len(tc.ansInPlace)])
 	}
 }
