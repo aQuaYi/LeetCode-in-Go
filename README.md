@@ -2,7 +2,7 @@
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 排名](https://img.shields.io/badge/Ranking-5317-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 答题进度](https://img.shields.io/badge/Progress-75%25-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 答题进度](https://img.shields.io/badge/Progress-76%25-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 
@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|111|190|84|385|
+|**Accepted**|111|190|85|386|
 |**Total**|152|252|103|507|
 
 ## 题解
@@ -446,8 +446,8 @@
 |617| * Merge Two Binary Trees|67%|Easy| |
 |621|[Task Scheduler](./Algorithms/0621.task-scheduler)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |623| * Add One Row to Tree|46%|Medium| |
-|628|[Maximum Product of Three Numbers](./Algorithms/0628.maximum-product-of-three-numbers)|44%|Easy|[❤](https://leetcode.com/list/oussv5j)|
-|629| * K Inverse Pairs Array|26%|Hard| |
+|628|[Maximum Product of Three Numbers](./Algorithms/0628.maximum-product-of-three-numbers)|45%|Easy|[❤](https://leetcode.com/list/oussv5j)|
+|629|[K Inverse Pairs Array](./Algorithms/0629.k-inverse-pairs-array)|26%|Hard| |
 |630|[Course Schedule III](./Algorithms/0630.course-schedule-iii)|28%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |632| * Smallest Range|42%|Hard| |
 |633| * Sum of Square Numbers|32%|Easy| |
@@ -471,7 +471,7 @@
 |658| * Find K Closest Elements|35%|Medium| |
 |659| * Split Array into Consecutive Subsequences|35%|Medium| |
 |661|[Image Smoother](./Algorithms/0661.image-smoother)|45%|Easy| |
-|662| * Maximum Width of Binary Tree|38%|Medium| |
+|662| * Maximum Width of Binary Tree|37%|Medium| |
 |664| * Strange Printer|33%|Hard| |
 |665| * Non-decreasing Array|21%|Easy| |
 |667|[Beautiful Arrangement II](./Algorithms/0667.beautiful-arrangement-ii)|51%|Medium| |
@@ -511,7 +511,7 @@
 |718| * Maximum Length of Repeated Subarray|40%|Medium| |
 |719| * Find K-th Smallest Pair Distance|25%|Hard| |
 |720| * Longest Word in Dictionary|40%|Easy| |
-|721| * Accounts Merge|27%|Medium| |
+|721| * Accounts Merge|28%|Medium| |
 |722| * Remove Comments|26%|Medium| |
 |724| * Find Pivot Index|41%|Easy| |
 |725| * Split Linked List in Parts|49%|Medium| |
@@ -524,8 +524,8 @@
 |733| * Flood Fill|49%|Easy| |
 |734| * Sentence Similarity|37%|Easy| |
 |735| * Asteroid Collision|34%|Medium| |
-|736| * Parse Lisp Expression|36%|Hard| |
-|737| * Sentence Similarity II|45%|Medium| |
+|736| * Parse Lisp Expression|37%|Hard| |
+|737| * Sentence Similarity II|46%|Medium| |
 
 以下免费的算法题，暂时不能使用 Go 解答
 
