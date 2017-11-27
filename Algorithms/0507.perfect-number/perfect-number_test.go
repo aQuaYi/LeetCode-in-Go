@@ -10,21 +10,25 @@ import (
 // tcs is testcase slice
 var tcs = []struct {
 	num int
-	ans  bool 
+	ans bool
 }{
+
+	{
+		132049,
+		false,
+	},
 
 	{
 		28,
 		true,
 	},
 
-	
 	// 可以有多个 testcase
 }
 
 func Test_checkPerfectNumber(t *testing.T) {
 	ast := assert.New(t)
-	
+
 	for _, tc := range tcs {
 		fmt.Printf("~~%v~~\n", tc)
 		ast.Equal(tc.ans, checkPerfectNumber(tc.num), "输入:%v", tc)
