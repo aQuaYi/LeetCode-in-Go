@@ -1,60 +1,22 @@
 package Problem0507
 
+import (
+	"math"
+)
+
 func checkPerfectNumber(num int) bool {
-	nextPrime := primeFunc()
-	l, r, remain := 1, num, num-1
-	p := nextPrime()
+	if num == 1 {
+		return false
+	}
 
-	for l < r {
-		if num%p != 0 {
-			p = nextPrime()
-			continue
-		}
+	sum := 1
+	root := int(math.Sqrt(float64(num)))
 
-		for num%p == 0 {
-			num /= p
-			l *= p
-			r = num
-			if l >= r {
-				break
-			}
-
-			remain -= l + r
-
-			if remain < 0 {
-				return false
-			}
+	for i := 2; i <= root; i++ {
+		if num%i == 0 {
+			sum += i + (num / i)
 		}
 	}
 
-	return remain == 0
-}
-
-func primeFunc() func() int {
-	r := make([]int, 2, 1024)
-	r[0] = 2
-	r[1] = 3
-	i := -1
-	return func() int {
-		i++
-		if i < len(r) {
-			return r[i]
-		}
-		t := r[i-1] + 2
-		j := 0
-		for {
-			for j = 0; j < i; j++ {
-				if t%r[j] == 0 {
-					break
-				}
-			}
-
-			if j == i {
-				r = append(r, t)
-				return t
-			}
-
-			t += 2
-		}
-	}
+	return sum == num
 }
