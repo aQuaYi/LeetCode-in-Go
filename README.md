@@ -1,8 +1,8 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 排名](https://img.shields.io/badge/Ranking-5410-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 答题进度](https://img.shields.io/badge/Progress-76%25-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/Ranking-5317-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 答题进度](https://img.shields.io/badge/Progress-75%25-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 
@@ -12,8 +12,8 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|111|188|84|383|
-|**Total**|150|250|101|501|
+|**Accepted**|111|190|84|385|
+|**Total**|152|252|103|507|
 
 ## 题解
 
@@ -68,13 +68,13 @@
 |47|[Permutations II](./Algorithms/0047.permutations-ii)|33%|Medium| |
 |48|[Rotate Image](./Algorithms/0048.rotate-image)|39%|Medium| |
 |49|[Group Anagrams](./Algorithms/0049.group-anagrams)|36%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|50|[Pow(x, n)](./Algorithms/0050.powx-n)|26%|Medium| |
+|50|[Pow(x, n)](./Algorithms/0050.powx-n)|25%|Medium| |
 |51|[N-Queens](./Algorithms/0051.n-queens)|32%|Hard| |
 |52|[N-Queens II](./Algorithms/0052.n-queens-ii)|45%|Hard| |
 |53|[Maximum Subarray](./Algorithms/0053.maximum-subarray)|39%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |54|[Spiral Matrix](./Algorithms/0054.spiral-matrix)|26%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |55|[Jump Game](./Algorithms/0055.jump-game)|29%|Medium| |
-|56|[Merge Intervals](./Algorithms/0056.merge-intervals)|30%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|56|[Merge Intervals](./Algorithms/0056.merge-intervals)|31%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |57|[Insert Interval](./Algorithms/0057.insert-interval)|28%|Hard| |
 |58|[Length of Last Word](./Algorithms/0058.length-of-last-word)|31%|Easy| |
 |59|[Spiral Matrix II](./Algorithms/0059.spiral-matrix-ii)|40%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -118,9 +118,9 @@
 |97|[Interleaving String](./Algorithms/0097.interleaving-string)|24%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |98|[Validate Binary Search Tree](./Algorithms/0098.validate-binary-search-tree)|23%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |99|[Recover Binary Search Tree](./Algorithms/0099.recover-binary-search-tree)|30%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|100|[Same Tree](./Algorithms/0100.same-tree)|46%|Easy| |
+|100|[Same Tree](./Algorithms/0100.same-tree)|47%|Easy| |
 |101|[Symmetric Tree](./Algorithms/0101.symmetric-tree)|39%|Easy|[❤](https://leetcode.com/list/oussv5j)|
-|102|[Binary Tree Level Order Traversal](./Algorithms/0102.binary-tree-level-order-traversal)|40%|Medium| |
+|102|[Binary Tree Level Order Traversal](./Algorithms/0102.binary-tree-level-order-traversal)|41%|Medium| |
 |103|[Binary Tree Zigzag Level Order Traversal](./Algorithms/0103.binary-tree-zigzag-level-order-traversal)|35%|Medium| |
 |104|[Maximum Depth of Binary Tree](./Algorithms/0104.maximum-depth-of-binary-tree)|53%|Easy| |
 |105|[Construct Binary Tree from Preorder and Inorder Traversal](./Algorithms/0105.construct-binary-tree-from-preorder-and-inorder-traversal)|32%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -238,7 +238,7 @@
 |289|[Game of Life](./Algorithms/0289.game-of-life)|37%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |290|[Word Pattern](./Algorithms/0290.word-pattern)|33%|Easy| |
 |292|[Nim Game](./Algorithms/0292.nim-game)|55%|Easy|[❤](https://leetcode.com/list/oussv5j)|
-|295|[Find Median from Data Stream](./Algorithms/0295.find-median-from-data-stream)|27%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|295|[Find Median from Data Stream](./Algorithms/0295.find-median-from-data-stream)|28%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |299|[Bulls and Cows](./Algorithms/0299.bulls-and-cows)|35%|Medium| |
 |300|[Longest Increasing Subsequence](./Algorithms/0300.longest-increasing-subsequence)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |301|[Remove Invalid Parentheses](./Algorithms/0301.remove-invalid-parentheses)|35%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -249,7 +249,7 @@
 |309|[Best Time to Buy and Sell Stock with Cooldown](./Algorithms/0309.best-time-to-buy-and-sell-stock-with-cooldown)|41%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |310|[Minimum Height Trees](./Algorithms/0310.minimum-height-trees)|28%|Medium| |
 |312|[Burst Balloons](./Algorithms/0312.burst-balloons)|43%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|313|[Super Ugly Number](./Algorithms/0313.super-ugly-number)|37%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|313|[Super Ugly Number](./Algorithms/0313.super-ugly-number)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |315|[Count of Smaller Numbers After Self](./Algorithms/0315.count-of-smaller-numbers-after-self)|34%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |316|[Remove Duplicate Letters](./Algorithms/0316.remove-duplicate-letters)|29%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |318|[Maximum Product of Word Lengths](./Algorithms/0318.maximum-product-of-word-lengths)|44%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -362,8 +362,8 @@
 |467|[Unique Substrings in Wraparound String](./Algorithms/0467.unique-substrings-in-wraparound-string)|32%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |468|[Validate IP Address](./Algorithms/0468.validate-ip-address)|20%|Medium| |
 |472|[Concatenated Words](./Algorithms/0472.concatenated-words)|30%|Hard| |
-|473| * Matchsticks to Square|35%|Medium| |
-|474| * Ones and Zeroes|39%|Medium| |
+|473|[Matchsticks to Square](./Algorithms/0473.matchsticks-to-square)|35%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|474|[Ones and Zeroes](./Algorithms/0474.ones-and-zeroes)|39%|Medium| |
 |475|[Heaters](./Algorithms/0475.heaters)|29%|Easy| |
 |476|[Number Complement](./Algorithms/0476.number-complement)|60%|Easy| |
 |477| * Total Hamming Distance|47%|Medium| |
@@ -372,7 +372,7 @@
 |481|[Magical String](./Algorithms/0481.magical-string)|45%|Medium| |
 |482|[License Key Formatting](./Algorithms/0482.license-key-formatting)|41%|Medium| |
 |483|[Smallest Good Base](./Algorithms/0483.smallest-good-base)|33%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|485|[Max Consecutive Ones](./Algorithms/0485.max-consecutive-ones)|54%|Easy| |
+|485|[Max Consecutive Ones](./Algorithms/0485.max-consecutive-ones)|53%|Easy| |
 |486| * Predict the Winner|45%|Medium| |
 |488| * Zuma Game|37%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |491| * Increasing Subsequences|38%|Medium| |
@@ -446,10 +446,10 @@
 |617| * Merge Two Binary Trees|67%|Easy| |
 |621|[Task Scheduler](./Algorithms/0621.task-scheduler)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |623| * Add One Row to Tree|46%|Medium| |
-|628|[Maximum Product of Three Numbers](./Algorithms/0628.maximum-product-of-three-numbers)|45%|Easy|[❤](https://leetcode.com/list/oussv5j)|
+|628|[Maximum Product of Three Numbers](./Algorithms/0628.maximum-product-of-three-numbers)|44%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |629| * K Inverse Pairs Array|26%|Hard| |
 |630|[Course Schedule III](./Algorithms/0630.course-schedule-iii)|28%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|632| * Smallest Range|41%|Hard| |
+|632| * Smallest Range|42%|Hard| |
 |633| * Sum of Square Numbers|32%|Easy| |
 |636| * Exclusive Time of Functions|43%|Medium| |
 |637| * Average of Levels in Binary Tree|55%|Easy| |
@@ -472,18 +472,18 @@
 |659| * Split Array into Consecutive Subsequences|35%|Medium| |
 |661|[Image Smoother](./Algorithms/0661.image-smoother)|45%|Easy| |
 |662| * Maximum Width of Binary Tree|38%|Medium| |
-|664| * Strange Printer|32%|Hard| |
+|664| * Strange Printer|33%|Hard| |
 |665| * Non-decreasing Array|21%|Easy| |
 |667|[Beautiful Arrangement II](./Algorithms/0667.beautiful-arrangement-ii)|51%|Medium| |
 |668| * Kth Smallest Number in Multiplication Table|37%|Hard| |
 |669| * Trim a Binary Search Tree|57%|Easy| |
 |670| * Maximum Swap|38%|Medium| |
 |671| * Second Minimum Node In a Binary Tree|41%|Easy| |
-|672| * Bulb Switcher II|47%|Medium| |
+|672| * Bulb Switcher II|48%|Medium| |
 |673| * Number of Longest Increasing Subsequence|31%|Medium| |
 |674| * Longest Continuous Increasing Subsequence|42%|Easy| |
 |675| * Cut Off Trees for Golf Event|26%|Hard| |
-|676| * Implement Magic Dictionary|49%|Medium| |
+|676| * Implement Magic Dictionary|50%|Medium| |
 |677| * Map Sum Pairs|52%|Medium| |
 |678| * Valid Parenthesis String|28%|Medium| |
 |679| * 24 Game|38%|Hard| |
@@ -505,10 +505,10 @@
 |699| * Falling Squares|36%|Hard| |
 |712| * Minimum ASCII Delete Sum for Two Strings|51%|Medium| |
 |713| * Subarray Product Less Than K|32%|Medium| |
-|714| * Best Time to Buy and Sell Stock with Transaction Fee|39%|Medium| |
-|715| * Range Module|31%|Hard| |
+|714| * Best Time to Buy and Sell Stock with Transaction Fee|40%|Medium| |
+|715| * Range Module|30%|Hard| |
 |717| * 1-bit and 2-bit Characters|51%|Easy| |
-|718| * Maximum Length of Repeated Subarray|39%|Medium| |
+|718| * Maximum Length of Repeated Subarray|40%|Medium| |
 |719| * Find K-th Smallest Pair Distance|25%|Hard| |
 |720| * Longest Word in Dictionary|40%|Easy| |
 |721| * Accounts Merge|27%|Medium| |
@@ -516,10 +516,16 @@
 |724| * Find Pivot Index|41%|Easy| |
 |725| * Split Linked List in Parts|49%|Medium| |
 |726| * Number of Atoms|45%|Hard| |
-|728| * Self Dividing Numbers|68%|Easy| |
-|729| * My Calendar I|37%|Medium| |
-|730| * Count Different Palindromic Subsequences|29%|Hard| |
+|728| * Self Dividing Numbers|69%|Easy| |
+|729| * My Calendar I|38%|Medium| |
+|730| * Count Different Palindromic Subsequences|30%|Hard| |
 |731| * My Calendar II|33%|Medium| |
+|732| * My Calendar III|42%|Hard| |
+|733| * Flood Fill|49%|Easy| |
+|734| * Sentence Similarity|37%|Easy| |
+|735| * Asteroid Collision|34%|Medium| |
+|736| * Parse Lisp Expression|36%|Hard| |
+|737| * Sentence Similarity II|45%|Medium| |
 
 以下免费的算法题，暂时不能使用 Go 解答
 
