@@ -2,7 +2,7 @@
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 排名](https://img.shields.io/badge/Ranking-5045-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 答题进度](https://img.shields.io/badge/Progress-76%25-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 答题进度](https://img.shields.io/badge/Progress-77%25-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 
@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|114|191|85|390|
+|**Accepted**|114|191|86|391|
 |**Total**|152|252|103|507|
 
 ## 题解
@@ -431,7 +431,7 @@
 |576| * Out of Boundary Paths|30%|Medium| |
 |581|[Shortest Unsorted Continuous Subarray](./Algorithms/0581.shortest-unsorted-continuous-subarray)|29%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |583| * Delete Operation for Two Strings|44%|Medium| |
-|587| * Erect the Fence|32%|Hard| |
+|587|[Erect the Fence](./Algorithms/0587.erect-the-fence)|32%|Hard| |
 |591| * Tag Validator|30%|Hard| |
 |592| * Fraction Addition and Subtraction|45%|Medium| |
 |593| * Valid Square|40%|Medium| |
@@ -476,7 +476,7 @@
 |665| * Non-decreasing Array|21%|Easy| |
 |667|[Beautiful Arrangement II](./Algorithms/0667.beautiful-arrangement-ii)|51%|Medium| |
 |668| * Kth Smallest Number in Multiplication Table|37%|Hard| |
-|669| * Trim a Binary Search Tree|58%|Easy| |
+|669| * Trim a Binary Search Tree|57%|Easy| |
 |670| * Maximum Swap|38%|Medium| |
 |671| * Second Minimum Node In a Binary Tree|41%|Easy| |
 |672| * Bulb Switcher II|48%|Medium| |
