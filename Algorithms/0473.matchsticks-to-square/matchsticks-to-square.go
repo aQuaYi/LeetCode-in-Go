@@ -13,7 +13,7 @@ func makesquare(nums []int) bool {
 		return false
 	}
 
-	// 降序排列可以大大加快 dfs 的速度
+	// 降序排列可以加快 dfs 的速度
 	sort.Sort(sort.Reverse(sort.IntSlice(nums)))
 
 	edges := make([]int, 4)
@@ -27,6 +27,7 @@ func dfs(nums, edges []int, index, target int) bool {
 			edges[2] == target {
 			return true
 		}
+		// TODO: 重新组织程序，达到完整的覆盖率
 		return false
 	}
 
