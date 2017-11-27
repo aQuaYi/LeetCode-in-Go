@@ -5,43 +5,38 @@ import (
 )
 type TreeNode = kit.TreeNode
 
+type state struct{
+    minDiff , previous int
+}
+
 func getMinimumDifference(root *TreeNode) int {
-	res := 1<<31-1 
-
-	if root.Left == nil && root.Right == nil {
-		return res
-	}
-
-	if root.Left!= nil {
-		res = min(res, getMinimumDifference(root.Left))
-		res = min(res, root.Val- maxNode(root.Left))
-	}
-
-	if root.Right != nil {
-		res = min(res , getMinimumDifference(root.Right))
-		res = min(res, minNode(root.Right)- root.Val)
-	}
-
-	return res
+    st:=state{1024,1024}
+    search(root, &st)
+    return st.minDiff
 }
 
-func min(a, b int) int {
-	if a < b {
-		return a
+// NOTICE: BST 的递归遍历方法
+// 特别好
+func search(root *TreeNode, st *state){
+    if root == nil{
+        return
 	}
-	return b
+
+    search(root.Left, st)
+    
+    newDiff:=diff(st.previous, root.Val)
+    if st.minDiff> newDiff{
+        st.minDiff = newDiff
+    }
+    
+	st.previous = root.Val
+
+    search(root.Right, st)
 }
 
-func minNode(root *TreeNode) int {
-if root.Left==nil {
-	return root.Val
-}	
-return minNode(root.Left)
-}
-
-func maxNode(root *TreeNode) int {
-if root.Right==nil {
-	return root.Val
-}	
-return maxNode(root.Right)
+func diff(a, b int) int{
+    if a > b{
+        return a - b
+    }
+	return b - a
 }
