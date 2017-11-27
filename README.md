@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|111|190|85|386|
+|**Accepted**|112|191|85|388|
 |**Total**|152|252|103|507|
 
 ## 题解
@@ -66,7 +66,7 @@
 |45|[Jump Game II](./Algorithms/0045.jump-game-ii)|26%|Hard| |
 |46|[Permutations](./Algorithms/0046.permutations)|45%|Medium| |
 |47|[Permutations II](./Algorithms/0047.permutations-ii)|33%|Medium| |
-|48|[Rotate Image](./Algorithms/0048.rotate-image)|39%|Medium| |
+|48|[Rotate Image](./Algorithms/0048.rotate-image)|40%|Medium| |
 |49|[Group Anagrams](./Algorithms/0049.group-anagrams)|36%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |50|[Pow(x, n)](./Algorithms/0050.powx-n)|25%|Medium| |
 |51|[N-Queens](./Algorithms/0051.n-queens)|32%|Hard| |
@@ -366,7 +366,7 @@
 |474|[Ones and Zeroes](./Algorithms/0474.ones-and-zeroes)|39%|Medium| |
 |475|[Heaters](./Algorithms/0475.heaters)|29%|Easy| |
 |476|[Number Complement](./Algorithms/0476.number-complement)|60%|Easy| |
-|477| * Total Hamming Distance|47%|Medium| |
+|477|[Total Hamming Distance](./Algorithms/0477.total-hamming-distance)|47%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |479|[Largest Palindrome Product](./Algorithms/0479.largest-palindrome-product)|24%|Easy| |
 |480|[Sliding Window Median](./Algorithms/0480.sliding-window-median)|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |481|[Magical String](./Algorithms/0481.magical-string)|45%|Medium| |
@@ -388,7 +388,7 @@
 |503|[Next Greater Element II](./Algorithms/0503.next-greater-element-ii)|47%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |504|[Base 7](./Algorithms/0504.base-7)|44%|Easy| |
 |506|[Relative Ranks](./Algorithms/0506.relative-ranks)|46%|Easy| |
-|507| * Perfect Number|33%|Easy| |
+|507|[Perfect Number](./Algorithms/0507.perfect-number)|33%|Easy| |
 |508| * Most Frequent Subtree Sum|52%|Medium| |
 |513| * Find Bottom Left Tree Value|56%|Medium| |
 |514|[Freedom Trail](./Algorithms/0514.freedom-trail)|39%|Hard| |
