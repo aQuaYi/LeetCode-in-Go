@@ -18,7 +18,12 @@ func checkPerfectNumber(num int) bool {
 			if l >= r {
 				break
 			}
+
 			remain -= l + r
+
+			if remain < 0 {
+				return false
+			}
 		}
 	}
 
