@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|112|191|85|388|
+|**Accepted**|113|191|85|389|
 |**Total**|152|252|103|507|
 
 ## 题解
@@ -340,7 +340,7 @@
 |440|[K-th Smallest in Lexicographical Order](./Algorithms/0440.k-th-smallest-in-lexicographical-order)|25%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |441|[Arranging Coins](./Algorithms/0441.arranging-coins)|36%|Easy| |
 |442|[Find All Duplicates in an Array](./Algorithms/0442.find-all-duplicates-in-an-array)|56%|Medium| |
-|443| * String Compression|37%|Easy| |
+|443|[String Compression](./Algorithms/0443.string-compression)|37%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |445|[Add Two Numbers II](./Algorithms/0445.add-two-numbers-ii)|45%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |446|[Arithmetic Slices II - Subsequence](./Algorithms/0446.arithmetic-slices-ii-subsequence)|27%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |447|[Number of Boomerangs](./Algorithms/0447.number-of-boomerangs)|45%|Easy| |
@@ -504,7 +504,7 @@
 |698| * Partition to K Equal Sum Subsets|36%|Medium| |
 |699| * Falling Squares|36%|Hard| |
 |712| * Minimum ASCII Delete Sum for Two Strings|51%|Medium| |
-|713| * Subarray Product Less Than K|32%|Medium| |
+|713| * Subarray Product Less Than K|33%|Medium| |
 |714| * Best Time to Buy and Sell Stock with Transaction Fee|40%|Medium| |
 |715| * Range Module|30%|Hard| |
 |717| * 1-bit and 2-bit Characters|51%|Easy| |
@@ -520,12 +520,12 @@
 |729| * My Calendar I|38%|Medium| |
 |730| * Count Different Palindromic Subsequences|30%|Hard| |
 |731| * My Calendar II|33%|Medium| |
-|732| * My Calendar III|42%|Hard| |
+|732| * My Calendar III|43%|Hard| |
 |733| * Flood Fill|49%|Easy| |
 |734| * Sentence Similarity|37%|Easy| |
-|735| * Asteroid Collision|34%|Medium| |
+|735| * Asteroid Collision|35%|Medium| |
 |736| * Parse Lisp Expression|37%|Hard| |
-|737| * Sentence Similarity II|46%|Medium| |
+|737| * Sentence Similarity II|45%|Medium| |
 
 以下免费的算法题，暂时不能使用 Go 解答
 
