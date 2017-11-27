@@ -10,21 +10,35 @@ import (
 // tcs is testcase slice
 var tcs = []struct {
 	chars []byte
-	ans  int 
+	ans   int
 }{
 
 	{
-[]byte("aabbccc"),
-6,
+		[]byte("abaa2"),
+		5,
 	},
 
-	
+	{
+		[]byte("a"),
+		1,
+	},
+
+	{
+		[]byte("abbbbbbbbbbbb"),
+		4,
+	},
+
+	{
+		[]byte("aabbccc"),
+		6,
+	},
+
 	// 可以有多个 testcase
 }
 
 func Test_compress(t *testing.T) {
 	ast := assert.New(t)
-	
+
 	for _, tc := range tcs {
 		fmt.Printf("~~%v~~\n", tc)
 		ast.Equal(tc.ans, compress(tc.chars), "输入:%v", tc)
