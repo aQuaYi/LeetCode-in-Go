@@ -1,7 +1,7 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 排名](https://img.shields.io/badge/Ranking-5317-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/Ranking-5045-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 答题进度](https://img.shields.io/badge/Progress-76%25-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|113|191|85|389|
+|**Accepted**|114|191|85|390|
 |**Total**|152|252|103|507|
 
 ## 题解
@@ -403,7 +403,7 @@
 |525| * Contiguous Array|40%|Medium| |
 |526|[Beautiful Arrangement](./Algorithms/0526.beautiful-arrangement)|54%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |529| * Minesweeper|49%|Medium| |
-|530| * Minimum Absolute Difference in BST|47%|Easy| |
+|530|[Minimum Absolute Difference in BST](./Algorithms/0530.minimum-absolute-difference-in-bst)|47%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |532|[K-diff Pairs in an Array](./Algorithms/0532.k-diff-pairs-in-an-array)|28%|Easy| |
 |537|[Complex Number Multiplication](./Algorithms/0537.complex-number-multiplication)|63%|Medium| |
 |538| * Convert BST to Greater Tree|49%|Easy| |
@@ -476,7 +476,7 @@
 |665| * Non-decreasing Array|21%|Easy| |
 |667|[Beautiful Arrangement II](./Algorithms/0667.beautiful-arrangement-ii)|51%|Medium| |
 |668| * Kth Smallest Number in Multiplication Table|37%|Hard| |
-|669| * Trim a Binary Search Tree|57%|Easy| |
+|669| * Trim a Binary Search Tree|58%|Easy| |
 |670| * Maximum Swap|38%|Medium| |
 |671| * Second Minimum Node In a Binary Tree|41%|Easy| |
 |672| * Bulb Switcher II|48%|Medium| |
@@ -520,12 +520,12 @@
 |729| * My Calendar I|38%|Medium| |
 |730| * Count Different Palindromic Subsequences|30%|Hard| |
 |731| * My Calendar II|33%|Medium| |
-|732| * My Calendar III|43%|Hard| |
+|732| * My Calendar III|44%|Hard| |
 |733| * Flood Fill|49%|Easy| |
 |734| * Sentence Similarity|37%|Easy| |
 |735| * Asteroid Collision|35%|Medium| |
-|736| * Parse Lisp Expression|37%|Hard| |
-|737| * Sentence Similarity II|45%|Medium| |
+|736| * Parse Lisp Expression|38%|Hard| |
+|737| * Sentence Similarity II|44%|Medium| |
 
 以下免费的算法题，暂时不能使用 Go 解答
 
