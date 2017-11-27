@@ -1,24 +1,26 @@
 package Problem0443
 
 func compress(chars []byte) int {
-	r := [128]int{}
-	for _, c := range chars {
-		r[c]++
-	}
-
 	res := 0
+	i, j := 0, 0
 
-	for i := 0; i < 128; i++ {
-		if r[i] <= 1 {
-			res += r[i]
+	for i < len(chars) {
+		res++
+		for j < len(chars) && chars[i] == chars[j] {
+			j++
+		}
+
+		t := j - i
+		i = j
+
+		if t == 1 {
 			continue
 		}
 
-		for r[i] > 0 {
+		for t > 0 {
 			res++
-			r[i] /= 10
+			t /= 10
 		}
-		res++
 	}
 
 	return res
