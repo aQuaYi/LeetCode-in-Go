@@ -34,3 +34,28 @@ func findSubsequences(nums []int) [][]int {
 
 	return res
 }
+
+// class Solution {
+//     public List<List<Integer>> findSubsequences(int[] nums) {
+//         List<List<Integer>> result = new ArrayList<>();
+//         List<Integer> list = new ArrayList<>();
+//         findSubseq(nums, 0, result, list);
+//         return result;
+//     }
+//     private void findSubseq(int[] nums, int index, List<List<Integer>> result, List<Integer> list) {
+//         if (index == nums.length) {
+//             if (list.size() > 1) {
+//                 result.add(new ArrayList<>(list));
+//             }
+//             return ;
+//         }
+//         if (list.isEmpty() || list.get(list.size() - 1) <= nums[index]) {
+//             list.add(nums[index]);
+//             findSubseq(nums, index + 1, result, list);
+//             list.remove(list.size() - 1);
+//         }
+//         if (list.isEmpty() || list.get(list.size() - 1) != nums[index]){
+//             findSubseq(nums, index + 1, result, list);
+//         }
+//     }
+// }
