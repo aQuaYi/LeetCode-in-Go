@@ -2,6 +2,9 @@ package Problem0486
 
 // PredictTheWinner 在 play1 能赢的时候，返回 true
 func PredictTheWinner(nums []int) bool {
+	if len(nums) == 1 {
+		return true
+	}
 	return search(nums, 0, len(nums)-1, 0, 0)
 }
 
