@@ -12,10 +12,12 @@ func outerTrees(points []Point) []Point {
 		return points
 	}
 
-	// 选择最右边的点，作为起始点
+	// 选择最左边的点，作为起始点
+	// 如果最左边的点，不止一个，选择其中最下面的那个
 	first := 0
 	for i := 1; i < n; i++ {
-		if points[i].X < points[first].X {
+		if points[i].X < points[first].X||
+		(points[i].X == points[first].X && points[i].Y< points[first].Y) {
 			first = i
 		}
 	}
