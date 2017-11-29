@@ -7,21 +7,21 @@ import (
 type TreeNode = kit.TreeNode
 
 func findBottomLeftValue(root *TreeNode) int {
-	rec := make([]int, 2)
-	helper(root, 1,  rec)
-	return rec[1]
-}
+	queue := []*TreeNode{root}
 
-func helper(root *TreeNode, row int,   rec []int) {
-	if root == nil {
-		return
+	for len(queue) > 0 {
+		root = queue[0]
+		queue = queue[1:]
+
+		// 先把 Right 边的节点放入 queue 才能保证
+		// 最后剩下的 root 是 bottom left
+		if root.Right != nil {
+			queue = append(queue, root.Right)
+		}
+		if root.Left != nil {
+			queue = append(queue, root.Left)
+		}
 	}
 
-	if rec[0] < row {
-		rec[0] = row
-		rec[1] = root.Val
-	}
-
-	helper(root.Left, row+1,  rec)
-	helper(root.Right, row+1,  rec)
+	return root.Val
 }
