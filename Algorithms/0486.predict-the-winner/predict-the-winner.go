@@ -7,7 +7,7 @@ func PredictTheWinner(nums []int) bool {
 
 func search(nums []int, left, right, s1, s2 int) bool {
 	if left > right {
-		return s1 > s2
+		return s1 >= s2
 	}
 
 	return !search(nums, left+1, right, s2, s1+nums[left]) ||
