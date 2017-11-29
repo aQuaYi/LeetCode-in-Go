@@ -15,6 +15,24 @@ var tcs = []struct {
 }{
 
 	{
+		"cdc",
+		"cdc",
+		-1,
+	},
+
+	{
+		"cdc",
+		"abba",
+		4,
+	},
+
+	{
+		"abba",
+		"cdc",
+		4,
+	},
+
+	{
 		"aba",
 		"cdc",
 		3,
