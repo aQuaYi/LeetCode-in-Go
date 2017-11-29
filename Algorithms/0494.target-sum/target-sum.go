@@ -1,19 +1,27 @@
 package Problem0494
 
 func findTargetSumWays(nums []int, S int) int {
+
+	mid := len(nums) / 2
+	left := make(map[int]int, len(nums))
+	right := make(map[int]int, len(nums))
+	dfs(nums[:mid], 0, 0, left)
+	dfs(nums[mid:], 0, 0, right)
+
 	res := 0
-	dfs(nums, 0, 0, S, &res)
+	for l, c := range left {
+		res += c * right[S-l]
+	}
+
 	return res
 }
 
-func dfs(nums []int, index, sum, target int, res *int) {
+func dfs(nums []int, index, sum int, rec map[int]int) {
 	if index == len(nums) {
-		if sum == target {
-			*res++
-		}
+		rec[sum]++
 		return
 	}
 
-	dfs(nums, index+1, sum+nums[index], target, res)
-	dfs(nums, index+1, sum-nums[index], target, res)
+	dfs(nums, index+1, sum+nums[index], rec)
+	dfs(nums, index+1, sum-nums[index], rec)
 }
