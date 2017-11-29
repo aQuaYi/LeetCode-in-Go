@@ -8,20 +8,20 @@ type TreeNode = kit.TreeNode
 
 func findBottomLeftValue(root *TreeNode) int {
 	rec := make([]int, 2)
-	helper(root, 1, true, rec)
+	helper(root, 1,  rec)
 	return rec[1]
 }
 
-func helper(root *TreeNode, row int, isLeft bool, rec []int) {
+func helper(root *TreeNode, row int,   rec []int) {
 	if root == nil {
 		return
 	}
 
-	if isLeft && rec[0] < row {
+	if rec[0] < row {
 		rec[0] = row
 		rec[1] = root.Val
 	}
 
-	helper(root.Left, row+1, true, rec)
-	helper(root.Right, row+1, false, rec)
+	helper(root.Left, row+1,  rec)
+	helper(root.Right, row+1,  rec)
 }
