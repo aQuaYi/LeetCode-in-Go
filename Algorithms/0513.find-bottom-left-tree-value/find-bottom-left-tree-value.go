@@ -8,7 +8,7 @@ type TreeNode = kit.TreeNode
 
 func findBottomLeftValue(root *TreeNode) int {
 	rec := make([]int, 2)
-	helper(root, 0, false, rec)
+	helper(root, 1, true, rec)
 	return rec[1]
 }
 
