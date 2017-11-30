@@ -5,8 +5,11 @@ import (
 )
 
 func smallestRange(intss [][]int) []int {
+	// 把 intss 中的数字连同其队伍信息，整合成 num 结构体放入 ns
 	ns := makeNums(intss)
+	// 让 ns 根据其数值降序排列
 	sort.Sort(ns)
+
 	s := newStatus(ns, len(intss))
 	s.check()
 	return s.res
@@ -17,7 +20,7 @@ type status struct {
 	ns        nums
 	i, j      int
 	isGetAll  bool
-	count     []int
+	numCount  []int
 	teamCount int
 	min       int
 }
@@ -29,7 +32,7 @@ func newStatus(ns nums, teamCount int) *status {
 		i:         0,
 		j:         -1,
 		isGetAll:  false,
-		count:     make([]int, teamCount),
+		numCount:  make([]int, teamCount),
 		teamCount: teamCount,
 		min:       1<<31 - 1,
 	}
@@ -47,36 +50,35 @@ func (s *status) check() {
 	}
 }
 
+// 让 s.j++ 并修改相关的状态值
 func (s *status) expend() {
 	s.j++
-
 	if s.j >= len(s.ns) {
 		return
 	}
-
-	if s.count[s.ns[s.j].team] == 0 {
+	if s.numCount[s.ns[s.j].team] == 0 {
 		s.teamCount--
 	}
-	s.count[s.ns[s.j].team]++
-
+	s.numCount[s.ns[s.j].team]++
 	if s.teamCount == 0 {
 		s.isGetAll = true
 	}
 }
 
+// 让 s.i-- 并修改相关的状态值
 func (s *status) shrink() {
-	if s.count[s.ns[s.i].team] == 1 {
+	if s.numCount[s.ns[s.i].team] == 1 {
 		s.teamCount++
 	}
-	s.count[s.ns[s.i].team]--
+	s.numCount[s.ns[s.i].team]--
 
 	if s.teamCount > 0 {
 		s.isGetAll = false
 	}
-
 	s.i++
 }
 
+// 更新 s.res
 func (s *status) updateRes() {
 	beg, end := s.ns[s.j].n, s.ns[s.i].n
 	if s.min >= end-beg {
