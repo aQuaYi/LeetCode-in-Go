@@ -1,23 +1,25 @@
 package Problem0522
 
-import (
-	"sort"
-)
-
 func findLUSlength(strs []string) int {
-	sort.Sort(stringSlice(strs))
+	count := make(map[string]int, len(strs))
+	for _, s := range strs {
+		count[s]++
+	}
 
-	for i := 0; i < len(strs); i++ {
-		for i+1 < len(strs) && strs[i] == strs[i+1] {
-			i++
-		}
-
-		if i < len(strs) && i-1 >= 0 && !isSub(strs[i], strs[i-1]) {
-			return len(strs[i])
+	maxLen := -1
+	for s, c := range count {
+		if c == 1 && maxLen < len(s) {
+			maxLen = len(s)
 		}
 	}
 
-	return -1
+	return maxLen
+}
+
+// 如果 s 是 ss 中某一个比 s 长的字符串的子字符串，返回 true
+// ss 是排序过的
+func isSubOf(s string, ss []string) bool {
+
 }
 
 // 如果 a 是 b 的子字符串，返回 true
