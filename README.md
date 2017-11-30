@@ -1,7 +1,7 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 排名](https://img.shields.io/badge/Ranking-4842-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/Ranking-4617-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 答题进度](https://img.shields.io/badge/Progress-78%25-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
@@ -12,8 +12,8 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|116|196|86|398|
-|**Total**|152|252|103|507|
+|**Accepted**|116|195|87|398|
+|**Total**|152|251|103|506|
 
 ## 题解
 
@@ -226,7 +226,7 @@
 |258|[Add Digits](./Algorithms/0258.add-digits)|51%|Easy| |
 |260|[Single Number III](./Algorithms/0260.single-number-iii)|52%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |263|[Ugly Number](./Algorithms/0263.ugly-number)|39%|Easy| |
-|264|[Ugly Number II](./Algorithms/0264.ugly-number-ii)|32%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|264|[Ugly Number II](./Algorithms/0264.ugly-number-ii)|33%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |268|[Missing Number](./Algorithms/0268.missing-number)|44%|Easy| |
 |273|[Integer to English Words](./Algorithms/0273.integer-to-english-words)|22%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |274|[H-Index](./Algorithms/0274.h-index)|33%|Medium| |
@@ -299,7 +299,7 @@
 |385|[Mini Parser](./Algorithms/0385.mini-parser)|30%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |387|[First Unique Character in a String](./Algorithms/0387.first-unique-character-in-a-string)|47%|Easy| |
 |388|[Longest Absolute File Path](./Algorithms/0388.longest-absolute-file-path)|37%|Medium| |
-|389|[Find the Difference](./Algorithms/0389.find-the-difference)|51%|Easy| |
+|389|[Find the Difference](./Algorithms/0389.find-the-difference)|50%|Easy| |
 |390|[Elimination Game](./Algorithms/0390.elimination-game)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |391|[Perfect Rectangle](./Algorithms/0391.perfect-rectangle)|27%|Hard| |
 |392|[Is Subsequence](./Algorithms/0392.is-subsequence)|44%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -308,7 +308,7 @@
 |395|[Longest Substring with At Least K Repeating Characters](./Algorithms/0395.longest-substring-with-at-least-k-repeating-characters)|35%|Medium| |
 |396|[Rotate Function](./Algorithms/0396.rotate-function)|33%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |397|[Integer Replacement](./Algorithms/0397.integer-replacement)|30%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|398|[Random Pick Index](./Algorithms/0398.random-pick-index)|43%|Medium| |
+|398|[Random Pick Index](./Algorithms/0398.random-pick-index)|44%|Medium| |
 |399|[Evaluate Division](./Algorithms/0399.evaluate-division)|41%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |400|[Nth Digit](./Algorithms/0400.nth-digit)|30%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |401|[Binary Watch](./Algorithms/0401.binary-watch)|44%|Easy| |
@@ -370,9 +370,8 @@
 |479|[Largest Palindrome Product](./Algorithms/0479.largest-palindrome-product)|24%|Easy| |
 |480|[Sliding Window Median](./Algorithms/0480.sliding-window-median)|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |481|[Magical String](./Algorithms/0481.magical-string)|45%|Medium| |
-|482|[License Key Formatting](./Algorithms/0482.license-key-formatting)|41%|Medium| |
 |483|[Smallest Good Base](./Algorithms/0483.smallest-good-base)|33%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|485|[Max Consecutive Ones](./Algorithms/0485.max-consecutive-ones)|54%|Easy| |
+|485|[Max Consecutive Ones](./Algorithms/0485.max-consecutive-ones)|53%|Easy| |
 |486|[Predict the Winner](./Algorithms/0486.predict-the-winner)|45%|Medium| |
 |488| * Zuma Game|37%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |491|[Increasing Subsequences](./Algorithms/0491.increasing-subsequences)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -465,7 +464,7 @@
 |650| * 2 Keys Keyboard|44%|Medium| |
 |652| * Find Duplicate Subtrees|35%|Medium| |
 |653| * Two Sum IV - Input is a BST|50%|Easy| |
-|654| * Maximum Binary Tree|69%|Medium| |
+|654| * Maximum Binary Tree|70%|Medium| |
 |655| * Print Binary Tree|49%|Medium| |
 |657| * Judge Route Circle|68%|Easy| |
 |658| * Find K Closest Elements|35%|Medium| |
@@ -479,7 +478,7 @@
 |669| * Trim a Binary Search Tree|57%|Easy| |
 |670| * Maximum Swap|38%|Medium| |
 |671| * Second Minimum Node In a Binary Tree|41%|Easy| |
-|672| * Bulb Switcher II|48%|Medium| |
+|672| * Bulb Switcher II|47%|Medium| |
 |673| * Number of Longest Increasing Subsequence|31%|Medium| |
 |674| * Longest Continuous Increasing Subsequence|42%|Easy| |
 |675| * Cut Off Trees for Golf Event|26%|Hard| |
@@ -515,17 +514,17 @@
 |722| * Remove Comments|26%|Medium| |
 |724| * Find Pivot Index|41%|Easy| |
 |725| * Split Linked List in Parts|49%|Medium| |
-|726| * Number of Atoms|45%|Hard| |
-|728| * Self Dividing Numbers|69%|Easy| |
+|726|[Number of Atoms](./Algorithms/0726.number-of-atoms)|45%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|728| * Self Dividing Numbers|68%|Easy| |
 |729| * My Calendar I|39%|Medium| |
 |730| * Count Different Palindromic Subsequences|30%|Hard| |
 |731| * My Calendar II|34%|Medium| |
-|732| * My Calendar III|49%|Hard| |
+|732| * My Calendar III|50%|Hard| |
 |733| * Flood Fill|49%|Easy| |
 |734| * Sentence Similarity|37%|Easy| |
 |735| * Asteroid Collision|36%|Medium| |
-|736| * Parse Lisp Expression|38%|Hard| |
-|737| * Sentence Similarity II|42%|Medium| |
+|736| * Parse Lisp Expression|39%|Hard| |
+|737| * Sentence Similarity II|41%|Medium| |
 
 以下免费的算法题，暂时不能使用 Go 解答
 
