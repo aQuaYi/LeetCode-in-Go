@@ -27,8 +27,8 @@ func newStatus(ns nums, teamCount int) *status {
 		res:       make([]int, 2),
 		ns:        ns,
 		i:         0,
-		j:         0,
-		isGetAll:  teamCount == 1,
+		j:         -1,
+		isGetAll:  false,
 		count:     make([]int, teamCount),
 		teamCount: teamCount,
 		min:       1<<31 - 1,
@@ -65,11 +65,6 @@ func (s *status) expend() {
 }
 
 func (s *status) shrink() {
-	s.i++
-	if s.i >= len(s.ns) {
-		return
-	}
-
 	if s.count[s.ns[s.i].team] == 1 {
 		s.teamCount++
 	}
@@ -78,14 +73,16 @@ func (s *status) shrink() {
 	if s.teamCount > 0 {
 		s.isGetAll = false
 	}
+
+	s.i++
 }
 
 func (s *status) updateRes() {
 	beg, end := s.ns[s.j].n, s.ns[s.i].n
-	if s.min > beg-end {
+	if s.min > end-beg {
 		s.res[0] = beg
 		s.res[1] = end
-		s.min = beg - end
+		s.min = end - beg
 	}
 }
 
