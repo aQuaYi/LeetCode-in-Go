@@ -79,7 +79,7 @@ func (s *status) shrink() {
 
 func (s *status) updateRes() {
 	beg, end := s.ns[s.j].n, s.ns[s.i].n
-	if s.min > end-beg {
+	if s.min >= end-beg {
 		s.res[0] = beg
 		s.res[1] = end
 		s.min = end - beg
