@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|116|195|87|398|
+|**Accepted**|116|195|88|399|
 |**Total**|152|251|103|506|
 
 ## 题解
@@ -371,7 +371,7 @@
 |480|[Sliding Window Median](./Algorithms/0480.sliding-window-median)|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |481|[Magical String](./Algorithms/0481.magical-string)|45%|Medium| |
 |483|[Smallest Good Base](./Algorithms/0483.smallest-good-base)|33%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|485|[Max Consecutive Ones](./Algorithms/0485.max-consecutive-ones)|53%|Easy| |
+|485|[Max Consecutive Ones](./Algorithms/0485.max-consecutive-ones)|54%|Easy| |
 |486|[Predict the Winner](./Algorithms/0486.predict-the-winner)|45%|Medium| |
 |488| * Zuma Game|37%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |491|[Increasing Subsequences](./Algorithms/0491.increasing-subsequences)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -448,7 +448,7 @@
 |628|[Maximum Product of Three Numbers](./Algorithms/0628.maximum-product-of-three-numbers)|45%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |629|[K Inverse Pairs Array](./Algorithms/0629.k-inverse-pairs-array)|26%|Hard| |
 |630|[Course Schedule III](./Algorithms/0630.course-schedule-iii)|28%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|632| * Smallest Range|42%|Hard| |
+|632|[Smallest Range](./Algorithms/0632.smallest-range)|42%|Hard| |
 |633| * Sum of Square Numbers|32%|Easy| |
 |636| * Exclusive Time of Functions|43%|Medium| |
 |637| * Average of Levels in Binary Tree|55%|Easy| |
@@ -464,7 +464,7 @@
 |650| * 2 Keys Keyboard|44%|Medium| |
 |652| * Find Duplicate Subtrees|35%|Medium| |
 |653| * Two Sum IV - Input is a BST|50%|Easy| |
-|654| * Maximum Binary Tree|70%|Medium| |
+|654| * Maximum Binary Tree|69%|Medium| |
 |655| * Print Binary Tree|49%|Medium| |
 |657| * Judge Route Circle|68%|Easy| |
 |658| * Find K Closest Elements|35%|Medium| |
@@ -482,13 +482,13 @@
 |673| * Number of Longest Increasing Subsequence|31%|Medium| |
 |674| * Longest Continuous Increasing Subsequence|42%|Easy| |
 |675| * Cut Off Trees for Golf Event|26%|Hard| |
-|676| * Implement Magic Dictionary|50%|Medium| |
+|676| * Implement Magic Dictionary|49%|Medium| |
 |677| * Map Sum Pairs|52%|Medium| |
 |678| * Valid Parenthesis String|28%|Medium| |
 |679| * 24 Game|38%|Hard| |
 |680| * Valid Palindrome II|32%|Easy| |
 |682| * Baseball Game|58%|Easy| |
-|684| * Redundant Connection|39%|Medium| |
+|684| * Redundant Connection|40%|Medium| |
 |685| * Redundant Connection II|28%|Hard| |
 |686| * Repeated String Match|33%|Easy| |
 |687| * Longest Univalue Path|33%|Easy| |
@@ -519,7 +519,7 @@
 |729| * My Calendar I|39%|Medium| |
 |730| * Count Different Palindromic Subsequences|30%|Hard| |
 |731| * My Calendar II|34%|Medium| |
-|732| * My Calendar III|50%|Hard| |
+|732| * My Calendar III|51%|Hard| |
 |733| * Flood Fill|49%|Easy| |
 |734| * Sentence Similarity|37%|Easy| |
 |735| * Asteroid Collision|36%|Medium| |
