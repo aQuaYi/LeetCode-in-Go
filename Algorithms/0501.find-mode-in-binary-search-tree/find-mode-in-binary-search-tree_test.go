@@ -2,6 +2,7 @@ package Problem0501
 
 import (
 	"fmt"
+	"sort"
 	"testing"
 
 	"github.com/aQuaYi/LeetCode-in-Go/kit"
@@ -30,7 +31,9 @@ func Test_findMode(t *testing.T) {
 	for _, tc := range tcs {
 		fmt.Printf("~~%v~~\n", tc)
 		root := kit.PreIn2Tree(tc.pre, tc.in)
-		ast.Equal(tc.ans, findMode(root), "输入:%v", tc)
+		ans := findMode(root)
+		sort.Ints(ans)
+		ast.Equal(tc.ans, ans, "输入:%v", tc)
 	}
 }
 

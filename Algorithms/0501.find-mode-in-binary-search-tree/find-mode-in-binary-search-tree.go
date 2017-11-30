@@ -5,22 +5,19 @@ import (
 )
 
 type TreeNode = kit.TreeNode
-// TODO: 这个方法，完全没有利用上 BST 的特性
-// 改进这个方法，效率提升一倍
+
 func findMode(root *TreeNode) []int {
 	r := map[int]int{}
 	search(root, r)
 
 	max := -1
-	for _, v := range r {
-		if max < v {
-			max = v
-		}
-	}
-
 	res := []int{}
 	for n, v := range r {
-		if v == max {
+		if max <= v {
+			if max < v {
+				max = v
+				res = res[0:0]
+			}
 			res = append(res, n)
 		}
 	}
@@ -33,7 +30,7 @@ func search(root *TreeNode, rec map[int]int) {
 		return
 	}
 
-	(rec)[root.Val]++
+	rec[root.Val]++
 
 	search(root.Left, rec)
 	search(root.Right, rec)
