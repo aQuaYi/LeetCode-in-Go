@@ -7,6 +7,10 @@ import (
 func findLUSlength(strs []string) int {
 	sort.Sort(stringSlice(strs))
 
+	if strs[0] != strs[1] {
+		return len(strs[0])
+	}
+
 	for i := 1; i < len(strs); i++ {
 		if !isSub(strs[i], strs[i-1]) {
 			return len(strs[i])
