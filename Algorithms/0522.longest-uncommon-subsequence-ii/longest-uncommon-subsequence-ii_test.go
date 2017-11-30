@@ -14,13 +14,23 @@ var tcs = []struct {
 }{
 
 	{
-		[]string{"aabbcc", "aabbcc", "bc", "bcc", "aabbccc"},
-		7,
+		[]string{"aabbcc", "aabbcc", "c", "e", "aabbcd"},
+		6,
+	},
+
+	{
+		[]string{"aaa", "aaa", "bb", "c", "c", "d", "d"},
+		2,
 	},
 
 	{
 		[]string{"a", "b", "c", "d", "e", "f", "a", "b", "c", "d", "e", "f"},
 		-1,
+	},
+
+	{
+		[]string{"aabbcc", "aabbcc", "bc", "bcc", "aabbccc"},
+		7,
 	},
 
 	{
