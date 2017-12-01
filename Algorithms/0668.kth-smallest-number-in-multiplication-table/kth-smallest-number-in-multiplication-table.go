@@ -1,21 +1,38 @@
 package Problem0668
 
 func findKthNumber(m int, n int, k int) int {
+	// 后面的 count 函数，m 较小比较有利
+	if m > n {
+		m, n = n, m
+	}
 
-	mn := m * n
-	for i := 1; i <= mn; i++ {
-		for j := n; 1 <= j; j-- {
-			if i/j > m {
-				break
-			}
-			if i%j == 0 {
-				k--
-				if k == 0 {
-					return i
-				}
-			}
+	lo, hi := 1, m*n
+	for lo < hi {
+		mid := lo + (hi-lo)/2
+		c := count(mid, m, n)
+		if c >= k {
+			hi = mid
+		} else {
+			lo = mid + 1
 		}
 	}
 
-	return mn
+	return hi
+}
+
+// v >= a * b , 1<=a<=m, 1<=b<=n
+// count 返回 a 和 b 的所有可能组合的个数
+func count(v, m, n int) int {
+	c := 0
+	for i := 1; i <= m; i++ {
+		c += min(v/i, n)
+	}
+	return c
+}
+
+func min(a, b int) int {
+	if a < b {
+		return a
+	}
+	return b
 }
