@@ -2,7 +2,7 @@
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 排名](https://img.shields.io/badge/Ranking-4387-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 答题进度](https://img.shields.io/badge/Progress-79%25-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 答题进度](https://img.shields.io/badge/Progress-80%25-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 
@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|117|198|88|403|
+|**Accepted**|118|198|89|405|
 |**Total**|152|251|103|506|
 
 ## 题解
@@ -299,7 +299,7 @@
 |385|[Mini Parser](./Algorithms/0385.mini-parser)|30%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |387|[First Unique Character in a String](./Algorithms/0387.first-unique-character-in-a-string)|47%|Easy| |
 |388|[Longest Absolute File Path](./Algorithms/0388.longest-absolute-file-path)|37%|Medium| |
-|389|[Find the Difference](./Algorithms/0389.find-the-difference)|50%|Easy| |
+|389|[Find the Difference](./Algorithms/0389.find-the-difference)|51%|Easy| |
 |390|[Elimination Game](./Algorithms/0390.elimination-game)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |391|[Perfect Rectangle](./Algorithms/0391.perfect-rectangle)|27%|Hard| |
 |392|[Is Subsequence](./Algorithms/0392.is-subsequence)|44%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -315,7 +315,7 @@
 |402|[Remove K Digits](./Algorithms/0402.remove-k-digits)|26%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |403|[Frog Jump](./Algorithms/0403.frog-jump)|32%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |404|[Sum of Left Leaves](./Algorithms/0404.sum-of-left-leaves)|47%|Easy| |
-|405|[Convert a Number to Hexadecimal](./Algorithms/0405.convert-a-number-to-hexadecimal)|40%|Easy| |
+|405|[Convert a Number to Hexadecimal](./Algorithms/0405.convert-a-number-to-hexadecimal)|41%|Easy| |
 |406|[Queue Reconstruction by Height](./Algorithms/0406.queue-reconstruction-by-height)|56%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |407|[Trapping Rain Water II](./Algorithms/0407.trapping-rain-water-ii)|37%|Hard| |
 |409|[Longest Palindrome](./Algorithms/0409.longest-palindrome)|45%|Easy| |
@@ -408,7 +408,7 @@
 |538|[Convert BST to Greater Tree](./Algorithms/0538.convert-bst-to-greater-tree)|49%|Easy| |
 |539| * Minimum Time Difference|45%|Medium| |
 |540| * Single Element in a Sorted Array|56%|Medium| |
-|541| * Reverse String II|43%|Easy| |
+|541|[Reverse String II](./Algorithms/0541.reverse-string-ii)|43%|Easy| |
 |542| * 01 Matrix|32%|Medium| |
 |543| * Diameter of Binary Tree|44%|Easy| |
 |546|[Remove Boxes](./Algorithms/0546.remove-boxes)|34%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -469,16 +469,16 @@
 |657| * Judge Route Circle|68%|Easy| |
 |658| * Find K Closest Elements|35%|Medium| |
 |659| * Split Array into Consecutive Subsequences|35%|Medium| |
-|661|[Image Smoother](./Algorithms/0661.image-smoother)|46%|Easy| |
+|661|[Image Smoother](./Algorithms/0661.image-smoother)|45%|Easy| |
 |662| * Maximum Width of Binary Tree|37%|Medium| |
-|664| * Strange Printer|32%|Hard| |
+|664|[Strange Printer](./Algorithms/0664.strange-printer)|32%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |665| * Non-decreasing Array|20%|Easy| |
 |667|[Beautiful Arrangement II](./Algorithms/0667.beautiful-arrangement-ii)|51%|Medium| |
 |668| * Kth Smallest Number in Multiplication Table|37%|Hard| |
 |669| * Trim a Binary Search Tree|57%|Easy| |
 |670| * Maximum Swap|38%|Medium| |
 |671| * Second Minimum Node In a Binary Tree|41%|Easy| |
-|672| * Bulb Switcher II|47%|Medium| |
+|672| * Bulb Switcher II|48%|Medium| |
 |673| * Number of Longest Increasing Subsequence|31%|Medium| |
 |674| * Longest Continuous Increasing Subsequence|42%|Easy| |
 |675| * Cut Off Trees for Golf Event|26%|Hard| |
@@ -492,17 +492,17 @@
 |685| * Redundant Connection II|28%|Hard| |
 |686| * Repeated String Match|33%|Easy| |
 |687| * Longest Univalue Path|33%|Easy| |
-|688| * Knight Probability in Chessboard|38%|Medium| |
+|688| * Knight Probability in Chessboard|39%|Medium| |
 |689| * Maximum Sum of 3 Non-Overlapping Subarrays|41%|Hard| |
 |691| * Stickers to Spell Word|33%|Hard| |
-|692| * Top K Frequent Words|40%|Medium| |
+|692| * Top K Frequent Words|41%|Medium| |
 |693| * Binary Number with Alternating Bits|54%|Easy| |
 |695| * Max Area of Island|52%|Easy| |
 |696| * Count Binary Substrings|51%|Easy| |
 |697| * Degree of an Array|46%|Easy| |
 |698| * Partition to K Equal Sum Subsets|37%|Medium| |
 |699| * Falling Squares|36%|Hard| |
-|712| * Minimum ASCII Delete Sum for Two Strings|51%|Medium| |
+|712| * Minimum ASCII Delete Sum for Two Strings|50%|Medium| |
 |713| * Subarray Product Less Than K|32%|Medium| |
 |714| * Best Time to Buy and Sell Stock with Transaction Fee|40%|Medium| |
 |715| * Range Module|30%|Hard| |
@@ -519,12 +519,12 @@
 |729| * My Calendar I|39%|Medium| |
 |730| * Count Different Palindromic Subsequences|30%|Hard| |
 |731| * My Calendar II|34%|Medium| |
-|732| * My Calendar III|51%|Hard| |
+|732| * My Calendar III|49%|Hard| |
 |733| * Flood Fill|49%|Easy| |
 |734| * Sentence Similarity|37%|Easy| |
 |735| * Asteroid Collision|36%|Medium| |
 |736| * Parse Lisp Expression|40%|Hard| |
-|737| * Sentence Similarity II|41%|Medium| |
+|737| * Sentence Similarity II|40%|Medium| |
 
 以下免费的算法题，暂时不能使用 Go 解答
 
