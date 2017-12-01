@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|118|200|89|407|
+|**Accepted**|118|200|90|408|
 |**Total**|152|251|103|506|
 
 ## 题解
@@ -464,7 +464,7 @@
 |650| * 2 Keys Keyboard|44%|Medium| |
 |652| * Find Duplicate Subtrees|36%|Medium| |
 |653| * Two Sum IV - Input is a BST|50%|Easy| |
-|654| * Maximum Binary Tree|70%|Medium| |
+|654| * Maximum Binary Tree|69%|Medium| |
 |655| * Print Binary Tree|49%|Medium| |
 |657| * Judge Route Circle|68%|Easy| |
 |658| * Find K Closest Elements|35%|Medium| |
@@ -474,7 +474,7 @@
 |664|[Strange Printer](./Algorithms/0664.strange-printer)|32%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |665| * Non-decreasing Array|20%|Easy| |
 |667|[Beautiful Arrangement II](./Algorithms/0667.beautiful-arrangement-ii)|51%|Medium| |
-|668| * Kth Smallest Number in Multiplication Table|37%|Hard| |
+|668|[Kth Smallest Number in Multiplication Table](./Algorithms/0668.kth-smallest-number-in-multiplication-table)|37%|Hard| |
 |669| * Trim a Binary Search Tree|57%|Easy| |
 |670| * Maximum Swap|38%|Medium| |
 |671| * Second Minimum Node In a Binary Tree|41%|Easy| |
@@ -524,7 +524,7 @@
 |734| * Sentence Similarity|37%|Easy| |
 |735| * Asteroid Collision|36%|Medium| |
 |736| * Parse Lisp Expression|40%|Hard| |
-|737| * Sentence Similarity II|40%|Medium| |
+|737| * Sentence Similarity II|41%|Medium| |
 
 以下免费的算法题，暂时不能使用 Go 解答
 
