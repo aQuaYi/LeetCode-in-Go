@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|118|198|89|405|
+|**Accepted**|118|199|89|406|
 |**Total**|152|251|103|506|
 
 ## 题解
@@ -391,7 +391,7 @@
 |508|[Most Frequent Subtree Sum](./Algorithms/0508.most-frequent-subtree-sum)|52%|Medium| |
 |513|[Find Bottom Left Tree Value](./Algorithms/0513.find-bottom-left-tree-value)|56%|Medium| |
 |514|[Freedom Trail](./Algorithms/0514.freedom-trail)|39%|Hard| |
-|515| * Find Largest Value in Each Tree Row|55%|Medium| |
+|515|[Find Largest Value in Each Tree Row](./Algorithms/0515.find-largest-value-in-each-tree-row)|55%|Medium| |
 |516| * Longest Palindromic Subsequence|42%|Medium| |
 |517|[Super Washing Machines](./Algorithms/0517.super-washing-machines)|36%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |520|[Detect Capital](./Algorithms/0520.detect-capital)|51%|Easy| |
@@ -432,7 +432,7 @@
 |583| * Delete Operation for Two Strings|44%|Medium| |
 |587|[Erect the Fence](./Algorithms/0587.erect-the-fence)|32%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |591| * Tag Validator|30%|Hard| |
-|592| * Fraction Addition and Subtraction|46%|Medium| |
+|592| * Fraction Addition and Subtraction|45%|Medium| |
 |593| * Valid Square|40%|Medium| |
 |594| * Longest Harmonious Subsequence|40%|Easy| |
 |598| * Range Addition II|48%|Easy| |
