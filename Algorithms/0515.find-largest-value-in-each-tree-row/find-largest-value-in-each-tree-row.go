@@ -9,6 +9,9 @@ type TreeNode = kit.TreeNode
 
 func largestValues(root *TreeNode) []int {
 	res := []int{}
+if root == nil {
+	return res
+}
 
 	queue := []*TreeNode{root}
 	n := 1
