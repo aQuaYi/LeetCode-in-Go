@@ -10,9 +10,15 @@ func findKthNumber(m int, n int, k int) int {
 	for lo < hi {
 		mid := lo + (hi-lo)/2
 		c := count(mid, m, n)
-		if c >= k {
-			hi = mid
+		if c > k {
+			// 说明 mid 大了
+			// 需要降低 hi
+			hi = mid - 1
+		} else if c == k {
+			return mid
 		} else {
+			// 与 hi 同理，提高 lo
+			// +1 是为了避免死循环
 			lo = mid + 1
 		}
 	}
