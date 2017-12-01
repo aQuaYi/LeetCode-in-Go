@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|118|199|89|406|
+|**Accepted**|118|200|89|407|
 |**Total**|152|251|103|506|
 
 ## 题解
@@ -392,7 +392,7 @@
 |513|[Find Bottom Left Tree Value](./Algorithms/0513.find-bottom-left-tree-value)|56%|Medium| |
 |514|[Freedom Trail](./Algorithms/0514.freedom-trail)|39%|Hard| |
 |515|[Find Largest Value in Each Tree Row](./Algorithms/0515.find-largest-value-in-each-tree-row)|55%|Medium| |
-|516| * Longest Palindromic Subsequence|42%|Medium| |
+|516|[Longest Palindromic Subsequence](./Algorithms/0516.longest-palindromic-subsequence)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |517|[Super Washing Machines](./Algorithms/0517.super-washing-machines)|36%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |520|[Detect Capital](./Algorithms/0520.detect-capital)|51%|Easy| |
 |521|[Longest Uncommon Subsequence I ](./Algorithms/0521.longest-uncommon-subsequence-i)|55%|Easy| |
@@ -492,7 +492,7 @@
 |685| * Redundant Connection II|28%|Hard| |
 |686| * Repeated String Match|33%|Easy| |
 |687| * Longest Univalue Path|33%|Easy| |
-|688| * Knight Probability in Chessboard|39%|Medium| |
+|688| * Knight Probability in Chessboard|38%|Medium| |
 |689| * Maximum Sum of 3 Non-Overlapping Subarrays|41%|Hard| |
 |691| * Stickers to Spell Word|33%|Hard| |
 |692| * Top K Frequent Words|41%|Medium| |
@@ -519,7 +519,7 @@
 |729| * My Calendar I|39%|Medium| |
 |730| * Count Different Palindromic Subsequences|30%|Hard| |
 |731| * My Calendar II|34%|Medium| |
-|732| * My Calendar III|49%|Hard| |
+|732| * My Calendar III|48%|Hard| |
 |733| * Flood Fill|49%|Easy| |
 |734| * Sentence Similarity|37%|Easy| |
 |735| * Asteroid Collision|36%|Medium| |
