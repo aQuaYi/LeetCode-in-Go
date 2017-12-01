@@ -2,6 +2,7 @@ package Problem0508
 
 import (
 	"fmt"
+	"sort"
 	"testing"
 
 	"github.com/aQuaYi/LeetCode-in-Go/kit"
@@ -36,7 +37,10 @@ func Test_findFrequentTreeSum(t *testing.T) {
 	for _, tc := range tcs {
 		fmt.Printf("~~%v~~\n", tc)
 		root := kit.PreIn2Tree(tc.pre, tc.in)
-		ast.Equal(tc.ans, findFrequentTreeSum(root), "输入:%v", tc)
+		ans := findFrequentTreeSum(root)
+		sort.Ints(ans)
+		sort.Ints(tc.ans)
+		ast.Equal(tc.ans, ans, "输入:%v", tc)
 	}
 }
 
