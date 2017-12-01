@@ -2,9 +2,10 @@ package Problem0664
 
 func strangePrinter(s string) int {
 	n := len(s)
-	if n < 1 {
+	if n <= 1 {
 		return n
 	}
+
 	// dp[i][j] 表示打印 s[i:j+1] 所需的最小次数
 	dp := make([][]int, n)
 	for i := range dp {
@@ -15,18 +16,14 @@ func strangePrinter(s string) int {
 	for Len := 2; Len <= n; Len++ {
 		for i := 0; i+Len-1 < n; i++ {
 			j := i + Len - 1
-			//
-			left := 1
-			if s[i] == s[i+1] || s[i] == s[j] {
-				left = 0
+			dp[i][j] = Len
+			for k := i + 1; k <= j; k++ {
+				temp := dp[i][k-1] + dp[k][j]
+				if s[k-1] == s[j] {
+					temp--
+				}
+				dp[i][j] = min(dp[i][j], temp)
 			}
-			//
-			right := 1
-			if s[j-1] == s[j] || s[j] == s[i] {
-				right = 0
-			}
-			//
-			dp[i][j] = min(left+dp[i+1][j], dp[i][j-1]+right)
 		}
 	}
 
