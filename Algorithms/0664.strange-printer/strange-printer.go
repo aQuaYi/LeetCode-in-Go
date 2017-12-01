@@ -16,13 +16,18 @@ func strangePrinter(s string) int {
 	for Len := 2; Len <= n; Len++ {
 		for i := 0; i+Len-1 < n; i++ {
 			j := i + Len - 1
-			dp[i][j] = Len
+			// dp[i][j] 可以由 dp[i][j-1] 打印而来
+			dp[i][j] = dp[i][j-1] + 1
+			if s[j-1] == s[j] {
+				dp[i][j]--
+			}
+			//
 			for k := i + 1; k <= j; k++ {
-				temp := dp[i][k-1] + dp[k][j]
+				// 当 s[k-1] == s[j] 时，可以一次打印 s[k-1:j+1] 再修改 s[k:j] 上的内容
+				// 这样也可以少打印一次
 				if s[k-1] == s[j] {
-					temp--
+					dp[i][j] = min(dp[i][j], dp[i][k-1]+dp[k][j]-1)
 				}
-				dp[i][j] = min(dp[i][j], temp)
 			}
 		}
 	}
