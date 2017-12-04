@@ -1,7 +1,44 @@
 package Problem0524
 
-func findLongestWord(s string, d []string) string {
-	res :=
+import (
+	"sort"
+)
 
-	return res
+func findLongestWord(s string, d []string) string {
+	sort.Sort(stringSlice(d))
+	for i := range d {
+		if isSub(s, d[i]) {
+			return d[i]
+		}
+	}
+	return ""
+}
+
+// stringSlice 实现了 sort.Interface 接口
+type stringSlice []string
+
+func (s stringSlice) Len() int { return len(s) }
+
+func (s stringSlice) Less(i, j int) bool {
+	if len(s[i]) == len(s[j]) {
+		return s[i] < s[j]
+	}
+	return len(s[i]) > len(s[j])
+}
+
+func (s stringSlice) Swap(i, j int) { s[i], s[j] = s[j], s[i] }
+
+// return true if sub is sub of s
+func isSub(s, sub string) bool {
+	if len(s) < len(sub) {
+		return false
+	}
+	i, j := 0, 0
+	for i < len(s) && j < len(sub) {
+		if s[i] == sub[j] {
+			j++
+		}
+		i++
+	}
+	return j == len(sub)
 }
