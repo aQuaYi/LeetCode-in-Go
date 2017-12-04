@@ -5,6 +5,7 @@ import (
 )
 
 func findLongestWord(s string, d []string) string {
+	// 排序后，第一个符合条件的字符串，就是答案
 	sort.Sort(stringSlice(d))
 	for i := range d {
 		if isSub(s, d[i]) {
