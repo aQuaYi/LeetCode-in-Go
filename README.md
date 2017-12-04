@@ -1,7 +1,7 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 排名](https://img.shields.io/badge/Ranking-4387-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/Ranking-4130-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 答题进度](https://img.shields.io/badge/Progress-80%25-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
@@ -12,8 +12,8 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|118|200|90|408|
-|**Total**|152|251|103|506|
+|**Accepted**|118|202|90|410|
+|**Total**|152|254|104|510|
 
 ## 题解
 
@@ -57,7 +57,7 @@
 |36|[Valid Sudoku](./Algorithms/0036.valid-sudoku)|36%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |37|[Sudoku Solver](./Algorithms/0037.sudoku-solver)|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |38|[Count and Say](./Algorithms/0038.count-and-say)|35%|Easy| |
-|39|[Combination Sum](./Algorithms/0039.combination-sum)|39%|Medium| |
+|39|[Combination Sum](./Algorithms/0039.combination-sum)|40%|Medium| |
 |40|[Combination Sum II](./Algorithms/0040.combination-sum-ii)|34%|Medium| |
 |41|[First Missing Positive](./Algorithms/0041.first-missing-positive)|25%|Hard| |
 |42|[Trapping Rain Water](./Algorithms/0042.trapping-rain-water)|37%|Hard| |
@@ -288,7 +288,7 @@
 |372|[Super Pow](./Algorithms/0372.super-pow)|34%|Medium| |
 |373|[Find K Pairs with Smallest Sums](./Algorithms/0373.find-k-pairs-with-smallest-sums)|30%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |375|[Guess Number Higher or Lower II](./Algorithms/0375.guess-number-higher-or-lower-ii)|35%|Medium| |
-|376|[Wiggle Subsequence](./Algorithms/0376.wiggle-subsequence)|35%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|376|[Wiggle Subsequence](./Algorithms/0376.wiggle-subsequence)|36%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |377|[Combination Sum IV](./Algorithms/0377.combination-sum-iv)|42%|Medium| |
 |378|[Kth Smallest Element in a Sorted Matrix](./Algorithms/0378.kth-smallest-element-in-a-sorted-matrix)|45%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |380|[Insert Delete GetRandom O(1)](./Algorithms/0380.insert-delete-getrandom-o1)|39%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -368,10 +368,10 @@
 |476|[Number Complement](./Algorithms/0476.number-complement)|60%|Easy| |
 |477|[Total Hamming Distance](./Algorithms/0477.total-hamming-distance)|47%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |479|[Largest Palindrome Product](./Algorithms/0479.largest-palindrome-product)|24%|Easy| |
-|480|[Sliding Window Median](./Algorithms/0480.sliding-window-median)|30%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|480|[Sliding Window Median](./Algorithms/0480.sliding-window-median)|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |481|[Magical String](./Algorithms/0481.magical-string)|45%|Medium| |
 |483|[Smallest Good Base](./Algorithms/0483.smallest-good-base)|33%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|485|[Max Consecutive Ones](./Algorithms/0485.max-consecutive-ones)|54%|Easy| |
+|485|[Max Consecutive Ones](./Algorithms/0485.max-consecutive-ones)|53%|Easy| |
 |486|[Predict the Winner](./Algorithms/0486.predict-the-winner)|45%|Medium| |
 |488| * Zuma Game|37%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |491|[Increasing Subsequences](./Algorithms/0491.increasing-subsequences)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -398,16 +398,16 @@
 |521|[Longest Uncommon Subsequence I ](./Algorithms/0521.longest-uncommon-subsequence-i)|55%|Easy| |
 |522|[Longest Uncommon Subsequence II](./Algorithms/0522.longest-uncommon-subsequence-ii)|31%|Medium| |
 |523|[Continuous Subarray Sum](./Algorithms/0523.continuous-subarray-sum)|23%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|524| * Longest Word in Dictionary through Deleting|43%|Medium| |
-|525| * Contiguous Array|40%|Medium| |
+|524|[Longest Word in Dictionary through Deleting](./Algorithms/0524.longest-word-in-dictionary-through-deleting)|43%|Medium| |
+|525| * Contiguous Array|41%|Medium| |
 |526|[Beautiful Arrangement](./Algorithms/0526.beautiful-arrangement)|54%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |529| * Minesweeper|49%|Medium| |
 |530|[Minimum Absolute Difference in BST](./Algorithms/0530.minimum-absolute-difference-in-bst)|47%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |532|[K-diff Pairs in an Array](./Algorithms/0532.k-diff-pairs-in-an-array)|28%|Easy| |
-|537|[Complex Number Multiplication](./Algorithms/0537.complex-number-multiplication)|63%|Medium| |
+|537|[Complex Number Multiplication](./Algorithms/0537.complex-number-multiplication)|64%|Medium| |
 |538|[Convert BST to Greater Tree](./Algorithms/0538.convert-bst-to-greater-tree)|49%|Easy| |
-|539| * Minimum Time Difference|45%|Medium| |
-|540| * Single Element in a Sorted Array|56%|Medium| |
+|539| * Minimum Time Difference|46%|Medium| |
+|540|[Single Element in a Sorted Array](./Algorithms/0540.single-element-in-a-sorted-array)|56%|Medium| |
 |541|[Reverse String II](./Algorithms/0541.reverse-string-ii)|43%|Easy| |
 |542| * 01 Matrix|32%|Medium| |
 |543| * Diameter of Binary Tree|44%|Easy| |
@@ -456,7 +456,7 @@
 |639|[Decode Ways II](./Algorithms/0639.decode-ways-ii)|24%|Hard| |
 |640| * Solve the Equation|38%|Medium| |
 |643|[Maximum Average Subarray I](./Algorithms/0643.maximum-average-subarray-i)|37%|Easy| |
-|645| * Set Mismatch|40%|Easy| |
+|645| * Set Mismatch|39%|Easy| |
 |646| * Maximum Length of Pair Chain|47%|Medium| |
 |647| * Palindromic Substrings|55%|Medium| |
 |648| * Replace Words|47%|Medium| |
@@ -475,7 +475,7 @@
 |665| * Non-decreasing Array|20%|Easy| |
 |667|[Beautiful Arrangement II](./Algorithms/0667.beautiful-arrangement-ii)|51%|Medium| |
 |668|[Kth Smallest Number in Multiplication Table](./Algorithms/0668.kth-smallest-number-in-multiplication-table)|37%|Hard| |
-|669| * Trim a Binary Search Tree|57%|Easy| |
+|669| * Trim a Binary Search Tree|58%|Easy| |
 |670| * Maximum Swap|38%|Medium| |
 |671| * Second Minimum Node In a Binary Tree|41%|Easy| |
 |672| * Bulb Switcher II|48%|Medium| |
@@ -500,7 +500,7 @@
 |695| * Max Area of Island|52%|Easy| |
 |696| * Count Binary Substrings|51%|Easy| |
 |697| * Degree of an Array|46%|Easy| |
-|698| * Partition to K Equal Sum Subsets|37%|Medium| |
+|698| * Partition to K Equal Sum Subsets|36%|Medium| |
 |699| * Falling Squares|36%|Hard| |
 |712| * Minimum ASCII Delete Sum for Two Strings|50%|Medium| |
 |713| * Subarray Product Less Than K|32%|Medium| |
@@ -510,21 +510,25 @@
 |718| * Maximum Length of Repeated Subarray|40%|Medium| |
 |719| * Find K-th Smallest Pair Distance|25%|Hard| |
 |720| * Longest Word in Dictionary|40%|Easy| |
-|721| * Accounts Merge|28%|Medium| |
+|721| * Accounts Merge|29%|Medium| |
 |722| * Remove Comments|26%|Medium| |
 |724| * Find Pivot Index|41%|Easy| |
 |725| * Split Linked List in Parts|49%|Medium| |
 |726|[Number of Atoms](./Algorithms/0726.number-of-atoms)|45%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |728| * Self Dividing Numbers|68%|Easy| |
 |729| * My Calendar I|39%|Medium| |
-|730| * Count Different Palindromic Subsequences|30%|Hard| |
+|730| * Count Different Palindromic Subsequences|31%|Hard| |
 |731| * My Calendar II|34%|Medium| |
-|732| * My Calendar III|48%|Hard| |
+|732| * My Calendar III|50%|Hard| |
 |733| * Flood Fill|49%|Easy| |
 |734| * Sentence Similarity|37%|Easy| |
 |735| * Asteroid Collision|36%|Medium| |
 |736| * Parse Lisp Expression|40%|Hard| |
-|737| * Sentence Similarity II|41%|Medium| |
+|737| * Sentence Similarity II|40%|Medium| |
+|738| * Monotone Increasing Digits|35%|Medium| |
+|739| * Daily Temperatures|45%|Medium| |
+|740| * Delete and Earn|31%|Medium| |
+|741| * Cherry Pickup|14%|Hard| |
 
 以下免费的算法题，暂时不能使用 Go 解答
 
