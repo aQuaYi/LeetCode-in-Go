@@ -21,6 +21,18 @@ var tcs = []struct {
 	},
 
 	{
+		"a",
+		[]string{"bc", "c"},
+		"",
+	},
+
+	{
+		"a",
+		[]string{"a", "bc", "c"},
+		"a",
+	},
+
+	{
 		"abpcplea",
 		[]string{"a", "b", "c"},
 		"a",
