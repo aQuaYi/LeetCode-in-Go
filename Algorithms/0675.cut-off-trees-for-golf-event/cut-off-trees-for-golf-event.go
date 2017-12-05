@@ -23,6 +23,9 @@ func cutOffTree(forest [][]int) int {
 		steps, isAccessible := search(forest, beg, end)
 		if isAccessible {
 			res += steps
+
+			// fmt.Println(*next)
+
 			beg = end
 		} else {
 			return -1
@@ -55,7 +58,7 @@ func search(forest [][]int, beg, end point) (int, bool) {
 
 		tp := ps[0]
 		ps = ps[1:]
-		isPassed[tp.x*m+tp.y] = true
+		isPassed[tp.x*n+tp.y] = true
 		stepLen--
 
 		if tp == end {
@@ -69,7 +72,7 @@ func search(forest [][]int, beg, end point) (int, bool) {
 			if 0 <= x && x < m &&
 				0 <= y && y < n &&
 				forest[x][y] > 0 &&
-				!isPassed[x*m+y] {
+				!isPassed[x*n+y] {
 				ps = append(ps, p)
 			}
 		}
