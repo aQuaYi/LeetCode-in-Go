@@ -3,9 +3,6 @@ package Problem0675
 import "container/heap"
 
 func cutOffTree(forest [][]int) int {
-	if len(forest) == 0 || len(forest[0]) == 0 {
-		return -1
-	}
 	m, n := len(forest), len(forest[0])
 
 	pq := make(PQ, 0, m*n)
@@ -21,7 +18,7 @@ func cutOffTree(forest [][]int) int {
 	res := 0
 	sx, sy := 0, 0
 	for len(pq) > 0 {
-		next := pq.Pop().(*tree)
+		next := heap.Pop(&pq).(*tree)
 		ex, ey := next.x, next.y
 		steps, isAccessible := search(forest, m, n, sx, sy, ex, ey)
 		if isAccessible {
@@ -42,22 +39,30 @@ var dy = []int{0, 0, -1, 1}
 // 如果可以从 (sx,sy) 到 (ex,ey) 则返回 步数 和 true
 // 如果无法到达，则返回 -1 和 false
 func search(forest [][]int, m, n, sx, sy, ex, ey int) (int, bool) {
-	steps, n := 0, 1
+	isPassed := make([][]bool, m)
+	for i := range isPassed {
+		isPassed[i] = make([]bool, n)
+	}
+
+	steps, stepLen := 0, 1
 	xs := make([]int, 1, m*n)
 	xs[0] = sx
 	ys := make([]int, 1, m*n)
 	ys[0] = sy
+	isPassed[sx][sy] = true
 
 	for len(xs) > 0 {
-		if n == 0 {
+		if stepLen == 0 {
 			steps++
-			n = len(xs)
+			stepLen = len(xs)
 		}
+
 		tx := xs[0]
 		xs = xs[1:]
 		ty := ys[0]
 		ys = ys[1:]
-		n--
+		isPassed[tx][ty] = true
+		stepLen--
 
 		if tx == ex && ty == ey {
 			return steps, true
@@ -68,7 +73,8 @@ func search(forest [][]int, m, n, sx, sy, ex, ey int) (int, bool) {
 			y := ty + dy[i]
 			if 0 <= x && x < m &&
 				0 <= y && y < n &&
-				forest[x][y] > 0 {
+				forest[x][y] > 0 &&
+				!isPassed[x][y] {
 				xs = append(xs, x)
 				ys = append(ys, y)
 			}
