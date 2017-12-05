@@ -9,17 +9,17 @@ func cutOffTree(forest [][]int) int {
 	for i := 0; i < m; i++ {
 		for j := 0; j < n; j++ {
 			if forest[i][j] > 1 {
-				pq = append(pq, &tree{height: forest[i][j], point: point{x: i, y: j}})
+				pq = append(pq, []int{forest[i][j], i, j})
 			}
 		}
 	}
 	heap.Init(&pq)
 
 	res := 0
-	beg := point{x: 0, y: 0}
+	beg := []int{0, 0}
 	for len(pq) > 0 {
-		next := heap.Pop(&pq).(*tree)
-		end := next.point
+		next := heap.Pop(&pq).([]int)
+		end := next[1:]
 		steps, isAccessible := search(forest, beg, end)
 		if isAccessible {
 			res += steps
@@ -41,13 +41,13 @@ var dy = []int{0, 0, -1, 1}
 // 在 forest 中，
 // 如果可以从 (sx,sy) 到 (ex,ey) 则返回 步数 和 true
 // 如果无法到达，则返回 -1 和 false
-func search(forest [][]int, beg, end point) (int, bool) {
+func search(forest [][]int, beg, end []int) (int, bool) {
 	m, n := len(forest), len(forest[0])
 
 	isPassed := make([]bool, m*n)
 
 	steps, stepLen := 0, 1
-	ps := make([]point, 1, m*n)
+	ps := make([][]int, 1, m*n)
 	ps[0] = beg
 
 	for len(ps) > 0 {
@@ -58,17 +58,17 @@ func search(forest [][]int, beg, end point) (int, bool) {
 
 		tp := ps[0]
 		ps = ps[1:]
-		isPassed[tp.x*n+tp.y] = true
+		isPassed[tp[0]*n+tp[1]] = true
 		stepLen--
 
-		if tp == end {
+		if tp[0] == end[0] && tp[1] == end[1] {
 			return steps, true
 		}
 
 		for i := 0; i < 4; i++ {
-			x := tp.x + dx[i]
-			y := tp.y + dy[i]
-			p := point{x: x, y: y}
+			x := tp[0] + dx[i]
+			y := tp[1] + dy[i]
+			p := []int{x, y}
 			if 0 <= x && x < m &&
 				0 <= y && y < n &&
 				forest[x][y] > 0 &&
@@ -92,12 +92,12 @@ type point struct {
 }
 
 // PQ implements heap.Interface and holds entries.
-type PQ []*tree
+type PQ [][]int
 
 func (pq PQ) Len() int { return len(pq) }
 
 func (pq PQ) Less(i, j int) bool {
-	return pq[i].height < pq[j].height
+	return pq[i][0] < pq[j][0]
 }
 
 func (pq PQ) Swap(i, j int) {
@@ -106,7 +106,7 @@ func (pq PQ) Swap(i, j int) {
 
 // Push 往 pq 中放 tree
 func (pq *PQ) Push(x interface{}) {
-	temp := x.(*tree)
+	temp := x.([]int)
 	*pq = append(*pq, temp)
 }
 
