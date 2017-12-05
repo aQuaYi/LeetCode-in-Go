@@ -3,6 +3,7 @@ package Problem0675
 import "container/heap"
 
 func cutOffTree(forest [][]int) int {
+	// 题目已经保证了 m,n >=0
 	m, n := len(forest), len(forest[0])
 
 	pq := make(PQ, 0, m*n)
