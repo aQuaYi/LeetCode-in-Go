@@ -26,6 +26,7 @@ func cutOffTree(forest [][]int) int {
 		steps, isAccessible := search(forest, m, n, sx, sy, ex, ey)
 		if isAccessible {
 			res += steps
+			sx, sy = ex, ey
 		} else {
 			return -1
 		}
