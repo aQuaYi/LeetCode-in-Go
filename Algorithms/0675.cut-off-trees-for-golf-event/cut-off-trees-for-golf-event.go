@@ -3,34 +3,38 @@ package Problem0675
 import "container/heap"
 
 func cutOffTree(forest [][]int) int {
-	// 题目已经保证了 m,n >=0
+	// 题目保证了 m,n >0
 	m, n := len(forest), len(forest[0])
 
+	// 构建砍树的优先队列
+	// 根据题意，先砍矮的树
 	pq := make(PQ, 0, m*n)
 	for i := 0; i < m; i++ {
 		for j := 0; j < n; j++ {
 			if forest[i][j] > 1 {
-				pq = append(pq, []int{forest[i][j], i, j})
+				pq = append(pq, &tree{
+					height: forest[i][j],
+					point:  point{x: i, y: j},
+				},
+				)
 			}
 		}
 	}
 	heap.Init(&pq)
 
 	res := 0
-	beg := []int{0, 0}
+	beg := point{x: 0, y: 0}
 	for len(pq) > 0 {
-		next := heap.Pop(&pq).([]int)
-		end := next[1:]
-		steps, isAccessible := search(forest, beg, end)
-		if isAccessible {
-			res += steps
-
-			// fmt.Println(*next)
-
-			beg = end
-		} else {
+		next := heap.Pop(&pq).(*tree)
+		end := next.point
+		// 利用 bfs 搜索从 beg 到 end 的步长
+		steps, isAccessible := bfs(forest, beg, end)
+		if !isAccessible {
+			// 无法从 beg 到 end，直接返回 -1
 			return -1
 		}
+		res += steps
+		beg = end
 	}
 
 	return res
@@ -40,36 +44,35 @@ var dx = []int{-1, 1, 0, 0}
 var dy = []int{0, 0, -1, 1}
 
 // 在 forest 中，
-// 如果可以从 (sx,sy) 到 (ex,ey) 则返回 步数 和 true
+// 如果可以从 beg 到 end 则返回 步数 和 true
 // 如果无法到达，则返回 -1 和 false
-func search(forest [][]int, beg, end []int) (int, bool) {
+func bfs(forest [][]int, beg, end point) (int, bool) {
 	m, n := len(forest), len(forest[0])
-
 	isPassed := make([]bool, m*n)
 
-	steps, stepLen := 0, 1
-	ps := make([][]int, 1, m*n)
+	steps, cands := 0, 1
+	ps := make([]point, 1, m*n)
 	ps[0] = beg
 
 	for len(ps) > 0 {
-		if stepLen == 0 {
+		if cands == 0 {
 			steps++
-			stepLen = len(ps)
+			cands = len(ps)
 		}
 
 		tp := ps[0]
 		ps = ps[1:]
-		isPassed[tp[0]*n+tp[1]] = true
-		stepLen--
+		isPassed[tp.x*n+tp.y] = true
+		cands--
 
-		if tp[0] == end[0] && tp[1] == end[1] {
+		if tp == end {
 			return steps, true
 		}
 
 		for i := 0; i < 4; i++ {
-			x := tp[0] + dx[i]
-			y := tp[1] + dy[i]
-			p := []int{x, y}
+			x := tp.x + dx[i]
+			y := tp.y + dy[i]
+			p := point{x: x, y: y}
 			if 0 <= x && x < m &&
 				0 <= y && y < n &&
 				forest[x][y] > 0 &&
@@ -93,12 +96,12 @@ type point struct {
 }
 
 // PQ implements heap.Interface and holds entries.
-type PQ [][]int
+type PQ []*tree
 
 func (pq PQ) Len() int { return len(pq) }
 
 func (pq PQ) Less(i, j int) bool {
-	return pq[i][0] < pq[j][0]
+	return pq[i].height < pq[j].height
 }
 
 func (pq PQ) Swap(i, j int) {
@@ -107,7 +110,7 @@ func (pq PQ) Swap(i, j int) {
 
 // Push 往 pq 中放 tree
 func (pq *PQ) Push(x interface{}) {
-	temp := x.([]int)
+	temp := x.(*tree)
 	*pq = append(*pq, temp)
 }
 

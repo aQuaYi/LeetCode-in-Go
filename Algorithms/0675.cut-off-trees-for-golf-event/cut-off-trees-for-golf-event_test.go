@@ -1,6 +1,7 @@
 package Problem0675
 
 import (
+	"container/heap"
 	"fmt"
 	"testing"
 
@@ -128,4 +129,19 @@ func Benchmark_cutOffTree(b *testing.B) {
 			cutOffTree(tc.forest)
 		}
 	}
+}
+
+// 为了 100% 覆盖率
+func Test_PQ_push(t *testing.T) {
+	ast := assert.New(t)
+	heights := []int{9, 8, 7, 4, 5, 6, 3, 2, 1}
+	pq := make(PQ, 0, 9)
+	for i := 0; i < len(heights); i++ {
+		heap.Push(&pq, &tree{height: heights[i]})
+	}
+
+	actual := heap.Pop(&pq).(*tree).height
+	expected := 1
+	ast.Equal(expected, actual)
+
 }
