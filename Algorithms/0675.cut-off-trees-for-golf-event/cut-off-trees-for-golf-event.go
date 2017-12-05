@@ -9,21 +9,21 @@ func cutOffTree(forest [][]int) int {
 	for i := 0; i < m; i++ {
 		for j := 0; j < n; j++ {
 			if forest[i][j] > 1 {
-				pq = append(pq, &tree{height: forest[i][j], x: i, y: j})
+				pq = append(pq, &tree{height: forest[i][j], point: point{x: i, y: j}})
 			}
 		}
 	}
 	heap.Init(&pq)
 
 	res := 0
-	sx, sy := 0, 0
+	beg := point{x: 0, y: 0}
 	for len(pq) > 0 {
 		next := heap.Pop(&pq).(*tree)
-		ex, ey := next.x, next.y
-		steps, isAccessible := search(forest, m, n, sx, sy, ex, ey)
+		end := next.point
+		steps, isAccessible := search(forest, beg, end)
 		if isAccessible {
 			res += steps
-			sx, sy = ex, ey
+			beg = end
 		} else {
 			return -1
 		}
@@ -38,45 +38,39 @@ var dy = []int{0, 0, -1, 1}
 // 在 forest 中，
 // 如果可以从 (sx,sy) 到 (ex,ey) 则返回 步数 和 true
 // 如果无法到达，则返回 -1 和 false
-func search(forest [][]int, m, n, sx, sy, ex, ey int) (int, bool) {
-	isPassed := make([][]bool, m)
-	for i := range isPassed {
-		isPassed[i] = make([]bool, n)
-	}
+func search(forest [][]int, beg, end point) (int, bool) {
+	m, n := len(forest), len(forest[0])
+
+	isPassed := make([]bool, m*n)
 
 	steps, stepLen := 0, 1
-	xs := make([]int, 1, m*n)
-	xs[0] = sx
-	ys := make([]int, 1, m*n)
-	ys[0] = sy
-	isPassed[sx][sy] = true
+	ps := make([]point, 1, m*n)
+	ps[0] = beg
 
-	for len(xs) > 0 {
+	for len(ps) > 0 {
 		if stepLen == 0 {
 			steps++
-			stepLen = len(xs)
+			stepLen = len(ps)
 		}
 
-		tx := xs[0]
-		xs = xs[1:]
-		ty := ys[0]
-		ys = ys[1:]
-		isPassed[tx][ty] = true
+		tp := ps[0]
+		ps = ps[1:]
+		isPassed[tp.x*m+tp.y] = true
 		stepLen--
 
-		if tx == ex && ty == ey {
+		if tp == end {
 			return steps, true
 		}
 
 		for i := 0; i < 4; i++ {
-			x := tx + dx[i]
-			y := ty + dy[i]
+			x := tp.x + dx[i]
+			y := tp.y + dy[i]
+			p := point{x: x, y: y}
 			if 0 <= x && x < m &&
 				0 <= y && y < n &&
 				forest[x][y] > 0 &&
-				!isPassed[x][y] {
-				xs = append(xs, x)
-				ys = append(ys, y)
+				!isPassed[x*m+y] {
+				ps = append(ps, p)
 			}
 		}
 	}
@@ -87,7 +81,11 @@ func search(forest [][]int, m, n, sx, sy, ex, ey int) (int, bool) {
 // tree 是 priorityQueue 中的元素
 type tree struct {
 	height int
-	x, y   int
+	point
+}
+
+type point struct {
+	x, y int
 }
 
 // PQ implements heap.Interface and holds entries.
