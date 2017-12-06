@@ -10,5 +10,13 @@ func optimalDivision(nums []int) string {
 	for i, n := range nums {
 		strs[i] = strconv.Itoa(n)
 	}
-	return strs[0] + "/(" + strings.Join(strs[1:], "/") + ")"
+
+	switch len(strs) {
+	case 1:
+		return strs[0]
+	case 2:
+		return strings.Join(strs, "/")
+	default:
+		return strs[0] + "/(" + strings.Join(strs[1:], "/") + ")"
+	}
 }
