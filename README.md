@@ -1,7 +1,7 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 排名](https://img.shields.io/badge/Ranking-4036-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/Ranking-3998-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 答题进度](https://img.shields.io/badge/Progress-80%25-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|118|202|91|411|
+|**Accepted**|118|203|91|412|
 |**Total**|152|254|104|510|
 
 ## 题解
@@ -371,7 +371,7 @@
 |480|[Sliding Window Median](./Algorithms/0480.sliding-window-median)|30%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |481|[Magical String](./Algorithms/0481.magical-string)|45%|Medium| |
 |483|[Smallest Good Base](./Algorithms/0483.smallest-good-base)|33%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|485|[Max Consecutive Ones](./Algorithms/0485.max-consecutive-ones)|53%|Easy| |
+|485|[Max Consecutive Ones](./Algorithms/0485.max-consecutive-ones)|54%|Easy| |
 |486|[Predict the Winner](./Algorithms/0486.predict-the-winner)|45%|Medium| |
 |488| * Zuma Game|37%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |491|[Increasing Subsequences](./Algorithms/0491.increasing-subsequences)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -406,7 +406,7 @@
 |532|[K-diff Pairs in an Array](./Algorithms/0532.k-diff-pairs-in-an-array)|28%|Easy| |
 |537|[Complex Number Multiplication](./Algorithms/0537.complex-number-multiplication)|64%|Medium| |
 |538|[Convert BST to Greater Tree](./Algorithms/0538.convert-bst-to-greater-tree)|49%|Easy| |
-|539| * Minimum Time Difference|45%|Medium| |
+|539| * Minimum Time Difference|46%|Medium| |
 |540|[Single Element in a Sorted Array](./Algorithms/0540.single-element-in-a-sorted-array)|56%|Medium| |
 |541|[Reverse String II](./Algorithms/0541.reverse-string-ii)|43%|Easy| |
 |542| * 01 Matrix|32%|Medium| |
@@ -415,7 +415,7 @@
 |547| * Friend Circles|49%|Medium| |
 |551| * Student Attendance Record I|44%|Easy| |
 |552|[Student Attendance Record II](./Algorithms/0552.student-attendance-record-ii)|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|553| * Optimal Division|54%|Medium| |
+|553|[Optimal Division](./Algorithms/0553.optimal-division)|54%|Medium| |
 |554| * Brick Wall|46%|Medium| |
 |556|[Next Greater Element III](./Algorithms/0556.next-greater-element-iii)|28%|Medium| |
 |557| * Reverse Words in a String III|59%|Easy| |
@@ -464,7 +464,7 @@
 |650| * 2 Keys Keyboard|44%|Medium| |
 |652| * Find Duplicate Subtrees|36%|Medium| |
 |653| * Two Sum IV - Input is a BST|50%|Easy| |
-|654| * Maximum Binary Tree|69%|Medium| |
+|654| * Maximum Binary Tree|70%|Medium| |
 |655| * Print Binary Tree|49%|Medium| |
 |657| * Judge Route Circle|68%|Easy| |
 |658| * Find K Closest Elements|35%|Medium| |
@@ -515,7 +515,7 @@
 |724| * Find Pivot Index|41%|Easy| |
 |725| * Split Linked List in Parts|49%|Medium| |
 |726|[Number of Atoms](./Algorithms/0726.number-of-atoms)|45%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|728| * Self Dividing Numbers|68%|Easy| |
+|728| * Self Dividing Numbers|69%|Easy| |
 |729| * My Calendar I|39%|Medium| |
 |730| * Count Different Palindromic Subsequences|31%|Hard| |
 |731| * My Calendar II|34%|Medium| |
@@ -524,11 +524,11 @@
 |734| * Sentence Similarity|37%|Easy| |
 |735| * Asteroid Collision|36%|Medium| |
 |736| * Parse Lisp Expression|40%|Hard| |
-|737| * Sentence Similarity II|40%|Medium| |
+|737| * Sentence Similarity II|41%|Medium| |
 |738| * Monotone Increasing Digits|38%|Medium| |
 |739| * Daily Temperatures|49%|Medium| |
-|740| * Delete and Earn|36%|Medium| |
-|741| * Cherry Pickup|18%|Hard| |
+|740| * Delete and Earn|37%|Medium| |
+|741| * Cherry Pickup|19%|Hard| |
 
 以下免费的算法题，暂时不能使用 Go 解答
 
