@@ -9,7 +9,7 @@ func judgePoint24(nums []int) bool {
 	for i := 1; i < 4; i++ {
 		left[1] = fs[i]
 
-		right := make([]float64, 2)
+		right := make([]float64, 0, 2)
 		for j := 1; j < 4; j++ {
 			if j != i {
 				right = append(right, fs[j])
@@ -22,11 +22,15 @@ func judgePoint24(nums []int) bool {
 		// le =?= 24 opt ri
 		for r := range ri {
 			if le[24+r] ||
-				le[24-r] ||
-				le[24*r] ||
-				le[24/r] {
+				le[24-r] {
 				return true
 			}
+
+			if r != 0 &&
+				(le[24*r] || le[24/r]) {
+				return true
+			}
+
 		}
 	}
 
