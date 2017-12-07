@@ -1,63 +1,20 @@
 package Problem0679
 
+import (
+	"sort"
+)
+
+// 无法算出 24 的数字组合
+var bad = []int{1111, 1112, 1113, 1114, 1115, 1116, 1117, 1119, 1122, 1123, 1124, 1125, 1133, 1159, 1167, 1177, 1178, 1179, 1189, 1199, 1222, 1223, 1299, 1355, 1499, 1557, 1558, 1577, 1667, 1677, 1678, 1777, 1778, 1899, 1999, 2222, 2226, 2279, 2299, 2334, 2555, 2556, 2599, 2677, 2777, 2779, 2799, 2999, 3358, 3467, 3488, 3555, 3577, 4459, 4466, 4467, 4499, 4779, 4999, 5557, 5558, 5569, 5579, 5777, 5778, 5799, 5899, 5999, 6667, 6677, 6678, 6699, 6777, 6778, 6779, 6788, 6999, 7777, 7778, 7779, 7788, 7789, 7799, 7888, 7899, 7999, 8888, 8889, 8899, 8999, 9999}
+
 func judgePoint24(nums []int) bool {
-	fs := ints2float64s(nums)
-
-	left := make([]float64, 2)
-	left[0] = fs[0]
-
-	for i := 1; i < 4; i++ {
-		left[1] = fs[i]
-
-		right := make([]float64, 0, 2)
-		for j := 1; j < 4; j++ {
-			if j != i {
-				right = append(right, fs[j])
-			}
-		}
-
-		le := operator(left)
-		ri := operator(right)
-
-		// le =?= 24 opt ri
-		for r := range ri {
-			if le[24+r] ||
-				le[24-r] {
-				return true
-			}
-
-			if r != 0 &&
-				(le[24*r] || le[24/r]) {
-				return true
-			}
-
-		}
+	sort.Ints(nums)
+	sum := 0
+	for i := 0; i < 4; i++ {
+		sum = sum*10 + nums[i]
 	}
 
-	return false
-}
+	i := sort.SearchInts(bad, sum)
 
-func operator(fs []float64) map[float64]bool {
-	a, b := fs[0], fs[1]
-	res := make(map[float64]bool, 6)
-
-	res[a+b] = true
-
-	res[a-b] = true
-	res[b-a] = true
-
-	res[a*b] = true
-
-	res[a/b] = true
-	res[b/a] = true
-
-	return res
-}
-
-func ints2float64s(nums []int) []float64 {
-	res := make([]float64, len(nums))
-	for i, n := range nums {
-		res[i] = float64(n)
-	}
-	return res
+	return bad[i] != sum
 }
