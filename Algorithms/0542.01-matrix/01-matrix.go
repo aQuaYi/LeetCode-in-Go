@@ -16,7 +16,7 @@ func updateMatrix(matrix [][]int) [][]int {
 			if matrix[i][j] == 0 {
 				continue
 			}
-			check(matrix, m, n, i, j)
+			checkLU(matrix, m, n, i, j)
 		}
 	}
 
@@ -25,19 +25,31 @@ func updateMatrix(matrix [][]int) [][]int {
 			if matrix[i][j] == 0 {
 				continue
 			}
-			check(matrix, m, n, i, j)
+			checkRD(matrix, m, n, i, j)
 		}
 	}
 
 	return matrix
 }
 
-var dx = []int{-1, 1, 0, 0}
-var dy = []int{0, 0, -1, 1}
+var dx = []int{0, -1, 1, 0}
+var dy = []int{-1, 0, 0, 1}
 
-func check(mat [][]int, m, n, i, j int) {
+func checkLU(mat [][]int, m, n, i, j int) {
 	var x, y int
-	for k := 0; k < 4; k++ {
+	for k := 0; k < 2; k++ {
+		x = i + dx[k]
+		y = j + dy[k]
+		if 0 <= x && x < m &&
+			0 <= y && y < n {
+			mat[i][j] = min(mat[i][j], mat[x][y]+1)
+		}
+	}
+}
+
+func checkRD(mat [][]int, m, n, i, j int) {
+	var x, y int
+	for k := 2; k < 4; k++ {
 		x = i + dx[k]
 		y = j + dy[k]
 		if 0 <= x && x < m &&
