@@ -3,10 +3,10 @@ package Problem0547
 func findCircleNum(M [][]int) int {
 	res := 0
 	N := len(M)
+	friends := make([]int, 0, N)
 
 	var group func(int)
 	group = func(i int) {
-		friends := make([]int, 0, N)
 
 		M[i][i] = 0
 		for j := 0; j < N; j++ {
@@ -17,7 +17,9 @@ func findCircleNum(M [][]int) int {
 			}
 		}
 
-		for _, f := range friends {
+		for len(friends) > 0 {
+			f := friends[0]
+			friends = friends[1:]
 			group(f)
 		}
 	}
