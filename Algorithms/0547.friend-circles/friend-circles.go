@@ -6,13 +6,10 @@ func findCircleNum(M [][]int) int {
 
 	var group func(int)
 	group = func(i int) {
-		if M[i][i] == 0 {
-			return
-		}
-
 		M[i][i] = 0
-		for j := i + 1; j < N; j++ {
-			if M[i][j] == 1 {
+		for j := 0; j < N; j++ {
+			if j != i && M[i][j] == 1 {
+				M[j][i] = 0
 				group(j)
 			}
 		}
