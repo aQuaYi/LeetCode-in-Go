@@ -1,33 +1,32 @@
 package Problem0547
 
 func findCircleNum(M [][]int) int {
-	res := 0
 	N := len(M)
-	friends := make([]int, 0, N)
+	res := N
 
-	var group func(int)
-	group = func(i int) {
+	friend := make([]int, res)
+	for i := 0; i < res; i++ {
+		friend[i] = i
+	}
 
-		M[i][i] = 0
-		for j := 0; j < N; j++ {
-			if M[i][j] == 1 {
-				M[i][j] = 0
-				M[j][i] = 0
-				friends = append(friends, j)
+	// s 和 d 是朋友关系
+	// 所以，s 的所有朋友都是 d 的朋友
+	merge := func(s, d int) {
+		for i, f := range friend {
+			if f == s {
+				friend[i] = d
 			}
-		}
-
-		for len(friends) > 0 {
-			f := friends[0]
-			friends = friends[1:]
-			group(f)
 		}
 	}
 
 	for i := 0; i < N; i++ {
-		if M[i][i] == 1 {
-			res++
-			group(i)
+		for j := i + 1; j < N; j++ {
+			if M[i][j] == 1 {
+				if friend[i] != friend[j] {
+					res--
+					merge(friend[j], friend[i])
+				}
+			}
 		}
 	}
 
