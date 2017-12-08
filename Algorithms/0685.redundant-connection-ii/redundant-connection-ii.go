@@ -2,83 +2,49 @@ package Problem0685
 
 func findRedundantDirectedConnection(edges [][]int) []int {
 	n := len(edges)
-	parentCount := make([]int, n+1)
-	childrenOf := make([][]int, n+1)
-	multiParent := 0
 
-	for i := 0; i < n; i++ {
-		u, v := edges[i][0], edges[i][1]
+	parent := make([]int, n+1)
+	canA := make([]int, 0)
+	canB := make([]int, 0)
 
-		parentCount[v]++
-		if parentCount[v] > 1 {
-			multiParent = v
+	for k, v := range edges {
+		if parent[v[1]] == 0 {
+			parent[v[1]] = v[0]
+		} else {
+			canA = []int{parent[v[1]], v[1]}
+			canB = v
+			tmp := []int{v[0], 0}
+			edges[k] = tmp
 		}
-
-		childrenOf[u] = append(childrenOf[u], v)
 	}
 
-	isInCircle := func(edge []int) bool {
-		p, c := edge[0], edge[1]
-		queue := make([]int, n)
-		isAdded := make([]bool, n+1)
+	root := func(i int) int {
+		for i != parent[i] {
+			i = parent[i]
+		}
+		return i
+	}
 
-		for _, cc := range childrenOf[c] {
-			queue = append(queue, cc)
-			isAdded[cc] = true
+	for i := 0; i <= n; i++ {
+		parent[i] = i
+	}
+
+	for _, v := range edges {
+		if v[1] == 0 {
+			continue
 		}
 
-		for len(queue) > 0 {
-			x := queue[0]
-			queue = queue[1:]
+		p := v[0]
+		c := v[1]
+		a := root(p)
 
-			if x == p {
-				return true
+		if a == c {
+			if len(canA) > 0 {
+				return canA
 			}
-
-			for _, cc := range childrenOf[x] {
-				if !isAdded[cc] {
-					queue = append(queue, cc)
-					isAdded[cc] = true
-				}
-			}
-
+			return v
 		}
-
-		return false
+		parent[c] = a
 	}
-
-	hasCircle := false
-	for i := 0; i < n; i++ {
-		if isInCircle(edges[i]) {
-			hasCircle = true
-			break
-		}
-	}
-
-	if multiParent > 0 && hasCircle {
-		for i := n - 1; 0 <= i; i-- {
-			if multiParent != edges[i][1] {
-				continue
-			}
-			if isInCircle(edges[i]) {
-				return edges[i]
-			}
-		}
-	}
-
-	if multiParent > 0 {
-		for i := n - 1; 0 <= i; i-- {
-			if edges[i][1] == multiParent {
-				return edges[i]
-			}
-		}
-	}
-
-	i := n - 1
-	for ; 0 <= i; i-- {
-		if isInCircle(edges[i]) {
-			break
-		}
-	}
-	return edges[i]
+	return canB
 }
