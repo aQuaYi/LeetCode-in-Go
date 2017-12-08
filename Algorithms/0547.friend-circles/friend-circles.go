@@ -4,8 +4,8 @@ func findCircleNum(M [][]int) int {
 	N := len(M)
 	res := N
 
-	friend := make([]int, res)
-	for i := 0; i < res; i++ {
+	friend := make([]int,N)
+	for i := 0; i < N; i++ {
 		friend[i] = i
 	}
 
@@ -24,11 +24,20 @@ func findCircleNum(M [][]int) int {
 
 				if fi != fj {
 					res--
-					friend[j] = i
+					f := min(fi, fj)
+					friend[i] = f
+					friend[j] = f
 				}
 			}
 		}
 	}
 
 	return res
+}
+
+func min(a, b int) int {
+	if a < b {
+		return a
+	}
+	return b
 }
