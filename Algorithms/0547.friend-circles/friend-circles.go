@@ -6,12 +6,19 @@ func findCircleNum(M [][]int) int {
 
 	var group func(int)
 	group = func(i int) {
+		friends := make([]int, 0, N)
+
 		M[i][i] = 0
 		for j := 0; j < N; j++ {
-			if j != i && M[i][j] == 1 {
+			if M[i][j] == 1 {
+				M[i][j] = 0
 				M[j][i] = 0
-				group(j)
+				friends = append(friends, j)
 			}
+		}
+
+		for _, f := range friends {
+			group(f)
 		}
 	}
 
