@@ -5,7 +5,7 @@ func findRedundantDirectedConnection(edges [][]int) []int {
 	parentCount := make([]int, n+1)
 	childrenOf := make([][]int, n+1)
 
-	for i := 0; i < n; i++ {
+	for i := n - 1; 0 <= i; i-- {
 		u, v := edges[i][0], edges[i][1]
 
 		parentCount[v]++
