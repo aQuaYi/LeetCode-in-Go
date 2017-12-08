@@ -4,40 +4,31 @@ func findCircleNum(M [][]int) int {
 	N := len(M)
 	res := N
 
-	friend := make([]int,N)
-	for i := 0; i < N; i++ {
+	friend := make([]int, res)
+	for i := 0; i < res; i++ {
 		friend[i] = i
 	}
 
-	friendOf := func(i int) int {
-		for i != friend[i] {
-			i = friend[i]
+	// s 和 d 是朋友关系
+	// 所以，s 的所有朋友都是 d 的朋友
+	union := func(s, d int) {
+		for i := range friend {
+			if friend[i] == s {
+				friend[i] = d
+			}
 		}
-		return i
 	}
 
 	for i := 0; i < N; i++ {
 		for j := i + 1; j < N; j++ {
 			if M[i][j] == 1 {
-				fi := friendOf(i)
-				fj := friendOf(j)
-
-				if fi != fj {
+				if friend[i] != friend[j] {
 					res--
-					f := min(fi, fj)
-					friend[i] = f
-					friend[j] = f
+					union(friend[i], friend[j])
 				}
 			}
 		}
 	}
 
 	return res
-}
-
-func min(a, b int) int {
-	if a < b {
-		return a
-	}
-	return b
 }
