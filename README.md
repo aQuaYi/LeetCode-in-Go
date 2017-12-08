@@ -1,7 +1,7 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 排名](https://img.shields.io/badge/Ranking-3759-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/Ranking-3625-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 答题进度](https://img.shields.io/badge/Progress-82%25-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|120|207|93|420|
+|**Accepted**|120|209|93|422|
 |**Total**|153|255|104|512|
 
 ## 题解
@@ -299,7 +299,7 @@
 |385|[Mini Parser](./Algorithms/0385.mini-parser)|30%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |387|[First Unique Character in a String](./Algorithms/0387.first-unique-character-in-a-string)|47%|Easy| |
 |388|[Longest Absolute File Path](./Algorithms/0388.longest-absolute-file-path)|37%|Medium| |
-|389|[Find the Difference](./Algorithms/0389.find-the-difference)|51%|Easy| |
+|389|[Find the Difference](./Algorithms/0389.find-the-difference)|50%|Easy| |
 |390|[Elimination Game](./Algorithms/0390.elimination-game)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |391|[Perfect Rectangle](./Algorithms/0391.perfect-rectangle)|27%|Hard| |
 |392|[Is Subsequence](./Algorithms/0392.is-subsequence)|44%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -413,11 +413,11 @@
 |542|[01 Matrix](./Algorithms/0542.01-matrix)|32%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |543|[Diameter of Binary Tree](./Algorithms/0543.diameter-of-binary-tree)|44%|Easy| |
 |546|[Remove Boxes](./Algorithms/0546.remove-boxes)|34%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|547| * Friend Circles|49%|Medium| |
+|547|[Friend Circles](./Algorithms/0547.friend-circles)|49%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |551| * Student Attendance Record I|44%|Easy| |
 |552|[Student Attendance Record II](./Algorithms/0552.student-attendance-record-ii)|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |553|[Optimal Division](./Algorithms/0553.optimal-division)|54%|Medium| |
-|554| * Brick Wall|46%|Medium| |
+|554|[Brick Wall](./Algorithms/0554.brick-wall)|46%|Medium| |
 |556|[Next Greater Element III](./Algorithms/0556.next-greater-element-iii)|28%|Medium| |
 |557| * Reverse Words in a String III|59%|Easy| |
 |560|[Subarray Sum Equals K](./Algorithms/0560.subarray-sum-equals-k)|40%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -462,7 +462,7 @@
 |646| * Maximum Length of Pair Chain|47%|Medium| |
 |647| * Palindromic Substrings|55%|Medium| |
 |648| * Replace Words|47%|Medium| |
-|649| * Dota2 Senate|36%|Medium| |
+|649| * Dota2 Senate|35%|Medium| |
 |650| * 2 Keys Keyboard|44%|Medium| |
 |652| * Find Duplicate Subtrees|36%|Medium| |
 |653| * Two Sum IV - Input is a BST|50%|Easy| |
@@ -476,8 +476,8 @@
 |664|[Strange Printer](./Algorithms/0664.strange-printer)|32%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |665| * Non-decreasing Array|20%|Easy| |
 |667|[Beautiful Arrangement II](./Algorithms/0667.beautiful-arrangement-ii)|51%|Medium| |
-|668|[Kth Smallest Number in Multiplication Table](./Algorithms/0668.kth-smallest-number-in-multiplication-table)|37%|Hard| |
-|669| * Trim a Binary Search Tree|58%|Easy| |
+|668|[Kth Smallest Number in Multiplication Table](./Algorithms/0668.kth-smallest-number-in-multiplication-table)|38%|Hard| |
+|669| * Trim a Binary Search Tree|57%|Easy| |
 |670| * Maximum Swap|38%|Medium| |
 |671| * Second Minimum Node In a Binary Tree|41%|Easy| |
 |672| * Bulb Switcher II|48%|Medium| |
@@ -494,7 +494,7 @@
 |685|[Redundant Connection II](./Algorithms/0685.redundant-connection-ii)|28%|Hard| |
 |686| * Repeated String Match|34%|Easy| |
 |687| * Longest Univalue Path|33%|Easy| |
-|688| * Knight Probability in Chessboard|38%|Medium| |
+|688| * Knight Probability in Chessboard|39%|Medium| |
 |689| * Maximum Sum of 3 Non-Overlapping Subarrays|41%|Hard| |
 |691| * Stickers to Spell Word|33%|Hard| |
 |692| * Top K Frequent Words|40%|Medium| |
