@@ -4,81 +4,37 @@ import "container/heap"
 import "sort"
 
 func maxSumOfThreeSubarrays(nums []int, k int) []int {
-	res := make([]int, 0, 3)
-
-	sum := 0
-	for i := 0; i < k; i++ {
-		sum += nums[i]
+	int n = nums.length, maxsum = 0;
+	int[] sum = new int[n+1], posLeft = new int[n], posRight = new int[n], ans = new int[3];
+	for (int i = 0; i < n; i++) sum[i+1] = sum[i]+nums[i];
+	// DP for starting index of the left max sum interval
+	for (int i = k, tot = sum[k]-sum[0]; i < n; i++) {
+		if (sum[i+1]-sum[i+1-k] > tot) {
+			posLeft[i] = i+1-k;
+			tot = sum[i+1]-sum[i+1-k];
+		}
+		else
+			posLeft[i] = posLeft[i-1];
 	}
-
-	pq := make(PQ, 0, len(nums)-k)
-	pq = append(pq, &entry{starting: 0, sum: sum})
-
-	for i := 1; i-1+k < len(nums); i++ {
-		sum = sum - nums[i-1] + nums[i-1+k]
-		pq = append(pq, &entry{starting: i, sum: sum})
+	// DP for starting index of the right max sum interval
+   // caution: the condition is ">= tot" for right interval, and "> tot" for left interval
+	posRight[n-k] = n-k;
+	for (int i = n-k-1, tot = sum[n]-sum[n-k]; i >= 0; i--) {
+		if (sum[i+k]-sum[i] >= tot) {
+			posRight[i] = i;
+			tot = sum[i+k]-sum[i];
+		}
+		else
+			posRight[i] = posRight[i+1];
 	}
-
-	heap.Init(&pq)
-
-	for len(res) < 3 {
-		temp := heap.Pop(&pq).(*entry).starting
-		if !isOverlapping(res, temp, k) {
-			res = append(res, temp)
+	// test all possible middle interval
+	for (int i = k; i <= n-2*k; i++) {
+		int l = posLeft[i-1], r = posRight[i+k];
+		int tot = (sum[i+k]-sum[i]) + (sum[l+k]-sum[l]) + (sum[r+k]-sum[r]);
+		if (tot > maxsum) {
+			maxsum = tot;
+			ans[0] = l; ans[1] = i; ans[2] = r;
 		}
 	}
-
-	sort.Ints(res)
-
-	return res
-}
-
-func isOverlapping(nums []int, x, k int) bool {
-	for _, n := range nums {
-		if isOverlap(n, x, k) {
-			return true
-		}
-	}
-	return false
-}
-
-func isOverlap(x, y, k int) bool {
-	if x > y {
-		x, y = y, x
-	}
-	return x <= y && y < x+k
-}
-
-// entry 是 priorityQueue 中的元素
-type entry struct {
-	starting, sum int
-}
-
-// PQ implements heap.Interface and holds entries.
-type PQ []*entry
-
-func (pq PQ) Len() int { return len(pq) }
-
-func (pq PQ) Less(i, j int) bool {
-	if pq[i].sum == pq[j].sum {
-		return pq[i].starting < pq[j].starting
-	}
-	return pq[i].sum > pq[j].sum
-}
-
-func (pq PQ) Swap(i, j int) {
-	pq[i], pq[j] = pq[j], pq[i]
-}
-
-// Push 往 pq 中放 entry
-func (pq *PQ) Push(x interface{}) {
-	temp := x.(*entry)
-	*pq = append(*pq, temp)
-}
-
-// Pop 从 pq 中取出最优先的 entry
-func (pq *PQ) Pop() interface{} {
-	temp := (*pq)[len(*pq)-1]
-	*pq = (*pq)[0 : len(*pq)-1]
-	return temp
+	return ans;
 }
