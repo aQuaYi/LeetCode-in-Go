@@ -21,13 +21,32 @@ func maxSumOfThreeSubarrays(nums []int, k int) []int {
 
 	heap.Init(&pq)
 
-	for i := 0; i < 3; i++ {
-		res = append(res, heap.Pop(&pq).(*entry).starting)
+	for len(res) < 3 {
+		temp := heap.Pop(&pq).(*entry).starting
+		if !isOverlapping(res, temp, k) {
+			res = append(res, temp)
+		}
 	}
 
 	sort.Ints(res)
 
 	return res
+}
+
+func isOverlapping(nums []int, x, k int) bool {
+	for _, n := range nums {
+		if isOverlap(n, x, k) {
+			return true
+		}
+	}
+	return false
+}
+
+func isOverlap(x, y, k int) bool {
+	if x > y {
+		x, y = y, x
+	}
+	return x <= y && y < x+k
 }
 
 // entry 是 priorityQueue 中的元素
