@@ -12,18 +12,17 @@ func maxSumOfThreeSubarrays(nums []int, k int) []int {
 	}
 
 	pq := make(PQ, 0, len(nums)-k)
-	pqp := &pq
-	pqp.Push(&entry{starting: 0, sum: sum})
+	pq = append(pq, &entry{starting: 0, sum: sum})
 
-	for i := 1; i+k < len(nums); i++ {
-		sum = sum - nums[i-1] + nums[i+k]
-		pqp.Push(&entry{starting: i, sum: sum})
+	for i := 1; i-1+k < len(nums); i++ {
+		sum = sum - nums[i-1] + nums[i-1+k]
+		pq = append(pq, &entry{starting: i, sum: sum})
 	}
 
-	heap.Init(pqp)
+	heap.Init(&pq)
 
 	for i := 0; i < 3; i++ {
-		res = append(res, heap.Pop(pqp).(*entry).starting)
+		res = append(res, heap.Pop(&pq).(*entry).starting)
 	}
 
 	sort.Ints(res)
@@ -45,7 +44,7 @@ func (pq PQ) Less(i, j int) bool {
 	if pq[i].sum == pq[j].sum {
 		return pq[i].starting < pq[j].starting
 	}
-	return pq[i].sum < pq[j].sum
+	return pq[i].sum > pq[j].sum
 }
 
 func (pq PQ) Swap(i, j int) {
