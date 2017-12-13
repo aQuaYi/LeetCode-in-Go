@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|121|209|94|424|
+|**Accepted**|125|209|94|428|
 |**Total**|154|257|105|516|
 
 ## 题解
@@ -414,7 +414,7 @@
 |543|[Diameter of Binary Tree](./Algorithms/0543.diameter-of-binary-tree)|44%|Easy| |
 |546|[Remove Boxes](./Algorithms/0546.remove-boxes)|34%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |547|[Friend Circles](./Algorithms/0547.friend-circles)|49%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|551| * Student Attendance Record I|44%|Easy| |
+|551|[Student Attendance Record I](./Algorithms/0551.student-attendance-record-i)|44%|Easy| |
 |552|[Student Attendance Record II](./Algorithms/0552.student-attendance-record-ii)|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |553|[Optimal Division](./Algorithms/0553.optimal-division)|54%|Medium| |
 |554|[Brick Wall](./Algorithms/0554.brick-wall)|46%|Medium| |
@@ -422,12 +422,12 @@
 |557| * Reverse Words in a String III|59%|Easy| |
 |560|[Subarray Sum Equals K](./Algorithms/0560.subarray-sum-equals-k)|40%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |561|[Array Partition I](./Algorithms/0561.array-partition-i)|66%|Easy| |
-|563| * Binary Tree Tilt|47%|Easy| |
+|563|[Binary Tree Tilt](./Algorithms/0563.binary-tree-tilt)|47%|Easy| |
 |564|[Find the Closest Palindrome](./Algorithms/0564.find-the-closest-palindrome)|17%|Hard| |
 |565|[Array Nesting](./Algorithms/0565.array-nesting)|49%|Medium| |
 |566|[Reshape the Matrix](./Algorithms/0566.reshape-the-matrix)|58%|Easy| |
 |567| * Permutation in String|36%|Medium| |
-|572| * Subtree of Another Tree|40%|Easy| |
+|572|[Subtree of Another Tree](./Algorithms/0572.subtree-of-another-tree)|40%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |575|[Distribute Candies](./Algorithms/0575.distribute-candies)|58%|Easy| |
 |576| * Out of Boundary Paths|30%|Medium| |
 |581|[Shortest Unsorted Continuous Subarray](./Algorithms/0581.shortest-unsorted-continuous-subarray)|29%|Easy|[❤](https://leetcode.com/list/oussv5j)|
@@ -436,7 +436,7 @@
 |591| * Tag Validator|30%|Hard| |
 |592| * Fraction Addition and Subtraction|45%|Medium| |
 |593| * Valid Square|40%|Medium| |
-|594| * Longest Harmonious Subsequence|40%|Easy| |
+|594|[Longest Harmonious Subsequence](./Algorithms/0594.longest-harmonious-subsequence)|40%|Easy| |
 |598| * Range Addition II|48%|Easy| |
 |599| * Minimum Index Sum of Two Lists|46%|Easy| |
 |600| * Non-negative Integers without Consecutive Ones|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -450,7 +450,7 @@
 |628|[Maximum Product of Three Numbers](./Algorithms/0628.maximum-product-of-three-numbers)|45%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |629|[K Inverse Pairs Array](./Algorithms/0629.k-inverse-pairs-array)|26%|Hard| |
 |630|[Course Schedule III](./Algorithms/0630.course-schedule-iii)|28%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|632|[Smallest Range](./Algorithms/0632.smallest-range)|41%|Hard| |
+|632|[Smallest Range](./Algorithms/0632.smallest-range)|42%|Hard| |
 |633| * Sum of Square Numbers|32%|Easy| |
 |636| * Exclusive Time of Functions|44%|Medium| |
 |637| * Average of Levels in Binary Tree|55%|Easy| |
@@ -470,7 +470,7 @@
 |655| * Print Binary Tree|49%|Medium| |
 |657| * Judge Route Circle|68%|Easy| |
 |658| * Find K Closest Elements|35%|Medium| |
-|659| * Split Array into Consecutive Subsequences|35%|Medium| |
+|659| * Split Array into Consecutive Subsequences|36%|Medium| |
 |661|[Image Smoother](./Algorithms/0661.image-smoother)|46%|Easy| |
 |662| * Maximum Width of Binary Tree|37%|Medium| |
 |664|[Strange Printer](./Algorithms/0664.strange-printer)|32%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -529,7 +529,7 @@
 |737| * Sentence Similarity II|41%|Medium| |
 |738| * Monotone Increasing Digits|41%|Medium| |
 |739| * Daily Temperatures|52%|Medium| |
-|740| * Delete and Earn|40%|Medium| |
+|740| * Delete and Earn|41%|Medium| |
 |741| * Cherry Pickup|22%|Hard| |
 |743| * Closest Leaf in a Binary Tree|30%|Medium| |
 |744| * Network Delay Time|31%|Medium| |
