@@ -6,26 +6,20 @@ import (
 
 type TreeNode = kit.TreeNode
 
-func isSubtree(s *TreeNode, t *TreeNode) bool {
-	return isSub(s, t, true)
+func isSubtree(s *TreeNode, t *TreeNode) bool {    
+    if isSame(s, t) { return true }
+    
+    if s == nil {return false}
+    return isSubtree(s.Left, t) || isSubtree(s.Right, t)
 }
 
-func isSub(s, t *TreeNode, isRoot bool) bool {
-	if s == nil && t == nil {
-		return true
-	}
-
-	if s == nil || t == nil {
-		return false
-	}
-
-	if s.Val == t.Val && isSub(s.Left, t.Left, false) && isSub(s.Right, t.Right, false) {
-		return true
-	}
-
-	if !isRoot {
-		return false
-	}
-
-	return isSub(s.Left, t, true) || isSub(s.Right, t, true)
+func isSame(s *TreeNode, t *TreeNode) bool {
+    if s == nil {return t == nil}
+    if t == nil {return false}
+    
+    if s.Val != t.Val {
+        return false
+    }
+    
+    return isSame(s.Left, t.Left) && isSame(s.Right, t.Right)
 }
