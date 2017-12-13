@@ -7,7 +7,23 @@ import (
 type TreeNode = kit.TreeNode
 
 func findTilt(root *TreeNode) int {
-	res := 0
+	if root ==nil {
+		return 0
+	}
 
-	return res
+	l:= sum(root.Left)
+	r:= sum(root.Right)
+
+	if l> r {
+		return l-r
+	}
+	return r-l
+}
+
+func sum (root *TreeNode)int {
+if root == nil {
+	return 0
+}	
+
+return root.Val+ sum(root.Left)+ sum(root.Right)
 }

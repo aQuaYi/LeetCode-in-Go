@@ -15,7 +15,13 @@ var tcs = []struct {
 	ans     int
 }{
 
-// 可以有多个 testcase
+	{
+		[]int{1, 2, 3},
+		[]int{2, 1, 3},
+		1,
+	},
+
+	// 可以有多个 testcase
 }
 
 func Test_findTilt(t *testing.T) {
