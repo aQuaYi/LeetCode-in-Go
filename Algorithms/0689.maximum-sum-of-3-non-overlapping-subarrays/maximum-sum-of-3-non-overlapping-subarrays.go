@@ -36,8 +36,8 @@ func maxSumOfThreeSubarrays(nums []int, k int) []int {
 		right[i] = indexOfMax
 	}
 
-	a := []int{0, k, 2 * k}
-	for y := k + 1; y < n-k; y++ {
+	a := []int{0, k, k + k}
+	for y := k ; y < n-k; y++ {
 		x, z := left[y-k], right[y+k]
 		if sum[a[0]]+sum[a[1]]+sum[a[2]] < sum[x]+sum[y]+sum[z] {
 			a[0], a[1], a[2] = x, y, z
