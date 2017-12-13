@@ -7,7 +7,17 @@ import (
 type TreeNode = kit.TreeNode
 
 func isSubtree(s *TreeNode, t *TreeNode) bool {
-	res := false
+	if s == nil && t == nil {
+		return true
+	}
 
-	return res
+	if s == nil || t == nil {
+		return false
+	}
+
+	if s.Val == t.Val {
+		return isSubtree(s.Left, t.Left) && isSubtree(s.Right, t.Right)
+	}
+
+	return isSubtree(s.Left, t) || isSubtree(s.Right, t)
 }
