@@ -10,20 +10,25 @@ import (
 // tcs is testcase slice
 var tcs = []struct {
 	nums []int
-	ans  int 
+	ans  int
 }{
 
 	{
-		[]int { 1,3,2,2,5,2,3,7 },
- 5,
-} ,
-	
+		[]int{1, 1, 1, 1},
+		0,
+	},
+
+	{
+		[]int{1, 3, 2, 2, 5, 2, 3, 7},
+		5,
+	},
+
 	// 可以有多个 testcase
 }
 
 func Test_findLHS(t *testing.T) {
 	ast := assert.New(t)
-	
+
 	for _, tc := range tcs {
 		fmt.Printf("~~%v~~\n", tc)
 		ast.Equal(tc.ans, findLHS(tc.nums), "输入:%v", tc)
