@@ -7,10 +7,10 @@ func findLHS(nums []int) int {
 	}
 
 	max := 0
-	for n, c := range r {
+	for n, c1 := range r {
 		c2, ok := r[n+1]
 		if ok {
-			t := c + c2
+			t := c1 + c2
 			if max < t {
 				max = t
 			}
