@@ -15,9 +15,7 @@ func isSubtree(s *TreeNode, t *TreeNode) bool {
 		return false
 	}
 
-	if s.Val == t.Val {
-		return isSubtree(s.Left, t.Left) && isSubtree(s.Right, t.Right)
-	}
-
-	return isSubtree(s.Left, t) || isSubtree(s.Right, t)
-}
+	return (s.Val == t.Val && isSubtree(s.Left, t.Left) && isSubtree(s.Right, t.Right)) ||
+	 isSubtree(s.Left, t) ||
+	  isSubtree(s.Right, t)
+	 }
