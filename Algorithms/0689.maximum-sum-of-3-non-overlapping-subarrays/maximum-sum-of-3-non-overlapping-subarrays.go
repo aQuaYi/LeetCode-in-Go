@@ -1,46 +1,48 @@
 package Problem0689
 
 func maxSumOfThreeSubarrays(nums []int, k int) []int {
-	n, maxsum := len(nums), 0
-	sum := make([]int, n+1)
-	posLeft := make([]int, n)
-	posRight := make([]int, n)
-	ans := make([]int, 3)
+	n := len(nums) - k + 1
+
+	// sum[i] = sum(nums[i:i+k])
+	sum := make([]int, n)
+	sumK := 0
+	for i := 0; i < len(nums); i++ {
+		sumK += nums[i]
+		if i >= k {
+			sumK -= nums[i-k]
+		}
+		if i >= k-1 {
+			sum[i-k+1] = sumK
+		}
+	}
+
+	// left[i] == j 表示，在 sum[:i+1] 中，最大值的索引号为 j
+	left := make([]int, n)
+	indexOfMax := 0
 	for i := 0; i < n; i++ {
-		sum[i+1] = sum[i] + nums[i]
+		if sum[indexOfMax] < sum[i] {
+			indexOfMax = i
+		}
+		left[i] = indexOfMax
 	}
-	// DP for starting index of the left max sum interval
-	tot := sum[k] - sum[0]
-	for i := k; i < n; i++ {
-		if sum[i+1]-sum[i+1-k] > tot {
-			posLeft[i] = i + 1 - k
-			tot = sum[i+1] - sum[i+1-k]
-		} else {
-			posLeft[i] = posLeft[i-1]
+
+	indexOfMax = n - 1
+	// right[i] == j 表示，在 sum[i:] 中，最大值的索引号为 j
+	right := make([]int, n)
+	for i := n - 1; i >= 0; i-- {
+		if sum[indexOfMax] < sum[i] {
+			indexOfMax = i
+		}
+		right[i] = indexOfMax
+	}
+
+	a := []int{0, k, 2 * k}
+	for y := k + 1; y < n-k; y++ {
+		x, z := left[y-k], right[y+k]
+		if sum[a[0]]+sum[a[1]]+sum[a[2]] < sum[x]+sum[y]+sum[z] {
+			a[0], a[1], a[2] = x, y, z
 		}
 	}
-	// DP for starting index of the right max sum interval
-	// caution: the condition is ">= tot" for right interval, and "> tot" for left interval
-	posRight[n-k] = n - k
-	tot = sum[n] - sum[n-k]
-	for i := n - k - 1; 0 <= i; i-- {
-		if sum[i+k]-sum[i] >= tot {
-			posRight[i] = i
-			tot = sum[i+k] - sum[i]
-		} else {
-			posRight[i] = posRight[i+1]
-		}
-	}
-	// test all possible middle interval
-	for i := k; i <= n-2*k; i++ {
-		l, r := posLeft[i-1], posRight[i+k]
-		tot = (sum[i+k] - sum[i]) + (sum[l+k] - sum[l]) + (sum[r+k] - sum[r])
-		if tot > maxsum {
-			maxsum = tot
-			ans[0] = l
-			ans[1] = i
-			ans[2] = r
-		}
-	}
-	return ans
+
+	return a
 }
