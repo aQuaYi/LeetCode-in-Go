@@ -11,8 +11,8 @@ func findTilt(root *TreeNode) int {
 		return 0
 	}
 
-	l:= sum(root.Left)
-	r:= sum(root.Right)
+var l, r int
+helper(root, &l, &r)
 
 	if l> r {
 		return l-r
@@ -20,10 +20,19 @@ func findTilt(root *TreeNode) int {
 	return r-l
 }
 
-func sum (root *TreeNode)int {
+func helper (root *TreeNode, l, r *int) {
 if root == nil {
-	return 0
+	return 
 }	
 
-return root.Val+ sum(root.Left)+ sum(root.Right)
+helper(root.Left, l, r)
+helper(root.Right, l, r)
+
+if root.Left !=nil {
+	*l += root.Left.Val
+}
+
+if root.Right != nil {
+	*r+= root.Right.Val
+}
 }
