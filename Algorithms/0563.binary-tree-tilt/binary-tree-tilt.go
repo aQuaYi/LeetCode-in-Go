@@ -7,32 +7,24 @@ import (
 type TreeNode = kit.TreeNode
 
 func findTilt(root *TreeNode) int {
-	if root ==nil {
+	var tilt int
+	helper(root, &tilt)
+	return tilt
+}
+
+func helper(root *TreeNode, tilt *int) int {
+	if root == nil {
 		return 0
 	}
 
-var l, r int
-helper(root, &l, &r)
+	l := helper(root.Left, tilt)
+	r := helper(root.Right, tilt)
 
-	if l> r {
-		return l-r
+	if l > r {
+		*tilt += l - r
+	} else {
+		*tilt += r - l
 	}
-	return r-l
-}
 
-func helper (root *TreeNode, l, r *int) {
-if root == nil {
-	return 
-}	
-
-helper(root.Left, l, r)
-helper(root.Right, l, r)
-
-if root.Left !=nil {
-	*l += root.Left.Val
-}
-
-if root.Right != nil {
-	*r+= root.Right.Val
-}
+	return l + r+root.Val
 }
