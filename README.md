@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|126|209|94|429|
+|**Accepted**|126|209|95|430|
 |**Total**|154|257|105|516|
 
 ## 题解
@@ -363,7 +363,7 @@
 |468|[Validate IP Address](./Algorithms/0468.validate-ip-address)|20%|Medium| |
 |472|[Concatenated Words](./Algorithms/0472.concatenated-words)|30%|Hard| |
 |473|[Matchsticks to Square](./Algorithms/0473.matchsticks-to-square)|35%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|474|[Ones and Zeroes](./Algorithms/0474.ones-and-zeroes)|39%|Medium| |
+|474|[Ones and Zeroes](./Algorithms/0474.ones-and-zeroes)|38%|Medium| |
 |475|[Heaters](./Algorithms/0475.heaters)|29%|Easy| |
 |476|[Number Complement](./Algorithms/0476.number-complement)|60%|Easy| |
 |477|[Total Hamming Distance](./Algorithms/0477.total-hamming-distance)|47%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -496,7 +496,7 @@
 |687| * Longest Univalue Path|33%|Easy| |
 |688| * Knight Probability in Chessboard|39%|Medium| |
 |689|[Maximum Sum of 3 Non-Overlapping Subarrays](./Algorithms/0689.maximum-sum-of-3-non-overlapping-subarrays)|41%|Hard| |
-|691| * Stickers to Spell Word|33%|Hard| |
+|691|[Stickers to Spell Word](./Algorithms/0691.stickers-to-spell-word)|33%|Hard| |
 |692| * Top K Frequent Words|40%|Medium| |
 |693| * Binary Number with Alternating Bits|54%|Easy| |
 |695| * Max Area of Island|52%|Easy| |
@@ -507,7 +507,7 @@
 |712| * Minimum ASCII Delete Sum for Two Strings|50%|Medium| |
 |713| * Subarray Product Less Than K|32%|Medium| |
 |714| * Best Time to Buy and Sell Stock with Transaction Fee|41%|Medium| |
-|715| * Range Module|31%|Hard| |
+|715| * Range Module|30%|Hard| |
 |717| * 1-bit and 2-bit Characters|50%|Easy| |
 |718| * Maximum Length of Repeated Subarray|39%|Medium| |
 |719| * Find K-th Smallest Pair Distance|26%|Hard| |
@@ -521,15 +521,15 @@
 |729| * My Calendar I|40%|Medium| |
 |730| * Count Different Palindromic Subsequences|32%|Hard| |
 |731| * My Calendar II|35%|Medium| |
-|732| * My Calendar III|51%|Hard| |
+|732| * My Calendar III|52%|Hard| |
 |733| * Flood Fill|49%|Easy| |
 |734| * Sentence Similarity|38%|Easy| |
 |735| * Asteroid Collision|36%|Medium| |
 |736| * Parse Lisp Expression|41%|Hard| |
-|737| * Sentence Similarity II|41%|Medium| |
+|737| * Sentence Similarity II|40%|Medium| |
 |738| * Monotone Increasing Digits|41%|Medium| |
 |739| * Daily Temperatures|52%|Medium| |
-|740| * Delete and Earn|41%|Medium| |
+|740| * Delete and Earn|40%|Medium| |
 |741| * Cherry Pickup|22%|Hard| |
 |743| * Closest Leaf in a Binary Tree|30%|Medium| |
 |744| * Network Delay Time|31%|Medium| |
