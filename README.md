@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|126|209|95|430|
+|**Accepted**|127|211|95|433|
 |**Total**|154|257|105|516|
 
 ## 题解
@@ -419,7 +419,7 @@
 |553|[Optimal Division](./Algorithms/0553.optimal-division)|54%|Medium| |
 |554|[Brick Wall](./Algorithms/0554.brick-wall)|46%|Medium| |
 |556|[Next Greater Element III](./Algorithms/0556.next-greater-element-iii)|28%|Medium| |
-|557| * Reverse Words in a String III|59%|Easy| |
+|557|[Reverse Words in a String III](./Algorithms/0557.reverse-words-in-a-string-iii)|59%|Easy| |
 |560|[Subarray Sum Equals K](./Algorithms/0560.subarray-sum-equals-k)|40%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |561|[Array Partition I](./Algorithms/0561.array-partition-i)|66%|Easy| |
 |563|[Binary Tree Tilt](./Algorithms/0563.binary-tree-tilt)|47%|Easy| |
@@ -431,10 +431,10 @@
 |575|[Distribute Candies](./Algorithms/0575.distribute-candies)|58%|Easy| |
 |576| * Out of Boundary Paths|30%|Medium| |
 |581|[Shortest Unsorted Continuous Subarray](./Algorithms/0581.shortest-unsorted-continuous-subarray)|29%|Easy|[❤](https://leetcode.com/list/oussv5j)|
-|583| * Delete Operation for Two Strings|44%|Medium| |
+|583|[Delete Operation for Two Strings](./Algorithms/0583.delete-operation-for-two-strings)|44%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |587|[Erect the Fence](./Algorithms/0587.erect-the-fence)|32%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |591| * Tag Validator|30%|Hard| |
-|592| * Fraction Addition and Subtraction|45%|Medium| |
+|592|[Fraction Addition and Subtraction](./Algorithms/0592.fraction-addition-and-subtraction)|45%|Medium| |
 |593| * Valid Square|40%|Medium| |
 |594|[Longest Harmonious Subsequence](./Algorithms/0594.longest-harmonious-subsequence)|40%|Easy| |
 |598|[Range Addition II](./Algorithms/0598.range-addition-ii)|48%|Easy| |
@@ -496,7 +496,7 @@
 |687| * Longest Univalue Path|33%|Easy| |
 |688| * Knight Probability in Chessboard|39%|Medium| |
 |689|[Maximum Sum of 3 Non-Overlapping Subarrays](./Algorithms/0689.maximum-sum-of-3-non-overlapping-subarrays)|41%|Hard| |
-|691|[Stickers to Spell Word](./Algorithms/0691.stickers-to-spell-word)|33%|Hard| |
+|691|[Stickers to Spell Word](./Algorithms/0691.stickers-to-spell-word)|33%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |692| * Top K Frequent Words|40%|Medium| |
 |693| * Binary Number with Alternating Bits|54%|Easy| |
 |695| * Max Area of Island|52%|Easy| |
@@ -529,12 +529,12 @@
 |737| * Sentence Similarity II|40%|Medium| |
 |738| * Monotone Increasing Digits|41%|Medium| |
 |739| * Daily Temperatures|52%|Medium| |
-|740| * Delete and Earn|40%|Medium| |
+|740| * Delete and Earn|41%|Medium| |
 |741| * Cherry Pickup|22%|Hard| |
 |743| * Closest Leaf in a Binary Tree|30%|Medium| |
 |744| * Network Delay Time|31%|Medium| |
 |745| * Find Smallest Letter Greater Than Target|53%|Easy| |
-|746| * Prefix and Suffix Search|18%|Hard| |
+|746| * Prefix and Suffix Search|19%|Hard| |
 
 以下免费的算法题，暂时不能使用 Go 解答
 
