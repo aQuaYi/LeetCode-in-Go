@@ -3,60 +3,71 @@ package Problem0691
 const intMax = 1<<63 - 1
 
 func minStickers(stickers []string, target string) int {
-	m := len(stickers)
-	mp := make([][]int, m)
-	for i := range mp {
-		mp[i] = make([]int, 26)
+	size := len(stickers)
+
+	// ss[i][j] == k 表示 stickers[i] 有 k 个字母（'a'+j)
+	ss := make([][]int, size)
+	for i := range ss {
+		ss[i] = make([]int, 26)
 		for _, c := range stickers[i] {
-			mp[i][c-'a']++
+			ss[i][c-'a']++
 		}
 	}
-	dp := make(map[string]int, m)
+
+	// dp["abc"] == m 表示，最少需要 m 个 sticker，可以组成 "abc"
+	dp := make(map[string]int, size)
 	dp[""] = 0
 
-	return helper(dp, mp, target)
+	helper(dp, ss, target)
+
+	return dp[target]
 }
 
-func helper(dp map[string]int, mp [][]int, target string) int {
-	if count, ok := dp[target]; ok {
-		return count
+func helper(dp map[string]int, ss [][]int, target string) int {
+	// 如果曾经检查过 target ，直接返回答案
+	if minimum, ok := dp[target]; ok {
+		return minimum
 	}
 
-	n := len(mp)
-
+	// 获取 target 内各个字母的个数
 	tar := make([]int, 26)
 	for _, c := range target {
 		tar[c-'a']++
 	}
 
-	ans := 1<<63 - 1
-	for i := 0; i < n; i++ {
-		if mp[i][target[0]-'a'] == 0 {
+	res := intMax
+
+	for _, s := range ss {
+		// 只有当 s 包含了 target 的首字母时
+		// 才从 target 中减去 s
+		// 这样就确保了，每次递归时候，target 都在变小
+		if s[target[0]-'a'] == 0 {
 			continue
 		}
 
-		s := make([]byte, 0, len(target))
-		for j := 0; j < 26; j++ {
-			if tar[j]-mp[i][j] > 0 {
-				for k := tar[j] - mp[i][j]; 0 < k; k-- {
-					s = append(s, byte('a'+j))
-				}
+		// t = target - s
+		t := make([]byte, 0, len(target))
+		for i := 0; i < 26; i++ {
+			for j := tar[i] - s[i]; 0 < j; j-- {
+				t = append(t, byte('a'+i))
 			}
 		}
 
-		tmp := helper(dp, mp, string(s))
-		if tmp != -1 {
-			ans = min(ans, tmp+1)
+		// 递归求解 t
+		temp := helper(dp, ss, string(t))
+		if temp != -1 {
+			res = min(res, temp+1)
 		}
 	}
 
-	if ans == 1<<63-1 {
-		dp[target] = -1
-	} else {
-		dp[target] = ans
+	// res 依然等于 intMax 说明无法组成 target
+	if res == intMax {
+		res = -1
 	}
 
-	return dp[target]
+	dp[target] = res
+
+	return res
 }
 
 func min(a, b int) int {
