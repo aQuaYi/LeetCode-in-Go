@@ -3,20 +3,11 @@ package Problem0699
 import "container/heap"
 
 func fallingSquares(positions [][]int) []int {
-	res := make([]int, 1, len(positions))
-	res[0] = positions[0][1]
-
-	sp := &segment{
-		left:   positions[0][0],
-		right:  positions[0][0] + positions[0][1],
-		height: positions[0][1],
-	}
-
+	res := make([]int, 0, len(positions))
 	pq := make(PQ, 0, len(positions))
-	heap.Push(&pq, sp)
 
-	for i := 1; i < len(positions); i++ {
-		sp = &segment{
+	for i := 0; i < len(positions); i++ {
+		sp := &segment{
 			left:   positions[i][0],
 			right:  positions[i][0] + positions[i][1],
 			height: positions[i][1],
@@ -32,38 +23,38 @@ func fallingSquares(positions [][]int) []int {
 		// for j := l; j <= r; j++ {
 		// }
 
-		for i := 0; i < len(pq); i++ {
-			if pq[i].right <= sp.left || sp.right <= pq[i].left {
+		for j := 0; j < len(pq); j++ {
+			if pq[j].right <= sp.left || sp.right <= pq[j].left {
 				continue
 			}
 
-			height = max(height, pq[i].height)
+			height = max(height, pq[j].height)
 
-			if sp.left <= pq[i].left && pq[i].right <= sp.right {
-				removes = append(removes, pq[i])
+			if sp.left <= pq[j].left && pq[j].right <= sp.right {
+				removes = append(removes, pq[j])
 			}
 
-			if pq[i].left < sp.left && sp.right < pq[i].right {
+			if pq[j].left < sp.left && sp.right < pq[j].right {
 				heap.Push(&pq, &segment{
 					left:   sp.right,
-					right:  pq[i].right,
-					height: pq[i].height,
+					right:  pq[j].right,
+					height: pq[j].height,
 				})
-				pq[i].right = sp.left
+				pq[j].right = sp.left
 				break
 			}
 
-			if pq[i].left < sp.left && sp.left < pq[i].right && pq[i].right <= sp.right {
-				pq[i].right = sp.left
+			if pq[j].left < sp.left && sp.left < pq[j].right && pq[j].right <= sp.right {
+				pq[j].right = sp.left
 			}
 
-			if sp.left <= pq[i].left && pq[i].left < sp.right && sp.right < pq[i].right {
-				pq[i].left = sp.right
+			if sp.left <= pq[j].left && pq[j].left < sp.right && sp.right < pq[j].right {
+				pq[j].left = sp.right
 			}
 		}
 
-		for i := 0; i < len(removes); i++ {
-			heap.Remove(&pq, removes[i].index)
+		for j := 0; j < len(removes); j++ {
+			heap.Remove(&pq, removes[j].index)
 		}
 
 		sp.height += height
@@ -117,31 +108,31 @@ func (pq *PQ) Pop() interface{} {
 	return temp
 }
 
-func getLeft(ss []*segment, s *segment) int {
-	lo, hi := 0, len(ss)-1
-	for lo < hi {
-		mid := lo + (hi-lo)/2
-		if ss[mid].right <= s.left {
-			lo = mid + 1
-		} else {
-			hi = mid - 1
-		}
-	}
-	return lo
-}
+// func getLeft(ss []*segment, s *segment) int {
+// 	lo, hi := 0, len(ss)-1
+// 	for lo < hi {
+// 		mid := lo + (hi-lo)/2
+// 		if ss[mid].right <= s.left {
+// 			lo = mid + 1
+// 		} else {
+// 			hi = mid - 1
+// 		}
+// 	}
+// 	return lo
+// }
 
-func getRight(ss []*segment, s *segment) int {
-	lo, hi := 0, len(ss)-1
-	for lo < hi {
-		mid := lo + (hi-lo)/2
-		if s.right <= ss[mid].left {
-			hi = mid - 1
-		} else {
-			lo = mid + 1
-		}
-	}
-	return hi
-}
+// func getRight(ss []*segment, s *segment) int {
+// 	lo, hi := 0, len(ss)-1
+// 	for lo < hi {
+// 		mid := lo + (hi-lo)/2
+// 		if s.right <= ss[mid].left {
+// 			hi = mid - 1
+// 		} else {
+// 			lo = mid + 1
+// 		}
+// 	}
+// 	return hi
+// }
 
 func max(a, b int) int {
 	if a > b {
