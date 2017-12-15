@@ -41,12 +41,12 @@ func fallingSquares(positions [][]int) []int {
 			}
 
 			if pq[i].left < sp.left && sp.right < pq[i].right {
-				pq[i].right = sp.left
 				heap.Push(&pq, &segment{
 					left:   sp.right,
 					right:  pq[i].right,
 					height: pq[i].height,
 				})
+				pq[i].right = sp.left
 				break
 			}
 
