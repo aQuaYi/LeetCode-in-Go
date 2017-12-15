@@ -73,11 +73,6 @@ type segment struct {
 	index int
 }
 
-// // 返回 a - b 后的宽度
-// func minus(a, b *segment) int {
-
-// }
-
 // PQ implements heap.Interface and holds entries.
 type PQ []*segment
 
