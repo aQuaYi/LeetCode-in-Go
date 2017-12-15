@@ -111,9 +111,8 @@ func build(p problem) {
 		}
 	}()
 
-	log.Println("等待 5 秒，打开题目页面")
-	time.Sleep(5 * time.Second)
-	log.Println("正在打开题目页面")
+	log.Println("等待 10 秒，打开题目页面")
+	time.Sleep(10 * time.Second)
 
 	// 利用 chrome 打开题目页面
 	go func() {
