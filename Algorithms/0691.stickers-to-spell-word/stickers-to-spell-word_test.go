@@ -15,6 +15,24 @@ var tcs = []struct {
 }{
 
 	{
+		[]string{"thethat", "with", "example", "science"},
+		"thehat",
+		1,
+	},
+
+	{
+		[]string{"t", "example", "science", "with"},
+		"thehat",
+		3,
+	},
+
+	{
+		[]string{"example", "science", "with"},
+		"thehat",
+		3,
+	},
+
+	{
 		[]string{"with", "example", "science"},
 		"thehat",
 		3,
