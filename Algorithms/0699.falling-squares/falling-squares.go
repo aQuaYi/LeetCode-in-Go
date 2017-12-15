@@ -23,11 +23,14 @@ func fallingSquares(positions [][]int) []int {
 		}
 
 		height := 0
+		removes := make([]*segment, 0, len(pq))
+
+		// TODO: 添加一个 []*segment 变量，按宽度维护好
+		// 避免，遍历 pq
+		//
 		// l, r := getLeft(ss, sp), getRight(ss, sp)
 		// for j := l; j <= r; j++ {
 		// }
-
-		removes := make([]*segment, 0, len(pq))
 
 		for i := 0; i < len(pq); i++ {
 			if pq[i].right <= sp.left || sp.right <= pq[i].left {
