@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|127|212|96|435|
+|**Accepted**|128|212|96|436|
 |**Total**|154|257|105|516|
 
 ## 题解
@@ -438,7 +438,7 @@
 |593| * Valid Square|40%|Medium| |
 |594|[Longest Harmonious Subsequence](./Algorithms/0594.longest-harmonious-subsequence)|40%|Easy| |
 |598|[Range Addition II](./Algorithms/0598.range-addition-ii)|48%|Easy| |
-|599| * Minimum Index Sum of Two Lists|46%|Easy| |
+|599|[Minimum Index Sum of Two Lists](./Algorithms/0599.minimum-index-sum-of-two-lists)|46%|Easy| |
 |600| * Non-negative Integers without Consecutive Ones|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |605|[Can Place Flowers](./Algorithms/0605.can-place-flowers)|30%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |606| * Construct String from Binary Tree|49%|Easy| |
