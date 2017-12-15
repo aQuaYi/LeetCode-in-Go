@@ -7,38 +7,23 @@ import (
 type TreeNode = kit.TreeNode
 
 func addOneRow(root *TreeNode, v int, d int) *TreeNode {
-	if d == 1 {
-		newRoot := newNode(v)
-		newRoot.Left = root
+	switch d {
+	case 1:
+		newRoot := &TreeNode{Val: v, Left: root}
 		return newRoot
+	case 2:
+		left := &TreeNode{Val: v, Left: root.Left}
+		right := &TreeNode{Val: v, Right: root.Right}
+		root.Left = left
+		root.Right = right
+	default:
+		if root.Left != nil {
+			root.Left = addOneRow(root.Left, v, d-1)
+		}
+		if root.Right != nil {
+			root.Right = addOneRow(root.Right, v, d-1)
+		}
 	}
-	helper(root, v, d)
+
 	return root
-}
-
-func helper(root *TreeNode, v, d int) {
-	if d == 2 {
-		tl := root.Left
-		root.Left = newNode(v)
-		root.Left.Left = tl
-		tr := root.Right
-		root.Right = newNode(v)
-		root.Right.Right = tr
-		return
-	}
-
-	if root.Left != nil {
-		helper(root.Left, v, d-1)
-	}
-
-	if root.Right != nil {
-		helper(root.Right, v, d-1)
-	}
-
-}
-
-func newNode(v int) *TreeNode {
-	return &TreeNode{
-		Val: v,
-	}
 }
