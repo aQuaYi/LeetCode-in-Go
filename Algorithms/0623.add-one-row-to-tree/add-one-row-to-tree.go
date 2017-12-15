@@ -1,7 +1,12 @@
 package Problem0623
 
-func fcName(para para int) int {
-res :=0 
+import (
+	"github.com/aQuaYi/LeetCode-in-Go/kit"
+)
 
-return res
+type TreeNode = kit.TreeNode
+
+func addOneRow(root *TreeNode, v int, d int) *TreeNode {
+
+	return root
 }
