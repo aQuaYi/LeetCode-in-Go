@@ -8,7 +8,7 @@ import (
 
 // 程序辅助设置
 const (
-	VERSION = "5.6.6"
+	VERSION = "5.7.0"
 
 	configFile      = "leetcode.toml"
 	leetCodeFile    = "leetcode.json"
@@ -17,7 +17,7 @@ const (
 
 	USAGE = `使用方法：
 	1. helper readme : 重新生成项目的 README.md 文件
-	2. helper n      : 生成第 n 题的答题文件夹
+	2. helper n      : 生成第 n 题的答题文件夹 (暂时不可用)
 	3. helper tasks  : 为未完成的题目，生成任务清单
 	4. helper check  : 检查出不能用 Go 解答的题目，并保存题号到 unavailable.json
 	5. helper v      : 查看 helper 的版本`

@@ -62,11 +62,6 @@ func build(p problem) {
 		log.Fatalf("第 %d 题的文件夹已经存在，请**移除**  %s 文件夹后，再尝试。", p.ID, p.Dir)
 	}
 
-	// 对于没有 accepted 的题目，直接删除重建
-	if err := os.RemoveAll(p.Dir); err != nil {
-		log.Fatalln("无法删除目录", p.Dir)
-	}
-
 	mask := syscall.Umask(0)
 	defer syscall.Umask(mask)
 
@@ -80,24 +75,24 @@ func build(p problem) {
 
 	creatREADME(p)
 
-	// 若本题无法使用 Go 语言解答，getFunction 会 panic
-	// 此 defer 就是用于处理此种情况
-	defer func() {
-		if err := recover(); err != nil {
-			log.Printf("获取第 %d 题的 getFunction() 出错：%s", p.ID, err)
-			// 添加 p.ID 到 unavailableFile
-			u := readUnavailable()
-			u.add(p.ID)
-			// 删除刚刚创建的目录
-			if err := os.RemoveAll(p.Dir); err != nil {
-				log.Fatalln("无法删除目录", p.Dir)
-			}
-		}
-	}()
-	fc, fcName, para, ans := getFunction(p.link())
+	// // 若本题无法使用 Go 语言解答，getFunction 会 panic
+	// // 此 defer 就是用于处理此种情况
+	// defer func() {
+	// 	if err := recover(); err != nil {
+	// 		log.Printf("获取第 %d 题的 getFunction() 出错：%s", p.ID, err)
+	// 		// 添加 p.ID 到 unavailableFile
+	// 		u := readUnavailable()
+	// 		u.add(p.ID)
+	// 		// 删除刚刚创建的目录
+	// 		if err := os.RemoveAll(p.Dir); err != nil {
+	// 			log.Fatalln("无法删除目录", p.Dir)
+	// 		}
+	// 	}
+	// }()
+	// fc, fcName, para, ans := getFunction(p.link())
 
-	creatGo(p, fc)
-	creatGoTest(p, fcName, para, ans)
+	// creatGo(p, fc)
+	// creatGoTest(p, fcName, para, ans)
 
 	log.Printf("%d.%s 的文件夹，创建完毕。\n", p.ID, p.Title)
 }
@@ -133,7 +128,10 @@ func getQuestionDescription(URL string) string {
 		log.Fatal(err)
 	}
 
+	fmt.Println(doc.Find("div.question-description"))
+
 	return strings.TrimSpace(doc.Find("div.question-description").Text())
+
 }
 
 func getFunction(URL string) (fc, fcName, para, ansType string) {
