@@ -27,7 +27,7 @@ var tcs = []struct {
 	{
 		[]string{"Shogun", "Tapioca Express", "Burger King", "KFC"},
 		[]string{"KFC", "Burger King", "Tapioca Express", "Shogun"},
-		[]string{"KFC", "Burger King", "Tapioca Express", "Shogun"},
+		[]string{"Shogun", "Tapioca Express", "Burger King", "KFC"},
 	},
 
 	// 可以有多个 testcase
