@@ -5,9 +5,11 @@ import (
 	"io/ioutil"
 	"log"
 	"os"
+	"os/exec"
 	"strconv"
 	"strings"
 	"syscall"
+	"time"
 
 	"github.com/aQuaYi/GoKit"
 
@@ -91,8 +93,39 @@ func build(p problem) {
 	// }()
 	// fc, fcName, para, ans := getFunction(p.link())
 
-	// creatGo(p, fc)
-	// creatGoTest(p, fcName, para, ans)
+	fcName := "fcName"
+	para := "para int"
+	ans := "int"
+
+	fc := fmt.Sprintf("func %s(para %s) %s {\nres :=0 \n\nreturn res\n}", fcName, para, ans)
+
+	creatGo(p, fc)
+	creatGoTest(p, fcName, para, ans)
+
+	// 利用 chrome 打开题目 submissions 页面
+	go func() {
+		cmd := exec.Command("google-chrome", "https://leetcode.com/submissions/")
+		_, err := cmd.Output()
+		if err != nil {
+			panic(err.Error())
+		}
+	}()
+
+	log.Println("等待 5 秒，打开题目页面")
+	time.Sleep(5 * time.Second)
+	log.Println("正在打开题目页面")
+
+	// 利用 chrome 打开题目页面
+	go func() {
+		cmd := exec.Command("google-chrome", p.link())
+		_, err := cmd.Output()
+		if err != nil {
+			panic(err.Error())
+		}
+	}()
+
+	log.Println("正在打开题目页面")
+	time.Sleep(2 * time.Second)
 
 	log.Printf("%d.%s 的文件夹，创建完毕。\n", p.ID, p.Title)
 }
@@ -109,7 +142,8 @@ func creatREADME(p problem) {
 见程序注释
 `
 
-	questionDescription := getQuestionDescription(p.link())
+	// questionDescription := getQuestionDescription(p.link())
+	questionDescription := ""
 
 	content := fmt.Sprintf(fileFormat, p.ID, p.Title, p.link(), questionDescription)
 
