@@ -93,11 +93,11 @@ func build(p problem) {
 	// }()
 	// fc, fcName, para, ans := getFunction(p.link())
 
-	fcName := "fcName"
+	fcName := "fn"
 	para := "para int"
 	ans := "int"
 
-	fc := fmt.Sprintf("func %s(para %s) %s {\nres :=0 \n\nreturn res\n}", fcName, para, ans)
+	fc := fmt.Sprintf("func %s(%s) %s {\nres :=0 \n\nreturn res\n}", fcName, para, ans)
 
 	creatGo(p, fc)
 	creatGoTest(p, fcName, para, ans)
