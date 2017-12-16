@@ -18,22 +18,24 @@ func solveEquation(equation string) string {
 	return "x=" + strconv.Itoa(b/a)
 }
 
-// 把 equation 整理成 a*x=b 的样式
+// 把 equation 整理成 a*x=b
 func analyze(equation string) (a, b int) {
 	es := strings.Split(equation, "=")
 	l, r := es[0], es[1]
-	la, lb := split(l)
-	ra, rb := split(r)
+	la, lb := sideAnalyze(l)
+	ra, rb := sideAnalyze(r)
 	return la - ra, rb - lb
 }
 
-func split(s string) (a, b int) {
+func sideAnalyze(s string) (a, b int) {
 	s = addPlus(s)
 	ss := strings.Split(s, "+")
 	for _, n := range ss {
 		if n[len(n)-1] == 'x' {
 			if n == "x" {
 				a++
+			} else if n == "-x" {
+				a--
 			} else {
 				t, _ := strconv.Atoi(n[:len(n)-1])
 				a += t
@@ -46,8 +48,10 @@ func split(s string) (a, b int) {
 	return
 }
 
+// 在 s[1:] 中的每个 '-' 前插入 '+'
+// 便于分割
 func addPlus(s string) string {
-	res := make([]byte, 1, len(s)*2)
+	res := make([]byte, 1, len(s)*3/2)
 	bs := []byte(s)
 	res[0] = bs[0]
 
