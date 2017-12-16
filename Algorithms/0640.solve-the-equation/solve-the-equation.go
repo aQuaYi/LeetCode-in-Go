@@ -32,8 +32,12 @@ func split(s string) (a, b int) {
 	ss := strings.Split(s, "+")
 	for _, n := range ss {
 		if n[len(n)-1] == 'x' {
-			t, _ := strconv.Atoi(n[:len(n)-1])
-			a += t
+			if n == "x" {
+				a++
+			} else {
+				t, _ := strconv.Atoi(n[:len(n)-1])
+				a += t
+			}
 		} else {
 			t, _ := strconv.Atoi(n)
 			b += t
