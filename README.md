@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|129|215|96|440|
+|**Accepted**|129|216|96|441|
 |**Total**|154|257|105|516|
 
 ## 题解
@@ -456,7 +456,7 @@
 |637| * Average of Levels in Binary Tree|55%|Easy| |
 |638| * Shopping Offers|43%|Medium| |
 |639|[Decode Ways II](./Algorithms/0639.decode-ways-ii)|24%|Hard| |
-|640| * Solve the Equation|38%|Medium| |
+|640|[Solve the Equation](./Algorithms/0640.solve-the-equation)|38%|Medium| |
 |643|[Maximum Average Subarray I](./Algorithms/0643.maximum-average-subarray-i)|37%|Easy| |
 |645| * Set Mismatch|39%|Easy| |
 |646|[Maximum Length of Pair Chain](./Algorithms/0646.maximum-length-of-pair-chain)|47%|Medium| |
