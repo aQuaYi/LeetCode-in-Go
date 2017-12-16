@@ -22,13 +22,15 @@ func solveEquation(equation string) string {
 func analyze(equation string) (a, b int) {
 	es := strings.Split(equation, "=")
 	l, r := es[0], es[1]
+	// la*x+lb=ra*x+rb
 	la, lb := sideAnalyze(l)
 	ra, rb := sideAnalyze(r)
 	return la - ra, rb - lb
 }
 
+// 	把 a1*x+b1+a2*x+b2 整理成 a*x+b
 func sideAnalyze(s string) (a, b int) {
-	s = addPlus(s)
+	s = s[:1] + strings.Replace(s[1:], "-", "+-", -1)
 	ss := strings.Split(s, "+")
 	for _, n := range ss {
 		if n[len(n)-1] == 'x' {
@@ -46,21 +48,4 @@ func sideAnalyze(s string) (a, b int) {
 		}
 	}
 	return
-}
-
-// 在 s[1:] 中的每个 '-' 前插入 '+'
-// 便于分割
-func addPlus(s string) string {
-	res := make([]byte, 1, len(s)*3/2)
-	bs := []byte(s)
-	res[0] = bs[0]
-
-	for i := 1; i < len(bs); i++ {
-		if bs[i] == '-' {
-			res = append(res, '+')
-		}
-		res = append(res, bs[i])
-	}
-
-	return string(res)
 }
