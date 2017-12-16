@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|128|212|96|436|
+|**Accepted**|128|213|96|437|
 |**Total**|154|257|105|516|
 
 ## 题解
@@ -151,7 +151,7 @@
 |132|[Palindrome Partitioning II](./Algorithms/0132.palindrome-partitioning-ii)|24%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |134|[Gas Station](./Algorithms/0134.gas-station)|29%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |135|[Candy](./Algorithms/0135.candy)|25%|Hard| |
-|136|[Single Number](./Algorithms/0136.single-number)|54%|Easy| |
+|136|[Single Number](./Algorithms/0136.single-number)|55%|Easy| |
 |137|[Single Number II](./Algorithms/0137.single-number-ii)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |139|[Word Break](./Algorithms/0139.word-break)|30%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |140|[Word Break II](./Algorithms/0140.word-break-ii)|23%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -221,7 +221,7 @@
 |239|[Sliding Window Maximum](./Algorithms/0239.sliding-window-maximum)|33%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |240|[Search a 2D Matrix II](./Algorithms/0240.search-a-2d-matrix-ii)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |241|[Different Ways to Add Parentheses](./Algorithms/0241.different-ways-to-add-parentheses)|45%|Medium| |
-|242|[Valid Anagram](./Algorithms/0242.valid-anagram)|46%|Easy| |
+|242|[Valid Anagram](./Algorithms/0242.valid-anagram)|47%|Easy| |
 |257|[Binary Tree Paths](./Algorithms/0257.binary-tree-paths)|39%|Easy| |
 |258|[Add Digits](./Algorithms/0258.add-digits)|51%|Easy| |
 |260|[Single Number III](./Algorithms/0260.single-number-iii)|52%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -341,7 +341,7 @@
 |441|[Arranging Coins](./Algorithms/0441.arranging-coins)|36%|Easy| |
 |442|[Find All Duplicates in an Array](./Algorithms/0442.find-all-duplicates-in-an-array)|56%|Medium| |
 |443|[String Compression](./Algorithms/0443.string-compression)|36%|Easy|[❤](https://leetcode.com/list/oussv5j)|
-|445|[Add Two Numbers II](./Algorithms/0445.add-two-numbers-ii)|45%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|445|[Add Two Numbers II](./Algorithms/0445.add-two-numbers-ii)|46%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |446|[Arithmetic Slices II - Subsequence](./Algorithms/0446.arithmetic-slices-ii-subsequence)|27%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |447|[Number of Boomerangs](./Algorithms/0447.number-of-boomerangs)|45%|Easy| |
 |448|[Find All Numbers Disappeared in an Array](./Algorithms/0448.find-all-numbers-disappeared-in-an-array)|51%|Easy| |
@@ -442,7 +442,7 @@
 |600| * Non-negative Integers without Consecutive Ones|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |605|[Can Place Flowers](./Algorithms/0605.can-place-flowers)|30%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |606| * Construct String from Binary Tree|49%|Easy| |
-|609| * Find Duplicate File in System|52%|Medium| |
+|609|[Find Duplicate File in System](./Algorithms/0609.find-duplicate-file-in-system)|52%|Medium| |
 |611|[Valid Triangle Number](./Algorithms/0611.valid-triangle-number)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |617| * Merge Two Binary Trees|67%|Easy| |
 |621|[Task Scheduler](./Algorithms/0621.task-scheduler)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -452,7 +452,7 @@
 |630|[Course Schedule III](./Algorithms/0630.course-schedule-iii)|28%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |632|[Smallest Range](./Algorithms/0632.smallest-range)|42%|Hard| |
 |633| * Sum of Square Numbers|32%|Easy| |
-|636| * Exclusive Time of Functions|44%|Medium| |
+|636| * Exclusive Time of Functions|43%|Medium| |
 |637| * Average of Levels in Binary Tree|55%|Easy| |
 |638| * Shopping Offers|43%|Medium| |
 |639|[Decode Ways II](./Algorithms/0639.decode-ways-ii)|24%|Hard| |
@@ -473,7 +473,7 @@
 |659| * Split Array into Consecutive Subsequences|35%|Medium| |
 |661|[Image Smoother](./Algorithms/0661.image-smoother)|46%|Easy| |
 |662| * Maximum Width of Binary Tree|37%|Medium| |
-|664|[Strange Printer](./Algorithms/0664.strange-printer)|32%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|664|[Strange Printer](./Algorithms/0664.strange-printer)|33%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |665| * Non-decreasing Array|20%|Easy| |
 |667|[Beautiful Arrangement II](./Algorithms/0667.beautiful-arrangement-ii)|51%|Medium| |
 |668|[Kth Smallest Number in Multiplication Table](./Algorithms/0668.kth-smallest-number-in-multiplication-table)|38%|Hard| |
@@ -528,13 +528,13 @@
 |736| * Parse Lisp Expression|41%|Hard| |
 |737| * Sentence Similarity II|40%|Medium| |
 |738| * Monotone Increasing Digits|41%|Medium| |
-|739| * Daily Temperatures|52%|Medium| |
+|739| * Daily Temperatures|53%|Medium| |
 |740| * Delete and Earn|41%|Medium| |
 |741| * Cherry Pickup|22%|Hard| |
 |743| * Closest Leaf in a Binary Tree|31%|Medium| |
 |744| * Network Delay Time|32%|Medium| |
 |745| * Find Smallest Letter Greater Than Target|52%|Easy| |
-|746| * Prefix and Suffix Search|19%|Hard| |
+|746| * Prefix and Suffix Search|20%|Hard| |
 
 以下免费的算法题，暂时不能使用 Go 解答
 
