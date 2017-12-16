@@ -5,6 +5,7 @@ import (
 )
 
 func findDuplicate(path []string) [][]string {
+	// m 用于记录拥有相同文件内容的各个文件的个数
 	m := make(map[string][]string, len(path)*2)
 	for i := 0; i < len(path); i++ {
 		analyze(path[i], m)
@@ -20,6 +21,7 @@ func findDuplicate(path []string) [][]string {
 	return res
 }
 
+// 把 path 中的文件，按照文件内容，归类记录
 func analyze(path string, m map[string][]string) {
 	fs := strings.Split(path, " ")
 	p := fs[0]
