@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|129|214|96|439|
+|**Accepted**|129|215|96|440|
 |**Total**|154|257|105|516|
 
 ## 题解
@@ -435,7 +435,7 @@
 |587|[Erect the Fence](./Algorithms/0587.erect-the-fence)|32%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |591| * Tag Validator|30%|Hard| |
 |592|[Fraction Addition and Subtraction](./Algorithms/0592.fraction-addition-and-subtraction)|46%|Medium| |
-|593| * Valid Square|40%|Medium| |
+|593|[Valid Square](./Algorithms/0593.valid-square)|40%|Medium| |
 |594|[Longest Harmonious Subsequence](./Algorithms/0594.longest-harmonious-subsequence)|40%|Easy| |
 |598|[Range Addition II](./Algorithms/0598.range-addition-ii)|48%|Easy| |
 |599|[Minimum Index Sum of Two Lists](./Algorithms/0599.minimum-index-sum-of-two-lists)|46%|Easy| |
@@ -505,7 +505,7 @@
 |698| * Partition to K Equal Sum Subsets|37%|Medium| |
 |699|[Falling Squares](./Algorithms/0699.falling-squares)|37%|Hard| |
 |712| * Minimum ASCII Delete Sum for Two Strings|50%|Medium| |
-|713| * Subarray Product Less Than K|32%|Medium| |
+|713| * Subarray Product Less Than K|33%|Medium| |
 |714| * Best Time to Buy and Sell Stock with Transaction Fee|41%|Medium| |
 |715| * Range Module|30%|Hard| |
 |717| * 1-bit and 2-bit Characters|50%|Easy| |
