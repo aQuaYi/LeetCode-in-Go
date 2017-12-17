@@ -1,7 +1,7 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 排名](https://img.shields.io/badge/Ranking-3288-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/Ranking-2944-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 答题进度](https://img.shields.io/badge/Progress-85%25-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
@@ -12,8 +12,8 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|129|218|96|443|
-|**Total**|154|257|105|516|
+|**Accepted**|129|219|96|444|
+|**Total**|156|258|106|520|
 
 ## 题解
 
@@ -31,7 +31,7 @@
 |10|[Regular Expression Matching](./Algorithms/0010.regular-expression-matching)|24%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |11|[Container With Most Water](./Algorithms/0011.container-with-most-water)|36%|Medium| |
 |12|[Integer to Roman](./Algorithms/0012.integer-to-roman)|45%|Medium| |
-|13|[Roman to Integer](./Algorithms/0013.roman-to-integer)|46%|Easy| |
+|13|[Roman to Integer](./Algorithms/0013.roman-to-integer)|47%|Easy| |
 |14|[Longest Common Prefix](./Algorithms/0014.longest-common-prefix)|31%|Easy| |
 |15|[3Sum](./Algorithms/0015.3sum)|21%|Medium| |
 |16|[3Sum Closest](./Algorithms/0016.3sum-closest)|31%|Medium| |
@@ -463,7 +463,7 @@
 |647| * Palindromic Substrings|55%|Medium| |
 |648|[Replace Words](./Algorithms/0648.replace-words)|47%|Medium| |
 |649|[Dota2 Senate](./Algorithms/0649.dota2-senate)|35%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|650| * 2 Keys Keyboard|44%|Medium| |
+|650|[2 Keys Keyboard](./Algorithms/0650.2-keys-keyboard)|44%|Medium| |
 |652| * Find Duplicate Subtrees|36%|Medium| |
 |653| * Two Sum IV - Input is a BST|50%|Easy| |
 |654| * Maximum Binary Tree|69%|Medium| |
@@ -471,7 +471,7 @@
 |657| * Judge Route Circle|68%|Easy| |
 |658| * Find K Closest Elements|35%|Medium| |
 |659| * Split Array into Consecutive Subsequences|35%|Medium| |
-|661|[Image Smoother](./Algorithms/0661.image-smoother)|46%|Easy| |
+|661|[Image Smoother](./Algorithms/0661.image-smoother)|45%|Easy| |
 |662| * Maximum Width of Binary Tree|37%|Medium| |
 |664|[Strange Printer](./Algorithms/0664.strange-printer)|33%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |665| * Non-decreasing Array|20%|Easy| |
@@ -535,6 +535,10 @@
 |744| * Network Delay Time|32%|Medium| |
 |745| * Find Smallest Letter Greater Than Target|51%|Easy| |
 |746| * Prefix and Suffix Search|20%|Hard| |
+|747| * Min Cost Climbing Stairs|47%|Easy| |
+|749| * Shortest Completing Word|54%|Easy| |
+|750| * Contain Virus|29%|Hard| |
+|751| * Number Of Corner Rectangles|39%|Medium| |
 
 以下免费的算法题，暂时不能使用 Go 解答
 
