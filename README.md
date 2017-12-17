@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|129|216|96|441|
+|**Accepted**|129|218|96|443|
 |**Total**|154|257|105|516|
 
 ## 题解
@@ -186,7 +186,7 @@
 |200|[Number of Islands](./Algorithms/0200.number-of-islands)|35%|Medium| |
 |201|[Bitwise AND of Numbers Range](./Algorithms/0201.bitwise-and-of-numbers-range)|34%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |202|[Happy Number](./Algorithms/0202.happy-number)|41%|Easy| |
-|203|[Remove Linked List Elements](./Algorithms/0203.remove-linked-list-elements)|32%|Easy| |
+|203|[Remove Linked List Elements](./Algorithms/0203.remove-linked-list-elements)|33%|Easy| |
 |204|[Count Primes](./Algorithms/0204.count-primes)|26%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |205|[Isomorphic Strings](./Algorithms/0205.isomorphic-strings)|34%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |206|[Reverse Linked List](./Algorithms/0206.reverse-linked-list)|46%|Easy| |
@@ -405,7 +405,7 @@
 |529|[Minesweeper](./Algorithms/0529.minesweeper)|49%|Medium| |
 |530|[Minimum Absolute Difference in BST](./Algorithms/0530.minimum-absolute-difference-in-bst)|47%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |532|[K-diff Pairs in an Array](./Algorithms/0532.k-diff-pairs-in-an-array)|28%|Easy| |
-|537|[Complex Number Multiplication](./Algorithms/0537.complex-number-multiplication)|64%|Medium| |
+|537|[Complex Number Multiplication](./Algorithms/0537.complex-number-multiplication)|63%|Medium| |
 |538|[Convert BST to Greater Tree](./Algorithms/0538.convert-bst-to-greater-tree)|49%|Easy| |
 |539|[Minimum Time Difference](./Algorithms/0539.minimum-time-difference)|46%|Medium| |
 |540|[Single Element in a Sorted Array](./Algorithms/0540.single-element-in-a-sorted-array)|56%|Medium| |
@@ -461,8 +461,8 @@
 |645| * Set Mismatch|39%|Easy| |
 |646|[Maximum Length of Pair Chain](./Algorithms/0646.maximum-length-of-pair-chain)|47%|Medium| |
 |647| * Palindromic Substrings|55%|Medium| |
-|648| * Replace Words|47%|Medium| |
-|649| * Dota2 Senate|35%|Medium| |
+|648|[Replace Words](./Algorithms/0648.replace-words)|47%|Medium| |
+|649|[Dota2 Senate](./Algorithms/0649.dota2-senate)|35%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |650| * 2 Keys Keyboard|44%|Medium| |
 |652| * Find Duplicate Subtrees|36%|Medium| |
 |653| * Two Sum IV - Input is a BST|50%|Easy| |
@@ -505,11 +505,11 @@
 |698| * Partition to K Equal Sum Subsets|37%|Medium| |
 |699|[Falling Squares](./Algorithms/0699.falling-squares)|37%|Hard| |
 |712| * Minimum ASCII Delete Sum for Two Strings|50%|Medium| |
-|713| * Subarray Product Less Than K|33%|Medium| |
+|713| * Subarray Product Less Than K|32%|Medium| |
 |714| * Best Time to Buy and Sell Stock with Transaction Fee|41%|Medium| |
 |715| * Range Module|30%|Hard| |
 |717| * 1-bit and 2-bit Characters|50%|Easy| |
-|718| * Maximum Length of Repeated Subarray|39%|Medium| |
+|718| * Maximum Length of Repeated Subarray|40%|Medium| |
 |719| * Find K-th Smallest Pair Distance|26%|Hard| |
 |720| * Longest Word in Dictionary|40%|Easy| |
 |721| * Accounts Merge|29%|Medium| |
@@ -531,9 +531,9 @@
 |739| * Daily Temperatures|53%|Medium| |
 |740| * Delete and Earn|41%|Medium| |
 |741| * Cherry Pickup|22%|Hard| |
-|743| * Closest Leaf in a Binary Tree|30%|Medium| |
+|743| * Closest Leaf in a Binary Tree|31%|Medium| |
 |744| * Network Delay Time|32%|Medium| |
-|745| * Find Smallest Letter Greater Than Target|52%|Easy| |
+|745| * Find Smallest Letter Greater Than Target|51%|Easy| |
 |746| * Prefix and Suffix Search|20%|Hard| |
 
 以下免费的算法题，暂时不能使用 Go 解答
