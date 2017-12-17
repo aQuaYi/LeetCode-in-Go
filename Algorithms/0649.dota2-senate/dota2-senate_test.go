@@ -14,6 +14,11 @@ var tcs = []struct {
 }{
 
 	{
+		"RRDDD",
+		"Radiant",
+	},
+
+	{
 		"DDRRR",
 		"Dire",
 	},
