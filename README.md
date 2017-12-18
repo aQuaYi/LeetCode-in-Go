@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|129|221|96|446|
+|**Accepted**|129|222|96|447|
 |**Total**|156|258|106|520|
 
 ## 题解
@@ -70,7 +70,7 @@
 |49|[Group Anagrams](./Algorithms/0049.group-anagrams)|36%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |50|[Pow(x, n)](./Algorithms/0050.powx-n)|25%|Medium| |
 |51|[N-Queens](./Algorithms/0051.n-queens)|32%|Hard| |
-|52|[N-Queens II](./Algorithms/0052.n-queens-ii)|45%|Hard| |
+|52|[N-Queens II](./Algorithms/0052.n-queens-ii)|46%|Hard| |
 |53|[Maximum Subarray](./Algorithms/0053.maximum-subarray)|40%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |54|[Spiral Matrix](./Algorithms/0054.spiral-matrix)|26%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |55|[Jump Game](./Algorithms/0055.jump-game)|29%|Medium| |
@@ -460,7 +460,7 @@
 |643|[Maximum Average Subarray I](./Algorithms/0643.maximum-average-subarray-i)|37%|Easy| |
 |645| * Set Mismatch|39%|Easy| |
 |646|[Maximum Length of Pair Chain](./Algorithms/0646.maximum-length-of-pair-chain)|47%|Medium| |
-|647| * Palindromic Substrings|55%|Medium| |
+|647|[Palindromic Substrings](./Algorithms/0647.palindromic-substrings)|55%|Medium| |
 |648|[Replace Words](./Algorithms/0648.replace-words)|47%|Medium| |
 |649|[Dota2 Senate](./Algorithms/0649.dota2-senate)|35%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |650|[2 Keys Keyboard](./Algorithms/0650.2-keys-keyboard)|44%|Medium| |
@@ -536,7 +536,7 @@
 |745| * Find Smallest Letter Greater Than Target|51%|Easy| |
 |746| * Prefix and Suffix Search|20%|Hard| |
 |747| * Min Cost Climbing Stairs|49%|Easy| |
-|749| * Shortest Completing Word|55%|Easy| |
+|749| * Shortest Completing Word|54%|Easy| |
 |750| * Contain Virus|34%|Hard| |
 |751| * Number Of Corner Rectangles|43%|Medium| |
 
