@@ -14,8 +14,15 @@ var tcs = []struct {
 	ans  []int
 }{
 
+{
+	2
+	["0:start:0","0:start:2","0:end:5","1:start:6","1:end:6","0:end:7"]
+	[]int{7,1},
+},
+
+
 	{
-		2,
+		3,
 		[]string{
 			"0:start:0",
 			"1:start:2",

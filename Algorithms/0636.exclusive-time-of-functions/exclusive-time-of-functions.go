@@ -21,7 +21,7 @@ func exclusiveTime(n int, logs []string) []int {
 		ls := stack[len(stack)-1]
 		stack = stack[:len(stack)-1]
 
-		fnTime := l[1] - ls[1]
+		fnTime := l[1] - ls[1] + 1
 
 		res[ls[0]] += fnTime - time
 
