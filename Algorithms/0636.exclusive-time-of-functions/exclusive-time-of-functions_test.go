@@ -20,6 +20,12 @@ var tcs = []struct {
 		[]int{3, 4},
 	},
 
+	{
+		2,
+		[]string{"0:start:0", "0:end:0", "1:start:1", "1:end:1"},
+		[]int{1, 1},
+	},
+
 	// {
 	// 	8,
 	// 	[]string{
