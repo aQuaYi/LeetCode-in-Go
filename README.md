@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|129|219|96|444|
+|**Accepted**|129|221|96|446|
 |**Total**|156|258|106|520|
 
 ## 题解
@@ -401,7 +401,7 @@
 |523|[Continuous Subarray Sum](./Algorithms/0523.continuous-subarray-sum)|23%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |524|[Longest Word in Dictionary through Deleting](./Algorithms/0524.longest-word-in-dictionary-through-deleting)|43%|Medium| |
 |525| * Contiguous Array|41%|Medium| |
-|526|[Beautiful Arrangement](./Algorithms/0526.beautiful-arrangement)|54%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|526|[Beautiful Arrangement](./Algorithms/0526.beautiful-arrangement)|53%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |529|[Minesweeper](./Algorithms/0529.minesweeper)|49%|Medium| |
 |530|[Minimum Absolute Difference in BST](./Algorithms/0530.minimum-absolute-difference-in-bst)|47%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |532|[K-diff Pairs in an Array](./Algorithms/0532.k-diff-pairs-in-an-array)|28%|Easy| |
@@ -426,7 +426,7 @@
 |564|[Find the Closest Palindrome](./Algorithms/0564.find-the-closest-palindrome)|17%|Hard| |
 |565|[Array Nesting](./Algorithms/0565.array-nesting)|49%|Medium| |
 |566|[Reshape the Matrix](./Algorithms/0566.reshape-the-matrix)|58%|Easy| |
-|567| * Permutation in String|36%|Medium| |
+|567|[Permutation in String](./Algorithms/0567.permutation-in-string)|36%|Medium| |
 |572|[Subtree of Another Tree](./Algorithms/0572.subtree-of-another-tree)|40%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |575|[Distribute Candies](./Algorithms/0575.distribute-candies)|58%|Easy| |
 |576| * Out of Boundary Paths|30%|Medium| |
@@ -452,7 +452,7 @@
 |630|[Course Schedule III](./Algorithms/0630.course-schedule-iii)|28%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |632|[Smallest Range](./Algorithms/0632.smallest-range)|42%|Hard| |
 |633| * Sum of Square Numbers|32%|Easy| |
-|636| * Exclusive Time of Functions|43%|Medium| |
+|636|[Exclusive Time of Functions](./Algorithms/0636.exclusive-time-of-functions)|43%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |637| * Average of Levels in Binary Tree|55%|Easy| |
 |638| * Shopping Offers|43%|Medium| |
 |639|[Decode Ways II](./Algorithms/0639.decode-ways-ii)|24%|Hard| |
@@ -505,14 +505,14 @@
 |698| * Partition to K Equal Sum Subsets|37%|Medium| |
 |699|[Falling Squares](./Algorithms/0699.falling-squares)|37%|Hard| |
 |712| * Minimum ASCII Delete Sum for Two Strings|50%|Medium| |
-|713| * Subarray Product Less Than K|32%|Medium| |
-|714| * Best Time to Buy and Sell Stock with Transaction Fee|41%|Medium| |
+|713| * Subarray Product Less Than K|33%|Medium| |
+|714| * Best Time to Buy and Sell Stock with Transaction Fee|42%|Medium| |
 |715| * Range Module|30%|Hard| |
 |717| * 1-bit and 2-bit Characters|50%|Easy| |
 |718| * Maximum Length of Repeated Subarray|40%|Medium| |
 |719| * Find K-th Smallest Pair Distance|26%|Hard| |
 |720| * Longest Word in Dictionary|40%|Easy| |
-|721| * Accounts Merge|29%|Medium| |
+|721| * Accounts Merge|30%|Medium| |
 |722| * Remove Comments|26%|Medium| |
 |724| * Find Pivot Index|40%|Easy| |
 |725| * Split Linked List in Parts|49%|Medium| |
@@ -535,10 +535,10 @@
 |744| * Network Delay Time|32%|Medium| |
 |745| * Find Smallest Letter Greater Than Target|51%|Easy| |
 |746| * Prefix and Suffix Search|20%|Hard| |
-|747| * Min Cost Climbing Stairs|47%|Easy| |
-|749| * Shortest Completing Word|54%|Easy| |
-|750| * Contain Virus|29%|Hard| |
-|751| * Number Of Corner Rectangles|39%|Medium| |
+|747| * Min Cost Climbing Stairs|49%|Easy| |
+|749| * Shortest Completing Word|55%|Easy| |
+|750| * Contain Virus|34%|Hard| |
+|751| * Number Of Corner Rectangles|43%|Medium| |
 
 以下免费的算法题，暂时不能使用 Go 解答
 
