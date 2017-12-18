@@ -2,7 +2,7 @@
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 排名](https://img.shields.io/badge/Ranking-2944-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 答题进度](https://img.shields.io/badge/Progress-85%25-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 答题进度](https://img.shields.io/badge/Progress-86%25-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 
@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|129|222|96|447|
+|**Accepted**|129|223|96|448|
 |**Total**|156|258|106|520|
 
 ## 题解
@@ -45,7 +45,7 @@
 |24|[Swap Nodes in Pairs](./Algorithms/0024.swap-nodes-in-pairs)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |25|[Reverse Nodes in k-Group](./Algorithms/0025.reverse-nodes-in-k-group)|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |26|[Remove Duplicates from Sorted Array](./Algorithms/0026.remove-duplicates-from-sorted-array)|35%|Easy|[❤](https://leetcode.com/list/oussv5j)|
-|27|[Remove Element](./Algorithms/0027.remove-element)|39%|Easy| |
+|27|[Remove Element](./Algorithms/0027.remove-element)|40%|Easy| |
 |28|[Implement strStr()](./Algorithms/0028.implement-strstr)|28%|Easy| |
 |29|[Divide Two Integers](./Algorithms/0029.divide-two-integers)|15%|Medium| |
 |30|[Substring with Concatenation of All Words](./Algorithms/0030.substring-with-concatenation-of-all-words)|22%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -454,19 +454,19 @@
 |633| * Sum of Square Numbers|32%|Easy| |
 |636|[Exclusive Time of Functions](./Algorithms/0636.exclusive-time-of-functions)|43%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |637| * Average of Levels in Binary Tree|55%|Easy| |
-|638| * Shopping Offers|43%|Medium| |
+|638| * Shopping Offers|43%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |639|[Decode Ways II](./Algorithms/0639.decode-ways-ii)|24%|Hard| |
 |640|[Solve the Equation](./Algorithms/0640.solve-the-equation)|38%|Medium| |
 |643|[Maximum Average Subarray I](./Algorithms/0643.maximum-average-subarray-i)|37%|Easy| |
 |645| * Set Mismatch|39%|Easy| |
 |646|[Maximum Length of Pair Chain](./Algorithms/0646.maximum-length-of-pair-chain)|47%|Medium| |
-|647|[Palindromic Substrings](./Algorithms/0647.palindromic-substrings)|55%|Medium| |
+|647|[Palindromic Substrings](./Algorithms/0647.palindromic-substrings)|55%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |648|[Replace Words](./Algorithms/0648.replace-words)|47%|Medium| |
 |649|[Dota2 Senate](./Algorithms/0649.dota2-senate)|35%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |650|[2 Keys Keyboard](./Algorithms/0650.2-keys-keyboard)|44%|Medium| |
 |652| * Find Duplicate Subtrees|36%|Medium| |
 |653| * Two Sum IV - Input is a BST|50%|Easy| |
-|654| * Maximum Binary Tree|69%|Medium| |
+|654|[Maximum Binary Tree](./Algorithms/0654.maximum-binary-tree)|69%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |655| * Print Binary Tree|49%|Medium| |
 |657| * Judge Route Circle|68%|Easy| |
 |658| * Find K Closest Elements|35%|Medium| |
@@ -485,7 +485,7 @@
 |674| * Longest Continuous Increasing Subsequence|42%|Easy| |
 |675|[Cut Off Trees for Golf Event](./Algorithms/0675.cut-off-trees-for-golf-event)|26%|Hard| |
 |676| * Implement Magic Dictionary|49%|Medium| |
-|677| * Map Sum Pairs|51%|Medium| |
+|677| * Map Sum Pairs|52%|Medium| |
 |678| * Valid Parenthesis String|29%|Medium| |
 |679|[24 Game](./Algorithms/0679.24-game)|38%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |680| * Valid Palindrome II|32%|Easy| |
@@ -537,8 +537,8 @@
 |746| * Prefix and Suffix Search|20%|Hard| |
 |747| * Min Cost Climbing Stairs|49%|Easy| |
 |749| * Shortest Completing Word|54%|Easy| |
-|750| * Contain Virus|34%|Hard| |
-|751| * Number Of Corner Rectangles|43%|Medium| |
+|750| * Contain Virus|35%|Hard| |
+|751| * Number Of Corner Rectangles|44%|Medium| |
 
 以下免费的算法题，暂时不能使用 Go 解答
 
