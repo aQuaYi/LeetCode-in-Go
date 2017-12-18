@@ -9,7 +9,8 @@ func exclusiveTime(n int, logs []string) []int {
 	size := len(logs)
 	stack := make([][]int, 0, size)
 	res := make([]int, n)
-	time := 0
+	startTime := 0
+
 	for _, log := range logs {
 		soe, l := analyze(log)
 
@@ -18,22 +19,14 @@ func exclusiveTime(n int, logs []string) []int {
 			continue
 		}
 
-		ls := stack[len(stack)-1]
-		stack = stack[:len(stack)-1]
-
-		if len(stack) > 0 && ls[0] == stack[len(stack)-1][0] {
-			continue
-		}
-
-		fnTime := l[1] - ls[1] + 1
-
-		res[ls[0]] += fnTime - time
-
 		if len(stack) > 0 {
-			time = fnTime
-		} else {
-			time = 0
+			startTime = stack[len(stack)-1][1]
+			stack = stack[:len(stack)-1]
 		}
+
+		res[l[0]] += l[1] - startTime + 1
+
+		startTime = l[1]
 	}
 
 	return res
