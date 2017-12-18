@@ -8,38 +8,45 @@ import (
 func exclusiveTime(n int, logs []string) []int {
 	size := len(logs)
 
-	stack := make([][]int, 0, size)
 	res := make([]int, n)
-	lastEnd := make([]int, n)
+	// stack 用于存放　start 的 function ID
+	stack := make([]int, 0, size)
+	// 注意，题目中 start:2 和 end:2 相隔了一秒
+	// endPoint = 3 相当于题目中的　end:2
+	endPoint := 0
+	lastEndPoint := 0
 
 	for _, log := range logs {
-		soe, l := analyze(log)
+		fid, soe, ts := analyze(log)
 
 		if soe == "start" {
-			stack = append(stack, l)
-			continue
-		}
-
-		ls := stack[len(stack)-1]
-		stack = stack[:len(stack)-1]
-
-		fnTime := l[1] - ls[1] + 1
-
-		if lastEnd[l[0]] < ls[1] {
-			res[l[0]] += fnTime
+			// start:ts 相当于 endPoint = ts
+			endPoint = ts
+			if len(stack) > 0 {
+				// 遇到了新的 start
+				// 上一个 start 的 function 就需要即使统计运行时间
+				res[stack[len(stack)-1]] += endPoint - lastEndPoint
+			}
+			stack = append(stack, fid)
+			lastEndPoint = endPoint
 		} else {
-			res[l[0]] = fnTime
+			// end:ts 相当于 endPoint = ts + 1
+			endPoint = ts + 1
+			res[fid] += endPoint - lastEndPoint
+			stack = stack[:len(stack)-1]
+			lastEndPoint = endPoint
 		}
 
-		lastEnd[l[0]] = l[1]
 	}
 
 	return res
 }
 
-func analyze(log string) (string, []int) {
+// 把 "function_id:start_or_end:timestamp" 解析后
+// 返回 function_id, start_or_end, timestamp
+func analyze(log string) (int, string, int) {
 	ss := strings.Split(log, ":")
 	funcID, _ := strconv.Atoi(ss[0])
 	timeStamp, _ := strconv.Atoi(ss[2])
-	return ss[1], []int{funcID, timeStamp}
+	return funcID, ss[1], timeStamp
 }
