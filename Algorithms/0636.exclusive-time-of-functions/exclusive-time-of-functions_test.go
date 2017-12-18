@@ -14,6 +14,12 @@ var tcs = []struct {
 	ans  []int
 }{
 
+	{
+		2,
+		[]string{"0:start:0", "1:start:2", "1:end:5", "0:end:6"},
+		[]int{3, 4},
+	},
+
 	// {
 	// 	8,
 	// 	[]string{
@@ -78,12 +84,6 @@ var tcs = []struct {
 			"2:end:18",
 		},
 		[]int{3, 4, 11},
-	},
-
-	{
-		2,
-		[]string{"0:start:0", "1:start:2", "1:end:5", "0:end:6"},
-		[]int{3, 4},
 	},
 
 	// 可以有多个 testcase
