@@ -14,6 +14,12 @@ var tcs = []struct {
 }{
 
 	{
+		"kitten",
+		"sitting",
+		false,
+	},
+
+	{
 		"ab",
 		"ab",
 		true,

@@ -1,21 +1,23 @@
 package Problem0567
 
-import (
-	"strings"
-)
-
 func checkInclusion(s1, s2 string) bool {
-	s1 = reverse(s1)
-	return strings.Contains(s2, s1)
+	n := len(s1)
+	b1 := []byte(s1)
+	b2 := []byte(s2)
+	for i := 0; i+n <= len(b2); i++ {
+		if isPermutation(b1, b2[i:i+n]) {
+			return true
+		}
+	}
+	return false
 }
 
-func reverse(s string) string {
-	bs := []byte(s)
-	i, j := 0, len(bs)-1
-	for i < j {
-		bs[i], bs[j] = bs[j], bs[i]
-		i++
-		j--
+func isPermutation(s1, s2 []byte) bool {
+	var xor byte
+	n := len(s1)
+	for i := 0; i < n; i++ {
+		xor ^= s1[i]
+		xor ^= s2[i]
 	}
-	return string(bs)
+	return xor == 0
 }
