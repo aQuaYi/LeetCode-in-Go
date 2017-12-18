@@ -19,8 +19,8 @@ Output: return the tree root node representing the following tree:
       6
     /   \
    3     5
-    \    / 
-     2  0   
+    \    /
+     2  0
        \
         1
 ```
