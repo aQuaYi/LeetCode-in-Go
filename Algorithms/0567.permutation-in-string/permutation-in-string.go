@@ -14,10 +14,12 @@ func checkInclusion(s1, s2 string) bool {
 
 func isPermutation(s1, s2 []byte) bool {
 	var xor byte
+	var sum1, sum2 int
 	n := len(s1)
 	for i := 0; i < n; i++ {
-		xor ^= s1[i]
-		xor ^= s2[i]
+		xor ^= s1[i] ^ s2[i]
+		sum1 += int(s1[i]) * int(s1[i])
+		sum2 += int(s2[i]) * int(s2[i])
 	}
-	return xor == 0
+	return xor == 0 && sum1 == sum2
 }
