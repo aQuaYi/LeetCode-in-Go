@@ -8,6 +8,8 @@ type TreeNode = kit.TreeNode
 
 func constructMaximumBinaryTree(nums []int) *TreeNode {
 	// stack[i+1:] 中所有的节点都是 stack[i] 右边的节点
+	// 即，stack 中的 Val 值应该始终是递减的
+	// 在遍历 nums 后，stack[i].Right == stack[i+1]
 	stack := make([]*TreeNode, 1, len(nums))
 	// 先放这个节点到 stack 可以简化后面的逻辑结构
 	// nums 生成的 Tree 肯定是这个节点的右节点
@@ -29,14 +31,16 @@ func constructMaximumBinaryTree(nums []int) *TreeNode {
 
 		// 此时，stack 中最后一项是 node 的 Left 节点
 		node.Left = stack[len(stack)-1]
-		
+
 		// 把 node 放入 stack
 		stack[len(stack)-1] = node
 
 	}
 
-	for i:=len(stack)-1;1<= i; i--{
-	stack[i-1].Right= stack[i]	
+	// 连接父子关系
+	for i := len(stack) - 1; 1 <= i; i-- {
+		stack[i-1].Right = stack[i]
 	}
+
 	return stack[1]
 }
