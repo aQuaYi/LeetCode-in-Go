@@ -12,6 +12,7 @@ func countSubstrings(s string) int {
 	return count
 }
 
+// 同时向两边扩张，直到遇到不是回文的情况
 func extendPalindrome(s string, left, right int) int {
 	res := 0
 	for left >= 0 && right < len(s) && s[left] == s[right] {
