@@ -7,31 +7,36 @@ import (
 type TreeNode = kit.TreeNode
 
 func constructMaximumBinaryTree(nums []int) *TreeNode {
-	if len(nums) == 0 {
-		return nil
-	}
+	// stack[i+1:] 中所有的节点都是 stack[i] 右边的节点
+	stack := make([]*TreeNode, 1, len(nums))
+	// 先放这个节点到 stack 可以简化后面的逻辑结构
+	// nums 生成的 Tree 肯定是这个节点的右节点
+	stack[0] = &TreeNode{Val: 1<<63 - 1}
 
-	if len(nums) == 1 {
-		return &TreeNode{Val: nums[0]}
-	}
+	for _, n := range nums {
+		node := &TreeNode{Val: n}
 
-	v, i := getMax(nums)
-
-	return &TreeNode{
-		Val:   v,
-		Left:  constructMaximumBinaryTree(nums[:i]),
-		Right: constructMaximumBinaryTree(nums[i+1:]),
-	}
-}
-
-func getMax(nums []int) (val, index int) {
-	val = nums[0]
-	index = 0
-	for i := 1; i < len(nums); i++ {
-		if val < nums[i] {
-			val = nums[i]
-			index = i
+		if stack[len(stack)-1].Val > n {
+			stack = append(stack, node)
+			continue
 		}
+
+		for len(stack)-2 >= 0 && stack[len(stack)-2].Val < n {
+			// 此时可以确定，stack中，上一项是下一项的 Right 节点
+			stack[len(stack)-2].Right = stack[len(stack)-1]
+			stack = stack[:len(stack)-1]
+		}
+
+		// 此时，stack 中最后一项是 node 的 Left 节点
+		node.Left = stack[len(stack)-1]
+		
+		// 把 node 放入 stack
+		stack[len(stack)-1] = node
+
 	}
-	return val, index
+
+	for i:=len(stack)-1;1<= i; i--{
+	stack[i-1].Right= stack[i]	
+	}
+	return stack[1]
 }
