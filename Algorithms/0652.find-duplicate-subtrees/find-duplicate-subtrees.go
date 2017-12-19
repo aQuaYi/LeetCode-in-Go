@@ -8,26 +8,26 @@ import (
 type TreeNode = kit.TreeNode
 
 func findDuplicateSubtrees(root *TreeNode) []*TreeNode {
-	roots := make(map[string]int, 1024)
+	count := make(map[string]int, 1024)
 	res := make([]*TreeNode, 0, 1024)
 
-	helper(root, roots, &res)
+	helper(root, count, &res)
 
 	return res
 }
 
-func helper(root *TreeNode, roots map[string]int, res *[]*TreeNode) string {
+func helper(root *TreeNode, count map[string]int, res *[]*TreeNode) string {
 	if root == nil {
 		return ""
 	}
 
-	l := helper(root.Left, roots, res)
-	r := helper(root.Right, roots, res)
+	l := helper(root.Left, count, res)
+	r := helper(root.Right, count, res)
 
-	key := strconv.Itoa(root.Val) + "(" + l + ")(" + r + ")"
+	key := strconv.Itoa(root.Val) +"*"+  l +"*"+  r 
 
-	roots[key]++
-	if roots[key] == 2 {
+	count[key]++
+	if count[key] == 2 {
 		*res = append(*res, root)
 	}
 
