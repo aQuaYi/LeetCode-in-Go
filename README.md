@@ -2,7 +2,7 @@
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 排名](https://img.shields.io/badge/Ranking-2944-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 答题进度](https://img.shields.io/badge/Progress-86%25-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 答题进度](https://img.shields.io/badge/Progress-87%25-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 
@@ -12,8 +12,8 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|129|223|96|448|
-|**Total**|156|258|106|520|
+|**Accepted**|129|225|96|450|
+|**Total**|154|256|106|516|
 
 ## 题解
 
@@ -154,7 +154,7 @@
 |136|[Single Number](./Algorithms/0136.single-number)|55%|Easy| |
 |137|[Single Number II](./Algorithms/0137.single-number-ii)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |139|[Word Break](./Algorithms/0139.word-break)|30%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|140|[Word Break II](./Algorithms/0140.word-break-ii)|23%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|140|[Word Break II](./Algorithms/0140.word-break-ii)|24%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |143|[Reorder List](./Algorithms/0143.reorder-list)|26%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |144|[Binary Tree Preorder Traversal](./Algorithms/0144.binary-tree-preorder-traversal)|45%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |145|[Binary Tree Postorder Traversal](./Algorithms/0145.binary-tree-postorder-traversal)|41%|Hard| |
@@ -324,7 +324,7 @@
 |413|[Arithmetic Slices](./Algorithms/0413.arithmetic-slices)|54%|Medium| |
 |414|[Third Maximum Number](./Algorithms/0414.third-maximum-number)|27%|Easy| |
 |415|[Add Strings](./Algorithms/0415.add-strings)|41%|Easy| |
-|416|[Partition Equal Subset Sum](./Algorithms/0416.partition-equal-subset-sum)|39%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|416|[Partition Equal Subset Sum](./Algorithms/0416.partition-equal-subset-sum)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |417|[Pacific Atlantic Water Flow](./Algorithms/0417.pacific-atlantic-water-flow)|34%|Medium| |
 |419|[Battleships in a Board](./Algorithms/0419.battleships-in-a-board)|62%|Medium| |
 |420|[Strong Password Checker](./Algorithms/0420.strong-password-checker)|20%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -452,9 +452,9 @@
 |630|[Course Schedule III](./Algorithms/0630.course-schedule-iii)|28%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |632|[Smallest Range](./Algorithms/0632.smallest-range)|42%|Hard| |
 |633| * Sum of Square Numbers|32%|Easy| |
-|636|[Exclusive Time of Functions](./Algorithms/0636.exclusive-time-of-functions)|43%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|636|[Exclusive Time of Functions](./Algorithms/0636.exclusive-time-of-functions)|44%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |637| * Average of Levels in Binary Tree|55%|Easy| |
-|638| * Shopping Offers|43%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|638|[Shopping Offers](./Algorithms/0638.shopping-offers)|43%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |639|[Decode Ways II](./Algorithms/0639.decode-ways-ii)|24%|Hard| |
 |640|[Solve the Equation](./Algorithms/0640.solve-the-equation)|38%|Medium| |
 |643|[Maximum Average Subarray I](./Algorithms/0643.maximum-average-subarray-i)|37%|Easy| |
@@ -464,7 +464,7 @@
 |648|[Replace Words](./Algorithms/0648.replace-words)|47%|Medium| |
 |649|[Dota2 Senate](./Algorithms/0649.dota2-senate)|35%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |650|[2 Keys Keyboard](./Algorithms/0650.2-keys-keyboard)|44%|Medium| |
-|652| * Find Duplicate Subtrees|36%|Medium| |
+|652|[Find Duplicate Subtrees](./Algorithms/0652.find-duplicate-subtrees)|36%|Medium| |
 |653| * Two Sum IV - Input is a BST|50%|Easy| |
 |654|[Maximum Binary Tree](./Algorithms/0654.maximum-binary-tree)|69%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |655| * Print Binary Tree|49%|Medium| |
@@ -485,7 +485,7 @@
 |674| * Longest Continuous Increasing Subsequence|42%|Easy| |
 |675|[Cut Off Trees for Golf Event](./Algorithms/0675.cut-off-trees-for-golf-event)|26%|Hard| |
 |676| * Implement Magic Dictionary|49%|Medium| |
-|677| * Map Sum Pairs|52%|Medium| |
+|677| * Map Sum Pairs|51%|Medium| |
 |678| * Valid Parenthesis String|29%|Medium| |
 |679|[24 Game](./Algorithms/0679.24-game)|38%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |680| * Valid Palindrome II|32%|Easy| |
@@ -493,7 +493,7 @@
 |684| * Redundant Connection|40%|Medium| |
 |685|[Redundant Connection II](./Algorithms/0685.redundant-connection-ii)|28%|Hard| |
 |686| * Repeated String Match|34%|Easy| |
-|687| * Longest Univalue Path|33%|Easy| |
+|687| * Longest Univalue Path|34%|Easy| |
 |688| * Knight Probability in Chessboard|39%|Medium| |
 |689|[Maximum Sum of 3 Non-Overlapping Subarrays](./Algorithms/0689.maximum-sum-of-3-non-overlapping-subarrays)|41%|Hard| |
 |691|[Stickers to Spell Word](./Algorithms/0691.stickers-to-spell-word)|33%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -523,22 +523,18 @@
 |731| * My Calendar II|35%|Medium| |
 |732| * My Calendar III|52%|Hard| |
 |733| * Flood Fill|49%|Easy| |
-|734| * Sentence Similarity|38%|Easy| |
 |735| * Asteroid Collision|36%|Medium| |
 |736| * Parse Lisp Expression|41%|Hard| |
-|737| * Sentence Similarity II|40%|Medium| |
 |738| * Monotone Increasing Digits|41%|Medium| |
 |739| * Daily Temperatures|53%|Medium| |
 |740| * Delete and Earn|41%|Medium| |
 |741| * Cherry Pickup|22%|Hard| |
-|743| * Closest Leaf in a Binary Tree|31%|Medium| |
 |744| * Network Delay Time|32%|Medium| |
-|745| * Find Smallest Letter Greater Than Target|51%|Easy| |
+|745| * Find Smallest Letter Greater Than Target|50%|Easy| |
 |746| * Prefix and Suffix Search|20%|Hard| |
 |747| * Min Cost Climbing Stairs|49%|Easy| |
-|749| * Shortest Completing Word|54%|Easy| |
+|749| * Shortest Completing Word|54%|Medium| |
 |750| * Contain Virus|35%|Hard| |
-|751| * Number Of Corner Rectangles|44%|Medium| |
 
 以下免费的算法题，暂时不能使用 Go 解答
 
