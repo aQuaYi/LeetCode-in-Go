@@ -20,6 +20,12 @@ var tcs = []struct {
 	},
 
 	{
+		"sitting",
+		"kitten",
+		false,
+	},
+
+	{
 		"kitten",
 		"sitting",
 		false,
