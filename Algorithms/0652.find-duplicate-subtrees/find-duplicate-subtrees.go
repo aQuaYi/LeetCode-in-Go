@@ -11,12 +11,12 @@ func findDuplicateSubtrees(root *TreeNode) []*TreeNode {
 	roots := make(map[string]int, 1024)
 	res := make([]*TreeNode, 0, 1024)
 
-	helper(root, roots, res)
+	helper(root, roots, &res)
 
 	return res
 }
 
-func helper(root *TreeNode, roots map[string]int, res []*TreeNode) string {
+func helper(root *TreeNode, roots map[string]int, res *[]*TreeNode) string {
 	if root == nil {
 		return ""
 	}
@@ -27,8 +27,8 @@ func helper(root *TreeNode, roots map[string]int, res []*TreeNode) string {
 	key := strconv.Itoa(root.Val) + "(" + l + ")(" + r + ")"
 
 	roots[key]++
-	if roots[key] == 1 {
-		res = append(res, root)
+	if roots[key] == 2 {
+		*res = append(*res, root)
 	}
 
 	return key
