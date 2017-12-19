@@ -9,16 +9,15 @@ type TreeNode = kit.TreeNode
 
 func printTree(root *TreeNode) [][]string {
 	level := getLevel(root)
-	// loc 是 root　节点的位置
-	loc := 1 << uint(level-1)
-
-	size := 1 << uint(level)-1
+	size := 1<<uint(level) - 1
 	res := make([][]string, level)
 	for i := range res {
 		res[i] = make([]string, size)
 	}
 
-	getRes(root, 0,  loc-1, res)
+	// loc 是 root　节点的值在 res 中的索引号
+	loc := 1<<uint(level-1) - 1
+	getRes(root, 0, loc, res)
 
 	return res
 }
@@ -59,7 +58,6 @@ func getLevel(root *TreeNode) (res int) {
 		if !hasChild {
 			break
 		}
-
 		res++
 
 		fQueue := queue[:len(queue)]
@@ -77,4 +75,3 @@ func getLevel(root *TreeNode) (res int) {
 
 	return res
 }
-
