@@ -18,13 +18,13 @@ func findDuplicateSubtrees(root *TreeNode) []*TreeNode {
 
 func helper(root *TreeNode, count map[string]int, res *[]*TreeNode) string {
 	if root == nil {
-		return ""
+		return "*"
 	}
 
 	l := helper(root.Left, count, res)
 	r := helper(root.Right, count, res)
 
-	key := strconv.Itoa(root.Val) +"*"+  l +"*"+  r 
+	key := strconv.Itoa(root.Val) +  l +  r 
 
 	count[key]++
 	if count[key] == 2 {
