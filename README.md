@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|129|227|96|452|
+|**Accepted**|129|229|96|454|
 |**Total**|154|256|106|516|
 
 ## 题解
@@ -324,7 +324,7 @@
 |413|[Arithmetic Slices](./Algorithms/0413.arithmetic-slices)|54%|Medium| |
 |414|[Third Maximum Number](./Algorithms/0414.third-maximum-number)|27%|Easy| |
 |415|[Add Strings](./Algorithms/0415.add-strings)|41%|Easy| |
-|416|[Partition Equal Subset Sum](./Algorithms/0416.partition-equal-subset-sum)|39%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|416|[Partition Equal Subset Sum](./Algorithms/0416.partition-equal-subset-sum)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |417|[Pacific Atlantic Water Flow](./Algorithms/0417.pacific-atlantic-water-flow)|34%|Medium| |
 |419|[Battleships in a Board](./Algorithms/0419.battleships-in-a-board)|62%|Medium| |
 |420|[Strong Password Checker](./Algorithms/0420.strong-password-checker)|20%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -434,7 +434,7 @@
 |583|[Delete Operation for Two Strings](./Algorithms/0583.delete-operation-for-two-strings)|44%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |587|[Erect the Fence](./Algorithms/0587.erect-the-fence)|32%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |591| * Tag Validator|30%|Hard| |
-|592|[Fraction Addition and Subtraction](./Algorithms/0592.fraction-addition-and-subtraction)|46%|Medium| |
+|592|[Fraction Addition and Subtraction](./Algorithms/0592.fraction-addition-and-subtraction)|45%|Medium| |
 |593|[Valid Square](./Algorithms/0593.valid-square)|40%|Medium| |
 |594|[Longest Harmonious Subsequence](./Algorithms/0594.longest-harmonious-subsequence)|40%|Easy| |
 |598|[Range Addition II](./Algorithms/0598.range-addition-ii)|48%|Easy| |
@@ -470,9 +470,9 @@
 |655|[Print Binary Tree](./Algorithms/0655.print-binary-tree)|49%|Medium| |
 |657| * Judge Route Circle|68%|Easy| |
 |658|[Find K Closest Elements](./Algorithms/0658.find-k-closest-elements)|35%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|659| * Split Array into Consecutive Subsequences|35%|Medium| |
+|659|[Split Array into Consecutive Subsequences](./Algorithms/0659.split-array-into-consecutive-subsequences)|35%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |661|[Image Smoother](./Algorithms/0661.image-smoother)|45%|Easy| |
-|662| * Maximum Width of Binary Tree|37%|Medium| |
+|662|[Maximum Width of Binary Tree](./Algorithms/0662.maximum-width-of-binary-tree)|37%|Medium| |
 |664|[Strange Printer](./Algorithms/0664.strange-printer)|32%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |665| * Non-decreasing Array|20%|Easy| |
 |667|[Beautiful Arrangement II](./Algorithms/0667.beautiful-arrangement-ii)|51%|Medium| |
@@ -493,7 +493,7 @@
 |684| * Redundant Connection|40%|Medium| |
 |685|[Redundant Connection II](./Algorithms/0685.redundant-connection-ii)|28%|Hard| |
 |686| * Repeated String Match|34%|Easy| |
-|687| * Longest Univalue Path|34%|Easy| |
+|687| * Longest Univalue Path|33%|Easy| |
 |688| * Knight Probability in Chessboard|39%|Medium| |
 |689|[Maximum Sum of 3 Non-Overlapping Subarrays](./Algorithms/0689.maximum-sum-of-3-non-overlapping-subarrays)|41%|Hard| |
 |691|[Stickers to Spell Word](./Algorithms/0691.stickers-to-spell-word)|34%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -517,7 +517,7 @@
 |724| * Find Pivot Index|40%|Easy| |
 |725| * Split Linked List in Parts|49%|Medium| |
 |726|[Number of Atoms](./Algorithms/0726.number-of-atoms)|44%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|728| * Self Dividing Numbers|67%|Easy| |
+|728| * Self Dividing Numbers|68%|Easy| |
 |729| * My Calendar I|40%|Medium| |
 |730| * Count Different Palindromic Subsequences|32%|Hard| |
 |731| * My Calendar II|35%|Medium| |
@@ -532,7 +532,7 @@
 |744| * Network Delay Time|32%|Medium| |
 |745| * Find Smallest Letter Greater Than Target|50%|Easy| |
 |746| * Prefix and Suffix Search|21%|Hard| |
-|747| * Min Cost Climbing Stairs|49%|Easy| |
+|747| * Min Cost Climbing Stairs|48%|Easy| |
 |749| * Shortest Completing Word|54%|Medium| |
 |750| * Contain Virus|36%|Hard| |
 
