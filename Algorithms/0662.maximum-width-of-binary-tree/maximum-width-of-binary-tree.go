@@ -5,6 +5,7 @@ import (
 )
 
 type TreeNode = kit.TreeNode
+
 func widthOfBinaryTree(root *TreeNode) int {
 	res := 0
 
