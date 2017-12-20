@@ -2,7 +2,7 @@
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 排名](https://img.shields.io/badge/Ranking-2944-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 答题进度](https://img.shields.io/badge/Progress-87%25-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 答题进度](https://img.shields.io/badge/Progress-88%25-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 
@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|129|229|96|454|
+|**Accepted**|129|231|96|456|
 |**Total**|154|256|106|516|
 
 ## 题解
@@ -478,9 +478,9 @@
 |667|[Beautiful Arrangement II](./Algorithms/0667.beautiful-arrangement-ii)|51%|Medium| |
 |668|[Kth Smallest Number in Multiplication Table](./Algorithms/0668.kth-smallest-number-in-multiplication-table)|38%|Hard| |
 |669| * Trim a Binary Search Tree|58%|Easy| |
-|670| * Maximum Swap|38%|Medium| |
+|670|[Maximum Swap](./Algorithms/0670.maximum-swap)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |671| * Second Minimum Node In a Binary Tree|41%|Easy| |
-|672| * Bulb Switcher II|48%|Medium| |
+|672|[Bulb Switcher II](./Algorithms/0672.bulb-switcher-ii)|48%|Medium| |
 |673| * Number of Longest Increasing Subsequence|31%|Medium| |
 |674| * Longest Continuous Increasing Subsequence|42%|Easy| |
 |675|[Cut Off Trees for Golf Event](./Algorithms/0675.cut-off-trees-for-golf-event)|26%|Hard| |
@@ -493,7 +493,7 @@
 |684| * Redundant Connection|40%|Medium| |
 |685|[Redundant Connection II](./Algorithms/0685.redundant-connection-ii)|28%|Hard| |
 |686| * Repeated String Match|34%|Easy| |
-|687| * Longest Univalue Path|33%|Easy| |
+|687| * Longest Univalue Path|34%|Easy| |
 |688| * Knight Probability in Chessboard|39%|Medium| |
 |689|[Maximum Sum of 3 Non-Overlapping Subarrays](./Algorithms/0689.maximum-sum-of-3-non-overlapping-subarrays)|41%|Hard| |
 |691|[Stickers to Spell Word](./Algorithms/0691.stickers-to-spell-word)|34%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -511,13 +511,13 @@
 |717| * 1-bit and 2-bit Characters|50%|Easy| |
 |718| * Maximum Length of Repeated Subarray|40%|Medium| |
 |719| * Find K-th Smallest Pair Distance|26%|Hard| |
-|720| * Longest Word in Dictionary|40%|Easy| |
+|720| * Longest Word in Dictionary|41%|Easy| |
 |721| * Accounts Merge|30%|Medium| |
 |722| * Remove Comments|26%|Medium| |
 |724| * Find Pivot Index|40%|Easy| |
 |725| * Split Linked List in Parts|49%|Medium| |
 |726|[Number of Atoms](./Algorithms/0726.number-of-atoms)|44%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|728| * Self Dividing Numbers|68%|Easy| |
+|728| * Self Dividing Numbers|67%|Easy| |
 |729| * My Calendar I|40%|Medium| |
 |730| * Count Different Palindromic Subsequences|32%|Hard| |
 |731| * My Calendar II|35%|Medium| |
@@ -533,7 +533,7 @@
 |745| * Find Smallest Letter Greater Than Target|50%|Easy| |
 |746| * Prefix and Suffix Search|21%|Hard| |
 |747| * Min Cost Climbing Stairs|48%|Easy| |
-|749| * Shortest Completing Word|54%|Medium| |
+|749| * Shortest Completing Word|55%|Medium| |
 |750| * Contain Virus|36%|Hard| |
 
 以下免费的算法题，暂时不能使用 Go 解答
