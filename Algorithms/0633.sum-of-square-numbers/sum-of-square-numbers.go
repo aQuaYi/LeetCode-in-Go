@@ -6,7 +6,7 @@ import (
 
 func judgeSquareSum(c int) bool {
 	a := intSqrt(c)
-	for a >= 1 {
+	for a >= 0 {
 		if isSquare(c - a*a) {
 			return true
 		}
