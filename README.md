@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|129|231|96|456|
+|**Accepted**|130|231|96|457|
 |**Total**|154|256|106|516|
 
 ## 题解
@@ -451,7 +451,7 @@
 |629|[K Inverse Pairs Array](./Algorithms/0629.k-inverse-pairs-array)|26%|Hard| |
 |630|[Course Schedule III](./Algorithms/0630.course-schedule-iii)|28%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |632|[Smallest Range](./Algorithms/0632.smallest-range)|42%|Hard| |
-|633| * Sum of Square Numbers|32%|Easy| |
+|633|[Sum of Square Numbers](./Algorithms/0633.sum-of-square-numbers)|32%|Easy| |
 |636|[Exclusive Time of Functions](./Algorithms/0636.exclusive-time-of-functions)|44%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |637| * Average of Levels in Binary Tree|55%|Easy| |
 |638|[Shopping Offers](./Algorithms/0638.shopping-offers)|43%|Medium|[❤](https://leetcode.com/list/oussv5j)|
