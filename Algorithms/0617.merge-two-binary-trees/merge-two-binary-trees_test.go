@@ -16,7 +16,15 @@ var tcs = []struct {
 	ansPost   []int
 }{
 
-// 可以有多个 testcase
+	{
+		[]int{1, 3, 5, 2},
+		[]int{5, 3, 1, 2},
+		[]int{20, 10, 40, 30, 70},
+		[]int{10, 40, 20, 30, 70},
+		[]int{5, 40, 13, 70, 32, 21},
+	},
+
+	// 可以有多个 testcase
 }
 
 func Test_fn(t *testing.T) {
