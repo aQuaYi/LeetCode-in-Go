@@ -53,7 +53,7 @@ func (md *MagicDictionary) Search(word string) bool {
 		bs[i] = t
 	}
 
-	return count == 1
+	return count == 1 || count == n
 }
 
 /**
