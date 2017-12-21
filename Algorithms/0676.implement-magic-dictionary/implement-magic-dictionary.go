@@ -55,10 +55,3 @@ func (md *MagicDictionary) Search(word string) bool {
 
 	return count == 1 || count == n
 }
-
-/**
- * Your MagicDictionary object will be instantiated and called as such:
- * obj := Constructor();
- * obj.BuildDict(dict);
- * param_2 := obj.Search(word);
- */
