@@ -1,27 +1,23 @@
 package Problem0678
 
 func checkValidString(s string) bool {
-	return check(0, 0, s)
-}
+	min, max := 0, 0
+	for i := 0; i < len(s); i++ {
 
-func check(lp, i int, s string) bool {
-	for i < len(s) {
 		if s[i] == '(' {
-			lp++
+			min++
+			max++
 		} else if s[i] == ')' {
-			lp--
+			min--
+			max--
+			if max < 0 {
+				return false
+			}
 		} else {
-			return check(lp+1, i+1, s) ||
-				check(lp, i+1, s) ||
-				check(lp-1, i+1, s)
-		}
-
-		i++
-
-		if lp < 0 {
-			return false
+			min--
+			max++
 		}
 	}
 
-	return lp == 0
+	return min <= 0 && 0 <= max
 }
