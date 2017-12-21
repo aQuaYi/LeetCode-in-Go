@@ -1,7 +1,21 @@
 package Problem0673
 
-func findNumberOfLIS(nums []int) int {
-	res := 0
+func findNumberOfLIS(a []int) int {
+	size := len(a)
+	rec := make([]int, 0, size)
 
-	return res
+	for _, n := range a {
+		isUsed := false
+		for i := range rec {
+			if rec[i] < n {
+				rec[i] = n
+				isUsed = true
+			}
+		}
+		if !isUsed {
+			rec = append(rec, n)
+		}
+	}
+
+	return len(rec)
 }
