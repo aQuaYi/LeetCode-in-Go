@@ -7,6 +7,8 @@ type MagicDictionary struct {
 	changes map[string]bool
 }
 
+var replaceByte = byte('?')
+
 // Constructor 构建了神奇字典
 func Constructor() MagicDictionary {
 	return MagicDictionary{
@@ -21,10 +23,13 @@ func (md *MagicDictionary) BuildDict(dict []string) {
 	for _, w := range dict {
 		n := len(w)
 		md.lens[n] = true
-		md.keys[w] = true
 
+		bs := []byte(w)
 		for i := 0; i < n; i++ {
-			md.changes[w[:i]+w[i+1:]] = true
+			t := bs[i]
+			bs[i] = replaceByte
+			md.changes[string(bs)] = true
+			bs[i] = t
 		}
 	}
 }
@@ -37,17 +42,18 @@ func (md *MagicDictionary) Search(word string) bool {
 		return false
 	}
 
-	if md.keys[word] {
-		return false
-	}
-
+	bs := []byte(word)
+	count := 0
 	for i := 0; i < n; i++ {
-		if md.changes[word[:i]+word[i+1:]] {
-			return true
+		t := bs[i]
+		bs[i] = replaceByte
+		if md.changes[string(bs)] {
+			count++
 		}
+		bs[i] = t
 	}
 
-	return false
+	return count == 1
 }
 
 /**
