@@ -1,21 +1,28 @@
 package Problem0673
 
 func findNumberOfLIS(a []int) int {
-	size := len(a)
-	rec := make([]int, 0, size)
+	res := 0
+	maxLen := 0
 
-	for _, n := range a {
-		isUsed := false
-		for i := range rec {
-			if rec[i] < n {
-				rec[i] = n
-				isUsed = true
-			}
-		}
-		if !isUsed {
-			rec = append(rec, n)
-		}
+	dfs(a, -1<<63, 0, 0, &maxLen, &res)
+
+	return res
+}
+
+func dfs(a []int, Min, index, length int, maxLen, res *int) {
+	if *maxLen < length {
+		*maxLen = length
+		*res = 1
+	} else if *maxLen == length && length > 0 {
+		*res++
 	}
 
-	return len(rec)
+	Max := 1<<63 - 1
+
+	for i := index; i < len(a); i++ {
+		if Min < a[i] && a[i] <= Max {
+			Max = a[i]
+			dfs(a, a[i], i+1, length+1, maxLen, res)
+		}
+	}
 }
