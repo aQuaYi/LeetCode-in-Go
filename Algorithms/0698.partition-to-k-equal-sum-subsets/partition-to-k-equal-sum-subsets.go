@@ -15,13 +15,15 @@ func canPartitionKSubsets(nums []int, k int) bool {
 		}
 	}
 
-	if sum%4 != 0 || sum/size < max {
+	if sum%k != 0 || sum/k < max {
 		return false
 	}
 
 	sort.Sort(sort.Reverse(sort.IntSlice(nums)))
+
 	isUsed := make([]bool, size)
-	return dfs(nums, isUsed, 0, 0, 0, 0, sum/size)
+
+	return dfs(nums, isUsed, 0, k, 0, 0, sum/k)
 }
 
 func dfs(nums []int, isUsed []bool, startIndex, k, curSum, curNum, target int) bool {
@@ -34,14 +36,13 @@ func dfs(nums []int, isUsed []bool, startIndex, k, curSum, curNum, target int) b
 	}
 
 	for i := startIndex; i < len(nums); i++ {
-		if !isUsed[i] {
+		if !isUsed[i] && curSum+nums[i] <= target {
 			isUsed[i] = true
 			if dfs(nums, isUsed, i+1, k, curSum+nums[i], curNum+1, target) {
 				return true
 			}
 			isUsed[i] = false
 		}
-
 	}
 
 	return false
