@@ -16,11 +16,13 @@ func canPartitionKSubsets(nums []int, k int) bool {
 	}
 
 	if sum%k != 0 || sum/k < max {
+		// 提前结束
 		return false
 	}
 
 	sort.Sort(sort.Reverse(sort.IntSlice(nums)))
 
+	// isUsed[i] == true 表示 nums[i] 已经被归类到某个小组，无法再使用了
 	isUsed := make([]bool, size)
 
 	return dfs(nums, isUsed, 0, k, 0, 0, sum/k)
