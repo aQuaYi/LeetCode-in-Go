@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|131|235|96|462|
+|**Accepted**|131|237|96|464|
 |**Total**|154|256|106|516|
 
 ## 题解
@@ -58,7 +58,7 @@
 |37|[Sudoku Solver](./Algorithms/0037.sudoku-solver)|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |38|[Count and Say](./Algorithms/0038.count-and-say)|35%|Easy| |
 |39|[Combination Sum](./Algorithms/0039.combination-sum)|40%|Medium| |
-|40|[Combination Sum II](./Algorithms/0040.combination-sum-ii)|34%|Medium| |
+|40|[Combination Sum II](./Algorithms/0040.combination-sum-ii)|35%|Medium| |
 |41|[First Missing Positive](./Algorithms/0041.first-missing-positive)|25%|Hard| |
 |42|[Trapping Rain Water](./Algorithms/0042.trapping-rain-water)|37%|Hard| |
 |43|[Multiply Strings](./Algorithms/0043.multiply-strings)|27%|Medium| |
@@ -166,7 +166,7 @@
 |152|[Maximum Product Subarray](./Algorithms/0152.maximum-product-subarray)|26%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |153|[Find Minimum in Rotated Sorted Array](./Algorithms/0153.find-minimum-in-rotated-sorted-array)|40%|Medium| |
 |154|[Find Minimum in Rotated Sorted Array II](./Algorithms/0154.find-minimum-in-rotated-sorted-array-ii)|37%|Hard| |
-|155|[Min Stack](./Algorithms/0155.min-stack)|29%|Easy| |
+|155|[Min Stack](./Algorithms/0155.min-stack)|30%|Easy| |
 |162|[Find Peak Element](./Algorithms/0162.find-peak-element)|38%|Medium| |
 |164|[Maximum Gap](./Algorithms/0164.maximum-gap)|29%|Hard| |
 |165|[Compare Version Numbers](./Algorithms/0165.compare-version-numbers)|20%|Medium| |
@@ -324,7 +324,7 @@
 |413|[Arithmetic Slices](./Algorithms/0413.arithmetic-slices)|54%|Medium| |
 |414|[Third Maximum Number](./Algorithms/0414.third-maximum-number)|27%|Easy| |
 |415|[Add Strings](./Algorithms/0415.add-strings)|41%|Easy| |
-|416|[Partition Equal Subset Sum](./Algorithms/0416.partition-equal-subset-sum)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|416|[Partition Equal Subset Sum](./Algorithms/0416.partition-equal-subset-sum)|39%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |417|[Pacific Atlantic Water Flow](./Algorithms/0417.pacific-atlantic-water-flow)|34%|Medium| |
 |419|[Battleships in a Board](./Algorithms/0419.battleships-in-a-board)|62%|Medium| |
 |420|[Strong Password Checker](./Algorithms/0420.strong-password-checker)|20%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -485,19 +485,19 @@
 |674| * Longest Continuous Increasing Subsequence|42%|Easy| |
 |675|[Cut Off Trees for Golf Event](./Algorithms/0675.cut-off-trees-for-golf-event)|26%|Hard| |
 |676|[Implement Magic Dictionary](./Algorithms/0676.implement-magic-dictionary)|49%|Medium| |
-|677|[Map Sum Pairs](./Algorithms/0677.map-sum-pairs)|51%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|677|[Map Sum Pairs](./Algorithms/0677.map-sum-pairs)|52%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |678|[Valid Parenthesis String](./Algorithms/0678.valid-parenthesis-string)|29%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |679|[24 Game](./Algorithms/0679.24-game)|38%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |680| * Valid Palindrome II|32%|Easy| |
 |682| * Baseball Game|58%|Easy| |
-|684| * Redundant Connection|40%|Medium| |
-|685|[Redundant Connection II](./Algorithms/0685.redundant-connection-ii)|28%|Hard| |
+|684|[Redundant Connection](./Algorithms/0684.redundant-connection)|40%|Medium| |
+|685|[Redundant Connection II](./Algorithms/0685.redundant-connection-ii)|28%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |686| * Repeated String Match|34%|Easy| |
 |687| * Longest Univalue Path|34%|Easy| |
 |688| * Knight Probability in Chessboard|39%|Medium| |
 |689|[Maximum Sum of 3 Non-Overlapping Subarrays](./Algorithms/0689.maximum-sum-of-3-non-overlapping-subarrays)|41%|Hard| |
 |691|[Stickers to Spell Word](./Algorithms/0691.stickers-to-spell-word)|34%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|692| * Top K Frequent Words|40%|Medium| |
+|692|[Top K Frequent Words](./Algorithms/0692.top-k-frequent-words)|40%|Medium| |
 |693| * Binary Number with Alternating Bits|54%|Easy| |
 |695| * Max Area of Island|52%|Easy| |
 |696| * Count Binary Substrings|51%|Easy| |
@@ -529,7 +529,7 @@
 |739| * Daily Temperatures|52%|Medium| |
 |740| * Delete and Earn|42%|Medium| |
 |741| * Cherry Pickup|22%|Hard| |
-|744| * Network Delay Time|32%|Medium| |
+|744| * Network Delay Time|33%|Medium| |
 |745| * Find Smallest Letter Greater Than Target|50%|Easy| |
 |746| * Prefix and Suffix Search|21%|Hard| |
 |747| * Min Cost Climbing Stairs|46%|Easy| |
