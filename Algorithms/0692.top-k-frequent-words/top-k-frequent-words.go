@@ -1,6 +1,6 @@
 package Problem0692
 
-import "container/heap"
+import "sort"
 
 func topKFrequent(words []string, k int) []string {
 	count := make(map[string]int, len(words))
@@ -8,19 +8,19 @@ func topKFrequent(words []string, k int) []string {
 		count[w]++
 	}
 
-	pq := make(PQ, 0, len(count))
+	fw := make(freWords, 0, len(count))
 	for w, c := range count {
-		pq = append(pq, &entry{
+		fw = append(fw, &entry{
 			word:      w,
 			frequence: c,
 		})
 	}
-	heap.Init(&pq)
 
-	res := make([]string, 0, k)
-	for k > 0 {
-		res = append(res, heap.Pop(&pq).(*entry).word)
-		k--
+	sort.Sort(fw)
+
+	res := make([]string, k)
+	for i := 0; i < k; i++ {
+		res[i] = fw[i].word
 	}
 
 	return res
@@ -33,30 +33,17 @@ type entry struct {
 }
 
 // PQ implements heap.Interface and holds entries.
-type PQ []*entry
+type freWords []*entry
 
-func (pq PQ) Len() int { return len(pq) }
+func (f freWords) Len() int { return len(f) }
 
-func (pq PQ) Less(i, j int) bool {
-	if pq[i].frequence == pq[j].frequence {
-		return pq[i].word < pq[j].word
+func (f freWords) Less(i, j int) bool {
+	if f[i].frequence == f[j].frequence {
+		return f[i].word < f[j].word
 	}
-	return pq[i].frequence > pq[j].frequence
+	return f[i].frequence > f[j].frequence
 }
 
-func (pq PQ) Swap(i, j int) {
-	pq[i], pq[j] = pq[j], pq[i]
-}
-
-// Push 往 pq 中放 entry
-func (pq *PQ) Push(x interface{}) {
-	temp := x.(*entry)
-	*pq = append(*pq, temp)
-}
-
-// Pop 从 pq 中取出最优先的 entry
-func (pq *PQ) Pop() interface{} {
-	temp := (*pq)[len(*pq)-1]
-	*pq = (*pq)[0 : len(*pq)-1]
-	return temp
+func (f freWords) Swap(i, j int) {
+	f[i], f[j] = f[j], f[i]
 }
