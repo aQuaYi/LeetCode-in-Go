@@ -14,6 +14,7 @@ func findRedundantConnection(edges [][]int) []int {
 		pf := find(parent, f)
 		pt := find(parent, t)
 		if pf == pt {
+			// 出现连通区域
 			break
 		}
 		parent[pf] = pt
