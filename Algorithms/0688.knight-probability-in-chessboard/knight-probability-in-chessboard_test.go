@@ -36,7 +36,7 @@ func Test_fn(t *testing.T) {
 
 	for _, tc := range tcs {
 		fmt.Printf("~~%v~~\n", tc)
-		ast.Equal(tc.ans, knightProbability(tc.n, tc.k, tc.r, tc.c), "输入:%v", tc)
+		ast.InDelta(tc.ans, knightProbability(tc.n, tc.k, tc.r, tc.c), 0.000001, "输入:%v", tc)
 	}
 }
 

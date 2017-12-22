@@ -4,45 +4,45 @@ import (
 	"math"
 )
 
-func knightProbability(n int, k int, r int, c int) float64 {
-	onBoard := make(map[[2]int][][2]int, n*n)
+var dx = []int{-2, -2, -1, 1, 2, 2, 1, -1}
+var dy = []int{-1, 1, -2, -2, 1, -1, 2, 2}
 
-	next := func(i, j int) [][2]int {
-		pre := [2]int{i, j}
-		locs := make([][2]int, 0, 8)
-		var ok bool
-		locs, ok = onBoard[pre]
-		if ok {
-			return locs
-		}
+func knightProbability(N int, K int, r int, c int) float64 {
+	// 为了快速创建 pre 变量，使用数组，而不是切片
+	// pre[i][j] = k 表示
+	// 在某一步的时候，棋盘上的 (i,j) 位置，会有 k 个棋子落在此位置上
+	pre := [25][25]float64{}
+	pre[r][c] = 1
 
-		for k := 0; k < 8; k++ {
-			x := dx[k] + i
-			y := dy[k] + j
-			if 0 <= x && x < n && 0 <= y && y < n {
-				locs = append(locs, [2]int{x, y})
+	for k := 0; k < K; k++ {
+		// 按照规则移动棋子后
+		// next 记录了各个位置上可能落下的棋子数
+		next := [25][25]float64{}
+
+		for i := 0; i < N; i++ {
+			for j := 0; j < N; j++ {
+				if pre[i][j] == 0 {
+					continue
+				}
+				for m := 0; m < 8; m++ {
+					x := dx[m] + i
+					y := dy[m] + j
+					if 0 <= x && x < N && 0 <= y && y < N {
+						next[x][y] += pre[i][j]
+					}
+				}
 			}
 		}
 
-		onBoard[pre] = locs
-		return locs
+		pre = next
 	}
 
-	queue := make([][2]int, 1, 2048)
-	queue[0] = [2]int{r, c}
-	fm := math.Pow(8., float64(k))
-	for len(queue) > 0 && k > 0 {
-		size := len(queue)
-		for i := 0; i < size; i++ {
-			locs := next(queue[i][0], queue[i][1])
-			queue = append(queue, locs...)
+	count := 0.
+	for i := 0; i < N; i++ {
+		for j := 0; j < N; j++ {
+			count += pre[i][j]
 		}
-		k--
-		queue = queue[size:]
 	}
 
-	return float64(len(queue)) / fm
+	return float64(count) / math.Pow(8., float64(K))
 }
-
-var dx = []int{-2, -2, -1, 1, 2, 2, 1, -1}
-var dy = []int{-1, 1, -2, -2, 1, -1, 2, 2}
