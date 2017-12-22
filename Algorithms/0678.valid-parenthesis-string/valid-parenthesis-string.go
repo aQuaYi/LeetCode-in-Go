@@ -4,8 +4,6 @@ func checkValidString(s string) bool {
 	l, r := 0, 0
 	n := len(s)
 	for i := 0; i < n; i++ {
-		j := n - i - 1
-
 		// 从左侧开始的扫描
 		// 并认为所有的 '*' 是 '('
 		if s[i] == ')' {
@@ -16,6 +14,7 @@ func checkValidString(s string) bool {
 
 		// 从右侧开始的扫描
 		// 并认为所有的 '*' 是 ')'
+		j := n - i - 1
 		if s[j] == '(' {
 			r--
 		} else {
