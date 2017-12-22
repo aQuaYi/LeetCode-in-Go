@@ -9,7 +9,7 @@ import (
 
 // tcs is testcase slice
 var tcs = []struct {
-	N, K, r, c int
+	n, k, r, c int
 	ans        float64
 }{
 
@@ -26,14 +26,14 @@ func Test_fn(t *testing.T) {
 
 	for _, tc := range tcs {
 		fmt.Printf("~~%v~~\n", tc)
-		ast.Equal(tc.ans, knightProbability(tc.N, tc.K, tc.r, tc.c), "输入:%v", tc)
+		ast.Equal(tc.ans, knightProbability(tc.n, tc.k, tc.r, tc.c), "输入:%v", tc)
 	}
 }
 
 func Benchmark_fn(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		for _, tc := range tcs {
-			knightProbability(tc.N, tc.K, tc.r, tc.c)
+			knightProbability(tc.n, tc.k, tc.r, tc.c)
 		}
 	}
 }
