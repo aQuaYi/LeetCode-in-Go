@@ -13,7 +13,17 @@ var tcs = []struct {
 	ans   []int
 }{
 
-// 可以有多个 testcase
+	{
+		[][]int{{1, 2}, {1, 3}, {2, 3}},
+		[]int{2, 3},
+	},
+
+	{
+		[][]int{{1, 2}, {2, 3}, {3, 4}, {1, 4}, {1, 5}},
+		[]int{1, 4},
+	},
+
+	// 可以有多个 testcase
 }
 
 func Test_fn(t *testing.T) {
