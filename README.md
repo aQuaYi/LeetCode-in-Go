@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|135|239|96|470|
+|**Accepted**|136|239|96|471|
 |**Total**|154|256|106|516|
 
 ## 题解
@@ -474,7 +474,7 @@
 |661|[Image Smoother](./Algorithms/0661.image-smoother)|45%|Easy| |
 |662|[Maximum Width of Binary Tree](./Algorithms/0662.maximum-width-of-binary-tree)|37%|Medium| |
 |664|[Strange Printer](./Algorithms/0664.strange-printer)|33%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|665| * Non-decreasing Array|20%|Easy| |
+|665|[Non-decreasing Array](./Algorithms/0665.non-decreasing-array)|20%|Easy| |
 |667|[Beautiful Arrangement II](./Algorithms/0667.beautiful-arrangement-ii)|51%|Medium| |
 |668|[Kth Smallest Number in Multiplication Table](./Algorithms/0668.kth-smallest-number-in-multiplication-table)|38%|Hard| |
 |669| * Trim a Binary Search Tree|58%|Easy| |
@@ -532,7 +532,7 @@
 |744| * Network Delay Time|33%|Medium| |
 |745| * Find Smallest Letter Greater Than Target|49%|Easy| |
 |746| * Prefix and Suffix Search|21%|Hard| |
-|747| * Min Cost Climbing Stairs|46%|Easy| |
+|747| * Min Cost Climbing Stairs|47%|Easy| |
 |749| * Shortest Completing Word|54%|Medium| |
 |750| * Contain Virus|36%|Hard| |
 
