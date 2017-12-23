@@ -1,20 +1,12 @@
 package Problem0657
 
+import "strings"
+
 func judgeCircle(moves string) bool {
-	bs := []byte(moves)
-	var up, down, left, right int
-	for i := range bs {
-		switch bs[i] {
-		case 'U':
-			up++
-		case 'D':
-			down++
-		case 'L':
-			left++
-		case 'R':
-			right++
-		}
-	}
+	up := strings.Count(moves, "U")
+	down := strings.Count(moves, "D")
+	left := strings.Count(moves, "L")
+	right := strings.Count(moves, "R")
 
 	return up == down && left == right
 }
