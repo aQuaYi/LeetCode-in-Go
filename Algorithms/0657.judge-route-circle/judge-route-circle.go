@@ -1,19 +1,14 @@
 package Problem0657
 
-func judgeCircle(moves string) bool {
-	x, y := 0, 0
-	for i := range moves {
-		switch moves[i] {
-		case 'R':
-			x++
-		case 'L':
-			x--
-		case 'U':
-			y--
-		case 'D':
-			y++
-		}
-	}
+import (
+	"strings"
+)
 
-	return x == 0 && y == 0
+func judgeCircle(moves string) bool {
+	up := strings.Count(moves, "U")
+	down := strings.Count(moves, "D")
+	left := strings.Count(moves, "L")
+	right := strings.Count(moves, "R")
+
+	return up == down && left == right
 }
