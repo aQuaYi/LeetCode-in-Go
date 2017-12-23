@@ -1,13 +1,14 @@
 package Problem0665
 
+import (
+	"sort"
+)
+
 func checkPossibility(nums []int) bool {
-	count := 0
 	for i := 1; i < len(nums); i++ {
 		if nums[i-1] > nums[i] {
-			count++
-			if count > 1 {
-				return false
-			}
+			nums[i] = nums[i-1]
+			return sort.IsSorted(sort.IntSlice(nums))
 		}
 	}
 
