@@ -14,6 +14,11 @@ var tcs = []struct {
 }{
 
 	{
+		[]int{3, 4, 2, 3},
+		false,
+	},
+
+	{
 		[]int{4, 2, 3},
 		true,
 	},
