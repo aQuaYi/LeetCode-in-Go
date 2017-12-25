@@ -6,36 +6,28 @@ import (
 
 type TreeNode = kit.TreeNode
 
-func findSecondMinimumValue(root *TreeNode) int { 
-	if root == nil ||
-	root.Left == nil {
+const intMax = 1<<63 - 1
+
+func findSecondMinimumValue(root *TreeNode) int {
+	res := intMax
+
+	helper(root, root.Val, &res)
+
+	if res == intMax {
 		return -1
 	}
+	return res
+}
 
-	if root.Val ==  root.Left.Val && root.Val == root.Right.Val {
-		return min(findSecondMinimumValue(root.Left),findSecondMinimumValue(root.Right))
+func helper(root *TreeNode, lo int, hi *int) {
+	if root == nil {
+		return
 	}
 
-	if root.Left.Val > root.Right.Val {
-		return helper(root.Left, root.Right)
+	if lo < root.Val && root.Val < *hi {
+		*hi = root.Val
 	}
-		return helper(root.Right, root.Left)
-}
 
-func helper(l,s *TreeNode) int {
-lv := l.Val
-sv := findSecondMinimumValue(s)	
-if sv ==-1 {
-	return lv
+	helper(root.Left, lo, hi)
+	helper(root.Right, lo, hi)
 }
-
-return min(lv,sv)
-}
-
-func min(a, b int) int {
-	if a < b {
-		return a
-	}
-	return b
-}
-
