@@ -2,7 +2,7 @@
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 排名](https://img.shields.io/badge/Ranking-2944-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 答题进度](https://img.shields.io/badge/Progress-90%25-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 答题进度](https://img.shields.io/badge/Progress-91%25-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 
@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|137|239|96|472|
+|**Accepted**|141|239|96|476|
 |**Total**|155|258|107|520|
 
 ## 题解
@@ -128,7 +128,7 @@
 |107|[Binary Tree Level Order Traversal II](./Algorithms/0107.binary-tree-level-order-traversal-ii)|41%|Easy| |
 |108|[Convert Sorted Array to Binary Search Tree](./Algorithms/0108.convert-sorted-array-to-binary-search-tree)|43%|Easy| |
 |109|[Convert Sorted List to Binary Search Tree](./Algorithms/0109.convert-sorted-list-to-binary-search-tree)|34%|Medium| |
-|110|[Balanced Binary Tree](./Algorithms/0110.balanced-binary-tree)|37%|Easy| |
+|110|[Balanced Binary Tree](./Algorithms/0110.balanced-binary-tree)|38%|Easy| |
 |111|[Minimum Depth of Binary Tree](./Algorithms/0111.minimum-depth-of-binary-tree)|33%|Easy| |
 |112|[Path Sum](./Algorithms/0112.path-sum)|34%|Easy| |
 |113|[Path Sum II](./Algorithms/0113.path-sum-ii)|34%|Medium| |
@@ -340,7 +340,7 @@
 |440|[K-th Smallest in Lexicographical Order](./Algorithms/0440.k-th-smallest-in-lexicographical-order)|25%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |441|[Arranging Coins](./Algorithms/0441.arranging-coins)|36%|Easy| |
 |442|[Find All Duplicates in an Array](./Algorithms/0442.find-all-duplicates-in-an-array)|56%|Medium| |
-|443|[String Compression](./Algorithms/0443.string-compression)|37%|Easy|[❤](https://leetcode.com/list/oussv5j)|
+|443|[String Compression](./Algorithms/0443.string-compression)|36%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |445|[Add Two Numbers II](./Algorithms/0445.add-two-numbers-ii)|45%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |446|[Arithmetic Slices II - Subsequence](./Algorithms/0446.arithmetic-slices-ii-subsequence)|27%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |447|[Number of Boomerangs](./Algorithms/0447.number-of-boomerangs)|45%|Easy| |
@@ -450,7 +450,7 @@
 |628|[Maximum Product of Three Numbers](./Algorithms/0628.maximum-product-of-three-numbers)|45%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |629|[K Inverse Pairs Array](./Algorithms/0629.k-inverse-pairs-array)|26%|Hard| |
 |630|[Course Schedule III](./Algorithms/0630.course-schedule-iii)|28%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|632|[Smallest Range](./Algorithms/0632.smallest-range)|41%|Hard| |
+|632|[Smallest Range](./Algorithms/0632.smallest-range)|42%|Hard| |
 |633|[Sum of Square Numbers](./Algorithms/0633.sum-of-square-numbers)|32%|Easy| |
 |636|[Exclusive Time of Functions](./Algorithms/0636.exclusive-time-of-functions)|43%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |637|[Average of Levels in Binary Tree](./Algorithms/0637.average-of-levels-in-binary-tree)|55%|Easy| |
@@ -479,17 +479,17 @@
 |668|[Kth Smallest Number in Multiplication Table](./Algorithms/0668.kth-smallest-number-in-multiplication-table)|38%|Hard| |
 |669|[Trim a Binary Search Tree](./Algorithms/0669.trim-a-binary-search-tree)|58%|Easy| |
 |670|[Maximum Swap](./Algorithms/0670.maximum-swap)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|671| * Second Minimum Node In a Binary Tree|41%|Easy| |
+|671|[Second Minimum Node In a Binary Tree](./Algorithms/0671.second-minimum-node-in-a-binary-tree)|41%|Easy| |
 |672|[Bulb Switcher II](./Algorithms/0672.bulb-switcher-ii)|48%|Medium| |
 |673|[Number of Longest Increasing Subsequence](./Algorithms/0673.number-of-longest-increasing-subsequence)|31%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|674| * Longest Continuous Increasing Subsequence|42%|Easy| |
+|674|[Longest Continuous Increasing Subsequence](./Algorithms/0674.longest-continuous-increasing-subsequence)|42%|Easy| |
 |675|[Cut Off Trees for Golf Event](./Algorithms/0675.cut-off-trees-for-golf-event)|26%|Hard| |
 |676|[Implement Magic Dictionary](./Algorithms/0676.implement-magic-dictionary)|49%|Medium| |
 |677|[Map Sum Pairs](./Algorithms/0677.map-sum-pairs)|52%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |678|[Valid Parenthesis String](./Algorithms/0678.valid-parenthesis-string)|29%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |679|[24 Game](./Algorithms/0679.24-game)|39%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|680| * Valid Palindrome II|32%|Easy| |
-|682| * Baseball Game|58%|Easy| |
+|680|[Valid Palindrome II](./Algorithms/0680.valid-palindrome-ii)|32%|Easy| |
+|682|[Baseball Game](./Algorithms/0682.baseball-game)|58%|Easy| |
 |684|[Redundant Connection](./Algorithms/0684.redundant-connection)|40%|Medium| |
 |685|[Redundant Connection II](./Algorithms/0685.redundant-connection-ii)|28%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |686| * Repeated String Match|34%|Easy| |
@@ -524,9 +524,9 @@
 |732| * My Calendar III|53%|Hard| |
 |733| * Flood Fill|49%|Easy| |
 |735| * Asteroid Collision|37%|Medium| |
-|736| * Parse Lisp Expression|41%|Hard| |
+|736| * Parse Lisp Expression|42%|Hard| |
 |738| * Monotone Increasing Digits|41%|Medium| |
-|739| * Daily Temperatures|52%|Medium| |
+|739| * Daily Temperatures|53%|Medium| |
 |740| * Delete and Earn|42%|Medium| |
 |741| * Cherry Pickup|22%|Hard| |
 |744| * Network Delay Time|33%|Medium| |
@@ -536,9 +536,9 @@
 |748| * Largest Number Greater Than Twice of Others|56%|Easy| |
 |749| * Shortest Completing Word|54%|Medium| |
 |750| * Contain Virus|37%|Hard| |
-|752| * IP to CIDR|49%|Medium| |
-|753| * Open the Lock|29%|Medium| |
-|754| * Cracking the Safe|36%|Hard| |
+|752| * IP to CIDR|50%|Medium| |
+|753| * Open the Lock|31%|Medium| |
+|754| * Cracking the Safe|37%|Hard| |
 
 以下免费的算法题，暂时不能使用 Go 解答
 
