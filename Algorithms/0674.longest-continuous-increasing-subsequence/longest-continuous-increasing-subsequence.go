@@ -1,13 +1,13 @@
 package Problem0674
 
 func findLengthOfLCIS(a []int) int {
+	if len(a) == 0 {
+		return 0
+	}
 
 	res := 1
 
-	var i, j int
-	i = 0
-	j = 1
-
+	i, j := 0, 1
 	for j < len(a) {
 		for j < len(a) && a[j-1] < a[j] {
 			j++
