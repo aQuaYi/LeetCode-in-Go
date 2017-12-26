@@ -1,26 +1,22 @@
 package Problem0686
 
-import (
-	"strings"
-)
+import "strings"
 
-func repeatedStringMatch(a, b string) int {
+func repeatedStringMatch(a string, b string) int {
+	times := max(len(b)/len(a), 1)
 
-	c := a
-	res := 1
-	for len(c) < len(b) {
-		c += a
-		res++
+	if strings.Contains(strings.Repeat(a, times), b) {
+		return times
 	}
-
-	for len(a)*2+len(b) > len(c) {
-		if strings.Contains(c, b) {
-			return res
-		}
-		c += a
-		res++
-
+	if strings.Contains(strings.Repeat(a, times+1), b) {
+		return times + 1
 	}
-
 	return -1
+}
+
+func max(a, b int) int {
+	if a > b {
+		return a
+	}
+	return b
 }
