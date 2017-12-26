@@ -2,7 +2,7 @@
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 排名](https://img.shields.io/badge/Ranking-2944-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 答题进度](https://img.shields.io/badge/Progress-91%25-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 答题进度](https://img.shields.io/badge/Progress-92%25-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 
@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|141|239|97|477|
+|**Accepted**|141|241|97|479|
 |**Total**|155|258|107|520|
 
 ## 题解
@@ -492,7 +492,7 @@
 |682|[Baseball Game](./Algorithms/0682.baseball-game)|58%|Easy| |
 |684|[Redundant Connection](./Algorithms/0684.redundant-connection)|40%|Medium| |
 |685|[Redundant Connection II](./Algorithms/0685.redundant-connection-ii)|28%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|686| * Repeated String Match|34%|Easy| |
+|686| * Repeated String Match|34%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |687| * Longest Univalue Path|34%|Easy| |
 |688|[Knight Probability in Chessboard](./Algorithms/0688.knight-probability-in-chessboard)|39%|Medium| |
 |689|[Maximum Sum of 3 Non-Overlapping Subarrays](./Algorithms/0689.maximum-sum-of-3-non-overlapping-subarrays)|41%|Hard| |
@@ -504,8 +504,8 @@
 |697| * Degree of an Array|46%|Easy| |
 |698|[Partition to K Equal Sum Subsets](./Algorithms/0698.partition-to-k-equal-sum-subsets)|37%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |699|[Falling Squares](./Algorithms/0699.falling-squares)|37%|Hard| |
-|712| * Minimum ASCII Delete Sum for Two Strings|51%|Medium| |
-|713| * Subarray Product Less Than K|33%|Medium| |
+|712|[Minimum ASCII Delete Sum for Two Strings](./Algorithms/0712.minimum-ascii-delete-sum-for-two-strings)|51%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|713|[Subarray Product Less Than K](./Algorithms/0713.subarray-product-less-than-k)|33%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |714| * Best Time to Buy and Sell Stock with Transaction Fee|42%|Medium| |
 |715|[Range Module](./Algorithms/0715.range-module)|30%|Hard| |
 |717| * 1-bit and 2-bit Characters|49%|Easy| |
@@ -524,7 +524,7 @@
 |732| * My Calendar III|53%|Hard| |
 |733| * Flood Fill|49%|Easy| |
 |735| * Asteroid Collision|37%|Medium| |
-|736| * Parse Lisp Expression|42%|Hard| |
+|736| * Parse Lisp Expression|41%|Hard| |
 |738| * Monotone Increasing Digits|41%|Medium| |
 |739| * Daily Temperatures|53%|Medium| |
 |740| * Delete and Earn|42%|Medium| |
@@ -532,8 +532,8 @@
 |744| * Network Delay Time|33%|Medium| |
 |745| * Find Smallest Letter Greater Than Target|49%|Easy| |
 |746| * Prefix and Suffix Search|22%|Hard| |
-|747| * Min Cost Climbing Stairs|47%|Easy| |
-|748| * Largest Number Greater Than Twice of Others|54%|Easy| |
+|747| * Min Cost Climbing Stairs|46%|Easy| |
+|748| * Largest Number Greater Than Twice of Others|53%|Easy| |
 |749| * Shortest Completing Word|54%|Medium| |
 |750| * Contain Virus|37%|Hard| |
 |752| * IP to CIDR|52%|Medium| |
