@@ -5,6 +5,10 @@ import (
 )
 
 func repeatedStringMatch(a, b string) int {
+	if strings.Contains(a, b) {
+		return 1
+	}
+
 	i := strings.Index(b, a)
 	if i == -1 {
 		return -1
