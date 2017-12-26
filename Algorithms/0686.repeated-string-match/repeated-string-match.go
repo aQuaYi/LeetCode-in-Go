@@ -8,6 +8,8 @@ func repeatedStringMatch(a, b string) int {
 	if len(a) >= len(b) {
 		if a[:len(b)] == b {
 			return 1
+		} else if strings.Contains(a+a, b) {
+			return 2
 		}
 		return -1
 	}
