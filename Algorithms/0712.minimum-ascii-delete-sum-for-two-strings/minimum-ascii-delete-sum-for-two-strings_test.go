@@ -33,14 +33,14 @@ func Test_fn(t *testing.T) {
 
 	for _, tc := range tcs {
 		fmt.Printf("~~%v~~\n", tc)
-		ast.Equal(tc.ans, minimumDeleteSum(tc.para), "输入:%v", tc)
+		ast.Equal(tc.ans, minimumDeleteSum(tc.s1, tc.s2), "输入:%v", tc)
 	}
 }
 
 func Benchmark_fn(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		for _, tc := range tcs {
-			minimumDeleteSum(tc.para)
+			minimumDeleteSum(tc.s1, tc.s2)
 		}
 	}
 }
