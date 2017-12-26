@@ -14,6 +14,36 @@ var tcs = []struct {
 }{
 
 	{
+		"abc",
+		"aabcbabcc",
+		-1,
+	},
+
+	{
+		"abcd",
+		"cdabdab",
+		-1,
+	},
+
+	{
+		"aa",
+		"b",
+		-1,
+	},
+
+	{
+		"aa",
+		"a",
+		1,
+	},
+
+	{
+		"abcd",
+		"bcabcdbc",
+		-1,
+	},
+
+	{
 		"abcd",
 		"abcdb",
 		-1,
@@ -38,33 +68,9 @@ var tcs = []struct {
 	},
 
 	{
-		"aa",
-		"b",
-		-1,
-	},
-
-	{
-		"aa",
-		"a",
-		1,
-	},
-
-	{
 		"a",
 		"aa",
 		2,
-	},
-
-	{
-		"abcd",
-		"bcabcdbc",
-		-1,
-	},
-
-	{
-		"abcd",
-		"cdabdab",
-		-1,
 	},
 
 	// 可以有多个 testcase
