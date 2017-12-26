@@ -5,29 +5,24 @@ import (
 )
 
 func repeatedStringMatch(a, b string) int {
-	if strings.Contains(a, b) {
-		return 1
+	if len(a) >= len(b) {
+		if strings.Contains(a, b) {
+			return 1
+		}
+		return -1
 	}
 
 	i := strings.Index(b, a)
-	if i == -1 {
+
+	switch i {
+	case -1:
+		return -1
+	case 0:
+		return 1 + repeatedStringMatch(a, b[len(a):])
+	default:
+		if strings.Contains(a, b[:i]) {
+			return 2 + repeatedStringMatch(a, b[i+len(a):])
+		}
 		return -1
 	}
-	r := b[:i]
-
-	res := 0
-	lenA := len(a)
-	b = b[i:]
-	for len(b) >= lenA && b[:lenA] == a {
-		b = b[lenA:]
-		res++
-	}
-
-	b += r
-	if b == "" {
-		return res
-	} else if b == a {
-		return res + 2
-	}
-	return -1
 }

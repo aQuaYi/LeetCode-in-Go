@@ -32,12 +32,20 @@ var tcs = []struct {
 	},
 
 	{
-		"abcd", "cdabdab",
+		"abcd",
+		"bcabcdbc",
 		-1,
 	},
 
 	{
-		"abcd", "cdabcdab",
+		"abcd",
+		"cdabdab",
+		-1,
+	},
+
+	{
+		"abcd",
+		"cdabcdab",
 		3,
 	},
 
