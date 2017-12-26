@@ -20,8 +20,9 @@ func repeatedStringMatch(a, b string) int {
 	}
 
 	b += r
-
-	if b == a {
+	if b == "" {
+		return res
+	} else if b == a {
 		return res + 2
 	}
 	return -1
