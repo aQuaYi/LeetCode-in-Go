@@ -28,7 +28,7 @@ var tcs = []struct {
 	// 可以有多个 testcase
 }
 
-func Test_fn(t *testing.T) {
+func Test_minimumDeleteSum(t *testing.T) {
 	ast := assert.New(t)
 
 	for _, tc := range tcs {
