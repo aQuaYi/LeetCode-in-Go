@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|141|241|97|479|
+|**Accepted**|142|241|97|480|
 |**Total**|155|258|107|520|
 
 ## 题解
@@ -103,7 +103,7 @@
 |82|[Remove Duplicates from Sorted List II](./Algorithms/0082.remove-duplicates-from-sorted-list-ii)|29%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |83|[Remove Duplicates from Sorted List](./Algorithms/0083.remove-duplicates-from-sorted-list)|40%|Easy| |
 |84|[Largest Rectangle in Histogram](./Algorithms/0084.largest-rectangle-in-histogram)|27%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|85|[Maximal Rectangle](./Algorithms/0085.maximal-rectangle)|28%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|85|[Maximal Rectangle](./Algorithms/0085.maximal-rectangle)|29%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |86|[Partition List](./Algorithms/0086.partition-list)|33%|Medium| |
 |87|[Scramble String](./Algorithms/0087.scramble-string)|29%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |88|[Merge Sorted Array](./Algorithms/0088.merge-sorted-array)|32%|Easy| |
@@ -490,9 +490,9 @@
 |679|[24 Game](./Algorithms/0679.24-game)|39%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |680|[Valid Palindrome II](./Algorithms/0680.valid-palindrome-ii)|32%|Easy| |
 |682|[Baseball Game](./Algorithms/0682.baseball-game)|58%|Easy| |
-|684|[Redundant Connection](./Algorithms/0684.redundant-connection)|40%|Medium| |
+|684|[Redundant Connection](./Algorithms/0684.redundant-connection)|41%|Medium| |
 |685|[Redundant Connection II](./Algorithms/0685.redundant-connection-ii)|28%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|686| * Repeated String Match|34%|Easy|[❤](https://leetcode.com/list/oussv5j)|
+|686|[Repeated String Match](./Algorithms/0686.repeated-string-match)|34%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |687| * Longest Univalue Path|34%|Easy| |
 |688|[Knight Probability in Chessboard](./Algorithms/0688.knight-probability-in-chessboard)|39%|Medium| |
 |689|[Maximum Sum of 3 Non-Overlapping Subarrays](./Algorithms/0689.maximum-sum-of-3-non-overlapping-subarrays)|41%|Hard| |
@@ -517,7 +517,7 @@
 |724| * Find Pivot Index|41%|Easy| |
 |725| * Split Linked List in Parts|49%|Medium| |
 |726|[Number of Atoms](./Algorithms/0726.number-of-atoms)|44%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|728| * Self Dividing Numbers|67%|Easy| |
+|728| * Self Dividing Numbers|68%|Easy| |
 |729| * My Calendar I|40%|Medium| |
 |730| * Count Different Palindromic Subsequences|32%|Hard| |
 |731| * My Calendar II|35%|Medium| |
@@ -534,9 +534,9 @@
 |746| * Prefix and Suffix Search|22%|Hard| |
 |747| * Min Cost Climbing Stairs|46%|Easy| |
 |748| * Largest Number Greater Than Twice of Others|53%|Easy| |
-|749| * Shortest Completing Word|54%|Medium| |
+|749| * Shortest Completing Word|55%|Medium| |
 |750| * Contain Virus|37%|Hard| |
-|752| * IP to CIDR|52%|Medium| |
+|752| * IP to CIDR|53%|Medium| |
 |753| * Open the Lock|33%|Medium| |
 |754| * Cracking the Safe|39%|Hard| |
 
