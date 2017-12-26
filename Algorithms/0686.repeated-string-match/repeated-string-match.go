@@ -6,7 +6,7 @@ import (
 
 func repeatedStringMatch(a, b string) int {
 	if len(a) >= len(b) {
-		if strings.Contains(a, b) {
+		if a[:len(b)] == b {
 			return 1
 		}
 		return -1
@@ -20,7 +20,7 @@ func repeatedStringMatch(a, b string) int {
 	case 0:
 		return 1 + repeatedStringMatch(a, b[len(a):])
 	default:
-		if strings.Contains(a, b[:i]) {
+		if i < len(a) && a[:len(a)-i] == b[:i] {
 			return 2 + repeatedStringMatch(a, b[i+len(a):])
 		}
 		return -1
