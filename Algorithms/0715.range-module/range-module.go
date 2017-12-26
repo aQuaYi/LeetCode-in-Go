@@ -19,11 +19,6 @@ func (r *RangeModule) AddRange(left int, right int) {
 	it := &interval{left: left, right: right}
 
 	n := len(r.ranges)
-	if n == 0 {
-		r.ranges = append(r.ranges, it)
-		return
-	}
-
 	i := sort.Search(n, func(i int) bool {
 		return left <= r.ranges[i].right
 	})
@@ -36,6 +31,7 @@ func (r *RangeModule) AddRange(left int, right int) {
 	if i == j {
 		r.ranges = append(r.ranges, nil)
 	}
+
 	copy(r.ranges[i+1:], r.ranges[j:])
 	r.ranges = r.ranges[:n-j+i+1]
 	r.ranges[i] = it
@@ -47,7 +43,6 @@ func (r *RangeModule) QueryRange(left int, right int) bool {
 	i := sort.Search(n, func(i int) bool {
 		return right <= r.ranges[i].right
 	})
-
 	return 0 <= i && i < n && r.ranges[i].isCover(left, right)
 }
 
@@ -109,7 +104,6 @@ func (it *interval) add(a *interval) {
 
 // 返回 a-b
 func minus(a, b *interval) (*interval, *interval) {
-	// NOTICE: 这里只讨论了 4 种情况，是因为程序的其他地方，会保证用到 minus 的时候，只有这 4 种情况
 	if b.left <= a.left && a.right <= b.right {
 		return nil, nil
 	}
@@ -122,13 +116,10 @@ func minus(a, b *interval) (*interval, *interval) {
 		return &interval{left: a.left, right: b.left}, nil
 	}
 
-	if a.left < b.left && b.right < a.right {
-		return &interval{left: a.left, right: b.left},
-			&interval{left: b.right, right: a.right}
-	}
+	// a.left < b.left && b.right < a.right
+	return &interval{left: a.left, right: b.left},
+		&interval{left: b.right, right: a.right}
 
-	// TODO: 删除此处内容
-	return nil, nil
 }
 
 /**
