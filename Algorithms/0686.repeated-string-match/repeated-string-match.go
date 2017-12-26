@@ -6,10 +6,13 @@ import (
 
 func repeatedStringMatch(a, b string) int {
 	if len(a) >= len(b) {
-		if a[:len(b)] == b {
+		if a[:len(b)] == b || a[len(a)-len(b):] == b {
 			return 1
-		} else if strings.Contains(a+a, b) {
-			return 2
+		}
+		for i := 1; i < len(b)-1; i++ {
+			if b[:i] == a[len(a)-i:] && b[i:] == a[:len(b)-i] {
+				return 2
+			}
 		}
 		return -1
 	}
