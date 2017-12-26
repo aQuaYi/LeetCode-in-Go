@@ -20,7 +20,7 @@ func repeatedStringMatch(a, b string) int {
 	case 0:
 		return 1 + repeatedStringMatch(a, b[len(a):])
 	default:
-		if i < len(a) && a[:len(a)-i] == b[:i] {
+		if i < len(a) && a[len(a)-i:] == b[:i] {
 			return 2 + repeatedStringMatch(a, b[i+len(a):])
 		}
 		return -1

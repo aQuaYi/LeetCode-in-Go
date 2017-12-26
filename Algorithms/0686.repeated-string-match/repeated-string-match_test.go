@@ -14,6 +14,12 @@ var tcs = []struct {
 }{
 
 	{
+		"abababaaba",
+		"aabaaba",
+		2,
+	},
+
+	{
 		"abcd",
 		"cdabcdab",
 		3,
@@ -23,6 +29,12 @@ var tcs = []struct {
 		"bb",
 		"bbbbbbb",
 		4,
+	},
+
+	{
+		"aa",
+		"b",
+		-1,
 	},
 
 	{
