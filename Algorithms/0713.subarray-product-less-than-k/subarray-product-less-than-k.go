@@ -7,12 +7,12 @@ func numSubarrayProductLessThanK(a []int, k int) int {
 	p := 1
 	i, j := 0, 0
 	for i < n {
-		for j < n && p < k {
+		for j < n && p*a[j] < k {
 			p *= a[j]
 			j++
 		}
 
-		res += j - i - 1
+		res += j - i
 
 		p /= a[i]
 		i++
