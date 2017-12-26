@@ -12,14 +12,17 @@ func numSubarrayProductLessThanK(a []int, k int) int {
 			j++
 		}
 
-		if i == j { // 此时 a[i] > k
-			i++
+		if i == j {
+			// 此时 a[i] > k
+			// 需要跳过 a[i]
+			// 由于 p 没有乘以 a[i]
+			// 所以，p 也不需要除以 a[i]
 			j++
-			continue
+		} else {
+			res += j - i
+			p /= a[i]
 		}
 
-		res += j - i
-		p /= a[i]
 		i++
 	}
 
