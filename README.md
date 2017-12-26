@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|141|239|96|476|
+|**Accepted**|141|239|97|477|
 |**Total**|155|258|107|520|
 
 ## 题解
@@ -96,7 +96,7 @@
 |75|[Sort Colors](./Algorithms/0075.sort-colors)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |76|[Minimum Window Substring](./Algorithms/0076.minimum-window-substring)|26%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |77|[Combinations](./Algorithms/0077.combinations)|40%|Medium| |
-|78|[Subsets](./Algorithms/0078.subsets)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|78|[Subsets](./Algorithms/0078.subsets)|43%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |79|[Word Search](./Algorithms/0079.word-search)|27%|Medium| |
 |80|[Remove Duplicates from Sorted Array II](./Algorithms/0080.remove-duplicates-from-sorted-array-ii)|36%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |81|[Search in Rotated Sorted Array II](./Algorithms/0081.search-in-rotated-sorted-array-ii)|32%|Medium| |
@@ -497,7 +497,7 @@
 |688|[Knight Probability in Chessboard](./Algorithms/0688.knight-probability-in-chessboard)|39%|Medium| |
 |689|[Maximum Sum of 3 Non-Overlapping Subarrays](./Algorithms/0689.maximum-sum-of-3-non-overlapping-subarrays)|41%|Hard| |
 |691|[Stickers to Spell Word](./Algorithms/0691.stickers-to-spell-word)|34%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|692|[Top K Frequent Words](./Algorithms/0692.top-k-frequent-words)|40%|Medium| |
+|692|[Top K Frequent Words](./Algorithms/0692.top-k-frequent-words)|41%|Medium| |
 |693| * Binary Number with Alternating Bits|55%|Easy| |
 |695| * Max Area of Island|52%|Easy| |
 |696| * Count Binary Substrings|51%|Easy| |
@@ -507,14 +507,14 @@
 |712| * Minimum ASCII Delete Sum for Two Strings|51%|Medium| |
 |713| * Subarray Product Less Than K|33%|Medium| |
 |714| * Best Time to Buy and Sell Stock with Transaction Fee|42%|Medium| |
-|715| * Range Module|30%|Hard| |
-|717| * 1-bit and 2-bit Characters|50%|Easy| |
+|715|[Range Module](./Algorithms/0715.range-module)|30%|Hard| |
+|717| * 1-bit and 2-bit Characters|49%|Easy| |
 |718| * Maximum Length of Repeated Subarray|40%|Medium| |
 |719| * Find K-th Smallest Pair Distance|26%|Hard| |
 |720| * Longest Word in Dictionary|41%|Easy| |
 |721| * Accounts Merge|30%|Medium| |
 |722| * Remove Comments|26%|Medium| |
-|724| * Find Pivot Index|40%|Easy| |
+|724| * Find Pivot Index|41%|Easy| |
 |725| * Split Linked List in Parts|49%|Medium| |
 |726|[Number of Atoms](./Algorithms/0726.number-of-atoms)|44%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |728| * Self Dividing Numbers|67%|Easy| |
@@ -528,17 +528,17 @@
 |738| * Monotone Increasing Digits|41%|Medium| |
 |739| * Daily Temperatures|53%|Medium| |
 |740| * Delete and Earn|42%|Medium| |
-|741| * Cherry Pickup|22%|Hard| |
+|741| * Cherry Pickup|21%|Hard| |
 |744| * Network Delay Time|33%|Medium| |
 |745| * Find Smallest Letter Greater Than Target|49%|Easy| |
 |746| * Prefix and Suffix Search|22%|Hard| |
-|747| * Min Cost Climbing Stairs|46%|Easy| |
-|748| * Largest Number Greater Than Twice of Others|56%|Easy| |
+|747| * Min Cost Climbing Stairs|47%|Easy| |
+|748| * Largest Number Greater Than Twice of Others|54%|Easy| |
 |749| * Shortest Completing Word|54%|Medium| |
 |750| * Contain Virus|37%|Hard| |
-|752| * IP to CIDR|50%|Medium| |
-|753| * Open the Lock|31%|Medium| |
-|754| * Cracking the Safe|37%|Hard| |
+|752| * IP to CIDR|52%|Medium| |
+|753| * Open the Lock|33%|Medium| |
+|754| * Cracking the Safe|39%|Hard| |
 
 以下免费的算法题，暂时不能使用 Go 解答
 
