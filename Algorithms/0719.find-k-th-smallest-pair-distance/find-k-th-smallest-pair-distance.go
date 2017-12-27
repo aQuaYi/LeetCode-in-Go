@@ -1,8 +1,6 @@
 package Problem0719
 
-import (
-	"sort"
-)
+import "sort"
 
 func smallestDistancePair(a []int, k int) int {
 	n := len(a)
@@ -17,7 +15,7 @@ func smallestDistancePair(a []int, k int) int {
 
 	for low < high {
 		mid := low + (high-low)/2
-		if countPairs(a, mid) < k {
+		if count(a, mid) < k {
 			low = mid + 1
 		} else {
 			high = mid
@@ -27,15 +25,17 @@ func smallestDistancePair(a []int, k int) int {
 	return low
 }
 
-func countPairs(a []int, mid int) int {
+func count(a []int, mid int) int {
 	n := len(a)
 	res := 0
-	for i := 0; i < n; i++ {
-		j := i
-		for j < n && a[j]-a[i] <= mid {
+	i, j := 0, 1
+	for j < n {
+		if a[j]-a[i] <= mid {
+			res += j - i
 			j++
+		} else {
+			i++
 		}
-		res += j - i - 1
 	}
 	return res
 }
