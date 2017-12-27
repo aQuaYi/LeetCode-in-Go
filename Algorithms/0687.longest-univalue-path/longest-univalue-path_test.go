@@ -4,18 +4,25 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/aQuaYi/LeetCode-in-Go/kit"
 	"github.com/stretchr/testify/assert"
 )
 
+const null = -1 << 63
+
 // tcs is testcase slice
 var tcs = []struct {
-	pre, in []int
-	ans     int
+	ints []int
+	ans  int
 }{
 
 	{
-		[]int{},
-		[]int{},
+		[]int{1, 4, 5, 4, 4, null, 5},
+		2,
+	},
+
+	{
+		[]int{5, 4, 5, 1, 1, null, 5},
 		2,
 	},
 
@@ -27,15 +34,16 @@ func Test_fn(t *testing.T) {
 
 	for _, tc := range tcs {
 		fmt.Printf("~~%v~~\n", tc)
-		root := kit.
-			ast.Equal(tc.ans, longestUnivaluePath(tc.para), "输入:%v", tc)
+		root := kit.Ints2TreeNode(tc.ints)
+		ast.Equal(tc.ans, longestUnivaluePath(root), "输入:%v", tc)
 	}
 }
 
 func Benchmark_fn(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		for _, tc := range tcs {
-			longestUnivaluePath(tc.para)
+			root := kit.Ints2TreeNode(tc.ints)
+			longestUnivaluePath(root)
 		}
 	}
 }
