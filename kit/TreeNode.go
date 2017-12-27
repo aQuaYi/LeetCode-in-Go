@@ -35,14 +35,14 @@ func Ints2TreeNode(ints []int) *TreeNode {
 		if i < n && ints[i] != null {
 			node.Left = &TreeNode{Val: ints[i]}
 			queue = append(queue, node.Left)
-			i++
 		}
+		i++
 
 		if i < n && ints[i] != null {
 			node.Right = &TreeNode{Val: ints[i]}
 			queue = append(queue, node.Right)
-			i++
 		}
+		i++
 
 		if i >= n {
 			break
