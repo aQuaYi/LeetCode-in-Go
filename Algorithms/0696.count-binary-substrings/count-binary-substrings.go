@@ -1,20 +1,30 @@
 package Problem0696
 
-import (
-	"strings"
-)
-
 func countBinarySubstrings(s string) int {
-	s = strings.Replace(s, "01", "0,1", -1)
-	s = strings.Replace(s, "10", "1,0", -1)
-	ss := strings.Split(s, ",")
+	count, countZero, countOne := 0, 0, 0
+	prev := rune(s[0])
 
-	res := 0
-	for i := 1; i < len(ss); i++ {
-		res += min(len(ss[i-1]), len(ss[i]))
+	for _, r := range s {
+		if prev == r {
+			if r == '0' {
+				countZero++
+			} else {
+				countOne++
+			}
+		} else {
+			// 较少的数字决定了符合题意的子字符串个数
+			// 例如 "00011" 符合题意的子字符串为 "0011", "01"，其中第一个 "0" 是无用的
+			count += min(countZero, countOne)
+			if r == '0' {
+				countZero = 1
+			} else {
+				countOne = 1
+			}
+		}
+		prev = r
 	}
 
-	return res
+	return count + min(countZero, countOne)
 }
 
 func min(a, b int) int {
