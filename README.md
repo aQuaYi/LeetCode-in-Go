@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|145|243|98|486|
+|**Accepted**|146|243|98|487|
 |**Total**|156|257|107|520|
 
 ## 题解
@@ -517,7 +517,7 @@
 |724| * Find Pivot Index|40%|Easy| |
 |725| * Split Linked List in Parts|49%|Medium| |
 |726|[Number of Atoms](./Algorithms/0726.number-of-atoms)|44%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|728| * Self Dividing Numbers|67%|Easy| |
+|728|[Self Dividing Numbers](./Algorithms/0728.self-dividing-numbers)|67%|Easy| |
 |729| * My Calendar I|40%|Medium| |
 |730| * Count Different Palindromic Subsequences|32%|Hard| |
 |731| * My Calendar II|35%|Medium| |
