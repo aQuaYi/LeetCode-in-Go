@@ -3,6 +3,8 @@ package Problem0718
 func findLength(a1, a2 []int) int {
 	n1, n2 := len(a1), len(a2)
 
+	// dp[i][j] == k  表示 a1[i-k:i] == a2[j-k:j] ，
+	// 但是 a1[i-k-1] != a2[j-k-1]
 	dp := make([][]int, n1+1)
 	for i := range dp {
 		dp[i] = make([]int, n2+1)
