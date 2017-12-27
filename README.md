@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|143|243|98|484|
+|**Accepted**|145|243|98|486|
 |**Total**|156|257|107|520|
 
 ## 题解
@@ -499,8 +499,8 @@
 |691|[Stickers to Spell Word](./Algorithms/0691.stickers-to-spell-word)|34%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |692|[Top K Frequent Words](./Algorithms/0692.top-k-frequent-words)|41%|Medium| |
 |693| * Binary Number with Alternating Bits|55%|Easy| |
-|695| * Max Area of Island|52%|Easy| |
-|696| * Count Binary Substrings|51%|Easy| |
+|695|[Max Area of Island](./Algorithms/0695.max-area-of-island)|52%|Easy|[❤](https://leetcode.com/list/oussv5j)|
+|696|[Count Binary Substrings](./Algorithms/0696.count-binary-substrings)|51%|Easy| |
 |697| * Degree of an Array|46%|Easy| |
 |698|[Partition to K Equal Sum Subsets](./Algorithms/0698.partition-to-k-equal-sum-subsets)|37%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |699|[Falling Squares](./Algorithms/0699.falling-squares)|37%|Hard| |
@@ -533,7 +533,7 @@
 |745| * Find Smallest Letter Greater Than Target|49%|Easy| |
 |746| * Prefix and Suffix Search|22%|Hard| |
 |747| * Min Cost Climbing Stairs|46%|Easy| |
-|748| * Largest Number At Least Twice of Others|52%|Easy| |
+|748| * Largest Number At Least Twice of Others|51%|Easy| |
 |749| * Shortest Completing Word|55%|Medium| |
 |750| * Contain Virus|37%|Hard| |
 |752| * IP to CIDR|54%|Easy| |
