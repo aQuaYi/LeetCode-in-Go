@@ -7,10 +7,28 @@ import (
 )
 
 var (
-	preOrder  = []int{1, 2, 4, 5, 3, 6, 7}
-	inOrder   = []int{4, 2, 5, 1, 6, 3, 7}
-	postOrder = []int{4, 5, 2, 6, 7, 3, 1}
+	// 同一个 TreeNode 的不同表达方式
+	//            1
+	//      	/  \
+	//         2    3
+	//        / \  /  \
+	//       4  5  6   7
+	LeetCodeOrder = []int{1, 2, 3, 4, 5, 6, 7}
+	preOrder      = []int{1, 2, 4, 5, 3, 6, 7}
+	inOrder       = []int{4, 2, 5, 1, 6, 3, 7}
+	postOrder     = []int{4, 5, 2, 6, 7, 3, 1}
 )
+
+func Test_Ints2TreeNode(t *testing.T) {
+	ast := assert.New(t)
+
+	expected := PreIn2Tree(preOrder, inOrder)
+	actual := Ints2TreeNode(LeetCodeOrder)
+	ast.Equal(expected, actual)
+
+	actual = Ints2TreeNode([]int{})
+	ast.Nil(actual)
+}
 
 func Test_preIn2Tree(t *testing.T) {
 	ast := assert.New(t)
