@@ -15,22 +15,6 @@ var tcs = []struct {
 
 	{
 		[]string{
-			"void func(int k) {",
-			"// this function does nothing /*",
-			"   k = k*2/4;",
-			"   k = k/2;*/",
-			"}",
-		},
-		[]string{
-			"void func(int k) {",
-			"   k = k*2/4;",
-			"   k = k/2;*/",
-			"}",
-		},
-	},
-
-	{
-		[]string{
 			"/*Test program */",
 			"int main()",
 			"{ ",
@@ -49,6 +33,22 @@ var tcs = []struct {
 			"  ",
 			"int a, b, c;",
 			"a = b + c;",
+			"}",
+		},
+	},
+
+	{
+		[]string{
+			"void func(int k) {",
+			"// this function does nothing /*",
+			"   k = k*2/4;",
+			"   k = k/2;*/",
+			"}",
+		},
+		[]string{
+			"void func(int k) {",
+			"   k = k*2/4;",
+			"   k = k/2;*/",
 			"}",
 		},
 	},

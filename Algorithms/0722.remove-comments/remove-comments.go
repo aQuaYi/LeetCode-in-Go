@@ -5,25 +5,30 @@ import "strings"
 // NOTICE: 使用正则表达式替换，可以很简单地解决这个题目
 
 func removeComments(source []string) []string {
-	res := dealSingle(source)
-	res = dealBlock(res)
-	return res
+	source = dealLine(source)
+	source = dealBlock(source)
+	return source
 }
 
-func dealSingle(source []string) []string {
+func dealLine(source []string) []string {
 	res := make([]string, 0, len(source))
 	for _, s := range source {
 		i := strings.Index(s, "//")
 		j := strings.Index(s, "/*")
-		k := strings.Index(s, "*/")
+		k := strings.LastIndex(s, "*/")
 
-		if i == -1 ||
-			j >= 0 ||
-			k >= 0 {
-			res = append(res, s)
-		} else if i > 0 {
-			res = append(res, s[:i])
+		if i == 0 && k < 0 { // 后面要求没有 "*/"
+			continue
 		}
+
+		if i == -1 || // 无 "//"
+			j < i || // "/*" 在 "//" 前面起作用了
+			i < k { // "//" 后面还有 "*/" 所以要留着
+			res = append(res, s)
+			continue
+		}
+
+		res = append(res, s[i:])
 	}
 	return res
 }
