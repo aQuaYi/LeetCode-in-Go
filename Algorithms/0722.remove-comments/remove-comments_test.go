@@ -15,6 +15,23 @@ var tcs = []struct {
 
 	{
 		[]string{
+			"struct Node{",
+			"    /*/ declare members;/**/",
+			"    int size;",
+			"    /**/int val;",
+			"};",
+		},
+		[]string{
+			"struct Node{",
+			"    ",
+			"    int size;",
+			"    int val;",
+			"};",
+		},
+	},
+
+	{
+		[]string{
 			"a//*b//*c",
 			"blank",
 			"d//*e/*/f",
