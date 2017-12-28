@@ -32,15 +32,15 @@ func countPalindromicSubsequences(s string) int {
 		segment := s[start:end]
 
 		for _, x := range elements {
-			i := strings.Index(segment, x) + start
-			j := strings.LastIndex(segment, x) + start
+			i := strings.Index(segment, x)
+			j := strings.LastIndex(segment, x)
 			if i == -1 {
 				continue
 			}
 			if i == j {
 				count++
 			} else {
-				count += cache(i+1, j) + 2
+				count += cache(start+i+1, start+j) + 2
 			}
 		}
 
