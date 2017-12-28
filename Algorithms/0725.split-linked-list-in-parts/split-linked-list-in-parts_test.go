@@ -36,19 +36,20 @@ func Test_fn(t *testing.T) {
 
 	for _, tc := range tcs {
 		fmt.Printf("~~%v~~\n", tc)
-		root := kit.Ints2TreeNode(tc.ints)
-		ans := make([]*TreeNode, len(tc.ans))
+		root := kit.Ints2List(tc.ints)
+		ansLN := splitListToParts(root, tc.k)
+		ans := make([][]int, len(tc.ans))
 		for i := range ans {
-			ans[i] = kit.Ints2TreeNode(tc.ans[i])
+			ans[i] = kit.List2Ints(ansLN[i])
 		}
-		ast.Equal(ans, splitListToParts(root, tc.k), "输入:%v", tc)
+		ast.Equal(tc.ans, ans, "输入:%v", tc)
 	}
 }
 
 func Benchmark_fn(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		for _, tc := range tcs {
-			root := kit.Ints2TreeNode(tc.ints)
+			root := kit.Ints2List(tc.ints)
 			splitListToParts(root, tc.k)
 		}
 	}
