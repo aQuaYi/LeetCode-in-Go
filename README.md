@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|146|243|99|488|
+|**Accepted**|147|243|99|489|
 |**Total**|155|257|107|519|
 
 ## 题解
@@ -273,7 +273,7 @@
 |343|[Integer Break](./Algorithms/0343.integer-break)|46%|Medium| |
 |344|[Reverse String](./Algorithms/0344.reverse-string)|59%|Easy| |
 |345|[Reverse Vowels of a String](./Algorithms/0345.reverse-vowels-of-a-string)|38%|Easy| |
-|347|[Top K Frequent Elements](./Algorithms/0347.top-k-frequent-elements)|48%|Medium| |
+|347|[Top K Frequent Elements](./Algorithms/0347.top-k-frequent-elements)|49%|Medium| |
 |349|[Intersection of Two Arrays](./Algorithms/0349.intersection-of-two-arrays)|47%|Easy| |
 |350|[Intersection of Two Arrays II](./Algorithms/0350.intersection-of-two-arrays-ii)|44%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |352|[Data Stream as Disjoint Intervals](./Algorithms/0352.data-stream-as-disjoint-intervals)|40%|Hard| |
@@ -498,7 +498,7 @@
 |689|[Maximum Sum of 3 Non-Overlapping Subarrays](./Algorithms/0689.maximum-sum-of-3-non-overlapping-subarrays)|41%|Hard| |
 |691|[Stickers to Spell Word](./Algorithms/0691.stickers-to-spell-word)|34%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |692|[Top K Frequent Words](./Algorithms/0692.top-k-frequent-words)|41%|Medium| |
-|693| * Binary Number with Alternating Bits|55%|Easy| |
+|693|[Binary Number with Alternating Bits](./Algorithms/0693.binary-number-with-alternating-bits)|55%|Easy| |
 |695|[Max Area of Island](./Algorithms/0695.max-area-of-island)|52%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |696|[Count Binary Substrings](./Algorithms/0696.count-binary-substrings)|51%|Easy| |
 |697| * Degree of an Array|46%|Easy| |
