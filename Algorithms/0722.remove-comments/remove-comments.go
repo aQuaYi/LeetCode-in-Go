@@ -5,7 +5,7 @@ import "strings"
 // NOTICE: 使用正则表达式替换，可以很简单地解决这个题目
 
 func removeComments(source []string) []string {
-	s := strings.Join(source, "$/")
+	s := strings.Join(source, "$$")
 	s = helper(s)
 	source = split(s)
 	return source
@@ -23,7 +23,7 @@ func helper(s string) string {
 
 	if (j == -1 && 0 <= i) ||
 		(0 <= i && i < j) {
-		k := i + strings.Index(s[i:], "$/")
+		k := i + strings.Index(s[i:], "$$")
 		return s[:i] + helper(strings.Replace(s[i:], s[i:k], "", 1))
 	}
 
@@ -31,7 +31,7 @@ func helper(s string) string {
 }
 
 func split(s string) []string {
-	ss := strings.Split(s, "$/")
+	ss := strings.Split(s, "$$")
 	res := make([]string, 0, len(ss))
 	for _, s := range ss {
 		if s != "" {

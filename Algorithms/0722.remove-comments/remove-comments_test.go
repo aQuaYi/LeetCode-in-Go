@@ -15,6 +15,19 @@ var tcs = []struct {
 
 	{
 		[]string{
+			"a//*b//*c",
+			"blank",
+			"d//*e/*/f",
+		},
+		[]string{
+			"a",
+			"blank",
+			"d",
+		},
+	},
+
+	{
+		[]string{
 			"/*Test program */",
 			"int main()",
 			"{ ",
