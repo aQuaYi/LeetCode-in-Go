@@ -17,7 +17,7 @@ func helper(s string) string {
 
 	if (i == -1 && 0 <= j) ||
 		(0 <= j && j < i) {
-		k := j + strings.Index(s[j:], "*/")
+		k := j + 2 + strings.Index(s[j+2:], "*/")
 		return s[:j] + helper(s[k+2:])
 	}
 
