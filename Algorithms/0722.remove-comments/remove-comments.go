@@ -22,13 +22,13 @@ func dealLine(source []string) []string {
 		}
 
 		if i == -1 || // 无 "//"
-			j < i || // "/*" 在 "//" 前面起作用了
+			(0 <= j && j < i) || // "/*" 在 "//" 前面起作用了
 			i < k { // "//" 后面还有 "*/" 所以要留着
 			res = append(res, s)
 			continue
 		}
 
-		res = append(res, s[i:])
+		res = append(res, s[:i])
 	}
 	return res
 }
