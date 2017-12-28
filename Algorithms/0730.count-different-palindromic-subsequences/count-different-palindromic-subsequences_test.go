@@ -13,19 +13,29 @@ var tcs = []struct {
 	ans int
 }{
 
-	{
-		"abcda",
-		8,
-	},
+	// {
+	// 	"aabcdaa",
+	// 	13,
+	// },
+
+	// {
+	// 	"abcda",
+	// 	8,
+	// },
+
+	// {
+	// 	"bccb",
+	// 	6,
+	// },
+
+	// {
+	// 	"abcdabcdabcdabcdabcdabcdabcdabcddcbadcbadcbadcbadcbadcbadcbadcba",
+	// 	104860361,
+	// },
 
 	{
-		"bccb",
-		6,
-	},
-
-	{
-		"abcdabcdabcdabcdabcdabcdabcdabcddcbadcbadcbadcbadcbadcbadcbadcba",
-		104860361,
+		"bdddbcbaaacdcbacdbbcdcacdddacdbaddbabdbcbccdbdcadbbbbdabacdddcbacabcdcdaccdcbdaadbbbbdbddccacdadadbcbddbdccbcacbdcabdbdcccbdccbcdbadbcdbacadadaaadacdaadaabdbcccddcccdcadaccdaacbdddcbadadcadcbcbaaadcaabadbcadcdaaddacaddbadbbdbbcacaaacbbaadcaadbbaadbbbabbddcacaaabddbccbcacaadcbabcaaacdbdbcdabdbdddbcddaaabcadccbcdccdcdadbcddcdaacbaadbcbcdcbadbccbdbaabbabcadacbdcdbaadbcacdcbabcdaabdccadabccdccdcabbcabcbccdaaaddabbcdabcbdbddbbddaadbcbbddabccadccbcccdcdcbbbdaccdcbdccbdbbaacbabacdcabcdbcbadadadbcdaccaadcdcbbbcdcbcbcbaaaadcabacbdbdbcaddbadcaabdbacbaacbdcadcdbacbbbbabacdbcdaacdcbdadaaddbacccbccccaacabacddbbbbcbcbccbbccaddbaabcdbdbaaaccddacaaccdaccdcbcacbccbbabcbcadbcbdacdcbdacacadcdbbbbdcbddcddddaadbdacbcddbdacbadaacdabaddddaddbcbbbdaddcaaaabaacdbacaddcadbcaaabdbcdacaabcdcdcdddacdacbabdcaabdaaadddbcdbbdaacacacbabaadaaabcdbbabacddcdbaacaaadddddcabdabaababcbdcbadbddaccddcbabbdbcbaacdbbbdbdadddacdcddaacdbbadbacbcaccacbbbbdcadabadaccbcdcbcbbacacdaddabdddbdccbbccdaacbcbbabaddabcbbacccbbadbadbccccccc",
+		115571776,
 	},
 
 	// 可以有多个 testcase
