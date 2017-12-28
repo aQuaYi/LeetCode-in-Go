@@ -5,8 +5,8 @@ import "strings"
 // NOTICE: 使用正则表达式替换，可以很简单地解决这个题目
 
 func removeComments(source []string) []string {
-	source = dealLine(source)
 	source = dealBlock(source)
+	source = dealLine(source)
 	return source
 }
 
