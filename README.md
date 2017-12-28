@@ -2,7 +2,7 @@
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 排名](https://img.shields.io/badge/Ranking-2944-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 答题进度](https://img.shields.io/badge/Progress-93%25-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 答题进度](https://img.shields.io/badge/Progress-94%25-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 
@@ -12,8 +12,8 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|146|243|98|487|
-|**Total**|156|257|107|520|
+|**Accepted**|146|243|99|488|
+|**Total**|155|257|107|519|
 
 ## 题解
 
@@ -462,7 +462,7 @@
 |646|[Maximum Length of Pair Chain](./Algorithms/0646.maximum-length-of-pair-chain)|47%|Medium| |
 |647|[Palindromic Substrings](./Algorithms/0647.palindromic-substrings)|55%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |648|[Replace Words](./Algorithms/0648.replace-words)|47%|Medium| |
-|649|[Dota2 Senate](./Algorithms/0649.dota2-senate)|35%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|649|[Dota2 Senate](./Algorithms/0649.dota2-senate)|36%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |650|[2 Keys Keyboard](./Algorithms/0650.2-keys-keyboard)|44%|Medium| |
 |652|[Find Duplicate Subtrees](./Algorithms/0652.find-duplicate-subtrees)|36%|Medium| |
 |653|[Two Sum IV - Input is a BST](./Algorithms/0653.two-sum-iv-input-is-a-bst)|50%|Easy| |
@@ -519,7 +519,7 @@
 |726|[Number of Atoms](./Algorithms/0726.number-of-atoms)|44%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |728|[Self Dividing Numbers](./Algorithms/0728.self-dividing-numbers)|67%|Easy| |
 |729| * My Calendar I|40%|Medium| |
-|730| * Count Different Palindromic Subsequences|32%|Hard| |
+|730|[Count Different Palindromic Subsequences](./Algorithms/0730.count-different-palindromic-subsequences)|32%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |731| * My Calendar II|35%|Medium| |
 |732| * My Calendar III|53%|Hard| |
 |733| * Flood Fill|49%|Easy| |
@@ -530,14 +530,13 @@
 |740| * Delete and Earn|42%|Medium| |
 |741| * Cherry Pickup|21%|Hard| |
 |744| * Network Delay Time|33%|Medium| |
-|745| * Find Smallest Letter Greater Than Target|49%|Easy| |
+|745| * Find Smallest Letter Greater Than Target|48%|Easy| |
 |746| * Prefix and Suffix Search|22%|Hard| |
 |747| * Min Cost Climbing Stairs|46%|Easy| |
-|748| * Largest Number At Least Twice of Others|51%|Easy| |
-|749| * Shortest Completing Word|55%|Medium| |
+|748| * Largest Number At Least Twice of Others|50%|Easy| |
+|749| * Shortest Completing Word|54%|Medium| |
 |750| * Contain Virus|37%|Hard| |
-|752| * IP to CIDR|54%|Easy| |
-|753| * Open the Lock|34%|Medium| |
+|753| * Open the Lock|35%|Medium| |
 |754| * Cracking the Safe|39%|Hard| |
 
 以下免费的算法题，暂时不能使用 Go 解答
