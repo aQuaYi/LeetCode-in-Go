@@ -1,51 +1,63 @@
 package Problem0730
 
-import (
-	"strings"
-)
+const mod int = 1e9 + 7
 
-const mod = 1000000007
+func helper(dp, pre, next [][]int, left int, right int) int {
+	if left > right {
+		return 0
+	}
 
-var elements = [4]string{"a", "b", "c", "d"}
+	if dp[left][right] != 0 {
+		return dp[left][right]
+	}
+
+	total := 0
+
+	for c := 0; c < 4; c++ {
+		i := next[left][c]
+		j := pre[right][c]
+		if left <= i && j <= right {
+			if i < j {
+				total += helper(dp, pre, next, i+1, j-1) + 2
+			} else if i == j {
+				total++
+			}
+		}
+	}
+
+	total %= mod
+	dp[left][right] = total
+
+	return total
+}
 
 func countPalindromicSubsequences(s string) int {
-	check := make(map[[2]int]int, 1024)
-	var dfs func(int, int) int
+	n := len(s)
 
-	cache := func(start, end int) int {
-		if end <= start+2 {
-			return end - start
-		}
-		key := [2]int{start, end}
-		res, ok := check[key]
-		if ok {
-			return res
-		}
-
-		check[key] = dfs(start, end)
-
-		return check[key]
+	dp := make([][]int, n)
+	for i := 0; i < n; i++ {
+		dp[i] = make([]int, n)
 	}
 
-	dfs = func(start, end int) int {
-		count := 0
-		segment := s[start:end]
+	before := make([][]int, n)
+	after := make([][]int, n)
 
-		for _, x := range elements {
-			i := strings.Index(segment, x)
-			j := strings.LastIndex(segment, x)
-			if i == -1 {
-				continue
-			}
-			if i == j {
-				count++
-			} else {
-				count += cache(start+i+1, start+j) + 2
-			}
+	indexToHead := []int{n, n, n, n}
+	indexToTail := []int{-1, -1, -1, -1}
+
+	for i := 0; i < n; i++ {
+		j := n - i - 1
+
+		before[i] = make([]int, 4)
+		after[j] = make([]int, 4)
+
+		indexToHead[s[i]-'a'] = i
+		indexToTail[s[j]-'a'] = j
+		for c := 0; c < 4; c++ {
+			before[i][c] = indexToHead[c]
+			after[j][c] = indexToTail[c]
 		}
-
-		return count % mod
 	}
 
-	return cache(0, len(s))
+	return helper(dp, before, after, 0, n-1)
 }
