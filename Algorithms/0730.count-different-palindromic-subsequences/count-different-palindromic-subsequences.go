@@ -71,6 +71,7 @@ func helper(dp, before, after [][]int, left int, right int) int {
 				//    s[i+1:j] 中的回文数量 + 2
 				// 即
 				//    helper(dp, before, after, i+1, j-1) + 2
+
 				total += helper(dp, before, after, i+1, j-1) + 2
 			} else if i == j {
 				// i==j 说明此时只有一个单字符的回文 c
