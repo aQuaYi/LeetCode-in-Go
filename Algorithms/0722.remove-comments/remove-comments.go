@@ -5,9 +5,40 @@ import "strings"
 // NOTICE: 使用正则表达式替换，可以很简单地解决这个题目
 
 func removeComments(source []string) []string {
-	source = dealBlock(source)
-	source = dealLine(source)
+	s := strings.Join(source, "$/")
+	s = helper(s)
+	source = split(s)
 	return source
+}
+
+func helper(s string) string {
+	i := strings.Index(s, "//")
+	j := strings.Index(s, "/*")
+
+	if (i == -1 && 0 <= j) ||
+		(0 <= j && j < i) {
+		k := j + strings.Index(s[j:], "*/")
+		return s[:j] + helper(strings.Replace(s[j:], s[j:k+2], "", 1))
+	}
+
+	if (j == -1 && 0 <= i) ||
+		(0 <= i && i < j) {
+		k := i + strings.Index(s[i:], "$/")
+		return s[:i] + helper(strings.Replace(s[i:], s[i:k], "", 1))
+	}
+
+	return s
+}
+
+func split(s string) []string {
+	ss := strings.Split(s, "$/")
+	res := make([]string, 0, len(ss))
+	for _, s := range ss {
+		if s != "" {
+			res = append(res, s)
+		}
+	}
+	return res
 }
 
 func dealLine(source []string) []string {

@@ -15,30 +15,6 @@ var tcs = []struct {
 
 	{
 		[]string{
-			"main() {",
-			"  Node* p;",
-			"  /* declare a Node",
-			"  /*float f = 2.0",
-			"   p->val = f;",
-			"   /**/",
-			"   p->val = 1;",
-			"   //*/ cout << success;*/",
-			"}",
-			" ",
-		},
-		[]string{
-			"main() {",
-			"  Node* p;",
-			"  ",
-			"   p->val = 1;",
-			"   ",
-			"}",
-			" ",
-		},
-	},
-
-	{
-		[]string{
 			"/*Test program */",
 			"int main()",
 			"{ ",
@@ -58,6 +34,30 @@ var tcs = []struct {
 			"int a, b, c;",
 			"a = b + c;",
 			"}",
+		},
+	},
+
+	{
+		[]string{
+			"main() {",
+			"  Node* p;",
+			"  /* declare a Node",
+			"  /*float f = 2.0",
+			"   p->val = f;",
+			"   /**/",
+			"   p->val = 1;",
+			"   //*/ cout << success;*/",
+			"}",
+			" ",
+		},
+		[]string{
+			"main() {",
+			"  Node* p;",
+			"  ",
+			"   p->val = 1;",
+			"   ",
+			"}",
+			" ",
 		},
 	},
 
