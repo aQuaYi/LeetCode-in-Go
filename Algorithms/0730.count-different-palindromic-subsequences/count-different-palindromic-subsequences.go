@@ -61,8 +61,19 @@ func helper(dp, before, after [][]int, left int, right int) int {
 		j := before[right][c]
 		if left <= i && j <= right {
 			if i < j {
+				// 此时
+				// s[left:right+1] 中至少有 2 个 c
+				// 那么可以组成的回文格式为
+				//    c
+				//    cc
+				//    c*c，其中 * 代表 s[i+1:j] 中的不同回文数量
+				// 所以，此时以 c 为两端的回文数量，等于
+				//    s[i+1:j] 中的回文数量 + 2
+				// 即
+				//    helper(dp, before, after, i+1, j-1) + 2
 				total += helper(dp, before, after, i+1, j-1) + 2
 			} else if i == j {
+				// i==j 说明此时只有一个单字符的回文 c
 				total++
 			}
 		}

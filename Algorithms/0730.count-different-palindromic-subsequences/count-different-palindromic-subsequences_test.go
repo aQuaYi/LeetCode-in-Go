@@ -13,25 +13,35 @@ var tcs = []struct {
 	ans int
 }{
 
-	// {
-	// 	"aabcdaa",
-	// 	13,
-	// },
+	{
+		"aacaca",
+		11,
+	},
 
-	// {
-	// 	"abcda",
-	// 	8,
-	// },
+	{
+		"aabacabaa",
+		28,
+	},
 
-	// {
-	// 	"bccb",
-	// 	6,
-	// },
+	{
+		"aabcdaa",
+		13,
+	},
 
-	// {
-	// 	"abcdabcdabcdabcdabcdabcdabcdabcddcbadcbadcbadcbadcbadcbadcbadcba",
-	// 	104860361,
-	// },
+	{
+		"abcda",
+		8,
+	},
+
+	{
+		"bccb",
+		6,
+	},
+
+	{
+		"abcdabcdabcdabcdabcdabcdabcdabcddcbadcbadcbadcbadcbadcbadcbadcba",
+		104860361,
+	},
 
 	{
 		"bdddbcbaaacdcbacdbbcdcacdddacdbaddbabdbcbccdbdcadbbbbdabacdddcbacabcdcdaccdcbdaadbbbbdbddccacdadadbcbddbdccbcacbdcabdbdcccbdccbcdbadbcdbacadadaaadacdaadaabdbcccddcccdcadaccdaacbdddcbadadcadcbcbaaadcaabadbcadcdaaddacaddbadbbdbbcacaaacbbaadcaadbbaadbbbabbddcacaaabddbccbcacaadcbabcaaacdbdbcdabdbdddbcddaaabcadccbcdccdcdadbcddcdaacbaadbcbcdcbadbccbdbaabbabcadacbdcdbaadbcacdcbabcdaabdccadabccdccdcabbcabcbccdaaaddabbcdabcbdbddbbddaadbcbbddabccadccbcccdcdcbbbdaccdcbdccbdbbaacbabacdcabcdbcbadadadbcdaccaadcdcbbbcdcbcbcbaaaadcabacbdbdbcaddbadcaabdbacbaacbdcadcdbacbbbbabacdbcdaacdcbdadaaddbacccbccccaacabacddbbbbcbcbccbbccaddbaabcdbdbaaaccddacaaccdaccdcbcacbccbbabcbcadbcbdacdcbdacacadcdbbbbdcbddcddddaadbdacbcddbdacbadaacdabaddddaddbcbbbdaddcaaaabaacdbacaddcadbcaaabdbcdacaabcdcdcdddacdacbabdcaabdaaadddbcdbbdaacacacbabaadaaabcdbbabacddcdbaacaaadddddcabdabaababcbdcbadbddaccddcbabbdbcbaacdbbbdbdadddacdcddaacdbbadbacbcaccacbbbbdcadabadaccbcdcbcbbacacdaddabdddbdccbbccdaacbcbbabaddabcbbacccbbadbadbccccccc",
