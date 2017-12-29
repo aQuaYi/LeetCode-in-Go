@@ -19,21 +19,21 @@ func Constructor() MyCalendar {
 func (m *MyCalendar) Book(start int, end int) bool {
 	e := &event{start: start, end: end}
 
-	if m.head == nil || e.end <= m.head.start {
-		e.next = m.head
-		m.head = e
+	if m.head == nil || // 还没有事件记录
+		e.end <= m.head.start { // 新事件的截止事件，在所有事件开始之前
+		e.next, m.head = m.head, e
 		return true
 	}
 
 	t := &event{next: m.head}
-
+	// 跳过所有在 e 开始之前的事件
 	for t.next != nil && t.next.end <= e.start {
 		t = t.next
 	}
 
-	if t.next == nil || e.end <= t.next.start {
-		e.next = t.next
-		t.next = e
+	if t.next == nil || // e 开始事件在所有事件结束之后
+		e.end <= t.next.start { // e 结束后，才开始下一个事件
+		e.next, t.next = t.next, e
 		return true
 	}
 
