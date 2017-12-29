@@ -1,7 +1,5 @@
 package Problem0731
 
-// TODO: 使用红黑树来解决此题
-
 // MyCalendarTwo 第二个日历类
 type MyCalendarTwo struct {
 	head, tail *event
@@ -36,11 +34,24 @@ func (m *MyCalendarTwo) Book(start, end int) bool {
 			e.pre, e.next = cur.pre, cur
 			e.pre.next, e.next.pre = e, e
 			e = nil
-		}else if 
+			continue
+		}
+
 	}
 
 	return false
 }
+
+// 在 a 的 pre 方向插入 aPre
+func addPre(a, aPre *event) {
+	aPre.next, aPre.pre = a, a.pre
+	aPre.pre.next, aPre.next.pre = aPre, aPre
+}
+
+func split(e, c *event) (ecp, ec, ecn *event) {
+
+}
+
 func isAddable(headPre, tailNext, e *event) bool {
 	cur := headPre.next
 	for cur != tailNext {
@@ -65,6 +76,7 @@ func overlap(old, new *event) *event {
 
 	}
 
+	return nil
 }
 
 /**
