@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|147|247|100|494|
+|**Accepted**|148|247|100|495|
 |**Total**|155|260|108|523|
 
 ## 题解
@@ -372,7 +372,7 @@
 |481|[Magical String](./Algorithms/0481.magical-string)|45%|Medium| |
 |482|[License Key Formatting](./Algorithms/0482.license-key-formatting)|41%|Easy| |
 |483|[Smallest Good Base](./Algorithms/0483.smallest-good-base)|33%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|485|[Max Consecutive Ones](./Algorithms/0485.max-consecutive-ones)|53%|Easy| |
+|485|[Max Consecutive Ones](./Algorithms/0485.max-consecutive-ones)|54%|Easy| |
 |486|[Predict the Winner](./Algorithms/0486.predict-the-winner)|45%|Medium| |
 |488| * Zuma Game|37%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |491|[Increasing Subsequences](./Algorithms/0491.increasing-subsequences)|39%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -405,7 +405,7 @@
 |529|[Minesweeper](./Algorithms/0529.minesweeper)|49%|Medium| |
 |530|[Minimum Absolute Difference in BST](./Algorithms/0530.minimum-absolute-difference-in-bst)|47%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |532|[K-diff Pairs in an Array](./Algorithms/0532.k-diff-pairs-in-an-array)|28%|Easy| |
-|537|[Complex Number Multiplication](./Algorithms/0537.complex-number-multiplication)|63%|Medium| |
+|537|[Complex Number Multiplication](./Algorithms/0537.complex-number-multiplication)|64%|Medium| |
 |538|[Convert BST to Greater Tree](./Algorithms/0538.convert-bst-to-greater-tree)|49%|Easy| |
 |539|[Minimum Time Difference](./Algorithms/0539.minimum-time-difference)|46%|Medium| |
 |540|[Single Element in a Sorted Array](./Algorithms/0540.single-element-in-a-sorted-array)|56%|Medium| |
@@ -511,7 +511,7 @@
 |717| * 1-bit and 2-bit Characters|49%|Easy| |
 |718|[Maximum Length of Repeated Subarray](./Algorithms/0718.maximum-length-of-repeated-subarray)|40%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |719|[Find K-th Smallest Pair Distance](./Algorithms/0719.find-k-th-smallest-pair-distance)|26%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|720| * Longest Word in Dictionary|41%|Easy| |
+|720|[Longest Word in Dictionary](./Algorithms/0720.longest-word-in-dictionary)|41%|Easy| |
 |721| * Accounts Merge|30%|Medium| |
 |722|[Remove Comments](./Algorithms/0722.remove-comments)|26%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |724| * Find Pivot Index|40%|Easy| |
@@ -540,8 +540,8 @@
 |754| * Cracking the Safe|39%|Hard| |
 |755| * Reach a Number|15%|Medium| |
 |756| * Pour Water|28%|Medium| |
-|757| * Pyramid Transition Matrix|14%|Medium| |
-|759| * Set Intersection Size At Least Two|22%|Hard| |
+|757| * Pyramid Transition Matrix|16%|Medium| |
+|759| * Set Intersection Size At Least Two|24%|Hard| |
 
 以下免费的算法题，暂时不能使用 Go 解答
 
