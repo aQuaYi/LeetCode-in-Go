@@ -59,16 +59,23 @@ func overlap(events [][]int, e []int) [][]int {
 	res := make([][]int, 0, len(events)*2+1)
 
 	for i := 0; i < len(events); i++ {
+		// 切除头部不重叠的部分
+		// 运行完成后，
+		// e[0]==events[i][0]
 		if e[0] < events[i][0] {
 			e1 := []int{e[0], events[i][0], 1}
 			res = append(res, e1)
 			e[0] = events[i][0]
+		} else if events[i][0] < e[0] {
+			e1 := []int{events[i][0], e[0], 1}
+			res = append(res, e1)
+			events[i][0] = e[0]
 		}
-		//
+		// 计算其中重叠的部分
 		if e[1] < events[i][1] {
 			e[2] = 2
-			e2 := []int{e[1], events[i][1], 1}
-			res = append(res, e, e2)
+			e1 := []int{e[1], events[i][1], 1}
+			res = append(res, e, e1)
 		} else if e[1] == events[i][1] {
 			e[2] = 2
 			res = append(res, e)
