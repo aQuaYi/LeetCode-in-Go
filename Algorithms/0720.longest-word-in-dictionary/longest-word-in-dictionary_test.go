@@ -14,6 +14,11 @@ var tcs = []struct {
 }{
 
 	{
+		[]string{"rac", "rs", "ra", "on", "r", "otif", "o", "onpdu", "rsf", "rs", "ot", "oti", "racy", "onpd"},
+		"otif",
+	},
+
+	{
 		[]string{"yo", "ew", "fc", "zrc", "yodn", "fcm", "qm", "qmo", "fcmz", "z", "ewq", "yod", "ewqz", "y"},
 		"yodn",
 	},

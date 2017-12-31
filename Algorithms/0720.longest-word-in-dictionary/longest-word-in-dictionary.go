@@ -7,13 +7,25 @@ func longestWord(words []string) string {
 
 	sort.Strings(words)
 
-	for i := 1; i < len(words); i++ {
-		n := len(words[i-1])
-		if n+1 == len(words[i]) &&
-			words[i-1] == words[i][:n] &&
-			len(res) < n+1 {
-			res = words[i]
+	i := 0
+	for i < len(words) {
+		for i < len(words) && len(words[i]) != 1 {
+			i++
 		}
+
+		j := i
+
+		for j+1 < len(words) &&
+			len(words[j])+1 == len(words[j+1]) &&
+			words[j] == words[j+1][:len(words[j])] {
+			j++
+		}
+
+		if j < len(words) && len(res) < len(words[j]) {
+			res = words[j]
+		}
+
+		i = j + 1
 	}
 
 	return res
