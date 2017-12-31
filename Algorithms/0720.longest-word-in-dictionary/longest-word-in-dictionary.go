@@ -1,30 +1,22 @@
 package Problem0720
 
+import "sort"
+
 func longestWord(words []string) string {
-	rec := make(map[string]bool, len(words))
-	for _, w := range words {
-		rec[w] = true
-	}
+	sort.Strings(words)
+	m := make(map[string]bool, len(words))
 
 	res := ""
 
 	for _, w := range words {
-		if len(res) > len(w) {
-			continue
-		}
-
-		t := w[:len(w)-1]
-		for rec[t] {
-			t = t[:len(t)-1]
-		}
-
-		if t != "" {
-			continue
-		}
-
-		if len(res) < len(w) ||
-			(len(res) == len(w) && res > w) {
-			res = w
+		n := len(w)
+		if n == 1 {
+			m[w] = true
+		} else if m[w[:n-1]] {
+			m[w] = true
+			if len(res) < len(w) {
+				res = w
+			}
 		}
 	}
 
