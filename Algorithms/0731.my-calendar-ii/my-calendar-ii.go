@@ -6,8 +6,7 @@ import (
 
 // MyCalendarTwo 第二个日历类
 type MyCalendarTwo struct {
-	events    [][]int
-	overlaped [][]int
+	events [][]int
 }
 
 // Constructor 返回 MyCalendarTwo
@@ -61,19 +60,21 @@ func overlap(events [][]int, e []int) [][]int {
 
 	for i := 0; i < len(events); i++ {
 		if e[0] < events[i][0] {
-			res = append(res, []int{e[0], events[i][0], 1})
+			e1 := []int{e[0], events[i][0], 1}
+			res = append(res, e1)
+			e[0] = events[i][0]
 		}
 		//
 		if e[1] < events[i][1] {
-			e1 := []int{events[i][0], e[1], 2}
+			e[2] = 2
 			e2 := []int{e[1], events[i][1], 1}
-			res = append(res, e1, e2)
+			res = append(res, e, e2)
 		} else if e[1] == events[i][1] {
-			events[i][2] = 2
-			res = append(res, events[i])
+			e[2] = 2
+			res = append(res, e)
 		} else {
-			events[i][2] = 2
-			res = append(res, events[i])
+			e2 := []int{e[0], events[i][1], 2}
+			res = append(res, e2)
 			e[0] = events[i][1]
 		}
 	}
