@@ -73,17 +73,23 @@ func overlap(events [][]int, e []int) [][]int {
 		}
 		// 计算其中重叠的部分
 		if e[1] < events[i][1] {
-			e[2] = 2
+			e2 := []int{e[0], e[1], 2}
 			e1 := []int{e[1], events[i][1], 1}
-			res = append(res, e, e1)
+			res = append(res, e2, e1)
+			e = nil
 		} else if e[1] == events[i][1] {
-			e[2] = 2
-			res = append(res, e)
+			e2 := []int{e[0], e[1], 2}
+			res = append(res, e2)
+			e = nil
 		} else {
 			e2 := []int{e[0], events[i][1], 2}
 			res = append(res, e2)
 			e[0] = events[i][1]
 		}
+	}
+
+	if e != nil {
+		res = append(res, e)
 	}
 
 	return res

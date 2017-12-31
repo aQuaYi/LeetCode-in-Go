@@ -1,7 +1,6 @@
 package Problem0731
 
 import (
-	"fmt"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -78,8 +77,8 @@ func Test_MyCanlendar_3(t *testing.T) {
 	mc := Constructor()
 
 	for i, e := range events {
-		fmt.Println(i, e)
+		// fmt.Println(i, e)
 		ast.Equal(ans[i], mc.Book(e[0], e[1]), "输入是 %d, %v", i, e)
-		fmt.Println(mc.events)
+		// fmt.Println(mc.events)
 	}
 }
