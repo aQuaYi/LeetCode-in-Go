@@ -8,17 +8,16 @@ import (
 func evaluate(expression string) int {
 	expression = strings.Replace(expression, "(", "( ", -1)
 	expression = strings.Replace(expression, ")", " )", -1)
-	m := make(map[string]int, 8)
-	return helper(expression, m)
+	return helper(expression, nil)
 }
 
-func helper(exp string, m map[string]int) int {
+func helper(exp string, s *scope) int {
 	if exp[0] != '(' {
 		num, err := strconv.Atoi(exp)
 		if err == nil {
 			return num
 		}
-		return m[exp]
+		return s.get(exp)
 	}
 
 	// 删除最外层的 "( " 和 " )"
@@ -26,15 +25,16 @@ func helper(exp string, m map[string]int) int {
 	es := split(exp)
 	switch es[0] {
 	case "add":
-		return helper(es[1], copy(m)) + helper(es[2], copy(m))
+		return helper(es[1], s) + helper(es[2], s)
 	case "mult":
-		return helper(es[1], copy(m)) * helper(es[2], copy(m))
+		return helper(es[1], s) * helper(es[2], s)
 	default:
+		s = newScope(s)
 		var i int
 		for i = 1; i < len(es)-2; i += 2 {
-			m[es[i]] = helper(es[i+1], copy(m))
+			s.add(es[i], helper(es[i+1], newScope(s)))
 		}
-		return helper(es[i], copy(m))
+		return helper(es[i], s)
 	}
 
 }
@@ -49,22 +49,32 @@ func split(exp string) []string {
 		} else {
 			res[len(res)-1] += " " + s
 		}
-
 		if s == "(" {
 			countLeft++
 		} else if s == ")" {
 			countLeft--
 		}
-
 	}
 
 	return res
 }
 
-func copy(m map[string]int) map[string]int {
-	res := make(map[string]int, len(m))
-	for k, v := range m {
-		res[k] = v
+type scope struct {
+	parent *scope
+	m      map[string]int
+}
+
+func newScope(parent *scope) *scope {
+	return &scope{parent: parent, m: make(map[string]int, 8)}
+}
+
+func (s *scope) get(key string) int {
+	if val, ok := s.m[key]; ok {
+		return val
 	}
-	return res
+	return s.parent.get(key)
+}
+
+func (s *scope) add(key string, val int) {
+	s.m[key] = val
 }
