@@ -1,7 +1,6 @@
 package Problem0736
 
 import (
-	"fmt"
 	"strconv"
 	"strings"
 )
@@ -35,47 +34,28 @@ func helper(exp string, m map[string]int) int {
 		for i = 1; i < len(es)-2; i += 2 {
 			m[es[i]] = helper(es[i+1], copy(m))
 		}
-		// TODO: 删除此处内容
-		fmt.Println("\n=======\n", es[i])
 		return helper(es[i], copy(m))
 	}
 
 }
 
 func split(exp string) []string {
-	// TODO: 删除此处内容
-	fmt.Println(exp)
 	ss := strings.Split(exp, " ")
-	leftCount := 0
+	countLeft := 0
 	res := make([]string, 0, len(ss))
 	for _, s := range ss {
-
-		switch s {
-		case "(":
-			if leftCount == 0 {
-				res = append(res, s)
-			} else {
-				res[len(res)-1] += " ("
-			}
-			leftCount++
-		case ")":
-			res[len(res)-1] += " )"
-			leftCount--
-		default:
-			if leftCount == 0 {
-				res = append(res, s)
-			} else {
-				res[len(res)-1] += " " + s
-			}
+		if countLeft == 0 {
+			res = append(res, s)
+		} else {
+			res[len(res)-1] += " " + s
 		}
-		// TODO: 删除此处内容
-		fmt.Println(res[len(res)-1])
 
-		if s[0] == '(' {
-			leftCount++
+		if s == "(" {
+			countLeft++
 		} else if s == ")" {
-			leftCount--
+			countLeft--
 		}
+
 	}
 
 	return res
