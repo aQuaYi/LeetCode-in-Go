@@ -7,6 +7,8 @@ import (
 )
 
 func evaluate(expression string) int {
+	expression = strings.Replace(expression, "(", "( ", -1)
+	expression = strings.Replace(expression, ")", " )", -1)
 	m := make(map[string]int, 8)
 	return helper(expression, m)
 }
@@ -20,8 +22,8 @@ func helper(exp string, m map[string]int) int {
 		return m[exp]
 	}
 
-	// 删除最外层的 "()"
-	exp = exp[1 : len(exp)-1]
+	// 删除最外层的 "( " 和 " )"
+	exp = exp[2 : len(exp)-2]
 	es := split(exp)
 	switch es[0] {
 	case "add":
@@ -41,17 +43,30 @@ func helper(exp string, m map[string]int) int {
 }
 
 func split(exp string) []string {
-	exp = strings.Replace(exp, ")", " )", -1)
 	// TODO: 删除此处内容
 	fmt.Println(exp)
 	ss := strings.Split(exp, " ")
 	leftCount := 0
 	res := make([]string, 0, len(ss))
 	for _, s := range ss {
-		if leftCount == 0 {
-			res = append(res, s)
-		} else {
-			res[len(res)-1] += " " + s
+
+		switch s {
+		case "(":
+			if leftCount == 0 {
+				res = append(res, s)
+			} else {
+				res[len(res)-1] += " ("
+			}
+			leftCount++
+		case ")":
+			res[len(res)-1] += " )"
+			leftCount--
+		default:
+			if leftCount == 0 {
+				res = append(res, s)
+			} else {
+				res[len(res)-1] += " " + s
+			}
 		}
 		// TODO: 删除此处内容
 		fmt.Println(res[len(res)-1])
