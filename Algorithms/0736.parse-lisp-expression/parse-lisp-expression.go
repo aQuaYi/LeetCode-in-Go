@@ -1,62 +1,92 @@
 package Problem0736
 
-import (
-	"strconv"
-	"strings"
-)
+import "strconv"
 
 func evaluate(expression string) int {
-	expression = strings.Replace(expression, "(", "( ", -1)
-	expression = strings.Replace(expression, ")", " )", -1)
 	return helper(expression, nil)
 }
 
 func helper(exp string, s *scope) int {
 	if exp[0] != '(' {
 		num, err := strconv.Atoi(exp)
-		if err == nil {
-			return num
+		if err != nil {
+			return s.get(exp)
 		}
-		return s.get(exp)
+		return num
 	}
 
-	// 删除最外层的 "( " 和 " )"
-	exp = exp[2 : len(exp)-2]
-	es := split(exp)
-	switch es[0] {
+	// 删除外层的 "()"
+	exp = exp[1 : len(exp)-1]
+	var keyWord string
+	keyWord, exp = split(exp)
+	switch keyWord {
 	case "add":
-		return helper(es[1], s) + helper(es[2], s)
+		a, b := split(exp)
+		return helper(a, s) + helper(b, s)
 	case "mult":
-		return helper(es[1], s) * helper(es[2], s)
+		a, b := split(exp)
+		return helper(a, s) * helper(b, s)
 	default:
+		// 遇到 let 就意味着要生成新的 scope 了
 		s = newScope(s)
-		var i int
-		for i = 1; i < len(es)-2; i += 2 {
-			s.add(es[i], helper(es[i+1], newScope(s)))
+		var key, val string
+		for {
+			key, exp = split(exp)
+			if exp == "" {
+				break
+			}
+			val, exp = split(exp)
+			s.add(key, helper(val, s))
 		}
-		return helper(es[i], s)
+		return helper(key, s)
 	}
-
 }
 
-func split(exp string) []string {
-	ss := strings.Split(exp, " ")
-	countLeft := 0
-	res := make([]string, 0, len(ss))
-	for _, s := range ss {
-		if countLeft == 0 {
-			res = append(res, s)
-		} else {
-			res[len(res)-1] += " " + s
+// split 把 exp 分割成 pre 和 post
+// 其中 pre 是 exp 中的第一个独立的块，post 则是剩下的部分
+// 比如
+//     exp = "add 1 2"
+//     则
+//     pre  = "add"
+//     post = "1 2"
+// 又比如
+//     exp = "(add x1 (add x2 x3))"
+//     则
+//     pre  = "(add x1 (add x2 x3))"
+//     post = ""
+func split(exp string) (pre, post string) {
+	n := len(exp)
+	i := 0
+	if exp[0] == '(' {
+		countLeft := 0
+		for i < n {
+			if exp[i] == '(' {
+				countLeft++
+			} else if exp[i] == ')' {
+				countLeft--
+			}
+			if countLeft == 0 {
+				break
+			}
+			i++
 		}
-		if s == "(" {
-			countLeft++
-		} else if s == ")" {
-			countLeft--
+	} else {
+		for i+1 < n {
+			if exp[i+1] == ' ' {
+				break
+			}
+			i++
 		}
 	}
 
-	return res
+	pre = exp[:i+1]
+	if i+1 == n {
+		post = ""
+	} else {
+		post = exp[i+2:]
+	}
+
+	return
 }
 
 type scope struct {
