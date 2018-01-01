@@ -13,7 +13,7 @@ func evaluate(expression string) int {
 func helper(exp string, m map[string]int) int {
 	if exp[0] != '(' {
 		num, err := strconv.Atoi(exp)
-		if err != nil {
+		if err == nil {
 			return num
 		}
 		return m[exp]
@@ -46,7 +46,7 @@ func split(exp string) []string {
 		if !isSawBrackets {
 			res = append(res, s)
 		} else {
-			res[len(res)-1] += s
+			res[len(res)-1] += " " + s
 		}
 
 		if strings.Contains(s, "(") {
