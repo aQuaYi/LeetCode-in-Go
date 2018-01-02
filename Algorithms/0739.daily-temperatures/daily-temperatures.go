@@ -4,23 +4,18 @@ func dailyTemperatures(temperatures []int) []int {
 	n := len(temperatures)
 	res := make([]int, n)
 
-	stack := make([]record, 0, n)
+	stack := make([]int, n)
 
-	last := -1
+	top := -1
 	for i := 0; i < n; i++ {
-		for last >= 0 && stack[last].t < temperatures[i] {
-			res[stack[last].i] = i - stack[last].i
-			stack = stack[:last]
-			last--
+		for top >= 0 && temperatures[stack[top]] < temperatures[i] {
+			res[stack[top]] = i - stack[top]
+			top--
 		}
 
-		stack = append(stack, record{t: temperatures[i], i: i})
-		last++
+		top++
+		stack[top] = i
 	}
 
 	return res
-}
-
-type record struct {
-	t, i int
 }
