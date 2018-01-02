@@ -14,11 +14,11 @@ func cherryPickup(grid [][]int) int {
 	dp[0][0] = grid[0][0]
 
 	pathLen := n + n - 1
-	for p := 2; p <= pathLen; p++ {
+	for pl := 2; pl <= pathLen; pl++ {
 		for x1 := n - 1; x1 >= 0; x1-- {
 			for x2 := x1; x2 >= 0; x2-- {
-				y1 := p - 1 - x1
-				y2 := p - 1 - x2
+				y1 := pl - 1 - x1
+				y2 := pl - 1 - x2
 				if y1 < 0 || y2 < 0 || y1 >= n || y2 >= n {
 					continue
 				}
