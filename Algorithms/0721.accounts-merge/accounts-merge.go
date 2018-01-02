@@ -8,7 +8,7 @@ func accountsMerge(acts [][]string) [][]string {
 	n := len(acts)
 
 	owner := make(map[string]string, n)
-	parent := make(map[string]string, n*3)
+	parent := make(map[string]string, n*2)
 
 	for _, a := range acts {
 		for i := 1; i < len(a); i++ {
@@ -18,10 +18,10 @@ func accountsMerge(acts [][]string) [][]string {
 	}
 
 	for _, a := range acts {
-		p := root(a[1], parent)
+		r := root(a[1], parent)
 		for i := 2; i < len(a); i++ {
-			r := root(a[i], parent)
-			parent[r] = p
+			p := root(a[i], parent)
+			parent[p] = r
 		}
 	}
 
