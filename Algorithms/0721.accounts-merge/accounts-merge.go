@@ -4,42 +4,50 @@ import (
 	"sort"
 )
 
-func accountsMerge(accounts [][]string) [][]string {
-	isCheckedEmail := make(map[string]int, len(accounts)*3)
-	for i := 1; i < len(accounts[0]); i++ {
-		isCheckedEmail[accounts[0][i]] = 0
+func accountsMerge(acts [][]string) [][]string {
+	n := len(acts)
+
+	owner := make(map[string]string, n)
+	parent := make(map[string]string, n*3)
+
+	for _, a := range acts {
+		for i := 1; i < len(a); i++ {
+			parent[a[i]] = a[i]
+			owner[a[i]] = a[0]
+		}
 	}
 
-	res := make([][]string, 1, len(accounts))
-	res[0] = accounts[0]
-
-	for i := 1; i < len(accounts); i++ {
-		same := -1
-
-		for j := 1; j < len(accounts[i]); j++ {
-			if id, ok := isCheckedEmail[accounts[i][j]]; ok {
-				same = id
-				break
-			}
+	for _, a := range acts {
+		p := root(a[1], parent)
+		for i := 2; i < len(a); i++ {
+			r := root(a[i], parent)
+			parent[r] = p
 		}
+	}
 
-		if same == -1 {
-			res = append(res, accounts[i])
-			id := len(res) - 1
-			for j := 1; j < len(accounts[i]); j++ {
-				isCheckedEmail[accounts[i][j]] = id
-			}
-		} else {
-			for j := 1; j < len(accounts[i]); j++ {
-				if _, ok := isCheckedEmail[accounts[i][j]]; !ok {
-					isCheckedEmail[accounts[i][j]] = same
-					res[same] = append(res[same], accounts[i][j])
-				}
-			}
-			sort.Strings(res[same])
+	union := make(map[string][]string, n)
+	for email, p := range parent {
+		r := root(p, parent)
+		union[r] = append(union[r], email)
+	}
+
+	res := make([][]string, 0, len(union))
+	for p, emails := range union {
+		t := make([]string, len(emails)+1)
+		t[0] = owner[p]
+		if len(emails) > 1 {
+			sort.Strings(emails)
 		}
-
+		copy(t[1:], emails)
+		res = append(res, t)
 	}
 
 	return res
+}
+
+func root(e string, parent map[string]string) string {
+	if parent[e] == e {
+		return e
+	}
+	return root(parent[e], parent)
 }
