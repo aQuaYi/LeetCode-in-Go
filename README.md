@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|149|247|101|497|
+|**Accepted**|149|247|102|498|
 |**Total**|155|260|108|523|
 
 ## 题解
@@ -372,7 +372,7 @@
 |481|[Magical String](./Algorithms/0481.magical-string)|45%|Medium| |
 |482|[License Key Formatting](./Algorithms/0482.license-key-formatting)|41%|Easy| |
 |483|[Smallest Good Base](./Algorithms/0483.smallest-good-base)|33%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|485|[Max Consecutive Ones](./Algorithms/0485.max-consecutive-ones)|53%|Easy| |
+|485|[Max Consecutive Ones](./Algorithms/0485.max-consecutive-ones)|54%|Easy| |
 |486|[Predict the Winner](./Algorithms/0486.predict-the-winner)|45%|Medium| |
 |488| * Zuma Game|37%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |491|[Increasing Subsequences](./Algorithms/0491.increasing-subsequences)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -466,7 +466,7 @@
 |650|[2 Keys Keyboard](./Algorithms/0650.2-keys-keyboard)|44%|Medium| |
 |652|[Find Duplicate Subtrees](./Algorithms/0652.find-duplicate-subtrees)|36%|Medium| |
 |653|[Two Sum IV - Input is a BST](./Algorithms/0653.two-sum-iv-input-is-a-bst)|50%|Easy| |
-|654|[Maximum Binary Tree](./Algorithms/0654.maximum-binary-tree)|70%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|654|[Maximum Binary Tree](./Algorithms/0654.maximum-binary-tree)|69%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |655|[Print Binary Tree](./Algorithms/0655.print-binary-tree)|49%|Medium| |
 |657|[Judge Route Circle](./Algorithms/0657.judge-route-circle)|68%|Easy| |
 |658|[Find K Closest Elements](./Algorithms/0658.find-k-closest-elements)|35%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -493,7 +493,7 @@
 |684|[Redundant Connection](./Algorithms/0684.redundant-connection)|41%|Medium| |
 |685|[Redundant Connection II](./Algorithms/0685.redundant-connection-ii)|28%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |686|[Repeated String Match](./Algorithms/0686.repeated-string-match)|34%|Easy|[❤](https://leetcode.com/list/oussv5j)|
-|687|[Longest Univalue Path](./Algorithms/0687.longest-univalue-path)|33%|Easy| |
+|687|[Longest Univalue Path](./Algorithms/0687.longest-univalue-path)|34%|Easy| |
 |688|[Knight Probability in Chessboard](./Algorithms/0688.knight-probability-in-chessboard)|39%|Medium| |
 |689|[Maximum Sum of 3 Non-Overlapping Subarrays](./Algorithms/0689.maximum-sum-of-3-non-overlapping-subarrays)|41%|Hard| |
 |691|[Stickers to Spell Word](./Algorithms/0691.stickers-to-spell-word)|34%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -528,7 +528,7 @@
 |738| * Monotone Increasing Digits|41%|Medium| |
 |739| * Daily Temperatures|53%|Medium| |
 |740| * Delete and Earn|42%|Medium| |
-|741| * Cherry Pickup|22%|Hard| |
+|741|[Cherry Pickup](./Algorithms/0741.cherry-pickup)|22%|Hard| |
 |744| * Network Delay Time|33%|Medium| |
 |745| * Find Smallest Letter Greater Than Target|48%|Easy| |
 |746| * Prefix and Suffix Search|22%|Hard| |
@@ -538,9 +538,9 @@
 |750| * Contain Virus|37%|Hard| |
 |753| * Open the Lock|36%|Medium| |
 |754| * Cracking the Safe|39%|Hard| |
-|755| * Reach a Number|18%|Medium| |
-|756| * Pour Water|31%|Medium| |
-|757| * Pyramid Transition Matrix|21%|Medium| |
+|755| * Reach a Number|20%|Medium| |
+|756| * Pour Water|32%|Medium| |
+|757| * Pyramid Transition Matrix|23%|Medium| |
 |759| * Set Intersection Size At Least Two|29%|Hard| |
 
 以下免费的算法题，暂时不能使用 Go 解答
