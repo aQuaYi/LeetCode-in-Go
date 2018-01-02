@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|150|247|102|499|
+|**Accepted**|150|249|102|501|
 |**Total**|155|260|108|523|
 
 ## 题解
@@ -412,7 +412,7 @@
 |541|[Reverse String II](./Algorithms/0541.reverse-string-ii)|43%|Easy| |
 |542|[01 Matrix](./Algorithms/0542.01-matrix)|32%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |543|[Diameter of Binary Tree](./Algorithms/0543.diameter-of-binary-tree)|44%|Easy| |
-|546|[Remove Boxes](./Algorithms/0546.remove-boxes)|34%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|546|[Remove Boxes](./Algorithms/0546.remove-boxes)|35%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |547|[Friend Circles](./Algorithms/0547.friend-circles)|49%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |551|[Student Attendance Record I](./Algorithms/0551.student-attendance-record-i)|44%|Easy| |
 |552|[Student Attendance Record II](./Algorithms/0552.student-attendance-record-ii)|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -512,7 +512,7 @@
 |718|[Maximum Length of Repeated Subarray](./Algorithms/0718.maximum-length-of-repeated-subarray)|40%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |719|[Find K-th Smallest Pair Distance](./Algorithms/0719.find-k-th-smallest-pair-distance)|26%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |720|[Longest Word in Dictionary](./Algorithms/0720.longest-word-in-dictionary)|41%|Easy| |
-|721| * Accounts Merge|30%|Medium| |
+|721|[Accounts Merge](./Algorithms/0721.accounts-merge)|30%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |722|[Remove Comments](./Algorithms/0722.remove-comments)|26%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |724| * Find Pivot Index|40%|Easy| |
 |725|[Split Linked List in Parts](./Algorithms/0725.split-linked-list-in-parts)|49%|Medium| |
@@ -526,7 +526,7 @@
 |735| * Asteroid Collision|37%|Medium| |
 |736|[Parse Lisp Expression](./Algorithms/0736.parse-lisp-expression)|42%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |738| * Monotone Increasing Digits|41%|Medium| |
-|739| * Daily Temperatures|53%|Medium| |
+|739|[Daily Temperatures](./Algorithms/0739.daily-temperatures)|53%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |740| * Delete and Earn|42%|Medium| |
 |741|[Cherry Pickup](./Algorithms/0741.cherry-pickup)|22%|Hard| |
 |744| * Network Delay Time|33%|Medium| |
@@ -540,8 +540,8 @@
 |754| * Cracking the Safe|39%|Hard| |
 |755| * Reach a Number|20%|Medium| |
 |756| * Pour Water|32%|Medium| |
-|757| * Pyramid Transition Matrix|24%|Medium| |
-|759| * Set Intersection Size At Least Two|29%|Hard| |
+|757| * Pyramid Transition Matrix|26%|Medium| |
+|759| * Set Intersection Size At Least Two|30%|Hard| |
 
 以下免费的算法题，暂时不能使用 Go 解答
 
