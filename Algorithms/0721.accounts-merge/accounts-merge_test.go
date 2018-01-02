@@ -13,7 +13,12 @@ var tcs = []struct {
 	ans      [][]string
 }{
 
-// 可以有多个 testcase
+	{
+		[][]string{{"John", "johnsmith@mail.com", "john00@mail.com"}, {"John", "johnnybravo@mail.com"}, {"John", "johnsmith@mail.com", "john_newyork@mail.com"}, {"Mary", "mary@mail.com"}},
+		[][]string{{"John", "john00@mail.com", "john_newyork@mail.com", "johnsmith@mail.com"}, {"John", "johnnybravo@mail.com"}, {"Mary", "mary@mail.com"}},
+	},
+
+	// 可以有多个 testcase
 }
 
 func Test_fn(t *testing.T) {
