@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|149|247|102|498|
+|**Accepted**|150|247|102|499|
 |**Total**|155|260|108|523|
 
 ## 题解
@@ -508,7 +508,7 @@
 |713|[Subarray Product Less Than K](./Algorithms/0713.subarray-product-less-than-k)|33%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |714|[Best Time to Buy and Sell Stock with Transaction Fee](./Algorithms/0714.best-time-to-buy-and-sell-stock-with-transaction-fee)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |715|[Range Module](./Algorithms/0715.range-module)|30%|Hard| |
-|717| * 1-bit and 2-bit Characters|49%|Easy| |
+|717|[1-bit and 2-bit Characters](./Algorithms/0717.1-bit-and-2-bit-characters)|49%|Easy| |
 |718|[Maximum Length of Repeated Subarray](./Algorithms/0718.maximum-length-of-repeated-subarray)|40%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |719|[Find K-th Smallest Pair Distance](./Algorithms/0719.find-k-th-smallest-pair-distance)|26%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |720|[Longest Word in Dictionary](./Algorithms/0720.longest-word-in-dictionary)|41%|Easy| |
@@ -540,7 +540,7 @@
 |754| * Cracking the Safe|39%|Hard| |
 |755| * Reach a Number|20%|Medium| |
 |756| * Pour Water|32%|Medium| |
-|757| * Pyramid Transition Matrix|23%|Medium| |
+|757| * Pyramid Transition Matrix|24%|Medium| |
 |759| * Set Intersection Size At Least Two|29%|Hard| |
 
 以下免费的算法题，暂时不能使用 Go 解答
