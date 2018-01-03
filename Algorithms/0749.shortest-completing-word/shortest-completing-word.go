@@ -8,6 +8,7 @@ func shortestCompletingWord(licensePlate string, words []string) string {
 	keys := getKeys(licensePlate)
 	minLen := 1<<63 - 1
 	res := ""
+
 	for _, w := range words {
 		if len(w) >= minLen {
 			continue
