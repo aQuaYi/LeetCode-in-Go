@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|151|250|103|504|
+|**Accepted**|151|250|104|505|
 |**Total**|155|260|108|523|
 
 ## 题解
@@ -372,7 +372,7 @@
 |481|[Magical String](./Algorithms/0481.magical-string)|45%|Medium| |
 |482|[License Key Formatting](./Algorithms/0482.license-key-formatting)|41%|Easy| |
 |483|[Smallest Good Base](./Algorithms/0483.smallest-good-base)|33%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|485|[Max Consecutive Ones](./Algorithms/0485.max-consecutive-ones)|53%|Easy| |
+|485|[Max Consecutive Ones](./Algorithms/0485.max-consecutive-ones)|54%|Easy| |
 |486|[Predict the Winner](./Algorithms/0486.predict-the-winner)|45%|Medium| |
 |488| * Zuma Game|37%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |491|[Increasing Subsequences](./Algorithms/0491.increasing-subsequences)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -530,16 +530,16 @@
 |740| * Delete and Earn|42%|Medium| |
 |741|[Cherry Pickup](./Algorithms/0741.cherry-pickup)|22%|Hard| |
 |744| * Network Delay Time|33%|Medium| |
-|745| * Find Smallest Letter Greater Than Target|48%|Easy| |
+|745| * Find Smallest Letter Greater Than Target|47%|Easy| |
 |746|[Prefix and Suffix Search](./Algorithms/0746.prefix-and-suffix-search)|22%|Hard| |
 |747| * Min Cost Climbing Stairs|45%|Easy| |
 |748| * Largest Number At Least Twice of Others|47%|Easy| |
 |749| * Shortest Completing Word|54%|Medium| |
-|750| * Contain Virus|37%|Hard| |
+|750| * Contain Virus|38%|Hard| |
 |753| * Open the Lock|36%|Medium| |
-|754| * Cracking the Safe|39%|Hard| |
+|754|[Cracking the Safe](./Algorithms/0754.cracking-the-safe)|39%|Hard| |
 |755| * Reach a Number|21%|Medium| |
-|756| * Pour Water|33%|Medium| |
+|756| * Pour Water|32%|Medium| |
 |757| * Pyramid Transition Matrix|28%|Medium| |
 |759| * Set Intersection Size At Least Two|30%|Hard| |
 
