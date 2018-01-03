@@ -14,7 +14,19 @@ var tcs = []struct {
 	ans          string
 }{
 
-// 可以有多个 testcase
+	{
+		"1s3 PSt",
+		[]string{"step", "steps", "stripe", "stepple"},
+		"steps",
+	},
+
+	{
+		"1s3 456",
+		[]string{"looks", "pest", "stew", "show"},
+		"pest",
+	},
+
+	// 可以有多个 testcase
 }
 
 func Test_fn(t *testing.T) {
