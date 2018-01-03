@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|151|250|104|505|
+|**Accepted**|151|251|104|506|
 |**Total**|155|260|108|523|
 
 ## 题解
@@ -287,7 +287,7 @@
 |371|[Sum of Two Integers](./Algorithms/0371.sum-of-two-integers)|51%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |372|[Super Pow](./Algorithms/0372.super-pow)|34%|Medium| |
 |373|[Find K Pairs with Smallest Sums](./Algorithms/0373.find-k-pairs-with-smallest-sums)|31%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|375|[Guess Number Higher or Lower II](./Algorithms/0375.guess-number-higher-or-lower-ii)|35%|Medium| |
+|375|[Guess Number Higher or Lower II](./Algorithms/0375.guess-number-higher-or-lower-ii)|36%|Medium| |
 |376|[Wiggle Subsequence](./Algorithms/0376.wiggle-subsequence)|36%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |377|[Combination Sum IV](./Algorithms/0377.combination-sum-iv)|42%|Medium| |
 |378|[Kth Smallest Element in a Sorted Matrix](./Algorithms/0378.kth-smallest-element-in-a-sorted-matrix)|45%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -530,18 +530,18 @@
 |740| * Delete and Earn|42%|Medium| |
 |741|[Cherry Pickup](./Algorithms/0741.cherry-pickup)|22%|Hard| |
 |744| * Network Delay Time|33%|Medium| |
-|745| * Find Smallest Letter Greater Than Target|47%|Easy| |
+|745| * Find Smallest Letter Greater Than Target|48%|Easy| |
 |746|[Prefix and Suffix Search](./Algorithms/0746.prefix-and-suffix-search)|22%|Hard| |
 |747| * Min Cost Climbing Stairs|45%|Easy| |
 |748| * Largest Number At Least Twice of Others|47%|Easy| |
-|749| * Shortest Completing Word|54%|Medium| |
+|749|[Shortest Completing Word](./Algorithms/0749.shortest-completing-word)|54%|Medium| |
 |750| * Contain Virus|38%|Hard| |
 |753| * Open the Lock|36%|Medium| |
 |754|[Cracking the Safe](./Algorithms/0754.cracking-the-safe)|39%|Hard| |
 |755| * Reach a Number|21%|Medium| |
 |756| * Pour Water|32%|Medium| |
 |757| * Pyramid Transition Matrix|28%|Medium| |
-|759| * Set Intersection Size At Least Two|30%|Hard| |
+|759| * Set Intersection Size At Least Two|31%|Hard| |
 
 以下免费的算法题，暂时不能使用 Go 解答
 
