@@ -9,7 +9,7 @@ type WordFilter struct {
 func Constructor(words []string) WordFilter {
 	o := make(map[string]int, len(words)*5)
 	for k := 0; k < len(words); k++ {
-		for i := 0; i <= 10 && i < len(words[k]); i++ {
+		for i := 0; i <= 10 && i <= len(words[k]); i++ {
 			for j := len(words[k]); 0 <= j && len(words[k])-10 <= j; j-- {
 				pps := words[k][:i] + "#" + words[k][j:]
 				o[pps] = k
