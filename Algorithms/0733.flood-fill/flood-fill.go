@@ -11,7 +11,8 @@ func floodFill(image [][]int, sr, sc, newColor int) [][]int {
 
 	m, n := len(image), len(image[0])
 
-	coordinates := [][]int{{sr, sc}}
+	coordinates := make([][]int, 1, m*n)
+	coordinates[0] = []int{sr, sc}
 
 	for len(coordinates) > 0 {
 		c := coordinates[0]
