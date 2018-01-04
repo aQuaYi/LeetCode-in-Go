@@ -9,6 +9,8 @@ func deleteAndEarn(nums []int) int {
 		return 0
 	}
 
+	sort.Ints(nums)
+
 	cs := make(cards, 0, len(nums))
 	c := card{num: nums[0], point: nums[0]}
 
@@ -20,6 +22,7 @@ func deleteAndEarn(nums []int) int {
 			c = card{num: nums[i], point: nums[i]}
 		}
 	}
+	cs = append(cs, c)
 
 	res := 0
 	sort.Sort(cs)
