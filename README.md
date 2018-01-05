@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|155|255|105|515|
+|**Accepted**|155|255|106|516|
 |**Total**|155|260|108|523|
 
 ## 题解
@@ -374,7 +374,7 @@
 |483|[Smallest Good Base](./Algorithms/0483.smallest-good-base)|33%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |485|[Max Consecutive Ones](./Algorithms/0485.max-consecutive-ones)|54%|Easy| |
 |486|[Predict the Winner](./Algorithms/0486.predict-the-winner)|45%|Medium| |
-|488| * Zuma Game|37%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|488|[Zuma Game](./Algorithms/0488.zuma-game)|37%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |491|[Increasing Subsequences](./Algorithms/0491.increasing-subsequences)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |492|[Construct the Rectangle](./Algorithms/0492.construct-the-rectangle)|48%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |493|[Reverse Pairs](./Algorithms/0493.reverse-pairs)|21%|Hard| |
@@ -529,7 +529,7 @@
 |739|[Daily Temperatures](./Algorithms/0739.daily-temperatures)|53%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |740|[Delete and Earn](./Algorithms/0740.delete-and-earn)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |741|[Cherry Pickup](./Algorithms/0741.cherry-pickup)|22%|Hard| |
-|744|[Network Delay Time](./Algorithms/0744.network-delay-time)|33%|Medium| |
+|744|[Network Delay Time](./Algorithms/0744.network-delay-time)|34%|Medium| |
 |745|[Find Smallest Letter Greater Than Target](./Algorithms/0745.find-smallest-letter-greater-than-target)|48%|Easy| |
 |746|[Prefix and Suffix Search](./Algorithms/0746.prefix-and-suffix-search)|23%|Hard| |
 |747|[Min Cost Climbing Stairs](./Algorithms/0747.min-cost-climbing-stairs)|45%|Easy| |
@@ -541,7 +541,7 @@
 |755| * Reach a Number|22%|Medium| |
 |756| * Pour Water|32%|Medium| |
 |757| * Pyramid Transition Matrix|37%|Medium| |
-|759| * Set Intersection Size At Least Two|32%|Hard| |
+|759| * Set Intersection Size At Least Two|33%|Hard| |
 
 以下免费的算法题，暂时不能使用 Go 解答
 
