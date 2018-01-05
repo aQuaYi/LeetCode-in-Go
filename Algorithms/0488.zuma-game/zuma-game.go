@@ -35,6 +35,7 @@ func dfs(s string, ball []int) int {
 		}
 		i = j
 	}
+
 	return res
 }
 
