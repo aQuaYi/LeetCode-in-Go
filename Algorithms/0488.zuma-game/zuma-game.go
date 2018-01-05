@@ -3,40 +3,42 @@ package Problem0488
 var maxCount = 6
 
 func findMinStep(board, hand string) int {
-	handCount := make([]int, 26)
+	// ball[i] = j 表示, 手上拥有 i+'A' 颜色的球的个数
+	ball := make([]int, 26)
 	for i := 0; i < len(hand); i++ {
-		handCount[hand[i]-'A']++
+		ball[hand[i]-'A']++
 	}
 
-	res := helper(board+"#", handCount)
+	res := dfs(board+"#", ball)
 	if res == maxCount {
 		return -1
 	}
 	return res
 }
 
-func helper(board string, handCount []int) int {
-	board = removeBalls(board)
-	if board == "#" {
+func dfs(s string, ball []int) int {
+	s = removeBalls(s)
+	if s == "#" {
 		return 0
 	}
 	res, need := maxCount, 0
 
-	for i, j := 0, 0; j < len(board); j++ {
-		if board[j] == board[i] {
+	for i, j := 0, 0; j < len(s); j++ {
+		if s[j] == s[i] {
 			continue
 		}
 		need = 3 - (j - i)
-		if handCount[board[i]-'A'] >= need {
-			handCount[board[i]-'A'] -= need
-			res = min(res, need+helper(board[:i]+board[j:], handCount))
-			handCount[board[i]-'A'] += need
+		if ball[s[i]-'A'] >= need {
+			ball[s[i]-'A'] -= need
+			res = min(res, need+dfs(s[:i]+s[j:], ball))
+			ball[s[i]-'A'] += need
 		}
 		i = j
 	}
 	return res
 }
 
+// 删除 board 中 3 个及以上同色的球
 func removeBalls(board string) string {
 	for i, j := 0, 0; j < len(board); j++ {
 		if board[i] == board[j] {
