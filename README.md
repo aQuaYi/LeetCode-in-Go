@@ -1,7 +1,7 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 排名](https://img.shields.io/badge/Ranking-2944-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/Ranking-1487-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 答题进度](https://img.shields.io/badge/Progress-97%25-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|152|253|105|510|
+|**Accepted**|152|255|105|512|
 |**Total**|155|260|108|523|
 
 ## 题解
@@ -68,7 +68,7 @@
 |47|[Permutations II](./Algorithms/0047.permutations-ii)|34%|Medium| |
 |48|[Rotate Image](./Algorithms/0048.rotate-image)|40%|Medium| |
 |49|[Group Anagrams](./Algorithms/0049.group-anagrams)|36%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|50|[Pow(x, n)](./Algorithms/0050.powx-n)|25%|Medium| |
+|50|[Pow(x, n)](./Algorithms/0050.powx-n)|26%|Medium| |
 |51|[N-Queens](./Algorithms/0051.n-queens)|32%|Hard| |
 |52|[N-Queens II](./Algorithms/0052.n-queens-ii)|46%|Hard| |
 |53|[Maximum Subarray](./Algorithms/0053.maximum-subarray)|40%|Easy|[❤](https://leetcode.com/list/oussv5j)|
@@ -340,7 +340,7 @@
 |440|[K-th Smallest in Lexicographical Order](./Algorithms/0440.k-th-smallest-in-lexicographical-order)|25%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |441|[Arranging Coins](./Algorithms/0441.arranging-coins)|36%|Easy| |
 |442|[Find All Duplicates in an Array](./Algorithms/0442.find-all-duplicates-in-an-array)|56%|Medium| |
-|443|[String Compression](./Algorithms/0443.string-compression)|37%|Easy|[❤](https://leetcode.com/list/oussv5j)|
+|443|[String Compression](./Algorithms/0443.string-compression)|36%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |445|[Add Two Numbers II](./Algorithms/0445.add-two-numbers-ii)|45%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |446|[Arithmetic Slices II - Subsequence](./Algorithms/0446.arithmetic-slices-ii-subsequence)|27%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |447|[Number of Boomerangs](./Algorithms/0447.number-of-boomerangs)|45%|Easy| |
@@ -377,7 +377,7 @@
 |488| * Zuma Game|37%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |491|[Increasing Subsequences](./Algorithms/0491.increasing-subsequences)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |492|[Construct the Rectangle](./Algorithms/0492.construct-the-rectangle)|48%|Easy|[❤](https://leetcode.com/list/oussv5j)|
-|493|[Reverse Pairs](./Algorithms/0493.reverse-pairs)|20%|Hard| |
+|493|[Reverse Pairs](./Algorithms/0493.reverse-pairs)|21%|Hard| |
 |494|[Target Sum](./Algorithms/0494.target-sum)|43%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |495|[Teemo Attacking](./Algorithms/0495.teemo-attacking)|51%|Medium| |
 |496|[Next Greater Element I](./Algorithms/0496.next-greater-element-i)|56%|Easy| |
@@ -493,7 +493,7 @@
 |684|[Redundant Connection](./Algorithms/0684.redundant-connection)|41%|Medium| |
 |685|[Redundant Connection II](./Algorithms/0685.redundant-connection-ii)|28%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |686|[Repeated String Match](./Algorithms/0686.repeated-string-match)|34%|Easy|[❤](https://leetcode.com/list/oussv5j)|
-|687|[Longest Univalue Path](./Algorithms/0687.longest-univalue-path)|34%|Easy| |
+|687|[Longest Univalue Path](./Algorithms/0687.longest-univalue-path)|33%|Easy| |
 |688|[Knight Probability in Chessboard](./Algorithms/0688.knight-probability-in-chessboard)|39%|Medium| |
 |689|[Maximum Sum of 3 Non-Overlapping Subarrays](./Algorithms/0689.maximum-sum-of-3-non-overlapping-subarrays)|41%|Hard| |
 |691|[Stickers to Spell Word](./Algorithms/0691.stickers-to-spell-word)|34%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -506,7 +506,7 @@
 |699|[Falling Squares](./Algorithms/0699.falling-squares)|37%|Hard| |
 |712|[Minimum ASCII Delete Sum for Two Strings](./Algorithms/0712.minimum-ascii-delete-sum-for-two-strings)|51%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |713|[Subarray Product Less Than K](./Algorithms/0713.subarray-product-less-than-k)|33%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|714|[Best Time to Buy and Sell Stock with Transaction Fee](./Algorithms/0714.best-time-to-buy-and-sell-stock-with-transaction-fee)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|714|[Best Time to Buy and Sell Stock with Transaction Fee](./Algorithms/0714.best-time-to-buy-and-sell-stock-with-transaction-fee)|43%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |715|[Range Module](./Algorithms/0715.range-module)|31%|Hard| |
 |717|[1-bit and 2-bit Characters](./Algorithms/0717.1-bit-and-2-bit-characters)|49%|Easy| |
 |718|[Maximum Length of Repeated Subarray](./Algorithms/0718.maximum-length-of-repeated-subarray)|40%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -523,15 +523,15 @@
 |731|[My Calendar II](./Algorithms/0731.my-calendar-ii)|36%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |732|[My Calendar III](./Algorithms/0732.my-calendar-iii)|53%|Hard| |
 |733|[Flood Fill](./Algorithms/0733.flood-fill)|48%|Easy| |
-|735| * Asteroid Collision|37%|Medium| |
+|735|[Asteroid Collision](./Algorithms/0735.asteroid-collision)|37%|Medium| |
 |736|[Parse Lisp Expression](./Algorithms/0736.parse-lisp-expression)|42%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |738|[Monotone Increasing Digits](./Algorithms/0738.monotone-increasing-digits)|41%|Medium| |
 |739|[Daily Temperatures](./Algorithms/0739.daily-temperatures)|53%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |740|[Delete and Earn](./Algorithms/0740.delete-and-earn)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |741|[Cherry Pickup](./Algorithms/0741.cherry-pickup)|22%|Hard| |
-|744| * Network Delay Time|33%|Medium| |
+|744|[Network Delay Time](./Algorithms/0744.network-delay-time)|33%|Medium| |
 |745| * Find Smallest Letter Greater Than Target|48%|Easy| |
-|746|[Prefix and Suffix Search](./Algorithms/0746.prefix-and-suffix-search)|22%|Hard| |
+|746|[Prefix and Suffix Search](./Algorithms/0746.prefix-and-suffix-search)|23%|Hard| |
 |747| * Min Cost Climbing Stairs|45%|Easy| |
 |748| * Largest Number At Least Twice of Others|46%|Easy| |
 |749|[Shortest Completing Word](./Algorithms/0749.shortest-completing-word)|54%|Medium| |
@@ -540,7 +540,7 @@
 |754|[Cracking the Safe](./Algorithms/0754.cracking-the-safe)|39%|Hard| |
 |755| * Reach a Number|22%|Medium| |
 |756| * Pour Water|32%|Medium| |
-|757| * Pyramid Transition Matrix|30%|Medium| |
+|757| * Pyramid Transition Matrix|37%|Medium| |
 |759| * Set Intersection Size At Least Two|32%|Hard| |
 
 以下免费的算法题，暂时不能使用 Go 解答
