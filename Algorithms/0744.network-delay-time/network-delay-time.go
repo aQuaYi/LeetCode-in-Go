@@ -2,24 +2,26 @@ package Problem0744
 
 func networkDelayTime(times [][]int, N int, K int) int {
 	size := N + 1
-	receivedTime := make([]int, size)
+	maxInt := int(1e4)
 
-	maxInt := 1<<31 - 1
-	for i := 1; i < size; i++ {
-		receivedTime[i] = maxInt
+	// minTime[i] == m 表示， i 节点接收到信号所需的最小时间为 m
+	minTime := make([]int, size)
+	for i := 1; i <= N; i++ {
+		minTime[i] = maxInt
 	}
-	receivedTime[K] = 0
+	// 信号从 K 节点出发，所以 minTime[K] = 0
+	minTime[K] = 0
 
-	time := make([][]int, size)
-	for i := range time {
-		time[i] = make([]int, size)
+	// cost[i][j] = m 表示，从 i 节点到 j 节点所需的时间
+	cost := make([][]int, size)
+	for i := range cost {
+		cost[i] = make([]int, size)
 		for j := 0; j < size; j++ {
-			time[i][j] = maxInt
+			cost[i][j] = maxInt
 		}
 	}
-
 	for _, t := range times {
-		time[t[0]][t[1]] = t[2]
+		cost[t[0]][t[1]] = t[2]
 	}
 
 	queue := make([]int, 1, size)
@@ -29,9 +31,8 @@ func networkDelayTime(times [][]int, N int, K int) int {
 		queue = queue[1:]
 
 		for v := 1; v < size; v++ {
-			if time[u][v] > 0 &&
-				receivedTime[v] > receivedTime[u]+time[u][v] {
-				receivedTime[v] = receivedTime[u] + time[u][v]
+			if minTime[v] > minTime[u]+cost[u][v] {
+				minTime[v] = minTime[u] + cost[u][v]
 				queue = append(queue, v)
 			}
 		}
@@ -39,10 +40,11 @@ func networkDelayTime(times [][]int, N int, K int) int {
 
 	res := 0
 	for i := 1; i < size; i++ {
-		res = max(res, receivedTime[i])
+		res = max(res, minTime[i])
 	}
 
 	if res == maxInt {
+		// 存在无法到达的节点
 		return -1
 	}
 	return res
