@@ -1,23 +1,22 @@
 package Problem0525
 
 func findMaxLength(nums []int) int {
-	for i := range nums {
-		if nums[i] == 0 {
-			nums[i] = -1
-		}
-	}
+	delta := make(map[int]int, len(nums)/2)
+	delta[0] = -1
 
-	sumIndex := make(map[int]int, len(nums)/2)
-	sumIndex[0] = -1
-
-	sum, res := 0, 0
+	ones, zeros, res := 0, 0, 0
 
 	for i := range nums {
-		sum += nums[i]
-		if index, ok := sumIndex[sum]; ok {
-			res = max(res, i-index)
+		if nums[i] == 1 {
+			ones++
 		} else {
-			sumIndex[sum] = i
+			zeros++
+		}
+
+		if j, ok := delta[ones-zeros]; ok {
+			res = max(res, i-j)
+		} else {
+			delta[ones-zeros] = i
 		}
 	}
 
