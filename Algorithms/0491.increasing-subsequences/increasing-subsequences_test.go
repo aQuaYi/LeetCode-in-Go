@@ -74,14 +74,3 @@ func (iss intss) Less(i, j int) bool {
 
 func (iss intss) Swap(i, j int) { iss[i], iss[j] = iss[j], iss[i] }
 
-func Test_makeBR(t *testing.T) {
-	ast := assert.New(t)
-
-	expected := makeBR()
-
-	sort.Sort(intss(br))
-	sort.Sort(intss(expected))
-
-	ast.Equal(expected, br )
-
-}
