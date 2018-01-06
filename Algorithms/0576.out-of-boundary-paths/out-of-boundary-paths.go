@@ -2,57 +2,45 @@ package Problem0576
 
 const mod = 1e9 + 7
 
-var dx = []int{-1, 1, 0, 0}
-var dy = []int{0, 0, -1, 1}
-
 func findPaths(m, n, N, i, j int) int {
-	grid := [50][50]int{}
-	grid[i][j] = 1
+	dp := [50][50]int{}
 
-	queue := make([][]int, 1, m*n)
-	queue[0] = []int{i, j}
-	count := 1
+	for k := 0; k < N; k++ {
+		prior := make([]int, n)
+		for i := 0; i < m; i++ {
+			for j := 0; j < n; j++ {
+				paths := 0
 
-	res := 0
-	for {
-		if count == 0 {
-			count = len(queue)
-			N--
-			if N == 0 {
-				break
+				if i == 0 {
+					paths++
+				} else {
+					paths += prior[j]
+				}
+
+				if j == 0 {
+					paths++
+				} else {
+					paths += prior[j-1]
+				}
+
+				if i == m-1 {
+					paths++
+				} else {
+					paths += dp[i+1][j]
+				}
+
+				if j == n-1 {
+					paths++
+				} else {
+					paths += dp[i][j+1]
+				}
+
+				paths %= mod
+				prior[j] = dp[i][j]
+				dp[i][j] = paths
 			}
 		}
-
-		i, j = queue[0][0], queue[0][1]
-		queue = queue[1:]
-		count--
-
-		if 0 <= i-1 {
-			queue = append(queue, []int{i - 1, j})
-		} else {
-			res++
-		}
-
-		if 0 <= j-1 {
-			queue = append(queue, []int{i, j - 1})
-		} else {
-			res++
-		}
-
-		if i+1 < m {
-			queue = append(queue, []int{i + 1, j})
-		} else {
-			res++
-		}
-
-		if j+1 < n {
-			queue = append(queue, []int{i, j + 1})
-		} else {
-			res++
-		}
-
-		res %= mod
 	}
 
-	return res
+	return dp[i][j]
 }
