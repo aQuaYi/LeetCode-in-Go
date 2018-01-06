@@ -1,7 +1,6 @@
 package Problem0525
 
 import (
-	"fmt"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
