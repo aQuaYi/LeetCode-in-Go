@@ -28,31 +28,27 @@ func findPaths(m, n, N, i, j int) int {
 		count--
 
 		if 0 <= i-1 {
-			grid[i-1][j] = (grid[i-1][j] + grid[i][j]) % mod
 			queue = append(queue, []int{i - 1, j})
 		} else {
-			res += grid[i][j]
+			res++
 		}
 
 		if 0 <= j-1 {
-			grid[i][j-1] = (grid[i][j-1] + grid[i][j]) % mod
 			queue = append(queue, []int{i, j - 1})
 		} else {
-			res += grid[i][j]
+			res++
 		}
 
 		if i+1 < m {
-			grid[i+1][j] = (grid[i+1][j] + grid[i][j]) % mod
 			queue = append(queue, []int{i + 1, j})
 		} else {
-			res += grid[i][j]
+			res++
 		}
 
 		if j+1 < n {
-			grid[i][j+1] = (grid[i][j+1] + grid[i][j]) % mod
 			queue = append(queue, []int{i, j + 1})
 		} else {
-			res += grid[i][j]
+			res++
 		}
 
 		res %= mod
