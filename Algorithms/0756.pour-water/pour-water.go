@@ -3,23 +3,41 @@ package Problem0756
 func pourWater(heights []int, V int, K int) []int {
 	for V > 0 {
 		V--
-		drop(heights, K, heights[K]+1, true, true)
+		if !isDroppedLeft(heights, K) && !isDroppedRight(heights, K) {
+			heights[K]++
+		}
 	}
 	return heights
 }
 
-func drop(h []int, i, j int, l, r bool) bool {
-	if l && i > 0 && h[i-1] <= h[i] && drop(h, i-1, h[i], l, false) {
+func isDroppedLeft(heights []int, center int) bool {
+	idx := center
+	i := center
+	for 0 <= i-1 && heights[i-1] <= heights[i] {
+		if heights[i-1] < heights[i] {
+			idx = i - 1
+		}
+		i--
+	}
+	if idx < center {
+		heights[idx]++
 		return true
 	}
-	if r && i < len(h)-1 && h[i+1] <= h[i] && drop(h, i+1, h[i], false, r) {
+	return false
+}
+
+func isDroppedRight(heights []int, center int) bool {
+	idx := center
+	i := center
+	for i+1 < len(heights) && heights[i] >= heights[i+1] {
+		if heights[i] > heights[i+1] {
+			idx = i + 1
+		}
+		i++
+	}
+	if center < idx {
+		heights[idx]++
 		return true
 	}
-
-	if h[i] == j {
-		return false
-	}
-
-	h[i]++
-	return true
+	return false
 }
