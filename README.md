@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|155|258|106|519|
+|**Accepted**|155|259|106|520|
 |**Total**|155|260|108|523|
 
 ## 题解
@@ -538,8 +538,8 @@
 |750|[Contain Virus](./Algorithms/0750.contain-virus)|39%|Hard| |
 |753|[Open the Lock](./Algorithms/0753.open-the-lock)|37%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |754|[Cracking the Safe](./Algorithms/0754.cracking-the-safe)|39%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|755|[Reach a Number](./Algorithms/0755.reach-a-number)|23%|Medium| |
-|756| * Pour Water|33%|Medium| |
+|755|[Reach a Number](./Algorithms/0755.reach-a-number)|23%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|756|[Pour Water](./Algorithms/0756.pour-water)|33%|Medium| |
 |757| * Pyramid Transition Matrix|39%|Medium| |
 |759| * Set Intersection Size At Least Two|33%|Hard| |
 
