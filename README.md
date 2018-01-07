@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|155|257|106|518|
+|**Accepted**|155|258|106|519|
 |**Total**|155|260|108|523|
 
 ## 题解
@@ -67,7 +67,7 @@
 |46|[Permutations](./Algorithms/0046.permutations)|45%|Medium| |
 |47|[Permutations II](./Algorithms/0047.permutations-ii)|34%|Medium| |
 |48|[Rotate Image](./Algorithms/0048.rotate-image)|40%|Medium| |
-|49|[Group Anagrams](./Algorithms/0049.group-anagrams)|36%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|49|[Group Anagrams](./Algorithms/0049.group-anagrams)|37%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |50|[Pow(x, n)](./Algorithms/0050.powx-n)|26%|Medium| |
 |51|[N-Queens](./Algorithms/0051.n-queens)|32%|Hard| |
 |52|[N-Queens II](./Algorithms/0052.n-queens-ii)|46%|Hard| |
@@ -174,7 +174,7 @@
 |167|[Two Sum II - Input array is sorted](./Algorithms/0167.two-sum-ii-input-array-is-sorted)|47%|Easy| |
 |168|[Excel Sheet Column Title](./Algorithms/0168.excel-sheet-column-title)|26%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |169|[Majority Element](./Algorithms/0169.majority-element)|47%|Easy|[❤](https://leetcode.com/list/oussv5j)|
-|171|[Excel Sheet Column Number](./Algorithms/0171.excel-sheet-column-number)|47%|Easy| |
+|171|[Excel Sheet Column Number](./Algorithms/0171.excel-sheet-column-number)|48%|Easy| |
 |172|[Factorial Trailing Zeroes](./Algorithms/0172.factorial-trailing-zeroes)|36%|Easy| |
 |174|[Dungeon Game](./Algorithms/0174.dungeon-game)|23%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |179|[Largest Number](./Algorithms/0179.largest-number)|23%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -512,7 +512,7 @@
 |718|[Maximum Length of Repeated Subarray](./Algorithms/0718.maximum-length-of-repeated-subarray)|40%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |719|[Find K-th Smallest Pair Distance](./Algorithms/0719.find-k-th-smallest-pair-distance)|26%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |720|[Longest Word in Dictionary](./Algorithms/0720.longest-word-in-dictionary)|41%|Easy| |
-|721|[Accounts Merge](./Algorithms/0721.accounts-merge)|30%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|721|[Accounts Merge](./Algorithms/0721.accounts-merge)|31%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |722|[Remove Comments](./Algorithms/0722.remove-comments)|26%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |724|[Find Pivot Index](./Algorithms/0724.find-pivot-index)|40%|Easy| |
 |725|[Split Linked List in Parts](./Algorithms/0725.split-linked-list-in-parts)|48%|Medium| |
@@ -521,7 +521,7 @@
 |729|[My Calendar I](./Algorithms/0729.my-calendar-i)|40%|Medium| |
 |730|[Count Different Palindromic Subsequences](./Algorithms/0730.count-different-palindromic-subsequences)|34%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |731|[My Calendar II](./Algorithms/0731.my-calendar-ii)|36%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|732|[My Calendar III](./Algorithms/0732.my-calendar-iii)|53%|Hard| |
+|732|[My Calendar III](./Algorithms/0732.my-calendar-iii)|54%|Hard| |
 |733|[Flood Fill](./Algorithms/0733.flood-fill)|48%|Easy| |
 |735|[Asteroid Collision](./Algorithms/0735.asteroid-collision)|37%|Medium| |
 |736|[Parse Lisp Expression](./Algorithms/0736.parse-lisp-expression)|42%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -537,10 +537,10 @@
 |749|[Shortest Completing Word](./Algorithms/0749.shortest-completing-word)|54%|Medium| |
 |750|[Contain Virus](./Algorithms/0750.contain-virus)|39%|Hard| |
 |753|[Open the Lock](./Algorithms/0753.open-the-lock)|37%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|754|[Cracking the Safe](./Algorithms/0754.cracking-the-safe)|39%|Hard| |
-|755| * Reach a Number|22%|Medium| |
+|754|[Cracking the Safe](./Algorithms/0754.cracking-the-safe)|39%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|755|[Reach a Number](./Algorithms/0755.reach-a-number)|23%|Medium| |
 |756| * Pour Water|33%|Medium| |
-|757| * Pyramid Transition Matrix|38%|Medium| |
+|757| * Pyramid Transition Matrix|39%|Medium| |
 |759| * Set Intersection Size At Least Two|33%|Hard| |
 
 以下免费的算法题，暂时不能使用 Go 解答
