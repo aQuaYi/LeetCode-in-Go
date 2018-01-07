@@ -9,10 +9,6 @@ func reachNumber(target int) int {
 		target = -target
 	}
 
-	if target == 0 || target == 1 {
-		return target
-	}
-
 	n := int(math.Ceil((math.Sqrt(8*float64(target)+1) - 1) / 2))
 
 	sum := n * (n + 1) / 2
