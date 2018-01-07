@@ -1,68 +1,25 @@
 package Problem0756
 
 func pourWater(heights []int, V int, K int) []int {
-	if V == 0 {
-		return heights
-	}
-
-	leftBeg, leftEnd := K, K
-	for 0 <= leftBeg-1 && heights[leftBeg-1] <= heights[leftBeg] {
-		if heights[leftBeg-1] < heights[leftBeg] {
-			leftEnd = leftBeg
-		}
-		leftBeg--
-	}
-	if heights[leftBeg] < heights[leftEnd] {
-		for i := leftEnd - 1; leftBeg <= i; i-- {
-			heights[i]++
-			V--
-			if V == 0 {
-				return heights
-			}
-		}
-		return pourWater(heights, V, K)
-	}
-
-	size := len(heights)
-	rightBeg, rightEnd := K, K
-	for rightBeg+1 < size && heights[rightBeg] >= heights[rightBeg+1] {
-		if heights[rightBeg] > heights[rightBeg+1] {
-			rightEnd = rightBeg
-		}
-		rightBeg++
-	}
-	if heights[rightBeg] < heights[rightEnd] {
-		for i := rightEnd + 1; i <= rightBeg; i++ {
-			heights[i]++
-			V--
-			if V == 0 {
-				return heights
-			}
-		}
-		return pourWater(heights, V, K)
-	}
-
-	for i := K; leftBeg <= i; i-- {
-		heights[i]++
+	for V > 0 {
 		V--
-		if V == 0 {
-			return heights
-		}
+		drop(heights, K, heights[K]+1, true, true)
+	}
+	return heights
+}
+
+func drop(h []int, i, j int, l, r bool) bool {
+	if l && i > 0 && h[i-1] <= h[i] && drop(h, i-1, h[i], l, false) {
+		return true
+	}
+	if r && i < len(h)-1 && h[i+1] <= h[i] && drop(h, i+1, h[i], false, r) {
+		return true
 	}
 
-	for i := leftBeg - 1; 0 <= i; i-- {
-		if heights[i] < heights[K] {
-			return pourWater(heights, V, K)
-		}
+	if h[i] == j {
+		return false
 	}
 
-	for j := K + 1; j <= rightBeg; j++ {
-		heights[j]++
-		V--
-		if V == 0 {
-			return heights
-		}
-	}
-
-	return pourWater(heights, V, K)
+	h[i]++
+	return true
 }
