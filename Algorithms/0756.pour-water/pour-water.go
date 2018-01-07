@@ -50,6 +50,12 @@ func pourWater(heights []int, V int, K int) []int {
 		}
 	}
 
+	for i := leftBeg - 1; 0 <= i; i-- {
+		if heights[i] < heights[K] {
+			return pourWater(heights, V, K)
+		}
+	}
+
 	for j := K + 1; j <= rightBeg; j++ {
 		heights[j]++
 		V--
