@@ -27,12 +27,12 @@ func helper(bottom, blocks string, curr, length int) bool {
 	for i := 0; i < count; i++ {
 		index := strings.Index(blocks, b)
 		blk := blocks[index : index+4]
-		blocks = strings.Replace(blocks, blk, "", 1)
 		color := blk[3:]
+		blocks = strings.Replace(blocks, blk, "", 1)
+		blocks += blk
 		if helper(bottom+color, blocks, curr+1, length) {
 			return true
 		}
-		blocks += blk
 	}
 
 	return false
