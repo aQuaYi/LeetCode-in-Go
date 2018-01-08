@@ -24,19 +24,23 @@ func intersectionSizeTwo(intervals [][]int) int {
 	n := len(intervals)
 
 	for i := 1; i < n; i++ {
-		curr := intervals[i]
-		if left < curr[0] && curr[0] <= right {
+		a, b := intervals[i][0], intervals[i][1]
+		// 当 b == intervals[i-1][1] 什么都没有发生
+		// 只有出现了新 b 时，才需要讨论
+		// 根据排序规则
+		// left < a 意味着出现了新 b
+		if left < a && a <= right {
 			res++
-			// 原先的 left 没有包含在 curr 中
+			// 原先的 left 没有包含在 intervals[i] 中
 			// 新 left = right
 			left = right
-			// 新 right = curr[1]
-			right = curr[1]
-		} else if curr[0] > right {
-			// left 和 right 都没有包含在 curr 中
+			// 新 right = intervals[i][1]
+			right = b
+		} else if right < a {
+			// left 和 right 都没有包含在 intervals[i] 中
 			res += 2
-			left = curr[1] - 1
-			right = curr[1]
+			left = b - 1
+			right = b
 		}
 	}
 
