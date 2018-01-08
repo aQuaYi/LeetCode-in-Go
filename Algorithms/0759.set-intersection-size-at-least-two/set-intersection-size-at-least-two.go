@@ -6,31 +6,31 @@ import (
 
 func intersectionSizeTwo(intervals [][]int) int {
 	sort.Slice(intervals, func(i, j int) bool {
-		if intervals[i][0] == intervals[j][0] {
-			return intervals[i][1] < intervals[j][1]
+		if intervals[i][1] == intervals[j][1] {
+			return intervals[i][0] > intervals[j][0]
 		}
-		return intervals[i][0] < intervals[j][0]
+		return intervals[i][1] < intervals[j][1]
 	})
 
+	res := 0
+	left := intervals[0][1] - 1
+	right := intervals[0][1]
+	res += 2
+
 	n := len(intervals)
-	hasNum := make(map[int]bool, n*2)
 
-	interSect := intervals[0]
 	for i := 1; i < n; i++ {
-		if interSect[1] <= intervals[i][0] {
-			hasNum[interSect[0]] = true
-			hasNum[interSect[1]] = true
-			interSect = intervals[i]
-			continue
-		}
-
-		interSect[0] = intervals[i][0]
-		if intervals[i][1] < interSect[1] {
-			interSect[1] = intervals[i][1]
+		curr := intervals[i]
+		if left < curr[0] && curr[0] <= right {
+			res++
+			left = right
+			right = curr[1]
+		} else if curr[0] > right {
+			res += 2
+			left = curr[1] - 1
+			right = curr[1]
 		}
 	}
-	hasNum[interSect[0]] = true
-	hasNum[interSect[1]] = true
 
-	return len(hasNum)
+	return res
 }
