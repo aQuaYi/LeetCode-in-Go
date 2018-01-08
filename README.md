@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|155|260|108|523|
+|**Accepted**|155|260|109|524|
 |**Total**|155|260|108|523|
 
 ## 题解
@@ -153,7 +153,7 @@
 |135|[Candy](./Algorithms/0135.candy)|25%|Hard| |
 |136|[Single Number](./Algorithms/0136.single-number)|55%|Easy| |
 |137|[Single Number II](./Algorithms/0137.single-number-ii)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|139|[Word Break](./Algorithms/0139.word-break)|30%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|139|[Word Break](./Algorithms/0139.word-break)|31%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |140|[Word Break II](./Algorithms/0140.word-break-ii)|24%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |143|[Reorder List](./Algorithms/0143.reorder-list)|26%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |144|[Binary Tree Preorder Traversal](./Algorithms/0144.binary-tree-preorder-traversal)|46%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -375,7 +375,7 @@
 |485|[Max Consecutive Ones](./Algorithms/0485.max-consecutive-ones)|54%|Easy| |
 |486|[Predict the Winner](./Algorithms/0486.predict-the-winner)|45%|Medium| |
 |488|[Zuma Game](./Algorithms/0488.zuma-game)|37%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|491|[Increasing Subsequences](./Algorithms/0491.increasing-subsequences)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|491|[Increasing Subsequences](./Algorithms/0491.increasing-subsequences)|39%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |492|[Construct the Rectangle](./Algorithms/0492.construct-the-rectangle)|48%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |493|[Reverse Pairs](./Algorithms/0493.reverse-pairs)|21%|Hard| |
 |494|[Target Sum](./Algorithms/0494.target-sum)|43%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -433,7 +433,7 @@
 |581|[Shortest Unsorted Continuous Subarray](./Algorithms/0581.shortest-unsorted-continuous-subarray)|29%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |583|[Delete Operation for Two Strings](./Algorithms/0583.delete-operation-for-two-strings)|44%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |587|[Erect the Fence](./Algorithms/0587.erect-the-fence)|32%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|591| * Tag Validator|30%|Hard| |
+|591|[Tag Validator](./Algorithms/0591.tag-validator)|30%|Hard| |
 |592|[Fraction Addition and Subtraction](./Algorithms/0592.fraction-addition-and-subtraction)|45%|Medium| |
 |593|[Valid Square](./Algorithms/0593.valid-square)|40%|Medium| |
 |594|[Longest Harmonious Subsequence](./Algorithms/0594.longest-harmonious-subsequence)|41%|Easy| |
@@ -483,11 +483,11 @@
 |672|[Bulb Switcher II](./Algorithms/0672.bulb-switcher-ii)|48%|Medium| |
 |673|[Number of Longest Increasing Subsequence](./Algorithms/0673.number-of-longest-increasing-subsequence)|31%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |674|[Longest Continuous Increasing Subsequence](./Algorithms/0674.longest-continuous-increasing-subsequence)|42%|Easy| |
-|675|[Cut Off Trees for Golf Event](./Algorithms/0675.cut-off-trees-for-golf-event)|26%|Hard| |
+|675|[Cut Off Trees for Golf Event](./Algorithms/0675.cut-off-trees-for-golf-event)|27%|Hard| |
 |676|[Implement Magic Dictionary](./Algorithms/0676.implement-magic-dictionary)|49%|Medium| |
 |677|[Map Sum Pairs](./Algorithms/0677.map-sum-pairs)|52%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |678|[Valid Parenthesis String](./Algorithms/0678.valid-parenthesis-string)|29%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|679|[24 Game](./Algorithms/0679.24-game)|39%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|679|[24 Game](./Algorithms/0679.24-game)|38%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |680|[Valid Palindrome II](./Algorithms/0680.valid-palindrome-ii)|32%|Easy| |
 |682|[Baseball Game](./Algorithms/0682.baseball-game)|58%|Easy| |
 |684|[Redundant Connection](./Algorithms/0684.redundant-connection)|41%|Medium| |
