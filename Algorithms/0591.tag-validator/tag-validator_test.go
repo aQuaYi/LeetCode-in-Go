@@ -19,8 +19,18 @@ var tcs = []struct {
 	},
 
 	{
+		"<DIV>>>  ![cdata[]] <![CDATA[<div>]>]>]>>]</DIV>",
+		false,
+	},
+
+	{
 		"<DIV>>>  ![cdata[]] <![CDATA[<div>]>]]>]]>>]</DIV>",
 		true,
+	},
+
+	{
+		"BBB <A>  <B> </A>   </B>",
+		false,
 	},
 
 	{
