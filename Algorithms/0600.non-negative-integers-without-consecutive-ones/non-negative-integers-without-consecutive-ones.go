@@ -1,7 +1,7 @@
 package Problem0600
 
 func findIntegers(num int) int {
-	// binaries 是 num 的二进制表示，逆序
+	// binary 是 num 的二进制表示，逆序
 	binary := make([]byte, 0, 32)
 	for num > 0 {
 		binary = append(binary, byte(num%2)+'0')
@@ -29,16 +29,17 @@ func findIntegers(num int) int {
 
 	res := a[n-1] + b[n-1]
 	// 此时的 res 可能包含了 >num 的那一部分数，需要减去相关部分
-	for i := n - 1; i-1 > 0; i-- {
+	for i := n - 2; i >= 0; i-- {
 		// 注意，此时的 binary 是逆序
 		// 出现连续的 `1` 说明已经清理干净了
-		if binary[i-1] == '1' && binary[i] == '1' {
+		if binary[i] == '1' && binary[i+1] == '1' {
 			break
 		}
 		// 当初多加了 b[i]
-		if binary[i-1] == '0' && binary[i] == '0' {
+		if binary[i] == '0' && binary[i+1] == '0' {
 			res -= b[i]
 		}
 	}
+
 	return res
 }
