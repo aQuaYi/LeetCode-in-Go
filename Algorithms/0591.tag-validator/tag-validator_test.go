@@ -18,6 +18,41 @@ var tcs = []struct {
 		true,
 	},
 
+	{
+		"<DIV>>>  ![cdata[]] <![CDATA[<div>]>]]>]]>>]</DIV>",
+		true,
+	},
+
+	{
+		"<A>  <B> </A>   </B>",
+		false,
+	},
+
+	{
+		"<DIV>  div tag is not closed  <DIV>",
+		false,
+	},
+
+	{
+		"<DIV>  unmatched <  </DIV>",
+		false,
+	},
+
+	{
+		"<DIV> closed tags with invalid tag name  <b>123</b> </DIV>",
+		false,
+	},
+
+	{
+		"<DIV> unmatched tags with invalid tag name  </1234567890> and <CDATA[[]]>  </DIV>",
+		false,
+	},
+
+	{
+		"<DIV>  unmatched start tag <B>  and unmatched end tag </C>  </DIV>",
+		false,
+	},
+
 	// 可以有多个 testcase
 }
 
