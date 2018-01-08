@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|155|259|107|521|
+|**Accepted**|155|260|107|522|
 |**Total**|155|260|108|523|
 
 ## 题解
@@ -191,7 +191,7 @@
 |205|[Isomorphic Strings](./Algorithms/0205.isomorphic-strings)|34%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |206|[Reverse Linked List](./Algorithms/0206.reverse-linked-list)|46%|Easy| |
 |207|[Course Schedule](./Algorithms/0207.course-schedule)|33%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|208|[Implement Trie (Prefix Tree)](./Algorithms/0208.implement-trie-prefix-tree)|29%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|208|[Implement Trie (Prefix Tree)](./Algorithms/0208.implement-trie-prefix-tree)|30%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |209|[Minimum Size Subarray Sum](./Algorithms/0209.minimum-size-subarray-sum)|31%|Medium| |
 |210|[Course Schedule II](./Algorithms/0210.course-schedule-ii)|29%|Medium| |
 |211|[Add and Search Word - Data structure design](./Algorithms/0211.add-and-search-word-data-structure-design)|24%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -264,7 +264,7 @@
 |330|[Patching Array](./Algorithms/0330.patching-array)|32%|Hard| |
 |331|[Verify Preorder Serialization of a Binary Tree](./Algorithms/0331.verify-preorder-serialization-of-a-binary-tree)|36%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |332|[Reconstruct Itinerary](./Algorithms/0332.reconstruct-itinerary)|29%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|334|[Increasing Triplet Subsequence](./Algorithms/0334.increasing-triplet-subsequence)|39%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|334|[Increasing Triplet Subsequence](./Algorithms/0334.increasing-triplet-subsequence)|40%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |335|[Self Crossing](./Algorithms/0335.self-crossing)|25%|Hard| |
 |336|[Palindrome Pairs](./Algorithms/0336.palindrome-pairs)|26%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |337|[House Robber III](./Algorithms/0337.house-robber-iii)|44%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -449,7 +449,7 @@
 |623|[Add One Row to Tree](./Algorithms/0623.add-one-row-to-tree)|46%|Medium| |
 |628|[Maximum Product of Three Numbers](./Algorithms/0628.maximum-product-of-three-numbers)|45%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |629|[K Inverse Pairs Array](./Algorithms/0629.k-inverse-pairs-array)|26%|Hard| |
-|630|[Course Schedule III](./Algorithms/0630.course-schedule-iii)|29%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|630|[Course Schedule III](./Algorithms/0630.course-schedule-iii)|28%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |632|[Smallest Range](./Algorithms/0632.smallest-range)|42%|Hard| |
 |633|[Sum of Square Numbers](./Algorithms/0633.sum-of-square-numbers)|32%|Easy| |
 |636|[Exclusive Time of Functions](./Algorithms/0636.exclusive-time-of-functions)|44%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -539,8 +539,8 @@
 |753|[Open the Lock](./Algorithms/0753.open-the-lock)|37%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |754|[Cracking the Safe](./Algorithms/0754.cracking-the-safe)|39%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |755|[Reach a Number](./Algorithms/0755.reach-a-number)|23%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|756|[Pour Water](./Algorithms/0756.pour-water)|33%|Medium| |
-|757| * Pyramid Transition Matrix|40%|Medium| |
+|756|[Pour Water](./Algorithms/0756.pour-water)|34%|Medium| |
+|757|[Pyramid Transition Matrix](./Algorithms/0757.pyramid-transition-matrix)|40%|Medium| |
 |759| * Set Intersection Size At Least Two|33%|Hard| |
 
 以下免费的算法题，暂时不能使用 Go 解答
