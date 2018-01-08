@@ -18,8 +18,8 @@ func intersectionSizeTwo(intervals [][]int) int {
 	interSect := intervals[0]
 	for i := 1; i < n; i++ {
 		if interSect[1] <= intervals[i][0] {
+			hasNum[interSect[0]] = true
 			hasNum[interSect[1]] = true
-			hasNum[interSect[1]-1] = true
 			interSect = intervals[i]
 			continue
 		}
@@ -30,7 +30,7 @@ func intersectionSizeTwo(intervals [][]int) int {
 		}
 	}
 	hasNum[interSect[0]] = true
-	hasNum[interSect[0]+1] = true
+	hasNum[interSect[1]] = true
 
 	return len(hasNum)
 }
