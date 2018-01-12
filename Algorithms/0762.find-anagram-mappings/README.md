@@ -30,3 +30,47 @@ Note:
 ## 解题思路
 
 见程序注释
+
+我把问题想复杂了，以下是想复杂以后的解法。
+
+```text
+输入
+[47 34 51 47 47 34]
+[47 51 34 34 47 47]
+输出
+[0, 2, 1, 5, 4, 3]
+```
+
+复杂的地方在于，输出包含了 [0,len(A)) 之间的所有整数
+
+```golang
+func anagramMappings(A, B []int) []int {
+	n := len(A)
+	indexs := make(map[int]int, n)
+	values := make(map[int]int, n)
+	res := make([]int, n)
+
+	for i := range res {
+		if A[i] == B[i] {
+			res[i] = i
+			continue
+		}
+
+		if val, ok := values[A[i]]; ok {
+			res[i] = val
+			delete(values, A[i])
+		} else {
+			indexs[A[i]] = i
+		}
+
+		if idx, ok := indexs[B[i]]; ok {
+			res[idx] = i
+			delete(indexs, B[i])
+		} else {
+			values[B[i]] = i
+		}
+	}
+
+	return res
+}
+```

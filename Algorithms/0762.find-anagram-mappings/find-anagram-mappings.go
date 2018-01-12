@@ -1,9 +1,10 @@
 package Problem0762
 
 func anagramMappings(A, B []int) []int {
-	indexs := make(map[int]int, len(A))
-	values := make(map[int]int, len(B))
-	res := make([]int, len(B))
+	n := len(A)
+	indexs := make(map[int]int, n)
+	values := make(map[int]int, n)
+	res := make([]int, n)
 
 	for i := range res {
 		if A[i] == B[i] {
@@ -11,8 +12,8 @@ func anagramMappings(A, B []int) []int {
 			continue
 		}
 
-		if v, ok := values[A[i]]; ok {
-			res[i] = v
+		if val, ok := values[A[i]]; ok {
+			res[i] = val
 			delete(values, A[i])
 		} else {
 			indexs[A[i]] = i
