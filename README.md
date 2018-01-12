@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|155|260|109|524|
+|**Accepted**|156|260|109|525|
 |**Total**|156|260|110|526|
 
 ## 题解
@@ -541,9 +541,9 @@
 |755|[Reach a Number](./Algorithms/0755.reach-a-number)|23%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |756|[Pour Water](./Algorithms/0756.pour-water)|33%|Medium| |
 |757|[Pyramid Transition Matrix](./Algorithms/0757.pyramid-transition-matrix)|41%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|759|[Set Intersection Size At Least Two](./Algorithms/0759.set-intersection-size-at-least-two)|34%|Hard| |
+|759|[Set Intersection Size At Least Two](./Algorithms/0759.set-intersection-size-at-least-two)|33%|Hard| |
 |761| * Employee Free Time|49%|Hard| |
-|762| * Find Anagram Mappings|81%|Easy| |
+|762|[Find Anagram Mappings](./Algorithms/0762.find-anagram-mappings)|81%|Easy| |
 |763| * Special Binary String|32%|Hard| |
 
 以下免费的算法题，暂时不能使用 Go 解答
