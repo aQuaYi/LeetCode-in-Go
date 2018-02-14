@@ -1,4 +1,4 @@
-# [757. Pyramid Transition Matrix](https://leetcode.com/problems/pyramid-transition-matrix/)
+# [756. Pyramid Transition Matrix](https://leetcode.com/problems/pyramid-transition-matrix/)
 
 ## 题目
 

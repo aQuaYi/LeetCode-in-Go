@@ -1,4 +1,4 @@
-# [753. Open the Lock](https://leetcode.com/problems/open-the-lock/)
+# [752. Open the Lock](https://leetcode.com/problems/open-the-lock/)
 
 ## 题目
 

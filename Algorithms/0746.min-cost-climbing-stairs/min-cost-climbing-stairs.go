@@ -1,4 +1,4 @@
-package Problem0747
+package Problem0746
 
 func minCostClimbingStairs(cost []int) int {
 	n := len(cost)

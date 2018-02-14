@@ -1,4 +1,4 @@
-# [755. Reach a Number](https://leetcode.com/problems/reach-a-number/)
+# [754. Reach a Number](https://leetcode.com/problems/reach-a-number/)
 
 ## 题目
 

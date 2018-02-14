@@ -1,4 +1,4 @@
-package Problem0753
+package Problem0752
 
 func openLock(deadends []string, target string) int {
 	isDeadends := dealDeadends(deadends)

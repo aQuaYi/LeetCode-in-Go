@@ -1,4 +1,4 @@
-package Problem0750
+package Problem0749
 
 // 贪心算法
 // 每次把会导致最多感染的区域围起来
