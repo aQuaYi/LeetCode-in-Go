@@ -8,6 +8,9 @@ import (
 )
 
 func rebuildReadme() {
+	// 由于网络原因，有时候 signin 比较慢
+	signin()
+
 	lc := lastestLeetCode()
 	makeREADME(lc)
 }
