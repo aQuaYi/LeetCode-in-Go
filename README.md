@@ -6,8 +6,11 @@
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 
+
 ## 进度
 
+> **注意**：从 743 题开始，API 中的题号与页面中的出现错位。
+> 本表格以 API 中的题号为准。
 > 统计规则：1.免费题，2.算法题，3.能用 Go 解答
 
 |     |Easy|Medium|Hard|Total|
