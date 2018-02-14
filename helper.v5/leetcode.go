@@ -6,6 +6,7 @@ import (
 	"io/ioutil"
 	"log"
 	"sort"
+	"strings"
 
 	"github.com/aQuaYi/GoKit"
 )
@@ -216,7 +217,7 @@ func (p problem) link() string {
 func (p problem) tableLine() string {
 	res := fmt.Sprintf("|%d|", p.ID)
 	if p.IsAccepted {
-		res += fmt.Sprintf(`[%s](%s)|`, p.Title, p.Dir)
+		res += fmt.Sprintf(`[%s](%s)|`, strings.TrimSpace(p.Title), p.Dir)
 	} else {
 		res += fmt.Sprintf(` * %s|`, p.Title)
 	}

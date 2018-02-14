@@ -398,7 +398,7 @@
 |516|[Longest Palindromic Subsequence](./Algorithms/0516.longest-palindromic-subsequence)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |517|[Super Washing Machines](./Algorithms/0517.super-washing-machines)|36%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |520|[Detect Capital](./Algorithms/0520.detect-capital)|51%|Easy| |
-|521|[Longest Uncommon Subsequence I ](./Algorithms/0521.longest-uncommon-subsequence-i)|55%|Easy| |
+|521|[Longest Uncommon Subsequence I](./Algorithms/0521.longest-uncommon-subsequence-i)|55%|Easy| |
 |522|[Longest Uncommon Subsequence II](./Algorithms/0522.longest-uncommon-subsequence-ii)|32%|Medium| |
 |523|[Continuous Subarray Sum](./Algorithms/0523.continuous-subarray-sum)|23%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |524|[Longest Word in Dictionary through Deleting](./Algorithms/0524.longest-word-in-dictionary-through-deleting)|43%|Medium| |
