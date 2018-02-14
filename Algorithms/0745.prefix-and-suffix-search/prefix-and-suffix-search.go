@@ -1,4 +1,4 @@
-package Problem0746
+package Problem0745
 
 // WordFilter 是字符过滤器
 type WordFilter struct {

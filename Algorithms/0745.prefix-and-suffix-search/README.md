@@ -1,4 +1,4 @@
-# [746. Prefix and Suffix Search](https://leetcode.com/problems/prefix-and-suffix-search/)
+# [745. Prefix and Suffix Search](https://leetcode.com/problems/prefix-and-suffix-search/)
 
 ## 题目
 
