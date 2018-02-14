@@ -125,7 +125,7 @@ type State struct {
 	Title     string `json:"question__title"`
 	TitleSlug string `json:"question__title_slug"`
 	IsNew     bool   `json:"is_new_question"`
-	ID        int    `json:"question_id"`
+	ID        int    `json:"frontend_question_id"`
 	ACs       int    `json:"total_acs"`
 	Submitted int    `json:"total_submitted"`
 }

@@ -531,38 +531,38 @@
 |739|[Daily Temperatures](./Algorithms/0739.daily-temperatures)|53%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |740|[Delete and Earn](./Algorithms/0740.delete-and-earn)|43%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |741|[Cherry Pickup](./Algorithms/0741.cherry-pickup)|23%|Hard| |
-|744|[Network Delay Time](./Algorithms/0744.network-delay-time)|34%|Medium| |
-|745|[Find Smallest Letter Greater Than Target](./Algorithms/0745.find-smallest-letter-greater-than-target)|45%|Easy| |
-|746|[Prefix and Suffix Search](./Algorithms/0746.prefix-and-suffix-search)|24%|Hard| |
-|747|[Min Cost Climbing Stairs](./Algorithms/0747.min-cost-climbing-stairs)|43%|Easy| |
-|748|[Largest Number At Least Twice of Others](./Algorithms/0748.largest-number-at-least-twice-of-others)|42%|Easy| |
-|749|[Shortest Completing Word](./Algorithms/0749.shortest-completing-word)|53%|Medium| |
-|750|[Contain Virus](./Algorithms/0750.contain-virus)|39%|Hard| |
-|753|[Open the Lock](./Algorithms/0753.open-the-lock)|37%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|754|[Cracking the Safe](./Algorithms/0754.cracking-the-safe)|39%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|755|[Reach a Number](./Algorithms/0755.reach-a-number)|25%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|757|[Pyramid Transition Matrix](./Algorithms/0757.pyramid-transition-matrix)|44%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|759|[Set Intersection Size At Least Two](./Algorithms/0759.set-intersection-size-at-least-two)|34%|Hard| |
-|763| * Special Binary String|38%|Hard| |
-|767| * Prime Number of Set Bits in Binary Representation|55%|Easy| |
-|768| * Partition Labels|64%|Medium| |
-|769| * Largest Plus Sign|36%|Medium| |
-|770| * Couples Holding Hands|47%|Hard| |
-|777| * Toeplitz Matrix|58%|Easy| |
-|778| * Reorganize String|35%|Medium| |
-|779| * Max Chunks To Make Sorted II|41%|Hard| |
-|780| * Max Chunks To Make Sorted|46%|Medium| |
-|781| * Basic Calculator IV|43%|Hard| |
-|782| * Jewels and Stones|83%|Easy| |
-|787| * Sliding Puzzle|48%|Hard| |
-|790| * Global and Local Inversions|29%|Medium| |
-|793| * Swap Adjacent in LR String|23%|Medium| |
-|794| * Swim in Rising Water|43%|Hard| |
-|795| * K-th Symbol in Grammar|33%|Medium| |
-|796| * Reaching Points|19%|Hard| |
-|797| * Rabbits in Forest|47%|Medium| |
-|798| * Transform to Chessboard|32%|Hard| |
-|799| * Minimum Distance Between BST Nodes|47%|Easy| |
+|743|[Network Delay Time](./Algorithms/0743.network-delay-time)|34%|Medium| |
+|744|[Find Smallest Letter Greater Than Target](./Algorithms/0744.find-smallest-letter-greater-than-target)|45%|Easy| |
+|745|[Prefix and Suffix Search](./Algorithms/0745.prefix-and-suffix-search)|24%|Hard| |
+|746|[Min Cost Climbing Stairs](./Algorithms/0746.min-cost-climbing-stairs)|43%|Easy| |
+|747|[Largest Number At Least Twice of Others](./Algorithms/0747.largest-number-at-least-twice-of-others)|42%|Easy| |
+|748|[Shortest Completing Word](./Algorithms/0748.shortest-completing-word)|53%|Medium| |
+|749|[Contain Virus](./Algorithms/0749.contain-virus)|39%|Hard| |
+|752|[Open the Lock](./Algorithms/0752.open-the-lock)|37%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|753|[Cracking the Safe](./Algorithms/0753.cracking-the-safe)|39%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|754|[Reach a Number](./Algorithms/0754.reach-a-number)|25%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|756|[Pyramid Transition Matrix](./Algorithms/0756.pyramid-transition-matrix)|44%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|757|[Set Intersection Size At Least Two](./Algorithms/0757.set-intersection-size-at-least-two)|34%|Hard| |
+|761| * Special Binary String|38%|Hard| |
+|762| * Prime Number of Set Bits in Binary Representation|55%|Easy| |
+|763| * Partition Labels|64%|Medium| |
+|764| * Largest Plus Sign|36%|Medium| |
+|765| * Couples Holding Hands|47%|Hard| |
+|766| * Toeplitz Matrix|58%|Easy| |
+|767| * Reorganize String|35%|Medium| |
+|768| * Max Chunks To Make Sorted II|41%|Hard| |
+|769| * Max Chunks To Make Sorted|46%|Medium| |
+|770| * Basic Calculator IV|43%|Hard| |
+|771| * Jewels and Stones|83%|Easy| |
+|773| * Sliding Puzzle|48%|Hard| |
+|775| * Global and Local Inversions|29%|Medium| |
+|777| * Swap Adjacent in LR String|23%|Medium| |
+|778| * Swim in Rising Water|43%|Hard| |
+|779| * K-th Symbol in Grammar|33%|Medium| |
+|780| * Reaching Points|19%|Hard| |
+|781| * Rabbits in Forest|47%|Medium| |
+|782| * Transform to Chessboard|32%|Hard| |
+|783| * Minimum Distance Between BST Nodes|47%|Easy| |
 
 以下免费的算法题，暂时不能使用 Go 解答
 
