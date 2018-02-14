@@ -7,6 +7,9 @@ import (
 )
 
 func printTasks() {
+	// 生成任务清单前，先重制 README 文件
+	rebuildReadme()
+
 	lc := lastestLeetCode()
 	makeTasksFile(lc.Problems)
 }

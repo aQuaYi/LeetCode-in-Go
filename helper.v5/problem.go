@@ -12,26 +12,28 @@ import (
 	"time"
 
 	"github.com/aQuaYi/GoKit"
-
-	"github.com/PuerkitoBio/goquery"
 )
 
 func buildProblemDir(s string) {
 	var err error
+	var problemNum int
+
 	// 获取问题编号
-	problemNum := 0
-	if problemNum, err = strconv.Atoi(os.Args[1]); err != nil {
+	problemNum, err = strconv.Atoi(os.Args[1])
+	if err != nil {
 		log.Fatalln("无法获取问题编号：", err)
+	}
+	if problemNum <= 0 {
+		log.Fatalln("题目编号应该 >0")
 	}
 
 	// 需要创建答题文件夹
-	if problemNum > 0 {
-		lc, err := readLeetCodeRecord()
-		if err != nil {
-			log.Fatalln("读取 LeetCode 记录失败: ", err)
-		}
-		makeProblemDir(lc.Problems, problemNum)
+	lc, err := readLeetCodeRecord()
+	if err != nil {
+		log.Fatalln("读取 LeetCode 记录失败: ", err)
 	}
+
+	makeProblemDir(lc.Problems, problemNum)
 }
 
 func makeProblemDir(ps problems, problemNum int) {
@@ -77,29 +79,10 @@ func build(p problem) {
 
 	creatREADME(p)
 
-	// // 若本题无法使用 Go 语言解答，getFunction 会 panic
-	// // 此 defer 就是用于处理此种情况
-	// defer func() {
-	// 	if err := recover(); err != nil {
-	// 		log.Printf("获取第 %d 题的 getFunction() 出错：%s", p.ID, err)
-	// 		// 添加 p.ID 到 unavailableFile
-	// 		u := readUnavailable()
-	// 		u.add(p.ID)
-	// 		// 删除刚刚创建的目录
-	// 		if err := os.RemoveAll(p.Dir); err != nil {
-	// 			log.Fatalln("无法删除目录", p.Dir)
-	// 		}
-	// 	}
-	// }()
-	// fc, fcName, para, ans := getFunction(p.link())
-
-	fcName := "fn"
-	para := "para int"
-	ans := "int"
-
-	fc := fmt.Sprintf("func %s(%s) %s {\nres :=0 \n\nreturn res\n}", fcName, para, ans)
-
+	fc := getFunction(p.link())
 	creatGo(p, fc)
+
+	fcName, para, ans := parseFunction(fc)
 	creatGoTest(p, fcName, para, ans)
 
 	// 利用 chrome 打开题目 submissions 页面
@@ -127,80 +110,6 @@ func build(p problem) {
 	time.Sleep(2 * time.Second)
 
 	log.Printf("%d.%s 的文件夹，创建完毕。\n", p.ID, p.Title)
-}
-
-func creatREADME(p problem) {
-	fileFormat := `# [%d. %s](%s)
-
-## 题目
-
-%s
-
-## 解题思路
-
-见程序注释
-`
-
-	// questionDescription := getQuestionDescription(p.link())
-	questionDescription := ""
-
-	content := fmt.Sprintf(fileFormat, p.ID, p.Title, p.link(), questionDescription)
-
-	filename := fmt.Sprintf("%s/README.md", p.Dir)
-
-	err := ioutil.WriteFile(filename, []byte(content), 0755)
-	if err != nil {
-		log.Fatal(err)
-	}
-}
-
-func getQuestionDescription(URL string) string {
-	doc, err := goquery.NewDocument(URL)
-
-	if err != nil {
-		log.Fatal(err)
-	}
-
-	fmt.Println(doc.Find("div.question-description"))
-
-	return strings.TrimSpace(doc.Find("div.question-description").Text())
-
-}
-
-func getFunction(URL string) (fc, fcName, para, ansType string) {
-	data := getRaw(URL)
-	str := string(data)
-
-	i := strings.Index(str, "codeDefinition:")
-	j := i + strings.Index(str[i:], "enableTestMode:")
-	str = str[i:j]
-
-	i = strings.Index(str, "'Go', 'defaultCode': ") + 21
-	j = i + strings.Index(str[i:], "},")
-	str = str[i:j]
-
-	i = strings.Index(str, "func")
-	str = "'" + str[i:]
-
-	// fmt.Println("getFunction: ", str)
-
-	i = strings.Index(str, "'")
-	j = 5 + strings.Index(str[5:], "'")
-	fc = str[i+1 : j]
-
-	k := 0
-	i0 := strings.Index(fc, " ")
-	i = strings.Index(fc, "(")
-	fcName = fc[i0+1 : i]
-
-	j = strings.Index(fc, ")")
-	k = strings.Index(fc, "{")
-	para = strings.Replace(fc[i+1:j], ",", "\n", -1)
-	ansType = fc[j+1 : k]
-
-	fc = fc[:k] + "{\n\tres :=\n\n\treturn res\n}"
-
-	return
 }
 
 func creatGo(p problem, function string) {

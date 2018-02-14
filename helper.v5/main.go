@@ -16,10 +16,10 @@ const (
 	tasksFile       = "tasks.txt"
 
 	USAGE = `使用方法：
-	1. helper readme : 重新生成项目的 README.md 文件
-	2. helper n      : 生成第 n 题的答题文件夹 (暂时不可用)
-	3. helper t      : 为未完成的题目，生成任务清单
-	4. helper v      : 查看 helper 的版本`
+	1. helper r   : 重新生成项目的 README.md 文件
+	2. helper [n] : 生成第 n 题的答题文件夹
+	3. helper t   : 为未完成的题目，生成任务清单
+	4. helper v   : 查看 helper 的版本`
 )
 
 // cfg 用于保存 LeetCode.com 的用户名和密码
