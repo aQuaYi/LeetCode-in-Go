@@ -9,19 +9,35 @@ import (
 
 // tcs is testcase slice
 var tcs = []struct {
-	N int
- mines [][]int
-	ans  int 
+	N     int
+	mines [][]int
+	ans   int
 }{
 
+	{
+		5,
+		[][]int{[]int{4, 2}},
+		2,
+	},
 
-	
+	{
+		2,
+		[][]int{},
+		1,
+	},
+
+	{
+		1,
+		[][]int{[]int{0, 0}},
+		0,
+	},
+
 	// 可以有多个 testcase
 }
 
 func Test_orderOfLargestPlusSign(t *testing.T) {
 	ast := assert.New(t)
-	
+
 	for _, tc := range tcs {
 		fmt.Printf("~~%v~~\n", tc)
 		ast.Equal(tc.ans, orderOfLargestPlusSign(tc.N, tc.mines), "输入:%v", tc)
