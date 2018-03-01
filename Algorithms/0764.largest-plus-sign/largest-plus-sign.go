@@ -13,8 +13,8 @@ func orderOfLargestPlusSign(N int, mines [][]int) int {
 	}
 
 	isGoodEdge := func(xBegin, xEnd, yBegin, yEnd int) bool {
-		for i := xBegin; i < xEnd; i++ {
-			for j := yBegin; j < yEnd; j++ {
+		for i := xBegin; i <= xEnd; i++ {
+			for j := yBegin; j <= yEnd; j++ {
 				if isMined[i][j] {
 					return false
 				}
@@ -26,16 +26,17 @@ func orderOfLargestPlusSign(N int, mines [][]int) int {
 	for ; k > 0; k-- {
 		for i := k - 1; i <= N-k; i++ {
 			for j := k - 1; j <= N-k; j++ {
+				// (i,j) 是十字的中心点
 				if !isMined[i][j] &&
-					isGoodEdge(i-k+1, i, j, j) &&
-					isGoodEdge(i+1, i+k, j, j) &&
-					isGoodEdge(i, i, j-k+1, j) &&
-					isGoodEdge(i, i, j+1, j+k) {
+					isGoodEdge(i-k+1, i-1, j, j) &&
+					isGoodEdge(i+1, i+k-1, j, j) &&
+					isGoodEdge(i, i, j-k+1, j-1) &&
+					isGoodEdge(i, i, j+1, j+k-1) {
 					return k
 				}
 			}
 		}
 	}
 
-	return k
+	return 0
 }
