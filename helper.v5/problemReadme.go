@@ -12,7 +12,6 @@ func creatREADME(p problem) {
 	fileFormat := `# [%d. %s](%s)
 
 ## 题目
-
 %s
 
 ## 解题思路
