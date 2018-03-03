@@ -18,27 +18,38 @@ func minSwapsCouples(row []int) int {
 	res := 0
 
 	for len(pairs) > 0 {
-		// 每次都要重新排序是为了保证每次的 pairs[0][0] 和 pairs[1][0] 都是一对
+		// 新产生的 pair 有可能会打乱 pairs 的顺序
+		// 重新排序是为了保证每次的 pairs[0][0] 和 pairs[1][0] 都是一对
 		sort.Slice(pairs, func(i, j int) bool {
 			return pairs[i][0] < pairs[j][0]
 		})
 
-		// 因为 pairs[0][0] 和 pairs[1][0] 是一对
-		// 把 pairs[0][1] 和 pairs[1][1] 重新凑成一个 pair
-		pairs[1] = makePair(pairs[0][1], pairs[1][1])
-		// pairs 可以删除 pairs[0]
-		pairs = pairs[1:]
-		res++
-
-		if isCouple(pairs[0][0], pairs[0][1]) {
-			pairs = pairs[1:]
+		for len(pairs) > 1 && isCouple(pairs[0][1], pairs[1][1]) {
+			pairs = pairs[2:]
+			// 此时相当于完成了一次交换。
+			// 但是促成了两个 couple
+			res++
+			// 而且由于没有产生新的 pair，
+			// 所以，pairs 的顺序没有被打乱，可以重复使用。
 		}
 
+		if len(pairs) == 0 {
+			break
+		}
+
+		// 因为 pairs[0][0] 和 pairs[1][0] 肯定就是一个 couple
+		// 要把 pairs[0][1] 和 pairs[1][1] 重新凑成一个 pair
+		pairs[1] = makePair(pairs[0][1], pairs[1][1])
+		pairs = pairs[1:]
+		// 此时相当于完成了一次交换。
+		// 只促成了一个 couple
+		res++
 	}
 
 	return res
 }
 
+// 把较小的数放在前面
 func makePair(a, b int) []int {
 	if a > b {
 		a, b = b, a
