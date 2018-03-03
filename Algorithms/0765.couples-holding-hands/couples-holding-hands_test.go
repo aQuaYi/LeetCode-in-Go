@@ -67,3 +67,9 @@ func Benchmark_minSwapsCouples(b *testing.B) {
 		}
 	}
 }
+
+func Benchmark_delet2AtOnce(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		minSwapsCouples([]int{0, 2, 1, 3, 4, 6, 5, 7, 8, 10, 9, 11})
+	}
+}
