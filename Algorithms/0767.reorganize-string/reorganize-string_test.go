@@ -14,18 +14,23 @@ var tcs = []struct {
 }{
 
 	{
-		"aab",
-		"aba",
-	},
-
-	{
 		"aaab",
 		"",
 	},
 
 	{
+		"aab",
+		"aba",
+	},
+
+	{
 		"baaba",
 		"ababa",
+	},
+
+	{
+		"vvvlo",
+		"vlvov",
 	},
 
 	// 可以有多个 testcase
