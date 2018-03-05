@@ -1,14 +1,19 @@
 package Problem0767
 
+import (
+	"sort"
+)
+
 func reorganizeString(s string) string {
 	n := len(s)
 	bs := []byte(s)
 
-	count := [26]int{}
+	count := make([][2]int, 26)
 	maxCount := 0
 	for _, b := range bs {
-		count[b-'a']++
-		maxCount = max(maxCount, count[b-'a'])
+		count[b-'a'][0]++
+		count[b-'a'][1] = int(b - 'a')
+		maxCount = max(maxCount, count[b-'a'][0])
 	}
 
 	if (n%2 == 0 && maxCount > n/2) ||
@@ -16,19 +21,20 @@ func reorganizeString(s string) string {
 		return ""
 	}
 
-	res := make([]byte, len(bs))
+	sort.Slice(count, func(i, j int) bool {
+		return count[i][0] > count[j][0]
+	})
+
+	res := make([]byte, n)
 
 	idx := 0
 
-	for i := 0; i < 26; i++ {
-		if count[i] == 0 {
-			continue
-		}
-		b := byte('a' + i)
+	for i := 0; count[i][0] > 0; i++ {
+		b := byte('a' + count[i][1])
 
-		for count[i] > 0 {
+		for count[i][0] > 0 {
 			res[idx] = b
-			count[i]--
+			count[i][0]--
 			idx = (idx + 2) % n
 		}
 
