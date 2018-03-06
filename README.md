@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|158|264|111|533|
+|**Accepted**|158|264|112|534|
 |**Total**|161|275|118|554|
 
 ## 题解
@@ -471,7 +471,7 @@
 |657|[Judge Route Circle](./Algorithms/0657.judge-route-circle)|68%|Easy| |
 |658|[Find K Closest Elements](./Algorithms/0658.find-k-closest-elements)|35%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |659|[Split Array into Consecutive Subsequences](./Algorithms/0659.split-array-into-consecutive-subsequences)|36%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|661|[Image Smoother](./Algorithms/0661.image-smoother)|45%|Easy| |
+|661|[Image Smoother](./Algorithms/0661.image-smoother)|46%|Easy| |
 |662|[Maximum Width of Binary Tree](./Algorithms/0662.maximum-width-of-binary-tree)|38%|Medium| |
 |664|[Strange Printer](./Algorithms/0664.strange-printer)|33%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |665|[Non-decreasing Array](./Algorithms/0665.non-decreasing-array)|20%|Easy| |
@@ -548,7 +548,7 @@
 |765|[Couples Holding Hands](./Algorithms/0765.couples-holding-hands)|47%|Hard| |
 |766|[Toeplitz Matrix](./Algorithms/0766.toeplitz-matrix)|58%|Easy| |
 |767|[Reorganize String](./Algorithms/0767.reorganize-string)|35%|Medium| |
-|768| * Max Chunks To Make Sorted II|41%|Hard| |
+|768|[Max Chunks To Make Sorted II](./Algorithms/0768.max-chunks-to-make-sorted-ii)|41%|Hard| |
 |769|[Max Chunks To Make Sorted](./Algorithms/0769.max-chunks-to-make-sorted)|47%|Medium| |
 |770| * Basic Calculator IV|42%|Hard| |
 |771| * Jewels and Stones|82%|Easy| |
