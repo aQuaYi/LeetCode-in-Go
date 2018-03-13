@@ -17,14 +17,16 @@ type TreeNode = kit.TreeNode
 
 func minDiffInBST(root *TreeNode) int {
 	res := 1<<63 - 1
-	pre := -1
+	pre := 1>>63
+	null := pre 
+
 	var helper func(*TreeNode)
 	helper = func (root *TreeNode) {
 		if root.Left != nil {
 			helper(root.Left)
 		}
 	
-		if pre <0{
+		if pre != null{
 			res = min(res, root.Val-pre)
 		}
 	
@@ -34,6 +36,7 @@ func minDiffInBST(root *TreeNode) int {
 			helper(root.Right)
 		}
 	}
+
 	helper(root)
 
 	return res
