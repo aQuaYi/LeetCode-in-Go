@@ -15,22 +15,27 @@ import (
 
 type TreeNode = kit.TreeNode
 
-const MAXINT = 1<<63 - 1
-
 func minDiffInBST(root *TreeNode) int {
-	res := MAXINT
+	res := 1<<63 - 1
+	helper(root, nil, &res)
+	return res
 
+}
+
+func helper(root *TreeNode, pre, res *int) {
 	if root.Left != nil {
-		res = min(res, root.Val-root.Left.Val)
-		res = min(res, minDiffInBST(root.Left))
+		helper(root.Left, pre, res)
 	}
+
+	if pre != nil {
+		*res = min(*res, root.Val-*pre)
+	}
+
+	pre = &root.Val
 
 	if root.Right != nil {
-		res = min(res, root.Right.Val-root.Val)
-		res = min(res, minDiffInBST(root.Right))
+		helper(root.Right, pre, res)
 	}
-
-	return res
 }
 
 func min(a, b int) int {
