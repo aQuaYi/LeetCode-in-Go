@@ -2,6 +2,7 @@ package Problem0783
 
 import (
 	"fmt"
+	"github.com/aQuaYi/LeetCode-in-Go/kit"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -9,13 +10,17 @@ import (
 
 // tcs is testcase slice
 var tcs = []struct {
-	// TODO: 按照题目的格式转换 整型切片 到 TreeNode
-	root []int
-
-	ans int
+	pre, in []int
+	ans     int
 }{
 
-// 可以有多个 testcase
+	{
+		[]int{4, 2, 1, 3, 6},
+		[]int{1, 2, 3, 4, 6},
+		1,
+	},
+
+	// 可以有多个 testcase
 }
 
 func Test_minDiffInBST(t *testing.T) {
@@ -23,14 +28,16 @@ func Test_minDiffInBST(t *testing.T) {
 
 	for _, tc := range tcs {
 		fmt.Printf("~~%v~~\n", tc)
-		ast.Equal(tc.ans, minDiffInBST(root*TreeNode)(tc.J, tc.S), "输入:%v", tc)
+		root := kit.PreIn2Tree(tc.pre, tc.in)
+		ast.Equal(tc.ans, minDiffInBST(root))
 	}
 }
 
 func Benchmark_minDiffInBST(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		for _, tc := range tcs {
-			minDiffInBST(root*TreeNode)(tc.J, tc.S)
+			root := kit.PreIn2Tree(tc.pre, tc.in)
+			minDiffInBST(root)
 		}
 	}
 }
