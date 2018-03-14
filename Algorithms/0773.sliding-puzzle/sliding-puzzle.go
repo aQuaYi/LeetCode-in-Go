@@ -5,23 +5,23 @@ import (
 )
 
 func slidingPuzzle(board [][]int) int {
-	original, target := "123450", convert(board)
-	if original == target {
+	origin, target := "123450", convert(board)
+	if origin == target {
 		return 0
 	}
 
-	q := make([]string, 1, 720)
-	q[0] = original
+	queue := make([]string, 1, 720)
+	queue[0] = origin
 
 	hasSeen := make(map[string]bool, 720)
-	hasSeen[original] = true
+	hasSeen[origin] = true
 
-	res := 0 // q 中最后一个候选项是 origin 经过 res 次变化得来的
+	res := 0
 	d := []int{-1, 1, 3, -3}
-	size := len(q)
-	for len(q) > 0 {
-		//
-		s := q[0]
+	countDown := len(queue)
+	for len(queue) > 0 {
+		// 从队列中抽取 s 对其进行变形
+		s := queue[0]
 		i := strings.IndexByte(s, '0')
 		for k := range d {
 			j := i + d[k]
@@ -37,15 +37,16 @@ func slidingPuzzle(board [][]int) int {
 			}
 
 			if !hasSeen[c] {
-				q = append(q, c)
+				queue = append(queue, c)
 				hasSeen[c] = true
 			}
 		}
 
-		q = q[1:]
-		size--
-		if size == 0 {
-			size = len(q)
+		// 删除队列头部，检查 res 是否需要 ++
+		queue = queue[1:]
+		countDown--
+		if countDown == 0 {
+			countDown = len(queue)
 			res++
 		}
 	}
