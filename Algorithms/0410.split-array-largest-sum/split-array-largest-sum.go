@@ -1,4 +1,4 @@
-package Problem0410
+package problem0410
 
 func splitArray(nums []int, m int) int {
 	var max, n, sum int

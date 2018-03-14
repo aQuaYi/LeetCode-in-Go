@@ -1,4 +1,4 @@
-package Problem0065
+package problem0065
 
 func isNumber(s string) bool {
 	// 去掉首位的空格

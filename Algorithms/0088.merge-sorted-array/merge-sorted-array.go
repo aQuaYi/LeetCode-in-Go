@@ -1,4 +1,4 @@
-package Problem0088
+package problem0088
 
 // 本题的要求是，把nums1的前m项和nums2的前n项合并，放入nums1中。
 func merge(nums1 []int, m int, nums2 []int, n int) {

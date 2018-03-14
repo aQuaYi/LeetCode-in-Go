@@ -1,4 +1,4 @@
-package Problem0042
+package problem0042
 
 func bigger(a int, b int) int {
 	if a > b {

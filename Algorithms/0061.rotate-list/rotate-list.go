@@ -1,4 +1,4 @@
-package Problem0061
+package problem0061
 
 // ListNode 是题目预定义的节点
 type ListNode struct {

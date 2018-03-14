@@ -1,4 +1,4 @@
-package Problem0493
+package problem0493
 
 func reversePairs(nums []int) int {
 	return count(nums, 0, len(nums))

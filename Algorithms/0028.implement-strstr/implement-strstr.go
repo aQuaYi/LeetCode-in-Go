@@ -1,4 +1,4 @@
-package Problem0028
+package problem0028
 
 func strStr(haystack string, needle string) int {
 	hlen, nlen := len(haystack), len(needle)

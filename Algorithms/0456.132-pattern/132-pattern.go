@@ -1,4 +1,4 @@
-package Problem0456
+package problem0456
 
 func find132pattern(a []int) bool {
 	// 题目要求找到 i < j < k

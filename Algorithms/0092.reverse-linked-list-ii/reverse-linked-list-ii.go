@@ -1,4 +1,4 @@
-package Problem0092
+package problem0092
 
 // ListNode is Definition for singly-linked list.
 type ListNode struct {

@@ -1,4 +1,4 @@
-package Problem0264
+package problem0264
 
 func nthUglyNumber(n int) int {
 	if n <= 6 {

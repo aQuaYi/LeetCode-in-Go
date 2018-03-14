@@ -1,4 +1,4 @@
-package Problem0516
+package problem0516
 
 func longestPalindromeSubseq(s string) int {
 	n := len(s)

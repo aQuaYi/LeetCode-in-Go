@@ -1,4 +1,4 @@
-package Problem0080
+package problem0080
 
 func removeDuplicates(nums []int) int {
 	length := len(nums)

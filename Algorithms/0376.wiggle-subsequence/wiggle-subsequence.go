@@ -1,4 +1,4 @@
-package Problem0376
+package problem0376
 
 func wiggleMaxLength(nums []int) int {
 	var res int

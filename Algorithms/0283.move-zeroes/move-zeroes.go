@@ -1,4 +1,4 @@
-package Problem0283
+package problem0283
 
 func moveZeroes(nums []int) {
 	l := len(nums)

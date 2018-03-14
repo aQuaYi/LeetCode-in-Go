@@ -1,4 +1,4 @@
-package Problem0032
+package problem0032
 
 func longestValidParentheses(s string) int {
 	var left, max, temp int

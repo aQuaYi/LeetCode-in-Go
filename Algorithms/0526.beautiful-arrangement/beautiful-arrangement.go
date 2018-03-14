@@ -1,4 +1,4 @@
-package Problem0526
+package problem0526
 
 func countArrangement(N int) int {
 	count := 0

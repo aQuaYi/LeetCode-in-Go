@@ -1,4 +1,4 @@
-package Problem0130
+package problem0130
 
 func solve(board [][]byte) {
 	m := len(board)

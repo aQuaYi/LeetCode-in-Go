@@ -1,4 +1,4 @@
-package Problem0365
+package problem0365
 
 func canMeasureWater(x int, y int, z int) bool {
 	// 不需要水壶就能实现

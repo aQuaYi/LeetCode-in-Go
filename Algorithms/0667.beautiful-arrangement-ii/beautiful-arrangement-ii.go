@@ -1,4 +1,4 @@
-package Problem0667
+package problem0667
 
 func constructArray(n int, k int) []int {
 	res := make([]int, 0, n)

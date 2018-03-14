@@ -1,4 +1,4 @@
-package Problem0467
+package problem0467
 
 func findSubstringInWraproundString(p string) int {
 	// count[0] = 4 表示，以 'a' 结尾的连续字符串的最大长度为 4

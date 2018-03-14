@@ -1,4 +1,4 @@
-package Problem0525
+package problem0525
 
 func findMaxLength(nums []int) int {
 	delta := make(map[int]int, len(nums)/2)

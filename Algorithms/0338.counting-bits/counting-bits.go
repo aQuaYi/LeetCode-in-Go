@@ -1,4 +1,4 @@
-package Problem0338
+package problem0338
 
 func countBits(num int) []int {
 	res := make([]int, num+1)

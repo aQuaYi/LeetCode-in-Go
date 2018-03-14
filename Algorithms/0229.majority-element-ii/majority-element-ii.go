@@ -1,4 +1,4 @@
-package Problem0229
+package problem0229
 
 func majorityElement(a []int) []int {
 	if len(a) <= 1 {

@@ -1,4 +1,4 @@
-package Problem0647
+package problem0647
 
 func countSubstrings(s string) int {
 	count := 0

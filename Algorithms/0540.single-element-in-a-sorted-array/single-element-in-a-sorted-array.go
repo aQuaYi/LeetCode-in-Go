@@ -1,4 +1,4 @@
-package Problem0540
+package problem0540
 
 func singleNonDuplicate(nums []int) int {
 	n := len(nums) - 1

@@ -1,4 +1,4 @@
-package Problem0423
+package problem0423
 
 func originalDigits(s string) string {
 	if len(s) == 0 {

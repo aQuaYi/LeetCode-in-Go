@@ -1,4 +1,4 @@
-package Problem0659
+package problem0659
 
 func isPossible(nums []int) bool {
 	size := len(nums)

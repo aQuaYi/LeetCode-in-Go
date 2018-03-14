@@ -1,4 +1,4 @@
-package Problem0472
+package problem0472
 
 func findAllConcatenatedWordsInADict(words []string) []string {
 	// hasLen[3] == true 表示，words 中存在长度为 3 的单词

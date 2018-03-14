@@ -1,4 +1,4 @@
-package Problem0383
+package problem0383
 
 func canConstruct(ransomNote string, magazine string) bool {
 	mc := getCount(magazine)

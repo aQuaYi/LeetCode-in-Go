@@ -1,4 +1,4 @@
-package Problem0122
+package problem0122
 
 func maxProfit(prices []int) int {
 	res := 0

@@ -1,4 +1,4 @@
-package Problem0566
+package problem0566
 
 func matrixReshape(nums [][]int, r int, c int) [][]int {
 	if len(nums) == 0 || len(nums[0]) == 0 || len(nums)*len(nums[0]) != r*c || len(nums) == r && len(nums[0]) == c {

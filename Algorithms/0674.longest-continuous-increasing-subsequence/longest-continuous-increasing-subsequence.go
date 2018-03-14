@@ -1,4 +1,4 @@
-package Problem0674
+package problem0674
 
 func findLengthOfLCIS(a []int) int {
 	if len(a) == 0 {

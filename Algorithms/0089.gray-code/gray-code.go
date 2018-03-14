@@ -1,4 +1,4 @@
-package Problem0089
+package problem0089
 
 func grayCode(n int) []int {
 	return recur(n, 1, []int{0})

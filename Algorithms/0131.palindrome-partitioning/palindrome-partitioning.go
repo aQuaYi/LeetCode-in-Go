@@ -1,4 +1,4 @@
-package Problem0131
+package problem0131
 
 func partition(s string) [][]string {
 	result := [][]string{}

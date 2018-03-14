@@ -1,4 +1,4 @@
-package Problem0212
+package problem0212
 
 func findWords(board [][]byte, words []string) []string {
 	var results []string

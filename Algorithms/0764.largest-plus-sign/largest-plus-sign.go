@@ -1,4 +1,4 @@
-package Problem0764
+package problem0764
 
 func orderOfLargestPlusSign(N int, mines [][]int) int {
 	k := N/2 + N%2

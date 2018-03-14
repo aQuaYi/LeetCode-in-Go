@@ -1,4 +1,4 @@
-package Problem0600
+package problem0600
 
 func findIntegers(num int) int {
 	// binary 是 num 的二进制表示，逆序

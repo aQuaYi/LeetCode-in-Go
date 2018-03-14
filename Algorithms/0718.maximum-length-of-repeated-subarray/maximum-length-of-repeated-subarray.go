@@ -1,4 +1,4 @@
-package Problem0718
+package problem0718
 
 func findLength(a1, a2 []int) int {
 	n1, n2 := len(a1), len(a2)

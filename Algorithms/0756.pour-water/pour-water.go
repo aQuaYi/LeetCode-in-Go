@@ -1,4 +1,4 @@
-package Problem0756
+package problem0756
 
 func pourWater(heights []int, V int, K int) []int {
 	for V > 0 {

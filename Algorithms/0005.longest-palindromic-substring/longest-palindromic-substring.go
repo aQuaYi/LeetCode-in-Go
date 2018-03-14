@@ -1,4 +1,4 @@
-package Problem0005
+package problem0005
 
 func longestPalindrome(s string) string {
 	if len(s) < 2 { // 肯定是回文，直接返回

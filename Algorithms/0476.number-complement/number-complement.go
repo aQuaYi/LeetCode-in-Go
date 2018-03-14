@@ -1,4 +1,4 @@
-package Problem0476
+package problem0476
 
 func findComplement(num int) int {
 	temp := num

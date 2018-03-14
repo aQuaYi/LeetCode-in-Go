@@ -1,4 +1,4 @@
-package Problem0402
+package problem0402
 
 func removeKdigits(num string, k int) string {
 	// 返回值的长度

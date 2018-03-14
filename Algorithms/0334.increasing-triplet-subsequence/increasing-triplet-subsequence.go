@@ -1,4 +1,4 @@
-package Problem0334
+package problem0334
 
 func increasingTriplet(a []int) bool {
 	max := 1<<63 - 1

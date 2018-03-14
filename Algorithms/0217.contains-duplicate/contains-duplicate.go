@@ -1,4 +1,4 @@
-package Problem0217
+package problem0217
 
 func containsDuplicate(nums []int) bool {
 	// 利用 m 记录 nums 中的元素是否出现过

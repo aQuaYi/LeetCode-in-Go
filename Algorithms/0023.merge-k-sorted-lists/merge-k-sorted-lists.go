@@ -1,4 +1,4 @@
-package Problem0023
+package problem0023
 
 // ListNode 是链接节点
 type ListNode struct {

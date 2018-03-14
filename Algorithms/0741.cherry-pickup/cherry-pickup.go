@@ -1,4 +1,4 @@
-package Problem0741
+package problem0741
 
 // 本题等效于两个人同时从 （0,0） 出发到 （n-1,n-1) 的过程
 func cherryPickup(grid [][]int) int {

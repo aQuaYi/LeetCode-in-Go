@@ -1,4 +1,4 @@
-package Problem0575
+package problem0575
 
 func distributeCandies(candies []int) int {
 	n := len(candies)

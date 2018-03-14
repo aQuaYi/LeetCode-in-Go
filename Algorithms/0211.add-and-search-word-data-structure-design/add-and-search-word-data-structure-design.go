@@ -1,4 +1,4 @@
-package Problem0211
+package problem0211
 
 // WordDictionary 是字典
 type WordDictionary struct {

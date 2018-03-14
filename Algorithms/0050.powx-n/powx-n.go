@@ -1,4 +1,4 @@
-package Problem0050
+package problem0050
 
 func myPow(x float64, n int) float64 {
 	if n < 0 {

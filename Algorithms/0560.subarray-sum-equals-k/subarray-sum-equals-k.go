@@ -1,4 +1,4 @@
-package Problem0560
+package problem0560
 
 func subarraySum(a []int, k int) int {
 	res, sum := 0, 0

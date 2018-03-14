@@ -1,4 +1,4 @@
-package Problem0026
+package problem0026
 
 func removeDuplicates(nums []int) int {
 	if len(nums) <= 1 {

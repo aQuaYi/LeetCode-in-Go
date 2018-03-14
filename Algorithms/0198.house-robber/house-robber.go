@@ -1,4 +1,4 @@
-package Problem0198
+package problem0198
 
 func rob(nums []int) int {
 	// a 对于偶数位上的最大值的记录

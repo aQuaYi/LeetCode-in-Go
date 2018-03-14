@@ -1,4 +1,4 @@
-package Problem0188
+package problem0188
 
 func maxProfit(k int, prices []int) int {
 	size := len(prices)

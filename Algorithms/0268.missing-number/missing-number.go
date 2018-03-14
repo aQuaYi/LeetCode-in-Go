@@ -1,4 +1,4 @@
-package Problem0268
+package problem0268
 
 func missingNumber(nums []int) int {
 	xor := 0

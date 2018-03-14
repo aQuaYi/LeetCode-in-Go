@@ -1,4 +1,4 @@
-package Problem0221
+package problem0221
 
 func maximalSquare(matrix [][]byte) int {
 	m := len(matrix)

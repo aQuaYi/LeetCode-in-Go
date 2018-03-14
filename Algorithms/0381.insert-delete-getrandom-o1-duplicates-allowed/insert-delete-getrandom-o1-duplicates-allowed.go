@@ -1,4 +1,4 @@
-package Problem0381
+package problem0381
 
 import (
 	"math/rand"

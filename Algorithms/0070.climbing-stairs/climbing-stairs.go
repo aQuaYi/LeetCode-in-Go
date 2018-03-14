@@ -1,4 +1,4 @@
-package Problem0070
+package problem0070
 
 func climbStairs(n int) int {
 	if n < 2 {

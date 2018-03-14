@@ -1,4 +1,4 @@
-package Problem0214
+package problem0214
 
 func shortestPalindrome(s string) string {
 	if len(s) <= 1 {

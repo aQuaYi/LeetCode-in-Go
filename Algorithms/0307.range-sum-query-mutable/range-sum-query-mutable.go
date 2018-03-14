@@ -1,4 +1,4 @@
-package Problem0307
+package problem0307
 
 // NumArray 是 nums 的和的切片
 type NumArray struct {

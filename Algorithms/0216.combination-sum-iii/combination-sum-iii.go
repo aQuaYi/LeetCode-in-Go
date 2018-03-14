@@ -1,4 +1,4 @@
-package Problem0216
+package problem0216
 
 func combinationSum3(k int, n int) [][]int {
 	res := [][]int{}

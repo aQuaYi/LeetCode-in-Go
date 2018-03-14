@@ -1,4 +1,4 @@
-package Problem0697
+package problem0697
 
 func findShortestSubArray(nums []int) int {
 	size := len(nums)

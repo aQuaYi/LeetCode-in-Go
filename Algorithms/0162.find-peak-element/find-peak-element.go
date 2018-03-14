@@ -1,4 +1,4 @@
-package Problem0162
+package problem0162
 
 func findPeakElement(nums []int) int {
 	low := -1

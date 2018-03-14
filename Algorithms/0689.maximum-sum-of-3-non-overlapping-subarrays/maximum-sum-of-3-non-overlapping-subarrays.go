@@ -1,4 +1,4 @@
-package Problem0689
+package problem0689
 
 func maxSumOfThreeSubarrays(nums []int, k int) []int {
 	n := len(nums) - k + 1

@@ -1,4 +1,4 @@
-package Problem0126
+package problem0126
 
 func findLadders(beginWord string, endWord string, words []string) [][]string {
 	// 因为 beginWord 不能做 transformed word

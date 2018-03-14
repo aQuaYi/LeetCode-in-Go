@@ -1,4 +1,4 @@
-package Problem0769
+package problem0769
 
 func maxChunksToSorted(arr []int) int {
 	// 充分利用好 arr[i] will be a permutation of [0, 1, ..., arr.length - 1]

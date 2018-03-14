@@ -1,4 +1,4 @@
-package Problem0087
+package problem0087
 
 func isScramble(a, b string) bool {
 	// 相等的话，则为true

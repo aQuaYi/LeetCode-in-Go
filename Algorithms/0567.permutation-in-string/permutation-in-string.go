@@ -1,4 +1,4 @@
-package Problem0567
+package problem0567
 
 func checkInclusion(s1 string, s2 string) bool {
 	n1 := len(s1)

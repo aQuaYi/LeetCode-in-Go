@@ -1,4 +1,4 @@
-package Problem0220
+package problem0220
 
 func containsNearbyAlmostDuplicate(nums []int, k, t int) bool {
 	size := len(nums)

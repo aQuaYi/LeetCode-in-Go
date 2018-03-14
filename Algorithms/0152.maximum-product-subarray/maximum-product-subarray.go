@@ -1,4 +1,4 @@
-package Problem0152
+package problem0152
 
 func maxProduct(a []int) int {
 	cur, neg, max := 1, 1, a[0]

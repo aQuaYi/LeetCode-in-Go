@@ -1,4 +1,4 @@
-package Problem0552
+package problem0552
 
 import (
 	"fmt"

@@ -1,4 +1,4 @@
-package Problem0038
+package problem0038
 
 func countAndSay(n int) string {
 	buf := []byte{'1'}

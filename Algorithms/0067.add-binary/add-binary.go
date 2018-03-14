@@ -1,4 +1,4 @@
-package Problem0067
+package problem0067
 
 func addBinary(a string, b string) string {
 	if len(a) < len(b) {

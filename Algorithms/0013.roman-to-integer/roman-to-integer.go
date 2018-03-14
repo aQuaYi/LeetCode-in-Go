@@ -1,4 +1,4 @@
-package Problem0013
+package problem0013
 
 func romanToInt(s string) int {
 	res := 0

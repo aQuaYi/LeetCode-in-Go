@@ -1,4 +1,4 @@
-package Problem0045
+package problem0045
 
 func jump(nums []int) int {
 	i, count, end := 0, 0, len(nums)-1

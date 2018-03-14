@@ -1,4 +1,4 @@
-package Problem0677
+package problem0677
 
 import "strings"
 import "sort"

@@ -1,4 +1,4 @@
-package Problem0074
+package problem0074
 
 func searchMatrix(mat [][]int, target int) bool {
 	m := len(mat)

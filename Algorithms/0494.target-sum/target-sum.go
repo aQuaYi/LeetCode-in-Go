@@ -1,4 +1,4 @@
-package Problem0494
+package problem0494
 
 func findTargetSumWays(nums []int, S int) int {
 	sum := 0

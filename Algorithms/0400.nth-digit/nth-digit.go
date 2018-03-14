@@ -1,4 +1,4 @@
-package Problem0400
+package problem0400
 
 func findNthDigit(n int) int {
 	// step 1: 寻找拥有 NthDigit 的数的位数 digits

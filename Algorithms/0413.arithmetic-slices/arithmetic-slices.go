@@ -1,4 +1,4 @@
-package Problem0413
+package problem0413
 
 func numberOfArithmeticSlices(a []int) int {
 	if len(a) < 3 {

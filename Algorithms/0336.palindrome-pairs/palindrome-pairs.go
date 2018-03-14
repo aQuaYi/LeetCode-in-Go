@@ -1,4 +1,4 @@
-package Problem0336
+package problem0336
 
 func palindromePairs(words []string) [][]int {
 	res := make([][]int, 0, len(words))

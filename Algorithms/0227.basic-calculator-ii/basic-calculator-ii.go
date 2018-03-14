@@ -1,4 +1,4 @@
-package Problem0227
+package problem0227
 
 func calculate(s string) int {
 	// n1 opt1 n2 opt2 n3

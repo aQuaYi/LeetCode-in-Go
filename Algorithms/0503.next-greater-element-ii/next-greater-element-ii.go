@@ -1,4 +1,4 @@
-package Problem0503
+package problem0503
 
 func nextGreaterElements(nums []int) []int {
 	size := len(nums)

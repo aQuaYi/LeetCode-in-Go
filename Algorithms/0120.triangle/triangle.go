@@ -1,4 +1,4 @@
-package Problem0120
+package problem0120
 
 func minimumTotal(triangle [][]int) int {
 	n := len(triangle)

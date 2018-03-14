@@ -1,4 +1,4 @@
-package Problem0189
+package problem0189
 
 func rotate(nums []int, k int) {
 	// 我已经假定 k >= 0

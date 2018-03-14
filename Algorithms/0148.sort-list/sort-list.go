@@ -1,4 +1,4 @@
-package Problem0148
+package problem0148
 
 import (
 	"github.com/aQuaYi/LeetCode-in-Go/kit"

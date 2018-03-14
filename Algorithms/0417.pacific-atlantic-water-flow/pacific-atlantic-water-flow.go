@@ -1,4 +1,4 @@
-package Problem0417
+package problem0417
 
 func pacificAtlantic(mat [][]int) [][]int {
 	res := [][]int{}

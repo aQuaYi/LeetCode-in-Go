@@ -1,4 +1,4 @@
-package Problem0081
+package problem0081
 
 func search(nums []int, target int) bool {
 	length := len(nums)

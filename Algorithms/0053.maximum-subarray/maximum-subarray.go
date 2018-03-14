@@ -1,4 +1,4 @@
-package Problem0053
+package problem0053
 
 func maxSubArray(nums []int) int {
 	l := len(nums)

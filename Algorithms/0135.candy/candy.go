@@ -1,4 +1,4 @@
-package Problem0135
+package problem0135
 
 func candy(ratings []int) int {
 	n := len(ratings)

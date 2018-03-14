@@ -1,4 +1,4 @@
-package Problem0330
+package problem0330
 
 // nums 是升序排列的
 func minPatches(nums []int, n int) (count int) {

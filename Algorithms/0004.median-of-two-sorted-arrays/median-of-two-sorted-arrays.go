@@ -1,4 +1,4 @@
-package Problem0004
+package problem0004
 
 func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
 	nums := combine(nums1, nums2)

@@ -1,4 +1,4 @@
-package Problem0594
+package problem0594
 
 func findLHS(nums []int) int {
 	r := make(map[int]int, len(nums))

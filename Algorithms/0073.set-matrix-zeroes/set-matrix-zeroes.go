@@ -1,4 +1,4 @@
-package Problem0073
+package problem0073
 
 func setZeroes(m [][]int) {
 	rows := make([]bool, len(m))    // rows[i] == true ，代表 i 行存在 0 元素

@@ -1,4 +1,4 @@
-package Problem0119
+package problem0119
 
 func getRow(rowIndex int) []int {
 	res := make([]int, 1, rowIndex+1)

@@ -1,4 +1,4 @@
-package Problem0024
+package problem0024
 
 // ListNode ListNode
 type ListNode struct {

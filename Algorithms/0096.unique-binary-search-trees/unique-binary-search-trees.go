@@ -1,4 +1,4 @@
-package Problem0096
+package problem0096
 
 func numTrees(n int) int {
 	if n == 0 {

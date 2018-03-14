@@ -1,4 +1,4 @@
-package Problem0064
+package problem0064
 
 func minPathSum(grid [][]int) int {
 	// 已经默认 m 和 n 大于 0 了

@@ -1,4 +1,4 @@
-package Problem0167
+package problem0167
 
 func twoSum(nums []int, target int) []int {
 	m := make(map[int]int, len(nums))

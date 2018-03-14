@@ -1,4 +1,4 @@
-package Problem0335
+package problem0335
 
 func isSelfCrossing(x []int) bool {
 	size := len(x)

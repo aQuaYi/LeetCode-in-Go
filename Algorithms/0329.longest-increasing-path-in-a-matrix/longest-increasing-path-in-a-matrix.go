@@ -1,4 +1,4 @@
-package Problem0329
+package problem0329
 
 func longestIncreasingPath(mat [][]int) int {
 	if len(mat) == 0 || len(mat[0]) == 0 {

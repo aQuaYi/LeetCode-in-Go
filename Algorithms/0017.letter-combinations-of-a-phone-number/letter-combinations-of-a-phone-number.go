@@ -1,4 +1,4 @@
-package Problem0017
+package problem0017
 
 var m = map[byte][]string{
 	'2': []string{"a", "b", "c"},

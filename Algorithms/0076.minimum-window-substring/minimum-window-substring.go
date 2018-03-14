@@ -1,4 +1,4 @@
-package Problem0076
+package problem0076
 
 func minWindow(s string, t string) string {
 	sLen, tLen := len(s), len(t)

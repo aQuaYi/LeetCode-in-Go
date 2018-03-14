@@ -1,4 +1,4 @@
-package Problem0149
+package problem0149
 
 // Point 是关于点的定义
 type Point struct {

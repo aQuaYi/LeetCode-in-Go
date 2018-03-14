@@ -1,4 +1,4 @@
-package Problem0169
+package problem0169
 
 func majorityElement(nums []int) int {
 	// 根据题意 len[nums] > 0 且 出现次数大于 n/2 的元素存在。

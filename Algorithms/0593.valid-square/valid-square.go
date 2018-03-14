@@ -1,4 +1,4 @@
-package Problem0593
+package problem0593
 
 func validSquare(p1, p2, p3, p4 []int) bool {
 	vs := getVectors([][]int{p1, p2, p3, p4})

@@ -1,4 +1,4 @@
-package Problem0052
+package problem0052
 
 func totalNQueens(n int) int {
 	if n == 0 {

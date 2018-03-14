@@ -1,4 +1,4 @@
-package Problem0365
+package problem0365
 
 import (
 	"fmt"

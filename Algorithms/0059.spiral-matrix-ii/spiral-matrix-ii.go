@@ -1,4 +1,4 @@
-package Problem0059
+package problem0059
 
 func generateMatrix(n int) [][]int {
 	if n == 0 {

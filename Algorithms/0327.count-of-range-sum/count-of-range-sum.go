@@ -1,4 +1,4 @@
-package Problem0327
+package problem0327
 
 var lo, up int
 var tmp []int

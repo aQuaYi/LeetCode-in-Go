@@ -1,4 +1,4 @@
-package Problem0313
+package problem0313
 
 // 解题思路可以参考 264 题
 func nthSuperUglyNumber(n int, primes []int) int {

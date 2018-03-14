@@ -1,4 +1,4 @@
-package Problem0747
+package problem0747
 
 func dominantIndex(a []int) int {
 	n := len(a)

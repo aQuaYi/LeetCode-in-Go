@@ -1,4 +1,4 @@
-package Problem0219
+package problem0219
 
 func containsNearbyDuplicate(nums []int, k int) bool {
 	if k <= 0 {

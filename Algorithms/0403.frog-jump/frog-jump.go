@@ -1,4 +1,4 @@
-package Problem0403
+package problem0403
 
 func canCross(stones []int) bool {
 	n := len(stones)

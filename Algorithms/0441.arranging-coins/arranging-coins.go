@@ -1,4 +1,4 @@
-package Problem0441
+package problem0441
 
 func arrangeCoins(n int) int {
 	n *= 2

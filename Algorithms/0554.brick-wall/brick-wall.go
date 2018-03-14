@@ -1,4 +1,4 @@
-package Problem0554
+package problem0554
 
 func leastBricks(wall [][]int) int {
 	m := len(wall)

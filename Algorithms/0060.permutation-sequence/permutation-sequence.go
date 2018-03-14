@@ -1,4 +1,4 @@
-package Problem0060
+package problem0060
 
 func getPermutation(n int, k int) string {
 	if n == 0 {

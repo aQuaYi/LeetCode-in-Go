@@ -1,4 +1,4 @@
-package Problem0463
+package problem0463
 
 var dx = []int{-1, 1, 0, 0}
 var dy = []int{0, 0, -1, 1}

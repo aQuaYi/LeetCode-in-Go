@@ -1,4 +1,4 @@
-package Problem0466
+package problem0466
 
 func getMaxRepetitions(s1 string, n1 int, s2 string, n2 int) int {
 	// count[k] == cnt 表示 k 个 s1 可以得到 cnt 个 s2

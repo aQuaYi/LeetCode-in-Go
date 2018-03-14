@@ -1,4 +1,4 @@
-package Problem0029
+package problem0029
 
 import (
 	"math"

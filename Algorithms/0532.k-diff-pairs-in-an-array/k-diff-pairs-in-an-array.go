@@ -1,4 +1,4 @@
-package Problem0532
+package problem0532
 
 func findPairs(nums []int, k int) int {
 	if k < 0 {

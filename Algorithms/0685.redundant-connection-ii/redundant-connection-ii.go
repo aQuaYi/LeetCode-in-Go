@@ -1,4 +1,4 @@
-package Problem0685
+package problem0685
 
 // 本题存在 3 种情况需要处理
 // 1. 存在一个节点，有两个父节点，但没有环状结构

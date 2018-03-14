@@ -1,4 +1,4 @@
-package Problem0547
+package problem0547
 
 func findCircleNum(M [][]int) int {
 	N := len(M)

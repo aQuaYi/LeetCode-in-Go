@@ -1,4 +1,4 @@
-package Problem0046
+package problem0046
 
 func permute(nums []int) [][]int {
 	n := len(nums)

@@ -1,4 +1,4 @@
-package Problem0010
+package problem0010
 
 // 程序中存在以下假设
 // "*" 不会出现在p的首位

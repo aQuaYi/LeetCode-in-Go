@@ -1,4 +1,4 @@
-package Problem0115
+package problem0115
 
 func numDistinct(s string, t string) int {
 	m, n := len(s), len(t)

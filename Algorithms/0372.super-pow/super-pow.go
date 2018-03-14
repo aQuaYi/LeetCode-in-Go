@@ -1,4 +1,4 @@
-package Problem0372
+package problem0372
 
 // (a*b) % k = ((a%k)*(b%k)) % k
 func superPow(a int, b []int) int {

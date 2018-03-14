@@ -1,4 +1,4 @@
-package Problem0713
+package problem0713
 
 func numSubarrayProductLessThanK(a []int, k int) int {
 	res := 0

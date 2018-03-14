@@ -1,4 +1,4 @@
-package Problem0094
+package problem0094
 
 // TreeNode Definition for a binary tree node.
 type TreeNode struct {

@@ -1,4 +1,4 @@
-package Problem0037
+package problem0037
 
 func solveSudoku(board [][]byte) {
 	if !fill(board, '1', 0) {

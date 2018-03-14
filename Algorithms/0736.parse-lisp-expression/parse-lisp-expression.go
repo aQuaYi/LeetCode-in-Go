@@ -1,4 +1,4 @@
-package Problem0736
+package problem0736
 
 import "strconv"
 

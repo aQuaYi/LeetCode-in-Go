@@ -1,4 +1,4 @@
-package Problem0322
+package problem0322
 
 func coinChange(coins []int, amount int) int {
 	// dp[i] 更换金额为 i 时，最小的零钱数量

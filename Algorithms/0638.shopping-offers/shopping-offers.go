@@ -1,4 +1,4 @@
-package Problem0638
+package problem0638
 
 func shoppingOffers(price []int, specials [][]int, needs []int) int {
 	// 题目规定了

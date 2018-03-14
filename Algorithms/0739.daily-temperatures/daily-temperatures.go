@@ -1,4 +1,4 @@
-package Problem0739
+package problem0739
 
 func dailyTemperatures(temperatures []int) []int {
 	n := len(temperatures)

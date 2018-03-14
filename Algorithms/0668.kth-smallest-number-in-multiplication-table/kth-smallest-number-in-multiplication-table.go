@@ -1,4 +1,4 @@
-package Problem0668
+package problem0668
 
 func findKthNumber(m int, n int, k int) int {
 	// 后面的 count 函数，m 较小比较有利

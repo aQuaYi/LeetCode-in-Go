@@ -1,4 +1,4 @@
-package Problem0371
+package problem0371
 
 func getSum(a int, b int) int {
 	for a != 0 {

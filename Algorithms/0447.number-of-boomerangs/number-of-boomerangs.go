@@ -1,4 +1,4 @@
-package Problem0447
+package problem0447
 
 func numberOfBoomerangs(points [][]int) int {
 	res := 0

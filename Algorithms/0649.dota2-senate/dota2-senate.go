@@ -1,4 +1,4 @@
-package Problem0649
+package problem0649
 
 func predictPartyVictory(senate string) string {
 	n := len(senate)

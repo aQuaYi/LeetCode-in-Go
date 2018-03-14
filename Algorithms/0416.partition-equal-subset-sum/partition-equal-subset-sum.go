@@ -1,4 +1,4 @@
-package Problem0416
+package problem0416
 
 // 01背包问题
 func canPartition(nums []int) bool {

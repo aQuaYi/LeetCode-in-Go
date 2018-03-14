@@ -1,4 +1,4 @@
-package Problem0209
+package problem0209
 
 func minSubArrayLen(s int, a []int) int {
 	n := len(a)

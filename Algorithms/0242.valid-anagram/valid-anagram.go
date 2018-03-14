@@ -1,4 +1,4 @@
-package Problem0242
+package problem0242
 
 func isAnagram(s string, t string) bool {
 	if len(s) != len(t) {

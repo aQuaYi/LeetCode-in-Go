@@ -1,4 +1,4 @@
-package Problem0440
+package problem0440
 
 func findKthNumber(n int, k int) int {
 	/*

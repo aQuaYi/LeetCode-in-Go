@@ -1,4 +1,4 @@
-package Problem0628
+package problem0628
 
 func maximumProduct(nums []int) int {
 

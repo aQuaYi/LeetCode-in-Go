@@ -1,4 +1,4 @@
-package Problem0498
+package problem0498
 
 func findDiagonalOrder(mat [][]int) []int {
 	if len(mat) == 0 || len(mat[0]) == 0 {

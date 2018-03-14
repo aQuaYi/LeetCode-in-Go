@@ -1,4 +1,4 @@
-package Problem0691
+package problem0691
 
 const intMax = 1<<63 - 1
 

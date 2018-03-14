@@ -1,4 +1,4 @@
-package Problem0275
+package problem0275
 
 // a 为升序排列
 func hIndex(a []int) int {

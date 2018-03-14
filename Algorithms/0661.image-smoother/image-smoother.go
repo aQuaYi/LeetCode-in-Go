@@ -1,4 +1,4 @@
-package Problem0661
+package problem0661
 
 func imageSmoother(M [][]int) [][]int {
 	res := make([][]int, len(M))

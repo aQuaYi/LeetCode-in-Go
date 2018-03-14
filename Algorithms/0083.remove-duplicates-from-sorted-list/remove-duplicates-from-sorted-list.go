@@ -1,4 +1,4 @@
-package Problem0083
+package problem0083
 
 // ListNode is singly-linked list
 type ListNode struct {

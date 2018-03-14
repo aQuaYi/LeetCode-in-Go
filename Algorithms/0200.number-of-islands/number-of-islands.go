@@ -1,4 +1,4 @@
-package Problem0200
+package problem0200
 
 func numIslands(grid [][]byte) int {
 	// 获取 grid 的大小

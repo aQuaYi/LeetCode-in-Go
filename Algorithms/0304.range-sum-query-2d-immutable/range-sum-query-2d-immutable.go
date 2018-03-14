@@ -1,4 +1,4 @@
-package Problem0304
+package problem0304
 
 // NumMatrix 包含了需要求和的矩阵
 type NumMatrix struct {

@@ -1,4 +1,4 @@
-package Problem0210
+package problem0210
 
 func findOrder(numCourses int, prerequisites [][]int) []int {
 	n, p := build(numCourses, prerequisites)

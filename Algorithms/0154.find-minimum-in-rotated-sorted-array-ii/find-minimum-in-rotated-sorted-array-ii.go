@@ -1,4 +1,4 @@
-package Problem0154
+package problem0154
 
 func findMin(a []int) int {
 	L := len(a)

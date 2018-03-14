@@ -1,4 +1,4 @@
-package Problem0011
+package problem0011
 
 func maxArea(height []int) int {
 	// 从两端开始寻找，至少保证了宽度是最大值

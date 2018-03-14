@@ -1,4 +1,4 @@
-package Problem0390
+package problem0390
 
 func lastRemaining(n int) int {
 	isLeftStart := true

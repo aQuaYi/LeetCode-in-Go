@@ -1,4 +1,4 @@
-package Problem0378
+package problem0378
 
 func kthSmallest(mat [][]int, k int) int {
 	// 题目中说了 1 <= n

@@ -1,4 +1,4 @@
-package Problem0097
+package problem0097
 
 func isInterleave(s1 string, s2 string, s3 string) bool {
 	m, n := len(s1), len(s2)

@@ -1,4 +1,4 @@
-package Problem0084
+package problem0084
 
 func largestRectangleArea(heights []int) int {
 	// 在 h 结尾添加 -1 可以让 for 循环中，求解 area 的逻辑一致

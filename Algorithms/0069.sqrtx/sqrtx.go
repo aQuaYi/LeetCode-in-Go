@@ -1,4 +1,4 @@
-package Problem0069
+package problem0069
 
 func mySqrt(x int) int {
 	res := x

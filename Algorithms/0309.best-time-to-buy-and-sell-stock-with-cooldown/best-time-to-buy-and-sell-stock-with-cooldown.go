@@ -1,4 +1,4 @@
-package Problem0309
+package problem0309
 
 func maxProfit(prices []int) int {
 	n := len(prices)

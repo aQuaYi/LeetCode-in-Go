@@ -1,4 +1,4 @@
-package Problem0350
+package problem0350
 
 func intersect(a1, a2 []int) []int {
 	res := []int{}

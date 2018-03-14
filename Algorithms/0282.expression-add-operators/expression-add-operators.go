@@ -1,4 +1,4 @@
-package Problem0282
+package problem0282
 
 func addOperators(s string, target int) []string {
 	res := []string{}

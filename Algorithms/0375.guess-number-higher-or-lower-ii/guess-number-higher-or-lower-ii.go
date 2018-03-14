@@ -1,4 +1,4 @@
-package Problem0375
+package problem0375
 
 func getMoneyAmount(n int) int {
 	// dp[i][j] 保证能猜出 i<=x<=j 中 x 的具体值的最小金额

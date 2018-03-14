@@ -1,4 +1,4 @@
-package Problem0373
+package problem0373
 
 import "container/heap"
 

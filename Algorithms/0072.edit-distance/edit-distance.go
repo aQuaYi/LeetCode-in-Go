@@ -1,4 +1,4 @@
-package Problem0072
+package problem0072
 
 func minDistance(word1 string, word2 string) int {
 	m := len(word1)

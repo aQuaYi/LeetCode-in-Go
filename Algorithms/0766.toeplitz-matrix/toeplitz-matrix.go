@@ -1,4 +1,4 @@
-package Problem0766
+package problem0766
 
 func isToeplitzMatrix(mat [][]int) bool {
 	m, n := len(mat), len(mat[0])

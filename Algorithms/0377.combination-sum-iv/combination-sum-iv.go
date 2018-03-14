@@ -1,4 +1,4 @@
-package Problem0377
+package problem0377
 
 func combinationSum4(nums []int, target int) int {
 	// dp[i] 是 i 能用 nums 中的数所组合的种类数

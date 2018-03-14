@@ -1,4 +1,4 @@
-package Problem0343
+package problem0343
 
 func integerBreak(n int) int {
 	if n == 2 {

@@ -1,4 +1,4 @@
-package Problem0202
+package problem0202
 
 func isHappy(n int) bool {
 	slow, fast := n, trans(n)

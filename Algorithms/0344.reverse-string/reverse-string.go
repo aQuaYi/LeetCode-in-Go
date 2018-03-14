@@ -1,4 +1,4 @@
-package Problem0344
+package problem0344
 
 func reverseString(s string) string {
 	bytes := []byte(s)

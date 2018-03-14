@@ -1,4 +1,4 @@
-package Problem0420
+package problem0420
 
 func strongPasswordChecker(s string) int {
 	// 统计缺少的字符类型

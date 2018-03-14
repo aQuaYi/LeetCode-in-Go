@@ -1,4 +1,4 @@
-package Problem0003
+package problem0003
 
 func lengthOfLongestSubstring(s string) int {
 	// location[s[i]] == j 表示：

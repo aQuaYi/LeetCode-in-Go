@@ -1,4 +1,4 @@
-package Problem0561
+package problem0561
 
 func arrayPairSum(nums []int) int {
 	var buckets [20001]int8

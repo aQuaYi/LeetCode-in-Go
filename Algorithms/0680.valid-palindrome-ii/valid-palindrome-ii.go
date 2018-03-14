@@ -1,4 +1,4 @@
-package Problem0680
+package problem0680
 
 func validPalindrome(s string) bool {
 	return helper([]byte(s), 0, len(s)-1, false)

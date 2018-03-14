@@ -1,4 +1,4 @@
-package Problem0206
+package problem0206
 
 func reverseList(head *ListNode) *ListNode {
 	// prev 是所有已经逆转的节点的head

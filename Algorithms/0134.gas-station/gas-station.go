@@ -1,4 +1,4 @@
-package Problem0134
+package problem0134
 
 func canCompleteCircuit(gas []int, cost []int) int {
 	remains, debts, start := 0, 0, 0

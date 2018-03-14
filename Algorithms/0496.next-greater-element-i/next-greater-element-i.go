@@ -1,4 +1,4 @@
-package Problem0496
+package problem0496
 
 func nextGreaterElement(findNums []int, nums []int) []int {
 	indexOf := make(map[int]int)

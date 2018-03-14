@@ -1,4 +1,4 @@
-package Problem0643
+package problem0643
 
 func findMaxAverage(nums []int, k int) float64 {
 	temp := 0

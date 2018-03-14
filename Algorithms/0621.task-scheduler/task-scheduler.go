@@ -1,4 +1,4 @@
-package Problem0621
+package problem0621
 
 func leastInterval(tasks []byte, n int) int {
 	if n == 0 {

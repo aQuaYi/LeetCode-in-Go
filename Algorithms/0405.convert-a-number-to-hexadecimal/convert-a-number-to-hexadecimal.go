@@ -1,4 +1,4 @@
-package Problem0405
+package problem0405
 
 var h = []string{
 	"0",

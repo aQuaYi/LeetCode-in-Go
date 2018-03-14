@@ -1,4 +1,4 @@
-package Problem0598
+package problem0598
 
 func maxCount(m int, n int, ops [][]int) int {
 	for _, o := range ops {

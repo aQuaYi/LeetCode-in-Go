@@ -1,4 +1,4 @@
-package Problem0041
+package problem0041
 
 func firstMissingPositive(nums []int) int {
 	// 整理 nums ，让 nums[k] == k+1，只要 k+1 存在于 nums 中

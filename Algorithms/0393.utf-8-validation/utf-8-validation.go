@@ -1,4 +1,4 @@
-package Problem0393
+package problem0393
 
 func validUtf8(data []int) bool {
 	// cnt 是还需检查的 byte 的个数

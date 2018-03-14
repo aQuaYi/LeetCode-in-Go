@@ -1,4 +1,4 @@
-package Problem0517
+package problem0517
 
 func findMinMoves(machines []int) int {
 	ok, avg := isOK(machines)

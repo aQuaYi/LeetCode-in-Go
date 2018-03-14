@@ -1,4 +1,4 @@
-package Problem0773
+package problem0773
 
 func slidingPuzzle(board [][]int) int {
 

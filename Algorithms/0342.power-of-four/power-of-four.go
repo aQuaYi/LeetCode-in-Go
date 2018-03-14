@@ -1,4 +1,4 @@
-package Problem0342
+package problem0342
 
 func isPowerOfFour(n int) bool {
 	if n < 1 {

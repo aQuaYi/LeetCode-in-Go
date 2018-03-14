@@ -1,4 +1,4 @@
-package Problem0057
+package problem0057
 
 // Interval is a couple of int
 type Interval struct {

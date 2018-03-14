@@ -1,4 +1,4 @@
-package Problem0678
+package problem0678
 
 func checkValidString(s string) bool {
 	l, r := 0, 0

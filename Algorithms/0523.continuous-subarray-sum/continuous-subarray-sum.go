@@ -1,4 +1,4 @@
-package Problem0523
+package problem0523
 
 func checkSubarraySum(nums []int, k int) bool {
 	n := len(nums)

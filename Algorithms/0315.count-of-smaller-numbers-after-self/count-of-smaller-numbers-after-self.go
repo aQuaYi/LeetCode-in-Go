@@ -1,4 +1,4 @@
-package Problem0315
+package problem0315
 
 func countSmaller(nums []int) []int {
 	res := make([]int, len(nums))

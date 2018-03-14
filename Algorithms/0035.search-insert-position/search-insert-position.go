@@ -1,4 +1,4 @@
-package Problem0035
+package problem0035
 
 func searchInsert(nums []int, target int) int {
 	// 没有把i放入for语句中

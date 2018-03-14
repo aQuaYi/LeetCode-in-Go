@@ -1,4 +1,4 @@
-package Problem0091
+package problem0091
 
 func numDecodings(s string) int {
 	n := len(s)

@@ -1,4 +1,4 @@
-package Problem0389
+package problem0389
 
 func findTheDifference(s string, t string) byte {
 	rec := make([]int, 26)

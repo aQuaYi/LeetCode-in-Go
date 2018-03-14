@@ -1,4 +1,4 @@
-package Problem0763
+package problem0763
 
 func partitionLabels(S string) []int {
 	maxIndex := [26]int{}

@@ -1,4 +1,4 @@
-package Problem0027
+package problem0027
 
 func removeElement(nums []int, val int) int {
 	// j指向最后一个不为val的位置

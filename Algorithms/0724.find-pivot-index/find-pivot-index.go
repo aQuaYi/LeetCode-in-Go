@@ -1,4 +1,4 @@
-package Problem0724
+package problem0724
 
 func pivotIndex(nums []int) int {
 	sum := 0

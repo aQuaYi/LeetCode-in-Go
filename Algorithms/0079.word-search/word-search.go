@@ -1,4 +1,4 @@
-package Problem0079
+package problem0079
 
 func exist(board [][]byte, word string) bool {
 	m := len(board)

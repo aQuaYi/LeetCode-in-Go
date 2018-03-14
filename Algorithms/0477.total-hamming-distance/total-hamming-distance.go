@@ -1,4 +1,4 @@
-package Problem0477
+package problem0477
 
 func totalHammingDistance(nums []int) int {
 	res := 0

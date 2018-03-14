@@ -1,4 +1,4 @@
-package Problem0461
+package problem0461
 
 func hammingDistance(x int, y int) int {
 	x ^= y

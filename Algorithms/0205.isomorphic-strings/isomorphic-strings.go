@@ -1,4 +1,4 @@
-package Problem0205
+package problem0205
 
 func isIsomorphic(s string, t string) bool {
 	if len(s) != len(t) {

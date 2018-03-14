@@ -1,4 +1,4 @@
-package Problem0051
+package problem0051
 
 func solveNQueens(n int) [][]string {
 	if n == 0 {

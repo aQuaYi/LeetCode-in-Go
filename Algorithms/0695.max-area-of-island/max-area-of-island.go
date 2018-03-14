@@ -1,4 +1,4 @@
-package Problem0695
+package problem0695
 
 func maxAreaOfIsland(grid [][]int) int {
 	maxArea := 0

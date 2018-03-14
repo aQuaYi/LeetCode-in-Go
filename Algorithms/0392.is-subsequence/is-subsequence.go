@@ -1,4 +1,4 @@
-package Problem0392
+package problem0392
 
 func isSubsequence(s string, t string) bool {
 	var i, j = 0, 0

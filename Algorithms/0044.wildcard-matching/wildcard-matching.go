@@ -1,4 +1,4 @@
-package Problem0044
+package problem0044
 
 func isMatch(s string, p string) bool {
 	ls, lp := len(s), len(p)

@@ -1,4 +1,4 @@
-package Problem0448
+package problem0448
 
 func findDisappearedNumbers(nums []int) []int {
 	for i := 0; i < len(nums); i++ {

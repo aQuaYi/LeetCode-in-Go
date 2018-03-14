@@ -1,4 +1,4 @@
-package Problem0605
+package problem0605
 
 func canPlaceFlowers(bed []int, n int) bool {
 	l := len(bed)

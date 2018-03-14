@@ -1,4 +1,4 @@
-package Problem0486
+package problem0486
 
 // PredictTheWinner 在 play1 能赢的时候，返回 true
 func PredictTheWinner(nums []int) bool {

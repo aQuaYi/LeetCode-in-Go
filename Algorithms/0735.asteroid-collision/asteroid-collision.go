@@ -1,4 +1,4 @@
-package Problem0735
+package problem0735
 
 func asteroidCollision(asteroids []int) []int {
 	res := make([]int, 0, len(asteroids))

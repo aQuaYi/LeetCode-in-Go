@@ -1,4 +1,4 @@
-package Problem0232
+package problem0232
 
 // MyQueue 是利用 栈 实现的队列
 type MyQueue struct {

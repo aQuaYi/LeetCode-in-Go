@@ -1,4 +1,4 @@
-package Problem0397
+package problem0397
 
 func integerReplacement(n int) int {
 	// rec[i] == integerReplacement(i)

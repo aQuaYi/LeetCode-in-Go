@@ -1,4 +1,4 @@
-package Problem0464
+package problem0464
 
 // 影响成败的关键因素有两个
 // 1. 还能选择的数字

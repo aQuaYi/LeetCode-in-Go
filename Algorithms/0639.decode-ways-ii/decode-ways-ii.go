@@ -1,4 +1,4 @@
-package Problem0639
+package problem0639
 
 // MOD 题目要求，返回的结果需要对 MOD 取余
 const MOD = 1000000007

@@ -1,4 +1,4 @@
-package Problem0201
+package problem0201
 
 func rangeBitwiseAnd(m int, n int) int {
 	res := uint(0)

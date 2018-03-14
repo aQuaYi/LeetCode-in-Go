@@ -1,4 +1,4 @@
-package Problem0207
+package problem0207
 
 func canFinish(numCourses int, prerequisites [][]int) bool {
 	// next[i][j] : i -> next[i]... ，i 是 next[i] 的先修课

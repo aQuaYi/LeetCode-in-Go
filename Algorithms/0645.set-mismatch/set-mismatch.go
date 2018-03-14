@@ -1,4 +1,4 @@
-package Problem0645
+package problem0645
 
 func findErrorNums(nums []int) []int {
 	// n == len(nums)

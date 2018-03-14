@@ -1,4 +1,4 @@
-package Problem0043
+package problem0043
 
 func multiply(num1 string, num2 string) string {
 	if num1 == "0" || num2 == "0" {

@@ -1,4 +1,4 @@
-package Problem0424
+package problem0424
 
 func characterReplacement(s string, k int) int {
 	// count 在 for 循环中，记录了

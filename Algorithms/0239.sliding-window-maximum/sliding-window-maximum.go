@@ -1,4 +1,4 @@
-package Problem0239
+package problem0239
 
 func maxSlidingWindow(nums []int, k int) []int {
 	// 题目里面说好了 1 <= k 的

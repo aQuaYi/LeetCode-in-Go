@@ -1,4 +1,4 @@
-package Problem0034
+package problem0034
 
 func searchRange(nums []int, target int) []int {
 	// 查看target是否存在与nums中

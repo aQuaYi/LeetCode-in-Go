@@ -1,4 +1,4 @@
-package Problem0307
+package problem0307
 
 import (
 	"testing"

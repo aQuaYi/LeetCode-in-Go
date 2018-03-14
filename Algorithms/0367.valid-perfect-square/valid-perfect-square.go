@@ -1,4 +1,4 @@
-package Problem0367
+package problem0367
 
 func isPerfectSquare(num int) bool {
 	r := intSqrt(num)

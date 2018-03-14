@@ -1,4 +1,4 @@
-package Problem0224
+package problem0224
 
 func calculate(s string) int {
 	res := 0

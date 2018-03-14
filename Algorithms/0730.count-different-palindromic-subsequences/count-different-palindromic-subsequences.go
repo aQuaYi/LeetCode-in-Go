@@ -1,4 +1,4 @@
-package Problem0730
+package problem0730
 
 const mod int = 1e9 + 7
 

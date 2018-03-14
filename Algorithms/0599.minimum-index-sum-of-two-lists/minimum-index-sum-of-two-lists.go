@@ -1,4 +1,4 @@
-package Problem0599
+package problem0599
 
 func findRestaurant(list1 []string, list2 []string) []string {
 	if len(list1) > len(list2) {

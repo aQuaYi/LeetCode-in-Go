@@ -1,4 +1,4 @@
-package Problem0672
+package problem0672
 
 func flipLights(n, m int) int {
 	if m == 0 {

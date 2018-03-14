@@ -1,4 +1,4 @@
-package Problem0077
+package problem0077
 
 func combine(n int, k int) [][]int {
 	combination := make([]int, k)

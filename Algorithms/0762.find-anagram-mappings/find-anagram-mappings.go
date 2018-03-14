@@ -1,4 +1,4 @@
-package Problem0762
+package problem0762
 
 func anagramMappings(A, B []int) []int {
 	n := len(A)

@@ -1,4 +1,4 @@
-package Problem0676
+package problem0676
 
 // MagicDictionary 是一个神奇的字典
 type MagicDictionary struct {

@@ -1,4 +1,4 @@
-package Problem0771
+package problem0771
 
 func numJewelsInStones(J string, S string) int {
 	isJewel := make(map[byte]bool, len(J))

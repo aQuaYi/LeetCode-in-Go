@@ -1,4 +1,4 @@
-package Problem0146
+package problem0146
 
 /**
  * Your LRUCache object will be instantiated and called as such:

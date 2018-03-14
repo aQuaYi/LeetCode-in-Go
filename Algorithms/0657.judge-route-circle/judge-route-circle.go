@@ -1,4 +1,4 @@
-package Problem0657
+package problem0657
 
 import "strings"
 

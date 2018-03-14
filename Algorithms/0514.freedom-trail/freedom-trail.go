@@ -1,4 +1,4 @@
-package Problem0514
+package problem0514
 
 func findRotateSteps(ring string, key string) int {
 	// m 中记录了每个字符所有出现过的位置

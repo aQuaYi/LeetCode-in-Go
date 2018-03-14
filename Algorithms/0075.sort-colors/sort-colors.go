@@ -1,4 +1,4 @@
-package Problem0075
+package problem0075
 
 func sortColors(nums []int) {
 	length := len(nums)

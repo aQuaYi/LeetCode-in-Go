@@ -1,4 +1,4 @@
-package Problem0319
+package problem0319
 
 func bulbSwitch(n int) int {
 	return intSqrt(n)

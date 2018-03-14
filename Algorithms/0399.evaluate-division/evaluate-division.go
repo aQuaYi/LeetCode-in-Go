@@ -1,4 +1,4 @@
-package Problem0399
+package problem0399
 
 func calcEquation(equations [][]string, values []float64, queries [][]string) []float64 {
 	// 建立变量之间的转换关系

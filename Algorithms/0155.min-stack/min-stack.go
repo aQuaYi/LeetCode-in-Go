@@ -1,4 +1,4 @@
-package Problem0155
+package problem0155
 
 // MinStack 是可以返回最小值的栈
 type MinStack struct {

@@ -1,4 +1,4 @@
-package Problem0208
+package problem0208
 
 /**
  * Your Trie object will be instantiated and called as such:

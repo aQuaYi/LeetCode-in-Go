@@ -1,4 +1,4 @@
-package Problem0696
+package problem0696
 
 func countBinarySubstrings(s string) int {
 	count, countZero, countOne := 0, 0, 0

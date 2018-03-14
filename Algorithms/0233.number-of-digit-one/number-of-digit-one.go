@@ -1,4 +1,4 @@
-package Problem0233
+package problem0233
 
 func countDigitOne(n int) int {
 	var a, b, ones int

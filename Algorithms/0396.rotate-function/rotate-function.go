@@ -1,4 +1,4 @@
-package Problem0396
+package problem0396
 
 func maxRotateFunction(a []int) int {
 	n := len(a)

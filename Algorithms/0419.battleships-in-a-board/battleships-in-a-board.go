@@ -1,4 +1,4 @@
-package Problem0419
+package problem0419
 
 func countBattleships(board [][]byte) int {
 	if len(board) == 0 {

@@ -1,4 +1,4 @@
-package Problem0062
+package problem0062
 
 func uniquePaths(m int, n int) int {
 	// dp[i][j] 代表了，到达 (i,j) 格子的不同路径数目

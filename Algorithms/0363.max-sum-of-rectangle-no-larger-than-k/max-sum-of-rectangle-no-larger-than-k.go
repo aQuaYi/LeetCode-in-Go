@@ -1,4 +1,4 @@
-package Problem0363
+package problem0363
 
 func maxSumSubmatrix(mat [][]int, target int) int {
 	if len(mat) == 0 || len(mat[0]) == 0 {

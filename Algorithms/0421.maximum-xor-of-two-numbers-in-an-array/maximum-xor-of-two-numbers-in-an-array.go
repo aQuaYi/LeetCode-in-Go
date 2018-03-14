@@ -1,4 +1,4 @@
-package Problem0421
+package problem0421
 
 func findMaximumXOR(nums []int) int {
 	var max, mask int

@@ -1,4 +1,4 @@
-package Problem0743
+package problem0743
 
 func networkDelayTime(times [][]int, N int, K int) int {
 	maxInt := int(1e4)

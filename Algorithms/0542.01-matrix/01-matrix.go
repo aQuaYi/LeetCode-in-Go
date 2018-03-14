@@ -1,4 +1,4 @@
-package Problem0542
+package problem0542
 
 func updateMatrix(matrix [][]int) [][]int {
 	m, n := len(matrix), len(matrix[0])

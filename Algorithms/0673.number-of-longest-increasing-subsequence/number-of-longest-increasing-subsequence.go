@@ -1,4 +1,4 @@
-package Problem0673
+package problem0673
 
 func findNumberOfLIS(a []int) int {
 	n := len(a)

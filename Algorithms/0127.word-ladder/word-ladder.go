@@ -1,4 +1,4 @@
-package Problem0127
+package problem0127
 
 func ladderLength(beginWord string, endWord string, words []string) int {
 	// 把 words 存入字典

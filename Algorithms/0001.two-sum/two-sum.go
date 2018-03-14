@@ -1,4 +1,4 @@
-package Problem0001
+package problem0001
 
 func twoSum(nums []int, target int) []int {
 	// m 负责保存map[整数]整数的序列号

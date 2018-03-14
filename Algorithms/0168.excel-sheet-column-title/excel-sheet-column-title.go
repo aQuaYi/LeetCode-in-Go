@@ -1,4 +1,4 @@
-package Problem0168
+package problem0168
 
 func convertToTitle(n int) string {
 	res := ""

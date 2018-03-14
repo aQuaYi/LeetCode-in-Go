@@ -1,4 +1,4 @@
-package Problem0546
+package problem0546
 
 func removeBoxes(boxes []int) int {
 	n := len(boxes)
