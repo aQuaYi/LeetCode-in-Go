@@ -207,5 +207,5 @@ func getTcPara(para string) string {
 }
 
 func (p problem) packageName() string {
-	return fmt.Sprintf("Problem%04d", p.ID)
+	return fmt.Sprintf("problem%04d", p.ID)
 }
