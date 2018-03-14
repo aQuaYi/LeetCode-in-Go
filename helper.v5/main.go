@@ -41,7 +41,7 @@ func main() {
 	case "readme", "r":
 		log.Println("~~ 开始重制 README.md 文档 ~~")
 		rebuildReadme()
-		log.Println("~~ 重制 READ.md 完成 ~~")
+		log.Println("~~ 重制 README.md 完成 ~~")
 	case "tasks", "t":
 		log.Println("~~ 开始制作任务清单 ~~")
 		printTasks()
