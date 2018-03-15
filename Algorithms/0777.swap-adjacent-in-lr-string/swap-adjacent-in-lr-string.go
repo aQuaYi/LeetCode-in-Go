@@ -6,8 +6,8 @@ import (
 
 func canTransform(start string, end string) bool {
 	return strings.Replace(start, "X", "", -1) == strings.Replace(end, "X", "", -1) &&
-		isOK(idxs(start, 'R'), idxs(end, 'R'), lessAndEqual) &&
-		isOK(idxs(start, 'L'), idxs(end, 'L'), moreAndEqual)
+		isOK(idxs(start, 'R'), idxs(end, 'R'), isLessAndEqual) &&
+		isOK(idxs(start, 'L'), idxs(end, 'L'), isMoreAndEqual)
 }
 
 // idxs 返回 s 中所有 b 字符的索引号
@@ -32,14 +32,14 @@ func isOK(a, b []int, isAvailable func(x, y int) bool) bool {
 	return true
 }
 
-func lessAndEqual(x, y int) bool {
+func isLessAndEqual(x, y int) bool {
 	if x <= y {
 		return true
 	}
 	return false
 }
 
-func moreAndEqual(x, y int) bool {
+func isMoreAndEqual(x, y int) bool {
 	if x >= y {
 		return true
 	}
