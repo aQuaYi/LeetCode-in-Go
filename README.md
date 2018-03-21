@@ -1,7 +1,7 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
 [![LeetCode 主页](https://img.shields.io/badge/LeetCode-aQuaYi-blue.svg)](https://leetcode.com/aQuaYi/)
-[![LeetCode 排名](https://img.shields.io/badge/Ranking-1401-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/Ranking-1390-blue.svg)](https://leetcode.com/aQuaYi/)
 [![LeetCode 答题进度](https://img.shields.io/badge/Progress-96%25-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|160|268|114|542|
+|**Accepted**|160|268|115|543|
 |**Total**|162|279|120|561|
 
 ## 题解
@@ -168,7 +168,7 @@
 |154|[Find Minimum in Rotated Sorted Array II](./Algorithms/0154.find-minimum-in-rotated-sorted-array-ii)|37%|Hard| |
 |155|[Min Stack](./Algorithms/0155.min-stack)|30%|Easy| |
 |162|[Find Peak Element](./Algorithms/0162.find-peak-element)|38%|Medium| |
-|164|[Maximum Gap](./Algorithms/0164.maximum-gap)|29%|Hard| |
+|164|[Maximum Gap](./Algorithms/0164.maximum-gap)|30%|Hard| |
 |165|[Compare Version Numbers](./Algorithms/0165.compare-version-numbers)|20%|Medium| |
 |166|[Fraction to Recurring Decimal](./Algorithms/0166.fraction-to-recurring-decimal)|18%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |167|[Two Sum II - Input array is sorted](./Algorithms/0167.two-sum-ii-input-array-is-sorted)|47%|Easy| |
@@ -407,7 +407,7 @@
 |532|[K-diff Pairs in an Array](./Algorithms/0532.k-diff-pairs-in-an-array)|28%|Easy| |
 |537|[Complex Number Multiplication](./Algorithms/0537.complex-number-multiplication)|63%|Medium| |
 |538|[Convert BST to Greater Tree](./Algorithms/0538.convert-bst-to-greater-tree)|48%|Easy| |
-|539|[Minimum Time Difference](./Algorithms/0539.minimum-time-difference)|46%|Medium| |
+|539|[Minimum Time Difference](./Algorithms/0539.minimum-time-difference)|45%|Medium| |
 |540|[Single Element in a Sorted Array](./Algorithms/0540.single-element-in-a-sorted-array)|55%|Medium| |
 |541|[Reverse String II](./Algorithms/0541.reverse-string-ii)|43%|Easy| |
 |542|[01 Matrix](./Algorithms/0542.01-matrix)|32%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -418,7 +418,7 @@
 |552|[Student Attendance Record II](./Algorithms/0552.student-attendance-record-ii)|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |553|[Optimal Division](./Algorithms/0553.optimal-division)|55%|Medium| |
 |554|[Brick Wall](./Algorithms/0554.brick-wall)|46%|Medium| |
-|556|[Next Greater Element III](./Algorithms/0556.next-greater-element-iii)|29%|Medium| |
+|556|[Next Greater Element III](./Algorithms/0556.next-greater-element-iii)|28%|Medium| |
 |557|[Reverse Words in a String III](./Algorithms/0557.reverse-words-in-a-string-iii)|60%|Easy| |
 |560|[Subarray Sum Equals K](./Algorithms/0560.subarray-sum-equals-k)|40%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |561|[Array Partition I](./Algorithms/0561.array-partition-i)|66%|Easy| |
@@ -448,9 +448,9 @@
 |621|[Task Scheduler](./Algorithms/0621.task-scheduler)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |623|[Add One Row to Tree](./Algorithms/0623.add-one-row-to-tree)|46%|Medium| |
 |628|[Maximum Product of Three Numbers](./Algorithms/0628.maximum-product-of-three-numbers)|44%|Easy|[❤](https://leetcode.com/list/oussv5j)|
-|629|[K Inverse Pairs Array](./Algorithms/0629.k-inverse-pairs-array)|27%|Hard| |
+|629|[K Inverse Pairs Array](./Algorithms/0629.k-inverse-pairs-array)|26%|Hard| |
 |630|[Course Schedule III](./Algorithms/0630.course-schedule-iii)|29%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|632|[Smallest Range](./Algorithms/0632.smallest-range)|42%|Hard| |
+|632|[Smallest Range](./Algorithms/0632.smallest-range)|41%|Hard| |
 |633|[Sum of Square Numbers](./Algorithms/0633.sum-of-square-numbers)|32%|Easy| |
 |636|[Exclusive Time of Functions](./Algorithms/0636.exclusive-time-of-functions)|44%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |637|[Average of Levels in Binary Tree](./Algorithms/0637.average-of-levels-in-binary-tree)|55%|Easy| |
@@ -545,7 +545,7 @@
 |762|[Prime Number of Set Bits in Binary Representation](./Algorithms/0762.prime-number-of-set-bits-in-binary-representation)|54%|Easy| |
 |763|[Partition Labels](./Algorithms/0763.partition-labels)|64%|Medium| |
 |764|[Largest Plus Sign](./Algorithms/0764.largest-plus-sign)|36%|Medium| |
-|765|[Couples Holding Hands](./Algorithms/0765.couples-holding-hands)|47%|Hard| |
+|765|[Couples Holding Hands](./Algorithms/0765.couples-holding-hands)|48%|Hard| |
 |766|[Toeplitz Matrix](./Algorithms/0766.toeplitz-matrix)|57%|Easy| |
 |767|[Reorganize String](./Algorithms/0767.reorganize-string)|35%|Medium| |
 |768|[Max Chunks To Make Sorted II](./Algorithms/0768.max-chunks-to-make-sorted-ii)|42%|Hard| |
@@ -555,9 +555,9 @@
 |773|[Sliding Puzzle](./Algorithms/0773.sliding-puzzle)|47%|Hard| |
 |775|[Global and Local Inversions](./Algorithms/0775.global-and-local-inversions)|31%|Medium| |
 |777|[Swap Adjacent in LR String](./Algorithms/0777.swap-adjacent-in-lr-string)|26%|Medium| |
-|778|[Swim in Rising Water](./Algorithms/0778.swim-in-rising-water)|44%|Hard| |
+|778|[Swim in Rising Water](./Algorithms/0778.swim-in-rising-water)|43%|Hard| |
 |779|[K-th Symbol in Grammar](./Algorithms/0779.k-th-symbol-in-grammar)|35%|Medium| |
-|780| * Reaching Points|21%|Hard| |
+|780|[Reaching Points](./Algorithms/0780.reaching-points)|21%|Hard| |
 |781|[Rabbits in Forest](./Algorithms/0781.rabbits-in-forest)|48%|Medium| |
 |782| * Transform to Chessboard|34%|Hard| |
 |783|[Minimum Distance Between BST Nodes](./Algorithms/0783.minimum-distance-between-bst-nodes)|47%|Easy| |
@@ -568,18 +568,18 @@
 |788| * Rotated Digits|51%|Easy| |
 |789| * Escape The Ghosts|45%|Medium| |
 |790| * Domino and Tromino Tiling|31%|Medium| |
-|791| * Custom Sort String|61%|Medium| |
+|791| * Custom Sort String|60%|Medium| |
 |792| * Number of Matching Subsequences|33%|Medium| |
-|793| * Preimage Size of Factorial Zeroes Function|47%|Hard| |
+|793| * Preimage Size of Factorial Zeroes Function|46%|Hard| |
 |794| * Valid Tic-Tac-Toe State|27%|Medium| |
 |795| * Number of Subarrays with Bounded Maximum|39%|Medium| |
-|796| * Rotate String|62%|Easy| |
-|797| * All Paths From Source to Target|68%|Medium| |
+|796| * Rotate String|61%|Easy| |
+|797| * All Paths From Source to Target|69%|Medium| |
 |798| * Smallest Rotation with Highest Score|29%|Hard| |
-|799| * Champagne Tower|27%|Medium| |
-|801| * Minimum Swaps To Make Sequences Increasing|18%|Medium| |
-|802| * Find Eventual Safe States|30%|Medium| |
-|803| * Bricks Falling When Hit|16%|Hard| |
+|799| * Champagne Tower|28%|Medium| |
+|801| * Minimum Swaps To Make Sequences Increasing|19%|Medium| |
+|802| * Find Eventual Safe States|32%|Medium| |
+|803| * Bricks Falling When Hit|17%|Hard| |
 
 以下免费的算法题，暂时不能使用 Go 解答
 
