@@ -10,14 +10,14 @@ func reachingPoints(sx int, sy int, tx int, ty int) bool {
 		return false
 	}
 
-	if tx > ty {
-		if ty == 1 {
-			return reachingPoints(sx, sy, tx-ty, ty)
-		}
-		return reachingPoints(sx, sy, tx%ty, ty)
+	if tx < ty {
+		sx, sy = sy, sx
+		tx, ty = ty, tx
 	}
-	if tx == 1 {
-		return reachingPoints(sx, sy, tx, ty-tx)
+
+	if sy == ty && sx%sy == tx%ty {
+		return true
 	}
-	return reachingPoints(sx, sy, tx, ty%tx)
+
+	return reachingPoints(sy, sx, ty, tx%ty)
 }
