@@ -13,7 +13,7 @@ func movesToChessboard(board [][]int) int {
 // 	board 中全部 0 和 1 的个数
 // 		当 N 为偶数时， 个数等
 // 		当 N 为奇数时， 数
-// 
+//
 //
 func isValid(board [][]int) bool {
 
