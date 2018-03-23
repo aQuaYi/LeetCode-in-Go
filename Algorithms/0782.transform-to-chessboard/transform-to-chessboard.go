@@ -10,9 +10,10 @@ func movesToChessboard(board [][]int) int {
 	if N%2 == 1 && board[0][0] != leftTop {
 		i := 1
 		for i < N {
-			if board[i][0] != leftTop {
-				i += 2
+			if board[i][0] == leftTop {
+				break
 			}
+			i += 2
 		}
 		board[0], board[i] = board[i], board[0]
 		return 1 + exchangeCount(board)
@@ -50,7 +51,7 @@ func checkValid(board [][]int) (bool, int) {
 		return false, 0
 	}
 
-	boardOne := N * countSame
+	boardOne := rowOne*countSame + (N-rowOne)*(N-countSame)
 	NN := N * N
 	if (NN%2 == 0 && boardOne != NN/2) ||
 		(NN%2 == 1 && boardOne != NN/2 && boardOne != NN/2+1) {
