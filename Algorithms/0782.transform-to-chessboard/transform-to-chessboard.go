@@ -1,112 +1,102 @@
 package problem0782
 
-func movesToChessboard(board [][]int) int {
-	isValid, leftTop := checkValid(board)
-	if !isValid {
+func movesToChessboard(b [][]int) int {
+	N := len(b)
+
+	// b 中的行有且只能有两种
+	// 并且这两种行互补，例如
+	// [1 0 1 0 1 1 0 0]
+	// [0 1 0 1 0 0 1 1]
+	// 一旦出现第 3 种，就可以返回 -1 了
+	for i := 0; i < N; i++ {
+		for j := 0; j < N; j++ {
+			if b[0][0]^b[i][0]^b[0][j]^b[i][j] == 1 {
+				// 等价于
+				// if !((b[0][0] == b[i][0] && b[0][j] == b[i][j]) ||
+				// (b[0][0] != b[i][0] && b[0][j] != b[i][j])) {
+				return -1
+			}
+		}
+	}
+
+	rowSum, colSum, rowSwap, colSwap := 0, 0, 0, 0
+
+	for i := 0; i < N; i++ {
+		rowSum += b[0][i]
+		colSum += b[i][0]
+		// 先假设排列好的样子是
+		// 0 1 0 1 0 1 ...
+		// 1
+		// 0
+		// 1
+		// 0
+		// 1
+		// .
+		// .
+		// .
+		//
+		// 那么 rowSwap 和 colSwap 分别统计了列和行上
+		// 需要变动的元素的个数
+		if b[i][0] == i%2 {
+			rowSwap++
+		}
+		if b[0][i] == i%2 {
+			colSwap++
+		}
+	}
+
+	// 当 N 为偶数时， rowSum == N/2 且 colSum == N/2
+	// 当 N 为奇数时， | rowSum - colSum | == 1
+	// 才有可能交换成功
+	// 否则，就可以返回 -1 了
+	if rowSum < N/2 || (N+1)/2 < rowSum {
+		// 一行中，拥有了太少或太多的 1
 		return -1
 	}
 
-	N := len(board[0])
-	if N%2 == 1 && board[0][0] != leftTop {
-		i := 1
-		for i < N {
-			if board[i][0] == leftTop {
-				break
-			}
-			i += 2
-		}
-		board[0], board[i] = board[i], board[0]
-		return 1 + exchangeCount(board)
+	if colSum < N/2 || (N+1)/2 < colSum {
+		// 一列中，拥有了太少或太多的 1
+		return -1
 	}
-	return exchangeCount(board)
+
+	// 当 N 为奇数时
+	if N%2 == 1 {
+		// 如果 colSwap 也为奇数的话
+		// 说明，我们前面预想的排列好的样子中
+		// 行的样子反了
+		if colSwap%2 == 1 {
+			// 以前以为放对的位置，其实才是放错了的
+			colSwap = N - colSwap
+		}
+		// 如果 rowSwap 也为奇数的话
+		// 说明，我们前面预想的排列好的样子中
+		// 列的样子反了
+		if rowSwap%2 == 1 {
+			// 以前以为放对的位置，其实才是放错了的
+			rowSwap = N - rowSwap
+		}
+		// 其实可以从另一个角度来想
+		// 由于只存在 0 和 1 两种元素，因此
+		// colSwap 和 rowSwap 只能是偶数
+		// 当他们为奇数时，说明，我们前面的预想是错的
+	} else { // 当 N 为偶数时
+		// 如果 colSwap 或 rowSwap 超过了 N/2
+		// 同样说明我们预想的样子反了
+		// 那不是经过最少步骤能够达到的样子
+		colSwap = min(N-colSwap, colSwap)
+		rowSwap = min(N-rowSwap, rowSwap)
+	}
+
+	// colSwap 和 rowSwap 是错位的元素个数
+	// 调整次数需要 ÷2
+	return (colSwap + rowSwap) / 2
 }
 
-// 想要 board 可行，需要满足以下条件
-// 	1) board 中的行，只有两种，且分别是 r 和 r 的反集
-// 	2) r 中 1 的个数
-// 		当 N 为偶数时， 1 的个数为 N/2
-// 		当 N 为奇数时， 1 的个数为 N/2 或 N/2+1
-// 	3) board 中全部 0 和 1 的个数
-// 		当 N 为偶数时， 个数相等
-// 		当 N 为奇数时， 个数只能相差一个
-func checkValid(board [][]int) (bool, int) {
-	N := len(board)
-
-	rowOne := sum(board[0])
-	if (N%2 == 0 && rowOne != N/2) ||
-		(N%2 == 1 && rowOne != N/2 && rowOne != N/2+1) {
-		return false, 0
+func min(a, b int) int {
+	if a < b {
+		return a
 	}
-
-	countSame := 1
-	for i := 1; i < N; i++ {
-		if isSame(board[0], board[i]) {
-			countSame++
-		} else if !isContrary(board[0], board[i]) {
-			return false, 0
-		}
-	}
-	if (N%2 == 0 && countSame != N/2) ||
-		(N%2 == 1 && countSame != N/2 && countSame != N/2+1) {
-		return false, 0
-	}
-
-	boardOne := rowOne*countSame + (N-rowOne)*(N-countSame)
-	NN := N * N
-	if (NN%2 == 0 && boardOne != NN/2) ||
-		(NN%2 == 1 && boardOne != NN/2 && boardOne != NN/2+1) {
-		return false, 0
-	}
-
-	res := 0
-	if NN%2 == 1 && boardOne == NN/2+1 {
-		// 当 N 为奇数时，
-		// 如果 1 比 0 多一个，则左上角的元素必为 1
-		res = 1
-	}
-
-	return true, res
+	return b
 }
 
-func sum(a []int) int {
-	res := 0
-	for i := range a {
-		res += a[i]
-	}
-	return res
-}
-
-func isSame(a, b []int) bool {
-	for i := range a {
-		if a[i] != b[i] {
-			return false
-		}
-	}
-	return true
-}
-
-func isContrary(a, b []int) bool {
-	for i := range a {
-		if a[i]+b[i] != 1 {
-			return false
-		}
-	}
-	return true
-}
-
-func exchangeCount(board [][]int) int {
-	res := 0
-	N := len(board[0])
-	for i := 2; i < N; i += 2 {
-		if board[i][0] != board[0][0] {
-			res++
-		}
-	}
-	for j := 2; j < N; j += 2 {
-		if board[0][j] != board[0][0] {
-			res++
-		}
-	}
-
-	return res
-}
+// 本题来自于 https://leetcode.com/problems/transform-to-chessboard/discuss/114847/Easy-and-Concise-Solution-with-Explanation-C++JavaPython
