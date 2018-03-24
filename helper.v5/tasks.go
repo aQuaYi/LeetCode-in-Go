@@ -6,6 +6,8 @@ import (
 	"log"
 )
 
+// TODO: 清除本文件内的代码
+//
 func printTasks() {
 	// 生成任务清单前，先重制 README 文件
 	rebuildReadme()

@@ -17,3 +17,5 @@ func read(path string) []byte {
 	data, err := ioutil.ReadAll(file)
 	return data
 }
+
+// TODO: 编写一个写方法
