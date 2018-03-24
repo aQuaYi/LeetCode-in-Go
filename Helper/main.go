@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"log"
 	"os"
 	"strconv"
@@ -12,7 +11,7 @@ const (
 	VERSION = "6.0.0"
 
 	configFile      = "leetcode.toml"
-	leetCodeFile    = "leetcode.json"
+	leetCodeJson    = "leetcode.json"
 	unavailableFile = "unavailable.json"
 
 	USAGE = `使用方法：
@@ -26,10 +25,10 @@ const (
 var cfg config
 
 func main() {
-	fmt.Printf("helper version %s\n", VERSION)
+	log.Printf("helper version %s\n", VERSION)
 
 	if len(os.Args) == 1 {
-		fmt.Println(USAGE)
+		log.Println(USAGE)
 		return
 	}
 
