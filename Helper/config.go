@@ -6,12 +6,16 @@ import (
 	"github.com/BurntSushi/toml"
 )
 
+const (
+	configTOML = "config.toml"
+)
+
 type config struct {
-	Login    string
+	Username string
 	Password string
 
 	// 以下是电子邮件设置
-	Smtp   string
+	SMTP   string
 	Port   int
 	From   string
 	To     string
@@ -21,7 +25,7 @@ type config struct {
 func getConfig() *config {
 	cfg := new(config)
 
-	if _, err := toml.DecodeFile(configFile, &cfg); err != nil {
+	if _, err := toml.DecodeFile(configTOML, &cfg); err != nil {
 		log.Fatalf(err.Error())
 	}
 

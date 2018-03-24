@@ -10,9 +10,7 @@ import (
 const (
 	VERSION = "6.0.0"
 
-	configFile      = "leetcode.toml"
-	leetCodeJson    = "leetcode.json"
-	unavailableFile = "unavailable.json"
+	// unavailableFile = "unavailable.json"
 
 	USAGE = `使用方法：
 	1. helper [n] 	: 生成第 n 题的答题文件夹
@@ -25,19 +23,15 @@ const (
 var cfg config
 
 func main() {
-	log.Printf("helper version %s\n", VERSION)
+	log.Printf("Hi, %s. I'm %s\n", getConfig().Username, VERSION)
 
 	if len(os.Args) == 1 {
 		log.Println(USAGE)
 		return
 	}
 
-	// TODO: 在此生成 LeetCode 实例
-
 	if os.Args[1] == "readme" {
-		log.Println("~~ 开始重制 README.md 文档 ~~")
 		rebuildReadme()
-		log.Println("~~ 重制 README.md 完成 ~~")
 		return
 	}
 
@@ -45,8 +39,5 @@ func main() {
 	if err != nil {
 		log.Fatal("os.Args[1] 无法被转换成题号:", err)
 	}
-
-	log.Printf("~~ 开始生成第 %d 题的文件夹 ~~\n", numProblem)
 	buildProblemDir(numProblem)
-	log.Printf("~~ 第 %d 题的文件夹，已经生成 ~~\n", numProblem)
 }
