@@ -14,8 +14,8 @@ const (
 type leetcode struct {
 	Username string
 
-	// Problems problems // 所有问题的集合
-	// Recode   recode   // 已解答题目与全部题目的数量，按照难度统计
+	Recode   recode   // 已解答题目与全部题目的数量，按照难度统计
+	Problems problems // 所有问题的集合
 
 	Ranking int
 }
@@ -26,7 +26,7 @@ func newLeetCode() *leetcode {
 		return lc
 	}
 
-	log.Println("读取 LeetCode 的记录失败，新生成一个记录。失败原因：", err.Error())
+	log.Println("读取 LeetCode 的记录失败，正在重新生成 LeetCode 记录。失败原因：", err.Error())
 	return getLeetCode()
 }
 
@@ -53,5 +53,16 @@ func (lc *leetcode) save() {
 		log.Fatal("无法把Marshal后的lc保存到文件: ", err)
 	}
 	log.Println("最新的 LeetCode 记录已经保存。")
+	return
+}
+
+func (lc *leetcode) update() {
+	newLC := getLeetCode()
+	logDiff(lc, newLC)
+	lc = newLC
+}
+
+func logDiff(old, new *leetcode) {
+
 	return
 }
