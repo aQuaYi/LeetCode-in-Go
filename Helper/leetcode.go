@@ -14,8 +14,8 @@ const (
 type leetcode struct {
 	Username string
 
-	Recode   recode   // 已解答题目与全部题目的数量，按照难度统计
-	Problems problems // 所有问题的集合
+	// Recode   recode   // 已解答题目与全部题目的数量，按照难度统计
+	// Problems problems // 所有问题的集合
 
 	Ranking int
 }
