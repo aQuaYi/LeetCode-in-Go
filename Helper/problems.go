@@ -36,7 +36,7 @@ func (ps problems) accepted() problems {
 func (ps problems) available() problems {
 	res := make([]problem, 0, len(ps))
 	for _, p := range ps {
-		if p.IsAvailable {
+		if p.hasGoOption {
 			res = append(res, p)
 		}
 	}
@@ -46,7 +46,7 @@ func (ps problems) available() problems {
 func (ps problems) unavailable() problems {
 	res := make([]problem, 0, len(ps))
 	for _, p := range ps {
-		if !p.IsAvailable {
+		if !p.hasGoOption {
 			res = append(res, p)
 		}
 	}

@@ -29,7 +29,7 @@ func main() {
 	case "readme":
 		buildReadme()
 	default:
-		// buildProblemDir(os.Args[1])
+		buildProblemDir(os.Args[1])
 	}
 
 }
