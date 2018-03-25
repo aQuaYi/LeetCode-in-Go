@@ -60,8 +60,8 @@ func (lc *leetcode) save() {
 }
 
 func (lc *leetcode) update() {
-	if time.Since(lc.updated) < 5*time.Minute {
-		log.Printf("数据刚刚在 %s 更新过，跳过此次更新\n", lc.updated)
+	if time.Since(lc.Updated) < 5*time.Minute {
+		log.Printf("数据刚刚在 %s 更新过，跳过此次更新\n", lc.Updated)
 		return
 	}
 

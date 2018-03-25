@@ -21,7 +21,7 @@ func getLeetCode() *leetcode {
 		Problems: *probs,
 
 		Ranking: getRanking(),
-		updated: time.Now(),
+		Updated: time.Now(),
 	}
 
 	// 每更新一次，就保存一次
