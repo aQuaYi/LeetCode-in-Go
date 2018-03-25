@@ -69,8 +69,6 @@ func (lc *leetcode) update() {
 	logDiff(lc, newLC)
 	lc = newLC
 
-	// 每更新一次，就保存一次
-	lc.save()
 }
 
 func logDiff(old, new *leetcode) {

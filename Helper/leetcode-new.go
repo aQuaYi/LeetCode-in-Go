@@ -16,6 +16,9 @@ func getLeetCode() *leetcode {
 		updated: time.Now(),
 	}
 
+	// 每更新一次，就保存一次
+	lc.save()
+
 	return lc
 }
 
