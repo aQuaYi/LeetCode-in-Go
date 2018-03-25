@@ -11,10 +11,11 @@ type problem struct {
 	PassRate                           string
 	Difficulty                         int
 	IsAccepted, IsPaid, IsFavor, IsNew bool
-	hasGoOption                        bool // 能够使用 Go 语言解答
+	noGoOption                         bool // 不能够使用 Go 语言解答
 }
 
 func newProblem(ps problemStatus) problem {
+
 	p := problem{
 		ID:        ps.State.ID,
 		Title:     ps.State.Title,
@@ -29,6 +30,13 @@ func newProblem(ps problemStatus) problem {
 	}
 
 	return p
+}
+
+func (p problem) isAvailble() bool {
+	if p.ID == 0 || p.IsPaid || p.noGoOption {
+		return false
+	}
+	return true
 }
 
 func (p problem) Dir() string {
