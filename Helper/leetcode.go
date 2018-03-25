@@ -110,8 +110,11 @@ func logDiff(old, new *leetcode) {
 		log.Println("～ 没有新完成习题 ～")
 	}
 
+	// 检查新添加的习题
 	for i < lenNew {
-		log.Printf("新题: %d.%s", new.Problems[i].ID, new.Problems[i].Title)
-		i++
+		if new.Problems[i].isAvailble() {
+			log.Printf("新题: %d.%s", new.Problems[i].ID, new.Problems[i].Title)
+			i++
+		}
 	}
 }

@@ -32,17 +32,17 @@ func (r *record) update(p problem) {
 		return
 	}
 	switch p.Difficulty {
-	case 1:
+	case "Easy":
 		r.Easy.Total++
 		if p.IsAccepted {
 			r.Easy.Solved++
 		}
-	case 2:
+	case "Medium":
 		r.Medium.Total++
 		if p.IsAccepted {
 			r.Medium.Solved++
 		}
-	case 3:
+	case "Hard":
 		r.Hard.Total++
 		if p.IsAccepted {
 			r.Hard.Solved++
