@@ -22,7 +22,7 @@ func (ps problems) accepted() problems {
 func (ps problems) available() problems {
 	res := make([]problem, 0, len(ps))
 	for _, p := range ps {
-		if !p.HasNoGoOption {
+		if p.isAvailble() {
 			res = append(res, p)
 		}
 	}
