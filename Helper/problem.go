@@ -11,8 +11,8 @@ type problem struct {
 	TitleSlug                          string
 	PassRate                           string
 	Difficulty                         int
-	isAccepted, isPaid, isFavor, isNew bool
-	hasNoGoOption                      bool // 不能够使用 Go 语言解答
+	IsAccepted, IsPaid, IsFavor, IsNew bool
+	HasNoGoOption                      bool // 不能够使用 Go 语言解答
 }
 
 func newProblem(ps problemStatus) problem {
@@ -24,17 +24,17 @@ func newProblem(ps problemStatus) problem {
 		// p.Submitted + 1 是因为刚刚添加的新题的 submitted 为 0
 		PassRate:   fmt.Sprintf("%d%%", ps.ACs*100/(ps.Submitted+1)),
 		Difficulty: ps.Difficulty.Level,
-		isAccepted: ps.Status == "ac",
-		isPaid:     ps.IsPaid,
-		isFavor:    ps.IsFavor,
-		isNew:      ps.State.IsNew,
+		IsAccepted: ps.Status == "ac",
+		IsPaid:     ps.IsPaid,
+		IsFavor:    ps.IsFavor,
+		IsNew:      ps.State.IsNew,
 	}
 
 	return p
 }
 
 func (p problem) isAvailble() bool {
-	if p.ID == 0 || p.isPaid || p.hasNoGoOption {
+	if p.ID == 0 || p.IsPaid || p.HasNoGoOption {
 		return false
 	}
 	return true
@@ -51,7 +51,7 @@ func (p problem) link() string {
 
 func (p problem) tableLine() string {
 	res := fmt.Sprintf("|%d|", p.ID)
-	if p.isAccepted {
+	if p.IsAccepted {
 		res += fmt.Sprintf(`[%s](%s)|`, strings.TrimSpace(p.Title), p.Dir())
 	} else {
 		res += fmt.Sprintf(` * %s|`, p.Title)
@@ -59,7 +59,7 @@ func (p problem) tableLine() string {
 	res += fmt.Sprintf("%s|", p.PassRate)
 	res += fmt.Sprintf("%s|", degrees[p.Difficulty])
 	f := " "
-	if p.isFavor {
+	if p.IsFavor {
 		f = "[❤](https://leetcode.com/list/oussv5j)"
 	}
 	res += fmt.Sprintf("%s|\n", f)

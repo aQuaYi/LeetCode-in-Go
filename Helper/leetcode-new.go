@@ -38,7 +38,7 @@ func parseAlgs(alg *algorithms) (*problems, record) {
 	for _, ps := range alg.Problems {
 		p := newProblem(ps)
 		if hasNoGoOption[p.ID] {
-			p.hasNoGoOption = true
+			p.HasNoGoOption = true
 		}
 		probs.add(p)
 		r.update(p)

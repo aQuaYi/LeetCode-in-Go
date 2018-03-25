@@ -12,7 +12,7 @@ func (ps *problems) add(p problem) {
 func (ps problems) accepted() problems {
 	res := make([]problem, 0, len(ps))
 	for _, p := range ps {
-		if p.isAccepted {
+		if p.IsAccepted {
 			res = append(res, p)
 		}
 	}
@@ -22,7 +22,7 @@ func (ps problems) accepted() problems {
 func (ps problems) available() problems {
 	res := make([]problem, 0, len(ps))
 	for _, p := range ps {
-		if !p.hasNoGoOption {
+		if !p.HasNoGoOption {
 			res = append(res, p)
 		}
 	}
@@ -32,7 +32,7 @@ func (ps problems) available() problems {
 func (ps problems) unavailable() problems {
 	res := make([]problem, 0, len(ps))
 	for _, p := range ps {
-		if p.hasNoGoOption {
+		if p.HasNoGoOption {
 			res = append(res, p)
 		}
 	}
