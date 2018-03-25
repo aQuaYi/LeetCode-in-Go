@@ -98,7 +98,7 @@ func logDiff(old, new *leetcode) {
 			log.Fatalln("LeetCode 的 Problems 数据出现错位。已经删除 leetcode.json。 请重试")
 		}
 
-		if n.IsAccepted == true && o.IsAccepted == false {
+		if n.isAccepted == true && o.isAccepted == false {
 			log.Printf("～新完成～ %d.%s", n.ID, n.Title)
 			isChanged = true
 		}

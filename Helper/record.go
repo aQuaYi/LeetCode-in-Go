@@ -28,25 +28,28 @@ func (r *record) progressTable() string {
 }
 
 func (r *record) update(p problem) {
+	if !p.isAvailble() {
+		return
+	}
 	switch p.Difficulty {
 	case 1:
 		r.Easy.Total++
-		if p.IsAccepted {
+		if p.isAccepted {
 			r.Easy.Solved++
 		}
 	case 2:
 		r.Medium.Total++
-		if p.IsAccepted {
+		if p.isAccepted {
 			r.Medium.Solved++
 		}
 	case 3:
 		r.Hard.Total++
-		if p.IsAccepted {
+		if p.isAccepted {
 			r.Hard.Solved++
 		}
 	}
 	r.Total.Total++
-	if p.IsAccepted {
+	if p.isAccepted {
 		r.Total.Solved++
 	}
 }
