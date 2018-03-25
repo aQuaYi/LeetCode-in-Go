@@ -1,6 +1,7 @@
 package main
 
 import (
+	"log"
 	"time"
 )
 
@@ -18,6 +19,7 @@ func getLeetCode() *leetcode {
 
 	// 每更新一次，就保存一次
 	lc.save()
+	log.Println("最新的 LeetCode 已经保存到磁盘")
 
 	return lc
 }
