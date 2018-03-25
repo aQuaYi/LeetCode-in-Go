@@ -21,7 +21,7 @@ type leetcode struct {
 
 	Ranking int
 
-	updated time.Time
+	Updated time.Time
 }
 
 func newLeetCode() *leetcode {
