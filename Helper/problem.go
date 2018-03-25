@@ -10,12 +10,13 @@ type problem struct {
 	Title                              string
 	TitleSlug                          string
 	PassRate                           string
-	Difficulty                         int
+	Difficulty                         string
 	IsAccepted, IsPaid, IsFavor, IsNew bool
 	HasNoGoOption                      bool // 不能够使用 Go 语言解答
 }
 
 func newProblem(ps problemStatus) problem {
+	level := []string{"", "Easy", "Medium", "Hard"}
 
 	p := problem{
 		ID:        ps.State.ID,
@@ -23,7 +24,7 @@ func newProblem(ps problemStatus) problem {
 		TitleSlug: ps.State.TitleSlug,
 		// p.Submitted + 1 是因为刚刚添加的新题的 submitted 为 0
 		PassRate:   fmt.Sprintf("%d%%", ps.ACs*100/(ps.Submitted+1)),
-		Difficulty: ps.Difficulty.Level,
+		Difficulty: level[ps.Difficulty.Level],
 		IsAccepted: ps.Status == "ac",
 		IsPaid:     ps.IsPaid,
 		IsFavor:    ps.IsFavor,
