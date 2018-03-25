@@ -15,11 +15,11 @@ type config struct {
 	Password string
 
 	// 以下是电子邮件设置
-	SMTP   string
-	Port   int
-	From   string
-	To     string
-	Passwd string
+	SMTP        string
+	Port        int
+	From        string
+	To          string
+	EmailPasswd string
 }
 
 func getConfig() *config {
