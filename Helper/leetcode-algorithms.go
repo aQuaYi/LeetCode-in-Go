@@ -40,7 +40,7 @@ type Difficulty struct {
 }
 
 func getAlgorithms() *algorithms {
-	URL := "https: //leetcode.com/api/problems/Algorithms/"
+	URL := "https://leetcode.com/api/problems/Algorithms/"
 
 	raw := getRaw(URL)
 
