@@ -2,16 +2,36 @@ package main
 
 import (
 	"fmt"
+	"strconv"
 	"strings"
 )
 
 type problem struct {
-	ID                                      int
-	Dir                                     string
-	Title, TitleSlug                        string
-	PassRate                                string
-	Difficulty                              int
-	IsAccepted, IsFavor, IsNew, IsAvailable bool
+	ID                         int
+	Title, TitleSlug           string
+	PassRate                   string
+	Difficulty                 int
+	IsAccepted, IsFavor, IsNew bool
+	hasGoOption                bool // 能够使用 Go 语言解答
+}
+
+func newProblem(ps problemStatus) problem {
+	p := problem{
+		ID:         ps.State.ID,
+		Title:      ps.State.Title,
+		TitleSlug:  ps.State.TitleSlug,
+		PassRate:   strconv.Itoa(ps.State.ACs * 100 / ps.State.Submitted),
+		Difficulty: ps.Difficulty.Level,
+		IsAccepted: ps.Status == "ac",
+		IsFavor:    ps.IsFavor,
+		IsNew:      ps.State.IsNew,
+	}
+
+	return p
+}
+
+func (p problem) Dir() string {
+	return fmt.Sprintf(format string, )
 }
 
 func (p problem) link() string {

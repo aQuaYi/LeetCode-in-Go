@@ -5,6 +5,7 @@ import (
 	"errors"
 	"io/ioutil"
 	"log"
+	"time"
 )
 
 const (
@@ -14,10 +15,12 @@ const (
 type leetcode struct {
 	Username string
 
-	// Recode   recode   // 已解答题目与全部题目的数量，按照难度统计
-	// Problems problems // 所有问题的集合
+	Record   record   // 已解答题目与全部题目的数量，按照难度统计
+	Problems problems // 所有问题的集合
 
 	Ranking int
+
+	updated time.Time
 }
 
 func newLeetCode() *leetcode {
@@ -57,12 +60,17 @@ func (lc *leetcode) save() {
 }
 
 func (lc *leetcode) update() {
+	if time.Since(lc.updated) < 5*time.Minute {
+		log.Printf("数据刚刚在 %s 更新过，跳过此次更新\n", lc.updated)
+		return
+	}
+
 	newLC := getLeetCode()
 	logDiff(lc, newLC)
 	lc = newLC
 }
 
 func logDiff(old, new *leetcode) {
-
+	log.Fatal("logDiff is vaild")
 	return
 }
