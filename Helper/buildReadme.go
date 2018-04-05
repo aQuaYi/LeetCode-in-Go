@@ -10,13 +10,12 @@ func buildReadme() {
 	log.Println("开始，重建 README 文档")
 
 	lc := newLeetCode()
-
-	makeREADME(lc)
+	makeReadmeFile(lc)
 
 	log.Println("完成，重建 README 文档")
 }
 
-func makeREADME(lc *leetcode) {
+func makeReadmeFile(lc *leetcode) {
 	file := "README.md"
 	os.Remove(file)
 

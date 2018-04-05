@@ -17,7 +17,7 @@ const (
 		生成第 N 题的答题文件夹
 	helper task -prefix PRE -first FIRST -last LAST
 		对于所有 [FIRST, LAST] 之内的题目，生成类似
-		PRE - 770 - hard - 43% - Basic Calculator IV
+		PRE - 770 - #hard - 43% - Basic Calculator IV
 		的条目，并保存到文件 tasks.txt 中
 `
 )
