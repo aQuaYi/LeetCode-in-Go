@@ -27,4 +27,6 @@ func mailToDida(task string) {
 	if err := d.DialAndSend(m); err != nil {
 		log.Fatal("无法发送任务到 滴答清单：", err)
 	}
+
+	log.Printf("已经在滴答清单中添加任务： %s", task)
 }
