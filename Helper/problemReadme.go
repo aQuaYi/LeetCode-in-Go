@@ -23,7 +23,7 @@ func creatREADME(p problem) {
 
 	content := fmt.Sprintf(fileFormat, p.ID, p.Title, p.link(), questionDescription)
 
-	filename := fmt.Sprintf("%s/README.md", p.Dir)
+	filename := fmt.Sprintf("%s/README.md", p.Dir())
 
 	err := ioutil.WriteFile(filename, []byte(content), 0755)
 	if err != nil {

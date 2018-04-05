@@ -70,9 +70,9 @@ func build(p problem) {
 	defer syscall.Umask(mask)
 
 	// 创建目录
-	err := os.Mkdir(p.Dir, 0755)
+	err := os.Mkdir(p.Dir(), 0755)
 	if err != nil {
-		log.Fatalf("无法创建目录，%s ：%s", p.Dir, err)
+		log.Fatalf("无法创建目录，%s ：%s", p.Dir(), err)
 	}
 
 	log.Printf("开始创建 %d %s 的文件夹...\n", p.ID, p.Title)
@@ -118,7 +118,7 @@ func creatGo(p problem, function string) {
 %s
 `
 	content := fmt.Sprintf(fileFormat, p.packageName(), function)
-	filename := fmt.Sprintf("%s/%s.go", p.Dir, p.TitleSlug)
+	filename := fmt.Sprintf("%s/%s.go", p.Dir(), p.TitleSlug)
 
 	err := ioutil.WriteFile(filename, []byte(content), 0755)
 	if err != nil {
@@ -178,7 +178,7 @@ import (
 
 	content := fmt.Sprintf(fileFormat, p.packageName(), testCases, testFunc, benchFunc)
 
-	filename := fmt.Sprintf("%s/%s_test.go", p.Dir, p.TitleSlug)
+	filename := fmt.Sprintf("%s/%s_test.go", p.Dir(), p.TitleSlug)
 
 	err := ioutil.WriteFile(filename, []byte(content), 0755)
 	if err != nil {
