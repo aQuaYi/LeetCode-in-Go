@@ -107,7 +107,6 @@ func logDiff(old, new *leetcode) {
 		if o.IsFavor == false && n.IsFavor == true {
 			log.Printf("～新收藏～ %d - %s", n.ID, n.Title)
 			dida("fa", n)
-			hasNewFinished = true
 		}
 
 		i++
