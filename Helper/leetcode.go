@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"log"
+	"os"
 	"time"
 )
 
@@ -34,9 +35,10 @@ func newLeetCode() *leetcode {
 	}
 
 	lc.refresh()
+
 	lc.save()
 
-	log.Println("完成，获取 LeetCode 数据")
+	log.Println("获取 LeetCode 的最新数据")
 	return lc
 }
 
@@ -55,6 +57,11 @@ func readLeetCode() (*leetcode, error) {
 }
 
 func (lc *leetcode) save() {
+
+	if err := os.Remove(leetCodeJSON); err != nil {
+		log.Fatalf("删除 %s 失败，原因是：%s", leetCodeJSON, err)
+	}
+
 	raw, err := json.MarshalIndent(lc, "", "\t")
 	if err != nil {
 		log.Fatal("无法把Leetcode数据转换成[]bytes: ", err)
@@ -67,7 +74,7 @@ func (lc *leetcode) save() {
 }
 
 func (lc *leetcode) refresh() {
-	if time.Since(lc.Updated) < 7*time.Minute {
+	if time.Since(lc.Updated) < time.Minute {
 		log.Printf("LeetCode 数据在 %s 前刚刚更新过，跳过此次刷新\n", time.Since(lc.Updated))
 		return
 	}
@@ -75,9 +82,8 @@ func (lc *leetcode) refresh() {
 	log.Println("开始，刷新 LeetCode 数据")
 	newLC := getLeetCode()
 	logDiff(lc, newLC)
-	lc = newLC
 
-	lc.save()
+	*lc = *newLC
 }
 
 func logDiff(old, new *leetcode) {

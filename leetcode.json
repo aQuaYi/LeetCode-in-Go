@@ -39,7 +39,7 @@
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -9765,5 +9765,5 @@
 		}
 	],
 	"Ranking": 1450,
-	"Updated": "2017-04-05T17:29:28.398680906+08:00"
+	"Updated": "2018-04-05T18:13:22.584661882+08:00"
 }
