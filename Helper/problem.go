@@ -53,6 +53,7 @@ func (p problem) link() string {
 func (p problem) tableLine() string {
 	// 题号
 	res := fmt.Sprintf("|%d|", p.ID)
+
 	// 标题
 	t := ""
 	if p.IsAccepted {
