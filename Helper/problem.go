@@ -51,19 +51,33 @@ func (p problem) link() string {
 }
 
 func (p problem) tableLine() string {
+	// 题号
 	res := fmt.Sprintf("|%d|", p.ID)
+	// 标题
+	t := ""
 	if p.IsAccepted {
-		res += fmt.Sprintf(`[%s](%s)|`, strings.TrimSpace(p.Title), p.Dir())
+		t = fmt.Sprintf(`[%s](%s)`, strings.TrimSpace(p.Title), p.Dir())
 	} else {
-		res += fmt.Sprintf(` * %s|`, p.Title)
+		t = fmt.Sprintf(` * %s`, p.Title)
 	}
+	if p.IsNew {
+		t += " :new: "
+	}
+	res += t + "|"
+
+	// 通过率
 	res += fmt.Sprintf("%s|", p.PassRate)
+
+	// 难度
 	res += fmt.Sprintf("%s|", p.Difficulty)
-	f := " "
+
+	// 收藏
+	f := ""
 	if p.IsFavor {
 		f = "[❤](https://leetcode.com/list/oussv5j)"
 	}
 	res += fmt.Sprintf("%s|\n", f)
+
 	return res
 }
 
