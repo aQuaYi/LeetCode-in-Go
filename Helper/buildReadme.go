@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
 	"log"
 	"os"
 )
@@ -51,10 +50,7 @@ func makeREADME(lc *leetcode) {
 	content := fmt.Sprintf(template, head, progressTable, availableTable, unavailList, tail)
 
 	// 保存 README.md 文件
-	err := ioutil.WriteFile(file, []byte(content), 0755)
-	if err != nil {
-		log.Fatal(err)
-	}
+	write(file, content)
 }
 
 func getHead(lc *leetcode) string {

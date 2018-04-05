@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
 	"log"
 	"os"
 	"os/exec"
@@ -108,10 +107,7 @@ func creatGo(p problem, function string) {
 	content := fmt.Sprintf(fileFormat, p.packageName(), function)
 	filename := fmt.Sprintf("%s/%s.go", p.Dir(), p.TitleSlug)
 
-	err := ioutil.WriteFile(filename, []byte(content), 0755)
-	if err != nil {
-		log.Fatal(err)
-	}
+	write(filename, content)
 }
 
 func creatGoTest(p problem, fcName, para, ansType string) {
@@ -168,10 +164,8 @@ import (
 
 	filename := fmt.Sprintf("%s/%s_test.go", p.Dir(), p.TitleSlug)
 
-	err := ioutil.WriteFile(filename, []byte(content), 0755)
-	if err != nil {
-		log.Fatal(err)
-	}
+	write(filename, content)
+
 }
 
 // 把 函数的参数 变成 tc 的参数

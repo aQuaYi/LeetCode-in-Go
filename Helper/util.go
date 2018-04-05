@@ -2,6 +2,7 @@ package main
 
 import (
 	"io/ioutil"
+	"log"
 	"os"
 )
 
@@ -23,4 +24,11 @@ func read(path string) []byte {
 
 	data, err := ioutil.ReadAll(file)
 	return data
+}
+
+func write(path, content string) {
+	err := ioutil.WriteFile(path, []byte(content), 0755)
+	if err != nil {
+		log.Fatal(err)
+	}
 }

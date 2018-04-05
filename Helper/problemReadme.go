@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
 	"log"
 
 	"github.com/PuerkitoBio/goquery"
@@ -25,10 +24,8 @@ func creatREADME(p problem) {
 
 	filename := fmt.Sprintf("%s/README.md", p.Dir())
 
-	err := ioutil.WriteFile(filename, []byte(content), 0755)
-	if err != nil {
-		log.Fatal(err)
-	}
+	write(filename, content)
+
 }
 
 func getDescription(url string) string {
