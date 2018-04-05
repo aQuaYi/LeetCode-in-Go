@@ -1,6 +1,6 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
-[![LeetCode 排名](https://img.shields.io/badge/Ranking-11450-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/Ranking-1450-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 
@@ -213,7 +213,7 @@
 |230|[Kth Smallest Element in a BST](./Algorithms/0230.kth-smallest-element-in-a-bst)|45%|Medium| |
 |231|[Power of Two](./Algorithms/0231.power-of-two)|40%|Easy| |
 |232|[Implement Queue using Stacks](./Algorithms/0232.implement-queue-using-stacks)|38%|Easy| |
-|233|[Number of Digit One](./Algorithms/0233.number-of-digit-one)|29%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|233|[Number of Digit One](./Algorithms/0233.number-of-digit-one)|28%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |234|[Palindrome Linked List](./Algorithms/0234.palindrome-linked-list)|33%|Easy| |
 |238|[Product of Array Except Self](./Algorithms/0238.product-of-array-except-self)|50%|Medium| |
 |239|[Sliding Window Maximum](./Algorithms/0239.sliding-window-maximum)|34%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -389,7 +389,7 @@
 |507|[Perfect Number](./Algorithms/0507.perfect-number)|32%|Easy| |
 |508|[Most Frequent Subtree Sum](./Algorithms/0508.most-frequent-subtree-sum)|52%|Medium| |
 |513|[Find Bottom Left Tree Value](./Algorithms/0513.find-bottom-left-tree-value)|56%|Medium| |
-|514| * Freedom Trail|39%|Hard| |
+|514|[Freedom Trail](./Algorithms/0514.freedom-trail)|39%|Hard| |
 |515|[Find Largest Value in Each Tree Row](./Algorithms/0515.find-largest-value-in-each-tree-row)|55%|Medium| |
 |516|[Longest Palindromic Subsequence](./Algorithms/0516.longest-palindromic-subsequence)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |517|[Super Washing Machines](./Algorithms/0517.super-washing-machines)|36%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -584,6 +584,7 @@
 |807| * Max Increase to Keep City Skyline|82%|Medium| |
 |808| * Soup Servings|29%|Medium| |
 |809| * Expressive Words|34%|Medium| |
+|810| * Chalkboard XOR Game|34%|Hard| |
 |811| * Subdomain Visit Count|65%|Easy| |
 
 以下免费的算法题，暂时不能使用 Go 解答
