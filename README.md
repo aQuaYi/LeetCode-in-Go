@@ -17,7 +17,7 @@
 
 |题号|题目|通过率|难度|收藏|
 |:-:|:-|:-: | :-: | :-: |
-|1|[Two Sum](./Algorithms/0001.two-sum)|37%|Easy||
+|1|[Two Sum](./Algorithms/0001.two-sum)|37%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |2|[Add Two Numbers](./Algorithms/0002.add-two-numbers)|28%|Medium||
 |3|[Longest Substring Without Repeating Characters](./Algorithms/0003.longest-substring-without-repeating-characters)|24%|Medium||
 |4|[Median of Two Sorted Arrays](./Algorithms/0004.median-of-two-sorted-arrays)|23%|Hard||
@@ -583,7 +583,7 @@
 |806| * Number of Lines To Write String|65%|Easy||
 |807| * Max Increase to Keep City Skyline|82%|Medium||
 |808| * Soup Servings :new: |29%|Medium||
-|809| * Expressive Words :new: |34%|Medium||
+|809| * Expressive Words :new: |33%|Medium||
 |810| * Chalkboard XOR Game :new: |34%|Hard||
 |811| * Subdomain Visit Count :new: |65%|Easy||
 
