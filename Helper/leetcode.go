@@ -30,10 +30,11 @@ func newLeetCode() *leetcode {
 	lc, err := readLeetCode()
 	if err != nil {
 		log.Println("读取 LeetCode 的记录失败，正在重新生成 LeetCode 记录。失败原因：", err.Error())
-		return getLeetCode()
+		lc = getLeetCode()
 	}
 
 	lc.refresh()
+	lc.save()
 
 	log.Println("完成，获取 LeetCode 数据")
 	return lc
@@ -76,8 +77,6 @@ func (lc *leetcode) refresh() {
 	newLC := getLeetCode()
 	logDiff(lc, newLC)
 	lc = newLC
-
-	lc.save()
 }
 
 func logDiff(old, new *leetcode) {
