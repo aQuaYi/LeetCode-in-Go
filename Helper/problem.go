@@ -72,5 +72,5 @@ func (p problem) listLine() string {
 }
 
 func (p problem) didaTask(prefix string) string {
-	return fmt.Sprintf("%s - %d - #%s - %s - %s", prefix, p.ID, p.Difficulty, p.PassRate, p.Title)
+	return fmt.Sprintf("%s - %04d - #%s - %s - %s", prefix, p.ID, p.Difficulty, p.PassRate, p.Title)
 }

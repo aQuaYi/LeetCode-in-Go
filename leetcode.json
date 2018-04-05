@@ -2819,7 +2819,7 @@
 			"ID": 233,
 			"Title": "Number of Digit One",
 			"TitleSlug": "number-of-digit-one",
-			"PassRate": "29%",
+			"PassRate": "28%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9765,5 +9765,5 @@
 		}
 	],
 	"Ranking": 1450,
-	"Updated": "2018-04-05T15:55:13.336602668+08:00"
+	"Updated": "2018-04-05T16:44:20.535254223+08:00"
 }
