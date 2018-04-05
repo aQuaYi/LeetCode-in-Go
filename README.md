@@ -17,7 +17,7 @@
 
 |题号|题目|通过率|难度|收藏|
 |:-:|:-|:-: | :-: | :-: |
-|1|[Two Sum](./Algorithms/0001.two-sum)|37%|Easy|[❤](https://leetcode.com/list/oussv5j)|
+|1|[Two Sum](./Algorithms/0001.two-sum)|37%|Easy||
 |2|[Add Two Numbers](./Algorithms/0002.add-two-numbers)|28%|Medium||
 |3|[Longest Substring Without Repeating Characters](./Algorithms/0003.longest-substring-without-repeating-characters)|24%|Medium||
 |4|[Median of Two Sorted Arrays](./Algorithms/0004.median-of-two-sorted-arrays)|23%|Hard||
