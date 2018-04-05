@@ -70,3 +70,7 @@ func (p problem) tableLine() string {
 func (p problem) listLine() string {
 	return fmt.Sprintf("- [%d.%s](%s)\n", p.ID, p.Title, p.link())
 }
+
+func (p problem) didaTask(prefix string) string {
+	return fmt.Sprintf("%s - %d - %s - %s - %s", prefix, p.ID, p.Difficulty, p.PassRate, p.Title)
+}

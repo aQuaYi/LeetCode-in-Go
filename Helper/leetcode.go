@@ -3,9 +3,9 @@ package main
 import (
 	"encoding/json"
 	"errors"
+	"fmt"
 	"io/ioutil"
 	"log"
-	"os"
 	"time"
 )
 
@@ -25,11 +25,17 @@ type leetcode struct {
 }
 
 func newLeetCode() *leetcode {
+	log.Println("开始，获取 LeetCode 数据")
+
 	lc, err := readLeetCode()
 	if err != nil {
 		log.Println("读取 LeetCode 的记录失败，正在重新生成 LeetCode 记录。失败原因：", err.Error())
 		return getLeetCode()
 	}
+
+	lc.refresh()
+
+	log.Println("完成，获取 LeetCode 数据")
 	return lc
 }
 
@@ -59,9 +65,11 @@ func (lc *leetcode) save() {
 	return
 }
 
-func (lc *leetcode) update() {
-	if time.Since(lc.Updated) < 5*time.Minute {
-		log.Printf("数据刚刚在 %s 更新过，跳过此次更新\n", lc.Updated)
+func (lc *leetcode) refresh() {
+	log.Println("开始，刷新 LeetCode 数据")
+
+	if time.Since(lc.Updated) < 7*time.Minute {
+		log.Printf("LeetCode 数据在 %s 前刚刚更新过，跳过此次刷新\n", time.Since(lc.Updated))
 		return
 	}
 
@@ -69,51 +77,45 @@ func (lc *leetcode) update() {
 	logDiff(lc, newLC)
 	lc = newLC
 
+	lc.save()
 }
 
 func logDiff(old, new *leetcode) {
 	// 对比 ranking
-	nr, or := new.Ranking, old.Ranking
-	if nr > 0 && or > 0 {
-		verb, delta := "进步", or-nr
-		if nr > or {
-			verb, delta = "后退", nr-or
-		}
-		log.Printf("当前排名 %d，%s了 %d 名", nr, verb, delta)
-	} else {
-		log.Printf("当前排名 %d", nr)
+	str := fmt.Sprintf("当前排名 %d", new.Ranking)
+	verb, delta := "进步", old.Ranking-new.Ranking
+	if new.Ranking > old.Ranking {
+		verb, delta = "后退", new.Ranking-old.Ranking
 	}
+	str += fmt.Sprintf("，%s了 %d 名", verb, delta)
+	log.Println(str)
 
 	// 对比 已完成的问题
-	lenNew := len(new.Problems)
-	lenOld := len(old.Problems)
-	isChanged := false
+	lenOld, lenNew := len(old.Problems), len(new.Problems)
+	hasNewFinished := false
 
 	i := 0
 	for i < lenOld {
-		n, o := new.Problems[i], old.Problems[i]
+		o, n := old.Problems[i], new.Problems[i]
 
-		if n.ID != o.ID {
-			os.Remove("leetcode.json")
-			log.Fatalln("LeetCode 的 Problems 数据出现错位。已经删除 leetcode.json。 请重试")
-		}
-
-		if n.IsAccepted == true && o.IsAccepted == false {
+		if o.IsAccepted == false && n.IsAccepted == true {
 			log.Printf("～新完成～ %d.%s", n.ID, n.Title)
-			isChanged = true
+			dida("re", n)
+			hasNewFinished = true
 		}
 
 		i++
 	}
 
-	if !isChanged {
+	if !hasNewFinished {
 		log.Println("～ 没有新完成习题 ～")
 	}
 
 	// 检查新添加的习题
 	for i < lenNew {
 		if new.Problems[i].isAvailble() {
-			log.Printf("新题: %d.%s", new.Problems[i].ID, new.Problems[i].Title)
+			log.Printf("新题: %d - %s", new.Problems[i].ID, new.Problems[i].Title)
+			dida("do", new.Problems[i])
 			i++
 		}
 	}

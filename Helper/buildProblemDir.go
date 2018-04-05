@@ -6,7 +6,6 @@ import (
 	"log"
 	"os"
 	"os/exec"
-	"strconv"
 	"strings"
 	"syscall"
 	"time"
@@ -14,29 +13,15 @@ import (
 	"github.com/aQuaYi/GoKit"
 )
 
-func buildProblemDir(num string) {
+func buildProblemDir(problemNum int) {
+	log.Printf("~~ 开始生成第 %d 题的文件夹 ~~\n", problemNum)
 
-	log.Printf("~~ 开始生成第 %s 题的文件夹 ~~\n", num)
-	//
-	var err error
-	var problemNum int
-	//
-	// 获取问题编号
-	problemNum, err = strconv.Atoi(os.Args[1])
-	if err != nil {
-		log.Fatalln("无法获取问题编号：", err)
-	}
-	if problemNum <= 0 {
-		log.Fatalln("题目编号应该 >0")
-	}
-	//
 	// 需要创建答题文件夹
 	lc := newLeetCode()
 	//
 	makeProblemDir(lc.Problems, problemNum)
 	//
-	log.Printf("~~ 第 %s 题的文件夹，已经生成 ~~\n", num)
-
+	log.Printf("~~ 第 %d 题的文件夹，已经生成 ~~\n", problemNum)
 }
 
 func makeProblemDir(ps problems, problemNum int) {

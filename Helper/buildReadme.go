@@ -8,17 +8,13 @@ import (
 )
 
 func buildReadme() {
-	log.Println("~~ 开始重制 README.md 文档 ~~")
+	log.Println("开始，重建 README 文档")
 
 	lc := newLeetCode()
-	lc.update()
 
 	makeREADME(lc)
 
-	log.Println("~~ 重制 README.md 完成 ~~")
-
-	// 每更新一次，就保存一次
-	lc.save()
+	log.Println("完成，重建 README 文档")
 }
 
 func makeREADME(lc *leetcode) {
