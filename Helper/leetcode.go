@@ -67,16 +67,17 @@ func (lc *leetcode) save() {
 }
 
 func (lc *leetcode) refresh() {
-	log.Println("开始，刷新 LeetCode 数据")
-
 	if time.Since(lc.Updated) < 7*time.Minute {
 		log.Printf("LeetCode 数据在 %s 前刚刚更新过，跳过此次刷新\n", time.Since(lc.Updated))
 		return
 	}
 
+	log.Println("开始，刷新 LeetCode 数据")
 	newLC := getLeetCode()
 	logDiff(lc, newLC)
 	lc = newLC
+
+	lc.save()
 }
 
 func logDiff(old, new *leetcode) {
