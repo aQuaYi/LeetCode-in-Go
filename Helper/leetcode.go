@@ -54,7 +54,7 @@ func readLeetCode() (*leetcode, error) {
 }
 
 func (lc *leetcode) save() {
-	raw, err := json.Marshal(lc)
+	raw, err := json.MarshalIndent(lc, "", "\t")
 	if err != nil {
 		log.Fatal("无法把Leetcode数据转换成[]bytes: ", err)
 	}
