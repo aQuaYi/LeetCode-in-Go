@@ -90,17 +90,23 @@ func logDiff(old, new *leetcode) {
 	str += fmt.Sprintf("，%s了 %d 名", verb, delta)
 	log.Println(str)
 
-	// 对比 已完成的问题
+	// 检查新旧都有的问题
 	lenOld, lenNew := len(old.Problems), len(new.Problems)
 	hasNewFinished := false
 
 	i := 0
 	for i < lenOld {
 		o, n := old.Problems[i], new.Problems[i]
-
+		// 检查是 n 是否是新 完成
 		if o.IsAccepted == false && n.IsAccepted == true {
-			log.Printf("～新完成～ %d.%s", n.ID, n.Title)
+			log.Printf("～新完成～ %d - %s", n.ID, n.Title)
 			dida("re", n)
+			hasNewFinished = true
+		}
+		// 检查是 n 是否是新 收藏
+		if o.IsFavor == false && n.IsFavor == true {
+			log.Printf("～新收藏～ %d - %s", n.ID, n.Title)
+			dida("fa", n)
 			hasNewFinished = true
 		}
 
