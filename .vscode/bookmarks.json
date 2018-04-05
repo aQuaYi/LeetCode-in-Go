@@ -4,5 +4,12 @@
 	"onDidAddBookmarkEmitter": {},
 	"onDidRemoveBookmarkEmitter": {},
 	"onDidUpdateBookmarkEmitter": {},
-	"bookmarks": []
+	"bookmarks": [
+		{
+			"fsPath": "$ROOTPATH$/leetcode.json",
+			"bookmarks": [
+				6189
+			]
+		}
+	]
 }
