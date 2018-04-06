@@ -6,8 +6,8 @@ import (
 
 func canTransform(start string, end string) bool {
 	return strings.Replace(start, "X", "", -1) == strings.Replace(end, "X", "", -1) &&
-		isOK(idxs(start, 'R'), idxs(end, 'R'), isLessAndEqual) &&
-		isOK(idxs(start, 'L'), idxs(end, 'L'), isMoreAndEqual)
+		isOK(idxs(start, 'R'), idxs(end, 'R'), isLessOrEqual) &&
+		isOK(idxs(start, 'L'), idxs(end, 'L'), isMoreOrEqual)
 }
 
 // idxs 返回 s 中所有 b 字符的索引号
@@ -32,18 +32,16 @@ func isOK(a, b []int, isAvailable func(x, y int) bool) bool {
 	return true
 }
 
-func isLessAndEqual(x, y int) bool {
+func isLessOrEqual(x, y int) bool {
 	if x <= y {
 		return true
 	}
 	return false
 }
 
-func isMoreAndEqual(x, y int) bool {
+func isMoreOrEqual(x, y int) bool {
 	if x >= y {
 		return true
 	}
 	return false
 }
-
-// TODO: 使用 goroutine 来做，看看会不会快一些
