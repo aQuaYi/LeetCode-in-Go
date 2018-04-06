@@ -4,12 +4,26 @@ func isBipartite(graph [][]int) bool {
 	// set[i] == 'a' 表示 node i 在 a 集合中
 	// set[i] == 'b' 表示 node i 在 b 集合中
 	// set[i] == 0 表示 node i 还没有被标记集合
-	set := [100]byte{}
+	set := make([]byte, len(graph))
 
-	// 把 node 0 放入 a 集合
-	set[0] = 'a'
+	for i := 0; i < len(graph); i++ {
+		// len(graph[i])>0 说明，node i 与其他 node 相互联通
+		// set[i]== 0 说明，所有与 node i 相互联通的点，都没有被检查过
+		if len(graph[i]) > 0 && set[i] == 0 {
+			if !isOK(i, set, graph) {
+				return false
+			}
+		}
+	}
+
+	return true
+}
+
+func isOK(i int, set []byte, graph [][]int) bool {
+	// 把 node i 放入 a 集合
+	set[i] = 'a'
 	// nodes 收集了同在一个 set 中的所有点
-	nodes := []int{0}
+	nodes := []int{i}
 	// 与 nodes 所在集合相反的集合名称
 	theOtherSet := byte('b')
 	otherNodes := make([]int, 0, 100)
@@ -47,6 +61,7 @@ func isBipartite(graph [][]int) bool {
 			}
 		}
 
+		// 为了 for 循环可以结束
 		// 从 nodes 中排除 nodes[0]
 		nodes = nodes[1:]
 	}
