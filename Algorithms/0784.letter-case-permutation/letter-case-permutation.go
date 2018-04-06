@@ -4,8 +4,8 @@ import (
 	"strings"
 )
 
-func letterCasePermutation(S string) []string {
-	s := strings.ToLower(S)
+func letterCasePermutation(s string) []string {
+	s = strings.ToLower(s)
 
 	bytess := make([][]byte, 1<<countLetters(s))
 	for i := range bytess {
