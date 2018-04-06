@@ -16,6 +16,20 @@ var tcs = []struct {
 }{
 
 	{
+		"(av * 9) - (ar + 0) - ((bq - cv) + v * (b + bq - bk)) * (a - 12 + 2 - (6 * cc - 8 - bv + ag))",
+		[]string{"d", "g", "h", "j", "l", "o", "s", "u", "v", "w", "af", "ag", "ah", "ak", "at", "au", "av", "aw", "az", "bc", "be", "bg", "bj", "bm", "bn", "bq", "br", "bs", "bt", "bu", "bv", "bw", "bx", "by", "bz", "ca", "cd", "ce", "cf", "ch", "ci", "ck", "cq", "cr", "cs", "cu", "cv"},
+		[]int{3, 6, 7, 9, 11, 1, 5, 7, 8, 9, 10, 11, 12, 2, 11, 12, 0, 1, 4, 12, 1, 3, 6, 9, 10, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 2, 5, 6, 7, 9, 10, 12, 5, 6, 7, 9, 10},
+		[]string{"-8*a*b", "8*a*bk", "48*b*cc", "-48*bk*cc", "10*a", "-1*ar", "64*b", "-64*bk", "-60*cc", "-80"},
+	},
+
+	{
+		"(e + 8) * (e - 8)",
+		[]string{},
+		[]int{},
+		[]string{"1*e*e", "-64"},
+	},
+
+	{
 		"e + 8 - a + 5",
 		[]string{"e"},
 		[]int{1},
@@ -27,13 +41,6 @@ var tcs = []struct {
 		[]string{"e", "temperature"},
 		[]int{1, 12},
 		[]string{"-1*pressure", "5"},
-	},
-
-	{
-		"(e + 8) * (e - 8)",
-		[]string{},
-		[]int{},
-		[]string{"1*e*e", "-64"},
 	},
 
 	{
