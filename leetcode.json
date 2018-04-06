@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1455,
-	"Updated": "2018-04-06T15:52:46.714916769+08:00",
+	"Updated": "2018-04-06T19:15:39.471810935+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 159,
@@ -5461,7 +5461,7 @@
 			"ID": 453,
 			"Title": "Minimum Moves to Equal Array Elements",
 			"TitleSlug": "minimum-moves-to-equal-array-elements",
-			"PassRate": "47%",
+			"PassRate": "48%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -6529,7 +6529,7 @@
 			"ID": 542,
 			"Title": "01 Matrix",
 			"TitleSlug": "01-matrix",
-			"PassRate": "33%",
+			"PassRate": "32%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9733,7 +9733,7 @@
 			"ID": 809,
 			"Title": "Expressive Words",
 			"TitleSlug": "expressive-words",
-			"PassRate": "33%",
+			"PassRate": "34%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
