@@ -548,7 +548,7 @@
 |767|[Reorganize String](./Algorithms/0767.reorganize-string)|35%|Medium||
 |768|[Max Chunks To Make Sorted II](./Algorithms/0768.max-chunks-to-make-sorted-ii)|42%|Hard||
 |769|[Max Chunks To Make Sorted](./Algorithms/0769.max-chunks-to-make-sorted)|47%|Medium||
-|770|[Basic Calculator IV](./Algorithms/0770.basic-calculator-iv)|42%|Hard||
+|770|[Basic Calculator IV](./Algorithms/0770.basic-calculator-iv)|42%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |771|[Jewels and Stones](./Algorithms/0771.jewels-and-stones)|82%|Easy||
 |773|[Sliding Puzzle](./Algorithms/0773.sliding-puzzle)|47%|Hard||
 |775|[Global and Local Inversions](./Algorithms/0775.global-and-local-inversions)|31%|Medium||
