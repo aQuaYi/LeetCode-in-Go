@@ -10,7 +10,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|160|267|116|543|
+|**Accepted**|160|268|116|544|
 |**Total**|165|282|122|569|
 
 ## 题解
@@ -559,13 +559,13 @@
 |781|[Rabbits in Forest](./Algorithms/0781.rabbits-in-forest)|49%|Medium||
 |782|[Transform to Chessboard](./Algorithms/0782.transform-to-chessboard)|35%|Hard||
 |783|[Minimum Distance Between BST Nodes](./Algorithms/0783.minimum-distance-between-bst-nodes)|46%|Easy||
-|784|[Letter Case Permutation](./Algorithms/0784.letter-case-permutation)|52%|Easy||
-|785| * Is Graph Bipartite?|38%|Medium||
+|784|[Letter Case Permutation](./Algorithms/0784.letter-case-permutation)|52%|Easy|[❤](https://leetcode.com/list/oussv5j)|
+|785|[Is Graph Bipartite?](./Algorithms/0785.is-graph-bipartite)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |786| * K-th Smallest Prime Fraction|29%|Hard||
 |787| * Cheapest Flights Within K Stops|30%|Medium||
 |788| * Rotated Digits|50%|Easy||
 |789| * Escape The Ghosts|47%|Medium||
-|790| * Domino and Tromino Tiling|32%|Medium||
+|790| * Domino and Tromino Tiling|31%|Medium||
 |791| * Custom Sort String|60%|Medium||
 |792| * Number of Matching Subsequences|34%|Medium||
 |793| * Preimage Size of Factorial Zeroes Function|45%|Hard||
@@ -577,13 +577,13 @@
 |799| * Champagne Tower|28%|Medium||
 |801| * Minimum Swaps To Make Sequences Increasing|22%|Medium||
 |802| * Find Eventual Safe States|35%|Medium||
-|803| * Bricks Falling When Hit|19%|Hard||
+|803| * Bricks Falling When Hit|20%|Hard||
 |804| * Unique Morse Code Words|78%|Easy||
 |805| * Split Array With Same Average|19%|Hard||
 |806| * Number of Lines To Write String|65%|Easy||
 |807| * Max Increase to Keep City Skyline|82%|Medium||
 |808| * Soup Servings :new: |29%|Medium||
-|809| * Expressive Words :new: |34%|Medium||
+|809| * Expressive Words :new: |33%|Medium||
 |810| * Chalkboard XOR Game :new: |34%|Hard||
 |811| * Subdomain Visit Count :new: |65%|Easy||
 

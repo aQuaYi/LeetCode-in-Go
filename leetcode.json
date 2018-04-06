@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1455,
-	"Updated": "2018-04-06T20:43:00.818512866+08:00",
+	"Updated": "2018-04-06T23:26:48.64617925+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 160,
 			"Total": 165
 		},
 		"Medium": {
-			"Solved": 267,
+			"Solved": 268,
 			"Total": 282
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 122
 		},
 		"Total": {
-			"Solved": 543,
+			"Solved": 544,
 			"Total": 569
 		}
 	},
@@ -9447,9 +9447,9 @@
 			"TitleSlug": "is-graph-bipartite",
 			"PassRate": "38%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -9505,7 +9505,7 @@
 			"ID": 790,
 			"Title": "Domino and Tromino Tiling",
 			"TitleSlug": "domino-and-tromino-tiling",
-			"PassRate": "32%",
+			"PassRate": "31%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -9661,7 +9661,7 @@
 			"ID": 803,
 			"Title": "Bricks Falling When Hit",
 			"TitleSlug": "bricks-falling-when-hit",
-			"PassRate": "19%",
+			"PassRate": "20%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -9733,7 +9733,7 @@
 			"ID": 809,
 			"Title": "Expressive Words",
 			"TitleSlug": "expressive-words",
-			"PassRate": "34%",
+			"PassRate": "33%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
