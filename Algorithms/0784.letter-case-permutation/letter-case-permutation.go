@@ -1,54 +1,45 @@
 package problem0784
 
-import (
-	"strings"
-)
-
 func letterCasePermutation(s string) []string {
-	s = strings.ToLower(s)
-
-	bytess := make([][]byte, 1<<countLetters(s))
-	for i := range bytess {
-		bytess[i] = []byte(s)
+	size := len(s)
+	if size == 0 {
+		// 递归结束
+		return []string{""}
 	}
 
-	base := 2
-	half := base / 2
-	d := byte('a' - 'A')
-	for i := len(s) - 1; i >= 0; i-- {
-		if !isLetter(s[i]) {
-			continue
-		}
-		for j := 0; j < len(bytess); j++ {
-			if j%base < half {
-				continue
-			}
-			bytess[j][i] -= d
-		}
-
-		base *= 2
-		half *= 2
+	// 提取 s 的最后一个字符，作为后缀
+	lastByte := s[size-1]
+	postfixs := make([]string, 1, 2)
+	postfixs[0] = string(lastByte)
+	// 如果最后一个字符是字母的话
+	// 后缀，添加其另外一种书写形式
+	if b, ok := check(lastByte); ok {
+		postfixs = append(postfixs, string(b))
 	}
 
-	res := make([]string, len(bytess))
-	for i := range res {
-		res[i] = string(bytess[i])
+	// 利用递归，计算出 prefixs
+	prefixs := letterCasePermutation(s[:size-1])
+
+	// res 是 prefixs 和 postfixs 的乘积
+	res := make([]string, 0, len(prefixs)*len(postfixs))
+
+	for _, pre := range prefixs {
+		for _, post := range postfixs {
+			res = append(res, pre+post)
+		}
 	}
 
 	return res
 }
 
-// 统计 s 中的字母个数
-func countLetters(s string) uint {
-	res := uint(0)
-	for i := range s {
-		if isLetter(s[i]) {
-			res++
-		}
+// 如果 b 是字母的话，
+// 返回另外一种书写形式和 true
+func check(b byte) (byte, bool) {
+	if 'a' <= b && b <= 'z' {
+		return b + 'A' - 'a', true
 	}
-	return res
-}
-
-func isLetter(b byte) bool {
-	return 'a' <= b && b <= 'z'
+	if 'A' <= b && b <= 'Z' {
+		return b + 'a' - 'A', true
+	}
+	return 0, false
 }
