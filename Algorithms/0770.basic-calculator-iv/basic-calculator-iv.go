@@ -7,53 +7,45 @@ import (
 )
 
 func basicCalculatorIV(expression string, evalvars []string, evalints []int) []string {
-	m := make(map[string]int, len(evalvars))
+	// 把 evalvars 和 evalints 转换成 eemap
+	eemap := make(map[string]int, len(evalvars))
 	for i := range evalvars {
-		m[evalvars[i]] = evalints[i]
+		eemap[evalvars[i]] = evalints[i]
 	}
 
+	// 删除 expression 中的所有空格，为下面的 parse 有准备
 	expression = strings.Replace(expression, " ", "", -1)
 
-	numbers := parse(expression, m)
+	numbers := parse(expression, eemap)
 
-	return getResult(numbers)
+	return format(numbers)
 }
 
 func parse(expression string, m map[string]int) nums {
-	expression += "+" // 为了方便 for 循环
 	// n1 opt1 n2 opt2 n3 opt3 ...
 	// 根据 opt2 是否为 * 决定运算顺序
+	// 像以下这样提前设置 n1，n2，opt1，opt2
+	// 不会改变运算结果，却可以简化 for 循环
 	n1, n2 := nums{num{c: 0}}, nums{num{c: 0}}
 	opt1, opt2 := byte('+'), byte('+')
-	for len(expression) > 0 {
+
+	for {
 		var n3 nums
 		var i int
 		// 获取 n3
 		if expression[0] == '(' {
-			// 遇见括号，就把括号中的内容取出
-			// 进行递归
+			// 遇见括号，就把括号中的内容取出，进行递归
 			i = indexOfCounterParentheses(expression)
 			n3 = parse(expression[1:i], m)
-			// 此时，i 是右括号的索引值
+			// i++前，i 是右括号的索引值
 			i++
-			// 此时，i 是右括号右边的运算符号的索引值
+			// i++后，i 是右括号右边的运算符号的索引值
 		} else {
 			i = indexOfNextOpt(expression)
-			n3raw := expression[:i]
-			v, ok := m[n3raw]
-			if ok {
-				n3 = nums{num{c: v}}
-			} else {
-				i3, err := strconv.Atoi(n3raw)
-				if err != nil {
-					n3 = nums{num{vars: []string{n3raw}, c: 1}}
-				} else {
-					n3 = nums{num{c: i3}}
-				}
-			}
+			n3 = creatNums(expression[:i], m)
 		}
 
-		// 根据 opt2
+		// 根据 opt2 进行不同的运算
 		if opt2 == '*' {
 			n2 = operate(opt2, n2, n3)
 		} else {
@@ -62,13 +54,30 @@ func parse(expression string, m map[string]int) nums {
 			opt1 = opt2
 		}
 
+		// 检查 i ，确保后续操作不溢出
+		if i == len(expression) {
+			break
+		}
+
 		opt2 = expression[i]
 		expression = expression[i+1:]
 	}
 
-	res := operate(opt1, n1, n2)
+	return operate(opt1, n1, n2)
+}
 
-	return res
+func creatNums(exp string, m map[string]int) nums {
+	constant, ok := m[exp]
+	if ok {
+		return nums{num{c: constant}}
+	}
+
+	constant, err := strconv.Atoi(exp)
+	if err != nil {
+		return nums{num{vars: []string{exp}, c: 1}}
+	}
+
+	return nums{num{c: constant}}
 }
 
 func operate(opt byte, a, b nums) nums {
@@ -105,7 +114,6 @@ func mult(a, b nums) nums {
 			res = append(res, num{vars: vars, c: a[i].c * b[j].c})
 		}
 	}
-
 	return res
 }
 
@@ -138,7 +146,7 @@ func indexOfNextOpt(expression string) int {
 	return i
 }
 
-func getResult(numbers nums) []string {
+func format(numbers nums) []string {
 	numbers = update(numbers)
 	res := make([]string, 0, len(numbers))
 
@@ -160,7 +168,7 @@ type nums []num
 
 type num struct {
 	vars []string // 变量
-	key  string   // 变量排序后，使用 "*" 连接，成为 key
+	key  string   // vars 排序后，使用 "*" 连接，成为 key
 	c    int      // 系数
 }
 
@@ -171,6 +179,7 @@ func update(ns nums) nums {
 		ns[i].key = strings.Join(ns[i].vars, "*")
 	}
 
+	// 对 ns 进行排序
 	sort.Slice(ns, func(i int, j int) bool {
 		leni := len(ns[i].vars)
 		lenj := len(ns[j].vars)
@@ -191,15 +200,16 @@ func update(ns nums) nums {
 		return false
 	})
 
+	// 合并相同 key 的 c
 	res := make(nums, 1, len(ns))
 	res[0] = ns[0]
 	i, j := 0, 1
 	for j < len(ns) {
-		if res[i].key != ns[j].key {
+		if res[i].key == ns[j].key {
+			res[i].c += ns[j].c
+		} else {
 			res = append(res, ns[j])
 			i++
-		} else {
-			res[i].c += ns[j].c
 		}
 		j++
 	}
