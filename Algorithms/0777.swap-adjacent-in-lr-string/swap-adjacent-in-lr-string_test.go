@@ -15,6 +15,24 @@ var tcs = []struct {
 }{
 
 	{
+		"RXXXXXLXXXX",
+		"LRXXXXXXXXX",
+		false,
+	},
+
+	{
+		"LXXXXXXXXX",
+		"XXXXXLXXXX",
+		false,
+	},
+
+	{
+		"XXXXXRXXXX",
+		"RXXXXXXXXX",
+		false,
+	},
+
+	{
 		"XXXXXLXXXX",
 		"LXXXXXXXXX",
 		true,
