@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1455,
-	"Updated": "2018-04-06T19:15:39.471810935+08:00",
+	"Updated": "2018-04-06T20:38:04.263061436+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 159,
+			"Solved": 160,
 			"Total": 165
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 122
 		},
 		"Total": {
-			"Solved": 542,
+			"Solved": 543,
 			"Total": 569
 		}
 	},
@@ -6529,7 +6529,7 @@
 			"ID": 542,
 			"Title": "01 Matrix",
 			"TitleSlug": "01-matrix",
-			"PassRate": "32%",
+			"PassRate": "33%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -8197,7 +8197,7 @@
 			"ID": 681,
 			"Title": "Next Closest Time",
 			"TitleSlug": "next-closest-time",
-			"PassRate": "41%",
+			"PassRate": "42%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -9435,7 +9435,7 @@
 			"TitleSlug": "letter-case-permutation",
 			"PassRate": "52%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -9661,7 +9661,7 @@
 			"ID": 803,
 			"Title": "Bricks Falling When Hit",
 			"TitleSlug": "bricks-falling-when-hit",
-			"PassRate": "20%",
+			"PassRate": "19%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,

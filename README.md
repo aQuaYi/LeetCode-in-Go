@@ -10,7 +10,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|159|267|116|542|
+|**Accepted**|160|267|116|543|
 |**Total**|165|282|122|569|
 
 ## 题解
@@ -346,7 +346,7 @@
 |450|[Delete Node in a BST](./Algorithms/0450.delete-node-in-a-bst)|37%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |451|[Sort Characters By Frequency](./Algorithms/0451.sort-characters-by-frequency)|51%|Medium||
 |452|[Minimum Number of Arrows to Burst Balloons](./Algorithms/0452.minimum-number-of-arrows-to-burst-balloons)|44%|Medium||
-|453|[Minimum Moves to Equal Array Elements](./Algorithms/0453.minimum-moves-to-equal-array-elements)|47%|Easy||
+|453|[Minimum Moves to Equal Array Elements](./Algorithms/0453.minimum-moves-to-equal-array-elements)|48%|Easy||
 |454|[4Sum II](./Algorithms/0454.4sum-ii)|47%|Medium||
 |455|[Assign Cookies](./Algorithms/0455.assign-cookies)|47%|Easy||
 |456|[132 Pattern](./Algorithms/0456.132-pattern)|27%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -559,7 +559,7 @@
 |781|[Rabbits in Forest](./Algorithms/0781.rabbits-in-forest)|49%|Medium||
 |782|[Transform to Chessboard](./Algorithms/0782.transform-to-chessboard)|35%|Hard||
 |783|[Minimum Distance Between BST Nodes](./Algorithms/0783.minimum-distance-between-bst-nodes)|46%|Easy||
-|784| * Letter Case Permutation|52%|Easy||
+|784|[Letter Case Permutation](./Algorithms/0784.letter-case-permutation)|52%|Easy||
 |785| * Is Graph Bipartite?|38%|Medium||
 |786| * K-th Smallest Prime Fraction|29%|Hard||
 |787| * Cheapest Flights Within K Stops|30%|Medium||
@@ -577,13 +577,13 @@
 |799| * Champagne Tower|28%|Medium||
 |801| * Minimum Swaps To Make Sequences Increasing|22%|Medium||
 |802| * Find Eventual Safe States|35%|Medium||
-|803| * Bricks Falling When Hit|20%|Hard||
+|803| * Bricks Falling When Hit|19%|Hard||
 |804| * Unique Morse Code Words|78%|Easy||
 |805| * Split Array With Same Average|19%|Hard||
 |806| * Number of Lines To Write String|65%|Easy||
 |807| * Max Increase to Keep City Skyline|82%|Medium||
 |808| * Soup Servings :new: |29%|Medium||
-|809| * Expressive Words :new: |33%|Medium||
+|809| * Expressive Words :new: |34%|Medium||
 |810| * Chalkboard XOR Game :new: |34%|Hard||
 |811| * Subdomain Visit Count :new: |65%|Easy||
 
