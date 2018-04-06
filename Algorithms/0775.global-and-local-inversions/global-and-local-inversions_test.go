@@ -1,4 +1,4 @@
-package Problem0775
+package problem0775
 
 import (
 	"fmt"
@@ -12,6 +12,11 @@ var tcs = []struct {
 	A   []int
 	ans bool
 }{
+
+	{
+		[]int{0, 1, 2},
+		true,
+	},
 
 	{
 		[]int{1, 0, 2},

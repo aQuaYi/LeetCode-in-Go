@@ -1,4 +1,4 @@
-package Problem0775
+package problem0775
 
 func isIdealPermutation(a []int) bool {
 	for i := 0; i < len(a)-1; i++ {
