@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1410,
-	"Updated": "2018-04-07T15:10:50.644765383+08:00",
+	"Updated": "2018-04-07T16:08:21.150450004+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 160,
+			"Solved": 161,
 			"Total": 165
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 122
 		},
 		"Total": {
-			"Solved": 545,
+			"Solved": 546,
 			"Total": 569
 		}
 	},
@@ -9483,7 +9483,7 @@
 			"TitleSlug": "rotated-digits",
 			"PassRate": "50%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
