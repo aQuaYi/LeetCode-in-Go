@@ -6,23 +6,24 @@ import (
 
 // 二分法查找
 func kthSmallestPrimeFraction(A []int, K int) []int {
+	// 确保 A 处于升序
 	sort.Ints(A)
-	lo, hi := 0.0, 1.0
 
+	lo, hi := 0.0, 1.0
 	for {
 		mid := (lo + hi) / 2
 
 		p, q, count := countUnder(mid, A)
 
-		if count < K {
+		switch {
+		case count < K:
 			lo = mid
-		} else if count > K {
+		case count > K:
 			hi = mid
-		} else {
+		default:
 			return []int{p, q}
 		}
 	}
-
 }
 
 // 统计 A 中所有能组成的分数中，数值 <= max 的数量
