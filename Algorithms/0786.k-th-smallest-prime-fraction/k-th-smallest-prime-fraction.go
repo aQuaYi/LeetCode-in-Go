@@ -4,31 +4,52 @@ import (
 	"sort"
 )
 
+// 二分法查找
 func kthSmallestPrimeFraction(A []int, K int) []int {
-	n := len(A)
-
-	if n == 2 {
-		return A
-	}
-
 	sort.Ints(A)
+	lo, hi := 0.0, 1.0
 
-	fracs := make([][]int, 0, n)
+	for {
+		mid := (lo + hi) / 2
 
-	for i := n - 1; i > 0; i-- {
-		for j := 0; j < n-1; j++ {
-			fracs = append(fracs, []int{A[j], A[i]})
+		p, q, count := countUnder(mid, A)
+
+		if count < K {
+			lo = mid
+		} else if count > K {
+			hi = mid
+		} else {
+			return []int{p, q}
 		}
 	}
 
-	sort.Slice(fracs, func(i int, j int) bool {
-		return isLess(fracs[i], fracs[j])
-	})
-
-	return fracs[K-1]
 }
 
-// 如果 a < b ，则返回 true
-func isLess(a, b []int) bool {
-	return a[0]*b[1] < a[1]*b[0]
+//
+func countUnder(mid float64, A []int) (int, int, int) {
+	n, p, q, count := len(A), 0, 1, 0
+
+	// A[i] 和 p 表示分子
+	// A[j] 和 q 表示分母
+	for i := 0; i < n-1; i++ {
+		lo, hi := i, n
+		for lo < hi {
+			m := (hi + lo) / 2
+			if float64(A[i]) <= mid*float64(A[m]) {
+				hi = m
+			} else {
+				lo = m + 1
+			}
+		}
+		j := lo
+		count += n - j
+
+		if n-j > 0 && p*A[j] < q*A[i] {
+			p = A[i]
+			q = A[j]
+		}
+
+	}
+
+	return p, q, count
 }

@@ -57,3 +57,42 @@ func Benchmark_kthSmallestPrimeFraction(b *testing.B) {
 		}
 	}
 }
+
+func Test_countUnder(t *testing.T) {
+	type args struct {
+		mid float64
+		A   []int
+	}
+	tests := []struct {
+		name  string
+		args  args
+		want  int
+		want1 int
+		want2 int
+	}{
+		{
+			"测试",
+			args{
+				mid: 0.4,
+				A:   []int{1, 2, 3, 5},
+			},
+			2,
+			5,
+			3,
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			got, got1, got2 := countUnder(tt.args.mid, tt.args.A)
+			if got != tt.want {
+				t.Errorf("countUnder() got = %v, want %v", got, tt.want)
+			}
+			if got1 != tt.want1 {
+				t.Errorf("countUnder() got1 = %v, want %v", got1, tt.want1)
+			}
+			if got2 != tt.want2 {
+				t.Errorf("countUnder() got2 = %v, want %v", got2, tt.want2)
+			}
+		})
+	}
+}
