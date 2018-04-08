@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1384,
-	"Updated": "2018-04-08T21:13:15.546041624+08:00",
+	"Updated": "2018-04-08T21:40:28.873263084+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 161,
@@ -829,7 +829,7 @@
 			"ID": 67,
 			"Title": "Add Binary",
 			"TitleSlug": "add-binary",
-			"PassRate": "33%",
+			"PassRate": "34%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
