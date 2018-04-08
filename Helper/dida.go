@@ -16,6 +16,10 @@ func dida(prefix string, p problem) {
 func mailToDida(task string) {
 	cfg := getConfig()
 
+	if cfg.SMTP == "" {
+		log.Println("没有配置 Email，无法发送任务")
+	}
+
 	m := gomail.NewMessage()
 	m.SetHeader("From", cfg.From)
 	m.SetHeader("To", cfg.To)
