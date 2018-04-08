@@ -1,23 +1,23 @@
 {
 	"Username": "aQuaYi",
-	"Ranking": 1410,
-	"Updated": "2018-04-07T16:08:21.150450004+08:00",
+	"Ranking": 1384,
+	"Updated": "2018-04-08T21:13:15.546041624+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 161,
-			"Total": 165
+			"Total": 166
 		},
 		"Medium": {
 			"Solved": 268,
-			"Total": 282
+			"Total": 284
 		},
 		"Hard": {
 			"Solved": 117,
-			"Total": 122
+			"Total": 123
 		},
 		"Total": {
 			"Solved": 546,
-			"Total": 569
+			"Total": 573
 		}
 	},
 	"Problems": [
@@ -541,7 +541,7 @@
 			"ID": 43,
 			"Title": "Multiply Strings",
 			"TitleSlug": "multiply-strings",
-			"PassRate": "28%",
+			"PassRate": "27%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -6529,7 +6529,7 @@
 			"ID": 542,
 			"Title": "01 Matrix",
 			"TitleSlug": "01-matrix",
-			"PassRate": "32%",
+			"PassRate": "33%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -7969,7 +7969,7 @@
 			"ID": 662,
 			"Title": "Maximum Width of Binary Tree",
 			"TitleSlug": "maximum-width-of-binary-tree",
-			"PassRate": "37%",
+			"PassRate": "38%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -8041,7 +8041,7 @@
 			"ID": 668,
 			"Title": "Kth Smallest Number in Multiplication Table",
 			"TitleSlug": "kth-smallest-number-in-multiplication-table",
-			"PassRate": "39%",
+			"PassRate": "40%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9121,7 +9121,7 @@
 			"ID": 758,
 			"Title": "Bold Words in String",
 			"TitleSlug": "bold-words-in-string",
-			"PassRate": "38%",
+			"PassRate": "37%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -9133,7 +9133,7 @@
 			"ID": 759,
 			"Title": "Employee Free Time",
 			"TitleSlug": "employee-free-time",
-			"PassRate": "51%",
+			"PassRate": "52%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -9637,7 +9637,7 @@
 			"ID": 801,
 			"Title": "Minimum Swaps To Make Sequences Increasing",
 			"TitleSlug": "minimum-swaps-to-make-sequences-increasing",
-			"PassRate": "22%",
+			"PassRate": "23%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -9661,7 +9661,7 @@
 			"ID": 803,
 			"Title": "Bricks Falling When Hit",
 			"TitleSlug": "bricks-falling-when-hit",
-			"PassRate": "20%",
+			"PassRate": "19%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -9673,7 +9673,7 @@
 			"ID": 804,
 			"Title": "Unique Morse Code Words",
 			"TitleSlug": "unique-morse-code-words",
-			"PassRate": "78%",
+			"PassRate": "77%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -9721,12 +9721,12 @@
 			"ID": 808,
 			"Title": "Soup Servings",
 			"TitleSlug": "soup-servings",
-			"PassRate": "29%",
+			"PassRate": "30%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
 			"IsFavor": false,
-			"IsNew": true,
+			"IsNew": false,
 			"HasNoGoOption": false
 		},
 		{
@@ -9745,7 +9745,7 @@
 			"ID": 810,
 			"Title": "Chalkboard XOR Game",
 			"TitleSlug": "chalkboard-xor-game",
-			"PassRate": "34%",
+			"PassRate": "35%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -9759,6 +9759,54 @@
 			"TitleSlug": "subdomain-visit-count",
 			"PassRate": "65%",
 			"Difficulty": "Easy",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 812,
+			"Title": "Largest Triangle Area",
+			"TitleSlug": "largest-triangle-area",
+			"PassRate": "48%",
+			"Difficulty": "Easy",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 813,
+			"Title": "Largest Sum of Averages",
+			"TitleSlug": "largest-sum-of-averages",
+			"PassRate": "30%",
+			"Difficulty": "Medium",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 814,
+			"Title": "Binary Tree Pruning",
+			"TitleSlug": "binary-tree-pruning",
+			"PassRate": "74%",
+			"Difficulty": "Medium",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 815,
+			"Title": "Bus Routes",
+			"TitleSlug": "bus-routes",
+			"PassRate": "29%",
+			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
 			"IsFavor": false,

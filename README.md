@@ -1,8 +1,10 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
-[![LeetCode 排名](https://img.shields.io/badge/Ranking-1410-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/Ranking-1384-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
+
+> 本人有强迫症，请帮忙把 star 点成偶数。谢谢。
 
 ## 进度
 
@@ -11,7 +13,7 @@
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
 |**Accepted**|161|268|117|546|
-|**Total**|165|282|122|569|
+|**Total**|166|284|123|573|
 
 ## 题解
 
@@ -59,7 +61,7 @@
 |40|[Combination Sum II](./Algorithms/0040.combination-sum-ii)|35%|Medium||
 |41|[First Missing Positive](./Algorithms/0041.first-missing-positive)|25%|Hard||
 |42|[Trapping Rain Water](./Algorithms/0042.trapping-rain-water)|37%|Hard||
-|43|[Multiply Strings](./Algorithms/0043.multiply-strings)|28%|Medium||
+|43|[Multiply Strings](./Algorithms/0043.multiply-strings)|27%|Medium||
 |44|[Wildcard Matching](./Algorithms/0044.wildcard-matching)|20%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |45|[Jump Game II](./Algorithms/0045.jump-game-ii)|26%|Hard||
 |46|[Permutations](./Algorithms/0046.permutations)|47%|Medium||
@@ -408,7 +410,7 @@
 |539|[Minimum Time Difference](./Algorithms/0539.minimum-time-difference)|45%|Medium||
 |540|[Single Element in a Sorted Array](./Algorithms/0540.single-element-in-a-sorted-array)|55%|Medium||
 |541|[Reverse String II](./Algorithms/0541.reverse-string-ii)|43%|Easy||
-|542|[01 Matrix](./Algorithms/0542.01-matrix)|32%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|542|[01 Matrix](./Algorithms/0542.01-matrix)|33%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |543|[Diameter of Binary Tree](./Algorithms/0543.diameter-of-binary-tree)|44%|Easy||
 |546|[Remove Boxes](./Algorithms/0546.remove-boxes)|35%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |547|[Friend Circles](./Algorithms/0547.friend-circles)|49%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -470,11 +472,11 @@
 |658|[Find K Closest Elements](./Algorithms/0658.find-k-closest-elements)|34%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |659|[Split Array into Consecutive Subsequences](./Algorithms/0659.split-array-into-consecutive-subsequences)|36%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |661|[Image Smoother](./Algorithms/0661.image-smoother)|46%|Easy||
-|662|[Maximum Width of Binary Tree](./Algorithms/0662.maximum-width-of-binary-tree)|37%|Medium||
+|662|[Maximum Width of Binary Tree](./Algorithms/0662.maximum-width-of-binary-tree)|38%|Medium||
 |664|[Strange Printer](./Algorithms/0664.strange-printer)|33%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |665|[Non-decreasing Array](./Algorithms/0665.non-decreasing-array)|20%|Easy||
 |667|[Beautiful Arrangement II](./Algorithms/0667.beautiful-arrangement-ii)|51%|Medium||
-|668|[Kth Smallest Number in Multiplication Table](./Algorithms/0668.kth-smallest-number-in-multiplication-table)|39%|Hard||
+|668|[Kth Smallest Number in Multiplication Table](./Algorithms/0668.kth-smallest-number-in-multiplication-table)|40%|Hard||
 |669|[Trim a Binary Search Tree](./Algorithms/0669.trim-a-binary-search-tree)|58%|Easy||
 |670|[Maximum Swap](./Algorithms/0670.maximum-swap)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |671|[Second Minimum Node In a Binary Tree](./Algorithms/0671.second-minimum-node-in-a-binary-tree)|41%|Easy||
@@ -575,17 +577,21 @@
 |797| * All Paths From Source to Target|68%|Medium||
 |798| * Smallest Rotation with Highest Score|30%|Hard||
 |799| * Champagne Tower|28%|Medium||
-|801| * Minimum Swaps To Make Sequences Increasing|22%|Medium||
+|801| * Minimum Swaps To Make Sequences Increasing|23%|Medium||
 |802| * Find Eventual Safe States|35%|Medium||
-|803| * Bricks Falling When Hit|20%|Hard||
-|804| * Unique Morse Code Words|78%|Easy||
+|803| * Bricks Falling When Hit|19%|Hard||
+|804| * Unique Morse Code Words|77%|Easy||
 |805| * Split Array With Same Average|19%|Hard||
 |806| * Number of Lines To Write String|65%|Easy||
 |807| * Max Increase to Keep City Skyline|82%|Medium||
-|808| * Soup Servings :new: |29%|Medium||
+|808| * Soup Servings|30%|Medium||
 |809| * Expressive Words :new: |34%|Medium||
-|810| * Chalkboard XOR Game :new: |34%|Hard||
+|810| * Chalkboard XOR Game :new: |35%|Hard||
 |811| * Subdomain Visit Count :new: |65%|Easy||
+|812| * Largest Triangle Area :new: |48%|Easy||
+|813| * Largest Sum of Averages :new: |30%|Medium||
+|814| * Binary Tree Pruning :new: |74%|Medium||
+|815| * Bus Routes :new: |29%|Hard||
 
 以下免费的算法题，暂时不能使用 Go 解答
 
