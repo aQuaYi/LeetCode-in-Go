@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1384,
-	"Updated": "2018-04-08T21:44:34.794667896+08:00",
+	"Updated": "2018-04-08T22:13:06.129458963+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 161,
@@ -829,7 +829,7 @@
 			"ID": 67,
 			"Title": "Add Binary",
 			"TitleSlug": "add-binary",
-			"PassRate": "34%",
+			"PassRate": "33%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9133,7 +9133,7 @@
 			"ID": 759,
 			"Title": "Employee Free Time",
 			"TitleSlug": "employee-free-time",
-			"PassRate": "52%",
+			"PassRate": "51%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": true,

@@ -85,7 +85,7 @@
 |64|[Minimum Path Sum](./Algorithms/0064.minimum-path-sum)|40%|Medium||
 |65|[Valid Number](./Algorithms/0065.valid-number)|12%|Hard||
 |66|[Plus One](./Algorithms/0066.plus-one)|39%|Easy||
-|67|[Add Binary](./Algorithms/0067.add-binary)|34%|Easy||
+|67|[Add Binary](./Algorithms/0067.add-binary)|33%|Easy||
 |68|[Text Justification](./Algorithms/0068.text-justification)|19%|Hard||
 |69|[Sqrt(x)](./Algorithms/0069.sqrtx)|28%|Easy||
 |70|[Climbing Stairs](./Algorithms/0070.climbing-stairs)|41%|Easy||
