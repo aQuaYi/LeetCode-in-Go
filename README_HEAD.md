@@ -3,3 +3,5 @@
 [![LeetCode 排名](https://img.shields.io/badge/Ranking-%d-blue.svg)](https://leetcode.com/%s/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
+
+> 本人有强迫症，请帮忙把 star 点成偶数。谢谢。
