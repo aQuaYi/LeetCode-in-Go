@@ -53,7 +53,7 @@ func saveLocal(task string) {
 		os.Create(didaTaskFile)
 	}
 
-	ts = append(ts, []byte("\n"+task)...)
+	ts = append(ts, []byte(task+"\n")...)
 
 	err = ioutil.WriteFile(didaTaskFile, ts, 0755)
 	if err != nil {
