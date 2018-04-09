@@ -590,6 +590,8 @@
 |811| * Subdomain Visit Count|64%|Easy||
 |812| * Largest Triangle Area :new: |49%|Easy||
 |813| * Largest Sum of Averages :new: |32%|Medium||
+|814| * Binary Tree Pruning :new: |74%|Medium||
+|815| * Bus Routes :new: |31%|Hard||
 
 以下免费的算法题，暂时不能使用 Go 解答
 
