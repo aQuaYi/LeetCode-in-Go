@@ -11,7 +11,7 @@ import (
 )
 
 const (
-	didaTaskFile = "dida.task"
+	didaTaskFile = "dida.task.txt"
 )
 
 func dida(prefix string, p problem) {
@@ -50,7 +50,8 @@ func saveLocal(task string) {
 		if !os.IsNotExist(err) {
 			log.Fatalf("无法读取 %s：%s\n", didaTaskFile, err)
 		}
-		os.Create(didaTaskFile)
+		f, _ := os.Create(didaTaskFile)
+		f.Close()
 	}
 
 	ts = append(ts, []byte(task+"\n")...)
