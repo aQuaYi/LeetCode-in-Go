@@ -61,7 +61,7 @@
 |40|[Combination Sum II](./Algorithms/0040.combination-sum-ii)|35%|Medium||
 |41|[First Missing Positive](./Algorithms/0041.first-missing-positive)|25%|Hard||
 |42|[Trapping Rain Water](./Algorithms/0042.trapping-rain-water)|37%|Hard||
-|43|[Multiply Strings](./Algorithms/0043.multiply-strings)|27%|Medium||
+|43|[Multiply Strings](./Algorithms/0043.multiply-strings)|28%|Medium||
 |44|[Wildcard Matching](./Algorithms/0044.wildcard-matching)|20%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |45|[Jump Game II](./Algorithms/0045.jump-game-ii)|26%|Hard||
 |46|[Permutations](./Algorithms/0046.permutations)|47%|Medium||
@@ -85,7 +85,7 @@
 |64|[Minimum Path Sum](./Algorithms/0064.minimum-path-sum)|40%|Medium||
 |65|[Valid Number](./Algorithms/0065.valid-number)|12%|Hard||
 |66|[Plus One](./Algorithms/0066.plus-one)|39%|Easy||
-|67|[Add Binary](./Algorithms/0067.add-binary)|33%|Easy||
+|67|[Add Binary](./Algorithms/0067.add-binary)|34%|Easy||
 |68|[Text Justification](./Algorithms/0068.text-justification)|19%|Hard||
 |69|[Sqrt(x)](./Algorithms/0069.sqrtx)|28%|Easy||
 |70|[Climbing Stairs](./Algorithms/0070.climbing-stairs)|41%|Easy||
@@ -201,7 +201,7 @@
 |215|[Kth Largest Element in an Array](./Algorithms/0215.kth-largest-element-in-an-array)|40%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |216|[Combination Sum III](./Algorithms/0216.combination-sum-iii)|47%|Medium||
 |217|[Contains Duplicate](./Algorithms/0217.contains-duplicate)|47%|Easy||
-|218|[The Skyline Problem](./Algorithms/0218.the-skyline-problem)|28%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|218|[The Skyline Problem](./Algorithms/0218.the-skyline-problem)|29%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |219|[Contains Duplicate II](./Algorithms/0219.contains-duplicate-ii)|32%|Easy||
 |220|[Contains Duplicate III](./Algorithms/0220.contains-duplicate-iii)|18%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |221|[Maximal Square](./Algorithms/0221.maximal-square)|30%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -420,7 +420,7 @@
 |554|[Brick Wall](./Algorithms/0554.brick-wall)|46%|Medium||
 |556|[Next Greater Element III](./Algorithms/0556.next-greater-element-iii)|28%|Medium||
 |557|[Reverse Words in a String III](./Algorithms/0557.reverse-words-in-a-string-iii)|60%|Easy||
-|560|[Subarray Sum Equals K](./Algorithms/0560.subarray-sum-equals-k)|40%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|560|[Subarray Sum Equals K](./Algorithms/0560.subarray-sum-equals-k)|39%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |561|[Array Partition I](./Algorithms/0561.array-partition-i)|66%|Easy||
 |563|[Binary Tree Tilt](./Algorithms/0563.binary-tree-tilt)|47%|Easy||
 |564|[Find the Closest Palindrome](./Algorithms/0564.find-the-closest-palindrome)|17%|Hard||
@@ -522,8 +522,8 @@
 |730|[Count Different Palindromic Subsequences](./Algorithms/0730.count-different-palindromic-subsequences)|35%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |731|[My Calendar II](./Algorithms/0731.my-calendar-ii)|37%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |732|[My Calendar III](./Algorithms/0732.my-calendar-iii)|50%|Hard||
-|733|[Flood Fill](./Algorithms/0733.flood-fill)|47%|Easy||
-|735|[Asteroid Collision](./Algorithms/0735.asteroid-collision)|37%|Medium||
+|733|[Flood Fill](./Algorithms/0733.flood-fill)|48%|Easy||
+|735|[Asteroid Collision](./Algorithms/0735.asteroid-collision)|36%|Medium||
 |736|[Parse Lisp Expression](./Algorithms/0736.parse-lisp-expression)|42%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |738|[Monotone Increasing Digits](./Algorithms/0738.monotone-increasing-digits)|40%|Medium||
 |739|[Daily Temperatures](./Algorithms/0739.daily-temperatures)|52%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -574,24 +574,24 @@
 |794| * Valid Tic-Tac-Toe State|27%|Medium||
 |795| * Number of Subarrays with Bounded Maximum|40%|Medium||
 |796| * Rotate String|55%|Easy||
-|797| * All Paths From Source to Target|68%|Medium||
+|797| * All Paths From Source to Target|69%|Medium||
 |798| * Smallest Rotation with Highest Score|30%|Hard||
 |799| * Champagne Tower|28%|Medium||
 |801| * Minimum Swaps To Make Sequences Increasing|23%|Medium||
 |802| * Find Eventual Safe States|35%|Medium||
-|803| * Bricks Falling When Hit|19%|Hard||
+|803| * Bricks Falling When Hit|20%|Hard||
 |804| * Unique Morse Code Words|77%|Easy||
 |805| * Split Array With Same Average|19%|Hard||
 |806| * Number of Lines To Write String|65%|Easy||
 |807| * Max Increase to Keep City Skyline|82%|Medium||
 |808| * Soup Servings|30%|Medium||
-|809| * Expressive Words :new: |34%|Medium||
-|810| * Chalkboard XOR Game :new: |35%|Hard||
-|811| * Subdomain Visit Count :new: |65%|Easy||
-|812| * Largest Triangle Area :new: |48%|Easy||
-|813| * Largest Sum of Averages :new: |30%|Medium||
+|809| * Expressive Words|34%|Medium||
+|810| * Chalkboard XOR Game|35%|Hard||
+|811| * Subdomain Visit Count|65%|Easy||
+|812| * Largest Triangle Area :new: |49%|Easy||
+|813| * Largest Sum of Averages :new: |32%|Medium||
 |814| * Binary Tree Pruning :new: |74%|Medium||
-|815| * Bus Routes :new: |29%|Hard||
+|815| * Bus Routes :new: |31%|Hard||
 
 以下免费的算法题，暂时不能使用 Go 解答
 
