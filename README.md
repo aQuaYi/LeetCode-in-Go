@@ -201,7 +201,7 @@
 |215|[Kth Largest Element in an Array](./Algorithms/0215.kth-largest-element-in-an-array)|40%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |216|[Combination Sum III](./Algorithms/0216.combination-sum-iii)|47%|Medium||
 |217|[Contains Duplicate](./Algorithms/0217.contains-duplicate)|47%|Easy||
-|218|[The Skyline Problem](./Algorithms/0218.the-skyline-problem)|29%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|218|[The Skyline Problem](./Algorithms/0218.the-skyline-problem)|28%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |219|[Contains Duplicate II](./Algorithms/0219.contains-duplicate-ii)|32%|Easy||
 |220|[Contains Duplicate III](./Algorithms/0220.contains-duplicate-iii)|18%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |221|[Maximal Square](./Algorithms/0221.maximal-square)|30%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -587,7 +587,7 @@
 |808| * Soup Servings|30%|Medium||
 |809| * Expressive Words|34%|Medium||
 |810| * Chalkboard XOR Game|35%|Hard||
-|811| * Subdomain Visit Count|65%|Easy||
+|811| * Subdomain Visit Count|64%|Easy||
 |812| * Largest Triangle Area :new: |49%|Easy||
 |813| * Largest Sum of Averages :new: |32%|Medium||
 |814| * Binary Tree Pruning :new: |74%|Medium||
