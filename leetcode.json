@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1384,
-	"Updated": "2018-04-09T09:24:51.620381771+08:00",
+	"Updated": "2018-04-09T09:38:29.688309018+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 161,
@@ -9757,7 +9757,7 @@
 			"ID": 811,
 			"Title": "Subdomain Visit Count",
 			"TitleSlug": "subdomain-visit-count",
-			"PassRate": "64%",
+			"PassRate": "65%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
