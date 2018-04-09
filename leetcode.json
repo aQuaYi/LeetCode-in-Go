@@ -9788,30 +9788,6 @@
 			"IsFavor": false,
 			"IsNew": true,
 			"HasNoGoOption": false
-		},
-		{
-			"ID": 814,
-			"Title": "Binary Tree Pruning",
-			"TitleSlug": "binary-tree-pruning",
-			"PassRate": "74%",
-			"Difficulty": "Medium",
-			"IsAccepted": false,
-			"IsPaid": false,
-			"IsFavor": false,
-			"IsNew": true,
-			"HasNoGoOption": false
-		},
-		{
-			"ID": 815,
-			"Title": "Bus Routes",
-			"TitleSlug": "bus-routes",
-			"PassRate": "31%",
-			"Difficulty": "Hard",
-			"IsAccepted": false,
-			"IsPaid": false,
-			"IsFavor": false,
-			"IsNew": true,
-			"HasNoGoOption": false
 		}
 	]
 }
