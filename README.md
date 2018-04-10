@@ -12,14 +12,14 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|161|269|117|547|
+|**Accepted**|161|270|117|548|
 |**Total**|166|284|123|573|
 
 ## 题解
 
 |题号|题目|通过率|难度|收藏|
 |:-:|:-|:-: | :-: | :-: |
-|1|[Two Sum](./Algorithms/0001.two-sum)|37%|Easy||
+|1|[Two Sum](./Algorithms/0001.two-sum)|38%|Easy||
 |2|[Add Two Numbers](./Algorithms/0002.add-two-numbers)|28%|Medium||
 |3|[Longest Substring Without Repeating Characters](./Algorithms/0003.longest-substring-without-repeating-characters)|24%|Medium||
 |4|[Median of Two Sorted Arrays](./Algorithms/0004.median-of-two-sorted-arrays)|23%|Hard||
@@ -434,9 +434,9 @@
 |583|[Delete Operation for Two Strings](./Algorithms/0583.delete-operation-for-two-strings)|44%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |587|[Erect the Fence](./Algorithms/0587.erect-the-fence)|33%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |591|[Tag Validator](./Algorithms/0591.tag-validator)|30%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|592|[Fraction Addition and Subtraction](./Algorithms/0592.fraction-addition-and-subtraction)|46%|Medium||
+|592|[Fraction Addition and Subtraction](./Algorithms/0592.fraction-addition-and-subtraction)|45%|Medium||
 |593|[Valid Square](./Algorithms/0593.valid-square)|39%|Medium||
-|594|[Longest Harmonious Subsequence](./Algorithms/0594.longest-harmonious-subsequence)|41%|Easy||
+|594|[Longest Harmonious Subsequence](./Algorithms/0594.longest-harmonious-subsequence)|40%|Easy||
 |598|[Range Addition II](./Algorithms/0598.range-addition-ii)|48%|Easy||
 |599|[Minimum Index Sum of Two Lists](./Algorithms/0599.minimum-index-sum-of-two-lists)|46%|Easy||
 |600|[Non-negative Integers without Consecutive Ones](./Algorithms/0600.non-negative-integers-without-consecutive-ones)|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -523,7 +523,7 @@
 |731|[My Calendar II](./Algorithms/0731.my-calendar-ii)|37%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |732|[My Calendar III](./Algorithms/0732.my-calendar-iii)|50%|Hard||
 |733|[Flood Fill](./Algorithms/0733.flood-fill)|48%|Easy||
-|735|[Asteroid Collision](./Algorithms/0735.asteroid-collision)|36%|Medium||
+|735|[Asteroid Collision](./Algorithms/0735.asteroid-collision)|37%|Medium||
 |736|[Parse Lisp Expression](./Algorithms/0736.parse-lisp-expression)|42%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |738|[Monotone Increasing Digits](./Algorithms/0738.monotone-increasing-digits)|40%|Medium||
 |739|[Daily Temperatures](./Algorithms/0739.daily-temperatures)|52%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -542,7 +542,7 @@
 |756|[Pyramid Transition Matrix](./Algorithms/0756.pyramid-transition-matrix)|45%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |757|[Set Intersection Size At Least Two](./Algorithms/0757.set-intersection-size-at-least-two)|34%|Hard||
 |761|[Special Binary String](./Algorithms/0761.special-binary-string)|41%|Hard||
-|762|[Prime Number of Set Bits in Binary Representation](./Algorithms/0762.prime-number-of-set-bits-in-binary-representation)|54%|Easy||
+|762|[Prime Number of Set Bits in Binary Representation](./Algorithms/0762.prime-number-of-set-bits-in-binary-representation)|55%|Easy||
 |763|[Partition Labels](./Algorithms/0763.partition-labels)|64%|Medium||
 |764|[Largest Plus Sign](./Algorithms/0764.largest-plus-sign)|37%|Medium||
 |765|[Couples Holding Hands](./Algorithms/0765.couples-holding-hands)|47%|Hard||
@@ -562,11 +562,11 @@
 |782|[Transform to Chessboard](./Algorithms/0782.transform-to-chessboard)|35%|Hard||
 |783|[Minimum Distance Between BST Nodes](./Algorithms/0783.minimum-distance-between-bst-nodes)|46%|Easy||
 |784|[Letter Case Permutation](./Algorithms/0784.letter-case-permutation)|52%|Easy|[❤](https://leetcode.com/list/oussv5j)|
-|785|[Is Graph Bipartite?](./Algorithms/0785.is-graph-bipartite)|39%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|785|[Is Graph Bipartite?](./Algorithms/0785.is-graph-bipartite)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |786|[K-th Smallest Prime Fraction](./Algorithms/0786.k-th-smallest-prime-fraction)|29%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|787|[Cheapest Flights Within K Stops](./Algorithms/0787.cheapest-flights-within-k-stops)|30%|Medium||
+|787|[Cheapest Flights Within K Stops](./Algorithms/0787.cheapest-flights-within-k-stops)|30%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |788|[Rotated Digits](./Algorithms/0788.rotated-digits)|50%|Easy||
-|789| * Escape The Ghosts|47%|Medium||
+|789|[Escape The Ghosts](./Algorithms/0789.escape-the-ghosts)|47%|Medium||
 |790| * Domino and Tromino Tiling|31%|Medium||
 |791| * Custom Sort String|60%|Medium||
 |792| * Number of Matching Subsequences|34%|Medium||
@@ -574,7 +574,7 @@
 |794| * Valid Tic-Tac-Toe State|27%|Medium||
 |795| * Number of Subarrays with Bounded Maximum|40%|Medium||
 |796| * Rotate String|55%|Easy||
-|797| * All Paths From Source to Target|69%|Medium||
+|797| * All Paths From Source to Target|68%|Medium||
 |798| * Smallest Rotation with Highest Score|31%|Hard||
 |799| * Champagne Tower|28%|Medium||
 |801| * Minimum Swaps To Make Sequences Increasing|23%|Medium||
@@ -587,9 +587,9 @@
 |808| * Soup Servings|30%|Medium||
 |809| * Expressive Words|34%|Medium||
 |810| * Chalkboard XOR Game|35%|Hard||
-|811| * Subdomain Visit Count|65%|Easy||
-|812| * Largest Triangle Area :new: |50%|Easy||
-|813| * Largest Sum of Averages :new: |34%|Medium||
+|811| * Subdomain Visit Count|64%|Easy||
+|812| * Largest Triangle Area :new: |51%|Easy||
+|813| * Largest Sum of Averages :new: |35%|Medium||
 |814| * Binary Tree Pruning :new: |74%|Medium||
 |815| * Bus Routes :new: |30%|Hard||
 
