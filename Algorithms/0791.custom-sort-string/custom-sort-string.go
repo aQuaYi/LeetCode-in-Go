@@ -14,5 +14,3 @@ func customSortString(S string, T string) string {
 
 	return res + T
 }
-
-// TODO: strings.builder
