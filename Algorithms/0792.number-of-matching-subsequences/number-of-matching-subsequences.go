@@ -1,27 +1,25 @@
 package problem0792
 
-func numMatchingSubseq(S string, words []string) int {
-	isChecked := make(map[string]bool, len(words))
-	res := 0
+func numMatchingSubseq(s string, words []string) int {
+	dic := make(map[string]int, len(words))
 	for _, w := range words {
-		if isChecked[w] {
-			res++
-			continue
-		}
+		dic[w]++
+	}
 
-		if isMatching(S, w) {
-			isChecked[w] = true
-			res++
+	res := 0
+	for w := range dic {
+		if isMatching(s, w) {
+			res += dic[w]
 		}
 	}
 
 	return res
 }
 
-func isMatching(s, c string) bool {
-	m, n, j := len(s), len(c), 0
+func isMatching(s, w string) bool {
+	m, n, j := len(s), len(w), 0
 	for i := 0; i < m && j < n; i++ {
-		if s[i] == c[j] {
+		if s[i] == w[j] {
 			j++
 		}
 	}
