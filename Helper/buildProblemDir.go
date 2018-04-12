@@ -67,9 +67,11 @@ func build(p problem) {
 	creatREADME(p)
 
 	fc := getFunction(p.link())
-	creatGo(p, fc)
 
 	fcName, para, ans := parseFunction(fc)
+
+	creatGo(p, fc, ans)
+
 	creatGoTest(p, fcName, para, ans)
 
 	// 利用 chrome 打开题目 submissions 页面
@@ -99,12 +101,26 @@ func build(p problem) {
 	log.Printf("%d.%s 的文件夹，创建完毕。\n", p.ID, p.Title)
 }
 
-func creatGo(p problem, function string) {
+var typeMap = map[string]string{
+	"int":     "0",
+	"float64": "0",
+	"bool":    "false",
+}
+
+func creatGo(p problem, function, ansType string) {
 	fileFormat := `package %s
 
 %s
 `
 	content := fmt.Sprintf(fileFormat, p.packageName(), function)
+
+	returns := "return nil\n}"
+	if v, ok := typeMap[ansType]; ok {
+		returns = fmt.Sprintf("return %s\n}", v)
+	}
+
+	content = strings.Replace(content, "}", returns, -1)
+
 	filename := fmt.Sprintf("%s/%s.go", p.Dir(), p.TitleSlug)
 
 	write(filename, content)

@@ -16,7 +16,7 @@ func parseFunction(fc string) (fcName, para, ansType string) {
 
 	fcName = fc[a+1 : b]
 	para = strings.Replace(fc[b+1:c], ",", "\n", -1)
-	ansType = fc[c+1 : d]
+	ansType = strings.TrimSpace(fc[c+1 : d])
 
 	return
 }
