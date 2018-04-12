@@ -1,37 +1,20 @@
 package problem0790
 
-var mod = 1000000007
-var results []int
+const mod = 1e9 + 7
 
 func numTilings(N int) int {
-	if results == nil {
-		results = make([]int, 1001)
-		results[0] = 1
-		results[1] = 1
+	dp := [1001]int{}
+	dp[1] = 1
+	dp[2] = 2
+	dp[3] = 5
+	if N <= 3 {
+		return dp[N]
 	}
 
-	res := 0
-	for i := 0; i < N; i++ {
-		if results[i] == 0 {
-			results[i] = numTilings(i)
-		}
-		res += results[i] * chain(N-i)
-		res %= mod
+	for i := 4; i <= N; i++ {
+		dp[i] = 2*dp[i-1] + dp[i-3]
+		dp[i] %= mod
 	}
 
-	return res
-}
-
-// chain 由砖组合而成，当沿着竖缝切下去的时候，总会破坏另一块砖
-// chain(3) = 2 代表了 长度为 3 的 chain 一共有 2 块，它们是
-//  XXY XYY
-//  XYY XXY
-// chain(5) = 2 代表了 长度为 5 的 chain 一共有 2 块，它们是
-//  XXZZY XZZYY
-//  XZZYY XXZZY
-func chain(x int) int {
-	if x >= 3 {
-		return 2
-	}
-	return 1
+	return dp[N]
 }
