@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1351,
-	"Updated": "2018-04-12T13:23:55.016501801+08:00",
+	"Updated": "2018-04-12T15:05:03.179097731+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 161,
 			"Total": 166
 		},
 		"Medium": {
-			"Solved": 271,
+			"Solved": 272,
 			"Total": 284
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 123
 		},
 		"Total": {
-			"Solved": 549,
+			"Solved": 550,
 			"Total": 573
 		}
 	},
@@ -4453,7 +4453,7 @@
 			"ID": 369,
 			"Title": "Plus One Linked List",
 			"TitleSlug": "plus-one-linked-list",
-			"PassRate": "54%",
+			"PassRate": "55%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -8557,7 +8557,7 @@
 			"ID": 711,
 			"Title": "Number of Distinct Islands II",
 			"TitleSlug": "number-of-distinct-islands-ii",
-			"PassRate": "41%",
+			"PassRate": "42%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -9133,7 +9133,7 @@
 			"ID": 759,
 			"Title": "Employee Free Time",
 			"TitleSlug": "employee-free-time",
-			"PassRate": "52%",
+			"PassRate": "51%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -9507,9 +9507,9 @@
 			"TitleSlug": "domino-and-tromino-tiling",
 			"PassRate": "32%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -9541,7 +9541,7 @@
 			"ID": 793,
 			"Title": "Preimage Size of Factorial Zeroes Function",
 			"TitleSlug": "preimage-size-of-factorial-zeroes-function",
-			"PassRate": "44%",
+			"PassRate": "45%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
