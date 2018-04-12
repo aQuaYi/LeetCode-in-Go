@@ -1,29 +1,29 @@
 package problem0792
 
-import (
-	"strings"
-)
-
 func numMatchingSubseq(S string, words []string) int {
+	isChecked := make(map[string]bool, len(words))
 	res := 0
 	for _, w := range words {
+		if isChecked[w] {
+			res++
+			continue
+		}
+
 		if isMatching(S, w) {
+			isChecked[w] = true
 			res++
 		}
 	}
+
 	return res
 }
 
 func isMatching(s, c string) bool {
-	idx := 0
-
-	for i := 0; i < len(c); i++ {
-		tempIdx := strings.Index(s[idx:], c[i:i+1])
-		if tempIdx == -1 {
-			return false
+	m, n, j := len(s), len(c), 0
+	for i := 0; i < m && j < n; i++ {
+		if s[i] == c[j] {
+			j++
 		}
-		idx += tempIdx + 1
 	}
-
-	return true
+	return j == n
 }
