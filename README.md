@@ -12,7 +12,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|161|272|117|550|
+|**Accepted**|161|273|117|551|
 |**Total**|166|284|123|573|
 
 ## 题解
@@ -434,7 +434,7 @@
 |583|[Delete Operation for Two Strings](./Algorithms/0583.delete-operation-for-two-strings)|44%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |587|[Erect the Fence](./Algorithms/0587.erect-the-fence)|33%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |591|[Tag Validator](./Algorithms/0591.tag-validator)|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|592|[Fraction Addition and Subtraction](./Algorithms/0592.fraction-addition-and-subtraction)|45%|Medium||
+|592|[Fraction Addition and Subtraction](./Algorithms/0592.fraction-addition-and-subtraction)|46%|Medium||
 |593|[Valid Square](./Algorithms/0593.valid-square)|39%|Medium||
 |594|[Longest Harmonious Subsequence](./Algorithms/0594.longest-harmonious-subsequence)|40%|Easy||
 |598|[Range Addition II](./Algorithms/0598.range-addition-ii)|48%|Easy||
@@ -569,7 +569,7 @@
 |789|[Escape The Ghosts](./Algorithms/0789.escape-the-ghosts)|47%|Medium||
 |790|[Domino and Tromino Tiling](./Algorithms/0790.domino-and-tromino-tiling)|32%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |791|[Custom Sort String](./Algorithms/0791.custom-sort-string)|60%|Medium||
-|792| * Number of Matching Subsequences|35%|Medium||
+|792|[Number of Matching Subsequences](./Algorithms/0792.number-of-matching-subsequences)|35%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |793| * Preimage Size of Factorial Zeroes Function|45%|Hard||
 |794| * Valid Tic-Tac-Toe State|27%|Medium||
 |795| * Number of Subarrays with Bounded Maximum|40%|Medium||
@@ -590,7 +590,7 @@
 |811| * Subdomain Visit Count|65%|Easy||
 |812| * Largest Triangle Area :new: |51%|Easy||
 |813| * Largest Sum of Averages :new: |37%|Medium||
-|814| * Binary Tree Pruning :new: |74%|Medium||
+|814| * Binary Tree Pruning :new: |73%|Medium||
 |815| * Bus Routes :new: |30%|Hard||
 
 以下免费的算法题，暂时不能使用 Go 解答

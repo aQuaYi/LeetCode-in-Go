@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1351,
-	"Updated": "2018-04-12T21:38:06.892144472+08:00",
+	"Updated": "2018-04-12T22:25:52.324513059+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 161,
 			"Total": 166
 		},
 		"Medium": {
-			"Solved": 272,
+			"Solved": 273,
 			"Total": 284
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 123
 		},
 		"Total": {
-			"Solved": 550,
+			"Solved": 551,
 			"Total": 573
 		}
 	},
@@ -7129,7 +7129,7 @@
 			"ID": 592,
 			"Title": "Fraction Addition and Subtraction",
 			"TitleSlug": "fraction-addition-and-subtraction",
-			"PassRate": "45%",
+			"PassRate": "46%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9531,9 +9531,9 @@
 			"TitleSlug": "number-of-matching-subsequences",
 			"PassRate": "35%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},

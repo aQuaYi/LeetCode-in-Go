@@ -114,9 +114,9 @@ func creatGo(p problem, function, ansType string) {
 `
 	content := fmt.Sprintf(fileFormat, p.packageName(), function)
 
-	returns := "return nil\n}"
+	returns := "\treturn nil\n}"
 	if v, ok := typeMap[ansType]; ok {
-		returns = fmt.Sprintf("return %s\n}", v)
+		returns = fmt.Sprintf("\treturn %s\n}", v)
 	}
 
 	content = strings.Replace(content, "}", returns, -1)
