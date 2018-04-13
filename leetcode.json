@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1351,
-	"Updated": "2018-04-13T13:58:02.397927927+08:00",
+	"Updated": "2018-04-13T15:28:58.534438654+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 162,
@@ -8197,7 +8197,7 @@
 			"ID": 681,
 			"Title": "Next Closest Time",
 			"TitleSlug": "next-closest-time",
-			"PassRate": "42%",
+			"PassRate": "41%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -9313,7 +9313,7 @@
 			"ID": 774,
 			"Title": "Minimize Max Distance to Gas Station",
 			"TitleSlug": "minimize-max-distance-to-gas-station",
-			"PassRate": "29%",
+			"PassRate": "30%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": true,
