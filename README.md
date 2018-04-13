@@ -1,6 +1,6 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
-[![LeetCode 排名](https://img.shields.io/badge/Ranking-1351-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/aQuaYi-1351-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 
@@ -75,7 +75,7 @@
 |54|[Spiral Matrix](./Algorithms/0054.spiral-matrix)|27%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |55|[Jump Game](./Algorithms/0055.jump-game)|29%|Medium||
 |56|[Merge Intervals](./Algorithms/0056.merge-intervals)|31%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|57|[Insert Interval](./Algorithms/0057.insert-interval)|28%|Hard||
+|57|[Insert Interval](./Algorithms/0057.insert-interval)|29%|Hard||
 |58|[Length of Last Word](./Algorithms/0058.length-of-last-word)|32%|Easy||
 |59|[Spiral Matrix II](./Algorithms/0059.spiral-matrix-ii)|41%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |60|[Permutation Sequence](./Algorithms/0060.permutation-sequence)|29%|Medium||
@@ -141,7 +141,7 @@
 |122|[Best Time to Buy and Sell Stock II](./Algorithms/0122.best-time-to-buy-and-sell-stock-ii)|47%|Easy||
 |123|[Best Time to Buy and Sell Stock III](./Algorithms/0123.best-time-to-buy-and-sell-stock-iii)|30%|Hard||
 |124|[Binary Tree Maximum Path Sum](./Algorithms/0124.binary-tree-maximum-path-sum)|27%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|125|[Valid Palindrome](./Algorithms/0125.valid-palindrome)|26%|Easy||
+|125|[Valid Palindrome](./Algorithms/0125.valid-palindrome)|27%|Easy||
 |126|[Word Ladder II](./Algorithms/0126.word-ladder-ii)|14%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |127|[Word Ladder](./Algorithms/0127.word-ladder)|20%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |128|[Longest Consecutive Sequence](./Algorithms/0128.longest-consecutive-sequence)|38%|Hard||
@@ -434,7 +434,7 @@
 |583|[Delete Operation for Two Strings](./Algorithms/0583.delete-operation-for-two-strings)|44%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |587|[Erect the Fence](./Algorithms/0587.erect-the-fence)|33%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |591|[Tag Validator](./Algorithms/0591.tag-validator)|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|592|[Fraction Addition and Subtraction](./Algorithms/0592.fraction-addition-and-subtraction)|46%|Medium||
+|592|[Fraction Addition and Subtraction](./Algorithms/0592.fraction-addition-and-subtraction)|45%|Medium||
 |593|[Valid Square](./Algorithms/0593.valid-square)|39%|Medium||
 |594|[Longest Harmonious Subsequence](./Algorithms/0594.longest-harmonious-subsequence)|40%|Easy||
 |598|[Range Addition II](./Algorithms/0598.range-addition-ii)|48%|Easy||
@@ -566,11 +566,11 @@
 |786|[K-th Smallest Prime Fraction](./Algorithms/0786.k-th-smallest-prime-fraction)|29%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |787|[Cheapest Flights Within K Stops](./Algorithms/0787.cheapest-flights-within-k-stops)|30%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |788|[Rotated Digits](./Algorithms/0788.rotated-digits)|50%|Easy||
-|789|[Escape The Ghosts](./Algorithms/0789.escape-the-ghosts)|47%|Medium||
+|789|[Escape The Ghosts](./Algorithms/0789.escape-the-ghosts)|48%|Medium||
 |790|[Domino and Tromino Tiling](./Algorithms/0790.domino-and-tromino-tiling)|32%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |791|[Custom Sort String](./Algorithms/0791.custom-sort-string)|60%|Medium||
 |792|[Number of Matching Subsequences](./Algorithms/0792.number-of-matching-subsequences)|35%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|793| * Preimage Size of Factorial Zeroes Function|45%|Hard||
+|793| * Preimage Size of Factorial Zeroes Function|44%|Hard||
 |794| * Valid Tic-Tac-Toe State|27%|Medium||
 |795| * Number of Subarrays with Bounded Maximum|40%|Medium||
 |796| * Rotate String|54%|Easy||
@@ -588,9 +588,9 @@
 |809| * Expressive Words|34%|Medium||
 |810| * Chalkboard XOR Game|35%|Hard||
 |811| * Subdomain Visit Count|65%|Easy||
-|812| * Largest Triangle Area :new: |51%|Easy||
-|813| * Largest Sum of Averages :new: |37%|Medium||
-|814| * Binary Tree Pruning :new: |73%|Medium||
+|812| * Largest Triangle Area|52%|Easy||
+|813| * Largest Sum of Averages|37%|Medium||
+|814| * Binary Tree Pruning :new: |74%|Medium||
 |815| * Bus Routes :new: |30%|Hard||
 
 以下免费的算法题，暂时不能使用 Go 解答

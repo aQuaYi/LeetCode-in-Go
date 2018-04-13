@@ -54,5 +54,5 @@ func makeReadmeFile(lc *leetcode) {
 
 func getHead(lc *leetcode) string {
 	headFormat := string(read("README_HEAD.md"))
-	return fmt.Sprintf(headFormat, lc.Ranking, lc.Username)
+	return fmt.Sprintf(headFormat, lc.Username, lc.Ranking, lc.Username)
 }
