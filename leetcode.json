@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1351,
-	"Updated": "2018-04-13T11:54:45.673410478+08:00",
+	"Updated": "2018-04-13T13:58:02.397927927+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 162,
@@ -12,11 +12,11 @@
 			"Total": 284
 		},
 		"Hard": {
-			"Solved": 117,
+			"Solved": 118,
 			"Total": 123
 		},
 		"Total": {
-			"Solved": 552,
+			"Solved": 553,
 			"Total": 573
 		}
 	},
@@ -9313,7 +9313,7 @@
 			"ID": 774,
 			"Title": "Minimize Max Distance to Gas Station",
 			"TitleSlug": "minimize-max-distance-to-gas-station",
-			"PassRate": "30%",
+			"PassRate": "29%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -9543,9 +9543,9 @@
 			"TitleSlug": "preimage-size-of-factorial-zeroes-function",
 			"PassRate": "44%",
 			"Difficulty": "Hard",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -9793,7 +9793,7 @@
 			"ID": 814,
 			"Title": "Binary Tree Pruning",
 			"TitleSlug": "binary-tree-pruning",
-			"PassRate": "74%",
+			"PassRate": "73%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,

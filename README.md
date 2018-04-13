@@ -10,7 +10,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|162|273|117|552|
+|**Accepted**|162|273|118|553|
 |**Total**|166|284|123|573|
 
 ## 题解
@@ -568,7 +568,7 @@
 |790|[Domino and Tromino Tiling](./Algorithms/0790.domino-and-tromino-tiling)|32%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |791|[Custom Sort String](./Algorithms/0791.custom-sort-string)|60%|Medium||
 |792|[Number of Matching Subsequences](./Algorithms/0792.number-of-matching-subsequences)|35%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|793| * Preimage Size of Factorial Zeroes Function|44%|Hard||
+|793|[Preimage Size of Factorial Zeroes Function](./Algorithms/0793.preimage-size-of-factorial-zeroes-function)|44%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |794| * Valid Tic-Tac-Toe State|27%|Medium||
 |795| * Number of Subarrays with Bounded Maximum|40%|Medium||
 |796|[Rotate String](./Algorithms/0796.rotate-string)|54%|Easy||
@@ -588,7 +588,7 @@
 |811| * Subdomain Visit Count|65%|Easy||
 |812| * Largest Triangle Area|52%|Easy||
 |813| * Largest Sum of Averages|37%|Medium||
-|814| * Binary Tree Pruning :new: |74%|Medium||
+|814| * Binary Tree Pruning :new: |73%|Medium||
 |815| * Bus Routes :new: |30%|Hard||
 
 以下免费的算法题，暂时不能使用 Go 解答
