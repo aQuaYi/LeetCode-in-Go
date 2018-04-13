@@ -4,15 +4,13 @@
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 
-> 本人有强迫症，请帮忙把 star 点成偶数。谢谢。
-
 ## 进度
 
 > 统计规则：1.免费题，2.算法题，3.能用 Go 解答
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|161|273|117|551|
+|**Accepted**|162|273|117|552|
 |**Total**|166|284|123|573|
 
 ## 题解
@@ -250,7 +248,7 @@
 |310|[Minimum Height Trees](./Algorithms/0310.minimum-height-trees)|28%|Medium||
 |312|[Burst Balloons](./Algorithms/0312.burst-balloons)|43%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |313|[Super Ugly Number](./Algorithms/0313.super-ugly-number)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|315|[Count of Smaller Numbers After Self](./Algorithms/0315.count-of-smaller-numbers-after-self)|34%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|315|[Count of Smaller Numbers After Self](./Algorithms/0315.count-of-smaller-numbers-after-self)|35%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |316|[Remove Duplicate Letters](./Algorithms/0316.remove-duplicate-letters)|30%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |318|[Maximum Product of Word Lengths](./Algorithms/0318.maximum-product-of-word-lengths)|45%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |319|[Bulb Switcher](./Algorithms/0319.bulb-switcher)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -281,7 +279,7 @@
 |355|[Design Twitter](./Algorithms/0355.design-twitter)|25%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |357|[Count Numbers with Unique Digits](./Algorithms/0357.count-numbers-with-unique-digits)|46%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |363|[Max Sum of Rectangle No Larger Than K](./Algorithms/0363.max-sum-of-rectangle-no-larger-than-k)|33%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|365|[Water and Jug Problem](./Algorithms/0365.water-and-jug-problem)|28%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|365|[Water and Jug Problem](./Algorithms/0365.water-and-jug-problem)|27%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |367|[Valid Perfect Square](./Algorithms/0367.valid-perfect-square)|38%|Easy||
 |368|[Largest Divisible Subset](./Algorithms/0368.largest-divisible-subset)|33%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |371|[Sum of Two Integers](./Algorithms/0371.sum-of-two-integers)|50%|Easy|[❤](https://leetcode.com/list/oussv5j)|
@@ -472,7 +470,7 @@
 |658|[Find K Closest Elements](./Algorithms/0658.find-k-closest-elements)|34%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |659|[Split Array into Consecutive Subsequences](./Algorithms/0659.split-array-into-consecutive-subsequences)|36%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |661|[Image Smoother](./Algorithms/0661.image-smoother)|46%|Easy||
-|662|[Maximum Width of Binary Tree](./Algorithms/0662.maximum-width-of-binary-tree)|37%|Medium||
+|662|[Maximum Width of Binary Tree](./Algorithms/0662.maximum-width-of-binary-tree)|38%|Medium||
 |664|[Strange Printer](./Algorithms/0664.strange-printer)|34%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |665|[Non-decreasing Array](./Algorithms/0665.non-decreasing-array)|20%|Easy||
 |667|[Beautiful Arrangement II](./Algorithms/0667.beautiful-arrangement-ii)|51%|Medium||
@@ -519,7 +517,7 @@
 |726|[Number of Atoms](./Algorithms/0726.number-of-atoms)|43%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |728|[Self Dividing Numbers](./Algorithms/0728.self-dividing-numbers)|66%|Easy||
 |729|[My Calendar I](./Algorithms/0729.my-calendar-i)|42%|Medium||
-|730|[Count Different Palindromic Subsequences](./Algorithms/0730.count-different-palindromic-subsequences)|34%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|730|[Count Different Palindromic Subsequences](./Algorithms/0730.count-different-palindromic-subsequences)|35%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |731|[My Calendar II](./Algorithms/0731.my-calendar-ii)|37%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |732|[My Calendar III](./Algorithms/0732.my-calendar-iii)|50%|Hard||
 |733|[Flood Fill](./Algorithms/0733.flood-fill)|47%|Easy||
@@ -548,7 +546,7 @@
 |765|[Couples Holding Hands](./Algorithms/0765.couples-holding-hands)|48%|Hard||
 |766|[Toeplitz Matrix](./Algorithms/0766.toeplitz-matrix)|57%|Easy||
 |767|[Reorganize String](./Algorithms/0767.reorganize-string)|35%|Medium||
-|768|[Max Chunks To Make Sorted II](./Algorithms/0768.max-chunks-to-make-sorted-ii)|42%|Hard||
+|768|[Max Chunks To Make Sorted II](./Algorithms/0768.max-chunks-to-make-sorted-ii)|43%|Hard||
 |769|[Max Chunks To Make Sorted](./Algorithms/0769.max-chunks-to-make-sorted)|47%|Medium||
 |770|[Basic Calculator IV](./Algorithms/0770.basic-calculator-iv)|43%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |771|[Jewels and Stones](./Algorithms/0771.jewels-and-stones)|82%|Easy||
@@ -557,13 +555,13 @@
 |777|[Swap Adjacent in LR String](./Algorithms/0777.swap-adjacent-in-lr-string)|27%|Medium||
 |778|[Swim in Rising Water](./Algorithms/0778.swim-in-rising-water)|44%|Hard||
 |779|[K-th Symbol in Grammar](./Algorithms/0779.k-th-symbol-in-grammar)|35%|Medium||
-|780|[Reaching Points](./Algorithms/0780.reaching-points)|21%|Hard||
+|780|[Reaching Points](./Algorithms/0780.reaching-points)|22%|Hard||
 |781|[Rabbits in Forest](./Algorithms/0781.rabbits-in-forest)|49%|Medium||
 |782|[Transform to Chessboard](./Algorithms/0782.transform-to-chessboard)|35%|Hard||
 |783|[Minimum Distance Between BST Nodes](./Algorithms/0783.minimum-distance-between-bst-nodes)|47%|Easy||
 |784|[Letter Case Permutation](./Algorithms/0784.letter-case-permutation)|52%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |785|[Is Graph Bipartite?](./Algorithms/0785.is-graph-bipartite)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|786|[K-th Smallest Prime Fraction](./Algorithms/0786.k-th-smallest-prime-fraction)|29%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|786|[K-th Smallest Prime Fraction](./Algorithms/0786.k-th-smallest-prime-fraction)|30%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |787|[Cheapest Flights Within K Stops](./Algorithms/0787.cheapest-flights-within-k-stops)|30%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |788|[Rotated Digits](./Algorithms/0788.rotated-digits)|50%|Easy||
 |789|[Escape The Ghosts](./Algorithms/0789.escape-the-ghosts)|48%|Medium||
@@ -573,7 +571,7 @@
 |793| * Preimage Size of Factorial Zeroes Function|44%|Hard||
 |794| * Valid Tic-Tac-Toe State|27%|Medium||
 |795| * Number of Subarrays with Bounded Maximum|40%|Medium||
-|796| * Rotate String|54%|Easy||
+|796|[Rotate String](./Algorithms/0796.rotate-string)|54%|Easy||
 |797| * All Paths From Source to Target|69%|Medium||
 |798| * Smallest Rotation with Highest Score|31%|Hard||
 |799| * Champagne Tower|28%|Medium||
