@@ -10,7 +10,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|162|273|118|553|
+|**Accepted**|162|274|118|554|
 |**Total**|166|284|123|573|
 
 ## 题解
@@ -493,7 +493,7 @@
 |686|[Repeated String Match](./Algorithms/0686.repeated-string-match)|32%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |687|[Longest Univalue Path](./Algorithms/0687.longest-univalue-path)|32%|Easy||
 |688|[Knight Probability in Chessboard](./Algorithms/0688.knight-probability-in-chessboard)|39%|Medium||
-|689|[Maximum Sum of 3 Non-Overlapping Subarrays](./Algorithms/0689.maximum-sum-of-3-non-overlapping-subarrays)|41%|Hard||
+|689|[Maximum Sum of 3 Non-Overlapping Subarrays](./Algorithms/0689.maximum-sum-of-3-non-overlapping-subarrays)|40%|Hard||
 |691|[Stickers to Spell Word](./Algorithms/0691.stickers-to-spell-word)|34%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |692|[Top K Frequent Words](./Algorithms/0692.top-k-frequent-words)|41%|Medium||
 |693|[Binary Number with Alternating Bits](./Algorithms/0693.binary-number-with-alternating-bits)|55%|Easy||
@@ -540,7 +540,7 @@
 |756|[Pyramid Transition Matrix](./Algorithms/0756.pyramid-transition-matrix)|45%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |757|[Set Intersection Size At Least Two](./Algorithms/0757.set-intersection-size-at-least-two)|34%|Hard||
 |761|[Special Binary String](./Algorithms/0761.special-binary-string)|41%|Hard||
-|762|[Prime Number of Set Bits in Binary Representation](./Algorithms/0762.prime-number-of-set-bits-in-binary-representation)|55%|Easy||
+|762|[Prime Number of Set Bits in Binary Representation](./Algorithms/0762.prime-number-of-set-bits-in-binary-representation)|54%|Easy||
 |763|[Partition Labels](./Algorithms/0763.partition-labels)|64%|Medium||
 |764|[Largest Plus Sign](./Algorithms/0764.largest-plus-sign)|37%|Medium||
 |765|[Couples Holding Hands](./Algorithms/0765.couples-holding-hands)|48%|Hard||
@@ -569,10 +569,10 @@
 |791|[Custom Sort String](./Algorithms/0791.custom-sort-string)|60%|Medium||
 |792|[Number of Matching Subsequences](./Algorithms/0792.number-of-matching-subsequences)|35%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |793|[Preimage Size of Factorial Zeroes Function](./Algorithms/0793.preimage-size-of-factorial-zeroes-function)|44%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|794| * Valid Tic-Tac-Toe State|27%|Medium||
+|794|[Valid Tic-Tac-Toe State](./Algorithms/0794.valid-tic-tac-toe-state)|27%|Medium||
 |795| * Number of Subarrays with Bounded Maximum|40%|Medium||
 |796|[Rotate String](./Algorithms/0796.rotate-string)|54%|Easy||
-|797| * All Paths From Source to Target|69%|Medium||
+|797| * All Paths From Source to Target|68%|Medium||
 |798| * Smallest Rotation with Highest Score|31%|Hard||
 |799| * Champagne Tower|28%|Medium||
 |801| * Minimum Swaps To Make Sequences Increasing|23%|Medium||

@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1351,
-	"Updated": "2018-04-13T21:23:06.190175843+08:00",
+	"Updated": "2018-04-13T22:05:21.693880769+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 162,
 			"Total": 166
 		},
 		"Medium": {
-			"Solved": 273,
+			"Solved": 274,
 			"Total": 284
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 123
 		},
 		"Total": {
-			"Solved": 553,
+			"Solved": 554,
 			"Total": 573
 		}
 	},
@@ -9555,7 +9555,7 @@
 			"TitleSlug": "valid-tic-tac-toe-state",
 			"PassRate": "27%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
