@@ -24,6 +24,11 @@ var tcs = []struct {
 	},
 
 	{
+		[]string{"X X", "X  ", "OOO"},
+		true,
+	},
+
+	{
 		[]string{"XXX", "   ", "OOO"},
 		false,
 	},
