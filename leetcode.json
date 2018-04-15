@@ -1,23 +1,23 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1351,
-	"Updated": "2018-04-13T22:06:55.513991559+08:00",
+	"Updated": "2018-04-15T15:33:15.466213835+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 162,
-			"Total": 166
+			"Total": 167
 		},
 		"Medium": {
-			"Solved": 274,
-			"Total": 284
+			"Solved": 275,
+			"Total": 286
 		},
 		"Hard": {
 			"Solved": 118,
-			"Total": 123
+			"Total": 124
 		},
 		"Total": {
-			"Solved": 554,
-			"Total": 573
+			"Solved": 555,
+			"Total": 577
 		}
 	},
 	"Problems": [
@@ -3073,7 +3073,7 @@
 			"ID": 254,
 			"Title": "Factor Combinations",
 			"TitleSlug": "factor-combinations",
-			"PassRate": "43%",
+			"PassRate": "44%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -4405,7 +4405,7 @@
 			"ID": 365,
 			"Title": "Water and Jug Problem",
 			"TitleSlug": "water-and-jug-problem",
-			"PassRate": "27%",
+			"PassRate": "28%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -5413,7 +5413,7 @@
 			"ID": 449,
 			"Title": "Serialize and Deserialize BST",
 			"TitleSlug": "serialize-and-deserialize-bst",
-			"PassRate": "42%",
+			"PassRate": "43%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -7129,7 +7129,7 @@
 			"ID": 592,
 			"Title": "Fraction Addition and Subtraction",
 			"TitleSlug": "fraction-addition-and-subtraction",
-			"PassRate": "45%",
+			"PassRate": "46%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -8197,7 +8197,7 @@
 			"ID": 681,
 			"Title": "Next Closest Time",
 			"TitleSlug": "next-closest-time",
-			"PassRate": "42%",
+			"PassRate": "41%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -8293,7 +8293,7 @@
 			"ID": 689,
 			"Title": "Maximum Sum of 3 Non-Overlapping Subarrays",
 			"TitleSlug": "maximum-sum-of-3-non-overlapping-subarrays",
-			"PassRate": "40%",
+			"PassRate": "41%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9241,7 +9241,7 @@
 			"ID": 768,
 			"Title": "Max Chunks To Make Sorted II",
 			"TitleSlug": "max-chunks-to-make-sorted-ii",
-			"PassRate": "43%",
+			"PassRate": "42%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9469,7 +9469,7 @@
 			"ID": 787,
 			"Title": "Cheapest Flights Within K Stops",
 			"TitleSlug": "cheapest-flights-within-k-stops",
-			"PassRate": "30%",
+			"PassRate": "29%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9567,9 +9567,9 @@
 			"TitleSlug": "number-of-subarrays-with-bounded-maximum",
 			"PassRate": "40%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -9589,7 +9589,7 @@
 			"ID": 797,
 			"Title": "All Paths From Source to Target",
 			"TitleSlug": "all-paths-from-source-to-target",
-			"PassRate": "68%",
+			"PassRate": "69%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -9721,7 +9721,7 @@
 			"ID": 808,
 			"Title": "Soup Servings",
 			"TitleSlug": "soup-servings",
-			"PassRate": "30%",
+			"PassRate": "31%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -9733,7 +9733,7 @@
 			"ID": 809,
 			"Title": "Expressive Words",
 			"TitleSlug": "expressive-words",
-			"PassRate": "34%",
+			"PassRate": "35%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -9745,7 +9745,7 @@
 			"ID": 810,
 			"Title": "Chalkboard XOR Game",
 			"TitleSlug": "chalkboard-xor-game",
-			"PassRate": "35%",
+			"PassRate": "36%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -9798,7 +9798,7 @@
 			"IsAccepted": false,
 			"IsPaid": false,
 			"IsFavor": false,
-			"IsNew": true,
+			"IsNew": false,
 			"HasNoGoOption": false
 		},
 		{
@@ -9807,6 +9807,54 @@
 			"TitleSlug": "bus-routes",
 			"PassRate": "30%",
 			"Difficulty": "Hard",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": false,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 816,
+			"Title": "Ambiguous Coordinates",
+			"TitleSlug": "ambiguous-coordinates",
+			"PassRate": "39%",
+			"Difficulty": "Medium",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 817,
+			"Title": "Linked List Components",
+			"TitleSlug": "linked-list-components",
+			"PassRate": "44%",
+			"Difficulty": "Medium",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 818,
+			"Title": "Race Car",
+			"TitleSlug": "race-car",
+			"PassRate": "16%",
+			"Difficulty": "Hard",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 819,
+			"Title": "Most Common Word",
+			"TitleSlug": "most-common-word",
+			"PassRate": "53%",
+			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
 			"IsFavor": false,
