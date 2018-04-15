@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1351,
-	"Updated": "2018-04-15T15:33:15.466213835+08:00",
+	"Updated": "2018-04-15T16:54:01.369234905+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 162,
 			"Total": 167
 		},
 		"Medium": {
-			"Solved": 275,
+			"Solved": 276,
 			"Total": 286
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 124
 		},
 		"Total": {
-			"Solved": 555,
+			"Solved": 556,
 			"Total": 577
 		}
 	},
@@ -9457,7 +9457,7 @@
 			"ID": 786,
 			"Title": "K-th Smallest Prime Fraction",
 			"TitleSlug": "k-th-smallest-prime-fraction",
-			"PassRate": "30%",
+			"PassRate": "29%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9591,7 +9591,7 @@
 			"TitleSlug": "all-paths-from-source-to-target",
 			"PassRate": "69%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -9841,7 +9841,7 @@
 			"ID": 818,
 			"Title": "Race Car",
 			"TitleSlug": "race-car",
-			"PassRate": "16%",
+			"PassRate": "17%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
