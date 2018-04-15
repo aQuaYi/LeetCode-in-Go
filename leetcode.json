@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1351,
-	"Updated": "2018-04-15T16:54:01.369234905+08:00",
+	"Updated": "2018-04-15T19:03:12.515914828+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 162,
@@ -12,11 +12,11 @@
 			"Total": 286
 		},
 		"Hard": {
-			"Solved": 118,
+			"Solved": 119,
 			"Total": 124
 		},
 		"Total": {
-			"Solved": 556,
+			"Solved": 557,
 			"Total": 577
 		}
 	},
@@ -9589,7 +9589,7 @@
 			"ID": 797,
 			"Title": "All Paths From Source to Target",
 			"TitleSlug": "all-paths-from-source-to-target",
-			"PassRate": "69%",
+			"PassRate": "68%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9603,9 +9603,9 @@
 			"TitleSlug": "smallest-rotation-with-highest-score",
 			"PassRate": "31%",
 			"Difficulty": "Hard",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -9745,7 +9745,7 @@
 			"ID": 810,
 			"Title": "Chalkboard XOR Game",
 			"TitleSlug": "chalkboard-xor-game",
-			"PassRate": "36%",
+			"PassRate": "35%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -9829,7 +9829,7 @@
 			"ID": 817,
 			"Title": "Linked List Components",
 			"TitleSlug": "linked-list-components",
-			"PassRate": "44%",
+			"PassRate": "45%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,

@@ -10,7 +10,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|162|275|118|555|
+|**Accepted**|162|276|119|557|
 |**Total**|167|286|124|577|
 
 ## 题解
@@ -561,7 +561,7 @@
 |783|[Minimum Distance Between BST Nodes](./Algorithms/0783.minimum-distance-between-bst-nodes)|47%|Easy||
 |784|[Letter Case Permutation](./Algorithms/0784.letter-case-permutation)|52%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |785|[Is Graph Bipartite?](./Algorithms/0785.is-graph-bipartite)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|786|[K-th Smallest Prime Fraction](./Algorithms/0786.k-th-smallest-prime-fraction)|30%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|786|[K-th Smallest Prime Fraction](./Algorithms/0786.k-th-smallest-prime-fraction)|29%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |787|[Cheapest Flights Within K Stops](./Algorithms/0787.cheapest-flights-within-k-stops)|29%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |788|[Rotated Digits](./Algorithms/0788.rotated-digits)|50%|Easy||
 |789|[Escape The Ghosts](./Algorithms/0789.escape-the-ghosts)|48%|Medium||
@@ -572,8 +572,8 @@
 |794|[Valid Tic-Tac-Toe State](./Algorithms/0794.valid-tic-tac-toe-state)|27%|Medium||
 |795|[Number of Subarrays with Bounded Maximum](./Algorithms/0795.number-of-subarrays-with-bounded-maximum)|40%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |796|[Rotate String](./Algorithms/0796.rotate-string)|54%|Easy||
-|797| * All Paths From Source to Target|69%|Medium||
-|798| * Smallest Rotation with Highest Score|31%|Hard||
+|797|[All Paths From Source to Target](./Algorithms/0797.all-paths-from-source-to-target)|68%|Medium||
+|798|[Smallest Rotation with Highest Score](./Algorithms/0798.smallest-rotation-with-highest-score)|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |799| * Champagne Tower|28%|Medium||
 |801| * Minimum Swaps To Make Sequences Increasing|23%|Medium||
 |802| * Find Eventual Safe States|35%|Medium||
@@ -584,15 +584,15 @@
 |807| * Max Increase to Keep City Skyline|82%|Medium||
 |808| * Soup Servings|31%|Medium||
 |809| * Expressive Words|35%|Medium||
-|810| * Chalkboard XOR Game|36%|Hard||
+|810| * Chalkboard XOR Game|35%|Hard||
 |811| * Subdomain Visit Count|65%|Easy||
 |812| * Largest Triangle Area|52%|Easy||
 |813| * Largest Sum of Averages|37%|Medium||
 |814| * Binary Tree Pruning|73%|Medium||
 |815| * Bus Routes|30%|Hard||
 |816| * Ambiguous Coordinates :new: |39%|Medium||
-|817| * Linked List Components :new: |44%|Medium||
-|818| * Race Car :new: |16%|Hard||
+|817| * Linked List Components :new: |45%|Medium||
+|818| * Race Car :new: |17%|Hard||
 |819| * Most Common Word :new: |53%|Easy||
 
 以下免费的算法题，暂时不能使用 Go 解答
