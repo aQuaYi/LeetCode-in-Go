@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1351,
-	"Updated": "2018-04-15T19:08:14.049586387+08:00",
+	"Updated": "2018-04-15T20:34:55.962154976+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 162,
 			"Total": 167
 		},
 		"Medium": {
-			"Solved": 276,
+			"Solved": 277,
 			"Total": 286
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 124
 		},
 		"Total": {
-			"Solved": 557,
+			"Solved": 558,
 			"Total": 577
 		}
 	},
@@ -9615,9 +9615,9 @@
 			"TitleSlug": "champagne-tower",
 			"PassRate": "28%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -9745,7 +9745,7 @@
 			"ID": 810,
 			"Title": "Chalkboard XOR Game",
 			"TitleSlug": "chalkboard-xor-game",
-			"PassRate": "35%",
+			"PassRate": "36%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -9841,7 +9841,7 @@
 			"ID": 818,
 			"Title": "Race Car",
 			"TitleSlug": "race-car",
-			"PassRate": "17%",
+			"PassRate": "18%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
