@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1351,
-	"Updated": "2018-04-16T20:59:10.093468805+08:00",
+	"Updated": "2018-04-16T21:37:11.940680433+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 162,
+			"Solved": 163,
 			"Total": 167
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 124
 		},
 		"Total": {
-			"Solved": 559,
+			"Solved": 560,
 			"Total": 577
 		}
 	},
@@ -5413,7 +5413,7 @@
 			"ID": 449,
 			"Title": "Serialize and Deserialize BST",
 			"TitleSlug": "serialize-and-deserialize-bst",
-			"PassRate": "42%",
+			"PassRate": "43%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -8281,7 +8281,7 @@
 			"ID": 688,
 			"Title": "Knight Probability in Chessboard",
 			"TitleSlug": "knight-probability-in-chessboard",
-			"PassRate": "40%",
+			"PassRate": "39%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9675,7 +9675,7 @@
 			"TitleSlug": "unique-morse-code-words",
 			"PassRate": "76%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
