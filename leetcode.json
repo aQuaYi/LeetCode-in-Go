@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1351,
-	"Updated": "2018-04-16T08:52:31.282753658+08:00",
+	"Updated": "2018-04-16T10:28:40.677132196+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 162,
 			"Total": 167
 		},
 		"Medium": {
-			"Solved": 277,
+			"Solved": 278,
 			"Total": 286
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 124
 		},
 		"Total": {
-			"Solved": 558,
+			"Solved": 559,
 			"Total": 577
 		}
 	},
@@ -697,7 +697,7 @@
 			"ID": 56,
 			"Title": "Merge Intervals",
 			"TitleSlug": "merge-intervals",
-			"PassRate": "31%",
+			"PassRate": "32%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -8617,7 +8617,7 @@
 			"ID": 716,
 			"Title": "Max Stack",
 			"TitleSlug": "max-stack",
-			"PassRate": "37%",
+			"PassRate": "36%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -8941,7 +8941,7 @@
 			"ID": 743,
 			"Title": "Network Delay Time",
 			"TitleSlug": "network-delay-time",
-			"PassRate": "34%",
+			"PassRate": "35%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9639,9 +9639,9 @@
 			"TitleSlug": "minimum-swaps-to-make-sequences-increasing",
 			"PassRate": "23%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},

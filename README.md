@@ -10,7 +10,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|162|277|119|558|
+|**Accepted**|162|278|119|559|
 |**Total**|167|286|124|577|
 
 ## 题解
@@ -56,7 +56,7 @@
 |37|[Sudoku Solver](./Algorithms/0037.sudoku-solver)|32%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |38|[Count and Say](./Algorithms/0038.count-and-say)|36%|Easy||
 |39|[Combination Sum](./Algorithms/0039.combination-sum)|41%|Medium||
-|40|[Combination Sum II](./Algorithms/0040.combination-sum-ii)|35%|Medium||
+|40|[Combination Sum II](./Algorithms/0040.combination-sum-ii)|36%|Medium||
 |41|[First Missing Positive](./Algorithms/0041.first-missing-positive)|25%|Hard||
 |42|[Trapping Rain Water](./Algorithms/0042.trapping-rain-water)|37%|Hard||
 |43|[Multiply Strings](./Algorithms/0043.multiply-strings)|28%|Medium||
@@ -72,7 +72,7 @@
 |53|[Maximum Subarray](./Algorithms/0053.maximum-subarray)|40%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |54|[Spiral Matrix](./Algorithms/0054.spiral-matrix)|27%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |55|[Jump Game](./Algorithms/0055.jump-game)|29%|Medium||
-|56|[Merge Intervals](./Algorithms/0056.merge-intervals)|31%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|56|[Merge Intervals](./Algorithms/0056.merge-intervals)|32%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |57|[Insert Interval](./Algorithms/0057.insert-interval)|29%|Hard||
 |58|[Length of Last Word](./Algorithms/0058.length-of-last-word)|32%|Easy||
 |59|[Spiral Matrix II](./Algorithms/0059.spiral-matrix-ii)|41%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -434,7 +434,7 @@
 |591|[Tag Validator](./Algorithms/0591.tag-validator)|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |592|[Fraction Addition and Subtraction](./Algorithms/0592.fraction-addition-and-subtraction)|46%|Medium||
 |593|[Valid Square](./Algorithms/0593.valid-square)|39%|Medium||
-|594|[Longest Harmonious Subsequence](./Algorithms/0594.longest-harmonious-subsequence)|40%|Easy||
+|594|[Longest Harmonious Subsequence](./Algorithms/0594.longest-harmonious-subsequence)|41%|Easy||
 |598|[Range Addition II](./Algorithms/0598.range-addition-ii)|48%|Easy||
 |599|[Minimum Index Sum of Two Lists](./Algorithms/0599.minimum-index-sum-of-two-lists)|46%|Easy||
 |600|[Non-negative Integers without Consecutive Ones](./Algorithms/0600.non-negative-integers-without-consecutive-ones)|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -492,8 +492,8 @@
 |685|[Redundant Connection II](./Algorithms/0685.redundant-connection-ii)|27%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |686|[Repeated String Match](./Algorithms/0686.repeated-string-match)|32%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |687|[Longest Univalue Path](./Algorithms/0687.longest-univalue-path)|32%|Easy||
-|688|[Knight Probability in Chessboard](./Algorithms/0688.knight-probability-in-chessboard)|39%|Medium||
-|689|[Maximum Sum of 3 Non-Overlapping Subarrays](./Algorithms/0689.maximum-sum-of-3-non-overlapping-subarrays)|41%|Hard||
+|688|[Knight Probability in Chessboard](./Algorithms/0688.knight-probability-in-chessboard)|40%|Medium||
+|689|[Maximum Sum of 3 Non-Overlapping Subarrays](./Algorithms/0689.maximum-sum-of-3-non-overlapping-subarrays)|40%|Hard||
 |691|[Stickers to Spell Word](./Algorithms/0691.stickers-to-spell-word)|34%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |692|[Top K Frequent Words](./Algorithms/0692.top-k-frequent-words)|41%|Medium||
 |693|[Binary Number with Alternating Bits](./Algorithms/0693.binary-number-with-alternating-bits)|55%|Easy||
@@ -527,7 +527,7 @@
 |739|[Daily Temperatures](./Algorithms/0739.daily-temperatures)|52%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |740|[Delete and Earn](./Algorithms/0740.delete-and-earn)|43%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |741|[Cherry Pickup](./Algorithms/0741.cherry-pickup)|23%|Hard||
-|743|[Network Delay Time](./Algorithms/0743.network-delay-time)|34%|Medium||
+|743|[Network Delay Time](./Algorithms/0743.network-delay-time)|35%|Medium||
 |744|[Find Smallest Letter Greater Than Target](./Algorithms/0744.find-smallest-letter-greater-than-target)|44%|Easy||
 |745|[Prefix and Suffix Search](./Algorithms/0745.prefix-and-suffix-search)|25%|Hard||
 |746|[Min Cost Climbing Stairs](./Algorithms/0746.min-cost-climbing-stairs)|43%|Easy||
@@ -554,7 +554,7 @@
 |775|[Global and Local Inversions](./Algorithms/0775.global-and-local-inversions)|31%|Medium||
 |777|[Swap Adjacent in LR String](./Algorithms/0777.swap-adjacent-in-lr-string)|27%|Medium||
 |778|[Swim in Rising Water](./Algorithms/0778.swim-in-rising-water)|44%|Hard||
-|779|[K-th Symbol in Grammar](./Algorithms/0779.k-th-symbol-in-grammar)|35%|Medium||
+|779|[K-th Symbol in Grammar](./Algorithms/0779.k-th-symbol-in-grammar)|36%|Medium||
 |780|[Reaching Points](./Algorithms/0780.reaching-points)|22%|Hard||
 |781|[Rabbits in Forest](./Algorithms/0781.rabbits-in-forest)|49%|Medium||
 |782|[Transform to Chessboard](./Algorithms/0782.transform-to-chessboard)|35%|Hard||
@@ -575,7 +575,7 @@
 |797|[All Paths From Source to Target](./Algorithms/0797.all-paths-from-source-to-target)|68%|Medium||
 |798|[Smallest Rotation with Highest Score](./Algorithms/0798.smallest-rotation-with-highest-score)|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |799|[Champagne Tower](./Algorithms/0799.champagne-tower)|28%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|801| * Minimum Swaps To Make Sequences Increasing|23%|Medium||
+|801|[Minimum Swaps To Make Sequences Increasing](./Algorithms/0801.minimum-swaps-to-make-sequences-increasing)|23%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |802| * Find Eventual Safe States|35%|Medium||
 |803| * Bricks Falling When Hit|20%|Hard||
 |804| * Unique Morse Code Words|76%|Easy||
@@ -588,11 +588,11 @@
 |811| * Subdomain Visit Count|65%|Easy||
 |812| * Largest Triangle Area|52%|Easy||
 |813| * Largest Sum of Averages|37%|Medium||
-|814| * Binary Tree Pruning|73%|Medium||
+|814| * Binary Tree Pruning|72%|Medium||
 |815| * Bus Routes|30%|Hard||
-|816| * Ambiguous Coordinates :new: |39%|Medium||
-|817| * Linked List Components :new: |45%|Medium||
-|818| * Race Car :new: |18%|Hard||
+|816| * Ambiguous Coordinates :new: |40%|Medium||
+|817| * Linked List Components :new: |46%|Medium||
+|818| * Race Car :new: |20%|Hard||
 |819| * Most Common Word :new: |53%|Easy||
 
 以下免费的算法题，暂时不能使用 Go 解答
