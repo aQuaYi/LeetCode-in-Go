@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1351,
-	"Updated": "2018-04-17T08:50:44.34803564+08:00",
+	"Updated": "2018-04-17T10:59:15.052568692+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 163,
 			"Total": 167
 		},
 		"Medium": {
-			"Solved": 278,
+			"Solved": 279,
 			"Total": 286
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 124
 		},
 		"Total": {
-			"Solved": 560,
+			"Solved": 561,
 			"Total": 577
 		}
 	},
@@ -9169,7 +9169,7 @@
 			"ID": 762,
 			"Title": "Prime Number of Set Bits in Binary Representation",
 			"TitleSlug": "prime-number-of-set-bits-in-binary-representation",
-			"PassRate": "55%",
+			"PassRate": "54%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9651,9 +9651,9 @@
 			"TitleSlug": "find-eventual-safe-states",
 			"PassRate": "35%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -9757,7 +9757,7 @@
 			"ID": 811,
 			"Title": "Subdomain Visit Count",
 			"TitleSlug": "subdomain-visit-count",
-			"PassRate": "65%",
+			"PassRate": "64%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,

@@ -10,7 +10,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|163|278|119|560|
+|**Accepted**|163|279|119|561|
 |**Total**|167|286|124|577|
 
 ## 题解
@@ -481,7 +481,7 @@
 |672|[Bulb Switcher II](./Algorithms/0672.bulb-switcher-ii)|49%|Medium||
 |673|[Number of Longest Increasing Subsequence](./Algorithms/0673.number-of-longest-increasing-subsequence)|31%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |674|[Longest Continuous Increasing Subsequence](./Algorithms/0674.longest-continuous-increasing-subsequence)|42%|Easy||
-|675|[Cut Off Trees for Golf Event](./Algorithms/0675.cut-off-trees-for-golf-event)|27%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|675|[Cut Off Trees for Golf Event](./Algorithms/0675.cut-off-trees-for-golf-event)|26%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |676|[Implement Magic Dictionary](./Algorithms/0676.implement-magic-dictionary)|49%|Medium||
 |677|[Map Sum Pairs](./Algorithms/0677.map-sum-pairs)|51%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |678|[Valid Parenthesis String](./Algorithms/0678.valid-parenthesis-string)|29%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -492,7 +492,7 @@
 |685|[Redundant Connection II](./Algorithms/0685.redundant-connection-ii)|27%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |686|[Repeated String Match](./Algorithms/0686.repeated-string-match)|32%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |687|[Longest Univalue Path](./Algorithms/0687.longest-univalue-path)|32%|Easy||
-|688|[Knight Probability in Chessboard](./Algorithms/0688.knight-probability-in-chessboard)|39%|Medium||
+|688|[Knight Probability in Chessboard](./Algorithms/0688.knight-probability-in-chessboard)|40%|Medium||
 |689|[Maximum Sum of 3 Non-Overlapping Subarrays](./Algorithms/0689.maximum-sum-of-3-non-overlapping-subarrays)|40%|Hard||
 |691|[Stickers to Spell Word](./Algorithms/0691.stickers-to-spell-word)|34%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |692|[Top K Frequent Words](./Algorithms/0692.top-k-frequent-words)|41%|Medium||
@@ -540,7 +540,7 @@
 |756|[Pyramid Transition Matrix](./Algorithms/0756.pyramid-transition-matrix)|45%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |757|[Set Intersection Size At Least Two](./Algorithms/0757.set-intersection-size-at-least-two)|34%|Hard||
 |761|[Special Binary String](./Algorithms/0761.special-binary-string)|41%|Hard||
-|762|[Prime Number of Set Bits in Binary Representation](./Algorithms/0762.prime-number-of-set-bits-in-binary-representation)|55%|Easy||
+|762|[Prime Number of Set Bits in Binary Representation](./Algorithms/0762.prime-number-of-set-bits-in-binary-representation)|54%|Easy||
 |763|[Partition Labels](./Algorithms/0763.partition-labels)|64%|Medium||
 |764|[Largest Plus Sign](./Algorithms/0764.largest-plus-sign)|37%|Medium||
 |765|[Couples Holding Hands](./Algorithms/0765.couples-holding-hands)|48%|Hard||
@@ -572,28 +572,28 @@
 |794|[Valid Tic-Tac-Toe State](./Algorithms/0794.valid-tic-tac-toe-state)|27%|Medium||
 |795|[Number of Subarrays with Bounded Maximum](./Algorithms/0795.number-of-subarrays-with-bounded-maximum)|40%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |796|[Rotate String](./Algorithms/0796.rotate-string)|54%|Easy||
-|797|[All Paths From Source to Target](./Algorithms/0797.all-paths-from-source-to-target)|68%|Medium||
+|797|[All Paths From Source to Target](./Algorithms/0797.all-paths-from-source-to-target)|69%|Medium||
 |798|[Smallest Rotation with Highest Score](./Algorithms/0798.smallest-rotation-with-highest-score)|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |799|[Champagne Tower](./Algorithms/0799.champagne-tower)|29%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |801|[Minimum Swaps To Make Sequences Increasing](./Algorithms/0801.minimum-swaps-to-make-sequences-increasing)|23%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|802| * Find Eventual Safe States|35%|Medium||
+|802|[Find Eventual Safe States](./Algorithms/0802.find-eventual-safe-states)|35%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |803| * Bricks Falling When Hit|20%|Hard||
 |804|[Unique Morse Code Words](./Algorithms/0804.unique-morse-code-words)|76%|Easy||
-|805| * Split Array With Same Average|19%|Hard||
+|805| * Split Array With Same Average|20%|Hard||
 |806| * Number of Lines To Write String|64%|Easy||
 |807| * Max Increase to Keep City Skyline|82%|Medium||
 |808| * Soup Servings|31%|Medium||
 |809| * Expressive Words|35%|Medium||
 |810| * Chalkboard XOR Game|36%|Hard||
-|811| * Subdomain Visit Count|65%|Easy||
+|811| * Subdomain Visit Count|64%|Easy||
 |812| * Largest Triangle Area|52%|Easy||
 |813| * Largest Sum of Averages|37%|Medium||
 |814| * Binary Tree Pruning|72%|Medium||
-|815| * Bus Routes|30%|Hard||
-|816| * Ambiguous Coordinates :new: |40%|Medium||
+|815| * Bus Routes|31%|Hard||
+|816| * Ambiguous Coordinates :new: |41%|Medium||
 |817| * Linked List Components :new: |47%|Medium||
-|818| * Race Car :new: |22%|Hard||
-|819| * Most Common Word :new: |53%|Easy||
+|818| * Race Car :new: |23%|Hard||
+|819| * Most Common Word :new: |52%|Easy||
 
 以下免费的算法题，暂时不能使用 Go 解答
 
