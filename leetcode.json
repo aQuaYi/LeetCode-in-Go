@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1351,
-	"Updated": "2018-04-17T22:36:35.540436538+08:00",
+	"Updated": "2018-04-17T22:53:40.897977424+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 163,
+			"Solved": 164,
 			"Total": 167
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 124
 		},
 		"Total": {
-			"Solved": 561,
+			"Solved": 562,
 			"Total": 577
 		}
 	},
@@ -9699,7 +9699,7 @@
 			"TitleSlug": "number-of-lines-to-write-string",
 			"PassRate": "64%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
