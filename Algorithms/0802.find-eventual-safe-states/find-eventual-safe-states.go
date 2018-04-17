@@ -1,11 +1,19 @@
 package problem0802
 
+type color int
+
+const (
+	blank color = iota // unvisited
+	danger
+	safe
+)
+
 func eventualSafeNodes(graph [][]int) []int {
-	isDanger := make([]bool, len(graph))
+	colors := make([]color, len(graph))
 	res := make([]int, 0, len(graph))
 
 	for i := 0; i < len(graph); i++ {
-		if !dfs(i, isDanger, graph) {
+		if isSafe(i, colors, graph) {
 			res = append(res, i)
 		}
 	}
@@ -13,60 +21,19 @@ func eventualSafeNodes(graph [][]int) []int {
 	return res
 }
 
-func dfs(src int, isDanger []bool, graph [][]int) bool {
-	if isDanger[src] {
-		return true
+func isSafe(src int, colors []color, graph [][]int) bool {
+	if colors[src] != blank {
+		return colors[src] == safe
 	}
 
-	if len(graph[src]) == 0 {
-		return false
-	}
+	colors[src] = danger
 
 	for i := 0; i < len(graph[src]); i++ {
-		isDanger[src] = true
-		if dfs(graph[src][i], isDanger, graph) {
-			return true
+		if !isSafe(graph[src][i], colors, graph) {
+			return false
 		}
-		isDanger[src] = false
 	}
 
-	return false
+	colors[src] = safe
+	return true
 }
-
-// func eventualSafeNodes(graph [][]int) []int {
-// 	edgeMap := make(map[int]map[int]bool, len(graph))
-// 	for i := 0; i < len(graph); i++ {
-// 		edgeMap[i] = make(map[int]bool, len(graph[i]))
-// 		for j := 0; j < len(graph[i]); j++ {
-// 			edgeMap[i][graph[i][j]] = true
-// 		}
-// 	}
-// 	isChanged := true
-// 	for {
-// 		isChanged = false
-// 		dst := 0
-// 		for dst = range edgeMap {
-// 			if len(edgeMap[dst]) == 0 && edgeMap[dst] != nil {
-// 				edgeMap[dst] = nil
-// 				isChanged = true
-// 				break
-// 			}
-// 		}
-// 		if !isChanged {
-// 			break
-// 		}
-// 		for i := range edgeMap {
-// 			if len(edgeMap[i]) == 0 {
-// 				continue
-// 			}
-// 			delete(edgeMap[i], dst)
-// 		}
-// 	}
-// 	res := make([]int, 0, len(graph)-len(edgeMap))
-// 	for i := 0; i < len(graph); i++ {
-// 		if len(edgeMap[i]) == 0 {
-// 			res = append(res, i)
-// 		}
-// 	}
-// 	return res
-// }
