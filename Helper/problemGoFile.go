@@ -31,29 +31,26 @@ func getFunction(url string) string {
 	// create chrome instance
 	c, err := chromedp.New(ctxt, chromedp.WithLog(log.Printf))
 	if err != nil {
-		log.Fatal(err)
+		log.Fatal("chromedp.New 出错：", err)
 	}
 
 	// run task list
 	var function string
 	err = c.Run(ctxt, makeTasks(url, &function))
 	if err != nil {
-		log.Println("Run error")
-		log.Fatal(err)
+		log.Fatal("c.Run 出错：", err)
 	}
 
 	// shutdown chrome
 	err = c.Shutdown(ctxt)
 	if err != nil {
-		log.Println("Shutdown error")
-		log.Fatal(err)
+		log.Fatal("c.Shutdown 出错：", err)
 	}
 
 	// wait for chrome to finish
 	err = c.Wait()
 	if err != nil {
-		log.Println("Wait error")
-		log.Fatal(err)
+		log.Fatal("c.Wait 出错：", err)
 	}
 
 	return function
