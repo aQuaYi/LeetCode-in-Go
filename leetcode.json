@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1351,
-	"Updated": "2018-04-19T19:25:44.217922783+08:00",
+	"Updated": "2018-04-19T19:51:30.643575904+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 164,
+			"Solved": 165,
 			"Total": 167
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 124
 		},
 		"Total": {
-			"Solved": 562,
+			"Solved": 563,
 			"Total": 577
 		}
 	},
@@ -9759,7 +9759,7 @@
 			"TitleSlug": "subdomain-visit-count",
 			"PassRate": "64%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
