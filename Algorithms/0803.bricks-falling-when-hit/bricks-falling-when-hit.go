@@ -22,9 +22,14 @@ func hitBricks(grid [][]int, hits [][]int) []int {
 func isHanging(i, j int, isVisited []bool, grid [][]int) bool {
 	m, n := len(grid), len(grid[0])
 
+	if i == 0 && 0 <= j && j < n && grid[i][j] == 1 {
+		return true
+	}
+
 	if i < 0 || m <= i ||
 		j < 0 || n <= j ||
-		grid[i][j] == 0 {
+		grid[i][j] == 0 ||
+		isVisited[i*n+j] {
 		return false
 	}
 
@@ -36,7 +41,6 @@ func isHanging(i, j int, isVisited []bool, grid [][]int) bool {
 		if x == 0 && grid[x][y] == 1 {
 			return true
 		}
-		isVisited[x*n+y] = true
 		if isHanging(x, y, isVisited, grid) {
 			return true
 		}
