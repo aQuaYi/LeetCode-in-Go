@@ -3,24 +3,22 @@ package problem0803
 func hitBricks(grid [][]int, hits [][]int) []int {
 	res := make([]int, len(hits))
 
-	for idx, hit := range hits {
+	for _, hit := range hits {
 		i, j := hit[0], hit[1]
 		grid[i][j] = 0
+	}
 
-		hanging := idx + 2
-		for k := 0; k < len(grid[0]); k++ {
-			if grid[0][k] == hanging-1 {
-				update(hanging, 0, k, grid)
-			}
-		}
-
-		for k := 0; k < 4; k++ {
-			x := i + dx[k]
-			y := j + dy[k]
-			res[idx] += drop(hanging, x, y, grid)
+	for j := 0; j < len(grid[0]); j++ {
+		if grid[0][j] == 1 {
+			update(2, 0, j, grid)
 		}
 	}
 
+	for idx := len(hits) - 1; 0 <= idx; idx-- {
+		i, j := hits[idx][0], hits[idx][1]
+		grid[i][j] = 1
+		res[idx] = drop(2, i, j, grid) - 1
+	}
 	return res
 }
 
@@ -46,7 +44,7 @@ func drop(hanging, i, j int, grid [][]int) int {
 		return 0
 	}
 
-	grid[i][j] = 0
+	grid[i][j] = hanging
 	res := 1
 
 	for k := 0; k < 4; k++ {
