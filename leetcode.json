@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1351,
-	"Updated": "2018-04-19T19:20:57.084114521+08:00",
+	"Updated": "2018-04-19T19:25:44.217922783+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 164,
@@ -1273,7 +1273,7 @@
 			"ID": 104,
 			"Title": "Maximum Depth of Binary Tree",
 			"TitleSlug": "maximum-depth-of-binary-tree",
-			"PassRate": "54%",
+			"PassRate": "55%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -8929,7 +8929,7 @@
 			"ID": 742,
 			"Title": "Closest Leaf in a Binary Tree",
 			"TitleSlug": "closest-leaf-in-a-binary-tree",
-			"PassRate": "33%",
+			"PassRate": "34%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
