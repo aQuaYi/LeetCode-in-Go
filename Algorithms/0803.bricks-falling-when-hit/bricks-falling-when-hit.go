@@ -2,10 +2,11 @@ package problem0803
 
 func hitBricks(grid [][]int, hits [][]int) []int {
 	res := make([]int, len(hits))
-	for _, hit := range hits {
+	for idx, hit := range hits {
 		i, j := hit[0], hit[1]
+		grid[i][j] = 0
 		for k := 0; k < 4; k++ {
-			res[i] += check(i+dx[k], j+dy[k], grid)
+			res[idx] += check(i+dx[k], j+dy[k], grid)
 		}
 	}
 	return res
@@ -34,7 +35,7 @@ func check(i, j int, grid [][]int) int {
 			x := i + dx[k]
 			y := j + dy[k]
 
-			if x == 0 {
+			if x == 0 && grid[x][y] == 1 {
 				return 0
 			}
 
