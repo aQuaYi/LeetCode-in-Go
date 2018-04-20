@@ -2,18 +2,16 @@ package problem0805
 
 // n = len(A)
 // k = len(B)
-// 假设 len(B)<=len(C)
-// 可得 k<=n-k,
-// k 的范围是 1<=k<=n/2
-//
 // sum = A 的所有数之和
 // s   = B 的所有数之和
 // 可由 s/k==(sum-s)/(n-k)
 // 得 sum/n==s/k
-// 即 s == sum*k/n
-// 由于 s 肯定是整数
-// 所以 sum*k%n == 0 这是返回 true 的必要条件
-
+// 即 s*n == sum*k
+// 这是返回 true 的充分必要条件
+//
+// 根据对称性，可以假设 len(B)<=len(C)
+// 可得 k<=n-k,
+// k 的范围是 1<=k<=n/2
 func splitArraySameAverage(A []int) bool {
 	n := len(A)
 	sum := 0
@@ -21,13 +19,14 @@ func splitArraySameAverage(A []int) bool {
 		sum += num
 	}
 
-	dp := make([][]bool, sum+1)
+	dp := make([][]bool, n/2+1)
 	for i := range dp {
-		dp[i] = make([]bool, n/2+1)
+		dp[i] = make([]bool, sum+1)
 	}
+
 	dp[0][0] = true
-	// dp[s][k] == true 的含义是
-	// 当 B 是由 k 个元素组成时，s 是其中一个可能的值
+	// dp[k][s] == true 的含义是
+	// 当 B 是由 k 个元素组成时，s 是其中一个可能的 sum 值
 	// 所以 dp[0][0] == true 表示
 	// B 由 0 个元素组成时，其和为 0
 	for _, num := range A {
@@ -38,15 +37,16 @@ func splitArraySameAverage(A []int) bool {
 				// 此时，dp[s][k] 想要为 true
 				// 要么，由别的 k 个数之和为 s     的组合成的 B 为 true
 				// 要么，由  k-1 个数之和为 s-num  的组合成的 B 为 true
-				dp[s][k] = dp[s][k] || dp[s-num][k-1]
-			}
-		}
-	}
+				dp[k][s] = dp[k][s] || dp[k-1][s-num]
 
-	for k := 1; k <= n/2; k++ {
-		if sum*k%n == 0 &&
-			dp[sum*k/n][k] {
-			return true
+				// 如果 k 和 s 是一个可行的组合，
+				// 就检查 sum/n =?= s/k
+				// 两者都成立，说明找到了题目要求的组合
+				// 立即返回 true
+				if dp[k][s] && sum*k == s*n {
+					return true
+				}
+			}
 		}
 	}
 
