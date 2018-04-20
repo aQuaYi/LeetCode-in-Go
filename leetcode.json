@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1351,
-	"Updated": "2018-04-20T16:01:56.091928709+08:00",
+	"Updated": "2018-04-20T16:18:33.801050673+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 165,
 			"Total": 167
 		},
 		"Medium": {
-			"Solved": 279,
+			"Solved": 280,
 			"Total": 286
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 124
 		},
 		"Total": {
-			"Solved": 565,
+			"Solved": 566,
 			"Total": 577
 		}
 	},
@@ -9711,7 +9711,7 @@
 			"TitleSlug": "max-increase-to-keep-city-skyline",
 			"PassRate": "81%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,

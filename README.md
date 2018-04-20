@@ -10,7 +10,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|165|279|121|565|
+|**Accepted**|165|280|121|566|
 |**Total**|167|286|124|577|
 
 ## 题解
@@ -581,7 +581,7 @@
 |804|[Unique Morse Code Words](./Algorithms/0804.unique-morse-code-words)|75%|Easy||
 |805|[Split Array With Same Average](./Algorithms/0805.split-array-with-same-average)|20%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |806|[Number of Lines To Write String](./Algorithms/0806.number-of-lines-to-write-string)|64%|Easy||
-|807| * Max Increase to Keep City Skyline|81%|Medium||
+|807|[Max Increase to Keep City Skyline](./Algorithms/0807.max-increase-to-keep-city-skyline)|81%|Medium||
 |808| * Soup Servings|31%|Medium||
 |809| * Expressive Words|35%|Medium||
 |810| * Chalkboard XOR Game|36%|Hard||
