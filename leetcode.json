@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1351,
-	"Updated": "2018-04-20T16:53:01.137780299+08:00",
+	"Updated": "2018-04-20T17:17:06.487779462+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 165,
+			"Solved": 166,
 			"Total": 167
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 124
 		},
 		"Total": {
-			"Solved": 566,
+			"Solved": 567,
 			"Total": 577
 		}
 	},
@@ -9771,7 +9771,7 @@
 			"TitleSlug": "largest-triangle-area",
 			"PassRate": "52%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,

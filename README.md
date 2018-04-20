@@ -10,7 +10,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|165|280|121|566|
+|**Accepted**|166|280|121|567|
 |**Total**|167|286|124|577|
 
 ## 题解
@@ -586,7 +586,7 @@
 |809| * Expressive Words|35%|Medium||
 |810| * Chalkboard XOR Game|36%|Hard||
 |811|[Subdomain Visit Count](./Algorithms/0811.subdomain-visit-count)|64%|Easy||
-|812| * Largest Triangle Area|52%|Easy||
+|812|[Largest Triangle Area](./Algorithms/0812.largest-triangle-area)|52%|Easy||
 |813| * Largest Sum of Averages|38%|Medium||
 |814| * Binary Tree Pruning|71%|Medium||
 |815| * Bus Routes|31%|Hard||
