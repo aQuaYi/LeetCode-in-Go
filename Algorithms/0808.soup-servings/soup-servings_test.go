@@ -51,7 +51,7 @@ func Test_soupServings(t *testing.T) {
 
 	for _, tc := range tcs {
 		fmt.Printf("~~%v~~\n", tc)
-		ast.Equal(tc.ans, soupServings(tc.N), "输入:%v", tc)
+		ast.InDelta(tc.ans, soupServings(tc.N), 0.00001, "输入:%v", tc)
 	}
 }
 
