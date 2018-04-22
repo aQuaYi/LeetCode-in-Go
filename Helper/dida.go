@@ -30,9 +30,7 @@ func mailToDida(task string) {
 	m := gomail.NewMessage()
 	m.SetHeader("From", cfg.From)
 	m.SetHeader("To", cfg.To)
-	// 对于出现的新题，15天以后再做
-	task += " ^LeetCode " + time.Now().Add(time.Hour*24*15).Format("2006-01-02")
-	m.SetHeader("Subject", task)
+	m.SetHeader("Subject", delay(task))
 	m.SetBody("text/plain", fmt.Sprintf("添加日期 %s", time.Now()))
 	d := gomail.NewDialer(cfg.SMTP, cfg.Port, cfg.From, cfg.EmailPasswd)
 
@@ -63,4 +61,19 @@ func saveLocal(task string) {
 	}
 
 	log.Printf("新建任务已经写入 %s，请手动添加到滴答清单", didaTaskFile)
+}
+
+func delay(task string) string {
+	m := map[string]time.Duration{
+		"do": 15,
+		"re": 30,
+		"fa": 60,
+	}
+
+	task += " ^LeetCode "
+	if day, ok := m[task[:2]]; ok {
+		task += time.Now().Add(time.Hour * 24 * day).Format("2006-01-02")
+	}
+
+	return task
 }
