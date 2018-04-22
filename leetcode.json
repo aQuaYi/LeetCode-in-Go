@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1351,
-	"Updated": "2018-04-22T19:36:53.934898006+08:00",
+	"Updated": "2018-04-22T19:38:46.856414261+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 166,
@@ -12,11 +12,11 @@
 			"Total": 289
 		},
 		"Hard": {
-			"Solved": 121,
+			"Solved": 122,
 			"Total": 124
 		},
 		"Total": {
-			"Solved": 569,
+			"Solved": 570,
 			"Total": 581
 		}
 	},
@@ -9747,7 +9747,7 @@
 			"TitleSlug": "chalkboard-xor-game",
 			"PassRate": "36%",
 			"Difficulty": "Hard",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": true,
 			"IsNew": false,

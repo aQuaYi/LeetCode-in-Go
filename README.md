@@ -10,7 +10,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|166|282|121|569|
+|**Accepted**|166|282|122|570|
 |**Total**|168|289|124|581|
 
 ## 题解
@@ -584,7 +584,7 @@
 |807|[Max Increase to Keep City Skyline](./Algorithms/0807.max-increase-to-keep-city-skyline)|81%|Medium||
 |808|[Soup Servings](./Algorithms/0808.soup-servings)|31%|Medium||
 |809|[Expressive Words](./Algorithms/0809.expressive-words)|35%|Medium||
-|810| * Chalkboard XOR Game|36%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|810|[Chalkboard XOR Game](./Algorithms/0810.chalkboard-xor-game)|36%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |811|[Subdomain Visit Count](./Algorithms/0811.subdomain-visit-count)|64%|Easy||
 |812|[Largest Triangle Area](./Algorithms/0812.largest-triangle-area)|52%|Easy||
 |813| * Largest Sum of Averages|38%|Medium||
