@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1351,
-	"Updated": "2018-04-22T17:13:09.548640098+08:00",
+	"Updated": "2018-04-22T17:50:03.531900932+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 166,
 			"Total": 168
 		},
 		"Medium": {
-			"Solved": 281,
+			"Solved": 282,
 			"Total": 289
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 124
 		},
 		"Total": {
-			"Solved": 568,
+			"Solved": 569,
 			"Total": 581
 		}
 	},
@@ -9735,7 +9735,7 @@
 			"TitleSlug": "expressive-words",
 			"PassRate": "35%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
