@@ -30,7 +30,8 @@ func mailToDida(task string) {
 	m := gomail.NewMessage()
 	m.SetHeader("From", cfg.From)
 	m.SetHeader("To", cfg.To)
-	m.SetHeader("Subject", delay(task))
+	task = delay(task)
+	m.SetHeader("Subject", task)
 	m.SetBody("text/plain", fmt.Sprintf("添加日期 %s", time.Now()))
 	d := gomail.NewDialer(cfg.SMTP, cfg.Port, cfg.From, cfg.EmailPasswd)
 
