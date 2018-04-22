@@ -15,15 +15,15 @@ var tcs = []struct {
 }{
 
 	{
-		"zzzzzyyyyy",
-		[]string{"zzyy", "zy", "zyy"},
-		3,
-	},
-
-	{
 		"heeellooo",
 		[]string{"hello", "hi", "helo"},
 		1,
+	},
+
+	{
+		"zzzzzyyyyy",
+		[]string{"zzyy", "zy", "zyy"},
+		3,
 	},
 
 	// 可以有多个 testcase
