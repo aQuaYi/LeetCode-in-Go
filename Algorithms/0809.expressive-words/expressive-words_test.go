@@ -9,19 +9,29 @@ import (
 
 // tcs is testcase slice
 var tcs = []struct {
-	S string
- words []string
-	ans int
+	S     string
+	words []string
+	ans   int
 }{
 
+	{
+		"zzzzzyyyyy",
+		[]string{"zzyy", "zy", "zyy"},
+		3,
+	},
 
-	
+	{
+		"heeellooo",
+		[]string{"hello", "hi", "helo"},
+		1,
+	},
+
 	// 可以有多个 testcase
 }
 
 func Test_expressiveWords(t *testing.T) {
 	ast := assert.New(t)
-	
+
 	for _, tc := range tcs {
 		fmt.Printf("~~%v~~\n", tc)
 		ast.Equal(tc.ans, expressiveWords(tc.S, tc.words), "输入:%v", tc)
