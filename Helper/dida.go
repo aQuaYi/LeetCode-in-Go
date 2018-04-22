@@ -30,9 +30,10 @@ func mailToDida(task string) {
 	m := gomail.NewMessage()
 	m.SetHeader("From", cfg.From)
 	m.SetHeader("To", cfg.To)
-	m.SetHeader("Subject", task+" ^LeetCode")
+	// 对于出现的新题，15天以后再做
+	task += " ^LeetCode " + time.Now().Add(time.Hour*24*15).Format("2006-01-02")
+	m.SetHeader("Subject", task)
 	m.SetBody("text/plain", fmt.Sprintf("添加日期 %s", time.Now()))
-
 	d := gomail.NewDialer(cfg.SMTP, cfg.Port, cfg.From, cfg.EmailPasswd)
 
 	if err := d.DialAndSend(m); err != nil {

@@ -9860,54 +9860,6 @@
 			"IsFavor": false,
 			"IsNew": false,
 			"HasNoGoOption": false
-		},
-		{
-			"ID": 820,
-			"Title": "Short Encoding of Words",
-			"TitleSlug": "short-encoding-of-words",
-			"PassRate": "34%",
-			"Difficulty": "Medium",
-			"IsAccepted": false,
-			"IsPaid": false,
-			"IsFavor": false,
-			"IsNew": true,
-			"HasNoGoOption": false
-		},
-		{
-			"ID": 821,
-			"Title": "Shortest Distance to a Character",
-			"TitleSlug": "shortest-distance-to-a-character",
-			"PassRate": "66%",
-			"Difficulty": "Easy",
-			"IsAccepted": false,
-			"IsPaid": false,
-			"IsFavor": false,
-			"IsNew": true,
-			"HasNoGoOption": false
-		},
-		{
-			"ID": 822,
-			"Title": "Card Flipping Game",
-			"TitleSlug": "card-flipping-game",
-			"PassRate": "29%",
-			"Difficulty": "Medium",
-			"IsAccepted": false,
-			"IsPaid": false,
-			"IsFavor": false,
-			"IsNew": true,
-			"HasNoGoOption": false
-		},
-		{
-			"ID": 823,
-			"Title": "Binary Trees With Factors",
-			"TitleSlug": "binary-trees-with-factors",
-			"PassRate": "27%",
-			"Difficulty": "Medium",
-			"IsAccepted": false,
-			"IsPaid": false,
-			"IsFavor": false,
-			"IsNew": true,
-			"HasNoGoOption": false
 		}
 	]
 }
