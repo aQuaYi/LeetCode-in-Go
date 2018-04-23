@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1351,
-	"Updated": "2018-04-23T21:55:39.755820489+08:00",
+	"Updated": "2018-04-23T22:39:09.865318624+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 166,
 			"Total": 168
 		},
 		"Medium": {
-			"Solved": 283,
+			"Solved": 284,
 			"Total": 289
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 124
 		},
 		"Total": {
-			"Solved": 571,
+			"Solved": 572,
 			"Total": 581
 		}
 	},
@@ -9795,7 +9795,7 @@
 			"TitleSlug": "binary-tree-pruning",
 			"PassRate": "71%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,

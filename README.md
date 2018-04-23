@@ -10,7 +10,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|166|283|122|571|
+|**Accepted**|166|284|122|572|
 |**Total**|168|289|124|581|
 
 ## 题解
@@ -44,7 +44,7 @@
 |25|[Reverse Nodes in k-Group](./Algorithms/0025.reverse-nodes-in-k-group)|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |26|[Remove Duplicates from Sorted Array](./Algorithms/0026.remove-duplicates-from-sorted-array)|36%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |27|[Remove Element](./Algorithms/0027.remove-element)|40%|Easy||
-|28|[Implement strStr()](./Algorithms/0028.implement-strstr)|28%|Easy||
+|28|[Implement strStr()](./Algorithms/0028.implement-strstr)|29%|Easy||
 |29|[Divide Two Integers](./Algorithms/0029.divide-two-integers)|15%|Medium||
 |30|[Substring with Concatenation of All Words](./Algorithms/0030.substring-with-concatenation-of-all-words)|22%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |31|[Next Permutation](./Algorithms/0031.next-permutation)|29%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -128,7 +128,7 @@
 |109|[Convert Sorted List to Binary Search Tree](./Algorithms/0109.convert-sorted-list-to-binary-search-tree)|35%|Medium||
 |110|[Balanced Binary Tree](./Algorithms/0110.balanced-binary-tree)|38%|Easy||
 |111|[Minimum Depth of Binary Tree](./Algorithms/0111.minimum-depth-of-binary-tree)|33%|Easy||
-|112|[Path Sum](./Algorithms/0112.path-sum)|34%|Easy||
+|112|[Path Sum](./Algorithms/0112.path-sum)|35%|Easy||
 |113|[Path Sum II](./Algorithms/0113.path-sum-ii)|35%|Medium||
 |114|[Flatten Binary Tree to Linked List](./Algorithms/0114.flatten-binary-tree-to-linked-list)|36%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |115|[Distinct Subsequences](./Algorithms/0115.distinct-subsequences)|32%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -482,7 +482,7 @@
 |673|[Number of Longest Increasing Subsequence](./Algorithms/0673.number-of-longest-increasing-subsequence)|31%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |674|[Longest Continuous Increasing Subsequence](./Algorithms/0674.longest-continuous-increasing-subsequence)|42%|Easy||
 |675|[Cut Off Trees for Golf Event](./Algorithms/0675.cut-off-trees-for-golf-event)|27%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|676|[Implement Magic Dictionary](./Algorithms/0676.implement-magic-dictionary)|49%|Medium||
+|676|[Implement Magic Dictionary](./Algorithms/0676.implement-magic-dictionary)|48%|Medium||
 |677|[Map Sum Pairs](./Algorithms/0677.map-sum-pairs)|51%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |678|[Valid Parenthesis String](./Algorithms/0678.valid-parenthesis-string)|29%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |679|[24 Game](./Algorithms/0679.24-game)|38%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -581,22 +581,22 @@
 |804|[Unique Morse Code Words](./Algorithms/0804.unique-morse-code-words)|75%|Easy||
 |805|[Split Array With Same Average](./Algorithms/0805.split-array-with-same-average)|20%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |806|[Number of Lines To Write String](./Algorithms/0806.number-of-lines-to-write-string)|64%|Easy||
-|807|[Max Increase to Keep City Skyline](./Algorithms/0807.max-increase-to-keep-city-skyline)|81%|Medium||
+|807|[Max Increase to Keep City Skyline](./Algorithms/0807.max-increase-to-keep-city-skyline)|82%|Medium||
 |808|[Soup Servings](./Algorithms/0808.soup-servings)|31%|Medium||
 |809|[Expressive Words](./Algorithms/0809.expressive-words)|35%|Medium||
 |810|[Chalkboard XOR Game](./Algorithms/0810.chalkboard-xor-game)|36%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |811|[Subdomain Visit Count](./Algorithms/0811.subdomain-visit-count)|64%|Easy||
 |812|[Largest Triangle Area](./Algorithms/0812.largest-triangle-area)|52%|Easy||
 |813|[Largest Sum of Averages](./Algorithms/0813.largest-sum-of-averages)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|814| * Binary Tree Pruning|71%|Medium||
+|814|[Binary Tree Pruning](./Algorithms/0814.binary-tree-pruning)|71%|Medium||
 |815| * Bus Routes|31%|Hard||
 |816| * Ambiguous Coordinates|40%|Medium||
 |817| * Linked List Components|48%|Medium||
 |818| * Race Car|26%|Hard||
 |819| * Most Common Word|50%|Easy||
-|820| * Short Encoding of Words :new: |36%|Medium||
+|820| * Short Encoding of Words :new: |37%|Medium||
 |821| * Shortest Distance to a Character :new: |65%|Easy||
-|822| * Card Flipping Game :new: |30%|Medium||
+|822| * Card Flipping Game :new: |31%|Medium||
 |823| * Binary Trees With Factors :new: |28%|Medium||
 
 以下免费的算法题，暂时不能使用 Go 解答
