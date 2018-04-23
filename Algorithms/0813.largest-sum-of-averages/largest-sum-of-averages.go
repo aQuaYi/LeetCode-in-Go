@@ -1,14 +1,36 @@
 package problem0813
 
+var avgs = [101][101]float64{}
+
 func largestSumOfAverages(A []int, K int) float64 {
 	if K == 1 {
 		return avg(A)
 	}
-	sum := 0.0
+
+	n := len(A)
+
+	sums := make([]int, n+1)
+	for i := range A {
+		sums[i+1] = sums[i] + A[i]
+	}
+
+	for i := 0; i < n; i++ {
+		for j := i + 1; j <= n; j++ {
+			avgs[i][j] = float64(sums[j]-sums[i]) / float64(j-i)
+		}
+	}
+
+	return helper(n, 0, K)
+}
+
+func helper(n, i, k int) float64 {
+	if k == 1 {
+		return avgs[i][n]
+	}
+
 	maxAvg := -1.
-	for i := 0; i < len(A)-K+1; i++ {
-		sum += float64(A[i])
-		maxAvg = max(maxAvg, sum/float64(i+1)+largestSumOfAverages(A[i+1:], K-1))
+	for j := i + 1; j <= n-k+1; j++ {
+		maxAvg = max(maxAvg, avgs[i][j]+helper(n, j, k-1))
 	}
 
 	return maxAvg
