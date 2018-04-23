@@ -112,7 +112,7 @@
 |93|[Restore IP Addresses](./Algorithms/0093.restore-ip-addresses)|28%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |94|[Binary Tree Inorder Traversal](./Algorithms/0094.binary-tree-inorder-traversal)|49%|Medium||
 |95|[Unique Binary Search Trees II](./Algorithms/0095.unique-binary-search-trees-ii)|32%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|96|[Unique Binary Search Trees](./Algorithms/0096.unique-binary-search-trees)|41%|Medium||
+|96|[Unique Binary Search Trees](./Algorithms/0096.unique-binary-search-trees)|42%|Medium||
 |97|[Interleaving String](./Algorithms/0097.interleaving-string)|25%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |98|[Validate Binary Search Tree](./Algorithms/0098.validate-binary-search-tree)|24%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |99|[Recover Binary Search Tree](./Algorithms/0099.recover-binary-search-tree)|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -245,7 +245,7 @@
 |306|[Additive Number](./Algorithms/0306.additive-number)|27%|Medium||
 |307|[Range Sum Query - Mutable](./Algorithms/0307.range-sum-query-mutable)|22%|Medium||
 |309|[Best Time to Buy and Sell Stock with Cooldown](./Algorithms/0309.best-time-to-buy-and-sell-stock-with-cooldown)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|310|[Minimum Height Trees](./Algorithms/0310.minimum-height-trees)|29%|Medium||
+|310|[Minimum Height Trees](./Algorithms/0310.minimum-height-trees)|28%|Medium||
 |312|[Burst Balloons](./Algorithms/0312.burst-balloons)|43%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |313|[Super Ugly Number](./Algorithms/0313.super-ugly-number)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |315|[Count of Smaller Numbers After Self](./Algorithms/0315.count-of-smaller-numbers-after-self)|35%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -346,7 +346,7 @@
 |450|[Delete Node in a BST](./Algorithms/0450.delete-node-in-a-bst)|37%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |451|[Sort Characters By Frequency](./Algorithms/0451.sort-characters-by-frequency)|51%|Medium||
 |452|[Minimum Number of Arrows to Burst Balloons](./Algorithms/0452.minimum-number-of-arrows-to-burst-balloons)|44%|Medium||
-|453|[Minimum Moves to Equal Array Elements](./Algorithms/0453.minimum-moves-to-equal-array-elements)|48%|Easy||
+|453|[Minimum Moves to Equal Array Elements](./Algorithms/0453.minimum-moves-to-equal-array-elements)|47%|Easy||
 |454|[4Sum II](./Algorithms/0454.4sum-ii)|47%|Medium||
 |455|[Assign Cookies](./Algorithms/0455.assign-cookies)|47%|Easy||
 |456|[132 Pattern](./Algorithms/0456.132-pattern)|27%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -463,12 +463,12 @@
 |649|[Dota2 Senate](./Algorithms/0649.dota2-senate)|36%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |650|[2 Keys Keyboard](./Algorithms/0650.2-keys-keyboard)|44%|Medium||
 |652|[Find Duplicate Subtrees](./Algorithms/0652.find-duplicate-subtrees)|36%|Medium||
-|653|[Two Sum IV - Input is a BST](./Algorithms/0653.two-sum-iv-input-is-a-bst)|49%|Easy||
+|653|[Two Sum IV - Input is a BST](./Algorithms/0653.two-sum-iv-input-is-a-bst)|50%|Easy||
 |654|[Maximum Binary Tree](./Algorithms/0654.maximum-binary-tree)|69%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |655|[Print Binary Tree](./Algorithms/0655.print-binary-tree)|49%|Medium||
 |657|[Judge Route Circle](./Algorithms/0657.judge-route-circle)|68%|Easy||
 |658|[Find K Closest Elements](./Algorithms/0658.find-k-closest-elements)|34%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|659|[Split Array into Consecutive Subsequences](./Algorithms/0659.split-array-into-consecutive-subsequences)|37%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|659|[Split Array into Consecutive Subsequences](./Algorithms/0659.split-array-into-consecutive-subsequences)|36%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |661|[Image Smoother](./Algorithms/0661.image-smoother)|46%|Easy||
 |662|[Maximum Width of Binary Tree](./Algorithms/0662.maximum-width-of-binary-tree)|38%|Medium||
 |664|[Strange Printer](./Algorithms/0664.strange-printer)|34%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -520,7 +520,7 @@
 |730|[Count Different Palindromic Subsequences](./Algorithms/0730.count-different-palindromic-subsequences)|35%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |731|[My Calendar II](./Algorithms/0731.my-calendar-ii)|37%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |732|[My Calendar III](./Algorithms/0732.my-calendar-iii)|50%|Hard||
-|733|[Flood Fill](./Algorithms/0733.flood-fill)|48%|Easy||
+|733|[Flood Fill](./Algorithms/0733.flood-fill)|47%|Easy||
 |735|[Asteroid Collision](./Algorithms/0735.asteroid-collision)|37%|Medium||
 |736|[Parse Lisp Expression](./Algorithms/0736.parse-lisp-expression)|42%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |738|[Monotone Increasing Digits](./Algorithms/0738.monotone-increasing-digits)|40%|Medium||
@@ -576,7 +576,7 @@
 |798|[Smallest Rotation with Highest Score](./Algorithms/0798.smallest-rotation-with-highest-score)|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |799|[Champagne Tower](./Algorithms/0799.champagne-tower)|28%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |801|[Minimum Swaps To Make Sequences Increasing](./Algorithms/0801.minimum-swaps-to-make-sequences-increasing)|24%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|802|[Find Eventual Safe States](./Algorithms/0802.find-eventual-safe-states)|35%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|802|[Find Eventual Safe States](./Algorithms/0802.find-eventual-safe-states)|36%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |803|[Bricks Falling When Hit](./Algorithms/0803.bricks-falling-when-hit)|20%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |804|[Unique Morse Code Words](./Algorithms/0804.unique-morse-code-words)|75%|Easy||
 |805|[Split Array With Same Average](./Algorithms/0805.split-array-with-same-average)|20%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -594,10 +594,10 @@
 |817| * Linked List Components|48%|Medium||
 |818| * Race Car|26%|Hard||
 |819| * Most Common Word|50%|Easy||
-|820| * Short Encoding of Words :new: |34%|Medium||
-|821| * Shortest Distance to a Character :new: |66%|Easy||
-|822| * Card Flipping Game :new: |29%|Medium||
-|823| * Binary Trees With Factors :new: |27%|Medium||
+|820| * Short Encoding of Words :new: |36%|Medium||
+|821| * Shortest Distance to a Character :new: |65%|Easy||
+|822| * Card Flipping Game :new: |30%|Medium||
+|823| * Binary Trees With Factors :new: |28%|Medium||
 
 以下免费的算法题，暂时不能使用 Go 解答
 
