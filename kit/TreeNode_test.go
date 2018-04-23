@@ -75,3 +75,38 @@ func Test_indexOf(t *testing.T) {
 
 	ast.Panics(func() { indexOf(0, []int{1, 2, 3}) })
 }
+
+func Test_TreeNode_Equal(t *testing.T) {
+	type args struct {
+		a *TreeNode
+	}
+	tests := []struct {
+		name   string
+		fields args
+		args   args
+		want   bool
+	}{
+
+		{
+			"相等",
+			args{Ints2TreeNode([]int{1, 2, 3, 4, 5})},
+			args{Ints2TreeNode([]int{1, 2, 3, 4, 5})},
+			true,
+		},
+
+		{
+			"不相等",
+			args{Ints2TreeNode([]int{1, 2, 3, 4, 5})},
+			args{Ints2TreeNode([]int{1, 2, 3, null, 5})},
+			false,
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			tn := tt.fields.a
+			if got := tn.Equal(tt.args.a); got != tt.want {
+				t.Errorf("TreeNode.Equal() = %v, want %v", got, tt.want)
+			}
+		})
+	}
+}
