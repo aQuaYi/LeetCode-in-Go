@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1351,
-	"Updated": "2018-04-23T11:39:04.238513229+08:00",
+	"Updated": "2018-04-23T14:02:28.78193379+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 166,
 			"Total": 168
 		},
 		"Medium": {
-			"Solved": 282,
+			"Solved": 283,
 			"Total": 289
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 124
 		},
 		"Total": {
-			"Solved": 570,
+			"Solved": 571,
 			"Total": 581
 		}
 	},
@@ -1897,7 +1897,7 @@
 			"ID": 156,
 			"Title": "Binary Tree Upside Down",
 			"TitleSlug": "binary-tree-upside-down",
-			"PassRate": "45%",
+			"PassRate": "46%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -9457,7 +9457,7 @@
 			"ID": 786,
 			"Title": "K-th Smallest Prime Fraction",
 			"TitleSlug": "k-th-smallest-prime-fraction",
-			"PassRate": "30%",
+			"PassRate": "29%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9709,7 +9709,7 @@
 			"ID": 807,
 			"Title": "Max Increase to Keep City Skyline",
 			"TitleSlug": "max-increase-to-keep-city-skyline",
-			"PassRate": "82%",
+			"PassRate": "81%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9783,9 +9783,9 @@
 			"TitleSlug": "largest-sum-of-averages",
 			"PassRate": "38%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -9805,7 +9805,7 @@
 			"ID": 815,
 			"Title": "Bus Routes",
 			"TitleSlug": "bus-routes",
-			"PassRate": "30%",
+			"PassRate": "31%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,

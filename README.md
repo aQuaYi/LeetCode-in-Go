@@ -10,7 +10,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|166|282|122|570|
+|**Accepted**|166|283|122|571|
 |**Total**|168|289|124|581|
 
 ## 题解
@@ -173,7 +173,7 @@
 |168|[Excel Sheet Column Title](./Algorithms/0168.excel-sheet-column-title)|27%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |169|[Majority Element](./Algorithms/0169.majority-element)|48%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |171|[Excel Sheet Column Number](./Algorithms/0171.excel-sheet-column-number)|48%|Easy||
-|172|[Factorial Trailing Zeroes](./Algorithms/0172.factorial-trailing-zeroes)|36%|Easy||
+|172|[Factorial Trailing Zeroes](./Algorithms/0172.factorial-trailing-zeroes)|37%|Easy||
 |174|[Dungeon Game](./Algorithms/0174.dungeon-game)|24%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |179|[Largest Number](./Algorithms/0179.largest-number)|23%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |187|[Repeated DNA Sequences](./Algorithms/0187.repeated-dna-sequences)|33%|Medium||
@@ -561,7 +561,7 @@
 |783|[Minimum Distance Between BST Nodes](./Algorithms/0783.minimum-distance-between-bst-nodes)|47%|Easy||
 |784|[Letter Case Permutation](./Algorithms/0784.letter-case-permutation)|52%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |785|[Is Graph Bipartite?](./Algorithms/0785.is-graph-bipartite)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|786|[K-th Smallest Prime Fraction](./Algorithms/0786.k-th-smallest-prime-fraction)|30%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|786|[K-th Smallest Prime Fraction](./Algorithms/0786.k-th-smallest-prime-fraction)|29%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |787|[Cheapest Flights Within K Stops](./Algorithms/0787.cheapest-flights-within-k-stops)|29%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |788|[Rotated Digits](./Algorithms/0788.rotated-digits)|50%|Easy||
 |789|[Escape The Ghosts](./Algorithms/0789.escape-the-ghosts)|48%|Medium||
@@ -576,7 +576,7 @@
 |798|[Smallest Rotation with Highest Score](./Algorithms/0798.smallest-rotation-with-highest-score)|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |799|[Champagne Tower](./Algorithms/0799.champagne-tower)|28%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |801|[Minimum Swaps To Make Sequences Increasing](./Algorithms/0801.minimum-swaps-to-make-sequences-increasing)|24%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|802|[Find Eventual Safe States](./Algorithms/0802.find-eventual-safe-states)|36%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|802|[Find Eventual Safe States](./Algorithms/0802.find-eventual-safe-states)|35%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |803|[Bricks Falling When Hit](./Algorithms/0803.bricks-falling-when-hit)|20%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |804|[Unique Morse Code Words](./Algorithms/0804.unique-morse-code-words)|75%|Easy||
 |805|[Split Array With Same Average](./Algorithms/0805.split-array-with-same-average)|20%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -587,9 +587,9 @@
 |810|[Chalkboard XOR Game](./Algorithms/0810.chalkboard-xor-game)|36%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |811|[Subdomain Visit Count](./Algorithms/0811.subdomain-visit-count)|64%|Easy||
 |812|[Largest Triangle Area](./Algorithms/0812.largest-triangle-area)|52%|Easy||
-|813| * Largest Sum of Averages|38%|Medium||
+|813|[Largest Sum of Averages](./Algorithms/0813.largest-sum-of-averages)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |814| * Binary Tree Pruning|71%|Medium||
-|815| * Bus Routes|30%|Hard||
+|815| * Bus Routes|31%|Hard||
 |816| * Ambiguous Coordinates|40%|Medium||
 |817| * Linked List Components|48%|Medium||
 |818| * Race Car|26%|Hard||
