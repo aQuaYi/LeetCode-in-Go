@@ -34,7 +34,7 @@ func Test_largestSumOfAverages(t *testing.T) {
 
 	for _, tc := range tcs {
 		fmt.Printf("~~%v~~\n", tc)
-		ast.InDelta(tc.ans, largestSumOfAverages(tc.A, tc.K), 0.000001, "输入:%v", tc)
+		ast.InDelta(tc.ans, largestSumOfAverages(tc.A, tc.K), 0.00001, "输入:%v", tc)
 	}
 }
 
