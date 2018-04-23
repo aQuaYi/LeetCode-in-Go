@@ -18,6 +18,21 @@ import (
 type TreeNode = kit.TreeNode
 
 func pruneTree(root *TreeNode) *TreeNode {
+	if root == nil {
+		return nil
+	}
 
-	return nil
+	pl := pruneTree(root.Left)
+	pr := pruneTree(root.Right)
+
+	if root.Val == 0 &&
+		pl == nil &&
+		pr == nil {
+		return nil
+	}
+
+	root.Left = pl
+	root.Right = pr
+
+	return root
 }
