@@ -64,17 +64,18 @@ func saveLocal(task string) {
 	log.Printf("新建任务已经写入 %s，请手动添加到滴答清单", didaTaskFile)
 }
 
+var m = map[string]time.Duration{
+	"do": 15,
+	"re": 30,
+	"fa": 60,
+}
+
 func delay(task string) string {
-	m := map[string]time.Duration{
-		"do": 15,
-		"re": 30,
-		"fa": 60,
-	}
-
+	key := task[:2]
 	task += " ^LeetCode "
-	if day, ok := m[task[:2]]; ok {
+	if day, ok := m[key]; ok {
 		task += time.Now().Add(time.Hour * 24 * day).Format("2006-01-02")
+		m[key]++
 	}
-
 	return task
 }
