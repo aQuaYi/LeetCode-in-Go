@@ -9,10 +9,11 @@ import (
 )
 
 func parseFunction(fc string) (fcName, para, ansType string) {
-	a := strings.Index(fc, " ")
-	b := strings.Index(fc, "(")
-	c := strings.Index(fc, ")")
-	d := strings.Index(fc, "{")
+	funcIndex := strings.Index(fc, "func ")
+	a := funcIndex + strings.Index(fc[funcIndex:], " ")
+	b := funcIndex + strings.Index(fc[funcIndex:], "(")
+	c := funcIndex + strings.Index(fc[funcIndex:], ")")
+	d := funcIndex + strings.Index(fc[funcIndex:], "{")
 
 	fcName = fc[a+1 : b]
 	para = strings.Replace(fc[b+1:c], ",", "\n", -1)
