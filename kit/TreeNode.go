@@ -165,3 +165,16 @@ func Tree2Postorder(root *TreeNode) []int {
 
 	return res
 }
+
+// Equal return ture if tn == a
+func (tn *TreeNode) Equal(a *TreeNode) bool {
+	if tn == nil && a == nil {
+		return true
+	}
+
+	if tn == nil || a == nil || tn.Val != a.Val {
+		return false
+	}
+
+	return tn.Left.Equal(a.Left) && tn.Right.Equal(a.Right)
+}
