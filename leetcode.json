@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1351,
-	"Updated": "2018-04-23T09:04:40.369241774+08:00",
+	"Updated": "2018-04-23T11:39:04.238513229+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 166,
@@ -2089,7 +2089,7 @@
 			"ID": 172,
 			"Title": "Factorial Trailing Zeroes",
 			"TitleSlug": "factorial-trailing-zeroes",
-			"PassRate": "36%",
+			"PassRate": "37%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9649,7 +9649,7 @@
 			"ID": 802,
 			"Title": "Find Eventual Safe States",
 			"TitleSlug": "find-eventual-safe-states",
-			"PassRate": "36%",
+			"PassRate": "35%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9709,7 +9709,7 @@
 			"ID": 807,
 			"Title": "Max Increase to Keep City Skyline",
 			"TitleSlug": "max-increase-to-keep-city-skyline",
-			"PassRate": "81%",
+			"PassRate": "82%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
