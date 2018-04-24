@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
-	"Ranking": 1100,
-	"Updated": "2018-04-24T16:36:34.581278783+08:00",
+	"Ranking": 1103,
+	"Updated": "2018-04-24T22:38:34.928342242+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 166,
@@ -12,11 +12,11 @@
 			"Total": 289
 		},
 		"Hard": {
-			"Solved": 122,
+			"Solved": 123,
 			"Total": 124
 		},
 		"Total": {
-			"Solved": 572,
+			"Solved": 573,
 			"Total": 581
 		}
 	},
@@ -6421,7 +6421,7 @@
 			"ID": 533,
 			"Title": "Lonely Pixel II",
 			"TitleSlug": "lonely-pixel-ii",
-			"PassRate": "45%",
+			"PassRate": "44%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -8821,7 +8821,7 @@
 			"ID": 733,
 			"Title": "Flood Fill",
 			"TitleSlug": "flood-fill",
-			"PassRate": "48%",
+			"PassRate": "47%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9037,7 +9037,7 @@
 			"ID": 751,
 			"Title": "IP to CIDR",
 			"TitleSlug": "ip-to-cidr",
-			"PassRate": "54%",
+			"PassRate": "55%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -9649,7 +9649,7 @@
 			"ID": 802,
 			"Title": "Find Eventual Safe States",
 			"TitleSlug": "find-eventual-safe-states",
-			"PassRate": "36%",
+			"PassRate": "35%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9807,9 +9807,9 @@
 			"TitleSlug": "bus-routes",
 			"PassRate": "31%",
 			"Difficulty": "Hard",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -9817,7 +9817,7 @@
 			"ID": 816,
 			"Title": "Ambiguous Coordinates",
 			"TitleSlug": "ambiguous-coordinates",
-			"PassRate": "40%",
+			"PassRate": "41%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
