@@ -78,3 +78,9 @@ func Test_Problem0022(t *testing.T) {
 		ast.Equal(a.one, generateParenthesis(p.one), "输入:%v", p)
 	}
 }
+
+func Benchmark_generateParenthesis(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		generateParenthesis(10)
+	}
+}
