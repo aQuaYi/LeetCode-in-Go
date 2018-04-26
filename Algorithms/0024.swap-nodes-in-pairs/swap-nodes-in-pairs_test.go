@@ -91,3 +91,10 @@ func s2l(nums []int) *ListNode {
 
 	return res
 }
+
+func Benchmark_swapPairs(b *testing.B) {
+	head := s2l([]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9})
+	for i := 1; i < b.N; i++ {
+		swapPairs(head)
+	}
+}

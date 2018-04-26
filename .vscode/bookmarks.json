@@ -1,0 +1,8 @@
+{
+	"onDidClearBookmarkEmitter": {},
+	"onDidClearAllBookmarksEmitter": {},
+	"onDidAddBookmarkEmitter": {},
+	"onDidRemoveBookmarkEmitter": {},
+	"onDidUpdateBookmarkEmitter": {},
+	"bookmarks": []
+}
