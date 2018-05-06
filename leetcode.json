@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1146,
-	"Updated": "2018-05-06T19:27:06.075573326+08:00",
+	"Updated": "2018-05-06T19:28:46.130684079+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 166,
@@ -9987,6 +9987,18 @@
 			"TitleSlug": "positions-of-large-groups",
 			"PassRate": "52%",
 			"Difficulty": "Easy",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 831,
+			"Title": "Masking Personal Information",
+			"TitleSlug": "masking-personal-information",
+			"PassRate": "42%",
+			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
 			"IsFavor": false,
