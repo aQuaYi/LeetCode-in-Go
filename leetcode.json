@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
-	"Ranking": 1134,
-	"Updated": "2018-05-06T17:48:32.900454547+08:00",
+	"Ranking": 1146,
+	"Updated": "2018-05-06T19:19:52.75202552+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 166,
 			"Total": 170
 		},
 		"Medium": {
-			"Solved": 284,
+			"Solved": 285,
 			"Total": 293
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 126
 		},
 		"Total": {
-			"Solved": 573,
+			"Solved": 574,
 			"Total": 589
 		}
 	},
@@ -9819,7 +9819,7 @@
 			"TitleSlug": "ambiguous-coordinates",
 			"PassRate": "41%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -9961,7 +9961,7 @@
 			"ID": 828,
 			"Title": "Unique Letter String",
 			"TitleSlug": "unique-letter-string",
-			"PassRate": "23%",
+			"PassRate": "24%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
