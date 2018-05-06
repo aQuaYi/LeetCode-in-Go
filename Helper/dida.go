@@ -65,13 +65,13 @@ func saveLocal(task string) {
 }
 
 var m = map[string]time.Duration{
-	"do": 15,
-	"re": 30,
-	"fa": 60,
+	"#do": 15,
+	"#re": 30,
+	"#fa": 60,
 }
 
 func delay(task string) string {
-	key := task[:2]
+	key := task[:3]
 	task += " ^LeetCode "
 	if day, ok := m[key]; ok {
 		task += time.Now().Add(time.Hour * 24 * day).Format("2006-01-02")
