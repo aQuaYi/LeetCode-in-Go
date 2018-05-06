@@ -2,6 +2,7 @@ package problem0816
 
 import (
 	"fmt"
+	"sort"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -41,7 +42,10 @@ func Test_ambiguousCoordinates(t *testing.T) {
 
 	for _, tc := range tcs {
 		fmt.Printf("~~%v~~\n", tc)
-		ast.Equal(tc.ans, ambiguousCoordinates(tc.S), "输入:%v", tc)
+		ans := ambiguousCoordinates(tc.S)
+		sort.Strings(ans)
+		sort.Strings(tc.ans)
+		ast.Equal(tc.ans, ans, "输入:%v", tc)
 	}
 }
 
