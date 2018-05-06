@@ -9992,18 +9992,6 @@
 			"IsFavor": false,
 			"IsNew": true,
 			"HasNoGoOption": false
-		},
-		{
-			"ID": 831,
-			"Title": "Masking Personal Information",
-			"TitleSlug": "masking-personal-information",
-			"PassRate": "42%",
-			"Difficulty": "Medium",
-			"IsAccepted": false,
-			"IsPaid": false,
-			"IsFavor": false,
-			"IsNew": true,
-			"HasNoGoOption": false
 		}
 	]
 }

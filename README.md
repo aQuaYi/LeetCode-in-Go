@@ -605,7 +605,6 @@
 |828| * Unique Letter String :new: |24%|Hard||
 |829| * Consecutive Numbers Sum :new: |22%|Medium||
 |830| * Positions of Large Groups :new: |52%|Easy||
-|831| * Masking Personal Information :new: |42%|Medium||
 
 以下免费的算法题，暂时不能使用 Go 解答
 
