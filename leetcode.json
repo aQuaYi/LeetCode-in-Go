@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1146,
-	"Updated": "2018-05-07T10:44:31.443065238+08:00",
+	"Updated": "2018-05-07T11:48:33.782831775+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 166,
 			"Total": 170
 		},
 		"Medium": {
-			"Solved": 285,
+			"Solved": 286,
 			"Total": 293
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 126
 		},
 		"Total": {
-			"Solved": 574,
+			"Solved": 575,
 			"Total": 589
 		}
 	},
@@ -2089,7 +2089,7 @@
 			"ID": 172,
 			"Title": "Factorial Trailing Zeroes",
 			"TitleSlug": "factorial-trailing-zeroes",
-			"PassRate": "37%",
+			"PassRate": "36%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -4393,7 +4393,7 @@
 			"ID": 364,
 			"Title": "Nested List Weight Sum II",
 			"TitleSlug": "nested-list-weight-sum-ii",
-			"PassRate": "53%",
+			"PassRate": "54%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -9001,7 +9001,7 @@
 			"ID": 748,
 			"Title": "Shortest Completing Word",
 			"TitleSlug": "shortest-completing-word",
-			"PassRate": "51%",
+			"PassRate": "52%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9709,7 +9709,7 @@
 			"ID": 807,
 			"Title": "Max Increase to Keep City Skyline",
 			"TitleSlug": "max-increase-to-keep-city-skyline",
-			"PassRate": "81%",
+			"PassRate": "82%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9831,9 +9831,9 @@
 			"TitleSlug": "linked-list-components",
 			"PassRate": "50%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},

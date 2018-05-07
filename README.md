@@ -10,7 +10,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|166|285|123|574|
+|**Accepted**|166|286|123|575|
 |**Total**|170|293|126|589|
 
 ## 题解
@@ -488,7 +488,7 @@
 |679|[24 Game](./Algorithms/0679.24-game)|38%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |680|[Valid Palindrome II](./Algorithms/0680.valid-palindrome-ii)|32%|Easy||
 |682|[Baseball Game](./Algorithms/0682.baseball-game)|58%|Easy||
-|684|[Redundant Connection](./Algorithms/0684.redundant-connection)|44%|Medium||
+|684|[Redundant Connection](./Algorithms/0684.redundant-connection)|43%|Medium||
 |685|[Redundant Connection II](./Algorithms/0685.redundant-connection-ii)|27%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |686|[Repeated String Match](./Algorithms/0686.repeated-string-match)|31%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |687|[Longest Univalue Path](./Algorithms/0687.longest-univalue-path)|32%|Easy||
@@ -570,18 +570,18 @@
 |792|[Number of Matching Subsequences](./Algorithms/0792.number-of-matching-subsequences)|35%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |793|[Preimage Size of Factorial Zeroes Function](./Algorithms/0793.preimage-size-of-factorial-zeroes-function)|43%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |794|[Valid Tic-Tac-Toe State](./Algorithms/0794.valid-tic-tac-toe-state)|27%|Medium||
-|795|[Number of Subarrays with Bounded Maximum](./Algorithms/0795.number-of-subarrays-with-bounded-maximum)|40%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|795|[Number of Subarrays with Bounded Maximum](./Algorithms/0795.number-of-subarrays-with-bounded-maximum)|41%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |796|[Rotate String](./Algorithms/0796.rotate-string)|52%|Easy||
 |797|[All Paths From Source to Target](./Algorithms/0797.all-paths-from-source-to-target)|68%|Medium||
 |798|[Smallest Rotation with Highest Score](./Algorithms/0798.smallest-rotation-with-highest-score)|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |799|[Champagne Tower](./Algorithms/0799.champagne-tower)|29%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|801|[Minimum Swaps To Make Sequences Increasing](./Algorithms/0801.minimum-swaps-to-make-sequences-increasing)|25%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|801|[Minimum Swaps To Make Sequences Increasing](./Algorithms/0801.minimum-swaps-to-make-sequences-increasing)|26%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |802|[Find Eventual Safe States](./Algorithms/0802.find-eventual-safe-states)|36%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |803|[Bricks Falling When Hit](./Algorithms/0803.bricks-falling-when-hit)|21%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |804|[Unique Morse Code Words](./Algorithms/0804.unique-morse-code-words)|74%|Easy||
 |805|[Split Array With Same Average](./Algorithms/0805.split-array-with-same-average)|20%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |806|[Number of Lines To Write String](./Algorithms/0806.number-of-lines-to-write-string)|64%|Easy||
-|807|[Max Increase to Keep City Skyline](./Algorithms/0807.max-increase-to-keep-city-skyline)|81%|Medium||
+|807|[Max Increase to Keep City Skyline](./Algorithms/0807.max-increase-to-keep-city-skyline)|82%|Medium||
 |808|[Soup Servings](./Algorithms/0808.soup-servings)|32%|Medium||
 |809|[Expressive Words](./Algorithms/0809.expressive-words)|35%|Medium||
 |810|[Chalkboard XOR Game](./Algorithms/0810.chalkboard-xor-game)|37%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -591,7 +591,7 @@
 |814|[Binary Tree Pruning](./Algorithms/0814.binary-tree-pruning)|70%|Medium||
 |815|[Bus Routes](./Algorithms/0815.bus-routes)|32%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |816|[Ambiguous Coordinates](./Algorithms/0816.ambiguous-coordinates)|41%|Medium||
-|817| * Linked List Components|50%|Medium||
+|817|[Linked List Components](./Algorithms/0817.linked-list-components)|50%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |818| * Race Car|26%|Hard||
 |819| * Most Common Word|50%|Easy||
 |820| * Short Encoding of Words|39%|Medium||
@@ -599,13 +599,13 @@
 |822| * Card Flipping Game|33%|Medium||
 |823| * Binary Trees With Factors|28%|Medium||
 |824| * Goat Latin|56%|Easy||
-|825| * Friends Of Appropriate Ages|24%|Medium||
+|825| * Friends Of Appropriate Ages|25%|Medium||
 |826| * Most Profit Assigning Work|31%|Medium||
 |827| * Making A Large Island|42%|Hard||
-|828| * Unique Letter String :new: |24%|Hard||
-|829| * Consecutive Numbers Sum :new: |22%|Medium||
+|828| * Unique Letter String :new: |28%|Hard||
+|829| * Consecutive Numbers Sum :new: |23%|Medium||
 |830| * Positions of Large Groups :new: |52%|Easy||
-|831| * Masking Personal Information :new: |42%|Medium||
+|831| * Masking Personal Information :new: |43%|Medium||
 
 以下免费的算法题，暂时不能使用 Go 解答
 
