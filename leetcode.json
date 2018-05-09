@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1130,
-	"Updated": "2018-05-09T11:34:32.64432465+08:00",
+	"Updated": "2018-05-09T14:46:13.859652669+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 166,
+			"Solved": 167,
 			"Total": 170
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 126
 		},
 		"Total": {
-			"Solved": 575,
+			"Solved": 576,
 			"Total": 589
 		}
 	},
@@ -2089,7 +2089,7 @@
 			"ID": 172,
 			"Title": "Factorial Trailing Zeroes",
 			"TitleSlug": "factorial-trailing-zeroes",
-			"PassRate": "36%",
+			"PassRate": "37%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -5581,7 +5581,7 @@
 			"ID": 463,
 			"Title": "Island Perimeter",
 			"TitleSlug": "island-perimeter",
-			"PassRate": "57%",
+			"PassRate": "58%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -6529,7 +6529,7 @@
 			"ID": 542,
 			"Title": "01 Matrix",
 			"TitleSlug": "01-matrix",
-			"PassRate": "32%",
+			"PassRate": "33%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -7081,7 +7081,7 @@
 			"ID": 588,
 			"Title": "Design In-Memory File System",
 			"TitleSlug": "design-in-memory-file-system",
-			"PassRate": "36%",
+			"PassRate": "35%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -8809,7 +8809,7 @@
 			"ID": 732,
 			"Title": "My Calendar III",
 			"TitleSlug": "my-calendar-iii",
-			"PassRate": "49%",
+			"PassRate": "50%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9697,7 +9697,7 @@
 			"ID": 806,
 			"Title": "Number of Lines To Write String",
 			"TitleSlug": "number-of-lines-to-write-string",
-			"PassRate": "63%",
+			"PassRate": "64%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9805,7 +9805,7 @@
 			"ID": 815,
 			"Title": "Bus Routes",
 			"TitleSlug": "bus-routes",
-			"PassRate": "31%",
+			"PassRate": "32%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9879,7 +9879,7 @@
 			"TitleSlug": "shortest-distance-to-a-character",
 			"PassRate": "63%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -9961,7 +9961,7 @@
 			"ID": 828,
 			"Title": "Unique Letter String",
 			"TitleSlug": "unique-letter-string",
-			"PassRate": "31%",
+			"PassRate": "30%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
