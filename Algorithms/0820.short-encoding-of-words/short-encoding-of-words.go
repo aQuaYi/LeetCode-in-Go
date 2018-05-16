@@ -19,8 +19,8 @@ func minimumLengthEncoding(words []string) int {
 			}
 			return false
 		}
-
-		return len(words[i]) < len(words[j])
+		// 短的排在前面
+		return curi == 0
 	})
 
 	words = append(words, "")
