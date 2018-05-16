@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1144,
-	"Updated": "2018-05-16T09:51:31.24856088+08:00",
+	"Updated": "2018-05-16T09:58:09.347982949+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 167,
@@ -1933,7 +1933,7 @@
 			"ID": 159,
 			"Title": "Longest Substring with At Most Two Distinct Characters",
 			"TitleSlug": "longest-substring-with-at-most-two-distinct-characters",
-			"PassRate": "42%",
+			"PassRate": "43%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": true,
