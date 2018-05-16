@@ -11,9 +11,13 @@ func minimumLengthEncoding(words []string) int {
 		for curi > 0 && curj > 0 {
 			curi--
 			curj--
+			if words[i][curi] == words[j][curj] {
+				continue
+			}
 			if words[i][curi] > words[j][curj] {
 				return true
 			}
+			return false
 		}
 
 		return len(words[i]) < len(words[j])
