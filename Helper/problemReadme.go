@@ -23,7 +23,7 @@ func creatREADME(p problem) {
 
 	content := fmt.Sprintf(fileFormat, p.ID, p.Title, p.link(), questionDescription)
 
-	content = changeCharacter(content)
+	content = replaceCharacters(content)
 
 	filename := fmt.Sprintf("%s/README.md", p.Dir())
 
@@ -46,13 +46,13 @@ func getDescription(url string) string {
 	return desc
 }
 
-func changeCharacter(s string) string {
+func replaceCharacters(s string) string {
 	changeMap := map[string]string{
 		"&quot;": "\"",
 		"&lt;":   "<",
 		"&gt;":   ">",
 		"&nbsp;": "",
-		"\n \n":  "\n",
+		"\n\n":   "\n",
 	}
 	for old, new := range changeMap {
 		s = strings.Replace(s, old, new, -1)
