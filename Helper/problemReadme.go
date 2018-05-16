@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"log"
+	"strings"
 
 	"github.com/PuerkitoBio/goquery"
 )
@@ -21,6 +22,8 @@ func creatREADME(p problem) {
 	questionDescription := getDescription(p.link())
 
 	content := fmt.Sprintf(fileFormat, p.ID, p.Title, p.link(), questionDescription)
+
+	content = changeCharacter(content)
 
 	filename := fmt.Sprintf("%s/README.md", p.Dir())
 
@@ -41,4 +44,18 @@ func getDescription(url string) string {
 	})
 
 	return desc
+}
+
+func changeCharacter(s string) string {
+	changeMap := map[string]string{
+		"&quot;": "\"",
+		"&lt;":   "<",
+		"&gt;":   ">",
+		"&nbsp;": "",
+		"\n \n":  "\n",
+	}
+	for old, new := range changeMap {
+		s = strings.Replace(s, old, new, -1)
+	}
+	return s
 }
