@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1144,
-	"Updated": "2018-05-16T09:58:09.347982949+08:00",
+	"Updated": "2018-05-16T11:11:21.3790811+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 167,
 			"Total": 171
 		},
 		"Medium": {
-			"Solved": 286,
+			"Solved": 287,
 			"Total": 295
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 127
 		},
 		"Total": {
-			"Solved": 576,
+			"Solved": 577,
 			"Total": 593
 		}
 	},
@@ -6349,7 +6349,7 @@
 			"ID": 527,
 			"Title": "Word Abbreviation",
 			"TitleSlug": "word-abbreviation",
-			"PassRate": "43%",
+			"PassRate": "44%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -7849,7 +7849,7 @@
 			"ID": 652,
 			"Title": "Find Duplicate Subtrees",
 			"TitleSlug": "find-duplicate-subtrees",
-			"PassRate": "36%",
+			"PassRate": "37%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -8881,7 +8881,7 @@
 			"ID": 738,
 			"Title": "Monotone Increasing Digits",
 			"TitleSlug": "monotone-increasing-digits",
-			"PassRate": "41%",
+			"PassRate": "40%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9867,9 +9867,9 @@
 			"TitleSlug": "short-encoding-of-words",
 			"PassRate": "40%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -9997,7 +9997,7 @@
 			"ID": 831,
 			"Title": "Masking Personal Information",
 			"TitleSlug": "masking-personal-information",
-			"PassRate": "43%",
+			"PassRate": "42%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -10033,7 +10033,7 @@
 			"ID": 834,
 			"Title": "Sum of Distances in Tree",
 			"TitleSlug": "sum-of-distances-in-tree",
-			"PassRate": "28%",
+			"PassRate": "29%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
