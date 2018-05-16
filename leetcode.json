@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1144,
-	"Updated": "2018-05-16T09:48:26.298742405+08:00",
+	"Updated": "2018-05-16T09:51:31.24856088+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 167,
@@ -9529,7 +9529,7 @@
 			"ID": 792,
 			"Title": "Number of Matching Subsequences",
 			"TitleSlug": "number-of-matching-subsequences",
-			"PassRate": "35%",
+			"PassRate": "36%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
