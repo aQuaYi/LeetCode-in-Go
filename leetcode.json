@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1131,
-	"Updated": "2018-05-17T17:07:59.24880494+08:00",
+	"Updated": "2018-05-17T17:31:52.911062332+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 167,
+			"Solved": 168,
 			"Total": 171
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 127
 		},
 		"Total": {
-			"Solved": 578,
+			"Solved": 579,
 			"Total": 593
 		}
 	},
@@ -9855,7 +9855,7 @@
 			"TitleSlug": "most-common-word",
 			"PassRate": "49%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,

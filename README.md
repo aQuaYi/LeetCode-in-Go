@@ -10,7 +10,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|167|287|124|578|
+|**Accepted**|168|287|124|579|
 |**Total**|171|295|127|593|
 
 ## 题解
@@ -129,7 +129,7 @@
 |110|[Balanced Binary Tree](./Algorithms/0110.balanced-binary-tree)|38%|Easy||
 |111|[Minimum Depth of Binary Tree](./Algorithms/0111.minimum-depth-of-binary-tree)|33%|Easy||
 |112|[Path Sum](./Algorithms/0112.path-sum)|35%|Easy||
-|113|[Path Sum II](./Algorithms/0113.path-sum-ii)|36%|Medium||
+|113|[Path Sum II](./Algorithms/0113.path-sum-ii)|35%|Medium||
 |114|[Flatten Binary Tree to Linked List](./Algorithms/0114.flatten-binary-tree-to-linked-list)|36%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |115|[Distinct Subsequences](./Algorithms/0115.distinct-subsequences)|32%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |118|[Pascal's Triangle](./Algorithms/0118.pascals-triangle)|40%|Easy||
@@ -548,7 +548,7 @@
 |767|[Reorganize String](./Algorithms/0767.reorganize-string)|35%|Medium||
 |768|[Max Chunks To Make Sorted II](./Algorithms/0768.max-chunks-to-make-sorted-ii)|43%|Hard||
 |769|[Max Chunks To Make Sorted](./Algorithms/0769.max-chunks-to-make-sorted)|48%|Medium||
-|770|[Basic Calculator IV](./Algorithms/0770.basic-calculator-iv)|41%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|770|[Basic Calculator IV](./Algorithms/0770.basic-calculator-iv)|40%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |771|[Jewels and Stones](./Algorithms/0771.jewels-and-stones)|81%|Easy||
 |773|[Sliding Puzzle](./Algorithms/0773.sliding-puzzle)|47%|Hard||
 |775|[Global and Local Inversions](./Algorithms/0775.global-and-local-inversions)|32%|Medium||
@@ -593,7 +593,7 @@
 |816|[Ambiguous Coordinates](./Algorithms/0816.ambiguous-coordinates)|41%|Medium||
 |817|[Linked List Components](./Algorithms/0817.linked-list-components)|50%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |818|[Race Car](./Algorithms/0818.race-car)|26%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|819| * Most Common Word|49%|Easy||
+|819|[Most Common Word](./Algorithms/0819.most-common-word)|49%|Easy||
 |820|[Short Encoding of Words](./Algorithms/0820.short-encoding-of-words)|40%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |821|[Shortest Distance to a Character](./Algorithms/0821.shortest-distance-to-a-character)|63%|Easy||
 |822| * Card Flipping Game|34%|Medium||
@@ -608,7 +608,7 @@
 |831| * Masking Personal Information|42%|Medium||
 |832| * Flipping an Image :new: |75%|Easy||
 |833| * Find And Replace in String :new: |36%|Medium||
-|834| * Sum of Distances in Tree :new: |28%|Hard||
+|834| * Sum of Distances in Tree :new: |29%|Hard||
 |835| * Image Overlap :new: |28%|Medium||
 
 以下免费的算法题，暂时不能使用 Go 解答
