@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1131,
-	"Updated": "2018-05-17T15:27:29.298209916+08:00",
+	"Updated": "2018-05-17T17:07:59.24880494+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 167,
@@ -1381,7 +1381,7 @@
 			"ID": 113,
 			"Title": "Path Sum II",
 			"TitleSlug": "path-sum-ii",
-			"PassRate": "36%",
+			"PassRate": "35%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9265,7 +9265,7 @@
 			"ID": 770,
 			"Title": "Basic Calculator IV",
 			"TitleSlug": "basic-calculator-iv",
-			"PassRate": "41%",
+			"PassRate": "40%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10033,7 +10033,7 @@
 			"ID": 834,
 			"Title": "Sum of Distances in Tree",
 			"TitleSlug": "sum-of-distances-in-tree",
-			"PassRate": "28%",
+			"PassRate": "29%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
