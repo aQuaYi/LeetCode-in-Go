@@ -1,6 +1,6 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
-[![LeetCode 排名](https://img.shields.io/badge/aQuaYi-1144-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/aQuaYi-1131-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 
@@ -10,7 +10,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|167|287|123|577|
+|**Accepted**|167|287|124|578|
 |**Total**|171|295|127|593|
 
 ## 题解
@@ -125,11 +125,11 @@
 |106|[Construct Binary Tree from Inorder and Postorder Traversal](./Algorithms/0106.construct-binary-tree-from-inorder-and-postorder-traversal)|34%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |107|[Binary Tree Level Order Traversal II](./Algorithms/0107.binary-tree-level-order-traversal-ii)|42%|Easy||
 |108|[Convert Sorted Array to Binary Search Tree](./Algorithms/0108.convert-sorted-array-to-binary-search-tree)|44%|Easy||
-|109|[Convert Sorted List to Binary Search Tree](./Algorithms/0109.convert-sorted-list-to-binary-search-tree)|35%|Medium||
+|109|[Convert Sorted List to Binary Search Tree](./Algorithms/0109.convert-sorted-list-to-binary-search-tree)|36%|Medium||
 |110|[Balanced Binary Tree](./Algorithms/0110.balanced-binary-tree)|38%|Easy||
 |111|[Minimum Depth of Binary Tree](./Algorithms/0111.minimum-depth-of-binary-tree)|33%|Easy||
 |112|[Path Sum](./Algorithms/0112.path-sum)|35%|Easy||
-|113|[Path Sum II](./Algorithms/0113.path-sum-ii)|35%|Medium||
+|113|[Path Sum II](./Algorithms/0113.path-sum-ii)|36%|Medium||
 |114|[Flatten Binary Tree to Linked List](./Algorithms/0114.flatten-binary-tree-to-linked-list)|36%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |115|[Distinct Subsequences](./Algorithms/0115.distinct-subsequences)|32%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |118|[Pascal's Triangle](./Algorithms/0118.pascals-triangle)|40%|Easy||
@@ -532,7 +532,7 @@
 |745|[Prefix and Suffix Search](./Algorithms/0745.prefix-and-suffix-search)|25%|Hard||
 |746|[Min Cost Climbing Stairs](./Algorithms/0746.min-cost-climbing-stairs)|43%|Easy||
 |747|[Largest Number At Least Twice of Others](./Algorithms/0747.largest-number-at-least-twice-of-others)|41%|Easy||
-|748|[Shortest Completing Word](./Algorithms/0748.shortest-completing-word)|52%|Medium||
+|748|[Shortest Completing Word](./Algorithms/0748.shortest-completing-word)|51%|Medium||
 |749|[Contain Virus](./Algorithms/0749.contain-virus)|40%|Hard||
 |752|[Open the Lock](./Algorithms/0752.open-the-lock)|39%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |753|[Cracking the Safe](./Algorithms/0753.cracking-the-safe)|40%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -583,33 +583,33 @@
 |806|[Number of Lines To Write String](./Algorithms/0806.number-of-lines-to-write-string)|63%|Easy||
 |807|[Max Increase to Keep City Skyline](./Algorithms/0807.max-increase-to-keep-city-skyline)|81%|Medium||
 |808|[Soup Servings](./Algorithms/0808.soup-servings)|32%|Medium||
-|809|[Expressive Words](./Algorithms/0809.expressive-words)|35%|Medium||
+|809|[Expressive Words](./Algorithms/0809.expressive-words)|36%|Medium||
 |810|[Chalkboard XOR Game](./Algorithms/0810.chalkboard-xor-game)|37%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |811|[Subdomain Visit Count](./Algorithms/0811.subdomain-visit-count)|63%|Easy||
-|812|[Largest Triangle Area](./Algorithms/0812.largest-triangle-area)|52%|Easy||
+|812|[Largest Triangle Area](./Algorithms/0812.largest-triangle-area)|53%|Easy||
 |813|[Largest Sum of Averages](./Algorithms/0813.largest-sum-of-averages)|40%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |814|[Binary Tree Pruning](./Algorithms/0814.binary-tree-pruning)|70%|Medium||
 |815|[Bus Routes](./Algorithms/0815.bus-routes)|32%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |816|[Ambiguous Coordinates](./Algorithms/0816.ambiguous-coordinates)|41%|Medium||
 |817|[Linked List Components](./Algorithms/0817.linked-list-components)|50%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|818| * Race Car|26%|Hard||
+|818|[Race Car](./Algorithms/0818.race-car)|26%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |819| * Most Common Word|49%|Easy||
 |820|[Short Encoding of Words](./Algorithms/0820.short-encoding-of-words)|40%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|821|[Shortest Distance to a Character](./Algorithms/0821.shortest-distance-to-a-character)|62%|Easy||
+|821|[Shortest Distance to a Character](./Algorithms/0821.shortest-distance-to-a-character)|63%|Easy||
 |822| * Card Flipping Game|34%|Medium||
 |823| * Binary Trees With Factors|28%|Medium||
 |824| * Goat Latin|56%|Easy||
 |825| * Friends Of Appropriate Ages|26%|Medium||
 |826| * Most Profit Assigning Work|31%|Medium||
-|827| * Making A Large Island|42%|Hard||
+|827| * Making A Large Island|41%|Hard||
 |828| * Unique Letter String|31%|Hard||
 |829| * Consecutive Numbers Sum|25%|Medium||
 |830| * Positions of Large Groups|49%|Easy||
 |831| * Masking Personal Information|42%|Medium||
-|832| * Flipping an Image :new: |77%|Easy||
-|833| * Find And Replace in String :new: |35%|Medium||
-|834| * Sum of Distances in Tree :new: |29%|Hard||
-|835| * Image Overlap :new: |26%|Medium||
+|832| * Flipping an Image :new: |75%|Easy||
+|833| * Find And Replace in String :new: |36%|Medium||
+|834| * Sum of Distances in Tree :new: |28%|Hard||
+|835| * Image Overlap :new: |28%|Medium||
 
 以下免费的算法题，暂时不能使用 Go 解答
 
