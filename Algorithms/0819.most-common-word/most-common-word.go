@@ -40,10 +40,10 @@ func split(paragraph string) []string {
 }
 
 func replace(s string) string {
-	chars := []string{"!", "?", ",", "'", ";", "."}
+	chars := []string{"! ", "? ", ", ", "' ", "; ", ". "}
 
 	for _, c := range chars {
-		s = strings.Replace(s, c, "", -1)
+		s = strings.Replace(s, c, " ", -1)
 	}
 
 	return s

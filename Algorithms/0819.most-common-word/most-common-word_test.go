@@ -20,11 +20,11 @@ var tcs = []struct {
 		"y",
 	},
 
-	// {
-	// 	"isn't isn't isn",
-	// 	[]string{"hit"},
-	// 	"isn't",
-	// },
+	{
+		"isn't isn't isn",
+		[]string{"hit"},
+		"isn't",
+	},
 
 	{
 		"Bob hit a ball, the hit BALL flew far after it was hit.",
