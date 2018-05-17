@@ -104,6 +104,7 @@ func build(p problem) {
 var typeMap = map[string]string{
 	"int":     "0",
 	"float64": "0",
+	"string":  "\"\"",
 	"bool":    "false",
 }
 
