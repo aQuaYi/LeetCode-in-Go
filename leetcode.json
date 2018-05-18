@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1098,
-	"Updated": "2018-05-18T08:23:56.463665066+08:00",
+	"Updated": "2018-05-18T08:58:55.19515111+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 168,
 			"Total": 171
 		},
 		"Medium": {
-			"Solved": 287,
+			"Solved": 288,
 			"Total": 295
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 127
 		},
 		"Total": {
-			"Solved": 579,
+			"Solved": 580,
 			"Total": 593
 		}
 	},
@@ -9891,7 +9891,7 @@
 			"TitleSlug": "card-flipping-game",
 			"PassRate": "34%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,

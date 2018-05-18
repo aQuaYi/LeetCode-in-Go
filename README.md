@@ -10,7 +10,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|168|287|124|579|
+|**Accepted**|168|288|124|580|
 |**Total**|171|295|127|593|
 
 ## 题解
@@ -65,7 +65,7 @@
 |46|[Permutations](./Algorithms/0046.permutations)|47%|Medium||
 |47|[Permutations II](./Algorithms/0047.permutations-ii)|35%|Medium||
 |48|[Rotate Image](./Algorithms/0048.rotate-image)|42%|Medium||
-|49|[Group Anagrams](./Algorithms/0049.group-anagrams)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|49|[Group Anagrams](./Algorithms/0049.group-anagrams)|39%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |50|[Pow(x, n)](./Algorithms/0050.powx-n)|26%|Medium||
 |51|[N-Queens](./Algorithms/0051.n-queens)|33%|Hard||
 |52|[N-Queens II](./Algorithms/0052.n-queens-ii)|47%|Hard||
@@ -173,7 +173,7 @@
 |168|[Excel Sheet Column Title](./Algorithms/0168.excel-sheet-column-title)|27%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |169|[Majority Element](./Algorithms/0169.majority-element)|48%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |171|[Excel Sheet Column Number](./Algorithms/0171.excel-sheet-column-number)|48%|Easy||
-|172|[Factorial Trailing Zeroes](./Algorithms/0172.factorial-trailing-zeroes)|36%|Easy||
+|172|[Factorial Trailing Zeroes](./Algorithms/0172.factorial-trailing-zeroes)|37%|Easy||
 |174|[Dungeon Game](./Algorithms/0174.dungeon-game)|24%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |179|[Largest Number](./Algorithms/0179.largest-number)|23%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |187|[Repeated DNA Sequences](./Algorithms/0187.repeated-dna-sequences)|33%|Medium||
@@ -596,7 +596,7 @@
 |819|[Most Common Word](./Algorithms/0819.most-common-word)|49%|Easy||
 |820|[Short Encoding of Words](./Algorithms/0820.short-encoding-of-words)|40%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |821|[Shortest Distance to a Character](./Algorithms/0821.shortest-distance-to-a-character)|63%|Easy||
-|822| * Card Flipping Game|34%|Medium||
+|822|[Card Flipping Game](./Algorithms/0822.card-flipping-game)|34%|Medium||
 |823| * Binary Trees With Factors|28%|Medium||
 |824| * Goat Latin|56%|Easy||
 |825| * Friends Of Appropriate Ages|26%|Medium||
