@@ -4,6 +4,17 @@
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 
+## 使用方法
+
+```bash
+$ go env
+...
+GOPATH="第一个GOPATH目录:..."
+...
+$ go get github.com/aQuaYi/LeetCode-in-Go
+// 目录会下载到： 第一个GOPATH目录/src/github.com/aQuaYi/LeetCode-in-Go
+```
+
 ## 进度
 
 > 统计规则：1.免费题，2.算法题，3.能用 Go 解答
@@ -431,7 +442,7 @@
 |581|[Shortest Unsorted Continuous Subarray](./Algorithms/0581.shortest-unsorted-continuous-subarray)|29%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |583|[Delete Operation for Two Strings](./Algorithms/0583.delete-operation-for-two-strings)|44%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |587|[Erect the Fence](./Algorithms/0587.erect-the-fence)|33%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|591|[Tag Validator](./Algorithms/0591.tag-validator)|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|591|[Tag Validator](./Algorithms/0591.tag-validator)|30%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |592|[Fraction Addition and Subtraction](./Algorithms/0592.fraction-addition-and-subtraction)|46%|Medium||
 |593|[Valid Square](./Algorithms/0593.valid-square)|39%|Medium||
 |594|[Longest Harmonious Subsequence](./Algorithms/0594.longest-harmonious-subsequence)|41%|Easy||
@@ -586,9 +597,9 @@
 |809|[Expressive Words](./Algorithms/0809.expressive-words)|35%|Medium||
 |810|[Chalkboard XOR Game](./Algorithms/0810.chalkboard-xor-game)|37%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |811|[Subdomain Visit Count](./Algorithms/0811.subdomain-visit-count)|63%|Easy||
-|812|[Largest Triangle Area](./Algorithms/0812.largest-triangle-area)|53%|Easy||
+|812|[Largest Triangle Area](./Algorithms/0812.largest-triangle-area)|52%|Easy||
 |813|[Largest Sum of Averages](./Algorithms/0813.largest-sum-of-averages)|40%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|814|[Binary Tree Pruning](./Algorithms/0814.binary-tree-pruning)|70%|Medium||
+|814|[Binary Tree Pruning](./Algorithms/0814.binary-tree-pruning)|69%|Medium||
 |815|[Bus Routes](./Algorithms/0815.bus-routes)|32%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |816|[Ambiguous Coordinates](./Algorithms/0816.ambiguous-coordinates)|41%|Medium||
 |817|[Linked List Components](./Algorithms/0817.linked-list-components)|50%|Medium|[❤](https://leetcode.com/list/oussv5j)|
