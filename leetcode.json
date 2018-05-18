@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1098,
-	"Updated": "2018-05-18T05:13:06.382625511+08:00",
+	"Updated": "2018-05-18T08:23:56.463665066+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 168,
@@ -613,7 +613,7 @@
 			"ID": 49,
 			"Title": "Group Anagrams",
 			"TitleSlug": "group-anagrams",
-			"PassRate": "38%",
+			"PassRate": "39%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -2089,7 +2089,7 @@
 			"ID": 172,
 			"Title": "Factorial Trailing Zeroes",
 			"TitleSlug": "factorial-trailing-zeroes",
-			"PassRate": "36%",
+			"PassRate": "37%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -3073,7 +3073,7 @@
 			"ID": 254,
 			"Title": "Factor Combinations",
 			"TitleSlug": "factor-combinations",
-			"PassRate": "43%",
+			"PassRate": "44%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
