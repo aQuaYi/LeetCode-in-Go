@@ -7,10 +7,12 @@
 ## 使用方法
 
 ```bash
+$ go version
+// 请确保版本号 >= 1.9
 $ go env
 ...
 GOPATH="第一个GOPATH目录:..."
 ...
 $ go get github.com/aQuaYi/LeetCode-in-Go
-// 目录会下载到： 第一个GOPATH目录/src/github.com/aQuaYi/LeetCode-in-Go
+// 下载位置： 第一个GOPATH目录/src/github.com/aQuaYi/LeetCode-in-Go
 ```
