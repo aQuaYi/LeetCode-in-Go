@@ -30,8 +30,11 @@ func numFactoredBinaryTrees(A []int) int {
 				continue
 			}
 
-			ress[i] += ress[j]
-			ress[i] = mod(ress[i])
+			k := factorIndex[quotient]
+
+			t := mod(ress[j] * ress[k])
+
+			ress[i] = mod(ress[i] + t)
 
 		}
 	}
