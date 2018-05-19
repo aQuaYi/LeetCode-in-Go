@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1095,
-	"Updated": "2018-05-19T23:22:03.806972224+08:00",
+	"Updated": "2018-05-20T00:14:29.85889005+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 168,
 			"Total": 171
 		},
 		"Medium": {
-			"Solved": 288,
+			"Solved": 289,
 			"Total": 295
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 127
 		},
 		"Total": {
-			"Solved": 580,
+			"Solved": 581,
 			"Total": 593
 		}
 	},
@@ -517,7 +517,7 @@
 			"ID": 41,
 			"Title": "First Missing Positive",
 			"TitleSlug": "first-missing-positive",
-			"PassRate": "25%",
+			"PassRate": "26%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9903,7 +9903,7 @@
 			"TitleSlug": "binary-trees-with-factors",
 			"PassRate": "28%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
