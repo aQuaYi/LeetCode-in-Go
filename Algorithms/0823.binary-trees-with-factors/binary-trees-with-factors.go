@@ -17,6 +17,7 @@ func numFactoredBinaryTrees(A []int) int {
 	ress := make([]int, len(A))
 
 	for i := 0; i < len(A); i++ {
+		// 自身算一个
 		ress[i] = 1
 		for j := 0; j < i; j++ {
 			quotient, remainder := A[i]/A[j], A[i]%A[j]
@@ -26,8 +27,11 @@ func numFactoredBinaryTrees(A []int) int {
 				continue
 			}
 
-			ress[i] = mod(ress[i] + ress[j]*ress[k])
+			// 左边和右边的组合数
+			// 题目还说了 A[x] is unique
+			ress[i] += ress[j] * ress[k]
 		}
+		ress[i] = mod(ress[i])
 	}
 
 	return sum(ress)
@@ -37,9 +41,8 @@ func sum(a []int) int {
 	res := 0
 	for i := range a {
 		res += a[i]
-		res = mod(res)
 	}
-	return res
+	return mod(res)
 }
 
 func mod(n int) int {
