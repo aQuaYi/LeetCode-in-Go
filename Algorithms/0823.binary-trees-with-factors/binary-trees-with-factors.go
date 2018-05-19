@@ -1,8 +1,6 @@
 package problem0823
 
-import (
-	"sort"
-)
+import "sort"
 
 const (
 	modulo = 1E9 + 7
@@ -17,33 +15,22 @@ func numFactoredBinaryTrees(A []int) int {
 	}
 
 	ress := make([]int, len(A))
-	for i := range ress {
-		ress[i] = 1
-	}
 
-	for i := 1; i < len(A); i++ {
+	for i := 0; i < len(A); i++ {
+		ress[i] = 1
 		for j := 0; j < i; j++ {
 			quotient, remainder := A[i]/A[j], A[i]%A[j]
+			k, isFactor := factorIndex[quotient]
 
-			if remainder != 0 ||
-				(factorIndex[quotient] == 0 && quotient != A[0]) {
+			if remainder != 0 || !isFactor {
 				continue
 			}
 
-			k := factorIndex[quotient]
-
-			t := mod(ress[j] * ress[k])
-
-			ress[i] = mod(ress[i] + t)
-
+			ress[i] = mod(ress[i] + ress[j]*ress[k])
 		}
 	}
 
 	return sum(ress)
-}
-
-func mod(n int) int {
-	return n % modulo
 }
 
 func sum(a []int) int {
@@ -53,4 +40,8 @@ func sum(a []int) int {
 		res = mod(res)
 	}
 	return res
+}
+
+func mod(n int) int {
+	return n % modulo
 }
