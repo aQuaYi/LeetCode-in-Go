@@ -66,8 +66,8 @@ func saveLocal(task string) {
 
 var m = map[string]time.Duration{
 	"#do": 15,
-	"#re": 30,
-	"#fa": 60,
+	"#re": 90,
+	"#fa": 30,
 }
 
 func delay(task string) string {
