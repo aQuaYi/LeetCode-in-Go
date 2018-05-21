@@ -4,6 +4,6 @@
 
 ## 我的疑问
 
-## 我愿意为此 issue 付费
+-------
 
-![赞赏码](https://github.com/aQuaYi/LeetCode-in-Go/master/.github/pay.png)
+有偿答疑，[点击后，扫码付费](https://github.com/aQuaYi/LeetCode-in-Go/master/.github/pay.png)
