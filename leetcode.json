@@ -1,23 +1,23 @@
 {
 	"Username": "aQuaYi",
-	"Ranking": 1095,
-	"Updated": "2018-05-20T00:14:29.85889005+08:00",
+	"Ranking": 1089,
+	"Updated": "2018-05-21T10:00:12.353483132+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 168,
-			"Total": 171
+			"Total": 172
 		},
 		"Medium": {
 			"Solved": 289,
-			"Total": 295
+			"Total": 297
 		},
 		"Hard": {
 			"Solved": 124,
-			"Total": 127
+			"Total": 128
 		},
 		"Total": {
 			"Solved": 581,
-			"Total": 593
+			"Total": 597
 		}
 	},
 	"Problems": [
@@ -1609,7 +1609,7 @@
 			"ID": 132,
 			"Title": "Palindrome Partitioning II",
 			"TitleSlug": "palindrome-partitioning-ii",
-			"PassRate": "24%",
+			"PassRate": "25%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -4585,7 +4585,7 @@
 			"ID": 380,
 			"Title": "Insert Delete GetRandom O(1)",
 			"TitleSlug": "insert-delete-getrandom-o1",
-			"PassRate": "39%",
+			"PassRate": "40%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -7117,7 +7117,7 @@
 			"ID": 591,
 			"Title": "Tag Validator",
 			"TitleSlug": "tag-validator",
-			"PassRate": "30%",
+			"PassRate": "31%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -8857,7 +8857,7 @@
 			"ID": 736,
 			"Title": "Parse Lisp Expression",
 			"TitleSlug": "parse-lisp-expression",
-			"PassRate": "42%",
+			"PassRate": "41%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9457,7 +9457,7 @@
 			"ID": 786,
 			"Title": "K-th Smallest Prime Fraction",
 			"TitleSlug": "k-th-smallest-prime-fraction",
-			"PassRate": "31%",
+			"PassRate": "32%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9733,7 +9733,7 @@
 			"ID": 809,
 			"Title": "Expressive Words",
 			"TitleSlug": "expressive-words",
-			"PassRate": "35%",
+			"PassRate": "36%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9793,7 +9793,7 @@
 			"ID": 814,
 			"Title": "Binary Tree Pruning",
 			"TitleSlug": "binary-tree-pruning",
-			"PassRate": "69%",
+			"PassRate": "70%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10014,7 +10014,7 @@
 			"IsAccepted": false,
 			"IsPaid": false,
 			"IsFavor": false,
-			"IsNew": true,
+			"IsNew": false,
 			"HasNoGoOption": false
 		},
 		{
@@ -10026,7 +10026,7 @@
 			"IsAccepted": false,
 			"IsPaid": false,
 			"IsFavor": false,
-			"IsNew": true,
+			"IsNew": false,
 			"HasNoGoOption": false
 		},
 		{
@@ -10038,15 +10038,63 @@
 			"IsAccepted": false,
 			"IsPaid": false,
 			"IsFavor": false,
-			"IsNew": true,
+			"IsNew": false,
 			"HasNoGoOption": false
 		},
 		{
 			"ID": 835,
 			"Title": "Image Overlap",
 			"TitleSlug": "image-overlap",
-			"PassRate": "30%",
+			"PassRate": "31%",
 			"Difficulty": "Medium",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": false,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 836,
+			"Title": "Rectangle Overlap",
+			"TitleSlug": "rectangle-overlap",
+			"PassRate": "37%",
+			"Difficulty": "Easy",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 837,
+			"Title": "New 21 Game",
+			"TitleSlug": "new-21-game",
+			"PassRate": "20%",
+			"Difficulty": "Medium",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 838,
+			"Title": "Push Dominoes",
+			"TitleSlug": "push-dominoes",
+			"PassRate": "36%",
+			"Difficulty": "Medium",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 839,
+			"Title": "Similar String Groups",
+			"TitleSlug": "similar-string-groups",
+			"PassRate": "34%",
+			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
 			"IsFavor": false,
