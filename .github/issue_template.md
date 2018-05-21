@@ -6,4 +6,4 @@
 
 ## 我愿意为此 issue 付费
 
-![赞赏码](https://github.com/aQuaYi/LeetCode-in-Go/blob/master/.github/pay.png)
+![赞赏码](https://github.com/aQuaYi/LeetCode-in-Go/master/.github/pay.png)
