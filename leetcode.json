@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1089,
-	"Updated": "2018-05-21T16:20:26.257356889+08:00",
+	"Updated": "2018-05-21T17:00:46.344908158+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 169,
 			"Total": 172
 		},
 		"Medium": {
-			"Solved": 289,
+			"Solved": 290,
 			"Total": 297
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 128
 		},
 		"Total": {
-			"Solved": 582,
+			"Solved": 583,
 			"Total": 597
 		}
 	},
@@ -9927,7 +9927,7 @@
 			"TitleSlug": "friends-of-appropriate-ages",
 			"PassRate": "26%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,

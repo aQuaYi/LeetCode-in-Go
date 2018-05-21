@@ -23,7 +23,7 @@ $ go get github.com/aQuaYi/LeetCode-in-Go
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|169|289|124|582|
+|**Accepted**|169|290|124|583|
 |**Total**|172|297|128|597|
 
 ## 题解
@@ -444,7 +444,7 @@ $ go get github.com/aQuaYi/LeetCode-in-Go
 |581|[Shortest Unsorted Continuous Subarray](./Algorithms/0581.shortest-unsorted-continuous-subarray)|29%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |583|[Delete Operation for Two Strings](./Algorithms/0583.delete-operation-for-two-strings)|44%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |587|[Erect the Fence](./Algorithms/0587.erect-the-fence)|33%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|591|[Tag Validator](./Algorithms/0591.tag-validator)|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|591|[Tag Validator](./Algorithms/0591.tag-validator)|30%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |592|[Fraction Addition and Subtraction](./Algorithms/0592.fraction-addition-and-subtraction)|46%|Medium||
 |593|[Valid Square](./Algorithms/0593.valid-square)|39%|Medium||
 |594|[Longest Harmonious Subsequence](./Algorithms/0594.longest-harmonious-subsequence)|41%|Easy||
@@ -550,7 +550,7 @@ $ go get github.com/aQuaYi/LeetCode-in-Go
 |752|[Open the Lock](./Algorithms/0752.open-the-lock)|39%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |753|[Cracking the Safe](./Algorithms/0753.cracking-the-safe)|40%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |754|[Reach a Number](./Algorithms/0754.reach-a-number)|27%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|756|[Pyramid Transition Matrix](./Algorithms/0756.pyramid-transition-matrix)|46%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|756|[Pyramid Transition Matrix](./Algorithms/0756.pyramid-transition-matrix)|45%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |757|[Set Intersection Size At Least Two](./Algorithms/0757.set-intersection-size-at-least-two)|34%|Hard||
 |761|[Special Binary String](./Algorithms/0761.special-binary-string)|42%|Hard||
 |762|[Prime Number of Set Bits in Binary Representation](./Algorithms/0762.prime-number-of-set-bits-in-binary-representation)|55%|Easy||
@@ -574,7 +574,7 @@ $ go get github.com/aQuaYi/LeetCode-in-Go
 |783|[Minimum Distance Between BST Nodes](./Algorithms/0783.minimum-distance-between-bst-nodes)|47%|Easy||
 |784|[Letter Case Permutation](./Algorithms/0784.letter-case-permutation)|52%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |785|[Is Graph Bipartite?](./Algorithms/0785.is-graph-bipartite)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|786|[K-th Smallest Prime Fraction](./Algorithms/0786.k-th-smallest-prime-fraction)|32%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|786|[K-th Smallest Prime Fraction](./Algorithms/0786.k-th-smallest-prime-fraction)|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |787|[Cheapest Flights Within K Stops](./Algorithms/0787.cheapest-flights-within-k-stops)|29%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |788|[Rotated Digits](./Algorithms/0788.rotated-digits)|50%|Easy||
 |789|[Escape The Ghosts](./Algorithms/0789.escape-the-ghosts)|49%|Medium||
@@ -608,11 +608,11 @@ $ go get github.com/aQuaYi/LeetCode-in-Go
 |818|[Race Car](./Algorithms/0818.race-car)|26%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |819|[Most Common Word](./Algorithms/0819.most-common-word)|49%|Easy||
 |820|[Short Encoding of Words](./Algorithms/0820.short-encoding-of-words)|40%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|821|[Shortest Distance to a Character](./Algorithms/0821.shortest-distance-to-a-character)|62%|Easy||
+|821|[Shortest Distance to a Character](./Algorithms/0821.shortest-distance-to-a-character)|63%|Easy||
 |822|[Card Flipping Game](./Algorithms/0822.card-flipping-game)|34%|Medium||
 |823|[Binary Trees With Factors](./Algorithms/0823.binary-trees-with-factors)|28%|Medium||
 |824|[Goat Latin](./Algorithms/0824.goat-latin)|56%|Easy||
-|825| * Friends Of Appropriate Ages|26%|Medium||
+|825|[Friends Of Appropriate Ages](./Algorithms/0825.friends-of-appropriate-ages)|26%|Medium||
 |826| * Most Profit Assigning Work|32%|Medium||
 |827| * Making A Large Island|41%|Hard||
 |828| * Unique Letter String|31%|Hard||
@@ -624,8 +624,8 @@ $ go get github.com/aQuaYi/LeetCode-in-Go
 |834| * Sum of Distances in Tree|29%|Hard||
 |835| * Image Overlap|31%|Medium||
 |836| * Rectangle Overlap :new: |37%|Easy||
-|837| * New 21 Game :new: |20%|Medium||
-|838| * Push Dominoes :new: |36%|Medium||
+|837| * New 21 Game :new: |21%|Medium||
+|838| * Push Dominoes :new: |37%|Medium||
 |839| * Similar String Groups :new: |34%|Hard||
 
 以下免费的算法题，暂时不能使用 Go 解答
