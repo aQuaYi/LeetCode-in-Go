@@ -4,19 +4,6 @@
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 
-## 使用方法
-
-```bash
-$ go version
-// 请确保版本号 >= 1.9
-$ go env
-...
-GOPATH="第一个GOPATH目录:..."
-...
-$ go get github.com/aQuaYi/LeetCode-in-Go
-// 下载位置： 第一个GOPATH目录/src/github.com/aQuaYi/LeetCode-in-Go
-```
-
 ## 进度
 
 > 统计规则：1.免费题，2.算法题，3.能用 Go 解答
@@ -654,6 +641,19 @@ $ go get github.com/aQuaYi/LeetCode-in-Go
 - [449.Serialize and Deserialize BST](https://leetcode.com/problems/serialize-and-deserialize-bst/)
 - [535.Encode and Decode TinyURL](https://leetcode.com/problems/encode-and-decode-tinyurl/)
 - [690.Employee Importance](https://leetcode.com/problems/employee-importance/)
+
+## 使用方法
+
+```bash
+$ go version
+// 请确保版本号 >= 1.9
+$ go env
+...
+GOPATH="第一个GOPATH目录:..."
+...
+$ go get github.com/aQuaYi/LeetCode-in-Go
+// 下载位置： 第一个GOPATH目录/src/github.com/aQuaYi/LeetCode-in-Go
+```
 
 ## helper
 
