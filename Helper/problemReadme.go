@@ -53,7 +53,9 @@ func replaceCharacters(s string) string {
 		"&gt;":   ">",
 		"&nbsp;": "",
 		"&#39;":  "'",
+		"&amp;":  "&",
 		"\n\n\n": "\n\n",
+		" \n":    "\n",
 	}
 	for old, new := range changeMap {
 		s = strings.Replace(s, old, new, -1)
