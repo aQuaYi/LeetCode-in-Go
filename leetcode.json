@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1070,
-	"Updated": "2018-05-22T13:25:37.766569899+08:00",
+	"Updated": "2018-05-22T13:47:02.265354426+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 169,
@@ -341,7 +341,7 @@
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": true,
+			"IsFavor": false,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -10093,7 +10093,7 @@
 			"ID": 839,
 			"Title": "Similar String Groups",
 			"TitleSlug": "similar-string-groups",
-			"PassRate": "34%",
+			"PassRate": "35%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
