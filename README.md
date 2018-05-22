@@ -52,7 +52,7 @@
 |33|[Search in Rotated Sorted Array](./Algorithms/0033.search-in-rotated-sorted-array)|31%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |34|[Search for a Range](./Algorithms/0034.search-for-a-range)|31%|Medium||
 |35|[Search Insert Position](./Algorithms/0035.search-insert-position)|40%|Easy||
-|36|[Valid Sudoku](./Algorithms/0036.valid-sudoku)|37%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|36|[Valid Sudoku](./Algorithms/0036.valid-sudoku)|37%|Medium||
 |37|[Sudoku Solver](./Algorithms/0037.sudoku-solver)|32%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |38|[Count and Say](./Algorithms/0038.count-and-say)|36%|Easy||
 |39|[Combination Sum](./Algorithms/0039.combination-sum)|41%|Medium||
