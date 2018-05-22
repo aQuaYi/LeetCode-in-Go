@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1070,
-	"Updated": "2018-05-22T13:47:02.265354426+08:00",
+	"Updated": "2018-05-22T15:57:04.062441882+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 169,
@@ -401,7 +401,7 @@
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": true,
+			"IsFavor": false,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -6097,7 +6097,7 @@
 			"ID": 506,
 			"Title": "Relative Ranks",
 			"TitleSlug": "relative-ranks",
-			"PassRate": "46%",
+			"PassRate": "47%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9457,7 +9457,7 @@
 			"ID": 786,
 			"Title": "K-th Smallest Prime Fraction",
 			"TitleSlug": "k-th-smallest-prime-fraction",
-			"PassRate": "31%",
+			"PassRate": "32%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,

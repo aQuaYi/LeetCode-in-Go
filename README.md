@@ -47,7 +47,7 @@
 |28|[Implement strStr()](./Algorithms/0028.implement-strstr)|29%|Easy||
 |29|[Divide Two Integers](./Algorithms/0029.divide-two-integers)|15%|Medium||
 |30|[Substring with Concatenation of All Words](./Algorithms/0030.substring-with-concatenation-of-all-words)|22%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|31|[Next Permutation](./Algorithms/0031.next-permutation)|29%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|31|[Next Permutation](./Algorithms/0031.next-permutation)|29%|Medium||
 |32|[Longest Valid Parentheses](./Algorithms/0032.longest-valid-parentheses)|23%|Hard||
 |33|[Search in Rotated Sorted Array](./Algorithms/0033.search-in-rotated-sorted-array)|31%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |34|[Search for a Range](./Algorithms/0034.search-for-a-range)|31%|Medium||
@@ -385,7 +385,7 @@
 |502|[IPO](./Algorithms/0502.ipo)|36%|Hard||
 |503|[Next Greater Element II](./Algorithms/0503.next-greater-element-ii)|48%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |504|[Base 7](./Algorithms/0504.base-7)|43%|Easy||
-|506|[Relative Ranks](./Algorithms/0506.relative-ranks)|46%|Easy||
+|506|[Relative Ranks](./Algorithms/0506.relative-ranks)|47%|Easy||
 |507|[Perfect Number](./Algorithms/0507.perfect-number)|32%|Easy||
 |508|[Most Frequent Subtree Sum](./Algorithms/0508.most-frequent-subtree-sum)|52%|Medium||
 |513|[Find Bottom Left Tree Value](./Algorithms/0513.find-bottom-left-tree-value)|56%|Medium||
@@ -561,7 +561,7 @@
 |783|[Minimum Distance Between BST Nodes](./Algorithms/0783.minimum-distance-between-bst-nodes)|47%|Easy||
 |784|[Letter Case Permutation](./Algorithms/0784.letter-case-permutation)|52%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |785|[Is Graph Bipartite?](./Algorithms/0785.is-graph-bipartite)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|786|[K-th Smallest Prime Fraction](./Algorithms/0786.k-th-smallest-prime-fraction)|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|786|[K-th Smallest Prime Fraction](./Algorithms/0786.k-th-smallest-prime-fraction)|32%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |787|[Cheapest Flights Within K Stops](./Algorithms/0787.cheapest-flights-within-k-stops)|29%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |788|[Rotated Digits](./Algorithms/0788.rotated-digits)|50%|Easy||
 |789|[Escape The Ghosts](./Algorithms/0789.escape-the-ghosts)|50%|Medium||
