@@ -7,47 +7,38 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-type question struct {
-	para
-	ans
+// tcs is testcase slice
+var tcs = []struct {
+	nums []int
+	ans  int
+}{
+
+	{
+		[]int{1, 1, 2},
+		2,
+	},
+
+	{
+		[]int{0, 0, 1, 1, 1, 2, 2, 3, 3, 4},
+		5,
+	},
+
+	// 可以有多个 testcase
 }
 
-// para 是参数
-// one 代表第一个参数
-type para struct {
-	one []int
-}
-
-// ans 是答案
-// one 代表第一个答案
-type ans struct {
-	one int
-	two []int
-}
-
-func Test_Problem0026(t *testing.T) {
+func Test_removeDuplicates(t *testing.T) {
 	ast := assert.New(t)
 
-	qs := []question{
-
-		question{
-			para{[]int{1, 2, 2, 3, 3, 4, 5}},
-			ans{5, []int{1, 2, 3, 4, 5}},
-		},
-
-		question{
-			para{[]int{1}},
-			ans{1, []int{1}},
-		},
-
-		// 如需多个测试，可以复制上方元素。
+	for _, tc := range tcs {
+		fmt.Printf("~~%v~~\n", tc)
+		ast.Equal(tc.ans, removeDuplicates(tc.nums), "输入:%v", tc)
 	}
+}
 
-	for _, q := range qs {
-		a, p := q.ans, q.para
-		fmt.Printf("~~%v~~\n", p)
-		l := removeDuplicates(p.one)
-		ast.Equal(a.one, l, "输入:%v", p)
-		ast.Equal(a.two, p.one[:l])
+func Benchmark_removeDuplicates(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		for _, tc := range tcs {
+			removeDuplicates(tc.nums)
+		}
 	}
 }
