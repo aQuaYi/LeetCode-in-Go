@@ -5,33 +5,40 @@ import (
 )
 
 func maxProfitAssignment(difficulty []int, profit []int, worker []int) int {
-	works := make([]work, len(difficulty))
+	jobs := make([]job, len(difficulty))
 	for i := range difficulty {
-		works[i] = work{
+		jobs[i] = job{
 			d: difficulty[i],
 			p: profit[i],
 		}
 	}
-
-	sort.Slice(works, func(i int, j int) bool {
-		if works[i].p == works[j].p {
-			return works[i].d < works[j].d
-		}
-		return works[i].p > works[j].p
+	sort.Slice(jobs, func(i int, j int) bool {
+		return jobs[i].d < jobs[j].d
 	})
 
+	sort.Ints(worker)
+
 	res := 0
-	for _, w := range worker {
-		for i := range works {
-			if works[i].d <= w {
-				res += works[i].p
-				break
-			}
+	i := 0
+	maxp := 0
+	for _, ability := range worker {
+		for i < len(jobs) && ability >= jobs[i].d {
+			maxp = max(maxp, jobs[i].p)
+			i++
 		}
+		res += maxp
 	}
+
 	return res
 }
 
-type work struct {
+type job struct {
 	d, p int
+}
+
+func max(a, b int) int {
+	if a > b {
+		return a
+	}
+	return b
 }
