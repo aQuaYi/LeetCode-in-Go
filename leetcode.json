@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1074,
-	"Updated": "2018-05-23T08:49:01.669524355+08:00",
+	"Updated": "2018-05-23T09:50:38.727624317+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 169,
 			"Total": 172
 		},
 		"Medium": {
-			"Solved": 290,
+			"Solved": 291,
 			"Total": 297
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 128
 		},
 		"Total": {
-			"Solved": 583,
+			"Solved": 584,
 			"Total": 597
 		}
 	},
@@ -9939,9 +9939,9 @@
 			"TitleSlug": "most-profit-assigning-work",
 			"PassRate": "32%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
