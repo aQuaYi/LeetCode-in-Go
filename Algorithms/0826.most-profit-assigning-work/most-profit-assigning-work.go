@@ -26,6 +26,9 @@ func maxProfitAssignment(difficulty []int, profit []int, worker []int) int {
 			maxp = max(maxp, jobs[i].p)
 			i++
 		}
+		// 由于 jobs 按照 difficulty 的升序排列
+		// 由于 worker 按照 ability 的升序排列
+		// 所以，此时 maxp 代表了此 worker 所能完成的工作中，能获取的最大收益
 		res += maxp
 	}
 
