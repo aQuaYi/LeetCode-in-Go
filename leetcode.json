@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1069,
-	"Updated": "2018-05-24T09:09:08.294273041+08:00",
+	"Updated": "2018-05-24T09:20:34.00712197+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 169,
+			"Solved": 170,
 			"Total": 172
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 128
 		},
 		"Total": {
-			"Solved": 584,
+			"Solved": 585,
 			"Total": 597
 		}
 	},
@@ -9987,7 +9987,7 @@
 			"TitleSlug": "positions-of-large-groups",
 			"PassRate": "48%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
