@@ -15,7 +15,7 @@ func twoSum(nums []int, target int) []int {
 		}
 
 		// 把i和i的值，存入map
-		m[nums[i]] = i
+		m[b] = i
 	}
 
 	return nil
