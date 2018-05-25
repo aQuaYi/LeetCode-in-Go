@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1057,
-	"Updated": "2018-05-25T08:34:17.93715101+08:00",
+	"Updated": "2018-05-25T09:59:44.708024384+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 170,
 			"Total": 172
 		},
 		"Medium": {
-			"Solved": 291,
+			"Solved": 292,
 			"Total": 297
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 128
 		},
 		"Total": {
-			"Solved": 585,
+			"Solved": 586,
 			"Total": 597
 		}
 	},
@@ -7357,7 +7357,7 @@
 			"ID": 611,
 			"Title": "Valid Triangle Number",
 			"TitleSlug": "valid-triangle-number",
-			"PassRate": "41%",
+			"PassRate": "42%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -8725,7 +8725,7 @@
 			"ID": 725,
 			"Title": "Split Linked List in Parts",
 			"TitleSlug": "split-linked-list-in-parts",
-			"PassRate": "47%",
+			"PassRate": "46%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9973,11 +9973,11 @@
 			"ID": 829,
 			"Title": "Consecutive Numbers Sum",
 			"TitleSlug": "consecutive-numbers-sum",
-			"PassRate": "26%",
+			"PassRate": "25%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
