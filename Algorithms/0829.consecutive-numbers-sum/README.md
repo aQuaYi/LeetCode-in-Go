@@ -32,4 +32,4 @@ Note:1 <= N <= 10 ^ 9.
 
 ## 解题思路
 
-见程序注释
+<https://leetcode.com/problems/consecutive-numbers-sum/discuss/129015/5-lines-C++-solution-with-detailed-mathematical-explanation>
