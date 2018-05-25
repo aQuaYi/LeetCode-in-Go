@@ -5,10 +5,14 @@ import (
 )
 
 func consecutiveNumbersSum(N int) int {
+	if N == 1 {
+		return 1
+	}
+
 	res := 1
 
-	root := int(math.Sqrt(float64(N)))
-	for i := 2; i <= root; i++ {
+	ceil := int(math.Sqrt(float64(N))) + 1
+	for i := 2; i <= ceil; i++ {
 		res += analyse(N, i)
 	}
 
