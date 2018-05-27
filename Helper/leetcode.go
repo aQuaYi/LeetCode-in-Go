@@ -132,3 +132,15 @@ func logDiff(old, new *leetcode) {
 		}
 	}
 }
+
+func (lc *leetcode) ProgressTable() string {
+	return lc.Record.progressTable()
+}
+
+func (lc *leetcode) AvailableTable() string {
+	return lc.Problems.available().table()
+}
+
+func (lc *leetcode) UnavailableList() string {
+	return lc.Problems.unavailable().list()
+}

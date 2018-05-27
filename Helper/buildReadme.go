@@ -1,7 +1,11 @@
 package main
 
 import (
+	"bufio"
+	"bytes"
 	"fmt"
+	"html/template"
+	"io/ioutil"
 	"log"
 	"os"
 )
@@ -19,40 +23,33 @@ func makeReadmeFile(lc *leetcode) {
 	file := "README.md"
 	os.Remove(file)
 
-	// 更新 README.md 的内容
-	template := `%s
+	var b bytes.Buffer
+	writer := bufio.NewWriter(&b)
 
-## 进度
+	tmpl := template.Must(template.New("readme").Parse(readTMPL("template.markdown")))
 
-> 统计规则：1.免费题，2.算法题，3.能用 Go 解答
-
-%s
-## 题解
-
-%s
-以下免费的算法题，暂时不能使用 Go 解答
-
-%s
-#%s
-`
-
-	head := getHead(lc)
-
-	progressTable := lc.Record.progressTable()
-
-	availableTable := lc.Problems.available().table()
-
-	unavailList := lc.Problems.unavailable().list()
-
-	tail := read("README_TAIL.md")
-
-	content := fmt.Sprintf(template, head, progressTable, availableTable, unavailList, tail)
+	tmpl.Execute(writer, lc)
 
 	// 保存 README.md 文件
-	write(file, content)
+	write(file, string(b.Bytes()))
 }
 
 func getHead(lc *leetcode) string {
 	headFormat := string(read("README_HEAD.md"))
 	return fmt.Sprintf(headFormat, lc.Username, lc.Ranking, lc.Username)
+}
+
+func readTMPL(path string) string {
+	file, err := os.Open(path)
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer file.Close()
+
+	data, err := ioutil.ReadAll(file)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	return string(data)
 }

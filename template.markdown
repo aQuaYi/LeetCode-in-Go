@@ -1,7 +1,7 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
 {{/* 本文件是用来生成 README.md 的模板 */}}
-[![LeetCode 排名](https://img.shields.io/badge/{{.Username}}-{{.Rank}}-blue.svg)](https://leetcode.com/{{.Username}}/)
+[![LeetCode 排名](https://img.shields.io/badge/{{.Username}}-{{.Ranking}}-blue.svg)](https://leetcode.com/{{.Username}}/)
 {{/* 这两个 badge 请根据你的实际情况修改 */}}
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
@@ -14,7 +14,7 @@
 
 ## 题解
 
-{{.ProblemTable}}
+{{.AvailableTable}}
 
 以下免费的算法题，暂时不能使用 Go 解答
 
