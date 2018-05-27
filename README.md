@@ -1,9 +1,5 @@
-<<<<<<< HEAD
 # [LeetCode](https://leetcode.com) 的 Go 解答
-=======
-# [LeetCode](https://leetcode.com) 的 Go 解答 
 
->>>>>>> develop
 [![LeetCode 排名](https://img.shields.io/badge/aQuaYi-1057-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
@@ -16,7 +12,6 @@
 |:---:|:---:|:---:|:---:|:---:|
 |**Accepted**|170|292|124|586|
 |**Total**|173|299|129|601|
-
 
 ## 题解
 
