@@ -143,5 +143,5 @@ func (lc *leetcode) AvailableTable() string {
 
 func (lc *leetcode) UnavailableList() string {
 	res := lc.Problems.unavailable().list()
-	return res
+	return res[:len(res)-1]
 }
