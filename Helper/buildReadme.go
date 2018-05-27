@@ -1,9 +1,7 @@
 package main
 
 import (
-	"bufio"
 	"bytes"
-	"fmt"
 	"html/template"
 	"io/ioutil"
 	"log"
@@ -24,11 +22,10 @@ func makeReadmeFile(lc *leetcode) {
 	os.Remove(file)
 
 	var b bytes.Buffer
-	writer := bufio.NewWriter(&b)
 
 	tmpl := template.Must(template.New("readme").Parse(readTMPL("template.markdown")))
 
-	err := tmpl.Execute(writer, lc)
+	err := tmpl.Execute(&b, lc)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -38,11 +35,6 @@ func makeReadmeFile(lc *leetcode) {
 	// 保存 README.md 文件
 
 	write(file, string(b.Bytes()))
-}
-
-func getHead(lc *leetcode) string {
-	headFormat := string(read("README_HEAD.md"))
-	return fmt.Sprintf(headFormat, lc.Username, lc.Ranking, lc.Username)
 }
 
 func readTMPL(path string) string {
