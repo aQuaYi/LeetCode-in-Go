@@ -143,5 +143,6 @@ func (lc *leetcode) AvailableTable() string {
 
 func (lc *leetcode) UnavailableList() string {
 	res := lc.Problems.unavailable().list()
+	// 为了 README.md 文档的美观，需要删除最后一个换行符号
 	return res[:len(res)-1]
 }
