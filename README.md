@@ -499,7 +499,7 @@
 |693|[Binary Number with Alternating Bits](./Algorithms/0693.binary-number-with-alternating-bits)|55%|Easy||
 |695|[Max Area of Island](./Algorithms/0695.max-area-of-island)|51%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |696|[Count Binary Substrings](./Algorithms/0696.count-binary-substrings)|50%|Easy||
-|697|[Degree of an Array](./Algorithms/0697.degree-of-an-array)|46%|Easy||
+|697|[Degree of an Array](./Algorithms/0697.degree-of-an-array)|47%|Easy||
 |698|[Partition to K Equal Sum Subsets](./Algorithms/0698.partition-to-k-equal-sum-subsets)|37%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |699|[Falling Squares](./Algorithms/0699.falling-squares)|37%|Hard||
 |712|[Minimum ASCII Delete Sum for Two Strings](./Algorithms/0712.minimum-ascii-delete-sum-for-two-strings)|51%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -616,5 +616,5 @@
 |839| * Similar String Groups|35%|Hard||
 |840| * Magic Squares In Grid :new: |31%|Easy||
 |841| * Keys and Rooms :new: |60%|Medium||
-|842| * Split Array into Fibonacci Sequence :new: |31%|Medium||
+|842| * Split Array into Fibonacci Sequence :new: |30%|Medium||
 |843| * Guess the Word :new: |28%|Hard||
