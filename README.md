@@ -616,5 +616,55 @@
 |839| * Similar String Groups|35%|Hard||
 |840| * Magic Squares In Grid :new: |31%|Easy||
 |841| * Keys and Rooms :new: |60%|Medium||
-|842| * Split Array into Fibonacci Sequence :new: |30%|Medium||
+|842| * Split Array into Fibonacci Sequence :new: |31%|Medium||
 |843| * Guess the Word :new: |28%|Hard||
+
+
+以下免费的算法题，暂时不能使用 Go 解答
+
+- [116.Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)
+- [117.Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)
+- [133.Clone Graph](https://leetcode.com/problems/clone-graph/)
+- [138.Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/)
+- [141.Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)
+- [142.Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)
+- [151.Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/)
+- [160.Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)
+- [173.Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/)
+- [190.Reverse Bits](https://leetcode.com/problems/reverse-bits/)
+- [191.Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)
+- [222.Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/)
+- [235.Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)
+- [236.Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)
+- [237.Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)
+- [278.First Bad Version](https://leetcode.com/problems/first-bad-version/)
+- [284.Peeking Iterator](https://leetcode.com/problems/peeking-iterator/)
+- [297.Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)
+- [341.Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/)
+- [374.Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/)
+- [386.Lexicographical Numbers](https://leetcode.com/problems/lexicographical-numbers/)
+- [449.Serialize and Deserialize BST](https://leetcode.com/problems/serialize-and-deserialize-bst/)
+- [535.Encode and Decode TinyURL](https://leetcode.com/problems/encode-and-decode-tinyurl/)
+- [690.Employee Importance](https://leetcode.com/problems/employee-importance/)
+
+
+## helper
+
+[helper](./helper) 会处理大部分琐碎的工作。
+
+## notes
+
+[notes](./notes) 记录了我答题过程中，对知识点的总结。
+
+## kit
+
+针对 LeetCode 中经常出现的以下数据结构，在 [kit](./kit) 中进行了定义，并添加了与 []int 相互转换的函数。利用 Go 1.9 新添加的 [type alias](https://github.com/golang/proposal/blob/master/design/18130-type-alias.md) 功能，易于添加单元测试。
+
+- [Heap](./kit/Heap.go)
+- [Interval](./kit/Interval.go)
+- [ListNode](./kit/ListNode.go)
+- [NestedInteger](./kit/NestedInteger.go)
+- [PriorityQueue](./kit/PriorityQueue.go)
+- [Queue](./kit/Queue.go)
+- [Stack](./kit/Stack.go)
+- [TreeNode](./kit/TreeNode.go)
