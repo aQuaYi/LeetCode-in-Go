@@ -142,5 +142,8 @@ func (lc *leetcode) AvailableTable() string {
 }
 
 func (lc *leetcode) UnavailableList() string {
-	return lc.Problems.unavailable().list()
+	log.Println("准备生成无法使用 Go 语言解答的题目列表")
+	res := lc.Problems.unavailable().list()
+	log.Println("已经生成无法使用 Go 语言解答的题目列表")
+	return res
 }
