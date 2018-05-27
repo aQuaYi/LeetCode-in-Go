@@ -54,7 +54,7 @@ func readTMPL(path string) string {
 		log.Fatal(err)
 	}
 
-	log.Println("读取 %s 的内容为: %s", path, data)
+	log.Printf("读取 %s 的内容为: %s", path, data)
 
 	return string(data)
 }
