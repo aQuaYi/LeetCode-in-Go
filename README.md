@@ -619,7 +619,6 @@
 |842| * Split Array into Fibonacci Sequence :new: |31%|Medium||
 |843| * Guess the Word :new: |28%|Hard||
 
-
 以下免费的算法题，暂时不能使用 Go 解答
 
 - [116.Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)
@@ -646,8 +645,6 @@
 - [449.Serialize and Deserialize BST](https://leetcode.com/problems/serialize-and-deserialize-bst/)
 - [535.Encode and Decode TinyURL](https://leetcode.com/problems/encode-and-decode-tinyurl/)
 - [690.Employee Importance](https://leetcode.com/problems/employee-importance/)
-
-
 ## helper
 
 [helper](./helper) 会处理大部分琐碎的工作。
