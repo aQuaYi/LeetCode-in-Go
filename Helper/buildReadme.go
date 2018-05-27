@@ -28,7 +28,10 @@ func makeReadmeFile(lc *leetcode) {
 
 	tmpl := template.Must(template.New("readme").Parse(readTMPL("template.markdown")))
 
-	tmpl.Execute(writer, lc)
+	err := tmpl.Execute(writer, lc)
+	if err != nil {
+		log.Fatal(err)
+	}
 
 	// 保存 README.md 文件
 	write(file, string(b.Bytes()))
@@ -51,7 +54,7 @@ func readTMPL(path string) string {
 		log.Fatal(err)
 	}
 
-	log.Println("读取 %s 的内容为: %s", path, string(data))
+	log.Println("读取 %s 的内容为: %s", path, data)
 
 	return string(data)
 }
