@@ -15,7 +15,7 @@
 {{.AvailableTable}}
 以下免费的算法题，暂时不能使用 Go 解答
 
-{{.UnavailableList -}}
+{{.UnavailableList -}} {{/* 为了能够有空行 */}}
 
 ## helper
 
