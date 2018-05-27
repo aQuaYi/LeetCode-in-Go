@@ -22,7 +22,7 @@ func (r *record) progressTable() string {
 	res += fmt.Sprintf("|**Total**|%d|", r.Easy.Total)
 	res += fmt.Sprintf("%d|", r.Medium.Total)
 	res += fmt.Sprintf("%d|", r.Hard.Total)
-	res += fmt.Sprintf("%d|\n", r.Total.Total)
+	res += fmt.Sprintf("%d|", r.Total.Total)
 
 	return res
 }
