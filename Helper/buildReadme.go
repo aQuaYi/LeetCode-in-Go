@@ -33,9 +33,10 @@ func makeReadmeFile(lc *leetcode) {
 		log.Fatal(err)
 	}
 
-	log.Printf("模板输出的内容为 %s", b.Bytes())
+	// log.Printf("模板输出的内容为 %s", b.Bytes())
 
 	// 保存 README.md 文件
+
 	write(file, string(b.Bytes()))
 }
 
