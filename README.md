@@ -10,7 +10,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|170|292|124|586|
+|**Accepted**|170|292|125|587|
 |**Total**|173|299|129|601|
 
 ## 题解
@@ -499,7 +499,7 @@
 |693|[Binary Number with Alternating Bits](./Algorithms/0693.binary-number-with-alternating-bits)|55%|Easy||
 |695|[Max Area of Island](./Algorithms/0695.max-area-of-island)|51%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |696|[Count Binary Substrings](./Algorithms/0696.count-binary-substrings)|50%|Easy||
-|697|[Degree of an Array](./Algorithms/0697.degree-of-an-array)|47%|Easy||
+|697|[Degree of an Array](./Algorithms/0697.degree-of-an-array)|46%|Easy||
 |698|[Partition to K Equal Sum Subsets](./Algorithms/0698.partition-to-k-equal-sum-subsets)|37%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |699|[Falling Squares](./Algorithms/0699.falling-squares)|37%|Hard||
 |712|[Minimum ASCII Delete Sum for Two Strings](./Algorithms/0712.minimum-ascii-delete-sum-for-two-strings)|51%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -601,9 +601,9 @@
 |824|[Goat Latin](./Algorithms/0824.goat-latin)|56%|Easy||
 |825|[Friends Of Appropriate Ages](./Algorithms/0825.friends-of-appropriate-ages)|27%|Medium||
 |826|[Most Profit Assigning Work](./Algorithms/0826.most-profit-assigning-work)|32%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|827| * Making A Large Island|41%|Hard||
+|827|[Making A Large Island](./Algorithms/0827.making-a-large-island)|41%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |828| * Unique Letter String|32%|Hard||
-|829|[Consecutive Numbers Sum](./Algorithms/0829.consecutive-numbers-sum)|26%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|829|[Consecutive Numbers Sum](./Algorithms/0829.consecutive-numbers-sum)|25%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |830|[Positions of Large Groups](./Algorithms/0830.positions-of-large-groups)|48%|Easy||
 |831| * Masking Personal Information|42%|Medium||
 |832| * Flipping an Image|72%|Easy||
@@ -614,10 +614,10 @@
 |837| * New 21 Game|24%|Medium||
 |838| * Push Dominoes|39%|Medium||
 |839| * Similar String Groups|35%|Hard||
-|840| * Magic Squares In Grid :new: |31%|Easy||
-|841| * Keys and Rooms :new: |60%|Medium||
-|842| * Split Array into Fibonacci Sequence :new: |31%|Medium||
-|843| * Guess the Word :new: |28%|Hard||
+|840| * Magic Squares In Grid :new: |32%|Easy||
+|841| * Keys and Rooms :new: |61%|Medium||
+|842| * Split Array into Fibonacci Sequence :new: |33%|Medium||
+|843| * Guess the Word :new: |29%|Hard||
 
 以下免费的算法题，暂时不能使用 Go 解答
 

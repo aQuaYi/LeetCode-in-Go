@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1057,
-	"Updated": "2018-05-28T08:49:49.250037691+08:00",
+	"Updated": "2018-05-28T10:24:12.691184863+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 170,
@@ -12,11 +12,11 @@
 			"Total": 299
 		},
 		"Hard": {
-			"Solved": 124,
+			"Solved": 125,
 			"Total": 129
 		},
 		"Total": {
-			"Solved": 586,
+			"Solved": 587,
 			"Total": 601
 		}
 	},
@@ -7609,7 +7609,7 @@
 			"ID": 632,
 			"Title": "Smallest Range",
 			"TitleSlug": "smallest-range",
-			"PassRate": "42%",
+			"PassRate": "41%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -8389,7 +8389,7 @@
 			"ID": 697,
 			"Title": "Degree of an Array",
 			"TitleSlug": "degree-of-an-array",
-			"PassRate": "47%",
+			"PassRate": "46%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9951,9 +9951,9 @@
 			"TitleSlug": "making-a-large-island",
 			"PassRate": "41%",
 			"Difficulty": "Hard",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -10129,7 +10129,7 @@
 			"ID": 842,
 			"Title": "Split Array into Fibonacci Sequence",
 			"TitleSlug": "split-array-into-fibonacci-sequence",
-			"PassRate": "32%",
+			"PassRate": "33%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
