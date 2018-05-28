@@ -1,12 +1,19 @@
 package problem0827
 
+var dx = []int{-1, 1, 0, 0}
+var dy = []int{0, 0, -1, 1}
+
 func largestIsland(grid [][]int) int {
 	m, n := len(grid), len(grid[0])
+
+	// 收集 grid 中的 0
 	zeros := collectZero(grid)
 	if len(zeros) <= 1 {
 		return m * n
 	}
+
 	colors := addColor(grid)
+
 	res := 0
 
 	for _, z := range zeros {
@@ -18,13 +25,11 @@ func largestIsland(grid [][]int) int {
 			y := j + dy[k]
 			if 0 <= x && x < m &&
 				0 <= y && y < n &&
-				grid[x][y] > 1 &&
-				!isConnected[grid[x][y]] {
+				grid[x][y] > 1 && !isConnected[grid[x][y]] {
 				temp += colors[grid[x][y]]
 				isConnected[grid[x][y]] = true
 			}
 		}
-
 		res = max(res, temp)
 	}
 
@@ -60,9 +65,6 @@ func addColor(grid [][]int) []int {
 
 	return res
 }
-
-var dx = []int{-1, 1, 0, 0}
-var dy = []int{0, 0, -1, 1}
 
 func bfs(i, j, color int, grid [][]int) int {
 	m, n := len(grid), len(grid[0])
