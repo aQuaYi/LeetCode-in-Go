@@ -14,6 +14,7 @@ func creatREADME(p problem) {
 ## 题目
 
 %s
+// TODO: 整理 README.md 的格式
 ## 解题思路
 
 见程序注释
