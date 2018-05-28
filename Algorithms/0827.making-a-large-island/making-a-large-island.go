@@ -1,17 +1,31 @@
 package problem0827
 
 func largestIsland(grid [][]int) int {
+	m, n := len(grid), len(grid[0])
 	zeros := collectZero(grid)
 	if len(zeros) <= 1 {
-		return len(grid) * len(grid[0])
+		return m * n
 	}
-
+	colors := addColor(grid)
 	res := 0
-	for i := range zeros {
-		x, y := zeros[i][0], zeros[i][1]
-		grid[x][y] = 1
-		res = max(res, sizeOfLargestIsland(grid))
-		grid[x][y] = 0
+
+	for _, z := range zeros {
+		i, j := z[0], z[1]
+		isConnected := make([]bool, len(colors))
+		temp := 1
+		for k := 0; k < 4; k++ {
+			x := i + dx[k]
+			y := j + dy[k]
+			if 0 <= x && x < m &&
+				0 <= y && y < n &&
+				grid[x][y] > 1 &&
+				!isConnected[grid[x][y]] {
+				temp += colors[grid[x][y]]
+				isConnected[grid[x][y]] = true
+			}
+		}
+
+		res = max(res, temp)
 	}
 
 	return res
@@ -29,16 +43,17 @@ func collectZero(grid [][]int) [][]int {
 	return res
 }
 
-func sizeOfLargestIsland(grid [][]int) int {
+// 返回每种色彩的数量
+func addColor(grid [][]int) []int {
 	m, n := len(grid), len(grid[0])
-	isChecked := make([]bool, m*n)
+	res := make([]int, 2, m)
+	color := 2
 
-	res := 0
 	for i := 0; i < m; i++ {
 		for j := 0; j < n; j++ {
-			if grid[i][j] == 1 && !isChecked[i*n+j] {
-				isChecked[i*n+j] = true
-				res = max(res, bfs(i, j, grid, isChecked))
+			if grid[i][j] == 1 {
+				res = append(res, bfs(i, j, color, grid))
+				color++
 			}
 		}
 	}
@@ -49,9 +64,10 @@ func sizeOfLargestIsland(grid [][]int) int {
 var dx = []int{-1, 1, 0, 0}
 var dy = []int{0, 0, -1, 1}
 
-func bfs(i, j int, grid [][]int, isChecked []bool) int {
+func bfs(i, j, color int, grid [][]int) int {
 	m, n := len(grid), len(grid[0])
 	queue := [][]int{[]int{i, j}}
+	grid[i][j] = color
 	res := 1
 
 	for len(queue) > 0 {
@@ -63,10 +79,10 @@ func bfs(i, j int, grid [][]int, isChecked []bool) int {
 			y := j + dy[k]
 			if 0 <= x && x < m &&
 				0 <= y && y < n &&
-				grid[x][y] == 1 && !isChecked[x*n+y] {
+				grid[x][y] == 1 {
 				queue = append(queue, []int{x, y})
+				grid[x][y] = color
 				res++
-				isChecked[x*n+y] = true
 			}
 		}
 	}
