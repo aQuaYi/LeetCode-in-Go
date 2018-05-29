@@ -12,22 +12,16 @@ func uniqueLetterString(s string) int {
 }
 
 func uniqueNum(s string) int {
-	isSaw := map[rune]bool{}
+	count := map[rune]int{}
 	res := 0
 	for _, b := range s {
-		if isSaw[b] {
-			res--
-		} else {
-			isSaw[b] = true
+		count[b]++
+		switch count[b] {
+		case 1:
 			res++
+		case 2:
+			res--
 		}
 	}
 	return res
-}
-
-func max(a, b int) int {
-	if a > b {
-		return a
-	}
-	return b
 }
