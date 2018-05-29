@@ -1,6 +1,6 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
-[![LeetCode 排名](https://img.shields.io/badge/aQuaYi-1057-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/aQuaYi-1050-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 
@@ -10,7 +10,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|170|292|125|587|
+|**Accepted**|170|292|126|588|
 |**Total**|173|299|129|601|
 
 ## 题解
@@ -448,7 +448,7 @@
 |628|[Maximum Product of Three Numbers](./Algorithms/0628.maximum-product-of-three-numbers)|44%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |629|[K Inverse Pairs Array](./Algorithms/0629.k-inverse-pairs-array)|27%|Hard||
 |630|[Course Schedule III](./Algorithms/0630.course-schedule-iii)|29%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|632|[Smallest Range](./Algorithms/0632.smallest-range)|41%|Hard||
+|632|[Smallest Range](./Algorithms/0632.smallest-range)|42%|Hard||
 |633|[Sum of Square Numbers](./Algorithms/0633.sum-of-square-numbers)|32%|Easy||
 |636|[Exclusive Time of Functions](./Algorithms/0636.exclusive-time-of-functions)|44%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |637|[Average of Levels in Binary Tree](./Algorithms/0637.average-of-levels-in-binary-tree)|55%|Easy||
@@ -499,7 +499,7 @@
 |693|[Binary Number with Alternating Bits](./Algorithms/0693.binary-number-with-alternating-bits)|55%|Easy||
 |695|[Max Area of Island](./Algorithms/0695.max-area-of-island)|51%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |696|[Count Binary Substrings](./Algorithms/0696.count-binary-substrings)|50%|Easy||
-|697|[Degree of an Array](./Algorithms/0697.degree-of-an-array)|46%|Easy||
+|697|[Degree of an Array](./Algorithms/0697.degree-of-an-array)|47%|Easy||
 |698|[Partition to K Equal Sum Subsets](./Algorithms/0698.partition-to-k-equal-sum-subsets)|37%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |699|[Falling Squares](./Algorithms/0699.falling-squares)|37%|Hard||
 |712|[Minimum ASCII Delete Sum for Two Strings](./Algorithms/0712.minimum-ascii-delete-sum-for-two-strings)|51%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -559,7 +559,7 @@
 |781|[Rabbits in Forest](./Algorithms/0781.rabbits-in-forest)|49%|Medium||
 |782|[Transform to Chessboard](./Algorithms/0782.transform-to-chessboard)|37%|Hard||
 |783|[Minimum Distance Between BST Nodes](./Algorithms/0783.minimum-distance-between-bst-nodes)|47%|Easy||
-|784|[Letter Case Permutation](./Algorithms/0784.letter-case-permutation)|52%|Easy|[❤](https://leetcode.com/list/oussv5j)|
+|784|[Letter Case Permutation](./Algorithms/0784.letter-case-permutation)|53%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |785|[Is Graph Bipartite?](./Algorithms/0785.is-graph-bipartite)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |786|[K-th Smallest Prime Fraction](./Algorithms/0786.k-th-smallest-prime-fraction)|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |787|[Cheapest Flights Within K Stops](./Algorithms/0787.cheapest-flights-within-k-stops)|29%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -602,22 +602,22 @@
 |825|[Friends Of Appropriate Ages](./Algorithms/0825.friends-of-appropriate-ages)|27%|Medium||
 |826|[Most Profit Assigning Work](./Algorithms/0826.most-profit-assigning-work)|32%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |827|[Making A Large Island](./Algorithms/0827.making-a-large-island)|41%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|828| * Unique Letter String|32%|Hard||
+|828|[Unique Letter String](./Algorithms/0828.unique-letter-string)|32%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |829|[Consecutive Numbers Sum](./Algorithms/0829.consecutive-numbers-sum)|25%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |830|[Positions of Large Groups](./Algorithms/0830.positions-of-large-groups)|48%|Easy||
 |831| * Masking Personal Information|42%|Medium||
 |832| * Flipping an Image|72%|Easy||
 |833| * Find And Replace in String|36%|Medium||
-|834| * Sum of Distances in Tree|29%|Hard||
+|834| * Sum of Distances in Tree|30%|Hard||
 |835| * Image Overlap|32%|Medium||
-|836| * Rectangle Overlap|38%|Easy||
+|836| * Rectangle Overlap|39%|Easy||
 |837| * New 21 Game|24%|Medium||
 |838| * Push Dominoes|39%|Medium||
 |839| * Similar String Groups|35%|Hard||
 |840| * Magic Squares In Grid :new: |32%|Easy||
-|841| * Keys and Rooms :new: |61%|Medium||
-|842| * Split Array into Fibonacci Sequence :new: |33%|Medium||
-|843| * Guess the Word :new: |29%|Hard||
+|841| * Keys and Rooms :new: |62%|Medium||
+|842| * Split Array into Fibonacci Sequence :new: |34%|Medium||
+|843| * Guess the Word :new: |32%|Hard||
 
 以下免费的算法题，暂时不能使用 Go 解答
 
