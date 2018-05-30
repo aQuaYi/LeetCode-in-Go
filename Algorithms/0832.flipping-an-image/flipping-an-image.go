@@ -1,30 +1,23 @@
 package problem0832
 
 func flipAndInvertImage(A [][]int) [][]int {
-	return invert(reverse(A))
-}
-
-func reverse(A [][]int) [][]int {
 	for k := 0; k < len(A); k++ {
 		i, j := 0, len(A[k])-1
 		for i < j {
-			A[k][i], A[k][j] = A[k][j], A[k][i]
+			A[k][i], A[k][j] = invert(A[k][j]), invert(A[k][i])
 			i++
 			j--
+		}
+		if i == j { // 当 len(A[k]) 的长度为奇数时，处理正中间的数
+			A[k][i] = invert(A[k][i])
 		}
 	}
 	return A
 }
 
-func invert(A [][]int) [][]int {
-	for i := range A {
-		for j := 0; j < len(A[i]); j++ {
-			if A[i][j] == 0 {
-				A[i][j] = 1
-			} else {
-				A[i][j] = 0
-			}
-		}
+func invert(i int) int {
+	if i == 0 {
+		return 1
 	}
-	return A
+	return 0
 }
