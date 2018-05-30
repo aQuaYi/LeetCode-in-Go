@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1041,
-	"Updated": "2018-05-30T08:48:21.187654105+08:00",
+	"Updated": "2018-05-30T09:16:31.626094759+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 170,
 			"Total": 173
 		},
 		"Medium": {
-			"Solved": 292,
+			"Solved": 293,
 			"Total": 299
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 129
 		},
 		"Total": {
-			"Solved": 588,
+			"Solved": 589,
 			"Total": 601
 		}
 	},
@@ -8917,7 +8917,7 @@
 			"ID": 741,
 			"Title": "Cherry Pickup",
 			"TitleSlug": "cherry-pickup",
-			"PassRate": "23%",
+			"PassRate": "24%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9999,7 +9999,7 @@
 			"TitleSlug": "masking-personal-information",
 			"PassRate": "42%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
