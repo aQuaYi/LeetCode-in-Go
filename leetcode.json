@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1041,
-	"Updated": "2018-05-30T14:35:34.673660416+08:00",
+	"Updated": "2018-05-30T14:51:07.941146461+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 170,
+			"Solved": 171,
 			"Total": 173
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 129
 		},
 		"Total": {
-			"Solved": 589,
+			"Solved": 590,
 			"Total": 601
 		}
 	},
@@ -7669,7 +7669,7 @@
 			"ID": 637,
 			"Title": "Average of Levels in Binary Tree",
 			"TitleSlug": "average-of-levels-in-binary-tree",
-			"PassRate": "56%",
+			"PassRate": "55%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9973,7 +9973,7 @@
 			"ID": 829,
 			"Title": "Consecutive Numbers Sum",
 			"TitleSlug": "consecutive-numbers-sum",
-			"PassRate": "25%",
+			"PassRate": "26%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10011,7 +10011,7 @@
 			"TitleSlug": "flipping-an-image",
 			"PassRate": "72%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
