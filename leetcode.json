@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1041,
-	"Updated": "2018-05-30T09:19:26.241179617+08:00",
+	"Updated": "2018-05-30T14:51:07.941146461+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 170,
+			"Solved": 171,
 			"Total": 173
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 129
 		},
 		"Total": {
-			"Solved": 589,
+			"Solved": 590,
 			"Total": 601
 		}
 	},
@@ -3961,7 +3961,7 @@
 			"ID": 328,
 			"Title": "Odd Even Linked List",
 			"TitleSlug": "odd-even-linked-list",
-			"PassRate": "44%",
+			"PassRate": "45%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -5413,7 +5413,7 @@
 			"ID": 449,
 			"Title": "Serialize and Deserialize BST",
 			"TitleSlug": "serialize-and-deserialize-bst",
-			"PassRate": "42%",
+			"PassRate": "43%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -7129,7 +7129,7 @@
 			"ID": 592,
 			"Title": "Fraction Addition and Subtraction",
 			"TitleSlug": "fraction-addition-and-subtraction",
-			"PassRate": "45%",
+			"PassRate": "46%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -7357,7 +7357,7 @@
 			"ID": 611,
 			"Title": "Valid Triangle Number",
 			"TitleSlug": "valid-triangle-number",
-			"PassRate": "42%",
+			"PassRate": "41%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -8353,7 +8353,7 @@
 			"ID": 694,
 			"Title": "Number of Distinct Islands",
 			"TitleSlug": "number-of-distinct-islands",
-			"PassRate": "45%",
+			"PassRate": "44%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -8893,7 +8893,7 @@
 			"ID": 739,
 			"Title": "Daily Temperatures",
 			"TitleSlug": "daily-temperatures",
-			"PassRate": "52%",
+			"PassRate": "53%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10011,7 +10011,7 @@
 			"TitleSlug": "flipping-an-image",
 			"PassRate": "72%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
