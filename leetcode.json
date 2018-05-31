@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1021,
-	"Updated": "2018-05-31T08:57:11.890065894+08:00",
+	"Updated": "2018-05-31T11:00:05.911239985+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 171,
 			"Total": 173
 		},
 		"Medium": {
-			"Solved": 293,
+			"Solved": 294,
 			"Total": 299
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 129
 		},
 		"Total": {
-			"Solved": 590,
+			"Solved": 591,
 			"Total": 601
 		}
 	},
@@ -6577,7 +6577,7 @@
 			"ID": 546,
 			"Title": "Remove Boxes",
 			"TitleSlug": "remove-boxes",
-			"PassRate": "35%",
+			"PassRate": "36%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -8881,7 +8881,7 @@
 			"ID": 738,
 			"Title": "Monotone Increasing Digits",
 			"TitleSlug": "monotone-increasing-digits",
-			"PassRate": "40%",
+			"PassRate": "41%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10023,7 +10023,7 @@
 			"TitleSlug": "find-and-replace-in-string",
 			"PassRate": "36%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
