@@ -19,7 +19,7 @@ func creatREADME(p problem) {
 见程序注释
 `
 
-	questionDescription := getDescription(p.link())
+	questionDescription := strings.TrimSpace(getDescription(p.link()))
 
 	content := fmt.Sprintf(fileFormat, p.ID, p.Title, p.link(), questionDescription)
 
@@ -48,15 +48,19 @@ func getDescription(url string) string {
 
 func replaceCharacters(s string) string {
 	changeMap := map[string]string{
-		"&quot;": "\"",
-		"&lt;":   "<",
-		"&gt;":   ">",
-		"&ge;":   ">=",
-		"&nbsp;": "",
-		"&#39;":  "'",
-		"&amp;":  "&",
-		"\n\n\n": "\n\n",
-		" \n":    "\n",
+		"&quot;":     "\"",
+		"&lt;":       "<",
+		"&gt;":       ">",
+		"&ge;":       ">=",
+		"&nbsp;":     "",
+		"&#39;":      "'",
+		"&amp;":      "&",
+		"   \n":      "\n",
+		"  \n":       "\n",
+		" \n":        "\n",
+		"\n\n\n\n\n": "\n\n",
+		"\n\n\n\n":   "\n\n",
+		"\n\n\n":     "\n\n",
 	}
 	for old, new := range changeMap {
 		s = strings.Replace(s, old, new, -1)
