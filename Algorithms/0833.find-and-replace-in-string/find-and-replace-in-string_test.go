@@ -17,6 +17,30 @@ var tcs = []struct {
 }{
 
 	{
+		"vmokgggqzp",
+		[]int{3, 5, 1},
+		[]string{"kg", "ggq", "mo"},
+		[]string{"s", "so", "bfr"},
+		"vbfrssozp",
+	},
+
+	{
+		"abcdgggg",
+		[]int{0, 2, 4},
+		[]string{"a", "cd", "gggggg"},
+		[]string{"eee", "ffff", "h"},
+		"eeebffffgggg",
+	},
+
+	{
+		"abcdgggg",
+		[]int{0, 2},
+		[]string{"a", "cd"},
+		[]string{"eee", "ffff"},
+		"eeebffffgggg",
+	},
+
+	{
 		"abcd",
 		[]int{0, 2},
 		[]string{"a", "cd"},
