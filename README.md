@@ -10,7 +10,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|171|294|127|592|
+|**Accepted**|172|294|127|593|
 |**Total**|173|299|129|601|
 
 ## 题解
@@ -603,14 +603,14 @@
 |826|[Most Profit Assigning Work](./Algorithms/0826.most-profit-assigning-work)|31%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |827|[Making A Large Island](./Algorithms/0827.making-a-large-island)|41%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |828|[Unique Letter String](./Algorithms/0828.unique-letter-string)|32%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|829|[Consecutive Numbers Sum](./Algorithms/0829.consecutive-numbers-sum)|26%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|829|[Consecutive Numbers Sum](./Algorithms/0829.consecutive-numbers-sum)|25%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |830|[Positions of Large Groups](./Algorithms/0830.positions-of-large-groups)|48%|Easy||
 |831|[Masking Personal Information](./Algorithms/0831.masking-personal-information)|42%|Medium||
 |832|[Flipping an Image](./Algorithms/0832.flipping-an-image)|72%|Easy||
 |833|[Find And Replace in String](./Algorithms/0833.find-and-replace-in-string)|36%|Medium||
 |834|[Sum of Distances in Tree](./Algorithms/0834.sum-of-distances-in-tree)|30%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |835| * Image Overlap|33%|Medium||
-|836| * Rectangle Overlap|39%|Easy||
+|836|[Rectangle Overlap](./Algorithms/0836.rectangle-overlap)|39%|Easy||
 |837| * New 21 Game|24%|Medium||
 |838| * Push Dominoes|39%|Medium||
 |839| * Similar String Groups|36%|Hard||
