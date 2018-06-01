@@ -1,6 +1,6 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
-[![LeetCode 排名](https://img.shields.io/badge/aQuaYi-1011-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/aQuaYi-994-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 
@@ -603,7 +603,7 @@
 |826|[Most Profit Assigning Work](./Algorithms/0826.most-profit-assigning-work)|31%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |827|[Making A Large Island](./Algorithms/0827.making-a-large-island)|41%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |828|[Unique Letter String](./Algorithms/0828.unique-letter-string)|32%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|829|[Consecutive Numbers Sum](./Algorithms/0829.consecutive-numbers-sum)|25%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|829|[Consecutive Numbers Sum](./Algorithms/0829.consecutive-numbers-sum)|26%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |830|[Positions of Large Groups](./Algorithms/0830.positions-of-large-groups)|48%|Easy||
 |831|[Masking Personal Information](./Algorithms/0831.masking-personal-information)|42%|Medium||
 |832|[Flipping an Image](./Algorithms/0832.flipping-an-image)|72%|Easy||
@@ -611,13 +611,13 @@
 |834|[Sum of Distances in Tree](./Algorithms/0834.sum-of-distances-in-tree)|30%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |835| * Image Overlap|33%|Medium||
 |836|[Rectangle Overlap](./Algorithms/0836.rectangle-overlap)|39%|Easy||
-|837| * New 21 Game|24%|Medium||
+|837| * New 21 Game|25%|Medium||
 |838| * Push Dominoes|39%|Medium||
 |839| * Similar String Groups|36%|Hard||
 |840| * Magic Squares In Grid|33%|Easy||
 |841| * Keys and Rooms|60%|Medium||
-|842| * Split Array into Fibonacci Sequence :new: |34%|Medium||
-|843| * Guess the Word :new: |33%|Hard||
+|842| * Split Array into Fibonacci Sequence|34%|Medium||
+|843| * Guess the Word|33%|Hard||
 
 以下免费的算法题，暂时不能使用 Go 解答
 

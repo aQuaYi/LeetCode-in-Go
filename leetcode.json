@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
-	"Ranking": 1011,
-	"Updated": "2018-06-01T17:19:32.280822716+08:00",
+	"Ranking": 994,
+	"Updated": "2018-06-02T00:18:57.178921168+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 172,
@@ -1717,7 +1717,7 @@
 			"ID": 141,
 			"Title": "Linked List Cycle",
 			"TitleSlug": "linked-list-cycle",
-			"PassRate": "34%",
+			"PassRate": "35%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -9973,7 +9973,7 @@
 			"ID": 829,
 			"Title": "Consecutive Numbers Sum",
 			"TitleSlug": "consecutive-numbers-sum",
-			"PassRate": "25%",
+			"PassRate": "26%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10069,7 +10069,7 @@
 			"ID": 837,
 			"Title": "New 21 Game",
 			"TitleSlug": "new-21-game",
-			"PassRate": "24%",
+			"PassRate": "25%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -10134,7 +10134,7 @@
 			"IsAccepted": false,
 			"IsPaid": false,
 			"IsFavor": false,
-			"IsNew": true,
+			"IsNew": false,
 			"HasNoGoOption": false
 		},
 		{
@@ -10146,7 +10146,7 @@
 			"IsAccepted": false,
 			"IsPaid": false,
 			"IsFavor": false,
-			"IsNew": true,
+			"IsNew": false,
 			"HasNoGoOption": false
 		}
 	]
