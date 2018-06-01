@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1011,
-	"Updated": "2018-06-01T16:55:41.6062762+08:00",
+	"Updated": "2018-06-01T17:19:32.280822716+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 171,
+			"Solved": 172,
 			"Total": 173
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 129
 		},
 		"Total": {
-			"Solved": 592,
+			"Solved": 593,
 			"Total": 601
 		}
 	},
@@ -9973,7 +9973,7 @@
 			"ID": 829,
 			"Title": "Consecutive Numbers Sum",
 			"TitleSlug": "consecutive-numbers-sum",
-			"PassRate": "26%",
+			"PassRate": "25%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10059,7 +10059,7 @@
 			"TitleSlug": "rectangle-overlap",
 			"PassRate": "39%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
