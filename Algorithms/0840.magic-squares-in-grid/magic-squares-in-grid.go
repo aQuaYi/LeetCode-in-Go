@@ -5,8 +5,8 @@ func numMagicSquaresInside(g [][]int) int {
 
 	res := 0
 
-	for i := 0; i+2 < m && i+2 < n; i++ {
-		for j := 0; j+2 < m && j+2 < n; j++ {
+	for i := 0; i+2 < m; i++ {
+		for j := 0; j+2 < n; j++ {
 			if !isAvailbleNum(i, j, g) {
 				continue
 			}
@@ -16,9 +16,9 @@ func numMagicSquaresInside(g [][]int) int {
 				g[i+1][j]+g[i+1][j+1]+g[i+1][j+2] == 15 &&
 				g[i+2][j]+g[i+2][j+1]+g[i+2][j+2] == 15 &&
 				// 检查列
-				g[j][i]+g[j][i+1]+g[j][i+2] == 15 &&
-				g[j+1][i]+g[j+1][i+1]+g[j+1][i+2] == 15 &&
-				g[j+2][i]+g[j+2][i+1]+g[j+2][i+2] == 15 &&
+				g[i][j]+g[i+1][j]+g[i+2][j] == 15 &&
+				g[i][j+1]+g[i+1][j+1]+g[i+2][j+1] == 15 &&
+				g[i][j+2]+g[i+1][j+2]+g[i+2][j+2] == 15 &&
 				// 检查对角
 				g[i][j]+g[i+1][j+1]+g[i+2][j+2] == 15 &&
 				g[i][j+2]+g[i+1][j+1]+g[i+2][j] == 15 {
