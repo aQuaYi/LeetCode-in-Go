@@ -1,23 +1,23 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 989,
-	"Updated": "2018-06-03T10:55:44.493914555+08:00",
+	"Updated": "2018-06-03T11:35:10.594764987+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 172,
-			"Total": 173
+			"Solved": 173,
+			"Total": 174
 		},
 		"Medium": {
 			"Solved": 295,
-			"Total": 299
+			"Total": 301
 		},
 		"Hard": {
 			"Solved": 127,
-			"Total": 129
+			"Total": 130
 		},
 		"Total": {
-			"Solved": 594,
-			"Total": 601
+			"Solved": 595,
+			"Total": 605
 		}
 	},
 	"Problems": [
@@ -10107,7 +10107,7 @@
 			"TitleSlug": "magic-squares-in-grid",
 			"PassRate": "33%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -10147,6 +10147,54 @@
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 844,
+			"Title": "Backspace String Compare",
+			"TitleSlug": "backspace-string-compare",
+			"PassRate": "54%",
+			"Difficulty": "Easy",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 845,
+			"Title": "Longest Mountain in Array",
+			"TitleSlug": "longest-mountain-in-array",
+			"PassRate": "26%",
+			"Difficulty": "Medium",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 846,
+			"Title": "Hand of Straights",
+			"TitleSlug": "hand-of-straights",
+			"PassRate": "38%",
+			"Difficulty": "Medium",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 847,
+			"Title": "Shortest Path Visiting All Nodes",
+			"TitleSlug": "shortest-path-visiting-all-nodes",
+			"PassRate": "17%",
+			"Difficulty": "Hard",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
 			"HasNoGoOption": false
 		}
 	]
