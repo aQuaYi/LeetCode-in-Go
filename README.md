@@ -1,6 +1,6 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
-[![LeetCode 排名](https://img.shields.io/badge/aQuaYi-994-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/aQuaYi-989-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 
@@ -10,8 +10,8 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|172|295|127|594|
-|**Total**|173|299|129|601|
+|**Accepted**|173|295|127|595|
+|**Total**|174|301|130|605|
 
 ## 题解
 
@@ -344,7 +344,7 @@
 |447|[Number of Boomerangs](./Algorithms/0447.number-of-boomerangs)|46%|Easy||
 |448|[Find All Numbers Disappeared in an Array](./Algorithms/0448.find-all-numbers-disappeared-in-an-array)|51%|Easy||
 |450|[Delete Node in a BST](./Algorithms/0450.delete-node-in-a-bst)|37%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|451|[Sort Characters By Frequency](./Algorithms/0451.sort-characters-by-frequency)|51%|Medium||
+|451|[Sort Characters By Frequency](./Algorithms/0451.sort-characters-by-frequency)|52%|Medium||
 |452|[Minimum Number of Arrows to Burst Balloons](./Algorithms/0452.minimum-number-of-arrows-to-burst-balloons)|44%|Medium||
 |453|[Minimum Moves to Equal Array Elements](./Algorithms/0453.minimum-moves-to-equal-array-elements)|48%|Easy||
 |454|[4Sum II](./Algorithms/0454.4sum-ii)|47%|Medium||
@@ -614,10 +614,14 @@
 |837| * New 21 Game|25%|Medium||
 |838| * Push Dominoes|40%|Medium||
 |839| * Similar String Groups|36%|Hard||
-|840| * Magic Squares In Grid|33%|Easy||
+|840|[Magic Squares In Grid](./Algorithms/0840.magic-squares-in-grid)|33%|Easy||
 |841| * Keys and Rooms|60%|Medium||
 |842| * Split Array into Fibonacci Sequence|34%|Medium||
 |843| * Guess the Word|33%|Hard||
+|844| * Backspace String Compare :new: |54%|Easy||
+|845| * Longest Mountain in Array :new: |26%|Medium||
+|846| * Hand of Straights :new: |38%|Medium||
+|847| * Shortest Path Visiting All Nodes :new: |17%|Hard||
 
 以下免费的算法题，暂时不能使用 Go 解答
 
