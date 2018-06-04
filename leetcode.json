@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 993,
-	"Updated": "2018-06-04T08:54:25.718140223+08:00",
+	"Updated": "2018-06-04T10:15:17.871184448+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 173,
 			"Total": 174
 		},
 		"Medium": {
-			"Solved": 295,
+			"Solved": 296,
 			"Total": 301
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 130
 		},
 		"Total": {
-			"Solved": 595,
+			"Solved": 596,
 			"Total": 605
 		}
 	},
@@ -9973,7 +9973,7 @@
 			"ID": 829,
 			"Title": "Consecutive Numbers Sum",
 			"TitleSlug": "consecutive-numbers-sum",
-			"PassRate": "26%",
+			"PassRate": "25%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10131,7 +10131,7 @@
 			"TitleSlug": "split-array-into-fibonacci-sequence",
 			"PassRate": "34%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -10177,7 +10177,7 @@
 			"ID": 846,
 			"Title": "Hand of Straights",
 			"TitleSlug": "hand-of-straights",
-			"PassRate": "40%",
+			"PassRate": "41%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
