@@ -15,9 +15,8 @@ func splitIntoFibonacci(s string) []int {
 			}
 			a, _ := strconv.Atoi(s[:i])
 			b, _ := strconv.Atoi(s[i:j])
-			res := make([]int, 2, len(s))
-			res[0] = a
-			res[1] = b
+			res := make([]int, 0, len(s))
+			res = append(res, a, b)
 			if find(a, b, s[j:], &res) {
 				return res
 			}
@@ -27,23 +26,24 @@ func splitIntoFibonacci(s string) []int {
 }
 
 func find(a, b int, s string, res *[]int) bool {
-	if s == "" {
-		return true
-	}
+	for len(s) > 0 {
+		c := a + b
+		if c > 1<<31-1 {
+			return false
+		}
+		cs := strconv.Itoa(c)
+		csl := len(cs)
 
-	c := a + b
-	if c > 1<<31-1 {
-		return false
-	}
-	cs := strconv.Itoa(c)
-	csl := len(cs)
+		if len(s) < csl || s[:csl] != cs {
+			return false
+		}
 
-	if len(s) >= csl && s[:csl] == cs {
 		*res = append(*res, c)
-		return find(b, c, s[csl:], res)
+		a, b = b, c
+		s = s[csl:]
 	}
 
-	return false
+	return true
 }
 
 func isLeadingZero(s string) bool {
