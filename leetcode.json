@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 982,
-	"Updated": "2018-06-05T08:42:30.479837745+08:00",
+	"Updated": "2018-06-05T10:08:18.792076254+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 173,
 			"Total": 174
 		},
 		"Medium": {
-			"Solved": 296,
+			"Solved": 297,
 			"Total": 301
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 130
 		},
 		"Total": {
-			"Solved": 596,
+			"Solved": 597,
 			"Total": 605
 		}
 	},
@@ -8845,7 +8845,7 @@
 			"ID": 735,
 			"Title": "Asteroid Collision",
 			"TitleSlug": "asteroid-collision",
-			"PassRate": "37%",
+			"PassRate": "36%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10083,9 +10083,9 @@
 			"TitleSlug": "push-dominoes",
 			"PassRate": "40%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
