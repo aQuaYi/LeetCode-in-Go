@@ -1,38 +1,54 @@
 package problem0838
 
-func pushDominoes(dominoes string) string {
-	return oneSecond([]byte(dominoes))
-}
+import (
+	"bytes"
+)
 
-func oneSecond(d []byte) string {
-	old := string(d)
+/**
+ * 'R......R' => 'RRRRRRRR'
+ * 'R......L' => 'RRRRLLLL' or 'RRRR.LLLL'
+ * 'L......R' => 'L......R'
+ * 'L......L' => 'LLLLLLLL'
+ */
+func pushDominoes(dominoes string) string {
+	var res bytes.Buffer
+	d := "L" + dominoes + "R"
 	size := len(d)
 
-	for i := 0; i+1 < size; i++ {
-		if d[i] != '.' {
+	for i, j := 0, 1; j < size; j++ {
+		if d[j] == '.' {
 			continue
 		}
-		if d[i+1] == 'L' &&
-			(i == 0 || old[i-1] != 'R') {
-			d[i] = 'L'
+
+		if 0 < i {
+			res.WriteByte(d[i])
 		}
+
+		mid := j - i - 1
+
+		switch {
+		case d[i] == d[j]:
+			for k := 0; k < mid; k++ {
+				res.WriteByte(d[i])
+			}
+		case d[i] == 'R' && d[j] == 'L':
+			for k := 0; k < mid/2; k++ {
+				res.WriteByte('R')
+			}
+			if mid%2 == 1 {
+				res.WriteByte('.')
+			}
+			for k := 0; k < mid/2; k++ {
+				res.WriteByte('L')
+			}
+		default:
+			for k := 0; k < mid; k++ {
+				res.WriteByte('.')
+			}
+		}
+
+		i = j
 	}
 
-	for i := size - 1; 0 < i; i-- {
-		if d[i] != '.' {
-			continue
-		}
-		if d[i-1] == 'R' &&
-			(i+1 == size || old[i+1] != 'L') {
-			d[i] = 'R'
-		}
-	}
-
-	newState := string(d)
-
-	if newState == old {
-		return newState
-	}
-
-	return oneSecond(d)
+	return res.String()
 }
