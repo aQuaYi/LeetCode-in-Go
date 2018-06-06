@@ -23,16 +23,17 @@ func numComponents(head *ListNode, G []int) int {
 	}
 
 	res := 0
+
 	for head != nil {
 		/**
-		 * 例 2 的结果为 2
 		 * head: 0->1->2->3->4
 		 * G = [0, 3, 1, 4]
-		 * 可以这样划分 head
+		 * 结果为 2
+		 * 可以按照 connected components 划分 head
 		 * head: (0->1)->2->(3->4)
 		 * 每个单独的 connected components 的特点是
-		 * 最后一个 node.Next.Val 不在 G 中，或者是 list 的结尾
-		 * 那么，统计下面 if 出现的次数，就是所需的结果了
+		 * 最后一个 node 的 Next.Val 不在 G 中，或者是 list 的结尾
+		 * 那么，统计下面 if 成立的次数，就是所需的结果了
 		 */
 		if isInG[head.Val] &&
 			(head.Next == nil || !isInG[head.Next.Val]) {
