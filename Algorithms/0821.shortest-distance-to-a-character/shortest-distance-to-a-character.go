@@ -1,32 +1,28 @@
 package problem0821
 
 func shortestToChar(S string, C byte) []int {
-	res := make([]int, len(S))
-	left, right := -len(S), next(-1, C, S)
-	for i := range S {
-		if i > right {
-			left = right
-			right = next(right, C, S)
-		}
+	n := len(S)
 
-		res[i] = min(i-left, right-i)
+	res := make([]int, n)
+	for i := range res {
+		res[i] = n
+	}
+
+	left, right := -n, 2*n
+
+	for i := 0; i < n; i++ {
+		j := n - i - 1
+		if S[i] == C {
+			left = i
+		}
+		if S[j] == C {
+			right = j
+		}
+		res[i] = min(res[i], dist(i, left))
+		res[j] = min(res[j], dist(j, right))
 	}
 
 	return res
-}
-
-func next(right int, c byte, s string) int {
-	idx := right + 1
-	for idx < len(s) {
-		if s[idx] == c {
-			return idx
-		}
-		idx++
-	}
-	// 由于 s[right+1:] 中不再含有 c
-	// 返回的 idx 需要达到 2*len(s)
-	// 来确保后续的 min 操作的正确性
-	return len(s) * 2
 }
 
 func min(a, b int) int {
@@ -34,4 +30,11 @@ func min(a, b int) int {
 		return a
 	}
 	return b
+}
+
+func dist(i, j int) int {
+	if i > j {
+		return i - j
+	}
+	return j - i
 }

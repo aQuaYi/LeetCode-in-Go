@@ -7,7 +7,7 @@ Given a string S and a character C, return an array of integers representing the
 Example 1:
 
 ```text
-Input: S = &quot;loveleetcode&quot;, C = &#39;e&#39;
+Input: S = &quot;loveleetcode&quot;, C = "e"
 Output: [3, 2, 1, 0, 1, 0, 0, 1, 2, 2, 1, 0]
 ```
 
