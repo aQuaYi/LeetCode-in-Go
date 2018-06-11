@@ -16,6 +16,20 @@ var tcs = []struct {
 }{
 
 	{
+		421,
+		400,
+		47,
+		0.71188,
+	},
+
+	{
+		1,
+		1,
+		1,
+		1.00000,
+	},
+
+	{
 		10,
 		1,
 		10,
@@ -44,7 +58,7 @@ func Test_new21Game(t *testing.T) {
 
 	for _, tc := range tcs {
 		fmt.Printf("~~%v~~\n", tc)
-		ast.Equal(tc.ans, new21Game(tc.N, tc.K, tc.W), "输入:%v", tc)
+		ast.InEpsilon(tc.ans, new21Game(tc.N, tc.K, tc.W), 0.00001, "输入:%v", tc)
 	}
 }
 
