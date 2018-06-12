@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 996,
-	"Updated": "2018-06-12T20:24:35.62661066+08:00",
+	"Updated": "2018-06-12T21:56:41.905376061+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 173,
 			"Total": 175
 		},
 		"Medium": {
-			"Solved": 298,
+			"Solved": 299,
 			"Total": 303
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 131
 		},
 		"Total": {
-			"Solved": 598,
+			"Solved": 599,
 			"Total": 609
 		}
 	},
@@ -3337,7 +3337,7 @@
 			"ID": 276,
 			"Title": "Paint Fence",
 			"TitleSlug": "paint-fence",
-			"PassRate": "34%",
+			"PassRate": "35%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -3625,7 +3625,7 @@
 			"ID": 300,
 			"Title": "Longest Increasing Subsequence",
 			"TitleSlug": "longest-increasing-subsequence",
-			"PassRate": "38%",
+			"PassRate": "39%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -8077,7 +8077,7 @@
 			"ID": 671,
 			"Title": "Second Minimum Node In a Binary Tree",
 			"TitleSlug": "second-minimum-node-in-a-binary-tree",
-			"PassRate": "42%",
+			"PassRate": "41%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10119,7 +10119,7 @@
 			"TitleSlug": "keys-and-rooms",
 			"PassRate": "59%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
