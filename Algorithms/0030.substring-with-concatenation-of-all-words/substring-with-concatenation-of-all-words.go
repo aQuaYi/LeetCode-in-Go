@@ -1,80 +1,113 @@
 package problem0030
 
 func findSubstring(s string, words []string) []int {
-	res := []int{}
+	lens := len(s)
+	res := make([]int, 0, lens)
 
-	lens, numWords, lenw := len(s), len(words), len(words[0])
-	if lens == 0 || numWords == 0 || lens < numWords*lenw {
+	lenws := len(words)
+	if lens == 0 || lenws == 0 || lens < lenws*len(words[0]) {
 		return res
 	}
 
-	// remainNum 记录 words 中每个单词还能出现的次数
-	remainNum := make(map[string]int, numWords)
-	// count 记录符号要求的单词的连续出现次数
-	count := 0
-	initRecord := func() {
-		for _, word := range words {
-			remainNum[word] = 0
+	lenw := len(words[0])
+
+	// record 记录 words 中每个单词总共出现的次数
+	record := make(map[string]int, lenws)
+	for _, w := range words {
+		if len(w) != lenw {
+			// 新添加的 example 2 出现了 words 中单词长度不一致的情况。
+			// 这个违反了假设
+			// 直接返回 res
+			return res
 		}
-		for _, word := range words {
-			remainNum[word]++
+		record[w]++
+	}
+
+	// remain 记录 words 中每个单词还能出现的次数
+	remain := make(map[string]int, lenws)
+	// count 记录符合要求的单词的连续出现次数
+	count := 1 // count 的初始值只要不为 0 就可以
+	left, right := 0, 0
+
+	/**
+	 * s[left:right] 作为一个窗口存在
+	 * 假设 word:= s[right:right+lenw]
+	 * 如果 remain[word]>0 ，那么移动窗口 右边，同时更新移动后 s[left:right] 的统计信息
+	 * 		remain[word]--
+	 * 		right += lenw
+	 * 		count++
+	 * 否则，移动窗口 左边，同时更新移动后 s[left:right] 的统计信息
+	 * 		remain[s[left:left+lenw]]++
+	 * 		count--
+	 * 		left += lenw
+	 *
+	 * 每次移动窗口 右边 后，如果 count = lenws ，那么
+	 * 		说明找到了一个符合条件的解
+	 * 		append(res, left)，然后
+	 * 		移动窗口 左边
+	 */
+
+	// reset 重置 remain 和 count
+	reset := func() {
+		if count == 0 {
+			// 统计记录没有被修改，不需要重置
+			// 因为有这个预判，所以需要第一次执行 reset 时
+			// count 的值不能为 0
+			// 即 count 的初始值不能为 0
+			return
+		}
+		for k, v := range record {
+			remain[k] = v
 		}
 		count = 0
-	} // 把这个匿名函数放在这里，可以避免繁琐的函数参数
+	}
 
-	// 由于 index 增加的跨度是 lenw
-	// index 需要分别从{0,1,...,lenw-1}这些位置开始检查，才能不遗漏
-	for initialIndex := 0; initialIndex < lenw; initialIndex++ {
-		index := initialIndex
-		// moveIndex 让 index 指向下一个单词
-		moveIndex := func() {
-			// index 指向下一个单词的同时，需要同时修改统计记录
+	// moveLeft 让 left 指向下一个单词
+	moveLeft := func() {
+		// left 指向下一个单词前，需要修改统计记录
+		// 增加 left 指向的 word 可出现次数一次，
+		remain[s[left:left+lenw]]++
+		// 连续符合条件的单词数减少一个
+		count--
+		// left 后移一个 word 的长度
+		left += lenw
+	}
 
-			// 增加 index 指向的 word 可出现次数一次，
-			remainNum[s[index:index+lenw]]++
-			// 连续符合条件的单词数减少一个
-			count--
-			// index 后移一个 word 的长度
-			index += lenw
-		} // 把这个匿名函数放在这里，可以避免繁琐的函数参数
+	// left 需要分别从{0,1,...,lenw-1}这些位置开始检查，才能不遗漏
+	for i := 0; i < lenw; i++ {
+		left, right = i, i
+		reset()
 
-		initRecord()
-
-		for index+numWords*lenw <= lens { // 注意，这里是有等号的
-			word := s[index+count*lenw : index+(count+1)*lenw]
-			remainTimes, ok := remainNum[word]
+		// s[left:] 的长度 >= words 中所有 word 组成的字符串的长度时，
+		// s[left:] 中才有可能存在要找的字符串
+		for lens-left >= lenws*lenw {
+			word := s[right : right+lenw]
+			remainTimes, ok := remain[word]
 
 			switch {
 			case !ok:
-				// 出现了不在 words 中的单词
-				// 从 word 后面一个单词，重新开始统计
-				index += lenw * (count + 1)
-				if count != 0 {
-					// 统计记录已经被修改，需要再次初始化
-					initRecord()
-				}
+				// word 不在 words 中
+				// 从 right+lenw 处，作为新窗口，重新开始统计
+				left, right = right+lenw, right+lenw
+				reset()
 			case remainTimes == 0:
 				// word 的出现次数上次就用完了
-				// 说明s[index:index+(count+1)*lenw]中有单词多出现了
-				moveIndex()
+				// 说明 word 在 s[left:right] 中出现次数过多
+				moveLeft()
 				// 这个case会连续出现
-				// 直到s[index:index+(count+1)*lenw]中所有单词的出现次数都不超标
-				//
-				// 在 moveIndex() 的过程中，index+(count+1)*lenw 保持值不变
+				// 直到 s[left:right] 中的统计结果是 remain[word] == 1
+				// 这个过程中，right 一直不变
 			default:
 				// ok && remainTimes > 0，word 符合出现的条件
-
-				// 更新统计记录
-				remainNum[word]--
+				// moveRight
+				remain[word]--
 				count++
-
-				// 检查 words 能否排列组合成 s[index:index+count*lenw]
-				if count == numWords {
-					res = append(res, index)
-
-					// 把 index 指向下一个单词
-					// 开始下一个统计
-					moveIndex()
+				right += lenw
+				// 检查 words 能否排列组合成 s[left:right]
+				if count == lenws {
+					res = append(res, left)
+					// moveLeft 可以避免重复统计 s[left+lenw:right] 中的信息
+					moveLeft()
 				}
 			}
 		}
