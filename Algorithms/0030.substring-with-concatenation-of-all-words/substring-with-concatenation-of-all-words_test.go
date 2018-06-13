@@ -42,6 +42,11 @@ func Test_Problem0030(t *testing.T) {
 		},
 
 		question{
+			para{"attoinattoin", []string{"at", "tto", "in"}},
+			ans{[]int{}},
+		},
+
+		question{
 			para{"attoinattoin", []string{"at", "to", "in"}},
 			ans{[]int{0, 2, 4, 6}},
 		},
@@ -55,6 +60,11 @@ func Test_Problem0030(t *testing.T) {
 		question{
 			para{"wordgoodgoodgoodbestword", []string{"word", "good", "best", "good"}},
 			ans{[]int{8}},
+		},
+
+		question{
+			para{"barfoothefoobarmanattoinin", []string{"at", "to", "in", "in"}},
+			ans{[]int{18}},
 		},
 
 		// 如需多个测试，可以复制上方元素。
