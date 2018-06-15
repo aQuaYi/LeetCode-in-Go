@@ -1,22 +1,37 @@
 package problem0844
 
 func backspaceCompare(S string, T string) bool {
-	return clear(S) == clear(T)
-}
+	i := len(S)
+	j := len(T)
 
-func clear(s string) string {
-	bs := []byte(s)
-	res := make([]byte, 0, len(s))
-	for i := 0; i < len(s); i++ {
-		if bs[i] != '#' {
-			res = append(res, bs[i])
-			continue
+	for i >= 0 || j >= 0 {
+		i = nextIndex(&S, i)
+		j = nextIndex(&T, j)
+
+		if i < 0 || j < 0 {
+			return i == j
 		}
 
-		if len(res) > 0 {
-			res = res[:len(res)-1]
+		if S[i] != T[j] {
+			return false
 		}
+
 	}
 
-	return string(res)
+	return i == j
+}
+
+// 返回 s[:i] 中，不是 '#' 的字符的最大的索引号
+func nextIndex(s *string, i int) int {
+	i--
+	count := 0
+	for i >= 0 && ((*s)[i] == '#' || count > 0) {
+		if (*s)[i] == '#' {
+			count++
+		} else {
+			count--
+		}
+		i--
+	}
+	return i
 }
