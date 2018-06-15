@@ -44,7 +44,7 @@ Note:
 
 Follow up:
 
-	Can you solve it in O(N) time and O(1) space?
+1. Can you solve it in O(N) time and O(1) space?
 
 ## 解题思路
 
