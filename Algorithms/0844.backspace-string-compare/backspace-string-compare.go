@@ -8,11 +8,7 @@ func backspaceCompare(S string, T string) bool {
 		i = nextIndex(&S, i)
 		j = nextIndex(&T, j)
 
-		if i < 0 || j < 0 {
-			return i == j
-		}
-
-		if S[i] != T[j] {
+		if i >= 0 && j >= 0 && S[i] != T[j] {
 			return false
 		}
 
