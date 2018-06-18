@@ -51,10 +51,3 @@ func isSimilar(a, b string) bool {
 
 	return count == 2 || (count == 0 && hasDouble)
 }
-
-func max(a, b int) int {
-	if a > b {
-		return a
-	}
-	return b
-}
