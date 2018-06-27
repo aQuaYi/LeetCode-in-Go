@@ -99,11 +99,13 @@ func Test_matches(t *testing.T) {
 }
 
 func TestMaster_Guess(t *testing.T) {
-	m := NewMaster(
-		"acckzz",
-		[]string{"acckzz", "ccbazz", "eiowzz", "abcczz"},
-		5,
-	)
+	m := &Master{
+		Secret:   "acckzz",
+		WordList: []string{"acckzz", "ccbazz", "eiowzz", "abcczz"},
+		Count:    5,
+	}
+
+	m.Update()
 
 	tests := []struct {
 		name  string
@@ -160,8 +162,8 @@ func TestMaster_Guess(t *testing.T) {
 			if got := tt.m.Guess(tt.word); got != tt.want {
 				t.Errorf("Master.Guess() = %v, want %v", got, tt.want)
 			}
-			if tt.m.count != tt.count {
-				t.Errorf("tt.m.count = %v, but tt.count = %v", tt.m.count, tt.count)
+			if tt.m.Count != tt.count {
+				t.Errorf("tt.m.Count = %v, but tt.count = %v", tt.m.Count, tt.count)
 			}
 		})
 	}

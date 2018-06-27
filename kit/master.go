@@ -2,18 +2,19 @@ package kit
 
 // Master 是 LeetCode 的结构体
 type Master struct {
-	secret    string
-	isInWords map[string]bool
-	count     int
+	Secret    string
+	WordList  []string
+	IsInWords map[string]bool
+	Count     int
 }
 
 // Guess word
 func (m *Master) Guess(word string) int {
-	m.count--
-	if !m.isInWords[word] {
+	m.Count--
+	if !m.IsInWords[word] {
 		return -1
 	}
-	return matches(m.secret, word)
+	return matches(m.Secret, word)
 }
 
 // a,b 总是一样长的
@@ -28,15 +29,10 @@ func matches(a, b string) int {
 	return res
 }
 
-// NewMaster 创建了一个新的 *Master
-func NewMaster(secret string, wordList []string, count int) *Master {
-	m := &Master{
-		secret:    secret,
-		isInWords: make(map[string]bool, len(wordList)),
-		count:     count,
+// Update 更新了 m.IsInWords
+func (m *Master) Update() {
+	m.IsInWords = make(map[string]bool, len(m.WordList))
+	for _, w := range m.WordList {
+		m.IsInWords[w] = true
 	}
-	for _, w := range wordList {
-		m.isInWords[w] = true
-	}
-	return m
 }

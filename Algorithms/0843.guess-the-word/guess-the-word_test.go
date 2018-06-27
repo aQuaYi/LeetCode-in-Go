@@ -11,7 +11,7 @@ import (
 var tcs = []struct {
 	secret   string
 	wordList []string
-	times    int
+	count    int
 }{
 
 	{
@@ -23,18 +23,21 @@ var tcs = []struct {
 	// 可以有多个 testcase
 }
 
-func Test_(t *testing.T) {
+func Test_findSecretWord(t *testing.T) {
 	ast := assert.New(t)
 
 	for _, tc := range tcs {
 		fmt.Printf("~~%v~~\n", tc)
-
-	}
-}
-
-func Benchmark_(b *testing.B) {
-	for i := 0; i < b.N; i++ {
-		for _, tc := range tcs {
+		m := &Master{
+			Secret:   tc.secret,
+			WordList: tc.wordList,
+			Count:    tc.count,
 		}
+
+		m.Update()
+
+		findSecretWord(tc.wordList, m)
+
+		ast.True(m.Count > 0, "没有猜到 %s", tc.secret)
 	}
 }
