@@ -8,6 +8,6 @@ import "github.com/aQuaYi/LeetCode-in-Go/kit"
 // func (this *Master) Guess(word string) int {}
 type Master = kit.Master
 
-func findSecretWord(wordlist []string, master *Master) {
+func findSecretWord(wordList []string, master *Master) {
 
 }
