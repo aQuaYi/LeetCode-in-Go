@@ -10,7 +10,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|174|299|129|602|
+|**Accepted**|175|299|129|603|
 |**Total**|177|307|133|617|
 
 ## 题解
@@ -192,7 +192,7 @@
 |208|[Implement Trie (Prefix Tree)](./Algorithms/0208.implement-trie-prefix-tree)|31%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |209|[Minimum Size Subarray Sum](./Algorithms/0209.minimum-size-subarray-sum)|32%|Medium||
 |210|[Course Schedule II](./Algorithms/0210.course-schedule-ii)|30%|Medium||
-|211|[Add and Search Word - Data structure design](./Algorithms/0211.add-and-search-word-data-structure-design)|25%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|211|[Add and Search Word - Data structure design](./Algorithms/0211.add-and-search-word-data-structure-design)|26%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |212|[Word Search II](./Algorithms/0212.word-search-ii)|25%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |213|[House Robber II](./Algorithms/0213.house-robber-ii)|34%|Medium||
 |214|[Shortest Palindrome](./Algorithms/0214.shortest-palindrome)|25%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -586,7 +586,7 @@
 |809|[Expressive Words](./Algorithms/0809.expressive-words)|36%|Medium||
 |810|[Chalkboard XOR Game](./Algorithms/0810.chalkboard-xor-game)|38%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |811|[Subdomain Visit Count](./Algorithms/0811.subdomain-visit-count)|62%|Easy||
-|812|[Largest Triangle Area](./Algorithms/0812.largest-triangle-area)|53%|Easy||
+|812|[Largest Triangle Area](./Algorithms/0812.largest-triangle-area)|52%|Easy||
 |813|[Largest Sum of Averages](./Algorithms/0813.largest-sum-of-averages)|40%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |814|[Binary Tree Pruning](./Algorithms/0814.binary-tree-pruning)|68%|Medium||
 |815|[Bus Routes](./Algorithms/0815.bus-routes)|32%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -617,13 +617,13 @@
 |840|[Magic Squares In Grid](./Algorithms/0840.magic-squares-in-grid)|33%|Easy||
 |841|[Keys and Rooms](./Algorithms/0841.keys-and-rooms)|58%|Medium||
 |842|[Split Array into Fibonacci Sequence](./Algorithms/0842.split-array-into-fibonacci-sequence)|34%|Medium||
-|843|[Guess the Word](./Algorithms/0843.guess-the-word)|33%|Hard||
+|843|[Guess the Word](./Algorithms/0843.guess-the-word)|33%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |844|[Backspace String Compare](./Algorithms/0844.backspace-string-compare)|46%|Easy||
 |845| * Longest Mountain in Array|30%|Medium||
 |846| * Hand of Straights|42%|Medium||
 |847| * Shortest Path Visiting All Nodes|39%|Hard||
-|848| * Shifting Letters|33%|Medium||
-|849| * Maximize Distance to Closest Person|39%|Easy||
+|848| * Shifting Letters|34%|Medium||
+|849|[Maximize Distance to Closest Person](./Algorithms/0849.maximize-distance-to-closest-person)|39%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |850| * Rectangle Area II|42%|Hard||
 |851| * Loud and Rich|42%|Medium||
 |852| * Peak Index in a Mountain Array|69%|Easy||
