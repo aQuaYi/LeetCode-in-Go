@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1027,
-	"Updated": "2018-06-28T13:59:30.950998214+08:00",
+	"Updated": "2018-06-28T16:33:52.962484586+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 174,
@@ -6445,7 +6445,7 @@
 			"ID": 535,
 			"Title": "Encode and Decode TinyURL",
 			"TitleSlug": "encode-and-decode-tinyurl",
-			"PassRate": "73%",
+			"PassRate": "74%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -9769,7 +9769,7 @@
 			"ID": 812,
 			"Title": "Largest Triangle Area",
 			"TitleSlug": "largest-triangle-area",
-			"PassRate": "53%",
+			"PassRate": "52%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10145,7 +10145,7 @@
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -10201,7 +10201,7 @@
 			"ID": 848,
 			"Title": "Shifting Letters",
 			"TitleSlug": "shifting-letters",
-			"PassRate": "33%",
+			"PassRate": "34%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
