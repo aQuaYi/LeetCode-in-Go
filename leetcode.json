@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1027,
-	"Updated": "2018-06-28T16:33:52.962484586+08:00",
+	"Updated": "2018-06-28T17:20:06.585870748+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 174,
+			"Solved": 175,
 			"Total": 177
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 133
 		},
 		"Total": {
-			"Solved": 602,
+			"Solved": 603,
 			"Total": 617
 		}
 	},
@@ -2557,7 +2557,7 @@
 			"ID": 211,
 			"Title": "Add and Search Word - Data structure design",
 			"TitleSlug": "add-and-search-word-data-structure-design",
-			"PassRate": "25%",
+			"PassRate": "26%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10215,9 +10215,9 @@
 			"TitleSlug": "maximize-distance-to-closest-person",
 			"PassRate": "39%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
