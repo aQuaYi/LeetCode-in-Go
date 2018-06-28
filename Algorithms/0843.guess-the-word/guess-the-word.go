@@ -31,7 +31,7 @@ func findSecretWord(wordList []string, master *Master) {
 				key = w
 			}
 		}
-		// 现在 key 中是与 wordList 中与别的单词最具有相似性的单词
+		// 现在 key 与 wordList 中别的单词最具有相似性
 
 		matches = master.Guess(key)
 		// wordList 中的单词长度都为 6
