@@ -13,29 +13,28 @@ type Master = kit.Master
 func findSecretWord(wordList []string, master *Master) {
 	matches := 0
 	// 题目默认是猜 10 次
-	// wordList 中的单词长度都为 6
 	for i := 0; i < 10; i++ {
-		// count[w] 记录了 wordList 中与 w 完全不同的单词的个数
+		// count[w] 代表了 w 与 wordList 中单词的匹配程度
+		// 数值越高，越匹配
 		count := make(map[string]int, len(wordList))
 		for _, w := range wordList {
 			for _, b := range wordList {
-				if match(w, b) == 0 {
-					count[w]++
-				}
+				count[w] += match(w, b)
 			}
 		}
 
 		key := ""
-		min := len(wordList)
+		max := 0
 		for _, w := range wordList {
-			if count[w] < min {
-				min = count[w]
+			if max < count[w] {
+				max = count[w]
 				key = w
 			}
 		}
 		// 现在 key 中是与 wordList 中与别的单词最具有相似性的单词
 
 		matches = master.Guess(key)
+		// wordList 中的单词长度都为 6
 		if matches == 6 {
 			// 猜到了
 			return
