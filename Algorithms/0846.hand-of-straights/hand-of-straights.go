@@ -9,34 +9,31 @@ func isNStraightHand(hand []int, W int) bool {
 		return true
 	}
 
-	size := len(hand)
-	group := size / W
-	if group*W != size {
-		// 没有办法保证每组的个数是 W
+	if W > len(hand) || len(hand)%W != 0 {
 		return false
 	}
 
-	groups := make([][]int, group)
+	size := len(hand) / W
+
+	groups := make([][]int, size)
 
 	sort.Ints(hand)
 
 	for _, c := range hand {
-		g := 0
-		for ; g < group; g++ {
-			if len(groups[g]) == W {
+		i := 0
+		for ; i < size; i++ {
+			if len(groups[i]) == W {
 				continue
 			}
-			last := len(groups[g]) - 1
-			if last == -1 || groups[g][last]+1 == c {
-				groups[g] = append(groups[g], c)
+			last := len(groups[i]) - 1
+			if last == -1 || groups[i][last]+1 == c {
+				groups[i] = append(groups[i], c)
 				break
 			}
 		}
-
-		if g == group {
+		if i == size {
 			return false
 		}
-
 	}
 
 	return true
