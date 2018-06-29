@@ -23,7 +23,7 @@ func isNStraightHand(hand []int, W int) bool {
 	for _, c := range hand {
 		g := 0
 		for ; g < group; g++ {
-			if len(groups[g]) == W {
+			if len(groups[g]) == W && W != 1 {
 				continue
 			}
 			if groups[g][0] == -1 {
