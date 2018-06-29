@@ -5,6 +5,10 @@ import (
 )
 
 func isNStraightHand(hand []int, W int) bool {
+	if W == 1 {
+		return true
+	}
+
 	size := len(hand)
 	group := size / W
 	if group*W != size {
@@ -13,9 +17,6 @@ func isNStraightHand(hand []int, W int) bool {
 	}
 
 	groups := make([][]int, group)
-	for i := range groups {
-		groups[i] = make([]int, 0, W)
-	}
 
 	sort.Ints(hand)
 
