@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1009,
-	"Updated": "2018-06-29T16:18:13.505024141+08:00",
+	"Updated": "2018-06-29T17:13:21.090744401+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 175,
 			"Total": 177
 		},
 		"Medium": {
-			"Solved": 299,
+			"Solved": 300,
 			"Total": 307
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 133
 		},
 		"Total": {
-			"Solved": 603,
+			"Solved": 604,
 			"Total": 617
 		}
 	},
@@ -6517,7 +6517,7 @@
 			"ID": 541,
 			"Title": "Reverse String II",
 			"TitleSlug": "reverse-string-ii",
-			"PassRate": "43%",
+			"PassRate": "44%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9049,7 +9049,7 @@
 			"ID": 752,
 			"Title": "Open the Lock",
 			"TitleSlug": "open-the-lock",
-			"PassRate": "40%",
+			"PassRate": "39%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10179,9 +10179,9 @@
 			"TitleSlug": "hand-of-straights",
 			"PassRate": "42%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
