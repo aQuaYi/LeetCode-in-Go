@@ -36,8 +36,8 @@ Note:
 
 Follow up:
 
-	Can you solve it using only one pass?
-	Can you solve it in O(1) space?
+- Can you solve it using only one pass?
+- Can you solve it in O(1) space?
 
 ## 解题思路
 
