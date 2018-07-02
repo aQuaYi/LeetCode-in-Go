@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1019,
-	"Updated": "2018-07-02T21:12:58.453765676+08:00",
+	"Updated": "2018-07-03T00:28:35.235888593+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 175,
 			"Total": 178
 		},
 		"Medium": {
-			"Solved": 300,
+			"Solved": 301,
 			"Total": 309
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 134
 		},
 		"Total": {
-			"Solved": 604,
+			"Solved": 605,
 			"Total": 621
 		}
 	},
@@ -901,7 +901,7 @@
 			"ID": 73,
 			"Title": "Set Matrix Zeroes",
 			"TitleSlug": "set-matrix-zeroes",
-			"PassRate": "36%",
+			"PassRate": "37%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9769,7 +9769,7 @@
 			"ID": 812,
 			"Title": "Largest Triangle Area",
 			"TitleSlug": "largest-triangle-area",
-			"PassRate": "53%",
+			"PassRate": "52%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10167,7 +10167,7 @@
 			"TitleSlug": "longest-mountain-in-array",
 			"PassRate": "30%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -10333,7 +10333,7 @@
 			"ID": 859,
 			"Title": "Buddy Strings",
 			"TitleSlug": "buddy-strings",
-			"PassRate": "25%",
+			"PassRate": "26%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -10345,7 +10345,7 @@
 			"ID": 860,
 			"Title": "Lemonade Change",
 			"TitleSlug": "lemonade-change",
-			"PassRate": "51%",
+			"PassRate": "50%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -10357,7 +10357,7 @@
 			"ID": 861,
 			"Title": "Score After Flipping Matrix",
 			"TitleSlug": "score-after-flipping-matrix",
-			"PassRate": "65%",
+			"PassRate": "66%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
