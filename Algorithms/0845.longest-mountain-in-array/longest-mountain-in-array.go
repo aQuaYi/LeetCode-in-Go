@@ -3,7 +3,7 @@ package problem0845
 func longestMountain(A []int) int {
 	size := len(A)
 	if size <= 2 {
-
+		return 0
 	}
 
 	isAscent := false
@@ -27,7 +27,7 @@ func longestMountain(A []int) int {
 			}
 		}
 
-		if (isAscent || isDecent) && A[i-1] > A[i] {
+		if i < size && (isAscent || isDecent) && A[i-1] > A[i] {
 			temp++
 			isDecent = true
 			res = max(res, temp)
