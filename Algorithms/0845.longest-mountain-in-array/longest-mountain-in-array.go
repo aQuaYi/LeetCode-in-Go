@@ -6,34 +6,22 @@ func longestMountain(A []int) int {
 		return 0
 	}
 
-	isAscent := false
-	isDecent := false
-
-	res := 0
-	temp := 0
-
+	res, up, down := 0, 0, 0
 	for i := 1; i < size; i++ {
-		switch {
-		case A[i-1] < A[i]:
-			if isAscent {
-				temp++
-			} else {
-				isAscent = true
-				isDecent = false
-				temp = 2
-			}
-		case A[i-1] > A[i]:
-			if isAscent || isDecent {
-				temp++
-				res = max(res, temp)
-				isAscent = false
-				isDecent = true
-			}
-		default:
-			isAscent, isDecent = false, false
+		if (down > 0 && A[i-1] < A[i]) ||
+			A[i-1] == A[i] {
+			up, down = 0, 0
+		}
+		if A[i-1] < A[i] {
+			up++
+		}
+		if A[i-1] > A[i] {
+			down++
+		}
+		if up > 0 && down > 0 && up+down+1 > res {
+			res = up + down + 1
 		}
 	}
-
 	return res
 }
 
