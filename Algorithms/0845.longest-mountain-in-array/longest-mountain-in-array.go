@@ -13,28 +13,25 @@ func longestMountain(A []int) int {
 	temp := 0
 
 	for i := 1; i < size; i++ {
-		if A[i-1] == A[i] {
-			isAscent, isDecent = false, false
-			continue
-		}
-
-		if !isAscent && A[i-1] < A[i] {
-			isAscent = true
-			temp = 1
-			for i < size && A[i-1] < A[i] {
+		switch {
+		case A[i-1] < A[i]:
+			if isAscent {
 				temp++
-				i++
+			} else {
+				isAscent = true
+				isDecent = false
+				temp = 2
 			}
-			isAscent = false
-			isDecent = true
+		case A[i-1] > A[i]:
+			if isAscent || isDecent {
+				temp++
+				res = max(res, temp)
+				isAscent = false
+				isDecent = true
+			}
+		default:
+			isAscent, isDecent = false, false
 		}
-
-		if i < size && isDecent && A[i-1] > A[i] {
-			temp++
-			isDecent = true
-			res = max(res, temp)
-		}
-
 	}
 
 	return res
