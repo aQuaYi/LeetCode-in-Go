@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 997,
-	"Updated": "2018-07-04T05:44:33.515334967+08:00",
+	"Updated": "2018-07-04T06:04:51.061950892+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 175,
 			"Total": 178
 		},
 		"Medium": {
-			"Solved": 301,
+			"Solved": 302,
 			"Total": 309
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 135
 		},
 		"Total": {
-			"Solved": 606,
+			"Solved": 607,
 			"Total": 622
 		}
 	},
@@ -7117,7 +7117,7 @@
 			"ID": 591,
 			"Title": "Tag Validator",
 			"TitleSlug": "tag-validator",
-			"PassRate": "30%",
+			"PassRate": "31%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9481,7 +9481,7 @@
 			"ID": 788,
 			"Title": "Rotated Digits",
 			"TitleSlug": "rotated-digits",
-			"PassRate": "51%",
+			"PassRate": "50%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10189,7 +10189,7 @@
 			"ID": 847,
 			"Title": "Shortest Path Visiting All Nodes",
 			"TitleSlug": "shortest-path-visiting-all-nodes",
-			"PassRate": "39%",
+			"PassRate": "40%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10203,7 +10203,7 @@
 			"TitleSlug": "shifting-letters",
 			"PassRate": "34%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
