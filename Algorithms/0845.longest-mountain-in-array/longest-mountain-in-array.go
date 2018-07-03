@@ -18,16 +18,10 @@ func longestMountain(A []int) int {
 		if A[i-1] > A[i] {
 			down++
 		}
-		if up > 0 && down > 0 {
-			res = max(res, up+down+1)
+		if up > 0 && down > 0 && up+down+1 > res {
+			res = up + down + 1
 		}
 	}
-	return res
-}
 
-func max(a, b int) int {
-	if a > b {
-		return a
-	}
-	return b
+	return res
 }
