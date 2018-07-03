@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 1019,
-	"Updated": "2018-07-03T11:12:39.489510843+08:00",
+	"Updated": "2018-07-03T14:09:44.198054366+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 175,
@@ -12,12 +12,12 @@
 			"Total": 309
 		},
 		"Hard": {
-			"Solved": 129,
-			"Total": 134
+			"Solved": 130,
+			"Total": 135
 		},
 		"Total": {
-			"Solved": 605,
-			"Total": 621
+			"Solved": 606,
+			"Total": 622
 		}
 	},
 	"Problems": [
@@ -745,7 +745,7 @@
 			"ID": 60,
 			"Title": "Permutation Sequence",
 			"TitleSlug": "permutation-sequence",
-			"PassRate": "29%",
+			"PassRate": "30%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -3001,7 +3001,7 @@
 			"ID": 248,
 			"Title": "Strobogrammatic Number III",
 			"TitleSlug": "strobogrammatic-number-iii",
-			"PassRate": "32%",
+			"PassRate": "33%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -3469,7 +3469,7 @@
 			"ID": 287,
 			"Title": "Find the Duplicate Number",
 			"TitleSlug": "find-the-duplicate-number",
-			"PassRate": "44%",
+			"PassRate": "45%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -6781,7 +6781,7 @@
 			"ID": 563,
 			"Title": "Binary Tree Tilt",
 			"TitleSlug": "binary-tree-tilt",
-			"PassRate": "46%",
+			"PassRate": "47%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9481,7 +9481,7 @@
 			"ID": 788,
 			"Title": "Rotated Digits",
 			"TitleSlug": "rotated-digits",
-			"PassRate": "50%",
+			"PassRate": "51%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10191,9 +10191,9 @@
 			"TitleSlug": "shortest-path-visiting-all-nodes",
 			"PassRate": "39%",
 			"Difficulty": "Hard",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -10225,7 +10225,7 @@
 			"ID": 850,
 			"Title": "Rectangle Area II",
 			"TitleSlug": "rectangle-area-ii",
-			"PassRate": "41%",
+			"PassRate": "42%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -10333,7 +10333,7 @@
 			"ID": 859,
 			"Title": "Buddy Strings",
 			"TitleSlug": "buddy-strings",
-			"PassRate": "25%",
+			"PassRate": "26%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -10383,6 +10383,18 @@
 			"TitleSlug": "all-nodes-distance-k-in-binary-tree",
 			"PassRate": "38%",
 			"Difficulty": "Medium",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 864,
+			"Title": "Random Pick with Blacklist",
+			"TitleSlug": "random-pick-with-blacklist",
+			"PassRate": "0%",
+			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
 			"IsFavor": false,
