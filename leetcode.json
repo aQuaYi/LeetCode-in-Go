@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 997,
-	"Updated": "2018-07-04T06:04:51.061950892+08:00",
+	"Updated": "2018-07-04T15:55:42.160031447+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 175,
@@ -12,11 +12,11 @@
 			"Total": 309
 		},
 		"Hard": {
-			"Solved": 130,
+			"Solved": 131,
 			"Total": 135
 		},
 		"Total": {
-			"Solved": 607,
+			"Solved": 608,
 			"Total": 622
 		}
 	},
@@ -1441,7 +1441,7 @@
 			"ID": 118,
 			"Title": "Pascal's Triangle",
 			"TitleSlug": "pascals-triangle",
-			"PassRate": "40%",
+			"PassRate": "41%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -1981,7 +1981,7 @@
 			"ID": 163,
 			"Title": "Missing Ranges",
 			"TitleSlug": "missing-ranges",
-			"PassRate": "22%",
+			"PassRate": "23%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -4549,7 +4549,7 @@
 			"ID": 377,
 			"Title": "Combination Sum IV",
 			"TitleSlug": "combination-sum-iv",
-			"PassRate": "42%",
+			"PassRate": "43%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -4825,7 +4825,7 @@
 			"ID": 400,
 			"Title": "Nth Digit",
 			"TitleSlug": "nth-digit",
-			"PassRate": "29%",
+			"PassRate": "30%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9481,7 +9481,7 @@
 			"ID": 788,
 			"Title": "Rotated Digits",
 			"TitleSlug": "rotated-digits",
-			"PassRate": "50%",
+			"PassRate": "51%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9937,7 +9937,7 @@
 			"ID": 826,
 			"Title": "Most Profit Assigning Work",
 			"TitleSlug": "most-profit-assigning-work",
-			"PassRate": "31%",
+			"PassRate": "32%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10227,7 +10227,7 @@
 			"TitleSlug": "rectangle-area-ii",
 			"PassRate": "42%",
 			"Difficulty": "Hard",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -10249,7 +10249,7 @@
 			"ID": 852,
 			"Title": "Peak Index in a Mountain Array",
 			"TitleSlug": "peak-index-in-a-mountain-array",
-			"PassRate": "69%",
+			"PassRate": "68%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -10393,7 +10393,7 @@
 			"ID": 864,
 			"Title": "Random Pick with Blacklist",
 			"TitleSlug": "random-pick-with-blacklist",
-			"PassRate": "26%",
+			"PassRate": "28%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
