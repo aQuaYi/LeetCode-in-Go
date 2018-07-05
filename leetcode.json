@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 985,
-	"Updated": "2018-07-05T16:15:00.35685601+08:00",
+	"Updated": "2018-07-05T17:26:50.728854512+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 175,
 			"Total": 178
 		},
 		"Medium": {
-			"Solved": 302,
+			"Solved": 303,
 			"Total": 309
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 135
 		},
 		"Total": {
-			"Solved": 608,
+			"Solved": 609,
 			"Total": 622
 		}
 	},
@@ -1981,7 +1981,7 @@
 			"ID": 163,
 			"Title": "Missing Ranges",
 			"TitleSlug": "missing-ranges",
-			"PassRate": "22%",
+			"PassRate": "23%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -8077,7 +8077,7 @@
 			"ID": 671,
 			"Title": "Second Minimum Node In a Binary Tree",
 			"TitleSlug": "second-minimum-node-in-a-binary-tree",
-			"PassRate": "41%",
+			"PassRate": "42%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -8833,7 +8833,7 @@
 			"ID": 734,
 			"Title": "Sentence Similarity",
 			"TitleSlug": "sentence-similarity",
-			"PassRate": "38%",
+			"PassRate": "39%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -9001,7 +9001,7 @@
 			"ID": 748,
 			"Title": "Shortest Completing Word",
 			"TitleSlug": "shortest-completing-word",
-			"PassRate": "51%",
+			"PassRate": "52%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10239,9 +10239,9 @@
 			"TitleSlug": "loud-and-rich",
 			"PassRate": "42%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
