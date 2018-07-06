@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 980,
-	"Updated": "2018-07-06T16:19:59.104342379+08:00",
+	"Updated": "2018-07-06T17:07:24.350585525+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 175,
+			"Solved": 176,
 			"Total": 178
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 135
 		},
 		"Total": {
-			"Solved": 610,
+			"Solved": 611,
 			"Total": 622
 		}
 	},
@@ -10251,9 +10251,9 @@
 			"TitleSlug": "peak-index-in-a-mountain-array",
 			"PassRate": "69%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
