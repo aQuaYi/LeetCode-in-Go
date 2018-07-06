@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 980,
-	"Updated": "2018-07-06T13:43:35.180159285+08:00",
+	"Updated": "2018-07-06T16:19:59.104342379+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 175,
@@ -8617,7 +8617,7 @@
 			"ID": 716,
 			"Title": "Max Stack",
 			"TitleSlug": "max-stack",
-			"PassRate": "37%",
+			"PassRate": "36%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -10189,7 +10189,7 @@
 			"ID": 847,
 			"Title": "Shortest Path Visiting All Nodes",
 			"TitleSlug": "shortest-path-visiting-all-nodes",
-			"PassRate": "40%",
+			"PassRate": "39%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
