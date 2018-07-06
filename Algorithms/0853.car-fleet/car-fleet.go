@@ -8,18 +8,19 @@ func carFleet(target int, position []int, speed []int) int {
 	size := len(position)
 	rs := make([]record, size)
 	for i := range rs {
-		pos, spd := position[i], speed[i]
+		p, s := position[i], speed[i]
 		rs[i] = record{
-			initPos:     pos,
-			arrivalTime: float64(target-pos) / float64(spd),
+			initPos:     p,
+			arrivalTime: float64(target-p) / float64(s),
 		}
 	}
 
+	// initPos 越大的车，越早到
 	sort.Slice(rs, func(i int, j int) bool {
 		return rs[i].initPos > rs[j].initPos
 	})
 
-	fleetTime := -1.0
+	fleetTime := 0.
 	res := 0
 
 	for _, r := range rs {
