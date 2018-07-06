@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 980,
-	"Updated": "2018-07-06T11:40:55.308634427+08:00",
+	"Updated": "2018-07-06T13:43:35.180159285+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 175,
 			"Total": 178
 		},
 		"Medium": {
-			"Solved": 303,
+			"Solved": 304,
 			"Total": 309
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 135
 		},
 		"Total": {
-			"Solved": 609,
+			"Solved": 610,
 			"Total": 622
 		}
 	},
@@ -9061,7 +9061,7 @@
 			"ID": 753,
 			"Title": "Cracking the Safe",
 			"TitleSlug": "cracking-the-safe",
-			"PassRate": "40%",
+			"PassRate": "41%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10141,7 +10141,7 @@
 			"ID": 843,
 			"Title": "Guess the Word",
 			"TitleSlug": "guess-the-word",
-			"PassRate": "33%",
+			"PassRate": "34%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10263,7 +10263,7 @@
 			"TitleSlug": "car-fleet",
 			"PassRate": "29%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
