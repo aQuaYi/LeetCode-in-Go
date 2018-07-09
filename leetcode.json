@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 974,
-	"Updated": "2018-07-09T13:26:28.515411019+08:00",
+	"Updated": "2018-07-09T16:18:11.3028775+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 176,
@@ -12,11 +12,11 @@
 			"Total": 311
 		},
 		"Hard": {
-			"Solved": 131,
+			"Solved": 132,
 			"Total": 136
 		},
 		"Total": {
-			"Solved": 611,
+			"Solved": 612,
 			"Total": 626
 		}
 	},
@@ -1309,7 +1309,7 @@
 			"ID": 107,
 			"Title": "Binary Tree Level Order Traversal II",
 			"TitleSlug": "binary-tree-level-order-traversal-ii",
-			"PassRate": "42%",
+			"PassRate": "43%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -7885,7 +7885,7 @@
 			"ID": 655,
 			"Title": "Print Binary Tree",
 			"TitleSlug": "print-binary-tree",
-			"PassRate": "48%",
+			"PassRate": "49%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -8149,7 +8149,7 @@
 			"ID": 677,
 			"Title": "Map Sum Pairs",
 			"TitleSlug": "map-sum-pairs",
-			"PassRate": "50%",
+			"PassRate": "51%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10275,7 +10275,7 @@
 			"TitleSlug": "k-similar-strings",
 			"PassRate": "29%",
 			"Difficulty": "Hard",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -10417,7 +10417,7 @@
 			"ID": 866,
 			"Title": "Smallest Subtree with all the Deepest Nodes",
 			"TitleSlug": "smallest-subtree-with-all-the-deepest-nodes",
-			"PassRate": "44%",
+			"PassRate": "45%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
