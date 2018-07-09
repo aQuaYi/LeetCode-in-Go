@@ -2,16 +2,16 @@ package problem0856
 
 func scoreOfParentheses(s string) int {
 	res := 0
-	layers := uint(0)
+	factor := 1
 	size := len(s)
 	for i := 0; i < size; i++ {
 		if s[i] == '(' {
-			layers++
+			factor *= 2
 		} else {
-			layers--
+			factor /= 2
 		}
 		if s[i] == '(' && s[i+1] == ')' {
-			res += 1 << (layers - 1)
+			res += factor / 2
 		}
 	}
 	return res
