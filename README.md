@@ -1,6 +1,6 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
-[![LeetCode 排名](https://img.shields.io/badge/aQuaYi-974-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/aQuaYi-968-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 
@@ -10,7 +10,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|176|304|132|612|
+|**Accepted**|176|305|132|613|
 |**Total**|179|311|136|626|
 
 ## 题解
@@ -442,7 +442,7 @@
 |606|[Construct String from Binary Tree](./Algorithms/0606.construct-string-from-binary-tree)|50%|Easy||
 |609|[Find Duplicate File in System](./Algorithms/0609.find-duplicate-file-in-system)|52%|Medium||
 |611|[Valid Triangle Number](./Algorithms/0611.valid-triangle-number)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|617|[Merge Two Binary Trees](./Algorithms/0617.merge-two-binary-trees)|67%|Easy||
+|617|[Merge Two Binary Trees](./Algorithms/0617.merge-two-binary-trees)|68%|Easy||
 |621|[Task Scheduler](./Algorithms/0621.task-scheduler)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |623|[Add One Row to Tree](./Algorithms/0623.add-one-row-to-tree)|46%|Medium||
 |628|[Maximum Product of Three Numbers](./Algorithms/0628.maximum-product-of-three-numbers)|44%|Easy|[❤](https://leetcode.com/list/oussv5j)|
@@ -628,9 +628,9 @@
 |851|[Loud and Rich](./Algorithms/0851.loud-and-rich)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |852|[Peak Index in a Mountain Array](./Algorithms/0852.peak-index-in-a-mountain-array)|68%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |853|[Car Fleet](./Algorithms/0853.car-fleet)|30%|Medium||
-|854|[K-Similar Strings](./Algorithms/0854.k-similar-strings)|29%|Hard||
+|854|[K-Similar Strings](./Algorithms/0854.k-similar-strings)|29%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |855| * Exam Room|29%|Medium||
-|856| * Score of Parentheses|55%|Medium||
+|856|[Score of Parentheses](./Algorithms/0856.score-of-parentheses)|55%|Medium||
 |857| * Minimum Cost to Hire K Workers|37%|Hard||
 |858| * Mirror Reflection|46%|Medium||
 |859| * Buddy Strings|26%|Easy||
