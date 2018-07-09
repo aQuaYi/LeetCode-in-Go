@@ -9,19 +9,47 @@ import (
 
 // tcs is testcase slice
 var tcs = []struct {
-	A string
- B string
+	A   string
+	B   string
 	ans int
 }{
 
+	{
+		"ab",
+		"ab",
+		0,
+	},
 
-	
+	{
+		"ab",
+		"ba",
+		1,
+	},
+
+	{
+		"abc",
+		"bca",
+		2,
+	},
+
+	{
+		"abac",
+		"baca",
+		2,
+	},
+
+	{
+		"aabc",
+		"abca",
+		2,
+	},
+
 	// 可以有多个 testcase
 }
 
 func Test_kSimilarity(t *testing.T) {
 	ast := assert.New(t)
-	
+
 	for _, tc := range tcs {
 		fmt.Printf("~~%v~~\n", tc)
 		ast.Equal(tc.ans, kSimilarity(tc.A, tc.B), "输入:%v", tc)
