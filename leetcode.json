@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 968,
-	"Updated": "2018-07-10T16:37:25.973476801+08:00",
+	"Updated": "2018-07-10T17:27:17.98221582+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 176,
 			"Total": 179
 		},
 		"Medium": {
-			"Solved": 305,
+			"Solved": 306,
 			"Total": 311
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 136
 		},
 		"Total": {
-			"Solved": 613,
+			"Solved": 614,
 			"Total": 626
 		}
 	},
@@ -3745,7 +3745,7 @@
 			"ID": 310,
 			"Title": "Minimum Height Trees",
 			"TitleSlug": "minimum-height-trees",
-			"PassRate": "29%",
+			"PassRate": "28%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10323,7 +10323,7 @@
 			"TitleSlug": "mirror-reflection",
 			"PassRate": "46%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
