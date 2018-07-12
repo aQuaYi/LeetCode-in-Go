@@ -10,10 +10,19 @@ func buddyStrings(A, B string) bool {
 	}
 
 	size := len(A)
-
+	i := 0
+	countDown := 2
 	ca, cb := byte(0), byte(0)
+	for countDown > 0 && i < size {
+		if A[i] != B[i] {
+			ca += A[i]
+			cb += B[i]
+			countDown--
+		}
+		i++
+	}
 
-	return false
+	return ca == cb && A[i:] == B[i:]
 }
 
 func hasDouble(s string) bool {
