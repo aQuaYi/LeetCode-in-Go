@@ -11,7 +11,7 @@
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
 |**Accepted**|177|306|132|615|
-|**Total**|196|317|136|649|
+|**Total**|189|315|136|640|
 
 ## 题解
 
@@ -329,10 +329,6 @@
 |421|[Maximum XOR of Two Numbers in an Array](./Algorithms/0421.maximum-xor-of-two-numbers-in-an-array)|48%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |423|[Reconstruct Original Digits from English](./Algorithms/0423.reconstruct-original-digits-from-english)|44%|Medium||
 |424|[Longest Repeating Character Replacement](./Algorithms/0424.longest-repeating-character-replacement)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|426| * Convert Binary Search Tree to Sorted Doubly Linked List|0%|Medium||
-|427| * Construct Quad Tree|40%|Easy||
-|429| * N-ary Tree Level Order Traversal|1%|Easy||
-|430| * Flatten a Multilevel Doubly Linked List|0%|Medium||
 |432|[All O`one Data Structure](./Algorithms/0432.all-oone-data-structure)|27%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |433| * Minimum Genetic Mutation|35%|Medium||
 |434|[Number of Segments in a String](./Algorithms/0434.number-of-segments-in-a-string)|36%|Easy||
@@ -426,8 +422,6 @@
 |554|[Brick Wall](./Algorithms/0554.brick-wall)|46%|Medium||
 |556|[Next Greater Element III](./Algorithms/0556.next-greater-element-iii)|28%|Medium||
 |557|[Reverse Words in a String III](./Algorithms/0557.reverse-words-in-a-string-iii)|60%|Easy||
-|558| * Quad Tree Intersection|0%|Easy||
-|559| * Maximum Depth of N-ary Tree|0%|Easy||
 |560|[Subarray Sum Equals K](./Algorithms/0560.subarray-sum-equals-k)|39%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |561|[Array Partition I](./Algorithms/0561.array-partition-i)|66%|Easy||
 |563|[Binary Tree Tilt](./Algorithms/0563.binary-tree-tilt)|46%|Easy||
@@ -441,8 +435,6 @@
 |581|[Shortest Unsorted Continuous Subarray](./Algorithms/0581.shortest-unsorted-continuous-subarray)|29%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |583|[Delete Operation for Two Strings](./Algorithms/0583.delete-operation-for-two-strings)|44%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |587|[Erect the Fence](./Algorithms/0587.erect-the-fence)|33%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|589| * N-ary Tree Preorder Traversal|0%|Easy||
-|590| * N-ary Tree Postorder Traversal|0%|Easy||
 |591|[Tag Validator](./Algorithms/0591.tag-validator)|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |592|[Fraction Addition and Subtraction](./Algorithms/0592.fraction-addition-and-subtraction)|46%|Medium||
 |593|[Valid Square](./Algorithms/0593.valid-square)|39%|Medium||
@@ -523,7 +515,6 @@
 |705| * Design HashSet|0%|Easy||
 |706| * Design HashMap|0%|Easy||
 |707| * Design Linked List|0%|Easy||
-|708| * Insert into a Cyclic Sorted List|0%|Easy||
 |709| * To Lower Case|77%|Easy||
 |710| * Random Pick with Blacklist|30%|Hard||
 |712|[Minimum ASCII Delete Sum for Two Strings](./Algorithms/0712.minimum-ascii-delete-sum-for-two-strings)|51%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -690,9 +681,18 @@
 - [341.Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/)
 - [374.Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/)
 - [386.Lexicographical Numbers](https://leetcode.com/problems/lexicographical-numbers/)
+- [426.Convert Binary Search Tree to Sorted Doubly Linked List](https://leetcode.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list/)
+- [427.Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree/)
+- [429.N-ary Tree Level Order Traversal](https://leetcode.com/problems/n-ary-tree-level-order-traversal/)
+- [430.Flatten a Multilevel Doubly Linked List](https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/)
 - [449.Serialize and Deserialize BST](https://leetcode.com/problems/serialize-and-deserialize-bst/)
 - [535.Encode and Decode TinyURL](https://leetcode.com/problems/encode-and-decode-tinyurl/)
+- [558.Quad Tree Intersection](https://leetcode.com/problems/quad-tree-intersection/)
+- [559.Maximum Depth of N-ary Tree](https://leetcode.com/problems/maximum-depth-of-n-ary-tree/)
+- [589.N-ary Tree Preorder Traversal](https://leetcode.com/problems/n-ary-tree-preorder-traversal/)
+- [590.N-ary Tree Postorder Traversal](https://leetcode.com/problems/n-ary-tree-postorder-traversal/)
 - [690.Employee Importance](https://leetcode.com/problems/employee-importance/)
+- [708.Insert into a Cyclic Sorted List](https://leetcode.com/problems/insert-into-a-cyclic-sorted-list/)
 
 ## helper
 
