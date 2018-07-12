@@ -99,7 +99,7 @@ func logDiff(old, new *leetcode) {
 	hasNewFinished := false
 
 	i := 0
-	for i < lenOld {
+	for i < lenOld && i < lenNew {
 		o, n := old.Problems[i], new.Problems[i]
 		// 检查是 n 是否是新 完成
 		if o.IsAccepted == false && n.IsAccepted == true {
