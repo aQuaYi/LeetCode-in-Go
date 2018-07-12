@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 958,
-	"Updated": "2018-07-12T19:40:16.398906205+08:00",
+	"Updated": "2018-07-12T19:46:46.175471184+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 177,
@@ -8533,7 +8533,7 @@
 			"ID": 709,
 			"Title": "To Lower Case",
 			"TitleSlug": "to-lower-case",
-			"PassRate": "77%",
+			"PassRate": "78%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
