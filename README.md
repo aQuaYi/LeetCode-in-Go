@@ -1,6 +1,6 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
-[![LeetCode 排名](https://img.shields.io/badge/aQuaYi-956-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/aQuaYi-958-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 
@@ -10,7 +10,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|176|306|132|614|
+|**Accepted**|177|306|132|615|
 |**Total**|196|317|136|649|
 
 ## 题解
@@ -330,8 +330,8 @@
 |423|[Reconstruct Original Digits from English](./Algorithms/0423.reconstruct-original-digits-from-english)|44%|Medium||
 |424|[Longest Repeating Character Replacement](./Algorithms/0424.longest-repeating-character-replacement)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |426| * Convert Binary Search Tree to Sorted Doubly Linked List|0%|Medium||
-|427| * Construct Quad Tree|0%|Easy||
-|429| * N-ary Tree Level Order Traversal|0%|Easy||
+|427| * Construct Quad Tree|40%|Easy||
+|429| * N-ary Tree Level Order Traversal|1%|Easy||
 |430| * Flatten a Multilevel Doubly Linked List|0%|Medium||
 |432|[All O`one Data Structure](./Algorithms/0432.all-oone-data-structure)|27%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |433| * Minimum Genetic Mutation|35%|Medium||
@@ -456,7 +456,7 @@
 |611|[Valid Triangle Number](./Algorithms/0611.valid-triangle-number)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |617|[Merge Two Binary Trees](./Algorithms/0617.merge-two-binary-trees)|67%|Easy||
 |621|[Task Scheduler](./Algorithms/0621.task-scheduler)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|622| * Design Circular Queue|50%|Easy||
+|622| * Design Circular Queue|52%|Easy||
 |623|[Add One Row to Tree](./Algorithms/0623.add-one-row-to-tree)|46%|Medium||
 |628|[Maximum Product of Three Numbers](./Algorithms/0628.maximum-product-of-three-numbers)|44%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |629|[K Inverse Pairs Array](./Algorithms/0629.k-inverse-pairs-array)|27%|Hard||
@@ -468,7 +468,7 @@
 |638|[Shopping Offers](./Algorithms/0638.shopping-offers)|45%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |639|[Decode Ways II](./Algorithms/0639.decode-ways-ii)|24%|Hard||
 |640|[Solve the Equation](./Algorithms/0640.solve-the-equation)|38%|Medium||
-|641| * Design Circular Deque|51%|Easy||
+|641| * Design Circular Deque|48%|Easy||
 |643|[Maximum Average Subarray I](./Algorithms/0643.maximum-average-subarray-i)|37%|Easy||
 |645|[Set Mismatch](./Algorithms/0645.set-mismatch)|39%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |646|[Maximum Length of Pair Chain](./Algorithms/0646.maximum-length-of-pair-chain)|47%|Medium||
@@ -516,7 +516,7 @@
 |697|[Degree of an Array](./Algorithms/0697.degree-of-an-array)|46%|Easy||
 |698|[Partition to K Equal Sum Subsets](./Algorithms/0698.partition-to-k-equal-sum-subsets)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |699|[Falling Squares](./Algorithms/0699.falling-squares)|38%|Hard||
-|700| * Search in a Binary Search Tree|0%|Easy||
+|700| * Search in a Binary Search Tree|1%|Easy||
 |701| * Insert into a Binary Search Tree|0%|Medium||
 |703| * Kth Largest Element in a Stream|0%|Easy||
 |704| * Binary Search|0%|Easy||
@@ -524,7 +524,7 @@
 |706| * Design HashMap|0%|Easy||
 |707| * Design Linked List|0%|Easy||
 |708| * Insert into a Cyclic Sorted List|0%|Easy||
-|709| * To Lower Case|76%|Easy||
+|709| * To Lower Case|77%|Easy||
 |710| * Random Pick with Blacklist|30%|Hard||
 |712|[Minimum ASCII Delete Sum for Two Strings](./Algorithms/0712.minimum-ascii-delete-sum-for-two-strings)|51%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |713|[Subarray Product Less Than K](./Algorithms/0713.subarray-product-less-than-k)|33%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -657,7 +657,7 @@
 |856|[Score of Parentheses](./Algorithms/0856.score-of-parentheses)|55%|Medium||
 |857| * Minimum Cost to Hire K Workers|37%|Hard||
 |858|[Mirror Reflection](./Algorithms/0858.mirror-reflection)|47%|Medium||
-|859| * Buddy Strings|26%|Easy||
+|859|[Buddy Strings](./Algorithms/0859.buddy-strings)|26%|Easy||
 |860| * Lemonade Change|49%|Easy||
 |861| * Score After Flipping Matrix|68%|Medium||
 |862| * Shortest Subarray with Sum at Least K|16%|Hard||
@@ -665,7 +665,7 @@
 |864| * Shortest Path to Get All Keys :new: |31%|Hard||
 |865| * Smallest Subtree with all the Deepest Nodes :new: |47%|Medium||
 |866| * Prime Palindrome :new: |16%|Medium||
-|867| * Transpose Matrix :new: |69%|Easy||
+|867| * Transpose Matrix :new: |68%|Easy||
 
 以下免费的算法题，暂时不能使用 Go 解答
 

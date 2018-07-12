@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
-	"Ranking": 956,
-	"Updated": "2018-07-12T17:11:32.444749392+08:00",
+	"Ranking": 958,
+	"Updated": "2018-07-12T19:29:18.585199959+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 176,
+			"Solved": 177,
 			"Total": 196
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 136
 		},
 		"Total": {
-			"Solved": 614,
+			"Solved": 615,
 			"Total": 649
 		}
 	},
@@ -5149,7 +5149,7 @@
 			"ID": 427,
 			"Title": "Construct Quad Tree",
 			"TitleSlug": "construct-quad-tree",
-			"PassRate": "0%",
+			"PassRate": "40%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -5173,7 +5173,7 @@
 			"ID": 429,
 			"Title": "N-ary Tree Level Order Traversal",
 			"TitleSlug": "n-ary-tree-level-order-traversal",
-			"PassRate": "0%",
+			"PassRate": "1%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -7489,7 +7489,7 @@
 			"ID": 622,
 			"Title": "Design Circular Queue",
 			"TitleSlug": "design-circular-queue",
-			"PassRate": "50%",
+			"PassRate": "52%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -7717,7 +7717,7 @@
 			"ID": 641,
 			"Title": "Design Circular Deque",
 			"TitleSlug": "design-circular-deque",
-			"PassRate": "51%",
+			"PassRate": "48%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -8425,7 +8425,7 @@
 			"ID": 700,
 			"Title": "Search in a Binary Search Tree",
 			"TitleSlug": "search-in-a-binary-search-tree",
-			"PassRate": "0%",
+			"PassRate": "1%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -8533,7 +8533,7 @@
 			"ID": 709,
 			"Title": "To Lower Case",
 			"TitleSlug": "to-lower-case",
-			"PassRate": "76%",
+			"PassRate": "77%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -10335,7 +10335,7 @@
 			"TitleSlug": "buddy-strings",
 			"PassRate": "26%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -10429,7 +10429,7 @@
 			"ID": 867,
 			"Title": "Transpose Matrix",
 			"TitleSlug": "transpose-matrix",
-			"PassRate": "69%",
+			"PassRate": "68%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
