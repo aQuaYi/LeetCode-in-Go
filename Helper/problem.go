@@ -59,7 +59,7 @@ func (p problem) tableLine() string {
 	if p.IsAccepted {
 		t = fmt.Sprintf(`[%s](%s)`, strings.TrimSpace(p.Title), p.Dir())
 	} else {
-		t = fmt.Sprintf(` * %s`, p.Title)
+		t = fmt.Sprintf(` * [%s](%s)`, p.Title, p.link())
 	}
 	if p.IsNew {
 		t += " :new: "
