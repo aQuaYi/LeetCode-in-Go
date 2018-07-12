@@ -1,15 +1,15 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 958,
-	"Updated": "2018-07-12T19:29:18.585199959+08:00",
+	"Updated": "2018-07-12T19:40:16.398906205+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 177,
-			"Total": 196
+			"Total": 189
 		},
 		"Medium": {
 			"Solved": 306,
-			"Total": 317
+			"Total": 315
 		},
 		"Hard": {
 			"Solved": 132,
@@ -17,7 +17,7 @@
 		},
 		"Total": {
 			"Solved": 615,
-			"Total": 649
+			"Total": 640
 		}
 	},
 	"Problems": [
@@ -5143,7 +5143,7 @@
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
-			"HasNoGoOption": false
+			"HasNoGoOption": true
 		},
 		{
 			"ID": 427,
@@ -5155,7 +5155,7 @@
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
-			"HasNoGoOption": false
+			"HasNoGoOption": true
 		},
 		{
 			"ID": 428,
@@ -5179,7 +5179,7 @@
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
-			"HasNoGoOption": false
+			"HasNoGoOption": true
 		},
 		{
 			"ID": 430,
@@ -5191,7 +5191,7 @@
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
-			"HasNoGoOption": false
+			"HasNoGoOption": true
 		},
 		{
 			"ID": 431,
@@ -6727,7 +6727,7 @@
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
-			"HasNoGoOption": false
+			"HasNoGoOption": true
 		},
 		{
 			"ID": 559,
@@ -6739,7 +6739,7 @@
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
-			"HasNoGoOption": false
+			"HasNoGoOption": true
 		},
 		{
 			"ID": 560,
@@ -7099,7 +7099,7 @@
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
-			"HasNoGoOption": false
+			"HasNoGoOption": true
 		},
 		{
 			"ID": 590,
@@ -7111,7 +7111,7 @@
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
-			"HasNoGoOption": false
+			"HasNoGoOption": true
 		},
 		{
 			"ID": 591,
@@ -8527,7 +8527,7 @@
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
-			"HasNoGoOption": false
+			"HasNoGoOption": true
 		},
 		{
 			"ID": 709,
