@@ -14,33 +14,39 @@ Now, given 3 things - start, end, bank, your task is to determine what is the mi
 
 Note:
 
-	Starting point is assumed to be valid, so it might not be included in the bank.
-	If multiple mutations are needed, all mutations during in the sequence must be valid.
-	You may assume start and end string is not the same.
+1. Starting point is assumed to be valid, so it might not be included in the bank.
+1. If multiple mutations are needed, all mutations during in the sequence must be valid.
+1. You may assume start and end string is not the same.
 
 Example 1:
 
+```text
 start: "AACCGGTT"
 end:   "AACCGGTA"
 bank: ["AACCGGTA"]
 
 return: 1
+```
 
 Example 2:
 
+```text
 start: "AACCGGTT"
 end:   "AAACGGTA"
 bank: ["AACCGGTA", "AACCGCTA", "AAACGGTA"]
 
 return: 2
+```
 
 Example 3:
 
+```text
 start: "AAAAACCC"
 end:   "AACCCCCC"
 bank: ["AAAACCCC", "AAACCCCC", "AACCCCCC"]
 
 return: 3
+```
 
 ## 解题思路
 
