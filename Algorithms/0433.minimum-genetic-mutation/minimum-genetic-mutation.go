@@ -47,3 +47,16 @@ func mutations(cand, end string) []string {
 	}
 	return res
 }
+
+func isMutation(cand, g string) bool {
+	count := 0
+	size := len(g)
+	i := 0
+	for count < 2 && i < size {
+		if cand[i] != g[i] {
+			count++
+		}
+		i++
+	}
+	return count == 1
+}
