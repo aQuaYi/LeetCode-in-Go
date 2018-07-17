@@ -1,15 +1,12 @@
-{
-	"onDidClearBookmarkEmitter": {},
-	"onDidClearAllBookmarksEmitter": {},
-	"onDidAddBookmarkEmitter": {},
-	"onDidRemoveBookmarkEmitter": {},
-	"onDidUpdateBookmarkEmitter": {},
-	"bookmarks": [
-		{
-			"fsPath": "$ROOTPATH$/Algorithms/0842.split-array-into-fibonacci-sequence/split-array-into-fibonacci-sequence_test.go",
-			"bookmarks": [
-				43
-			]
-		}
-	]
-}
+[
+	{
+		"path": "$ROOTPATH$/Algorithms/0842.split-array-into-fibonacci-sequence/split-array-into-fibonacci-sequence_test.go",
+		"bookmarks": [
+			{
+				"line": 43,
+				"column": 1,
+				"label": ""
+			}
+		]
+	}
+]
