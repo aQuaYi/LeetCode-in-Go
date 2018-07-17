@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 962,
-	"Updated": "2018-07-17T14:57:36.818377364+08:00",
+	"Updated": "2018-07-17T16:30:49.007534335+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 177,
 			"Total": 188
 		},
 		"Medium": {
-			"Solved": 307,
+			"Solved": 308,
 			"Total": 320
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 137
 		},
 		"Total": {
-			"Solved": 616,
+			"Solved": 617,
 			"Total": 645
 		}
 	},
@@ -5511,7 +5511,7 @@
 			"TitleSlug": "circular-array-loop",
 			"PassRate": "23%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -5929,7 +5929,7 @@
 			"ID": 492,
 			"Title": "Construct the Rectangle",
 			"TitleSlug": "construct-the-rectangle",
-			"PassRate": "48%",
+			"PassRate": "47%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -7717,7 +7717,7 @@
 			"ID": 641,
 			"Title": "Design Circular Deque",
 			"TitleSlug": "design-circular-deque",
-			"PassRate": "52%",
+			"PassRate": "51%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -8437,7 +8437,7 @@
 			"ID": 701,
 			"Title": "Insert into a Binary Search Tree",
 			"TitleSlug": "insert-into-a-binary-search-tree",
-			"PassRate": "19%",
+			"PassRate": "20%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -10465,7 +10465,7 @@
 			"ID": 870,
 			"Title": "Advantage Shuffle",
 			"TitleSlug": "advantage-shuffle",
-			"PassRate": "37%",
+			"PassRate": "38%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
