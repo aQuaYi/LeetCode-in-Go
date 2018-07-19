@@ -68,7 +68,7 @@ func build(p problem) {
 
 	fc := getFunction(p.link())
 
-	fcName, para, ans := parseFunction(fc)
+	fcName, para, ans, fc := parseFunction(fc)
 
 	creatGo(p, fc, ans)
 

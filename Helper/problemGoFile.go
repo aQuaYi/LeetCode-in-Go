@@ -2,13 +2,25 @@ package main
 
 import (
 	"context"
+	"fmt"
 	"log"
 	"strings"
 
 	"github.com/chromedp/chromedp"
 )
 
-func parseFunction(fc string) (fcName, para, ansType string) {
+func parseFunction(fc string) (fcName, para, ansType, nfc string) {
+	log.Println("准备分解函数:", fc)
+
+	defer func() { // 必须要先声明defer，否则不能捕获到panic异常
+		if err := recover(); err != nil {
+			fcName = "myFunc"
+			para = "p int"
+			ansType = "int"
+			nfc = "func myFunc(p int) int {\n\n}"
+		}
+	}()
+
 	funcIndex := strings.Index(fc, "func ")
 	a := funcIndex + strings.Index(fc[funcIndex:], " ")
 	b := funcIndex + strings.Index(fc[funcIndex:], "(")
@@ -18,6 +30,7 @@ func parseFunction(fc string) (fcName, para, ansType string) {
 	fcName = fc[a+1 : b]
 	para = strings.Replace(fc[b+1:c], ",", "\n", -1)
 	ansType = strings.TrimSpace(fc[c+1 : d])
+	nfc = fmt.Sprintf("func %s(%s) %s {\n\n}", fcName, para, ansType)
 
 	return
 }
@@ -29,30 +42,33 @@ func getFunction(url string) string {
 	ctxt, cancel := context.WithCancel(context.Background())
 	defer cancel()
 
+	// run task list
+	var function string
+
 	// create chrome instance
 	c, err := chromedp.New(ctxt, chromedp.WithLog(log.Printf))
 	if err != nil {
-		log.Fatal("chromedp.New 出错：", err)
+		log.Println("chromedp.New 出错：", err)
 	}
 
-	// run task list
-	var function string
 	err = c.Run(ctxt, makeTasks(url, &function))
 	if err != nil {
-		log.Fatal("c.Run 出错：", err)
+		log.Println("c.Run 出错：", err)
 	}
 
 	// shutdown chrome
 	err = c.Shutdown(ctxt)
 	if err != nil {
-		log.Fatal("c.Shutdown 出错：", err)
+		log.Println("c.Shutdown 出错：", err)
 	}
 
 	// wait for chrome to finish
 	err = c.Wait()
 	if err != nil {
-		log.Fatal("c.Wait 出错：", err)
+		log.Println("c.Wait 出错：", err)
 	}
+
+	log.Println("抓取到函数：", function)
 
 	return function
 }
