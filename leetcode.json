@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 958,
-	"Updated": "2018-07-19T14:07:06.187159607+08:00",
+	"Updated": "2018-07-19T15:02:49.863668308+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 177,
+			"Solved": 178,
 			"Total": 188
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 137
 		},
 		"Total": {
-			"Solved": 617,
+			"Solved": 618,
 			"Total": 645
 		}
 	},
@@ -5523,7 +5523,7 @@
 			"TitleSlug": "poor-pigs",
 			"PassRate": "42%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -6733,7 +6733,7 @@
 			"ID": 559,
 			"Title": "Maximum Depth of N-ary Tree",
 			"TitleSlug": "maximum-depth-of-n-ary-tree",
-			"PassRate": "32%",
+			"PassRate": "33%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -8089,7 +8089,7 @@
 			"ID": 672,
 			"Title": "Bulb Switcher II",
 			"TitleSlug": "bulb-switcher-ii",
-			"PassRate": "48%",
+			"PassRate": "49%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -8101,7 +8101,7 @@
 			"ID": 673,
 			"Title": "Number of Longest Increasing Subsequence",
 			"TitleSlug": "number-of-longest-increasing-subsequence",
-			"PassRate": "31%",
+			"PassRate": "32%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -8461,7 +8461,7 @@
 			"ID": 703,
 			"Title": "Kth Largest Element in a Stream",
 			"TitleSlug": "kth-largest-element-in-a-stream",
-			"PassRate": "14%",
+			"PassRate": "15%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -8473,7 +8473,7 @@
 			"ID": 704,
 			"Title": "Binary Search",
 			"TitleSlug": "binary-search",
-			"PassRate": "9%",
+			"PassRate": "10%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -9961,7 +9961,7 @@
 			"ID": 828,
 			"Title": "Unique Letter String",
 			"TitleSlug": "unique-letter-string",
-			"PassRate": "33%",
+			"PassRate": "34%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
