@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 957,
-	"Updated": "2018-07-20T13:54:26.059561486+08:00",
+	"Updated": "2018-07-20T14:55:12.98621424+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 178,
 			"Total": 188
 		},
 		"Medium": {
-			"Solved": 308,
+			"Solved": 309,
 			"Total": 320
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 137
 		},
 		"Total": {
-			"Solved": 618,
+			"Solved": 619,
 			"Total": 645
 		}
 	},
@@ -5161,7 +5161,7 @@
 			"ID": 428,
 			"Title": "Serialize and Deserialize N-ary Tree",
 			"TitleSlug": "serialize-and-deserialize-n-ary-tree",
-			"PassRate": "19%",
+			"PassRate": "20%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -5197,7 +5197,7 @@
 			"ID": 431,
 			"Title": "Encode N-ary Tree to Binary Tree",
 			"TitleSlug": "encode-n-ary-tree-to-binary-tree",
-			"PassRate": "20%",
+			"PassRate": "21%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -5667,9 +5667,9 @@
 			"TitleSlug": "implement-rand10-using-rand7",
 			"PassRate": "43%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": true,
 			"HasNoGoOption": false
 		},
@@ -6721,7 +6721,7 @@
 			"ID": 558,
 			"Title": "Quad Tree Intersection",
 			"TitleSlug": "quad-tree-intersection",
-			"PassRate": "2%",
+			"PassRate": "3%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -7105,7 +7105,7 @@
 			"ID": 590,
 			"Title": "N-ary Tree Postorder Traversal",
 			"TitleSlug": "n-ary-tree-postorder-traversal",
-			"PassRate": "32%",
+			"PassRate": "33%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -8125,7 +8125,7 @@
 			"ID": 675,
 			"Title": "Cut Off Trees for Golf Event",
 			"TitleSlug": "cut-off-trees-for-golf-event",
-			"PassRate": "26%",
+			"PassRate": "27%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -8485,7 +8485,7 @@
 			"ID": 705,
 			"Title": "Design HashSet",
 			"TitleSlug": "design-hashset",
-			"PassRate": "11%",
+			"PassRate": "12%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -9961,7 +9961,7 @@
 			"ID": 828,
 			"Title": "Unique Letter String",
 			"TitleSlug": "unique-letter-string",
-			"PassRate": "34%",
+			"PassRate": "33%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
