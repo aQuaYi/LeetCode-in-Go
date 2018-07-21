@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 950,
-	"Updated": "2018-07-21T15:22:50.083854389+08:00",
+	"Updated": "2018-07-21T16:38:17.209944023+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 178,
 			"Total": 188
 		},
 		"Medium": {
-			"Solved": 309,
+			"Solved": 310,
 			"Total": 320
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 137
 		},
 		"Total": {
-			"Solved": 619,
+			"Solved": 620,
 			"Total": 645
 		}
 	},
@@ -5281,7 +5281,7 @@
 			"ID": 438,
 			"Title": "Find All Anagrams in a String",
 			"TitleSlug": "find-all-anagrams-in-a-string",
-			"PassRate": "33%",
+			"PassRate": "34%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -6243,7 +6243,7 @@
 			"TitleSlug": "coin-change-2",
 			"PassRate": "36%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -8845,7 +8845,7 @@
 			"ID": 735,
 			"Title": "Asteroid Collision",
 			"TitleSlug": "asteroid-collision",
-			"PassRate": "37%",
+			"PassRate": "36%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
