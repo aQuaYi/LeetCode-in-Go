@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 950,
-	"Updated": "2018-07-21T16:38:17.209944023+08:00",
+	"Updated": "2018-07-21T16:42:22.441739666+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 178,
@@ -6245,7 +6245,7 @@
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
