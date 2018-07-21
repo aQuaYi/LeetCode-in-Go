@@ -1,24 +1,17 @@
 package problem0518
 
 func change(amount int, coins []int) int {
-	size := len(coins)
-	// dp[i][j] 表示，使用 coins[:i] 中的零钱，组成金额为 j 的总种类数
-	dp := make([][]int, size+1)
-	for i := range dp {
-		dp[i] = make([]int, amount+1)
-	}
-	dp[0][0] = 1
+	// dp[i]表示总额为i时的方案数.
+	// 转移方程: dp[i] = Σdp[i - coins[j]]; 表示 总额为i时的方案数 = 总额为i-coins[j]的方案数的加和.
+	dp := make([]int, amount+1)
+	// 记得初始化dp[0] = 1; 表示总额为0时方案数为1.
+	dp[0] = 1
 
-	for i := 1; i <= size; i++ {
-		dp[i][0] = 1
-		for j := 1; j <= amount; j++ {
-			dp[i][j] = dp[i-1][j] // 不使用 coins[i-1] 时候的种类数
-			if j >= coins[i-1] {
-				// 此外，如果
-				dp[i][j] += dp[i][j-coins[i-1]]
-			}
+	for _, coin := range coins {
+		for i := coin; i <= amount; i++ { // 从coin开始遍历，小于coin的值没有意义
+			dp[i] += dp[i-coin]
 		}
 	}
 
-	return dp[size][amount]
+	return dp[amount]
 }
