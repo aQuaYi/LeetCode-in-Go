@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 950,
-	"Updated": "2018-07-21T16:42:22.441739666+08:00",
+	"Updated": "2018-07-21T17:12:13.98650849+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 178,
 			"Total": 188
 		},
 		"Medium": {
-			"Solved": 310,
+			"Solved": 311,
 			"Total": 320
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 137
 		},
 		"Total": {
-			"Solved": 620,
+			"Solved": 621,
 			"Total": 645
 		}
 	},
@@ -7491,7 +7491,7 @@
 			"TitleSlug": "design-circular-queue",
 			"PassRate": "48%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -9481,7 +9481,7 @@
 			"ID": 788,
 			"Title": "Rotated Digits",
 			"TitleSlug": "rotated-digits",
-			"PassRate": "50%",
+			"PassRate": "51%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
