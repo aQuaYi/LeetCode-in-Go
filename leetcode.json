@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 950,
-	"Updated": "2018-07-21T17:12:13.98650849+08:00",
+	"Updated": "2018-07-21T17:56:00.185836134+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 178,
 			"Total": 188
 		},
 		"Medium": {
-			"Solved": 311,
+			"Solved": 312,
 			"Total": 320
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 137
 		},
 		"Total": {
-			"Solved": 621,
+			"Solved": 622,
 			"Total": 645
 		}
 	},
@@ -6385,7 +6385,7 @@
 			"ID": 530,
 			"Title": "Minimum Absolute Difference in BST",
 			"TitleSlug": "minimum-absolute-difference-in-bst",
-			"PassRate": "47%",
+			"PassRate": "48%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -7719,9 +7719,9 @@
 			"TitleSlug": "design-circular-deque",
 			"PassRate": "49%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -9481,7 +9481,7 @@
 			"ID": 788,
 			"Title": "Rotated Digits",
 			"TitleSlug": "rotated-digits",
-			"PassRate": "51%",
+			"PassRate": "50%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
