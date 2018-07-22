@@ -1,8 +1,10 @@
 package problem0710
 
 import (
+	"fmt"
 	"math/rand"
 	"sort"
+	"time"
 )
 
 // Solution 包含了 BlackList 和 N
@@ -13,6 +15,7 @@ type Solution struct {
 
 // Constructor 构建了 Solution
 func Constructor(N int, blacklist []int) Solution {
+	rand.Seed(time.Now().UnixNano())
 	sort.Ints(blacklist)
 	return Solution{
 		N:         N,
@@ -22,9 +25,12 @@ func Constructor(N int, blacklist []int) Solution {
 
 // Pick 选取了不在 BlackList 中的值
 func (s *Solution) Pick() int {
+	i := 0
 	for {
+		i++
 		res := rand.Intn(s.N)
 		if !isInBlackList(s.BlackList, res) {
+			fmt.Printf("运行了 %d 次\n", i)
 			return res
 		}
 	}
@@ -32,14 +38,14 @@ func (s *Solution) Pick() int {
 
 // bl 是升序排列
 func isInBlackList(a []int, n int) bool {
-	l, r := 0, len(a)
-	for l < r {
+	l, r := 0, len(a)-1
+	for l <= r {
 		m := (l + r) / 2
 		switch {
 		case a[m] < n:
 			l = m + 1
 		case n < a[m]:
-			r = m + 1
+			r = m - 1
 		default:
 			return true
 		}
