@@ -32,3 +32,15 @@ func Test_Solution_2(t *testing.T) {
 		ast.True(p == 1 || p == 0, "%d", i)
 	}
 }
+
+func Test_Solution_3(t *testing.T) {
+	ast := assert.New(t)
+
+	N := 10
+	blacklist := []int{0, 2, 4, 6, 8}
+	s := Constructor(N, blacklist)
+
+	for i := 0; i < 10; i++ {
+		ast.NotContains(blacklist, s.Pick())
+	}
+}
