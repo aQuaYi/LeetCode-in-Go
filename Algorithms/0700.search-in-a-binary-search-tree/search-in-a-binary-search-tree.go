@@ -15,6 +15,12 @@ import "github.com/aQuaYi/LeetCode-in-Go/kit"
 type TreeNode = kit.TreeNode
 
 func searchBST(root *TreeNode, val int) *TreeNode {
+	if root == nil || root.Val == val {
+		return root
+	}
 
-	return nil
+	if root.Val < val {
+		return searchBST(root.Right, val)
+	}
+	return searchBST(root.Left, val)
 }

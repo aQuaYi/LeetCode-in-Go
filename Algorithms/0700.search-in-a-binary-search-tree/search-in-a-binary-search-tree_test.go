@@ -45,7 +45,8 @@ func Test_searchBST(t *testing.T) {
 func Benchmark_searchBST(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		for _, tc := range tcs {
-			searchBST(tc.root, tc.val)
+			root := kit.Ints2TreeNode(tc.root)
+			searchBST(root, tc.val)
 		}
 	}
 }
