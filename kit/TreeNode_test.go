@@ -97,7 +97,7 @@ func Test_TreeNode_Equal(t *testing.T) {
 		{
 			"不相等",
 			args{Ints2TreeNode([]int{1, 2, 3, 4, 5})},
-			args{Ints2TreeNode([]int{1, 2, 3, null, 5})},
+			args{Ints2TreeNode([]int{1, 2, 3, NULL, 5})},
 			false,
 		},
 	}

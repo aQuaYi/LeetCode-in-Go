@@ -11,7 +11,7 @@ type TreeNode struct {
 	Right *TreeNode
 }
 
-var null = -1 << 63
+var NULL = -1 << 63
 
 // Ints2TreeNode 利用 []int 生成 *TreeNode
 func Ints2TreeNode(ints []int) *TreeNode {
@@ -32,13 +32,13 @@ func Ints2TreeNode(ints []int) *TreeNode {
 		node := queue[0]
 		queue = queue[1:]
 
-		if i < n && ints[i] != null {
+		if i < n && ints[i] != NULL {
 			node.Left = &TreeNode{Val: ints[i]}
 			queue = append(queue, node.Left)
 		}
 		i++
 
-		if i < n && ints[i] != null {
+		if i < n && ints[i] != NULL {
 			node.Right = &TreeNode{Val: ints[i]}
 			queue = append(queue, node.Right)
 		}
