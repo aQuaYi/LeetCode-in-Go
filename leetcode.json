@@ -1,23 +1,23 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 913,
-	"Updated": "2018-07-22T10:45:41.559860883+08:00",
+	"Updated": "2018-07-22T11:30:12.765635648+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 179,
-			"Total": 188
+			"Total": 190
 		},
 		"Medium": {
-			"Solved": 312,
-			"Total": 320
+			"Solved": 313,
+			"Total": 322
 		},
 		"Hard": {
 			"Solved": 132,
 			"Total": 137
 		},
 		"Total": {
-			"Solved": 623,
-			"Total": 645
+			"Solved": 624,
+			"Total": 649
 		}
 	},
 	"Problems": [
@@ -3313,7 +3313,7 @@
 			"ID": 274,
 			"Title": "H-Index",
 			"TitleSlug": "h-index",
-			"PassRate": "33%",
+			"PassRate": "34%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -6685,7 +6685,7 @@
 			"ID": 555,
 			"Title": "Split Concatenated Strings",
 			"TitleSlug": "split-concatenated-strings",
-			"PassRate": "37%",
+			"PassRate": "38%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -7105,7 +7105,7 @@
 			"ID": 590,
 			"Title": "N-ary Tree Postorder Traversal",
 			"TitleSlug": "n-ary-tree-postorder-traversal",
-			"PassRate": "36%",
+			"PassRate": "37%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -8439,7 +8439,7 @@
 			"TitleSlug": "insert-into-a-binary-search-tree",
 			"PassRate": "29%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -8473,7 +8473,7 @@
 			"ID": 704,
 			"Title": "Binary Search",
 			"TitleSlug": "binary-search",
-			"PassRate": "12%",
+			"PassRate": "13%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -9769,7 +9769,7 @@
 			"ID": 812,
 			"Title": "Largest Triangle Area",
 			"TitleSlug": "largest-triangle-area",
-			"PassRate": "52%",
+			"PassRate": "53%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10483,6 +10483,54 @@
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 872,
+			"Title": "Leaf-Similar Trees",
+			"TitleSlug": "leaf-similar-trees",
+			"PassRate": "65%",
+			"Difficulty": "Easy",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 873,
+			"Title": "Length of Longest Fibonacci Subsequence",
+			"TitleSlug": "length-of-longest-fibonacci-subsequence",
+			"PassRate": "31%",
+			"Difficulty": "Medium",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 874,
+			"Title": "Walking Robot Simulation",
+			"TitleSlug": "walking-robot-simulation",
+			"PassRate": "18%",
+			"Difficulty": "Easy",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 875,
+			"Title": "Koko Eating Bananas",
+			"TitleSlug": "koko-eating-bananas",
+			"PassRate": "34%",
+			"Difficulty": "Medium",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
 			"HasNoGoOption": false
 		}
 	]
