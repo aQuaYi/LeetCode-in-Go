@@ -20,6 +20,10 @@ func Test_ExamRoom(t *testing.T) {
 	r.Leave(4)
 
 	ast.Equal(5, r.Seat(), "4 号位离座后，应该是 5 号位入座")
+
+	r.Leave(0)
+
+	ast.Equal(0, r.Seat(), "0 号位离座后，应该是 0 号位入座")
 }
 
 func Test_ExamRoom_2(t *testing.T) {
