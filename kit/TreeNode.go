@@ -11,6 +11,7 @@ type TreeNode struct {
 	Right *TreeNode
 }
 
+// NULL 方便添加测试数据
 var NULL = -1 << 63
 
 // Ints2TreeNode 利用 []int 生成 *TreeNode
