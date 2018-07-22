@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 891,
-	"Updated": "2018-07-22T18:05:27.030000894+08:00",
+	"Updated": "2018-07-22T19:25:16.100869288+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 179,
 			"Total": 190
 		},
 		"Medium": {
-			"Solved": 313,
+			"Solved": 314,
 			"Total": 322
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 137
 		},
 		"Total": {
-			"Solved": 625,
+			"Solved": 626,
 			"Total": 649
 		}
 	},
@@ -6721,7 +6721,7 @@
 			"ID": 558,
 			"Title": "Quad Tree Intersection",
 			"TitleSlug": "quad-tree-intersection",
-			"PassRate": "14%",
+			"PassRate": "15%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -7093,7 +7093,7 @@
 			"ID": 589,
 			"Title": "N-ary Tree Preorder Traversal",
 			"TitleSlug": "n-ary-tree-preorder-traversal",
-			"PassRate": "26%",
+			"PassRate": "27%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -10287,7 +10287,7 @@
 			"TitleSlug": "exam-room",
 			"PassRate": "29%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -10501,7 +10501,7 @@
 			"ID": 873,
 			"Title": "Length of Longest Fibonacci Subsequence",
 			"TitleSlug": "length-of-longest-fibonacci-subsequence",
-			"PassRate": "35%",
+			"PassRate": "36%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
