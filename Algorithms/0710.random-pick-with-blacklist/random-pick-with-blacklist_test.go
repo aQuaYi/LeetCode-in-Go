@@ -16,7 +16,19 @@ func Test_Solution(t *testing.T) {
 	}
 	s := Constructor(N, blacklist)
 
-	for i := 0; i < 100; i++ {
-		ast.NotContains(blacklist, s.Pick())
+	for i := 0; i < 100000; i++ {
+		ast.Equal(0, s.Pick())
+	}
+}
+func Test_Solution_2(t *testing.T) {
+	ast := assert.New(t)
+
+	N := 2
+	blacklist := make([]int, 0, N)
+	s := Constructor(N, blacklist)
+
+	for i := 0; i < 10; i++ {
+		p := s.Pick()
+		ast.True(p == 1 || p == 0, "%d", i)
 	}
 }
