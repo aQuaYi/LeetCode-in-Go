@@ -15,7 +15,7 @@ import "github.com/aQuaYi/LeetCode-in-Go/kit"
 type TreeNode = kit.TreeNode
 
 func searchBST(root *TreeNode, val int) *TreeNode {
-	if root != nil {
+	if root == nil {
 		return nil
 	}
 	switch {
