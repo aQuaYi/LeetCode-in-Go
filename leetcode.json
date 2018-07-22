@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 913,
-	"Updated": "2018-07-22T10:09:20.815917226+08:00",
+	"Updated": "2018-07-22T10:45:41.559860883+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 178,
+			"Solved": 179,
 			"Total": 188
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 137
 		},
 		"Total": {
-			"Solved": 622,
+			"Solved": 623,
 			"Total": 645
 		}
 	},
@@ -8427,7 +8427,7 @@
 			"TitleSlug": "search-in-a-binary-search-tree",
 			"PassRate": "32%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
