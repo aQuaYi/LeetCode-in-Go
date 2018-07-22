@@ -10,7 +10,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|179|313|132|624|
+|**Accepted**|179|313|133|625|
 |**Total**|190|322|137|649|
 
 ## 题解
@@ -276,7 +276,7 @@
 |350|[Intersection of Two Arrays II](./Algorithms/0350.intersection-of-two-arrays-ii)|44%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |352|[Data Stream as Disjoint Intervals](./Algorithms/0352.data-stream-as-disjoint-intervals)|41%|Hard||
 |354|[Russian Doll Envelopes](./Algorithms/0354.russian-doll-envelopes)|32%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|355|[Design Twitter](./Algorithms/0355.design-twitter)|25%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|355|[Design Twitter](./Algorithms/0355.design-twitter)|26%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |357|[Count Numbers with Unique Digits](./Algorithms/0357.count-numbers-with-unique-digits)|46%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |363|[Max Sum of Rectangle No Larger Than K](./Algorithms/0363.max-sum-of-rectangle-no-larger-than-k)|33%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |365|[Water and Jug Problem](./Algorithms/0365.water-and-jug-problem)|28%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -509,18 +509,18 @@
 |697|[Degree of an Array](./Algorithms/0697.degree-of-an-array)|46%|Easy||
 |698|[Partition to K Equal Sum Subsets](./Algorithms/0698.partition-to-k-equal-sum-subsets)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |699|[Falling Squares](./Algorithms/0699.falling-squares)|38%|Hard||
-|700|[Search in a Binary Search Tree](./Algorithms/0700.search-in-a-binary-search-tree)|32%|Easy||
+|700|[Search in a Binary Search Tree](./Algorithms/0700.search-in-a-binary-search-tree)|33%|Easy||
 |701|[Insert into a Binary Search Tree](./Algorithms/0701.insert-into-a-binary-search-tree)|29%|Medium||
 |703| * [Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/)|18%|Easy||
 |704| * [Binary Search](https://leetcode.com/problems/binary-search/)|13%|Easy||
-|705| * [Design HashSet](https://leetcode.com/problems/design-hashset/)|13%|Easy||
+|705| * [Design HashSet](https://leetcode.com/problems/design-hashset/)|14%|Easy||
 |706| * [Design HashMap](https://leetcode.com/problems/design-hashmap/)|20%|Easy||
 |707| * [Design Linked List](https://leetcode.com/problems/design-linked-list/)|7%|Easy||
 |709| * [To Lower Case](https://leetcode.com/problems/to-lower-case/)|75%|Easy||
-|710| * [Random Pick with Blacklist](https://leetcode.com/problems/random-pick-with-blacklist/)|29%|Hard||
+|710|[Random Pick with Blacklist](./Algorithms/0710.random-pick-with-blacklist)|29%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |712|[Minimum ASCII Delete Sum for Two Strings](./Algorithms/0712.minimum-ascii-delete-sum-for-two-strings)|51%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |713|[Subarray Product Less Than K](./Algorithms/0713.subarray-product-less-than-k)|33%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|714|[Best Time to Buy and Sell Stock with Transaction Fee](./Algorithms/0714.best-time-to-buy-and-sell-stock-with-transaction-fee)|46%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|714|[Best Time to Buy and Sell Stock with Transaction Fee](./Algorithms/0714.best-time-to-buy-and-sell-stock-with-transaction-fee)|47%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |715|[Range Module](./Algorithms/0715.range-module)|30%|Hard||
 |717|[1-bit and 2-bit Characters](./Algorithms/0717.1-bit-and-2-bit-characters)|49%|Easy||
 |718|[Maximum Length of Repeated Subarray](./Algorithms/0718.maximum-length-of-repeated-subarray)|41%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -614,7 +614,7 @@
 |821|[Shortest Distance to a Character](./Algorithms/0821.shortest-distance-to-a-character)|60%|Easy||
 |822|[Card Flipping Game](./Algorithms/0822.card-flipping-game)|36%|Medium||
 |823|[Binary Trees With Factors](./Algorithms/0823.binary-trees-with-factors)|29%|Medium||
-|824|[Goat Latin](./Algorithms/0824.goat-latin)|55%|Easy||
+|824|[Goat Latin](./Algorithms/0824.goat-latin)|54%|Easy||
 |825|[Friends Of Appropriate Ages](./Algorithms/0825.friends-of-appropriate-ages)|29%|Medium||
 |826|[Most Profit Assigning Work](./Algorithms/0826.most-profit-assigning-work)|32%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |827|[Making A Large Island](./Algorithms/0827.making-a-large-island)|40%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -663,9 +663,9 @@
 |870| * [Advantage Shuffle](https://leetcode.com/problems/advantage-shuffle/)|38%|Medium||
 |871| * [Minimum Number of Refueling Stops](https://leetcode.com/problems/minimum-number-of-refueling-stops/)|24%|Hard||
 |872| * [Leaf-Similar Trees](https://leetcode.com/problems/leaf-similar-trees/) :new: |65%|Easy||
-|873| * [Length of Longest Fibonacci Subsequence](https://leetcode.com/problems/length-of-longest-fibonacci-subsequence/) :new: |31%|Medium||
-|874| * [Walking Robot Simulation](https://leetcode.com/problems/walking-robot-simulation/) :new: |18%|Easy||
-|875| * [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/) :new: |34%|Medium||
+|873| * [Length of Longest Fibonacci Subsequence](https://leetcode.com/problems/length-of-longest-fibonacci-subsequence/) :new: |34%|Medium||
+|874| * [Walking Robot Simulation](https://leetcode.com/problems/walking-robot-simulation/) :new: |21%|Easy||
+|875| * [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/) :new: |37%|Medium||
 
 以下免费的算法题，暂时不能使用 Go 解答
 
