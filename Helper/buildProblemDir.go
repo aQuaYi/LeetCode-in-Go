@@ -114,8 +114,6 @@ func creatGo(p problem, function, ansType string) {
 %s
 `
 
-	function = strings.Replace(function, "\n", ", ", -1)
-
 	content := fmt.Sprintf(fileFormat, p.packageName(), function)
 
 	returns := "\treturn nil\n}"
@@ -140,6 +138,8 @@ func creatGoTest(p problem, fcName, para, ansType string) {
 	
 	// 可以有多个 testcase
 }`
+
+	para = strings.Replace(para, ",", "\n", -1)
 
 	testCases := fmt.Sprintf(testCasesFormat, para, ansType)
 

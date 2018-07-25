@@ -28,7 +28,7 @@ func parseFunction(fc string) (fcName, para, ansType, nfc string) {
 	d := funcIndex + strings.Index(fc[funcIndex:], "{")
 
 	fcName = fc[a+1 : b]
-	para = strings.Replace(fc[b+1:c], ",", "\n", -1)
+	para = fc[b+1 : c]
 	ansType = strings.TrimSpace(fc[c+1 : d])
 	nfc = fmt.Sprintf("func %s(%s) %s {\n\n}", fcName, para, ansType)
 
