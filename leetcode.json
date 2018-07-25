@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 900,
-	"Updated": "2018-07-25T21:14:08.490876779+08:00",
+	"Updated": "2018-07-25T23:54:49.559994168+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 179,
@@ -12,11 +12,11 @@
 			"Total": 322
 		},
 		"Hard": {
-			"Solved": 133,
+			"Solved": 134,
 			"Total": 137
 		},
 		"Total": {
-			"Solved": 626,
+			"Solved": 627,
 			"Total": 649
 		}
 	},
@@ -5173,7 +5173,7 @@
 			"ID": 429,
 			"Title": "N-ary Tree Level Order Traversal",
 			"TitleSlug": "n-ary-tree-level-order-traversal",
-			"PassRate": "38%",
+			"PassRate": "39%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -6721,7 +6721,7 @@
 			"ID": 558,
 			"Title": "Quad Tree Intersection",
 			"TitleSlug": "quad-tree-intersection",
-			"PassRate": "19%",
+			"PassRate": "20%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -7489,7 +7489,7 @@
 			"ID": 622,
 			"Title": "Design Circular Queue",
 			"TitleSlug": "design-circular-queue",
-			"PassRate": "41%",
+			"PassRate": "42%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10311,9 +10311,9 @@
 			"TitleSlug": "minimum-cost-to-hire-k-workers",
 			"PassRate": "38%",
 			"Difficulty": "Hard",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -10405,7 +10405,7 @@
 			"ID": 865,
 			"Title": "Smallest Subtree with all the Deepest Nodes",
 			"TitleSlug": "smallest-subtree-with-all-the-deepest-nodes",
-			"PassRate": "48%",
+			"PassRate": "49%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -10441,7 +10441,7 @@
 			"ID": 868,
 			"Title": "Binary Gap",
 			"TitleSlug": "binary-gap",
-			"PassRate": "60%",
+			"PassRate": "61%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
