@@ -113,6 +113,9 @@ func creatGo(p problem, function, ansType string) {
 
 %s
 `
+
+	function = strings.Replace(function, "\n", ", ", -1)
+
 	content := fmt.Sprintf(fileFormat, p.packageName(), function)
 
 	returns := "\treturn nil\n}"
