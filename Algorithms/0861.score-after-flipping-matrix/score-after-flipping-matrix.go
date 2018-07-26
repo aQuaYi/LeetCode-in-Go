@@ -1,9 +1,5 @@
 package problem0861
 
-import (
-	"sort"
-)
-
 func matrixScore(A [][]int) int {
 	m, n := len(A), len(A[0])
 
@@ -13,45 +9,33 @@ func matrixScore(A [][]int) int {
 		}
 	}
 
-	toggleCol := func(j int) {
+	countCol := func(j int) int {
+		c := 0
 		for i := 0; i < m; i++ {
-			A[i][j] ^= 1
+			c += A[i][j]
 		}
+		return c
 	}
 
-	for i := 0; i < m; i++ {
-		A[i] = append(A[i], b2d(A[i]))
-	}
-
-	sort.Slice(A, func(i int, j int) bool {
-		return A[i][n] < A[j][n]
-	})
-
-	for j := 0; j < n; j++ {
-		if A[0][j] != 0 {
-			continue
-		}
-		toggleCol(j)
-	}
-
+	// 1. 保证每行的最高位是 1
 	for i := 0; i < m; i++ {
 		if A[i][0] == 0 {
 			toggleRow(i)
 		}
 	}
 
-	res := 0
-	for i := 0; i < m; i++ {
-		res += b2d(A[i][:n])
+	res := m // 因为 m 行的开头都是 1
+
+	// 2. 从第 1 列开始统计每列中 1 的个数
+	// 	  当 1 的个数不足 m 的一半时，需要翻转此列
+	//    翻转后的 1 的个数为 m-c
+	for j := 1; j < n; j++ {
+		c := countCol(j)
+		if 2*c < m {
+			c = m - c
+		}
+		res = res*2 + c
 	}
 
-	return res
-}
-
-func b2d(a []int) int {
-	res := 0
-	for _, n := range a {
-		res = res*2 + n
-	}
 	return res
 }
