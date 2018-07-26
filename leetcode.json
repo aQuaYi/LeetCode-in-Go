@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 897,
-	"Updated": "2018-07-26T22:35:21.739404413+08:00",
+	"Updated": "2018-07-26T23:31:56.671374991+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 179,
 			"Total": 190
 		},
 		"Medium": {
-			"Solved": 314,
+			"Solved": 315,
 			"Total": 322
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 137
 		},
 		"Total": {
-			"Solved": 627,
+			"Solved": 628,
 			"Total": 649
 		}
 	},
@@ -6721,7 +6721,7 @@
 			"ID": 558,
 			"Title": "Quad Tree Intersection",
 			"TitleSlug": "quad-tree-intersection",
-			"PassRate": "21%",
+			"PassRate": "22%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -8497,7 +8497,7 @@
 			"ID": 706,
 			"Title": "Design HashMap",
 			"TitleSlug": "design-hashmap",
-			"PassRate": "25%",
+			"PassRate": "26%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -10057,7 +10057,7 @@
 			"ID": 836,
 			"Title": "Rectangle Overlap",
 			"TitleSlug": "rectangle-overlap",
-			"PassRate": "42%",
+			"PassRate": "41%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10359,7 +10359,7 @@
 			"TitleSlug": "score-after-flipping-matrix",
 			"PassRate": "68%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -10494,7 +10494,7 @@
 			"IsAccepted": false,
 			"IsPaid": false,
 			"IsFavor": false,
-			"IsNew": true,
+			"IsNew": false,
 			"HasNoGoOption": false
 		},
 		{
