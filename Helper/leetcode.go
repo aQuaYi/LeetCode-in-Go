@@ -79,6 +79,7 @@ func (lc *leetcode) refresh() {
 
 	log.Println("开始，刷新 LeetCode 数据")
 	newLC := getLeetCode()
+
 	logDiff(lc, newLC)
 
 	*lc = *newLC
@@ -128,8 +129,8 @@ func logDiff(old, new *leetcode) {
 		if new.Problems[i].isAvailble() {
 			log.Printf("新题: %d - %s", new.Problems[i].ID, new.Problems[i].Title)
 			dida("do", new.Problems[i])
-			i++
 		}
+		i++
 	}
 }
 
