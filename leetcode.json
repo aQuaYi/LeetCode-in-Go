@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 892,
-	"Updated": "2018-07-27T22:12:08.248440265+08:00",
+	"Updated": "2018-07-27T22:20:07.638589323+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 179,
@@ -6721,7 +6721,7 @@
 			"ID": 558,
 			"Title": "Quad Tree Intersection",
 			"TitleSlug": "quad-tree-intersection",
-			"PassRate": "22%",
+			"PassRate": "23%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
