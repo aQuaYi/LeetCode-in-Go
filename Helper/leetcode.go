@@ -120,6 +120,8 @@ func logDiff(old, new *leetcode) {
 		i++
 	}
 
+	log.Printf("已经检查完了 %d 题\n", i)
+
 	if !hasNewFinished {
 		log.Println("～ 没有新完成习题 ～")
 	}
