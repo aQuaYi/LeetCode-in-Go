@@ -2,6 +2,7 @@ package problem0863
 
 import (
 	"fmt"
+	"sort"
 	"testing"
 
 	"github.com/aQuaYi/LeetCode-in-Go/kit"
@@ -18,10 +19,45 @@ var tcs = []struct {
 }{
 
 	{
+		[]int{0, kit.NULL, 1, 2, 5, kit.NULL, 3, kit.NULL, kit.NULL, kit.NULL, 4},
+		2,
+		2,
+		[]int{4, 5, 0},
+	},
+
+	{
+		[]int{3, 5, 1, 6, 2, 0, 8, kit.NULL, kit.NULL, 7, 4},
+		5,
+		1,
+		[]int{2, 3, 6},
+	},
+
+	{
+		[]int{0, kit.NULL, 1, kit.NULL, 2, kit.NULL, 3},
+		1,
+		2,
+		[]int{3},
+	},
+
+	{
+		[]int{3, 5, 1, 6, 2, 0, 8, kit.NULL, kit.NULL, 7, 4},
+		5,
+		0,
+		[]int{5},
+	},
+
+	{
 		[]int{3, 5, 1, 6, 2, 0, 8, kit.NULL, kit.NULL, 7, 4},
 		5,
 		2,
 		[]int{7, 4, 1},
+	},
+
+	{
+		[]int{3},
+		3,
+		0,
+		[]int{3},
 	},
 
 	// 可以有多个 testcase
@@ -35,8 +71,10 @@ func Test_distanceK(t *testing.T) {
 
 		root := kit.Ints2TreeNode(tc.root)
 		target := kit.GetTargetNode(root, tc.target)
-
-		ast.Equal(tc.ans, distanceK(root, target, tc.K), "输入:%v", tc)
+		ans := distanceK(root, target, tc.K)
+		sort.Ints(ans)
+		sort.Ints(tc.ans)
+		ast.Equal(tc.ans, ans, "输入:%v", tc)
 	}
 }
 
