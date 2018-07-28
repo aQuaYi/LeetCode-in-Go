@@ -13,41 +13,62 @@ import "github.com/aQuaYi/LeetCode-in-Go/kit"
  */
 type TreeNode = kit.TreeNode
 
-func distanceK(root *TreeNode, target *TreeNode, K int) []int {
-	conn := make(map[int][]int, 2048)
-	var connect func(*TreeNode, *TreeNode)
-	connect = func(parent, child *TreeNode) {
-		if parent != nil && child != nil {
-			conn[parent.Val] = append(conn[parent.Val], child.Val)
-			conn[child.Val] = append(conn[child.Val], parent.Val)
-		}
-		if child.Left != nil {
-			connect(child, child.Left)
-		}
-		if child.Right != nil {
-			connect(child, child.Right)
-		}
+// walk 返回从 root 到 target 的距离
+// 返回值 <0 表示 target 不在 root 下方
+func walk(root, target *TreeNode, res *[]int, dist, k int) int {
+	if root == nil {
+		return -1
 	}
-	// 把 TreeNode 转换成 图
-	connect(nil, root)
 
-	bfs := []int{target.Val}
-	hasSeen := make(map[int]bool, 2048)
-	hasSeen[target.Val] = true
+	if root == target {
+		walk(root.Left, nil, res, 1, k)
+		walk(root.Right, nil, res, 1, k)
+		return 0
+	}
 
-	for K > 0 {
-		K--
-		qSize := len(bfs)
-		for i := 0; i < qSize; i++ {
-			for _, x := range conn[bfs[i]] {
-				if !hasSeen[x] {
-					bfs = append(bfs, x)
-					hasSeen[x] = true
-				}
+	// dist < 0 表示还没有找到 target 节点
+	if dist < 0 {
+		// 先检查左边
+		if l := walk(root.Left, target, res, -1, k); l >= 0 {
+			// 此时 target 在 root.Left 下方
+			if dist = l + 1; dist == k {
+				// root 到 target 的距离为 k
+				// 所以要把 root.Val 放入 res
+				*res = append(*res, root.Val)
+			} else if dist < k {
+				// root 到 target 的距离不到 k
+				// 但是 root.Right 到 target 的距离为 dist+1
+				// 所以，从 root.Right 以 dist+1 的距离继续向下寻找
+				walk(root.Right, nil, res, dist+1, k)
+			}
+		} else if r := walk(root.Right, target, res, -1, k); r >= 0 {
+			// 右边与左边对称
+			if dist = r + 1; dist == k {
+				*res = append(*res, root.Val)
+			} else if dist < k {
+				walk(root.Left, nil, res, dist+1, k)
 			}
 		}
-		bfs = bfs[qSize:]
+		return dist
 	}
 
-	return bfs
+	if dist == k {
+		*res = append(*res, root.Val)
+	} else if dist < k {
+		walk(root.Left, nil, res, dist+1, k)
+		walk(root.Right, nil, res, dist+1, k)
+	}
+
+	return dist
+}
+
+func distanceK(root *TreeNode, target *TreeNode, k int) []int {
+	if k == 0 {
+		return []int{target.Val}
+	}
+
+	res := make([]int, 0, 2048)
+	walk(root, target, &res, -1, k)
+
+	return res
 }
