@@ -29,7 +29,7 @@ func Ints2TreeNode(ints []int) *TreeNode {
 	queue[0] = root
 
 	i := 1
-	for {
+	for i < n {
 		node := queue[0]
 		queue = queue[1:]
 
@@ -44,13 +44,23 @@ func Ints2TreeNode(ints []int) *TreeNode {
 			queue = append(queue, node.Right)
 		}
 		i++
-
-		if i >= n {
-			break
-		}
 	}
 
 	return root
+}
+
+// GetTargetNode 返回 Val = target 的 TreeNode
+// root 中一定有 node.Val = target
+func GetTargetNode(root *TreeNode, target int) *TreeNode {
+	if root == nil || root.Val == target {
+		return root
+	}
+
+	res := GetTargetNode(root.Left, target)
+	if res != nil {
+		return res
+	}
+	return GetTargetNode(root.Right, target)
 }
 
 func indexOf(val int, nums []int) int {
