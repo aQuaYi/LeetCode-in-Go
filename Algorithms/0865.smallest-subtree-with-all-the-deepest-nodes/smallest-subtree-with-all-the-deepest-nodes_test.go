@@ -20,6 +20,11 @@ var tcs = []struct {
 		[]int{2, 7, 4},
 	},
 
+	{
+		[]int{3, 5, 1, 6, 2, 0, 8, kit.NULL, kit.NULL, 7, 4, 9, 10},
+		[]int{3, 5, 1, 6, 2, 0, 8, kit.NULL, kit.NULL, 7, 4, 9, 10},
+	},
+
 	// 可以有多个 testcase
 }
 
@@ -29,8 +34,9 @@ func Test_subtreeWithAllDeepest(t *testing.T) {
 	for _, tc := range tcs {
 		fmt.Printf("~~%v~~\n", tc)
 		root := kit.Ints2TreeNode(tc.root)
-		ans := kit.Tree2Preorder(subtreeWithAllDeepest(root))
-		ast.Equal(tc.ans, ans, "输入:%v", tc)
+		actual := kit.Tree2Preorder(subtreeWithAllDeepest(root))
+		expected := kit.Tree2Preorder(kit.Ints2TreeNode(tc.ans))
+		ast.Equal(expected, actual, "输入:%v", tc)
 	}
 }
 

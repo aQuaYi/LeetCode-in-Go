@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 889,
-	"Updated": "2018-07-29T21:44:20.955891823+08:00",
+	"Updated": "2018-07-29T22:36:32.872056548+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 179,
 			"Total": 191
 		},
 		"Medium": {
-			"Solved": 316,
+			"Solved": 317,
 			"Total": 327
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 139
 		},
 		"Total": {
-			"Solved": 629,
+			"Solved": 630,
 			"Total": 657
 		}
 	},
@@ -10407,7 +10407,7 @@
 			"TitleSlug": "smallest-subtree-with-all-the-deepest-nodes",
 			"PassRate": "49%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
