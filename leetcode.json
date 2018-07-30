@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 885,
-	"Updated": "2018-07-30T20:42:14.887557609+08:00",
+	"Updated": "2018-07-30T20:55:12.255854328+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 179,
+			"Solved": 180,
 			"Total": 191
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 139
 		},
 		"Total": {
-			"Solved": 630,
+			"Solved": 631,
 			"Total": 657
 		}
 	},
@@ -10431,7 +10431,7 @@
 			"TitleSlug": "transpose-matrix",
 			"PassRate": "66%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
