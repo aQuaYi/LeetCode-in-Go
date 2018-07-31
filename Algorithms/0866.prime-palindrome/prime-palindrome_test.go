@@ -14,8 +14,23 @@ var tcs = []struct {
 }{
 
 	{
+		11,
+		11,
+	},
+
+	{
+		8,
+		11,
+	},
+
+	{
 		98390,
 		98689,
+	},
+
+	{
+		983910,
+		1003001,
 	},
 
 	{
@@ -54,8 +69,23 @@ var tcs = []struct {
 	},
 
 	{
-		8,
-		11,
+		2,
+		2,
+	},
+
+	{
+		3,
+		3,
+	},
+
+	{
+		5,
+		5,
+	},
+
+	{
+		7,
+		7,
 	},
 
 	// 可以有多个 testcase
@@ -76,4 +106,13 @@ func Benchmark_primePalindrome(b *testing.B) {
 			primePalindrome(tc.N)
 		}
 	}
+}
+
+func Test_isPrime(t *testing.T) {
+	ast := assert.New(t)
+
+	actual := isPrime(3)
+	expected := true
+	ast.Equal(expected, actual)
+
 }
