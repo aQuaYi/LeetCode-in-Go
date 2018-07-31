@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 879,
-	"Updated": "2018-07-31T19:01:16.206081254+08:00",
+	"Updated": "2018-07-31T23:59:45.284522477+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 180,
 			"Total": 191
 		},
 		"Medium": {
-			"Solved": 317,
+			"Solved": 318,
 			"Total": 327
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 139
 		},
 		"Total": {
-			"Solved": 631,
+			"Solved": 632,
 			"Total": 657
 		}
 	},
@@ -7489,7 +7489,7 @@
 			"ID": 622,
 			"Title": "Design Circular Queue",
 			"TitleSlug": "design-circular-queue",
-			"PassRate": "39%",
+			"PassRate": "38%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9949,7 +9949,7 @@
 			"ID": 827,
 			"Title": "Making A Large Island",
 			"TitleSlug": "making-a-large-island",
-			"PassRate": "39%",
+			"PassRate": "40%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10249,7 +10249,7 @@
 			"ID": 852,
 			"Title": "Peak Index in a Mountain Array",
 			"TitleSlug": "peak-index-in-a-mountain-array",
-			"PassRate": "67%",
+			"PassRate": "68%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10419,9 +10419,9 @@
 			"TitleSlug": "prime-palindrome",
 			"PassRate": "17%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -10501,7 +10501,7 @@
 			"ID": 873,
 			"Title": "Length of Longest Fibonacci Subsequence",
 			"TitleSlug": "length-of-longest-fibonacci-subsequence",
-			"PassRate": "40%",
+			"PassRate": "41%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -10525,7 +10525,7 @@
 			"ID": 875,
 			"Title": "Koko Eating Bananas",
 			"TitleSlug": "koko-eating-bananas",
-			"PassRate": "39%",
+			"PassRate": "40%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
