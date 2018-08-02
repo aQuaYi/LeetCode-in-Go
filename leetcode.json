@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 873,
-	"Updated": "2018-08-02T19:48:11.897157239+08:00",
+	"Updated": "2018-08-02T20:50:57.538622641+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 180,
 			"Total": 191
 		},
 		"Medium": {
-			"Solved": 319,
+			"Solved": 320,
 			"Total": 327
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 139
 		},
 		"Total": {
-			"Solved": 633,
+			"Solved": 634,
 			"Total": 657
 		}
 	},
@@ -5173,7 +5173,7 @@
 			"ID": 429,
 			"Title": "N-ary Tree Level Order Traversal",
 			"TitleSlug": "n-ary-tree-level-order-traversal",
-			"PassRate": "46%",
+			"PassRate": "45%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -8893,7 +8893,7 @@
 			"ID": 739,
 			"Title": "Daily Temperatures",
 			"TitleSlug": "daily-temperatures",
-			"PassRate": "53%",
+			"PassRate": "54%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10467,7 +10467,7 @@
 			"TitleSlug": "advantage-shuffle",
 			"PassRate": "39%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
