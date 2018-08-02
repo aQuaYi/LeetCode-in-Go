@@ -6,35 +6,30 @@ import (
 
 func advantageCount(A []int, B []int) []int {
 	size := len(A)
-	isTaken := make([]bool, size)
+	tmp := make([][2]int, size)
 
-	search := func(n int) int {
-		l, r := 0, size-1
-
-		for l < r {
-			m := (l + r) / 2
-			if A[m] <= n {
-				l = m + 1
-			} else {
-				r = m
-			}
-		}
-
-		for isTaken[r] {
-			r = (r + 1) % size
-		}
-
-		isTaken[r] = true
-
-		return r
+	for i, n := range B {
+		tmp[i][0], tmp[i][1] = n, i
 	}
 
-	sort.Ints(A)
+	sort.Slice(tmp, func(i int, j int) bool {
+		return tmp[i][0] < tmp[j][0]
+	})
 
 	res := make([]int, size)
 
-	for i, n := range B {
-		res[i] = A[search(n)]
+	sort.Ints(A)
+
+	l, r := 0, size-1
+
+	for _, a := range A {
+		if tmp[l][0] < a {
+			res[tmp[l][1]] = a
+			l++
+		} else {
+			res[tmp[r][1]] = a
+			r--
+		}
 	}
 
 	return res
