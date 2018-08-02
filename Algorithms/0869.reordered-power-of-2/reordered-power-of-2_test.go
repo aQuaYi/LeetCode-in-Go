@@ -2,6 +2,7 @@ package problem0869
 
 import (
 	"fmt"
+	"strings"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -60,5 +61,34 @@ func Benchmark_reorderedPowerOf2(b *testing.B) {
 		for _, tc := range tcs {
 			reorderedPowerOf2(tc.N)
 		}
+	}
+}
+
+var val = 9876543210
+
+func Benchmark_encode(b *testing.B) {
+	for i := 1; i < b.N; i++ {
+		encode(val)
+	}
+}
+
+func encodeString(n int) string {
+	tmp := [10]int{}
+	for n > 0 {
+		tmp[n%10]++
+		n /= 10
+	}
+	ss := make([]string, 0, 10)
+	for n, c := range tmp {
+		if c > 0 {
+			ss = append(ss, fmt.Sprintf("%d_%d", n, c))
+		}
+	}
+	return strings.Join(ss, "-")
+}
+
+func Benchmark_encodeString(b *testing.B) {
+	for i := 1; i < b.N; i++ {
+		encodeString(val)
 	}
 }
