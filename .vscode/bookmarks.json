@@ -8,5 +8,15 @@
 				"label": ""
 			}
 		]
+	},
+	{
+		"path": "$ROOTPATH$/Algorithms/0478.generate-random-point-in-a-circle/generate-random-point-in-a-circle.go",
+		"bookmarks": [
+			{
+				"line": 29,
+				"column": 11,
+				"label": ""
+			}
+		]
 	}
 ]
