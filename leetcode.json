@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 869,
-	"Updated": "2018-08-04T21:16:55.918544895+08:00",
+	"Updated": "2018-08-04T22:55:51.121444392+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 180,
 			"Total": 191
 		},
 		"Medium": {
-			"Solved": 321,
+			"Solved": 322,
 			"Total": 327
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 139
 		},
 		"Total": {
-			"Solved": 635,
+			"Solved": 636,
 			"Total": 657
 		}
 	},
@@ -3385,7 +3385,7 @@
 			"ID": 280,
 			"Title": "Wiggle Sort",
 			"TitleSlug": "wiggle-sort",
-			"PassRate": "59%",
+			"PassRate": "58%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -5377,7 +5377,7 @@
 			"ID": 446,
 			"Title": "Arithmetic Slices II - Subsequence",
 			"TitleSlug": "arithmetic-slices-ii-subsequence",
-			"PassRate": "28%",
+			"PassRate": "27%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -5991,7 +5991,7 @@
 			"TitleSlug": "random-point-in-non-overlapping-rectangles",
 			"PassRate": "33%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -6721,7 +6721,7 @@
 			"ID": 558,
 			"Title": "Quad Tree Intersection",
 			"TitleSlug": "quad-tree-intersection",
-			"PassRate": "27%",
+			"PassRate": "28%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -10537,7 +10537,7 @@
 			"ID": 876,
 			"Title": "Middle of the Linked List",
 			"TitleSlug": "middle-of-the-linked-list",
-			"PassRate": "68%",
+			"PassRate": "67%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
