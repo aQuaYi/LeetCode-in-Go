@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 869,
-	"Updated": "2018-08-04T19:39:58.356162929+08:00",
+	"Updated": "2018-08-04T21:14:48.409930646+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 180,
 			"Total": 191
 		},
 		"Medium": {
-			"Solved": 320,
+			"Solved": 321,
 			"Total": 327
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 139
 		},
 		"Total": {
-			"Solved": 634,
+			"Solved": 635,
 			"Total": 657
 		}
 	},
@@ -5763,7 +5763,7 @@
 			"TitleSlug": "generate-random-point-in-a-circle",
 			"PassRate": "29%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
