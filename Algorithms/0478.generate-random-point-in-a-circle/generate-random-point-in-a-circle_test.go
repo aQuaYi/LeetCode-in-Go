@@ -15,7 +15,7 @@ func Test_RandPoint(t *testing.T) {
 		p := s.RandPoint()
 		x, y := p[0], p[1]
 		actual := math.Sqrt((x-a)*(x-a) + (y-b)*(y-b))
-		ast.True(actual < r)
+		ast.True(actual <= r)
 	}
 }
 
@@ -27,6 +27,6 @@ func Test_RandPoint_2(t *testing.T) {
 		p := s.RandPoint()
 		x, y := p[0], p[1]
 		actual := math.Sqrt((x-a)*(x-a) + (y-b)*(y-b))
-		ast.True(actual < r)
+		ast.True(actual <= r)
 	}
 }

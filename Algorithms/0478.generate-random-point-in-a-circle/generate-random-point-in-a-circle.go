@@ -1,8 +1,6 @@
 package problem0478
 
 import (
-	"fmt"
-	"math"
 	"math/rand"
 )
 
@@ -22,12 +20,14 @@ func Constructor(radius, xCenter, yCenter float64) Solution {
 	}
 }
 
-// RandPoint 返回随机点
+// RandPoint 返回圆内的随机点
 func (s *Solution) RandPoint() []float64 {
-	len := math.Sqrt(rand.Float64()) * s.r
-	deg := rand.NormFloat64() * 2 * math.Pi
-	x := s.a + len*math.Cos(deg)
-	y := s.b + len*math.Sin(deg)
-	fmt.Printf("len = %f, x = %f, y = %f\n", len, x, y)
+	xFactor, yFactor := 1., 1.
+	for xFactor*xFactor+yFactor*yFactor > 1 {
+		xFactor = 2*rand.Float64() - 1
+		yFactor = 2*rand.Float64() - 1
+	}
+	x := s.a + s.r*xFactor
+	y := s.b + s.r*yFactor
 	return []float64{x, y}
 }
