@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 869,
-	"Updated": "2018-08-05T11:56:06.763029731+08:00",
+	"Updated": "2018-08-05T13:26:10.42675507+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 180,
 			"Total": 192
 		},
 		"Medium": {
-			"Solved": 322,
+			"Solved": 323,
 			"Total": 329
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 140
 		},
 		"Total": {
-			"Solved": 636,
+			"Solved": 637,
 			"Total": 661
 		}
 	},
@@ -6255,7 +6255,7 @@
 			"TitleSlug": "random-flip-matrix",
 			"PassRate": "32%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -7681,7 +7681,7 @@
 			"ID": 638,
 			"Title": "Shopping Offers",
 			"TitleSlug": "shopping-offers",
-			"PassRate": "46%",
+			"PassRate": "45%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9697,7 +9697,7 @@
 			"ID": 806,
 			"Title": "Number of Lines To Write String",
 			"TitleSlug": "number-of-lines-to-write-string",
-			"PassRate": "61%",
+			"PassRate": "62%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10549,7 +10549,7 @@
 			"ID": 877,
 			"Title": "Stone Game",
 			"TitleSlug": "stone-game",
-			"PassRate": "51%",
+			"PassRate": "52%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -10633,7 +10633,7 @@
 			"ID": 884,
 			"Title": "Decoded String at Index",
 			"TitleSlug": "decoded-string-at-index",
-			"PassRate": "14%",
+			"PassRate": "15%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -10645,7 +10645,7 @@
 			"ID": 885,
 			"Title": "Boats to Save People",
 			"TitleSlug": "boats-to-save-people",
-			"PassRate": "32%",
+			"PassRate": "33%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -10657,7 +10657,7 @@
 			"ID": 886,
 			"Title": "Reachable Nodes In Subdivided Graph",
 			"TitleSlug": "reachable-nodes-in-subdivided-graph",
-			"PassRate": "23%",
+			"PassRate": "24%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -10669,7 +10669,7 @@
 			"ID": 887,
 			"Title": "Projection Area of 3D Shapes",
 			"TitleSlug": "projection-area-of-3d-shapes",
-			"PassRate": "73%",
+			"PassRate": "72%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
