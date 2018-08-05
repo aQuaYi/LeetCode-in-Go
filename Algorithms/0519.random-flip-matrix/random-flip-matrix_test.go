@@ -1,7 +1,6 @@
 package problem0519
 
 import (
-	"fmt"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -68,8 +67,7 @@ func Test_Solution_3(t *testing.T) {
 	s := Constructor(rows, cols)
 
 	for times := 0; times < 1000; times++ {
-		fmt.Println(times)
-
+		fmt.p
 		recorder := make([]bool, rows*cols)
 		s.Reset()
 		for i := 0; i < 4; i++ {
