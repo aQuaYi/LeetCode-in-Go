@@ -48,17 +48,7 @@ func Test_Solution_2(t *testing.T) {
 		ast.False(old)
 	}
 
-	s.Reset()
-
-	recorder = make([]bool, rows*cols)
-	for i := 0; i < rows*cols; i++ {
-		f := s.Flip()
-		r, c := f[0], f[1]
-		old := recorder[r*cols+c]
-		recorder[r*cols+c] = true
-		ast.False(old)
-	}
-
+	ast.Nil(s.Flip())
 }
 func Test_Solution_3(t *testing.T) {
 	ast := assert.New(t)
