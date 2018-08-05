@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 869,
-	"Updated": "2018-08-05T13:26:10.42675507+08:00",
+	"Updated": "2018-08-05T13:47:11.751335835+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 180,
@@ -10633,7 +10633,7 @@
 			"ID": 884,
 			"Title": "Decoded String at Index",
 			"TitleSlug": "decoded-string-at-index",
-			"PassRate": "15%",
+			"PassRate": "16%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -10645,7 +10645,7 @@
 			"ID": 885,
 			"Title": "Boats to Save People",
 			"TitleSlug": "boats-to-save-people",
-			"PassRate": "33%",
+			"PassRate": "34%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
