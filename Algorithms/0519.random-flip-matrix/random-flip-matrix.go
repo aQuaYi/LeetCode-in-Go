@@ -8,15 +8,12 @@ import "math/rand"
 // obj.Reset();
 type Solution struct {
 	rows, cols, total int
-	recorder          []int
+	recorder          map[int]int
 }
 
 // Constructor 构建 Solution
 func Constructor(rows, cols int) Solution {
-	r := make([]int, rows*cols)
-	for i := range r {
-		r[i] = i
-	}
+	r := make(map[int]int, rows)
 	return Solution{
 		rows:     rows,
 		cols:     cols,
@@ -32,11 +29,21 @@ func (s *Solution) Flip() []int {
 	}
 
 	index := rand.Intn(s.total)
-	cand := s.recorder[index]
-	r, c := cand/s.cols, cand%s.cols
+	cand := index
+	if changed, ok := s.recorder[index]; ok {
+		cand = changed
+	}
 
 	s.total--
-	s.recorder[index] = s.recorder[s.total]
+	if changed, ok := s.recorder[s.total]; ok {
+		s.recorder[index] = changed
+	} else {
+		s.recorder[index] = s.total
+	}
+
+	delete(s.recorder, s.total)
+
+	r, c := cand/s.cols, cand%s.cols
 
 	return []int{r, c}
 }
@@ -44,10 +51,5 @@ func (s *Solution) Flip() []int {
 // Reset 把 rows * cols 中的元素全部变成 0
 func (s *Solution) Reset() {
 	s.total = s.rows * s.cols
-
-	r := make([]int, s.total)
-	for i := range r {
-		r[i] = i
-	}
-	s.recorder = r
+	s.recorder = make(map[int]int, s.rows)
 }
