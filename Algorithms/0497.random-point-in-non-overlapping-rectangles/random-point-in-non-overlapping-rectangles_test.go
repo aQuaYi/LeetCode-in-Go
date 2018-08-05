@@ -49,6 +49,38 @@ func Test_Solution_2(t *testing.T) {
 	}
 }
 
+func Test_Solution_3(t *testing.T) {
+	ast := assert.New(t)
+
+	rects := [][]int{
+		{0, 0, 1, 1},
+		{2, 0, 3, 1},
+	}
+
+	s := Constructor(rects)
+
+	counts := make([]int, len(rects))
+	picks := 1000000
+
+	for i := 0; i < picks; i++ {
+		p := s.Pick()
+		for i, r := range rects {
+			if isWithin(r, p) {
+				counts[i]++
+			}
+		}
+	}
+
+	delta := 0.001
+	for i, c := range counts {
+		w, h := s.rects[i][2], s.rects[i][3]
+		expected := float64(w*h) / float64(s.total)
+		actual := float64(c) / float64(picks)
+		ast.InDelta(expected, actual, delta)
+	}
+
+}
+
 func isWithin(rect, point []int) bool {
 	x1, y1, x2, y2 := rect[0], rect[1], rect[2], rect[3]
 	x, y := point[0], point[1]

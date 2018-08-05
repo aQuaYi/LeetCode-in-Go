@@ -39,7 +39,7 @@ func Constructor(rects [][]int) Solution {
 
 // Pick 返回正方形内的点
 func (s *Solution) Pick() []int {
-	cand := rand.Intn(s.total)
+	cand := rand.Intn(s.total) + 1
 	// 根据 cand 找到需要返回那个矩形下的点
 	i := sort.SearchInts(s.counts, cand)
 
