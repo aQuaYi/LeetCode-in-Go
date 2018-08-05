@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 869,
-	"Updated": "2018-08-05T13:47:11.751335835+08:00",
+	"Updated": "2018-08-05T15:04:36.556726448+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 180,
 			"Total": 192
 		},
 		"Medium": {
-			"Solved": 323,
+			"Solved": 324,
 			"Total": 329
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 140
 		},
 		"Total": {
-			"Solved": 637,
+			"Solved": 638,
 			"Total": 661
 		}
 	},
@@ -1297,7 +1297,7 @@
 			"ID": 106,
 			"Title": "Construct Binary Tree from Inorder and Postorder Traversal",
 			"TitleSlug": "construct-binary-tree-from-inorder-and-postorder-traversal",
-			"PassRate": "34%",
+			"PassRate": "35%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -5377,7 +5377,7 @@
 			"ID": 446,
 			"Title": "Arithmetic Slices II - Subsequence",
 			"TitleSlug": "arithmetic-slices-ii-subsequence",
-			"PassRate": "27%",
+			"PassRate": "28%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -6363,7 +6363,7 @@
 			"TitleSlug": "random-pick-with-weight",
 			"PassRate": "42%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -7105,7 +7105,7 @@
 			"ID": 590,
 			"Title": "N-ary Tree Postorder Traversal",
 			"TitleSlug": "n-ary-tree-postorder-traversal",
-			"PassRate": "52%",
+			"PassRate": "53%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -10177,7 +10177,7 @@
 			"ID": 846,
 			"Title": "Hand of Straights",
 			"TitleSlug": "hand-of-straights",
-			"PassRate": "42%",
+			"PassRate": "43%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10237,7 +10237,7 @@
 			"ID": 851,
 			"Title": "Loud and Rich",
 			"TitleSlug": "loud-and-rich",
-			"PassRate": "43%",
+			"PassRate": "42%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10657,7 +10657,7 @@
 			"ID": 886,
 			"Title": "Reachable Nodes In Subdivided Graph",
 			"TitleSlug": "reachable-nodes-in-subdivided-graph",
-			"PassRate": "24%",
+			"PassRate": "25%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -10669,7 +10669,7 @@
 			"ID": 887,
 			"Title": "Projection Area of 3D Shapes",
 			"TitleSlug": "projection-area-of-3d-shapes",
-			"PassRate": "72%",
+			"PassRate": "73%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
