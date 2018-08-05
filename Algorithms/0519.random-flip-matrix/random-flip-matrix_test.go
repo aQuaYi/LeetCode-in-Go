@@ -66,8 +66,7 @@ func Test_Solution_3(t *testing.T) {
 	rows, cols := 10000, 10000
 	s := Constructor(rows, cols)
 
-	for times := 0; times < 1000; times++ {
-		fmt.p
+	for times := 0; times < 200; times++ {
 		recorder := make([]bool, rows*cols)
 		s.Reset()
 		for i := 0; i < 4; i++ {

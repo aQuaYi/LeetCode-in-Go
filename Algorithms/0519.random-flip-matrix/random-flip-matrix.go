@@ -7,43 +7,42 @@ import "math/rand"
 // param_1 := obj.Flip();
 // obj.Reset();
 type Solution struct {
-	rows, cols, total int
-	recorder          map[int]int
+	rows, cols int
+	total      int // 矩阵中剩余的 0 的个数
+	rec        map[int]int
 }
 
 // Constructor 构建 Solution
 func Constructor(rows, cols int) Solution {
-	r := make(map[int]int, rows)
+	r := make(map[int]int)
 	return Solution{
-		rows:     rows,
-		cols:     cols,
-		total:    rows * cols,
-		recorder: r,
+		rows:  rows,
+		cols:  cols,
+		total: rows * cols,
+		rec:   r,
 	}
 }
 
 // Flip 选择 rows * cols 矩阵中的某个 0 进行翻转
 func (s *Solution) Flip() []int {
 	if s.total == 0 {
-		panic("No Zero")
+		return nil
 	}
 
 	index := rand.Intn(s.total)
+
 	cand := index
-	if changed, ok := s.recorder[index]; ok {
-		cand = changed
+	if change, isFound := s.rec[index]; isFound {
+		cand = change
 	}
+	r, c := cand/s.cols, cand%s.cols
 
 	s.total--
-	if changed, ok := s.recorder[s.total]; ok {
-		s.recorder[index] = changed
+	if change, isFound := s.rec[s.total]; isFound {
+		s.rec[index] = change
 	} else {
-		s.recorder[index] = s.total
+		s.rec[index] = s.total
 	}
-
-	delete(s.recorder, s.total)
-
-	r, c := cand/s.cols, cand%s.cols
 
 	return []int{r, c}
 }
@@ -51,5 +50,5 @@ func (s *Solution) Flip() []int {
 // Reset 把 rows * cols 中的元素全部变成 0
 func (s *Solution) Reset() {
 	s.total = s.rows * s.cols
-	s.recorder = make(map[int]int, s.rows)
+	s.rec = make(map[int]int)
 }
