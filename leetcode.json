@@ -1,23 +1,23 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 869,
-	"Updated": "2018-08-04T22:55:51.121444392+08:00",
+	"Updated": "2018-08-05T11:56:06.763029731+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 180,
-			"Total": 191
+			"Total": 192
 		},
 		"Medium": {
 			"Solved": 322,
-			"Total": 327
+			"Total": 329
 		},
 		"Hard": {
 			"Solved": 134,
-			"Total": 139
+			"Total": 140
 		},
 		"Total": {
 			"Solved": 636,
-			"Total": 657
+			"Total": 661
 		}
 	},
 	"Problems": [
@@ -181,7 +181,7 @@
 			"ID": 13,
 			"Title": "Roman to Integer",
 			"TitleSlug": "roman-to-integer",
-			"PassRate": "48%",
+			"PassRate": "49%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -5197,7 +5197,7 @@
 			"ID": 431,
 			"Title": "Encode N-ary Tree to Binary Tree",
 			"TitleSlug": "encode-n-ary-tree-to-binary-tree",
-			"PassRate": "31%",
+			"PassRate": "32%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -6733,7 +6733,7 @@
 			"ID": 559,
 			"Title": "Maximum Depth of N-ary Tree",
 			"TitleSlug": "maximum-depth-of-n-ary-tree",
-			"PassRate": "55%",
+			"PassRate": "56%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -7009,7 +7009,7 @@
 			"ID": 582,
 			"Title": "Kill Process",
 			"TitleSlug": "kill-process",
-			"PassRate": "51%",
+			"PassRate": "52%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -7093,7 +7093,7 @@
 			"ID": 589,
 			"Title": "N-ary Tree Preorder Traversal",
 			"TitleSlug": "n-ary-tree-preorder-traversal",
-			"PassRate": "45%",
+			"PassRate": "46%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -7681,7 +7681,7 @@
 			"ID": 638,
 			"Title": "Shopping Offers",
 			"TitleSlug": "shopping-offers",
-			"PassRate": "45%",
+			"PassRate": "46%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -8089,7 +8089,7 @@
 			"ID": 672,
 			"Title": "Bulb Switcher II",
 			"TitleSlug": "bulb-switcher-ii",
-			"PassRate": "48%",
+			"PassRate": "49%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -8497,7 +8497,7 @@
 			"ID": 706,
 			"Title": "Design HashMap",
 			"TitleSlug": "design-hashmap",
-			"PassRate": "31%",
+			"PassRate": "32%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -8521,7 +8521,7 @@
 			"ID": 708,
 			"Title": "Insert into a Cyclic Sorted List",
 			"TitleSlug": "insert-into-a-cyclic-sorted-list",
-			"PassRate": "12%",
+			"PassRate": "13%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -8689,7 +8689,7 @@
 			"ID": 722,
 			"Title": "Remove Comments",
 			"TitleSlug": "remove-comments",
-			"PassRate": "27%",
+			"PassRate": "28%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -8773,7 +8773,7 @@
 			"ID": 729,
 			"Title": "My Calendar I",
 			"TitleSlug": "my-calendar-i",
-			"PassRate": "42%",
+			"PassRate": "43%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -8833,7 +8833,7 @@
 			"ID": 734,
 			"Title": "Sentence Similarity",
 			"TitleSlug": "sentence-similarity",
-			"PassRate": "39%",
+			"PassRate": "38%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -9661,7 +9661,7 @@
 			"ID": 803,
 			"Title": "Bricks Falling When Hit",
 			"TitleSlug": "bricks-falling-when-hit",
-			"PassRate": "22%",
+			"PassRate": "23%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10579,6 +10579,102 @@
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 0,
+			"Title": "",
+			"TitleSlug": "",
+			"PassRate": "",
+			"Difficulty": "",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": false,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 0,
+			"Title": "",
+			"TitleSlug": "",
+			"PassRate": "",
+			"Difficulty": "",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": false,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 0,
+			"Title": "",
+			"TitleSlug": "",
+			"PassRate": "",
+			"Difficulty": "",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": false,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 0,
+			"Title": "",
+			"TitleSlug": "",
+			"PassRate": "",
+			"Difficulty": "",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": false,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 884,
+			"Title": "Decoded String at Index",
+			"TitleSlug": "decoded-string-at-index",
+			"PassRate": "14%",
+			"Difficulty": "Medium",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 885,
+			"Title": "Boats to Save People",
+			"TitleSlug": "boats-to-save-people",
+			"PassRate": "32%",
+			"Difficulty": "Medium",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 886,
+			"Title": "Reachable Nodes In Subdivided Graph",
+			"TitleSlug": "reachable-nodes-in-subdivided-graph",
+			"PassRate": "23%",
+			"Difficulty": "Hard",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 887,
+			"Title": "Projection Area of 3D Shapes",
+			"TitleSlug": "projection-area-of-3d-shapes",
+			"PassRate": "73%",
+			"Difficulty": "Easy",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
 			"HasNoGoOption": false
 		}
 	]
