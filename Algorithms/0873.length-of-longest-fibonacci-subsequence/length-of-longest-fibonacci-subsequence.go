@@ -6,17 +6,19 @@ func lenLongestFibSubseq(a []int) int {
 	size := len(a)
 	res := 0
 
-	for k := 2; k < size; k++ {
+	// (size - k) + 2 > res 表示，此时的 k 至少还有可能让 res 变的更大
+	// (size - k) + 2 > res ==> k < size - res + 2
+
+	for k := 2; k < size && k < size-res+2; k++ {
 		l, r := 0, k-1
+
 		for l < r {
 			s := a[l] + a[r]
 
 			if s < a[k] {
 				l++
 				continue
-			}
-
-			if a[k] < s {
+			} else if a[k] < s {
 				r--
 				continue
 			}
@@ -38,6 +40,7 @@ func lenLongestFibSubseq(a []int) int {
 			l++
 			r--
 		}
+
 	}
 
 	return res
