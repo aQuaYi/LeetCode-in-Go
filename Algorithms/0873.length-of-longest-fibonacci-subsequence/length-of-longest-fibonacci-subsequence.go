@@ -21,9 +21,10 @@ func lenLongestFibSubseq(a []int) int {
 				continue
 			}
 
-			//
+			// 此时找到了第一组 a[l] + a[r] = a[k]
 			count := 3
 			i, j := r, k
+			// 反复利用二分查找法，查看下个数是否在 a 中
 			for {
 				next := a[i] + a[j]
 				i, j = j, j+sort.SearchInts(a[j:], next)
