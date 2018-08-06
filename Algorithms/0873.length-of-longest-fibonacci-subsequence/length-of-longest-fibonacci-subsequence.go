@@ -1,60 +1,46 @@
 package problem0873
 
-func lenLongestFibSubseq(a []int) (r int) {
+import "sort"
+
+func lenLongestFibSubseq(a []int) int {
 	size := len(a)
+	res := 0
 
 	for k := 2; k < size; k++ {
-		for i, j := 0, k-1; i < j; {
+		i, j := 0, k-1
+		for i < j {
 			s := a[i] + a[j]
 
 			if s < a[k] {
 				i++
 				continue
-			} else if s > a[k] {
+			}
+
+			if a[k] < s {
 				j--
 				continue
 			}
 
 			count := 3
 			x0, x1 := a[j], a[k]
-			l := k + 1
-
+			idx := k
 			for {
-
-				f, p, x2 := l, size, x0+x1
-
-				for p-f >= 4 {
-					m := (p + f) / 2
-
-					if x2 < a[m] {
-						p = m
-					} else if x2 > a[m] {
-						f = m + 1
-					} else {
-						f = m
-						break
-					}
-				}
-
-				for ; f < p; f++ {
-					if a[f] == x2 {
-						count, x0, x1, l = count+1, x1, x2, f+1
-						break
-					}
-				}
-				if f == p {
+				x2 := x0 + x1
+				idx += sort.SearchInts(a[idx:], x2)
+				if idx == size || a[idx] != x2 {
 					break
 				}
-
+				count++
+				x0, x1 = x1, x2
 			}
 
-			r = max(r, count)
+			res = max(res, count)
 			i++
 			j--
 		}
 	}
 
-	return
+	return res
 }
 
 func max(a, b int) int {
