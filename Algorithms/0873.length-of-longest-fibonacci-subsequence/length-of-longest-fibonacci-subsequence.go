@@ -3,27 +3,29 @@ package problem0873
 func lenLongestFibSubseq(A []int) int {
 	size := len(A)
 
-	idxs := make(map[int]int, size)
-	mp := make(map[int]bool, size)
-	for i, a := range A {
-		idxs[a] = i
-		mp[a] = true
+	dp := make([][]int, size)
+	for i := range dp {
+		dp[i] = make([]int, size)
 	}
 
 	res := 0
 
-	for i := 0; i < size; i++ {
-		for j := i + 1; j < size; j++ {
-			tmp := 2
-			i0, i1 := i, j
-			for mp[A[i0]+A[i1]] {
-				tmp++
-				res = max(res, tmp)
-				i0, i1 = i1, idxs[A[i0]+A[i1]]
+	index := make(map[int]int, size)
+	for k := 0; k < size; k++ {
+		index[A[k]] = k
+		for j := 0; j < k; j++ {
+			dp[j][k] = 2
+			i, ok := index[A[k]-A[j]]
+			if ok && A[k]-A[j] < A[j] {
+				dp[j][k] = dp[i][j] + 1
 			}
+			res = max(res, dp[j][k])
 		}
 	}
 
+	if res <= 2 {
+		return 0
+	}
 	return res
 }
 
