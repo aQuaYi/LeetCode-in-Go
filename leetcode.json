@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 846,
-	"Updated": "2018-08-06T20:34:00.512934503+08:00",
+	"Updated": "2018-08-06T23:01:39.949100975+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 180,
 			"Total": 192
 		},
 		"Medium": {
-			"Solved": 324,
+			"Solved": 325,
 			"Total": 329
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 140
 		},
 		"Total": {
-			"Solved": 638,
+			"Solved": 639,
 			"Total": 661
 		}
 	},
@@ -8461,7 +8461,7 @@
 			"ID": 703,
 			"Title": "Kth Largest Element in a Stream",
 			"TitleSlug": "kth-largest-element-in-a-stream",
-			"PassRate": "27%",
+			"PassRate": "26%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -8497,7 +8497,7 @@
 			"ID": 706,
 			"Title": "Design HashMap",
 			"TitleSlug": "design-hashmap",
-			"PassRate": "32%",
+			"PassRate": "33%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -9445,7 +9445,7 @@
 			"ID": 785,
 			"Title": "Is Graph Bipartite?",
 			"TitleSlug": "is-graph-bipartite",
-			"PassRate": "38%",
+			"PassRate": "39%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9973,7 +9973,7 @@
 			"ID": 829,
 			"Title": "Consecutive Numbers Sum",
 			"TitleSlug": "consecutive-numbers-sum",
-			"PassRate": "27%",
+			"PassRate": "26%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10225,7 +10225,7 @@
 			"ID": 850,
 			"Title": "Rectangle Area II",
 			"TitleSlug": "rectangle-area-ii",
-			"PassRate": "42%",
+			"PassRate": "41%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10357,7 +10357,7 @@
 			"ID": 861,
 			"Title": "Score After Flipping Matrix",
 			"TitleSlug": "score-after-flipping-matrix",
-			"PassRate": "68%",
+			"PassRate": "69%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10503,7 +10503,7 @@
 			"TitleSlug": "length-of-longest-fibonacci-subsequence",
 			"PassRate": "41%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
