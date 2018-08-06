@@ -7,36 +7,35 @@ func lenLongestFibSubseq(a []int) int {
 	res := 0
 
 	for k := 2; k < size; k++ {
-		i, j := 0, k-1
-		for i < j {
-			s := a[i] + a[j]
+		l, r := 0, k-1
+		for l < r {
+			s := a[l] + a[r]
 
 			if s < a[k] {
-				i++
+				l++
 				continue
 			}
 
 			if a[k] < s {
-				j--
+				r--
 				continue
 			}
 
+			//
 			count := 3
-			x0, x1 := a[j], a[k]
-			idx := k
+			i, j := r, k
 			for {
-				x2 := x0 + x1
-				idx += sort.SearchInts(a[idx:], x2)
-				if idx == size || a[idx] != x2 {
+				next := a[i] + a[j]
+				i, j = j, j+sort.SearchInts(a[j:], next)
+				if j == size || a[j] != next {
 					break
 				}
 				count++
-				x0, x1 = x1, x2
 			}
 
 			res = max(res, count)
-			i++
-			j--
+			l++
+			r--
 		}
 	}
 
