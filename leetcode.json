@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 843,
-	"Updated": "2018-08-07T19:19:57.66016619+08:00",
+	"Updated": "2018-08-07T20:42:13.646042676+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 180,
@@ -12,11 +12,11 @@
 			"Total": 329
 		},
 		"Hard": {
-			"Solved": 134,
+			"Solved": 135,
 			"Total": 140
 		},
 		"Total": {
-			"Solved": 639,
+			"Solved": 640,
 			"Total": 661
 		}
 	},
@@ -8377,7 +8377,7 @@
 			"ID": 696,
 			"Title": "Count Binary Substrings",
 			"TitleSlug": "count-binary-substrings",
-			"PassRate": "51%",
+			"PassRate": "50%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9445,7 +9445,7 @@
 			"ID": 785,
 			"Title": "Is Graph Bipartite?",
 			"TitleSlug": "is-graph-bipartite",
-			"PassRate": "39%",
+			"PassRate": "38%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10371,9 +10371,9 @@
 			"TitleSlug": "shortest-subarray-with-sum-at-least-k",
 			"PassRate": "16%",
 			"Difficulty": "Hard",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
