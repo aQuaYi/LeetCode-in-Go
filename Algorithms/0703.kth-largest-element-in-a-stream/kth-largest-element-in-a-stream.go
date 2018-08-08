@@ -8,8 +8,8 @@ import (
 // obj := Constructor(k, nums);
 // param_1 := obj.Add(val);
 type KthLargest struct {
-	k int
-	h intHeap
+	k    int
+	heap intHeap
 }
 
 // Constructor 创建 KthLargest
@@ -22,20 +22,20 @@ func Constructor(k int, nums []int) KthLargest {
 	}
 
 	return KthLargest{
-		k: k,
-		h: h,
+		k:    k,
+		heap: h,
 	}
 }
 
 // Add 负责添加元素
-func (k *KthLargest) Add(val int) int {
-	heap.Push(&k.h, val)
+func (kl *KthLargest) Add(val int) int {
+	heap.Push(&kl.heap, val)
 
-	if len(k.h) > k.k {
-		heap.Pop(&k.h)
+	if len(kl.heap) > kl.k {
+		heap.Pop(&kl.heap)
 	}
 
-	return k.h[0]
+	return kl.heap[0]
 }
 
 type intHeap []int
