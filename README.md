@@ -10,7 +10,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|182|325|135|642|
+|**Accepted**|183|325|135|643|
 |**Total**|192|329|140|661|
 
 ## 题解
@@ -520,7 +520,7 @@
 |705| * [Design HashSet](https://leetcode.com/problems/design-hashset/)|25%|Easy||
 |706| * [Design HashMap](https://leetcode.com/problems/design-hashmap/)|33%|Easy||
 |707| * [Design Linked List](https://leetcode.com/problems/design-linked-list/)|12%|Easy||
-|709| * [To Lower Case](https://leetcode.com/problems/to-lower-case/)|75%|Easy||
+|709|[To Lower Case](./Algorithms/0709.to-lower-case)|75%|Easy||
 |710|[Random Pick with Blacklist](./Algorithms/0710.random-pick-with-blacklist)|29%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |712|[Minimum ASCII Delete Sum for Two Strings](./Algorithms/0712.minimum-ascii-delete-sum-for-two-strings)|51%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |713|[Subarray Product Less Than K](./Algorithms/0713.subarray-product-less-than-k)|33%|Medium|[❤](https://leetcode.com/list/oussv5j)|
