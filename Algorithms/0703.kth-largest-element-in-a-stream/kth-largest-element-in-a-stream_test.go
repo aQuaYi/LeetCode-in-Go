@@ -22,6 +22,7 @@ func Test_kthLargest(t *testing.T) {
 		ast.Equal(expected, actual, "kl.Add(%d) != %d\n", adds[i], expected)
 	}
 }
+
 func Test_kthLargest_2(t *testing.T) {
 	ast := assert.New(t)
 	k := 1
@@ -30,7 +31,7 @@ func Test_kthLargest_2(t *testing.T) {
 	kl := Constructor(k, nums)
 
 	adds := []int{-3, -2, -4, 0, 4}
-	rets := []int{-3, -2, -4, 0, 4}
+	rets := []int{-3, -2, -2, 0, 4}
 
 	for i := range adds {
 		expected := rets[i]
