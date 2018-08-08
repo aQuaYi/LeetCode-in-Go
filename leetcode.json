@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
-	"Ranking": 843,
-	"Updated": "2018-08-08T16:50:34.590002799+08:00",
+	"Ranking": 839,
+	"Updated": "2018-08-08T19:44:38.714044342+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 180,
+			"Solved": 181,
 			"Total": 192
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 140
 		},
 		"Total": {
-			"Solved": 640,
+			"Solved": 641,
 			"Total": 661
 		}
 	},
@@ -5173,7 +5173,7 @@
 			"ID": 429,
 			"Title": "N-ary Tree Level Order Traversal",
 			"TitleSlug": "n-ary-tree-level-order-traversal",
-			"PassRate": "48%",
+			"PassRate": "49%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -8463,7 +8463,7 @@
 			"TitleSlug": "kth-largest-element-in-a-stream",
 			"PassRate": "27%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
