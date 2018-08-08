@@ -10,7 +10,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|181|325|135|641|
+|**Accepted**|182|325|135|642|
 |**Total**|192|329|140|661|
 
 ## 题解
@@ -516,7 +516,7 @@
 |700|[Search in a Binary Search Tree](./Algorithms/0700.search-in-a-binary-search-tree)|50%|Easy||
 |701|[Insert into a Binary Search Tree](./Algorithms/0701.insert-into-a-binary-search-tree)|46%|Medium||
 |703|[Kth Largest Element in a Stream](./Algorithms/0703.kth-largest-element-in-a-stream)|27%|Easy||
-|704| * [Binary Search](https://leetcode.com/problems/binary-search/)|24%|Easy||
+|704|[Binary Search](./Algorithms/0704.binary-search)|24%|Easy||
 |705| * [Design HashSet](https://leetcode.com/problems/design-hashset/)|25%|Easy||
 |706| * [Design HashMap](https://leetcode.com/problems/design-hashmap/)|33%|Easy||
 |707| * [Design Linked List](https://leetcode.com/problems/design-linked-list/)|12%|Easy||
