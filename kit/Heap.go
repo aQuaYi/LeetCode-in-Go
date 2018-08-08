@@ -14,6 +14,7 @@ func (h intHeap) Less(i, j int) bool {
 func (h intHeap) Swap(i, j int) {
 	h[i], h[j] = h[j], h[i]
 }
+
 func (h *intHeap) Push(x interface{}) {
 	// Push 使用 *h，是因为
 	// Push 增加了 h 的长度
