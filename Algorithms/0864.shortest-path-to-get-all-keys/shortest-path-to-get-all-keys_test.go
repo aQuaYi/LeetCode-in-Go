@@ -14,13 +14,13 @@ var tcs = []struct {
 }{
 
 	{
-		[]string{"@abcdeABCDEFf"},
-		-1,
+		[]string{"@...a", ".###A", "b.BCc"},
+		10,
 	},
 
 	{
-		[]string{"@...a", ".###A", "b.BCc"},
-		10,
+		[]string{"@abcdeABCDEFf"},
+		-1,
 	},
 
 	{

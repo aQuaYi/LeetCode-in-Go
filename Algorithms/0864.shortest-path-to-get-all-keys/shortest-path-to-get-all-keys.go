@@ -59,6 +59,7 @@ func shortestPathAllKeys(grid []string) int {
 				}
 			}
 		}
+
 		queue = queue[size:]
 	}
 
