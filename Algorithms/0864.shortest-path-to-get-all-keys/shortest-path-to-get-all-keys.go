@@ -11,7 +11,10 @@ func shortestPathAllKeys(grid []string) int {
 	// 所以，30×30×64 的数组，就可以记录所有的状态。
 	// 像这样知道范围的矩阵，尽量使用数组，可以快很多
 	hasSeen := [30][30][64]bool{}
-	queue := make([][3]int, 1, m*n*4)
+	// 同理，由于 x, y, keys 的范围都很小
+	// 可以用同一个 int 数字的不同的 bit 位段，来分别记录他们的值
+	// 具体的记录方式，参考下方的 encode 和 decode 函数
+	queue := make([]int, 1, m*n*4)
 
 	// 获取起点位置，和所有 key 的信息
 	allKeys := 0
@@ -20,7 +23,7 @@ func shortestPathAllKeys(grid []string) int {
 			b := grid[i][j]
 			if b == '@' {
 				hasSeen[i][j][0] = true
-				queue[0] = [3]int{i, j, 0}
+				queue[0] = encode(i, j, 0)
 			} else if b >= 'a' {
 				allKeys |= 1 << uint(b-'a')
 			}
@@ -33,7 +36,7 @@ func shortestPathAllKeys(grid []string) int {
 		size := len(queue)
 
 		for i := 0; i < size; i++ {
-			x, y, keys := queue[i][0], queue[i][1], queue[i][2]
+			x, y, keys := decode(queue[i])
 
 			if keys == allKeys {
 				return steps
@@ -64,7 +67,7 @@ func shortestPathAllKeys(grid []string) int {
 					continue
 				}
 
-				queue = append(queue, [3]int{nx, ny, nKeys})
+				queue = append(queue, encode(nx, ny, nKeys))
 				hasSeen[nx][ny][nKeys] = true
 			}
 		}
@@ -74,4 +77,20 @@ func shortestPathAllKeys(grid []string) int {
 	}
 
 	return -1
+}
+
+const (
+	xBits = 16
+	yBits = 8
+)
+
+func encode(x, y, keys int) int {
+	return x<<xBits | y<<yBits | keys
+}
+
+func decode(state int) (x, y, keys int) {
+	x = state >> xBits
+	y = state >> yBits & 0xFF
+	keys = state & 0xFF
+	return
 }
