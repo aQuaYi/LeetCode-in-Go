@@ -1,5 +1,9 @@
 package problem0864
 
+import (
+	"sort"
+)
+
 var dx = [4]int{1, -1, 0, 0}
 var dy = [4]int{0, 0, 1, -1}
 
@@ -61,14 +65,43 @@ func shortestPathAllKeys(grid []string) int {
 		}
 
 		queue = queue[size:]
+
+		if len(queue) == 0 {
+			break
+		}
+
+		tmp := make([][3]int, 0, len(queue))
+		length := len(queue)
+
+		sort.Slice(queue, func(i int, j int) bool {
+			if queue[i][1] == queue[j][1] {
+				return queue[i][2] < queue[j][2]
+			}
+			return queue[i][1] < queue[j][1]
+		})
+
+		k := 0
+		m2, x2, y2 := queue[0][0], queue[0][1], queue[0][2]
+		for ; k < length; k++ {
+			if queue[k][1] == x2 && queue[k][2] == y2 {
+				m2 |= queue[k][0]
+			} else {
+				tmp = append(tmp, [3]int{m2, x2, y2})
+				m2 = queue[k][0]
+				x2 = queue[k][1]
+				y2 = queue[k][2]
+			}
+		}
+		tmp = append(tmp, [3]int{m2, x2, y2})
+		queue = tmp
 	}
 
 	return -1
 }
 
-func max(a, b byte) byte {
-	if a > b {
-		return a
-	}
-	return b
-}
+// func max(a, b byte) byte {
+// 	if a > b {
+// 		return a
+// 	}
+// 	return b
+// }
