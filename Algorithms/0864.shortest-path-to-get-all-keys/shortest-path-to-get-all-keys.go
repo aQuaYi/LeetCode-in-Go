@@ -3,81 +3,75 @@ package problem0864
 var dx = [4]int{1, -1, 0, 0}
 var dy = [4]int{0, 0, 1, -1}
 
-type state struct {
-	x, y, mask int
-}
-
 func shortestPathAllKeys(grid []string) int {
 	m, n := len(grid), len(grid[0])
-	startX, startY := m, n
-	start := 1 << 6
-	getAllKeys := start
+
+	// 按照题目给出的条件，在 30*30 的矩阵中，最多 6 把 key，
+	// 使用 6 bit 的整数，就可以记录全部 2^6 = 64 种拥有钥匙的状态
+	// 所以，30×30×64 的数组，就可以记录所有的状态。
+	// 像这样知道范围的矩阵，尽量使用数组，可以快很多
+	hasSeen := [30][30][64]bool{}
+	queue := make([][3]int, 1, m*n*4)
+
+	// 获取起点位置，和所有 key 的信息
+	allKeys := 0
 	for i := 0; i < m; i++ {
 		for j := 0; j < n; j++ {
-			r := grid[i][j]
-			if r == '@' {
-				startX, startY = i, j
-			} else if r >= 'a' {
-				getAllKeys |= 1 << uint(r-'a')
+			b := grid[i][j]
+			if b == '@' {
+				hasSeen[i][j][0] = true
+				queue[0] = [3]int{i, j, 0}
+			} else if b >= 'a' {
+				allKeys |= 1 << uint(b-'a')
 			}
 		}
 	}
 
-	isVisited := make(map[state]bool, m*n*2)
-
-	queue := make([][3]int, 1, m*n)
-	queue[0] = [3]int{start, startX, startY}
 	steps := 0
 
 	for len(queue) > 0 {
-		steps++
 		size := len(queue)
+
 		for i := 0; i < size; i++ {
-			qi := queue[i]
-			mk, x0, y0 := qi[0], qi[1], qi[2]
+			x, y, keys := queue[i][0], queue[i][1], queue[i][2]
+
+			if keys == allKeys {
+				return steps
+			}
+
 			for j := 0; j < 4; j++ {
-				x, y := x0+dx[j], y0+dy[j]
-				if 0 <= x && x < m &&
-					0 <= y && y < n {
+				nx, ny := x+dx[j], y+dy[j]
 
-					// 遇见墙了，或者没有钥匙开锁
-					bt := grid[x][y]
-					if bt == '#' ||
-						'A' <= bt && bt <= 'F' &&
-							mk&(1<<uint(bt-'A')) == 0 {
-						continue
-					}
-
-					newmk := mk
-					if 'a' <= bt {
-						newmk = mk | 1<<uint(bt-'a')
-					}
-
-					if newmk == getAllKeys {
-						return steps
-					}
-
-					s := state{
-						x:    x,
-						y:    y,
-						mask: newmk,
-					}
-					if !isVisited[s] {
-						queue = append(queue, [3]int{newmk, x, y})
-					}
+				inRange := 0 <= nx && nx < m && 0 <= ny && ny < n
+				if !inRange {
+					continue
 				}
+
+				b := grid[nx][ny]
+				if b == '#' ||
+					'A' <= b && b <= 'F' && keys&(1<<uint(b-'A')) == 0 {
+					// 遇见墙了，或者，没有钥匙开锁
+					continue
+				}
+
+				nKeys := keys
+				if b >= 'a' {
+					// 记录刚刚遇到的钥匙
+					nKeys |= 1 << uint(b-'a')
+				}
+
+				if hasSeen[nx][ny][nKeys] {
+					continue
+				}
+
+				queue = append(queue, [3]int{nx, ny, nKeys})
+				hasSeen[nx][ny][nKeys] = true
 			}
 		}
 
 		queue = queue[size:]
+		steps++
 	}
 
 	return -1
 }
-
-// func max(a, b byte) byte {
-// 	if a > b {
-// 		return a
-// 	}
-// 	return b
-// }
