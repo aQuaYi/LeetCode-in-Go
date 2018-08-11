@@ -2,68 +2,69 @@ package problem0871
 
 import "container/heap"
 
+// 把题目换一种说法，就好理解了。
+// 汽车在开往目的地的过程中，
+// 会在沿路的加油站，都买上一箱汽油，
+// 每个加油站的汽油大小还不一样。
+// 汽车每次没油的时候，就在买过的汽油中，挑最大的一箱加上。
+// 问，汽车达到目的地的时候，最少需要加几次油？
+
 func minRefuelStops(target int, startFuel int, stations [][]int) int {
 	size := len(stations)
+	// gases 内放入一箱体积为 0 的汽油，是为了让 for 循环跑起来
+	gases := make(intHeap, 1, size+1)
+	miles := startFuel
+	stops := 0
+	i := 0
 
-	pq := make(PQ, 0, size*500)
-	pq = append(pq, station{
-		index: -1,
-		miles: startFuel,
-		stops: 0,
-	})
-	heap.Init(&pq)
-
-	for len(pq) > 0 {
-		s := heap.Pop(&pq).(station)
-		if s.miles >= target {
-			return s.stops
+	for len(gases) > 0 {
+		if miles >= target {
+			// 到达了目的地
+			return stops
 		}
 
-		for i := s.index + 1; i < size && stations[i][0] <= s.miles; i++ {
-			heap.Push(&pq, station{
-				index: i,
-				miles: s.miles + stations[i][1],
-				stops: s.stops + 1,
-			})
+		// 路过加油站的时候，买汽油
+		for i < size && stations[i][0] <= miles {
+			heap.Push(&gases, stations[i][1])
+			i++
 		}
+
+		// 在一堆汽油中，挑一箱最大的
+		maxGas := heap.Pop(&gases).(int)
+		stops++
+		// 加上油，继续跑
+		miles += maxGas
 	}
 
 	return -1
 }
 
-// station 是 priorityQueue 中的元素
-type station struct {
-	stops, index, miles int
+// intHeap 实现了 heap 的接口
+type intHeap []int
+
+func (h intHeap) Len() int {
+	return len(h)
 }
 
-// PQ implements heap.Interface and holds entries.
-type PQ []station
-
-func (pq PQ) Len() int { return len(pq) }
-
-func (pq PQ) Less(i, j int) bool {
-	if pq[i].stops == pq[j].stops {
-		// if pq[i].miles == pq[j].miles {
-		// return pq[i].index > pq[j].index
-		// }
-		return pq[i].miles > pq[j].miles
-	}
-	return pq[i].stops < pq[j].stops
+func (h intHeap) Less(i, j int) bool {
+	// 返回堆中的最大值
+	return h[i] > h[j]
 }
 
-func (pq PQ) Swap(i, j int) {
-	pq[i], pq[j] = pq[j], pq[i]
+func (h intHeap) Swap(i, j int) {
+	h[i], h[j] = h[j], h[i]
 }
 
-// Push 往 pq 中放 entry
-func (pq *PQ) Push(x interface{}) {
-	temp := x.(station)
-	*pq = append(*pq, temp)
+func (h *intHeap) Push(x interface{}) {
+	// Push 使用 *h，是因为
+	// Push 增加了 h 的长度
+	*h = append(*h, x.(int))
 }
 
-// Pop 从 pq 中取出最优先的 entry
-func (pq *PQ) Pop() interface{} {
-	temp := (*pq)[len(*pq)-1]
-	*pq = (*pq)[0 : len(*pq)-1]
-	return temp
+func (h *intHeap) Pop() interface{} {
+	// Pop 使用 *h ，是因为
+	// Pop 减短了 h 的长度
+	res := (*h)[len(*h)-1]
+	*h = (*h)[:len(*h)-1]
+	return res
 }
