@@ -6,7 +6,7 @@ import "container/heap"
 // 汽车在开往目的地的过程中，
 // 会在沿路的加油站，都买上一箱汽油，
 // 每个加油站的汽油大小还不一样。
-// 汽车每次没油的时候，就在买过的汽油中，挑最大的一箱加上。
+// 汽车每次没油的时候，就在买过的汽油中，挑一箱加上。
 // 问，汽车达到目的地的时候，最少需要加几次油？
 
 func minRefuelStops(target int, startFuel int, stations [][]int) int {
