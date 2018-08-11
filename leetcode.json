@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 826,
-	"Updated": "2018-08-11T11:31:34.162154298+08:00",
+	"Updated": "2018-08-11T14:08:29.832226422+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 183,
@@ -12,11 +12,11 @@
 			"Total": 329
 		},
 		"Hard": {
-			"Solved": 136,
+			"Solved": 137,
 			"Total": 140
 		},
 		"Total": {
-			"Solved": 644,
+			"Solved": 645,
 			"Total": 661
 		}
 	},
@@ -5197,7 +5197,7 @@
 			"ID": 431,
 			"Title": "Encode N-ary Tree to Binary Tree",
 			"TitleSlug": "encode-n-ary-tree-to-binary-tree",
-			"PassRate": "36%",
+			"PassRate": "37%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -8809,7 +8809,7 @@
 			"ID": 732,
 			"Title": "My Calendar III",
 			"TitleSlug": "my-calendar-iii",
-			"PassRate": "49%",
+			"PassRate": "50%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10479,7 +10479,7 @@
 			"TitleSlug": "minimum-number-of-refueling-stops",
 			"PassRate": "25%",
 			"Difficulty": "Hard",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,

@@ -10,7 +10,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|183|325|136|644|
+|**Accepted**|183|325|137|645|
 |**Total**|192|329|140|661|
 
 ## 题解
@@ -311,13 +311,13 @@
 |400|[Nth Digit](./Algorithms/0400.nth-digit)|29%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |401|[Binary Watch](./Algorithms/0401.binary-watch)|44%|Easy||
 |402|[Remove K Digits](./Algorithms/0402.remove-k-digits)|25%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|403|[Frog Jump](./Algorithms/0403.frog-jump)|32%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|403|[Frog Jump](./Algorithms/0403.frog-jump)|33%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |404|[Sum of Left Leaves](./Algorithms/0404.sum-of-left-leaves)|47%|Easy||
 |405|[Convert a Number to Hexadecimal](./Algorithms/0405.convert-a-number-to-hexadecimal)|41%|Easy||
 |406|[Queue Reconstruction by Height](./Algorithms/0406.queue-reconstruction-by-height)|56%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |407|[Trapping Rain Water II](./Algorithms/0407.trapping-rain-water-ii)|37%|Hard||
 |409|[Longest Palindrome](./Algorithms/0409.longest-palindrome)|46%|Easy||
-|410|[Split Array Largest Sum](./Algorithms/0410.split-array-largest-sum)|40%|Hard||
+|410|[Split Array Largest Sum](./Algorithms/0410.split-array-largest-sum)|39%|Hard||
 |412|[Fizz Buzz](./Algorithms/0412.fizz-buzz)|57%|Easy||
 |413|[Arithmetic Slices](./Algorithms/0413.arithmetic-slices)|54%|Medium||
 |414|[Third Maximum Number](./Algorithms/0414.third-maximum-number)|28%|Easy||
@@ -496,7 +496,7 @@
 |676|[Implement Magic Dictionary](./Algorithms/0676.implement-magic-dictionary)|49%|Medium||
 |677|[Map Sum Pairs](./Algorithms/0677.map-sum-pairs)|50%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |678|[Valid Parenthesis String](./Algorithms/0678.valid-parenthesis-string)|29%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|679|[24 Game](./Algorithms/0679.24-game)|38%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|679|[24 Game](./Algorithms/0679.24-game)|39%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |680|[Valid Palindrome II](./Algorithms/0680.valid-palindrome-ii)|32%|Easy||
 |682|[Baseball Game](./Algorithms/0682.baseball-game)|58%|Easy||
 |684|[Redundant Connection](./Algorithms/0684.redundant-connection)|45%|Medium||
@@ -519,7 +519,7 @@
 |704|[Binary Search](./Algorithms/0704.binary-search)|25%|Easy||
 |705| * [Design HashSet](https://leetcode.com/problems/design-hashset/)|26%|Easy||
 |706| * [Design HashMap](https://leetcode.com/problems/design-hashmap/)|35%|Easy||
-|707| * [Design Linked List](https://leetcode.com/problems/design-linked-list/)|12%|Easy||
+|707| * [Design Linked List](https://leetcode.com/problems/design-linked-list/)|13%|Easy||
 |709|[To Lower Case](./Algorithms/0709.to-lower-case)|75%|Easy||
 |710|[Random Pick with Blacklist](./Algorithms/0710.random-pick-with-blacklist)|29%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |712|[Minimum ASCII Delete Sum for Two Strings](./Algorithms/0712.minimum-ascii-delete-sum-for-two-strings)|51%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -539,7 +539,7 @@
 |729|[My Calendar I](./Algorithms/0729.my-calendar-i)|43%|Medium||
 |730|[Count Different Palindromic Subsequences](./Algorithms/0730.count-different-palindromic-subsequences)|35%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |731|[My Calendar II](./Algorithms/0731.my-calendar-ii)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|732|[My Calendar III](./Algorithms/0732.my-calendar-iii)|49%|Hard||
+|732|[My Calendar III](./Algorithms/0732.my-calendar-iii)|50%|Hard||
 |733|[Flood Fill](./Algorithms/0733.flood-fill)|47%|Easy||
 |735|[Asteroid Collision](./Algorithms/0735.asteroid-collision)|37%|Medium||
 |736|[Parse Lisp Expression](./Algorithms/0736.parse-lisp-expression)|41%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -600,7 +600,7 @@
 |803|[Bricks Falling When Hit](./Algorithms/0803.bricks-falling-when-hit)|23%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |804|[Unique Morse Code Words](./Algorithms/0804.unique-morse-code-words)|71%|Easy||
 |805|[Split Array With Same Average](./Algorithms/0805.split-array-with-same-average)|21%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|806|[Number of Lines To Write String](./Algorithms/0806.number-of-lines-to-write-string)|61%|Easy||
+|806|[Number of Lines To Write String](./Algorithms/0806.number-of-lines-to-write-string)|62%|Easy||
 |807|[Max Increase to Keep City Skyline](./Algorithms/0807.max-increase-to-keep-city-skyline)|79%|Medium||
 |808|[Soup Servings](./Algorithms/0808.soup-servings)|33%|Medium||
 |809|[Expressive Words](./Algorithms/0809.expressive-words)|37%|Medium||
@@ -665,7 +665,7 @@
 |868| * [Binary Gap](https://leetcode.com/problems/binary-gap/)|60%|Easy||
 |869|[Reordered Power of 2](./Algorithms/0869.reordered-power-of-2)|47%|Medium||
 |870|[Advantage Shuffle](./Algorithms/0870.advantage-shuffle)|39%|Medium||
-|871| * [Minimum Number of Refueling Stops](https://leetcode.com/problems/minimum-number-of-refueling-stops/)|25%|Hard||
+|871|[Minimum Number of Refueling Stops](./Algorithms/0871.minimum-number-of-refueling-stops)|25%|Hard||
 |872| * [Leaf-Similar Trees](https://leetcode.com/problems/leaf-similar-trees/)|62%|Easy||
 |873|[Length of Longest Fibonacci Subsequence](./Algorithms/0873.length-of-longest-fibonacci-subsequence)|41%|Medium||
 |874| * [Walking Robot Simulation](https://leetcode.com/problems/walking-robot-simulation/)|27%|Easy||
@@ -676,7 +676,7 @@
 |879| * [Profitable Schemes](https://leetcode.com/problems/profitable-schemes/)|30%|Hard||
 |884| * [Decoded String at Index](https://leetcode.com/problems/decoded-string-at-index/)|21%|Medium||
 |885| * [Boats to Save People](https://leetcode.com/problems/boats-to-save-people/)|37%|Medium||
-|886| * [Reachable Nodes In Subdivided Graph](https://leetcode.com/problems/reachable-nodes-in-subdivided-graph/)|34%|Hard||
+|886| * [Reachable Nodes In Subdivided Graph](https://leetcode.com/problems/reachable-nodes-in-subdivided-graph/)|33%|Hard||
 |887| * [Projection Area of 3D Shapes](https://leetcode.com/problems/projection-area-of-3d-shapes/)|69%|Easy||
 
 以下免费的算法题，暂时不能使用 Go 解答
