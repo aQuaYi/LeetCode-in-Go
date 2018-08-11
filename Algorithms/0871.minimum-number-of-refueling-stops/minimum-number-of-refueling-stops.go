@@ -11,13 +11,12 @@ import "container/heap"
 
 func minRefuelStops(target int, startFuel int, stations [][]int) int {
 	size := len(stations)
-	// gases 内放入一箱体积为 0 的汽油，是为了让 for 循环跑起来
-	gases := make(intHeap, 1, size+1)
+	gases := make(intHeap, 0, size)
 	miles := startFuel
 	stops := 0
 	i := 0
 
-	for len(gases) > 0 {
+	for {
 		if miles >= target {
 			// 到达了目的地
 			return stops
@@ -29,11 +28,14 @@ func minRefuelStops(target int, startFuel int, stations [][]int) int {
 			i++
 		}
 
-		// 在一堆汽油中，挑一箱最大的
+		if len(gases) == 0 {
+			break
+		}
+
 		maxGas := heap.Pop(&gases).(int)
 		stops++
-		// 加上油，继续跑
 		miles += maxGas
+
 	}
 
 	return -1
