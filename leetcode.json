@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 813,
-	"Updated": "2018-08-12T14:08:23.776665564+08:00",
+	"Updated": "2018-08-12T14:37:52.4716116+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 184,
+			"Solved": 185,
 			"Total": 193
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 141
 		},
 		"Total": {
-			"Solved": 646,
+			"Solved": 647,
 			"Total": 665
 		}
 	},
@@ -5137,7 +5137,7 @@
 			"ID": 426,
 			"Title": "Convert Binary Search Tree to Sorted Doubly Linked List",
 			"TitleSlug": "convert-binary-search-tree-to-sorted-doubly-linked-list",
-			"PassRate": "24%",
+			"PassRate": "25%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -8499,7 +8499,7 @@
 			"TitleSlug": "design-hashmap",
 			"PassRate": "35%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -8797,7 +8797,7 @@
 			"ID": 731,
 			"Title": "My Calendar II",
 			"TitleSlug": "my-calendar-ii",
-			"PassRate": "39%",
+			"PassRate": "38%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
