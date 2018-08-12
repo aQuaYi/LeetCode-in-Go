@@ -19,24 +19,23 @@ type node struct {
 
 // Constructor initialize your data structure here. */
 func Constructor() MyLinkedList {
-	return MyLinkedList{}
+	t := &node{}
+	h := &node{next: t}
+	return MyLinkedList{
+		head: h,
+		tail: t,
+	}
 }
 
 // Get the value of the index-th node in the linked list. If the index is invalid, return -1. */
 func (l *MyLinkedList) Get(index int) int {
-	switch {
-	case index < 0 || l.size <= index:
+	if index < 0 || l.size <= index {
 		return -1
-	case index == 0:
-		return l.head.val
-	case index == l.size-1:
-		return l.tail.val
 	}
-
-	i, cur := 0, l.head
+	i, cur := 0, l.head.next
 	for i < index {
-		cur = cur.next
 		i++
+		cur = cur.next
 	}
 	return cur.val
 }
@@ -44,50 +43,40 @@ func (l *MyLinkedList) Get(index int) int {
 // AddAtHead a node of value val before the first element of the linked list. After the insertion, the new node will be the first node of the linked list.
 func (l *MyLinkedList) AddAtHead(val int) {
 	nd := &node{val: val}
-	if l.size == 0 {
-		l.head = nd
-		l.tail = nd
-	} else {
-		nd.next = l.head
-		l.head = nd
-	}
+	nd.next = l.head.next
+	l.head.next = nd
 	l.size++
 }
 
 // AddAtTail append a node of value val to the last element of the linked list.
 func (l *MyLinkedList) AddAtTail(val int) {
-	nd := &node{val: val}
-	if l.size == 0 {
-		l.head = nd
-		l.tail = nd
-	} else {
-		l.tail.next = nd
-		l.tail = nd
-	}
+	l.tail.val = val
+	nd := &node{}
+	l.tail.next = nd
+	l.tail = nd
 	l.size++
 }
 
 // AddAtIndex add a node of value val before the index-th node in the linked list. If index equals to the length of linked list, the node will be appended to the end of linked list. If index is greater than the length, the node will not be inserted.
 func (l *MyLinkedList) AddAtIndex(index int, val int) {
 	switch {
+	case index < 0 || l.size < index:
+		return
 	case index == 0:
 		l.AddAtHead(val)
 		return
 	case index == l.size:
 		l.AddAtTail(val)
 		return
-	case index < 0 || l.size < index:
-		return
+	}
+
+	i, cur := -1, l.head
+	for i+1 < index {
+		i++
+		cur = cur.next
 	}
 
 	nd := &node{val: val}
-
-	i, cur := 0, l.head
-	for i+1 < index {
-		cur = cur.next
-		i++
-	}
-
 	nd.next = cur.next
 	cur.next = nd
 
@@ -96,27 +85,73 @@ func (l *MyLinkedList) AddAtIndex(index int, val int) {
 
 // DeleteAtIndex delete the index-th node in the linked list, if the index is valid.
 func (l *MyLinkedList) DeleteAtIndex(index int) {
-	if index == 0 {
-		if l.size == 1 {
-			l.head, l.tail = nil, nil
-		} else {
-			l.head = l.head.next
-		}
-		l.size--
-		return
-	}
-
 	if index < 0 || l.size <= index {
 		return
 	}
 
-	i, cur := 0, l.head
+	i, cur := -1, l.head
 	for i+1 < index {
-		cur = cur.next
 		i++
+		cur = cur.next
 	}
 
 	cur.next = cur.next.next
 
 	l.size--
 }
+
+// NOTICE: Get 的调用次数，远多余其他方法，以下实现方式更快
+
+// type MyLinkedList struct {
+// 	list []int
+// }
+
+// //
+// // Constructor initialize your data structure here. */
+// func Constructor() MyLinkedList {
+// 	return MyLinkedList{list: make([]int, 0, 1000)}
+// }
+
+// //
+// // Get the value of the index-th node in the linked list. If the index is invalid, return -1. */
+// func (l *MyLinkedList) Get(index int) int {
+// 	if len(l.list) <= index {
+// 		return -1
+// 	}
+// 	return l.list[index]
+// }
+
+// //
+// // AddAtHead a node of value val before the first element of the linked list. After the insertion, the new node will be the first node of the linked list.
+// func (l *MyLinkedList) AddAtHead(val int) {
+// 	l.list = append([]int{val}, l.list...)
+// }
+
+// //
+// // AddAtTail append a node of value val to the last element of the linked list.
+// func (l *MyLinkedList) AddAtTail(val int) {
+// 	l.list = append(l.list, val)
+// }
+
+// //
+// // AddAtIndex add a node of value val before the index-th node in the linked list. If index equals to the length of linked list, the node will be appended to the end of linked list. If index is greater than the length, the node will not be inserted.
+// func (l *MyLinkedList) AddAtIndex(index int, val int) {
+// 	size := len(l.list)
+// 	if index < 0 || size < index {
+// 		return
+// 	}
+// 	l.list = append(l.list, 0)
+// 	copy(l.list[index+1:], l.list[index:])
+// 	l.list[index] = val
+// }
+
+// //
+// // DeleteAtIndex delete the index-th node in the linked list, if the index is valid.
+// func (l *MyLinkedList) DeleteAtIndex(index int) {
+// 	size := len(l.list)
+// 	if index < 0 || size <= index {
+// 		return
+// 	}
+// 	copy(l.list[index:], l.list[index+1:])
+// 	l.list = l.list[:size-1]
+// }
