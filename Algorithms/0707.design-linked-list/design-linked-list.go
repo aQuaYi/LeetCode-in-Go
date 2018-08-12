@@ -21,6 +21,10 @@ type node struct {
 func Constructor() MyLinkedList {
 	t := &node{}
 	h := &node{next: t}
+	// 把 head 和 tail 分别用空 node 单独表示
+	// 会让 AddAtHead 和 AddAtTail 的逻辑非常简单
+	// 可以试着让 size = 0 的时候， head 与 tail 为 nil
+	// 看看程序的结构有多复杂
 	return MyLinkedList{
 		head: h,
 		tail: t,
