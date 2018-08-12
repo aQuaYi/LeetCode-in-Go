@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 813,
-	"Updated": "2018-08-12T17:31:17.70577281+08:00",
+	"Updated": "2018-08-12T17:54:18.105854136+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 187,
+			"Solved": 188,
 			"Total": 193
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 141
 		},
 		"Total": {
-			"Solved": 649,
+			"Solved": 650,
 			"Total": 665
 		}
 	},
@@ -7501,7 +7501,7 @@
 			"ID": 623,
 			"Title": "Add One Row to Tree",
 			"TitleSlug": "add-one-row-to-tree",
-			"PassRate": "45%",
+			"PassRate": "46%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10443,9 +10443,9 @@
 			"TitleSlug": "binary-gap",
 			"PassRate": "60%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
