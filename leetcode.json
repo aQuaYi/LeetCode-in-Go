@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 813,
-	"Updated": "2018-08-12T13:39:26.903405399+08:00",
+	"Updated": "2018-08-12T14:08:23.776665564+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 183,
+			"Solved": 184,
 			"Total": 193
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 141
 		},
 		"Total": {
-			"Solved": 645,
+			"Solved": 646,
 			"Total": 665
 		}
 	},
@@ -8487,7 +8487,7 @@
 			"TitleSlug": "design-hashset",
 			"PassRate": "26%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -10717,7 +10717,7 @@
 			"ID": 891,
 			"Title": "Super Egg Drop",
 			"TitleSlug": "super-egg-drop",
-			"PassRate": "11%",
+			"PassRate": "12%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
