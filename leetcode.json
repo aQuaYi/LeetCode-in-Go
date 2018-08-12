@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 813,
-	"Updated": "2018-08-12T16:19:48.992710618+08:00",
+	"Updated": "2018-08-12T17:23:07.836773738+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 186,
+			"Solved": 187,
 			"Total": 193
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 141
 		},
 		"Total": {
-			"Solved": 648,
+			"Solved": 649,
 			"Total": 665
 		}
 	},
@@ -5185,7 +5185,7 @@
 			"ID": 430,
 			"Title": "Flatten a Multilevel Doubly Linked List",
 			"TitleSlug": "flatten-a-multilevel-doubly-linked-list",
-			"PassRate": "27%",
+			"PassRate": "28%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -7501,7 +7501,7 @@
 			"ID": 623,
 			"Title": "Add One Row to Tree",
 			"TitleSlug": "add-one-row-to-tree",
-			"PassRate": "46%",
+			"PassRate": "45%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10347,7 +10347,7 @@
 			"TitleSlug": "lemonade-change",
 			"PassRate": "49%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -10705,7 +10705,7 @@
 			"ID": 890,
 			"Title": "Possible Bipartition",
 			"TitleSlug": "possible-bipartition",
-			"PassRate": "29%",
+			"PassRate": "30%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -10717,7 +10717,7 @@
 			"ID": 891,
 			"Title": "Super Egg Drop",
 			"TitleSlug": "super-egg-drop",
-			"PassRate": "13%",
+			"PassRate": "14%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,

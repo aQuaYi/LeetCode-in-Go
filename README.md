@@ -10,7 +10,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|186|325|137|648|
+|**Accepted**|187|325|137|649|
 |**Total**|193|331|141|665|
 
 ## 题解
@@ -454,7 +454,7 @@
 |617|[Merge Two Binary Trees](./Algorithms/0617.merge-two-binary-trees)|68%|Easy||
 |621|[Task Scheduler](./Algorithms/0621.task-scheduler)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |622|[Design Circular Queue](./Algorithms/0622.design-circular-queue)|37%|Medium||
-|623|[Add One Row to Tree](./Algorithms/0623.add-one-row-to-tree)|46%|Medium||
+|623|[Add One Row to Tree](./Algorithms/0623.add-one-row-to-tree)|45%|Medium||
 |628|[Maximum Product of Three Numbers](./Algorithms/0628.maximum-product-of-three-numbers)|44%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |629|[K Inverse Pairs Array](./Algorithms/0629.k-inverse-pairs-array)|27%|Hard||
 |630|[Course Schedule III](./Algorithms/0630.course-schedule-iii)|29%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -654,7 +654,7 @@
 |857|[Minimum Cost to Hire K Workers](./Algorithms/0857.minimum-cost-to-hire-k-workers)|39%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |858|[Mirror Reflection](./Algorithms/0858.mirror-reflection)|47%|Medium||
 |859|[Buddy Strings](./Algorithms/0859.buddy-strings)|26%|Easy||
-|860| * [Lemonade Change](https://leetcode.com/problems/lemonade-change/)|49%|Easy||
+|860|[Lemonade Change](./Algorithms/0860.lemonade-change)|49%|Easy||
 |861|[Score After Flipping Matrix](./Algorithms/0861.score-after-flipping-matrix)|68%|Medium||
 |862|[Shortest Subarray with Sum at Least K](./Algorithms/0862.shortest-subarray-with-sum-at-least-k)|16%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |863|[All Nodes Distance K in Binary Tree](./Algorithms/0863.all-nodes-distance-k-in-binary-tree)|40%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -680,8 +680,8 @@
 |887| * [Projection Area of 3D Shapes](https://leetcode.com/problems/projection-area-of-3d-shapes/)|68%|Easy||
 |888| * [Uncommon Words from Two Sentences](https://leetcode.com/problems/uncommon-words-from-two-sentences/) :new: |63%|Easy||
 |889| * [Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iii/) :new: |63%|Medium||
-|890| * [Possible Bipartition](https://leetcode.com/problems/possible-bipartition/) :new: |29%|Medium||
-|891| * [Super Egg Drop](https://leetcode.com/problems/super-egg-drop/) :new: |13%|Hard||
+|890| * [Possible Bipartition](https://leetcode.com/problems/possible-bipartition/) :new: |30%|Medium||
+|891| * [Super Egg Drop](https://leetcode.com/problems/super-egg-drop/) :new: |14%|Hard||
 
 以下免费的算法题，暂时不能使用 Go 解答
 
