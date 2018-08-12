@@ -10712,18 +10712,6 @@
 			"IsFavor": false,
 			"IsNew": true,
 			"HasNoGoOption": false
-		},
-		{
-			"ID": 891,
-			"Title": "Super Egg Drop",
-			"TitleSlug": "super-egg-drop",
-			"PassRate": "14%",
-			"Difficulty": "Hard",
-			"IsAccepted": false,
-			"IsPaid": false,
-			"IsFavor": false,
-			"IsNew": true,
-			"HasNoGoOption": false
 		}
 	]
 }
