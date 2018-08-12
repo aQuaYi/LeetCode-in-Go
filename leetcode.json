@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 813,
-	"Updated": "2018-08-12T16:19:48.992710618+08:00",
+	"Updated": "2018-08-12T16:43:05.726224228+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 186,
@@ -5185,7 +5185,7 @@
 			"ID": 430,
 			"Title": "Flatten a Multilevel Doubly Linked List",
 			"TitleSlug": "flatten-a-multilevel-doubly-linked-list",
-			"PassRate": "27%",
+			"PassRate": "28%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -10717,7 +10717,7 @@
 			"ID": 891,
 			"Title": "Super Egg Drop",
 			"TitleSlug": "super-egg-drop",
-			"PassRate": "13%",
+			"PassRate": "14%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
