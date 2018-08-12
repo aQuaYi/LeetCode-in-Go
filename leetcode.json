@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 778,
-	"Updated": "2018-08-12T18:15:38.868980654+08:00",
+	"Updated": "2018-08-12T18:17:48.790686424+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 188,
@@ -10707,6 +10707,18 @@
 			"TitleSlug": "possible-bipartition",
 			"PassRate": "30%",
 			"Difficulty": "Medium",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 891,
+			"Title": "Super Egg Drop",
+			"TitleSlug": "super-egg-drop",
+			"PassRate": "14%",
+			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
 			"IsFavor": false,
