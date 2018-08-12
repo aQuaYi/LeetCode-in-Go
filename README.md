@@ -1,6 +1,6 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
-[![LeetCode 排名](https://img.shields.io/badge/aQuaYi-813-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/aQuaYi-778-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 
@@ -679,7 +679,7 @@
 |886| * [Reachable Nodes In Subdivided Graph](https://leetcode.com/problems/reachable-nodes-in-subdivided-graph/)|33%|Hard||
 |887| * [Projection Area of 3D Shapes](https://leetcode.com/problems/projection-area-of-3d-shapes/)|68%|Easy||
 |888| * [Uncommon Words from Two Sentences](https://leetcode.com/problems/uncommon-words-from-two-sentences/) :new: |63%|Easy||
-|889| * [Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iii/) :new: |63%|Medium||
+|889| * [Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iii/) :new: |64%|Medium||
 |890| * [Possible Bipartition](https://leetcode.com/problems/possible-bipartition/) :new: |30%|Medium||
 |891| * [Super Egg Drop](https://leetcode.com/problems/super-egg-drop/) :new: |14%|Hard||
 

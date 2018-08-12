@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
-	"Ranking": 813,
-	"Updated": "2018-08-12T17:54:18.105854136+08:00",
+	"Ranking": 778,
+	"Updated": "2018-08-12T18:15:38.868980654+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 188,
@@ -10693,7 +10693,7 @@
 			"ID": 889,
 			"Title": "Spiral Matrix III",
 			"TitleSlug": "spiral-matrix-iii",
-			"PassRate": "63%",
+			"PassRate": "64%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
