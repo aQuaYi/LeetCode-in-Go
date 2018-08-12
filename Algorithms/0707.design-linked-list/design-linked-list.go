@@ -24,12 +24,19 @@ func Constructor() MyLinkedList {
 
 // Get the value of the index-th node in the linked list. If the index is invalid, return -1. */
 func (l *MyLinkedList) Get(index int) int {
-	if l.size <= index {
+	switch {
+	case index < 0 || l.size <= index:
 		return -1
+	case index == 0:
+		return l.head.val
+	case index == l.size-1:
+		return l.tail.val
 	}
+
 	i, cur := 0, l.head
 	for i < index {
 		cur = cur.next
+		i++
 	}
 	return cur.val
 }
@@ -69,7 +76,7 @@ func (l *MyLinkedList) AddAtIndex(index int, val int) {
 	case index == l.size:
 		l.AddAtTail(val)
 		return
-	case l.size < index:
+	case index < 0 || l.size < index:
 		return
 	}
 
@@ -78,6 +85,7 @@ func (l *MyLinkedList) AddAtIndex(index int, val int) {
 	i, cur := 0, l.head
 	for i+1 < index {
 		cur = cur.next
+		i++
 	}
 
 	nd.next = cur.next
@@ -88,13 +96,24 @@ func (l *MyLinkedList) AddAtIndex(index int, val int) {
 
 // DeleteAtIndex delete the index-th node in the linked list, if the index is valid.
 func (l *MyLinkedList) DeleteAtIndex(index int) {
-	if l.size <= index {
+	if index == 0 {
+		if l.size == 1 {
+			l.head, l.tail = nil, nil
+		} else {
+			l.head = l.head.next
+		}
+		l.size--
+		return
+	}
+
+	if index < 0 || l.size <= index {
 		return
 	}
 
 	i, cur := 0, l.head
 	for i+1 < index {
 		cur = cur.next
+		i++
 	}
 
 	cur.next = cur.next.next
