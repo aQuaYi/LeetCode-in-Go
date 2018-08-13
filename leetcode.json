@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 778,
-	"Updated": "2018-08-13T11:06:04.291329095+08:00",
+	"Updated": "2018-08-13T11:56:36.711112982+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 188,
+			"Solved": 189,
 			"Total": 193
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 141
 		},
 		"Total": {
-			"Solved": 650,
+			"Solved": 651,
 			"Total": 665
 		}
 	},
@@ -4561,7 +4561,7 @@
 			"ID": 378,
 			"Title": "Kth Smallest Element in a Sorted Matrix",
 			"TitleSlug": "kth-smallest-element-in-a-sorted-matrix",
-			"PassRate": "46%",
+			"PassRate": "45%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -8437,7 +8437,7 @@
 			"ID": 701,
 			"Title": "Insert into a Binary Search Tree",
 			"TitleSlug": "insert-into-a-binary-search-tree",
-			"PassRate": "48%",
+			"PassRate": "49%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10491,7 +10491,7 @@
 			"TitleSlug": "leaf-similar-trees",
 			"PassRate": "62%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -10693,7 +10693,7 @@
 			"ID": 889,
 			"Title": "Spiral Matrix III",
 			"TitleSlug": "spiral-matrix-iii",
-			"PassRate": "65%",
+			"PassRate": "66%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
