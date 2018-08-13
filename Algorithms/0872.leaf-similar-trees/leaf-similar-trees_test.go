@@ -17,6 +17,12 @@ var tcs = []struct {
 }{
 
 	{
+		[]int{44, 79, 25, kit.NULL, kit.NULL, 112, 7, 74, 49, 2, 122},
+		[]int{38, 86, 120, 49, 54, 2, 122, kit.NULL, kit.NULL, 74, 79},
+		false,
+	},
+
+	{
 		[]int{3, 5, 1, 6, 2, 9, 8, kit.NULL, kit.NULL, 7, 4},
 		[]int{3, 5, 1, 6, 7, 4, 2, kit.NULL, kit.NULL, kit.NULL, kit.NULL, kit.NULL, kit.NULL, 9, 8},
 		true,
