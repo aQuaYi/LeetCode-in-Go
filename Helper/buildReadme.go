@@ -6,7 +6,6 @@ import (
 	"io/ioutil"
 	"log"
 	"os"
-	"os/exec"
 )
 
 func buildReadme() {
@@ -15,15 +14,15 @@ func buildReadme() {
 	lc := newLeetCode()
 	makeReadmeFile(lc)
 
-	// 利用 chrome 打开github.com/aQuaYi/LeetCode-in-Go
-	link := "https://github.com/aQuaYi/LeetCode-in-Go#leetcode-%E7%9A%84-go-%E8%A7%A3%E7%AD%94"
-	cmd := exec.Command("google-chrome", link)
-	_, err := cmd.Output()
-	if err != nil {
-		panic(err.Error())
-	}
-
-	log.Println("正在打开项目主页")
+	// 放在 makefile 中实现这个功能了。
+	// // 利用 chrome 打开github.com/aQuaYi/LeetCode-in-Go
+	// link := "https://github.com/aQuaYi/LeetCode-in-Go#leetcode-%E7%9A%84-go-%E8%A7%A3%E7%AD%94"
+	// cmd := exec.Command("google-chrome", link)
+	// _, err := cmd.Output()
+	// if err != nil {
+	// 	panic(err.Error())
+	// }
+	// log.Println("正在打开项目主页")
 
 	log.Println("完成，重建 README 文档")
 }
