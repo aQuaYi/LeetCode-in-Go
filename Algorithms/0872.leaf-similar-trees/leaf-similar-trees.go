@@ -13,27 +13,22 @@ import (
 type TreeNode = kit.TreeNode
 
 func leafSimilar(root1 *TreeNode, root2 *TreeNode) bool {
-	return equal(leafValues(root1), leafValues(root2))
+	a1 := [100]int{}
+	a2 := [100]int{}
+	search(root1, 0, &a1)
+	search(root2, 0, &a2)
+	return a1 == a2
 }
 
-func leafValues(root *TreeNode) []int {
+func search(root *TreeNode, i int, ap *[100]int) int {
 	if root == nil {
-		return nil
+		return i
 	}
 	if root.Left == nil && root.Right == nil {
-		return []int{root.Val}
+		(*ap)[i] = root.Val
+		return i + 1
 	}
-	return append(leafValues(root.Left), leafValues(root.Right)...)
-}
 
-func equal(a, b []int) bool {
-	if len(a) != len(b) {
-		return false
-	}
-	for i := range a {
-		if a[i] != b[i] {
-			return false
-		}
-	}
-	return true
+	i = search(root.Left, i, ap)
+	return search(root.Right, i, ap)
 }
