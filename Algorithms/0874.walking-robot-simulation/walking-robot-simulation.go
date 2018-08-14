@@ -32,6 +32,7 @@ func robotSim(commands []int, obstacles [][]int) int {
 			res = max(res, x*x+y*y)
 		}
 	}
+
 	return res
 }
 
