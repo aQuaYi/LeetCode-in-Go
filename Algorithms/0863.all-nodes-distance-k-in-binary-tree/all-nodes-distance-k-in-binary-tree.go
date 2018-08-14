@@ -16,20 +16,14 @@ import (
 type TreeNode = kit.TreeNode
 
 func distanceK(root *TreeNode, target *TreeNode, k int) []int {
-	if k == 0 {
-		return []int{target.Val}
-	}
-
 	res := make([]int, 0, 2048)
-	find(root, target, &res, k)
-
+	search(root, target, k, &res)
 	return res
 }
 
-// dist 是 root 与 target 的距离
-// 越往下，距离 target 越远
-func walk(root *TreeNode, res *[]int, dist, k int) {
-	if root == nil {
+// check 检查 root 到 target 的 dist 是否已经是 k 了
+func check(root *TreeNode, dist, k int, res *[]int) {
+	if root == nil || dist > k {
 		return
 	}
 
@@ -38,48 +32,46 @@ func walk(root *TreeNode, res *[]int, dist, k int) {
 		return
 	}
 
-	walk(root.Left, res, dist+1, k)
-	walk(root.Right, res, dist+1, k)
+	check(root.Left, dist+1, k, res)
+	check(root.Right, dist+1, k, res)
 }
 
-// find 返回从 root 到 target 的距离
+// search 返回从 root 到 target 的距离
 // 返回值 -1 表示 target 不在 root 下方
-func find(root, target *TreeNode, res *[]int, k int) int {
-	dist := -1
+func search(root, target *TreeNode, k int, res *[]int) (dist int, isFound bool) {
 	if root == nil {
-		return dist
+		isFound = false
+		return
 	}
 
 	// 1. 检查 root ？= target
 	if root == target {
-		// k = 0 的情况已经被预先处理了
-		walk(root.Left, res, 1, k)
-		walk(root.Right, res, 1, k)
-		return 0
+		dist, isFound = 0, true
+		check(root, dist, k, res)
+		return
 	}
 
-	// 2. 检查 target 是否在 root 左边吗
-	if l := find(root.Left, target, res, k); l >= 0 {
-		// 此时 target 在 root.Left 下方
-		if dist = l + 1; dist == k {
-			// root 到 target 的距离为 k
-			// 所以要把 root.Val 放入 res
+	var childDist int
+
+	// 2. 检查 target 是否在 root 左边
+	childDist, isFound = search(root.Left, target, k, res)
+	if isFound {
+		dist = childDist + 1
+		if dist == k {
 			*res = append(*res, root.Val)
-		} else if dist < k {
-			// root 到 target 的距离不到 k
-			// 但是 root.Right 到 target 的距离为 dist+1
-			// 所以，从 root.Right 以 dist+1 的距离继续向下寻找
-			walk(root.Right, res, dist+1, k)
 		}
-	} else if r := find(root.Right, target, res, k); r >= 0 {
-		// 3. 检查 target 是否在 root 右边
-		// 右边与左边对称
-		if dist = r + 1; dist == k {
-			*res = append(*res, root.Val)
-		} else if dist < k {
-			walk(root.Left, res, dist+1, k)
-		}
+		check(root.Right, dist+1, k, res)
+		return
 	}
 
-	return dist
+	// 3. 检查 target 是否在 root 右边
+	childDist, isFound = search(root.Right, target, k, res)
+	if isFound {
+		dist = childDist + 1
+		if dist == k {
+			*res = append(*res, root.Val)
+		}
+		check(root.Left, dist+1, k, res)
+	}
+	return
 }
