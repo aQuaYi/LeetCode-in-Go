@@ -6,9 +6,10 @@ var dys = []int{1, 0, -1, 0}
 func robotSim(commands []int, obstacles [][]int) int {
 	isBlocked := make(map[int]bool, 10000)
 	for _, o := range obstacles {
-		x, y := o[0], o[1]
-		isBlocked[encode(x, y)] = true
+		i, j := o[0], o[1]
+		isBlocked[encode(i, j)] = true
 	}
+
 	x, y, res := 0, 0, 0
 	index := 0
 
@@ -18,7 +19,7 @@ func robotSim(commands []int, obstacles [][]int) int {
 			index--
 		case c == -1:
 			index++
-		case 1 <= c && c <= 9:
+		default:
 			if index < 0 {
 				index += 1<<63 - 4
 			}
