@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
-	"Ranking": 773,
-	"Updated": "2018-08-14T16:57:30.10425529+08:00",
+	"Ranking": 778,
+	"Updated": "2018-08-14T22:49:01.989285631+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 189,
+			"Solved": 190,
 			"Total": 193
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 141
 		},
 		"Total": {
-			"Solved": 651,
+			"Solved": 652,
 			"Total": 665
 		}
 	},
@@ -5905,7 +5905,7 @@
 			"ID": 490,
 			"Title": "The Maze",
 			"TitleSlug": "the-maze",
-			"PassRate": "44%",
+			"PassRate": "43%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -8437,7 +8437,7 @@
 			"ID": 701,
 			"Title": "Insert into a Binary Search Tree",
 			"TitleSlug": "insert-into-a-binary-search-tree",
-			"PassRate": "49%",
+			"PassRate": "50%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -8497,7 +8497,7 @@
 			"ID": 706,
 			"Title": "Design HashMap",
 			"TitleSlug": "design-hashmap",
-			"PassRate": "35%",
+			"PassRate": "36%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -8905,7 +8905,7 @@
 			"ID": 740,
 			"Title": "Delete and Earn",
 			"TitleSlug": "delete-and-earn",
-			"PassRate": "43%",
+			"PassRate": "44%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9325,7 +9325,7 @@
 			"ID": 775,
 			"Title": "Global and Local Inversions",
 			"TitleSlug": "global-and-local-inversions",
-			"PassRate": "34%",
+			"PassRate": "35%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10515,7 +10515,7 @@
 			"TitleSlug": "walking-robot-simulation",
 			"PassRate": "27%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -10549,7 +10549,7 @@
 			"ID": 877,
 			"Title": "Stone Game",
 			"TitleSlug": "stone-game",
-			"PassRate": "53%",
+			"PassRate": "54%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
