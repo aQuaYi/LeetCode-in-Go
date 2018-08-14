@@ -23,8 +23,7 @@ func robotSim(commands []int, obstacles [][]int) int {
 				index += 1<<63 - 4
 			}
 			index %= 4
-			dx := dxs[index]
-			dy := dys[index]
+			dx, dy := dxs[index], dys[index]
 			for c > 0 && !isBlocked[encode(x+dx, y+dy)] {
 				c--
 				x += dx
