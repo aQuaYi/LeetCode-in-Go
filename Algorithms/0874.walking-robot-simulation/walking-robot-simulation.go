@@ -20,7 +20,7 @@ func robotSim(commands []int, obstacles [][]int) int {
 			index++
 		case 1 <= c && c <= 9:
 			if index < 0 {
-				index += 1 << 62
+				index += 1<<63 - 4
 			}
 			index %= 4
 			dx := dxs[index]
