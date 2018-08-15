@@ -30,11 +30,9 @@ func sumOf(a []int) int {
 
 func canEatAll(k, h int, piles []int) bool {
 	r := 1 / float64(k)
-	for _, p := range piles {
-		h -= int(math.Ceil(float64(p) * r))
-		if h < 0 {
-			return false
-		}
+	for i := 0; i < len(piles) && h >= 0; i++ {
+		p := float64(piles[i])
+		h -= int(math.Ceil(p * r))
 	}
-	return true
+	return h >= 0
 }
