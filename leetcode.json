@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 778,
-	"Updated": "2018-08-15T16:12:05.038679538+08:00",
+	"Updated": "2018-08-15T17:24:38.706826854+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 190,
 			"Total": 193
 		},
 		"Medium": {
-			"Solved": 325,
+			"Solved": 326,
 			"Total": 331
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 141
 		},
 		"Total": {
-			"Solved": 652,
+			"Solved": 653,
 			"Total": 665
 		}
 	},
@@ -4765,7 +4765,7 @@
 			"ID": 395,
 			"Title": "Longest Substring with At Least K Repeating Characters",
 			"TitleSlug": "longest-substring-with-at-least-k-repeating-characters",
-			"PassRate": "36%",
+			"PassRate": "35%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -5761,7 +5761,7 @@
 			"ID": 478,
 			"Title": "Generate Random Point in a Circle",
 			"TitleSlug": "generate-random-point-in-a-circle",
-			"PassRate": "31%",
+			"PassRate": "30%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10527,7 +10527,7 @@
 			"TitleSlug": "koko-eating-bananas",
 			"PassRate": "41%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
