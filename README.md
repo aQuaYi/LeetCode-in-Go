@@ -1,6 +1,6 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
-[![LeetCode 排名](https://img.shields.io/badge/aQuaYi-778-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/aQuaYi-758-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 
@@ -10,7 +10,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|190|326|137|653|
+|**Accepted**|192|326|137|655|
 |**Total**|193|331|141|665|
 
 ## 题解
@@ -55,7 +55,7 @@
 |36|[Valid Sudoku](./Algorithms/0036.valid-sudoku)|38%|Medium||
 |37|[Sudoku Solver](./Algorithms/0037.sudoku-solver)|33%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |38|[Count and Say](./Algorithms/0038.count-and-say)|37%|Easy||
-|39|[Combination Sum](./Algorithms/0039.combination-sum)|42%|Medium||
+|39|[Combination Sum](./Algorithms/0039.combination-sum)|43%|Medium||
 |40|[Combination Sum II](./Algorithms/0040.combination-sum-ii)|37%|Medium||
 |41|[First Missing Positive](./Algorithms/0041.first-missing-positive)|26%|Hard||
 |42|[Trapping Rain Water](./Algorithms/0042.trapping-rain-water)|38%|Hard||
@@ -218,7 +218,7 @@
 |238|[Product of Array Except Self](./Algorithms/0238.product-of-array-except-self)|51%|Medium||
 |239|[Sliding Window Maximum](./Algorithms/0239.sliding-window-maximum)|34%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |240|[Search a 2D Matrix II](./Algorithms/0240.search-a-2d-matrix-ii)|39%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|241|[Different Ways to Add Parentheses](./Algorithms/0241.different-ways-to-add-parentheses)|46%|Medium||
+|241|[Different Ways to Add Parentheses](./Algorithms/0241.different-ways-to-add-parentheses)|47%|Medium||
 |242|[Valid Anagram](./Algorithms/0242.valid-anagram)|48%|Easy||
 |257|[Binary Tree Paths](./Algorithms/0257.binary-tree-paths)|42%|Easy||
 |258|[Add Digits](./Algorithms/0258.add-digits)|52%|Easy||
@@ -303,7 +303,7 @@
 |392|[Is Subsequence](./Algorithms/0392.is-subsequence)|44%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |393|[UTF-8 Validation](./Algorithms/0393.utf-8-validation)|34%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |394|[Decode String](./Algorithms/0394.decode-string)|42%|Medium||
-|395|[Longest Substring with At Least K Repeating Characters](./Algorithms/0395.longest-substring-with-at-least-k-repeating-characters)|35%|Medium||
+|395|[Longest Substring with At Least K Repeating Characters](./Algorithms/0395.longest-substring-with-at-least-k-repeating-characters)|36%|Medium||
 |396|[Rotate Function](./Algorithms/0396.rotate-function)|34%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |397|[Integer Replacement](./Algorithms/0397.integer-replacement)|30%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |398|[Random Pick Index](./Algorithms/0398.random-pick-index)|45%|Medium||
@@ -369,7 +369,7 @@
 |475|[Heaters](./Algorithms/0475.heaters)|29%|Easy||
 |476|[Number Complement](./Algorithms/0476.number-complement)|61%|Easy||
 |477|[Total Hamming Distance](./Algorithms/0477.total-hamming-distance)|47%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|478|[Generate Random Point in a Circle](./Algorithms/0478.generate-random-point-in-a-circle)|30%|Medium||
+|478|[Generate Random Point in a Circle](./Algorithms/0478.generate-random-point-in-a-circle)|31%|Medium||
 |479|[Largest Palindrome Product](./Algorithms/0479.largest-palindrome-product)|26%|Easy||
 |480|[Sliding Window Median](./Algorithms/0480.sliding-window-median)|30%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |481|[Magical String](./Algorithms/0481.magical-string)|45%|Medium||
@@ -462,7 +462,7 @@
 |633|[Sum of Square Numbers](./Algorithms/0633.sum-of-square-numbers)|32%|Easy||
 |636|[Exclusive Time of Functions](./Algorithms/0636.exclusive-time-of-functions)|44%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |637|[Average of Levels in Binary Tree](./Algorithms/0637.average-of-levels-in-binary-tree)|56%|Easy||
-|638|[Shopping Offers](./Algorithms/0638.shopping-offers)|45%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|638|[Shopping Offers](./Algorithms/0638.shopping-offers)|46%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |639|[Decode Ways II](./Algorithms/0639.decode-ways-ii)|24%|Hard||
 |640|[Solve the Equation](./Algorithms/0640.solve-the-equation)|38%|Medium||
 |641|[Design Circular Deque](./Algorithms/0641.design-circular-deque)|49%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -514,10 +514,10 @@
 |698|[Partition to K Equal Sum Subsets](./Algorithms/0698.partition-to-k-equal-sum-subsets)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |699|[Falling Squares](./Algorithms/0699.falling-squares)|38%|Hard||
 |700|[Search in a Binary Search Tree](./Algorithms/0700.search-in-a-binary-search-tree)|53%|Easy||
-|701|[Insert into a Binary Search Tree](./Algorithms/0701.insert-into-a-binary-search-tree)|50%|Medium||
-|703|[Kth Largest Element in a Stream](./Algorithms/0703.kth-largest-element-in-a-stream)|29%|Easy||
+|701|[Insert into a Binary Search Tree](./Algorithms/0701.insert-into-a-binary-search-tree)|51%|Medium||
+|703|[Kth Largest Element in a Stream](./Algorithms/0703.kth-largest-element-in-a-stream)|30%|Easy||
 |704|[Binary Search](./Algorithms/0704.binary-search)|27%|Easy||
-|705|[Design HashSet](./Algorithms/0705.design-hashset)|27%|Easy||
+|705|[Design HashSet](./Algorithms/0705.design-hashset)|28%|Easy||
 |706|[Design HashMap](./Algorithms/0706.design-hashmap)|36%|Easy||
 |707|[Design Linked List](./Algorithms/0707.design-linked-list)|13%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |709|[To Lower Case](./Algorithms/0709.to-lower-case)|74%|Easy||
@@ -554,11 +554,11 @@
 |747|[Largest Number At Least Twice of Others](./Algorithms/0747.largest-number-at-least-twice-of-others)|40%|Easy||
 |748|[Shortest Completing Word](./Algorithms/0748.shortest-completing-word)|52%|Medium||
 |749|[Contain Virus](./Algorithms/0749.contain-virus)|40%|Hard||
-|752|[Open the Lock](./Algorithms/0752.open-the-lock)|40%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|752|[Open the Lock](./Algorithms/0752.open-the-lock)|41%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |753|[Cracking the Safe](./Algorithms/0753.cracking-the-safe)|41%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |754|[Reach a Number](./Algorithms/0754.reach-a-number)|28%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |756|[Pyramid Transition Matrix](./Algorithms/0756.pyramid-transition-matrix)|47%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|757|[Set Intersection Size At Least Two](./Algorithms/0757.set-intersection-size-at-least-two)|34%|Hard||
+|757|[Set Intersection Size At Least Two](./Algorithms/0757.set-intersection-size-at-least-two)|35%|Hard||
 |761|[Special Binary String](./Algorithms/0761.special-binary-string)|44%|Hard||
 |762|[Prime Number of Set Bits in Binary Representation](./Algorithms/0762.prime-number-of-set-bits-in-binary-representation)|56%|Easy||
 |763|[Partition Labels](./Algorithms/0763.partition-labels)|64%|Medium||
@@ -594,7 +594,7 @@
 |796|[Rotate String](./Algorithms/0796.rotate-string)|49%|Easy||
 |797|[All Paths From Source to Target](./Algorithms/0797.all-paths-from-source-to-target)|67%|Medium||
 |798|[Smallest Rotation with Highest Score](./Algorithms/0798.smallest-rotation-with-highest-score)|34%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|799|[Champagne Tower](./Algorithms/0799.champagne-tower)|29%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|799|[Champagne Tower](./Algorithms/0799.champagne-tower)|30%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |801|[Minimum Swaps To Make Sequences Increasing](./Algorithms/0801.minimum-swaps-to-make-sequences-increasing)|31%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |802|[Find Eventual Safe States](./Algorithms/0802.find-eventual-safe-states)|39%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |803|[Bricks Falling When Hit](./Algorithms/0803.bricks-falling-when-hit)|23%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -614,7 +614,7 @@
 |817|[Linked List Components](./Algorithms/0817.linked-list-components)|51%|Medium||
 |818|[Race Car](./Algorithms/0818.race-car)|28%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |819|[Most Common Word](./Algorithms/0819.most-common-word)|48%|Easy||
-|820|[Short Encoding of Words](./Algorithms/0820.short-encoding-of-words)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|820|[Short Encoding of Words](./Algorithms/0820.short-encoding-of-words)|43%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |821|[Shortest Distance to a Character](./Algorithms/0821.shortest-distance-to-a-character)|60%|Easy||
 |822|[Card Flipping Game](./Algorithms/0822.card-flipping-game)|36%|Medium||
 |823|[Binary Trees With Factors](./Algorithms/0823.binary-trees-with-factors)|29%|Medium||
@@ -631,7 +631,7 @@
 |834|[Sum of Distances in Tree](./Algorithms/0834.sum-of-distances-in-tree)|33%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |835|[Image Overlap](./Algorithms/0835.image-overlap)|41%|Medium||
 |836|[Rectangle Overlap](./Algorithms/0836.rectangle-overlap)|42%|Easy||
-|837|[New 21 Game](./Algorithms/0837.new-21-game)|26%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|837|[New 21 Game](./Algorithms/0837.new-21-game)|25%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |838|[Push Dominoes](./Algorithms/0838.push-dominoes)|40%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |839|[Similar String Groups](./Algorithms/0839.similar-string-groups)|33%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |840|[Magic Squares In Grid](./Algorithms/0840.magic-squares-in-grid)|34%|Easy||
@@ -641,7 +641,7 @@
 |844|[Backspace String Compare](./Algorithms/0844.backspace-string-compare)|44%|Easy||
 |845|[Longest Mountain in Array](./Algorithms/0845.longest-mountain-in-array)|31%|Medium||
 |846|[Hand of Straights](./Algorithms/0846.hand-of-straights)|43%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|847|[Shortest Path Visiting All Nodes](./Algorithms/0847.shortest-path-visiting-all-nodes)|41%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|847|[Shortest Path Visiting All Nodes](./Algorithms/0847.shortest-path-visiting-all-nodes)|42%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |848|[Shifting Letters](./Algorithms/0848.shifting-letters)|35%|Medium||
 |849|[Maximize Distance to Closest Person](./Algorithms/0849.maximize-distance-to-closest-person)|37%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |850|[Rectangle Area II](./Algorithms/0850.rectangle-area-ii)|41%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -670,17 +670,17 @@
 |873|[Length of Longest Fibonacci Subsequence](./Algorithms/0873.length-of-longest-fibonacci-subsequence)|41%|Medium||
 |874|[Walking Robot Simulation](./Algorithms/0874.walking-robot-simulation)|27%|Easy||
 |875|[Koko Eating Bananas](./Algorithms/0875.koko-eating-bananas)|41%|Medium||
-|876| * [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)|66%|Easy||
+|876|[Middle of the Linked List](./Algorithms/0876.middle-of-the-linked-list)|66%|Easy||
 |877| * [Stone Game](https://leetcode.com/problems/stone-game/)|54%|Medium||
 |878| * [Nth Magical Number](https://leetcode.com/problems/nth-magical-number/)|21%|Hard||
 |879| * [Profitable Schemes](https://leetcode.com/problems/profitable-schemes/)|30%|Hard||
 |880| * [Decoded String at Index](https://leetcode.com/problems/decoded-string-at-index/)|21%|Medium||
 |881| * [Boats to Save People](https://leetcode.com/problems/boats-to-save-people/)|38%|Medium||
 |882| * [Reachable Nodes In Subdivided Graph](https://leetcode.com/problems/reachable-nodes-in-subdivided-graph/)|33%|Hard||
-|883| * [Projection Area of 3D Shapes](https://leetcode.com/problems/projection-area-of-3d-shapes/)|67%|Easy||
+|883|[Projection Area of 3D Shapes](./Algorithms/0883.projection-area-of-3d-shapes)|67%|Easy||
 |884| * [Uncommon Words from Two Sentences](https://leetcode.com/problems/uncommon-words-from-two-sentences/) :new: |61%|Easy||
-|885| * [Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iii/) :new: |65%|Medium||
-|886| * [Possible Bipartition](https://leetcode.com/problems/possible-bipartition/) :new: |34%|Medium||
+|885| * [Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iii/) :new: |64%|Medium||
+|886| * [Possible Bipartition](https://leetcode.com/problems/possible-bipartition/) :new: |35%|Medium||
 |887| * [Super Egg Drop](https://leetcode.com/problems/super-egg-drop/) :new: |21%|Hard||
 
 以下免费的算法题，暂时不能使用 Go 解答
