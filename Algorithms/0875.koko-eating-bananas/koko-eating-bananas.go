@@ -1,16 +1,16 @@
 package problem0875
 
-import "math"
+import (
+	"math"
+)
 
-func minEatingSpeed(piles []int, H int) int {
-	sum := sumOf(piles)
-
-	l := (sum + H - 1) / H
-	r := l * 2
+func minEatingSpeed(piles []int, h int) int {
+	sum, r := sumAndMax(piles)
+	l := (sum + h - 1) / h
 
 	for l < r {
 		m := (l + r) / 2
-		if canEatAll(m, H, piles) {
+		if canEatAll(m, h, piles) {
 			r = m
 		} else {
 			l = m + 1
@@ -20,19 +20,31 @@ func minEatingSpeed(piles []int, H int) int {
 	return r
 }
 
-func sumOf(a []int) int {
-	res := 0
+func sumAndMax(a []int) (int, int) {
+	sum := 0
+	mx := 0
 	for _, n := range a {
-		res += n
+		sum += n
+		mx = max(mx, n)
 	}
-	return res
+	return sum, mx
 }
 
 func canEatAll(k, h int, piles []int) bool {
 	r := 1 / float64(k)
-	for i := 0; i < len(piles) && h >= 0; i++ {
-		p := float64(piles[i])
-		h -= int(math.Ceil(p * r))
+	for _, p := range piles {
+		fp := float64(p)
+		h -= int(math.Ceil(fp * r))
+		if h < 0 {
+			return false
+		}
 	}
-	return h >= 0
+	return true
+}
+
+func max(a, b int) int {
+	if a > b {
+		return a
+	}
+	return b
 }
