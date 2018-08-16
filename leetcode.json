@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
-	"Ranking": 761,
-	"Updated": "2018-08-16T17:06:38.105856905+08:00",
+	"Ranking": 758,
+	"Updated": "2018-08-16T20:13:50.211527878+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 191,
+			"Solved": 192,
 			"Total": 193
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 141
 		},
 		"Total": {
-			"Solved": 654,
+			"Solved": 655,
 			"Total": 665
 		}
 	},
@@ -4813,7 +4813,7 @@
 			"ID": 399,
 			"Title": "Evaluate Division",
 			"TitleSlug": "evaluate-division",
-			"PassRate": "43%",
+			"PassRate": "42%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10623,7 +10623,7 @@
 			"TitleSlug": "projection-area-of-3d-shapes",
 			"PassRate": "67%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
