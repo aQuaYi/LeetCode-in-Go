@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 758,
-	"Updated": "2018-08-17T16:44:29.850391705+08:00",
+	"Updated": "2018-08-17T17:20:14.674607502+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 192,
 			"Total": 193
 		},
 		"Medium": {
-			"Solved": 326,
+			"Solved": 327,
 			"Total": 331
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 141
 		},
 		"Total": {
-			"Solved": 655,
+			"Solved": 656,
 			"Total": 665
 		}
 	},
@@ -10551,7 +10551,7 @@
 			"TitleSlug": "stone-game",
 			"PassRate": "54%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
