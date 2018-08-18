@@ -1,6 +1,6 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
-[![LeetCode 排名](https://img.shields.io/badge/aQuaYi-743-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/aQuaYi-741-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 
@@ -10,7 +10,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|192|327|138|657|
+|**Accepted**|192|327|139|658|
 |**Total**|193|331|141|665|
 
 ## 题解
@@ -619,7 +619,7 @@
 |822|[Card Flipping Game](./Algorithms/0822.card-flipping-game)|36%|Medium||
 |823|[Binary Trees With Factors](./Algorithms/0823.binary-trees-with-factors)|29%|Medium||
 |824|[Goat Latin](./Algorithms/0824.goat-latin)|54%|Easy||
-|825|[Friends Of Appropriate Ages](./Algorithms/0825.friends-of-appropriate-ages)|30%|Medium||
+|825|[Friends Of Appropriate Ages](./Algorithms/0825.friends-of-appropriate-ages)|31%|Medium||
 |826|[Most Profit Assigning Work](./Algorithms/0826.most-profit-assigning-work)|32%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |827|[Making A Large Island](./Algorithms/0827.making-a-large-island)|40%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |828|[Unique Letter String](./Algorithms/0828.unique-letter-string)|34%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -636,7 +636,7 @@
 |839|[Similar String Groups](./Algorithms/0839.similar-string-groups)|33%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |840|[Magic Squares In Grid](./Algorithms/0840.magic-squares-in-grid)|34%|Easy||
 |841|[Keys and Rooms](./Algorithms/0841.keys-and-rooms)|56%|Medium||
-|842|[Split Array into Fibonacci Sequence](./Algorithms/0842.split-array-into-fibonacci-sequence)|33%|Medium||
+|842|[Split Array into Fibonacci Sequence](./Algorithms/0842.split-array-into-fibonacci-sequence)|34%|Medium||
 |843|[Guess the Word](./Algorithms/0843.guess-the-word)|34%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |844|[Backspace String Compare](./Algorithms/0844.backspace-string-compare)|44%|Easy||
 |845|[Longest Mountain in Array](./Algorithms/0845.longest-mountain-in-array)|31%|Medium||
@@ -673,14 +673,14 @@
 |876|[Middle of the Linked List](./Algorithms/0876.middle-of-the-linked-list)|66%|Easy||
 |877|[Stone Game](./Algorithms/0877.stone-game)|54%|Medium||
 |878|[Nth Magical Number](./Algorithms/0878.nth-magical-number)|22%|Hard||
-|879| * [Profitable Schemes](https://leetcode.com/problems/profitable-schemes/)|30%|Hard||
+|879|[Profitable Schemes](./Algorithms/0879.profitable-schemes)|30%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |880| * [Decoded String at Index](https://leetcode.com/problems/decoded-string-at-index/)|22%|Medium||
 |881| * [Boats to Save People](https://leetcode.com/problems/boats-to-save-people/)|38%|Medium||
 |882| * [Reachable Nodes In Subdivided Graph](https://leetcode.com/problems/reachable-nodes-in-subdivided-graph/)|33%|Hard||
 |883|[Projection Area of 3D Shapes](./Algorithms/0883.projection-area-of-3d-shapes)|67%|Easy||
 |884| * [Uncommon Words from Two Sentences](https://leetcode.com/problems/uncommon-words-from-two-sentences/)|61%|Easy||
 |885| * [Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iii/)|65%|Medium||
-|886| * [Possible Bipartition](https://leetcode.com/problems/possible-bipartition/)|35%|Medium||
+|886| * [Possible Bipartition](https://leetcode.com/problems/possible-bipartition/)|34%|Medium||
 |887| * [Super Egg Drop](https://leetcode.com/problems/super-egg-drop/)|21%|Hard||
 
 以下免费的算法题，暂时不能使用 Go 解答
