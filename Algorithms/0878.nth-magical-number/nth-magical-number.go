@@ -3,37 +3,29 @@ package problem0878
 const mod = 1e9 + 7
 
 func nthMagicalNumber(n, a, b int) int {
-	if a == b {
-		return resultOfAEqualB(n, a)
-	} else if a > b {
+	if a > b {
 		a, b = b, a
 	}
 
-	mtp := lcm(a, b)
+	m := lcm(a, b)
 	l, r := a*n/2, b*n
-	var med int
-	for l < r {
-		med = (l + r) / 2
-		count := countMagicalUnderNum(med, a, b, mtp)
-		if count < n {
+
+	for {
+		med := (l + r) / 2
+		count := magicalOf(med, a, b, m)
+		switch {
+		case count < n:
 			l = med + 1
-		} else if n < count {
+		case n < count:
 			r = med - 1
-		} else {
-			break
+		default:
+			res := med - min(med%a, med%b)
+			return res % mod
 		}
 	}
-
-	res := med - min(med%a, med%b)
-
-	return res % mod
 }
 
-func resultOfAEqualB(N, A int) int {
-	return N * A % mod
-}
-
-func countMagicalUnderNum(num, a, b, m int) int {
+func magicalOf(num, a, b, m int) int {
 	return num/a + num/b - num/m
 }
 
