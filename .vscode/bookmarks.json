@@ -28,15 +28,5 @@
 				"label": ""
 			}
 		]
-	},
-	{
-		"path": "$ROOTPATH$/Algorithms/0878.nth-magical-number/nth-magical-number.go",
-		"bookmarks": [
-			{
-				"line": 11,
-				"column": 0,
-				"label": ""
-			}
-		]
 	}
 ]
