@@ -1,7 +1,12 @@
 {
 	"Username": "aQuaYi",
+<<<<<<< HEAD
 	"Ranking": 743,
 	"Updated": "2018-08-18T16:28:07.997950766+08:00",
+=======
+	"Ranking": 758,
+	"Updated": "2018-08-17T17:20:14.674607502+08:00",
+>>>>>>> 1af7f9e42370e7a4bf64228cd8496cfacad624b0
 	"Record": {
 		"Easy": {
 			"Solved": 192,
@@ -5989,7 +5994,7 @@
 			"ID": 497,
 			"Title": "Random Point in Non-overlapping Rectangles",
 			"TitleSlug": "random-point-in-non-overlapping-rectangles",
-			"PassRate": "34%",
+			"PassRate": "33%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
