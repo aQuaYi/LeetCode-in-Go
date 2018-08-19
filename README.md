@@ -1,6 +1,6 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
-[![LeetCode 排名](https://img.shields.io/badge/aQuaYi-741-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/aQuaYi-728-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 
@@ -10,7 +10,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|192|328|139|659|
+|**Accepted**|192|329|139|660|
 |**Total**|194|333|142|669|
 
 ## 题解
@@ -554,7 +554,7 @@
 |747|[Largest Number At Least Twice of Others](./Algorithms/0747.largest-number-at-least-twice-of-others)|40%|Easy||
 |748|[Shortest Completing Word](./Algorithms/0748.shortest-completing-word)|52%|Medium||
 |749|[Contain Virus](./Algorithms/0749.contain-virus)|40%|Hard||
-|752|[Open the Lock](./Algorithms/0752.open-the-lock)|40%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|752|[Open the Lock](./Algorithms/0752.open-the-lock)|41%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |753|[Cracking the Safe](./Algorithms/0753.cracking-the-safe)|41%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |754|[Reach a Number](./Algorithms/0754.reach-a-number)|28%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |756|[Pyramid Transition Matrix](./Algorithms/0756.pyramid-transition-matrix)|47%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -675,7 +675,7 @@
 |878|[Nth Magical Number](./Algorithms/0878.nth-magical-number)|22%|Hard||
 |879|[Profitable Schemes](./Algorithms/0879.profitable-schemes)|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |880|[Decoded String at Index](./Algorithms/0880.decoded-string-at-index)|22%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|881| * [Boats to Save People](https://leetcode.com/problems/boats-to-save-people/)|38%|Medium||
+|881|[Boats to Save People](./Algorithms/0881.boats-to-save-people)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |882| * [Reachable Nodes In Subdivided Graph](https://leetcode.com/problems/reachable-nodes-in-subdivided-graph/)|33%|Hard||
 |883|[Projection Area of 3D Shapes](./Algorithms/0883.projection-area-of-3d-shapes)|67%|Easy||
 |884| * [Uncommon Words from Two Sentences](https://leetcode.com/problems/uncommon-words-from-two-sentences/)|61%|Easy||
@@ -683,9 +683,9 @@
 |886| * [Possible Bipartition](https://leetcode.com/problems/possible-bipartition/)|35%|Medium||
 |887| * [Super Egg Drop](https://leetcode.com/problems/super-egg-drop/)|21%|Hard||
 |888| * [Fair Candy Swap](https://leetcode.com/problems/fair-candy-swap/) :new: |56%|Easy||
-|889| * [Construct Binary Tree from Preorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/) :new: |46%|Medium||
-|890| * [Find and Replace Pattern](https://leetcode.com/problems/find-and-replace-pattern/) :new: |73%|Medium||
-|891| * [Sum of Subsequence Widths](https://leetcode.com/problems/sum-of-subsequence-widths/) :new: |18%|Hard||
+|889| * [Construct Binary Tree from Preorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/) :new: |47%|Medium||
+|890| * [Find and Replace Pattern](https://leetcode.com/problems/find-and-replace-pattern/) :new: |74%|Medium||
+|891| * [Sum of Subsequence Widths](https://leetcode.com/problems/sum-of-subsequence-widths/) :new: |19%|Hard||
 
 以下免费的算法题，暂时不能使用 Go 解答
 
