@@ -1,27 +1,26 @@
 package problem0884
 
 import (
+	"sort"
 	"strings"
 )
 
 func uncommonFromSentences(A string, B string) []string {
-	m := make(map[string]int, 400)
-
 	tmp := strings.Split(A, " ")
-	for _, t := range tmp {
-		m[t]++
-	}
+	tmp = append(tmp, strings.Split(B, " ")...)
 
-	tmp = strings.Split(B, " ")
-	for _, t := range tmp {
-		m[t]++
-	}
+	// 排序完成后， "" 会在首， "~" 会在尾
+	// 安排这两个不相干的单词进入 tmp ，有利于简化后面的判断逻辑
+	tmp = append(tmp, "", "~")
+	sort.Strings(tmp)
 
-	res := make([]string, 0)
+	size := len(tmp)
 
-	for w, c := range m {
-		if c == 1 {
-			res = append(res, w)
+	res := make([]string, 0, size)
+
+	for i := 1; i+1 < size; i++ {
+		if tmp[i-1] != tmp[i] && tmp[i] != tmp[i+1] {
+			res = append(res, tmp[i])
 		}
 	}
 
