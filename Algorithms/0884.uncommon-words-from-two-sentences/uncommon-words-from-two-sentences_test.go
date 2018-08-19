@@ -2,6 +2,7 @@ package problem0884
 
 import (
 	"fmt"
+	"sort"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -34,7 +35,10 @@ func Test_uncommonFromSentences(t *testing.T) {
 
 	for _, tc := range tcs {
 		fmt.Printf("~~%v~~\n", tc)
-		ast.Equal(tc.ans, uncommonFromSentences(tc.A, tc.B), "输入:%v", tc)
+		sort.Strings(tc.ans)
+		actual := uncommonFromSentences(tc.A, tc.B)
+		sort.Strings(actual)
+		ast.Equal(tc.ans, actual, "输入:%v", tc)
 	}
 }
 
