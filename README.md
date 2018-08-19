@@ -10,7 +10,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|192|329|139|660|
+|**Accepted**|193|329|139|661|
 |**Total**|194|333|142|669|
 
 ## 题解
@@ -678,12 +678,12 @@
 |881|[Boats to Save People](./Algorithms/0881.boats-to-save-people)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |882| * [Reachable Nodes In Subdivided Graph](https://leetcode.com/problems/reachable-nodes-in-subdivided-graph/)|33%|Hard||
 |883|[Projection Area of 3D Shapes](./Algorithms/0883.projection-area-of-3d-shapes)|67%|Easy||
-|884| * [Uncommon Words from Two Sentences](https://leetcode.com/problems/uncommon-words-from-two-sentences/)|61%|Easy||
+|884|[Uncommon Words from Two Sentences](./Algorithms/0884.uncommon-words-from-two-sentences)|61%|Easy||
 |885| * [Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iii/)|64%|Medium||
 |886| * [Possible Bipartition](https://leetcode.com/problems/possible-bipartition/)|35%|Medium||
 |887| * [Super Egg Drop](https://leetcode.com/problems/super-egg-drop/)|21%|Hard||
 |888| * [Fair Candy Swap](https://leetcode.com/problems/fair-candy-swap/) :new: |56%|Easy||
-|889| * [Construct Binary Tree from Preorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/) :new: |47%|Medium||
+|889| * [Construct Binary Tree from Preorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/) :new: |48%|Medium||
 |890| * [Find and Replace Pattern](https://leetcode.com/problems/find-and-replace-pattern/) :new: |74%|Medium||
 |891| * [Sum of Subsequence Widths](https://leetcode.com/problems/sum-of-subsequence-widths/) :new: |19%|Hard||
 

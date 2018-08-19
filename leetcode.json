@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 728,
-	"Updated": "2018-08-19T22:10:42.997269843+08:00",
+	"Updated": "2018-08-19T22:38:53.975631167+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 192,
+			"Solved": 193,
 			"Total": 194
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 142
 		},
 		"Total": {
-			"Solved": 660,
+			"Solved": 661,
 			"Total": 669
 		}
 	},
@@ -10635,7 +10635,7 @@
 			"TitleSlug": "uncommon-words-from-two-sentences",
 			"PassRate": "61%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -10693,7 +10693,7 @@
 			"ID": 889,
 			"Title": "Construct Binary Tree from Preorder and Postorder Traversal",
 			"TitleSlug": "construct-binary-tree-from-preorder-and-postorder-traversal",
-			"PassRate": "47%",
+			"PassRate": "48%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
