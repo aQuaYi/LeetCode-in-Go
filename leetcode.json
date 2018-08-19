@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 728,
-	"Updated": "2018-08-19T18:49:01.677543507+08:00",
+	"Updated": "2018-08-19T21:06:07.527818813+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 192,
 			"Total": 194
 		},
 		"Medium": {
-			"Solved": 328,
+			"Solved": 329,
 			"Total": 333
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 142
 		},
 		"Total": {
-			"Solved": 659,
+			"Solved": 660,
 			"Total": 669
 		}
 	},
@@ -10599,9 +10599,9 @@
 			"TitleSlug": "boats-to-save-people",
 			"PassRate": "38%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -10717,7 +10717,7 @@
 			"ID": 891,
 			"Title": "Sum of Subsequence Widths",
 			"TitleSlug": "sum-of-subsequence-widths",
-			"PassRate": "18%",
+			"PassRate": "19%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
