@@ -30,11 +30,20 @@ func reachableNodes(edges [][]int, M int, N int) int {
 
 	for _, e := range edges {
 		i, j, n := e[0], e[1], e[2]
-		if minDis[i] == maxInt {
+		mdi, mdj := minDis[i], minDis[j]
+		if mdi >= M && mdj >= M {
 			res -= n
-		} else {
-			res -= max(0, minDis[i]+minDis[j]+n-M*2)
+			continue
 		}
+
+		if mdi < M && mdj < M {
+			res -= max(0, mdi+mdj+n-M*2)
+			continue
+		}
+
+		md := min(mdi, mdj) // md < M
+
+		res -= max(0, n-(M-md))
 	}
 
 	for _, d := range minDis {
