@@ -13,7 +13,7 @@ func reachableNodes(edges [][]int, M int, N int) int {
 	}
 
 	// pq[x] = []int{r, i} 表示，
-	// 到达 i 节点时，已经走了 M-r 步，即，还可以走 r 步
+	// 到达 i 节点时，还可以走 r 步
 	pq := make(PQ, 1, 1000)
 	pq[0] = []int{M, 0}
 
