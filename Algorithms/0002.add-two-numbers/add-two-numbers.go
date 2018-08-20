@@ -1,12 +1,10 @@
 package problem0002
 
-/**
- * Definition for singly-linked list.
- * type ListNode struct {
- *     Val int
- *     Next *ListNode
- * }
- */
+// ListNode defines for singly-linked list.
+//  type ListNode struct {
+//      Val int
+//      Next *ListNode
+//  }
 type ListNode struct {
 	Val  int
 	Next *ListNode
