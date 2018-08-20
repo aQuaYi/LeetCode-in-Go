@@ -21,11 +21,11 @@ func reachableNodes(edges [][]int, M int, N int) int {
 	// 利用 pq 的特性，优先处理 r 值最大的情况。
 	// 并在处理时，
 	// 在 seen 中标记已经处理过 i
-	// 在 maxStepsRemaining 中记录 r 的最大值
+	// 在 maxMovesRemaining 中记录 r 的最大值
 	seen := [3001]bool{}
-	// maxStepsRemaining[3] = 10 表示，
+	// maxMovesRemaining[3] = 10 表示，
 	// 通过最短的路径到达 3 节点时，还可以走 10 步
-	maxStepsRemaining := [3001]int{}
+	maxMovesRemaining := [3001]int{}
 
 	res := 0
 	for len(pq) > 0 {
@@ -36,7 +36,7 @@ func reachableNodes(edges [][]int, M int, N int) int {
 			continue
 		}
 		seen[i] = true
-		maxStepsRemaining[i] = r
+		maxMovesRemaining[i] = r
 		res++ // 收获 edge 端点 i
 
 		for _, j := range nextTo[i] {
@@ -54,11 +54,11 @@ func reachableNodes(edges [][]int, M int, N int) int {
 
 	for _, e := range edges {
 		i, j, n := e[0], e[1], e[2]
-		// maxStepsRemaining[i] = ri 表示达到 i 点后，最多还可以走 ri 步
-		// maxStepsRemaining[j] = rj 表示达到 j 点后，最多还可以走 rj 步
+		// maxMovesRemaining[i] = ri 表示达到 i 点后，最多还可以走 ri 步
+		// maxMovesRemaining[j] = rj 表示达到 j 点后，最多还可以走 rj 步
 		// 如果 ri + rj >= n, 则 edge(i,j) 中间的 n 个点都可以被走到
 		// 否则 edge(i,j) 中只有 ri+rj 个点被走到
-		res += min(maxStepsRemaining[i]+maxStepsRemaining[j], n)
+		res += min(maxMovesRemaining[i]+maxMovesRemaining[j], n)
 	}
 
 	return res
