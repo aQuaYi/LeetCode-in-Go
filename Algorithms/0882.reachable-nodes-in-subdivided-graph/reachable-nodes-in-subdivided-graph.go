@@ -4,41 +4,45 @@ import "container/heap"
 
 func reachableNodes(edges [][]int, M int, N int) int {
 	nodes := make(map[int]int, len(edges))
-	connects := make([][]int, N)
+	nextTo := make([][]int, N)
 	for _, e := range edges {
 		i, j, n := e[0], e[1], e[2]
 		nodes[encode(i, j)] = n
-		connects[i] = append(connects[i], j)
-		connects[j] = append(connects[j], i)
+		nextTo[i] = append(nextTo[i], j)
+		nextTo[j] = append(nextTo[j], i)
 	}
 
 	pq := make(PQ, 1, 1000)
 	pq[0] = []int{M, 0}
-	seen := make(map[int]int, 1000)
 
+	seen := [3001]bool{}
+	steps := [3001]int{}
+
+	res := 0
 	for len(pq) > 0 {
-		moves := pq[0][0]
+		stepLeft := pq[0][0]
 		i := pq[0][1]
 		heap.Pop(&pq)
-		if _, ok := seen[i]; !ok {
-			seen[i] = moves
-			for _, j := range connects[i] {
-				if _, ok := seen[j]; ok {
+		if !seen[i] {
+			seen[i] = true
+			steps[i] = stepLeft
+			res++
+			for _, j := range nextTo[i] {
+				if seen[j] {
 					continue
 				}
 				n := nodes[encode(i, j)]
-				jMoves := moves - n - 1
-				if jMoves >= 0 {
-					heap.Push(&pq, []int{jMoves, j})
+				jLeft := stepLeft - n - 1
+				if jLeft >= 0 {
+					heap.Push(&pq, []int{jLeft, j})
 				}
 			}
 		}
 	}
 
-	res := len(seen)
 	for _, e := range edges {
 		i, j, n := e[0], e[1], e[2]
-		res += min(seen[i]+seen[j], n)
+		res += min(steps[i]+steps[j], n)
 	}
 
 	return res
