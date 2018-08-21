@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 712,
-	"Updated": "2018-08-21T19:07:03.30350995+08:00",
+	"Updated": "2018-08-21T20:14:23.357329885+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 193,
 			"Total": 194
 		},
 		"Medium": {
-			"Solved": 329,
+			"Solved": 330,
 			"Total": 333
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 142
 		},
 		"Total": {
-			"Solved": 662,
+			"Solved": 663,
 			"Total": 669
 		}
 	},
@@ -10647,7 +10647,7 @@
 			"TitleSlug": "spiral-matrix-iii",
 			"PassRate": "64%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
