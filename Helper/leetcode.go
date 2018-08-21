@@ -120,7 +120,7 @@ func logDiff(old, new *leetcode) {
 		// 有时候，会在中间添加新题
 		if o.Title == "" && n.Title != "" {
 			log.Printf("新题: %d - %s", new.Problems[i].ID, new.Problems[i].Title)
-			dida("do", new.Problems[i])
+			// dida("do", new.Problems[i])
 		}
 
 		i++
@@ -136,7 +136,7 @@ func logDiff(old, new *leetcode) {
 	for i < lenNew {
 		if new.Problems[i].isAvailble() {
 			log.Printf("新题: %d - %s", new.Problems[i].ID, new.Problems[i].Title)
-			dida("do", new.Problems[i])
+			// dida("do", new.Problems[i])
 		}
 		i++
 	}
