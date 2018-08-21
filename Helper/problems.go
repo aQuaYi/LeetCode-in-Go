@@ -21,7 +21,9 @@ func (ps problems) accepted() problems {
 
 func (ps problems) available() problems {
 	res := make([]problem, 0, len(ps))
-	for _, p := range ps {
+	size := len(ps)
+	for i := size - 1; i >= 0; i-- {
+		p := ps[i]
 		if p.isAvailble() {
 			res = append(res, p)
 		}
