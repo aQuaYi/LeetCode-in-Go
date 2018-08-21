@@ -105,7 +105,7 @@ func logDiff(old, new *leetcode) {
 		// 检查是 n 是否是新 完成
 		if o.IsAccepted == false && n.IsAccepted == true {
 			log.Printf("～新完成～ %d - %s", n.ID, n.Title)
-			dida("re", n)
+			// dida("re", n)
 			hasNewFinished = true
 		}
 		// 检查是 n 是否是新 收藏
@@ -115,6 +115,12 @@ func logDiff(old, new *leetcode) {
 		} else if o.IsFavor == true && n.IsFavor == false {
 			log.Printf("～取消收藏～ %d - %s", o.ID, o.Title)
 			time.Sleep(time.Second)
+		}
+
+		// 有时候，会在中间添加新题
+		if o.Title == "" && n.Title != "" {
+			log.Printf("新题: %d - %s", new.Problems[i].ID, new.Problems[i].Title)
+			dida("do", new.Problems[i])
 		}
 
 		i++
