@@ -22,11 +22,14 @@ func possibleBipartition(N int, dislikes [][]int) bool {
 		group[i] = flag
 		queue := []int{i}
 
+		/**bfs search */
+
 		for len(queue) > 0 {
 			flag = -flag
-			queueSize := len(queue)
-			for j := 0; j < queueSize; j++ {
-				for _, p := range diss[queue[j]] {
+			size := len(queue)
+			for j := 0; j < size; j++ {
+				q := queue[j]
+				for _, p := range diss[q] {
 					if group[p] == 0 {
 						group[p] = flag
 						queue = append(queue, p)
@@ -35,7 +38,7 @@ func possibleBipartition(N int, dislikes [][]int) bool {
 					}
 				}
 			}
-			queue = queue[queueSize:]
+			queue = queue[size:]
 		}
 
 	}
