@@ -1,32 +1,34 @@
 package problem0885
 
-func spiralMatrixIII(R int, C int, r int, c int) [][]int {
-	countDown := R * C
+func spiralMatrixIII(R, C, x, y int) [][]int {
+	moves := R * C
 
-	res := make([][]int, 1, countDown)
-	res[0] = []int{r, c}
-	countDown--
+	res := make([][]int, 1, moves)
+	res[0] = []int{x, y}
+	moves--
 
-	steps := 2
-	x, y, tmp := 0, 1, 0
+	round := 2
+	dx, dy := 0, 1
 
-	for countDown > 0 {
-		for s := steps / 2; s > 0; s-- {
-			r += x
-			c += y
-			if 0 <= r && r < R && 0 <= c && c < C {
-				res = append(res, []int{r, c})
-				countDown--
+	for moves > 0 {
+		for m := round / 2; m > 0; m-- {
+			x += dx
+			y += dy
+			if 0 <= x && x < R && 0 <= y && y < C {
+				res = append(res, []int{x, y})
+				moves--
 			}
 		}
-
-		// 方向变化这一段，很巧妙，可以参考
-		// https://leetcode.com/problems/spiral-matrix-iii/discuss/158970/C++JavaPython-112233-Steps
-
-		tmp = x
-		x = y
-		y = -tmp
-		steps++
+		round++
+		/**
+		 * 从向西开始，(dx,dy) 的变化如下
+		 * (0, 1)
+		 * (1, 0)
+		 * (0,-1)
+		 * (-1,0)
+		 * dx, dy = dy, -dx 可以实现以上变化
+		 */
+		dx, dy = dy, -dx
 	}
 
 	return res
