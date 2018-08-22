@@ -1,35 +1,39 @@
 package problem0886
 
 func possibleBipartition(N int, dislikes [][]int) bool {
+	/**转换 dislikes 到 diss
+	 * 收集每个人 dislike 的所有人
+	 */
 	diss := make([][]int, N+1)
-	for _, d := range dislikes {
-		a, b := d[0], d[1]
+	for i := range diss {
+		diss[i] = make([]int, 0, 10)
+	}
+	for _, dl := range dislikes {
+		a, b := dl[0], dl[1]
 		diss[a] = append(diss[a], b)
 		diss[b] = append(diss[b], a)
 	}
 
 	group := make([]int, N+1)
+	flag := 1
 
-	round := 0
 	for i := 1; i <= N; i++ {
 		if group[i] != 0 {
 			continue
 		}
 
-		round++
+		/**bfs */
 
-		flag := round
 		group[i] = flag
-		queue := []int{i}
-
-		/**bfs search */
+		queue := make([]int, 1, N+1)
+		queue[0] = i
 
 		for len(queue) > 0 {
 			flag = -flag
 			size := len(queue)
 			for j := 0; j < size; j++ {
-				q := queue[j]
-				for _, p := range diss[q] {
+				qj := queue[j]
+				for _, p := range diss[qj] {
 					if group[p] == 0 {
 						group[p] = flag
 						queue = append(queue, p)
