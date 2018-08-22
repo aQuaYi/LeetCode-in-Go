@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 712,
-	"Updated": "2018-08-22T16:16:53.022303735+08:00",
+	"Updated": "2018-08-22T17:27:11.156694857+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 193,
 			"Total": 194
 		},
 		"Medium": {
-			"Solved": 330,
+			"Solved": 331,
 			"Total": 333
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 142
 		},
 		"Total": {
-			"Solved": 663,
+			"Solved": 664,
 			"Total": 669
 		}
 	},
@@ -5989,7 +5989,7 @@
 			"ID": 497,
 			"Title": "Random Point in Non-overlapping Rectangles",
 			"TitleSlug": "random-point-in-non-overlapping-rectangles",
-			"PassRate": "34%",
+			"PassRate": "33%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -6733,7 +6733,7 @@
 			"ID": 559,
 			"Title": "Maximum Depth of N-ary Tree",
 			"TitleSlug": "maximum-depth-of-n-ary-tree",
-			"PassRate": "60%",
+			"PassRate": "59%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -8821,7 +8821,7 @@
 			"ID": 733,
 			"Title": "Flood Fill",
 			"TitleSlug": "flood-fill",
-			"PassRate": "47%",
+			"PassRate": "48%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10621,7 +10621,7 @@
 			"ID": 883,
 			"Title": "Projection Area of 3D Shapes",
 			"TitleSlug": "projection-area-of-3d-shapes",
-			"PassRate": "66%",
+			"PassRate": "67%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10659,7 +10659,7 @@
 			"TitleSlug": "possible-bipartition",
 			"PassRate": "36%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
