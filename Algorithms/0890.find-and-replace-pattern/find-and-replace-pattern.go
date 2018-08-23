@@ -1,31 +1,31 @@
 package problem0890
 
 func findAndReplacePattern(words []string, pattern string) []string {
+	np := normal(pattern)
 	res := make([]string, 0, len(words))
 	for _, w := range words {
-		if isOK(w, pattern) {
+		if normal(w) == np {
 			res = append(res, w)
 		}
 	}
 	return res
 }
 
-func isOK(word, parttern string) bool {
-	size := len(parttern)
-	m2w := make(map[byte]byte, size)
-	m2p := make(map[byte]byte, size)
-	for i := 0; i < size; i++ {
-		wi := word[i]
-		pi := parttern[i]
-		mwi, wok := m2w[pi]
-		mpi, pok := m2p[wi]
-
-		if !wok && !pok {
-			m2w[pi] = wi
-			m2p[wi] = pi
-		} else if wi != mwi || pi != mpi {
-			return false
+// 把 s 标准化
+func normal(s string) string {
+	m := make(map[rune]byte, len(s))
+	for _, c := range s {
+		/**按照字符在 s 中第一次出现的顺序，依次映射到 a,b,c,... */
+		if _, ok := m[c]; !ok {
+			m[c] = byte(len(m)) + 'a'
 		}
 	}
-	return true
+
+	res := make([]byte, len(s))
+	for i, c := range s {
+		/**按照字符的映射关系，映射 s 到 res */
+		res[i] = m[c]
+	}
+
+	return string(res)
 }
