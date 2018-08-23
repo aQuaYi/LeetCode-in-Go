@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 690,
-	"Updated": "2018-08-23T20:45:58.982543964+08:00",
+	"Updated": "2018-08-23T22:10:39.273158774+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 194,
 			"Total": 194
 		},
 		"Medium": {
-			"Solved": 331,
+			"Solved": 332,
 			"Total": 333
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 142
 		},
 		"Total": {
-			"Solved": 665,
+			"Solved": 666,
 			"Total": 669
 		}
 	},
@@ -10707,9 +10707,9 @@
 			"TitleSlug": "find-and-replace-pattern",
 			"PassRate": "71%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": true,
 			"HasNoGoOption": false
 		},
