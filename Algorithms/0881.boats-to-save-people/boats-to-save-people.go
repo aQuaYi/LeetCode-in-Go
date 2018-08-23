@@ -12,12 +12,12 @@ func numRescueBoats(people []int, limit int) int {
 	res := 0
 
 	for thin <= fat {
-		// 队列中，最胖的人先上船
-		fat--
-		// 如果，队列中最瘦的人，还可以上船的话，也上去
+		// 如果，队列中最瘦的人，也可以上船的话，就跟上去
 		if people[thin]+people[fat] <= limit {
 			thin++
 		}
+		// 队列中，最胖的人肯定要上船
+		fat--
 		res++
 	}
 
