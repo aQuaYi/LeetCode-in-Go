@@ -7,21 +7,23 @@ import (
 func numRescueBoats(people []int, limit int) int {
 	sort.Ints(people)
 
-	l, r := 0, len(people)-1
+	thin, fat := 0, len(people)-1
 
 	res := 0
 
-	for l <= r {
-		if people[l]+people[r] <= limit {
-			l++
+	for thin <= fat {
+		// 队列中，最胖的人先上船
+		fat--
+		// 如果，队列中最瘦的人，还可以上船的话，也上去
+		if people[thin]+people[fat] <= limit {
+			thin++
 		}
-		r--
 		res++
 	}
 
 	return res
 }
 
-// 首先看到 people.length <= 50000 就知道不可能是使用动态规划做。
+// 首先看到 people.length <= 50000 就应该知道不可能使用动态规划。
 // 然后，还要注意到一个关键条件：每艘船只能坐两个人。
 // 可以使用贪心算法做
