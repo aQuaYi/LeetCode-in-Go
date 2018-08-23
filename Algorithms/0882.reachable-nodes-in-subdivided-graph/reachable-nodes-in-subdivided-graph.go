@@ -5,6 +5,9 @@ import "container/heap"
 func reachableNodes(edges [][]int, M int, N int) int {
 	nodes := make(map[int]int, len(edges))
 	nextTo := make([][]int, N)
+	for i := range nextTo {
+		nextTo[i] = make([]int, 0, 16)
+	}
 	for _, e := range edges {
 		i, j, n := e[0], e[1], e[2]
 		nodes[encode(i, j)] = n
@@ -32,9 +35,11 @@ func reachableNodes(edges [][]int, M int, N int) int {
 		m := pq[0][0]
 		i := pq[0][1]
 		heap.Pop(&pq)
+
 		if seen[i] {
 			continue
 		}
+
 		seen[i] = true
 		maxRemainMoves[i] = m
 		res++ // 收获 edge 端点 i
@@ -52,13 +57,14 @@ func reachableNodes(edges [][]int, M int, N int) int {
 		}
 	}
 
+	/**统计 edge 上的点 */
 	for _, e := range edges {
 		i, j, n := e[0], e[1], e[2]
-		// maxRemainMoves[i] = mi 表示达到 i 点后，最多还可以走 mi 步
-		// maxRemainMoves[j] = mj 表示达到 j 点后，最多还可以走 mj 步
+		mi := maxRemainMoves[i] // 表示达到 i 点后，最多还可以走 mi 步
+		mj := maxRemainMoves[j] // 表示达到 j 点后，最多还可以走 mj 步
 		// 如果 mi + mj >= n, 则 edge(i,j) 中间的 n 个点都可以被走到
 		// 否则 edge(i,j) 中只有 mi+mj 个点被走到
-		res += min(maxRemainMoves[i]+maxRemainMoves[j], n)
+		res += min(mi+mj, n)
 	}
 
 	return res
