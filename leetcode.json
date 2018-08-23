@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 693,
-	"Updated": "2018-08-23T13:16:47.112425258+08:00",
+	"Updated": "2018-08-23T14:02:32.494773338+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 193,
+			"Solved": 194,
 			"Total": 194
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 142
 		},
 		"Total": {
-			"Solved": 664,
+			"Solved": 665,
 			"Total": 669
 		}
 	},
@@ -8557,7 +8557,7 @@
 			"ID": 711,
 			"Title": "Number of Distinct Islands II",
 			"TitleSlug": "number-of-distinct-islands-ii",
-			"PassRate": "43%",
+			"PassRate": "42%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -9697,7 +9697,7 @@
 			"ID": 806,
 			"Title": "Number of Lines To Write String",
 			"TitleSlug": "number-of-lines-to-write-string",
-			"PassRate": "61%",
+			"PassRate": "62%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10683,7 +10683,7 @@
 			"TitleSlug": "fair-candy-swap",
 			"PassRate": "56%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": true,
@@ -10705,7 +10705,7 @@
 			"ID": 890,
 			"Title": "Find and Replace Pattern",
 			"TitleSlug": "find-and-replace-pattern",
-			"PassRate": "71%",
+			"PassRate": "72%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
