@@ -1,9 +1,9 @@
 package problem0888
 
 func fairCandySwap(A []int, B []int) []int {
-	diff := (sum(A) - sum(B)) / 2
-	aMap := make(map[int]bool, 100000)
-	bMap := make(map[int]bool, 100000)
+	halfDiff := (sum(A) - sum(B)) / 2
+	aIsExist := make(map[int]bool, 1000)
+	bIsExist := make(map[int]bool, 1000)
 
 	i := 0
 	aSize := len(A)
@@ -11,16 +11,16 @@ func fairCandySwap(A []int, B []int) []int {
 
 	for {
 		if i < aSize {
-			aMap[A[i]] = true
-			if bMap[A[i]-diff] {
-				return []int{A[i], A[i] - diff}
+			aIsExist[A[i]] = true
+			if bIsExist[A[i]-halfDiff] {
+				return []int{A[i], A[i] - halfDiff}
 			}
 		}
 
 		if i < bSize {
-			bMap[B[i]] = true
-			if aMap[B[i]+diff] {
-				return []int{B[i] + diff, B[i]}
+			bIsExist[B[i]] = true
+			if aIsExist[B[i]+halfDiff] {
+				return []int{B[i] + halfDiff, B[i]}
 			}
 		}
 
