@@ -1,29 +1,30 @@
 package problem0880
 
 func decodeAtIndex(S string, K int) string {
-	N, i := 0, 0
-	b := byte(0)
+	/** lenSi 是 S[:i] 展开后的长度。*/
+	lenSi, i := 0, 0
 
-	for i = 0; N < K; i++ {
-		b = S[i]
-		if isDigit(b) {
-			N *= int(b - '0')
+	for ; lenSi < K; i++ {
+		char := S[i]
+		if isDigit(char) {
+			lenSi *= int(char - '0')
 		} else {
-			N++
+			lenSi++
 		}
 	}
 
 	for {
 		i--
-		b = S[i]
-		if isDigit(b) {
-			N /= int(b - '0')
-			K %= N
+		char := S[i]
+		if isDigit(char) {
+			lenSi /= int(char - '0')
+			K %= lenSi
 		} else {
-			if K == 0 || K == N {
-				return string(b)
+			if K == 0 || // "leet3code2" K = 8 会导致 K == 0 成立
+				K == lenSi {
+				return string(char)
 			}
-			N--
+			lenSi--
 		}
 	}
 
