@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 684,
-	"Updated": "2018-08-26T11:18:59.513195035+08:00",
+	"Updated": "2018-08-26T15:02:47.783352612+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 194,
 			"Total": 196
 		},
 		"Medium": {
-			"Solved": 332,
+			"Solved": 333,
 			"Total": 334
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 143
 		},
 		"Total": {
-			"Solved": 666,
+			"Solved": 667,
 			"Total": 673
 		}
 	},
@@ -7741,7 +7741,7 @@
 			"ID": 643,
 			"Title": "Maximum Average Subarray I",
 			"TitleSlug": "maximum-average-subarray-i",
-			"PassRate": "38%",
+			"PassRate": "37%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -8497,7 +8497,7 @@
 			"ID": 706,
 			"Title": "Design HashMap",
 			"TitleSlug": "design-hashmap",
-			"PassRate": "38%",
+			"PassRate": "39%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9697,7 +9697,7 @@
 			"ID": 806,
 			"Title": "Number of Lines To Write String",
 			"TitleSlug": "number-of-lines-to-write-string",
-			"PassRate": "61%",
+			"PassRate": "62%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10695,7 +10695,7 @@
 			"TitleSlug": "construct-binary-tree-from-preorder-and-postorder-traversal",
 			"PassRate": "53%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -10729,7 +10729,7 @@
 			"ID": 892,
 			"Title": "Surface Area of 3D Shapes",
 			"TitleSlug": "surface-area-of-3d-shapes",
-			"PassRate": "56%",
+			"PassRate": "55%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -10741,7 +10741,7 @@
 			"ID": 893,
 			"Title": "Groups of Special-Equivalent Strings",
 			"TitleSlug": "groups-of-special-equivalent-strings",
-			"PassRate": "60%",
+			"PassRate": "62%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -10753,7 +10753,7 @@
 			"ID": 894,
 			"Title": "All Possible Full Binary Trees",
 			"TitleSlug": "all-possible-full-binary-trees",
-			"PassRate": "54%",
+			"PassRate": "57%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -10765,7 +10765,7 @@
 			"ID": 895,
 			"Title": "Maximum Frequency Stack",
 			"TitleSlug": "maximum-frequency-stack",
-			"PassRate": "34%",
+			"PassRate": "42%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
