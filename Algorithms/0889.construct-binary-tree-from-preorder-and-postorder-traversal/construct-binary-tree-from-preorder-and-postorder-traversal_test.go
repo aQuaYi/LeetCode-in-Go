@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/aQuaYi/LeetCode-in-Go/kit"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -13,6 +14,12 @@ var tcs = []struct {
 	post []int
 	ans  []int
 }{
+
+	{
+		[]int{1, 2, 4, 5, 3, 6},
+		[]int{4, 5, 2, 6, 3, 1},
+		[]int{1, 2, 3, 4, 5, 6},
+	},
 
 	{
 		[]int{1, 2, 4, 5, 3, 6, 7},
