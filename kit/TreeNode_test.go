@@ -155,3 +155,12 @@ func Test_GetTargetNode(t *testing.T) {
 		})
 	}
 }
+
+func Test_Tree2ints(t *testing.T) {
+	ast := assert.New(t)
+
+	root := PreIn2Tree(preOrder, inOrder)
+	actual := LeetCodeOrder
+	expected := Tree2ints(root)
+	ast.Equal(expected, actual)
+}
