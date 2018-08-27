@@ -1,21 +1,31 @@
 package problem0893
 
+import (
+	"sort"
+	"strings"
+)
+
 func numSpecialEquivGroups(A []string) int {
-	gMap := make(map[int]int, len(A))
+	gMap := make(map[string]bool, len(A))
 	for _, a := range A {
-		gMap[encode(a)]++
+		gMap[encode(a)] = true
 	}
 	return len(gMap)
 }
 
-func encode(str string) int {
-	evens, odds := 0, 0
-	for i, r := range str {
+func encode(str string) string {
+	evens := make([]string, 0, 20)
+	odds := make([]string, 0, 20)
+	for i := range str {
 		if i%2 == 0 {
-			evens += int(r)
+			evens = append(evens, str[i:i+1])
 		} else {
-			odds += int(r)
+			odds = append(odds, str[i:i+1])
 		}
 	}
-	return evens<<16 | odds
+
+	sort.Strings(evens)
+	sort.Strings(odds)
+
+	return strings.Join(evens, "") + strings.Join(odds, "")
 }
