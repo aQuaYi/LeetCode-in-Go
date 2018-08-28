@@ -95,17 +95,18 @@ func logDiff(old, new *leetcode) {
 	str += fmt.Sprintf("，%s了 %d 名", verb, delta)
 	log.Println(str)
 
-	// 检查新旧都有的问题
 	lenOld, lenNew := len(old.Problems), len(new.Problems)
 	hasNewFinished := false
 
 	i := 0
+
+	// 检查新旧都有的问题
 	for i < lenOld && i < lenNew {
 		o, n := old.Problems[i], new.Problems[i]
 		// 检查是 n 是否是新 完成
 		if o.IsAccepted == false && n.IsAccepted == true {
 			log.Printf("～新完成～ %d - %s", n.ID, n.Title)
-			// dida("re", n)
+			dida("re", n)
 			hasNewFinished = true
 		}
 		// 检查是 n 是否是新 收藏
@@ -120,7 +121,7 @@ func logDiff(old, new *leetcode) {
 		// 有时候，会在中间添加新题
 		if o.Title == "" && n.Title != "" {
 			log.Printf("新题: %d - %s", new.Problems[i].ID, new.Problems[i].Title)
-			// dida("do", new.Problems[i])
+			dida("do", n)
 		}
 
 		i++
@@ -136,7 +137,7 @@ func logDiff(old, new *leetcode) {
 	for i < lenNew {
 		if new.Problems[i].isAvailble() {
 			log.Printf("新题: %d - %s", new.Problems[i].ID, new.Problems[i].Title)
-			// dida("do", new.Problems[i])
+			dida("do", new.Problems[i])
 		}
 		i++
 	}
