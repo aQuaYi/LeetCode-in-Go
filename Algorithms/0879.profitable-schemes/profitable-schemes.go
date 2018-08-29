@@ -34,13 +34,9 @@ func profitableSchemes(G, P int, group, profit []int) int {
 	}
 
 	res := 0
-	for i, x := range dp[P] {
-		if i > G {
-			break
-		}
-		res += x
+	for i := 1; i <= G; i++ {
+		res += dp[P][i]
 	}
-
 	return res % mod
 }
 
