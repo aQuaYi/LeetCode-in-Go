@@ -8,7 +8,7 @@ The i-th crime generates a profit[i] and requires group[i] gang members to parti
 
 If a gang member participates in one crime, that member can't participate in another crime.
 
-Let's call a profitableschemeany subset of these crimes that generates at least P profit, and the total number of gang members participating in that subset of crimes is at most G.
+Let's call a profitable schemeany subset of these crimes that generates at least P profit, and the total number of gang members participating in that subset of crimes is at most G.
 
 How many schemes can be chosen? Since the answer may be verylarge, return it modulo 10^9 + 7.
 
@@ -39,8 +39,6 @@ Note:
 1. 1 <= group[i] <= 100
 1. 0 <= profit[i] <= 100
 1. 1 <= group.length = profit.length <= 100
-
-
 
 ## 解题思路
 
