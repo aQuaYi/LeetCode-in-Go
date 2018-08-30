@@ -23,10 +23,10 @@ func sortedChild(begin, end *ListNode) *TreeNode {
 		return &TreeNode{Val: begin.Val}
 	}
 
-	slow, fast := begin, begin
+	fast, slow := begin, begin
 	for fast != end && fast.Next != end {
-		slow = slow.Next
 		fast = fast.Next.Next
+		slow = slow.Next
 	}
 
 	// at now, slow is the mid of [begin, end)
