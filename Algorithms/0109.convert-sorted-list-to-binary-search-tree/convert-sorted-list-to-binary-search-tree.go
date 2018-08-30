@@ -4,32 +4,36 @@ import (
 	"github.com/aQuaYi/LeetCode-in-Go/kit"
 )
 
+// ListNode is 题目预先定义的数据结构
 type ListNode = kit.ListNode
+
+// TreeNode is 题目预先定义的数据结构
 type TreeNode = kit.TreeNode
 
 func sortedListToBST(head *ListNode) *TreeNode {
-	return sortedArrayToBST(list2Slice(head))
+	return transMidToRoot(head, nil)
 }
 
-func list2Slice(head *ListNode) []int {
-	res := []int{}
-	for head != nil {
-		res = append(res, head.Val)
-		head = head.Next
-	}
-
-	return res
-}
-
-func sortedArrayToBST(nums []int) *TreeNode {
-	if len(nums) == 0 {
+func transMidToRoot(begin, end *ListNode) *TreeNode {
+	if begin == end {
 		return nil
 	}
 
-	mid := len(nums) / 2
+	if begin.Next == end {
+		return &TreeNode{Val: begin.Val}
+	}
+
+	fast, slow := begin, begin
+	for fast != end && fast.Next != end {
+		fast = fast.Next.Next
+		slow = slow.Next
+	}
+
+	mid := slow
+
 	return &TreeNode{
-		Val:   nums[mid],
-		Left:  sortedArrayToBST(nums[:mid]),
-		Right: sortedArrayToBST(nums[mid+1:]),
+		Val:   mid.Val,
+		Left:  transMidToRoot(begin, mid),
+		Right: transMidToRoot(mid.Next, end),
 	}
 }
