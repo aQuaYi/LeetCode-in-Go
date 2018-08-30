@@ -11,10 +11,10 @@ type ListNode = kit.ListNode
 type TreeNode = kit.TreeNode
 
 func sortedListToBST(head *ListNode) *TreeNode {
-	return sortedChild(head, nil)
+	return makeMidAsRoot(head, nil)
 }
 
-func sortedChild(begin, end *ListNode) *TreeNode {
+func makeMidAsRoot(begin, end *ListNode) *TreeNode {
 	if begin == end {
 		return nil
 	}
@@ -29,11 +29,11 @@ func sortedChild(begin, end *ListNode) *TreeNode {
 		slow = slow.Next
 	}
 
-	// at now, slow is the mid of [begin, end)
+	mid := slow
 
 	return &TreeNode{
-		Val:   slow.Val,
-		Left:  sortedChild(begin, slow),
-		Right: sortedChild(slow.Next, end),
+		Val:   mid.Val,
+		Left:  makeMidAsRoot(begin, mid),
+		Right: makeMidAsRoot(mid.Next, end),
 	}
 }
