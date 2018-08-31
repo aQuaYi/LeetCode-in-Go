@@ -5,19 +5,11 @@ import (
 	"strconv"
 )
 
-func primePalindrome(N int) int {
+var special = []int{2, 2, 2, 3, 5, 5, 7, 7, 11, 11, 11, 11}
 
-	switch {
-	case N <= 2:
-		return 2
-	case N == 3:
-		return 3
-	case N <= 5:
-		return 5
-	case N <= 7:
-		return 7
-	case N <= 11:
-		return 11
+func primePalindrome(N int) int {
+	if N <= 11 {
+		return special[N]
 	}
 
 	/** 由于 11 是偶数长度的 palindrome 的因子
@@ -37,17 +29,18 @@ func primePalindrome(N int) int {
 	}
 }
 
-// 根据 N 生成下一个 palindrome 的 left 和 middle 部分
+// 根据 N 生成 palindrome 的 left + middle 部分
 func genLM(N int) int {
 	size := len(strconv.Itoa(N))
 	base := int(math.Pow10(size / 2))
 
-	/** N 的长度是偶数， 把 base 当做 下一个答案的 lm
-	 * 下一个答案会是 10^size+1 */
-	lm := base
-	if size&1 == 1 {
-		/** N 的长度是奇数， lm 是 N 的左边和中间部分 */
-		lm = N / base
+	/** lm 是 N 的左边和中间部分 */
+	lm := N / base
+
+	if size&1 == 0 {
+		/** 如果 N 的长度是偶数， 把 base 当做 lm
+		 * 直接从 10^size+1 开始检查*/
+		lm = base
 	}
 
 	return lm
@@ -56,10 +49,9 @@ func genLM(N int) int {
 // 利用 left 和 middle 生成一个奇数位长度的 palindrome
 func genPalindrome(lm int) int {
 	res := lm
-	rr := lm / 10 // reverse right
-	for rr > 0 {
-		res = res*10 + rr%10
-		rr /= 10
+	/**把 l 按照相反的顺序放到 lm 的右边，就形成了奇数位的 palindrome */
+	for l := lm / 10; l > 0; l /= 10 {
+		res = res*10 + l%10
 	}
 	return res
 }
