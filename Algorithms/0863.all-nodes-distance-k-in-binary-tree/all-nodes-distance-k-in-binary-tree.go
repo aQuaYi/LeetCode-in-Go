@@ -4,8 +4,7 @@ import (
 	"github.com/aQuaYi/LeetCode-in-Go/kit"
 )
 
-// TreeNode 是题目预定义的类型
-/**
+/*TreeNode 是题目预定义的类型
  * Definition for a binary tree node.
  * type TreeNode struct {
  *     Val int
@@ -37,41 +36,33 @@ func check(root *TreeNode, dist, k int, res *[]int) {
 }
 
 // search 返回从 root 到 target 的距离
-// 返回值 -1 表示 target 不在 root 下方
-func search(root, target *TreeNode, k int, res *[]int) (dist int, isFound bool) {
+// 返回值 -1 表示 target 不在 root 及其子节点中
+func search(root, target *TreeNode, k int, res *[]int) (dist int) {
 	if root == nil {
-		isFound = false
-		return
+		return -1
 	}
 
-	// 1. 检查 root ？= target
 	if root == target {
-		dist, isFound = 0, true
-		check(root, dist, k, res)
-		return
+		check(root, 0, k, res)
+		return 0
 	}
 
-	var childDist int
-
-	// 2. 检查 target 是否在 root 左边
-	childDist, isFound = search(root.Left, target, k, res)
-	if isFound {
-		dist = childDist + 1
-		if dist == k {
-			*res = append(*res, root.Val)
+	isIn := func(child, theOther *TreeNode) bool {
+		childDist := search(child, target, k, res)
+		if childDist > -1 {
+			dist = childDist + 1
+			if dist == k {
+				*res = append(*res, root.Val)
+			}
+			check(theOther, dist+1, k, res)
+			return true
 		}
-		check(root.Right, dist+1, k, res)
-		return
+		return false
 	}
 
-	// 3. 检查 target 是否在 root 右边
-	childDist, isFound = search(root.Right, target, k, res)
-	if isFound {
-		dist = childDist + 1
-		if dist == k {
-			*res = append(*res, root.Val)
-		}
-		check(root.Left, dist+1, k, res)
+	if !isIn(root.Left, root.Right) && !isIn(root.Right, root.Left) {
+		return -1
 	}
-	return
+
+	return dist
 }
