@@ -53,8 +53,9 @@ func search(root, target *TreeNode, k int, res *[]int) (dist int) {
 			dist = childDist + 1
 			if dist == k {
 				*res = append(*res, root.Val)
+			} else if dist < k {
+				check(theOther, dist+1, k, res)
 			}
-			check(theOther, dist+1, k, res)
 			return true
 		}
 		return false
