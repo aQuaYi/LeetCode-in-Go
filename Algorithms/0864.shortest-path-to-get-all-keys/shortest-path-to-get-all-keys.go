@@ -6,21 +6,19 @@ var dy = [4]int{0, 0, 1, -1}
 func shortestPathAllKeys(grid []string) int {
 	m, n := len(grid), len(grid[0])
 
-	// 按照题目给出的条件，在 30*30 的矩阵中，最多 6 把 key，
-	// 使用 6 bit 的整数，就可以记录全部 2^6 = 64 种拥有钥匙的状态
-	// 所以，30×30×64 的数组，就可以记录所有的状态。
-	// 像这样知道范围的矩阵，尽量使用数组，可以快很多
+	/** 按照题目给出的条件，在 30*30 的矩阵中，最多 6 把 key，
+	 *  使用 6 bit 的整数，就可以记录全部 2^6 = 64 种拥有钥匙的状态
+	 *  所以，30×30×64 的数组，就可以记录所有的状态。 */
 
 	hasSeen := [30][30][64]bool{}
 	queue := make([]int, 1, m*n*4)
-
 	allKeys := 0
 
 	// 获取起点位置，和所有 key 的信息
 	for i := 0; i < m; i++ {
 		for j := 0; j < n; j++ {
 			b := grid[i][j]
-			if 'a' <= b {
+			if b >= 'a' {
 				allKeys |= 1 << uint(b-'a')
 			} else if b == '@' {
 				hasSeen[i][j][0] = true
@@ -29,7 +27,7 @@ func shortestPathAllKeys(grid []string) int {
 		}
 	}
 
-	steps := 0
+	steps := 1
 
 	/**bfs */
 	for len(queue) > 0 {
@@ -37,10 +35,6 @@ func shortestPathAllKeys(grid []string) int {
 
 		for i := 0; i < size; i++ {
 			x, y, keys := decode(queue[i])
-
-			if keys == allKeys {
-				return steps
-			}
 
 			for j := 0; j < 4; j++ {
 				nx, ny := x+dx[j], y+dy[j]
@@ -51,24 +45,25 @@ func shortestPathAllKeys(grid []string) int {
 				}
 
 				b := grid[nx][ny]
-				if b == '#' ||
+				if b == '#' || // 遇见墙了，或者，没有钥匙开锁
 					'A' <= b && b <= 'F' && keys&(1<<uint(b-'A')) == 0 {
-					// 遇见墙了，或者，没有钥匙开锁
 					continue
 				}
 
-				nKeys := keys
-				if 'a' <= b {
-					// 记录这个钥匙
-					nKeys |= 1 << uint(b-'a')
+				nkeys := keys
+				if b >= 'a' {
+					nkeys |= 1 << uint(b-'a') // 带上这个钥匙
+					if nkeys == allKeys {
+						return steps
+					}
 				}
 
-				if hasSeen[nx][ny][nKeys] {
+				if hasSeen[nx][ny][nkeys] {
 					continue
 				}
 
-				hasSeen[nx][ny][nKeys] = true
-				queue = append(queue, encode(nx, ny, nKeys))
+				hasSeen[nx][ny][nkeys] = true
+				queue = append(queue, encode(nx, ny, nkeys))
 			}
 		}
 
@@ -85,7 +80,7 @@ const (
 	mask  = 0xFF
 )
 
-/** 同理，由于 x, y, keys 的范围都很小
+/**由于 x, y, keys 的范围都很小
  * 可以用同一个 int 数字的不同的 bit 位段，来分别记录他们的值
  * 具体的记录方式，参考下方的 encode 和 decode 函数 */
 
