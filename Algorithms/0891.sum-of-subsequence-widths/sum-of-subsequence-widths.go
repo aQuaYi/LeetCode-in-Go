@@ -10,14 +10,12 @@ func sumSubseqWidths(a []int) int {
 	sort.Ints(a)
 	res := 0
 
-	size := len(a)
-	for i := 0; i < size; i++ {
-		base := 1
-		for j := i + 1; j < size; j++ {
-			res += (a[j] - a[i]) * base
-			base *= 2
-		}
-		res %= mod
+	n := len(a)
+	c := 1
+	for i := 0; i < n; i++ {
+		res = (res + a[i]*c - a[n-i-1]*c) % mod
+		c = (c << 1) % mod
 	}
-	return res
+
+	return res % mod
 }
