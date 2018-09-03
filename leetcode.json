@@ -10297,7 +10297,7 @@
 			"ID": 856,
 			"Title": "Score of Parentheses",
 			"TitleSlug": "score-of-parentheses",
-			"PassRate": "54%",
+			"PassRate": "53%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10501,7 +10501,7 @@
 			"ID": 873,
 			"Title": "Length of Longest Fibonacci Subsequence",
 			"TitleSlug": "length-of-longest-fibonacci-subsequence",
-			"PassRate": "40%",
+			"PassRate": "41%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10818,7 +10818,7 @@
 			"IsAccepted": false,
 			"IsPaid": false,
 			"IsFavor": false,
-			"IsNew": true,
+			"IsNew": false,
 			"HasNoGoOption": false
 		}
 	]
