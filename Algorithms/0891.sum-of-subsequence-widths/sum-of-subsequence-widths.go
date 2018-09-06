@@ -4,7 +4,7 @@ import (
 	"sort"
 )
 
-const mod = 1e9 + 7
+const mod = int(1e9 + 7)
 
 func sumSubseqWidths(a []int) int {
 	sort.Ints(a)
