@@ -75,7 +75,7 @@ func delay(task string) string {
 	key := task[:3]
 	if day, ok := m[key]; ok {
 		task += time.Now().Add(time.Hour * 24 * day).Format("2006-01-02")
-		m[key]++
+		m[key] += 2
 	}
 	return task
 }
