@@ -2,7 +2,7 @@
 
 ## 题目
 
-On aN*Ngrid, we place some `1 * 1 * 1` cubes.
+On a `N*N` grid, we place some `1 * 1 * 1` cubes.
 
 Each value `v = grid[i][j]` represents a tower ofvcubes placed on top of grid cell(i, j).
 
