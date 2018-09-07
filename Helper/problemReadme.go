@@ -53,7 +53,7 @@ func replaceCharacters(s string) string {
 		"&lt;":       "<",
 		"&gt;":       ">",
 		"&ge;":       ">=",
-		"&nbsp;":     "",
+		"&nbsp;":     " ` ",
 		"&#39;":      "'",
 		"&amp;":      "&",
 		"   \n":      "\n",
