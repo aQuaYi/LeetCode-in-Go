@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 713,
-	"Updated": "2018-09-07T16:10:44.276750909+08:00",
+	"Updated": "2018-09-07T16:41:01.319984386+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 195,
+			"Solved": 196,
 			"Total": 198
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 144
 		},
 		"Total": {
-			"Solved": 670,
+			"Solved": 671,
 			"Total": 677
 		}
 	},
@@ -937,7 +937,7 @@
 			"ID": 76,
 			"Title": "Minimum Window Substring",
 			"TitleSlug": "minimum-window-substring",
-			"PassRate": "28%",
+			"PassRate": "27%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -5509,7 +5509,7 @@
 			"ID": 457,
 			"Title": "Circular Array Loop",
 			"TitleSlug": "circular-array-loop",
-			"PassRate": "24%",
+			"PassRate": "23%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10429,7 +10429,7 @@
 			"ID": 867,
 			"Title": "Transpose Matrix",
 			"TitleSlug": "transpose-matrix",
-			"PassRate": "64%",
+			"PassRate": "65%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10731,7 +10731,7 @@
 			"TitleSlug": "surface-area-of-3d-shapes",
 			"PassRate": "54%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -10782,7 +10782,7 @@
 			"IsAccepted": false,
 			"IsPaid": false,
 			"IsFavor": false,
-			"IsNew": true,
+			"IsNew": false,
 			"HasNoGoOption": false
 		},
 		{
@@ -10794,7 +10794,7 @@
 			"IsAccepted": false,
 			"IsPaid": false,
 			"IsFavor": false,
-			"IsNew": true,
+			"IsNew": false,
 			"HasNoGoOption": false
 		},
 		{
@@ -10806,7 +10806,7 @@
 			"IsAccepted": false,
 			"IsPaid": false,
 			"IsFavor": false,
-			"IsNew": true,
+			"IsNew": false,
 			"HasNoGoOption": false
 		},
 		{
@@ -10818,7 +10818,7 @@
 			"IsAccepted": false,
 			"IsPaid": false,
 			"IsFavor": false,
-			"IsNew": true,
+			"IsNew": false,
 			"HasNoGoOption": false
 		}
 	]
