@@ -18,9 +18,6 @@ func mincostToHireWorkers(quality []int, wage []int, K int) float64 {
 		return workers[i][0] < workers[j][0]
 	})
 
-	// workers 按照 ratio 的升序排列
-	// 所以，worker[i][0] 肯定是 workers[:i+1] 中最大的 ratio
-
 	pq := make(PQ, 0, size)
 	qSum := 0.
 	for i := 0; i < K; i++ {
@@ -37,10 +34,14 @@ func mincostToHireWorkers(quality []int, wage []int, K int) float64 {
 
 	for i := K; i < size; i++ {
 		maxRatio, q := workers[i][0], workers[i][1]
+		if q >= pq[0] {
+			/* q >= pq[0] 时，qSum 不变，maxRatio 变大，qSum*maxRatio 不会是新低 */
+			continue
+		}
 		heap.Push(&pq, q)
 		qSum += q
 		qSum -= heap.Pop(&pq).(float64)
-		// qSum 是 workers[:i+1]
+		/* qSum 总是 workers[:i+1] 中 K 个最小的 q 之和 */
 		cost = min(cost, qSum*maxRatio)
 	}
 
