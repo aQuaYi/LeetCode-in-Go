@@ -1,8 +1,10 @@
 # [10. Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)
 
 ## 题目
+
 Implement regular expression matching with support for '.' and '*'.
-```
+
+```text
 '.' Matches any single character.
 '*' Matches zero or more of the preceding element.
 
@@ -23,7 +25,6 @@ isMatch("aab", "c*a*b") ? true
 ```
 
 ## 解题思路
-
 
 ## 总结
 
