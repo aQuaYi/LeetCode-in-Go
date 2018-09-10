@@ -56,7 +56,7 @@ func makeMyFavoriteFile(lc *leetcode) {
 
 	var b bytes.Buffer
 
-	tmpl := template.Must(template.New("readme").Parse(readTMPL("favorite.markdown")))
+	tmpl := template.Must(template.New("favorite").Parse(readTMPL("favorite.markdown")))
 
 	err := tmpl.Execute(&b, lc)
 	if err != nil {
