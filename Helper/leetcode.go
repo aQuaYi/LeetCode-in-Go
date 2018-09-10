@@ -151,7 +151,7 @@ func (lc *leetcode) AvailableTable() string {
 	return lc.Problems.available().table()
 }
 
-func (lc *leetcode) FavoriteList() string {
+func (lc *leetcode) FavoriteTable() string {
 	return lc.Problems.favorite().table()
 }
 
