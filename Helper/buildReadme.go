@@ -48,3 +48,20 @@ func readTMPL(path string) string {
 
 	return string(data)
 }
+
+func makeMyFavoriteFile(lc *leetcode) {
+	file := "Favorite.md"
+	os.Remove(file)
+
+	var b bytes.Buffer
+
+	tmpl := template.Must(template.New("readme").Parse(readTMPL("favorite.markdown")))
+
+	err := tmpl.Execute(&b, lc)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	// 保存 README.md 文件
+	write(file, string(b.Bytes()))
+}
