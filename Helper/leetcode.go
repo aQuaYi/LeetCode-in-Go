@@ -152,7 +152,7 @@ func (lc *leetcode) AvailableTable() string {
 }
 
 func (lc *leetcode) FavoriteList() string {
-	return lc.Problems.favorite().list()
+	return lc.Problems.favorite().table()
 }
 
 func (lc *leetcode) UnavailableList() string {
