@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 723,
-	"Updated": "2018-09-10T21:24:36.350024599+08:00",
+	"Updated": "2018-09-10T21:28:46.446146388+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 196,
@@ -10861,7 +10861,7 @@
 			"ID": 903,
 			"Title": "Valid Permutations for DI Sequence",
 			"TitleSlug": "valid-permutations-for-di-sequence",
-			"PassRate": "33%",
+			"PassRate": "34%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,

@@ -17,7 +17,7 @@
 
 |题号|题目|通过率|难度|收藏|
 |:-:|:-|:-: | :-: | :-: |
-|903| * [Valid Permutations for DI Sequence](https://leetcode.com/problems/valid-permutations-for-di-sequence/) :new: |33%|Hard||
+|903| * [Valid Permutations for DI Sequence](https://leetcode.com/problems/valid-permutations-for-di-sequence/) :new: |34%|Hard||
 |902| * [Numbers At Most N Given Digit Set](https://leetcode.com/problems/numbers-at-most-n-given-digit-set/) :new: |22%|Hard||
 |901| * [Online Stock Span](https://leetcode.com/problems/online-stock-span/) :new: |35%|Medium||
 |900| * [RLE Iterator](https://leetcode.com/problems/rle-iterator/) :new: |38%|Medium||
