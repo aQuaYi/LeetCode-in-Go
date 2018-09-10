@@ -9,7 +9,7 @@ func twoSum(nums []int, target int) []int {
 		// 通过查询map，获取a = target - b的序列号
 		if j, ok := index[target-b]; ok {
 			// ok 为 true
-			// 说明在i之前，存在nums[j] == a
+			// 说明在i之前，存在 nums[j] == a
 			return []int{j, i}
 			// 注意，顺序是j，i
 		}
