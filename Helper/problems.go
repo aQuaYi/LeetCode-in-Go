@@ -24,7 +24,19 @@ func (ps problems) available() problems {
 	size := len(ps)
 	for i := size - 1; i >= 0; i-- {
 		p := ps[i]
-		if p.isAvailble() {
+		if p.isAvailable() {
+			res = append(res, p)
+		}
+	}
+	return res
+}
+
+func (ps problems) favorite() problems {
+	res := make([]problem, 0, len(ps))
+	size := len(ps)
+	for i := size - 1; i >= 0; i-- {
+		p := ps[i]
+		if p.IsFavor {
 			res = append(res, p)
 		}
 	}

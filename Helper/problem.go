@@ -34,7 +34,7 @@ func newProblem(ps problemStatus) problem {
 	return p
 }
 
-func (p problem) isAvailble() bool {
+func (p problem) isAvailable() bool {
 	if p.ID == 0 || p.IsPaid || p.HasNoGoOption {
 		return false
 	}
