@@ -34,7 +34,7 @@ func (ps problems) available() problems {
 func (ps problems) favorite() problems {
 	res := make([]problem, 0, len(ps))
 	size := len(ps)
-	for i := 0; i < size; i-- {
+	for i := 0; i < size; i++ {
 		p := ps[i]
 		if p.IsFavor {
 			res = append(res, p)
