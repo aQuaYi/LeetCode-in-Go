@@ -2,11 +2,8 @@
 
 ## 题目
 
-<<<<<<< HEAD
 Given an input string (s) and a pattern (p), implement regular expression matching with support for '.' and '*'.
-=======
 Implement regular expression matching with support for '.' and '*'.
->>>>>>> 0c654ed44b072a904e502ab100e6984a5b0e55e1
 
 ```text
 '.' Matches any single character.
@@ -32,19 +29,15 @@ Explanation: "a" does not match the entire string "aa".
 
 Example 2:
 
-<<<<<<< HEAD
 ```text
 Input:
 s = "aa"
 p = "a*"
 Output: true
-Explanation: '*' means zero or more of the precedeng element, 'a'. Therefore, by repeating 'a' once, it becomes "aa".
+Explanation: '*' means zero or more of the preceding element, 'a'. Therefore, by repeating 'a' once, it becomes "aa".
 ```
 
 Example 3:
-=======
-## 总结
->>>>>>> 0c654ed44b072a904e502ab100e6984a5b0e55e1
 
 ```text
 Input:
