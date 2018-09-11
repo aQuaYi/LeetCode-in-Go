@@ -13,6 +13,7 @@ func buildReadme() {
 
 	lc := newLeetCode()
 	makeReadmeFile(lc)
+	makeMyFavoriteFile(lc)
 
 	log.Println("完成，重建 README 文档")
 }
@@ -47,4 +48,21 @@ func readTMPL(path string) string {
 	}
 
 	return string(data)
+}
+
+func makeMyFavoriteFile(lc *leetcode) {
+	file := "Favorite.md"
+	os.Remove(file)
+
+	var b bytes.Buffer
+
+	tmpl := template.Must(template.New("favorite").Parse(readTMPL("favorite.markdown")))
+
+	err := tmpl.Execute(&b, lc)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	// 保存 README.md 文件
+	write(file, string(b.Bytes()))
 }

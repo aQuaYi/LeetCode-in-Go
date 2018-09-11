@@ -28,7 +28,7 @@ func (r *record) progressTable() string {
 }
 
 func (r *record) update(p problem) {
-	if !p.isAvailble() {
+	if !p.isAvailable() {
 		return
 	}
 	switch p.Difficulty {
