@@ -42,7 +42,7 @@ func isMatch(s, p string) bool {
 					 */
 					dp[i+1][j+1] = dp[i+1][j-1] || /* "x*" 解释为 "" */
 						dp[i+1][j] || /* "x*" 解释为 "x" */
-						dp[i][j+1] /* "x*" 解释为 "xx" */
+						dp[i][j+1] /* "x*" 解释为 "xx..." */
 				}
 			}
 		}
