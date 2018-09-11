@@ -101,6 +101,24 @@ func Test_Problem0010(t *testing.T) {
 		question{
 			p: para{
 				one: "ab",
+				two: ".*c",
+			},
+			a: ans{
+				one: false,
+			},
+		},
+		question{
+			p: para{
+				one: "ab",
+				two: "z*t*x*c*a*b",
+			},
+			a: ans{
+				one: true,
+			},
+		},
+		question{
+			p: para{
+				one: "ab",
 				two: "c*a*b",
 			},
 			a: ans{
