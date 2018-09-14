@@ -8,24 +8,25 @@ import (
 type ListNode = kit.ListNode
 
 func reverseKGroup(head *ListNode, k int) *ListNode {
-	if head == nil || head.Next == nil || k < 2 {
+	if k < 2 || head == nil || head.Next == nil {
 		return head
 	}
 
-	tail, nr := needReverse(head, k)
-	if nr {
-		nextHead := tail.Next
-		head, tail := reverse(head, tail)
-		// 递归
-		// 把整理好了的前k个节点的尾部，指向整理好了的后面节点的head
+	tail, needReverse := getTail(head, k)
+
+	if needReverse {
+		nextHead := new(ListNode)
+		/* 斩断 tail 后的链接 */
+		nextHead, tail.Next = tail.Next, nil
+		head, tail = reverse(head, tail)
+		/* tail 后面接上尾部的递归处理 */
 		tail.Next = reverseKGroup(nextHead, k)
-		return head
 	}
 
 	return head
 }
 
-func needReverse(head *ListNode, k int) (*ListNode, bool) {
+func getTail(head *ListNode, k int) (*ListNode, bool) {
 	for k > 1 && head != nil {
 		head = head.Next
 		k--
@@ -33,36 +34,10 @@ func needReverse(head *ListNode, k int) (*ListNode, bool) {
 	return head, k == 1 && head != nil
 }
 
-// // 返回逆转后的首尾节点
-// func reverse(head *ListNode) (first, last *ListNode) {
-// 	if head == nil || head.Next == nil {
-// 		return head, nil
-// 	}
-// 	gotLast := false
-// 	for head != nil {
-// 		temp := head.Next
-// 		head.Next = first
-// 		first = head
-// 		head = temp
-// 		if !gotLast {
-// 			last = first
-// 			gotLast = true
-// 		}
-// 	}
-// 	return first, last
-// }
-
-// 返回逆转后的首尾节点
-func reverse(head, tail *ListNode) (first, last *ListNode) {
+func reverse(head, tail *ListNode) (*ListNode, *ListNode) {
 	curPre, cur := head, head.Next
 	for cur != nil {
 		curPre, cur, cur.Next = cur, cur.Next, curPre
 	}
 	return tail, head
-}
-
-// ListNode 是链接节点
-type ListNode struct {
-	Val  int
-	Next *ListNode
 }
