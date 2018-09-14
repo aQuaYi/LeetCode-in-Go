@@ -16,9 +16,9 @@ func isMatch(s, p string) bool {
 	 * 根据题目的设定， "" 可以与 "a*b*c*" 相匹配
 	 * 所以，需要把相应的 dp 设置成 true
 	 */
-	for i := 1; i < pSize && dp[0][i-1]; i += 2 {
-		if p[i] == '*' {
-			dp[0][i+1] = true
+	for j := 1; j < pSize && dp[0][j-1]; j += 2 {
+		if p[j] == '*' {
+			dp[0][j+1] = true
 		}
 	}
 
