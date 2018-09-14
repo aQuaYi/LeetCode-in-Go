@@ -9,7 +9,7 @@ func isMatch(s, p string) bool {
 		dp[i] = make([]bool, pSize+1)
 	}
 
-	/* dp[i][j] 的含义是 s[:i] 可以与 p[:j] 匹配 */
+	/* dp[i][j] 代表了 s[:i] 能否与 p[:j] 匹配 */
 
 	dp[0][0] = true
 	/**
