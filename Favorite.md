@@ -39,7 +39,7 @@
 |120|[Triangle](./Algorithms/0120.triangle)|36%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |124|[Binary Tree Maximum Path Sum](./Algorithms/0124.binary-tree-maximum-path-sum)|27%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |126|[Word Ladder II](./Algorithms/0126.word-ladder-ii)|15%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|127|[Word Ladder](./Algorithms/0127.word-ladder)|20%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|127|[Word Ladder](./Algorithms/0127.word-ladder)|21%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |130|[Surrounded Regions](./Algorithms/0130.surrounded-regions)|20%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |131|[Palindrome Partitioning](./Algorithms/0131.palindrome-partitioning)|37%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |132|[Palindrome Partitioning II](./Algorithms/0132.palindrome-partitioning-ii)|25%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -113,7 +113,7 @@
 |357|[Count Numbers with Unique Digits](./Algorithms/0357.count-numbers-with-unique-digits)|46%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |363|[Max Sum of Rectangle No Larger Than K](./Algorithms/0363.max-sum-of-rectangle-no-larger-than-k)|34%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |365|[Water and Jug Problem](./Algorithms/0365.water-and-jug-problem)|28%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|368|[Largest Divisible Subset](./Algorithms/0368.largest-divisible-subset)|34%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|368|[Largest Divisible Subset](./Algorithms/0368.largest-divisible-subset)|33%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |371|[Sum of Two Integers](./Algorithms/0371.sum-of-two-integers)|50%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |373|[Find K Pairs with Smallest Sums](./Algorithms/0373.find-k-pairs-with-smallest-sums)|31%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |376|[Wiggle Subsequence](./Algorithms/0376.wiggle-subsequence)|36%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -157,7 +157,7 @@
 |488|[Zuma Game](./Algorithms/0488.zuma-game)|36%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |491|[Increasing Subsequences](./Algorithms/0491.increasing-subsequences)|39%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |492|[Construct the Rectangle](./Algorithms/0492.construct-the-rectangle)|47%|Easy|[❤](https://leetcode.com/list/oussv5j)|
-|494|[Target Sum](./Algorithms/0494.target-sum)|44%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|494|[Target Sum](./Algorithms/0494.target-sum)|43%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |501|[Find Mode in Binary Search Tree](./Algorithms/0501.find-mode-in-binary-search-tree)|37%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |503|[Next Greater Element II](./Algorithms/0503.next-greater-element-ii)|48%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |516|[Longest Palindromic Subsequence](./Algorithms/0516.longest-palindromic-subsequence)|43%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -222,7 +222,7 @@
 |740|[Delete and Earn](./Algorithms/0740.delete-and-earn)|44%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |752|[Open the Lock](./Algorithms/0752.open-the-lock)|41%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |753|[Cracking the Safe](./Algorithms/0753.cracking-the-safe)|41%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|754|[Reach a Number](./Algorithms/0754.reach-a-number)|28%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|754|[Reach a Number](./Algorithms/0754.reach-a-number)|29%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |756|[Pyramid Transition Matrix](./Algorithms/0756.pyramid-transition-matrix)|47%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |770|[Basic Calculator IV](./Algorithms/0770.basic-calculator-iv)|43%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |784|[Letter Case Permutation](./Algorithms/0784.letter-case-permutation)|53%|Easy|[❤](https://leetcode.com/list/oussv5j)|
@@ -233,7 +233,7 @@
 |792|[Number of Matching Subsequences](./Algorithms/0792.number-of-matching-subsequences)|37%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |793|[Preimage Size of Factorial Zeroes Function](./Algorithms/0793.preimage-size-of-factorial-zeroes-function)|39%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |795|[Number of Subarrays with Bounded Maximum](./Algorithms/0795.number-of-subarrays-with-bounded-maximum)|41%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|798|[Smallest Rotation with Highest Score](./Algorithms/0798.smallest-rotation-with-highest-score)|35%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|798|[Smallest Rotation with Highest Score](./Algorithms/0798.smallest-rotation-with-highest-score)|36%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |799|[Champagne Tower](./Algorithms/0799.champagne-tower)|30%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |801|[Minimum Swaps To Make Sequences Increasing](./Algorithms/0801.minimum-swaps-to-make-sequences-increasing)|32%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |802|[Find Eventual Safe States](./Algorithms/0802.find-eventual-safe-states)|40%|Medium|[❤](https://leetcode.com/list/oussv5j)|

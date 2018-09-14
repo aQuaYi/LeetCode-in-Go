@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 737,
-	"Updated": "2018-09-14T09:46:17.17729958+08:00",
+	"Updated": "2018-09-14T10:18:31.015502784+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 196,
@@ -6361,7 +6361,7 @@
 			"ID": 528,
 			"Title": "Random Pick with Weight",
 			"TitleSlug": "random-pick-with-weight",
-			"PassRate": "42%",
+			"PassRate": "41%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10657,7 +10657,7 @@
 			"ID": 886,
 			"Title": "Possible Bipartition",
 			"TitleSlug": "possible-bipartition",
-			"PassRate": "38%",
+			"PassRate": "37%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
