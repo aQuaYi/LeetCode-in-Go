@@ -15,12 +15,12 @@ func reverseKGroup(head *ListNode, k int) *ListNode {
 	tail, needReverse := getTail(head, k)
 
 	if needReverse {
-		nextHead := new(ListNode)
+		tailNext := tail.Next
 		/* 斩断 tail 后的链接 */
-		nextHead, tail.Next = tail.Next, nil
+		tail.Next = nil
 		head, tail = reverse(head, tail)
 		/* tail 后面接上尾部的递归处理 */
-		tail.Next = reverseKGroup(nextHead, k)
+		tail.Next = reverseKGroup(tailNext, k)
 	}
 
 	return head
