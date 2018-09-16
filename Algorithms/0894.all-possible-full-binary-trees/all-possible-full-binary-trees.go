@@ -7,22 +7,26 @@ import (
 // TreeNode 是题目预定义的树结构
 type TreeNode = kit.TreeNode
 
+var forest = make([][]*TreeNode, 20)
+
 func allPossibleFBT(N int) []*TreeNode {
 	if N%2 == 0 {
 		return nil
 	}
 
-	cache := [20][]*TreeNode{}
+	if forest[N] != nil {
+		return forest[N]
+	}
 
-	cache[1] = []*TreeNode{&TreeNode{Val: 0}}
+	forest[1] = []*TreeNode{&TreeNode{Val: 0}}
 
 	for n := 3; n <= N; n += 2 {
-		tmp := make([]*TreeNode, 0, n*2)
-		for le := 1; le <= n-2; le += 2 {
-			ri := n - 1 - le
-			for _, left := range cache[le] {
-				for _, right := range cache[ri] {
-					tmp = append(tmp, &TreeNode{
+		trees := make([]*TreeNode, 0, n*2)
+		for les := 1; les <= n-2; les += 2 {
+			ris := n - 1 - les
+			for _, left := range allPossibleFBT(les) {
+				for _, right := range allPossibleFBT(ris) {
+					trees = append(trees, &TreeNode{
 						Val:   0,
 						Left:  left,
 						Right: right,
@@ -30,8 +34,8 @@ func allPossibleFBT(N int) []*TreeNode {
 				}
 			}
 		}
-		cache[n] = tmp
+		forest[n] = trees
 	}
 
-	return cache[N]
+	return forest[N]
 }
