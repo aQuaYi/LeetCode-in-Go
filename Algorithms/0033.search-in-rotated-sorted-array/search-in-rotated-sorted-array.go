@@ -1,39 +1,35 @@
 package problem0033
 
 func search(nums []int, target int) int {
-	var index, indexOfMax int
-	length := len(nums)
+	size := len(nums)
 
-	if length == 0 {
-		return -1
-	}
-
-	// 获取最大值的索引号，以便进行索引号变换
-	for indexOfMax+1 < length && nums[indexOfMax] < nums[indexOfMax+1] {
-		indexOfMax++
-	}
-
-	low, high, median := 0, length-1, 0
-	for low <= high {
-		median = (low + high) / 2
-
-		// 变换索引号
-		index = median + indexOfMax + 1
-		if index >= length {
-			index -= length
+	lo, hi := 0, size-1
+	for lo < hi {
+		mid := (lo + hi) / 2
+		if nums[mid] > nums[hi] {
+			lo = mid + 1
+		} else {
+			hi = mid
 		}
-		// 假设nums是由升序切片old转换来的
-		// 那么，old[median] == nums[index]
+	}
 
-		// 传统二分查找法的比较判断
-		// 原先需要old[median]的地方，使用nums[index]即可
+	/* lo = hi，是最小值的索引值 */
+
+	rotated := lo /* 数组旋转了的距离 */
+
+	lo, hi = 0, size-1
+
+	for lo <= hi {
+		mid := (lo + hi) / 2
+		/* nums 是 rotated，所以需要使用 rotatedMid 来获取 mid 的值 */
+		rotatedMid := (rotated + mid) % size
 		switch {
-		case nums[index] > target:
-			high = median - 1
-		case nums[index] < target:
-			low = median + 1
+		case nums[rotatedMid] > target:
+			hi = mid - 1
+		case nums[rotatedMid] < target:
+			lo = mid + 1
 		default:
-			return index
+			return rotatedMid
 		}
 	}
 
