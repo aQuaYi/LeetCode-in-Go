@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 743,
-	"Updated": "2018-09-18T17:00:29.012694041+08:00",
+	"Updated": "2018-09-18T17:19:20.381997411+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 196,
+			"Solved": 197,
 			"Total": 199
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 147
 		},
 		"Total": {
-			"Solved": 672,
+			"Solved": 673,
 			"Total": 685
 		}
 	},
@@ -5977,7 +5977,7 @@
 			"ID": 496,
 			"Title": "Next Greater Element I",
 			"TitleSlug": "next-greater-element-i",
-			"PassRate": "57%",
+			"PassRate": "56%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10189,7 +10189,7 @@
 			"ID": 847,
 			"Title": "Shortest Path Visiting All Nodes",
 			"TitleSlug": "shortest-path-visiting-all-nodes",
-			"PassRate": "43%",
+			"PassRate": "42%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10779,9 +10779,9 @@
 			"TitleSlug": "monotonic-array",
 			"PassRate": "55%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
