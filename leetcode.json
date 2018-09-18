@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
-	"Ranking": 743,
-	"Updated": "2018-09-18T17:19:20.381997411+08:00",
+	"Ranking": 742,
+	"Updated": "2018-09-18T22:27:15.167315484+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 197,
@@ -5977,7 +5977,7 @@
 			"ID": 496,
 			"Title": "Next Greater Element I",
 			"TitleSlug": "next-greater-element-i",
-			"PassRate": "56%",
+			"PassRate": "57%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -6373,7 +6373,7 @@
 			"ID": 529,
 			"Title": "Minesweeper",
 			"TitleSlug": "minesweeper",
-			"PassRate": "49%",
+			"PassRate": "50%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10633,7 +10633,7 @@
 			"ID": 884,
 			"Title": "Uncommon Words from Two Sentences",
 			"TitleSlug": "uncommon-words-from-two-sentences",
-			"PassRate": "60%",
+			"PassRate": "59%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
