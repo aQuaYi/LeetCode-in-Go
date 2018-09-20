@@ -80,3 +80,16 @@ func Test_Problem0033(t *testing.T) {
 		ast.Equal(a.one, search(p.one, p.two), "输入:%v", p)
 	}
 }
+
+func Test_indexOfMin(t *testing.T) {
+	ast := assert.New(t)
+
+	array := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+
+	for i := 0; i < 10; i++ {
+		nums := array[i : i+10]
+		actual := 9 - i
+		expected := indexOfMin(nums)
+		ast.Equal(expected, actual)
+	}
+}

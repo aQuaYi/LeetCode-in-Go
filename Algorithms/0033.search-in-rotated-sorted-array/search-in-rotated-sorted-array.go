@@ -2,22 +2,9 @@ package problem0033
 
 func search(nums []int, target int) int {
 	size := len(nums)
-
 	left, right := 0, size-1
-	for left < right {
-		mid := (left + right) / 2
-		if nums[mid] > nums[right] {
-			left = mid + 1
-		} else {
-			right = mid
-		}
-	}
-
-	/* lo = hi，是最小值的索引值 */
-
-	rotated := left /* 数组旋转了的距离 */
-
-	left, right = 0, size-1
+	/* 数组旋转了的距离 */
+	rotated := indexOfMin(nums)
 
 	for left <= right {
 		mid := (left + right) / 2
@@ -34,4 +21,19 @@ func search(nums []int, target int) int {
 	}
 
 	return -1
+}
+
+/* nums 是被旋转了的递增数组 */
+func indexOfMin(nums []int) int {
+	size := len(nums)
+	left, right := 0, size-1
+	for left < right {
+		mid := (left + right) / 2
+		if nums[mid] > nums[right] {
+			left = mid + 1
+		} else {
+			right = mid
+		}
+	}
+	return left
 }
