@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 765,
-	"Updated": "2018-09-24T22:22:44.21905145+08:00",
+	"Updated": "2018-09-24T22:44:32.029503599+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 197,
@@ -329,7 +329,7 @@
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": true,
+			"IsFavor": false,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -425,7 +425,7 @@
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": true,
+			"IsFavor": false,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -9061,7 +9061,7 @@
 			"ID": 753,
 			"Title": "Cracking the Safe",
 			"TitleSlug": "cracking-the-safe",
-			"PassRate": "41%",
+			"PassRate": "42%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,

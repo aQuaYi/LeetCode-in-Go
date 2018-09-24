@@ -2,8 +2,6 @@
 
 |题号|题目|通过率|难度|收藏|
 |:-:|:-|:-: | :-: | :-: |
-|25|[Reverse Nodes in k-Group](./Algorithms/0025.reverse-nodes-in-k-group)|33%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|33|[Search in Rotated Sorted Array](./Algorithms/0033.search-in-rotated-sorted-array)|32%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |37|[Sudoku Solver](./Algorithms/0037.sudoku-solver)|33%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |44|[Wildcard Matching](./Algorithms/0044.wildcard-matching)|21%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |49|[Group Anagrams](./Algorithms/0049.group-anagrams)|41%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -220,7 +218,7 @@
 |739|[Daily Temperatures](./Algorithms/0739.daily-temperatures)|55%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |740|[Delete and Earn](./Algorithms/0740.delete-and-earn)|44%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |752|[Open the Lock](./Algorithms/0752.open-the-lock)|41%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|753|[Cracking the Safe](./Algorithms/0753.cracking-the-safe)|41%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|753|[Cracking the Safe](./Algorithms/0753.cracking-the-safe)|42%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |754|[Reach a Number](./Algorithms/0754.reach-a-number)|29%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |756|[Pyramid Transition Matrix](./Algorithms/0756.pyramid-transition-matrix)|47%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |770|[Basic Calculator IV](./Algorithms/0770.basic-calculator-iv)|41%|Hard|[❤](https://leetcode.com/list/oussv5j)|

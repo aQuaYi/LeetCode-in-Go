@@ -167,7 +167,7 @@
 |757|[Set Intersection Size At Least Two](./Algorithms/0757.set-intersection-size-at-least-two)|34%|Hard||
 |756|[Pyramid Transition Matrix](./Algorithms/0756.pyramid-transition-matrix)|47%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |754|[Reach a Number](./Algorithms/0754.reach-a-number)|29%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|753|[Cracking the Safe](./Algorithms/0753.cracking-the-safe)|41%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|753|[Cracking the Safe](./Algorithms/0753.cracking-the-safe)|42%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |752|[Open the Lock](./Algorithms/0752.open-the-lock)|41%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |749|[Contain Virus](./Algorithms/0749.contain-virus)|40%|Hard||
 |748|[Shortest Completing Word](./Algorithms/0748.shortest-completing-word)|52%|Medium||
@@ -673,7 +673,7 @@
 |36|[Valid Sudoku](./Algorithms/0036.valid-sudoku)|39%|Medium||
 |35|[Search Insert Position](./Algorithms/0035.search-insert-position)|39%|Easy||
 |34|[Find First and Last Position of Element in Sorted Array](./Algorithms/0034.find-first-and-last-position-of-element-in-sorted-array)|32%|Medium||
-|33|[Search in Rotated Sorted Array](./Algorithms/0033.search-in-rotated-sorted-array)|32%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|33|[Search in Rotated Sorted Array](./Algorithms/0033.search-in-rotated-sorted-array)|32%|Medium||
 |32|[Longest Valid Parentheses](./Algorithms/0032.longest-valid-parentheses)|23%|Hard||
 |31|[Next Permutation](./Algorithms/0031.next-permutation)|29%|Medium||
 |30|[Substring with Concatenation of All Words](./Algorithms/0030.substring-with-concatenation-of-all-words)|22%|Hard||
@@ -681,7 +681,7 @@
 |28|[Implement strStr()](./Algorithms/0028.implement-strstr)|29%|Easy||
 |27|[Remove Element](./Algorithms/0027.remove-element)|42%|Easy||
 |26|[Remove Duplicates from Sorted Array](./Algorithms/0026.remove-duplicates-from-sorted-array)|37%|Easy||
-|25|[Reverse Nodes in k-Group](./Algorithms/0025.reverse-nodes-in-k-group)|33%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|25|[Reverse Nodes in k-Group](./Algorithms/0025.reverse-nodes-in-k-group)|33%|Hard||
 |24|[Swap Nodes in Pairs](./Algorithms/0024.swap-nodes-in-pairs)|40%|Medium||
 |23|[Merge k Sorted Lists](./Algorithms/0023.merge-k-sorted-lists)|30%|Hard||
 |22|[Generate Parentheses](./Algorithms/0022.generate-parentheses)|50%|Medium||
