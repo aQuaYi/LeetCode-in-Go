@@ -4,6 +4,7 @@ func solveSudoku(board [][]byte) {
 	solve(board, 0)
 }
 
+/* k 是把 board 转换成一维数组后，元素的索引值 */
 func solve(board [][]byte, k int) bool {
 	if k == 81 {
 		return true
@@ -14,8 +15,10 @@ func solve(board [][]byte, k int) bool {
 		return solve(board, k+1)
 	}
 
+	/* bi, bj 是 rc 所在块的左上角元素的索引值 */
 	bi, bj := r/3*3, c/3*3
 
+	// 按照数独的规则，检查 b 能否放在 board[r][c]
 	isValid := func(b byte) bool {
 		for n := 0; n < 9; n++ {
 			if board[r][n] == b ||
@@ -37,5 +40,6 @@ func solve(board [][]byte, k int) bool {
 	}
 
 	board[r][c] = '.'
+
 	return false
 }
