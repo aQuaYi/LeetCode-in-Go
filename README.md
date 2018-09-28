@@ -17,12 +17,12 @@
 
 |题号|题目|通过率|难度|收藏|
 |:-:|:-|:-: | :-: | :-: |
-|911| * [Online Election](https://leetcode.com/problems/online-election/) :new: |40%|Medium||
+|911| * [Online Election](https://leetcode.com/problems/online-election/) :new: |41%|Medium||
 |910| * [Smallest Range II](https://leetcode.com/problems/smallest-range-ii/) :new: |17%|Medium||
 |909| * [Snakes and Ladders](https://leetcode.com/problems/snakes-and-ladders/) :new: |23%|Medium||
 |908| * [Smallest Range I](https://leetcode.com/problems/smallest-range-i/) :new: |63%|Easy||
 |907| * [Sum of Subarray Minimums](https://leetcode.com/problems/sum-of-subarray-minimums/)|19%|Medium||
-|906| * [Super Palindromes](https://leetcode.com/problems/super-palindromes/)|29%|Hard||
+|906| * [Super Palindromes](https://leetcode.com/problems/super-palindromes/)|28%|Hard||
 |905| * [Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)|72%|Easy||
 |904| * [Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets/)|36%|Medium||
 |903| * [Valid Permutations for DI Sequence](https://leetcode.com/problems/valid-permutations-for-di-sequence/)|39%|Hard||
@@ -56,7 +56,7 @@
 |875|[Koko Eating Bananas](./Algorithms/0875.koko-eating-bananas)|41%|Medium||
 |874|[Walking Robot Simulation](./Algorithms/0874.walking-robot-simulation)|28%|Easy||
 |873|[Length of Longest Fibonacci Subsequence](./Algorithms/0873.length-of-longest-fibonacci-subsequence)|42%|Medium||
-|872|[Leaf-Similar Trees](./Algorithms/0872.leaf-similar-trees)|60%|Easy||
+|872|[Leaf-Similar Trees](./Algorithms/0872.leaf-similar-trees)|61%|Easy||
 |871|[Minimum Number of Refueling Stops](./Algorithms/0871.minimum-number-of-refueling-stops)|25%|Hard||
 |870|[Advantage Shuffle](./Algorithms/0870.advantage-shuffle)|39%|Medium||
 |869|[Reordered Power of 2](./Algorithms/0869.reordered-power-of-2)|47%|Medium||
@@ -78,7 +78,7 @@
 |853|[Car Fleet](./Algorithms/0853.car-fleet)|33%|Medium||
 |852|[Peak Index in a Mountain Array](./Algorithms/0852.peak-index-in-a-mountain-array)|67%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |851|[Loud and Rich](./Algorithms/0851.loud-and-rich)|44%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|850|[Rectangle Area II](./Algorithms/0850.rectangle-area-ii)|42%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|850|[Rectangle Area II](./Algorithms/0850.rectangle-area-ii)|41%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |849|[Maximize Distance to Closest Person](./Algorithms/0849.maximize-distance-to-closest-person)|38%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |848|[Shifting Letters](./Algorithms/0848.shifting-letters)|36%|Medium||
 |847|[Shortest Path Visiting All Nodes](./Algorithms/0847.shortest-path-visiting-all-nodes)|43%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -191,7 +191,7 @@
 |726|[Number of Atoms](./Algorithms/0726.number-of-atoms)|43%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |725|[Split Linked List in Parts](./Algorithms/0725.split-linked-list-in-parts)|47%|Medium||
 |724|[Find Pivot Index](./Algorithms/0724.find-pivot-index)|39%|Easy||
-|722|[Remove Comments](./Algorithms/0722.remove-comments)|28%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|722|[Remove Comments](./Algorithms/0722.remove-comments)|29%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |721|[Accounts Merge](./Algorithms/0721.accounts-merge)|35%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |720|[Longest Word in Dictionary](./Algorithms/0720.longest-word-in-dictionary)|41%|Easy||
 |719|[Find K-th Smallest Pair Distance](./Algorithms/0719.find-k-th-smallest-pair-distance)|28%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -662,7 +662,7 @@
 |47|[Permutations II](./Algorithms/0047.permutations-ii)|36%|Medium||
 |46|[Permutations](./Algorithms/0046.permutations)|50%|Medium||
 |45|[Jump Game II](./Algorithms/0045.jump-game-ii)|26%|Hard||
-|44|[Wildcard Matching](./Algorithms/0044.wildcard-matching)|21%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|44|[Wildcard Matching](./Algorithms/0044.wildcard-matching)|21%|Hard||
 |43|[Multiply Strings](./Algorithms/0043.multiply-strings)|28%|Medium||
 |42|[Trapping Rain Water](./Algorithms/0042.trapping-rain-water)|39%|Hard||
 |41|[First Missing Positive](./Algorithms/0041.first-missing-positive)|26%|Hard||
