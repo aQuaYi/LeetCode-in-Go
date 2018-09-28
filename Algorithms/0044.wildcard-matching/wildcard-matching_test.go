@@ -7,113 +7,59 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-type question struct {
-	para
-	ans
+// tcs is testcase slice
+var tcs = []struct {
+	s   string
+	p   string
+	ans bool
+}{
+
+	{
+		"aa",
+		"a",
+		false,
+	},
+
+	{
+		"aa",
+		"*",
+		true,
+	},
+
+	{
+		"cb",
+		"?a",
+		false,
+	},
+
+	{
+		"adceb",
+		"*a*b",
+		true,
+	},
+
+	{
+		"acdcb",
+		"a*c?b",
+		false,
+	},
+
+	// 可以有多个 testcase
 }
 
-// para 是参数
-type para struct {
-	s string
-	p string
-}
-
-// ans 是答案
-type ans struct {
-	one bool
-}
-
-func Test_Problem0044(t *testing.T) {
+func Test_isMatch(t *testing.T) {
 	ast := assert.New(t)
 
-	qs := []question{
-
-		question{
-			para{
-				"aa",
-				"a",
-			},
-			ans{
-				false,
-			},
-		},
-
-		question{
-			para{
-				"aa",
-				"aa",
-			},
-			ans{
-				true,
-			},
-		},
-
-		question{
-			para{
-				"aaa",
-				"aa",
-			},
-			ans{
-				false,
-			},
-		},
-
-		question{
-			para{
-				"aa",
-				"*",
-			},
-			ans{
-				true,
-			},
-		},
-
-		question{
-			para{
-				"aa",
-				"a*",
-			},
-			ans{
-				true,
-			},
-		},
-
-		question{
-			para{
-				"ab",
-				"?*",
-			},
-			ans{
-				true,
-			},
-		},
-
-		question{
-			para{
-				"aab",
-				"c*a*b",
-			},
-			ans{
-				false,
-			},
-		},
-
-		question{
-			para{
-				"ab",
-				"*",
-			},
-			ans{
-				true,
-			},
-		},
-		// 如需多个测试，可以复制上方元素。
+	for _, tc := range tcs {
+		fmt.Printf("~~%v~~\n", tc)
+		ast.Equal(tc.ans, isMatch(tc.s, tc.p), "输入:%v", tc)
 	}
+}
 
-	for _, q := range qs {
-		a, p := q.ans, q.para
-		fmt.Printf("~~%v~~\n", p)
-
-		ast.Equal(a.one, isMatch(p.s, p.p), "输入:%v", p)
+func Benchmark_isMatch(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		for _, tc := range tcs {
+			isMatch(tc.s, tc.p)
+		}
 	}
 }
