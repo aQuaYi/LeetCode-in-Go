@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 780,
-	"Updated": "2018-09-28T13:09:21.997142685+08:00",
+	"Updated": "2018-09-28T13:18:17.725519638+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 197,
@@ -10957,7 +10957,7 @@
 			"ID": 911,
 			"Title": "Online Election",
 			"TitleSlug": "online-election",
-			"PassRate": "40%",
+			"PassRate": "41%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
