@@ -1,17 +1,16 @@
 package problem0044
 
 func isMatch(s string, p string) bool {
-	ls, lp := len(s), len(p)
+	sSize, pSize := len(s), len(p)
 
-	dp := [][]bool{}
-	for i := 0; i < ls+1; i++ {
-		rt := make([]bool, lp+1)
-		dp = append(dp, rt)
+	dp := make([][]bool, sSize+1)
+	for i := range dp {
+		dp[i] = make([]bool, pSize+1)
 	}
 	// dp[i][j] == true 意味着，s[:i+1] 可以和 p[:j+1] 匹配
 	dp[0][0] = true
 
-	for j := 1; j <= lp; j++ {
+	for j := 1; j <= pSize; j++ {
 		if p[j-1] == '*' {
 			// 当 p[j-1] == '*' 时
 			// 只要前面的匹配，dp[0][j] 就匹配
@@ -20,12 +19,13 @@ func isMatch(s string, p string) bool {
 		}
 	}
 
-	for i := 1; i <= ls; i++ {
-		for j := 1; j <= lp; j++ {
+	for i := 1; i <= sSize; i++ {
+		for j := 1; j <= pSize; j++ {
 			if p[j-1] != '*' {
 				// 当 p[j-1] != '*' 时
 				// 单个字符要匹配，并且之前的字符串也要匹配。
-				dp[i][j] = (p[j-1] == s[i-1] || p[j-1] == '?') && dp[i-1][j-1]
+				dp[i][j] = dp[i-1][j-1] &&
+					(p[j-1] == s[i-1] || p[j-1] == '?')
 			} else {
 				// 当 p[j-1] == '*' 时
 				//   要么，dp[i-1][j] == true，意味着，
@@ -39,5 +39,6 @@ func isMatch(s string, p string) bool {
 			}
 		}
 	}
-	return dp[ls][lp]
+
+	return dp[sSize][pSize]
 }
