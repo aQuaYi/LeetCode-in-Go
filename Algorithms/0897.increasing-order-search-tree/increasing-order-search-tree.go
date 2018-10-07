@@ -16,26 +16,25 @@ func increasingBST(root *TreeNode) *TreeNode {
 }
 
 func helper(root *TreeNode) (*TreeNode, *TreeNode) {
-	if root == nil {
-		return nil, nil
-	}
-
 	if root.Left == nil && root.Right == nil {
 		return root, root
 	}
 
-	if root.Left != nil {
-		leftRoot, leftRight := helper(root.Left)
+	left, right := root.Left, root.Right
+	root.Left, root.Right = nil, nil
+
+	if left != nil {
+		leftRoot, leftRight := helper(left)
 		leftRight.Right = root
-		if root.Right != nil {
-			rightRoot, rightRight := helper(root.Right)
+		if right != nil {
+			rightRoot, rightRight := helper(right)
 			root.Right = rightRoot
 			return leftRoot, rightRight
-		} else {
-			return leftRoot, root
 		}
+		return leftRoot, root
 	}
-	rightRoot, rightRight := helper(root.Right)
+
+	rightRoot, rightRight := helper(right)
 	root.Right = rightRoot
 	return root, rightRight
 }
