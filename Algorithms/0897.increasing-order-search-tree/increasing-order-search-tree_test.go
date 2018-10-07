@@ -30,8 +30,8 @@ func Test_increasingBST(t *testing.T) {
 	for _, tc := range tcs {
 		fmt.Printf("~~%v~~\n", tc)
 		root := kit.Ints2TreeNode(tc.p)
-		ans := kit.Ints2TreeNode(tc.ans)
-		ast.Equal(ans, increasingBST(root), "输入:%v", tc)
+		ans := kit.Tree2ints(increasingBST(root))
+		ast.Equal(tc.ans, ans, "输入:%v", tc)
 	}
 }
 
