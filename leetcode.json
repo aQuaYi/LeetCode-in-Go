@@ -1,23 +1,23 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 819,
-	"Updated": "2018-10-07T10:36:49.583385931+08:00",
+	"Updated": "2018-10-07T18:59:57.366349674+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 198,
-			"Total": 201
+			"Solved": 199,
+			"Total": 202
 		},
 		"Medium": {
 			"Solved": 334,
-			"Total": 344
+			"Total": 346
 		},
 		"Hard": {
 			"Solved": 142,
-			"Total": 148
+			"Total": 149
 		},
 		"Total": {
-			"Solved": 674,
-			"Total": 693
+			"Solved": 675,
+			"Total": 697
 		}
 	},
 	"Problems": [
@@ -2713,7 +2713,7 @@
 			"ID": 224,
 			"Title": "Basic Calculator",
 			"TitleSlug": "basic-calculator",
-			"PassRate": "29%",
+			"PassRate": "30%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -7741,7 +7741,7 @@
 			"ID": 643,
 			"Title": "Maximum Average Subarray I",
 			"TitleSlug": "maximum-average-subarray-i",
-			"PassRate": "37%",
+			"PassRate": "38%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -8509,7 +8509,7 @@
 			"ID": 707,
 			"Title": "Design Linked List",
 			"TitleSlug": "design-linked-list",
-			"PassRate": "17%",
+			"PassRate": "18%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9685,7 +9685,7 @@
 			"ID": 805,
 			"Title": "Split Array With Same Average",
 			"TitleSlug": "split-array-with-same-average",
-			"PassRate": "21%",
+			"PassRate": "22%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10117,7 +10117,7 @@
 			"ID": 841,
 			"Title": "Keys and Rooms",
 			"TitleSlug": "keys-and-rooms",
-			"PassRate": "57%",
+			"PassRate": "56%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10609,7 +10609,7 @@
 			"ID": 882,
 			"Title": "Reachable Nodes In Subdivided Graph",
 			"TitleSlug": "reachable-nodes-in-subdivided-graph",
-			"PassRate": "33%",
+			"PassRate": "34%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10633,7 +10633,7 @@
 			"ID": 884,
 			"Title": "Uncommon Words from Two Sentences",
 			"TitleSlug": "uncommon-words-from-two-sentences",
-			"PassRate": "59%",
+			"PassRate": "60%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10765,7 +10765,7 @@
 			"ID": 895,
 			"Title": "Maximum Frequency Stack",
 			"TitleSlug": "maximum-frequency-stack",
-			"PassRate": "47%",
+			"PassRate": "48%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -10791,9 +10791,9 @@
 			"TitleSlug": "increasing-order-search-tree",
 			"PassRate": "57%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -11023,6 +11023,54 @@
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 917,
+			"Title": "Reverse Only Letters",
+			"TitleSlug": "reverse-only-letters",
+			"PassRate": "61%",
+			"Difficulty": "Easy",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 918,
+			"Title": "Maximum Sum Circular Subarray",
+			"TitleSlug": "maximum-sum-circular-subarray",
+			"PassRate": "20%",
+			"Difficulty": "Medium",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 919,
+			"Title": "Complete Binary Tree Inserter",
+			"TitleSlug": "complete-binary-tree-inserter",
+			"PassRate": "56%",
+			"Difficulty": "Medium",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 920,
+			"Title": "Number of Music Playlists",
+			"TitleSlug": "number-of-music-playlists",
+			"PassRate": "34%",
+			"Difficulty": "Hard",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
 			"HasNoGoOption": false
 		}
 	]
