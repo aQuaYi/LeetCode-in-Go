@@ -11,30 +11,18 @@ import "github.com/aQuaYi/LeetCode-in-Go/kit"
 type TreeNode = kit.TreeNode
 
 func increasingBST(root *TreeNode) *TreeNode {
-	res, _ := helper(root)
-	return res
-}
-
-func helper(root *TreeNode) (*TreeNode, *TreeNode) {
-	if root.Left == nil && root.Right == nil {
-		return root, root
-	}
-
-	left, right := root.Left, root.Right
-	root.Left, root.Right = nil, nil
-
-	if left != nil {
-		leftRoot, leftRight := helper(left)
-		leftRight.Right = root
-		if right != nil {
-			rightRoot, rightRight := helper(right)
-			root.Right = rightRoot
-			return leftRoot, rightRight
+	var head = &TreeNode{}
+	tail := head
+	var rec func(root *TreeNode)
+	rec = func(root *TreeNode) {
+		if root == nil {
+			return
 		}
-		return leftRoot, root
+		rec(root.Left)
+		root.Left = nil               // 切断 root 与其 Left 的连接，避免形成环
+		tail.Right, tail = root, root // 把 root 接上 tail，并保持 tail 指向尾部
+		rec(root.Right)
 	}
-
-	rightRoot, rightRight := helper(right)
-	root.Right = rightRoot
-	return root, rightRight
+	rec(root)
+	return head.Right
 }
