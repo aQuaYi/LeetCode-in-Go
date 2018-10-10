@@ -1,37 +1,27 @@
 package problem0053
 
 func maxSubArray(nums []int) int {
-	l := len(nums)
+	size := len(nums)
+	tmp := nums[0]
+	res := tmp
 
-	if l == 0 {
-		return 0
-	}
-
-	if l == 1 {
-		return nums[0]
-	}
-
-	temp := nums[0]
-	max := temp
-	i := 1
-	// 可以把 for 循环的过程，nums[:1] 每次增加一个，直到变成 nums 的过程。
-	// temp 就是这个过程中，每个 nums[:i] 中的 max(nums[x:i]) (x=0,1,...,i-1)
-	// 整个 nums 中连续子序列的最大值，就在 temp 的所有取值中
-	for i < l {
-		if temp < 0 {
-			// 因为 连续性 的要求，而此时 temp < 0
-			// temp 从 i 处重新开始
-			temp = nums[i]
+	for i := 1; i < size; i++ {
+		// 题目要求是连续的子数组，假设 maxSum = sum(nums[i:k])
+		// 可知必有 sum(nums[i:j]) >= 0 ,其中 i<j<k
+		if tmp < 0 {
+			tmp = nums[i]
 		} else {
-			temp += nums[i]
+			tmp += nums[i]
 		}
-
-		if max < temp {
-			max = temp
-		}
-
-		i++
+		res = max(res, tmp)
 	}
 
-	return max
+	return res
+}
+
+func max(a, b int) int {
+	if a > b {
+		return a
+	}
+	return b
 }
