@@ -2,7 +2,6 @@
 
 |题号|题目|通过率|难度|收藏|
 |:-:|:-|:-: | :-: | :-: |
-|53|[Maximum Subarray](./Algorithms/0053.maximum-subarray)|41%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |54|[Spiral Matrix](./Algorithms/0054.spiral-matrix)|28%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |56|[Merge Intervals](./Algorithms/0056.merge-intervals)|33%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |59|[Spiral Matrix II](./Algorithms/0059.spiral-matrix-ii)|43%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -74,7 +73,7 @@
 |260|[Single Number III](./Algorithms/0260.single-number-iii)|54%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |264|[Ugly Number II](./Algorithms/0264.ugly-number-ii)|34%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |273|[Integer to English Words](./Algorithms/0273.integer-to-english-words)|23%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|275|[H-Index II](./Algorithms/0275.h-index-ii)|34%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|275|[H-Index II](./Algorithms/0275.h-index-ii)|35%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |279|[Perfect Squares](./Algorithms/0279.perfect-squares)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |282|[Expression Add Operators](./Algorithms/0282.expression-add-operators)|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |287|[Find the Duplicate Number](./Algorithms/0287.find-the-duplicate-number)|46%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -143,7 +142,7 @@
 |464|[Can I Win](./Algorithms/0464.can-i-win)|26%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |466|[Count The Repetitions](./Algorithms/0466.count-the-repetitions)|27%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |467|[Unique Substrings in Wraparound String](./Algorithms/0467.unique-substrings-in-wraparound-string)|33%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|470|[Implement Rand10() Using Rand7()](./Algorithms/0470.implement-rand10-using-rand7)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|470|[Implement Rand10() Using Rand7()](./Algorithms/0470.implement-rand10-using-rand7)|43%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |473|[Matchsticks to Square](./Algorithms/0473.matchsticks-to-square)|35%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |477|[Total Hamming Distance](./Algorithms/0477.total-hamming-distance)|47%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |480|[Sliding Window Median](./Algorithms/0480.sliding-window-median)|30%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -250,7 +249,7 @@
 |846|[Hand of Straights](./Algorithms/0846.hand-of-straights)|44%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |847|[Shortest Path Visiting All Nodes](./Algorithms/0847.shortest-path-visiting-all-nodes)|43%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |849|[Maximize Distance to Closest Person](./Algorithms/0849.maximize-distance-to-closest-person)|38%|Easy|[❤](https://leetcode.com/list/oussv5j)|
-|850|[Rectangle Area II](./Algorithms/0850.rectangle-area-ii)|42%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|850|[Rectangle Area II](./Algorithms/0850.rectangle-area-ii)|41%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |851|[Loud and Rich](./Algorithms/0851.loud-and-rich)|44%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |852|[Peak Index in a Mountain Array](./Algorithms/0852.peak-index-in-a-mountain-array)|67%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |854|[K-Similar Strings](./Algorithms/0854.k-similar-strings)|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|

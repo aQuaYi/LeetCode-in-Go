@@ -1,6 +1,6 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
-[![LeetCode 排名](https://img.shields.io/badge/aQuaYi-808-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/aQuaYi-810-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 
@@ -86,7 +86,7 @@
 |853|[Car Fleet](./Algorithms/0853.car-fleet)|33%|Medium||
 |852|[Peak Index in a Mountain Array](./Algorithms/0852.peak-index-in-a-mountain-array)|67%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |851|[Loud and Rich](./Algorithms/0851.loud-and-rich)|44%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|850|[Rectangle Area II](./Algorithms/0850.rectangle-area-ii)|42%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|850|[Rectangle Area II](./Algorithms/0850.rectangle-area-ii)|41%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |849|[Maximize Distance to Closest Person](./Algorithms/0849.maximize-distance-to-closest-person)|38%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |848|[Shifting Letters](./Algorithms/0848.shifting-letters)|36%|Medium||
 |847|[Shortest Path Visiting All Nodes](./Algorithms/0847.shortest-path-visiting-all-nodes)|43%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -212,7 +212,7 @@
 |710|[Random Pick with Blacklist](./Algorithms/0710.random-pick-with-blacklist)|29%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |709|[To Lower Case](./Algorithms/0709.to-lower-case)|74%|Easy||
 |707|[Design Linked List](./Algorithms/0707.design-linked-list)|18%|Easy|[❤](https://leetcode.com/list/oussv5j)|
-|706|[Design HashMap](./Algorithms/0706.design-hashmap)|45%|Easy||
+|706|[Design HashMap](./Algorithms/0706.design-hashmap)|46%|Easy||
 |705|[Design HashSet](./Algorithms/0705.design-hashset)|40%|Easy||
 |704|[Binary Search](./Algorithms/0704.binary-search)|37%|Easy||
 |703|[Kth Largest Element in a Stream](./Algorithms/0703.kth-largest-element-in-a-stream)|36%|Easy||
@@ -368,7 +368,7 @@
 |474|[Ones and Zeroes](./Algorithms/0474.ones-and-zeroes)|38%|Medium||
 |473|[Matchsticks to Square](./Algorithms/0473.matchsticks-to-square)|35%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |472|[Concatenated Words](./Algorithms/0472.concatenated-words)|32%|Hard||
-|470|[Implement Rand10() Using Rand7()](./Algorithms/0470.implement-rand10-using-rand7)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|470|[Implement Rand10() Using Rand7()](./Algorithms/0470.implement-rand10-using-rand7)|43%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |468|[Validate IP Address](./Algorithms/0468.validate-ip-address)|20%|Medium||
 |467|[Unique Substrings in Wraparound String](./Algorithms/0467.unique-substrings-in-wraparound-string)|33%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |466|[Count The Repetitions](./Algorithms/0466.count-the-repetitions)|27%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -502,7 +502,7 @@
 |283|[Move Zeroes](./Algorithms/0283.move-zeroes)|52%|Easy||
 |282|[Expression Add Operators](./Algorithms/0282.expression-add-operators)|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |279|[Perfect Squares](./Algorithms/0279.perfect-squares)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|275|[H-Index II](./Algorithms/0275.h-index-ii)|34%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|275|[H-Index II](./Algorithms/0275.h-index-ii)|35%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |274|[H-Index](./Algorithms/0274.h-index)|34%|Medium||
 |273|[Integer to English Words](./Algorithms/0273.integer-to-english-words)|23%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |268|[Missing Number](./Algorithms/0268.missing-number)|46%|Easy||
@@ -661,7 +661,7 @@
 |56|[Merge Intervals](./Algorithms/0056.merge-intervals)|33%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |55|[Jump Game](./Algorithms/0055.jump-game)|30%|Medium||
 |54|[Spiral Matrix](./Algorithms/0054.spiral-matrix)|28%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|53|[Maximum Subarray](./Algorithms/0053.maximum-subarray)|41%|Easy|[❤](https://leetcode.com/list/oussv5j)|
+|53|[Maximum Subarray](./Algorithms/0053.maximum-subarray)|41%|Easy||
 |52|[N-Queens II](./Algorithms/0052.n-queens-ii)|48%|Hard||
 |51|[N-Queens](./Algorithms/0051.n-queens)|35%|Hard||
 |50|[Pow(x, n)](./Algorithms/0050.powx-n)|26%|Medium||
