@@ -1,45 +1,45 @@
 package problem0054
 
 func spiralOrder(matrix [][]int) []int {
-	r := len(matrix)
-
-	if r == 0 {
-		return []int{}
+	if len(matrix) == 0 || len(matrix[0]) == 0 {
+		return nil
 	}
 
-	c := len(matrix[0])
-	if c == 0 {
-		return []int{}
-	}
-	
-	if len(matrix) == 1 {
-		return matrix[0]
-	}
+	m, n := len(matrix), len(matrix[0])
 
-	res := make([]int, 0, r*c)
+	next := nextFunc(m, n)
 
-	res = append(res, matrix[0]...)
-
-	for i := 1; i < r-1; i++ {
-		res = append(res, matrix[i][c-1])
+	res := make([]int, m*n)
+	for i := range res {
+		x, y := next()
+		res[i] = matrix[x][y]
 	}
 
-	for j := c - 1; j >= 0; j-- {
-		res = append(res, matrix[r-1][j])
-	}
+	return res
+}
 
-	for i := r - 2; i > 0 && c > 1; i-- {
-		res = append(res, matrix[i][0])
+func nextFunc(m, n int) func() (int, int) {
+	top, down := 0, m-1
+	left, right := 0, n-1
+	x, y := 0, -1
+	dx, dy := 0, 1
+	return func() (int, int) {
+		x += dx
+		y += dy
+		switch { // 如果撞墙了，需要修改 dx, dy 和相应的边界值
+		case y+dy > right:
+			top++
+			dx, dy = 1, 0
+		case x+dx > down:
+			right--
+			dx, dy = 0, -1
+		case y+dy < left:
+			down--
+			dx, dy = -1, 0
+		case x+dx < top:
+			left++
+			dx, dy = 0, 1
+		}
+		return x, y
 	}
-
-	if r == 2 || c <= 2 {
-		return res
-	}
-
-	nextMatrix := make([][]int, 0, r-2)
-	for i := 1; i < r-1; i++ {
-		nextMatrix = append(nextMatrix, matrix[i][1:c-1])
-	}
-
-	return append(res, spiralOrder(nextMatrix)...)
 }
