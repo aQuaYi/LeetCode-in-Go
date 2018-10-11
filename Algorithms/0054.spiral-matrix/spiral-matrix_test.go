@@ -31,12 +31,19 @@ func Test_Problem0054(t *testing.T) {
 			para{
 				[][]int{
 					[]int{},
-					[]int{},
-					[]int{},
 				},
 			},
 			ans{
-				[]int{},
+				nil,
+			},
+		},
+
+		question{
+			para{
+				[][]int{},
+			},
+			ans{
+				nil,
 			},
 		},
 
@@ -86,15 +93,6 @@ func Test_Problem0054(t *testing.T) {
 			},
 			ans{
 				[]int{1, 2, 3},
-			},
-		},
-
-		question{
-			para{
-				[][]int{},
-			},
-			ans{
-				[]int{},
 			},
 		},
 
