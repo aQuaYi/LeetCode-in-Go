@@ -19,7 +19,7 @@
 |:-:|:-|:-: | :-: | :-: |
 |924| * [Minimize Malware Spread](https://leetcode.com/problems/minimize-malware-spread/) :new: |33%|Hard||
 |923| * [3Sum With Multiplicity](https://leetcode.com/problems/3sum-with-multiplicity/) :new: |25%|Medium||
-|922| * [Sort Array By Parity II](https://leetcode.com/problems/sort-array-by-parity-ii/) :new: |69%|Easy||
+|922| * [Sort Array By Parity II](https://leetcode.com/problems/sort-array-by-parity-ii/) :new: |68%|Easy||
 |921| * [Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/) :new: |75%|Medium||
 |920| * [Number of Music Playlists](https://leetcode.com/problems/number-of-music-playlists/)|39%|Hard||
 |919| * [Complete Binary Tree Inserter](https://leetcode.com/problems/complete-binary-tree-inserter/)|54%|Medium||
@@ -218,7 +218,7 @@
 |707|[Design Linked List](./Algorithms/0707.design-linked-list)|18%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |706|[Design HashMap](./Algorithms/0706.design-hashmap)|46%|Easy||
 |705|[Design HashSet](./Algorithms/0705.design-hashset)|40%|Easy||
-|704|[Binary Search](./Algorithms/0704.binary-search)|37%|Easy||
+|704|[Binary Search](./Algorithms/0704.binary-search)|38%|Easy||
 |703|[Kth Largest Element in a Stream](./Algorithms/0703.kth-largest-element-in-a-stream)|37%|Easy||
 |701|[Insert into a Binary Search Tree](./Algorithms/0701.insert-into-a-binary-search-tree)|65%|Medium||
 |700|[Search in a Binary Search Tree](./Algorithms/0700.search-in-a-binary-search-tree)|62%|Easy||
@@ -328,7 +328,7 @@
 |529|[Minesweeper](./Algorithms/0529.minesweeper)|50%|Medium||
 |528|[Random Pick with Weight](./Algorithms/0528.random-pick-with-weight)|41%|Medium||
 |526|[Beautiful Arrangement](./Algorithms/0526.beautiful-arrangement)|52%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|525|[Contiguous Array](./Algorithms/0525.contiguous-array)|41%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|525|[Contiguous Array](./Algorithms/0525.contiguous-array)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |524|[Longest Word in Dictionary through Deleting](./Algorithms/0524.longest-word-in-dictionary-through-deleting)|43%|Medium||
 |523|[Continuous Subarray Sum](./Algorithms/0523.continuous-subarray-sum)|23%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |522|[Longest Uncommon Subsequence II](./Algorithms/0522.longest-uncommon-subsequence-ii)|32%|Medium||
@@ -662,7 +662,7 @@
 |59|[Spiral Matrix II](./Algorithms/0059.spiral-matrix-ii)|43%|Medium||
 |58|[Length of Last Word](./Algorithms/0058.length-of-last-word)|32%|Easy||
 |57|[Insert Interval](./Algorithms/0057.insert-interval)|29%|Hard||
-|56|[Merge Intervals](./Algorithms/0056.merge-intervals)|33%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|56|[Merge Intervals](./Algorithms/0056.merge-intervals)|33%|Medium||
 |55|[Jump Game](./Algorithms/0055.jump-game)|30%|Medium||
 |54|[Spiral Matrix](./Algorithms/0054.spiral-matrix)|28%|Medium||
 |53|[Maximum Subarray](./Algorithms/0053.maximum-subarray)|41%|Easy||

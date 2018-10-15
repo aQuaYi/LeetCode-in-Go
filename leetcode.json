@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 834,
-	"Updated": "2018-10-15T11:54:01.594640165+08:00",
+	"Updated": "2018-10-15T13:11:47.487401161+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 202,
@@ -701,7 +701,7 @@
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": true,
+			"IsFavor": false,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -6325,7 +6325,7 @@
 			"ID": 525,
 			"Title": "Contiguous Array",
 			"TitleSlug": "contiguous-array",
-			"PassRate": "41%",
+			"PassRate": "42%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -8473,7 +8473,7 @@
 			"ID": 704,
 			"Title": "Binary Search",
 			"TitleSlug": "binary-search",
-			"PassRate": "37%",
+			"PassRate": "38%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11089,7 +11089,7 @@
 			"ID": 922,
 			"Title": "Sort Array By Parity II",
 			"TitleSlug": "sort-array-by-parity-ii",
-			"PassRate": "69%",
+			"PassRate": "68%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
