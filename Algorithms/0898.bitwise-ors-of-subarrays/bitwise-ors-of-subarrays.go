@@ -1,20 +1,20 @@
 package problem0898
 
-func subarrayBitwiseORs(A []int) int {
-	size := len(A)
-	res := make(map[int]bool, size)
-	var cur map[int]bool
-
-	for _, n := range A {
-		cur2 := make(map[int]bool, 30)
-		cur2[n] = true
-		for k := range cur {
-			cur2[n|k] = true
+func subarrayBitwiseORs(a []int) int {
+	unique := make(map[int]bool, len(a))
+	var s0, s1 []int
+	for _, x := range a {
+		tmp := make(map[int]bool, len(s0))
+		tmp[x], unique[x] = true, true
+		s1 = append(s1, x)
+		for _, y := range s0 {
+			y |= x
+			if !tmp[y] {
+				tmp[y], unique[y] = true, true
+				s1 = append(s1, y)
+			}
 		}
-		cur = cur2
-		for k := range cur {
-			res[k] = true
-		}
+		s0, s1 = s1, s0[:0]
 	}
-	return len(res)
+	return len(unique)
 }
