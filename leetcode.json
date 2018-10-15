@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
-	"Ranking": 834,
-	"Updated": "2018-10-15T16:53:40.500438971+08:00",
+	"Ranking": 836,
+	"Updated": "2018-10-15T19:42:10.554323279+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 202,
 			"Total": 206
 		},
 		"Medium": {
-			"Solved": 330,
+			"Solved": 331,
 			"Total": 344
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 151
 		},
 		"Total": {
-			"Solved": 676,
+			"Solved": 677,
 			"Total": 701
 		}
 	},
@@ -1801,7 +1801,7 @@
 			"ID": 148,
 			"Title": "Sort List",
 			"TitleSlug": "sort-list",
-			"PassRate": "31%",
+			"PassRate": "32%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10803,9 +10803,9 @@
 			"TitleSlug": "bitwise-ors-of-subarrays",
 			"PassRate": "29%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -10993,7 +10993,7 @@
 			"ID": 914,
 			"Title": "X of a Kind in a Deck of Cards",
 			"TitleSlug": "x-of-a-kind-in-a-deck-of-cards",
-			"PassRate": "32%",
+			"PassRate": "33%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -11029,7 +11029,7 @@
 			"ID": 917,
 			"Title": "Reverse Only Letters",
 			"TitleSlug": "reverse-only-letters",
-			"PassRate": "58%",
+			"PassRate": "57%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
