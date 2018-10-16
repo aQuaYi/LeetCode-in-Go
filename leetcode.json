@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 836,
-	"Updated": "2018-10-16T16:56:49.030888429+08:00",
+	"Updated": "2018-10-16T20:06:01.348214953+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 201,
@@ -12,11 +12,11 @@
 			"Total": 345
 		},
 		"Hard": {
-			"Solved": 144,
+			"Solved": 145,
 			"Total": 151
 		},
 		"Total": {
-			"Solved": 677,
+			"Solved": 678,
 			"Total": 701
 		}
 	},
@@ -6565,7 +6565,7 @@
 			"ID": 545,
 			"Title": "Boundary of Binary Tree",
 			"TitleSlug": "boundary-of-binary-tree",
-			"PassRate": "33%",
+			"PassRate": "32%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -10249,7 +10249,7 @@
 			"ID": 852,
 			"Title": "Peak Index in a Mountain Array",
 			"TitleSlug": "peak-index-in-a-mountain-array",
-			"PassRate": "66%",
+			"PassRate": "67%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10657,7 +10657,7 @@
 			"ID": 886,
 			"Title": "Possible Bipartition",
 			"TitleSlug": "possible-bipartition",
-			"PassRate": "38%",
+			"PassRate": "39%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10815,7 +10815,7 @@
 			"TitleSlug": "orderly-queue",
 			"PassRate": "42%",
 			"Difficulty": "Hard",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
