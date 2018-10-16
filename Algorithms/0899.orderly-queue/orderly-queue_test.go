@@ -27,6 +27,12 @@ var tcs = []struct {
 	},
 
 	{
+		"dasfkasdlkfasdlkjflaksdjflksdajflkasdjflksdajflkasdjflkasdj",
+		3,
+		"aaaaaaaaadddddddddffffffffjjjjjjjkkkkkkkkkllllllllsssssssss",
+	},
+
+	{
 		"baaca",
 		3,
 		"aaabc",
