@@ -2,19 +2,21 @@ package problem0898
 
 func subarrayBitwiseORs(a []int) int {
 	unique := make(map[int]bool, len(a))
-	var s0, s1 []int
+	var prev, next []int
 	for _, x := range a {
-		tmp := make(map[int]bool, len(s0))
-		tmp[x], unique[x] = true, true
-		s1 = append(s1, x)
-		for _, y := range s0 {
+		isInNext := make(map[int]bool, len(prev))
+		isInNext[x], unique[x] = true, true
+		next = append(next, x)
+		for _, y := range prev {
 			y |= x
-			if !tmp[y] {
-				tmp[y], unique[y] = true, true
-				s1 = append(s1, y)
+			if !isInNext[y] {
+				isInNext[y], unique[y] = true, true
+				next = append(next, y)
 			}
 		}
-		s0, s1 = s1, s0[:0]
+		// 假设 x 在 a 中的索引号是 j，BitwiseOR(a) 表示对 a 中所有元素依次取或的结果
+		// 那么此时， next 是 BitwiseOR(a[i:j+1]) 的集合，其中 i=0,1,...,j
+		prev, next = next, prev[:0]
 	}
 	return len(unique)
 }
