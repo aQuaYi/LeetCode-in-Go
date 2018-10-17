@@ -68,3 +68,9 @@ func Test_Problem0062(t *testing.T) {
 		ast.Equal(a.one, uniquePaths(p.m, p.n), "输入:%v", p)
 	}
 }
+
+func Benchmark_uniquePaths(b *testing.B) {
+	for i := 1; i < b.N; i++ {
+		uniquePaths(100, 100)
+	}
+}
