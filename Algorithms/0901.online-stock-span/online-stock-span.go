@@ -27,14 +27,13 @@ func (s *StockSpanner) Next(price int) int {
 	// s.prices[i] 中保存了昨天的 price
 	// s.days[i] 中保存了昨天的 日期
 	today := s.days[i] + 1
-	for ; i >= 0; i-- {
-		if s.prices[i] > price {
-			// 深入 s.prices 栈，直到找到比 price 大的价格
-			break
-		}
+	for i >= 0 && s.prices[i] <= price {
+		// 深入 s.prices 栈，直到找到比 price 大的价格
+		i--
 	}
+	res := today - s.days[i]
 	i++
 	s.prices = append(s.prices[:i], price)
 	s.days = append(s.days[:i], today)
-	return today - s.days[i-1]
+	return res
 }
