@@ -52,14 +52,14 @@ func (p problem) link() string {
 
 func (p problem) tableLine() string {
 	// 题号
-	res := fmt.Sprintf("|%d|", p.ID)
+	res := fmt.Sprintf("|[%d](%s)|", p.ID, p.link())
 
 	// 标题
 	t := ""
 	if p.IsAccepted {
 		t = fmt.Sprintf(`[%s](%s)`, strings.TrimSpace(p.Title), p.Dir())
 	} else {
-		t = fmt.Sprintf(` * [%s](%s)`, p.Title, p.link())
+		t = fmt.Sprintf(` * %s`, p.Title)
 	}
 	if p.IsNew {
 		t += " :new: "

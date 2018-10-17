@@ -155,6 +155,10 @@ func (lc *leetcode) FavoriteTable() string {
 	return lc.Problems.favorite().table()
 }
 
+func (lc *leetcode) FavoriteCount() int {
+	return len(lc.Problems.favorite())
+}
+
 func (lc *leetcode) UnavailableList() string {
 	res := lc.Problems.unavailable().list()
 	// 为了 README.md 文档的美观，需要删除最后一个换行符号
