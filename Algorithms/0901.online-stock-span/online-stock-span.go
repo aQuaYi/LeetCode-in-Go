@@ -4,30 +4,37 @@ package problem0901
 // obj := Constructor();
 // param_1 := obj.Next(price);
 type StockSpanner struct {
-	prices []int
-	days   []int
-	today  int
+	prices []int // stack
+	days   []int // stack
 }
 
 // Constructor is
 func Constructor() StockSpanner {
-	return StockSpanner{}
+	ps := make([]int, 1, 10000)
+	ds := make([]int, 1, 10000)
+	ps[0] = 100001 // more than max-price
+	ds[0] = -1     // the day before first-day
+	return StockSpanner{
+		prices: ps,
+		days:   ds,
+	}
+
 }
 
 // Next is
-func (s *StockSpanner) Next(p int) int {
-	s.today++
+func (s *StockSpanner) Next(price int) int {
 	i := len(s.prices) - 1
+	// s.prices[i] 中保存了昨天的 price
+	// s.days[i] 中保存了昨天的 日期
+	today := s.days[i] + 1
 	for ; i >= 0; i-- {
-		if s.prices[i] > p {
+		if s.prices[i] > price {
+			// 深入 s.prices 栈，直到找到比 price 大的价格
 			break
 		}
 	}
 	i++
-	s.prices = append(s.prices[:i], p)
-	s.days = append(s.days[:i], s.today)
-	if i == 0 {
-		return s.today
-	}
-	return s.today - s.days[i-1]
+	s.prices = append(s.prices[:i], price)
+	s.days = append(s.days[:i], today)
+	return today - s.days[i-1]
 }
