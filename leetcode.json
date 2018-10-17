@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 836,
-	"Updated": "2018-10-17T16:47:28.969050271+08:00",
+	"Updated": "2018-10-17T17:23:11.755240551+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 201,
 			"Total": 205
 		},
 		"Medium": {
-			"Solved": 332,
+			"Solved": 333,
 			"Total": 345
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 151
 		},
 		"Total": {
-			"Solved": 678,
+			"Solved": 679,
 			"Total": 701
 		}
 	},
@@ -10827,7 +10827,7 @@
 			"TitleSlug": "rle-iterator",
 			"PassRate": "42%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
