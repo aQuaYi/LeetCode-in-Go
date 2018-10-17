@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 819,
-	"Updated": "2018-10-17T21:08:47.180016376+08:00",
+	"Updated": "2018-10-17T22:28:41.493607394+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 201,
 			"Total": 205
 		},
 		"Medium": {
-			"Solved": 333,
+			"Solved": 334,
 			"Total": 345
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 151
 		},
 		"Total": {
-			"Solved": 679,
+			"Solved": 680,
 			"Total": 701
 		}
 	},
@@ -9445,7 +9445,7 @@
 			"ID": 785,
 			"Title": "Is Graph Bipartite?",
 			"TitleSlug": "is-graph-bipartite",
-			"PassRate": "40%",
+			"PassRate": "39%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10645,7 +10645,7 @@
 			"ID": 885,
 			"Title": "Spiral Matrix III",
 			"TitleSlug": "spiral-matrix-iii",
-			"PassRate": "62%",
+			"PassRate": "63%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10839,9 +10839,9 @@
 			"TitleSlug": "online-stock-span",
 			"PassRate": "42%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
