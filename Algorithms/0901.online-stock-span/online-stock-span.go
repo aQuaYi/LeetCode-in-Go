@@ -18,7 +18,6 @@ func Constructor() StockSpanner {
 		prices: ps,
 		days:   ds,
 	}
-
 }
 
 // Next is
