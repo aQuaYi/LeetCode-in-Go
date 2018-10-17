@@ -5,22 +5,29 @@ package problem0901
 // param_1 := obj.Next(price);
 type StockSpanner struct {
 	prices []int
+	days   []int
+	today  int
 }
 
 // Constructor is
 func Constructor() StockSpanner {
-	ps := make([]int, 0, 10000)
-	return StockSpanner{
-		prices: ps,
-	}
+	return StockSpanner{}
 }
 
 // Next is
-func (s *StockSpanner) Next(price int) int {
-	s.prices = append(s.prices, price)
-	res := 1
-	for i := len(s.prices) - 2; 0 <= i && s.prices[i] <= price; i-- {
-		res++
+func (s *StockSpanner) Next(p int) int {
+	s.today++
+	i := len(s.prices) - 1
+	for ; i >= 0; i-- {
+		if s.prices[i] > p {
+			break
+		}
 	}
-	return res
+	i++
+	s.prices = append(s.prices[:i], p)
+	s.days = append(s.days[:i], s.today)
+	if i == 0 {
+		return s.today
+	}
+	return s.today - s.days[i-1]
 }
