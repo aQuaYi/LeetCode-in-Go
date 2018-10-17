@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 836,
-	"Updated": "2018-10-17T08:59:30.915637514+08:00",
+	"Updated": "2018-10-17T09:11:37.940297596+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 201,
@@ -5041,7 +5041,7 @@
 			"ID": 418,
 			"Title": "Sentence Screen Fitting",
 			"TitleSlug": "sentence-screen-fitting",
-			"PassRate": "29%",
+			"PassRate": "28%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
