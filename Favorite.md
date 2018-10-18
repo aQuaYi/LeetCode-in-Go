@@ -1,8 +1,7 @@
-# 我收藏的 257 题
+# 我收藏的 256 题
 
 |题号|题目|通过率|难度|收藏|
 |:-:|:-|:-: | :-: | :-: |
-|[72](https://leetcode.com/problems/edit-distance/)|[Edit Distance](./Algorithms/0072.edit-distance)|34%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[73](https://leetcode.com/problems/set-matrix-zeroes/)|[Set Matrix Zeroes](./Algorithms/0073.set-matrix-zeroes)|37%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[75](https://leetcode.com/problems/sort-colors/)|[Sort Colors](./Algorithms/0075.sort-colors)|40%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[76](https://leetcode.com/problems/minimum-window-substring/)|[Minimum Window Substring](./Algorithms/0076.minimum-window-substring)|28%|Hard|[❤](https://leetcode.com/list/oussv5j)|
