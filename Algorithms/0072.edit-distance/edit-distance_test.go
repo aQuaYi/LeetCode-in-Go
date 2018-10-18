@@ -14,8 +14,7 @@ type question struct {
 
 // para 是参数
 type para struct {
-	word1 string
-	word2 string
+	from, to string
 }
 
 // ans 是答案
@@ -114,6 +113,6 @@ func Test_Problem0072(t *testing.T) {
 		a, p := q.ans, q.para
 		fmt.Printf("~~%v~~\n", p)
 
-		ast.Equal(a.one, minDistance(p.word1, p.word2), "输入:%v", p)
+		ast.Equal(a.one, minDistance(p.from, p.to), "输入:%v", p)
 	}
 }
