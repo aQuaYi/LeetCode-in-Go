@@ -32,6 +32,12 @@ func equal(D []string, N string) int {
 
 // size 个数，组合成低于 length 位的数字的组合数
 func empty(size, length int) int {
+	if length == 1 {
+		return 0
+	}
+	if size == 1 {
+		return length - 1
+	}
 	s := float64(size)
 	l := float64(length)
 	res := (math.Pow(s, l) - s) / (s - 1)
