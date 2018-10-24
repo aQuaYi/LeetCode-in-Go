@@ -12,18 +12,10 @@ func minWindow(s string, t string) string {
 	min := size + 1
 	res := ""
 	for i, j, count := 0, 0, 0; j < size; j++ {
-		if need[s[j]] == 0 {
-			continue
-		}
-
 		if has[s[j]] < need[s[j]] {
 			count++
 		}
 		has[s[j]]++
-
-		if count < total {
-			continue
-		}
 
 		for need[s[i]] == 0 || has[s[i]] > need[s[i]] {
 			if has[s[i]] > need[s[i]] {
@@ -33,7 +25,7 @@ func minWindow(s string, t string) string {
 		}
 
 		temp := j - i + 1
-		if min > temp {
+		if count == total && min > temp {
 			min = temp
 			res = s[i : j+1]
 		}
