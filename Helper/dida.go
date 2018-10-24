@@ -7,7 +7,7 @@ import (
 	"os"
 	"time"
 
-	gomail "gopkg.in/gomail.v2"
+	mail "gopkg.in/gomail.v2"
 )
 
 const (
@@ -22,19 +22,19 @@ func dida(prefix string, p problem) {
 func mailToDida(task string) {
 	cfg := getConfig()
 
-	if cfg.SMTP == "" || cfg.Port == 0 || cfg.EmailPasswd == "" ||
+	if cfg.SMTP == "" || cfg.Port == 0 || cfg.EmailPassword == "" ||
 		cfg.From == "" || cfg.To == "" {
 		log.Println("没有配置 Email，无法发送任务")
 	}
 
-	m := gomail.NewMessage()
+	m := mail.NewMessage()
 	m.SetHeader("From", cfg.From)
 	m.SetHeader("To", cfg.To)
 	task += " ^LeetCode "
 	task = delay(task)
 	m.SetHeader("Subject", task)
 	m.SetBody("text/plain", fmt.Sprintf("添加日期 %s", time.Now()))
-	d := gomail.NewDialer(cfg.SMTP, cfg.Port, cfg.From, cfg.EmailPasswd)
+	d := mail.NewDialer(cfg.SMTP, cfg.Port, cfg.From, cfg.EmailPassword)
 
 	if err := d.DialAndSend(m); err != nil {
 		log.Println("无法发送任务到 滴答清单：", err)
