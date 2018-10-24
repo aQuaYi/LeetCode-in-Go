@@ -1,48 +1,43 @@
 package problem0076
 
 func minWindow(s string, t string) string {
-	sLen, tLen := len(s), len(t)
+	size, total := len(s), len(t)
 
-	need := [256]int{}
+	has := [128]int{}
+	need := [128]int{}
 	for i := range t {
 		need[t[i]]++
 	}
 
-	has := [256]int{}
-
-	min := sLen + 1
-	begin, end, winBegin, winEnd, count := 0, 0, 0, 0, 0
-
-	for ; end < sLen; end++ {
-		if need[s[end]] == 0 {
+	min := size + 1
+	res := ""
+	for i, j, count := 0, 0, 0; j < size; j++ {
+		if need[s[j]] == 0 {
 			continue
 		}
 
-		if has[s[end]] < need[s[end]] {
+		if has[s[j]] < need[s[j]] {
 			count++
 		}
-		has[s[end]]++
+		has[s[j]]++
 
-		if count == tLen {
-			for need[s[begin]] == 0 || has[s[begin]] > need[s[begin]] {
-				if has[s[begin]] > need[s[begin]] {
-					has[s[begin]]--
-				}
-				begin++
-			}
+		if count < total {
+			continue
+		}
 
-			temp := end - begin + 1
-			if min > temp {
-				min = temp
-				winBegin = begin
-				winEnd = end
+		for need[s[i]] == 0 || has[s[i]] > need[s[i]] {
+			if has[s[i]] > need[s[i]] {
+				has[s[i]]--
 			}
+			i++
+		}
+
+		temp := j - i + 1
+		if min > temp {
+			min = temp
+			res = s[i : j+1]
 		}
 	}
 
-	if count < tLen {
-		return ""
-	}
-
-	return s[winBegin : winEnd+1]
+	return res
 }
