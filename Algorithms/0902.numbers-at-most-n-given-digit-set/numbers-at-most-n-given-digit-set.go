@@ -7,22 +7,41 @@ import (
 
 func atMostNGivenDigitSet(D []string, N int) int {
 	ns := strconv.Itoa(N)
-	return less(D, ns)
+	size := len(D)
+	res := empty(size, len(ns))
+	return res + equal(D, ns)
 }
 
-// 更高位小于 N 的最高位
-func less(D []string, N string) int {
-	a := float64(len(D))
-	s := float64(len(N))
-	res := (math.Pow(a, s) - a) / (a - 1)
+//
+func equal(D []string, N string) int {
+	if len(N) == 0 {
+		return 1
+	}
+	size := len(D)
+	res := 0
+	head := N[0:1]
+	for _, d := range D {
+		if d < head {
+			res += less(size, len(N))
+		} else if d == head {
+			res += equal(D, N[1:])
+		}
+	}
+	return res
+}
+
+// size 个数，组合成低于 length 位的数字的组合数
+func empty(size, length int) int {
+	s := float64(size)
+	l := float64(length)
+	res := (math.Pow(s, l) - s) / (s - 1)
 	return int(res)
 }
 
-// 更高位等于 N 的最高位
-func equal(D []string, N string) int {
-	i := 0
-	for i < len(D) && D[i] < N[1] {
-
-	}
-	return 0
+// size 个数，组成 length-1 位数字的组合数
+func less(size, length int) int {
+	s := float64(size)
+	l := float64(length)
+	res := math.Pow(s, l-1)
+	return int(res)
 }
