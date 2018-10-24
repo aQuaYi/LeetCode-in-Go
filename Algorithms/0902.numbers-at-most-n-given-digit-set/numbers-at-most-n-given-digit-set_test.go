@@ -70,7 +70,7 @@ func Benchmark_atMostNGivenDigitSet(b *testing.B) {
 	}
 }
 
-func Test_empty(t *testing.T) {
+func Test_zeroLead(t *testing.T) {
 	type args struct {
 		size   int
 		length int
@@ -92,7 +92,7 @@ func Test_empty(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := empty(tt.args.size, tt.args.length); got != tt.want {
+			if got := zeroLead(tt.args.size, tt.args.length); got != tt.want {
 				t.Errorf("empty() = %v, want %v", got, tt.want)
 			}
 		})
