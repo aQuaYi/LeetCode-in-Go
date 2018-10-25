@@ -2,6 +2,7 @@ package problem0078
 
 import (
 	"fmt"
+	"sort"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -45,41 +46,41 @@ func Test_Problem0078(t *testing.T) {
 
 		question{
 			para{
-				[]int{9,0,3,5,7},
+				[]int{9, 0, 3, 5, 7},
 			},
 			ans{[][]int{
 				[]int{},
 				[]int{9},
 				[]int{0},
-				[]int{0,9},
+				[]int{0, 9},
 				[]int{3},
-				[]int{3,9},
-				[]int{0,3},
-				[]int{0,3,9},
+				[]int{3, 9},
+				[]int{0, 3},
+				[]int{0, 3, 9},
 				[]int{5},
-				[]int{5,9},
-				[]int{0,5},
-				[]int{0,5,9},
-				[]int{3,5},
-				[]int{3,5,9},
-				[]int{0,3,5},
-				[]int{0,3,5,9},
+				[]int{5, 9},
+				[]int{0, 5},
+				[]int{0, 5, 9},
+				[]int{3, 5},
+				[]int{3, 5, 9},
+				[]int{0, 3, 5},
+				[]int{0, 3, 5, 9},
 				[]int{7},
-				[]int{7,9},
-				[]int{0,7},
-				[]int{0,7,9},
-				[]int{3,7},
-				[]int{3,7,9},
-				[]int{0,3,7},
-				[]int{0,3,7,9},
-				[]int{5,7},
-				[]int{5,7,9},
-				[]int{0,5,7},
-				[]int{0,5,7,9},
-				[]int{3,5,7},
-				[]int{3,5,7,9},
-				[]int{0,3,5,7},
-				[]int{0,3,5,7,9},
+				[]int{7, 9},
+				[]int{0, 7},
+				[]int{0, 7, 9},
+				[]int{3, 7},
+				[]int{3, 7, 9},
+				[]int{0, 3, 7},
+				[]int{0, 3, 7, 9},
+				[]int{5, 7},
+				[]int{5, 7, 9},
+				[]int{0, 5, 7},
+				[]int{0, 5, 7, 9},
+				[]int{3, 5, 7},
+				[]int{3, 5, 7, 9},
+				[]int{0, 3, 5, 7},
+				[]int{0, 3, 5, 7, 9},
 			}},
 		},
 
@@ -89,7 +90,31 @@ func Test_Problem0078(t *testing.T) {
 	for _, q := range qs {
 		a, p := q.ans, q.para
 		fmt.Printf("~~%v~~\n", p)
+		sorted(a.one)
+		ans := subsets(p.nums)
+		sorted(ans)
+		ast.Equal(a.one, ans, "输入:%v", p)
+	}
+}
 
-		ast.Equal(a.one, subsets(p.nums), "输入:%v", p)
+func sorted(iss [][]int) {
+	for i := range iss {
+		sort.Ints(iss[i])
+	}
+	sort.Slice(iss, func(i int, j int) bool {
+		if len(iss[i]) == len(iss[j]) {
+			for k := range iss[i] {
+				if iss[i][k] < iss[j][k] {
+					return true
+				}
+			}
+		}
+		return len(iss[i]) < len(iss[j])
+	})
+}
+
+func Benchmark_subsets(b *testing.B) {
+	for i := 1; i < b.N; i++ {
+		subsets([]int{0, 1, 2, 3, 4, 5, 6, 7, 8, 9})
 	}
 }
