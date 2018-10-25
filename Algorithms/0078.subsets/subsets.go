@@ -1,15 +1,22 @@
 package problem0078
 
+import (
+	"math"
+)
+
 func subsets(nums []int) [][]int {
-	res := [][]int{}
+	res := make([][]int, 0, resSize(nums))
 	rec(nums, []int{}, &res)
 	return res
+}
+
+func resSize(nums []int) int {
+	return int(math.Pow(2, float64(len(nums))))
 }
 
 func rec(nums, temp []int, res *[][]int) {
 	size := len(nums)
 	if size == 0 {
-		// sort.Ints(temp)
 		*res = append(*res, temp)
 		return
 	}
