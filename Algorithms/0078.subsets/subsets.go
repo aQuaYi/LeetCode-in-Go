@@ -5,17 +5,8 @@ import (
 )
 
 func subsets(nums []int) [][]int {
-	size := resSize(nums)
-	res := make([][]int, 0, size)
-	subs := make(chan []int, 16)
-	go rec(nums, []int{}, subs)
-	for sub := range subs {
-		res = append(res, sub)
-		size--
-		if size == 0 {
-			close(subs)
-		}
-	}
+	res := make([][]int, 0, resSize(nums))
+	rec(nums, []int{}, &res)
 	return res
 }
 
@@ -23,20 +14,20 @@ func resSize(nums []int) int {
 	return int(math.Pow(2, float64(len(nums))))
 }
 
-func rec(nums, temp []int, c chan []int) {
+func rec(nums, temp []int, res *[][]int) {
 	size := len(nums)
 	if size == 0 {
-		c <- temp
+		*res = append(*res, temp)
 		return
 	}
 
 	// 对于每个元素来说，要么存在于某个子集中，要么不存在
 
 	// 把 nums 中的最后一个元素，不放入 temp
-	go rec(nums[:size-1], temp, c)
+	rec(nums[:size-1], temp, res)
 	// 把 nums 中的最后一个元素，*放入* temp
-	newTemp := make([]int, 1, len(nums)+len(temp))
+	newTemp := make([]int, 1, 1+len(temp))
 	newTemp[0] = nums[size-1]
 	newTemp = append(newTemp, temp...)
-	go rec(nums[:size-1], newTemp, c)
+	rec(nums[:size-1], newTemp, res)
 }
