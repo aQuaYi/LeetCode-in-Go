@@ -36,8 +36,8 @@ func Test_Problem0078(t *testing.T) {
 				[]int{},
 				[]int{1},
 				[]int{2},
-				[]int{1, 2},
 				[]int{3},
+				[]int{1, 2},
 				[]int{1, 3},
 				[]int{2, 3},
 				[]int{1, 2, 3},
@@ -50,36 +50,36 @@ func Test_Problem0078(t *testing.T) {
 			},
 			ans{[][]int{
 				[]int{},
-				[]int{9},
 				[]int{0},
-				[]int{0, 9},
 				[]int{3},
-				[]int{3, 9},
-				[]int{0, 3},
-				[]int{0, 3, 9},
 				[]int{5},
-				[]int{5, 9},
-				[]int{0, 5},
-				[]int{0, 5, 9},
-				[]int{3, 5},
-				[]int{3, 5, 9},
-				[]int{0, 3, 5},
-				[]int{0, 3, 5, 9},
 				[]int{7},
-				[]int{7, 9},
+				[]int{9},
+				[]int{0, 3},
+				[]int{0, 5},
 				[]int{0, 7},
-				[]int{0, 7, 9},
+				[]int{0, 9},
+				[]int{3, 5},
 				[]int{3, 7},
-				[]int{3, 7, 9},
-				[]int{0, 3, 7},
-				[]int{0, 3, 7, 9},
+				[]int{3, 9},
 				[]int{5, 7},
-				[]int{5, 7, 9},
+				[]int{5, 9},
+				[]int{7, 9},
+				[]int{0, 3, 5},
+				[]int{0, 3, 7},
+				[]int{0, 3, 9},
 				[]int{0, 5, 7},
-				[]int{0, 5, 7, 9},
+				[]int{0, 5, 9},
+				[]int{0, 7, 9},
 				[]int{3, 5, 7},
-				[]int{3, 5, 7, 9},
+				[]int{3, 5, 9},
+				[]int{3, 7, 9},
+				[]int{5, 7, 9},
 				[]int{0, 3, 5, 7},
+				[]int{0, 3, 5, 9},
+				[]int{0, 3, 7, 9},
+				[]int{0, 5, 7, 9},
+				[]int{3, 5, 7, 9},
 				[]int{0, 3, 5, 7, 9},
 			}},
 		},
@@ -104,6 +104,9 @@ func sorted(iss [][]int) {
 	sort.Slice(iss, func(i int, j int) bool {
 		if len(iss[i]) == len(iss[j]) {
 			for k := range iss[i] {
+				if iss[i][k] > iss[j][k] {
+					return false
+				}
 				if iss[i][k] < iss[j][k] {
 					return true
 				}
@@ -111,6 +114,7 @@ func sorted(iss [][]int) {
 		}
 		return len(iss[i]) < len(iss[j])
 	})
+
 }
 
 func Benchmark_subsets(b *testing.B) {
