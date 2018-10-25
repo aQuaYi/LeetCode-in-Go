@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 839,
-	"Updated": "2018-10-25T16:35:39.523146417+08:00",
+	"Updated": "2018-10-25T17:05:12.272500122+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 201,
+			"Solved": 202,
 			"Total": 206
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 153
 		},
 		"Total": {
-			"Solved": 681,
+			"Solved": 682,
 			"Total": 705
 		}
 	},
@@ -941,7 +941,7 @@
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": true,
+			"IsFavor": false,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -10923,7 +10923,7 @@
 			"TitleSlug": "smallest-range-i",
 			"PassRate": "63%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
