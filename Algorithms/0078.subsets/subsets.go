@@ -21,13 +21,13 @@ func rec(nums, temp []int, res *[][]int) {
 		return
 	}
 
-	// 对于每个元素来说，要么存在于某个子集中，要么不存在
+	// 对于 last 来说，要么存在于某个子集中，要么不存在
+	nums, last := nums[:size-1], nums[size-1]
 
-	// 把 nums 中的最后一个元素，不放入 temp
-	rec(nums[:size-1], temp, res)
-	// 把 nums 中的最后一个元素，*放入* temp
-	newTemp := make([]int, 1, 1+len(temp))
-	newTemp[0] = nums[size-1]
-	newTemp = append(newTemp, temp...)
-	rec(nums[:size-1], newTemp, res)
+	rec(nums, temp, res)
+
+	withLast := make([]int, 1, 1+len(temp))
+	withLast[0] = last
+	withLast = append(withLast, temp...)
+	rec(nums, withLast, res)
 }
