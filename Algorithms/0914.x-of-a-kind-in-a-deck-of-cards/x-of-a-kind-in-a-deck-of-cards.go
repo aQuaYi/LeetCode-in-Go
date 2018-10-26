@@ -1,23 +1,24 @@
 package problem0914
 
 func hasGroupsSizeX(deck []int) bool {
-	size := len(deck)
-	if size < 2 {
-		return false
-	}
+	size := len(deck) // 题目说了 size >= 1
 
+	// 统计 deck 中相同数字的数量
 	count := make(map[int]int, size)
-	for _, v := range deck {
-		count[v]++
+	for _, card := range deck {
+		count[card]++
 	}
 
-	g := count[deck[0]]
+	d := count[deck[0]]
 
 	for _, c := range count {
-		g = gcd(g, c)
+		d = gcd(d, c)
+		if d == 1 {
+			return false
+		}
 	}
 
-	return g > 1
+	return true
 }
 
 // 最大公约数
