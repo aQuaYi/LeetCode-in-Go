@@ -30,7 +30,7 @@ package problem0137
 //     a = a ^ num & ~b
 // return a|b
 // 		```
-func singleNumber2(nums []int) int {
+func singleNumber(nums []int) int {
 	ones, twos := 0, 0
 	for i := 0; i < len(nums); i++ {
 		ones = (ones ^ nums[i]) & ^twos
