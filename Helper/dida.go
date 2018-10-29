@@ -20,14 +20,13 @@ func dida(prefix string, p problem) {
 }
 
 func mailToDida(task string) {
-	cfg := getConfig()
-
 	task += " ^LeetCode "
 	task = delay(task)
 
+	cfg := getConfig()
 	if cfg.SMTP == "" || cfg.Port == 0 || cfg.EmailPassword == "" ||
 		cfg.From == "" || cfg.To == "" {
-		log.Println("没有配置 Email，无法发送任务")
+		log.Printf("%v, 没有配置 Email，无法发送任务", cfg)
 		saveLocal(task)
 		return
 	}
