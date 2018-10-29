@@ -22,16 +22,19 @@ func dida(prefix string, p problem) {
 func mailToDida(task string) {
 	cfg := getConfig()
 
+	task += " ^LeetCode "
+	task = delay(task)
+
 	if cfg.SMTP == "" || cfg.Port == 0 || cfg.EmailPassword == "" ||
 		cfg.From == "" || cfg.To == "" {
 		log.Println("没有配置 Email，无法发送任务")
+		saveLocal(task)
+		return
 	}
 
 	m := mail.NewMessage()
 	m.SetHeader("From", cfg.From)
 	m.SetHeader("To", cfg.To)
-	task += " ^LeetCode "
-	task = delay(task)
 	m.SetHeader("Subject", task)
 	m.SetBody("text/plain", fmt.Sprintf("添加日期 %s", time.Now()))
 	d := mail.NewDialer(cfg.SMTP, cfg.Port, cfg.From, cfg.EmailPassword)
