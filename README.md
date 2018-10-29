@@ -36,7 +36,7 @@
 |[916](https://leetcode.com/problems/word-subsets/)| * Word Subsets|42%|Medium||
 |[915](https://leetcode.com/problems/partition-array-into-disjoint-intervals/)| * Partition Array into Disjoint Intervals|39%|Medium||
 |[914](https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards/)|[X of a Kind in a Deck of Cards](./Algorithms/0914.x-of-a-kind-in-a-deck-of-cards)|33%|Easy||
-|[913](https://leetcode.com/problems/cat-and-mouse/)| * Cat and Mouse|22%|Hard||
+|[913](https://leetcode.com/problems/cat-and-mouse/)| * Cat and Mouse|23%|Hard||
 |[911](https://leetcode.com/problems/online-election/)| * Online Election|42%|Medium||
 |[910](https://leetcode.com/problems/smallest-range-ii/)| * Smallest Range II|19%|Medium||
 |[909](https://leetcode.com/problems/snakes-and-ladders/)| * Snakes and Ladders|25%|Medium||

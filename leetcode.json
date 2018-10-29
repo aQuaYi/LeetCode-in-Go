@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 826,
-	"Updated": "2018-10-29T11:15:05.770310169+08:00",
+	"Updated": "2018-10-29T11:18:00.739370651+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 203,
@@ -2257,7 +2257,7 @@
 			"ID": 186,
 			"Title": "Reverse Words in a String II",
 			"TitleSlug": "reverse-words-in-a-string-ii",
-			"PassRate": "33%",
+			"PassRate": "34%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -10981,7 +10981,7 @@
 			"ID": 913,
 			"Title": "Cat and Mouse",
 			"TitleSlug": "cat-and-mouse",
-			"PassRate": "22%",
+			"PassRate": "23%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
