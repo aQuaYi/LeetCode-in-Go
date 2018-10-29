@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 826,
-	"Updated": "2018-10-29T11:33:18.640139622+08:00",
+	"Updated": "2018-10-29T13:07:32.364990181+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 203,
@@ -1673,7 +1673,7 @@
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": true,
+			"IsFavor": false,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -9349,7 +9349,7 @@
 			"ID": 777,
 			"Title": "Swap Adjacent in LR String",
 			"TitleSlug": "swap-adjacent-in-lr-string",
-			"PassRate": "29%",
+			"PassRate": "30%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10693,7 +10693,7 @@
 			"ID": 889,
 			"Title": "Construct Binary Tree from Preorder and Postorder Traversal",
 			"TitleSlug": "construct-binary-tree-from-preorder-and-postorder-traversal",
-			"PassRate": "55%",
+			"PassRate": "54%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11173,7 +11173,7 @@
 			"ID": 929,
 			"Title": "Unique Email Addresses",
 			"TitleSlug": "unique-email-addresses",
-			"PassRate": "84%",
+			"PassRate": "83%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -11209,7 +11209,7 @@
 			"ID": 932,
 			"Title": "Beautiful Array",
 			"TitleSlug": "beautiful-array",
-			"PassRate": "37%",
+			"PassRate": "38%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
