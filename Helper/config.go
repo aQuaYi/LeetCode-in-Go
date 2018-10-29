@@ -42,7 +42,7 @@ func getConfig() *config {
 		log.Fatalf(err.Error())
 	}
 
-	log.Printf("get config: %s", cfg)
+	// log.Printf("get config: %s", cfg)
 
 	return cfg
 }
