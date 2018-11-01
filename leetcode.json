@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 831,
-	"Updated": "2018-11-01T15:52:11.348372765+08:00",
+	"Updated": "2018-11-01T17:19:55.408342559+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 203,
 			"Total": 207
 		},
 		"Medium": {
-			"Solved": 334,
+			"Solved": 335,
 			"Total": 349
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 153
 		},
 		"Total": {
-			"Solved": 683,
+			"Solved": 684,
 			"Total": 709
 		}
 	},
@@ -8461,7 +8461,7 @@
 			"ID": 703,
 			"Title": "Kth Largest Element in a Stream",
 			"TitleSlug": "kth-largest-element-in-a-stream",
-			"PassRate": "38%",
+			"PassRate": "39%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10875,9 +10875,9 @@
 			"TitleSlug": "fruit-into-baskets",
 			"PassRate": "39%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -11185,7 +11185,7 @@
 			"ID": 930,
 			"Title": "Binary Subarrays With Sum",
 			"TitleSlug": "binary-subarrays-with-sum",
-			"PassRate": "32%",
+			"PassRate": "33%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
