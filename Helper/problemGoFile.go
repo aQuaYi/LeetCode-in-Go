@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"log"
 	"strings"
+	"time"
 
 	"github.com/chromedp/chromedp"
 )
@@ -74,13 +75,13 @@ func getFunction(url string) string {
 }
 
 func makeTasks(url string, function *string) chromedp.Tasks {
-	btn := `#main-container > div > div > div.editor-wrapper__1v3H > div > div.content__1YQ2 > div > div.container__2zYY > div.select__2iyW.select-container__2w2b > div`
-	goSel := `#react-select-2--option-10`
-	textarea := "#main-container > div > div > div.editor-wrapper__1v3H > div > div.content__1YQ2 > div > div.container__YPDh > div > div > div.CodeMirror-scroll > div.CodeMirror-sizer > div > div > div > div.CodeMirror-code"
+	codeSel := "#main-container > div > div > div.editor-wrapper__1v3H > div > div.content__1YQ2 > div > div.container__YPDh > div > div > div.CodeMirror-scroll > div.CodeMirror-sizer > div > div > div > div.CodeMirror-code"
+
 	return chromedp.Tasks{
 		chromedp.Navigate(url),
-		chromedp.Click(btn, chromedp.ByID),
-		chromedp.Click(goSel, chromedp.ByID),
-		chromedp.Text(textarea, function),
+
+		chromedp.Sleep(10 * time.Second),
+
+		chromedp.Text(codeSel, function),
 	}
 }

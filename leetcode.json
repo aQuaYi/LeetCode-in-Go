@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 837,
-	"Updated": "2018-11-04T18:31:04.894576572+08:00",
+	"Updated": "2018-11-04T21:09:30.012007441+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 203,
@@ -11221,7 +11221,7 @@
 			"ID": 933,
 			"Title": "Number of Recent Calls",
 			"TitleSlug": "number-of-recent-calls",
-			"PassRate": "58%",
+			"PassRate": "59%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -11233,7 +11233,7 @@
 			"ID": 934,
 			"Title": "Shortest Bridge",
 			"TitleSlug": "shortest-bridge",
-			"PassRate": "38%",
+			"PassRate": "39%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -11257,7 +11257,7 @@
 			"ID": 936,
 			"Title": "Stamping The Sequence",
 			"TitleSlug": "stamping-the-sequence",
-			"PassRate": "19%",
+			"PassRate": "20%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
