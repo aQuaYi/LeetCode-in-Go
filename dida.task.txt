@@ -1,0 +1,2 @@
+#re - 0903 - #Hard - 39% - Valid Permutations for DI Sequence - https://leetcode.com/problems/valid-permutations-for-di-sequence/ ^LeetCode 2019-02-02
+#fa - 0903 - #Hard - 39% - Valid Permutations for DI Sequence - https://leetcode.com/problems/valid-permutations-for-di-sequence/ ^LeetCode 2018-12-04
