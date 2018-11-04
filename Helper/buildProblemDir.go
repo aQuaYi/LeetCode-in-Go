@@ -7,7 +7,6 @@ import (
 	"os/exec"
 	"strings"
 	"syscall"
-	"time"
 
 	"github.com/aQuaYi/GoKit"
 )
@@ -74,18 +73,6 @@ func build(p problem) {
 
 	creatREADME(p)
 
-	// 利用 chrome 打开题目 submissions 页面
-	go func() {
-		cmd := exec.Command("google-chrome", "https://leetcode.com/submissions/")
-		_, err := cmd.Output()
-		if err != nil {
-			panic(err.Error())
-		}
-	}()
-
-	log.Println("等待 10 秒，打开题目页面")
-	time.Sleep(10 * time.Second)
-
 	// 利用 chrome 打开题目页面
 	go func() {
 		cmd := exec.Command("google-chrome", p.link())
@@ -94,9 +81,6 @@ func build(p problem) {
 			panic(err.Error())
 		}
 	}()
-
-	log.Println("正在打开题目页面")
-	time.Sleep(2 * time.Second)
 
 	log.Printf("%d.%s 的文件夹，创建完毕。\n", p.ID, p.Title)
 }
