@@ -80,7 +80,7 @@ func makeTasks(url string, function *string) chromedp.Tasks {
 	return chromedp.Tasks{
 		chromedp.Navigate(url),
 
-		chromedp.Sleep(10 * time.Second),
+		chromedp.Sleep(12 * time.Second),
 
 		chromedp.Text(codeSel, function),
 	}
