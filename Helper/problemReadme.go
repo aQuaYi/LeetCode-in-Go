@@ -1,11 +1,12 @@
 package main
 
 import (
+	"context"
 	"fmt"
 	"log"
 	"strings"
 
-	"github.com/PuerkitoBio/goquery"
+	"github.com/chromedp/chromedp"
 )
 
 func creatREADME(p problem) {
@@ -26,20 +27,19 @@ func creatREADME(p problem) {
 
 }
 
-func getDescription(url string) string {
-	doc, err := goquery.NewDocument(url)
-	if err != nil {
-		log.Fatal(err)
-	}
-
-	var desc string
-
-	doc.Find("meta[name=description]").Each(func(i int, selection *goquery.Selection) {
-		desc, _ = selection.Attr("content")
-	})
-
-	return desc
-}
+// func getDescription(url string) string {
+// 	doc, err := goquery.NewDocument(url)
+// 	if err != nil {
+// 		log.Fatal(err)
+// 	}
+// 	fmt.Println(doc.Html())
+// 	time.Sleep(10 * time.Second)
+// 	var desc string
+// 	doc.Find("meta[name=description]").Each(func(i int, selection *goquery.Selection) {
+// 		desc, _ = selection.Attr("content__1c40")
+// 	})
+// 	return desc
+// }
 
 func replaceCharacters(s string) string {
 	changeMap := map[string]string{
@@ -61,4 +61,60 @@ func replaceCharacters(s string) string {
 		s = strings.Replace(s, old, new, -1)
 	}
 	return s
+}
+
+func getDescription(url string) string {
+	log.Printf("准备访问 %s", url)
+
+	var err error
+
+	// create context
+	ctxt, cancel := context.WithCancel(context.Background())
+	defer cancel()
+
+	// create chrome instance
+	c, err := chromedp.New(ctxt, chromedp.WithLog(log.Printf))
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	// run task list
+	var res string
+	err = c.Run(ctxt, text(url, &res))
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	// shutdown chrome
+	err = c.Shutdown(ctxt)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	// wait for chrome to finish
+	err = c.Wait()
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	log.Println(res)
+
+	res = clean(res)
+
+	return res
+}
+
+func text(url string, res *string) chromedp.Tasks {
+	return chromedp.Tasks{
+		chromedp.Navigate(url),
+		chromedp.Text(`#app`, res, chromedp.NodeVisible, chromedp.ByID),
+	}
+}
+
+func clean(d string) string {
+	head := "DescriptionSolutionSubmissions"
+	tail := "ContributorCompaniesRelated"
+	begin := 30 + strings.Index(d, head)
+	end := strings.Index(d, tail)
+	return d[begin:end]
 }
