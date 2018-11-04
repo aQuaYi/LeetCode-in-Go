@@ -73,7 +73,8 @@ func getDescription(url string) string {
 	defer cancel()
 
 	// create chrome instance
-	c, err := chromedp.New(ctxt, chromedp.WithLog(log.Printf))
+	// c, err := chromedp.New(ctxt, chromedp.WithLog(log.Printf))
+	c, err := chromedp.New(ctxt)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -97,24 +98,15 @@ func getDescription(url string) string {
 		log.Fatal(err)
 	}
 
-	log.Println(res)
-
-	res = clean(res)
+	log.Println("Desc:", res)
 
 	return res
 }
 
 func text(url string, res *string) chromedp.Tasks {
+	sel := `#main-container > div > div > div.side-tools-wrapper__2Fg5 > div > div.wrapper__UUUo > div > div.tab-pane__DzxD.css-q9hlqr-TabContent.e5i1odf4 > div > div.content__1c40`
 	return chromedp.Tasks{
 		chromedp.Navigate(url),
-		chromedp.Text(`#app`, res, chromedp.NodeVisible, chromedp.ByID),
+		chromedp.Text(sel, res, chromedp.NodeVisible, chromedp.BySearch),
 	}
-}
-
-func clean(d string) string {
-	head := "DescriptionSolutionSubmissions"
-	tail := "ContributorCompaniesRelated"
-	begin := 30 + strings.Index(d, head)
-	end := strings.Index(d, tail)
-	return d[begin:end]
 }

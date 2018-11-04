@@ -64,8 +64,6 @@ func build(p problem) {
 
 	log.Printf("开始创建 %d %s 的文件夹...\n", p.ID, p.Title)
 
-	creatREADME(p)
-
 	fc := getFunction(p.link())
 
 	fcName, para, ans, fc := parseFunction(fc)
@@ -73,6 +71,8 @@ func build(p problem) {
 	creatGo(p, fc, ans)
 
 	creatGoTest(p, fcName, para, ans)
+
+	creatREADME(p)
 
 	// 利用 chrome 打开题目 submissions 页面
 	go func() {
@@ -135,7 +135,7 @@ func creatGoTest(p problem, fcName, para, ansType string) {
 }{
 
 
-	
+
 	// 可以有多个 testcase
 }`
 
@@ -146,7 +146,7 @@ func creatGoTest(p problem, fcName, para, ansType string) {
 	testFuncFormat := `
 func Test_%s(t *testing.T) {
 	ast := assert.New(t)
-	
+
 	for _, tc := range tcs {
 		fmt.Printf("~~%s~~\n", tc)
 		ast.Equal(tc.ans, %s(%s), "输入:%s", tc)
