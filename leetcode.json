@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
-	"Ranking": 832,
-	"Updated": "2018-11-06T16:39:35.02979377+08:00",
+	"Ranking": 836,
+	"Updated": "2018-11-06T22:58:24.007678146+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 203,
@@ -12,11 +12,11 @@
 			"Total": 351
 		},
 		"Hard": {
-			"Solved": 147,
+			"Solved": 148,
 			"Total": 154
 		},
 		"Total": {
-			"Solved": 685,
+			"Solved": 686,
 			"Total": 713
 		}
 	},
@@ -5197,7 +5197,7 @@
 			"ID": 431,
 			"Title": "Encode N-ary Tree to Binary Tree",
 			"TitleSlug": "encode-n-ary-tree-to-binary-tree",
-			"PassRate": "53%",
+			"PassRate": "54%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -8605,7 +8605,7 @@
 			"ID": 715,
 			"Title": "Range Module",
 			"TitleSlug": "range-module",
-			"PassRate": "31%",
+			"PassRate": "32%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9241,7 +9241,7 @@
 			"ID": 768,
 			"Title": "Max Chunks To Make Sorted II",
 			"TitleSlug": "max-chunks-to-make-sorted-ii",
-			"PassRate": "44%",
+			"PassRate": "43%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10899,7 +10899,7 @@
 			"TitleSlug": "super-palindromes",
 			"PassRate": "28%",
 			"Difficulty": "Hard",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -11173,7 +11173,7 @@
 			"ID": 929,
 			"Title": "Unique Email Addresses",
 			"TitleSlug": "unique-email-addresses",
-			"PassRate": "80%",
+			"PassRate": "79%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
