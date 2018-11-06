@@ -37,6 +37,12 @@ func parseFunction(fc string) (fcName, para, ansType, nfc string) {
 }
 
 func getFunction(url string) string {
+	// TODO: 更正此处内容
+	jump := true
+	if jump {
+		return "func myFunc(p int) int {}"
+	}
+
 	var err error
 
 	// create context
