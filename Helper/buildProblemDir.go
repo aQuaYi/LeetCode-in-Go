@@ -74,13 +74,11 @@ func build(p problem) {
 	creatREADME(p)
 
 	// 利用 chrome 打开题目页面
-	go func() {
-		cmd := exec.Command("google-chrome", p.link())
-		_, err := cmd.Output()
-		if err != nil {
-			panic(err.Error())
-		}
-	}()
+	cmd := exec.Command("google-chrome", p.link())
+	_, err = cmd.Output()
+	if err != nil {
+		panic(err.Error())
+	}
 
 	log.Printf("%d.%s 的文件夹，创建完毕。\n", p.ID, p.Title)
 }
