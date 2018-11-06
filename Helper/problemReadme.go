@@ -15,7 +15,9 @@ func creatREADME(p problem) {
 %s
 `
 
-	questionDescription := strings.TrimSpace(getDescription(p.link()))
+	// TODO: 复原自动下载的功能
+	// questionDescription := strings.TrimSpace(getDescription(p.link()))
+	questionDescription := ""
 
 	content := fmt.Sprintf(fileFormat, p.ID, p.Title, p.link(), questionDescription)
 
@@ -26,20 +28,6 @@ func creatREADME(p problem) {
 	write(filename, content)
 
 }
-
-// func getDescription(url string) string {
-// 	doc, err := goquery.NewDocument(url)
-// 	if err != nil {
-// 		log.Fatal(err)
-// 	}
-// 	fmt.Println(doc.Html())
-// 	time.Sleep(10 * time.Second)
-// 	var desc string
-// 	doc.Find("meta[name=description]").Each(func(i int, selection *goquery.Selection) {
-// 		desc, _ = selection.Attr("content__1c40")
-// 	})
-// 	return desc
-// }
 
 func replaceCharacters(s string) string {
 	changeMap := map[string]string{
