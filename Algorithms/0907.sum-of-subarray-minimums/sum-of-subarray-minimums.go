@@ -7,26 +7,30 @@ func sumSubarrayMins(A []int) int {
 	s := new(stack)
 	s.push(0)
 
+	// A = append(A, 0)
+	size := len(A)
 	res := 0
 
-	for j := 1; j < len(A); j++ {
+	for j := 1; j < size; j++ {
 		if A[s.top()] < A[j] {
 			s.push(j)
 			continue
 		}
-		i := s.pop()
 
-		res += (i + 1 - s.top()) * (j - i) * A[i]
+		for s.len() > 0 && A[s.top()] >= A[j] {
+			i := s.pop()
+			res += (i - s.top()) * (j - i) * A[i]
+		}
+
+		s.push(j)
 	}
-
-	size := len(A)
 
 	for s.len() > 0 {
 		i := s.pop()
-		res += (i + 1 - s.top()) * (size - i) * A[i]
+		res += (i - s.top()) * (size - i) * A[i]
 	}
 
-	return res
+	return res % modulo
 }
 
 // stack 用于存放 A 中元素的 index
@@ -36,7 +40,7 @@ type stack []int
 func (s *stack) top() int {
 	size := len(*s)
 	if size == 0 {
-		return 0
+		return -1
 	}
 	return (*s)[size-1]
 }
