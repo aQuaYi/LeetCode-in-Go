@@ -4,30 +4,24 @@ const modulo = 1e9 + 7
 
 // 求解 A 的所有子数组的最小值之和
 func sumSubarrayMins(A []int) int {
-	s := new(stack)
-	s.push(0)
+	minOfA := 1 // 题目规定了 A[i]>=1
+	A = append(A, minOfA-1)
 
-	// A = append(A, 0)
 	size := len(A)
 	res := 0
 
-	for j := 1; j < size; j++ {
-		if A[s.top()] < A[j] {
-			s.push(j)
-			continue
+	s := new(stack)
+	s.push(0)
+
+	for i := 1; i < size; i++ {
+		for s.len() > 0 && A[s.top()] >= A[i] {
+			j := s.pop()
+			res += (j - s.top()) * (i - j) * A[j]
+			// (j-s.top()) * (i-j) 是所有以 A[j] 为最小值的子数组的个数
+			// j-s.top() 表示这些子数组可以有多少个左端点
+			// i-j 表示这些子数组可以做多少个右端点
 		}
-
-		for s.len() > 0 && A[s.top()] >= A[j] {
-			i := s.pop()
-			res += (i - s.top()) * (j - i) * A[i]
-		}
-
-		s.push(j)
-	}
-
-	for s.len() > 0 {
-		i := s.pop()
-		res += (i - s.top()) * (size - i) * A[i]
+		s.push(i)
 	}
 
 	return res % modulo
@@ -40,6 +34,7 @@ type stack []int
 func (s *stack) top() int {
 	size := len(*s)
 	if size == 0 {
+		// 返回 -1 是为了使得 "res += ..." 行的逻辑统一
 		return -1
 	}
 	return (*s)[size-1]
