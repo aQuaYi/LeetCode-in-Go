@@ -40,33 +40,27 @@ func merge(left, right *ListNode) *ListNode {
 	// left != nil , right != nil
 	// 因为， sortList 已经帮忙检查过了
 
-	var head, cur, pre *ListNode
+	cur := &ListNode{}
+	headPre := cur
 	for left != nil && right != nil {
 		// cur 指向 left 和 right 中最小的节点
 		if left.Val < right.Val {
-			cur = left
+			cur.Next = left
 			left = left.Next
 		} else {
-			cur = right
+			cur.Next = right
 			right = right.Next
 		}
-		// 生成 head 节点
-		// 或者 链接 pre 节点
-		if head == nil {
-			head = cur
-		} else {
-			pre.Next = cur
-		}
-		// 移动 pre 节点
-		pre = cur
+
+		cur = cur.Next
 	}
 
 	// 处理 left 或 right 中，剩下的节点
 	if left == nil {
-		pre.Next = right
+		cur.Next = right
 	} else {
-		pre.Next = left
+		cur.Next = left
 	}
 
-	return head
+	return headPre.Next
 }
