@@ -9,16 +9,21 @@ func snakesAndLadders(p [][]int) int {
 	}
 
 	for i := 1; i <= mn; i++ {
+		x, y := location(m, n, i)
+		pxy := p[x][y]
+		if -1 < pxy && pxy < i {
+			continue
+		}
 		for j := i - 1; i-6 <= j && j >= 0; j-- {
 			dp[i] = min(dp[i], dp[j]+1)
 		}
-		x, y := location(m, n, i)
-		pxy := p[x][y]
-		if pxy != -1 && pxy <= mn {
+		if pxy > i {
 			dp[pxy] = min(dp[pxy], dp[i])
 		}
 	}
-
+	if dp[mn] == mn {
+		return -1
+	}
 	return dp[mn]
 }
 
