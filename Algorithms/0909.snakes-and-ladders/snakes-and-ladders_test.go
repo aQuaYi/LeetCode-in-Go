@@ -118,18 +118,17 @@ func Test_location(t *testing.T) {
 	ast := assert.New(t)
 	//
 	const (
-		m = 3
 		n = 3
 	)
 	//
-	expected := [m][n]int{
+	expected := [n][n]int{
 		{7, 8, 9},
 		{6, 5, 4},
 		{1, 2, 3},
 	}
-	actual := [m][n]int{}
+	actual := [n][n]int{}
 	for i := 1; i <= 9; i++ {
-		x, y := location(m, n, i)
+		x, y := location(n, i)
 		actual[x][y] = i
 	}
 	ast.Equal(expected, actual)

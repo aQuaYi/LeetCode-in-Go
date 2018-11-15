@@ -1,39 +1,47 @@
 package problem0909
 
 func snakesAndLadders(p [][]int) int {
-	m, n := len(p), len(p[0])
-	mn := m * n
-	dp := [401]int{}
-	for i := 2; i <= mn; i++ {
-		dp[i] = mn
+	n := len(p)
+	target := n * n
+
+	squares := make([]int, 400)
+	isChecked := [401]bool{}
+
+	squares[0] = 1
+	isChecked[1] = true
+
+	steps := 0
+
+	// BFS
+	for len(squares) > 0 {
+		steps++
+		size := len(squares)
+		for j := 0; j < size; j++ {
+			s := squares[j]
+			for i := 1; i <= 6; i++ {
+				si := s + i
+				x, y := location(n, si)
+				if p[x][y] != -1 {
+					// jump
+					isChecked[si] = true
+					si = p[x][y]
+				}
+				if si == target {
+					return steps
+				}
+				if !isChecked[si] {
+					squares = append(squares, si)
+					isChecked[si] = true
+				}
+			}
+		}
+		squares = squares[size:]
 	}
 
-	for i := 2; i <= mn; i++ {
-		x, y := location(m, n, i)
-		pxy := p[x][y]
-		tmp := mn
-		for j := i - 1; j >= i-6 && j >= 0; j-- {
-			tmp = min(tmp, dp[j]+1)
-		}
-		if pxy != -1 {
-			dp[pxy] = min(dp[pxy], tmp)
-		}
-		dp[i] = min(dp[i], tmp)
-	}
-	if dp[mn] == mn {
-		return -1
-	}
-	return dp[mn]
+	return -1
 }
 
-func min(a, b int) int {
-	if a < b {
-		return a
-	}
-	return b
-}
-
-func location(m, n, square int) (x, y int) {
+func location(n, square int) (x, y int) {
 	square--
 	// 首先计算正常的位置
 	x, y = square/n, square%n
@@ -42,6 +50,6 @@ func location(m, n, square int) (x, y int) {
 		y = n - 1 - y
 	}
 	// 整体上下翻转
-	x = m - 1 - x
+	x = n - 1 - x
 	return
 }
