@@ -7,21 +7,18 @@ func snakesAndLadders(p [][]int) int {
 	for i := 2; i <= mn; i++ {
 		dp[i] = mn
 	}
-	isJumped := [401]bool{}
 
 	for i := 2; i <= mn; i++ {
 		x, y := location(m, n, i)
 		pxy := p[x][y]
-		if -1 < pxy && pxy < i {
-			continue
-		}
+		tmp := mn
 		for j := i - 1; j >= i-6 && j >= 0; j-- {
-			dp[i] = min(dp[i], dp[j]+1)
+			tmp = min(tmp, dp[j]+1)
 		}
-		if pxy > i && !isJumped[i] {
-			dp[pxy] = min(dp[pxy], dp[i])
-			isJumped[pxy] = true
+		if pxy != -1 {
+			dp[pxy] = min(dp[pxy], tmp)
 		}
+		dp[i] = min(dp[i], tmp)
 	}
 	if dp[mn] == mn {
 		return -1
