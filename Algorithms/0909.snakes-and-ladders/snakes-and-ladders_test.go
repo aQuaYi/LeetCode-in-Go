@@ -114,7 +114,7 @@ func Benchmark_snakesAndLadders(b *testing.B) {
 		}
 	}
 }
-func Test_location(t *testing.T) {
+func Test_position(t *testing.T) {
 	ast := assert.New(t)
 	//
 	const (
@@ -128,7 +128,7 @@ func Test_location(t *testing.T) {
 	}
 	actual := [n][n]int{}
 	for i := 1; i <= 9; i++ {
-		x, y := location(n, i)
+		x, y := position(i, n)
 		actual[x][y] = i
 	}
 	ast.Equal(expected, actual)

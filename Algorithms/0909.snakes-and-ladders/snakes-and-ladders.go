@@ -2,7 +2,7 @@ package problem0909
 
 func snakesAndLadders(p [][]int) int {
 	n := len(p)
-	target := n * n
+	destination := n * n
 
 	squares := make([]int, 400)
 	isChecked := [401]bool{}
@@ -20,13 +20,13 @@ func snakesAndLadders(p [][]int) int {
 			s := squares[j]
 			for i := 1; i <= 6; i++ {
 				si := s + i
-				x, y := location(n, si)
+				x, y := position(si, n)
 				if p[x][y] != -1 {
 					// jump
 					isChecked[si] = true
 					si = p[x][y]
 				}
-				if si == target {
+				if si == destination {
 					return steps
 				}
 				if !isChecked[si] {
@@ -41,7 +41,7 @@ func snakesAndLadders(p [][]int) int {
 	return -1
 }
 
-func location(n, square int) (x, y int) {
+func position(square, n int) (x, y int) {
 	square--
 	// 首先计算正常的位置
 	x, y = square/n, square%n
