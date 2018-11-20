@@ -13,7 +13,7 @@ func Constructor(persons []int, times []int) TopVotedCandidate {
 }
 
 // Q is question
-func (t *TopVotedCandidate) Q(t int) int {
+func (tvc *TopVotedCandidate) Q(t int) int {
 
 	return 0
 }

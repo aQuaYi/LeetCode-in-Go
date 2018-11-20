@@ -1,7 +1,11 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 868,
+<<<<<<< HEAD
 	"Updated": "2018-11-20T16:47:57.569833522+08:00",
+=======
+	"Updated": "2018-11-19T21:33:36.684807543+08:00",
+>>>>>>> acd6aa01bc8af03c792767535f7aaa01badbbf9a
 	"Record": {
 		"Easy": {
 			"Solved": 203,
@@ -5113,7 +5117,7 @@
 			"ID": 424,
 			"Title": "Longest Repeating Character Replacement",
 			"TitleSlug": "longest-repeating-character-replacement",
-			"PassRate": "42%",
+			"PassRate": "43%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -8545,7 +8549,7 @@
 			"ID": 710,
 			"Title": "Random Pick with Blacklist",
 			"TitleSlug": "random-pick-with-blacklist",
-			"PassRate": "29%",
+			"PassRate": "30%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10765,7 +10769,7 @@
 			"ID": 895,
 			"Title": "Maximum Frequency Stack",
 			"TitleSlug": "maximum-frequency-stack",
-			"PassRate": "48%",
+			"PassRate": "47%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11341,7 +11345,11 @@
 			"ID": 943,
 			"Title": "Find the Shortest Superstring",
 			"TitleSlug": "find-the-shortest-superstring",
+<<<<<<< HEAD
 			"PassRate": "26%",
+=======
+			"PassRate": "25%",
+>>>>>>> acd6aa01bc8af03c792767535f7aaa01badbbf9a
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
