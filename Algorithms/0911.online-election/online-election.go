@@ -20,10 +20,11 @@ func (tvc *TopVotedCandidate) Q(t int) int {
 	return 0
 }
 
-// entry 是 priorityQueue 中的元素
-type entry struct {
-	votedNumber int
-	lastIndex   int
+// candidate 是 priorityQueue 中的元素
+type candidate struct {
+	id        int
+	voted     int
+	lastIndex int
 	// index 是 entry 在 heap 中的索引号
 	// entry 加入 Priority Queue 后， Priority 会变化时，很有用
 	// 如果 entry.priority 一直不变的话，可以删除 index
@@ -31,12 +32,15 @@ type entry struct {
 }
 
 // PQ implements heap.Interface and holds entries.
-type PQ []*entry
+type PQ []*candidate
 
 func (pq PQ) Len() int { return len(pq) }
 
 func (pq PQ) Less(i, j int) bool {
-	return pq[i].lastIndex < pq[j].lastIndex
+	if pq[i].voted == pq[j].voted {
+		return pq[i].lastIndex > pq[j].lastIndex
+	}
+	return pq[i].voted > pq[j].voted
 }
 
 func (pq PQ) Swap(i, j int) {
@@ -47,7 +51,7 @@ func (pq PQ) Swap(i, j int) {
 
 // Push 往 pq 中放 entry
 func (pq *PQ) Push(x interface{}) {
-	temp := x.(*entry)
+	temp := x.(*candidate)
 	temp.index = len(*pq)
 	*pq = append(*pq, temp)
 }
@@ -61,8 +65,12 @@ func (pq *PQ) Pop() interface{} {
 }
 
 // update modifies the priority and value of an entry in the queue.
-func (pq *PQ) update(entry *entry, value, priority int) {
-	entry.votedNumber = value
-	entry.lastIndex = priority
+func (pq *PQ) update(entry *candidate, voted, lastIndex int) {
+	entry.voted = voted
+	entry.lastIndex = lastIndex
 	heap.Fix(pq, entry.index)
+}
+
+func (pq *PQ) topVotedID() int {
+	return (*pq)[0].id
 }
