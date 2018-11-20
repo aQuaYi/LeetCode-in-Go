@@ -1,23 +1,71 @@
 package problem0911
 
-import "container/heap"
+import (
+	"container/heap"
+	"sort"
+)
 
 // TopVotedCandidate object will be instantiated and called as such:
 // obj := Constructor(persons, times);
 // param_1 := obj.Q(t);
 type TopVotedCandidate struct {
+	n              int
+	terms, leaders []int
 }
 
 // Constructor returns TopVotedCandidate
 func Constructor(persons []int, times []int) TopVotedCandidate {
+	// tvc := TopVotedCandidate{}
+	size := len(persons)
 
-	return TopVotedCandidate{}
+	terms := make([]int, 0, size)
+	leaders := make([]int, 0, size)
+
+	leader := -1
+
+	pq := make(PQ, 0, size)
+	cs := make([]*candidate, size)
+
+	for i := 0; i < size; i++ {
+		c := persons[i]
+
+		if cs[c] == nil {
+			cp := &candidate{
+				id:        c,
+				voted:     1,
+				lastIndex: i,
+			}
+			heap.Push(&pq, cp)
+			cs[c] = cp
+		} else {
+			pq.update(cs[c], i)
+		}
+
+		newLeader := pq.topVotedID()
+
+		if newLeader == leader {
+			continue
+		}
+
+		leader = newLeader
+		leaders = append(leaders, newLeader)
+		terms = append(terms, times[i])
+	}
+
+	return TopVotedCandidate{
+		n:       len(leaders),
+		terms:   terms,
+		leaders: leaders,
+	}
 }
 
 // Q is question
 func (tvc *TopVotedCandidate) Q(t int) int {
+	idx := sort.Search(tvc.n, func(i int) bool {
+		return t < tvc.terms[i]
+	}) - 1
 
-	return 0
+	return tvc.leaders[idx]
 }
 
 // candidate 是 priorityQueue 中的元素
@@ -65,8 +113,8 @@ func (pq *PQ) Pop() interface{} {
 }
 
 // update modifies the priority and value of an entry in the queue.
-func (pq *PQ) update(entry *candidate, voted, lastIndex int) {
-	entry.voted = voted
+func (pq *PQ) update(entry *candidate, lastIndex int) {
+	entry.voted++
 	entry.lastIndex = lastIndex
 	heap.Fix(pq, entry.index)
 }
