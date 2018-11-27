@@ -22,15 +22,15 @@ func catMouseGame(graph [][]int) int {
 
 	queue := make([][4]int, 0, n)
 
-	push := func(cat, mouse, mouseMove, color int) {
+	colorizeAndPush := func(cat, mouse, mouseMove, color int) {
 		colors[cat][mouse][mouseMove] = color
 		queue = append(queue, [4]int{cat, mouse, mouseMove, color})
 	}
 
 	for k := 1; k < n; k++ {
 		for m := 0; m < 2; m++ {
-			push(k, 0, m, 1)
-			push(k, k, m, 2)
+			colorizeAndPush(k, 0, m, 1)
+			colorizeAndPush(k, k, m, 2)
 		}
 	}
 
