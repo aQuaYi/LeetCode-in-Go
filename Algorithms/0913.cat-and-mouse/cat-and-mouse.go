@@ -4,7 +4,7 @@ package problem0913
 
 func catMouseGame(graph [][]int) int {
 	n := len(graph)
-	color := [50][50][2]int{}
+	colors := [50][50][2]int{}
 	outdegree := [50][50][2]int{}
 
 	for i := 0; i < n; i++ { // cat
@@ -20,25 +20,29 @@ func catMouseGame(graph [][]int) int {
 		}
 	}
 
-	q := make([][]int, 0, n)
+	queue := make([][4]int, 0, n)
+
+	push := func(cat, mouse, mouseMove, color int) {
+		colors[cat][mouse][mouseMove] = color
+		queue = append(queue, [4]int{cat, mouse, mouseMove, color})
+	}
+
 	for k := 1; k < n; k++ {
 		for m := 0; m < 2; m++ {
-			color[k][0][m] = 1
-			q = append(q, []int{k, 0, m, 1})
-			color[k][k][m] = 2
-			q = append(q, []int{k, k, m, 2})
+			push(k, 0, m, 1)
+			push(k, k, m, 2)
 		}
 	}
 
-	var cur []int
+	var cur [4]int
 
-	for len(q) > 0 {
-		cur, q = q[0], q[1:]
-		cat, mouse, mouseMove, c := cur[0], cur[1], cur[2], cur[3]
+	for len(queue) > 0 {
+		cur, queue = queue[0], queue[1:]
+		cat, mouse, mouseMove, color := cur[0], cur[1], cur[2], cur[3]
 		if cat == 2 &&
 			mouse == 1 &&
 			mouseMove == 0 {
-			return c
+			return color
 		}
 		prevMouseMove := 1 - mouseMove
 		animal := mouse
@@ -57,19 +61,19 @@ func catMouseGame(graph [][]int) int {
 				continue
 			}
 
-			if color[prevCat][prevMouse][prevMouseMove] > 0 {
+			if colors[prevCat][prevMouse][prevMouseMove] > 0 {
 				continue
 			}
 
 			outdegree[prevCat][prevMouse][prevMouseMove]--
-			if (prevMouseMove == 1 && c == 2) ||
-				(prevMouseMove == 0 && c == 1) ||
+			if (prevMouseMove == 1 && color == 2) ||
+				(prevMouseMove == 0 && color == 1) ||
 				(outdegree[prevCat][prevMouse][prevMouseMove] == 0) {
-				color[prevCat][prevMouse][prevMouseMove] = c
-				q = append(q, []int{prevCat, prevMouse, prevMouseMove, c})
+				colors[prevCat][prevMouse][prevMouseMove] = color
+				queue = append(queue, [4]int{prevCat, prevMouse, prevMouseMove, color})
 			}
 		}
 	}
 
-	return color[2][1][0]
+	return colors[2][1][0]
 }
