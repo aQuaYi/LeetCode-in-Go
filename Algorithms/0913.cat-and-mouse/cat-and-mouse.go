@@ -1,5 +1,7 @@
 package problem0913
 
+// ref: https://leetcode.com/problems/cat-and-mouse/discuss/176177/Most-of-the-DFS-solutions-are-WRONG-check-this-case
+
 func catMouseGame(graph [][]int) int {
 	n := len(graph)
 	color := [50][50][2]int{}
@@ -60,9 +62,9 @@ func catMouseGame(graph [][]int) int {
 			}
 
 			outdegree[prevCat][prevMouse][prevMouseMove]--
-			if prevMouseMove == 1 && c == 2 ||
-				prevMouseMove == 0 && c == 1 ||
-				outdegree[prevCat][prevMouse][prevMouseMove] == 0 {
+			if (prevMouseMove == 1 && c == 2) ||
+				(prevMouseMove == 0 && c == 1) ||
+				(outdegree[prevCat][prevMouse][prevMouseMove] == 0) {
 				color[prevCat][prevMouse][prevMouseMove] = c
 				q = append(q, []int{prevCat, prevMouse, prevMouseMove, c})
 			}
