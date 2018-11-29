@@ -1,38 +1,25 @@
 package problem0915
 
 func partitionDisjoint(A []int) int {
-	size := len(A)
-	inStack := make([]int, 1, size)
-	deStack := make([]int, 1, size)
-	inStack[0] = 0
-	deStack[0] = size - 1
+	leftMax, nextMax, rightBegin := A[0], A[0], 1
 
-	push := func(stack []int, i int) {
-		stack = append(stack, i)
-	}
-
-	top := func(stack []int) int {
-		i := stack[len(stack)-1]
-		return A[i]
-	}
-
-	minRight := A[0]
-
-	for i := 1; i < size; i++ {
-		if top(inStack) < A[i] {
-			push(inStack, i)
+	for i := 1; i < len(A); i++ {
+		if leftMax > A[i] {
+			// 此时，A[i] 比在 left 中，
+			leftMax = nextMax
+			// right 的起点，至少是 i+1
+			rightBegin = i + 1
+		} else {
+			nextMax = max(nextMax, A[i])
 		}
 	}
 
-	for i := size - 2; i >= 0; i-- {
-		if top(deStack) > A[i] {
-			push(deStack, i)
-		}
-	}
+	return rightBegin
+}
 
-	for i, j := 0, len(deStack)-1; i < j; i, j = i+1, j-1 {
-		deStack[i], deStack[j] = deStack[i], deStack[i]
+func max(a, b int) int {
+	if a > b {
+		return a
 	}
-
-	return i
+	return b
 }
