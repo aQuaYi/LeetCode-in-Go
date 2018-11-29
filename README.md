@@ -781,7 +781,7 @@
 
 ## helper
 
-[helper](./helper) 会处理大部分琐碎的工作。
+[helper](./Helper) 会处理大部分琐碎的工作。
 
 ## notes
 
