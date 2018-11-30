@@ -9,9 +9,39 @@ import (
 
 // tcs is testcase slice
 var tcs = []struct {
-	A, B []int
+	A, B []string
 	ans  []string
 }{
+
+	{
+		[]string{"amazon", "apple", "facebook", "google", "leetcode"},
+		[]string{"e", "o"},
+		[]string{"facebook", "google", "leetcode"},
+	},
+
+	{
+		[]string{"amazon", "apple", "facebook", "google", "leetcode"},
+		[]string{"l", "e"},
+		[]string{"apple", "google", "leetcode"},
+	},
+
+	{
+		[]string{"amazon", "apple", "facebook", "google", "leetcode"},
+		[]string{"e", "oo"},
+		[]string{"facebook", "google"},
+	},
+
+	{
+		[]string{"amazon", "apple", "facebook", "google", "leetcode"},
+		[]string{"lo", "eo"},
+		[]string{"google", "leetcode"},
+	},
+
+	{
+		[]string{"amazon", "apple", "facebook", "google", "leetcode"},
+		[]string{"ec", "oc", "ceo"},
+		[]string{"facebook", "leetcode"},
+	},
 
 	// 可以有多个 testcase
 }
