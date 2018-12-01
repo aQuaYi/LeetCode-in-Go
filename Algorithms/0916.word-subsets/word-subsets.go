@@ -1,9 +1,9 @@
 package problem0916
 
 func wordSubsets(A, B []string) []string {
-	mix := make([]int, 26)
-	for i := range B {
-		maxSlice(mix, count(B[i]))
+	mix := new([26]int)
+	for _, b := range B {
+		collect(mix, count(b))
 	}
 
 	res := make([]string, 0, len(A))
@@ -16,26 +16,26 @@ func wordSubsets(A, B []string) []string {
 	return res
 }
 
-func count(s string) []int {
-	res := make([]int, 26)
+func count(s string) *[26]int {
+	res := [26]int{}
 	for _, b := range s {
 		res[b-'a']++
 	}
-	return res
+	return &res
 }
 
-func isSubset(s, mix []int) bool {
-	res := true
+func isSubset(s, mix *[26]int) bool {
+	isSubset := true
 	i := 0
-	for res && i < 26 {
-		res = res && (s[i] >= mix[i])
+	for isSubset && i < 26 {
+		isSubset = isSubset && (s[i] >= mix[i])
 		i++
 	}
-	return res
+	return isSubset
 }
 
-// maxSlice to a
-func maxSlice(a, b []int) {
+// collect to a
+func collect(a, b *[26]int) {
 	for i := range a {
 		a[i] = max(a[i], b[i])
 	}
