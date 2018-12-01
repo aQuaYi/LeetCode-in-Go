@@ -12,7 +12,9 @@ func buildReadme() {
 	log.Println("开始，重建 README 文档")
 
 	lc := newLeetCode()
+
 	makeReadmeFile(lc)
+
 	makeMyFavoriteFile(lc)
 
 	log.Println("完成，重建 README 文档")

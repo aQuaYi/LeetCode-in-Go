@@ -54,11 +54,13 @@ func build(p problem) {
 	log.Printf("开始创建 %d %s 的文件夹...\n", p.ID, p.Title)
 
 	// 利用 chrome 打开题目页面
-	cmd := exec.Command("google-chrome", p.link())
-	_, err = cmd.Output()
-	if err != nil {
-		panic(err.Error())
-	}
+	go func() {
+		cmd := exec.Command("google-chrome", p.link())
+		_, err = cmd.Output()
+		if err != nil {
+			panic(err.Error())
+		}
+	}()
 
 	fc := getFunction(p.link())
 
