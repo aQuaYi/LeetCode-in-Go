@@ -9,11 +9,24 @@ import (
 
 // tcs is testcase slice
 var tcs = []struct {
-	S string
+	S   string
 	ans string
 }{
 
+	{
+		"ab-cd",
+		"dc-ba",
+	},
 
+	{
+		"a-bC-dEf-ghIj",
+		"j-Ih-gfE-dCba",
+	},
+
+	{
+		"Test1ng-Leet=code-Q!",
+		"Qedo1ct-eeLg=ntse-T!",
+	},
 
 	// 可以有多个 testcase
 }

@@ -1,50 +1,30 @@
 # [917. Reverse Only Letters](https://leetcode.com/problems/reverse-only-letters/)
 
-<div class="content__eAC7"><div><p>Given a string <code>S</code>, return the "reversed" string where all characters that are not a letter&nbsp;stay in the same place, and all letters reverse their positions.</p>
+Given a string `S`, return the "reversed" string where all characters that are not a letter stay in the same place, and all letters reverse their positions.
 
-<p>&nbsp;</p>
+Example 1:
 
-<div>
-<div>
-<div>
-<ol>
-</ol>
-</div>
-</div>
-</div>
+```text
+Input: "ab-cd"
+Output: "dc-ba"
+```
 
-<div>
-<p><strong>Example 1:</strong></p>
+Example 2:
 
-<pre><strong>Input: </strong><span id="example-input-1-1">"ab-cd"</span>
-<strong>Output: </strong><span id="example-output-1">"dc-ba"</span>
-</pre>
+```text
+Input: "a-bC-dEf-ghIj"
+Output: "j-Ih-gfE-dCba"
+```
 
-<div>
-<p><strong>Example 2:</strong></p>
+Example 3:
 
-<pre><strong>Input: </strong><span id="example-input-2-1">"a-bC-dEf-ghIj"</span>
-<strong>Output: </strong><span id="example-output-2">"j-Ih-gfE-dCba"</span>
-</pre>
+```text
+Input: "Test1ng-Leet=code-Q!"
+Output: "Qedo1ct-eeLg=ntse-T!"
+```
 
-<div>
-<p><strong>Example 3:</strong></p>
+Note:
 
-<pre><strong>Input: </strong><span id="example-input-3-1">"Test1ng-Leet=code-Q!"</span>
-<strong>Output: </strong><span id="example-output-3">"Qedo1ct-eeLg=ntse-T!"</span>
-</pre>
-
-<p>&nbsp;</p>
-
-<div>
-<p><strong><span>Note:</span></strong></p>
-
-<ol>
-	<li><code>S.length &lt;= 100</code></li>
-	<li><code>33 &lt;= S[i].ASCIIcode &lt;= 122</code>&nbsp;</li>
-	<li><code>S</code> doesn't contain <code>\</code> or <code>"</code></li>
-</ol>
-</div>
-</div>
-</div>
-</div></div></div>
+1. `S.length <= 100`
+1. `33 <= S[i].ASCIIcode <= 122`
+1. `S` doesn't contain `\` or `"`
