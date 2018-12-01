@@ -14,37 +14,27 @@ import (
 func buildProblemDir(problemNum int) {
 	log.Printf("~~ 开始生成第 %d 题的文件夹 ~~\n", problemNum)
 
-	// 需要创建答题文件夹
+	// 获取 LeetCode 的记录文件
 	lc := newLeetCode()
-	//
-	makeProblemDir(lc.Problems, problemNum)
-	//
+
+	// 检查 problemNum 的合法性
+	if problemNum >= len(lc.Problems) {
+		log.Fatalf("%d 超出题目范围，请核查题号。", problemNum)
+	}
+	if lc.Problems[problemNum].ID == 0 {
+		log.Fatalf("%d 号题不存，请核查题号。", problemNum)
+	}
+	if lc.Problems[problemNum].IsPaid {
+		log.Fatalf("%d 号题需要付费。如果已经订阅，请注释掉本代码。", problemNum)
+	}
+	if lc.Problems[problemNum].HasNoGoOption {
+		log.Fatalf("%d 号题，没有提供 Go 解答选项。请核查后，修改 unavailable.json 中的记录。", problemNum)
+	}
+
+	// 需要创建答题文件夹
+	build(lc.Problems[problemNum])
+
 	log.Printf("~~ 第 %d 题的文件夹，已经生成 ~~\n", problemNum)
-}
-
-func makeProblemDir(ps problems, problemNum int) {
-	var pb problem
-	var isFound bool
-
-	// 根据题号，获取题目信息
-	for _, p := range ps {
-		if p.ID == problemNum {
-			if p.HasNoGoOption {
-				log.Fatalln(`此题被标记为"不能使用 Go 语言解答"。请核查后，修改 unavailable.json 中的记录`)
-			}
-			pb = p
-			isFound = true
-			break
-		}
-	}
-
-	if !isFound {
-		log.Printf("没有发现第 %d 题，存在以下可能：1.此题不存在；2.此题需要付费。", problemNum)
-		return
-	}
-
-	// 创建目录
-	build(pb)
 }
 
 func build(p problem) {
