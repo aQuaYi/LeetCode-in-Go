@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"log"
 	"strings"
-	"time"
 
 	"github.com/chromedp/chromedp"
 )
@@ -28,9 +27,6 @@ func creatREADME(p problem) {
 
 	vscodeOpen(filename)
 
-	// TODO: 删除此处内容
-	time.Sleep(5 * time.Second)
-	log.Panicln("wait 5 seconde to panic")
 }
 
 func replaceCharacters(s string) string {
