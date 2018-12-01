@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 882,
-	"Updated": "2018-12-01T16:13:03.850957414+08:00",
+	"Updated": "2018-12-01T16:36:50.734339346+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 203,
+			"Solved": 204,
 			"Total": 212
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 156
 		},
 		"Total": {
-			"Solved": 693,
+			"Solved": 694,
 			"Total": 725
 		}
 	},
@@ -11031,7 +11031,7 @@
 			"TitleSlug": "reverse-only-letters",
 			"PassRate": "56%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
