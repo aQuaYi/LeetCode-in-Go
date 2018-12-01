@@ -39,7 +39,7 @@ func buildProblemDir(problemNum int) {
 
 func build(p problem) {
 	if GoKit.Exist(p.Dir()) {
-		log.Fatalf("第 %d 题的文件夹已经存在，请**移除**  %s 文件夹后，再尝试。", p.ID, p.Dir())
+		log.Fatalf("第 %d 题的文件夹已经存在，请 **移除** %s 文件夹后，再尝试。", p.ID, p.Dir())
 	}
 
 	mask := syscall.Umask(0)
@@ -53,6 +53,13 @@ func build(p problem) {
 
 	log.Printf("开始创建 %d %s 的文件夹...\n", p.ID, p.Title)
 
+	// 利用 chrome 打开题目页面
+	cmd := exec.Command("google-chrome", p.link())
+	_, err = cmd.Output()
+	if err != nil {
+		panic(err.Error())
+	}
+
 	fc := getFunction(p.link())
 
 	fcName, para, ans, fc := parseFunction(fc)
@@ -62,13 +69,6 @@ func build(p problem) {
 	creatGoTest(p, fcName, para, ans)
 
 	creatREADME(p)
-
-	// 利用 chrome 打开题目页面
-	cmd := exec.Command("google-chrome", p.link())
-	_, err = cmd.Output()
-	if err != nil {
-		panic(err.Error())
-	}
 
 	log.Printf("%d.%s 的文件夹，创建完毕。\n", p.ID, p.Title)
 }
@@ -98,6 +98,8 @@ func creatGo(p problem, function, ansType string) {
 	filename := fmt.Sprintf("%s/%s.go", p.Dir(), p.TitleSlug)
 
 	write(filename, content)
+
+	vscodeOpen(filename)
 }
 
 func creatGoTest(p problem, fcName, para, ansType string) {
@@ -157,6 +159,8 @@ import (
 	filename := fmt.Sprintf("%s/%s_test.go", p.Dir(), p.TitleSlug)
 
 	write(filename, content)
+
+	vscodeOpen(filename)
 
 }
 

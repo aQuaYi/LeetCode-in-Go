@@ -1,13 +1,11 @@
 package main
 
 import (
-	"context"
+	"bufio"
 	"fmt"
 	"log"
+	"os"
 	"strings"
-	"time"
-
-	"github.com/chromedp/chromedp"
 )
 
 func parseFunction(fc string) (fcName, para, ansType, nfc string) {
@@ -37,57 +35,18 @@ func parseFunction(fc string) (fcName, para, ansType, nfc string) {
 }
 
 func getFunction(url string) string {
-	// TODO: 更正此处内容
-	jump := true
-	if jump {
-		return "func myFunc(p int) int {}"
-	}
+	inputReader := bufio.NewReader(os.Stdin)
 
 	var err error
-
-	// create context
-	ctxt, cancel := context.WithCancel(context.Background())
-	defer cancel()
-
-	// run task list
-	var function string
-
-	// create chrome instance
-	c, err := chromedp.New(ctxt, chromedp.WithLog(log.Printf))
-	if err != nil {
-		log.Println("chromedp.New 出错：", err)
+	fc := ""
+	for !strings.HasPrefix(fc, "func ") {
+		fmt.Print("请输入 Go 函数:")
+		fc, err = inputReader.ReadString('\n')
+		if err != nil {
+			log.Fatalf("读取 Go 函数失败：%s", err)
+		}
 	}
 
-	err = c.Run(ctxt, makeTasks(url, &function))
-	if err != nil {
-		log.Println("c.Run 出错：", err)
-	}
+	return fc
 
-	// shutdown chrome
-	err = c.Shutdown(ctxt)
-	if err != nil {
-		log.Println("c.Shutdown 出错：", err)
-	}
-
-	// wait for chrome to finish
-	err = c.Wait()
-	if err != nil {
-		log.Println("c.Wait 出错：", err)
-	}
-
-	log.Println("抓取到函数：", function)
-
-	return function
-}
-
-func makeTasks(url string, function *string) chromedp.Tasks {
-	codeSel := "#main-container > div > div > div.editor-wrapper__1v3H > div > div.content__1YQ2 > div > div.container__YPDh > div > div > div.CodeMirror-scroll > div.CodeMirror-sizer > div > div > div > div.CodeMirror-code"
-
-	return chromedp.Tasks{
-		chromedp.Navigate(url),
-
-		chromedp.Sleep(12 * time.Second),
-
-		chromedp.Text(codeSel, function),
-	}
 }
