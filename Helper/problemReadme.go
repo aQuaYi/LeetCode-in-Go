@@ -16,8 +16,8 @@ func creatREADME(p problem) {
 `
 
 	// TODO: 复原自动下载的功能
-	// questionDescription := strings.TrimSpace(getDescription(p.link()))
-	questionDescription := ""
+	questionDescription := strings.TrimSpace(getDescription(p.link()))
+	// questionDescription := ""
 
 	content := fmt.Sprintf(fileFormat, p.ID, p.Title, p.link(), questionDescription)
 
@@ -93,7 +93,7 @@ func getDescription(url string) string {
 }
 
 func text(url string, res *string) chromedp.Tasks {
-	sel := `#main-container > div > div > div.side-tools-wrapper__2Fg5 > div > div.wrapper__UUUo > div > div.tab-pane__DzxD.css-q9hlqr-TabContent.e5i1odf4 > div > div.content__1c40`
+	sel := `#question-detail-main-tabs > div.tab-pane__280T.css-c363ty-TabContent.e5i1odf5 > div > div.content__eAC7`
 	return chromedp.Tasks{
 		chromedp.Navigate(url),
 		chromedp.Text(sel, res, chromedp.NodeVisible, chromedp.BySearch),
