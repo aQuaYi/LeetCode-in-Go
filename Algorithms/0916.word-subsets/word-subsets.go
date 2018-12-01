@@ -1,14 +1,14 @@
 package problem0916
 
 func wordSubsets(A, B []string) []string {
-	mix := new([26]int)
+	clt := new([26]int)
 	for _, b := range B {
-		collect(mix, count(b))
+		collect(clt, count(b))
 	}
 
 	res := make([]string, 0, len(A))
 	for _, a := range A {
-		if isSubset(count(a), mix) {
+		if isSubset(count(a), clt) {
 			res = append(res, a)
 		}
 	}
@@ -24,20 +24,20 @@ func count(s string) *[26]int {
 	return &res
 }
 
-func isSubset(s, mix *[26]int) bool {
+func isSubset(s, clt *[26]int) bool {
 	isSubset := true
 	i := 0
 	for isSubset && i < 26 {
-		isSubset = isSubset && (s[i] >= mix[i])
+		isSubset = isSubset && (s[i] >= clt[i])
 		i++
 	}
 	return isSubset
 }
 
-// collect to a
-func collect(a, b *[26]int) {
-	for i := range a {
-		a[i] = max(a[i], b[i])
+// collect to clt
+func collect(clt, b *[26]int) {
+	for i := range clt {
+		clt[i] = max(clt[i], b[i])
 	}
 }
 
