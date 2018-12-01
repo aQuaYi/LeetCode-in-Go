@@ -15,9 +15,7 @@ func creatREADME(p problem) {
 %s
 `
 
-	// TODO: 复原自动下载的功能
 	questionDescription := strings.TrimSpace(getDescription(p.link()))
-	// questionDescription := ""
 
 	content := fmt.Sprintf(fileFormat, p.ID, p.Title, p.link(), questionDescription)
 
