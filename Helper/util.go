@@ -36,7 +36,7 @@ func write(path, content string) {
 
 // 利用 VSCode 打开文件
 func vscodeOpen(filename string) {
-	cmd := exec.Command("code", filename)
+	cmd := exec.Command("code", "-r", filename)
 	_, err := cmd.Output()
 	if err != nil {
 		panic(err.Error())

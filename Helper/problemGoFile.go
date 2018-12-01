@@ -36,7 +36,6 @@ func parseFunction(fc string) (fcName, para, ansType, nfc string) {
 
 func getFunction(url string) string {
 	inputReader := bufio.NewReader(os.Stdin)
-
 	var err error
 	fc := ""
 	for !strings.HasPrefix(fc, "func ") {
