@@ -51,7 +51,7 @@ func saveLocal(task string) {
 	ts, err := ioutil.ReadFile(didaTaskFile)
 	if err != nil {
 		if !os.IsNotExist(err) {
-			log.Fatalf("无法读取 %s：%s\n", didaTaskFile, err)
+			log.Panicf("无法读取 %s：%s\n", didaTaskFile, err)
 		}
 		f, _ := os.Create(didaTaskFile)
 		f.Close()
@@ -61,7 +61,7 @@ func saveLocal(task string) {
 
 	err = ioutil.WriteFile(didaTaskFile, ts, 0755)
 	if err != nil {
-		log.Fatalf("无法写入 %s: %s\n", didaTaskFile, err)
+		log.Panicf("无法写入 %s: %s\n", didaTaskFile, err)
 	}
 
 	log.Printf("新建任务已经写入 %s，请手动添加到滴答清单", didaTaskFile)

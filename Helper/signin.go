@@ -57,7 +57,7 @@ func signin() *request.Request {
 func getCSRFToken(req *request.Request) string {
 	resp, err := req.Get(loginPageURL)
 	if err != nil {
-		log.Fatalf("无法 Get 到 %s: %s", loginPageURL, err)
+		log.Panicf("无法 Get 到 %s: %s", loginPageURL, err)
 	}
 
 	cookies := resp.Cookies()

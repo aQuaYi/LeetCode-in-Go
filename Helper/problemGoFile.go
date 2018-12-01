@@ -42,7 +42,7 @@ func getFunction(url string) string {
 		fmt.Print("请输入 Go 函数:")
 		fc, err = inputReader.ReadString('\n')
 		if err != nil {
-			log.Fatalf("读取 Go 函数失败：%s", err)
+			log.Panicf("读取 Go 函数失败：%s", err)
 		}
 	}
 
