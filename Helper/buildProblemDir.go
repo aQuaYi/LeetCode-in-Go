@@ -19,16 +19,16 @@ func buildProblemDir(problemNum int) {
 
 	// 检查 problemNum 的合法性
 	if problemNum >= len(lc.Problems) {
-		log.Fatalf("%d 超出题目范围，请核查题号。", problemNum)
+		log.Panicf("%d 超出题目范围，请核查题号。", problemNum)
 	}
 	if lc.Problems[problemNum].ID == 0 {
-		log.Fatalf("%d 号题不存，请核查题号。", problemNum)
+		log.Panicf("%d 号题不存，请核查题号。", problemNum)
 	}
 	if lc.Problems[problemNum].IsPaid {
-		log.Fatalf("%d 号题需要付费。如果已经订阅，请注释掉本代码。", problemNum)
+		log.Panicf("%d 号题需要付费。如果已经订阅，请注释掉本代码。", problemNum)
 	}
 	if lc.Problems[problemNum].HasNoGoOption {
-		log.Fatalf("%d 号题，没有提供 Go 解答选项。请核查后，修改 unavailable.json 中的记录。", problemNum)
+		log.Panicf("%d 号题，没有提供 Go 解答选项。请核查后，修改 unavailable.json 中的记录。", problemNum)
 	}
 
 	// 需要创建答题文件夹
@@ -39,8 +39,16 @@ func buildProblemDir(problemNum int) {
 
 func build(p problem) {
 	if GoKit.Exist(p.Dir()) {
-		log.Fatalf("第 %d 题的文件夹已经存在，请 **移除** %s 文件夹后，再尝试。", p.ID, p.Dir())
+		log.Panicf("第 %d 题的文件夹已经存在，请 **移除** %s 文件夹后，再尝试。", p.ID, p.Dir())
 	}
+
+	defer func() {
+		if err := recover(); err != nil {
+			log.Println(err)
+			log.Println("清理不必要的文件")
+			os.RemoveAll(p.Dir())
+		}
+	}()
 
 	mask := syscall.Umask(0)
 	defer syscall.Umask(mask)
@@ -48,7 +56,7 @@ func build(p problem) {
 	// 创建目录
 	err := os.Mkdir(p.Dir(), 0755)
 	if err != nil {
-		log.Fatalf("无法创建目录，%s ：%s", p.Dir(), err)
+		log.Panicf("无法创建目录，%s ：%s", p.Dir(), err)
 	}
 
 	log.Printf("开始创建 %d %s 的文件夹...\n", p.ID, p.Title)

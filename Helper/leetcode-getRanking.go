@@ -42,7 +42,7 @@ func getRanking() int {
 
 	r, err := strconv.Atoi(str)
 	if err != nil {
-		log.Fatalf("无法把 %s 转换成数字Ranking", str)
+		log.Panicf("无法把 %s 转换成数字Ranking", str)
 	}
 
 	return r

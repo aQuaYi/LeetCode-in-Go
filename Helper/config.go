@@ -39,7 +39,7 @@ func getConfig() *config {
 	cfg := new(config)
 
 	if _, err := toml.DecodeFile(configTOML, &cfg); err != nil {
-		log.Fatalf(err.Error())
+		log.Panicf(err.Error())
 	}
 
 	// log.Printf("get config: %s", cfg)

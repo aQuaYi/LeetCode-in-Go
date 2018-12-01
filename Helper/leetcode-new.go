@@ -50,13 +50,13 @@ func readUnavailable() map[int]bool {
 	}
 
 	if !GoKit.Exist(unavailableFile) {
-		log.Fatalf("%s 不存在，没有不能解答的题目", unavailableFile)
+		log.Panicf("%s 不存在，没有不能解答的题目", unavailableFile)
 	}
 
 	raw := read(unavailableFile)
 	u := unavailable{}
 	if err := json.Unmarshal(raw, &u); err != nil {
-		log.Fatalf("获取 %s 失败：%s", unavailableFile, err)
+		log.Panicf("获取 %s 失败：%s", unavailableFile, err)
 	}
 
 	res := make(map[int]bool, len(u.List))

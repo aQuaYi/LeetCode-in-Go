@@ -46,7 +46,7 @@ func getAlgorithms() *algorithms {
 
 	res := new(algorithms)
 	if err := json.Unmarshal(raw, res); err != nil {
-		log.Fatalf("无法把json转换成Category: %s\n", err.Error())
+		log.Panicf("无法把json转换成Category: %s\n", err.Error())
 	}
 
 	// 如果，没有登录的话，也能获取数据，但是用户名，就不是本人
