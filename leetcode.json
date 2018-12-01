@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 882,
-	"Updated": "2018-12-01T14:18:08.733046649+08:00",
+	"Updated": "2018-12-01T14:24:42.687017657+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 203,
@@ -8065,7 +8065,7 @@
 			"ID": 670,
 			"Title": "Maximum Swap",
 			"TitleSlug": "maximum-swap",
-			"PassRate": "39%",
+			"PassRate": "38%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9733,7 +9733,7 @@
 			"ID": 809,
 			"Title": "Expressive Words",
 			"TitleSlug": "expressive-words",
-			"PassRate": "40%",
+			"PassRate": "39%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
