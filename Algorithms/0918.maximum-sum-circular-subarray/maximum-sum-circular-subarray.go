@@ -1,22 +1,34 @@
 package problem0918
 
-func maxSubarraySumCircular(A []int) int {
-	size := len(A)
-	res := -30001
-	tmp := 0
+// ref: https://leetcode.com/problems/maximum-sum-circular-subarray/discuss/178422/C++JavaPython-One-Pass
 
-	for i := 0; i < size; i++ {
-		for j := i + 1; j < i+size; j++ {
-if tmp < 0 {
-	tmp=
-}
-		}
+func maxSubarraySumCircular(A []int) int {
+	total, curMax, curMin := 0, 0, 0
+	maxSum, minSum := -30001, 30001
+
+	for _, a := range A {
+		curMax = max(curMax+a, a)
+		maxSum = max(maxSum, curMax)
+		curMin = min(curMin+a, a)
+		minSum = min(minSum, curMin)
+		total += a
 	}
-	return 0
+
+	if maxSum > 0 {
+		return max(maxSum, total-minSum)
+	}
+	return maxSum
 }
 
 func max(a, b int) int {
 	if a > b {
+		return a
+	}
+	return b
+}
+
+func min(a, b int) int {
+	if a < b {
 		return a
 	}
 	return b
