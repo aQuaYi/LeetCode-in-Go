@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
-	"Ranking": 872,
-	"Updated": "2018-12-03T16:56:56.738429977+08:00",
+	"Ranking": 879,
+	"Updated": "2018-12-03T21:27:23.461194203+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 204,
 			"Total": 213
 		},
 		"Medium": {
-			"Solved": 341,
+			"Solved": 342,
 			"Total": 359
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 157
 		},
 		"Total": {
-			"Solved": 694,
+			"Solved": 695,
 			"Total": 729
 		}
 	},
@@ -7753,7 +7753,7 @@
 			"ID": 644,
 			"Title": "Maximum Average Subarray II",
 			"TitleSlug": "maximum-average-subarray-ii",
-			"PassRate": "26%",
+			"PassRate": "27%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -8917,7 +8917,7 @@
 			"ID": 741,
 			"Title": "Cherry Pickup",
 			"TitleSlug": "cherry-pickup",
-			"PassRate": "25%",
+			"PassRate": "26%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9349,7 +9349,7 @@
 			"ID": 777,
 			"Title": "Swap Adjacent in LR String",
 			"TitleSlug": "swap-adjacent-in-lr-string",
-			"PassRate": "30%",
+			"PassRate": "31%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11043,9 +11043,9 @@
 			"TitleSlug": "maximum-sum-circular-subarray",
 			"PassRate": "26%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -11449,7 +11449,7 @@
 			"ID": 952,
 			"Title": "Largest Component Size by Common Factor",
 			"TitleSlug": "largest-component-size-by-common-factor",
-			"PassRate": "18%",
+			"PassRate": "19%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
