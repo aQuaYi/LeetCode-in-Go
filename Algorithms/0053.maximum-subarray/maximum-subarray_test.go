@@ -30,13 +30,13 @@ func Test_Problem0053(t *testing.T) {
 	qs := []question{
 
 		question{
-			para{[]int{-2, 1, -3, 4, -1, 2, 1, -5, 4}},
-			ans{6},
+			para{[]int{-2}},
+			ans{-2},
 		},
 
 		question{
-			para{[]int{-2}},
-			ans{-2},
+			para{[]int{-2, 1, -3, 4, -1, 2, 1, -5, 4}},
+			ans{6},
 		},
 
 		// 如需多个测试，可以复制上方元素。
