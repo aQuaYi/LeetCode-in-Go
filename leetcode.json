@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
-	"Ranking": 879,
-	"Updated": "2018-12-04T17:14:40.256389655+08:00",
+	"Ranking": 875,
+	"Updated": "2018-12-04T21:40:29.137789866+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 204,
@@ -2521,7 +2521,7 @@
 			"ID": 208,
 			"Title": "Implement Trie (Prefix Tree)",
 			"TitleSlug": "implement-trie-prefix-tree",
-			"PassRate": "34%",
+			"PassRate": "35%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11389,7 +11389,7 @@
 			"ID": 947,
 			"Title": "Most Stones Removed with Same Row or Column",
 			"TitleSlug": "most-stones-removed-with-same-row-or-column",
-			"PassRate": "49%",
+			"PassRate": "48%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,

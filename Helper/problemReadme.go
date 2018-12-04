@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"log"
+	"sort"
 	"strings"
 )
 
@@ -28,13 +29,17 @@ func creatREADME(p problem) {
 
 func replaceCharacters(s string) string {
 	changeMap := map[string]string{
+		"&amp;lt;":   "<",
+		"&amp;quot;": "\"",
+		"&amp;nbsp;": " ",
+		"&amp;#39;":  "`",
 		"&quot;":     "\"",
 		"&lt;":       "<",
 		"&gt;":       ">",
 		"&ge;":       ">=",
 		"&nbsp;":     "`",
-		"&#39;":      "'",
 		"&amp;":      "&",
+		"&#39;":      "'",
 		"   \n":      "\n",
 		"  \n":       "\n",
 		" \n":        "\n",
@@ -42,18 +47,45 @@ func replaceCharacters(s string) string {
 		"\n\n\n\n":   "\n\n",
 		"\n\n\n":     "\n\n",
 	}
-	for old, new := range changeMap {
+
+	olds := make([]string, 0, len(changeMap))
+	for old := range changeMap {
+		olds = append(olds, old)
+	}
+
+	sort.Strings(olds)
+
+	news := make([]string, 0, len(olds))
+	for _, old := range olds {
+		news = append(news, changeMap[old])
+	}
+
+	for i := len(olds) - 1; 0 <= i; i-- {
+		// 先替换长的，再替换短的
+		old, new := olds[i], news[i]
 		s = strings.Replace(s, old, new, -1)
 	}
+
 	return s
+
 }
 
 func getDescription(url string) string {
 	log.Printf("准备访问 %s", url)
 
-	fmt.Println(string(getRaw(url)))
+	raw := string(getRaw(url))
 
-	return ""
+	sub := "<meta name=\"description\" content=\""
+	index := strings.Index(raw, sub)
+	raw = raw[index+len(sub):]
+
+	sub = "\""
+	index = strings.Index(raw, sub)
+	raw = raw[:index]
+
+	fmt.Println(raw)
+
+	return raw
 }
 
 // 	var err error
