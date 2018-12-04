@@ -5,6 +5,7 @@ import (
 	"log"
 	"os"
 	"os/exec"
+	"runtime/debug"
 	"strings"
 	"syscall"
 
@@ -44,6 +45,7 @@ func build(p problem) {
 
 	defer func() {
 		if err := recover(); err != nil {
+			debug.PrintStack()
 			log.Println(err)
 			log.Println("清理不必要的文件")
 			os.RemoveAll(p.Dir())
