@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 875,
-	"Updated": "2018-12-05T16:25:54.394623946+08:00",
+	"Updated": "2018-12-05T17:22:08.821664505+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 204,
 			"Total": 213
 		},
 		"Medium": {
-			"Solved": 343,
+			"Solved": 344,
 			"Total": 359
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 157
 		},
 		"Total": {
-			"Solved": 696,
+			"Solved": 697,
 			"Total": 729
 		}
 	},
@@ -10873,7 +10873,7 @@
 			"ID": 904,
 			"Title": "Fruit Into Baskets",
 			"TitleSlug": "fruit-into-baskets",
-			"PassRate": "39%",
+			"PassRate": "40%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11055,9 +11055,9 @@
 			"TitleSlug": "complete-binary-tree-inserter",
 			"PassRate": "54%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
