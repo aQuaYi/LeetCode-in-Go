@@ -1,7 +1,6 @@
 package problem0920
 
 import (
-	"fmt"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -14,6 +13,14 @@ var tcs = []struct {
 	K   int
 	ans int
 }{
+
+	{
+
+		16,
+		16,
+		4,
+		789741546,
+	},
 
 	{
 		3,
@@ -43,7 +50,6 @@ func Test_numMusicPlaylists(t *testing.T) {
 	ast := assert.New(t)
 
 	for _, tc := range tcs {
-		fmt.Printf("~~%v~~\n", tc)
 		ast.Equal(tc.ans, numMusicPlaylists(tc.N, tc.L, tc.K), "输入:%v", tc)
 	}
 }
