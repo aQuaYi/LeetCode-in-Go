@@ -134,7 +134,6 @@ func Test_%s(t *testing.T) {
 	ast := assert.New(t)
 
 	for _, tc := range tcs {
-		fmt.Printf("~~%s~~\n", tc)
 		ast.Equal(tc.ans, %s(%s), "输入:%s", tc)
 	}
 }`
