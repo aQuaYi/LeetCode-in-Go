@@ -1,3 +1,3 @@
-# 我的收藏
+# 我收藏的 {{.FavoriteCount}} 题
 
 {{.FavoriteTable}}

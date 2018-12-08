@@ -1,38 +1,27 @@
 package problem0049
 
-import (
-	"sort"
-)
-
-func groupAnagrams(strs []string) [][]string {
-	res := [][]string{}
-	record := make(map[string][]string)
-
-	for _, str := range strs {
-		temp := sortString(str)
-		record[temp] = append(record[temp], str)
+func groupAnagrams(ss []string) [][]string {
+	tmp := make(map[int][]string, len(ss)/2)
+	for _, s := range ss {
+		c := encode(s)
+		tmp[c] = append(tmp[c], s)
 	}
-	for _, v := range record {
-		sort.Strings(v)
+
+	res := make([][]string, 0, len(tmp))
+	for _, v := range tmp {
 		res = append(res, v)
 	}
 
 	return res
 }
 
-func sortString(s string) string {
-	bytes := []byte(s)
+// prime 与 A～Z 对应，英文中出现概率越大的字母，选用的质数越小
+var prime = []int{5, 71, 37, 29, 2, 53, 59, 19, 11, 83, 79, 31, 43, 13, 7, 67, 97, 23, 17, 3, 41, 73, 47, 89, 61, 101}
 
-	temp := make([]int, len(bytes))
-	for i, b := range bytes {
-		temp[i] = int(b)
+func encode(s string) int {
+	res := 1
+	for i := range s {
+		res *= prime[s[i]-'a']
 	}
-
-	sort.Ints(temp)
-
-	for i, v := range temp {
-		bytes[i] = byte(v)
-	}
-
-	return string(bytes)
+	return res
 }

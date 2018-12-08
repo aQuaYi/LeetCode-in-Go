@@ -29,7 +29,7 @@ func (c *CLI) printUsage() {
 	fmt.Println(USAGE)
 }
 
-func (c *CLI) validateArgs() {
+func (c *CLI) checkArgs() {
 	if len(os.Args) < 2 {
 		c.printUsage()
 		os.Exit(1)
@@ -38,7 +38,7 @@ func (c *CLI) validateArgs() {
 
 // Run parses command line arguments and processes commands
 func (c *CLI) Run() {
-	c.validateArgs()
+	c.checkArgs()
 
 	readmeCmd := flag.NewFlagSet("readme", flag.ExitOnError)
 

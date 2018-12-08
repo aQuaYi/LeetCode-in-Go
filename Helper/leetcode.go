@@ -57,7 +57,7 @@ func readLeetCode() (*leetcode, error) {
 func (lc *leetcode) save() {
 
 	if err := os.Remove(leetCodeJSON); err != nil {
-		log.Fatalf("删除 %s 失败，原因是：%s", leetCodeJSON, err)
+		log.Panicf("删除 %s 失败，原因是：%s", leetCodeJSON, err)
 	}
 
 	raw, err := json.MarshalIndent(lc, "", "\t")
@@ -153,6 +153,10 @@ func (lc *leetcode) AvailableTable() string {
 
 func (lc *leetcode) FavoriteTable() string {
 	return lc.Problems.favorite().table()
+}
+
+func (lc *leetcode) FavoriteCount() int {
+	return len(lc.Problems.favorite())
 }
 
 func (lc *leetcode) UnavailableList() string {

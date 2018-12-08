@@ -80,3 +80,27 @@ func Test_Problem0033(t *testing.T) {
 		ast.Equal(a.one, search(p.one, p.two), "输入:%v", p)
 	}
 }
+
+func Test_indexOfMin_evenLength(t *testing.T) {
+	ast := assert.New(t)
+	array := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+	numsSize := 10
+	for i := 0; i < 10; i++ {
+		nums := array[i : i+numsSize]
+		indexOfZeroInNums := 9 - i
+		actual := indexOfMin(nums)
+		ast.Equal(indexOfZeroInNums, actual)
+	}
+}
+
+func Test_indexOfMin_oddLength(t *testing.T) {
+	ast := assert.New(t)
+	array := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+	numsSize := 9
+	for i := 1; i < 10; i++ {
+		nums := array[i : i+numsSize]
+		indexOfZeroInNums := 9 - i
+		actual := indexOfMin(nums)
+		ast.Equal(indexOfZeroInNums, actual)
+	}
+}

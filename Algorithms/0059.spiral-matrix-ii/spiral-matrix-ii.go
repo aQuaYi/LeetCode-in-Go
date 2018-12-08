@@ -2,7 +2,7 @@ package problem0059
 
 func generateMatrix(n int) [][]int {
 	if n == 0 {
-		return [][]int{}
+		return nil
 	}
 
 	res := make([][]int, n)
@@ -10,35 +10,39 @@ func generateMatrix(n int) [][]int {
 		res[i] = make([]int, n)
 	}
 
-	// 4 条边界，依照题意，沿着边界填写
-	top, bottom, left, right := 0, n-1, 0, n-1
-	num := 1
-	for top <= bottom && left <= right {
-		// →
-		for j := left; j <= right; j++ {
-			res[top][j] = num
-			num++
-		}
-		top++
-		// ↓
-		for j := top; j <= bottom; j++ {
-			res[j][right] = num
-			num++
-		}
-		right--
-		// ←
-		for j := right; j >= left; j-- {
-			res[bottom][j] = num
-			num++
-		}
-		bottom--
-		// ↑
-		for j := bottom; j >= top; j-- {
-			res[j][left] = num
-			num++
-		}
-		left++
+	max := n * n
+	next := nextFunc(n)
+
+	for i := 1; i <= max; i++ {
+		x, y := next()
+		res[x][y] = i
 	}
 
 	return res
+}
+
+func nextFunc(n int) func() (int, int) {
+	top, down := 0, n-1
+	left, right := 0, n-1
+	x, y := 0, -1
+	dx, dy := 0, 1
+	return func() (int, int) {
+		x += dx
+		y += dy
+		switch {
+		case y+dy > right:
+			top++
+			dx, dy = 1, 0
+		case x+dx > down:
+			right--
+			dx, dy = 0, -1
+		case y+dy < left:
+			down--
+			dx, dy = -1, 0
+		case x+dx < top:
+			left++
+			dx, dy = 0, 1
+		}
+		return x, y
+	}
 }

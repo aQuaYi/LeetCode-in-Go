@@ -12,22 +12,15 @@ func deleteDuplicates(head *ListNode) *ListNode {
 		return head
 	}
 
-	// 处理 head 重复情况
-	// 上面刚刚检查过了，head != nil && head.Next != nil
+	// 要么 head 重复了，那就删除 head
 	if head.Val == head.Next.Val {
-		val := head.Val
-		head = head.Next.Next
-
-		for head != nil && head.Val == val {
+		for head.Next != nil && head.Val == head.Next.Val {
 			head = head.Next
 		}
-
-		// 值为 val 的 node，已经全部删除了
-		return deleteDuplicates(head)
+		return deleteDuplicates(head.Next)
 	}
 
-	// 处理 head 后面元素出现重复的情况
+	// 要么 head 不重复，递归处理 head 后面的节点
 	head.Next = deleteDuplicates(head.Next)
-
 	return head
 }

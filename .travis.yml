@@ -1,21 +1,18 @@
 language: go
 
 go:
-  - 1.9.x
-  
+  - 1.11.x
+
 # whitelist
 branches:
   only:
   - master
-  - stable 
+  - stable
 
-script: 
+script:
   - go get -t -v ./...
   - go vet ./...
   - bash ./test.sh
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
-
-notifications:
-  webhooks: https://hooks.pubu.im/services/3wp9q4yqlzm8fxr

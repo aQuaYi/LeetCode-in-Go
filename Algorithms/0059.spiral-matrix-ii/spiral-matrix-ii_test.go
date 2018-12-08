@@ -30,7 +30,7 @@ func Test_Problem0059(t *testing.T) {
 		question{
 			para{0},
 			ans{
-				[][]int{},
+				nil,
 			},
 		},
 

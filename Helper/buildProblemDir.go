@@ -5,9 +5,9 @@ import (
 	"log"
 	"os"
 	"os/exec"
+	"runtime/debug"
 	"strings"
 	"syscall"
-	"time"
 
 	"github.com/aQuaYi/GoKit"
 )
@@ -15,43 +15,42 @@ import (
 func buildProblemDir(problemNum int) {
 	log.Printf("~~ 开始生成第 %d 题的文件夹 ~~\n", problemNum)
 
-	// 需要创建答题文件夹
+	// 获取 LeetCode 的记录文件
 	lc := newLeetCode()
-	//
-	makeProblemDir(lc.Problems, problemNum)
-	//
+
+	// 检查 problemNum 的合法性
+	if problemNum >= len(lc.Problems) {
+		log.Panicf("%d 超出题目范围，请核查题号。", problemNum)
+	}
+	if lc.Problems[problemNum].ID == 0 {
+		log.Panicf("%d 号题不存，请核查题号。", problemNum)
+	}
+	if lc.Problems[problemNum].IsPaid {
+		log.Panicf("%d 号题需要付费。如果已经订阅，请注释掉本代码。", problemNum)
+	}
+	if lc.Problems[problemNum].HasNoGoOption {
+		log.Panicf("%d 号题，没有提供 Go 解答选项。请核查后，修改 unavailable.json 中的记录。", problemNum)
+	}
+
+	// 需要创建答题文件夹
+	build(lc.Problems[problemNum])
+
 	log.Printf("~~ 第 %d 题的文件夹，已经生成 ~~\n", problemNum)
-}
-
-func makeProblemDir(ps problems, problemNum int) {
-	var pb problem
-	var isFound bool
-
-	// 根据题号，获取题目信息
-	for _, p := range ps {
-		if p.ID == problemNum {
-			if p.HasNoGoOption {
-				log.Fatalln(`此题被标记为"不能使用 Go 语言解答"。请核查后，修改 unavailable.json 中的记录`)
-			}
-			pb = p
-			isFound = true
-			break
-		}
-	}
-
-	if !isFound {
-		log.Printf("没有发现第 %d 题，存在以下可能：1.此题不存在；2.此题需要付费。", problemNum)
-		return
-	}
-
-	// 创建目录
-	build(pb)
 }
 
 func build(p problem) {
 	if GoKit.Exist(p.Dir()) {
-		log.Fatalf("第 %d 题的文件夹已经存在，请**移除**  %s 文件夹后，再尝试。", p.ID, p.Dir())
+		log.Panicf("第 %d 题的文件夹已经存在，请 **移除** %s 文件夹后，再尝试。", p.ID, p.Dir())
 	}
+
+	defer func() {
+		if err := recover(); err != nil {
+			debug.PrintStack()
+			log.Println(err)
+			log.Println("清理不必要的文件")
+			os.RemoveAll(p.Dir())
+		}
+	}()
 
 	mask := syscall.Umask(0)
 	defer syscall.Umask(mask)
@@ -59,12 +58,19 @@ func build(p problem) {
 	// 创建目录
 	err := os.Mkdir(p.Dir(), 0755)
 	if err != nil {
-		log.Fatalf("无法创建目录，%s ：%s", p.Dir(), err)
+		log.Panicf("无法创建目录，%s ：%s", p.Dir(), err)
 	}
 
 	log.Printf("开始创建 %d %s 的文件夹...\n", p.ID, p.Title)
 
-	creatREADME(p)
+	// 利用 chrome 打开题目页面
+	go func() {
+		cmd := exec.Command("google-chrome", p.link())
+		_, err = cmd.Output()
+		if err != nil {
+			panic(err.Error())
+		}
+	}()
 
 	fc := getFunction(p.link())
 
@@ -74,29 +80,7 @@ func build(p problem) {
 
 	creatGoTest(p, fcName, para, ans)
 
-	// 利用 chrome 打开题目 submissions 页面
-	go func() {
-		cmd := exec.Command("google-chrome", "https://leetcode.com/submissions/")
-		_, err := cmd.Output()
-		if err != nil {
-			panic(err.Error())
-		}
-	}()
-
-	log.Println("等待 10 秒，打开题目页面")
-	time.Sleep(10 * time.Second)
-
-	// 利用 chrome 打开题目页面
-	go func() {
-		cmd := exec.Command("google-chrome", p.link())
-		_, err := cmd.Output()
-		if err != nil {
-			panic(err.Error())
-		}
-	}()
-
-	log.Println("正在打开题目页面")
-	time.Sleep(2 * time.Second)
+	creatREADME(p)
 
 	log.Printf("%d.%s 的文件夹，创建完毕。\n", p.ID, p.Title)
 }
@@ -126,6 +110,8 @@ func creatGo(p problem, function, ansType string) {
 	filename := fmt.Sprintf("%s/%s.go", p.Dir(), p.TitleSlug)
 
 	write(filename, content)
+
+	vscodeOpen(filename)
 }
 
 func creatGoTest(p problem, fcName, para, ansType string) {
@@ -135,7 +121,7 @@ func creatGoTest(p problem, fcName, para, ansType string) {
 }{
 
 
-	
+
 	// 可以有多个 testcase
 }`
 
@@ -146,9 +132,8 @@ func creatGoTest(p problem, fcName, para, ansType string) {
 	testFuncFormat := `
 func Test_%s(t *testing.T) {
 	ast := assert.New(t)
-	
+
 	for _, tc := range tcs {
-		fmt.Printf("~~%s~~\n", tc)
 		ast.Equal(tc.ans, %s(%s), "输入:%s", tc)
 	}
 }`
@@ -185,6 +170,8 @@ import (
 	filename := fmt.Sprintf("%s/%s_test.go", p.Dir(), p.TitleSlug)
 
 	write(filename, content)
+
+	vscodeOpen(filename)
 
 }
 

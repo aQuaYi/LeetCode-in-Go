@@ -1,12 +1,11 @@
 package main
 
 import (
-	"context"
+	"bufio"
 	"fmt"
 	"log"
+	"os"
 	"strings"
-
-	"github.com/chromedp/chromedp"
 )
 
 func parseFunction(fc string) (fcName, para, ansType, nfc string) {
@@ -36,51 +35,17 @@ func parseFunction(fc string) (fcName, para, ansType, nfc string) {
 }
 
 func getFunction(url string) string {
+	inputReader := bufio.NewReader(os.Stdin)
 	var err error
-
-	// create context
-	ctxt, cancel := context.WithCancel(context.Background())
-	defer cancel()
-
-	// run task list
-	var function string
-
-	// create chrome instance
-	c, err := chromedp.New(ctxt, chromedp.WithLog(log.Printf))
-	if err != nil {
-		log.Println("chromedp.New 出错：", err)
+	fc := ""
+	for !strings.HasPrefix(fc, "func ") {
+		fmt.Print("请输入 Go 函数:")
+		fc, err = inputReader.ReadString('\n')
+		if err != nil {
+			log.Panicf("读取 Go 函数失败：%s", err)
+		}
 	}
 
-	err = c.Run(ctxt, makeTasks(url, &function))
-	if err != nil {
-		log.Println("c.Run 出错：", err)
-	}
+	return fc
 
-	// shutdown chrome
-	err = c.Shutdown(ctxt)
-	if err != nil {
-		log.Println("c.Shutdown 出错：", err)
-	}
-
-	// wait for chrome to finish
-	err = c.Wait()
-	if err != nil {
-		log.Println("c.Wait 出错：", err)
-	}
-
-	log.Println("抓取到函数：", function)
-
-	return function
-}
-
-func makeTasks(url string, function *string) chromedp.Tasks {
-	textarea := `//textarea`
-	btn := `#question-detail-app > div > div:nth-child(3) > div > div > div.row.control-btn-bar > div > div > div > div > span.Select-arrow-zone`
-	goSel := `#react-select-2--option-9`
-	return chromedp.Tasks{
-		chromedp.Navigate(url),
-		chromedp.Click(btn, chromedp.ByID),
-		chromedp.Click(goSel, chromedp.ByID),
-		chromedp.Text(textarea, function),
-	}
 }

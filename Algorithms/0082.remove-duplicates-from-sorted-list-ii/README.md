@@ -1,13 +1,17 @@
 # [82. Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/)
 
-## 题目
 Given a sorted linked list, delete all nodes that have duplicate numbers, leaving only distinct numbers from the original list.
 
-```
-For example,
-Given 1->2->3->3->4->4->5, return 1->2->5.
-Given 1->1->1->2->3, return 2->3.
-```
-## 解题思路
+Example 1:
 
-见程序注释
+```text
+Input: 1->2->3->3->4->4->5
+Output: 1->2->5
+```
+
+Example 2:
+
+```text
+Input: 1->1->1->2->3
+Output: 2->3
+```
