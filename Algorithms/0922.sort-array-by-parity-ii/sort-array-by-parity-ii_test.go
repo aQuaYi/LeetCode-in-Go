@@ -1,7 +1,6 @@
 package problem0922
 
 import (
-	"fmt"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -9,13 +8,11 @@ import (
 
 // tcs is testcase slice
 var tcs = []struct {
-	A   []int
-	ans []int
+	A []int
 }{
 
 	{
 		[]int{4, 2, 5, 7},
-		[]int{4, 5, 2, 7},
 	},
 
 	// 可以有多个 testcase
@@ -25,8 +22,7 @@ func Test_sortArrayByParityII(t *testing.T) {
 	ast := assert.New(t)
 
 	for _, tc := range tcs {
-		fmt.Printf("~~%v~~\n", tc)
-		ast.Equal(tc.ans, sortArrayByParityII(tc.A), "输入:%v", tc)
+		ast.True(check(sortArrayByParityII(tc.A)))
 	}
 }
 
@@ -36,4 +32,13 @@ func Benchmark_sortArrayByParityII(b *testing.B) {
 			sortArrayByParityII(tc.A)
 		}
 	}
+}
+
+func check(a []int) bool {
+	for i := range a {
+		if a[i]%2 != i%2 {
+			return false
+		}
+	}
+	return true
 }
