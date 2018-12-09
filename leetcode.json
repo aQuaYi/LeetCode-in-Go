@@ -1,23 +1,23 @@
 {
 	"Username": "aQuaYi",
-	"Ranking": 866,
-	"Updated": "2018-12-08T19:47:02.609045187+08:00",
+	"Ranking": 860,
+	"Updated": "2018-12-09T18:13:54.145414117+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 205,
-			"Total": 213
+			"Total": 214
 		},
 		"Medium": {
 			"Solved": 344,
-			"Total": 359
+			"Total": 361
 		},
 		"Hard": {
 			"Solved": 150,
-			"Total": 157
+			"Total": 158
 		},
 		"Total": {
 			"Solved": 699,
-			"Total": 729
+			"Total": 733
 		}
 	},
 	"Problems": [
@@ -133,7 +133,7 @@
 			"ID": 9,
 			"Title": "Palindrome Number",
 			"TitleSlug": "palindrome-number",
-			"PassRate": "39%",
+			"PassRate": "40%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -937,7 +937,7 @@
 			"ID": 76,
 			"Title": "Minimum Window Substring",
 			"TitleSlug": "minimum-window-substring",
-			"PassRate": "28%",
+			"PassRate": "29%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -3433,7 +3433,7 @@
 			"ID": 284,
 			"Title": "Peeking Iterator",
 			"TitleSlug": "peeking-iterator",
-			"PassRate": "37%",
+			"PassRate": "38%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -4345,7 +4345,7 @@
 			"ID": 360,
 			"Title": "Sort Transformed Array",
 			"TitleSlug": "sort-transformed-array",
-			"PassRate": "45%",
+			"PassRate": "46%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -5929,7 +5929,7 @@
 			"ID": 492,
 			"Title": "Construct the Rectangle",
 			"TitleSlug": "construct-the-rectangle",
-			"PassRate": "48%",
+			"PassRate": "47%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -7009,7 +7009,7 @@
 			"ID": 582,
 			"Title": "Kill Process",
 			"TitleSlug": "kill-process",
-			"PassRate": "53%",
+			"PassRate": "54%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -8389,7 +8389,7 @@
 			"ID": 697,
 			"Title": "Degree of an Array",
 			"TitleSlug": "degree-of-an-array",
-			"PassRate": "47%",
+			"PassRate": "48%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -8485,7 +8485,7 @@
 			"ID": 705,
 			"Title": "Design HashSet",
 			"TitleSlug": "design-hashset",
-			"PassRate": "45%",
+			"PassRate": "46%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -8497,7 +8497,7 @@
 			"ID": 706,
 			"Title": "Design HashMap",
 			"TitleSlug": "design-hashmap",
-			"PassRate": "50%",
+			"PassRate": "51%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9277,7 +9277,7 @@
 			"ID": 771,
 			"Title": "Jewels and Stones",
 			"TitleSlug": "jewels-and-stones",
-			"PassRate": "81%",
+			"PassRate": "82%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9445,7 +9445,7 @@
 			"ID": 785,
 			"Title": "Is Graph Bipartite?",
 			"TitleSlug": "is-graph-bipartite",
-			"PassRate": "40%",
+			"PassRate": "41%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10297,7 +10297,7 @@
 			"ID": 856,
 			"Title": "Score of Parentheses",
 			"TitleSlug": "score-of-parentheses",
-			"PassRate": "53%",
+			"PassRate": "54%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11101,7 +11101,7 @@
 			"ID": 923,
 			"Title": "3Sum With Multiplicity",
 			"TitleSlug": "3sum-with-multiplicity",
-			"PassRate": "28%",
+			"PassRate": "29%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -11329,7 +11329,7 @@
 			"ID": 942,
 			"Title": "DI String Match",
 			"TitleSlug": "di-string-match",
-			"PassRate": "67%",
+			"PassRate": "68%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -11455,6 +11455,54 @@
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 953,
+			"Title": "Verifying an Alien Dictionary",
+			"TitleSlug": "verifying-an-alien-dictionary",
+			"PassRate": "58%",
+			"Difficulty": "Easy",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 954,
+			"Title": "Array of Doubled Pairs",
+			"TitleSlug": "array-of-doubled-pairs",
+			"PassRate": "27%",
+			"Difficulty": "Medium",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 955,
+			"Title": "Delete Columns to Make Sorted II",
+			"TitleSlug": "delete-columns-to-make-sorted-ii",
+			"PassRate": "22%",
+			"Difficulty": "Medium",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 956,
+			"Title": "Tallest Billboard",
+			"TitleSlug": "tallest-billboard",
+			"PassRate": "19%",
+			"Difficulty": "Hard",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
 			"HasNoGoOption": false
 		}
 	]
