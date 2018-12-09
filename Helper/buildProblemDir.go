@@ -138,7 +138,7 @@ func Test_%s(t *testing.T) {
 	}
 }`
 	tcPara := getTcPara(para)
-	testFunc := fmt.Sprintf(testFuncFormat, fcName, `%v`, fcName, tcPara, `%v`)
+	testFunc := fmt.Sprintf(testFuncFormat, fcName, fcName, tcPara, `%v`)
 
 	benchFuncFormat := `
 func Benchmark_%s(b *testing.B) {
