@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 860,
-	"Updated": "2018-12-09T18:13:54.145414117+08:00",
+	"Updated": "2018-12-09T20:52:31.697716487+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 205,
 			"Total": 214
 		},
 		"Medium": {
-			"Solved": 344,
+			"Solved": 345,
 			"Total": 361
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 158
 		},
 		"Total": {
-			"Solved": 699,
+			"Solved": 700,
 			"Total": 733
 		}
 	},
@@ -10297,7 +10297,7 @@
 			"ID": 856,
 			"Title": "Score of Parentheses",
 			"TitleSlug": "score-of-parentheses",
-			"PassRate": "54%",
+			"PassRate": "53%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11089,7 +11089,7 @@
 			"ID": 922,
 			"Title": "Sort Array By Parity II",
 			"TitleSlug": "sort-array-by-parity-ii",
-			"PassRate": "66%",
+			"PassRate": "65%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11103,9 +11103,9 @@
 			"TitleSlug": "3sum-with-multiplicity",
 			"PassRate": "29%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -11485,7 +11485,7 @@
 			"ID": 955,
 			"Title": "Delete Columns to Make Sorted II",
 			"TitleSlug": "delete-columns-to-make-sorted-ii",
-			"PassRate": "22%",
+			"PassRate": "23%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -11497,7 +11497,7 @@
 			"ID": 956,
 			"Title": "Tallest Billboard",
 			"TitleSlug": "tallest-billboard",
-			"PassRate": "19%",
+			"PassRate": "20%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
