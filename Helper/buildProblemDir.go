@@ -153,7 +153,6 @@ func Benchmark_%s(b *testing.B) {
 	fileFormat := `package %s
 
 import (
-	"fmt"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
