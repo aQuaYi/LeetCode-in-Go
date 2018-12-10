@@ -6,7 +6,7 @@ import (
 
 // 程序辅助设置
 const (
-	VERSION = "7.0.2"
+	VERSION = "7.0.3"
 )
 
 func main() {
