@@ -22,8 +22,6 @@ func threeSumMulti(A []int, target int) int {
 
 	res := 0
 
-	// remember, i<j<k => A[i]<=A[j]<=A[k]
-
 	for Ai := 0; Ai <= 100; Ai++ {
 		for Aj := Ai; Aj <= 100; Aj++ { // so always Ai<=Aj
 			Ak := target - Ai - Aj
@@ -31,7 +29,10 @@ func threeSumMulti(A []int, target int) int {
 				continue
 			}
 
+			// remember, i<j<k => A[i]<=A[j]<=A[k]
 			// A[i]<=A[j]<=A[k] has 4 conditions
+			// 按照以下情况分别计算组合数的话
+			// 可以确保 A[i]<=A[j]<=A[k] => i<j<k
 			switch {
 			case Ai == Aj && Aj == Ak:
 				// combination: count[Ai] choose 3
