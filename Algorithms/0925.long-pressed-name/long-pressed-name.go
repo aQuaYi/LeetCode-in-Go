@@ -13,20 +13,20 @@ func isLongPressedName(name string, typed string) bool {
 
 	i, j := 0, 0
 	for i < nameSize {
-		count := 1
-		for i+1 < nameSize && nameBytes[i] == nameBytes[i+1] {
-			count++
+		c := nameBytes[i]
+		pressMore := 0
+
+		for i < nameSize && nameBytes[i] == c {
 			i++
+			pressMore--
 		}
 
-		for j < typedSize && nameBytes[i] == typedBytes[j] {
-			count--
+		for j < typedSize && typedBytes[j] == c {
 			j++
+			pressMore++
 		}
 
-		i++
-
-		if count > 0 {
+		if pressMore < 0 {
 			return false
 		}
 
