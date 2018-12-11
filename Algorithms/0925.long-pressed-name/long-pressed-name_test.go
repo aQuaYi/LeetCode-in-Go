@@ -15,6 +15,18 @@ var tcs = []struct {
 
 	{
 		"alex",
+		"aaaaaaaaaaaallllllllllllllleeeeeeeeeeeeeeeexxxxxxxxx",
+		true,
+	},
+
+	{
+		"alex",
+		"aal",
+		false,
+	},
+
+	{
+		"alex",
 		"aaleex",
 		true,
 	},
