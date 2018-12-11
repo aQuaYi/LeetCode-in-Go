@@ -1,6 +1,6 @@
 package problem0925
 
-func isLongPressedName(name string, typed string) bool {
+func isLongPressedName(name, typed string) bool {
 	if name == typed {
 		return true
 	}
@@ -8,20 +8,17 @@ func isLongPressedName(name string, typed string) bool {
 	nameSize := len(name)
 	typedSize := len(typed)
 
-	nameBytes := []byte(name)
-	typedBytes := []byte(typed)
-
 	i, j := 0, 0
 	for i < nameSize {
-		c := nameBytes[i]
+		c := name[i]
 		pressMore := 0
 
-		for i < nameSize && nameBytes[i] == c {
+		for i < nameSize && name[i] == c {
 			i++
 			pressMore--
 		}
 
-		for j < typedSize && typedBytes[j] == c {
+		for j < typedSize && typed[j] == c {
 			j++
 			pressMore++
 		}
@@ -32,5 +29,5 @@ func isLongPressedName(name string, typed string) bool {
 
 	}
 
-	return true
+	return j == typedSize
 }
