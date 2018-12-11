@@ -24,6 +24,7 @@ func isLongPressedName(name, typed string) bool {
 		}
 
 		if pressMore < 0 {
+			// pressMore should >=0
 			return false
 		}
 
