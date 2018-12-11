@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
-	"Ranking": 848,
-	"Updated": "2018-12-11T17:01:01.355473338+08:00",
+	"Ranking": 844,
+	"Updated": "2018-12-11T19:49:30.776728908+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 205,
+			"Solved": 206,
 			"Total": 214
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 158
 		},
 		"Total": {
-			"Solved": 701,
+			"Solved": 702,
 			"Total": 733
 		}
 	},
@@ -10081,7 +10081,7 @@
 			"ID": 838,
 			"Title": "Push Dominoes",
 			"TitleSlug": "push-dominoes",
-			"PassRate": "42%",
+			"PassRate": "41%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10681,7 +10681,7 @@
 			"ID": 888,
 			"Title": "Fair Candy Swap",
 			"TitleSlug": "fair-candy-swap",
-			"PassRate": "54%",
+			"PassRate": "53%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11127,7 +11127,7 @@
 			"TitleSlug": "long-pressed-name",
 			"PassRate": "44%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -11497,7 +11497,7 @@
 			"ID": 956,
 			"Title": "Tallest Billboard",
 			"TitleSlug": "tallest-billboard",
-			"PassRate": "28%",
+			"PassRate": "29%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
