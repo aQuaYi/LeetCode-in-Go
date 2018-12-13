@@ -5,31 +5,26 @@ import (
 )
 
 func numUniqueEmails(emails []string) int {
-	hasSeen := make(map[string]bool, 100)
-	for _, email := range emails {
-		hasSeen[clean(email)] = true
+	count := make(map[string]bool, 100)
+	for _, e := range emails {
+		count[clean(e)] = true
 	}
-	return len(hasSeen)
+	return len(count)
 }
 
 func clean(email string) string {
-	user, atDomain := split(email)
-	return cancelDot(trim(user)) + atDomain
-}
-
-func split(email string) (user, atDomain string) {
 	i := strings.IndexByte(email, '@')
-	return email[:i], email[i:]
+	return deleteDot(trim(email[:i])) + email[i:]
 }
 
-func cancelDot(user string) string {
-	return strings.Replace(user, ".", "", -1)
+func deleteDot(username string) string {
+	return strings.Replace(username, ".", "", -1)
 }
 
-func trim(user string) string {
-	i := strings.IndexByte(user, '+')
+func trim(username string) string {
+	i := strings.IndexByte(username, '+')
 	if i == -1 {
-		return user
+		return username
 	}
-	return user[:i]
+	return username[:i]
 }
