@@ -13,6 +13,16 @@ var tcs = []struct {
 }{
 
 	{
+		[]string{"test.email@leetcode.com", "test.e.mai+bob.cathy@leetcode.com"},
+		2,
+	},
+
+	{
+		[]string{"test.email+alex@leetcode.com", "test.e.mai+bob.cathy@leetcode.com"},
+		2,
+	},
+
+	{
 		[]string{"test.email+alex@leetcode.com", "test.e.mail+bob.cathy@leetcode.com", "testemail+david@lee.tcode.com"},
 		2,
 	},
