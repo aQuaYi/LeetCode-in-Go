@@ -9,7 +9,8 @@ func isLongPressedName(name, typed string) bool {
 	typedSize := len(typed)
 
 	i, j := 0, 0
-	for i < nameSize {
+
+	for i < nameSize && j < typedSize {
 		c := name[i]
 		need, pressed := 0, 0
 
@@ -23,11 +24,11 @@ func isLongPressedName(name, typed string) bool {
 			j++
 		}
 
-		if need > pressed {
+		if pressed < need {
 			return false
 		}
 
 	}
 
-	return j == typedSize
+	return i == nameSize && j == typedSize
 }
