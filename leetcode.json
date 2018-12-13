@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 853,
-	"Updated": "2018-12-13T21:15:39.695657514+08:00",
+	"Updated": "2018-12-13T22:15:12.040047022+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 206,
+			"Solved": 207,
 			"Total": 214
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 158
 		},
 		"Total": {
-			"Solved": 702,
+			"Solved": 703,
 			"Total": 733
 		}
 	},
@@ -10189,7 +10189,7 @@
 			"ID": 847,
 			"Title": "Shortest Path Visiting All Nodes",
 			"TitleSlug": "shortest-path-visiting-all-nodes",
-			"PassRate": "43%",
+			"PassRate": "44%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10837,7 +10837,7 @@
 			"ID": 901,
 			"Title": "Online Stock Span",
 			"TitleSlug": "online-stock-span",
-			"PassRate": "45%",
+			"PassRate": "44%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11175,7 +11175,7 @@
 			"TitleSlug": "unique-email-addresses",
 			"PassRate": "79%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -11497,7 +11497,7 @@
 			"ID": 956,
 			"Title": "Tallest Billboard",
 			"TitleSlug": "tallest-billboard",
-			"PassRate": "30%",
+			"PassRate": "31%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
