@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
-	"Ranking": 853,
-	"Updated": "2018-12-13T22:15:12.040047022+08:00",
+	"Ranking": 845,
+	"Updated": "2018-12-14T15:26:10.785506222+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 207,
@@ -11113,7 +11113,7 @@
 			"ID": 924,
 			"Title": "Minimize Malware Spread",
 			"TitleSlug": "minimize-malware-spread",
-			"PassRate": "37%",
+			"PassRate": "36%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11473,7 +11473,7 @@
 			"ID": 954,
 			"Title": "Array of Doubled Pairs",
 			"TitleSlug": "array-of-doubled-pairs",
-			"PassRate": "31%",
+			"PassRate": "32%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
