@@ -1,6 +1,6 @@
 package problem0020
 
-func isValid(str string) bool {
+func isValid(s string) bool {
     m := map[rune]rune{
         '(': ')',
         '[': ']',
