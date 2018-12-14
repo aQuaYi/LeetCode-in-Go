@@ -224,7 +224,11 @@
 |[818](https://leetcode.com/problems/race-car/)|[Race Car](./Algorithms/0818.race-car)|32%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[820](https://leetcode.com/problems/short-encoding-of-words/)|[Short Encoding of Words](./Algorithms/0820.short-encoding-of-words)|44%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[826](https://leetcode.com/problems/most-profit-assigning-work/)|[Most Profit Assigning Work](./Algorithms/0826.most-profit-assigning-work)|33%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+<<<<<<< HEAD
 |[827](https://leetcode.com/problems/making-a-large-island/)|[Making A Large Island](./Algorithms/0827.making-a-large-island)|41%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+=======
+|[827](https://leetcode.com/problems/making-a-large-island/)|[Making A Large Island](./Algorithms/0827.making-a-large-island)|40%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+>>>>>>> 3744b4dc94ab5066b0210100dfd7ff40f83be96f
 |[828](https://leetcode.com/problems/unique-letter-string/)|[Unique Letter String](./Algorithms/0828.unique-letter-string)|37%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[829](https://leetcode.com/problems/consecutive-numbers-sum/)|[Consecutive Numbers Sum](./Algorithms/0829.consecutive-numbers-sum)|30%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[834](https://leetcode.com/problems/sum-of-distances-in-tree/)|[Sum of Distances in Tree](./Algorithms/0834.sum-of-distances-in-tree)|36%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -249,7 +253,11 @@
 |[896](https://leetcode.com/problems/monotonic-array/)|[Monotonic Array](./Algorithms/0896.monotonic-array)|54%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |[897](https://leetcode.com/problems/increasing-order-search-tree/)|[Increasing Order Search Tree](./Algorithms/0897.increasing-order-search-tree)|59%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |[898](https://leetcode.com/problems/bitwise-ors-of-subarrays/)|[Bitwise ORs of Subarrays](./Algorithms/0898.bitwise-ors-of-subarrays)|31%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+<<<<<<< HEAD
 |[901](https://leetcode.com/problems/online-stock-span/)|[Online Stock Span](./Algorithms/0901.online-stock-span)|45%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+=======
+|[901](https://leetcode.com/problems/online-stock-span/)|[Online Stock Span](./Algorithms/0901.online-stock-span)|44%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+>>>>>>> 3744b4dc94ab5066b0210100dfd7ff40f83be96f
 |[903](https://leetcode.com/problems/valid-permutations-for-di-sequence/)|[Valid Permutations for DI Sequence](./Algorithms/0903.valid-permutations-for-di-sequence)|40%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[904](https://leetcode.com/problems/fruit-into-baskets/)|[Fruit Into Baskets](./Algorithms/0904.fruit-into-baskets)|40%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[907](https://leetcode.com/problems/sum-of-subarray-minimums/)|[Sum of Subarray Minimums](./Algorithms/0907.sum-of-subarray-minimums)|22%|Medium|[❤](https://leetcode.com/list/oussv5j)|
