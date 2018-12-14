@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 845,
-	"Updated": "2018-12-14T15:26:10.785506222+08:00",
+	"Updated": "2018-12-14T17:06:44.057714756+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 207,
@@ -12,11 +12,11 @@
 			"Total": 361
 		},
 		"Hard": {
-			"Solved": 151,
+			"Solved": 152,
 			"Total": 158
 		},
 		"Total": {
-			"Solved": 703,
+			"Solved": 704,
 			"Total": 733
 		}
 	},
@@ -4189,7 +4189,7 @@
 			"ID": 347,
 			"Title": "Top K Frequent Elements",
 			"TitleSlug": "top-k-frequent-elements",
-			"PassRate": "51%",
+			"PassRate": "52%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10381,7 +10381,7 @@
 			"ID": 863,
 			"Title": "All Nodes Distance K in Binary Tree",
 			"TitleSlug": "all-nodes-distance-k-in-binary-tree",
-			"PassRate": "43%",
+			"PassRate": "44%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10501,7 +10501,7 @@
 			"ID": 873,
 			"Title": "Length of Longest Fibonacci Subsequence",
 			"TitleSlug": "length-of-longest-fibonacci-subsequence",
-			"PassRate": "42%",
+			"PassRate": "43%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11041,7 +11041,7 @@
 			"ID": 918,
 			"Title": "Maximum Sum Circular Subarray",
 			"TitleSlug": "maximum-sum-circular-subarray",
-			"PassRate": "26%",
+			"PassRate": "27%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11151,7 +11151,7 @@
 			"TitleSlug": "three-equal-parts",
 			"PassRate": "27%",
 			"Difficulty": "Hard",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
