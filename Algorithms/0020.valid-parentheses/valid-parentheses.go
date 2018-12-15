@@ -1,17 +1,19 @@
 package problem0020
 
 func isValid(s string) bool {
-	opposite := map[rune]rune{
-		'(': ')',
-		'[': ']',
-		'{': '}',
-	}
-	stack := make([]rune, len(s))
+	size := len(s)
+
+	stack := make([]byte, size)
 	top := 0
-	for _, c := range s {
+
+	for i := 0; i < size; i++ {
+		c := s[i]
 		switch c {
-		case '(', '[', '{':
-			stack[top] = opposite[c]
+		case '(':
+			stack[top] = c + 1 // '('+1 is ')'
+			top++
+		case '[', '{':
+			stack[top] = c + 2
 			top++
 		case ')', ']', '}':
 			if top > 0 && stack[top-1] == c {
