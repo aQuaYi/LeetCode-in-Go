@@ -3,32 +3,26 @@ package problem0926
 func minFlipsMonoIncr(S string) int {
 	size := len(S)
 
-	ones := make([]int, 0, size)
-	zeros := make([]int, 0, size)
-
+	count := make([]int, size+1)
 	for i := 0; i < size; i++ {
+		count[i+1] = count[i]
 		if S[i] == '1' {
-			ones = append(ones, i)
-		} else {
-			zeros = append(zeros, i)
+			count[i+1]++
 		}
 	}
-
-	oneSize := len(ones)
-	zeroSize := len(zeros)
 
 	res := size
-
-	i, j := 0, 0
-	for i < oneSize {
-		for j < zeroSize && zeros[j] < ones[i] {
-			j++
-		}
-		res = min(res, i+zeroSize-j)
-		i++
+	for i := 0; i <= size; i++ {
+		// for S[i:] is all 1
+		// need flip 1 in S[:i] to 0,
+		//      there are count[i] 1s in S[i:]
+		// need flip 0 in S[i:] to 1,
+		//      length of S[i:] is size-i,
+		//      count of 1s in S[i:] is count[size]-count[i],
+		//      there are (size-i)-(count[size]-count[i]) 0s in S[i:]
+		tmp := count[i] + ((size - i) - (count[size] - count[i]))
+		res = min(res, tmp)
 	}
-
-	res = min(res, oneSize)
 
 	return res
 }
