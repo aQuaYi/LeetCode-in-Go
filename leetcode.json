@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
-	"Ranking": 844,
-	"Updated": "2018-12-16T17:03:57.61022511+08:00",
+	"Ranking": 840,
+	"Updated": "2018-12-16T18:23:19.252715512+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 207,
 			"Total": 214
 		},
 		"Medium": {
-			"Solved": 345,
+			"Solved": 346,
 			"Total": 364
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 159
 		},
 		"Total": {
-			"Solved": 704,
+			"Solved": 705,
 			"Total": 737
 		}
 	},
@@ -4369,7 +4369,7 @@
 			"ID": 362,
 			"Title": "Design Hit Counter",
 			"TitleSlug": "design-hit-counter",
-			"PassRate": "56%",
+			"PassRate": "57%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -10945,7 +10945,7 @@
 			"ID": 910,
 			"Title": "Smallest Range II",
 			"TitleSlug": "smallest-range-ii",
-			"PassRate": "20%",
+			"PassRate": "21%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11139,7 +11139,7 @@
 			"TitleSlug": "flip-string-to-monotone-increasing",
 			"PassRate": "45%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -11209,7 +11209,7 @@
 			"ID": 932,
 			"Title": "Beautiful Array",
 			"TitleSlug": "beautiful-array",
-			"PassRate": "47%",
+			"PassRate": "48%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -11473,7 +11473,7 @@
 			"ID": 954,
 			"Title": "Array of Doubled Pairs",
 			"TitleSlug": "array-of-doubled-pairs",
-			"PassRate": "32%",
+			"PassRate": "31%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -11509,7 +11509,7 @@
 			"ID": 957,
 			"Title": "Prison Cells After N Days",
 			"TitleSlug": "prison-cells-after-n-days",
-			"PassRate": "31%",
+			"PassRate": "30%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -11521,7 +11521,7 @@
 			"ID": 958,
 			"Title": "Check Completeness of a Binary Tree",
 			"TitleSlug": "check-completeness-of-a-binary-tree",
-			"PassRate": "38%",
+			"PassRate": "39%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
