@@ -8,29 +8,28 @@ import (
 func reorderLogFiles(logs []string) []string {
 	size := len(logs)
 
-	letters := make([][]string, 0, size)
+	letters := make([]string, 0, size)
 	digits := make([]string, 0, size)
 
 	for _, log := range logs {
-		ls := strings.SplitN(log, " ", 2)
-		b := ls[1][0]
-		if '0' <= b && b <= '9' {
+		if isDigit(log) {
 			digits = append(digits, log)
 		} else {
-			letters = append(letters, ls)
+			letters = append(letters, log)
 		}
 	}
 
 	sort.Slice(letters, func(i int, j int) bool {
-		return letters[i][1] < letters[j][1]
+		li, lj := letters[i], letters[j]
+		li = li[strings.Index(li, " "):]
+		lj = lj[strings.Index(lj, " "):]
+		return strings.Compare(li, lj) < 0
 	})
 
-	res := make([]string, 0, size)
-	for _, ls := range letters {
-		res = append(res, strings.Join(ls, " "))
-	}
+	return append(letters, digits...)
+}
 
-	res = append(res, digits...)
-
-	return res
+func isDigit(log string) bool {
+	b := log[strings.Index(log, " ")+1]
+	return '0' <= b && b <= '9'
 }
