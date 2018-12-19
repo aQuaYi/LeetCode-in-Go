@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 844,
-	"Updated": "2018-12-19T16:59:25.080749217+08:00",
+	"Updated": "2018-12-19T17:31:01.420547947+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 207,
+			"Solved": 208,
 			"Total": 214
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 159
 		},
 		"Total": {
-			"Solved": 706,
+			"Solved": 707,
 			"Total": 737
 		}
 	},
@@ -11271,7 +11271,7 @@
 			"TitleSlug": "reorder-log-files",
 			"PassRate": "56%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -11485,7 +11485,7 @@
 			"ID": 955,
 			"Title": "Delete Columns to Make Sorted II",
 			"TitleSlug": "delete-columns-to-make-sorted-ii",
-			"PassRate": "29%",
+			"PassRate": "28%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
