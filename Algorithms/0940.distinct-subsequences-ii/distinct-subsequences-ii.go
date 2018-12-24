@@ -1,11 +1,13 @@
 package problem0940
 
+// ref: https://www.jianshu.com/p/02501f516437
+
 const mod = 1e9 + 7
 
 func distinctSubseqII(S string) int {
-	tail := [26]int{}
+	tail := make([]int, 26)
 
-	sum := func() int {
+	total := func() int {
 		count := 0
 		for i := 0; i < 26; i++ {
 			count += tail[i]
@@ -14,9 +16,8 @@ func distinctSubseqII(S string) int {
 	}
 
 	for _, r := range S {
-		i := int(r - 'a')
-		tail[i] = sum() + 1
+		tail[r-'a'] = total() + 1
 	}
 
-	return sum()
+	return total()
 }
