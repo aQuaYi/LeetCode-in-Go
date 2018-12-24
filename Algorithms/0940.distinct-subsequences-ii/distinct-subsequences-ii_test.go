@@ -13,6 +13,11 @@ var tcs = []struct {
 }{
 
 	{
+		"adsflkasldgalksdglakdsfjlakjdsglkasjdlkasdadsflkdsfldaslfjsdaldadsabc",
+		589422165,
+	},
+
+	{
 		"abc",
 		7,
 	},
