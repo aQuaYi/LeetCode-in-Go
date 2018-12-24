@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"log"
 	"sort"
 	"strings"
 )
@@ -71,32 +70,27 @@ func replaceCharacters(s string) string {
 }
 
 func getDescription(url string) string {
-	log.Printf("准备访问 %s", url)
-
-	raw := string(getRaw(url))
-
-	sub := "<meta name=\"description\" content=\""
-	index := strings.Index(raw, sub)
-	raw = raw[index+len(sub):]
-
-	sub = "\""
-	index = strings.Index(raw, sub)
-	raw = raw[:index]
-
-	fmt.Println(raw)
-
-	return raw
+	return ""
 }
 
+// func getDescription(url string) string {
 // 	var err error
 
 // 	// create context
 // 	ctxt, cancel := context.WithCancel(context.Background())
 // 	defer cancel()
 
+// 	var options chromedp.Option
+// 	options = chromedp.WithRunnerOptions(
+// 		runner.Flag("headless", true),
+// 		runner.Flag("no-sandbox", true),
+// 		runner.Flag("disable-gpu", true),
+// 	)
+
+// 	log.Println("chromedp timeout:", chromedp.DefaultNewTargetTimeout)
+
 // 	// create chrome instance
-// 	// c, err := chromedp.New(ctxt, chromedp.WithLog(log.Printf))
-// 	c, err := chromedp.New(ctxt)
+// 	c, err := chromedp.New(ctxt, options)
 // 	if err != nil {
 // 		log.Fatal(err)
 // 	}
@@ -126,8 +120,9 @@ func getDescription(url string) string {
 // }
 
 // func text(url string, res *string) chromedp.Tasks {
-// 	sel := `#question-detail-main-tabs > div.tab-pane__280T.css-c363ty-TabContent.e5i1odf5 > div > div.content__eAC7`
+// 	sel := `div.content__eAC7`
 // 	return chromedp.Tasks{
+// 		chromedp.Sleep(time.Second * 3),
 // 		chromedp.Navigate(url),
 // 		chromedp.Text(sel, res, chromedp.NodeVisible, chromedp.BySearch),
 // 	}
