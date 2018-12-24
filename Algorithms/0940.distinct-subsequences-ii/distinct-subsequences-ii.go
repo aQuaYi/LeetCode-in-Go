@@ -1,6 +1,8 @@
 package problem0940
 
-func distinctSubseqII(S string) int {
+const modulo = 1e9 + 7
+
+func distinctSubseqII(s string) int {
 
 	return 0
 }
