@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
-	"Ranking": 853,
-	"Updated": "2018-12-25T17:06:41.713262572+08:00",
+	"Ranking": 849,
+	"Updated": "2018-12-25T21:22:06.175253472+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 208,
 			"Total": 215
 		},
 		"Medium": {
-			"Solved": 346,
+			"Solved": 347,
 			"Total": 366
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 160
 		},
 		"Total": {
-			"Solved": 708,
+			"Solved": 709,
 			"Total": 741
 		}
 	},
@@ -5029,7 +5029,7 @@
 			"ID": 417,
 			"Title": "Pacific Atlantic Water Flow",
 			"TitleSlug": "pacific-atlantic-water-flow",
-			"PassRate": "35%",
+			"PassRate": "36%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -8029,7 +8029,7 @@
 			"ID": 667,
 			"Title": "Beautiful Arrangement II",
 			"TitleSlug": "beautiful-arrangement-ii",
-			"PassRate": "51%",
+			"PassRate": "50%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10105,7 +10105,7 @@
 			"ID": 840,
 			"Title": "Magic Squares In Grid",
 			"TitleSlug": "magic-squares-in-grid",
-			"PassRate": "34%",
+			"PassRate": "35%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10789,7 +10789,7 @@
 			"ID": 897,
 			"Title": "Increasing Order Search Tree",
 			"TitleSlug": "increasing-order-search-tree",
-			"PassRate": "59%",
+			"PassRate": "60%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11187,7 +11187,7 @@
 			"TitleSlug": "binary-subarrays-with-sum",
 			"PassRate": "34%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -11581,7 +11581,7 @@
 			"ID": 963,
 			"Title": "Minimum Area Rectangle II",
 			"TitleSlug": "minimum-area-rectangle-ii",
-			"PassRate": "33%",
+			"PassRate": "34%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -11593,7 +11593,7 @@
 			"ID": 964,
 			"Title": "Least Operators to Express Number",
 			"TitleSlug": "least-operators-to-express-number",
-			"PassRate": "34%",
+			"PassRate": "35%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
