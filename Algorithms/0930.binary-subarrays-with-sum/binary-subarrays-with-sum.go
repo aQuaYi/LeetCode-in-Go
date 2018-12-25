@@ -4,48 +4,57 @@ func numSubarraysWithSum(A []int, S int) int {
 	if S == 0 {
 		return zero(A)
 	}
+	return nonZero(A, S)
+}
 
+func zero(A []int) int {
+	res, count := 0, 0
+	for _, n := range A {
+		if n == 0 {
+			count++
+			res += count
+		} else {
+			count = 0
+		}
+	}
+	return res
+}
+
+func nonZero(A []int, S int) int {
 	size := len(A)
-	i, j, sum := 0, 0, 0
 
-	for j < size && sum < S {
-		sum += A[j]
-		j++
+	end, sum := 0, 0
+	for end < size && sum < S {
+		sum += A[end]
+		end++
 	}
 
-	res := 0
-	for i < size && j <= size && sum == S {
+	if sum != S {
+		// A 中所有的 1 加起来都比 S 小
+		return 0
+	}
+
+	begin, res := 0, 0
+	for begin < size && end <= size {
 		left := 1
-		for i < j && A[i] == 0 {
-			i++
+		for begin < size && A[begin] == 0 {
+			begin++
 			left++
 		}
 
 		right := 1
-		for j < size && A[j] == 0 {
-			j++
+		for end < size && A[end] == 0 {
+			end++
 			right++
 		}
 
 		res += left * right
 
-		i++
-		j++
+		// 此时， A[begin] == A[end] == 1
+		begin++ // 相当于 sum--
+		end++   // 相当于 sum++
+		// 所以， sum 保持不变
 	}
 
-	return res
-}
-
-func zero(A []int) int {
-	res := 0
-	tmp := 0
-	for _, a := range A {
-		if a == 1 {
-			tmp = 0
-		} else {
-			tmp++
-			res += tmp
-		}
-	}
 	return res
 }
