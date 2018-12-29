@@ -35,21 +35,11 @@ func List2Ints(head *ListNode) []int {
 
 // Ints2List convert []int to List
 func Ints2List(nums []int) *ListNode {
-	if len(nums) == 0 {
-		return nil
+	l := &ListNode{}
+	t := l
+	for _, v := range nums {
+		t.Next = &ListNode{Val: v}
+		t = t.Next
 	}
-
-	res := &ListNode{
-		Val: nums[0],
-	}
-
-	temp := res
-	for i := 1; i < len(nums); i++ {
-		temp.Next = &ListNode{
-			Val: nums[i],
-		}
-		temp = temp.Next
-	}
-
-	return res
+	return l.Next
 }
