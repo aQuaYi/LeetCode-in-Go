@@ -17,6 +17,7 @@ func Test_Constructor(t *testing.T) {
 	ast.True(trie.Search("abc"), "Search abc in [abc]")
 	// ["abc"]
 
+	ast.False(trie.Search("ab"), "Search abcd in [a]")
 	ast.False(trie.Search("abcd"), "Search abcd in [abc]")
 	// ["abc"]
 
