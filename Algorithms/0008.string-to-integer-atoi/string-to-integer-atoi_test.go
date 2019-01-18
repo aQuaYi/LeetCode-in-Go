@@ -25,6 +25,16 @@ func Test_OK(t *testing.T) {
 	ast := assert.New(t)
 
 	qs := []question{
+
+		question{
+			p: para{
+				one: "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000522545459",
+			},
+			a: ans{
+				one: math.MaxInt32,
+			},
+		},
+
 		question{
 			p: para{
 				one: "123",
@@ -83,7 +93,7 @@ func Test_OK(t *testing.T) {
 		},
 		question{
 			p: para{
-				one: "",
+				one: " ",
 			},
 			a: ans{
 				one: 0,
@@ -95,15 +105,6 @@ func Test_OK(t *testing.T) {
 			},
 			a: ans{
 				one: 1,
-			},
-		},
-
-		question{
-			p: para{
-				one: "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000522545459",
-			},
-			a: ans{
-				one: math.MaxInt32,
 			},
 		},
 
