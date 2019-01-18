@@ -4,8 +4,7 @@ import "strings"
 import "math"
 
 func myAtoi(s string) int {
-	sign, abs := clean(s)
-	return convert(sign, abs)
+	return convert(clean(s))
 }
 
 func clean(s string) (sign int, abs string) {
