@@ -15,8 +15,9 @@ const (
 )
 
 func dida(prefix string, p problem) {
-	task := p.didaTask(prefix)
-	mailToDida(task)
+	// 不再往滴答清单中添加任务
+	// task := p.didaTask(prefix)
+	// mailToDida(task)
 }
 
 func mailToDida(task string) {
