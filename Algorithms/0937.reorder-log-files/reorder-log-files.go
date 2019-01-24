@@ -3,33 +3,21 @@ package problem0937
 import (
 	"sort"
 	"strings"
+	"unicode"
 )
 
 func reorderLogFiles(logs []string) []string {
-	size := len(logs)
-
-	letters := make([]string, 0, size)
-	digits := make([]string, 0, size)
-
-	for _, log := range logs {
-		if isDigit(log) {
-			digits = append(digits, log)
-		} else {
-			letters = append(letters, log)
+	sort.SliceStable(logs, func(i, j int) bool {
+		s1 := strings.SplitN(logs[i], " ", 2)
+		s2 := strings.SplitN(logs[j], " ", 2)
+		f1, f2 := "0"+s1[1], "0"+s2[1]
+		if unicode.IsNumber(rune(f1[1])) {
+			f1 = "1"
 		}
-	}
-
-	sort.Slice(letters, func(i int, j int) bool {
-		li, lj := letters[i], letters[j]
-		li = li[strings.Index(li, " "):]
-		lj = lj[strings.Index(lj, " "):]
-		return strings.Compare(li, lj) < 0
+		if unicode.IsNumber(rune(f2[1])) {
+			f2 = "1"
+		}
+		return f1 < f2
 	})
-
-	return append(letters, digits...)
-}
-
-func isDigit(log string) bool {
-	b := log[strings.Index(log, " ")+1]
-	return '0' <= b && b <= '9'
+	return logs
 }
