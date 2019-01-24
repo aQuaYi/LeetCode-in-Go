@@ -10,33 +10,58 @@ package problem0208
 
 // Trie 是便于 word 插入与查找的数据结构
 type Trie struct {
-	dict       map[string]bool
-	dictPrefix map[string]bool
+	val  byte
+	sons [26]*Trie
+	end  int
 }
 
-// Constructor initialize your data structure here.
 func Constructor() Trie {
-	d := make(map[string]bool, 1024)
-	p := make(map[string]bool, 4096)
-	p[""] = true
-	return Trie{dict: d, dictPrefix: p}
+	return Trie{}
 }
 
-// Insert a word into the trie.
-func (t *Trie) Insert(word string) {
-	t.dict[word] = true
-	for i := 1; i < len(word); i++ {
-		t.dictPrefix[word[:i]] = true
+func (this *Trie) Insert(word string) {
+	node := this
+	size := len(word)
+	for i := 0; i < size; i++ {
+		idx := word[i] - 'a'
+		if node.sons[idx] == nil {
+			node.sons[idx] = &Trie{val: word[i]}
+		}
+
+		node = node.sons[idx]
 	}
+
+	node.end++
 }
 
-// Search returns true if the word is in the trie.
-func (t *Trie) Search(word string) bool {
-	return t.dict[word]
+func (this *Trie) Search(word string) bool {
+	node := this
+	size := len(word)
+	for i := 0; i < size; i++ {
+		idx := word[i] - 'a'
+		if node.sons[idx] == nil {
+			return false
+		}
+		node = node.sons[idx]
+	}
+
+	if node.end > 0 {
+		return true
+	}
+
+	return false
 }
 
-// StartsWith returns true if there is any word in the trie that starts with the given prefix.
-func (t *Trie) StartsWith(prefix string) bool {
-	// dict 比较小，先检查
-	return t.dict[prefix] || t.dictPrefix[prefix]
+func (this *Trie) StartsWith(prefix string) bool {
+	node := this
+	size := len(prefix)
+	for i := 0; i < size; i++ {
+		idx := prefix[i] - 'a'
+		if node.sons[idx] == nil {
+			return false
+		}
+		node = node.sons[idx]
+	}
+
+	return true
 }
