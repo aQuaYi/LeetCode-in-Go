@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 945,
-	"Updated": "2019-01-24T16:40:11.857671992+08:00",
+	"Updated": "2019-01-24T16:59:23.467215127+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 207,
+			"Solved": 208,
 			"Total": 220
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 165
 		},
 		"Total": {
-			"Solved": 709,
+			"Solved": 710,
 			"Total": 758
 		}
 	},
@@ -5713,7 +5713,7 @@
 			"ID": 474,
 			"Title": "Ones and Zeroes",
 			"TitleSlug": "ones-and-zeroes",
-			"PassRate": "38%",
+			"PassRate": "39%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11223,7 +11223,7 @@
 			"TitleSlug": "number-of-recent-calls",
 			"PassRate": "67%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
