@@ -10,6 +10,9 @@ func Test_Constructor(t *testing.T) {
 	ast := assert.New(t)
 
 	d := Constructor()
+
+	ast.False(d.Search("."), "search . from []")
+
 	d.AddWord("bad")
 	// [bad]
 	d.AddWord("dad")
@@ -24,4 +27,8 @@ func Test_Constructor(t *testing.T) {
 	ast.True(d.Search(".ad"), "search .ad from [bad, dad, ma]")
 
 	ast.True(d.Search("b.."), "search b.. from [bad, dad, ma]")
+
+	ast.False(d.Search("."), "search . from [bad, dad, ma]")
+
+	ast.False(d.Search("b"), "search b from [bad, dad, ma]")
 }
