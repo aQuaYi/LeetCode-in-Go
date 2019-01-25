@@ -1,44 +1,63 @@
 package problem0211
 
-// WordDictionary 是字典
 type WordDictionary struct {
-	dict []string
+	sons [26]*WordDictionary
+	end  int
 }
 
-// Constructor 构建 WordDictionary
-// Initialize your data structure here.
+/** Initialize your data structure here. */
 func Constructor() WordDictionary {
 	return WordDictionary{}
 }
 
-// AddWord 往 WordDictionary 中添加 word
-// Adds a word into the data structure.
-func (d *WordDictionary) AddWord(word string) {
-	d.dict = append(d.dict, word)
+/** Adds a word into the data structure. */
+func (this *WordDictionary) AddWord(word string) {
+	for _, b := range word {
+		idx := b - 'a'
+		if this.sons[idx] == nil {
+			this.sons[idx] = &WordDictionary{}
+		}
+		this = this.sons[idx]
+	}
+
+	this.end++
 }
 
-// Search 返回 true 如果 WordDictionary 中包含有 word
-// Returns if the word is in the data structure.
-// A word could contain the dot character '.' to represent any one letter.
-func (d *WordDictionary) Search(word string) bool {
-	size := len(word)
-	i := 0
-	for _, w := range d.dict {
-		// w 和 word 的长度要一致
-		if len(w) != size {
-			continue
-		}
-
-		i = 0
-		for ; i < size; i++ {
-			if word[i] != '.' && word[i] != w[i] {
-				break
+/** Returns if the word is in the data structure. A word could contain the dot character '.' to represent any one letter. */
+func (this *WordDictionary) Search(word string) bool {
+	for i, b := range word {
+		if b != '.' {
+			idx := b - 'a'
+			if this.sons[idx] == nil {
+				return false
 			}
+
+			this = this.sons[idx]
+		} else {
+			for _, son := range this.sons {
+				if son == nil {
+					continue
+				}
+
+				this = son
+				if i == len(word)-1 {
+					if this.end > 0 {
+						return true
+					}
+					continue
+				}
+
+				if this.Search(word[i+1:]) {
+					return true
+				}
+			}
+
+			return false
 		}
-		// 匹配完成
-		if i == size {
-			return true
-		}
+	}
+
+	if this.end > 0 {
+		return true
 	}
 
 	return false
