@@ -1,15 +1,15 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 953,
-	"Updated": "2019-01-28T17:08:53.831485467+08:00",
+	"Updated": "2019-01-28T17:18:49.543823573+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 209,
-			"Total": 222
+			"Total": 227
 		},
 		"Medium": {
 			"Solved": 348,
-			"Total": 375
+			"Total": 380
 		},
 		"Hard": {
 			"Solved": 155,
@@ -17,7 +17,7 @@
 		},
 		"Total": {
 			"Solved": 712,
-			"Total": 763
+			"Total": 773
 		}
 	},
 	"Problems": [
@@ -1723,7 +1723,7 @@
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
-			"HasNoGoOption": true
+			"HasNoGoOption": false
 		},
 		{
 			"ID": 142,
@@ -1735,7 +1735,7 @@
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
-			"HasNoGoOption": true
+			"HasNoGoOption": false
 		},
 		{
 			"ID": 143,
@@ -1951,7 +1951,7 @@
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
-			"HasNoGoOption": true
+			"HasNoGoOption": false
 		},
 		{
 			"ID": 161,
@@ -2107,7 +2107,7 @@
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
-			"HasNoGoOption": true
+			"HasNoGoOption": false
 		},
 		{
 			"ID": 174,
@@ -2311,7 +2311,7 @@
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
-			"HasNoGoOption": true
+			"HasNoGoOption": false
 		},
 		{
 			"ID": 191,
@@ -2695,7 +2695,7 @@
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
-			"HasNoGoOption": true
+			"HasNoGoOption": false
 		},
 		{
 			"ID": 223,
@@ -2851,7 +2851,7 @@
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
-			"HasNoGoOption": true
+			"HasNoGoOption": false
 		},
 		{
 			"ID": 236,
@@ -2863,7 +2863,7 @@
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
-			"HasNoGoOption": true
+			"HasNoGoOption": false
 		},
 		{
 			"ID": 237,
@@ -2875,7 +2875,7 @@
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
-			"HasNoGoOption": true
+			"HasNoGoOption": false
 		},
 		{
 			"ID": 238,
@@ -4663,7 +4663,7 @@
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
-			"HasNoGoOption": true
+			"HasNoGoOption": false
 		},
 		{
 			"ID": 387,
