@@ -10,7 +10,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|208|348|155|711|
+|**Accepted**|209|348|155|712|
 |**Total**|222|375|166|763|
 
 ## 题解
@@ -617,7 +617,7 @@
 |[200](https://leetcode.com/problems/number-of-islands/)|[Number of Islands](./Algorithms/0200.number-of-islands)|39%|Medium||
 |[199](https://leetcode.com/problems/binary-tree-right-side-view/)|[Binary Tree Right Side View](./Algorithms/0199.binary-tree-right-side-view)|46%|Medium||
 |[198](https://leetcode.com/problems/house-robber/)|[House Robber](./Algorithms/0198.house-robber)|40%|Easy|[❤](https://leetcode.com/list/oussv5j)|
-|[191](https://leetcode.com/problems/number-of-1-bits/)| * Number of 1 Bits|41%|Easy||
+|[191](https://leetcode.com/problems/number-of-1-bits/)|[Number of 1 Bits](./Algorithms/0191.number-of-1-bits)|41%|Easy||
 |[189](https://leetcode.com/problems/rotate-array/)|[Rotate Array](./Algorithms/0189.rotate-array)|28%|Easy||
 |[188](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/)|[Best Time to Buy and Sell Stock IV](./Algorithms/0188.best-time-to-buy-and-sell-stock-iv)|25%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[187](https://leetcode.com/problems/repeated-dna-sequences/)|[Repeated DNA Sequences](./Algorithms/0187.repeated-dna-sequences)|35%|Medium||
