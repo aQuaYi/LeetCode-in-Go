@@ -11,7 +11,7 @@
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
 |**Accepted**|208|348|155|711|
-|**Total**|221|375|166|762|
+|**Total**|222|375|166|763|
 
 ## 题解
 
@@ -617,6 +617,7 @@
 |[200](https://leetcode.com/problems/number-of-islands/)|[Number of Islands](./Algorithms/0200.number-of-islands)|39%|Medium||
 |[199](https://leetcode.com/problems/binary-tree-right-side-view/)|[Binary Tree Right Side View](./Algorithms/0199.binary-tree-right-side-view)|46%|Medium||
 |[198](https://leetcode.com/problems/house-robber/)|[House Robber](./Algorithms/0198.house-robber)|40%|Easy|[❤](https://leetcode.com/list/oussv5j)|
+|[191](https://leetcode.com/problems/number-of-1-bits/)| * Number of 1 Bits|41%|Easy||
 |[189](https://leetcode.com/problems/rotate-array/)|[Rotate Array](./Algorithms/0189.rotate-array)|28%|Easy||
 |[188](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/)|[Best Time to Buy and Sell Stock IV](./Algorithms/0188.best-time-to-buy-and-sell-stock-iv)|25%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[187](https://leetcode.com/problems/repeated-dna-sequences/)|[Repeated DNA Sequences](./Algorithms/0187.repeated-dna-sequences)|35%|Medium||
@@ -792,7 +793,6 @@
 - [160.Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)
 - [173.Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/)
 - [190.Reverse Bits](https://leetcode.com/problems/reverse-bits/)
-- [191.Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)
 - [222.Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/)
 - [235.Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)
 - [236.Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)

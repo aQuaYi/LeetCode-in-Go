@@ -1,11 +1,11 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 953,
-	"Updated": "2019-01-28T16:51:32.43842541+08:00",
+	"Updated": "2019-01-28T16:54:39.481064442+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 208,
-			"Total": 221
+			"Total": 222
 		},
 		"Medium": {
 			"Solved": 348,
@@ -17,7 +17,7 @@
 		},
 		"Total": {
 			"Solved": 711,
-			"Total": 762
+			"Total": 763
 		}
 	},
 	"Problems": [
@@ -2323,7 +2323,7 @@
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
-			"HasNoGoOption": true
+			"HasNoGoOption": false
 		},
 		{
 			"ID": 0,
