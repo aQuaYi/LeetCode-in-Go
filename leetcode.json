@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 953,
-	"Updated": "2019-01-28T15:58:48.721975931+08:00",
+	"Updated": "2019-01-28T16:51:32.43842541+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 208,
 			"Total": 221
 		},
 		"Medium": {
-			"Solved": 347,
+			"Solved": 348,
 			"Total": 375
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 166
 		},
 		"Total": {
-			"Solved": 710,
+			"Solved": 711,
 			"Total": 762
 		}
 	},
@@ -11199,7 +11199,7 @@
 			"TitleSlug": "minimum-falling-path-sum",
 			"PassRate": "56%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -11821,7 +11821,7 @@
 			"ID": 983,
 			"Title": "Minimum Cost For Tickets",
 			"TitleSlug": "minimum-cost-for-tickets",
-			"PassRate": "55%",
+			"PassRate": "56%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
