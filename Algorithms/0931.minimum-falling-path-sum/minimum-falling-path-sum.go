@@ -1,27 +1,30 @@
 package problem0931
 
+const maxSum = 10000
+
 func minFallingPathSum(A [][]int) int {
 	size := len(A)
-	res := 1 << 20
 
-	var falling func(int, int, int)
-	falling = func(i, j, sum int) {
-		if i == size {
-			res = min(res, sum)
-			return
+	recs := make([]int, size)
+	copy(recs, A[0])
+
+	for i := 1; i < size; i++ {
+		tmps := [100]int{}
+		for j := 0; j < size; j++ {
+			Aij := A[i][j]
+			tmp := maxSum
+			l, r := max(j-1, 0), min(j+1, size-1)
+			for k := l; k <= r; k++ {
+				tmp = min(tmp, Aij+recs[k])
+			}
+			tmps[j] = tmp
 		}
-
-		sum += A[i][j]
-
-		x, y := i+1, max(j-1, 0)
-
-		for ; y < size && y <= j+1; y++ {
-			falling(x, y, sum)
-		}
+		recs = tmps[:size]
 	}
 
-	for j := 0; j < size; j++ {
-		falling(0, j, 0)
+	res := maxSum
+	for i := 0; i < size; i++ {
+		res = min(res, recs[i])
 	}
 
 	return res
