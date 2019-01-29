@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 940,
-	"Updated": "2019-01-29T10:51:44.056140793+08:00",
+	"Updated": "2019-01-29T11:17:49.000185043+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 209,
+			"Solved": 210,
 			"Total": 227
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 166
 		},
 		"Total": {
-			"Solved": 712,
+			"Solved": 713,
 			"Total": 773
 		}
 	},
@@ -2307,7 +2307,7 @@
 			"TitleSlug": "reverse-bits",
 			"PassRate": "29%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -10681,7 +10681,7 @@
 			"ID": 888,
 			"Title": "Fair Candy Swap",
 			"TitleSlug": "fair-candy-swap",
-			"PassRate": "55%",
+			"PassRate": "54%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
