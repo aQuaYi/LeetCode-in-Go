@@ -11,28 +11,24 @@ type Solution struct {
 
 // Constructor 构建 Solution
 func Constructor(nums []int) Solution {
-	o := make([]int, len(nums))
-	n := make([]int, len(nums))
-	copy(o, nums)
-	copy(n, nums)
-	return Solution{origNums: o, nums: n}
+	return Solution{
+		origNums: nums,
+		nums:     append([]int{}, nums...),
+	}
 }
 
 // Reset the array to its original configuration and return it.
-func (s Solution) Reset() []int {
-	return s.origNums
+func (this *Solution) Reset() []int {
+	return this.origNums
 }
 
 // Shuffle returns a random shuffling of the array.
-func (s Solution) Shuffle() []int {
-	i, j := len(s.nums), 0
-	for 1 < i {
-		j = rand.Intn(i)
-		s.nums[i-1], s.nums[j] = s.nums[j], s.nums[i-1]
-		i--
+func (this *Solution) Shuffle() []int {
+	for i := 0; i < len(this.nums); i++ {
+		r := rand.Intn(len(this.nums))
+		this.nums[r], this.nums[i] = this.nums[i], this.nums[r]
 	}
-
-	return s.nums
+	return this.nums
 }
 
 /**
