@@ -45,7 +45,6 @@ var tcs = []struct {
 
 func Test_shortestBridge(t *testing.T) {
 	ast := assert.New(t)
-
 	for _, tc := range tcs {
 		ast.Equal(tc.ans, shortestBridge(tc.A), "输入:%v", tc)
 	}
@@ -57,4 +56,14 @@ func Benchmark_shortestBridge(b *testing.B) {
 			shortestBridge(tc.A)
 		}
 	}
+}
+
+func Test_searchForIsland_panicWithNoIsland(t *testing.T) {
+	ast := assert.New(t)
+	ast.Panics(func() { searchForIsland([][]int{}) })
+}
+
+func Test_shortestBridge_panicWithOnlyOneIsland(t *testing.T) {
+	ast := assert.New(t)
+	ast.Panics(func() { shortestBridge([][]int{{1, 0}}) })
 }
