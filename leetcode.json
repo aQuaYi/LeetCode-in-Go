@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 925,
-	"Updated": "2019-01-31T13:43:47.948276514+08:00",
+	"Updated": "2019-01-31T15:35:00.212032728+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 210,
 			"Total": 227
 		},
 		"Medium": {
-			"Solved": 349,
+			"Solved": 350,
 			"Total": 380
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 166
 		},
 		"Total": {
-			"Solved": 714,
+			"Solved": 715,
 			"Total": 773
 		}
 	},
@@ -9949,7 +9949,7 @@
 			"ID": 827,
 			"Title": "Making A Large Island",
 			"TitleSlug": "making-a-large-island",
-			"PassRate": "41%",
+			"PassRate": "42%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10621,7 +10621,7 @@
 			"ID": 883,
 			"Title": "Projection Area of 3D Shapes",
 			"TitleSlug": "projection-area-of-3d-shapes",
-			"PassRate": "64%",
+			"PassRate": "65%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11235,7 +11235,7 @@
 			"TitleSlug": "shortest-bridge",
 			"PassRate": "42%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -11413,7 +11413,7 @@
 			"ID": 949,
 			"Title": "Largest Time for Given Digits",
 			"TitleSlug": "largest-time-for-given-digits",
-			"PassRate": "32%",
+			"PassRate": "33%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -11653,7 +11653,7 @@
 			"ID": 969,
 			"Title": "Pancake Sorting",
 			"TitleSlug": "pancake-sorting",
-			"PassRate": "61%",
+			"PassRate": "62%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
