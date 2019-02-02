@@ -7,7 +7,7 @@ var hop = [][]int{
 	{6, 8},    // from 1
 	{7, 9},    // from 2
 	{4, 8},    // from 3
-	{3, 9, 0}, // from 4
+	{3, 9, 0}, // from 4, 4 -> 7 -> * -> 0
 	{},        // from 5
 	{0, 1, 7}, // from 6
 	{2, 6},    // from 7
@@ -45,14 +45,12 @@ func recur(N, digit int, rec *[5000][10]int) int {
 		return l
 	}
 
-	count := 0
+	res := 0
 	for _, d := range h {
-		count += recur(N-1, d, rec)
+		res += recur(N-1, d, rec)
 	}
+	res %= mod
 
-	count %= mod
-
-	(*rec)[N][digit] = count
-
-	return count
+	(*rec)[N][digit] = res
+	return res
 }
