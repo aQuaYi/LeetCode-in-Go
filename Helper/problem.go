@@ -52,7 +52,7 @@ func (p problem) link() string {
 
 func (p problem) tableLine() string {
 	// 题号
-	res := fmt.Sprintf("|[%d](%s)|", p.ID, p.link())
+	res := fmt.Sprintf("|[%04d](%s)|", p.ID, p.link())
 
 	// 标题
 	t := ""
