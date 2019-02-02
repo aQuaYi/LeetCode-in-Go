@@ -2,6 +2,8 @@ package problem0935
 
 const mod = 1e9 + 7
 
+var rec = [5000][10]int{}
+
 var hop = [][]int{
 	{4, 6},    // from 0
 	{6, 8},    // from 1
@@ -20,8 +22,6 @@ func knightDialer(N int) int {
 		// now can chose 5
 		return 10
 	}
-
-	rec := [5000][10]int{}
 
 	res := 0
 	for i := 0; i < 10; i++ {
