@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 927,
-	"Updated": "2019-02-02T21:52:27.359596262+08:00",
+	"Updated": "2019-02-02T23:23:01.193723611+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 210,
 			"Total": 227
 		},
 		"Medium": {
-			"Solved": 350,
+			"Solved": 351,
 			"Total": 380
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 166
 		},
 		"Total": {
-			"Solved": 715,
+			"Solved": 716,
 			"Total": 773
 		}
 	},
@@ -6145,7 +6145,7 @@
 			"ID": 510,
 			"Title": "Inorder Successor in BST II",
 			"TitleSlug": "inorder-successor-in-bst-ii",
-			"PassRate": "0%",
+			"PassRate": "33%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -11247,7 +11247,7 @@
 			"TitleSlug": "knight-dialer",
 			"PassRate": "37%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
