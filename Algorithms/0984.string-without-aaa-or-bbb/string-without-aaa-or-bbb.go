@@ -17,7 +17,7 @@ func strWithout3a3b(A int, B int) string {
 			sb.WriteRune(a)
 			A--
 		}
-		for i := 2; i > 0 && B > 0; i-- {
+		for i := 2; i > 0 && B > 0 && A-B < 2; i-- {
 			sb.WriteRune(b)
 			B--
 		}
