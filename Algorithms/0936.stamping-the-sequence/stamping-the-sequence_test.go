@@ -14,6 +14,11 @@ var tcs = []struct {
 }{
 
 	{
+		"ab",
+		"aba",
+	},
+
+	{
 		"abc",
 		"ababc",
 	},
@@ -23,10 +28,7 @@ var tcs = []struct {
 		"aabcaca",
 	},
 
-	{
-		"ab",
-		"aba",
-	},
+	//
 }
 
 func isCorrect(stamp, target string, sequence []int) bool {
