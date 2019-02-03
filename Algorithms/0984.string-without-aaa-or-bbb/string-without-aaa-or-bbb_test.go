@@ -38,6 +38,12 @@ var tcs = []struct {
 		"bbabbab",
 	},
 
+	{
+		2,
+		6,
+		"bbabbabb",
+	},
+
 	// 可以有多个 testcase
 }
 
