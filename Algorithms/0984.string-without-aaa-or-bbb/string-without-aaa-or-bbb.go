@@ -12,17 +12,13 @@ func strWithout3a3b(A int, B int) string {
 		a, b = b, a
 	}
 
-	aab := []byte{a, a, b}
-
-	for A > B && B > 0 {
-		sb.Write(aab)
-		A -= 2
-		B--
-	}
-
-	for A > 0 || B > 0 {
+	for A > 0 {
 		sb.WriteByte(a)
 		A--
+		if A > B {
+			sb.WriteByte(a)
+			A--
+		}
 		if B > 0 {
 			sb.WriteByte(b)
 			B--
