@@ -5,11 +5,12 @@ import "strings"
 // ref: https://leetcode.com/problems/stamping-the-sequence/discuss/189254/Python-Greedy-and-DFS
 
 func movesToStamp(stamp string, target string) []int {
-	t, s := []byte(target), []byte(stamp)
-	tSize, sSize := len(t), len(s)
+	s, t := []byte(stamp), []byte(target)
+	sSize, tSize := len(stamp), len(target)
 
-	res := make([]int, 0, tSize)
+	res := make([]int, 0, 1000)
 
+	// isStamped return true if stamped since i
 	isStamped := func(i int) bool {
 		canStamp := false
 		for j := 0; j < sSize; j++ {
@@ -30,11 +31,16 @@ func movesToStamp(stamp string, target string) []int {
 		return canStamp
 	}
 
-	changed := true
-	for changed {
-		changed = false
-		for i := 0; i < tSize-sSize+1; i++ {
-			changed = changed || isStamped(i)
+	maxIndex := tSize - sSize + 1
+
+	for {
+		isChanged := false
+		for i := 0; i < maxIndex; i++ {
+			isChanged = isChanged || isStamped(i)
+		}
+		if !isChanged {
+			// no more place to stamp
+			break
 		}
 	}
 
