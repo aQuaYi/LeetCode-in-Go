@@ -1,15 +1,15 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 927,
-	"Updated": "2019-02-02T23:23:01.193723611+08:00",
+	"Updated": "2019-02-03T13:08:58.697681697+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 210,
-			"Total": 227
+			"Total": 228
 		},
 		"Medium": {
 			"Solved": 351,
-			"Total": 380
+			"Total": 383
 		},
 		"Hard": {
 			"Solved": 155,
@@ -17,7 +17,7 @@
 		},
 		"Total": {
 			"Solved": 716,
-			"Total": 773
+			"Total": 777
 		}
 	},
 	"Problems": [
@@ -5509,7 +5509,7 @@
 			"ID": 457,
 			"Title": "Circular Array Loop",
 			"TitleSlug": "circular-array-loop",
-			"PassRate": "26%",
+			"PassRate": "27%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -6049,7 +6049,7 @@
 			"ID": 502,
 			"Title": "IPO",
 			"TitleSlug": "ipo",
-			"PassRate": "36%",
+			"PassRate": "37%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -6145,7 +6145,7 @@
 			"ID": 510,
 			"Title": "Inorder Successor in BST II",
 			"TitleSlug": "inorder-successor-in-bst-ii",
-			"PassRate": "33%",
+			"PassRate": "61%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -6277,7 +6277,7 @@
 			"ID": 521,
 			"Title": "Longest Uncommon Subsequence I ",
 			"TitleSlug": "longest-uncommon-subsequence-i",
-			"PassRate": "56%",
+			"PassRate": "55%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -6661,7 +6661,7 @@
 			"ID": 553,
 			"Title": "Optimal Division",
 			"TitleSlug": "optimal-division",
-			"PassRate": "55%",
+			"PassRate": "54%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -7837,7 +7837,7 @@
 			"ID": 651,
 			"Title": "4 Keys Keyboard",
 			"TitleSlug": "4-keys-keyboard",
-			"PassRate": "49%",
+			"PassRate": "50%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -10657,7 +10657,7 @@
 			"ID": 886,
 			"Title": "Possible Bipartition",
 			"TitleSlug": "possible-bipartition",
-			"PassRate": "39%",
+			"PassRate": "40%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11149,7 +11149,7 @@
 			"ID": 927,
 			"Title": "Three Equal Parts",
 			"TitleSlug": "three-equal-parts",
-			"PassRate": "28%",
+			"PassRate": "29%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11185,7 +11185,7 @@
 			"ID": 930,
 			"Title": "Binary Subarrays With Sum",
 			"TitleSlug": "binary-subarrays-with-sum",
-			"PassRate": "35%",
+			"PassRate": "36%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11677,7 +11677,7 @@
 			"ID": 971,
 			"Title": "Flip Binary Tree To Match Preorder Traversal",
 			"TitleSlug": "flip-binary-tree-to-match-preorder-traversal",
-			"PassRate": "42%",
+			"PassRate": "41%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -11725,7 +11725,7 @@
 			"ID": 975,
 			"Title": "Odd Even Jump",
 			"TitleSlug": "odd-even-jump",
-			"PassRate": "50%",
+			"PassRate": "51%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -11809,7 +11809,7 @@
 			"ID": 982,
 			"Title": "Triples with Bitwise AND Equal To Zero",
 			"TitleSlug": "triples-with-bitwise-and-equal-to-zero",
-			"PassRate": "52%",
+			"PassRate": "53%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -11839,6 +11839,54 @@
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 985,
+			"Title": "Sum of Even Numbers After Queries",
+			"TitleSlug": "sum-of-even-numbers-after-queries",
+			"PassRate": "68%",
+			"Difficulty": "Easy",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 986,
+			"Title": "Interval List Intersections",
+			"TitleSlug": "interval-list-intersections",
+			"PassRate": "53%",
+			"Difficulty": "Medium",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 987,
+			"Title": "Vertical Order Traversal of a Binary Tree",
+			"TitleSlug": "vertical-order-traversal-of-a-binary-tree",
+			"PassRate": "29%",
+			"Difficulty": "Medium",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 988,
+			"Title": "Smallest String Starting From Leaf",
+			"TitleSlug": "smallest-string-starting-from-leaf",
+			"PassRate": "48%",
+			"Difficulty": "Medium",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
 			"HasNoGoOption": false
 		}
 	]
