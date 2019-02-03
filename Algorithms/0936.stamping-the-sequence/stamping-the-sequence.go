@@ -3,13 +3,14 @@ package problem0936
 import "strings"
 
 func movesToStamp(stamp string, target string) []int {
+	t, s := []byte(target), []byte(stamp)
+	tSize, sSize := len(t), len(s)
 
-	n, m, t, s := len(target), len(stamp), []byte(target), []byte(stamp)
-	res := make([]int, 0, n)
+	res := make([]int, 0, tSize)
 
-	check := func(i int) bool {
+	isStamped := func(i int) bool {
 		changed := false
-		for j := 0; j < m; j++ {
+		for j := 0; j < sSize; j++ {
 			if t[i+j] == '?' {
 				continue
 			}
@@ -18,9 +19,8 @@ func movesToStamp(stamp string, target string) []int {
 			}
 			changed = true
 		}
-
 		if changed {
-			for k := i; k < i+m; k++ {
+			for k := i; k < i+sSize; k++ {
 				t[k] = '?'
 			}
 			res = append(res, i)
@@ -31,14 +31,14 @@ func movesToStamp(stamp string, target string) []int {
 	changed := true
 	for changed {
 		changed = false
-		for i := 0; i < n-m+1; i++ {
-			changed = changed || check(i)
+		for i := 0; i < tSize-sSize+1; i++ {
+			changed = changed || isStamped(i)
 		}
 	}
 
 	reverse(res)
 
-	if string(t) == strings.Repeat("?", n) {
+	if string(t) == strings.Repeat("?", tSize) {
 		return res
 	}
 	return nil
