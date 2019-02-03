@@ -2,6 +2,8 @@ package problem0936
 
 import "strings"
 
+// ref: https://leetcode.com/problems/stamping-the-sequence/discuss/189254/Python-Greedy-and-DFS
+
 func movesToStamp(stamp string, target string) []int {
 	t, s := []byte(target), []byte(stamp)
 	tSize, sSize := len(t), len(s)
@@ -9,7 +11,7 @@ func movesToStamp(stamp string, target string) []int {
 	res := make([]int, 0, tSize)
 
 	isStamped := func(i int) bool {
-		changed := false
+		canStamp := false
 		for j := 0; j < sSize; j++ {
 			if t[i+j] == '?' {
 				continue
@@ -17,15 +19,15 @@ func movesToStamp(stamp string, target string) []int {
 			if t[i+j] != s[j] {
 				return false
 			}
-			changed = true
+			canStamp = true
 		}
-		if changed {
+		if canStamp {
 			for k := i; k < i+sSize; k++ {
 				t[k] = '?'
 			}
 			res = append(res, i)
 		}
-		return changed
+		return canStamp
 	}
 
 	changed := true
