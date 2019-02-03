@@ -21,9 +21,21 @@ var tcs = []struct {
 	},
 
 	{
+		1,
+		3,
+		"bbab",
+	},
+
+	{
 		4,
 		1,
 		"aabaa",
+	},
+
+	{
+		2,
+		5,
+		"bbabbab",
 	},
 
 	// 可以有多个 testcase
@@ -46,7 +58,8 @@ func Test_strWithout3a3b(t *testing.T) {
 	ast := assert.New(t)
 
 	for _, tc := range tcs {
-		ast.True(isCorrect(tc.A, tc.B, strWithout3a3b(tc.A, tc.B)))
+		str := strWithout3a3b(tc.A, tc.B)
+		ast.True(isCorrect(tc.A, tc.B, str), "A = %d, B = %d, %s", tc.A, tc.B, str)
 	}
 }
 
