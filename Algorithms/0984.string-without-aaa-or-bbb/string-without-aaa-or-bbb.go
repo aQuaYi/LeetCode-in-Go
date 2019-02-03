@@ -6,19 +6,25 @@ func strWithout3a3b(A int, B int) string {
 	var sb strings.Builder
 	sb.Grow(A + B)
 
-	a, b := 'a', 'b'
+	a, b := byte('a'), byte('b')
 	if A < B {
 		A, B = B, A
 		a, b = b, a
 	}
 
+	aab := []byte{a, a, b}
+
+	for A > B && B > 0 {
+		sb.Write(aab)
+		A -= 2
+		B--
+	}
+
 	for A > 0 || B > 0 {
-		for i := 2; i > 0 && A > 0; i-- {
-			sb.WriteRune(a)
-			A--
-		}
-		for i := 2; i > 0 && B > 0 && A-B < 2; i-- {
-			sb.WriteRune(b)
+		sb.WriteByte(a)
+		A--
+		if B > 0 {
+			sb.WriteByte(b)
 			B--
 		}
 	}
