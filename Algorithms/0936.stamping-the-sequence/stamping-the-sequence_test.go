@@ -1,6 +1,7 @@
 package problem0936
 
 import (
+	"fmt"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -25,14 +26,42 @@ var tcs = []struct {
 		[]int{3, 0, 1},
 	},
 
-	// 可以有多个 testcase
+	{
+		"ab",
+		"aba",
+		nil,
+	},
+}
+
+func isCorrect(stamp, target string, sequence []int) bool {
+	if len(sequence) > 10*len(target) {
+		return false
+	}
+	sb := []byte(stamp)
+	lt := len(target)
+	tb := make([]byte, lt*2)
+	for _, i := range sequence {
+		copy(tb[i:], sb)
+	}
+	stb := string(tb[:lt])
+	if stb != target {
+		fmt.Println(stamp, target, sequence)
+		return false
+	}
+	return true
+}
+
+func Test_isCorrect(t *testing.T) {
+	ast := assert.New(t)
+	ast.True(isCorrect("aba", "ababa", []int{0, 2}))
+	ast.True(isCorrect("aba", "ababa", []int{2, 0}))
 }
 
 func Test_movesToStamp(t *testing.T) {
 	ast := assert.New(t)
-
 	for _, tc := range tcs {
-		ast.Equal(tc.ans, movesToStamp(tc.stamp, tc.target), "输入:%v", tc)
+		seq := movesToStamp(tc.stamp, tc.target)
+		ast.True(isCorrect(tc.stamp, tc.target, seq))
 	}
 }
 
