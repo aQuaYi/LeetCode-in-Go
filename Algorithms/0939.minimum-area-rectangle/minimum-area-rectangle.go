@@ -11,29 +11,29 @@ func minAreaRect(points [][]int) int {
 		isExisting[[2]int{x, y}] = true
 	}
 
-	area := initialArea
+	minArea := initialArea
 
 	for i := 0; i < size; i++ {
-		x0, y0 := points[i][0], points[i][1]
+		xi, yi := points[i][0], points[i][1]
 		for j := i + 1; j < size; j++ {
-			x1, y1 := points[j][0], points[j][1]
-			if x0 == x1 || y0 == y1 {
+			xj, yj := points[j][0], points[j][1]
+			if xi == xj || yi == yj {
 				continue
 			}
-			newArea := abs(x0-x1) * abs(y0-y1)
-			if newArea > area || // NOTICE: delay heavy operation
-				!isExisting[[2]int{x1, y0}] ||
-				!isExisting[[2]int{x0, y1}] {
+			area := abs(xi-xj) * abs(yi-yj)
+			if area >= minArea || // NOTICE: delay heavy operation
+				!isExisting[[2]int{xi, yj}] ||
+				!isExisting[[2]int{xj, yi}] {
 				continue
 			}
-			area = newArea
+			minArea = area
 		}
 	}
 
-	if area == initialArea {
+	if minArea == initialArea {
 		return 0
 	}
-	return area
+	return minArea
 }
 
 func abs(n int) int {
