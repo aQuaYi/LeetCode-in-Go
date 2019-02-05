@@ -1,28 +1,32 @@
 package problem0939
 
-import "fmt"
-
 const initialArea = 2000000000 // > 40000*40000
 
 func minAreaRect(points [][]int) int {
-	isExisted := make(map[string]bool, 500)
+	size := len(points)
+
+	isExisting := make(map[[2]int]bool, size)
 	for _, p := range points {
-		px, py := p[0], p[1]
-		isExisted[convert(px, py)] = true
+		x, y := p[0], p[1]
+		isExisting[[2]int{x, y}] = true
 	}
 
 	area := initialArea
 
-	for _, pld := range points {
-		xld, yld := pld[0], pld[1]
-		for _, prt := range points {
-			xrt, yrt := prt[0], prt[1]
-			if xld >= xrt || yld >= yrt {
+	for i := 0; i < size; i++ {
+		x0, y0 := points[i][0], points[i][1]
+		for j := i + 1; j < size; j++ {
+			x1, y1 := points[j][0], points[j][1]
+			if x0 == x1 || y0 == y1 {
 				continue
 			}
-			if isExisted[convert(xrt, yld)] && isExisted[convert(xld, yrt)] {
-				area = min(area, (xrt-xld)*(yrt-yld))
+			newArea := abs(x0-x1) * abs(y0-y1)
+			if newArea > area || // NOTICE: delay heavy operation
+				!isExisting[[2]int{x1, y0}] ||
+				!isExisting[[2]int{x0, y1}] {
+				continue
 			}
+			area = newArea
 		}
 	}
 
@@ -32,13 +36,9 @@ func minAreaRect(points [][]int) int {
 	return area
 }
 
-func convert(px, py int) string {
-	return fmt.Sprintf("%d-%d", px, py)
-}
-
-func min(a, b int) int {
-	if a < b {
-		return a
+func abs(n int) int {
+	if n < 0 {
+		return -n
 	}
-	return b
+	return n
 }
