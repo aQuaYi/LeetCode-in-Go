@@ -25,7 +25,6 @@ func minAreaRect(points [][]int) int {
 					continue
 				}
 				if isExisted[convert(xrt, yrt)] {
-					fmt.Printf("(%d,%d) (%d,%d)\n", xld, yld, xrt, yrt)
 					area = min(area, (xrt-xld)*(yrt-yld))
 				}
 			}
