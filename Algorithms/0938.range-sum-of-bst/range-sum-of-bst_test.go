@@ -44,9 +44,7 @@ func Test_rangeSumBST(t *testing.T) {
 func Benchmark_rangeSumBST(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		for _, tc := range tcs {
-			b.StopTimer()
 			root := kit.Ints2TreeNode(tc.root)
-			b.StartTimer()
 			rangeSumBST(root, tc.L, tc.R)
 		}
 	}
