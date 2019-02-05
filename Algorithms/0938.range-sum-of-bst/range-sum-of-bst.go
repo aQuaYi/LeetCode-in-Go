@@ -18,7 +18,7 @@ func rangeSumBST(root *TreeNode, L int, R int) int {
 	case R < root.Val:
 		sum = rangeSumBST(root.Left, L, R)
 	default:
-		sum += root.Val
+		sum = root.Val
 		sum += rangeSumBST(root.Left, L, R)
 		sum += rangeSumBST(root.Right, L, R)
 	}
