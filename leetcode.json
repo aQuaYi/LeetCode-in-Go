@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 919,
-	"Updated": "2019-02-05T12:52:37.251957852+08:00",
+	"Updated": "2019-02-05T13:26:50.069577039+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 211,
 			"Total": 228
 		},
 		"Medium": {
-			"Solved": 351,
+			"Solved": 352,
 			"Total": 383
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 166
 		},
 		"Total": {
-			"Solved": 718,
+			"Solved": 719,
 			"Total": 777
 		}
 	},
@@ -6145,7 +6145,7 @@
 			"ID": 510,
 			"Title": "Inorder Successor in BST II",
 			"TitleSlug": "inorder-successor-in-bst-ii",
-			"PassRate": "62%",
+			"PassRate": "61%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -10297,7 +10297,7 @@
 			"ID": 856,
 			"Title": "Score of Parentheses",
 			"TitleSlug": "score-of-parentheses",
-			"PassRate": "55%",
+			"PassRate": "54%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11283,7 +11283,7 @@
 			"TitleSlug": "range-sum-of-bst",
 			"PassRate": "80%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
