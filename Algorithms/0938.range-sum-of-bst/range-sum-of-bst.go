@@ -6,22 +6,22 @@ import "github.com/aQuaYi/LeetCode-in-Go/kit"
 type TreeNode = kit.TreeNode
 
 func rangeSumBST(root *TreeNode, L int, R int) int {
-	res := 0
-	recur(root, L, R, &res)
-	return res
-}
-
-func recur(node *TreeNode, L, R int, res *int) {
-	if node == nil {
-		return
+	if root == nil {
+		return 0
 	}
 
-	if L <= node.Val && node.Val <= R {
-		*res += node.Val
+	sum := 0
+
+	switch {
+	case root.Val < L:
+		sum = rangeSumBST(root.Right, L, R)
+	case R < root.Val:
+		sum = rangeSumBST(root.Left, L, R)
+	default:
+		sum += root.Val
+		sum += rangeSumBST(root.Left, L, R)
+		sum += rangeSumBST(root.Right, L, R)
 	}
 
-	recur(node.Left, L, R, res)
-	recur(node.Right, L, R, res)
-
-	return
+	return sum
 }
