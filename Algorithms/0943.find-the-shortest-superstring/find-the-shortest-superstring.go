@@ -29,7 +29,7 @@ func rescur(A []string, isUsed []bool, countDown int, tmp string, res *string) {
 		isUsed[i] = true
 
 		j := len(str)
-		for !strings.Contains(tmp, str[:j]) {
+		for !strings.HasSuffix(tmp, str[:j]) {
 			j--
 		}
 
