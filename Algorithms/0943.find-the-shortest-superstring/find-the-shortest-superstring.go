@@ -7,7 +7,7 @@ import (
 
 func shortestSuperstring(A []string) string {
 	size := len(A)
-	res := ""
+	res := strings.Repeat("?", 12*20+1)
 	isUsed := make([]bool, size)
 	rescur(A, isUsed, size, "", &res)
 	fmt.Println(res)
