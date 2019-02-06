@@ -20,7 +20,7 @@ func minAreaRect(points [][]int) int {
 			if xi == xj || yi == yj {
 				continue
 			}
-			area := abs(xi-xj) * abs(yi-yj)
+			area := abs((xi - xj) * (yi - yj))
 			if area >= minArea || // NOTICE: delay heavy operation
 				!isExisting[[2]int{xi, yj}] ||
 				!isExisting[[2]int{xj, yi}] {
