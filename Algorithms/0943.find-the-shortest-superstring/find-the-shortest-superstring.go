@@ -6,30 +6,32 @@ import (
 
 func shortestSuperstring(A []string) string {
 	size := len(A)
+	indexs := make([]int, 0, size)
 	isUsed := make([]bool, size)
 	suffixes := getSuffixes(A)
 	res := strings.Repeat("?", 12*20+1)
 	for i := 0; i < size; i++ {
 		isUsed[i] = true
-		greedy(A[i], i, size-1, A, isUsed, suffixes, &res)
+		greedy(append(indexs, i), A, isUsed, suffixes, &res)
 		isUsed[i] = false
 	}
 	return res
 }
 
-// tailIndex 记录了 tmp 最后一个单词在 A 中的 index
 // 传入 suffixes 是为了避免重复多次计算两个单词之间的重叠关系
-func greedy(tmp string, tailIndex, countDown int, A []string, isUsed []bool, suffixes [][]int, minRes *string) {
-	if countDown == 0 {
+func greedy(indexs []int, A []string, isUsed []bool, suffixes [][]int, minRes *string) {
+	if len(indexs) == len(A) {
+		tmp := connect(A, indexs, suffixes)
 		if len(*minRes) > len(tmp) {
 			*minRes = tmp
 		}
 		return
 	}
 
+	tail := indexs[len(indexs)-1]
 	// get max suffix length of UNUSED string
 	maxLen := -1
-	lens := suffixes[tailIndex]
+	lens := suffixes[tail]
 	for i, sl := range lens {
 		if isUsed[i] {
 			continue
@@ -43,7 +45,7 @@ func greedy(tmp string, tailIndex, countDown int, A []string, isUsed []bool, suf
 			continue
 		}
 		isUsed[i] = true
-		greedy(tmp+A[i][sl:], i, countDown-1, A, isUsed, suffixes, minRes)
+		greedy(append(indexs, i), A, isUsed, suffixes, minRes)
 		isUsed[i] = false
 	}
 }
@@ -71,6 +73,21 @@ func suffix(a, b string) int {
 		i--
 	}
 	return i
+}
+
+func connect(A []string, indexs []int, suffixes [][]int) string {
+	size := len(A)
+	var sb strings.Builder
+	sb.Grow(240)
+	i := indexs[0]
+	sb.WriteString(A[i])
+	for k := 1; k < size; k++ {
+		j := indexs[k]
+		sl := suffixes[i][j]
+		sb.WriteString(A[j][sl:])
+		i = j
+	}
+	return sb.String()
 }
 
 func max(a, b int) int {
