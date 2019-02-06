@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 903,
-	"Updated": "2019-02-06T10:18:50.262974353+08:00",
+	"Updated": "2019-02-06T12:54:02.888667396+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 211,
@@ -12,11 +12,11 @@
 			"Total": 383
 		},
 		"Hard": {
-			"Solved": 156,
+			"Solved": 157,
 			"Total": 166
 		},
 		"Total": {
-			"Solved": 720,
+			"Solved": 721,
 			"Total": 777
 		}
 	},
@@ -4837,7 +4837,7 @@
 			"ID": 401,
 			"Title": "Binary Watch",
 			"TitleSlug": "binary-watch",
-			"PassRate": "44%",
+			"PassRate": "45%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -6145,7 +6145,7 @@
 			"ID": 510,
 			"Title": "Inorder Successor in BST II",
 			"TitleSlug": "inorder-successor-in-bst-ii",
-			"PassRate": "60%",
+			"PassRate": "61%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -9097,7 +9097,7 @@
 			"ID": 756,
 			"Title": "Pyramid Transition Matrix",
 			"TitleSlug": "pyramid-transition-matrix",
-			"PassRate": "49%",
+			"PassRate": "50%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9613,7 +9613,7 @@
 			"ID": 799,
 			"Title": "Champagne Tower",
 			"TitleSlug": "champagne-tower",
-			"PassRate": "32%",
+			"PassRate": "33%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10297,7 +10297,7 @@
 			"ID": 856,
 			"Title": "Score of Parentheses",
 			"TitleSlug": "score-of-parentheses",
-			"PassRate": "54%",
+			"PassRate": "55%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11343,7 +11343,7 @@
 			"TitleSlug": "find-the-shortest-superstring",
 			"PassRate": "33%",
 			"Difficulty": "Hard",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -11881,7 +11881,7 @@
 			"ID": 988,
 			"Title": "Smallest String Starting From Leaf",
 			"TitleSlug": "smallest-string-starting-from-leaf",
-			"PassRate": "51%",
+			"PassRate": "52%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
