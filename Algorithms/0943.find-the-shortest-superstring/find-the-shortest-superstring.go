@@ -46,13 +46,6 @@ func greedy(tmp string, endIndex, countDown int, A []string, isUsed []bool, suff
 	}
 }
 
-func max(a, b int) int {
-	if a > b {
-		return a
-	}
-	return b
-}
-
 // res[i][j] == 3 means A[j][:3] is A[i]'s suffix
 func getSuffixes(A []string) [][]int {
 	size := len(A)
@@ -70,9 +63,24 @@ func getSuffixes(A []string) [][]int {
 }
 
 func suffix(a, b string) int {
-	i := len(b)
+	// none is substring of another, so can -1
+	i := min(len(a), len(b)) - 1
 	for !strings.HasSuffix(a, b[:i]) {
 		i--
 	}
 	return i
+}
+
+func max(a, b int) int {
+	if a > b {
+		return a
+	}
+	return b
+}
+
+func min(a, b int) int {
+	if a < b {
+		return a
+	}
+	return b
 }
