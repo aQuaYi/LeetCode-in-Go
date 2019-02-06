@@ -6,13 +6,13 @@ import (
 
 func shortestSuperstring(A []string) string {
 	size := len(A)
-	res := strings.Repeat("?", 12*20+1)
 	isUsed := make([]bool, size)
-	rescur(A, isUsed, size, "", &res)
+	res := strings.Repeat("?", 12*20+1)
+	greedy("", size, A, isUsed, &res)
 	return res
 }
 
-func rescur(A []string, isUsed []bool, countDown int, tmp string, res *string) {
+func greedy(tmp string, countDown int, A []string, isUsed []bool, res *string) {
 	if countDown == 0 {
 		if len(*res) > len(tmp) {
 			*res = tmp
@@ -22,13 +22,12 @@ func rescur(A []string, isUsed []bool, countDown int, tmp string, res *string) {
 
 	maxLen := -1
 	lens := make([]int, len(A))
-
 	for i, str := range A {
 		if isUsed[i] {
 			continue
 		}
 		j := len(str)
-		for !strings.HasSuffix(tmp, str[:j]) {
+		for !strings.HasSuffix(tmp, str[:j]) { // heavy operation
 			j--
 		}
 		lens[i] = j
@@ -41,7 +40,7 @@ func rescur(A []string, isUsed []bool, countDown int, tmp string, res *string) {
 		}
 		isUsed[i] = true
 		s := A[i]
-		rescur(A, isUsed, countDown-1, tmp+s[j:], res)
+		greedy(tmp+s[j:], countDown-1, A, isUsed, res)
 		isUsed[i] = false
 	}
 }
