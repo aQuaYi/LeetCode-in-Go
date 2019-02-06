@@ -17,7 +17,9 @@ func shortestSuperstring(A []string) string {
 	return res
 }
 
-func greedy(tmp string, endIndex, countDown int, A []string, isUsed []bool, suffixes [][]int, minRes *string) {
+// tailIndex 记录了 tmp 最后一个单词在 A 中的 index
+// 传入 suffixes 是为了避免重复多次计算两个单词之间的重叠关系
+func greedy(tmp string, tailIndex, countDown int, A []string, isUsed []bool, suffixes [][]int, minRes *string) {
 	if countDown == 0 {
 		if len(*minRes) > len(tmp) {
 			*minRes = tmp
@@ -27,7 +29,7 @@ func greedy(tmp string, endIndex, countDown int, A []string, isUsed []bool, suff
 
 	// get max suffix length of UNUSED string
 	maxLen := -1
-	lens := suffixes[endIndex]
+	lens := suffixes[tailIndex]
 	for i, sl := range lens {
 		if isUsed[i] {
 			continue
