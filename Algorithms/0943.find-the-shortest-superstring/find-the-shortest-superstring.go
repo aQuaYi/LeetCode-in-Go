@@ -7,12 +7,17 @@ import (
 func shortestSuperstring(A []string) string {
 	size := len(A)
 	isUsed := make([]bool, size)
+	overlaps := getOverlaps(A)
 	res := strings.Repeat("?", 12*20+1)
-	greedy("", size, A, isUsed, &res)
+	for i := 0; i < size; i++ {
+		isUsed[i] = true
+		greedy(A[i], i, size-1, A, isUsed, overlaps, &res)
+		isUsed[i] = false
+	}
 	return res
 }
 
-func greedy(tmp string, countDown int, A []string, isUsed []bool, res *string) {
+func greedy(tmp string, last, countDown int, A []string, isUsed []bool, overlaps [][]int, res *string) {
 	if countDown == 0 {
 		if len(*res) > len(tmp) {
 			*res = tmp
@@ -21,27 +26,23 @@ func greedy(tmp string, countDown int, A []string, isUsed []bool, res *string) {
 	}
 
 	maxLen := -1
-	lens := make([]int, len(A))
-	for i, str := range A {
+	lens := overlaps[last]
+
+	for i, j := range lens {
 		if isUsed[i] {
 			continue
 		}
-		j := len(str)
-		for !strings.HasSuffix(tmp, str[:j]) { // heavy operation
-			j--
-		}
-		lens[i] = j
 		maxLen = max(maxLen, j)
 	}
 
-	for i, j := range lens {
-		if j < maxLen || isUsed[i] {
+	for j, ol := range lens {
+		if ol < maxLen || isUsed[j] {
 			continue
 		}
-		isUsed[i] = true
-		s := A[i]
-		greedy(tmp+s[j:], countDown-1, A, isUsed, res)
-		isUsed[i] = false
+		isUsed[j] = true
+		s := A[j]
+		greedy(tmp+s[ol:], j, countDown-1, A, isUsed, overlaps, res)
+		isUsed[j] = false
 	}
 }
 
@@ -50,4 +51,28 @@ func max(a, b int) int {
 		return a
 	}
 	return b
+}
+
+// res[i][j] == 3 means A[j][:3] is A[i]'s suffix
+func getOverlaps(A []string) [][]int {
+	size := len(A)
+	res := make([][]int, size)
+	for i := 0; i < size; i++ {
+		res[i] = make([]int, size)
+		for j := 0; j < size; j++ {
+			if i == j {
+				continue
+			}
+			res[i][j] = overlap(A[i], A[j])
+		}
+	}
+	return res
+}
+
+func overlap(a, b string) int {
+	i := len(b)
+	for !strings.HasSuffix(a, b[:i]) {
+		i--
+	}
+	return i
 }
