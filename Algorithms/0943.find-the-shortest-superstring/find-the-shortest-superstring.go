@@ -1,7 +1,6 @@
 package problem0943
 
 import (
-	"fmt"
 	"strings"
 )
 
@@ -10,7 +9,6 @@ func shortestSuperstring(A []string) string {
 	res := strings.Repeat("?", 12*20+1)
 	isUsed := make([]bool, size)
 	rescur(A, isUsed, size, "", &res)
-	fmt.Println(res)
 	return res
 }
 
@@ -22,21 +20,35 @@ func rescur(A []string, isUsed []bool, countDown int, tmp string, res *string) {
 		return
 	}
 
+	maxLen := -1
+	lens := make([]int, len(A))
+
 	for i, str := range A {
 		if isUsed[i] {
 			continue
 		}
-		isUsed[i] = true
-
 		j := len(str)
 		for !strings.HasSuffix(tmp, str[:j]) {
 			j--
 		}
-
-		rescur(A, isUsed, countDown-1, tmp+str[j:], res)
-
-		isUsed[i] = false
+		lens[i] = j
+		maxLen = max(maxLen, j)
 	}
 
-	return
+	for i, j := range lens {
+		if j < maxLen || isUsed[i] {
+			continue
+		}
+		isUsed[i] = true
+		s := A[i]
+		rescur(A, isUsed, countDown-1, tmp+s[j:], res)
+		isUsed[i] = false
+	}
+}
+
+func max(a, b int) int {
+	if a > b {
+		return a
+	}
+	return b
 }
