@@ -15,7 +15,7 @@ var tcs = []struct {
 
 	{
 		[]string{"cedefifgstkyxfcuajfa", "ooncedefifgstkyxfcua", "assqjfwarvjcjedqtoz", "fcuajfassqjfwarvjc", "fwarvjcjedqtozctcd", "zppedxfumcfsngp", "kyxfcuajfassqjfwa", "fumcfsngphjyfhhwkqa", "fassqjfwarvjcjedq", "ppedxfumcfsngphjyf", "dqtozctcdk"},
-		"yobbobwqymlordokxkamymamofefrmfycxifzsjllfoebgbsrgulsnatnpuuwiyba",
+		"ooncedefifgstkyxfcuajfassqjfwarvjcjedqtozctcdkzppedxfumcfsngphjyfhhwkqa",
 	},
 	{
 		[]string{"alex", "loves", "leetcode"},
