@@ -2,6 +2,7 @@ package problem0069
 
 import (
 	"fmt"
+	"math"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -62,5 +63,19 @@ func Test_Problem0069(t *testing.T) {
 		fmt.Printf("~~%v~~\n", p)
 
 		ast.Equal(a.one, mySqrt(p.x), "输入:%v", p)
+	}
+}
+
+func Benchmark_mySqrt(b *testing.B) {
+	n := 10000
+	for i := 1; i < b.N; i++ {
+		_ = mySqrt(n)
+	}
+}
+
+func Benchmark_math_sqrt(b *testing.B) {
+	n := 10000
+	for i := 1; i < b.N; i++ {
+		_ = int(math.Sqrt(float64(n)))
 	}
 }
