@@ -9,16 +9,16 @@ func largestComponentSize(A []int) int {
 
 	for i := 0; i < size; i++ {
 		a := A[i]
-		for p := 2; p*p <= a; p++ {
-			if a%p != 0 {
+		for f := 2; f*f <= a; f++ {
+			if a%f != 0 {
 				continue
 			}
-			if j, ok := rec[p]; ok {
+			if j, ok := rec[f]; ok {
 				u.union(i, j)
 			} else {
-				rec[p] = i
+				rec[f] = i
 			}
-			d := a / p
+			d := a / f
 			if j, ok := rec[d]; ok {
 				u.union(i, j)
 			} else {
