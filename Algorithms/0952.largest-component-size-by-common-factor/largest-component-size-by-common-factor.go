@@ -1,10 +1,32 @@
 package problem0952
 
-var primes = []int{2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199, 211, 223, 227, 229, 233, 239, 241, 251, 257, 263, 269, 271, 277, 281, 283, 293, 307, 311, 313, 317}
-
 func largestComponentSize(A []int) int {
 	size := len(A)
 	u := newUnion(size)
+
+	// 获取最大值
+	max := -1
+	for _, v := range A {
+		if max < v {
+			max = v
+		}
+	}
+
+	halfMax := max / 2
+
+	primes := []int{2, 3}
+	for i := 5; i <= halfMax; i += 2 {
+		isPrime := true
+		for _, p := range primes {
+			if i%p == 0 {
+				isPrime = false
+				break
+			}
+		}
+		if isPrime {
+			primes = append(primes, i)
+		}
+	}
 
 	for _, p := range primes {
 		i := 0
@@ -27,24 +49,24 @@ func largestComponentSize(A []int) int {
 // union-find (加权 quick-union)，还作了路径压缩优化
 
 type union struct {
-	id  []int // 父链接数组(由触点索引)
-	sz  []int // (由触点索引的) 各个根节点所对应的分量的大小
-	max int
+	parents []int // 父链接数组(由触点索引)
+	counts  []int // (由触点索引的) 各个根节点所对应的分量的大小
+	max     int
 }
 
 func newUnion(N int) *union {
-	id := make([]int, N)
-	for i := range id {
-		id[i] = i
+	parents := make([]int, N)
+	for i := range parents {
+		parents[i] = i
 	}
-	sz := make([]int, N)
-	for i := range sz {
-		sz[i] = 1
+	counts := make([]int, N)
+	for i := range counts {
+		counts[i] = 1
 	}
 	return &union{
-		id:  id,
-		sz:  sz,
-		max: 1,
+		parents: parents,
+		counts:  counts,
+		max:     1,
 	}
 }
 
@@ -54,10 +76,10 @@ func (u *union) isConnected(p, q int) bool {
 
 func (u *union) find(p int) int {
 	// 跟随连接找到根节点
-	for p != u.id[p] {
-		p = u.id[p]
+	if u.parents[p] != p {
+		u.parents[p] = u.find(u.parents[p])
 	}
-	return p
+	return u.parents[p]
 }
 
 func (u *union) union(p, q int) {
@@ -65,13 +87,15 @@ func (u *union) union(p, q int) {
 	if i == j {
 		return
 	}
-	if u.sz[i] > u.sz[j] {
+
+	if u.counts[i] > u.counts[j] {
 		i, j = j, i
 	}
+
 	// 将小树的根节点连接到大树的根节点
-	u.id[i] = j
-	u.sz[j] += u.sz[i]
-	u.max = max(u.max, u.sz[j])
+	u.parents[i] = j
+	u.counts[j] += u.counts[i]
+	u.max = max(u.max, u.counts[j])
 	return
 }
 
