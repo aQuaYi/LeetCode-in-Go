@@ -1,13 +1,17 @@
 package problem0952
 
+import "sort"
+
 func largestComponentSize(A []int) int {
 	size := len(A)
 	u := newUnion(size)
 
+	sort.Ints(A)
+
 	for i := 0; i < size-1; i++ {
 		for j := i + 1; j < size; j++ {
 			a, b := A[i], A[j]
-			if gcd(a, b) > 1 {
+			if u.isConnected(i, j) || gcd(a, b) > 1 {
 				u.union(i, j)
 			}
 		}
@@ -33,7 +37,7 @@ func gcd(a, b int) int {
 type union struct {
 	id  []int // 父链接数组(由触点索引)
 	sz  []int // (由触点索引的) 各个根节点所对应的分量的大小
-	max int   // 连通分量的数量
+	max int
 }
 
 func newUnion(N int) *union {
