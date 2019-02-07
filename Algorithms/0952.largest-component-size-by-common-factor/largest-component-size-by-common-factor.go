@@ -1,23 +1,14 @@
 package problem0952
 
-var primes = []int{2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199, 211, 223, 227, 229, 233, 239, 241, 251, 257, 263, 269, 271, 277, 281, 283, 293, 307, 311, 313}
-
 func largestComponentSize(A []int) int {
 	size := len(A)
 	u := newUnion(size)
-
-	// // TODO: 删除此处内容
-	// sort.Ints(A)
 
 	// rec = map[factor]index
 	rec := make(map[int]int, size*2)
 
 	for i := 0; i < size; i++ {
 		a := A[i]
-		// for _, p := range primes {
-		// if p*p > a {
-		// break
-		// }
 		for p := 2; p*p <= a; p++ {
 			if a%p != 0 {
 				continue
@@ -34,31 +25,13 @@ func largestComponentSize(A []int) int {
 				rec[d] = i
 			}
 		}
+		// a 本身还可以作为 factor
 		if j, ok := rec[a]; ok {
 			u.union(i, j)
 		} else {
 			rec[a] = i
 		}
 	}
-
-	// fmt.Println("===")
-	// for k, v := range rec {
-	// 	if k == 29 {
-	// 		fmt.Println(k, v)
-	// }
-	// }
-
-	// for i := 0; i < size; i++ {
-	// 	star := ""
-	// 	if u.parents[i] != 1 {
-	// 		star = "*"
-	// 	}
-	// 	ej := ""
-	// 	if A[i]%29 == 0 {
-	// 		ej = "$"
-	// 	}
-	// 	fmt.Println(i, u.parents[i], A[i], star, ej)
-	// }
 
 	return u.max
 }
@@ -86,10 +59,6 @@ func newUnion(N int) *union {
 		sizes:   counts,
 		max:     1,
 	}
-}
-
-func (u *union) isConnected(p, q int) bool {
-	return u.find(p) == u.find(q)
 }
 
 func (u *union) find(p int) int {
