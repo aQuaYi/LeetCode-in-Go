@@ -1,36 +1,26 @@
 package problem0952
 
-import "sort"
+var primes = []int{2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199, 211, 223, 227, 229, 233, 239, 241, 251, 257, 263, 269, 271, 277, 281, 283, 293, 307, 311, 313, 317}
 
 func largestComponentSize(A []int) int {
 	size := len(A)
 	u := newUnion(size)
 
-	sort.Ints(A)
+	for _, p := range primes {
+		i := 0
+		for i < size && A[i]%p != 0 {
+			i++
+		}
 
-	for i := 0; i < size-1; i++ {
 		for j := i + 1; j < size; j++ {
-			a, b := A[i], A[j]
-			m, n := u.find(i), u.find(j)
-			if m == n || gcd(a, b) == 1 {
+			if A[j]%p != 0 {
 				continue
 			}
-			u.union(m, n)
+			u.union(i, j)
 		}
 	}
 
 	return u.max
-}
-
-// Greatest Common Divisor(GCD)
-func gcd(a, b int) int {
-	if a < b {
-		return gcd(b, a)
-	}
-	for b != 0 {
-		a, b = b, a%b
-	}
-	return a
 }
 
 // Robert Sedgewick 算法（第4版） 1.5.2.7
@@ -70,7 +60,11 @@ func (u *union) find(p int) int {
 	return p
 }
 
-func (u *union) union(i, j int) {
+func (u *union) union(p, q int) {
+	i, j := u.find(p), u.find(q)
+	if i == j {
+		return
+	}
 	if u.sz[i] > u.sz[j] {
 		i, j = j, i
 	}
