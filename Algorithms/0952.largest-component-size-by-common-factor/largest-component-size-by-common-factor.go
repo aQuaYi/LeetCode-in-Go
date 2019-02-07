@@ -11,9 +11,11 @@ func largestComponentSize(A []int) int {
 	for i := 0; i < size-1; i++ {
 		for j := i + 1; j < size; j++ {
 			a, b := A[i], A[j]
-			if u.isConnected(i, j) || gcd(a, b) > 1 {
-				u.union(i, j)
+			m, n := u.find(i), u.find(j)
+			if m == n || gcd(a, b) == 1 {
+				continue
 			}
+			u.union(m, n)
 		}
 	}
 
@@ -68,11 +70,7 @@ func (u *union) find(p int) int {
 	return p
 }
 
-func (u *union) union(p, q int) {
-	i, j := u.find(p), u.find(q)
-	if i == j {
-		return
-	}
+func (u *union) union(i, j int) {
 	if u.sz[i] > u.sz[j] {
 		i, j = j, i
 	}
