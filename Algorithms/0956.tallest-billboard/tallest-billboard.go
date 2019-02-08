@@ -1,60 +1,38 @@
 package problem0956
 
-import "sort"
-
+// ref: https://leetcode.com/problems/tallest-billboard/discuss/203181/JavaC%2B%2BPython-DP-min(O(SN2)-O(3N2-*-N)
 func tallestBillboard(rods []int) int {
-	// size := len(rods)
-	sort.Ints(rods)
-
-	total := 0
-	for _, r := range rods {
-		total += r
+	dp := [5001]int{}
+	for d := 1; d < 5001; d++ {
+		dp[d] = -10000
 	}
-
-	wastage := 0
-	if total%2 == 1 {
-		wastage = 1
-	}
-
-	for wastage < total {
-		isUsed := [21]bool{}
-		sum := (total - wastage) / 2
-
-		if rescur(wastage, 0, -1, rods, &isUsed) &&
-			rescur(sum, 0, -1, rods, &isUsed) {
-			return sum
+	for _, x := range rods {
+		cur := dp
+		for d := 0; d+x < 5001; d++ {
+			dp[d+x] = max(dp[d+x], cur[d])
+			dp[abs(d-x)] = max(dp[abs(d-x)], cur[d]+min(d, x))
 		}
-
-		wastage += 2
 	}
-
-	return 0
+	return dp[0]
 }
 
-func rescur(goal, tmp, index int, rods []int, isUsed *[21]bool) bool {
-	if goal == tmp {
-		return true
+func abs(n int) int {
+	if n < 0 {
+		return -n
 	}
+	return n
+}
 
-	size := len(rods)
-
-	if goal < tmp || index == size {
-		return false
+func max(a, b int) int {
+	if a > b {
+		return a
 	}
+	return b
+}
 
-	for i := index + 1; i < size; i++ {
-		if goal < rods[i] {
-			break
-		}
-		if isUsed[i] {
-			continue
-		}
-		isUsed[i] = true
-		if rescur(goal, tmp+rods[i], i, rods, isUsed) {
-			return true
-		}
-		isUsed[i] = false
+func min(a, b int) int {
+	if a < b {
+		return a
 	}
-
-	return false
+	return b
 }
