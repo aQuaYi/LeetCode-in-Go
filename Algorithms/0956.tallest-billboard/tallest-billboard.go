@@ -3,7 +3,7 @@ package problem0956
 import "sort"
 
 func tallestBillboard(rods []int) int {
-	size := len(rods)
+	// size := len(rods)
 	sort.Ints(rods)
 
 	total := 0
@@ -17,11 +17,11 @@ func tallestBillboard(rods []int) int {
 	}
 
 	for wastage < total {
-		isUsed := make([]bool, size)
+		isUsed := [21]bool{}
 		sum := (total - wastage) / 2
 
-		if rescur(wastage, 0, -1, rods, isUsed) &&
-			rescur(sum, 0, -1, rods, isUsed) {
+		if rescur(wastage, 0, -1, rods, &isUsed) &&
+			rescur(sum, 0, -1, rods, &isUsed) {
 			return sum
 		}
 
@@ -31,7 +31,7 @@ func tallestBillboard(rods []int) int {
 	return 0
 }
 
-func rescur(goal, tmp, index int, rods []int, isUsed []bool) bool {
+func rescur(goal, tmp, index int, rods []int, isUsed *[21]bool) bool {
 	if goal == tmp {
 		return true
 	}
