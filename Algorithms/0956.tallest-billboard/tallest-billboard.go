@@ -7,6 +7,8 @@ const maxDiff = 5001
 func tallestBillboard(rods []int) int {
 	dp := [maxDiff]int{}
 	// a pair of sum (a, b) with a > b, then dp[a - b] = b
+	// 每次都用更大的值去更新 dp[diff]
+	// 最后想要求的解在 dp[0] 中
 	for d := 1; d < maxDiff; d++ {
 		dp[d] = -10000
 	}
