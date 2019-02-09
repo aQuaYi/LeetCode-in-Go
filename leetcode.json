@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 888,
-	"Updated": "2019-02-09T10:25:53.213345925+08:00",
+	"Updated": "2019-02-09T13:09:35.264547442+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 211,
@@ -12,11 +12,11 @@
 			"Total": 383
 		},
 		"Hard": {
-			"Solved": 159,
+			"Solved": 160,
 			"Total": 166
 		},
 		"Total": {
-			"Solved": 723,
+			"Solved": 724,
 			"Total": 777
 		}
 	},
@@ -3769,7 +3769,7 @@
 			"ID": 312,
 			"Title": "Burst Balloons",
 			"TitleSlug": "burst-balloons",
-			"PassRate": "45%",
+			"PassRate": "46%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -6793,7 +6793,7 @@
 			"ID": 564,
 			"Title": "Find the Closest Palindrome",
 			"TitleSlug": "find-the-closest-palindrome",
-			"PassRate": "18%",
+			"PassRate": "17%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -7813,7 +7813,7 @@
 			"ID": 649,
 			"Title": "Dota2 Senate",
 			"TitleSlug": "dota2-senate",
-			"PassRate": "36%",
+			"PassRate": "37%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -8809,7 +8809,7 @@
 			"ID": 732,
 			"Title": "My Calendar III",
 			"TitleSlug": "my-calendar-iii",
-			"PassRate": "52%",
+			"PassRate": "53%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11787,7 +11787,7 @@
 			"TitleSlug": "unique-paths-iii",
 			"PassRate": "72%",
 			"Difficulty": "Hard",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
