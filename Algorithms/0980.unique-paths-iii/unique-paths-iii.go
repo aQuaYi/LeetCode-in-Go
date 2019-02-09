@@ -16,6 +16,7 @@ func uniquePathsIII(grid [][]int) int {
 			case 0:
 				target |= 1 << uint(i*n+j)
 			case 1:
+				target |= 1 << uint(i*n+j)
 				queue = append(queue, [2]int{i, j})
 				paths = append(paths, 1<<uint(i*n+j))
 			}
@@ -34,7 +35,7 @@ func uniquePathsIII(grid [][]int) int {
 				i, j := x+dx[k], y+dy[k]
 				if i < 0 || m <= i ||
 					j < 0 || n <= j ||
-					path&(1<<uint(i*n+j)) == 1 { // has Walked over
+					path&(1<<uint(i*n+j)) != 0 { // has Walked over
 					continue
 				}
 				switch grid[i][j] {
