@@ -2,7 +2,7 @@ package problem0956
 
 // ref: https://leetcode.com/problems/tallest-billboard/discuss/203181/JavaC%2B%2BPython-DP-min(O(SN2)-O(3N2-*-N)
 
-const maxDiff = 500up	1
+const maxDiff = 5001
 
 func tallestBillboard(rods []int) int {
 	dp := [maxDiff]int{}
