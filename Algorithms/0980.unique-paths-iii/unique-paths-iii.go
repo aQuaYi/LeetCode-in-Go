@@ -6,8 +6,8 @@ var dy = []int{1, -1, 0, 0}
 func uniquePathsIII(grid [][]int) int {
 	m, n := len(grid), len(grid[0])
 
-	queue := make([][2]int, 0, m*n*4)
-	paths := make([]int, 0, m*n*4)
+	queue := make([][2]int, 0, m*n*10)
+	paths := make([]int, 0, m*n*10)
 	target := 0
 
 	for i := 0; i < m; i++ {
@@ -26,6 +26,7 @@ func uniquePathsIII(grid [][]int) int {
 	count := 0
 
 	// BFS
+	// the change of every path in paths is unique
 	for len(queue) > 0 {
 		size := len(queue)
 		for s := 0; s < size; s++ {
