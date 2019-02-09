@@ -9,23 +9,24 @@ func shortestSuperstring(A []string) string {
 	indexs := make([]int, 0, size)
 	isUsed := make([]bool, size)
 	suffixes := getSuffixes(A)
-	res := strings.Repeat("?", 12*20+1)
+	res := make([]int, size)
+	minLen := 240
 	for i := 0; i < size; i++ {
 		isUsed[i] = true
-		greedy(append(indexs, i), len(A[i]), A, isUsed, suffixes, &res)
+		greedy(append(indexs, i), len(A[i]), A, isUsed, suffixes, res, &minLen)
 		isUsed[i] = false
 	}
-	return res
+	return connect(A, res, suffixes)
 }
 
 // indexs 按顺序记录了 super string 中单词的 index
 // length 记录了 super string 的长度
 // 传入 suffixes 是为了避免重复多次计算两个单词之间的重叠关系
-func greedy(indexs []int, length int, A []string, isUsed []bool, suffixes [][]int, minRes *string) {
+func greedy(indexs []int, length int, A []string, isUsed []bool, suffixes [][]int, res []int, minLen *int) {
 	if len(indexs) == len(A) {
-		if len(*minRes) > length {
-			// NOTICE: 只有在确定找到了更短的 super string 时，才把它拼接出来。
-			*minRes = connect(A, indexs, suffixes)
+		if *minLen > length {
+			*minLen = length
+			copy(res, indexs)
 		}
 		return
 	}
@@ -47,7 +48,7 @@ func greedy(indexs []int, length int, A []string, isUsed []bool, suffixes [][]in
 			continue
 		}
 		isUsed[i] = true
-		greedy(append(indexs, i), length+len(A[i])-maxLen, A, isUsed, suffixes, minRes)
+		greedy(append(indexs, i), length+len(A[i])-maxLen, A, isUsed, suffixes, res, minLen)
 		isUsed[i] = false
 	}
 }
