@@ -45,7 +45,17 @@ func getKeeps(s string) [][]int {
 		}
 	}
 
-	return res
+	t := make([][]int, 0, size)
+	for i := 0; i < len(res); i++ {
+		for j := i + 1; j < len(res); j++ {
+			set := intersection(res[i], res[j])
+			if len(set) > 0 {
+				t = append(t, set)
+			}
+		}
+	}
+
+	return append(res, t...)
 
 }
 
@@ -60,4 +70,23 @@ func isLexicographic(s string, keep []int) bool {
 		a = b
 	}
 	return true
+}
+
+func intersection(a, b []int) []int {
+	res := make([]int, 0, 100)
+	i, j := 0, 0
+	for i < len(a) && j < len(b) {
+		m, n := a[i], b[j]
+		switch {
+		case m < n:
+			i++
+		case m > n:
+			j++
+		default:
+			res = append(res, m)
+			i++
+			j++
+		}
+	}
+	return res
 }
