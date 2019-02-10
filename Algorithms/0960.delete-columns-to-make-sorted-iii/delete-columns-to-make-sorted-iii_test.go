@@ -32,6 +32,22 @@ var tcs = []struct {
 		0,
 	},
 
+	{
+		[]string{
+			"deehdecfcgegffegghfhfaagcaaffbfahcfaghgdfggbbddbff",
+			"dchhgcbahdbdgbbaafhbgfggcbebfacdebhfgcfaafcgbgbggg",
+			"hehdggagfabdfbhegebhaaddcaghhegeegdgegagehhdhheecd",
+			"fhbbagbdffedafacbeahddbgagggdafceeabaffhhhhcedcfbh",
+			"caaefgdgefeahcgfgccaacdfabdgdbdhdbhbhfadbeaegbbdce",
+			"habgbahaeebeacccbdhfhddegfebheeffdbcbgfahhgbhcheeb",
+			"gfaaedgcachcehgdghebbhegbfagdgcdcgebddbdccbedbbhcd",
+			"badaebdbdgeadbfgchaegaddgdhdgaeaaedagacgbdecfdghca",
+			"eefcceffcggeefbecaceadbdcfccgbfgffgahfgeebafdcfhhb",
+			"aeebdahabfecbafgbcchbhdeecaadaccbahghcbdcfaeagehha",
+		},
+		48,
+	},
+
 	// 可以有多个 testcase
 }
 
