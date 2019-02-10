@@ -8,24 +8,25 @@ func minDeletionSize(A []string) int {
 
 	dp := make([]int, n)
 	// dp[i] means the longest subsequence ends with i-th element.
-	// For all j < i, if A[][j] < A[][i], then dp[j] = max(dp[j], dp[i] + 1)
+	// For all j < i, if A[][j] <= A[][i], then dp[i] = max(dp[i], dp[j] + 1)
 	for i := 0; i < n; i++ {
 		dp[i] = 1
 	}
 
-	for j := 0; j < n; j++ {
-		for i := 0; i < j; i++ {
+	for i := 0; i < n; i++ {
+		for j := 0; j < i; j++ {
 			k := 0
 			for ; k < m; k++ {
-				if A[k][i] > A[k][j] {
+				if A[k][j] > A[k][i] {
 					break
 				}
 			}
-			if k == m && dp[i]+1 > dp[j] {
-				dp[j] = dp[i] + 1
+			if k == m && // compared all strings
+				dp[i] < dp[j]+1 { // find longer sub string
+				dp[i] = dp[j] + 1
 			}
 		}
-		res = min(res, n-dp[j])
+		res = min(res, n-dp[i])
 	}
 
 	return res
