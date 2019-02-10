@@ -32,9 +32,9 @@ func getKeeps(s string) [][]int {
 
 	for i := 1; i < size; i++ {
 		isAdded := false
-		for _, r := range res {
-			if s[r[len(r)-1]] <= s[i] {
-				r = append(r, i)
+		for j := range res {
+			if s[res[j][len(res[j])-1]] <= s[i] {
+				res[j] = append(res[j], i)
 				isAdded = true
 			}
 		}
