@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 924,
-	"Updated": "2019-02-22T21:28:08.902580585+08:00",
+	"Updated": "2019-02-22T22:06:51.144529949+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 210,
+			"Solved": 211,
 			"Total": 230
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 169
 		},
 		"Total": {
-			"Solved": 725,
+			"Solved": 726,
 			"Total": 785
 		}
 	},
@@ -11319,7 +11319,7 @@
 			"TitleSlug": "valid-mountain-array",
 			"PassRate": "34%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
