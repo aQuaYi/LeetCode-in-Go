@@ -11,9 +11,11 @@ func validMountainArray(A []int) bool {
 		i++
 	}
 
+	index := i
+
 	for i < size && A[i-1] > A[i] {
 		i++
 	}
 
-	return i == size
+	return index < i && i == size
 }
