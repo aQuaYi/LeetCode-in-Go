@@ -17,5 +17,5 @@ func validMountainArray(A []int) bool {
 		i++
 	}
 
-	return index < i && i == size
+	return 1 < index && index < i && i == size
 }
