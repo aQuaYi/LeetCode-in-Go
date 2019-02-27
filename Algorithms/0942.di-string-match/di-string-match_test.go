@@ -8,33 +8,48 @@ import (
 
 // tcs is testcase slice
 var tcs = []struct {
-	S   string
-	ans []int
+	S string
 }{
 
 	{
 		"IDID",
-		[]int{0, 4, 1, 3, 2},
 	},
 
 	{
 		"III",
-		[]int{0, 1, 2, 3},
 	},
 
 	{
 		"DDI",
-		[]int{3, 2, 0, 1},
 	},
 
 	// 可以有多个 testcase
+}
+
+func isCorrect(s string, a []int) bool {
+	for i, b := range s {
+		switch b {
+		case 'I':
+			if !(a[i] < a[i+1]) {
+				return false
+			}
+		case 'D':
+			if !(a[i] > a[i+1]) {
+				return false
+			}
+		default:
+			panic("s contain not only I and D")
+		}
+	}
+	return true
 }
 
 func Test_diStringMatch(t *testing.T) {
 	ast := assert.New(t)
 
 	for _, tc := range tcs {
-		ast.Equal(tc.ans, diStringMatch(tc.S), "输入:%v", tc)
+		a := diStringMatch(tc.S)
+		ast.True(isCorrect(tc.S, a))
 	}
 }
 
