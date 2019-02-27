@@ -1,5 +1,6 @@
 {
 	"Username": "aQuaYi",
+<<<<<<< HEAD
 	"Ranking": 934,
 	"Updated": "2019-02-27T16:00:39.359913441+08:00",
 	"Record": {
@@ -18,6 +19,26 @@
 		"Total": {
 			"Solved": 726,
 			"Total": 789
+=======
+	"Ranking": 924,
+	"Updated": "2019-02-22T22:06:51.144529949+08:00",
+	"Record": {
+		"Easy": {
+			"Solved": 211,
+			"Total": 230
+		},
+		"Medium": {
+			"Solved": 354,
+			"Total": 386
+		},
+		"Hard": {
+			"Solved": 161,
+			"Total": 169
+		},
+		"Total": {
+			"Solved": 726,
+			"Total": 785
+>>>>>>> daf6003bf5e46a17388314a63b83604a5c9eace5
 		}
 	},
 	"Problems": [
@@ -217,7 +238,11 @@
 			"ID": 16,
 			"Title": "3Sum Closest",
 			"TitleSlug": "3sum-closest",
+<<<<<<< HEAD
 			"PassRate": "39%",
+=======
+			"PassRate": "37%",
+>>>>>>> daf6003bf5e46a17388314a63b83604a5c9eace5
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -7873,7 +7898,11 @@
 			"ID": 654,
 			"Title": "Maximum Binary Tree",
 			"TitleSlug": "maximum-binary-tree",
+<<<<<<< HEAD
 			"PassRate": "75%",
+=======
+			"PassRate": "74%",
+>>>>>>> daf6003bf5e46a17388314a63b83604a5c9eace5
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -8941,7 +8970,11 @@
 			"ID": 743,
 			"Title": "Network Delay Time",
 			"TitleSlug": "network-delay-time",
+<<<<<<< HEAD
 			"PassRate": "40%",
+=======
+			"PassRate": "39%",
+>>>>>>> daf6003bf5e46a17388314a63b83604a5c9eace5
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10585,7 +10618,7 @@
 			"ID": 880,
 			"Title": "Decoded String at Index",
 			"TitleSlug": "decoded-string-at-index",
-			"PassRate": "22%",
+			"PassRate": "23%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11593,7 +11626,7 @@
 			"ID": 964,
 			"Title": "Least Operators to Express Number",
 			"TitleSlug": "least-operators-to-express-number",
-			"PassRate": "39%",
+			"PassRate": "40%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -11713,7 +11746,11 @@
 			"ID": 974,
 			"Title": "Subarray Sums Divisible by K",
 			"TitleSlug": "subarray-sums-divisible-by-k",
+<<<<<<< HEAD
 			"PassRate": "41%",
+=======
+			"PassRate": "40%",
+>>>>>>> daf6003bf5e46a17388314a63b83604a5c9eace5
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -11917,7 +11954,11 @@
 			"ID": 991,
 			"Title": "Broken Calculator",
 			"TitleSlug": "broken-calculator",
+<<<<<<< HEAD
 			"PassRate": "38%",
+=======
+			"PassRate": "37%",
+>>>>>>> daf6003bf5e46a17388314a63b83604a5c9eace5
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -11941,7 +11982,11 @@
 			"ID": 993,
 			"Title": "Cousins in Binary Tree",
 			"TitleSlug": "cousins-in-binary-tree",
+<<<<<<< HEAD
 			"PassRate": "53%",
+=======
+			"PassRate": "54%",
+>>>>>>> daf6003bf5e46a17388314a63b83604a5c9eace5
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -11965,6 +12010,7 @@
 			"ID": 995,
 			"Title": "Minimum Number of K Consecutive Bit Flips",
 			"TitleSlug": "minimum-number-of-k-consecutive-bit-flips",
+<<<<<<< HEAD
 			"PassRate": "51%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
@@ -12038,11 +12084,26 @@
 			"Title": "Grid Illumination",
 			"TitleSlug": "grid-illumination",
 			"PassRate": "32%",
+=======
+			"PassRate": "50%",
+>>>>>>> daf6003bf5e46a17388314a63b83604a5c9eace5
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
 			"IsFavor": false,
-			"IsNew": true,
+			"IsNew": false,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 996,
+			"Title": "Number of Squareful Arrays",
+			"TitleSlug": "number-of-squareful-arrays",
+			"PassRate": "46%",
+			"Difficulty": "Hard",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": false,
 			"HasNoGoOption": false
 		}
 	]
