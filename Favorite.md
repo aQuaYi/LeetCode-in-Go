@@ -169,11 +169,7 @@
 |[0645](https://leetcode.com/problems/set-mismatch/)|[Set Mismatch](./Algorithms/0645.set-mismatch)|40%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |[0647](https://leetcode.com/problems/palindromic-substrings/)|[Palindromic Substrings](./Algorithms/0647.palindromic-substrings)|55%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0649](https://leetcode.com/problems/dota2-senate/)|[Dota2 Senate](./Algorithms/0649.dota2-senate)|37%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-<<<<<<< HEAD
 |[0654](https://leetcode.com/problems/maximum-binary-tree/)|[Maximum Binary Tree](./Algorithms/0654.maximum-binary-tree)|75%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-=======
-|[0654](https://leetcode.com/problems/maximum-binary-tree/)|[Maximum Binary Tree](./Algorithms/0654.maximum-binary-tree)|74%|Medium|[❤](https://leetcode.com/list/oussv5j)|
->>>>>>> daf6003bf5e46a17388314a63b83604a5c9eace5
 |[0658](https://leetcode.com/problems/find-k-closest-elements/)|[Find K Closest Elements](./Algorithms/0658.find-k-closest-elements)|37%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0659](https://leetcode.com/problems/split-array-into-consecutive-subsequences/)|[Split Array into Consecutive Subsequences](./Algorithms/0659.split-array-into-consecutive-subsequences)|39%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0664](https://leetcode.com/problems/strange-printer/)|[Strange Printer](./Algorithms/0664.strange-printer)|35%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -266,25 +262,13 @@
 |[0919](https://leetcode.com/problems/complete-binary-tree-inserter/)|[Complete Binary Tree Inserter](./Algorithms/0919.complete-binary-tree-inserter)|54%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0920](https://leetcode.com/problems/number-of-music-playlists/)|[Number of Music Playlists](./Algorithms/0920.number-of-music-playlists)|42%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0921](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/)|[Minimum Add to Make Parentheses Valid](./Algorithms/0921.minimum-add-to-make-parentheses-valid)|69%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-<<<<<<< HEAD
 |[0923](https://leetcode.com/problems/3sum-with-multiplicity/)|[3Sum With Multiplicity](./Algorithms/0923.3sum-with-multiplicity)|32%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0932](https://leetcode.com/problems/beautiful-array/)|[Beautiful Array](./Algorithms/0932.beautiful-array)|51%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-=======
-|[0923](https://leetcode.com/problems/3sum-with-multiplicity/)|[3Sum With Multiplicity](./Algorithms/0923.3sum-with-multiplicity)|31%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|[0932](https://leetcode.com/problems/beautiful-array/)|[Beautiful Array](./Algorithms/0932.beautiful-array)|50%|Medium|[❤](https://leetcode.com/list/oussv5j)|
->>>>>>> daf6003bf5e46a17388314a63b83604a5c9eace5
 |[0936](https://leetcode.com/problems/stamping-the-sequence/)|[Stamping The Sequence](./Algorithms/0936.stamping-the-sequence)|35%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0939](https://leetcode.com/problems/minimum-area-rectangle/)|[Minimum Area Rectangle](./Algorithms/0939.minimum-area-rectangle)|49%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0940](https://leetcode.com/problems/distinct-subsequences-ii/)|[Distinct Subsequences II](./Algorithms/0940.distinct-subsequences-ii)|37%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0943](https://leetcode.com/problems/find-the-shortest-superstring/)|[Find the Shortest Superstring](./Algorithms/0943.find-the-shortest-superstring)|34%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-<<<<<<< HEAD
 |[0952](https://leetcode.com/problems/largest-component-size-by-common-factor/)|[Largest Component Size by Common Factor](./Algorithms/0952.largest-component-size-by-common-factor)|25%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0956](https://leetcode.com/problems/tallest-billboard/)|[Tallest Billboard](./Algorithms/0956.tallest-billboard)|37%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0960](https://leetcode.com/problems/delete-columns-to-make-sorted-iii/)|[Delete Columns to Make Sorted III](./Algorithms/0960.delete-columns-to-make-sorted-iii)|52%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0980](https://leetcode.com/problems/unique-paths-iii/)|[Unique Paths III](./Algorithms/0980.unique-paths-iii)|73%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-=======
-|[0952](https://leetcode.com/problems/largest-component-size-by-common-factor/)|[Largest Component Size by Common Factor](./Algorithms/0952.largest-component-size-by-common-factor)|24%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|[0956](https://leetcode.com/problems/tallest-billboard/)|[Tallest Billboard](./Algorithms/0956.tallest-billboard)|37%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|[0960](https://leetcode.com/problems/delete-columns-to-make-sorted-iii/)|[Delete Columns to Make Sorted III](./Algorithms/0960.delete-columns-to-make-sorted-iii)|51%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|[0980](https://leetcode.com/problems/unique-paths-iii/)|[Unique Paths III](./Algorithms/0980.unique-paths-iii)|72%|Hard|[❤](https://leetcode.com/list/oussv5j)|
->>>>>>> daf6003bf5e46a17388314a63b83604a5c9eace5
