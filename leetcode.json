@@ -1,15 +1,10 @@
 {
 	"Username": "aQuaYi",
-<<<<<<< HEAD
 	"Ranking": 937,
-	"Updated": "2019-02-27T20:42:49.634751256+08:00",
-=======
-	"Ranking": 934,
-	"Updated": "2019-02-27T16:06:06.792844734+08:00",
->>>>>>> 349ebbf717e53102cc1040c9991db85229024dc2
+	"Updated": "2019-02-27T21:18:31.782351496+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 210,
+			"Solved": 211,
 			"Total": 231
 		},
 		"Medium": {
@@ -21,7 +16,7 @@
 			"Total": 171
 		},
 		"Total": {
-			"Solved": 726,
+			"Solved": 727,
 			"Total": 789
 		}
 	},
@@ -222,11 +217,7 @@
 			"ID": 16,
 			"Title": "3Sum Closest",
 			"TitleSlug": "3sum-closest",
-<<<<<<< HEAD
 			"PassRate": "40%",
-=======
-			"PassRate": "39%",
->>>>>>> 349ebbf717e53102cc1040c9991db85229024dc2
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -5770,7 +5761,7 @@
 			"ID": 478,
 			"Title": "Generate Random Point in a Circle",
 			"TitleSlug": "generate-random-point-in-a-circle",
-			"PassRate": "36%",
+			"PassRate": "35%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10258,7 +10249,7 @@
 			"ID": 852,
 			"Title": "Peak Index in a Mountain Array",
 			"TitleSlug": "peak-index-in-a-mountain-array",
-			"PassRate": "69%",
+			"PassRate": "68%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11340,7 +11331,7 @@
 			"TitleSlug": "di-string-match",
 			"PassRate": "70%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -11554,7 +11545,7 @@
 			"ID": 960,
 			"Title": "Delete Columns to Make Sorted III",
 			"TitleSlug": "delete-columns-to-make-sorted-iii",
-			"PassRate": "52%",
+			"PassRate": "51%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
