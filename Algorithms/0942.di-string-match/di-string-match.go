@@ -4,12 +4,12 @@ func diStringMatch(S string) []int {
 	size := len(S)
 	i, l, r := 0, 0, size
 	a := make([]int, size+1)
+	bytes := []byte(S)
 	for i < size {
-		switch S[i] {
-		case 'I':
+		if bytes[i] == 'I' {
 			a[i] = l
 			l++
-		case 'D':
+		} else {
 			a[i] = r
 			r--
 		}
