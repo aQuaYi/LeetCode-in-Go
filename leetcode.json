@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 932,
-	"Updated": "2019-02-28T20:45:48.518497191+08:00",
+	"Updated": "2019-02-28T21:02:35.763864044+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 211,
+			"Solved": 212,
 			"Total": 231
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 171
 		},
 		"Total": {
-			"Solved": 727,
+			"Solved": 728,
 			"Total": 789
 		}
 	},
@@ -5761,7 +5761,7 @@
 			"ID": 478,
 			"Title": "Generate Random Point in a Circle",
 			"TitleSlug": "generate-random-point-in-a-circle",
-			"PassRate": "35%",
+			"PassRate": "36%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11355,7 +11355,7 @@
 			"TitleSlug": "delete-columns-to-make-sorted",
 			"PassRate": "69%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
