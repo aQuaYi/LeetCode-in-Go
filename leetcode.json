@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 925,
-	"Updated": "2019-03-01T20:43:41.501468162+08:00",
+	"Updated": "2019-03-01T21:32:38.291214943+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 212,
 			"Total": 231
 		},
 		"Medium": {
-			"Solved": 354,
+			"Solved": 355,
 			"Total": 387
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 171
 		},
 		"Total": {
-			"Solved": 728,
+			"Solved": 729,
 			"Total": 789
 		}
 	},
@@ -8797,7 +8797,7 @@
 			"ID": 731,
 			"Title": "My Calendar II",
 			"TitleSlug": "my-calendar-ii",
-			"PassRate": "42%",
+			"PassRate": "43%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11367,9 +11367,9 @@
 			"TitleSlug": "minimum-increment-to-make-array-unique",
 			"PassRate": "42%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
