@@ -1,20 +1,29 @@
 package problem0945
 
-import "sort"
-
 func minIncrementForUnique(A []int) int {
+	counts := [40001]int{}
+	max := 0
 
-	sort.Ints(A)
-
-	size := len(A)
-	res := 0
-	for i := 1; i < size; i++ {
-		d := A[i-1] - A[i] + 1
-		if d > 0 {
-			res += d
-			A[i] += d
+	for _, n := range A {
+		counts[n]++
+		if max < n {
+			max = n
 		}
 	}
+
+	res := 0
+
+	for n := 0; n < max; n++ {
+		if counts[n] <= 1 {
+			continue
+		}
+		redundance := counts[n] - 1
+		res += redundance
+		counts[n+1] += redundance
+	}
+
+	redundance := counts[max] - 1
+	res += (redundance + 1) * redundance / 2
 
 	return res
 }
