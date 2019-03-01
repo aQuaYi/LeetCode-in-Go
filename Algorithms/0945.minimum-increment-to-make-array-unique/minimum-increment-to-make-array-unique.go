@@ -14,10 +14,11 @@ func minIncrementForUnique(A []int) int {
 	res := 0
 
 	for n := 0; n < max; n++ {
-		if counts[n] <= 1 {
+		if counts[n] <= 1 { // no redundance
 			continue
 		}
 		redundance := counts[n] - 1
+		// move all redundance to n+1
 		res += redundance
 		counts[n+1] += redundance
 	}
