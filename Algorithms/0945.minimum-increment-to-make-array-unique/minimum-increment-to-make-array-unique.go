@@ -1,18 +1,20 @@
 package problem0945
 
-import "sort"
-
 func minIncrementForUnique(A []int) int {
+	rec := [80000]bool{}
 
-	sort.Ints(A)
+	rec[A[0]] = true
 
 	size := len(A)
 	res := 0
+
 	for i := 1; i < size; i++ {
-		for A[i-1] >= A[i] {
-			A[i]++
+		n := A[i]
+		for rec[n] {
+			n++
 			res++
 		}
+		rec[n] = true
 	}
 
 	return res
