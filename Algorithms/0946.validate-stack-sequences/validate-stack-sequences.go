@@ -2,21 +2,20 @@ package problem0946
 
 func validateStackSequences(pushed, popped []int) bool {
 	size := len(pushed)
-	in, out, s := 0, 0, 0
-	stack := make([]int, size)
+	top, in, out := -1, 0, 0
 
-	for in = 0; in < size && out < size; in++ {
+	for in < size {
 		if pushed[in] == popped[out] {
 			out++
-			for s > 0 && stack[s-1] == popped[out] {
-				s--
+			for top >= 0 && pushed[top] == popped[out] {
+				top--
 				out++
 			}
-			continue
+		} else {
+			top++
 		}
-		stack[s] = pushed[in]
-		s++
+		in++
 	}
 
-	return s == 0 && out == size
+	return top == -1 && out == size
 }
