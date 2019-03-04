@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 927,
-	"Updated": "2019-03-04T20:02:41.710883179+08:00",
+	"Updated": "2019-03-04T20:58:45.420931508+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 212,
 			"Total": 232
 		},
 		"Medium": {
-			"Solved": 355,
+			"Solved": 356,
 			"Total": 389
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 172
 		},
 		"Total": {
-			"Solved": 729,
+			"Solved": 730,
 			"Total": 793
 		}
 	},
@@ -11379,7 +11379,7 @@
 			"TitleSlug": "validate-stack-sequences",
 			"PassRate": "57%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
