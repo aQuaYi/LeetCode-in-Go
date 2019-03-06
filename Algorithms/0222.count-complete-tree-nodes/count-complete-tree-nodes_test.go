@@ -11,6 +11,12 @@ var questions = []struct {
 	count   int
 }{
 	{
+		[]int{},
+		[]int{},
+		0,
+	},
+
+	{
 		[]int{1, 2, 4, 5, 3, 6},
 		[]int{4, 2, 5, 1, 6, 3},
 		6,
