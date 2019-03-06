@@ -1,28 +1,25 @@
 package problem0222
 
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
-}
+import (
+	"github.com/aQuaYi/LeetCode-in-Go/kit"
+)
+
+// TreeNode is predefined in kit
+type TreeNode = kit.TreeNode
 
 func countNodes(root *TreeNode) int {
-	if root == nil {
-		return 0
-	}
-
 	count := 0
 	traverse(root, &count)
 	return count
 }
 
-func traverse(node *TreeNode, count *int) {
-	if node == nil {
+func traverse(n *TreeNode, count *int) {
+	if n == nil {
 		return
 	}
 
 	*count++
 
-	traverse(node.Left, count)
-	traverse(node.Right, count)
+	traverse(n.Left, count)
+	traverse(n.Right, count)
 }
