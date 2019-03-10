@@ -42,7 +42,7 @@ func (u *union) find(i int) int {
 	return u.parent[i]
 }
 
-func (u *union) union(p, q int) {
-	i, j := u.find(p), u.find(q)
-	u.parent[j] = i
+func (u *union) union(x, y int) {
+	xp, yp := u.find(x), u.find(y)
+	u.parent[yp] = xp
 }
