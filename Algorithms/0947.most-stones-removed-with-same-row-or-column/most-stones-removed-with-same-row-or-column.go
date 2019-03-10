@@ -1,64 +1,45 @@
 package problem0947
 
 func removeStones(stones [][]int) int {
-	u := newUnion()
+	u := newUnion(20000)
 
 	for _, s := range stones {
 		u.union(s[0], s[1]+10000)
 	}
 
-	mark := make(map[int]int, 1000)
+	roots := make(map[int]int, 1000)
 
 	for _, s := range stones {
-		parent := u.find(s[0])
-		mark[parent]++
+		root := u.find(s[0])
+		roots[root]++
 	}
 
-	return len(stones) - len(mark)
+	return len(stones) - len(roots)
 }
 
-// Robert Sedgewick 算法（第4版） 1.5.2.7
-// union-find (加权 quick-union)，还作了路径压缩优化
-
-// union is ...
 type union struct {
-	root [20000]int // 父链接数组(由触点索引)
-	size [20000]int // (由触点索引的) 各个根节点所对应的分量的大小
+	parent []int // 父链接数组(由触点索引)
 }
 
-func newUnion() *union {
-	root := [20000]int{}
-	for i := range root {
-		root[i] = i
-	}
-	size := [20000]int{}
-	for i := range size {
-		size[i] = 1
+func newUnion(size int) *union {
+	p := make([]int, size)
+	for i := range p {
+		p[i] = i
 	}
 	return &union{
-		root: root,
-		size: size,
+		parent: p,
 	}
 }
 
-func (u *union) find(p int) int {
-	// 跟随连接找到根节点
-	for p != u.root[p] {
-		p = u.root[p]
+func (u *union) find(i int) int {
+	if u.parent[i] == i {
+		return i
 	}
-	return p
+	u.parent[i] = u.find(u.parent[i])
+	return u.parent[i]
 }
 
 func (u *union) union(p, q int) {
 	i, j := u.find(p), u.find(q)
-	if i == j {
-		return
-	}
-	if u.size[i] > u.size[j] {
-		i, j = j, i
-	}
-	// 将小树的根节点连接到大树的根节点
-	u.root[i] = j
-	u.size[j] += u.size[i]
-	return
+	u.parent[j] = i
 }
