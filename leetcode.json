@@ -1,22 +1,22 @@
 {
 	"Username": "aQuaYi",
-	"Ranking": 924,
-	"Updated": "2019-03-10T16:27:34.57962063+08:00",
+	"Ranking": 926,
+	"Updated": "2019-03-10T19:33:42.3763514+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 211,
-			"Total": 232
+			"Total": 231
 		},
 		"Medium": {
-			"Solved": 358,
-			"Total": 393
+			"Solved": 359,
+			"Total": 394
 		},
 		"Hard": {
 			"Solved": 162,
 			"Total": 172
 		},
 		"Total": {
-			"Solved": 731,
+			"Solved": 732,
 			"Total": 797
 		}
 	},
@@ -145,7 +145,7 @@
 			"ID": 10,
 			"Title": "Regular Expression Matching",
 			"TitleSlug": "regular-expression-matching",
-			"PassRate": "25%",
+			"PassRate": "24%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10825,7 +10825,7 @@
 			"ID": 900,
 			"Title": "RLE Iterator",
 			"TitleSlug": "rle-iterator",
-			"PassRate": "48%",
+			"PassRate": "49%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10861,7 +10861,7 @@
 			"ID": 903,
 			"Title": "Valid Permutations for DI Sequence",
 			"TitleSlug": "valid-permutations-for-di-sequence",
-			"PassRate": "42%",
+			"PassRate": "41%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11391,9 +11391,9 @@
 			"TitleSlug": "most-stones-removed-with-same-row-or-column",
 			"PassRate": "53%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -11593,7 +11593,7 @@
 			"ID": 964,
 			"Title": "Least Operators to Express Number",
 			"TitleSlug": "least-operators-to-express-number",
-			"PassRate": "39%",
+			"PassRate": "40%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -11702,7 +11702,7 @@
 			"Title": "K Closest Points to Origin",
 			"TitleSlug": "k-closest-points-to-origin",
 			"PassRate": "66%",
-			"Difficulty": "Easy",
+			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
 			"IsFavor": false,
@@ -12049,7 +12049,7 @@
 			"ID": 1002,
 			"Title": "Find Common Characters",
 			"TitleSlug": "find-common-characters",
-			"PassRate": "69%",
+			"PassRate": "68%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
