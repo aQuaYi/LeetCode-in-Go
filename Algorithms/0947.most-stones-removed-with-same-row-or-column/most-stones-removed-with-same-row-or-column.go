@@ -2,6 +2,7 @@ package problem0947
 
 func removeStones(stones [][]int) int {
 	size := len(stones)
+
 	u := newUnion(size)
 	for i := 0; i < size; i++ {
 		ix, iy := stones[i][0], stones[i][1]
@@ -11,16 +12,9 @@ func removeStones(stones [][]int) int {
 				u.union(i, j)
 			}
 		}
+	}
 
-	}
-	res := 0
-	for _, n := range u.sz {
-		if n == 0 {
-			continue
-		}
-		res += n - 1
-	}
-	return res
+	return u.res
 }
 
 // Robert Sedgewick 算法（第4版） 1.5.2.7
@@ -28,8 +22,9 @@ func removeStones(stones [][]int) int {
 
 // union is ...
 type union struct {
-	id []int // 父链接数组(由触点索引)
-	sz []int // (由触点索引的) 各个根节点所对应的分量的大小
+	id   []int // 父链接数组(由触点索引)
+	size []int // (由触点索引的) 各个根节点所对应的分量的大小
+	res  int   // NOTICE: 题目需要的结果
 }
 
 func newUnion(N int) *union {
@@ -42,8 +37,9 @@ func newUnion(N int) *union {
 		sz[i] = 1
 	}
 	return &union{
-		id: id,
-		sz: sz,
+		id:   id,
+		size: sz,
+		res:  0,
 	}
 }
 
@@ -60,12 +56,12 @@ func (u *union) union(p, q int) {
 	if i == j {
 		return
 	}
-	if u.sz[i] > u.sz[j] {
+	if u.size[i] > u.size[j] {
 		i, j = j, i
 	}
 	// 将小树的根节点连接到大树的根节点
 	u.id[i] = j
-	u.sz[j] += u.sz[i]
-	u.sz[i] = 0
+	u.size[j] += u.size[i]
+	u.res++
 	return
 }
