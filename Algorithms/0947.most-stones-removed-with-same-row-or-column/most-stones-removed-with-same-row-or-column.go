@@ -1,20 +1,20 @@
 package problem0947
 
 func removeStones(stones [][]int) int {
-	size := len(stones)
+	u := newUnion()
 
-	u := newUnion(size)
-	for i := 0; i < size; i++ {
-		ix, iy := stones[i][0], stones[i][1]
-		for j := i + 1; j < size; j++ {
-			jx, jy := stones[j][0], stones[j][1]
-			if ix == jx || iy == jy {
-				u.union(i, j)
-			}
-		}
+	for _, s := range stones {
+		u.union(s[0], s[1]+1000)
 	}
 
-	return u.res
+	mark := make(map[int]int)
+
+	for _, s := range stones {
+		parent := u.find(s[0])
+		mark[parent]++
+	}
+
+	return len(stones) - len(mark)
 }
 
 // Robert Sedgewick 算法（第4版） 1.5.2.7
@@ -22,24 +22,22 @@ func removeStones(stones [][]int) int {
 
 // union is ...
 type union struct {
-	id   []int // 父链接数组(由触点索引)
-	size []int // (由触点索引的) 各个根节点所对应的分量的大小
-	res  int   // NOTICE: 题目需要的结果
+	id   [20000]int // 父链接数组(由触点索引)
+	size [20000]int // (由触点索引的) 各个根节点所对应的分量的大小
 }
 
-func newUnion(N int) *union {
-	id := make([]int, N)
+func newUnion() *union {
+	id := [20000]int{}
 	for i := range id {
 		id[i] = i
 	}
-	sz := make([]int, N)
+	sz := [20000]int{}
 	for i := range sz {
 		sz[i] = 1
 	}
 	return &union{
 		id:   id,
 		size: sz,
-		res:  0,
 	}
 }
 
@@ -62,6 +60,5 @@ func (u *union) union(p, q int) {
 	// 将小树的根节点连接到大树的根节点
 	u.id[i] = j
 	u.size[j] += u.size[i]
-	u.res++
 	return
 }
