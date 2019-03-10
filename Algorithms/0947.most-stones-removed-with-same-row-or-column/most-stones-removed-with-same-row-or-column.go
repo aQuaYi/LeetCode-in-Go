@@ -4,10 +4,10 @@ func removeStones(stones [][]int) int {
 	u := newUnion()
 
 	for _, s := range stones {
-		u.union(s[0], s[1]+1000)
+		u.union(s[0], s[1]+10000)
 	}
 
-	mark := make(map[int]int)
+	mark := make(map[int]int, 1000)
 
 	for _, s := range stones {
 		parent := u.find(s[0])
@@ -22,29 +22,29 @@ func removeStones(stones [][]int) int {
 
 // union is ...
 type union struct {
-	id   [20000]int // 父链接数组(由触点索引)
+	root [20000]int // 父链接数组(由触点索引)
 	size [20000]int // (由触点索引的) 各个根节点所对应的分量的大小
 }
 
 func newUnion() *union {
-	id := [20000]int{}
-	for i := range id {
-		id[i] = i
+	root := [20000]int{}
+	for i := range root {
+		root[i] = i
 	}
-	sz := [20000]int{}
-	for i := range sz {
-		sz[i] = 1
+	size := [20000]int{}
+	for i := range size {
+		size[i] = 1
 	}
 	return &union{
-		id:   id,
-		size: sz,
+		root: root,
+		size: size,
 	}
 }
 
 func (u *union) find(p int) int {
 	// 跟随连接找到根节点
-	for p != u.id[p] {
-		p = u.id[p]
+	for p != u.root[p] {
+		p = u.root[p]
 	}
 	return p
 }
@@ -58,7 +58,7 @@ func (u *union) union(p, q int) {
 		i, j = j, i
 	}
 	// 将小树的根节点连接到大树的根节点
-	u.id[i] = j
+	u.root[i] = j
 	u.size[j] += u.size[i]
 	return
 }
