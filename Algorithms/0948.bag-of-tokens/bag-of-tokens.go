@@ -6,24 +6,25 @@ import "sort"
 
 func bagOfTokensScore(tokens []int, P int) int {
 	sort.Ints(tokens)
-	res, scores := 0, 0
+	maxScore, score := 0, 0
 	i, j := 0, len(tokens)-1
 
 	for i <= j {
 		if P >= tokens[i] {
 			P -= tokens[i]
-			scores++
-			res = max(res, scores)
+			score++
+			maxScore = max(maxScore, score) // record the largest score
 			i++
-		} else if scores > 0 {
+		} else if score > 0 {
 			P += tokens[j]
-			scores--
+			score--
 			j--
 		} else {
 			break
 		}
 	}
-	return res
+
+	return maxScore
 }
 
 func max(a, b int) int {
