@@ -6,23 +6,29 @@ import "sort"
 
 func bagOfTokensScore(tokens []int, P int) int {
 	sort.Ints(tokens)
-	scores := 0
+	res, scores := 0, 0
 	i, j := 0, len(tokens)-1
 
 	for i <= j {
-		if P < tokens[i] { // have no money to buy
-			return scores
-		}
-		for i <= j && P >= tokens[i] { // buy the cheapest greedily
+		if P >= tokens[i] {
 			P -= tokens[i]
 			scores++
+			res = max(res, scores)
 			i++
-		}
-		if i < j && scores > 0 { // sell the most expensive slowly
+		} else if scores > 0 {
 			P += tokens[j]
 			scores--
 			j--
+		} else {
+			break
 		}
 	}
-	return scores
+	return res
+}
+
+func max(a, b int) int {
+	if a > b {
+		return a
+	}
+	return b
 }
