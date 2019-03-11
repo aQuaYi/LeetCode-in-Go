@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 932,
-	"Updated": "2019-03-11T21:07:59.280633208+08:00",
+	"Updated": "2019-03-11T22:16:42.296773047+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 211,
 			"Total": 231
 		},
 		"Medium": {
-			"Solved": 359,
+			"Solved": 360,
 			"Total": 394
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 172
 		},
 		"Total": {
-			"Solved": 732,
+			"Solved": 733,
 			"Total": 797
 		}
 	},
@@ -11005,7 +11005,7 @@
 			"ID": 915,
 			"Title": "Partition Array into Disjoint Intervals",
 			"TitleSlug": "partition-array-into-disjoint-intervals",
-			"PassRate": "42%",
+			"PassRate": "41%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11403,9 +11403,9 @@
 			"TitleSlug": "bag-of-tokens",
 			"PassRate": "38%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -12109,7 +12109,7 @@
 			"ID": 1007,
 			"Title": "Minimum Domino Rotations For Equal Row",
 			"TitleSlug": "minimum-domino-rotations-for-equal-row",
-			"PassRate": "48%",
+			"PassRate": "49%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
