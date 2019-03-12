@@ -41,7 +41,7 @@ func largestTimeFromDigits(A []int) string {
 			continue
 		}
 		h, m = ab, cd
-		res = fmt.Sprintf("%02d:%02d", ab, cd)
+		res = fmt.Sprintf("%02d:%02d", h, m)
 	}
 	return res
 }
