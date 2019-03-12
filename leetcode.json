@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 929,
-	"Updated": "2019-03-12T19:47:42.254615511+08:00",
+	"Updated": "2019-03-12T21:33:34.90184966+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 211,
+			"Solved": 212,
 			"Total": 231
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 172
 		},
 		"Total": {
-			"Solved": 733,
+			"Solved": 734,
 			"Total": 797
 		}
 	},
@@ -9601,7 +9601,7 @@
 			"ID": 798,
 			"Title": "Smallest Rotation with Highest Score",
 			"TitleSlug": "smallest-rotation-with-highest-score",
-			"PassRate": "39%",
+			"PassRate": "38%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11415,9 +11415,9 @@
 			"TitleSlug": "largest-time-for-given-digits",
 			"PassRate": "33%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
