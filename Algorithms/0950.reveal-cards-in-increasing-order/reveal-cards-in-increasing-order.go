@@ -3,17 +3,13 @@ package problem0950
 import "sort"
 
 func deckRevealedIncreasing(deck []int) []int {
-	size := len(deck)
-
-	if size == 1 {
-		return deck
-	}
-
 	sort.Ints(deck)
 
-	t := make([]int, 0, size*2)
+	size := len(deck)
 
+	t := make([]int, 0, size*2)
 	b := 0
+
 	for i := size - 1; i >= 0; i-- {
 		t = append(t, deck[i])
 		if i > 0 {
