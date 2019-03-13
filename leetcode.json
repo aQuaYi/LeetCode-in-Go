@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 920,
-	"Updated": "2019-03-13T19:53:00.34057572+08:00",
+	"Updated": "2019-03-13T21:52:39.704200955+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 212,
 			"Total": 231
 		},
 		"Medium": {
-			"Solved": 360,
+			"Solved": 361,
 			"Total": 394
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 172
 		},
 		"Total": {
-			"Solved": 734,
+			"Solved": 735,
 			"Total": 797
 		}
 	},
@@ -8641,7 +8641,7 @@
 			"ID": 718,
 			"Title": "Maximum Length of Repeated Subarray",
 			"TitleSlug": "maximum-length-of-repeated-subarray",
-			"PassRate": "45%",
+			"PassRate": "44%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11427,7 +11427,7 @@
 			"TitleSlug": "reveal-cards-in-increasing-order",
 			"PassRate": "71%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
