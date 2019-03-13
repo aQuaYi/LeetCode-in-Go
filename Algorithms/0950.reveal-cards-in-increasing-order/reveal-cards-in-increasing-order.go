@@ -6,18 +6,22 @@ func deckRevealedIncreasing(deck []int) []int {
 	sort.Ints(deck)
 
 	size := len(deck)
-	res := make([]int, size)
+	t := make([]int, 1, size*2)
 
-	b, i, jump := 0, 0, 2
-	for _, c := range deck {
-		if i >= size {
-			b += jump / 2
-			jump *= 2
-			i = b
-		}
-		res[i] = c
-		i += jump
+	t[0] = deck[size-1]
+
+	b := 0
+	for i := size - 2; i > 0; i-- {
+		t = append(t, deck[i])
+		t = append(t, t[b])
+		b++
 	}
 
-	return res
+	t = append(t, deck[0])
+
+	for i, j := b, len(t)-1; i < j; i, j = i+1, j-1 {
+		t[i], t[j] = t[j], t[i]
+	}
+
+	return t[b:]
 }
