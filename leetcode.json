@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 915,
-	"Updated": "2019-03-15T20:12:50.57810016+08:00",
+	"Updated": "2019-03-15T20:37:08.255735653+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 212,
 			"Total": 231
 		},
 		"Medium": {
-			"Solved": 361,
+			"Solved": 362,
 			"Total": 394
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 172
 		},
 		"Total": {
-			"Solved": 735,
+			"Solved": 736,
 			"Total": 797
 		}
 	},
@@ -11439,7 +11439,7 @@
 			"TitleSlug": "flip-equivalent-binary-trees",
 			"PassRate": "65%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
