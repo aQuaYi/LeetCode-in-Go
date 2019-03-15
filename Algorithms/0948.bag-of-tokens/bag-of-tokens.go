@@ -17,7 +17,7 @@ func bagOfTokensScore(tokens []int, P int) int {
 			maxScore = score
 			// 因为 tokens 是升序排列
 			// 所以，卖了 tokens[j] 后，肯定应该买得起 tokens[i]
-			// 除非 i==j，会导致 score--，比真正的结果小 1
+			// 除非 i==j，会导致 score-- 后， score 比真正的结果小 1
 			// 于是，每次 score++ 后，score 肯定是最大值。
 			// 使用 maxScore 记录一下，避免错误的结果。
 			i++
