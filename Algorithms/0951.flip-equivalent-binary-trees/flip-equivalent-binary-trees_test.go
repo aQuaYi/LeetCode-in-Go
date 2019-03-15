@@ -20,6 +20,12 @@ var tcs = []struct {
 		true,
 	},
 
+	{
+		[]int{1, 2, 3, 4, 5, 6, kit.NULL, kit.NULL, kit.NULL, 7, 9},
+		[]int{1, 3, 2, kit.NULL, 6, 4, 5, kit.NULL, kit.NULL, kit.NULL, kit.NULL, 8, 7},
+		false,
+	},
+
 	// 可以有多个 testcase
 }
 
