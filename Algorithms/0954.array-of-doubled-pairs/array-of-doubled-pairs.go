@@ -12,7 +12,8 @@ func canReorderDoubled(A []int) bool {
 			A2 = append(A2, -v)
 		}
 	}
-
+	// 把负数单独分出来，并转换成正数的数列
+	// 两个部分，就可以用相同的逻辑来处理了。
 	return isPossible(A1) && isPossible(A2)
 }
 
@@ -25,24 +26,25 @@ func isPossible(A []int) bool {
 
 	sort.Ints(A)
 
+	count := 0
 	i, j := 0, 1
-	count := size / 2
 	for j < size {
 		for A[i] < 0 {
 			i++
 		}
 		double := A[i] * 2
-		i++
-		for j < size && A[j] < double {
+		for (j < size && A[j] < double) ||
+			j <= i {
 			j++
 		}
 		if j == size || A[j] != double {
 			return false
 		}
 		A[j] = -1
+		count++
+		i++
 		j++
-		count--
 	}
 
-	return count == 0
+	return count == size/2
 }
