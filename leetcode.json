@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 915,
-	"Updated": "2019-03-16T16:06:29.308394164+08:00",
+	"Updated": "2019-03-16T16:45:00.631203066+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 212,
+			"Solved": 213,
 			"Total": 231
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 172
 		},
 		"Total": {
-			"Solved": 736,
+			"Solved": 737,
 			"Total": 797
 		}
 	},
@@ -4717,7 +4717,7 @@
 			"ID": 391,
 			"Title": "Perfect Rectangle",
 			"TitleSlug": "perfect-rectangle",
-			"PassRate": "27%",
+			"PassRate": "28%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -8821,7 +8821,7 @@
 			"ID": 733,
 			"Title": "Flood Fill",
 			"TitleSlug": "flood-fill",
-			"PassRate": "49%",
+			"PassRate": "50%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11463,7 +11463,7 @@
 			"TitleSlug": "verifying-an-alien-dictionary",
 			"PassRate": "56%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
