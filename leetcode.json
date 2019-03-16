@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 908,
-	"Updated": "2019-03-16T18:51:23.018588023+08:00",
+	"Updated": "2019-03-16T19:43:35.734854191+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 213,
 			"Total": 231
 		},
 		"Medium": {
-			"Solved": 362,
+			"Solved": 363,
 			"Total": 394
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 172
 		},
 		"Total": {
-			"Solved": 737,
+			"Solved": 738,
 			"Total": 797
 		}
 	},
@@ -937,7 +937,7 @@
 			"ID": 76,
 			"Title": "Minimum Window Substring",
 			"TitleSlug": "minimum-window-substring",
-			"PassRate": "29%",
+			"PassRate": "30%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11475,7 +11475,7 @@
 			"TitleSlug": "array-of-doubled-pairs",
 			"PassRate": "34%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,

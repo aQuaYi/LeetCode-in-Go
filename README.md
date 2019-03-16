@@ -1,6 +1,6 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
-[![LeetCode 排名](https://img.shields.io/badge/aQuaYi-915-blue.svg)](https://leetcode.com/aQuaYi/)
+[![LeetCode 排名](https://img.shields.io/badge/aQuaYi-908-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
 
@@ -10,7 +10,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|213|362|162|737|
+|**Accepted**|213|363|162|738|
 |**Total**|231|394|172|797|
 
 ## 题解
@@ -71,7 +71,7 @@
 |[0957](https://leetcode.com/problems/prison-cells-after-n-days/)| * Prison Cells After N Days|37%|Medium||
 |[0956](https://leetcode.com/problems/tallest-billboard/)|[Tallest Billboard](./Algorithms/0956.tallest-billboard)|37%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0955](https://leetcode.com/problems/delete-columns-to-make-sorted-ii/)| * Delete Columns to Make Sorted II|30%|Medium||
-|[0954](https://leetcode.com/problems/array-of-doubled-pairs/)| * Array of Doubled Pairs|34%|Medium||
+|[0954](https://leetcode.com/problems/array-of-doubled-pairs/)|[Array of Doubled Pairs](./Algorithms/0954.array-of-doubled-pairs)|34%|Medium||
 |[0953](https://leetcode.com/problems/verifying-an-alien-dictionary/)|[Verifying an Alien Dictionary](./Algorithms/0953.verifying-an-alien-dictionary)|56%|Easy||
 |[0952](https://leetcode.com/problems/largest-component-size-by-common-factor/)|[Largest Component Size by Common Factor](./Algorithms/0952.largest-component-size-by-common-factor)|25%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0951](https://leetcode.com/problems/flip-equivalent-binary-trees/)|[Flip Equivalent Binary Trees](./Algorithms/0951.flip-equivalent-binary-trees)|65%|Medium||
@@ -738,7 +738,7 @@
 |[0079](https://leetcode.com/problems/word-search/)|[Word Search](./Algorithms/0079.word-search)|30%|Medium||
 |[0078](https://leetcode.com/problems/subsets/)|[Subsets](./Algorithms/0078.subsets)|51%|Medium||
 |[0077](https://leetcode.com/problems/combinations/)|[Combinations](./Algorithms/0077.combinations)|46%|Medium||
-|[0076](https://leetcode.com/problems/minimum-window-substring/)|[Minimum Window Substring](./Algorithms/0076.minimum-window-substring)|29%|Hard||
+|[0076](https://leetcode.com/problems/minimum-window-substring/)|[Minimum Window Substring](./Algorithms/0076.minimum-window-substring)|30%|Hard||
 |[0075](https://leetcode.com/problems/sort-colors/)|[Sort Colors](./Algorithms/0075.sort-colors)|41%|Medium||
 |[0074](https://leetcode.com/problems/search-a-2d-matrix/)|[Search a 2D Matrix](./Algorithms/0074.search-a-2d-matrix)|34%|Medium||
 |[0073](https://leetcode.com/problems/set-matrix-zeroes/)|[Set Matrix Zeroes](./Algorithms/0073.set-matrix-zeroes)|39%|Medium||
