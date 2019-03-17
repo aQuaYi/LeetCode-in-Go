@@ -29,5 +29,5 @@ func minDeletionSize(A []string) int {
 			res++
 		}
 	}
-	return n
+	return res
 }
