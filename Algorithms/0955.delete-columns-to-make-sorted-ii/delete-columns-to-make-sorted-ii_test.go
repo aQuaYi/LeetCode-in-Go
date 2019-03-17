@@ -13,6 +13,11 @@ var tcs = []struct {
 }{
 
 	{
+		[]string{"xga", "xfb", "yfa"},
+		1,
+	},
+
+	{
 		[]string{"ca", "bb", "ac"},
 		1,
 	},
