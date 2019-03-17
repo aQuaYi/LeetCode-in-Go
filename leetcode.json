@@ -1,23 +1,23 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 908,
-	"Updated": "2019-03-17T11:32:06.931447145+08:00",
+	"Updated": "2019-03-17T13:53:22.721682805+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 213,
-			"Total": 231
+			"Total": 233
 		},
 		"Medium": {
-			"Solved": 363,
-			"Total": 394
+			"Solved": 364,
+			"Total": 395
 		},
 		"Hard": {
 			"Solved": 162,
-			"Total": 172
+			"Total": 173
 		},
 		"Total": {
-			"Solved": 738,
-			"Total": 797
+			"Solved": 739,
+			"Total": 801
 		}
 	},
 	"Problems": [
@@ -4717,7 +4717,7 @@
 			"ID": 391,
 			"Title": "Perfect Rectangle",
 			"TitleSlug": "perfect-rectangle",
-			"PassRate": "27%",
+			"PassRate": "28%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10765,7 +10765,7 @@
 			"ID": 895,
 			"Title": "Maximum Frequency Stack",
 			"TitleSlug": "maximum-frequency-stack",
-			"PassRate": "52%",
+			"PassRate": "53%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11029,7 +11029,7 @@
 			"ID": 917,
 			"Title": "Reverse Only Letters",
 			"TitleSlug": "reverse-only-letters",
-			"PassRate": "56%",
+			"PassRate": "55%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11487,9 +11487,9 @@
 			"TitleSlug": "delete-columns-to-make-sorted-ii",
 			"PassRate": "30%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -12127,6 +12127,90 @@
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 0,
+			"Title": "",
+			"TitleSlug": "",
+			"PassRate": "",
+			"Difficulty": "",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": false,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 0,
+			"Title": "",
+			"TitleSlug": "",
+			"PassRate": "",
+			"Difficulty": "",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": false,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 0,
+			"Title": "",
+			"TitleSlug": "",
+			"PassRate": "",
+			"Difficulty": "",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": false,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 1012,
+			"Title": "Complement of Base 10 Integer",
+			"TitleSlug": "complement-of-base-10-integer",
+			"PassRate": "56%",
+			"Difficulty": "Easy",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 1013,
+			"Title": "Pairs of Songs With Total Durations Divisible by 60",
+			"TitleSlug": "pairs-of-songs-with-total-durations-divisible-by-60",
+			"PassRate": "38%",
+			"Difficulty": "Easy",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 1014,
+			"Title": "Capacity To Ship Packages Within D Days",
+			"TitleSlug": "capacity-to-ship-packages-within-d-days",
+			"PassRate": "44%",
+			"Difficulty": "Medium",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 1015,
+			"Title": "Numbers With 1 Repeated Digit",
+			"TitleSlug": "numbers-with-1-repeated-digit",
+			"PassRate": "21%",
+			"Difficulty": "Hard",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
 			"HasNoGoOption": false
 		}
 	]
