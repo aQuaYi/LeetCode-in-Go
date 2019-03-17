@@ -2,50 +2,32 @@ package problem0955
 
 func minDeletionSize(A []string) int {
 	m, n := len(A), len(A[0])
+	// isBigger[i]=true means A[i]>A[i-1]
+	isBigger := make([]bool, m)
+
 	res := 0
 
 	for j := 0; j < n; j++ {
+		t := make([]bool, m)
 		i := 1
-		t := 0
+		count := 1
 		for ; i < m; i++ {
-			p, c := A[i-1][j], A[i][j]
-			if p > c {
+			if isBigger[i] ||
+				A[i-1][j] < A[i][j] {
+				t[i] = true
+				count++
+			} else if A[i-1][j] > A[i][j] {
 				break
-			} else if p == c {
-				t = i + 1
 			}
 		}
 		if i == m {
-			if t == 0 {
+			if count == m {
 				return res
 			}
-			m = t
+			isBigger = t
 		} else {
 			res++
 		}
 	}
 	return n
-}
-
-func check(s1, s2 string, marks []int) {
-	for i, m := range marks {
-		if m == 1 { // deleted column
-			continue
-		}
-		switch {
-		case s1[i] < s2[i]:
-			return
-		case s1[i] > s2[i]:
-			marks[i] = 1
-
-		}
-	}
-}
-
-func sum(marks []int) int {
-	sum := 0
-	for _, m := range marks {
-		sum += m
-	}
-	return sum
 }
