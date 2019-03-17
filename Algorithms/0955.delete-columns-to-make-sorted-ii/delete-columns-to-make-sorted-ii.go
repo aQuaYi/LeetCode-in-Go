@@ -9,25 +9,26 @@ func minDeletionSize(A []string) int {
 
 	for j := 0; j < n; j++ {
 		t := make([]bool, m)
-		i := 1
-		count := 1
+		i, count := 1, 1
 		for ; i < m; i++ {
 			if isBigger[i] ||
-				A[i-1][j] < A[i][j] {
+				A[i][j] > A[i-1][j] {
 				t[i] = true
 				count++
 			} else if A[i-1][j] > A[i][j] {
+				res++
 				break
 			}
 		}
-		if i == m {
-			if count == m {
-				return res
-			}
-			isBigger = t
-		} else {
-			res++
+		if i != m {
+			// not check every string
+			continue
 		}
+		if count == m { // for now, all is sorted.
+			break
+		}
+		isBigger = t
 	}
+
 	return res
 }
