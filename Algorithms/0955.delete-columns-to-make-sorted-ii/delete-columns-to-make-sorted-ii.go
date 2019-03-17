@@ -26,3 +26,26 @@ func minDeletionSize(A []string) int {
 	}
 	return n
 }
+
+func check(s1, s2 string, marks []int) {
+	for i, m := range marks {
+		if m == 1 { // deleted column
+			continue
+		}
+		switch {
+		case s1[i] < s2[i]:
+			return
+		case s1[i] > s2[i]:
+			marks[i] = 1
+
+		}
+	}
+}
+
+func sum(marks []int) int {
+	sum := 0
+	for _, m := range marks {
+		sum += m
+	}
+	return sum
+}
