@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 906,
-	"Updated": "2019-03-18T20:19:43.310281432+08:00",
+	"Updated": "2019-03-18T21:26:04.441820595+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 213,
 			"Total": 233
 		},
 		"Medium": {
-			"Solved": 364,
+			"Solved": 365,
 			"Total": 395
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 173
 		},
 		"Total": {
-			"Solved": 739,
+			"Solved": 740,
 			"Total": 801
 		}
 	},
@@ -11511,7 +11511,7 @@
 			"TitleSlug": "prison-cells-after-n-days",
 			"PassRate": "37%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -11821,7 +11821,7 @@
 			"ID": 983,
 			"Title": "Minimum Cost For Tickets",
 			"TitleSlug": "minimum-cost-for-tickets",
-			"PassRate": "58%",
+			"PassRate": "57%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
