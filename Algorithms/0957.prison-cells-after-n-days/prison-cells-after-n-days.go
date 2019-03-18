@@ -13,10 +13,9 @@ func prisonAfterNDays(cells []int, N int) []int {
 }
 
 func cells2int(cells []int) int {
-	res := 0
-	size := len(cells)
-	for i, c := range cells {
-		res += c << uint(size-i-1)
+	res, size := 0, len(cells)
+	for i := 0; i < size; i++ {
+		res = res<<1 + cells[i]
 	}
 	return res
 }
@@ -24,10 +23,14 @@ func cells2int(cells []int) int {
 func int2cells(n int) []int {
 	bits := uint(8)
 	cells := make([]int, bits)
-	t := bits - 1
-	for i := range cells {
-		cells[i] = (n >> t) & 1
-		t--
+	i := 0
+	for n > 0 {
+		cells[i] = n & 1
+		n >>= 1
+		i++
+	}
+	for i, j := 0, int(bits-1); i < j; i, j = i+1, j-1 {
+		cells[i], cells[j] = cells[j], cells[i]
 	}
 	return cells
 }
