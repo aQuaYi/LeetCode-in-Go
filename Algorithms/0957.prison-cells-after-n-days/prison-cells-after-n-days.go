@@ -4,7 +4,7 @@ func prisonAfterNDays(cells []int, N int) []int {
 	n := cells2int(cells)
 
 	for i := 0; i < N; i++ {
-		n = ^((n << 1) ^ (n >> 1))
+		n = (^((n << 1) ^ (n >> 1))) & 0x7e
 	}
 
 	return int2cells(n)
