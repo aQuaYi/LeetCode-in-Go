@@ -1,6 +1,8 @@
 package problem0957
 
 func prisonAfterNDays(cells []int, N int) []int {
+	N = (N-1)%14 + 1 // every 14 steps is a loop
+
 	n := cells2int(cells)
 
 	for i := 0; i < N; i++ {
@@ -12,17 +14,17 @@ func prisonAfterNDays(cells []int, N int) []int {
 
 func cells2int(cells []int) int {
 	res := 0
-	t := uint(7)
-	for _, c := range cells {
-		res += c << t
-		t--
+	size := len(cells)
+	for i, c := range cells {
+		res += c << uint(size-i-1)
 	}
 	return res
 }
 
 func int2cells(n int) []int {
-	cells := make([]int, 8)
-	t := uint(7)
+	bits := uint(8)
+	cells := make([]int, bits)
+	t := bits - 1
 	for i := range cells {
 		cells[i] = (n >> t) & 1
 		t--
