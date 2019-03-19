@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 905,
-	"Updated": "2019-03-19T21:10:22.567234843+08:00",
+	"Updated": "2019-03-19T21:26:11.323775847+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 213,
+			"Solved": 214,
 			"Total": 233
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 173
 		},
 		"Total": {
-			"Solved": 740,
+			"Solved": 741,
 			"Total": 801
 		}
 	},
@@ -9829,7 +9829,7 @@
 			"ID": 817,
 			"Title": "Linked List Components",
 			"TitleSlug": "linked-list-components",
-			"PassRate": "53%",
+			"PassRate": "54%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11559,7 +11559,7 @@
 			"TitleSlug": "n-repeated-element-in-size-2n-array",
 			"PassRate": "73%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
