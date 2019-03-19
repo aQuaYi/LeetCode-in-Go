@@ -1,14 +1,13 @@
 package problem0961
 
 func repeatedNTimes(A []int) int {
-	N := len(A) / 2
-	hasSeen := make(map[int]bool, N+1)
-	var v int
-	for _, v = range A {
-		if hasSeen[v] {
+	hasSeen := [10000]bool{}
+	var res int
+	for _, res = range A {
+		if hasSeen[res] {
 			break
 		}
-		hasSeen[v] = true
+		hasSeen[res] = true
 	}
-	return v
+	return res
 }
