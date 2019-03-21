@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 904,
-	"Updated": "2019-03-21T21:36:11.444943572+08:00",
+	"Updated": "2019-03-21T21:48:04.62518294+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 214,
+			"Solved": 215,
 			"Total": 233
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 173
 		},
 		"Total": {
-			"Solved": 741,
+			"Solved": 742,
 			"Total": 801
 		}
 	},
@@ -11607,7 +11607,7 @@
 			"TitleSlug": "univalued-binary-tree",
 			"PassRate": "67%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
