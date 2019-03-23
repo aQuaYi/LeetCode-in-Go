@@ -26,7 +26,8 @@ func (u *union) find(i int) int {
 
 func (u *union) unite(x, y int) {
 	xp, yp := u.find(x), u.find(y)
-	if xp != yp {
-		u.parent[yp] = xp
+	if xp == yp {
+		return
 	}
+	u.parent[yp] = xp
 }
