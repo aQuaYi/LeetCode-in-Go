@@ -2,6 +2,7 @@ package problem0959
 
 func regionsBySlashes(grid []string) int {
 	m := len(grid)
+
 	size := m * m * 4
 	u := newUnion(size)
 
@@ -29,11 +30,13 @@ func regionsBySlashes(grid []string) int {
 				u.union(down, left)
 			}
 			// union right square' left
-			if rsl := index + 4 + 3; rsl < size {
+			if j+1 < m {
+				rsl := index + 4 + 3
 				u.union(right, rsl)
 			}
 			// union down square' top
-			if dst := index + 4*m; dst < size {
+			if i+1 < m {
+				dst := index + 4*m
 				u.union(down, dst)
 			}
 		}
