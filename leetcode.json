@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 902,
-	"Updated": "2019-03-23T14:53:21.896823987+08:00",
+	"Updated": "2019-03-23T15:20:36.739536901+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 215,
@@ -3025,7 +3025,7 @@
 			"ID": 250,
 			"Title": "Count Univalue Subtrees",
 			"TitleSlug": "count-univalue-subtrees",
-			"PassRate": "47%",
+			"PassRate": "48%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -11965,7 +11965,7 @@
 			"ID": 995,
 			"Title": "Minimum Number of K Consecutive Bit Flips",
 			"TitleSlug": "minimum-number-of-k-consecutive-bit-flips",
-			"PassRate": "50%",
+			"PassRate": "51%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
