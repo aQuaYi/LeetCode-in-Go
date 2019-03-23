@@ -7,37 +7,39 @@ func regionsBySlashes(grid []string) int {
 	u := newUnion(size)
 
 	// cut every square to 4 parts, and mark them
-	//    \0/
-	//   3 X 1
-	//    /2\
+	//      \top/
+	//       \0/
+	// left 3 X 1 right
+	//       /2\
+	//     /down\
 	for i := 0; i < m; i++ {
 		for j := 0; j < m; j++ {
-			index := (i*m + j) * 4
-			top := index + 0
-			right := index + 1
-			down := index + 2
-			left := index + 3
+			baseIndex := (i*m + j) * 4
+			top := baseIndex + 0
+			right := baseIndex + 1
+			down := baseIndex + 2
+			left := baseIndex + 3
 			switch grid[i][j] {
 			case '\\':
-				u.union(top, right)
-				u.union(down, left)
+				u.unite(top, right)
+				u.unite(down, left)
 			case '/':
-				u.union(top, left)
-				u.union(down, right)
+				u.unite(top, left)
+				u.unite(down, right)
 			default:
-				u.union(top, right)
-				u.union(right, down)
-				u.union(down, left)
+				u.unite(top, right)
+				u.unite(right, down)
+				u.unite(down, left)
 			}
-			// union right square' left
+			// right part unites right square's left
 			if j+1 < m {
-				rsl := index + 4 + 3
-				u.union(right, rsl)
+				rsl := baseIndex + 4 + 3
+				u.unite(right, rsl)
 			}
-			// union down square' top
+			// down part unites down square's top
 			if i+1 < m {
-				dst := index + 4*m
-				u.union(down, dst)
+				dst := baseIndex + 4*m
+				u.unite(down, dst)
 			}
 		}
 	}
@@ -69,7 +71,7 @@ func (u *union) find(i int) int {
 	return u.parent[i]
 }
 
-func (u *union) union(x, y int) {
+func (u *union) unite(x, y int) {
 	xp, yp := u.find(x), u.find(y)
 	if xp != yp {
 		u.parent[yp] = xp
