@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 902,
-	"Updated": "2019-03-23T14:19:34.764551501+08:00",
+	"Updated": "2019-03-23T14:53:21.896823987+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 215,
 			"Total": 233
 		},
 		"Medium": {
-			"Solved": 365,
+			"Solved": 366,
 			"Total": 395
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 173
 		},
 		"Total": {
-			"Solved": 742,
+			"Solved": 743,
 			"Total": 801
 		}
 	},
@@ -11523,7 +11523,7 @@
 			"TitleSlug": "check-completeness-of-a-binary-tree",
 			"PassRate": "46%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
