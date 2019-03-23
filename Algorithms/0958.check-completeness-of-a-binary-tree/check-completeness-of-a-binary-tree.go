@@ -8,6 +8,26 @@ import (
 type TreeNode = kit.TreeNode
 
 func isCompleteTree(root *TreeNode) bool {
+	queue := make([]*TreeNode, 1, 128)
 
-	return false
+	queue[0] = root
+	hasSeenNil := false
+
+	for len(queue) > 0 {
+		size := len(queue)
+		for i := 0; i < size; i++ {
+			node := queue[i]
+			if node == nil {
+				hasSeenNil = true
+				continue
+			}
+			if hasSeenNil {
+				return false
+			}
+			queue = append(queue, node.Left, node.Right)
+		}
+		queue = queue[size:]
+	}
+
+	return true
 }
