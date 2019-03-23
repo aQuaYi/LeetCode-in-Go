@@ -10,7 +10,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|215|366|162|743|
+|**Accepted**|215|367|162|744|
 |**Total**|233|395|173|801|
 
 ## 题解
@@ -34,7 +34,7 @@
 |[0998](https://leetcode.com/problems/maximum-binary-tree-ii/)| * Maximum Binary Tree II|62%|Medium||
 |[0997](https://leetcode.com/problems/find-the-town-judge/)| * Find the Town Judge|48%|Easy||
 |[0996](https://leetcode.com/problems/number-of-squareful-arrays/)| * Number of Squareful Arrays|47%|Hard||
-|[0995](https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips/)| * Minimum Number of K Consecutive Bit Flips|50%|Hard||
+|[0995](https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips/)| * Minimum Number of K Consecutive Bit Flips|51%|Hard||
 |[0994](https://leetcode.com/problems/rotting-oranges/)| * Rotting Oranges|46%|Easy||
 |[0993](https://leetcode.com/problems/cousins-in-binary-tree/)| * Cousins in Binary Tree|52%|Easy||
 |[0992](https://leetcode.com/problems/subarrays-with-k-different-integers/)| * Subarrays with K Different Integers|45%|Hard||
@@ -70,7 +70,7 @@
 |[0962](https://leetcode.com/problems/maximum-width-ramp/)| * Maximum Width Ramp|40%|Medium||
 |[0961](https://leetcode.com/problems/n-repeated-element-in-size-2n-array/)|[N-Repeated Element in Size 2N Array](./Algorithms/0961.n-repeated-element-in-size-2n-array)|73%|Easy||
 |[0960](https://leetcode.com/problems/delete-columns-to-make-sorted-iii/)|[Delete Columns to Make Sorted III](./Algorithms/0960.delete-columns-to-make-sorted-iii)|51%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|[0959](https://leetcode.com/problems/regions-cut-by-slashes/)| * Regions Cut By Slashes|61%|Medium||
+|[0959](https://leetcode.com/problems/regions-cut-by-slashes/)|[Regions Cut By Slashes](./Algorithms/0959.regions-cut-by-slashes)|61%|Medium||
 |[0958](https://leetcode.com/problems/check-completeness-of-a-binary-tree/)|[Check Completeness of a Binary Tree](./Algorithms/0958.check-completeness-of-a-binary-tree)|46%|Medium||
 |[0957](https://leetcode.com/problems/prison-cells-after-n-days/)|[Prison Cells After N Days](./Algorithms/0957.prison-cells-after-n-days)|37%|Medium||
 |[0956](https://leetcode.com/problems/tallest-billboard/)|[Tallest Billboard](./Algorithms/0956.tallest-billboard)|37%|Hard|[❤](https://leetcode.com/list/oussv5j)|

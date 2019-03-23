@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 902,
-	"Updated": "2019-03-23T15:20:36.739536901+08:00",
+	"Updated": "2019-03-23T16:52:04.183823922+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 215,
 			"Total": 233
 		},
 		"Medium": {
-			"Solved": 366,
+			"Solved": 367,
 			"Total": 395
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 173
 		},
 		"Total": {
-			"Solved": 743,
+			"Solved": 744,
 			"Total": 801
 		}
 	},
@@ -11535,7 +11535,7 @@
 			"TitleSlug": "regions-cut-by-slashes",
 			"PassRate": "61%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
