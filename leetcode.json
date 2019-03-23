@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
-	"Ranking": 902,
-	"Updated": "2019-03-23T16:52:04.183823922+08:00",
+	"Ranking": 889,
+	"Updated": "2019-03-23T23:48:32.931746491+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 215,
@@ -11893,7 +11893,7 @@
 			"ID": 989,
 			"Title": "Add to Array-Form of Integer",
 			"TitleSlug": "add-to-array-form-of-integer",
-			"PassRate": "44%",
+			"PassRate": "45%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -11965,7 +11965,7 @@
 			"ID": 995,
 			"Title": "Minimum Number of K Consecutive Bit Flips",
 			"TitleSlug": "minimum-number-of-k-consecutive-bit-flips",
-			"PassRate": "51%",
+			"PassRate": "50%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -12049,7 +12049,7 @@
 			"ID": 1002,
 			"Title": "Find Common Characters",
 			"TitleSlug": "find-common-characters",
-			"PassRate": "68%",
+			"PassRate": "67%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
