@@ -1,20 +1,28 @@
 package problem0962
 
 func maxWidthRamp(A []int) int {
-	s := []int{}
-	for i := range A {
-		if len(s) == 0 || A[i] < A[s[len(s)-1]] {
-			s = append(s, i)
+	size := len(A)
+
+	stack := make([]int, 1, size)
+	top := 0
+	for i := 1; i < size; i++ {
+		if A[stack[top]] > A[i] {
+			stack = append(stack, i)
+			top++
 		}
 	}
 
 	res := 0
-	for i := len(A) - 1; i >= 0; i-- {
-		for len(s) != 0 && A[s[len(s)-1]] <= A[i] {
-			res = max(res, i-s[len(s)-1])
-			s = s[:len(s)-1]
+	for j := size - 1; j >= 0 && top >= 0; j-- {
+		width := 0
+		for top >= 0 && A[stack[top]] <= A[j] {
+			width = j - stack[top]
+			stack = stack[:top]
+			top--
 		}
+		res = max(res, width)
 	}
+
 	return res
 }
 
