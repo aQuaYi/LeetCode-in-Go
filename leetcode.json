@@ -1,23 +1,23 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 889,
-	"Updated": "2019-03-24T11:09:58.585975344+08:00",
+	"Updated": "2019-03-24T15:04:20.855058187+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 215,
-			"Total": 233
+			"Total": 234
 		},
 		"Medium": {
-			"Solved": 367,
-			"Total": 395
+			"Solved": 368,
+			"Total": 398
 		},
 		"Hard": {
 			"Solved": 162,
 			"Total": 173
 		},
 		"Total": {
-			"Solved": 744,
-			"Total": 801
+			"Solved": 745,
+			"Total": 805
 		}
 	},
 	"Problems": [
@@ -97,7 +97,7 @@
 			"ID": 6,
 			"Title": "ZigZag Conversion",
 			"TitleSlug": "zigzag-conversion",
-			"PassRate": "30%",
+			"PassRate": "31%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -6145,7 +6145,7 @@
 			"ID": 510,
 			"Title": "Inorder Successor in BST II",
 			"TitleSlug": "inorder-successor-in-bst-ii",
-			"PassRate": "54%",
+			"PassRate": "53%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -6181,7 +6181,7 @@
 			"ID": 513,
 			"Title": "Find Bottom Left Tree Value",
 			"TitleSlug": "find-bottom-left-tree-value",
-			"PassRate": "58%",
+			"PassRate": "57%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -7501,7 +7501,7 @@
 			"ID": 623,
 			"Title": "Add One Row to Tree",
 			"TitleSlug": "add-one-row-to-tree",
-			"PassRate": "46%",
+			"PassRate": "47%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9301,7 +9301,7 @@
 			"ID": 773,
 			"Title": "Sliding Puzzle",
 			"TitleSlug": "sliding-puzzle",
-			"PassRate": "50%",
+			"PassRate": "51%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10045,7 +10045,7 @@
 			"ID": 835,
 			"Title": "Image Overlap",
 			"TitleSlug": "image-overlap",
-			"PassRate": "50%",
+			"PassRate": "51%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10081,7 +10081,7 @@
 			"ID": 838,
 			"Title": "Push Dominoes",
 			"TitleSlug": "push-dominoes",
-			"PassRate": "42%",
+			"PassRate": "43%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11571,9 +11571,9 @@
 			"TitleSlug": "maximum-width-ramp",
 			"PassRate": "40%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -11761,7 +11761,7 @@
 			"ID": 978,
 			"Title": "Longest Turbulent Subarray",
 			"TitleSlug": "longest-turbulent-subarray",
-			"PassRate": "45%",
+			"PassRate": "46%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -12085,7 +12085,7 @@
 			"ID": 1005,
 			"Title": "Maximize Sum Of Array After K Negations",
 			"TitleSlug": "maximize-sum-of-array-after-k-negations",
-			"PassRate": "48%",
+			"PassRate": "49%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -12211,6 +12211,102 @@
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 0,
+			"Title": "",
+			"TitleSlug": "",
+			"PassRate": "",
+			"Difficulty": "",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": false,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 0,
+			"Title": "",
+			"TitleSlug": "",
+			"PassRate": "",
+			"Difficulty": "",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": false,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 0,
+			"Title": "",
+			"TitleSlug": "",
+			"PassRate": "",
+			"Difficulty": "",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": false,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 0,
+			"Title": "",
+			"TitleSlug": "",
+			"PassRate": "",
+			"Difficulty": "",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": false,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 1020,
+			"Title": "Partition Array Into Three Parts With Equal Sum",
+			"TitleSlug": "partition-array-into-three-parts-with-equal-sum",
+			"PassRate": "46%",
+			"Difficulty": "Easy",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 1021,
+			"Title": "Best Sightseeing Pair",
+			"TitleSlug": "best-sightseeing-pair",
+			"PassRate": "34%",
+			"Difficulty": "Medium",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 1022,
+			"Title": "Smallest Integer Divisible by K",
+			"TitleSlug": "smallest-integer-divisible-by-k",
+			"PassRate": "17%",
+			"Difficulty": "Medium",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 1023,
+			"Title": "Binary String With Substrings Representing 1 To N",
+			"TitleSlug": "binary-string-with-substrings-representing-1-to-n",
+			"PassRate": "62%",
+			"Difficulty": "Medium",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
 			"HasNoGoOption": false
 		}
 	]
