@@ -8,7 +8,9 @@ func maxWidthRamp(A []int) int {
 
 	for sz := 1; sz < size; sz *= 2 {
 		for lo := 0; lo < size-sz; lo += sz + sz {
-			res = max(res, merge(A, indexs, lo, lo+sz-1, min(lo+sz+sz-1, size-1)))
+			mid, hi := lo+sz-1, min(lo+sz+sz-1, size-1)
+			res = max(res, check(A, indexs, lo, mid, hi))
+			merge(A, indexs, lo, mid, hi)
 		}
 	}
 
@@ -23,8 +25,19 @@ func newIndexs(size int) []int {
 	return res
 }
 
-func merge(A, indexs []int, lo, mid, hi int) int {
-	res := 0
+func check(A, indexs []int, lo, mid, hi int) int {
+	width := 0
+	for i := lo; i <= mid; i++ {
+		for j := mid + 1; j <= hi; j++ {
+			if A[i] <= A[j] {
+				width = max(width, indexs[j]-indexs[i])
+			}
+		}
+	}
+	return width
+}
+
+func merge(A, indexs []int, lo, mid, hi int) {
 	i, j := lo, mid+1
 	ta := make([]int, hi-lo+1)
 	ti := make([]int, hi-lo+1)
@@ -44,7 +57,6 @@ func merge(A, indexs []int, lo, mid, hi int) int {
 		}
 
 		if A[i] <= A[j] {
-			res = max(res, indexs[j]-indexs[i])
 			ta[k] = A[i]
 			ti[k] = indexs[i]
 			i++
@@ -57,8 +69,6 @@ func merge(A, indexs []int, lo, mid, hi int) int {
 
 	copy(A[lo:hi+1], ta)
 	copy(indexs[lo:hi+1], ti)
-
-	return res
 }
 
 func min(a, b int) int {
