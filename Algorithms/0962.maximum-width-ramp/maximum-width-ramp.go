@@ -1,25 +1,19 @@
 package problem0962
 
-import "sort"
-
 func maxWidthRamp(A []int) int {
-	size := len(A)
-	res := 0
-	stack := make([]int, 1, size)
-
-	for i := 1; i < size; i++ {
-		x := A[i]
-		top := len(stack) - 1
-		if A[stack[top]] > x {
-			// keep stack decrease
-			stack = append(stack, i)
-			continue
+	s := []int{}
+	for i := range A {
+		if len(s) == 0 || A[i] < A[s[len(s)-1]] {
+			s = append(s, i)
 		}
+	}
 
-		j := sort.Search(len(stack), func(i int) bool {
-			return A[stack[i]] <= x
-		})
-		res = max(res, i-stack[j])
+	res := 0
+	for i := len(A) - 1; i >= 0; i-- {
+		for len(s) != 0 && A[s[len(s)-1]] <= A[i] {
+			res = max(res, i-s[len(s)-1])
+			s = s[:len(s)-1]
+		}
 	}
 	return res
 }
