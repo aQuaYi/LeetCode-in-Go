@@ -27,11 +27,12 @@ func newIndexs(size int) []int {
 
 func check(A, indexs []int, lo, mid, hi int) int {
 	width := 0
-	for i := lo; i <= mid; i++ {
-		for j := mid + 1; j <= hi; j++ {
-			if A[i] <= A[j] {
-				width = max(width, indexs[j]-indexs[i])
+	for j := hi; j >= mid; j-- {
+		for i := lo; i <= mid; i++ {
+			if A[i] > A[j] {
+				break
 			}
+			width = max(width, indexs[j]-indexs[i])
 		}
 	}
 	return width
