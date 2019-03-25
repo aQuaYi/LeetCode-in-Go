@@ -5,28 +5,30 @@ import "math"
 func minAreaFreeRect(points [][]int) float64 {
 	n := len(points)
 	res := math.MaxFloat64
-	m := map[int]map[int]struct{}{}
+	check := make(map[[2]int]struct{}, n)
 	for _, p := range points {
-		if mm, ok := m[p[0]]; ok {
-			mm[p[1]] = struct{}{}
-		} else {
-			m[p[0]] = map[int]struct{}{p[1]: struct{}{}}
-		}
+		check[[2]int{p[0], p[1]}] = struct{}{}
 	}
+
 	for i := 0; i < n; i++ {
+		o := points[i]
 		for j := i + 1; j < n; j++ {
+			p := points[j]
 			for k := j + 1; k < n; k++ {
-				p1, p2, p3 := points[i], points[j], points[k]
-				x1, y1 := p2[0]-p1[0], p2[1]-p1[1]
-				x2, y2 := p3[0]-p1[0], p3[1]-p1[1]
-				if x1*x2+y1*y2 != 0 {
+				q := points[k]
+
+				x1, y1 := p[0]-o[0], p[1]-o[1] // vector form o to p
+				x2, y2 := q[0]-o[0], q[1]-o[1] // vector form o to q
+				if x1*x2+y1*y2 != 0 {          // not a rectangle
 					continue
 				}
 
-				if _, ok := m[p3[0]-p1[0]+p2[0]][p3[1]-p1[1]+p2[1]]; !ok {
+				p4 := [2]int{q[0] - o[0] + p[0], q[1] - o[1] + p[1]}
+				if _, ok := check[p4]; !ok { // miss fourth point
 					continue
 				}
-				area := math.Sqrt(float64(x1*x1+y1*y1)) * math.Sqrt(float64(x2*x2+y2*y2))
+
+				area := length(x1, y1) * length(x2, y2)
 				res = math.Min(res, area)
 			}
 		}
@@ -36,4 +38,9 @@ func minAreaFreeRect(points [][]int) float64 {
 		return 0
 	}
 	return res
+}
+
+// length of vector
+func length(x, y int) float64 {
+	return math.Sqrt(float64(x*x + y*y))
 }
