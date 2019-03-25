@@ -3,20 +3,22 @@ package problem0963
 import "math"
 
 func minAreaFreeRect(points [][]int) float64 {
-	mids := make(map[[2]int][][2]int, 0)
+	couples := make(map[[2]int][][2]int, 0)
 	size := len(points)
 	for i := 0; i < size; i++ {
 		for j := i + 1; j < size; j++ {
 			xi, yi := points[i][0], points[i][1]
 			xj, yj := points[j][0], points[j][1]
+			// x, y 本应该是 float64(xi+xj)/2, float64(yi+yj)/2
+			// 但是由于计算机表示浮点数的方式带来的精度问题
 			x, y := xi+xj, yi+yj
 			m := [2]int{x, y}
-			mids[m] = append(mids[m], [2]int{i, j})
+			couples[m] = append(couples[m], [2]int{i, j})
 		}
 	}
 
 	res := math.MaxFloat64
-	for _, ms := range mids {
+	for _, ms := range couples {
 		sz := len(ms)
 		if sz == 1 {
 			continue
