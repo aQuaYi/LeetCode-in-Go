@@ -5,7 +5,7 @@ import "math"
 func minAreaFreeRect(points [][]int) float64 {
 	size := len(points)
 
-	// point couple with same middle point
+	// collect point couple which has the same middle point
 	couples := make(map[[2]int][][2]int, size)
 	for i := 0; i < size; i++ {
 		for j := i + 1; j < size; j++ {
@@ -20,15 +20,12 @@ func minAreaFreeRect(points [][]int) float64 {
 	}
 
 	res := math.MaxFloat64
-	for _, ms := range couples {
-		sz := len(ms)
-		if sz == 1 {
-			continue
-		}
-		for i := 0; i < sz; i++ {
-			p, q := points[ms[i][0]], points[ms[i][1]]
-			for j := i + 1; j < sz; j++ {
-				o := points[ms[j][0]]
+	for _, c := range couples {
+		size := len(c)
+		for i := 0; i < size; i++ {
+			p, q := points[c[i][0]], points[c[i][1]]
+			for j := i + 1; j < size; j++ {
+				o := points[c[j][0]]
 				res = min(res, area(p, q, o))
 			}
 		}
@@ -41,14 +38,15 @@ func minAreaFreeRect(points [][]int) float64 {
 }
 
 func area(p, q, o []int) float64 {
-	xpo, ypo := p[0]-o[0], p[1]-o[1]
-	xqo, yqo := q[0]-o[0], q[1]-o[1]
-	if xpo*xqo+ypo*yqo != 0 { // not a rectangle
+	xop, yop := p[0]-o[0], p[1]-o[1] // vector form o to p
+	xoq, yoq := q[0]-o[0], q[1]-o[1] // vector form o to q
+	if xop*xoq+yop*yoq != 0 {        // not a rectangle
 		return math.MaxFloat64
 	}
-	return length(xpo, ypo) * length(xqo, yqo)
+	return length(xop, yop) * length(xoq, yoq)
 }
 
+// length of vector (x,y)
 func length(x, y int) float64 {
 	xf, yf := float64(x), float64(y)
 	return math.Sqrt(xf*xf + yf*yf)
