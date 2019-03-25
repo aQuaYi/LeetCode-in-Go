@@ -3,30 +3,31 @@ package problem0963
 import "math"
 
 func minAreaFreeRect(points [][]int) float64 {
-	size := len(points)
-
-	// collect point couple which has the same middle point
-	couples := make(map[[2]int][][2]int, size)
-	for i := 0; i < size; i++ {
-		for j := i + 1; j < size; j++ {
-			xi, yi := points[i][0], points[i][1]
-			xj, yj := points[j][0], points[j][1]
-			// x, y := float64(xi+xj)/2, float64(yi+yj)/2
-			// change for speedup
-			x, y := xi+xj, yi+yj
-			m := [2]int{x, y}
-			couples[m] = append(couples[m], [2]int{i, j})
+	n := len(points)
+	res := math.MaxFloat64
+	m := map[int]map[int]struct{}{}
+	for _, p := range points {
+		if mm, ok := m[p[0]]; ok {
+			mm[p[1]] = struct{}{}
+		} else {
+			m[p[0]] = map[int]struct{}{p[1]: struct{}{}}
 		}
 	}
+	for i := 0; i < n; i++ {
+		for j := i + 1; j < n; j++ {
+			for k := j + 1; k < n; k++ {
+				p1, p2, p3 := points[i], points[j], points[k]
+				x1, y1 := p2[0]-p1[0], p2[1]-p1[1]
+				x2, y2 := p3[0]-p1[0], p3[1]-p1[1]
+				if x1*x2+y1*y2 != 0 {
+					continue
+				}
 
-	res := math.MaxFloat64
-	for _, c := range couples {
-		size := len(c)
-		for i := 0; i < size; i++ {
-			p, q := points[c[i][0]], points[c[i][1]]
-			for j := i + 1; j < size; j++ {
-				o := points[c[j][0]]
-				res = min(res, area(p, q, o))
+				if _, ok := m[p3[0]-p1[0]+p2[0]][p3[1]-p1[1]+p2[1]]; !ok {
+					continue
+				}
+				area := math.Sqrt(float64(x1*x1+y1*y1)) * math.Sqrt(float64(x2*x2+y2*y2))
+				res = math.Min(res, area)
 			}
 		}
 	}
@@ -35,26 +36,4 @@ func minAreaFreeRect(points [][]int) float64 {
 		return 0
 	}
 	return res
-}
-
-func area(p, q, o []int) float64 {
-	xop, yop := p[0]-o[0], p[1]-o[1] // vector form o to p
-	xoq, yoq := q[0]-o[0], q[1]-o[1] // vector form o to q
-	if xop*xoq+yop*yoq != 0 {        // not a rectangle
-		return math.MaxFloat64
-	}
-	return length(xop, yop) * length(xoq, yoq)
-}
-
-// length of vector (x,y)
-func length(x, y int) float64 {
-	xf, yf := float64(x), float64(y)
-	return math.Sqrt(xf*xf + yf*yf)
-}
-
-func min(a, b float64) float64 {
-	if a < b {
-		return a
-	}
-	return b
 }
