@@ -3,14 +3,14 @@ package problem0963
 import "math"
 
 func minAreaFreeRect(points [][]int) float64 {
-	mids := make(map[[2]float64][][2]int, 0)
+	mids := make(map[[2]int][][2]int, 0)
 	size := len(points)
 	for i := 0; i < size; i++ {
 		for j := i + 1; j < size; j++ {
 			xi, yi := points[i][0], points[i][1]
 			xj, yj := points[j][0], points[j][1]
-			x, y := float64(xi+xj)/2, float64(yi+yj)/2
-			m := [2]float64{x, y}
+			x, y := xi+xj, yi+yj
+			m := [2]int{x, y}
 			mids[m] = append(mids[m], [2]int{i, j})
 		}
 	}
@@ -37,7 +37,7 @@ func area(p, q, o []int) float64 {
 	xpo, ypo := p[0]-o[0], p[1]-o[1]
 	xqo, yqo := q[0]-o[0], q[1]-o[1]
 	if xpo*xqo+ypo*yqo != 0 { // not rectangle
-		return 0
+		return math.MaxFloat64
 	}
 	return length(xpo, ypo) * length(xqo, yqo)
 }
