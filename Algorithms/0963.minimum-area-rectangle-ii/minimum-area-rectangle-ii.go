@@ -3,23 +3,24 @@ package problem0963
 import "math"
 
 func minAreaFreeRect(points [][]int) float64 {
-	n := len(points)
+	size := len(points)
 	res := math.MaxFloat64
-	check := make(map[[2]int]struct{}, n)
+
+	check := make(map[[2]int]struct{}, size)
 	for _, p := range points {
 		check[[2]int{p[0], p[1]}] = struct{}{}
 	}
 
-	for i := 0; i < n; i++ {
+	for i := 0; i < size; i++ {
 		o := points[i]
-		for j := i + 1; j < n; j++ {
+		for j := i + 1; j < size; j++ {
 			p := points[j]
-			for k := j + 1; k < n; k++ {
+			x1, y1 := p[0]-o[0], p[1]-o[1] // vector form o to p
+			for k := j + 1; k < size; k++ {
 				q := points[k]
-
-				x1, y1 := p[0]-o[0], p[1]-o[1] // vector form o to p
 				x2, y2 := q[0]-o[0], q[1]-o[1] // vector form o to q
-				if x1*x2+y1*y2 != 0 {          // not a rectangle
+
+				if x1*x2+y1*y2 != 0 { // not a rectangle
 					continue
 				}
 
