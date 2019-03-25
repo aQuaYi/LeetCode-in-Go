@@ -39,7 +39,7 @@ func minAreaFreeRect(points [][]int) float64 {
 func area(p, q, o []int) float64 {
 	xpo, ypo := p[0]-o[0], p[1]-o[1]
 	xqo, yqo := q[0]-o[0], q[1]-o[1]
-	if xpo*xqo+ypo*yqo != 0 { // not rectangle
+	if xpo*xqo+ypo*yqo != 0 { // not a rectangle
 		return math.MaxFloat64
 	}
 	return length(xpo, ypo) * length(xqo, yqo)
