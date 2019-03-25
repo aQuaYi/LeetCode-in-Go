@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 890,
-	"Updated": "2019-03-25T19:58:41.541730793+08:00",
+	"Updated": "2019-03-25T21:30:04.280505817+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 215,
 			"Total": 234
 		},
 		"Medium": {
-			"Solved": 368,
+			"Solved": 369,
 			"Total": 398
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 173
 		},
 		"Total": {
-			"Solved": 745,
+			"Solved": 746,
 			"Total": 805
 		}
 	},
@@ -11029,7 +11029,7 @@
 			"ID": 917,
 			"Title": "Reverse Only Letters",
 			"TitleSlug": "reverse-only-letters",
-			"PassRate": "56%",
+			"PassRate": "55%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11583,7 +11583,7 @@
 			"TitleSlug": "minimum-area-rectangle-ii",
 			"PassRate": "42%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
