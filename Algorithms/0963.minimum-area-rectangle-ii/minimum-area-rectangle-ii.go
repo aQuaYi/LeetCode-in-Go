@@ -30,6 +30,9 @@ func minAreaFreeRect(points [][]int) float64 {
 		}
 	}
 
+	if res == math.MaxFloat64 {
+		return 0
+	}
 	return res
 }
 
