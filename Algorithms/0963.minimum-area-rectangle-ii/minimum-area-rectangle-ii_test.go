@@ -39,7 +39,7 @@ func Test_minAreaFreeRect(t *testing.T) {
 	ast := assert.New(t)
 
 	for _, tc := range tcs {
-		ast.Equal(tc.ans, minAreaFreeRect(tc.points), "输入:%v", tc)
+		ast.InDelta(tc.ans, minAreaFreeRect(tc.points), 0.00001, "输入:%v", tc)
 	}
 }
 
