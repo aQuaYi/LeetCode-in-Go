@@ -30,8 +30,17 @@ func helper(x, target, count int, res *int) {
 		return
 	}
 
+	intRoot = max(intRoot, 1)
+
 	helper(x, target-base, count+intRoot, res)
 	helper(x, base*x-target, count+intRoot+1, res)
+}
+
+func max(a, b int) int {
+	if a > b {
+		return a
+	}
+	return b
 }
 
 func min(a, b int) int {
