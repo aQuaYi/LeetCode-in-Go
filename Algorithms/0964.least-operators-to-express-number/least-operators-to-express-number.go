@@ -48,12 +48,10 @@ func helper(x, target, count int, res *int) {
 	}
 
 	intRoot = max(intRoot, 1)
-	if target-base <= base*x-target {
-		helper(x, target-base, count+intRoot, res)
+
+	helper(x, target-base, count+intRoot, res)
+	if base*x-target < target {
 		helper(x, base*x-target, count+intRoot+1, res)
-	} else {
-		helper(x, base*x-target, count+intRoot+1, res)
-		helper(x, target-base, count+intRoot, res)
 	}
 }
 
