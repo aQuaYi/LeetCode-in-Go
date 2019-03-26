@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 881,
-	"Updated": "2019-03-26T21:06:02.431826249+08:00",
+	"Updated": "2019-03-27T00:52:36.31486825+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 215,
@@ -12,11 +12,11 @@
 			"Total": 398
 		},
 		"Hard": {
-			"Solved": 162,
+			"Solved": 163,
 			"Total": 173
 		},
 		"Total": {
-			"Solved": 746,
+			"Solved": 747,
 			"Total": 805
 		}
 	},
@@ -4261,7 +4261,7 @@
 			"ID": 353,
 			"Title": "Design Snake Game",
 			"TitleSlug": "design-snake-game",
-			"PassRate": "30%",
+			"PassRate": "29%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -4393,7 +4393,7 @@
 			"ID": 364,
 			"Title": "Nested List Weight Sum II",
 			"TitleSlug": "nested-list-weight-sum-ii",
-			"PassRate": "56%",
+			"PassRate": "57%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -8173,7 +8173,7 @@
 			"ID": 679,
 			"Title": "24 Game",
 			"TitleSlug": "24-game",
-			"PassRate": "41%",
+			"PassRate": "42%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -8869,7 +8869,7 @@
 			"ID": 737,
 			"Title": "Sentence Similarity II",
 			"TitleSlug": "sentence-similarity-ii",
-			"PassRate": "43%",
+			"PassRate": "42%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -9049,7 +9049,7 @@
 			"ID": 752,
 			"Title": "Open the Lock",
 			"TitleSlug": "open-the-lock",
-			"PassRate": "44%",
+			"PassRate": "45%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11185,7 +11185,7 @@
 			"ID": 930,
 			"Title": "Binary Subarrays With Sum",
 			"TitleSlug": "binary-subarrays-with-sum",
-			"PassRate": "36%",
+			"PassRate": "37%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11595,7 +11595,7 @@
 			"TitleSlug": "least-operators-to-express-number",
 			"PassRate": "40%",
 			"Difficulty": "Hard",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -12289,7 +12289,7 @@
 			"ID": 1022,
 			"Title": "Smallest Integer Divisible by K",
 			"TitleSlug": "smallest-integer-divisible-by-k",
-			"PassRate": "23%",
+			"PassRate": "24%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
