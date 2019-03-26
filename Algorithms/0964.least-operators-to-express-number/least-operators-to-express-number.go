@@ -26,7 +26,7 @@ func helper(x, target, count int, res *int) {
 	base := int(math.Pow(float64(x), math.Floor(root)))
 	intRoot := int(math.Floor(root))
 	if base == target {
-		*res = min(*res, intRoot-1)
+		*res = min(*res, count+intRoot-1)
 		return
 	}
 
