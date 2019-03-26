@@ -22,36 +22,38 @@ func helper(x, target, count int, res *int) {
 		*res = min(*res, count)
 		fmt.Println("-", *res)
 		return
-	} else if target == 1 {
-		*res = min(*res, count+1)
+	} else if target < x {
+		*res = min(
+			*res,
+			count+min(
+				target*2-1,
+				1+(x-target)*2-1,
+			),
+		)
 		fmt.Println("-", *res)
 		return
 	}
 
 	root := math.Log10(float64(target)) / math.Log10(float64(x))
-
 	base := int(math.Pow(float64(x), math.Floor(root)))
 	intRoot := int(math.Floor(root))
+
 	if base == target {
 		*res = min(*res, count+intRoot-1)
+		fmt.Println("-", *res)
+		return
+	} else if base*x == target {
+		*res = min(*res, count+intRoot)
 		fmt.Println("-", *res)
 		return
 	}
 
 	intRoot = max(intRoot, 1)
 	if target-base <= base*x-target {
-		if base == 1 {
-			helper(x, target-base, count+intRoot+1, res)
-		} else {
-			helper(x, target-base, count+intRoot, res)
-		}
+		helper(x, target-base, count+intRoot, res)
 		helper(x, base*x-target, count+intRoot+1, res)
 	} else {
-		if base == 1 {
-			helper(x, base*x-target, count+intRoot, res)
-		} else {
-			helper(x, base*x-target, count+intRoot+1, res)
-		}
+		helper(x, base*x-target, count+intRoot+1, res)
 		helper(x, target-base, count+intRoot, res)
 	}
 }
