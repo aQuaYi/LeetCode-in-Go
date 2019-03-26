@@ -3,10 +3,22 @@ package problem0964
 import "math"
 
 func leastOpsExpressTarget(x int, target int) int {
+	res := math.MaxInt64
+	helper(x, target, 0, &res)
+	return res
+}
+
+func helper(x, target, count int, res *int) {
+	if count >= *res {
+		return
+	}
+
 	if target == x {
-		return 0
+		*res = min(*res, count)
+		return
 	} else if target == 1 {
-		return 1
+		*res = min(*res, count+1)
+		return
 	}
 
 	root := math.Log10(float64(target)) / math.Log10(float64(x))
@@ -14,14 +26,12 @@ func leastOpsExpressTarget(x int, target int) int {
 	base := int(math.Pow(float64(x), math.Floor(root)))
 	intRoot := int(math.Floor(root))
 	if base == target {
-		return intRoot - 1
+		*res = min(*res, intRoot-1)
+		return
 	}
 
-	return min(
-		intRoot+leastOpsExpressTarget(x, abs(base-target)),
-		intRoot+1+leastOpsExpressTarget(x, abs(base*x-target)),
-	)
-
+	helper(x, target-base, count+intRoot, res)
+	helper(x, base*x-target, count+intRoot+1, res)
 }
 
 func min(a, b int) int {
