@@ -1,26 +1,25 @@
 package problem0964
 
 import (
-	"fmt"
 	"math"
 )
 
 func leastOpsExpressTarget(x int, target int) int {
-	fmt.Println("-=-=-=-=-=-=-=-=-")
+	//fmt.Println("-=-=-=-=-=-=-=-=-")
 	res := math.MaxInt64
 	helper(x, target, 0, &res)
 	return res
 }
 
 func helper(x, target, count int, res *int) {
-	fmt.Println(target, count)
+	//fmt.Println(target, count)
 	if count >= *res {
 		return
 	}
 
 	if target == x {
 		*res = min(*res, count)
-		fmt.Println("-", *res)
+		//fmt.Println("-", *res)
 		return
 	} else if target < x {
 		*res = min(
@@ -30,7 +29,7 @@ func helper(x, target, count int, res *int) {
 				1+(x-target)*2-1,
 			),
 		)
-		fmt.Println("-", *res)
+		//fmt.Println("-", *res)
 		return
 	}
 
@@ -40,11 +39,11 @@ func helper(x, target, count int, res *int) {
 
 	if base == target {
 		*res = min(*res, count+intRoot-1)
-		fmt.Println("-", *res)
+		//fmt.Println("-", *res)
 		return
 	} else if base*x == target {
 		*res = min(*res, count+intRoot)
-		fmt.Println("-", *res)
+		//fmt.Println("-", *res)
 		return
 	}
 
