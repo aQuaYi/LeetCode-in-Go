@@ -8,13 +8,23 @@ func spellchecker(wordlist []string, queries []string) []string {
 		isExactlyMatch[w] = true
 	}
 
+	cap := make(map[string]int, len(wordlist))
+	vow := make(map[string]int, len(wordlist))
+	for i := len(wordlist) - 1; i >= 0; i-- {
+		w := wordlist[i]
+		cap[strings.ToLower(w)] = i
+		vow[replacingVowel(w)] = i
+	}
+
 	corrects := make([]string, len(queries))
 	for i, q := range queries {
 		if isExactlyMatch[q] {
 			corrects[i] = q
-			continue
+		} else if j, ok := cap[strings.ToLower(q)]; ok {
+			corrects[i] = wordlist[j]
+		} else if k, ok := vow[replacingVowel(q)]; ok {
+			corrects[i] = wordlist[k]
 		}
-		corrects[i] = check(q, wordlist)
 	}
 
 	return corrects
