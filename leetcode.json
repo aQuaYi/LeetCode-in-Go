@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 877,
-	"Updated": "2019-03-27T19:39:13.417339252+08:00",
+	"Updated": "2019-03-27T21:42:05.200631164+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 215,
 			"Total": 234
 		},
 		"Medium": {
-			"Solved": 369,
+			"Solved": 370,
 			"Total": 398
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 173
 		},
 		"Total": {
-			"Solved": 747,
+			"Solved": 748,
 			"Total": 805
 		}
 	},
@@ -9421,7 +9421,7 @@
 			"ID": 783,
 			"Title": "Minimum Distance Between BST Nodes",
 			"TitleSlug": "minimum-distance-between-bst-nodes",
-			"PassRate": "50%",
+			"PassRate": "49%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10273,7 +10273,7 @@
 			"ID": 854,
 			"Title": "K-Similar Strings",
 			"TitleSlug": "k-similar-strings",
-			"PassRate": "33%",
+			"PassRate": "32%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10357,7 +10357,7 @@
 			"ID": 861,
 			"Title": "Score After Flipping Matrix",
 			"TitleSlug": "score-after-flipping-matrix",
-			"PassRate": "69%",
+			"PassRate": "68%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11197,7 +11197,7 @@
 			"ID": 931,
 			"Title": "Minimum Falling Path Sum",
 			"TitleSlug": "minimum-falling-path-sum",
-			"PassRate": "58%",
+			"PassRate": "57%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11619,7 +11619,7 @@
 			"TitleSlug": "vowel-spellchecker",
 			"PassRate": "40%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -11905,7 +11905,7 @@
 			"ID": 990,
 			"Title": "Satisfiability of Equality Equations",
 			"TitleSlug": "satisfiability-of-equality-equations",
-			"PassRate": "39%",
+			"PassRate": "38%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
