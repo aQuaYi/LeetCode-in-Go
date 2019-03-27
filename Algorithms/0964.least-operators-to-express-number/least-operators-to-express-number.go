@@ -18,7 +18,7 @@ package problem0964
 
 func leastOpsExpressTarget(x int, target int) int {
 	target, r := target/x, target%x
-	pos, neg := r*2, (x-r)*2 // 处理各位上的数
+	pos, neg := r*2, (x-r)*2 // 处理个位上的数
 
 	bit := 1
 	for target > 0 {
