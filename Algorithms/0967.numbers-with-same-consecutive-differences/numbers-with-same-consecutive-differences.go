@@ -12,7 +12,7 @@ func numsSameConsecDiff(N int, K int) []int {
 			if r-K >= 0 {
 				tmp = append(tmp, v*10+r-K)
 			}
-			if r+K <= 9 {
+			if K > 0 && r+K <= 9 {
 				tmp = append(tmp, v*10+r+K)
 			}
 		}
