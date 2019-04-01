@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 888,
-	"Updated": "2019-04-01T19:42:16.624801271+08:00",
+	"Updated": "2019-04-01T20:38:20.424369923+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 215,
 			"Total": 235
 		},
 		"Medium": {
-			"Solved": 370,
+			"Solved": 371,
 			"Total": 401
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 173
 		},
 		"Total": {
-			"Solved": 748,
+			"Solved": 749,
 			"Total": 809
 		}
 	},
@@ -1237,7 +1237,7 @@
 			"ID": 101,
 			"Title": "Symmetric Tree",
 			"TitleSlug": "symmetric-tree",
-			"PassRate": "42%",
+			"PassRate": "43%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11631,7 +11631,7 @@
 			"TitleSlug": "numbers-with-same-consecutive-differences",
 			"PassRate": "36%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
