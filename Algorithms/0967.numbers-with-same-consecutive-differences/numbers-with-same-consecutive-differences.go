@@ -1,10 +1,10 @@
 package problem0967
 
 func numsSameConsecDiff(N int, K int) []int {
-	queue := prepare(K)
+	res := []int{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
 	for n := 1; n < N; n++ {
-		tmp := make([]int, 0, len(queue)*2)
-		for _, v := range queue {
+		tmp := make([]int, 0, len(res)*2)
+		for _, v := range res {
 			if v == 0 {
 				continue
 			}
@@ -16,18 +16,7 @@ func numsSameConsecDiff(N int, K int) []int {
 				tmp = append(tmp, v*10+r+K)
 			}
 		}
-		queue = tmp
-	}
-	return queue
-}
-
-func prepare(k int) []int {
-	res := make([]int, 0, 32)
-	for i := 0; i < 10; i++ {
-		if i+k > 9 && i-k < 0 {
-			continue
-		}
-		res = append(res, i)
+		res = tmp
 	}
 	return res
 }
