@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 882,
-	"Updated": "2019-04-02T20:37:45.717375041+08:00",
+	"Updated": "2019-04-02T22:14:26.761492016+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 215,
 			"Total": 235
 		},
 		"Medium": {
-			"Solved": 371,
+			"Solved": 372,
 			"Total": 401
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 173
 		},
 		"Total": {
-			"Solved": 749,
+			"Solved": 750,
 			"Total": 809
 		}
 	},
@@ -10273,7 +10273,7 @@
 			"ID": 854,
 			"Title": "K-Similar Strings",
 			"TitleSlug": "k-similar-strings",
-			"PassRate": "33%",
+			"PassRate": "32%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11655,7 +11655,7 @@
 			"TitleSlug": "pancake-sorting",
 			"PassRate": "61%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
