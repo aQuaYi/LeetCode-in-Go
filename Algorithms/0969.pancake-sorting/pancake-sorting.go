@@ -3,7 +3,7 @@ package problem0969
 func pancakeSort(A []int) []int {
 	size := len(A)
 	res := make([]int, 0, size*2)
-	for Ai := size; 0 < Ai; Ai-- {
+	for Ai := size; Ai > 1; Ai-- {
 		// every round makes A[i-1] is i
 		if A[Ai-1] == Ai {
 			continue
