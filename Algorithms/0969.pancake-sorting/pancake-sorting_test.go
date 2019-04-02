@@ -1,6 +1,7 @@
 package problem0969
 
 import (
+	"sort"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -8,18 +9,15 @@ import (
 
 // tcs is testcase slice
 var tcs = []struct {
-	A   []int
-	ans []int
+	A []int
 }{
 
 	{
 		[]int{3, 2, 4, 1},
-		[]int{4, 2, 4, 3},
 	},
 
 	{
 		[]int{1, 2, 3},
-		[]int{},
 	},
 
 	// 可以有多个 testcase
@@ -29,7 +27,13 @@ func Test_pancakeSort(t *testing.T) {
 	ast := assert.New(t)
 
 	for _, tc := range tcs {
-		ast.Equal(tc.ans, pancakeSort(tc.A), "输入:%v", tc)
+		A := make([]int, len(tc.A))
+		copy(A, tc.A)
+		ans := pancakeSort(tc.A)
+		for _, k := range ans {
+			swap(tc.A, k)
+		}
+		ast.True(sort.IntsAreSorted(tc.A), "输入 %v, 结果 %v", A, ans)
 	}
 }
 
