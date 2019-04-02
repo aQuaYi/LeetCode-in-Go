@@ -29,11 +29,12 @@ func Test_pancakeSort(t *testing.T) {
 	for _, tc := range tcs {
 		A := make([]int, len(tc.A))
 		copy(A, tc.A)
-		ans := pancakeSort(tc.A)
+		ans := pancakeSort(A)
+		copy(A, tc.A)
 		for _, k := range ans {
-			swap(tc.A, k)
+			reverse(A, k)
 		}
-		ast.True(sort.IntsAreSorted(tc.A), "输入 %v, 结果 %v", A, ans)
+		ast.True(sort.IntsAreSorted(A), "输入 %v, 结果 %v, 转换后 %v", tc.A, ans, A)
 	}
 }
 
