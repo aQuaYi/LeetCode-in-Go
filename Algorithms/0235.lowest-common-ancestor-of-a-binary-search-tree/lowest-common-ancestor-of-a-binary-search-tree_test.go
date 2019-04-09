@@ -58,15 +58,12 @@ func Benchmark_lowestCommonAncestor(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		for _, que := range questions {
 			root := kit.PreIn2Tree(que.pre, que.in)
-
 			p := &TreeNode{
 				Val: que.p,
 			}
-
 			q := &TreeNode{
 				Val: que.q,
 			}
-
 			lowestCommonAncestor(root, p, q)
 		}
 	}
