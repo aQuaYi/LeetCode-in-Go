@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 896,
-	"Updated": "2019-04-09T20:49:35.282944228+08:00",
+	"Updated": "2019-04-09T21:49:41.868756977+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 215,
+			"Solved": 216,
 			"Total": 237
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 173
 		},
 		"Total": {
-			"Solved": 750,
+			"Solved": 751,
 			"Total": 813
 		}
 	},
@@ -2847,7 +2847,7 @@
 			"TitleSlug": "lowest-common-ancestor-of-a-binary-search-tree",
 			"PassRate": "43%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -6553,7 +6553,7 @@
 			"ID": 544,
 			"Title": "Output Contest Matches",
 			"TitleSlug": "output-contest-matches",
-			"PassRate": "72%",
+			"PassRate": "73%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -9493,7 +9493,7 @@
 			"ID": 789,
 			"Title": "Escape The Ghosts",
 			"TitleSlug": "escape-the-ghosts",
-			"PassRate": "54%",
+			"PassRate": "55%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10009,7 +10009,7 @@
 			"ID": 832,
 			"Title": "Flipping an Image",
 			"TitleSlug": "flipping-an-image",
-			"PassRate": "71%",
+			"PassRate": "72%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,

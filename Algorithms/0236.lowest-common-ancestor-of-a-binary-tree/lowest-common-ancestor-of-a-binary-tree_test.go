@@ -8,43 +8,51 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-var questions = []struct {
-	pre, in   []int
-	p, q, ans int
+var root = kit.Ints2TreeNode([]int{3, 5, 1, 6, 2, 0, 8, kit.NULL, kit.NULL, 7, 4})
+
+var tcs = []struct {
+	p, q, ans *TreeNode
 }{
+
 	{
-		[]int{3, 5, 6, 2, 7, 4, 1, 0, 8},
-		[]int{6, 5, 7, 2, 4, 3, 0, 1, 8},
-		5,
-		1,
-		3,
+		kit.GetTargetNode(root, 5),
+		kit.GetTargetNode(root, 1),
+		kit.GetTargetNode(root, 3),
 	},
 
 	{
-		[]int{3, 5, 6, 2, 7, 4, 1, 0, 8},
-		[]int{6, 5, 7, 2, 4, 3, 0, 1, 8},
-		5,
-		4,
-		5,
+		kit.GetTargetNode(root, 4),
+		kit.GetTargetNode(root, 7),
+		kit.GetTargetNode(root, 2),
 	},
+
+	{
+		kit.GetTargetNode(root, 4),
+		kit.GetTargetNode(root, 5),
+		kit.GetTargetNode(root, 5),
+	},
+
+	{
+		kit.GetTargetNode(root, 5),
+		kit.GetTargetNode(root, 4),
+		kit.GetTargetNode(root, 5),
+	},
+
+	//
 }
 
 func Test_lowestCommonAncestor(t *testing.T) {
 	ast := assert.New(t)
-	for _, que := range questions {
-		root := kit.PreIn2Tree(que.pre, que.in)
-		p, q := &TreeNode{Val: que.p}, &TreeNode{Val: que.q}
-		node := lowestCommonAncestor(root, p, q)
-		ast.Equal(que.ans, node.Val)
+	for _, tc := range tcs {
+		node := lowestCommonAncestor(root, tc.p, tc.q)
+		ast.Equal(tc.ans, node)
 	}
 }
 
 func Benchmark_lowestCommonAncestor(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		for _, que := range questions {
-			root := kit.PreIn2Tree(que.pre, que.in)
-			p, q := &TreeNode{Val: que.p}, &TreeNode{Val: que.q}
-			lowestCommonAncestor(root, p, q)
+		for _, tc := range tcs {
+			lowestCommonAncestor(root, tc.p, tc.q)
 		}
 	}
 }
