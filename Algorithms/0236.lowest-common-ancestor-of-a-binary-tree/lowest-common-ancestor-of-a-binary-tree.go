@@ -4,23 +4,37 @@ import (
 	"github.com/aQuaYi/LeetCode-in-Go/kit"
 )
 
+// TreeNode is pre-defined...
 type TreeNode = kit.TreeNode
 
 func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
-	if root == nil || p.Val == root.Val || q.Val == root.Val {
-		return root
+	if isAncestor(p, q) {
+		return p
+	} else if isAncestor(q, p) {
+		return q
 	}
+	return helper(root, p, q)
+}
 
-	l := lowestCommonAncestor(root.Left, p, q)
-	r := lowestCommonAncestor(root.Right, p, q)
-
-	if l != nil && r != nil {
-		return root
+func helper(root, p, q *TreeNode) *TreeNode {
+	if root.Left != nil &&
+		isAncestor(root.Left, p) &&
+		isAncestor(root.Left, q) {
+		return helper(root.Left, p, q)
+	} else if root.Right != nil &&
+		isAncestor(root.Right, p) &&
+		isAncestor(root.Right, q) {
+		return helper(root.Right, p, q)
 	}
+	return root
+}
 
-	if l != nil {
-		return l
+func isAncestor(p, c *TreeNode) bool {
+	if p == nil {
+		return false
 	}
-
-	return r
+	if p == c {
+		return true
+	}
+	return isAncestor(p.Left, c) || isAncestor(p.Right, c)
 }
