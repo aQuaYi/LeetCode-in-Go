@@ -10,19 +10,19 @@ type TreeNode = kit.TreeNode
 func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
 	if isAncestor(p, q) {
 		return p
-	} else if isAncestor(q, p) {
+	}
+	if isAncestor(q, p) {
 		return q
 	}
 	return helper(root, p, q)
 }
 
 func helper(root, p, q *TreeNode) *TreeNode {
-	if root.Left != nil &&
-		isAncestor(root.Left, p) &&
+	if isAncestor(root.Left, p) &&
 		isAncestor(root.Left, q) {
 		return helper(root.Left, p, q)
-	} else if root.Right != nil &&
-		isAncestor(root.Right, p) &&
+	}
+	if isAncestor(root.Right, p) &&
 		isAncestor(root.Right, q) {
 		return helper(root.Right, p, q)
 	}
