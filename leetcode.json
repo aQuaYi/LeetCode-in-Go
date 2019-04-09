@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 896,
-	"Updated": "2019-04-09T21:49:41.868756977+08:00",
+	"Updated": "2019-04-09T23:33:28.858741901+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 216,
 			"Total": 237
 		},
 		"Medium": {
-			"Solved": 372,
+			"Solved": 373,
 			"Total": 403
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 173
 		},
 		"Total": {
-			"Solved": 751,
+			"Solved": 752,
 			"Total": 813
 		}
 	},
@@ -2859,7 +2859,7 @@
 			"TitleSlug": "lowest-common-ancestor-of-a-binary-tree",
 			"PassRate": "36%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -8053,7 +8053,7 @@
 			"ID": 669,
 			"Title": "Trim a Binary Search Tree",
 			"TitleSlug": "trim-a-binary-search-tree",
-			"PassRate": "59%",
+			"PassRate": "60%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9901,7 +9901,7 @@
 			"ID": 823,
 			"Title": "Binary Trees With Factors",
 			"TitleSlug": "binary-trees-with-factors",
-			"PassRate": "31%",
+			"PassRate": "32%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10189,7 +10189,7 @@
 			"ID": 847,
 			"Title": "Shortest Path Visiting All Nodes",
 			"TitleSlug": "shortest-path-visiting-all-nodes",
-			"PassRate": "46%",
+			"PassRate": "45%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11293,7 +11293,7 @@
 			"ID": 939,
 			"Title": "Minimum Area Rectangle",
 			"TitleSlug": "minimum-area-rectangle",
-			"PassRate": "50%",
+			"PassRate": "49%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12025,7 +12025,7 @@
 			"ID": 1000,
 			"Title": "Minimum Cost to Merge Stones",
 			"TitleSlug": "minimum-cost-to-merge-stones",
-			"PassRate": "27%",
+			"PassRate": "28%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -12037,7 +12037,7 @@
 			"ID": 1001,
 			"Title": "Grid Illumination",
 			"TitleSlug": "grid-illumination",
-			"PassRate": "33%",
+			"PassRate": "34%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -12277,7 +12277,7 @@
 			"ID": 1021,
 			"Title": "Remove Outermost Parentheses",
 			"TitleSlug": "remove-outermost-parentheses",
-			"PassRate": "84%",
+			"PassRate": "83%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
