@@ -7,47 +7,29 @@ import (
 // TreeNode is pre-defined...
 type TreeNode = kit.TreeNode
 
+// NOTICE: 此解法的时间复杂度是 O(n)
+
 func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
-	isAncestorOfP := makeReferee(p)
-	if isAncestorOfP(q) {
-		return q
+	if root == nil ||
+		root == p ||
+		root == q {
+		return root
 	}
 
-	isAncestorOfQ := makeReferee(q)
-	if isAncestorOfQ(p) {
-		return p
-	}
+	l := lowestCommonAncestor(root.Left, p, q)
+	r := lowestCommonAncestor(root.Right, p, q)
 
-	for {
-		if isAncestorOfP(root.Left) &&
-			isAncestorOfQ(root.Left) {
-			root = root.Left
-			continue
-		}
-		if isAncestorOfP(root.Right) &&
-			isAncestorOfQ(root.Right) {
-			root = root.Right
-			continue
-		}
-		break
+	// l=nil 意味着， p 和 q 都 **不在** root.Left 中
+	// r=nil 同理。
+	// 所以，根据题意， l 和 r 不可能同时为 nil
+	if l != nil && r != nil {
+		// 此时 p 和 q 分别在 root.Left 和 root.Right 中
+		return root
 	}
-
-	return root
-}
-
-func makeReferee(child *TreeNode) func(*TreeNode) bool {
-	rec := make(map[int]bool, 128)
-	var f func(*TreeNode) bool
-	f = func(root *TreeNode) bool {
-		if root == nil {
-			return false
-		}
-		res, ok := rec[root.Val]
-		if !ok {
-			res = (root == child) || f(root.Left) || f(root.Right)
-			rec[root.Val] = res
-		}
-		return res
+	if l == nil {
+		// 此时 p 和 q 在 root.Right 中
+		return r
 	}
-	return f
+	// 此时 p 和 q 在 root.Left 中
+	return l
 }
