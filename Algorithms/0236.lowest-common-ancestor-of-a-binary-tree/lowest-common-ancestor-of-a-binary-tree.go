@@ -36,18 +36,17 @@ func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
 }
 
 func makeReferee(child *TreeNode) func(*TreeNode) bool {
-	rec := make(map[int]bool, 1024)
+	rec := make(map[int]bool, 128)
 	var f func(*TreeNode) bool
 	f = func(root *TreeNode) bool {
 		if root == nil {
 			return false
 		}
 		res, ok := rec[root.Val]
-		if ok {
-			return res
+		if !ok {
+			res = (root == child) || f(root.Left) || f(root.Right)
+			rec[root.Val] = res
 		}
-		res = (root == child) || f(root.Left) || f(root.Right)
-		rec[root.Val] = res
 		return res
 	}
 	return f
