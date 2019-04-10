@@ -34,8 +34,25 @@ func Test_s2l(t *testing.T) {
 	i := 1
 	for ln != nil {
 		ast.Equal(i, ln.Val, "对应的值不对")
-
 		ln = ln.Next
 		i++
 	}
+}
+
+func Test_getNodeWith(t *testing.T) {
+	ast := assert.New(t)
+	//
+	ln := Ints2List([]int{1, 2, 3, 4, 5, 6, 7, 8, 9})
+	val := 10
+	node := &ListNode{
+		Val: val,
+	}
+	tail := ln
+	for tail.Next != nil {
+		tail = tail.Next
+	}
+	tail.Next = node
+	expected := node
+	actual := ln.GetNodeWith(val)
+	ast.Equal(expected, actual)
 }

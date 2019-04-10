@@ -43,3 +43,15 @@ func Ints2List(nums []int) *ListNode {
 	}
 	return l.Next
 }
+
+// GetNodeWith returns the first node with val
+func (l *ListNode) GetNodeWith(val int) *ListNode {
+	res := l
+	for res != nil {
+		if res.Val == val {
+			break
+		}
+		res = res.Next
+	}
+	return res
+}
