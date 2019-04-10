@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 884,
-	"Updated": "2019-04-10T21:34:55.516964765+08:00",
+	"Updated": "2019-04-10T22:08:09.534714538+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 216,
+			"Solved": 217,
 			"Total": 237
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 173
 		},
 		"Total": {
-			"Solved": 752,
+			"Solved": 753,
 			"Total": 813
 		}
 	},
@@ -2871,9 +2871,9 @@
 			"TitleSlug": "delete-node-in-a-linked-list",
 			"PassRate": "52%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -5401,7 +5401,7 @@
 			"ID": 448,
 			"Title": "Find All Numbers Disappeared in an Array",
 			"TitleSlug": "find-all-numbers-disappeared-in-an-array",
-			"PassRate": "52%",
+			"PassRate": "53%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10237,7 +10237,7 @@
 			"ID": 851,
 			"Title": "Loud and Rich",
 			"TitleSlug": "loud-and-rich",
-			"PassRate": "47%",
+			"PassRate": "46%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10753,7 +10753,7 @@
 			"ID": 894,
 			"Title": "All Possible Full Binary Trees",
 			"TitleSlug": "all-possible-full-binary-trees",
-			"PassRate": "69%",
+			"PassRate": "70%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
