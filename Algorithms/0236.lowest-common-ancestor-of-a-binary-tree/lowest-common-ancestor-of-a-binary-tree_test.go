@@ -14,11 +14,11 @@ var tcs = []struct {
 	p, q, ans *TreeNode
 }{
 
-	// {
-	// 	kit.GetTargetNode(root, 5),
-	// 	kit.GetTargetNode(root, 1),
-	// 	kit.GetTargetNode(root, 3),
-	// },
+	{
+		kit.GetTargetNode(root, 5),
+		kit.GetTargetNode(root, 1),
+		kit.GetTargetNode(root, 3),
+	},
 
 	{
 		kit.GetTargetNode(root, 4),

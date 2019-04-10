@@ -14,7 +14,7 @@ func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
 	}
 
 	isAncestorOfQ := makeReferee(q)
-	if isAncestorOfP(p) {
+	if isAncestorOfQ(p) {
 		return p
 	}
 
@@ -37,8 +37,8 @@ func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
 
 func makeReferee(child *TreeNode) func(*TreeNode) bool {
 	rec := make(map[int]bool, 1024)
-	var fc func(*TreeNode) bool
-	fc = func(root *TreeNode) bool {
+	var f func(*TreeNode) bool
+	f = func(root *TreeNode) bool {
 		if root == nil {
 			return false
 		}
@@ -46,9 +46,9 @@ func makeReferee(child *TreeNode) func(*TreeNode) bool {
 		if ok {
 			return res
 		}
-		res = fc(root.Left) || fc(root.Right)
+		res = (root == child) || f(root.Left) || f(root.Right)
 		rec[root.Val] = res
 		return res
 	}
-	return fc
+	return f
 }
