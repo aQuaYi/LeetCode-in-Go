@@ -14,11 +14,11 @@ var tcs = []struct {
 	p, q, ans *TreeNode
 }{
 
-	{
-		kit.GetTargetNode(root, 5),
-		kit.GetTargetNode(root, 1),
-		kit.GetTargetNode(root, 3),
-	},
+	// {
+	// 	kit.GetTargetNode(root, 5),
+	// 	kit.GetTargetNode(root, 1),
+	// 	kit.GetTargetNode(root, 3),
+	// },
 
 	{
 		kit.GetTargetNode(root, 4),
@@ -45,7 +45,7 @@ func Test_lowestCommonAncestor(t *testing.T) {
 	ast := assert.New(t)
 	for _, tc := range tcs {
 		node := lowestCommonAncestor(root, tc.p, tc.q)
-		ast.Equal(tc.ans, node)
+		ast.Equal(tc.ans, node, "p=%d,q=%d", tc.p.Val, tc.q.Val)
 	}
 }
 
