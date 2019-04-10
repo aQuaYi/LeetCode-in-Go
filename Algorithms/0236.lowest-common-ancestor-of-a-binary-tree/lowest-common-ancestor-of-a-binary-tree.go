@@ -8,33 +8,47 @@ import (
 type TreeNode = kit.TreeNode
 
 func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
-	if isAncestor(p, q) {
-		return p
-	}
-	if isAncestor(q, p) {
+	isAncestorOfP := makeReferee(p)
+	if isAncestorOfP(q) {
 		return q
 	}
-	return helper(root, p, q)
-}
 
-func helper(root, p, q *TreeNode) *TreeNode {
-	if isAncestor(root.Left, p) &&
-		isAncestor(root.Left, q) {
-		return helper(root.Left, p, q)
+	isAncestorOfQ := makeReferee(q)
+	if isAncestorOfP(p) {
+		return p
 	}
-	if isAncestor(root.Right, p) &&
-		isAncestor(root.Right, q) {
-		return helper(root.Right, p, q)
+
+	for {
+		if isAncestorOfP(root.Left) &&
+			isAncestorOfQ(root.Left) {
+			root = root.Left
+			continue
+		}
+		if isAncestorOfP(root.Right) &&
+			isAncestorOfQ(root.Right) {
+			root = root.Right
+			continue
+		}
+		break
 	}
+
 	return root
 }
 
-func isAncestor(p, c *TreeNode) bool {
-	if p == nil {
-		return false
+func makeReferee(child *TreeNode) func(*TreeNode) bool {
+	rec := make(map[int]bool, 1024)
+	var fc func(*TreeNode) bool
+	fc = func(root *TreeNode) bool {
+		if root == nil {
+			return false
+		}
+		res, ok := rec[root.Val]
+		if ok {
+			return res
+		}
+		res = fc(root.Left) || fc(root.Right)
+		rec[root.Val] = res
+		return res
 	}
-	if p == c {
-		return true
-	}
-	return isAncestor(p.Left, c) || isAncestor(p.Right, c)
+	return fc
 }
