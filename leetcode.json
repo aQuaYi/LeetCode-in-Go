@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 877,
-	"Updated": "2019-04-11T19:58:25.261962619+08:00",
+	"Updated": "2019-04-11T20:12:06.32182869+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 217,
+			"Solved": 218,
 			"Total": 237
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 173
 		},
 		"Total": {
-			"Solved": 753,
+			"Solved": 754,
 			"Total": 813
 		}
 	},
@@ -709,7 +709,7 @@
 			"ID": 57,
 			"Title": "Insert Interval",
 			"TitleSlug": "insert-interval",
-			"PassRate": "30%",
+			"PassRate": "31%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -6135,7 +6135,7 @@
 			"TitleSlug": "fibonacci-number",
 			"PassRate": "66%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
