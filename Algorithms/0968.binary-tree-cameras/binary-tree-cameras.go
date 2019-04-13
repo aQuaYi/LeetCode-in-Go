@@ -18,6 +18,8 @@ func minCameraCover(root *TreeNode) int {
 	res := 0
 	s := check(root, &res)
 	if s == isMonitoredByParent {
+		// root has no parent
+		// so need itself has a camera
 		res++
 	}
 	return res
