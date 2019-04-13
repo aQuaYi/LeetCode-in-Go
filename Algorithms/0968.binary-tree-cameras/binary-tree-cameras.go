@@ -26,8 +26,7 @@ func minCameraCover(root *TreeNode) int {
 func check(root *TreeNode, res *int) status {
 	if root == nil {
 		// nil don't need be monitored.
-		// or
-		// we think it's monitored by his child
+		// so we think it's monitored by his child
 		return isMonitoredByChild
 	}
 	l, r := check(root.Left, res), check(root.Right, res)
