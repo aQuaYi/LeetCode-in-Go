@@ -7,7 +7,8 @@ type TreeNode = kit.TreeNode
 
 func minCameraCover(root *TreeNode) int {
 	res := 0
-	if helper(root, &res) == 3 {
+	r := helper(root, &res)
+	if r == 3 || r == 0 {
 		res++
 	}
 	return res
