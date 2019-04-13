@@ -63,3 +63,10 @@ func Test_Problem0238(t *testing.T) {
 		ast.Equal(a.one, productExceptSelf(p.nums), "输入:%v", p)
 	}
 }
+
+func Benchmark_ProductExceptSelf(b *testing.B) {
+	nums := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+	for i := 1; i < b.N; i++ {
+		productExceptSelf(nums)
+	}
+}
