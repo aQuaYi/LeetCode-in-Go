@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
-	"Ranking": 877,
-	"Updated": "2019-04-13T16:42:12.246010668+08:00",
+	"Ranking": 873,
+	"Updated": "2019-04-13T20:58:43.461773013+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 218,
@@ -12,11 +12,11 @@
 			"Total": 403
 		},
 		"Hard": {
-			"Solved": 163,
+			"Solved": 164,
 			"Total": 173
 		},
 		"Total": {
-			"Solved": 754,
+			"Solved": 755,
 			"Total": 813
 		}
 	},
@@ -11643,7 +11643,7 @@
 			"TitleSlug": "binary-tree-cameras",
 			"PassRate": "34%",
 			"Difficulty": "Hard",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
