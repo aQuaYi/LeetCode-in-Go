@@ -17,7 +17,7 @@ var tcs = []struct {
 	{
 		[]int{},
 		0,
-		nil,
+		[]int{},
 	},
 
 	{
@@ -38,10 +38,27 @@ func Test_maxSlidingWindow(t *testing.T) {
 	}
 }
 
+func Test_maxSlidingWindow2(t *testing.T) {
+	ast := assert.New(t)
+
+	for _, tc := range tcs {
+		fmt.Printf("~~%v~~\n", tc)
+		ast.Equal(tc.ans, maxSlidingWindow2(tc.nums, tc.k), "输入:%v", tc)
+	}
+}
+
 func Benchmark_maxSlidingWindow(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		for _, tc := range tcs {
 			maxSlidingWindow(tc.nums, tc.k)
+		}
+	}
+}
+
+func Benchmark_maxSlidingWindow2(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		for _, tc := range tcs {
+			maxSlidingWindow2(tc.nums, tc.k)
 		}
 	}
 }
