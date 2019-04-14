@@ -7,7 +7,7 @@ func maxSlidingWindow(nums []int, k int) []int {
 		return nums
 	}
 
-	g := k - 1
+	g := k - 1 // 比参考文章的分组少一个，可以减少 max 函数的调用，理论上可以加速。
 
 	left := make([]int, size)
 	for i := 0; i < size; i++ {
@@ -31,6 +31,8 @@ func maxSlidingWindow(nums []int, k int) []int {
 
 	res := make([]int, size-k+1)
 	for i := 0; i <= size-k; i++ {
+		// right[i] 中保存了 nums[i:g*(i/g+1)] 中的最大值
+		// left[i+k-1] 中保存了 nums[g*(i/g+1):i+k] 中的最大值
 		res[i] = max(right[i], left[i+k-1])
 	}
 
