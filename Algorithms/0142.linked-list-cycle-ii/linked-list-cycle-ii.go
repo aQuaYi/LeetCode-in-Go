@@ -7,24 +7,21 @@ type ListNode = kit.ListNode
 
 // https://leetcode.com/problems/linked-list-cycle-ii/discuss/44793/O(n)-solution-by-using-two-pointers-without-change-anything
 func detectCycle(head *ListNode) *ListNode {
-	if head == nil {
+	if head == nil || head.Next == nil {
 		return nil
 	}
-	slow, fast := head, head
-	for fast != nil && fast.Next != nil {
+
+	slow, fast := head.Next, head.Next.Next
+	for fast != nil && fast.Next != nil && slow != fast {
 		slow, fast = slow.Next, fast.Next.Next
-		if slow == fast {
-			break
-		}
 	}
 
 	if slow != fast {
 		return nil
 	}
 
-	slow = head
-	for slow != fast {
-		slow, fast = slow.Next, fast.Next
+	for slow != head {
+		slow, head = slow.Next, head.Next
 	}
 	return slow
 }
