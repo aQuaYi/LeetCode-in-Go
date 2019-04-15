@@ -6,7 +6,7 @@ import "github.com/aQuaYi/LeetCode-in-Go/kit"
 type ListNode = kit.ListNode
 
 func hasCycle(head *ListNode) bool {
-	if head == nil || head.Next == nil {
+	if head == nil || head.Next == nil || head.Next.Next == nil {
 		return false
 	}
 	slow, fast := head, head
