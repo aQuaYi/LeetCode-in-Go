@@ -15,6 +15,11 @@ var tcs = []struct {
 }{
 
 	{
+		[]int{1, 2, 3},
+		-1,
+	},
+
+	{
 		[]int{3, 2, 0, -4},
 		1,
 	},
@@ -24,20 +29,17 @@ var tcs = []struct {
 		0,
 	},
 
-	{
-		[]int{1},
-		-1,
-	},
-
 	// 可以有多个 testcase
 }
 
 func Test_detectCycle(t *testing.T) {
 	ast := assert.New(t)
-
 	for _, tc := range tcs {
 		head := kit.Ints2ListWithCycle(tc.ints, tc.pos)
-		ans := head.GetNodeWith(tc.ints[tc.pos])
+		var ans *ListNode
+		if tc.pos >= 0 {
+			ans = head.GetNodeWith(tc.ints[tc.pos])
+		}
 		ast.Equal(ans, detectCycle(head), "输入:%v", tc)
 	}
 }
