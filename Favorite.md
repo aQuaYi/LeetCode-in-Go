@@ -1,4 +1,4 @@
-# 我收藏的 280 题
+# 我收藏的 281 题
 
 |题号|题目|通过率|难度|收藏|
 |:-:|:-|:-: | :-: | :-: |
@@ -25,7 +25,8 @@
 |[0132](https://leetcode.com/problems/palindrome-partitioning-ii/)|[Palindrome Partitioning II](./Algorithms/0132.palindrome-partitioning-ii)|27%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0134](https://leetcode.com/problems/gas-station/)|[Gas Station](./Algorithms/0134.gas-station)|33%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0139](https://leetcode.com/problems/word-break/)|[Word Break](./Algorithms/0139.word-break)|34%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|[0140](https://leetcode.com/problems/word-break-ii/)|[Word Break II](./Algorithms/0140.word-break-ii)|26%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|[0140](https://leetcode.com/problems/word-break-ii/)|[Word Break II](./Algorithms/0140.word-break-ii)|27%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|[0142](https://leetcode.com/problems/linked-list-cycle-ii/)|[Linked List Cycle II](./Algorithms/0142.linked-list-cycle-ii)|31%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0143](https://leetcode.com/problems/reorder-list/)|[Reorder List](./Algorithms/0143.reorder-list)|30%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0144](https://leetcode.com/problems/binary-tree-preorder-traversal/)|[Binary Tree Preorder Traversal](./Algorithms/0144.binary-tree-preorder-traversal)|50%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0146](https://leetcode.com/problems/lru-cache/)|[LRU Cache](./Algorithms/0146.lru-cache)|24%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -65,7 +66,7 @@
 |[0275](https://leetcode.com/problems/h-index-ii/)|[H-Index II](./Algorithms/0275.h-index-ii)|35%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0279](https://leetcode.com/problems/perfect-squares/)|[Perfect Squares](./Algorithms/0279.perfect-squares)|41%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0282](https://leetcode.com/problems/expression-add-operators/)|[Expression Add Operators](./Algorithms/0282.expression-add-operators)|32%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|[0287](https://leetcode.com/problems/find-the-duplicate-number/)|[Find the Duplicate Number](./Algorithms/0287.find-the-duplicate-number)|48%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|[0287](https://leetcode.com/problems/find-the-duplicate-number/)|[Find the Duplicate Number](./Algorithms/0287.find-the-duplicate-number)|49%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0289](https://leetcode.com/problems/game-of-life/)|[Game of Life](./Algorithms/0289.game-of-life)|44%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0292](https://leetcode.com/problems/nim-game/)|[Nim Game](./Algorithms/0292.nim-game)|55%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |[0295](https://leetcode.com/problems/find-median-from-data-stream/)|[Find Median from Data Stream](./Algorithms/0295.find-median-from-data-stream)|35%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -139,10 +140,10 @@
 |[0488](https://leetcode.com/problems/zuma-game/)|[Zuma Game](./Algorithms/0488.zuma-game)|38%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0491](https://leetcode.com/problems/increasing-subsequences/)|[Increasing Subsequences](./Algorithms/0491.increasing-subsequences)|41%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0492](https://leetcode.com/problems/construct-the-rectangle/)|[Construct the Rectangle](./Algorithms/0492.construct-the-rectangle)|48%|Easy|[❤](https://leetcode.com/list/oussv5j)|
-|[0494](https://leetcode.com/problems/target-sum/)|[Target Sum](./Algorithms/0494.target-sum)|45%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|[0494](https://leetcode.com/problems/target-sum/)|[Target Sum](./Algorithms/0494.target-sum)|44%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0501](https://leetcode.com/problems/find-mode-in-binary-search-tree/)|[Find Mode in Binary Search Tree](./Algorithms/0501.find-mode-in-binary-search-tree)|39%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |[0503](https://leetcode.com/problems/next-greater-element-ii/)|[Next Greater Element II](./Algorithms/0503.next-greater-element-ii)|50%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|[0516](https://leetcode.com/problems/longest-palindromic-subsequence/)|[Longest Palindromic Subsequence](./Algorithms/0516.longest-palindromic-subsequence)|45%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|[0516](https://leetcode.com/problems/longest-palindromic-subsequence/)|[Longest Palindromic Subsequence](./Algorithms/0516.longest-palindromic-subsequence)|46%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0517](https://leetcode.com/problems/super-washing-machines/)|[Super Washing Machines](./Algorithms/0517.super-washing-machines)|36%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0518](https://leetcode.com/problems/coin-change-2/)|[Coin Change 2](./Algorithms/0518.coin-change-2)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0523](https://leetcode.com/problems/continuous-subarray-sum/)|[Continuous Subarray Sum](./Algorithms/0523.continuous-subarray-sum)|24%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -191,7 +192,7 @@
 |[0710](https://leetcode.com/problems/random-pick-with-blacklist/)|[Random Pick with Blacklist](./Algorithms/0710.random-pick-with-blacklist)|30%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0712](https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/)|[Minimum ASCII Delete Sum for Two Strings](./Algorithms/0712.minimum-ascii-delete-sum-for-two-strings)|53%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0713](https://leetcode.com/problems/subarray-product-less-than-k/)|[Subarray Product Less Than K](./Algorithms/0713.subarray-product-less-than-k)|36%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|[0714](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)|[Best Time to Buy and Sell Stock with Transaction Fee](./Algorithms/0714.best-time-to-buy-and-sell-stock-with-transaction-fee)|49%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|[0714](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)|[Best Time to Buy and Sell Stock with Transaction Fee](./Algorithms/0714.best-time-to-buy-and-sell-stock-with-transaction-fee)|50%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0718](https://leetcode.com/problems/maximum-length-of-repeated-subarray/)|[Maximum Length of Repeated Subarray](./Algorithms/0718.maximum-length-of-repeated-subarray)|45%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0719](https://leetcode.com/problems/find-k-th-smallest-pair-distance/)|[Find K-th Smallest Pair Distance](./Algorithms/0719.find-k-th-smallest-pair-distance)|28%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0721](https://leetcode.com/problems/accounts-merge/)|[Accounts Merge](./Algorithms/0721.accounts-merge)|39%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -236,7 +237,7 @@
 |[0839](https://leetcode.com/problems/similar-string-groups/)|[Similar String Groups](./Algorithms/0839.similar-string-groups)|34%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0843](https://leetcode.com/problems/guess-the-word/)|[Guess the Word](./Algorithms/0843.guess-the-word)|42%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0846](https://leetcode.com/problems/hand-of-straights/)|[Hand of Straights](./Algorithms/0846.hand-of-straights)|48%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|[0847](https://leetcode.com/problems/shortest-path-visiting-all-nodes/)|[Shortest Path Visiting All Nodes](./Algorithms/0847.shortest-path-visiting-all-nodes)|45%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|[0847](https://leetcode.com/problems/shortest-path-visiting-all-nodes/)|[Shortest Path Visiting All Nodes](./Algorithms/0847.shortest-path-visiting-all-nodes)|46%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0849](https://leetcode.com/problems/maximize-distance-to-closest-person/)|[Maximize Distance to Closest Person](./Algorithms/0849.maximize-distance-to-closest-person)|40%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |[0850](https://leetcode.com/problems/rectangle-area-ii/)|[Rectangle Area II](./Algorithms/0850.rectangle-area-ii)|44%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0851](https://leetcode.com/problems/loud-and-rich/)|[Loud and Rich](./Algorithms/0851.loud-and-rich)|47%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -248,7 +249,7 @@
 |[0864](https://leetcode.com/problems/shortest-path-to-get-all-keys/)|[Shortest Path to Get All Keys](./Algorithms/0864.shortest-path-to-get-all-keys)|35%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0866](https://leetcode.com/problems/prime-palindrome/)|[Prime Palindrome](./Algorithms/0866.prime-palindrome)|19%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0879](https://leetcode.com/problems/profitable-schemes/)|[Profitable Schemes](./Algorithms/0879.profitable-schemes)|35%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|[0895](https://leetcode.com/problems/maximum-frequency-stack/)|[Maximum Frequency Stack](./Algorithms/0895.maximum-frequency-stack)|53%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|[0895](https://leetcode.com/problems/maximum-frequency-stack/)|[Maximum Frequency Stack](./Algorithms/0895.maximum-frequency-stack)|54%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0896](https://leetcode.com/problems/monotonic-array/)|[Monotonic Array](./Algorithms/0896.monotonic-array)|54%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |[0897](https://leetcode.com/problems/increasing-order-search-tree/)|[Increasing Order Search Tree](./Algorithms/0897.increasing-order-search-tree)|63%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |[0898](https://leetcode.com/problems/bitwise-ors-of-subarrays/)|[Bitwise ORs of Subarrays](./Algorithms/0898.bitwise-ors-of-subarrays)|33%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -256,10 +257,10 @@
 |[0903](https://leetcode.com/problems/valid-permutations-for-di-sequence/)|[Valid Permutations for DI Sequence](./Algorithms/0903.valid-permutations-for-di-sequence)|42%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0904](https://leetcode.com/problems/fruit-into-baskets/)|[Fruit Into Baskets](./Algorithms/0904.fruit-into-baskets)|41%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0907](https://leetcode.com/problems/sum-of-subarray-minimums/)|[Sum of Subarray Minimums](./Algorithms/0907.sum-of-subarray-minimums)|26%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|[0909](https://leetcode.com/problems/snakes-and-ladders/)|[Snakes and Ladders](./Algorithms/0909.snakes-and-ladders)|31%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|[0909](https://leetcode.com/problems/snakes-and-ladders/)|[Snakes and Ladders](./Algorithms/0909.snakes-and-ladders)|32%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0910](https://leetcode.com/problems/smallest-range-ii/)|[Smallest Range II](./Algorithms/0910.smallest-range-ii)|23%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0911](https://leetcode.com/problems/online-election/)|[Online Election](./Algorithms/0911.online-election)|45%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|[0913](https://leetcode.com/problems/cat-and-mouse/)|[Cat and Mouse](./Algorithms/0913.cat-and-mouse)|27%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|[0913](https://leetcode.com/problems/cat-and-mouse/)|[Cat and Mouse](./Algorithms/0913.cat-and-mouse)|28%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0915](https://leetcode.com/problems/partition-array-into-disjoint-intervals/)|[Partition Array into Disjoint Intervals](./Algorithms/0915.partition-array-into-disjoint-intervals)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0918](https://leetcode.com/problems/maximum-sum-circular-subarray/)|[Maximum Sum Circular Subarray](./Algorithms/0918.maximum-sum-circular-subarray)|31%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0919](https://leetcode.com/problems/complete-binary-tree-inserter/)|[Complete Binary Tree Inserter](./Algorithms/0919.complete-binary-tree-inserter)|55%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -278,7 +279,7 @@
 |[0952](https://leetcode.com/problems/largest-component-size-by-common-factor/)|[Largest Component Size by Common Factor](./Algorithms/0952.largest-component-size-by-common-factor)|25%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0955](https://leetcode.com/problems/delete-columns-to-make-sorted-ii/)|[Delete Columns to Make Sorted II](./Algorithms/0955.delete-columns-to-make-sorted-ii)|31%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0956](https://leetcode.com/problems/tallest-billboard/)|[Tallest Billboard](./Algorithms/0956.tallest-billboard)|37%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|[0960](https://leetcode.com/problems/delete-columns-to-make-sorted-iii/)|[Delete Columns to Make Sorted III](./Algorithms/0960.delete-columns-to-make-sorted-iii)|51%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|[0960](https://leetcode.com/problems/delete-columns-to-make-sorted-iii/)|[Delete Columns to Make Sorted III](./Algorithms/0960.delete-columns-to-make-sorted-iii)|52%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0962](https://leetcode.com/problems/maximum-width-ramp/)|[Maximum Width Ramp](./Algorithms/0962.maximum-width-ramp)|41%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0964](https://leetcode.com/problems/least-operators-to-express-number/)|[Least Operators to Express Number](./Algorithms/0964.least-operators-to-express-number)|40%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0980](https://leetcode.com/problems/unique-paths-iii/)|[Unique Paths III](./Algorithms/0980.unique-paths-iii)|71%|Hard|[❤](https://leetcode.com/list/oussv5j)|
