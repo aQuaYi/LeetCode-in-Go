@@ -10,7 +10,7 @@ import (
 
 // tcs is testcase slice
 var tcs = []struct {
-	head []int
+	ints []int
 	pos  int
 	ans  bool
 }{
@@ -58,7 +58,7 @@ func Test_hasCycle(t *testing.T) {
 	ast := assert.New(t)
 
 	for _, tc := range tcs {
-		head := kit.Ints2ListWithCycle(tc.head, tc.pos)
+		head := kit.Ints2ListWithCycle(tc.ints, tc.pos)
 		ast.Equal(tc.ans, hasCycle(head), "输入:%v", tc)
 	}
 }
@@ -66,7 +66,7 @@ func Test_hasCycle(t *testing.T) {
 func Benchmark_hasCycle(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		for _, tc := range tcs {
-			head := kit.Ints2ListWithCycle(tc.head, tc.pos)
+			head := kit.Ints2ListWithCycle(tc.ints, tc.pos)
 			hasCycle(head)
 		}
 	}
