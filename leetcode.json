@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 873,
-	"Updated": "2019-04-15T20:27:07.119847203+08:00",
+	"Updated": "2019-04-15T21:58:56.384624711+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 219,
 			"Total": 238
 		},
 		"Medium": {
-			"Solved": 373,
+			"Solved": 374,
 			"Total": 405
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 174
 		},
 		"Total": {
-			"Solved": 756,
+			"Solved": 757,
 			"Total": 817
 		}
 	},
@@ -1731,9 +1731,9 @@
 			"TitleSlug": "linked-list-cycle-ii",
 			"PassRate": "31%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -11389,7 +11389,7 @@
 			"ID": 947,
 			"Title": "Most Stones Removed with Same Row or Column",
 			"TitleSlug": "most-stones-removed-with-same-row-or-column",
-			"PassRate": "54%",
+			"PassRate": "53%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
