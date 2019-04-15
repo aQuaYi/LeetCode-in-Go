@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 873,
-	"Updated": "2019-04-15T19:48:38.251156934+08:00",
+	"Updated": "2019-04-15T20:27:07.119847203+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 218,
+			"Solved": 219,
 			"Total": 238
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 174
 		},
 		"Total": {
-			"Solved": 755,
+			"Solved": 756,
 			"Total": 817
 		}
 	},
@@ -1719,7 +1719,7 @@
 			"TitleSlug": "linked-list-cycle",
 			"PassRate": "36%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -11389,7 +11389,7 @@
 			"ID": 947,
 			"Title": "Most Stones Removed with Same Row or Column",
 			"TitleSlug": "most-stones-removed-with-same-row-or-column",
-			"PassRate": "53%",
+			"PassRate": "54%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
