@@ -55,3 +55,24 @@ func (l *ListNode) GetNodeWith(val int) *ListNode {
 	}
 	return res
 }
+
+// Ints2ListWithCycle returns a list whose tail point to pos-indexed node
+// head's index is 0
+// if pos = -1, no cycle
+func Ints2ListWithCycle(nums []int, pos int) *ListNode {
+	head := Ints2List(nums)
+	if pos == -1 {
+		return head
+	}
+	c := head
+	for pos > 0 {
+		c = c.Next
+		pos--
+	}
+	tail := c
+	for tail.Next != nil {
+		tail = tail.Next
+	}
+	tail.Next = c
+	return head
+}

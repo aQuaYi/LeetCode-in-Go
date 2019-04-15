@@ -56,3 +56,13 @@ func Test_getNodeWith(t *testing.T) {
 	actual := ln.GetNodeWith(val)
 	ast.Equal(expected, actual)
 }
+
+func Test_Ints2ListWithCycle(t *testing.T) {
+	ast := assert.New(t)
+	ints := []int{1, 2, 3}
+	l := Ints2ListWithCycle(ints, -1)
+	ast.Equal(ints, List2Ints(l))
+
+	l = Ints2ListWithCycle(ints, 1)
+	ast.Panics(func() { List2Ints(l) })
+}
