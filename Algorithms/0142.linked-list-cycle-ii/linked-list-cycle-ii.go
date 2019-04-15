@@ -5,21 +5,26 @@ import "github.com/aQuaYi/LeetCode-in-Go/kit"
 // ListNode is pre-defined...
 type ListNode = kit.ListNode
 
+// https://leetcode.com/problems/linked-list-cycle-ii/discuss/44793/O(n)-solution-by-using-two-pointers-without-change-anything
 func detectCycle(head *ListNode) *ListNode {
-	headPre := &ListNode{
-		Next: head,
+	if head == nil {
+		return nil
 	}
-	return detect(headPre)
-}
-
-func detect(head *ListNode) *ListNode {
-	hasSeen := make(map[*ListNode]bool)
-	for head != nil && head.Next != nil {
-		if hasSeen[head.Next] {
-			return head.Next
+	slow, fast := head, head
+	for fast != nil && fast.Next != nil {
+		slow, fast = slow.Next, fast.Next.Next
+		if slow == fast {
+			break
 		}
-		hasSeen[head.Next] = true
-		head = head.Next
 	}
-	return nil
+
+	if slow != fast {
+		return nil
+	}
+
+	slow = head
+	for slow != fast {
+		slow, fast = slow.Next, fast.Next
+	}
+	return slow
 }
