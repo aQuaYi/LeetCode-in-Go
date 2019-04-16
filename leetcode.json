@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 863,
-	"Updated": "2019-04-16T19:39:08.862122497+08:00",
+	"Updated": "2019-04-16T20:27:30.64471509+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 219,
+			"Solved": 220,
 			"Total": 238
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 174
 		},
 		"Total": {
-			"Solved": 757,
+			"Solved": 758,
 			"Total": 817
 		}
 	},
@@ -1947,7 +1947,7 @@
 			"TitleSlug": "intersection-of-two-linked-lists",
 			"PassRate": "33%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
