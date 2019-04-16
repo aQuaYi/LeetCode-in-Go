@@ -6,16 +6,21 @@ import "github.com/aQuaYi/LeetCode-in-Go/kit"
 type ListNode = kit.ListNode
 
 func getIntersectionNode(headA, headB *ListNode) *ListNode {
-	hasSeen := make(map[*ListNode]bool, 128)
-	for headA != nil {
-		hasSeen[headA] = true
-		headA = headA.Next
-	}
-	for headB != nil {
-		if hasSeen[headB] {
-			return headB
+	a, b := headA, headB
+	hasLinkedToB, hasLinkedToA := false, false
+	for a != nil && b != nil {
+		if a == b {
+			return b
 		}
-		headB = headB.Next
+		a, b = a.Next, b.Next
+		if a == nil && !hasLinkedToB {
+			hasLinkedToB = true
+			a = headB
+		}
+		if b == nil && !hasLinkedToA {
+			hasLinkedToA = true
+			b = headA
+		}
 	}
 	return nil
 }
