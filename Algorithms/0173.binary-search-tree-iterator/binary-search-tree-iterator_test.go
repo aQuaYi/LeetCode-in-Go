@@ -15,13 +15,12 @@ func Test_BSTIterator(t *testing.T) {
 	root := kit.Ints2TreeNode(ints)
 
 	it := Constructor(root)
+	nums := kit.Tree2Inorder(root)
 
 	i := 0
 
 	for it.HasNext() {
-		for ints[i] == kit.NULL {
-			i++
-		}
-		ast.Equal(ints[i], it.Next(), "%d", ints[i])
+		ast.Equal(nums[i], it.Next(), "%d", nums[i])
+		i++
 	}
 }
