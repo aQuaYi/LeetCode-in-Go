@@ -1,6 +1,8 @@
 package problem0173
 
-import "github.com/aQuaYi/LeetCode-in-Go/kit"
+import (
+	"github.com/aQuaYi/LeetCode-in-Go/kit"
+)
 
 // TreeNode is pre-defined...
 /* Definition for a binary tree node.
@@ -42,6 +44,7 @@ func (it *BSTIterator) HasNext() bool {
 
 func convert(root *TreeNode) []int {
 	res := make([]int, 0, 128)
+	helper(root, &res)
 	return res
 }
 
