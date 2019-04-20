@@ -22,13 +22,13 @@ func Constructor(root *TreeNode) BSTIterator {
 	return BSTIterator{}
 }
 
-// Next returns the next smallest number */
+// Next returns the next smallest number
 func (it *BSTIterator) Next() int {
 
 	return 0
 }
 
-// HasNext returns whether we have a next smallest number */
+// HasNext returns whether we have a next smallest number
 func (it *BSTIterator) HasNext() bool {
 
 	return false
