@@ -16,42 +16,36 @@ type TreeNode = kit.TreeNode
 
 // BSTIterator is the iterator of BST
 type BSTIterator struct {
-	index int
-	nums  []int
+	stack []*TreeNode
 }
 
 // Constructor returns a BST iterator
 func Constructor(root *TreeNode) BSTIterator {
-	nums := convert(root)
-	return BSTIterator{
-		index: 0,
-		nums:  nums,
+	stack := make([]*TreeNode, 0, 128)
+	res := BSTIterator{
+		stack: stack,
 	}
+	res.push(root)
+	return res
 }
 
 // Next returns the next smallest number
 func (it *BSTIterator) Next() int {
-	res := it.nums[it.index]
-	it.index++
-	return res
+	size := len(it.stack)
+	var top *TreeNode
+	it.stack, top = it.stack[:size-1], it.stack[size-1]
+	it.push(top.Right)
+	return top.Val
 }
 
 // HasNext returns whether we have a next smallest number
 func (it *BSTIterator) HasNext() bool {
-	return it.index < len(it.nums)
+	return len(it.stack) > 0
 }
 
-func convert(root *TreeNode) []int {
-	res := make([]int, 0, 128)
-	helper(root, &res)
-	return res
-}
-
-func helper(root *TreeNode, res *[]int) {
-	if root == nil {
-		return
+func (it *BSTIterator) push(root *TreeNode) {
+	for root != nil {
+		it.stack = append(it.stack, root)
+		root = root.Left
 	}
-	helper(root.Left, res)
-	*res = append(*res, root.Val)
-	helper(root.Right, res)
 }
