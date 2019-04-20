@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 864,
-	"Updated": "2019-04-20T21:38:59.207754715+08:00",
+	"Updated": "2019-04-20T22:53:43.316185885+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 220,
 			"Total": 238
 		},
 		"Medium": {
-			"Solved": 374,
+			"Solved": 375,
 			"Total": 406
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 174
 		},
 		"Total": {
-			"Solved": 758,
+			"Solved": 759,
 			"Total": 818
 		}
 	},
@@ -2103,9 +2103,9 @@
 			"TitleSlug": "binary-search-tree-iterator",
 			"PassRate": "48%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
