@@ -39,15 +39,16 @@ func combine(ax, ay []int, bound int) []int {
 
 func removeRepeated(nums []int) []int {
 	sort.Ints(nums)
-	res := make([]int, 1, len(nums))
-	res[0] = nums[0]
-	last := nums[0]
-	for _, n := range nums {
-		if n == last {
+
+	size := len(nums)
+
+	last, j := -1, -1
+	for i := 0; i < size; i++ {
+		if last == nums[i] { // nums[i]>0 for any i
 			continue
 		}
-		res = append(res, n)
-		last = n
+		j++
+		nums[j], last = nums[i], nums[i]
 	}
-	return res
+	return nums[:j+1]
 }

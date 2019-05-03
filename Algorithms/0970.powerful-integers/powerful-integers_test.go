@@ -64,3 +64,36 @@ func Benchmark_powerfulIntegers(b *testing.B) {
 		}
 	}
 }
+
+func Benchmark_removeRepeated(b *testing.B) {
+	nums := []int{1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6, 7, 7, 7, 8, 8, 8, 9, 9, 9}
+	for i := 1; i < b.N; i++ {
+		removeRepeated(nums)
+	}
+}
+
+func Benchmark_removeRepeated2(b *testing.B) {
+	nums := []int{1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6, 7, 7, 7, 8, 8, 8, 9, 9, 9}
+	for i := 1; i < b.N; i++ {
+		removeRepeated2(nums)
+	}
+}
+
+func removeRepeated2(nums []int) []int {
+	sort.Ints(nums)
+
+	size := len(nums)
+	if size == 0 {
+		return nums
+	}
+
+	i := 0
+	for j := 1; j < size; j++ {
+		if nums[i] == nums[j] {
+			continue
+		}
+		i++
+		nums[i] = nums[j]
+	}
+	return nums[:i+1]
+}
