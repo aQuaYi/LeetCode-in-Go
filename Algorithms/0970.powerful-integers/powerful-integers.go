@@ -1,31 +1,39 @@
 package problem0970
 
 import (
-	"math"
 	"sort"
 )
 
 func powerfulIntegers(x int, y int, bound int) []int {
-	res := make([]int, 0, 1024)
+	res := combine(powers(x, bound),
+		powers(y, bound),
+		bound)
+	return removeRepeated(res)
+}
 
-	logBound := math.Log(float64(bound))
-	logX := math.Log(float64(x))
-	logY := math.Log(float64(y))
+func powers(n, bound int) []int {
+	res := make([]int, 1, 128)
+	res[0] = 1
+	if n == 1 {
+		return res
+	}
+	for i := n; i < bound; i *= n {
+		res = append(res, i)
+	}
+	return res
+}
 
-	maxX := int(math.Pow(float64(x), math.Round(logBound/logX)))
-	maxY := int(math.Pow(float64(y), math.Round(logBound/logY)))
-
-	for i := maxX; i >= 1; i /= x {
-		for j := maxY; j >= 1; j /= y {
-			if i+j > bound {
-				continue
+func combine(ax, ay []int, bound int) []int {
+	res := make([]int, 0, 128)
+	for _, m := range ax {
+		for _, n := range ay {
+			s := m + n
+			if s > bound {
+				break
 			}
-			res = append(res, i+j)
+			res = append(res, s)
 		}
 	}
-
-	res = removeRepeated(res)
-
 	return res
 }
 
