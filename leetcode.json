@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 906,
-	"Updated": "2019-05-03T10:05:55.121471506+08:00",
+	"Updated": "2019-05-03T12:19:00.110046354+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 221,
+			"Solved": 222,
 			"Total": 242
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 176
 		},
 		"Total": {
-			"Solved": 759,
+			"Solved": 760,
 			"Total": 826
 		}
 	},
@@ -7105,7 +7105,7 @@
 			"ID": 590,
 			"Title": "N-ary Tree Postorder Traversal",
 			"TitleSlug": "n-ary-tree-postorder-traversal",
-			"PassRate": "66%",
+			"PassRate": "67%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -10501,7 +10501,7 @@
 			"ID": 873,
 			"Title": "Length of Longest Fibonacci Subsequence",
 			"TitleSlug": "length-of-longest-fibonacci-subsequence",
-			"PassRate": "46%",
+			"PassRate": "45%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11641,7 +11641,7 @@
 			"ID": 968,
 			"Title": "Binary Tree Cameras",
 			"TitleSlug": "binary-tree-cameras",
-			"PassRate": "34%",
+			"PassRate": "35%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11667,7 +11667,7 @@
 			"TitleSlug": "powerful-integers",
 			"PassRate": "39%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -12373,7 +12373,7 @@
 			"ID": 1029,
 			"Title": "Two City Scheduling",
 			"TitleSlug": "two-city-scheduling",
-			"PassRate": "52%",
+			"PassRate": "53%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
