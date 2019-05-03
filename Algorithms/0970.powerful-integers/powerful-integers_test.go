@@ -1,6 +1,7 @@
 package problem0970
 
 import (
+	"sort"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -13,6 +14,13 @@ var tcs = []struct {
 	bound int
 	ans   []int
 }{
+
+	{
+		2,
+		1,
+		10,
+		[]int{2, 3, 4, 5, 8, 9},
+	},
 
 	{
 		2,
@@ -35,7 +43,10 @@ func Test_powerfulIntegers(t *testing.T) {
 	ast := assert.New(t)
 
 	for _, tc := range tcs {
-		ast.Equal(tc.ans, powerfulIntegers(tc.x, tc.y, tc.bound), "输入:%v", tc)
+		sort.Ints(tc.ans)
+		ans := powerfulIntegers(tc.x, tc.y, tc.bound)
+		sort.Ints(ans)
+		ast.Equal(tc.ans, ans, "输入:%v", tc)
 	}
 }
 
