@@ -5,36 +5,21 @@ import (
 )
 
 func powerfulIntegers(x int, y int, bound int) []int {
-	res := combine(powers(x, bound),
-		powers(y, bound),
-		bound)
-	return removeRepeated(res)
-}
-
-func powers(n, bound int) []int {
-	res := make([]int, 1, 128)
-	res[0] = 1
-	if n == 1 {
-		return res
+	if x == 1 {
+		x = bound + 1
 	}
-	for i := n; i < bound; i *= n {
-		res = append(res, i)
+	if y == 1 {
+		y = bound + 1
 	}
-	return res
-}
 
-func combine(ax, ay []int, bound int) []int {
 	res := make([]int, 0, 128)
-	for _, m := range ax {
-		for _, n := range ay {
-			s := m + n
-			if s > bound {
-				break
-			}
-			res = append(res, s)
+	for i := 1; i < bound; i *= x {
+		for j := 1; i+j <= bound; j *= y {
+			res = append(res, i+j)
 		}
 	}
-	return res
+
+	return removeRepeated(res)
 }
 
 func removeRepeated(nums []int) []int {
