@@ -4,21 +4,20 @@ import "sort"
 
 func largestPerimeter(A []int) int {
 	size := len(A)
-	sort.Ints(A)
-	res := 0
+	sort.Sort(sort.Reverse(sort.IntSlice(A)))
 	for i := 0; i < size; i++ {
 		a := A[i]
 		for j := i + 1; j < size; j++ {
 			b := A[j]
 			for k := j + 1; k < size; k++ {
 				c := A[k]
-				if isOK(a, b, c) {
-					res = max(res, a+b+c)
+				if a < b+c {
+					return a + b + c
 				}
 			}
 		}
 	}
-	return res
+	return 0
 }
 
 func isOK(a, b, c int) bool {
