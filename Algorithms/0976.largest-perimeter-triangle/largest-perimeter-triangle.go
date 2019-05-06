@@ -38,7 +38,7 @@ func (h intHeap) Swap(i, j int) {
 func (h *intHeap) Push(x interface{}) {
 	// Push 使用 *h，是因为
 	// Push 增加了 h 的长度
-	// *h = append(*h, x.(int))
+	*h = append(*h, x.(int))
 }
 
 func (h *intHeap) Pop() interface{} {
