@@ -3,8 +3,8 @@ package problem0977
 import "sort"
 
 func sortedSquares(A []int) []int {
-	index := sort.SearchInts(A, 0)
-	l, r := index-1, index
+	r := sort.SearchInts(A, 0)
+	l := r - 1
 	size := len(A)
 	res := make([]int, 0, size)
 	for 0 <= l || r < size {
