@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 909,
-	"Updated": "2019-05-06T19:23:42.711453646+08:00",
+	"Updated": "2019-05-06T20:00:37.450925177+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 223,
+			"Solved": 224,
 			"Total": 243
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 176
 		},
 		"Total": {
-			"Solved": 761,
+			"Solved": 762,
 			"Total": 830
 		}
 	},
@@ -11751,7 +11751,7 @@
 			"TitleSlug": "squares-of-a-sorted-array",
 			"PassRate": "72%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
