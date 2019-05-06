@@ -1,6 +1,7 @@
 package problem0976
 
 import (
+	"container/heap"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -53,5 +54,21 @@ func Benchmark_largestPerimeter(b *testing.B) {
 		for _, tc := range tcs {
 			largestPerimeter(tc.A)
 		}
+	}
+}
+
+func Test_intHeap(t *testing.T) {
+	ast := assert.New(t)
+
+	ih := new(intHeap)
+	heap.Init(ih)
+
+	heap.Push(ih, 1)
+	heap.Pop(ih)
+
+	begin, end := 10, 0
+	for i := begin; i > end; i-- {
+		heap.Push(ih, i)
+		ast.Equal(begin, (*ih)[0], "插入 %d 后的最小值却是 %d，ih=%v", i, (*ih)[0], (*ih))
 	}
 }
