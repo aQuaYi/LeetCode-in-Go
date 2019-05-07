@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 900,
-	"Updated": "2019-05-07T20:37:05.251835904+08:00",
+	"Updated": "2019-05-07T21:15:19.48320125+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 224,
+			"Solved": 225,
 			"Total": 243
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 176
 		},
 		"Total": {
-			"Solved": 762,
+			"Solved": 763,
 			"Total": 830
 		}
 	},
@@ -10789,7 +10789,7 @@
 			"ID": 897,
 			"Title": "Increasing Order Search Tree",
 			"TitleSlug": "increasing-order-search-tree",
-			"PassRate": "63%",
+			"PassRate": "64%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11847,7 +11847,7 @@
 			"TitleSlug": "sum-of-even-numbers-after-queries",
 			"PassRate": "64%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -12505,7 +12505,7 @@
 			"ID": 1040,
 			"Title": "Moving Stones Until Consecutive II",
 			"TitleSlug": "moving-stones-until-consecutive-ii",
-			"PassRate": "42%",
+			"PassRate": "43%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
