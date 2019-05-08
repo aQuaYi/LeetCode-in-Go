@@ -1,27 +1,28 @@
 package problem0989
 
-import "strconv"
-
 func addToArrayForm(A []int, K int) []int {
-	a := slice2num(A)
-	a += K
-	return num2Slice(a)
+	reverse(A)
+	A[0] += K
+	size := len(A)
+	for i := 0; i+1 < size && A[i] > 9; i++ {
+		A[i+1] += A[i] / 10
+		A[i] %= 10
+	}
+	var tail int
+	for A[size-1] > 9 {
+		A[size-1], tail = A[size-1]%10, A[size-1]/10
+		A = append(A, tail)
+		size++
+	}
+	reverse(A)
+	return A
 }
 
-func slice2num(A []int) int {
-	res := 0
-	for _, v := range A {
-		res = res*10 + v
+func reverse(A []int) {
+	i, j := 0, len(A)-1
+	for i < j {
+		A[i], A[j] = A[j], A[i]
+		i++
+		j--
 	}
-	return res
-}
-
-func num2Slice(n int) []int {
-	s := strconv.Itoa(n)
-	bytes := []byte(s)
-	res := make([]int, len(bytes))
-	for i, b := range bytes {
-		res[i] = int(b - '0')
-	}
-	return res
 }
