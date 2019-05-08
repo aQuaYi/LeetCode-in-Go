@@ -1,21 +1,29 @@
 package problem0989
 
 func addToArrayForm(A []int, K int) []int {
-	reverse(A)
-	A[0] += K
 	size := len(A)
-	for i := 0; i+1 < size && A[i] > 9; i++ {
-		A[i+1] += A[i] / 10
+	A[size-1] += K
+	for i := size - 1; i > 0 && A[i] > 9; i-- {
+		A[i-1] += A[i] / 10
 		A[i] %= 10
 	}
-	var tail int
-	for A[size-1] > 9 {
-		A[size-1], tail = A[size-1]%10, A[size-1]/10
-		A = append(A, tail)
-		size++
+
+	if A[0] < 10 {
+		return A
 	}
-	reverse(A)
-	return A
+
+	A0 := num2ints(A[0])
+	return append(A0, A[1:]...)
+}
+
+func num2ints(n int) []int {
+	res := make([]int, 0, 8)
+	for n > 0 {
+		res = append(res, n%10)
+		n /= 10
+	}
+	reverse(res)
+	return res
 }
 
 func reverse(A []int) {
