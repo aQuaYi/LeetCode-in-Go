@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 900,
-	"Updated": "2019-05-08T20:44:43.051102581+08:00",
+	"Updated": "2019-05-08T21:50:22.795158005+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 225,
+			"Solved": 226,
 			"Total": 243
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 176
 		},
 		"Total": {
-			"Solved": 763,
+			"Solved": 764,
 			"Total": 830
 		}
 	},
@@ -11895,7 +11895,7 @@
 			"TitleSlug": "add-to-array-form-of-integer",
 			"PassRate": "44%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -12097,7 +12097,7 @@
 			"ID": 1006,
 			"Title": "Clumsy Factorial",
 			"TitleSlug": "clumsy-factorial",
-			"PassRate": "53%",
+			"PassRate": "54%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
