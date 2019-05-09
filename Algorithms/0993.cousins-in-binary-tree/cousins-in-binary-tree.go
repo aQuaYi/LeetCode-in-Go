@@ -25,13 +25,11 @@ func dfs(root *TreeNode, x int) (*TreeNode, int) {
 		return root, 1
 	}
 
-	parent, depth := dfs(root.Left, x)
-	if depth > 0 {
+	if parent, depth := dfs(root.Left, x); depth > 0 {
 		return parent, depth + 1
 	}
 
-	parent, depth = dfs(root.Right, x)
-	if depth > 0 {
+	if parent, depth := dfs(root.Right, x); depth > 0 {
 		return parent, depth + 1
 	}
 
