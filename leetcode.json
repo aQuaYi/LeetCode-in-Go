@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 887,
-	"Updated": "2019-05-09T19:41:54.815650961+08:00",
+	"Updated": "2019-05-09T20:33:35.04215491+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 226,
+			"Solved": 227,
 			"Total": 243
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 176
 		},
 		"Total": {
-			"Solved": 764,
+			"Solved": 765,
 			"Total": 830
 		}
 	},
@@ -1297,7 +1297,7 @@
 			"ID": 106,
 			"Title": "Construct Binary Tree from Inorder and Postorder Traversal",
 			"TitleSlug": "construct-binary-tree-from-inorder-and-postorder-traversal",
-			"PassRate": "38%",
+			"PassRate": "39%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11943,7 +11943,7 @@
 			"TitleSlug": "cousins-in-binary-tree",
 			"PassRate": "52%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
