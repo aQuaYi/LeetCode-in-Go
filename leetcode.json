@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 887,
-	"Updated": "2019-05-10T11:34:54.085064295+08:00",
+	"Updated": "2019-05-10T20:52:23.112904367+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 228,
@@ -757,7 +757,7 @@
 			"ID": 61,
 			"Title": "Rotate List",
 			"TitleSlug": "rotate-list",
-			"PassRate": "26%",
+			"PassRate": "27%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -4093,7 +4093,7 @@
 			"ID": 339,
 			"Title": "Nested List Weight Sum",
 			"TitleSlug": "nested-list-weight-sum",
-			"PassRate": "67%",
+			"PassRate": "68%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -9289,7 +9289,7 @@
 			"ID": 772,
 			"Title": "Basic Calculator III",
 			"TitleSlug": "basic-calculator-iii",
-			"PassRate": "43%",
+			"PassRate": "44%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -11977,7 +11977,7 @@
 			"ID": 996,
 			"Title": "Number of Squareful Arrays",
 			"TitleSlug": "number-of-squareful-arrays",
-			"PassRate": "48%",
+			"PassRate": "47%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -12409,7 +12409,7 @@
 			"ID": 1032,
 			"Title": "Stream of Characters",
 			"TitleSlug": "stream-of-characters",
-			"PassRate": "39%",
+			"PassRate": "40%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -12498,7 +12498,7 @@
 			"IsAccepted": false,
 			"IsPaid": false,
 			"IsFavor": false,
-			"IsNew": true,
+			"IsNew": false,
 			"HasNoGoOption": false
 		},
 		{
