@@ -3,6 +3,10 @@ package problem0997
 import "sort"
 
 func findJudge(N int, trust [][]int) int {
+	if N == 1 {
+		return 1
+	}
+
 	sort.Slice(trust, func(i int, j int) bool {
 		return trust[i][1] < trust[j][1]
 	})
