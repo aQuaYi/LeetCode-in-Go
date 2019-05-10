@@ -1,25 +1,16 @@
 package problem0997
 
-import "sort"
-
 func findJudge(N int, trust [][]int) int {
-	if N == 1 {
-		return 1
-	}
-
-	sort.Slice(trust, func(i int, j int) bool {
-		return trust[i][1] < trust[j][1]
-	})
-
-	trustOther := [1001]bool{}
+	count := [1001]int{}
+	trustSomebody := [1001]bool{}
 	for _, t := range trust {
-		trustOther[t[0]] = true
+		count[t[1]]++
+		trustSomebody[t[0]] = true
 	}
 
-	for i := 0; i+N-2 < len(trust); i++ {
-		judge := trust[i][1]
-		if judge == trust[i+N-2][1] && !trustOther[judge] {
-			return judge
+	for i := 1; i <= N; i++ {
+		if count[i] == N-1 && !trustSomebody[i] {
+			return i
 		}
 	}
 
