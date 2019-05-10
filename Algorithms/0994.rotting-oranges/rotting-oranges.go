@@ -18,12 +18,13 @@ func orangesRotting(grid [][]int) int {
 		}
 	}
 
-	if fresh == 0 {
+	if fresh == 0 { // special case
 		return 0
 	}
 
-	count := 0
+	count := -1
 	for len(rottens) > 0 {
+		count++
 		size := len(rottens)
 		for r := 0; r < size; r++ {
 			x, y := rottens[r][0], rottens[r][1]
@@ -40,9 +41,6 @@ func orangesRotting(grid [][]int) int {
 			}
 		}
 		rottens = rottens[size:]
-		if fresh > 0 {
-			count++
-		}
 	}
 
 	if fresh > 0 {
