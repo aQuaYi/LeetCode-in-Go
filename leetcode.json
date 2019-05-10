@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 887,
-	"Updated": "2019-05-10T10:41:17.87759577+08:00",
+	"Updated": "2019-05-10T11:34:54.085064295+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 227,
+			"Solved": 228,
 			"Total": 243
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 176
 		},
 		"Total": {
-			"Solved": 765,
+			"Solved": 766,
 			"Total": 830
 		}
 	},
@@ -11509,7 +11509,7 @@
 			"ID": 957,
 			"Title": "Prison Cells After N Days",
 			"TitleSlug": "prison-cells-after-n-days",
-			"PassRate": "38%",
+			"PassRate": "37%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11929,7 +11929,7 @@
 			"ID": 992,
 			"Title": "Subarrays with K Different Integers",
 			"TitleSlug": "subarrays-with-k-different-integers",
-			"PassRate": "44%",
+			"PassRate": "45%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -11955,7 +11955,7 @@
 			"TitleSlug": "rotting-oranges",
 			"PassRate": "46%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -12181,7 +12181,7 @@
 			"ID": 1013,
 			"Title": "Partition Array Into Three Parts With Equal Sum",
 			"TitleSlug": "partition-array-into-three-parts-with-equal-sum",
-			"PassRate": "54%",
+			"PassRate": "55%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
