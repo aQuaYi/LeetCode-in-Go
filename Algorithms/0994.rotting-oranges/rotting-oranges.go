@@ -5,15 +5,16 @@ var dy = [4]int{-1, 1, 0, 0}
 
 func orangesRotting(grid [][]int) int {
 	m, n := len(grid), len(grid[0])
-	rottens := make([][]int, 0, m*n) // TODO: try [][2]int
+
 	fresh := 0
+	rottens := make([][2]int, 0, m*n)
 	for i := 0; i < m; i++ {
 		for j := 0; j < n; j++ {
 			switch grid[i][j] {
 			case 1:
 				fresh++
 			case 2:
-				rottens = append(rottens, []int{i, j})
+				rottens = append(rottens, [2]int{i, j})
 			}
 		}
 	}
@@ -37,7 +38,7 @@ func orangesRotting(grid [][]int) int {
 				}
 				grid[i][j] = 2
 				fresh--
-				rottens = append(rottens, []int{i, j})
+				rottens = append(rottens, [2]int{i, j})
 			}
 		}
 		rottens = rottens[size:]
