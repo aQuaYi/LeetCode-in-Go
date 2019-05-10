@@ -27,6 +27,11 @@ var tcs = []struct {
 		0,
 	},
 
+	{
+		[][]int{{0}},
+		0,
+	},
+
 	// 可以有多个 testcase
 }
 
