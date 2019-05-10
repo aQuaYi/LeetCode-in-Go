@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 887,
-	"Updated": "2019-05-10T20:52:23.112904367+08:00",
+	"Updated": "2019-05-10T21:36:13.739510966+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 228,
+			"Solved": 229,
 			"Total": 243
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 176
 		},
 		"Total": {
-			"Solved": 766,
+			"Solved": 767,
 			"Total": 830
 		}
 	},
@@ -11737,7 +11737,7 @@
 			"ID": 976,
 			"Title": "Largest Perimeter Triangle",
 			"TitleSlug": "largest-perimeter-triangle",
-			"PassRate": "56%",
+			"PassRate": "57%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11929,7 +11929,7 @@
 			"ID": 992,
 			"Title": "Subarrays with K Different Integers",
 			"TitleSlug": "subarrays-with-k-different-integers",
-			"PassRate": "45%",
+			"PassRate": "44%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -11991,7 +11991,7 @@
 			"TitleSlug": "find-the-town-judge",
 			"PassRate": "48%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
