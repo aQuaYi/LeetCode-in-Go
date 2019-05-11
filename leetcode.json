@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 887,
-	"Updated": "2019-05-11T15:24:58.524455076+08:00",
+	"Updated": "2019-05-11T16:11:28.831213853+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 229,
+			"Solved": 230,
 			"Total": 243
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 176
 		},
 		"Total": {
-			"Solved": 767,
+			"Solved": 768,
 			"Total": 830
 		}
 	},
@@ -6721,7 +6721,7 @@
 			"ID": 558,
 			"Title": "Quad Tree Intersection",
 			"TitleSlug": "quad-tree-intersection",
-			"PassRate": "40%",
+			"PassRate": "41%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -11977,7 +11977,7 @@
 			"ID": 996,
 			"Title": "Number of Squareful Arrays",
 			"TitleSlug": "number-of-squareful-arrays",
-			"PassRate": "47%",
+			"PassRate": "48%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -12015,7 +12015,7 @@
 			"TitleSlug": "available-captures-for-rook",
 			"PassRate": "66%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -12097,7 +12097,7 @@
 			"ID": 1006,
 			"Title": "Clumsy Factorial",
 			"TitleSlug": "clumsy-factorial",
-			"PassRate": "53%",
+			"PassRate": "54%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -12109,7 +12109,7 @@
 			"ID": 1007,
 			"Title": "Minimum Domino Rotations For Equal Row",
 			"TitleSlug": "minimum-domino-rotations-for-equal-row",
-			"PassRate": "46%",
+			"PassRate": "47%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -12457,7 +12457,7 @@
 			"ID": 1036,
 			"Title": "Escape a Large Maze",
 			"TitleSlug": "escape-a-large-maze",
-			"PassRate": "40%",
+			"PassRate": "39%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
