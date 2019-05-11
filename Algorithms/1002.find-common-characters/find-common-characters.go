@@ -4,16 +4,16 @@ func commonChars(A []string) []string {
 	minCount := count(A[0])
 	for i := 1; i < len(A); i++ {
 		c := count(A[i])
-		for b, v := range c {
-			minCount[b] = min(minCount[b], v)
+		for j, n := range c {
+			minCount[j] = min(minCount[j], n)
 		}
 	}
-	res := make([]string, 0, 128)
 
-	for b, v := range minCount {
-		for v > 0 {
-			res = append(res, string(b+'a'))
-			v--
+	res := make([]string, 0, 128)
+	for i, n := range minCount {
+		for n > 0 {
+			res = append(res, string('a'+i))
+			n--
 		}
 	}
 
