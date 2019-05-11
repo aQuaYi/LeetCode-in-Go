@@ -1,6 +1,7 @@
 package problem1002
 
 import (
+	"sort"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -34,7 +35,9 @@ func Test_commonChars(t *testing.T) {
 	ast := assert.New(t)
 
 	for _, tc := range tcs {
-		ast.Equal(tc.ans, commonChars(tc.A), "输入:%v", tc)
+		ans := commonChars(tc.A)
+		sort.Strings(ans)
+		ast.Equal(tc.ans, ans, "输入:%v", tc)
 	}
 }
 
