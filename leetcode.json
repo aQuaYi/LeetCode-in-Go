@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 887,
-	"Updated": "2019-05-11T18:41:24.126947239+08:00",
+	"Updated": "2019-05-11T19:22:03.117526893+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 230,
+			"Solved": 231,
 			"Total": 243
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 176
 		},
 		"Total": {
-			"Solved": 768,
+			"Solved": 769,
 			"Total": 830
 		}
 	},
@@ -6253,7 +6253,7 @@
 			"ID": 519,
 			"Title": "Random Flip Matrix",
 			"TitleSlug": "random-flip-matrix",
-			"PassRate": "33%",
+			"PassRate": "32%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12051,7 +12051,7 @@
 			"TitleSlug": "find-common-characters",
 			"PassRate": "65%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
