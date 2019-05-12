@@ -10,7 +10,7 @@ func isRationalEqual(S string, T string) bool {
 	it, nt, rt := parse(T)
 
 	if rs == "" && rt == "" {
-		return S == T
+		return is == it && ns == nt
 	}
 
 	ns, rs = simplify(ns, rs)
