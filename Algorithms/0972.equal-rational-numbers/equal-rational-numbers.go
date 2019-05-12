@@ -25,7 +25,7 @@ func isRationalEqual(S string, T string) bool {
 func parse(s string) (string, string, string) {
 	dot := strings.Index(s, ".")
 	if dot == -1 {
-		return s, "", ""
+		return s, "0", ""
 	}
 
 	integer, fraction := s[:dot], s[dot+1:]
@@ -37,6 +37,14 @@ func parse(s string) (string, string, string) {
 
 	nonRepeat := fraction[:l]
 	repeat := fraction[l+1 : len(fraction)-1]
+
+	if repeat == "0" {
+		repeat = ""
+	}
+
+	if repeat == "" && nonRepeat == "" {
+		nonRepeat = "0"
+	}
 
 	return integer, nonRepeat, repeat
 }
@@ -60,10 +68,6 @@ func simplify(nonRepeat, repeat string) (string, string) {
 			nonRepeat = nonRepeat[:len(nonRepeat)-i]
 			break
 		}
-	}
-
-	if repeat == "0" {
-		repeat = ""
 	}
 
 	return nonRepeat, repeat
