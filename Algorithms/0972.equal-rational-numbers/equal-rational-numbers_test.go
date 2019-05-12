@@ -14,14 +14,26 @@ var tcs = []struct {
 }{
 
 	{
-		"1.9(0)",
-		"1.8(9)",
+		"15.(9)",
+		"16",
+		true,
+	},
+
+	{
+		"1.0(9)",
+		"1.1",
 		true,
 	},
 
 	{
 		"0.9(9)",
 		"1.",
+		true,
+	},
+
+	{
+		"1.9(0)",
+		"1.8(9)",
 		true,
 	},
 
@@ -71,5 +83,67 @@ func Benchmark_isRationalEqual(b *testing.B) {
 		for _, tc := range tcs {
 			isRationalEqual(tc.S, tc.T)
 		}
+	}
+}
+
+func Test_parse(t *testing.T) {
+	type args struct {
+		s string
+	}
+	tests := []struct {
+		name    string
+		args    args
+		integer string
+		nonRep  string
+		repeat  string
+	}{
+
+		{
+			"1",
+			args{"1"},
+			"1",
+			"",
+			"",
+		},
+
+		{
+			"1.",
+			args{"1."},
+			"1",
+			"",
+			"",
+		},
+
+		{
+			"1.0",
+			args{"1.0"},
+			"1",
+			"",
+			"",
+		},
+
+		{
+			"1.0(9)",
+			args{"1.0(9)"},
+			"1",
+			"0",
+			"9",
+		},
+
+		//
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			integer, nonRep, repeat := parse(tt.args.s)
+			if integer != tt.integer {
+				t.Errorf("parse() integer = %v, want %v", integer, tt.integer)
+			}
+			if nonRep != tt.nonRep {
+				t.Errorf("parse() nonRepeat = %v, want %v", nonRep, tt.nonRep)
+			}
+			if repeat != tt.repeat {
+				t.Errorf("parse() repeat = %v, want %v", repeat, tt.repeat)
+			}
+		})
 	}
 }
