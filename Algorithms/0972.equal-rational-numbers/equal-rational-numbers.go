@@ -57,6 +57,10 @@ func simplify(nonRepeat, repeat string) (string, string) {
 		return nonRepeat, repeat
 	}
 
+	if repeat == strings.Repeat(repeat[:1], len(repeat)) {
+		repeat = repeat[:1]
+	}
+
 	for repeat[:len(repeat)/2] == repeat[len(repeat)/2:] {
 		repeat = repeat[:len(repeat)/2]
 	}
