@@ -153,3 +153,42 @@ func Test_parse(t *testing.T) {
 		})
 	}
 }
+
+func Test_normalize(t *testing.T) {
+	type args struct {
+		s string
+	}
+	tests := []struct {
+		name string
+		args args
+		want string
+	}{
+
+		{
+			"1",
+			args{"1"},
+			"0001",
+		},
+
+		{
+			"1234.",
+			args{"1234."},
+			"1234",
+		},
+
+		{
+			"1234.(1)",
+			args{"1234.(1)"},
+			"1234(1)",
+		},
+
+		// Add test cases.
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := normalize(tt.args.s); got != tt.want {
+				t.Errorf("normalize() = %v, want %v", got, tt.want)
+			}
+		})
+	}
+}
