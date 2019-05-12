@@ -54,6 +54,14 @@ func simplify(nonRepeat, repeat string) (string, string) {
 		nonRepeat = nonRepeat[:len(nonRepeat)-len(repeat)]
 	}
 
+	for i := 1; i < len(repeat); i++ {
+		if strings.HasSuffix(nonRepeat, repeat[i:]) {
+			repeat = repeat[i:] + repeat[:i]
+			nonRepeat = nonRepeat[:len(nonRepeat)-i]
+			break
+		}
+	}
+
 	return nonRepeat, repeat
 }
 
