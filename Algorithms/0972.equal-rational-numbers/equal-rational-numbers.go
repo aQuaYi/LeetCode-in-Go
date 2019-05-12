@@ -9,9 +9,9 @@ func isRationalEqual(S string, T string) bool {
 	is, ns, rs := parse(S)
 	it, nt, rt := parse(T)
 
-	if rs == "" && rt == "" {
-		return is == it && ns == nt
-	}
+	// if rs == "" && rt == "" {
+	// 	return is == it && ns == nt
+	// }
 
 	ns, rs = simplify(ns, rs)
 	nt, rt = simplify(nt, rt)
@@ -19,10 +19,16 @@ func isRationalEqual(S string, T string) bool {
 	s, ns, rs := convert(is, ns, rs)
 	t, nt, rt := convert(it, nt, rt)
 
-	return s == t && ns == nt && rs == rt
+	return s == t &&
+		ns == nt &&
+		rs == rt
 }
 
 func parse(s string) (string, string, string) {
+	if strings.HasSuffix(s, ".") {
+		s = s[:len(s)-1]
+	}
+
 	dot := strings.Index(s, ".")
 	if dot == -1 {
 		return s, "0", ""
@@ -78,6 +84,7 @@ func convert(integer, nonRepeat, repeat string) (int, string, string) {
 	if nonRepeat == "" && repeat == "9" {
 		i++
 		repeat = ""
+		nonRepeat = "0"
 	}
 	return i, nonRepeat, repeat
 }
