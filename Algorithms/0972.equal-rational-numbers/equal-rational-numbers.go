@@ -13,10 +13,6 @@ func isRationalEqual(S string, T string) bool {
 		return S == T
 	}
 
-	if rs == "" || rt == "" {
-		return false
-	}
-
 	ns, rs = simplify(ns, rs)
 	nt, rt = simplify(nt, rt)
 
@@ -46,6 +42,10 @@ func parse(s string) (string, string, string) {
 }
 
 func simplify(nonRepeat, repeat string) (string, string) {
+	if repeat == "" {
+		return nonRepeat, repeat
+	}
+
 	for repeat[:len(repeat)/2] == repeat[len(repeat)/2:] {
 		repeat = repeat[:len(repeat)/2]
 	}
