@@ -62,6 +62,10 @@ func simplify(nonRepeat, repeat string) (string, string) {
 		}
 	}
 
+	if repeat == "0" {
+		repeat = ""
+	}
+
 	return nonRepeat, repeat
 }
 
