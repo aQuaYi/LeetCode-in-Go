@@ -14,8 +14,19 @@ func isRationalEqual(S string, T string) bool {
 	tn, tr = simplify(tn, tr)
 	t, tr := convert(ti, tn, tr)
 
-	return s == t &&
-		sr == tr
+	return s == t && sr == tr
+}
+
+// 1.2(3) -> 0.00012(3) -> 00012(3)
+func normalize(s string) string {
+	if !strings.Contains(s, ".") {
+		s += "."
+	}
+	dot := strings.Index(s, ".")
+	if dot < 4 {
+		s = strings.Repeat("0", 4-dot) + s
+	}
+	return strings.Replace(s, ".", "", 1)
 }
 
 func parse(s string) (string, string, string) {
@@ -33,7 +44,7 @@ func parse(s string) (string, string, string) {
 	l := strings.Index(fraction, "(")
 	if l == -1 {
 		if fraction == "0" {
-			fraction = ""
+			return integer, "", ""
 		}
 		return integer, fraction, ""
 	}
