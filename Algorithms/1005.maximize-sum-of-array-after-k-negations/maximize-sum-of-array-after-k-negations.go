@@ -34,7 +34,7 @@ func largestSumAfterKNegations(A []int, K int) int {
 	} else {
 		sort.Ints(negatives)
 		// min K negative could convert to positive
-		// sort make min K negative in A[:K]
+		// sort make min K negative in negatives[:K]
 	}
 
 	index := min(K, negSize)
