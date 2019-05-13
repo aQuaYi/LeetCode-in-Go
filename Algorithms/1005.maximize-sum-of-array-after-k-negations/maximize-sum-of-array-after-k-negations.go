@@ -1,45 +1,63 @@
 package problem1005
 
-import "container/heap"
+import "sort"
 
 func largestSumAfterKNegations(A []int, K int) int {
-	h := intHeap(A)
-	heap.Init(&h)
-
-	for K > 0 {
-		h[0] = -h[0]
-		heap.Fix(&h, 0)
-		K--
+	size := len(A)
+	if size == 0 {
+		return 0
 	}
+
+	i, j := 0, size-1
+	minAbs := abs(A[0])
+	for i <= j {
+		if minAbs > abs(A[i]) {
+			minAbs = abs(A[i])
+		}
+		if A[i] >= 0 { // move non-negative to right side
+			A[i], A[j] = A[j], A[i]
+			j--
+			continue
+		}
+		i++
+	}
+
+	negatives := A[:j+1]
+	negSize := j + 1
 
 	sum := 0
-	for i := 0; i < len(h); i++ {
-		sum += h[i]
+
+	if K >= negSize { // all negative could convert to positive
+		if (K-negSize)&1 == 1 { // one negative need keep as negative
+			sum -= minAbs << 1 // choose minAbs keep as negative
+		}
+	} else {
+		sort.Ints(negatives)
+		// min K negative could convert to positive
+		// sort make min K negative in A[:K]
 	}
+
+	index := min(K, negSize)
+	for i := 0; i < index; i++ {
+		sum -= negatives[i]
+	}
+	for i := index; i < size; i++ {
+		sum += A[i]
+	}
+
 	return sum
 }
 
-// intHeap 实现了 heap 的接口
-type intHeap []int
-
-func (h intHeap) Len() int {
-	return len(h)
+func abs(a int) int {
+	if a < 0 {
+		return -a
+	}
+	return a
 }
 
-func (h intHeap) Less(i, j int) bool {
-	return h[i] < h[j]
-}
-
-func (h intHeap) Swap(i, j int) {
-	h[i], h[j] = h[j], h[i]
-}
-
-func (h *intHeap) Push(x interface{}) {
-	*h = append(*h, x.(int))
-}
-
-func (h *intHeap) Pop() interface{} {
-	res := (*h)[len(*h)-1]
-	*h = (*h)[:len(*h)-1]
-	return res
+func min(a, b int) int {
+	if a < b {
+		return a
+	}
+	return b
 }
