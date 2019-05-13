@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 887,
-	"Updated": "2019-05-13T19:30:45.853143258+08:00",
+	"Updated": "2019-05-13T21:23:52.939516247+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 231,
+			"Solved": 232,
 			"Total": 245
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 177
 		},
 		"Total": {
-			"Solved": 770,
+			"Solved": 771,
 			"Total": 834
 		}
 	},
@@ -12087,7 +12087,7 @@
 			"TitleSlug": "maximize-sum-of-array-after-k-negations",
 			"PassRate": "49%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -12541,7 +12541,7 @@
 			"ID": 1043,
 			"Title": "Partition Array for Maximum Sum",
 			"TitleSlug": "partition-array-for-maximum-sum",
-			"PassRate": "54%",
+			"PassRate": "55%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
