@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 887,
-	"Updated": "2019-05-14T21:52:04.046313684+08:00",
+	"Updated": "2019-05-14T23:38:16.832514265+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 232,
+			"Solved": 233,
 			"Total": 245
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 177
 		},
 		"Total": {
-			"Solved": 771,
+			"Solved": 772,
 			"Total": 834
 		}
 	},
@@ -2857,7 +2857,7 @@
 			"ID": 236,
 			"Title": "Lowest Common Ancestor of a Binary Tree",
 			"TitleSlug": "lowest-common-ancestor-of-a-binary-tree",
-			"PassRate": "36%",
+			"PassRate": "37%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -3121,7 +3121,7 @@
 			"ID": 258,
 			"Title": "Add Digits",
 			"TitleSlug": "add-digits",
-			"PassRate": "54%",
+			"PassRate": "53%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12279,7 +12279,7 @@
 			"TitleSlug": "remove-outermost-parentheses",
 			"PassRate": "77%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,

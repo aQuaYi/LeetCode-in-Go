@@ -4,14 +4,14 @@ import "strings"
 
 func removeOuterParentheses(S string) string {
 	var sb strings.Builder
-	i, count := 0, 0
-	for j := 0; j < len(S); j++ {
+	i, count, size := 0, 0, len(S)
+	for j := 0; j < size; j++ {
 		if S[j] == '(' {
 			count++
-		} else {
-			count--
+			continue
 		}
-		if count == 0 {
+		count--
+		if count == 0 { // S[i] and S[j] is outer parentheses
 			sb.WriteString(S[i+1 : j])
 			i = j + 1
 		}
