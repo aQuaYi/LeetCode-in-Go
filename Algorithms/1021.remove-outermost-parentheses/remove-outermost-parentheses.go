@@ -11,7 +11,7 @@ func removeOuterParentheses(S string) string {
 			continue
 		}
 		count--
-		if count == 0 { // S[i] and S[j] is outer parentheses
+		if count == 0 { // S[i] and S[j] are outer parentheses
 			sb.WriteString(S[i+1 : j])
 			i = j + 1
 		}
