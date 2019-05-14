@@ -4,16 +4,11 @@ import "sort"
 
 func largestSumAfterKNegations(A []int, K int) int {
 	size := len(A)
-	if size == 0 {
-		return 0
-	}
 
 	i, j := 0, size-1
 	minAbs := abs(A[0])
 	for i <= j {
-		if minAbs > abs(A[i]) {
-			minAbs = abs(A[i])
-		}
+		minAbs = min(minAbs, abs(A[i]))
 		if A[i] >= 0 { // move non-negative to right side
 			A[i], A[j] = A[j], A[i]
 			j--
@@ -26,10 +21,9 @@ func largestSumAfterKNegations(A []int, K int) int {
 	negSize := j + 1
 
 	sum := 0
-
 	if K >= negSize { // all negative could convert to positive
-		if (K-negSize)&1 == 1 { // one negative need keep as negative
-			sum -= minAbs << 1 // choose minAbs keep as negative
+		if (K-negSize)&1 == 1 { // someone need keep as negative
+			sum -= minAbs * 2 // choose minAbs keep as negative
 		}
 	} else {
 		sort.Ints(negatives)
@@ -39,7 +33,7 @@ func largestSumAfterKNegations(A []int, K int) int {
 
 	index := min(K, negSize)
 	for i := 0; i < index; i++ {
-		sum -= negatives[i]
+		sum -= A[i]
 	}
 	for i := index; i < size; i++ {
 		sum += A[i]
