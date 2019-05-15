@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 887,
-	"Updated": "2019-05-15T21:18:24.554304537+08:00",
+	"Updated": "2019-05-15T22:25:05.150326042+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 233,
+			"Solved": 234,
 			"Total": 245
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 177
 		},
 		"Total": {
-			"Solved": 772,
+			"Solved": 773,
 			"Total": 834
 		}
 	},
@@ -7693,7 +7693,7 @@
 			"ID": 639,
 			"Title": "Decode Ways II",
 			"TitleSlug": "decode-ways-ii",
-			"PassRate": "25%",
+			"PassRate": "24%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11077,7 +11077,7 @@
 			"ID": 921,
 			"Title": "Minimum Add to Make Parentheses Valid",
 			"TitleSlug": "minimum-add-to-make-parentheses-valid",
-			"PassRate": "69%",
+			"PassRate": "70%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11209,7 +11209,7 @@
 			"ID": 932,
 			"Title": "Beautiful Array",
 			"TitleSlug": "beautiful-array",
-			"PassRate": "53%",
+			"PassRate": "52%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12135,9 +12135,9 @@
 			"TitleSlug": "complement-of-base-10-integer",
 			"PassRate": "58%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -12553,7 +12553,7 @@
 			"ID": 1044,
 			"Title": "Longest Duplicate Substring",
 			"TitleSlug": "longest-duplicate-substring",
-			"PassRate": "21%",
+			"PassRate": "22%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
