@@ -22,23 +22,20 @@ func flipMatchVoyage(root *TreeNode, voyage []int) []int {
 }
 
 func rescur(root *TreeNode, voyage []int, res *[]int) bool {
-	if root == nil {
-		if len(voyage) == 0 {
-			return true
-		}
-		return false
-	}
-
-	if len(voyage) == 1 && root.Val == voyage[0] && root.Left == nil && root.Right == nil {
-		return true
-	}
-
 	if len(voyage) == 0 || root.Val != voyage[0] {
 		return false
 	}
 
-	if len(voyage) < 2 && root.Left != nil {
-		return false
+	if root.Left == nil && root.Right == nil {
+		return true
+	}
+
+	if root.Left == nil {
+		return rescur(root.Right, voyage[1:], res)
+	}
+
+	if root.Right == nil {
+		return rescur(root.Left, voyage[1:], res)
 	}
 
 	if voyage[1] != root.Left.Val {
@@ -46,11 +43,7 @@ func rescur(root *TreeNode, voyage []int, res *[]int) bool {
 		root.Left, root.Right = root.Right, root.Left
 	}
 
-	right := 0
-	if root.Right != nil {
-		right = root.Right.Val
-	}
-
+	right := root.Right.Val
 	l, r := split(voyage, right)
 
 	return rescur(root.Left, l, res) && rescur(root.Right, r, res)
