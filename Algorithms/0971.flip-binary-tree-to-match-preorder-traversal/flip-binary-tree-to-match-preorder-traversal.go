@@ -29,6 +29,10 @@ func rescur(root *TreeNode, voyage []int, res *[]int) bool {
 		return false
 	}
 
+	if len(voyage) == 1 && root.Val == voyage[0] && root.Left == nil && root.Right == nil {
+		return true
+	}
+
 	if len(voyage) == 0 || root.Val != voyage[0] {
 		return false
 	}
@@ -59,5 +63,5 @@ func split(voyage []int, right int) ([]int, []int) {
 			break
 		}
 	}
-	return voyage[:begin], voyage[begin:]
+	return voyage[1:begin], voyage[begin:]
 }
