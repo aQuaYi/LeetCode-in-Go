@@ -14,11 +14,17 @@ var tcs = []struct {
 	voyage []int
 	ans    []int
 }{
-	{
 
+	{
+		[]int{1, 2},
+		[]int{1, 2},
+		[]int{},
+	},
+
+	{
 		[]int{1, kit.NULL, 2},
 		[]int{1, 2},
-		[]int{1},
+		[]int{},
 	},
 
 	{
