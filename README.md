@@ -10,7 +10,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|235|375|165|775|
+|**Accepted**|235|376|165|776|
 |**Total**|245|412|177|834|
 
 ## 题解
@@ -88,9 +88,9 @@
 |[0976](https://leetcode.com/problems/largest-perimeter-triangle/)|[Largest Perimeter Triangle](./Algorithms/0976.largest-perimeter-triangle)|56%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |[0975](https://leetcode.com/problems/odd-even-jump/)| * Odd Even Jump|49%|Hard||
 |[0974](https://leetcode.com/problems/subarray-sums-divisible-by-k/)| * Subarray Sums Divisible by K|44%|Medium||
-|[0973](https://leetcode.com/problems/k-closest-points-to-origin/)| * K Closest Points to Origin|62%|Medium||
+|[0973](https://leetcode.com/problems/k-closest-points-to-origin/)|[K Closest Points to Origin](./Algorithms/0973.k-closest-points-to-origin)|62%|Medium||
 |[0972](https://leetcode.com/problems/equal-rational-numbers/)|[Equal Rational Numbers](./Algorithms/0972.equal-rational-numbers)|40%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|[0971](https://leetcode.com/problems/flip-binary-tree-to-match-preorder-traversal/)|[Flip Binary Tree To Match Preorder Traversal](./Algorithms/0971.flip-binary-tree-to-match-preorder-traversal)|42%|Medium||
+|[0971](https://leetcode.com/problems/flip-binary-tree-to-match-preorder-traversal/)|[Flip Binary Tree To Match Preorder Traversal](./Algorithms/0971.flip-binary-tree-to-match-preorder-traversal)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0970](https://leetcode.com/problems/powerful-integers/)|[Powerful Integers](./Algorithms/0970.powerful-integers)|39%|Easy||
 |[0969](https://leetcode.com/problems/pancake-sorting/)|[Pancake Sorting](./Algorithms/0969.pancake-sorting)|62%|Medium||
 |[0968](https://leetcode.com/problems/binary-tree-cameras/)|[Binary Tree Cameras](./Algorithms/0968.binary-tree-cameras)|34%|Hard||
