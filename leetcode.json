@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 887,
-	"Updated": "2019-05-18T21:00:40.050890175+08:00",
+	"Updated": "2019-05-18T21:45:48.981474032+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 235,
 			"Total": 245
 		},
 		"Medium": {
-			"Solved": 375,
+			"Solved": 376,
 			"Total": 412
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 177
 		},
 		"Total": {
-			"Solved": 775,
+			"Solved": 776,
 			"Total": 834
 		}
 	},
@@ -11703,7 +11703,7 @@
 			"TitleSlug": "k-closest-points-to-origin",
 			"PassRate": "62%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
