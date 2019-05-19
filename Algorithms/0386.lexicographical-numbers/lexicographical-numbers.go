@@ -1,6 +1,6 @@
 package problem0386
 
-func lexicalOrder(n int) []int {
+func lexicalOrder(max int) []int {
 
 	return nil
 }
