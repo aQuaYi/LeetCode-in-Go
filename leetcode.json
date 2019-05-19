@@ -1,15 +1,15 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 887,
-	"Updated": "2019-05-18T21:45:48.981474032+08:00",
+	"Updated": "2019-05-19T13:23:04.806650088+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 235,
-			"Total": 245
+			"Total": 247
 		},
 		"Medium": {
 			"Solved": 376,
-			"Total": 412
+			"Total": 414
 		},
 		"Hard": {
 			"Solved": 165,
@@ -17,7 +17,7 @@
 		},
 		"Total": {
 			"Solved": 776,
-			"Total": 834
+			"Total": 838
 		}
 	},
 	"Problems": [
@@ -1657,7 +1657,7 @@
 			"ID": 136,
 			"Title": "Single Number",
 			"TitleSlug": "single-number",
-			"PassRate": "59%",
+			"PassRate": "60%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -5185,7 +5185,7 @@
 			"ID": 430,
 			"Title": "Flatten a Multilevel Doubly Linked List",
 			"TitleSlug": "flatten-a-multilevel-doubly-linked-list",
-			"PassRate": "41%",
+			"PassRate": "42%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -6013,7 +6013,7 @@
 			"ID": 499,
 			"Title": "The Maze III",
 			"TitleSlug": "the-maze-iii",
-			"PassRate": "37%",
+			"PassRate": "36%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -7981,7 +7981,7 @@
 			"ID": 663,
 			"Title": "Equal Tree Partition",
 			"TitleSlug": "equal-tree-partition",
-			"PassRate": "37%",
+			"PassRate": "38%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -11725,7 +11725,7 @@
 			"ID": 975,
 			"Title": "Odd Even Jump",
 			"TitleSlug": "odd-even-jump",
-			"PassRate": "49%",
+			"PassRate": "48%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -12289,7 +12289,7 @@
 			"ID": 1022,
 			"Title": "Sum of Root To Leaf Binary Numbers",
 			"TitleSlug": "sum-of-root-to-leaf-binary-numbers",
-			"PassRate": "51%",
+			"PassRate": "52%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -12301,7 +12301,7 @@
 			"ID": 1023,
 			"Title": "Camelcase Matching",
 			"TitleSlug": "camelcase-matching",
-			"PassRate": "57%",
+			"PassRate": "56%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -12529,7 +12529,7 @@
 			"ID": 1042,
 			"Title": "Flower Planting With No Adjacent",
 			"TitleSlug": "flower-planting-with-no-adjacent",
-			"PassRate": "45%",
+			"PassRate": "46%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -12541,7 +12541,7 @@
 			"ID": 1043,
 			"Title": "Partition Array for Maximum Sum",
 			"TitleSlug": "partition-array-for-maximum-sum",
-			"PassRate": "58%",
+			"PassRate": "59%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -12553,12 +12553,72 @@
 			"ID": 1044,
 			"Title": "Longest Duplicate Substring",
 			"TitleSlug": "longest-duplicate-substring",
-			"PassRate": "23%",
+			"PassRate": "22%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 0,
+			"Title": "",
+			"TitleSlug": "",
+			"PassRate": "",
+			"Difficulty": "",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": false,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 1046,
+			"Title": "Last Stone Weight",
+			"TitleSlug": "last-stone-weight",
+			"PassRate": "63%",
+			"Difficulty": "Easy",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 1047,
+			"Title": "Remove All Adjacent Duplicates In String",
+			"TitleSlug": "remove-all-adjacent-duplicates-in-string",
+			"PassRate": "54%",
+			"Difficulty": "Easy",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 1048,
+			"Title": "Longest String Chain",
+			"TitleSlug": "longest-string-chain",
+			"PassRate": "37%",
+			"Difficulty": "Medium",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 1049,
+			"Title": "Last Stone Weight II",
+			"TitleSlug": "last-stone-weight-ii",
+			"PassRate": "18%",
+			"Difficulty": "Medium",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
 			"HasNoGoOption": false
 		}
 	]
