@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 887,
-	"Updated": "2019-05-19T13:23:04.806650088+08:00",
+	"Updated": "2019-05-19T13:58:53.651574703+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 235,
 			"Total": 247
 		},
 		"Medium": {
-			"Solved": 376,
+			"Solved": 377,
 			"Total": 414
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 177
 		},
 		"Total": {
-			"Solved": 776,
+			"Solved": 777,
 			"Total": 838
 		}
 	},
@@ -4659,7 +4659,7 @@
 			"TitleSlug": "lexicographical-numbers",
 			"PassRate": "45%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -10825,7 +10825,7 @@
 			"ID": 900,
 			"Title": "RLE Iterator",
 			"TitleSlug": "rle-iterator",
-			"PassRate": "49%",
+			"PassRate": "50%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11005,7 +11005,7 @@
 			"ID": 915,
 			"Title": "Partition Array into Disjoint Intervals",
 			"TitleSlug": "partition-array-into-disjoint-intervals",
-			"PassRate": "43%",
+			"PassRate": "42%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12589,7 +12589,7 @@
 			"ID": 1047,
 			"Title": "Remove All Adjacent Duplicates In String",
 			"TitleSlug": "remove-all-adjacent-duplicates-in-string",
-			"PassRate": "54%",
+			"PassRate": "55%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -12601,7 +12601,7 @@
 			"ID": 1048,
 			"Title": "Longest String Chain",
 			"TitleSlug": "longest-string-chain",
-			"PassRate": "37%",
+			"PassRate": "38%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -12613,7 +12613,7 @@
 			"ID": 1049,
 			"Title": "Last Stone Weight II",
 			"TitleSlug": "last-stone-weight-ii",
-			"PassRate": "18%",
+			"PassRate": "19%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
