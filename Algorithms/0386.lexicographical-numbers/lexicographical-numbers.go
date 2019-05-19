@@ -8,7 +8,9 @@ func lexicalOrder(max int) []int {
 		limit := (x + 10) / 10 * 10
 		for x <= max && x < limit {
 			res = append(res, x)
-			dfs(x * 10)
+			if x*10 <= max {
+				dfs(x * 10)
+			}
 			x++
 		}
 	}
