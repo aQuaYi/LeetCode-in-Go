@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 887,
-	"Updated": "2019-05-19T13:58:53.651574703+08:00",
+	"Updated": "2019-05-19T14:29:22.822680387+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 235,
 			"Total": 247
 		},
 		"Medium": {
-			"Solved": 377,
+			"Solved": 378,
 			"Total": 414
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 177
 		},
 		"Total": {
-			"Solved": 777,
+			"Solved": 778,
 			"Total": 838
 		}
 	},
@@ -9973,7 +9973,7 @@
 			"ID": 829,
 			"Title": "Consecutive Numbers Sum",
 			"TitleSlug": "consecutive-numbers-sum",
-			"PassRate": "32%",
+			"PassRate": "33%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10971,7 +10971,7 @@
 			"TitleSlug": "sort-an-array",
 			"PassRate": "64%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -12349,7 +12349,7 @@
 			"ID": 1027,
 			"Title": "Longest Arithmetic Sequence",
 			"TitleSlug": "longest-arithmetic-sequence",
-			"PassRate": "45%",
+			"PassRate": "46%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -12613,7 +12613,7 @@
 			"ID": 1049,
 			"Title": "Last Stone Weight II",
 			"TitleSlug": "last-stone-weight-ii",
-			"PassRate": "19%",
+			"PassRate": "20%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
