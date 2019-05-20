@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 824,
-	"Updated": "2019-05-20T20:32:37.102184025+08:00",
+	"Updated": "2019-05-20T21:12:36.666433981+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 235,
 			"Total": 247
 		},
 		"Medium": {
-			"Solved": 378,
+			"Solved": 379,
 			"Total": 414
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 177
 		},
 		"Total": {
-			"Solved": 778,
+			"Solved": 779,
 			"Total": 838
 		}
 	},
@@ -11715,9 +11715,9 @@
 			"TitleSlug": "subarray-sums-divisible-by-k",
 			"PassRate": "44%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
