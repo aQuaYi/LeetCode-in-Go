@@ -23,8 +23,8 @@ func oddEvenJumps(A []int) int {
 	for _, j := range indexs {
 		for len(stack) > 0 && stack[len(stack)-1] < j {
 			pop := stack[len(stack)-1]
-			stack = stack[:len(stack)-1]
 			nextHigher[pop] = j
+			stack = stack[:len(stack)-1]
 		}
 		stack = append(stack, j)
 	}
@@ -41,8 +41,8 @@ func oddEvenJumps(A []int) int {
 	for _, j := range indexs {
 		for len(stack) > 0 && stack[len(stack)-1] < j {
 			pop := stack[len(stack)-1]
-			stack = stack[:len(stack)-1]
 			nextLower[pop] = j
+			stack = stack[:len(stack)-1]
 		}
 		stack = append(stack, j)
 	}
