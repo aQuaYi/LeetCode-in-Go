@@ -15,7 +15,7 @@ func oddJump(A []int, i int, odds, evens map[int]bool, res *int) bool {
 		*res++
 		return true
 	}
-	if success, ok := odds[i]; !success && ok {
+	if success, ok := odds[i]; ok && !success {
 		return false
 	}
 	j := oddNumberedJumps(A, i)
@@ -32,7 +32,7 @@ func evenJump(A []int, i int, odds, evens map[int]bool, res *int) bool {
 		*res++
 		return true
 	}
-	if success, ok := evens[i]; !success && ok {
+	if success, ok := evens[i]; ok && !success {
 		return false
 	}
 	j := evenNumberedJumps(A, i)
