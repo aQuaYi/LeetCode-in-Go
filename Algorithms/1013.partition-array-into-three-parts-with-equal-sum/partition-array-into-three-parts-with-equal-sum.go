@@ -1,7 +1,5 @@
 package problem1013
 
-import "sort"
-
 func canThreePartsEqualSum(A []int) bool {
 	n := len(A)
 	sums := make([]int, n)
@@ -9,21 +7,21 @@ func canThreePartsEqualSum(A []int) bool {
 	for i := 1; i < n; i++ {
 		sums[i] = sums[i-1] + A[i]
 	}
-	sum := sums[n-1]
-	if sum%3 != 0 {
+	s := sums[n-1]
+	if s%3 != 0 {
 		return false
 	}
 
-	sort.Ints(sums)
-
-	i := sort.SearchInts(sums, sum/3)
-	if i == n || sums[i] != sum/3 {
-		return false
+	s /= 3
+	i := 0
+	for i < n && sums[i] != s {
+		i++
 	}
 
-	j := sort.SearchInts(sums, sum/3*2)
-	if j == n || sums[j] != sum/3*2 {
-		return false
+	s *= 2
+	j := n - 1
+	for 0 <= j && sums[j] != s {
+		j--
 	}
 
 	return i < j
