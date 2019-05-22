@@ -3,11 +3,11 @@ package problem1013
 func canThreePartsEqualSum(A []int) bool {
 	n := len(A)
 	sums := make([]int, n)
-	sums[0] = A[0]
-	for i := 1; i < n; i++ {
-		sums[i] = sums[i-1] + A[i]
+	s := 0
+	for i := 0; i < n; i++ {
+		s += A[i]
+		sums[i] = s
 	}
-	s := sums[n-1]
 	if s%3 != 0 {
 		return false
 	}
