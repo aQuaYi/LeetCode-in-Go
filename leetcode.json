@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 816,
-	"Updated": "2019-05-22T19:38:23.097801095+08:00",
+	"Updated": "2019-05-22T20:30:40.958403245+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 235,
+			"Solved": 236,
 			"Total": 247
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 177
 		},
 		"Total": {
-			"Solved": 780,
+			"Solved": 781,
 			"Total": 838
 		}
 	},
@@ -12183,7 +12183,7 @@
 			"TitleSlug": "partition-array-into-three-parts-with-equal-sum",
 			"PassRate": "55%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
