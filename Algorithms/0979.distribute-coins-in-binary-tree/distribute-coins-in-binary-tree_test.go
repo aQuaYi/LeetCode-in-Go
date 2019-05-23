@@ -29,7 +29,7 @@ var tcs = []struct {
 	},
 
 	{
-		[]int{1, 0, 0, null, 3},
+		[]int{1, 0, 0, kit.NULL, 3},
 		4,
 	},
 
