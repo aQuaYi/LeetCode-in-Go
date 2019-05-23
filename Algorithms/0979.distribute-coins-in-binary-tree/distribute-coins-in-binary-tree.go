@@ -1,8 +1,6 @@
 package problem0979
 
-import (
-	"github.com/aQuaYi/Data-Structure-and-Algorithms-in-Go/kit"
-)
+import "github.com/aQuaYi/LeetCode-in-Go/kit"
 
 // TreeNode is pre-defined...
 type TreeNode = kit.TreeNode
