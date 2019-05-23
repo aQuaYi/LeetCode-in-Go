@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 807,
-	"Updated": "2019-05-23T20:05:07.454355096+08:00",
+	"Updated": "2019-05-23T20:52:33.268147704+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 236,
 			"Total": 247
 		},
 		"Medium": {
-			"Solved": 379,
+			"Solved": 380,
 			"Total": 414
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 177
 		},
 		"Total": {
-			"Solved": 781,
+			"Solved": 782,
 			"Total": 838
 		}
 	},
@@ -11775,9 +11775,9 @@
 			"TitleSlug": "distribute-coins-in-binary-tree",
 			"PassRate": "66%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
