@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 801,
-	"Updated": "2019-05-24T20:18:00.954889301+08:00",
+	"Updated": "2019-05-24T21:22:50.842264332+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 236,
 			"Total": 247
 		},
 		"Medium": {
-			"Solved": 380,
+			"Solved": 381,
 			"Total": 414
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 177
 		},
 		"Total": {
-			"Solved": 782,
+			"Solved": 783,
 			"Total": 838
 		}
 	},
@@ -11763,9 +11763,9 @@
 			"TitleSlug": "longest-turbulent-subarray",
 			"PassRate": "45%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
