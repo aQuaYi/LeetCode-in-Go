@@ -1,17 +1,24 @@
 package problem0982
 
 func countTriplets(A []int) int {
-	n := len(A)
+	count := [1 << 16]int{}
+	for _, Ai := range A {
+		for _, Aj := range A {
+			count[Ai&Aj]++
+		}
+	}
+
 	res := 0
-	for i := 0; i < n; i++ {
-		Ai := A[i]
-		for j := 0; j < n; j++ {
-			Aj := A[j]
-			for k := 0; k < n; k++ {
-				Ak := A[k]
-				res += (((1<<16 - 1) ^ (Ai & Aj & Ak)) + 1) >> 16
+	for AiAndAj, c := range count {
+		if c == 0 {
+			continue
+		}
+		for _, Ak := range A {
+			if AiAndAj&Ak == 0 {
+				res += c
 			}
 		}
 	}
+
 	return res
 }
