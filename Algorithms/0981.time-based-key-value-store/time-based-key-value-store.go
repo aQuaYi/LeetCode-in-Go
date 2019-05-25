@@ -2,40 +2,40 @@ package problem0981
 
 import "sort"
 
-// TimeMap is a key-value store with timestamp
-type TimeMap struct {
-	times   map[string][]int
-	strings map[string][]string
+type data struct {
+	time  int
+	value string
 }
+
+// TimeMap is a timebased key-value store
+type TimeMap map[string][]data
 
 // Constructor Initialize your data structure here.
 func Constructor() TimeMap {
-	return TimeMap{
-		times:   make(map[string][]int, 1024),
-		strings: make(map[string][]string, 1024),
-	}
+	return make(map[string][]data, 1024)
 }
 
 // Set the key and the value
 // Note 3:
 // The timestamps for all TimeMap.set operations are strictly increasing.
-func (m *TimeMap) Set(key string, value string, timestamp int) {
-	if _, ok := m.times[key]; !ok {
-		m.times[key] = make([]int, 1, 1024)
-		m.strings[key] = make([]string, 1, 1024)
+func (m TimeMap) Set(key string, value string, timestamp int) {
+	if _, ok := m[key]; !ok {
+		m[key] = make([]data, 1, 1024)
 	}
-	m.times[key] = append(m.times[key], timestamp)
-	m.strings[key] = append(m.strings[key], value)
+	m[key] = append(m[key], data{
+		time:  timestamp,
+		value: value,
+	})
 }
 
 // Get the value of key
-func (m *TimeMap) Get(key string, timestamp int) string {
-	times := m.times[key]
-	i := sort.Search(len(times), func(i int) bool {
-		return timestamp < times[i]
+func (m TimeMap) Get(key string, timestamp int) string {
+	d := m[key]
+	i := sort.Search(len(d), func(i int) bool {
+		return timestamp < d[i].time
 	})
 	i--
-	return m.strings[key][i]
+	return m[key][i].value
 }
 
 /**
