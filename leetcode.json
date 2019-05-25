@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 801,
-	"Updated": "2019-05-25T14:31:16.022965097+08:00",
+	"Updated": "2019-05-25T15:49:47.090356529+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 236,
 			"Total": 247
 		},
 		"Medium": {
-			"Solved": 381,
+			"Solved": 382,
 			"Total": 414
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 177
 		},
 		"Total": {
-			"Solved": 783,
+			"Solved": 784,
 			"Total": 838
 		}
 	},
@@ -11799,7 +11799,7 @@
 			"TitleSlug": "time-based-key-value-store",
 			"PassRate": "50%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -12349,7 +12349,7 @@
 			"ID": 1027,
 			"Title": "Longest Arithmetic Sequence",
 			"TitleSlug": "longest-arithmetic-sequence",
-			"PassRate": "45%",
+			"PassRate": "46%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
