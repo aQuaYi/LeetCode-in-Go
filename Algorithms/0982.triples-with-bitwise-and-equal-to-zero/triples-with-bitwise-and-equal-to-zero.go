@@ -9,9 +9,7 @@ func countTriplets(A []int) int {
 			Aj := A[j]
 			for k := 0; k < n; k++ {
 				Ak := A[k]
-				if Ai&Aj&Ak == 0 {
-					res++
-				}
+				res += (((1<<16 - 1) ^ (Ai & Aj & Ak)) + 1) >> 16
 			}
 		}
 	}
