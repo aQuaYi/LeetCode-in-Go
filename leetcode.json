@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 797,
-	"Updated": "2019-05-28T19:54:57.644935381+08:00",
+	"Updated": "2019-05-28T21:43:34.613412885+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 236,
 			"Total": 248
 		},
 		"Medium": {
-			"Solved": 382,
+			"Solved": 383,
 			"Total": 417
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 177
 		},
 		"Total": {
-			"Solved": 785,
+			"Solved": 786,
 			"Total": 842
 		}
 	},
@@ -1885,7 +1885,7 @@
 			"ID": 155,
 			"Title": "Min Stack",
 			"TitleSlug": "min-stack",
-			"PassRate": "36%",
+			"PassRate": "37%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -7873,7 +7873,7 @@
 			"ID": 654,
 			"Title": "Maximum Binary Tree",
 			"TitleSlug": "maximum-binary-tree",
-			"PassRate": "75%",
+			"PassRate": "76%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11823,9 +11823,9 @@
 			"TitleSlug": "minimum-cost-for-tickets",
 			"PassRate": "57%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -11989,7 +11989,7 @@
 			"ID": 997,
 			"Title": "Find the Town Judge",
 			"TitleSlug": "find-the-town-judge",
-			"PassRate": "49%",
+			"PassRate": "48%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12613,7 +12613,7 @@
 			"ID": 1049,
 			"Title": "Last Stone Weight II",
 			"TitleSlug": "last-stone-weight-ii",
-			"PassRate": "37%",
+			"PassRate": "36%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
