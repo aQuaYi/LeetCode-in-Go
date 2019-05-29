@@ -1,53 +1,39 @@
 package problem0986
 
 func intervalIntersection(A [][]int, B [][]int) [][]int {
-	res := make([][]int, 0, len(A)+len(B))
-	var A0, B0, intersection []int
-	for (len(A) > 0 || A0 != nil) &&
-		(len(B) > 0 || B0 != nil) {
-		if A0 == nil {
-			A0, A = A[0], A[1:]
-		}
-		if B0 == nil {
-			B0, B = B[0], B[1:]
-		}
-		A0, B0, intersection = intersect(A0, B0)
-		if intersection != nil {
-			res = append(res, intersection)
+	sizeA, sizeB := len(A), len(B)
+	res := make([][]int, 0, sizeA+sizeB)
+	for i, j := 0, 0; i < sizeA && j < sizeB; {
+		switch {
+		case A[i][1] < B[j][0]:
+			i++
+		case B[j][1] < A[i][0]:
+			j++
+		default:
+			res = append(res, []int{
+				max(A[i][0], B[j][0]),
+				min(A[i][1], B[j][1]),
+			})
+			if A[i][1] < B[j][1] {
+				i++
+			} else {
+				j++
+			}
 		}
 	}
-
 	return res
 }
 
-func intersect(A0, B0 []int) (a, b, intersection []int) {
-	a, b = A0, B0
-	if a[0] > b[0] {
-		a, b = b, a
-		defer func() {
-			a, b = b, a
-		}()
+func max(a, b int) int {
+	if a > b {
+		return a
 	}
+	return b
+}
 
-	if a[1] < b[0] {
-		a = nil
-		return
+func min(a, b int) int {
+	if a < b {
+		return a
 	}
-
-	if a[1] == b[1] {
-		intersection = []int{b[0], b[1]}
-		a, b = nil, nil
-		return
-	}
-
-	if a[1] < b[1] {
-		intersection = []int{b[0], a[1]}
-		a = nil
-		return
-	}
-
-	// a[1]>b[1]
-	intersection = []int{b[0], b[1]}
-	b = nil
-	return
+	return b
 }
