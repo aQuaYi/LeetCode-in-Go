@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 791,
-	"Updated": "2019-05-29T20:11:08.35449478+08:00",
+	"Updated": "2019-05-29T21:55:41.683442808+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 236,
 			"Total": 248
 		},
 		"Medium": {
-			"Solved": 383,
+			"Solved": 384,
 			"Total": 417
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 177
 		},
 		"Total": {
-			"Solved": 786,
+			"Solved": 787,
 			"Total": 842
 		}
 	},
@@ -11859,9 +11859,9 @@
 			"TitleSlug": "interval-list-intersections",
 			"PassRate": "62%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -12049,7 +12049,7 @@
 			"ID": 1002,
 			"Title": "Find Common Characters",
 			"TitleSlug": "find-common-characters",
-			"PassRate": "65%",
+			"PassRate": "66%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12673,7 +12673,7 @@
 			"ID": 1054,
 			"Title": "Distant Barcodes",
 			"TitleSlug": "distant-barcodes",
-			"PassRate": "36%",
+			"PassRate": "37%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
