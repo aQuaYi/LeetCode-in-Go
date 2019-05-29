@@ -3,8 +3,8 @@ package problem0986
 func intervalIntersection(A [][]int, B [][]int) [][]int {
 	res := make([][]int, 0, len(A)+len(B))
 	var A0, B0, intersection []int
-	for (A0 != nil || len(A) > 0) &&
-		(B0 != nil || len(B) > 0) {
+	for (len(A) > 0 || A0 != nil) &&
+		(len(B) > 0 || B0 != nil) {
 		if A0 == nil {
 			A0, A = A[0], A[1:]
 		}
@@ -31,7 +31,7 @@ func intersect(A0, B0 []int) (a, b, intersection []int) {
 
 	if a[1] < b[0] {
 		a = nil
-		return a, b, nil
+		return
 	}
 
 	if a[1] == b[1] {
@@ -42,12 +42,12 @@ func intersect(A0, B0 []int) (a, b, intersection []int) {
 
 	if a[1] < b[1] {
 		intersection = []int{b[0], a[1]}
-		a, b = nil, []int{a[1], b[1]}
+		a = nil
 		return
 	}
 
 	// a[1]>b[1]
 	intersection = []int{b[0], b[1]}
-	a, b = []int{b[1], a[1]}, nil
+	b = nil
 	return
 }
