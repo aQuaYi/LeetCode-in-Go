@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 791,
-	"Updated": "2019-05-30T19:50:06.301767196+08:00",
+	"Updated": "2019-05-30T22:45:24.371085402+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 236,
 			"Total": 248
 		},
 		"Medium": {
-			"Solved": 384,
+			"Solved": 385,
 			"Total": 417
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 177
 		},
 		"Total": {
-			"Solved": 787,
+			"Solved": 788,
 			"Total": 842
 		}
 	},
@@ -5425,7 +5425,7 @@
 			"ID": 450,
 			"Title": "Delete Node in a BST",
 			"TitleSlug": "delete-node-in-a-bst",
-			"PassRate": "40%",
+			"PassRate": "39%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11871,7 +11871,7 @@
 			"TitleSlug": "vertical-order-traversal-of-a-binary-tree",
 			"PassRate": "32%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
