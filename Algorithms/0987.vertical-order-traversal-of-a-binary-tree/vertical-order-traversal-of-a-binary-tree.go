@@ -15,6 +15,9 @@ func verticalTraversal(root *TreeNode) [][]int {
 
 	sort.Slice(ds, func(i int, j int) bool {
 		if ds[i].x == ds[j].x {
+			if ds[i].y == ds[j].y {
+				return ds[i].value < ds[j].value
+			}
 			return ds[i].y > ds[j].y
 		}
 		return ds[i].x < ds[j].x
