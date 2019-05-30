@@ -30,12 +30,11 @@ func verticalTraversal(root *TreeNode) [][]int {
 	for _, d := range ds {
 		if x == d.x {
 			values = append(values, d.value)
-		} else {
-			x = d.x
-			res = append(res, values)
-			values = make([]int, 1, 10)
-			values[0] = d.value
+			continue
 		}
+		res = append(res, values)
+		values = append(make([]int, 0, 10), d.value)
+		x = d.x
 	}
 	res = append(res, values)
 
@@ -50,11 +49,11 @@ func dfs(node *TreeNode, x, y int, dataSlice *[]data) {
 	if node == nil {
 		return
 	}
+	dfs(node.Left, x-1, y-1, dataSlice)
 	*dataSlice = append(*dataSlice, data{
 		value: node.Val,
 		x:     x,
 		y:     y,
 	})
-	dfs(node.Left, x-1, y-1, dataSlice)
 	dfs(node.Right, x+1, y-1, dataSlice)
 }
