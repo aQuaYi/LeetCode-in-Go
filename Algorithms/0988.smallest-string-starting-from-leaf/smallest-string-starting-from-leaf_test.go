@@ -14,6 +14,12 @@ var tcs = []struct {
 }{
 
 	{
+
+		[]int{25, 1, kit.NULL, 0, 0, 1, kit.NULL, kit.NULL, kit.NULL, 0},
+		"ababz",
+	},
+
+	{
 		[]int{4, 0, 1, 1},
 		"bae",
 	},
