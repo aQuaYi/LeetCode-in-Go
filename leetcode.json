@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 784,
-	"Updated": "2019-05-31T19:44:44.499594988+08:00",
+	"Updated": "2019-05-31T20:51:11.899445247+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 236,
 			"Total": 248
 		},
 		"Medium": {
-			"Solved": 385,
+			"Solved": 386,
 			"Total": 417
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 177
 		},
 		"Total": {
-			"Solved": 788,
+			"Solved": 789,
 			"Total": 842
 		}
 	},
@@ -11883,7 +11883,7 @@
 			"TitleSlug": "smallest-string-starting-from-leaf",
 			"PassRate": "46%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
