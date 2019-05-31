@@ -1,6 +1,8 @@
 package problem0988
 
-import "github.com/aQuaYi/LeetCode-in-Go/kit"
+import (
+	"github.com/aQuaYi/LeetCode-in-Go/kit"
+)
 
 // TreeNode is pre-defined...
 type TreeNode = kit.TreeNode
@@ -14,8 +16,12 @@ func smallestFromLeaf(root *TreeNode) string {
 func dfs(node *TreeNode, s string, res *string) {
 	s = string('a'+node.Val) + s
 
+	if s >= *res {
+		return
+	}
+
 	if node.Left == nil && node.Right == nil {
-		*res = min(*res, s)
+		*res = s
 		return
 	}
 
