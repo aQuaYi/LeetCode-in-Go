@@ -1,6 +1,8 @@
 package problem0988
 
 import (
+	"strings"
+
 	"github.com/aQuaYi/LeetCode-in-Go/kit"
 )
 
@@ -8,7 +10,7 @@ import (
 type TreeNode = kit.TreeNode
 
 func smallestFromLeaf(root *TreeNode) string {
-	res := string('z' + 1)
+	res := strings.Repeat("z", 27)
 	dfs(root, "", &res)
 	return res
 }
@@ -16,12 +18,12 @@ func smallestFromLeaf(root *TreeNode) string {
 func dfs(node *TreeNode, s string, res *string) {
 	s = string('a'+node.Val) + s
 
-	if s >= *res {
+	if len(s) > len(*res) {
 		return
 	}
 
 	if node.Left == nil && node.Right == nil {
-		*res = s
+		*res = min(*res, s)
 		return
 	}
 
