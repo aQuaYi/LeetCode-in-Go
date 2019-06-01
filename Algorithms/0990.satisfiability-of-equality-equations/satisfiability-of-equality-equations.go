@@ -33,17 +33,12 @@ func newUnion(size int) *union {
 }
 
 func (u *union) find(i byte) byte {
-	if u.parent[i] == i {
-		return i
+	if u.parent[i] != i {
+		u.parent[i] = u.find(u.parent[i])
 	}
-	u.parent[i] = u.find(u.parent[i])
 	return u.parent[i]
 }
 
 func (u *union) unite(x, y byte) {
-	xp, yp := u.find(x), u.find(y)
-	if xp == yp {
-		return
-	}
-	u.parent[yp] = xp
+	u.parent[u.find(x)] = u.find(y)
 }
