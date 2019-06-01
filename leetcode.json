@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 784,
-	"Updated": "2019-05-31T20:51:11.899445247+08:00",
+	"Updated": "2019-06-01T13:29:35.636621719+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 236,
@@ -3289,7 +3289,7 @@
 			"ID": 272,
 			"Title": "Closest Binary Search Tree Value II",
 			"TitleSlug": "closest-binary-search-tree-value-ii",
-			"PassRate": "44%",
+			"PassRate": "45%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -3505,7 +3505,7 @@
 			"ID": 290,
 			"Title": "Word Pattern",
 			"TitleSlug": "word-pattern",
-			"PassRate": "34%",
+			"PassRate": "35%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -7981,7 +7981,7 @@
 			"ID": 663,
 			"Title": "Equal Tree Partition",
 			"TitleSlug": "equal-tree-partition",
-			"PassRate": "37%",
+			"PassRate": "38%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -8557,7 +8557,7 @@
 			"ID": 711,
 			"Title": "Number of Distinct Islands II",
 			"TitleSlug": "number-of-distinct-islands-ii",
-			"PassRate": "45%",
+			"PassRate": "46%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -8953,7 +8953,7 @@
 			"ID": 744,
 			"Title": "Find Smallest Letter Greater Than Target",
 			"TitleSlug": "find-smallest-letter-greater-than-target",
-			"PassRate": "43%",
+			"PassRate": "44%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11257,7 +11257,7 @@
 			"ID": 936,
 			"Title": "Stamping The Sequence",
 			"TitleSlug": "stamping-the-sequence",
-			"PassRate": "36%",
+			"PassRate": "35%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11917,7 +11917,7 @@
 			"ID": 991,
 			"Title": "Broken Calculator",
 			"TitleSlug": "broken-calculator",
-			"PassRate": "40%",
+			"PassRate": "39%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -11989,7 +11989,7 @@
 			"ID": 997,
 			"Title": "Find the Town Judge",
 			"TitleSlug": "find-the-town-judge",
-			"PassRate": "49%",
+			"PassRate": "48%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12313,7 +12313,7 @@
 			"ID": 1024,
 			"Title": "Video Stitching",
 			"TitleSlug": "video-stitching",
-			"PassRate": "46%",
+			"PassRate": "47%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -12337,7 +12337,7 @@
 			"ID": 1026,
 			"Title": "Maximum Difference Between Node and Ancestor",
 			"TitleSlug": "maximum-difference-between-node-and-ancestor",
-			"PassRate": "58%",
+			"PassRate": "59%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -12642,7 +12642,7 @@
 			"IsAccepted": false,
 			"IsPaid": false,
 			"IsFavor": false,
-			"IsNew": true,
+			"IsNew": false,
 			"HasNoGoOption": false
 		},
 		{
@@ -12654,7 +12654,7 @@
 			"IsAccepted": false,
 			"IsPaid": false,
 			"IsFavor": false,
-			"IsNew": true,
+			"IsNew": false,
 			"HasNoGoOption": false
 		},
 		{
@@ -12666,7 +12666,7 @@
 			"IsAccepted": false,
 			"IsPaid": false,
 			"IsFavor": false,
-			"IsNew": true,
+			"IsNew": false,
 			"HasNoGoOption": false
 		},
 		{
@@ -12678,7 +12678,7 @@
 			"IsAccepted": false,
 			"IsPaid": false,
 			"IsFavor": false,
-			"IsNew": true,
+			"IsNew": false,
 			"HasNoGoOption": false
 		}
 	]
