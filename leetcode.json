@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 784,
-	"Updated": "2019-06-01T13:29:35.636621719+08:00",
+	"Updated": "2019-06-01T14:38:45.589897468+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 236,
 			"Total": 248
 		},
 		"Medium": {
-			"Solved": 386,
+			"Solved": 387,
 			"Total": 417
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 177
 		},
 		"Total": {
-			"Solved": 789,
+			"Solved": 790,
 			"Total": 842
 		}
 	},
@@ -5917,7 +5917,7 @@
 			"ID": 491,
 			"Title": "Increasing Subsequences",
 			"TitleSlug": "increasing-subsequences",
-			"PassRate": "41%",
+			"PassRate": "42%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -8893,7 +8893,7 @@
 			"ID": 739,
 			"Title": "Daily Temperatures",
 			"TitleSlug": "daily-temperatures",
-			"PassRate": "59%",
+			"PassRate": "60%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11907,7 +11907,7 @@
 			"TitleSlug": "satisfiability-of-equality-equations",
 			"PassRate": "39%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
