@@ -9,12 +9,7 @@ func brokenCalc(X int, Y int) int {
 		return brokenCalc(X, Y/2) + 1
 	}
 
-	if 2*X >= Y {
-		return brokenCalc(X*2, Y) + 1
-	}
-
-	return brokenCalc(X, (Y+1)/2) + 2
-
+	return min(brokenCalc(X*2, Y)+1, brokenCalc(X, (Y+1)/2)+2)
 }
 
 func min(a, b int) int {
