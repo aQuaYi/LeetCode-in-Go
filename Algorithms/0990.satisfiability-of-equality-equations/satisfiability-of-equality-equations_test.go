@@ -28,6 +28,11 @@ var tcs = []struct {
 	},
 
 	{
+		[]string{"b!=b"},
+		false,
+	},
+
+	{
 		[]string{"a==b", "b!=c", "c==a"},
 		false,
 	},
