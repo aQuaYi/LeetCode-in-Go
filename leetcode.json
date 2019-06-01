@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 784,
-	"Updated": "2019-06-01T16:24:04.916512834+08:00",
+	"Updated": "2019-06-01T17:03:19.972466467+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 236,
 			"Total": 248
 		},
 		"Medium": {
-			"Solved": 387,
+			"Solved": 388,
 			"Total": 417
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 177
 		},
 		"Total": {
-			"Solved": 790,
+			"Solved": 791,
 			"Total": 842
 		}
 	},
@@ -2473,7 +2473,7 @@
 			"ID": 204,
 			"Title": "Count Primes",
 			"TitleSlug": "count-primes",
-			"PassRate": "28%",
+			"PassRate": "29%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11919,7 +11919,7 @@
 			"TitleSlug": "broken-calculator",
 			"PassRate": "39%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
