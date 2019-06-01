@@ -20,7 +20,7 @@ func atMostK(A []int, K int) int {
 			}
 			l++
 		}
-		// the number of distinct elements in any A[i:r+1] (l<=i<=r)
+		// the number of distinct elements in A[i:r+1] (l<=i<=r)
 		// is NOT more than K
 		res += r + 1 - l
 	}
