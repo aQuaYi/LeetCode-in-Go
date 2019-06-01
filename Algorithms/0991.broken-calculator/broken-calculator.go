@@ -1,20 +1,11 @@
 package problem0991
 
+// ref: https://leetcode.com/problems/broken-calculator/discuss/234484/JavaC%2B%2BPython-Change-Y-to-X-in-1-Line
 func brokenCalc(X int, Y int) int {
-	if X >= Y {
-		return X - Y
+	res := 0
+	for X < Y {
+		res += Y%2 + 1
+		Y = (Y + 1) / 2
 	}
-
-	if Y%2 == 0 {
-		return brokenCalc(X, Y/2) + 1
-	}
-
-	return min(brokenCalc(X*2, Y)+1, brokenCalc(X, (Y+1)/2)+2)
-}
-
-func min(a, b int) int {
-	if a < b {
-		return a
-	}
-	return b
+	return res + X - Y
 }
