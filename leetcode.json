@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 784,
-	"Updated": "2019-06-01T14:38:45.589897468+08:00",
+	"Updated": "2019-06-01T16:24:04.916512834+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 236,
@@ -5425,7 +5425,7 @@
 			"ID": 450,
 			"Title": "Delete Node in a BST",
 			"TitleSlug": "delete-node-in-a-bst",
-			"PassRate": "39%",
+			"PassRate": "40%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11509,7 +11509,7 @@
 			"ID": 957,
 			"Title": "Prison Cells After N Days",
 			"TitleSlug": "prison-cells-after-n-days",
-			"PassRate": "38%",
+			"PassRate": "37%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
