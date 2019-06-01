@@ -15,11 +15,15 @@ func subarraysWithKDistinct(A []int, K int) int {
 			r++
 			if counts[A[r]] == 0 {
 				k++
-				if k == K {
-					c++
-				}
 			}
 			counts[A[r]]++
+			if k == K {
+				c++
+			}
+		}
+
+		if c > 1 {
+			c--
 		}
 
 		for k == K {
