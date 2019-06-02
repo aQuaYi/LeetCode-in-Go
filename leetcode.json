@@ -1,22 +1,22 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 769,
-	"Updated": "2019-06-02T12:02:08.149372204+08:00",
+	"Updated": "2019-06-02T13:07:28.541496465+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 236,
-			"Total": 250
+			"Total": 249
 		},
 		"Medium": {
 			"Solved": 390,
-			"Total": 419
+			"Total": 420
 		},
 		"Hard": {
-			"Solved": 167,
+			"Solved": 168,
 			"Total": 177
 		},
 		"Total": {
-			"Solved": 793,
+			"Solved": 794,
 			"Total": 846
 		}
 	},
@@ -9517,7 +9517,7 @@
 			"ID": 791,
 			"Title": "Custom Sort String",
 			"TitleSlug": "custom-sort-string",
-			"PassRate": "61%",
+			"PassRate": "62%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11053,7 +11053,7 @@
 			"ID": 919,
 			"Title": "Complete Binary Tree Inserter",
 			"TitleSlug": "complete-binary-tree-inserter",
-			"PassRate": "55%",
+			"PassRate": "54%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11967,7 +11967,7 @@
 			"TitleSlug": "minimum-number-of-k-consecutive-bit-flips",
 			"PassRate": "48%",
 			"Difficulty": "Hard",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -12685,7 +12685,7 @@
 			"ID": 1055,
 			"Title": "Shortest Way to Form String",
 			"TitleSlug": "shortest-way-to-form-string",
-			"PassRate": "34%",
+			"PassRate": "35%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -12697,7 +12697,7 @@
 			"ID": 1056,
 			"Title": "Confusing Number",
 			"TitleSlug": "confusing-number",
-			"PassRate": "42%",
+			"PassRate": "43%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -12721,7 +12721,7 @@
 			"ID": 1058,
 			"Title": "Minimize Rounding Error to Meet Target",
 			"TitleSlug": "minimize-rounding-error-to-meet-target",
-			"PassRate": "22%",
+			"PassRate": "23%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -12733,7 +12733,7 @@
 			"ID": 1059,
 			"Title": "All Paths from Source Lead to Destination",
 			"TitleSlug": "all-paths-from-source-lead-to-destination",
-			"PassRate": "29%",
+			"PassRate": "30%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -12745,7 +12745,7 @@
 			"ID": 1060,
 			"Title": "Missing Element in Sorted Array",
 			"TitleSlug": "missing-element-in-sorted-array",
-			"PassRate": "37%",
+			"PassRate": "38%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -12757,7 +12757,7 @@
 			"ID": 1061,
 			"Title": "Lexicographically Smallest Equivalent String",
 			"TitleSlug": "lexicographically-smallest-equivalent-string",
-			"PassRate": "64%",
+			"PassRate": "59%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -12769,7 +12769,7 @@
 			"ID": 1062,
 			"Title": "Longest Repeating Substring",
 			"TitleSlug": "longest-repeating-substring",
-			"PassRate": "26%",
+			"PassRate": "27%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -12781,7 +12781,7 @@
 			"ID": 1063,
 			"Title": "Number of Valid Subarrays",
 			"TitleSlug": "number-of-valid-subarrays",
-			"PassRate": "71%",
+			"PassRate": "73%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -12796,7 +12796,7 @@
 			"PassRate": "83%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
-			"IsPaid": false,
+			"IsPaid": true,
 			"IsFavor": false,
 			"IsNew": false,
 			"HasNoGoOption": false
@@ -12808,7 +12808,7 @@
 			"PassRate": "55%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
-			"IsPaid": false,
+			"IsPaid": true,
 			"IsFavor": false,
 			"IsNew": false,
 			"HasNoGoOption": false
@@ -12820,7 +12820,7 @@
 			"PassRate": "26%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
-			"IsPaid": false,
+			"IsPaid": true,
 			"IsFavor": false,
 			"IsNew": false,
 			"HasNoGoOption": false
@@ -12832,9 +12832,93 @@
 			"PassRate": "22%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
+			"IsPaid": true,
+			"IsFavor": false,
+			"IsNew": false,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 0,
+			"Title": "",
+			"TitleSlug": "",
+			"PassRate": "",
+			"Difficulty": "",
+			"IsAccepted": false,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 0,
+			"Title": "",
+			"TitleSlug": "",
+			"PassRate": "",
+			"Difficulty": "",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": false,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 0,
+			"Title": "",
+			"TitleSlug": "",
+			"PassRate": "",
+			"Difficulty": "",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": false,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 1071,
+			"Title": "Greatest Common Divisor of Strings",
+			"TitleSlug": "greatest-common-divisor-of-strings",
+			"PassRate": "44%",
+			"Difficulty": "Easy",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 1072,
+			"Title": "Flip Columns For Maximum Number of Equal Rows",
+			"TitleSlug": "flip-columns-for-maximum-number-of-equal-rows",
+			"PassRate": "41%",
+			"Difficulty": "Medium",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 1073,
+			"Title": "Adding Two Negabinary Numbers",
+			"TitleSlug": "adding-two-negabinary-numbers",
+			"PassRate": "24%",
+			"Difficulty": "Medium",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 1074,
+			"Title": "Number of Submatrices That Sum to Target",
+			"TitleSlug": "number-of-submatrices-that-sum-to-target",
+			"PassRate": "42%",
+			"Difficulty": "Hard",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
 			"HasNoGoOption": false
 		}
 	]
