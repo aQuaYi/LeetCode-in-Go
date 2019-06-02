@@ -1,4 +1,4 @@
-# 我收藏的 295 题
+# 我收藏的 296 题
 
 |题号|题目|通过率|难度|收藏|
 |:-:|:-|:-: | :-: | :-: |
@@ -202,7 +202,7 @@
 |[0730](https://leetcode.com/problems/count-different-palindromic-subsequences/)|[Count Different Palindromic Subsequences](./Algorithms/0730.count-different-palindromic-subsequences)|38%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0731](https://leetcode.com/problems/my-calendar-ii/)|[My Calendar II](./Algorithms/0731.my-calendar-ii)|44%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0736](https://leetcode.com/problems/parse-lisp-expression/)|[Parse Lisp Expression](./Algorithms/0736.parse-lisp-expression)|44%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|[0739](https://leetcode.com/problems/daily-temperatures/)|[Daily Temperatures](./Algorithms/0739.daily-temperatures)|59%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|[0739](https://leetcode.com/problems/daily-temperatures/)|[Daily Temperatures](./Algorithms/0739.daily-temperatures)|60%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0740](https://leetcode.com/problems/delete-and-earn/)|[Delete and Earn](./Algorithms/0740.delete-and-earn)|45%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0752](https://leetcode.com/problems/open-the-lock/)|[Open the Lock](./Algorithms/0752.open-the-lock)|45%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0753](https://leetcode.com/problems/cracking-the-safe/)|[Cracking the Safe](./Algorithms/0753.cracking-the-safe)|46%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -296,4 +296,5 @@
 |[0986](https://leetcode.com/problems/interval-list-intersections/)|[Interval List Intersections](./Algorithms/0986.interval-list-intersections)|62%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0991](https://leetcode.com/problems/broken-calculator/)|[Broken Calculator](./Algorithms/0991.broken-calculator)|40%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0992](https://leetcode.com/problems/subarrays-with-k-different-integers/)|[Subarrays with K Different Integers](./Algorithms/0992.subarrays-with-k-different-integers)|44%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|[0996](https://leetcode.com/problems/number-of-squareful-arrays/)|[Number of Squareful Arrays](./Algorithms/0996.number-of-squareful-arrays)|47%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[1009](https://leetcode.com/problems/complement-of-base-10-integer/)|[Complement of Base 10 Integer](./Algorithms/1009.complement-of-base-10-integer)|58%|Easy|[❤](https://leetcode.com/list/oussv5j)|
