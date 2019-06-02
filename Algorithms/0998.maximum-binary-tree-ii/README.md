@@ -2,7 +2,7 @@
 
 We are given the root node of a maximum tree: a tree where every node has a value greater than any other value in its subtree.
 
-Just as in the previous problem, the given tree was constructed from an list A (root = Construct(A)) recursively with the following Construct(A) routine:
+Just as in the [previous problem](https://leetcode.com/problems/maximum-binary-tree/), the given tree was constructed from an list A (root = Construct(A)) recursively with the following Construct(A) routine:
 
 - If A is empty, return null.
 - Otherwise, let A[i] be the largest element of A.  Create a root node with value A[i].
