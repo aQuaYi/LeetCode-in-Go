@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 769,
-	"Updated": "2019-06-02T10:25:11.005885122+08:00",
+	"Updated": "2019-06-02T10:53:13.081677494+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 236,
 			"Total": 250
 		},
 		"Medium": {
-			"Solved": 388,
+			"Solved": 389,
 			"Total": 418
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 178
 		},
 		"Total": {
-			"Solved": 792,
+			"Solved": 793,
 			"Total": 846
 		}
 	},
@@ -12003,7 +12003,7 @@
 			"TitleSlug": "maximum-binary-tree-ii",
 			"PassRate": "61%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -12685,7 +12685,7 @@
 			"ID": 1055,
 			"Title": "Shortest Way to Form String",
 			"TitleSlug": "shortest-way-to-form-string",
-			"PassRate": "34%",
+			"PassRate": "33%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -12697,7 +12697,7 @@
 			"ID": 1056,
 			"Title": "Confusing Number",
 			"TitleSlug": "confusing-number",
-			"PassRate": "40%",
+			"PassRate": "41%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -12733,7 +12733,7 @@
 			"ID": 1059,
 			"Title": "All Paths from Source Lead to Destination",
 			"TitleSlug": "all-paths-from-source-lead-to-destination",
-			"PassRate": "29%",
+			"PassRate": "28%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -12757,7 +12757,7 @@
 			"ID": 1061,
 			"Title": "Lexicographically Smallest Equivalent String",
 			"TitleSlug": "lexicographically-smallest-equivalent-string",
-			"PassRate": "64%",
+			"PassRate": "63%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -12769,7 +12769,7 @@
 			"ID": 1062,
 			"Title": "Longest Repeating Substring",
 			"TitleSlug": "longest-repeating-substring",
-			"PassRate": "26%",
+			"PassRate": "27%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -12793,7 +12793,7 @@
 			"ID": 1064,
 			"Title": "Fixed Point",
 			"TitleSlug": "fixed-point",
-			"PassRate": "82%",
+			"PassRate": "83%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -12805,7 +12805,7 @@
 			"ID": 1065,
 			"Title": "Index Pairs of a String",
 			"TitleSlug": "index-pairs-of-a-string",
-			"PassRate": "54%",
+			"PassRate": "55%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
