@@ -1,61 +1,49 @@
 package problem0996
 
-import (
-	"math"
-	"sort"
-)
+import "math"
 
+// ref: https://leetcode.com/problems/number-of-squareful-arrays/discuss/238562/C%2B%2BPython-Backtracking
 func numSquarefulPerms(A []int) int {
 	size := len(A)
 
-	sort.Ints(A)
+	count := make(map[int]int, size)
+	for _, a := range A {
+		count[a]++
+	}
 
-	pairs := make([][]int, size)
-	for i := 0; i < size; i++ {
-		for j := i + 1; j < size; j++ {
-			if isSquare(A[i] + A[j]) {
-				pairs[i] = append(pairs[i], j)
-				if A[i] != A[j] {
-					pairs[j] = append(pairs[j], i)
-				}
+	cands := make(map[int][]int, size)
+	for x := range count {
+		for y := range count {
+			if isSquare(x + y) {
+				cands[x] = append(cands[x], y)
 			}
 		}
 	}
 
-	isSeen := make(map[[12]int]bool, size)
 	res := 0
-	for i := 0; i < size; i++ {
-		perm := [12]int{}
-		perm[size-1] = A[i]
-		dfs(pairs, A, perm, [12]bool{}, isSeen, i, size-1, &res)
+	var dfs func(int, int)
+	dfs = func(x, remain int) {
+		if remain == 0 {
+			res++
+			return
+		}
+		count[x]--
+		for _, y := range cands[x] {
+			if count[y] > 0 {
+				dfs(y, remain-1)
+			}
+		}
+		count[x]++
 	}
+
+	for x := range count {
+		dfs(x, size-1)
+	}
+
 	return res
 }
 
 func isSquare(x int) bool {
 	root := int(math.Sqrt(float64(x)))
 	return root*root == x
-}
-
-func dfs(pairs [][]int, A []int, perm [12]int, isVisited [12]bool, isSeen map[[12]int]bool, i, count int, res *int) {
-	if count == 0 {
-		if isSeen[perm] {
-			return
-		}
-		isSeen[perm] = true
-		(*res)++
-		return
-	}
-
-	isVisited[i] = true
-
-	for _, j := range pairs[i] {
-		if isVisited[j] {
-			continue
-		}
-		perm[count] = A[j]
-		dfs(pairs, A, perm, isVisited, isSeen, j, count-1, res)
-	}
-
-	isVisited[i] = false
 }
