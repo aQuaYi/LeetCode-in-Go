@@ -2,14 +2,13 @@ package problem0995
 
 func minKBitFlips(A []int, K int) int {
 	size := len(A)
-	queue := make([]int, 0, size)
+
+	swap := make([]int, size+1)
 	flag := 1
+
 	res := 0
 	for i := 0; i < size; i++ {
-		if len(queue) > 0 && i == queue[0] {
-			flag ^= 1
-			queue = queue[1:]
-		}
+		flag ^= swap[i]
 		if A[i] == flag {
 			continue
 		}
@@ -17,8 +16,8 @@ func minKBitFlips(A []int, K int) int {
 			return -1
 		}
 		res++
-		flag ^= 1
-		queue = append(queue, i+K)
+		flag ^= 1     // swap flag
+		swap[i+K] = 1 // swap flag back when i+K
 	}
 
 	return res
