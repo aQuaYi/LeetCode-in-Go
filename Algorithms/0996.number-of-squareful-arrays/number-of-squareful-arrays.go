@@ -1,16 +1,23 @@
 package problem0996
 
-import "math"
+import (
+	"math"
+	"sort"
+)
 
 func numSquarefulPerms(A []int) int {
 	size := len(A)
+
+	sort.Ints(A)
 
 	pairs := make([][]int, size)
 	for i := 0; i < size; i++ {
 		for j := i + 1; j < size; j++ {
 			if isSquare(A[i] + A[j]) {
 				pairs[i] = append(pairs[i], j)
-				pairs[j] = append(pairs[j], i)
+				if A[i] != A[j] {
+					pairs[j] = append(pairs[j], i)
+				}
 			}
 		}
 	}
