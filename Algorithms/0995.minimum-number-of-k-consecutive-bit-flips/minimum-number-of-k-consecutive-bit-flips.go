@@ -12,7 +12,7 @@ func minKBitFlips(A []int, K int) int {
 		}
 		res++
 		for j := i; j < i+K; j++ {
-			A[j] = (A[j] + 1) & 1 // flip
+			A[j] ^= 1 // flip
 		}
 	}
 
