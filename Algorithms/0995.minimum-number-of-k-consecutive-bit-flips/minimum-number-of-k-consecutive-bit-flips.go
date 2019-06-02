@@ -16,9 +16,9 @@ func minKBitFlips(A []int, K int) int {
 		if i+K > size {
 			return -1
 		}
-		queue = append(queue, i+K)
 		res++
 		flag ^= 1
+		queue = append(queue, i+K)
 	}
 
 	return res
