@@ -1,29 +1,33 @@
 package problem1000
 
+// ref: https://leetcode.com/problems/minimum-cost-to-merge-stones/discuss/247567/JavaC%2B%2BPython-DP
 func mergeStones(stones []int, K int) int {
 	size := len(stones)
-	if !isPossible(size, K) {
+	if (size-1)%(K-1) != 0 {
 		return -1
 	}
 
-	dp := [31][31]int{}
-	for i := 1; i <= size; i++ {
-		for j := i; j < i+K && j <= size; j++ {
-			dp[i][j] = dp[i][j-1] + stones[j-1]
-		}
+	sum := [31]int{}
+	for i := 0; i < size; i++ {
+		sum[i+1] = sum[i] + stones[i]
 	}
 
-	round := size/K + 1
-	for ro := 2; ro <= round; ro++ {
-		for l, r := 1, 1+ro*(K-1); r <= size; l, r = l+1, r+1 {
-			dp[l][r] = min(dp[l][r-K+1]*2+dp[r-K+2][r], dp[l][l+K-2]+2*dp[l+K-1][r])
-			for k := 1; k < K; k++ {
-				dp[l][r] = min(dp[l][r], dp[l][l+k-1]+dp[l+k][r-(K-k)]*2+dp[r-(K-k)+1][r])
+	dp := [31][31]int{}
+
+	for width := K; width <= size; width++ {
+		for l := 0; l+width <= size; l++ {
+			r := l + width - 1
+			dp[l][r] = 1 << 32
+			for m := l; m < r; m += K - 1 {
+				dp[l][r] = min(dp[l][r], dp[l][m]+dp[m+1][r])
+			}
+			if (r-l)%(K-1) == 0 { // 如果 stones[l:r+1] 可以合并成一块石头
+				dp[l][r] += sum[r+1] - sum[l] // 还要加上最后一次合并的费用
 			}
 		}
 	}
 
-	return dp[1][size]
+	return dp[0][size-1]
 }
 
 func min(a, b int) int {
@@ -31,11 +35,4 @@ func min(a, b int) int {
 		return a
 	}
 	return b
-}
-
-func isPossible(size, K int) bool {
-	for size >= K {
-		size = size/K + size%K
-	}
-	return size == 1
 }
