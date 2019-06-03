@@ -9,11 +9,27 @@ import (
 // tcs is testcase slice
 var tcs = []struct {
 	stones []int
- K int
-	ans int
+	K      int
+	ans    int
 }{
 
+	{
+		[]int{3, 2, 4, 1},
+		2,
+		20,
+	},
 
+	{
+		[]int{3, 2, 4, 1},
+		3,
+		-1,
+	},
+
+	{
+		[]int{3, 5, 1, 2, 6},
+		3,
+		25,
+	},
 
 	// 可以有多个 testcase
 }
