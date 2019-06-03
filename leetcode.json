@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 750,
-	"Updated": "2019-06-03T19:53:27.899887659+08:00",
+	"Updated": "2019-06-03T22:17:40.467343635+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 236,
@@ -12,11 +12,11 @@
 			"Total": 420
 		},
 		"Hard": {
-			"Solved": 169,
+			"Solved": 170,
 			"Total": 177
 		},
 		"Total": {
-			"Solved": 795,
+			"Solved": 796,
 			"Total": 846
 		}
 	},
@@ -4993,7 +4993,7 @@
 			"ID": 414,
 			"Title": "Third Maximum Number",
 			"TitleSlug": "third-maximum-number",
-			"PassRate": "29%",
+			"PassRate": "28%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11989,7 +11989,7 @@
 			"ID": 997,
 			"Title": "Find the Town Judge",
 			"TitleSlug": "find-the-town-judge",
-			"PassRate": "48%",
+			"PassRate": "49%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12027,9 +12027,9 @@
 			"TitleSlug": "minimum-cost-to-merge-stones",
 			"PassRate": "31%",
 			"Difficulty": "Hard",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -12685,7 +12685,7 @@
 			"ID": 1055,
 			"Title": "Shortest Way to Form String",
 			"TitleSlug": "shortest-way-to-form-string",
-			"PassRate": "53%",
+			"PassRate": "52%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -12745,7 +12745,7 @@
 			"ID": 1060,
 			"Title": "Missing Element in Sorted Array",
 			"TitleSlug": "missing-element-in-sorted-array",
-			"PassRate": "47%",
+			"PassRate": "48%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -12757,7 +12757,7 @@
 			"ID": 1061,
 			"Title": "Lexicographically Smallest Equivalent String",
 			"TitleSlug": "lexicographically-smallest-equivalent-string",
-			"PassRate": "68%",
+			"PassRate": "69%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -12769,7 +12769,7 @@
 			"ID": 1062,
 			"Title": "Longest Repeating Substring",
 			"TitleSlug": "longest-repeating-substring",
-			"PassRate": "43%",
+			"PassRate": "44%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
