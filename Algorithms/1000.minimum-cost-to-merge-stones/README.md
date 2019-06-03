@@ -1,6 +1,6 @@
 # [1000. Minimum Cost to Merge Stones](https://leetcode.com/problems/minimum-cost-to-merge-stones/)
 
-There are N piles of stones arranged in a row.  The i-th pile has stones[i] stones.
+There are N piles of stones arranged in a row. The i-th pile has stones[i] stones.
 
 A move consists of merging exactly K consecutive piles into one pile, and the cost of this move is equal to the total number of stones in these K piles.
 
@@ -24,7 +24,7 @@ Example 2:
 ```text
 Input: stones = [3,2,4,1], K = 3
 Output: -1
-Explanation: After any merge operation, there are 2 piles left, and we can't merge anymore.  So the task is impossible.
+Explanation: After any merge operation, there are 2 piles left, and we can't merge anymore. So the task is impossible.
 ```
 
 Example 3:
