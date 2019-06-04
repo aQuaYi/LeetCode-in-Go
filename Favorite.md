@@ -1,4 +1,4 @@
-# 我收藏的 297 题
+# 我收藏的 298 题
 
 |题号|题目|通过率|难度|收藏|
 |:-:|:-|:-: | :-: | :-: |
@@ -194,7 +194,7 @@
 |[0712](https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/)|[Minimum ASCII Delete Sum for Two Strings](./Algorithms/0712.minimum-ascii-delete-sum-for-two-strings)|54%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0713](https://leetcode.com/problems/subarray-product-less-than-k/)|[Subarray Product Less Than K](./Algorithms/0713.subarray-product-less-than-k)|36%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0714](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)|[Best Time to Buy and Sell Stock with Transaction Fee](./Algorithms/0714.best-time-to-buy-and-sell-stock-with-transaction-fee)|50%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|[0718](https://leetcode.com/problems/maximum-length-of-repeated-subarray/)|[Maximum Length of Repeated Subarray](./Algorithms/0718.maximum-length-of-repeated-subarray)|45%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|[0718](https://leetcode.com/problems/maximum-length-of-repeated-subarray/)|[Maximum Length of Repeated Subarray](./Algorithms/0718.maximum-length-of-repeated-subarray)|46%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0719](https://leetcode.com/problems/find-k-th-smallest-pair-distance/)|[Find K-th Smallest Pair Distance](./Algorithms/0719.find-k-th-smallest-pair-distance)|29%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0721](https://leetcode.com/problems/accounts-merge/)|[Accounts Merge](./Algorithms/0721.accounts-merge)|40%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0722](https://leetcode.com/problems/remove-comments/)|[Remove Comments](./Algorithms/0722.remove-comments)|31%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -218,7 +218,7 @@
 |[0793](https://leetcode.com/problems/preimage-size-of-factorial-zeroes-function/)|[Preimage Size of Factorial Zeroes Function](./Algorithms/0793.preimage-size-of-factorial-zeroes-function)|38%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0795](https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/)|[Number of Subarrays with Bounded Maximum](./Algorithms/0795.number-of-subarrays-with-bounded-maximum)|43%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0798](https://leetcode.com/problems/smallest-rotation-with-highest-score/)|[Smallest Rotation with Highest Score](./Algorithms/0798.smallest-rotation-with-highest-score)|40%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|[0799](https://leetcode.com/problems/champagne-tower/)|[Champagne Tower](./Algorithms/0799.champagne-tower)|33%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|[0799](https://leetcode.com/problems/champagne-tower/)|[Champagne Tower](./Algorithms/0799.champagne-tower)|34%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0801](https://leetcode.com/problems/minimum-swaps-to-make-sequences-increasing/)|[Minimum Swaps To Make Sequences Increasing](./Algorithms/0801.minimum-swaps-to-make-sequences-increasing)|34%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0802](https://leetcode.com/problems/find-eventual-safe-states/)|[Find Eventual Safe States](./Algorithms/0802.find-eventual-safe-states)|43%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0803](https://leetcode.com/problems/bricks-falling-when-hit/)|[Bricks Falling When Hit](./Algorithms/0803.bricks-falling-when-hit)|28%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -276,10 +276,10 @@
 |[0945](https://leetcode.com/problems/minimum-increment-to-make-array-unique/)|[Minimum Increment to Make Array Unique](./Algorithms/0945.minimum-increment-to-make-array-unique)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0947](https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/)|[Most Stones Removed with Same Row or Column](./Algorithms/0947.most-stones-removed-with-same-row-or-column)|54%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0948](https://leetcode.com/problems/bag-of-tokens/)|[Bag of Tokens](./Algorithms/0948.bag-of-tokens)|39%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|[0949](https://leetcode.com/problems/largest-time-for-given-digits/)|[Largest Time for Given Digits](./Algorithms/0949.largest-time-for-given-digits)|34%|Easy|[❤](https://leetcode.com/list/oussv5j)|
+|[0949](https://leetcode.com/problems/largest-time-for-given-digits/)|[Largest Time for Given Digits](./Algorithms/0949.largest-time-for-given-digits)|33%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |[0952](https://leetcode.com/problems/largest-component-size-by-common-factor/)|[Largest Component Size by Common Factor](./Algorithms/0952.largest-component-size-by-common-factor)|26%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0955](https://leetcode.com/problems/delete-columns-to-make-sorted-ii/)|[Delete Columns to Make Sorted II](./Algorithms/0955.delete-columns-to-make-sorted-ii)|31%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|[0956](https://leetcode.com/problems/tallest-billboard/)|[Tallest Billboard](./Algorithms/0956.tallest-billboard)|37%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|[0956](https://leetcode.com/problems/tallest-billboard/)|[Tallest Billboard](./Algorithms/0956.tallest-billboard)|38%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0960](https://leetcode.com/problems/delete-columns-to-make-sorted-iii/)|[Delete Columns to Make Sorted III](./Algorithms/0960.delete-columns-to-make-sorted-iii)|52%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0962](https://leetcode.com/problems/maximum-width-ramp/)|[Maximum Width Ramp](./Algorithms/0962.maximum-width-ramp)|41%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0964](https://leetcode.com/problems/least-operators-to-express-number/)|[Least Operators to Express Number](./Algorithms/0964.least-operators-to-express-number)|40%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -298,4 +298,5 @@
 |[0992](https://leetcode.com/problems/subarrays-with-k-different-integers/)|[Subarrays with K Different Integers](./Algorithms/0992.subarrays-with-k-different-integers)|44%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0996](https://leetcode.com/problems/number-of-squareful-arrays/)|[Number of Squareful Arrays](./Algorithms/0996.number-of-squareful-arrays)|47%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[1000](https://leetcode.com/problems/minimum-cost-to-merge-stones/)|[Minimum Cost to Merge Stones](./Algorithms/1000.minimum-cost-to-merge-stones)|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|[1001](https://leetcode.com/problems/grid-illumination/)|[Grid Illumination](./Algorithms/1001.grid-illumination)|34%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[1009](https://leetcode.com/problems/complement-of-base-10-integer/)|[Complement of Base 10 Integer](./Algorithms/1009.complement-of-base-10-integer)|58%|Easy|[❤](https://leetcode.com/list/oussv5j)|
