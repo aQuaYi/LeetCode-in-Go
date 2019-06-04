@@ -57,10 +57,11 @@ func (l *lights) turnOff(x, y int) {
 func (l *lights) checkIlluminated(x, y int) int {
 	res := 0
 
-	if l.h[x] > 0 {
+	if l.h[x] > 0 { // maybe [x,y-1] or [x,y] or [x,y+1] is On
 		res = 1
 		l.turnOff(x, y-1)
 		l.turnOff(x, y+1)
+		// leave [x,y] in the end
 	}
 
 	if l.v[y] > 0 {
