@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 742,
-	"Updated": "2019-06-05T21:26:58.414321395+08:00",
+	"Updated": "2019-06-05T22:05:09.36678127+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 236,
 			"Total": 249
 		},
 		"Medium": {
-			"Solved": 390,
+			"Solved": 391,
 			"Total": 420
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 177
 		},
 		"Total": {
-			"Solved": 797,
+			"Solved": 798,
 			"Total": 846
 		}
 	},
@@ -2041,7 +2041,7 @@
 			"ID": 168,
 			"Title": "Excel Sheet Column Title",
 			"TitleSlug": "excel-sheet-column-title",
-			"PassRate": "28%",
+			"PassRate": "29%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11725,7 +11725,7 @@
 			"ID": 975,
 			"Title": "Odd Even Jump",
 			"TitleSlug": "odd-even-jump",
-			"PassRate": "47%",
+			"PassRate": "48%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12063,7 +12063,7 @@
 			"TitleSlug": "check-if-word-is-valid-after-substitutions",
 			"PassRate": "51%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -12673,7 +12673,7 @@
 			"ID": 1054,
 			"Title": "Distant Barcodes",
 			"TitleSlug": "distant-barcodes",
-			"PassRate": "38%",
+			"PassRate": "37%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -12913,7 +12913,7 @@
 			"ID": 1074,
 			"Title": "Number of Submatrices That Sum to Target",
 			"TitleSlug": "number-of-submatrices-that-sum-to-target",
-			"PassRate": "58%",
+			"PassRate": "59%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
