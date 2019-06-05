@@ -2,23 +2,24 @@ package problem1003
 
 func isValid(S string) bool {
 	bs := []byte(S)
-	stack := make([]byte, 0, len(S))
+	stack := make([]byte, len(S))
+	i := 0
 
 	for _, b := range bs {
-		stack = append(stack, b)
-		depth := len(stack)
-		switch depth {
+		stack[i] = b
+		i++
+		switch i {
 		case 1, 2:
 			if stack[0] != 'a' {
 				return false
 			}
 		default:
-			if stack[depth-3] == 'a' &&
-				stack[depth-2] == 'b' &&
-				stack[depth-1] == 'c' {
-				stack = stack[:depth-3]
+			if stack[i-3] == 'a' &&
+				stack[i-2] == 'b' &&
+				stack[i-1] == 'c' {
+				i -= 3
 			}
 		}
 	}
-	return len(stack) == 0
+	return i == 0
 }
