@@ -3,23 +3,25 @@ package problem1003
 func isValid(S string) bool {
 	bs := []byte(S)
 	stack := make([]byte, len(S))
-	i := 0
+	top := -1
 
 	for _, b := range bs {
-		stack[i] = b
-		i++
-		switch i {
-		case 1, 2:
-			if stack[0] != 'a' {
+		top++
+		stack[top] = b
+		switch top {
+		case 0:
+			if b != 'a' {
 				return false
 			}
+		case 1:
 		default:
-			if stack[i-3] == 'a' &&
-				stack[i-2] == 'b' &&
-				stack[i-1] == 'c' {
-				i -= 3
+			if b == 'c' &&
+				stack[top-1] == 'b' &&
+				stack[top-2] == 'a' {
+				top -= 3
 			}
 		}
 	}
-	return i == 0
+
+	return top == -1
 }
