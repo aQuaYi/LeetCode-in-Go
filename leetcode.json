@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 740,
-	"Updated": "2019-06-06T19:52:00.524289451+08:00",
+	"Updated": "2019-06-06T22:14:58.971048003+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 236,
 			"Total": 249
 		},
 		"Medium": {
-			"Solved": 391,
+			"Solved": 392,
 			"Total": 420
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 177
 		},
 		"Total": {
-			"Solved": 798,
+			"Solved": 799,
 			"Total": 846
 		}
 	},
@@ -3589,7 +3589,7 @@
 			"ID": 297,
 			"Title": "Serialize and Deserialize Binary Tree",
 			"TitleSlug": "serialize-and-deserialize-binary-tree",
-			"PassRate": "40%",
+			"PassRate": "41%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -12075,9 +12075,9 @@
 			"TitleSlug": "max-consecutive-ones-iii",
 			"PassRate": "53%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -12121,7 +12121,7 @@
 			"ID": 1008,
 			"Title": "Construct Binary Search Tree from Preorder Traversal",
 			"TitleSlug": "construct-binary-search-tree-from-preorder-traversal",
-			"PassRate": "72%",
+			"PassRate": "73%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -12577,7 +12577,7 @@
 			"ID": 1046,
 			"Title": "Last Stone Weight",
 			"TitleSlug": "last-stone-weight",
-			"PassRate": "63%",
+			"PassRate": "62%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -12757,7 +12757,7 @@
 			"ID": 1061,
 			"Title": "Lexicographically Smallest Equivalent String",
 			"TitleSlug": "lexicographically-smallest-equivalent-string",
-			"PassRate": "64%",
+			"PassRate": "65%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
