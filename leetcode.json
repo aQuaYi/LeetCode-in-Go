@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 740,
-	"Updated": "2019-06-07T14:42:05.067827695+08:00",
+	"Updated": "2019-06-07T15:33:56.741823422+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 236,
 			"Total": 249
 		},
 		"Medium": {
-			"Solved": 392,
+			"Solved": 393,
 			"Total": 420
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 177
 		},
 		"Total": {
-			"Solved": 799,
+			"Solved": 800,
 			"Total": 846
 		}
 	},
@@ -12099,7 +12099,7 @@
 			"TitleSlug": "clumsy-factorial",
 			"PassRate": "53%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -12157,7 +12157,7 @@
 			"ID": 1011,
 			"Title": "Capacity To Ship Packages Within D Days",
 			"TitleSlug": "capacity-to-ship-packages-within-d-days",
-			"PassRate": "53%",
+			"PassRate": "52%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -12769,7 +12769,7 @@
 			"ID": 1062,
 			"Title": "Longest Repeating Substring",
 			"TitleSlug": "longest-repeating-substring",
-			"PassRate": "46%",
+			"PassRate": "47%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -12817,7 +12817,7 @@
 			"ID": 1066,
 			"Title": "Campus Bikes II",
 			"TitleSlug": "campus-bikes-ii",
-			"PassRate": "38%",
+			"PassRate": "37%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
