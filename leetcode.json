@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 740,
-	"Updated": "2019-06-07T15:33:56.741823422+08:00",
+	"Updated": "2019-06-07T16:34:23.182182271+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 236,
 			"Total": 249
 		},
 		"Medium": {
-			"Solved": 393,
+			"Solved": 394,
 			"Total": 420
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 177
 		},
 		"Total": {
-			"Solved": 800,
+			"Solved": 801,
 			"Total": 846
 		}
 	},
@@ -4993,7 +4993,7 @@
 			"ID": 414,
 			"Title": "Third Maximum Number",
 			"TitleSlug": "third-maximum-number",
-			"PassRate": "28%",
+			"PassRate": "29%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12111,7 +12111,7 @@
 			"TitleSlug": "minimum-domino-rotations-for-equal-row",
 			"PassRate": "47%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -12733,7 +12733,7 @@
 			"ID": 1059,
 			"Title": "All Paths from Source Lead to Destination",
 			"TitleSlug": "all-paths-from-source-lead-to-destination",
-			"PassRate": "46%",
+			"PassRate": "47%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
