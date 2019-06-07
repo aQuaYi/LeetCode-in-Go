@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 740,
-	"Updated": "2019-06-07T16:34:23.182182271+08:00",
+	"Updated": "2019-06-07T17:00:39.459194381+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 236,
 			"Total": 249
 		},
 		"Medium": {
-			"Solved": 394,
+			"Solved": 395,
 			"Total": 420
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 177
 		},
 		"Total": {
-			"Solved": 801,
+			"Solved": 802,
 			"Total": 846
 		}
 	},
@@ -12123,7 +12123,7 @@
 			"TitleSlug": "construct-binary-search-tree-from-preorder-traversal",
 			"PassRate": "72%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
