@@ -5,23 +5,23 @@ import "github.com/aQuaYi/LeetCode-in-Go/kit"
 // TreeNode is pre-defined...
 type TreeNode = kit.TreeNode
 
-func bstFromPreorder(preorder []int) *TreeNode {
-	if len(preorder) == 0 {
-		return nil
-	}
-	v, less, more := split(preorder)
-	return &TreeNode{
-		Val:   v,
-		Left:  bstFromPreorder(less),
-		Right: bstFromPreorder(more),
-	}
-}
+// ref: https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/discuss/252232/JavaC%2B%2BPython-O(N)-Solution
+func bstFromPreorder(A []int) *TreeNode {
+	i, n := 0, len(A)
 
-func split(A []int) (int, []int, []int) {
-	h := A[0]
-	i := 1
-	for i < len(A) && A[i] < h {
+	var helper func(int) *TreeNode
+	helper = func(bound int) *TreeNode {
+		if i == n || A[i] > bound {
+			return nil
+		}
+		root := &TreeNode{
+			Val: A[i],
+		}
 		i++
+		root.Left = helper(root.Val)
+		root.Right = helper(bound)
+		return root
 	}
-	return h, A[1:i], A[i:]
+
+	return helper(1 << 32)
 }
