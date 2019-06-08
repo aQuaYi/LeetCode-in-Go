@@ -1,32 +1,30 @@
 package problem1011
 
-import "sort"
-
 func shipWithinDays(weights []int, D int) int {
-	n := len(weights)
-	sum := make([]int, n+1)
-	maxWeight := 0
-	for i := 1; i <= n; i++ {
-		sum[i] = sum[i-1] + weights[i-1]
-		maxWeight = max(maxWeight, weights[i-1])
+	lo, hi := 0, 0
+	for _, w := range weights {
+		lo = max(lo, w)
+		hi += w
 	}
 
-	check := func(capacity int) bool {
-		if capacity < maxWeight {
-			return false
-		}
-		i, j, d := 0, 1, 0
-		for ; d < D && j <= n; j++ {
-			if sum[j]-sum[i] <= capacity {
-				continue
+	for lo < hi {
+		mid := (lo + hi) >> 1
+		days, cur := 1, 0
+		for _, w := range weights {
+			if cur+w > mid {
+				days++
+				cur = 0
 			}
-			i = j - 1
-			d++
+			cur += w
 		}
-		return d < D
+		if days > D {
+			lo = mid + 1
+		} else {
+			hi = mid
+		}
 	}
 
-	return sort.Search(sum[n], check)
+	return lo
 }
 
 func max(a, b int) int {
