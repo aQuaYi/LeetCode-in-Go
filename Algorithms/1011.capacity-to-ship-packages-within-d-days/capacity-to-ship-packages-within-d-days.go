@@ -11,24 +11,22 @@ func shipWithinDays(weights []int, D int) int {
 		maxWeight = max(maxWeight, weights[i-1])
 	}
 
-	check := func(cap int) bool {
-		if cap < maxWeight {
+	check := func(capacity int) bool {
+		if capacity < maxWeight {
 			return false
 		}
-		i, j, d := 0, 0, 0
-		for ; d < D && j < n; j++ {
-			if sum[j+1]-sum[i] <= cap {
+		i, j, d := 0, 1, 0
+		for ; d < D && j <= n; j++ {
+			if sum[j]-sum[i] <= capacity {
 				continue
 			}
-			i = j
+			i = j - 1
 			d++
 		}
-		return d+1 <= D && sum[n]-sum[i] <= cap
+		return d < D
 	}
 
-	res := sort.Search(sum[n], check)
-
-	return res
+	return sort.Search(sum[n], check)
 }
 
 func max(a, b int) int {
