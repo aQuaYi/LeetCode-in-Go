@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
-	"Ranking": 724,
-	"Updated": "2019-06-08T17:26:05.986001556+08:00",
+	"Ranking": 726,
+	"Updated": "2019-06-08T22:28:02.100806718+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 236,
 			"Total": 249
 		},
 		"Medium": {
-			"Solved": 395,
+			"Solved": 396,
 			"Total": 420
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 177
 		},
 		"Total": {
-			"Solved": 802,
+			"Solved": 803,
 			"Total": 846
 		}
 	},
@@ -6457,7 +6457,7 @@
 			"ID": 536,
 			"Title": "Construct Binary Tree from String",
 			"TitleSlug": "construct-binary-tree-from-string",
-			"PassRate": "45%",
+			"PassRate": "44%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -10393,7 +10393,7 @@
 			"ID": 864,
 			"Title": "Shortest Path to Get All Keys",
 			"TitleSlug": "shortest-path-to-get-all-keys",
-			"PassRate": "35%",
+			"PassRate": "36%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11413,7 +11413,7 @@
 			"ID": 949,
 			"Title": "Largest Time for Given Digits",
 			"TitleSlug": "largest-time-for-given-digits",
-			"PassRate": "34%",
+			"PassRate": "33%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11509,7 +11509,7 @@
 			"ID": 957,
 			"Title": "Prison Cells After N Days",
 			"TitleSlug": "prison-cells-after-n-days",
-			"PassRate": "37%",
+			"PassRate": "38%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12159,7 +12159,7 @@
 			"TitleSlug": "capacity-to-ship-packages-within-d-days",
 			"PassRate": "53%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -12721,7 +12721,7 @@
 			"ID": 1058,
 			"Title": "Minimize Rounding Error to Meet Target",
 			"TitleSlug": "minimize-rounding-error-to-meet-target",
-			"PassRate": "37%",
+			"PassRate": "38%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -12745,7 +12745,7 @@
 			"ID": 1060,
 			"Title": "Missing Element in Sorted Array",
 			"TitleSlug": "missing-element-in-sorted-array",
-			"PassRate": "53%",
+			"PassRate": "52%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
