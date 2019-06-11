@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 719,
-	"Updated": "2019-06-11T20:00:22.632170036+08:00",
+	"Updated": "2019-06-11T21:31:29.731178863+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 236,
 			"Total": 250
 		},
 		"Medium": {
-			"Solved": 397,
+			"Solved": 398,
 			"Total": 423
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 177
 		},
 		"Total": {
-			"Solved": 805,
+			"Solved": 806,
 			"Total": 850
 		}
 	},
@@ -10729,7 +10729,7 @@
 			"ID": 892,
 			"Title": "Surface Area of 3D Shapes",
 			"TitleSlug": "surface-area-of-3d-shapes",
-			"PassRate": "56%",
+			"PassRate": "55%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12121,7 +12121,7 @@
 			"ID": 1008,
 			"Title": "Construct Binary Search Tree from Preorder Traversal",
 			"TitleSlug": "construct-binary-search-tree-from-preorder-traversal",
-			"PassRate": "72%",
+			"PassRate": "73%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12207,9 +12207,9 @@
 			"TitleSlug": "smallest-integer-divisible-by-k",
 			"PassRate": "28%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -12769,7 +12769,7 @@
 			"ID": 1062,
 			"Title": "Longest Repeating Substring",
 			"TitleSlug": "longest-repeating-substring",
-			"PassRate": "50%",
+			"PassRate": "49%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
