@@ -6,13 +6,11 @@ func smallestRepunitDivByK(K int) int {
 		return -1
 	}
 
-	r := 0
-	for N := 1; N <= K; N++ {
+	r, length := 1%K, 1
+	for r != 0 && length <= K {
 		r = (r*10 + 1) % K
-		if r == 0 {
-			return N
-		}
+		length++
 	}
 
-	return -1
+	return length
 }
