@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 719,
-	"Updated": "2019-06-12T16:29:04.435015603+08:00",
+	"Updated": "2019-06-12T16:58:53.898201325+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 236,
+			"Solved": 237,
 			"Total": 250
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 177
 		},
 		"Total": {
-			"Solved": 808,
+			"Solved": 809,
 			"Total": 850
 		}
 	},
@@ -12243,7 +12243,7 @@
 			"TitleSlug": "binary-prefix-divisible-by-5",
 			"PassRate": "46%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
