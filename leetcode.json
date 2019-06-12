@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 719,
-	"Updated": "2019-06-12T11:02:45.394108419+08:00",
+	"Updated": "2019-06-12T11:47:28.298721138+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 236,
 			"Total": 250
 		},
 		"Medium": {
-			"Solved": 399,
+			"Solved": 400,
 			"Total": 423
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 177
 		},
 		"Total": {
-			"Solved": 807,
+			"Solved": 808,
 			"Total": 850
 		}
 	},
@@ -11857,7 +11857,7 @@
 			"ID": 986,
 			"Title": "Interval List Intersections",
 			"TitleSlug": "interval-list-intersections",
-			"PassRate": "62%",
+			"PassRate": "63%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12231,7 +12231,7 @@
 			"TitleSlug": "convert-to-base-2",
 			"PassRate": "56%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -12721,7 +12721,7 @@
 			"ID": 1058,
 			"Title": "Minimize Rounding Error to Meet Target",
 			"TitleSlug": "minimize-rounding-error-to-meet-target",
-			"PassRate": "41%",
+			"PassRate": "42%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -12985,7 +12985,7 @@
 			"ID": 1080,
 			"Title": "Insufficient Nodes in Root to Leaf Paths",
 			"TitleSlug": "insufficient-nodes-in-root-to-leaf-paths",
-			"PassRate": "38%",
+			"PassRate": "39%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
