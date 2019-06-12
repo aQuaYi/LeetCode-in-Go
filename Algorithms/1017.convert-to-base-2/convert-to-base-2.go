@@ -1,6 +1,10 @@
 package problem1017
 
 func baseNeg2(N int) string {
+	if N == 0 {
+		return "0"
+	}
+
 	B := make([]byte, 0, 30)
 	for N > 0 {
 		switch N & 3 {
