@@ -5,9 +5,7 @@ func prefixesDivBy5(A []int) []bool {
 	r := 0
 	for i, a := range A {
 		r = (r*2 + a) % 5
-		if r == 0 {
-			res[i] = true
-		}
+		res[i] = r == 0
 	}
 	return res
 }
