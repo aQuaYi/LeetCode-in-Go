@@ -8,16 +8,14 @@ func baseNeg2(N int) string {
 	B := make([]byte, 0, 30)
 	for N > 0 {
 		switch N & 3 {
-		case 0:
-			B = append(B, '0', '0')
-		case 1:
-			B = append(B, '1', '0')
-		case 2:
-			B = append(B, '0', '1')
+		case 0, 1:
+			B = append(B, byte(N&1)+'0', '0')
+		default: // 2,3
+			B = append(B, byte(N&1)+'0', '1')
 			N += 4
-		case 3:
-			B = append(B, '1', '1')
-			N += 4
+			// 2^(2n)-2^(2n-1) == 2^(2n-1)
+			// 所以，把 N 转换成二进制后，每在奇数位上看见 1 就在其左边的偶数位上加 1
+			// 就可以转换成以 -2 为基的二进制了
 		}
 		N >>= 2
 	}
