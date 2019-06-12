@@ -6,21 +6,25 @@ import "github.com/aQuaYi/LeetCode-in-Go/kit"
 type ListNode = kit.ListNode
 
 func nextLargerNodes(head *ListNode) []int {
-	res := make([]int, 0, 10000)
-	for head != nil {
-		res = append(res, larger(head))
-		head = head.Next
+	A := convert(head)
+	res := make([]int, len(A))
+	stack, peek := make([]int, len(A)), -1
+	for i := 0; i < len(A); i++ {
+		for peek >= 0 && A[stack[peek]] < A[i] {
+			res[stack[peek]] = A[i]
+			peek--
+		}
+		peek++
+		stack[peek] = i
 	}
 	return res
 }
 
-func larger(head *ListNode) int {
-	val, next := head.Val, head.Next
-	for next != nil {
-		if val < next.Val {
-			return next.Val
-		}
-		next = next.Next
+func convert(head *ListNode) []int {
+	res := make([]int, 0, 1024)
+	for head != nil {
+		res = append(res, head.Val)
+		head = head.Next
 	}
-	return 0
+	return res
 }
