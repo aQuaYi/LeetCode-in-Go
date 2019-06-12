@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 719,
-	"Updated": "2019-06-12T17:00:20.126421491+08:00",
+	"Updated": "2019-06-12T17:42:18.002494424+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 237,
 			"Total": 250
 		},
 		"Medium": {
-			"Solved": 400,
+			"Solved": 401,
 			"Total": 423
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 177
 		},
 		"Total": {
-			"Solved": 809,
+			"Solved": 810,
 			"Total": 850
 		}
 	},
@@ -9469,7 +9469,7 @@
 			"ID": 787,
 			"Title": "Cheapest Flights Within K Stops",
 			"TitleSlug": "cheapest-flights-within-k-stops",
-			"PassRate": "35%",
+			"PassRate": "34%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12255,9 +12255,9 @@
 			"TitleSlug": "next-greater-node-in-linked-list",
 			"PassRate": "56%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
