@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 719,
-	"Updated": "2019-06-13T19:55:14.847556541+08:00",
+	"Updated": "2019-06-13T20:27:30.713959606+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 237,
 			"Total": 250
 		},
 		"Medium": {
-			"Solved": 401,
+			"Solved": 402,
 			"Total": 423
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 177
 		},
 		"Total": {
-			"Solved": 810,
+			"Solved": 811,
 			"Total": 850
 		}
 	},
@@ -12267,7 +12267,7 @@
 			"TitleSlug": "number-of-enclaves",
 			"PassRate": "54%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
