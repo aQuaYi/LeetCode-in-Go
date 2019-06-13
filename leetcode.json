@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 719,
-	"Updated": "2019-06-13T20:27:30.713959606+08:00",
+	"Updated": "2019-06-13T21:30:20.91957305+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 237,
 			"Total": 250
 		},
 		"Medium": {
-			"Solved": 402,
+			"Solved": 403,
 			"Total": 423
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 177
 		},
 		"Total": {
-			"Solved": 811,
+			"Solved": 812,
 			"Total": 850
 		}
 	},
@@ -6697,7 +6697,7 @@
 			"ID": 556,
 			"Title": "Next Greater Element III",
 			"TitleSlug": "next-greater-element-iii",
-			"PassRate": "30%",
+			"PassRate": "29%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12303,7 +12303,7 @@
 			"TitleSlug": "camelcase-matching",
 			"PassRate": "56%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
