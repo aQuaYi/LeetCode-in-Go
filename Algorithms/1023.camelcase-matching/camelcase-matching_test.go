@@ -14,6 +14,18 @@ var tcs = []struct {
 }{
 
 	{
+		[]string{"CompetitiveProgramming", "CounterPick", "ControlPanel"},
+		"CooP",
+		[]bool{false, false, true},
+	},
+
+	{
+		[]string{"FooBar", "FooBarTest", "FootBall", "FrameBuffer", "ForceFeedBack"},
+		"FoBaT",
+		[]bool{false, true, false, false, false},
+	},
+
+	{
 		[]string{"FooBar", "FooBarTest", "FootBall", "FrameBuffer", "ForceFeedBack"},
 		"FB",
 		[]bool{true, false, true, true, false},
@@ -23,12 +35,6 @@ var tcs = []struct {
 		[]string{"FooBar", "FooBarTest", "FootBall", "FrameBuffer", "ForceFeedBack"},
 		"FoBa",
 		[]bool{true, false, true, false, false},
-	},
-
-	{
-		[]string{"FooBar", "FooBarTest", "FootBall", "FrameBuffer", "ForceFeedBack"},
-		"FoBaT",
-		[]bool{false, true, false, false, false},
 	},
 
 	// 可以有多个 testcase
