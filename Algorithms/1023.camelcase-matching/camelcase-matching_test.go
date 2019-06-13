@@ -14,6 +14,12 @@ var tcs = []struct {
 }{
 
 	{
+		[]string{"IXfGawluvnCa", "IsXfGaxwulCa", "IXfGawlqtCva", "IXjfGawlmeCa", "IXfGnaynwlCa", "IXfGcamwelCa"},
+		"IXfGawlCa",
+		[]bool{true, true, true, true, true, true},
+	},
+
+	{
 		[]string{"CompetitiveProgramming", "CounterPick", "ControlPanel"},
 		"CooP",
 		[]bool{false, false, true},
