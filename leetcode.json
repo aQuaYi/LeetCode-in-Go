@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 719,
-	"Updated": "2019-06-14T20:02:41.156567563+08:00",
+	"Updated": "2019-06-14T21:09:55.053585451+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 237,
 			"Total": 250
 		},
 		"Medium": {
-			"Solved": 403,
+			"Solved": 404,
 			"Total": 423
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 177
 		},
 		"Total": {
-			"Solved": 812,
+			"Solved": 813,
 			"Total": 850
 		}
 	},
@@ -685,7 +685,7 @@
 			"ID": 55,
 			"Title": "Jump Game",
 			"TitleSlug": "jump-game",
-			"PassRate": "31%",
+			"PassRate": "32%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12315,9 +12315,9 @@
 			"TitleSlug": "video-stitching",
 			"PassRate": "47%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -12409,7 +12409,7 @@
 			"ID": 1032,
 			"Title": "Stream of Characters",
 			"TitleSlug": "stream-of-characters",
-			"PassRate": "41%",
+			"PassRate": "40%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
