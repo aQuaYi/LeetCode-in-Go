@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 719,
-	"Updated": "2019-06-15T19:27:32.409327407+08:00",
+	"Updated": "2019-06-15T20:11:20.832040045+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 237,
 			"Total": 250
 		},
 		"Medium": {
-			"Solved": 404,
+			"Solved": 405,
 			"Total": 423
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 177
 		},
 		"Total": {
-			"Solved": 813,
+			"Solved": 814,
 			"Total": 850
 		}
 	},
@@ -12339,7 +12339,7 @@
 			"TitleSlug": "maximum-difference-between-node-and-ancestor",
 			"PassRate": "59%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
