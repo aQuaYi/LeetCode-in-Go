@@ -6,33 +6,21 @@ import "github.com/aQuaYi/LeetCode-in-Go/kit"
 type TreeNode = kit.TreeNode
 
 func maxAncestorDiff(root *TreeNode) int {
-	res := 0
-	helper(root, root.Val, &res)
-	return res
+	return dfs(root, root.Val, root.Val)
 }
 
-func helper(node *TreeNode, val int, res *int) (int, int) {
+func dfs(node *TreeNode, Max, Min int) int {
 	if node == nil {
-		return val, val
+		return Max - Min
+		// Max 和 Min 都是 node 的父节点的值
+		// 所以
+		// Max 和 Min 所在的两个节点，肯定是父子关系
 	}
-	val = node.Val
 
-	lMin, lMax := helper(node.Left, val, res)
-	rMin, rMax := helper(node.Right, val, res)
-	cMin, cMax := min(lMin, rMin), max(lMax, rMax)
+	Max = max(Max, node.Val)
+	Min = min(Min, node.Val)
 
-	*res = max(*res,
-		max(abs(val-cMin), abs(val-cMax)),
-	)
-
-	return min(val, cMin), max(val, cMax)
-}
-
-func abs(a int) int {
-	if a < 0 {
-		return -a
-	}
-	return a
+	return max(dfs(node.Left, Max, Min), dfs(node.Right, Max, Min))
 }
 
 func min(a, b int) int {
