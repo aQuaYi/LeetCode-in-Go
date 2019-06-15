@@ -21,8 +21,9 @@ func helper(node *TreeNode, val int, res *int) (int, int) {
 	rMin, rMax := helper(node.Right, val, res)
 	cMin, cMax := min(lMin, rMin), max(lMax, rMax)
 
-	*res = max(*res, abs(val-cMin))
-	*res = max(*res, abs(val-cMax))
+	*res = max(*res,
+		max(abs(val-cMin), abs(val-cMax)),
+	)
 
 	return min(val, cMin), max(val, cMax)
 }
