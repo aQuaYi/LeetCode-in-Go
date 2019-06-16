@@ -26,7 +26,7 @@ func longestArithSeqLength(A []int) int {
 	for i := 0; i < n; i++ {
 		for j := i + 1; j < n; j++ {
 			diff := A[j] - A[i]
-			res = max(res, dfs(j, diff)+2)
+			res = max(res, 2+dfs(j, diff))
 		}
 	}
 
