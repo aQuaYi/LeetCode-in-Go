@@ -1,25 +1,15 @@
 package problem1027
 
+// ref: https://leetcode.com/problems/longest-arithmetic-sequence/discuss/274611/JavaC%2B%2BPython-DP
 func longestArithSeqLength(A []int) int {
 	n := len(A)
-	res := 0
-	var dfs func(int, int, int, int)
-	dfs = func(i, diff, next, count int) {
-		if i == n {
-			res = max(res, count)
-			return
-		}
-		if A[i] == next {
-			next += diff
-			count++
-		}
-		i++
-		dfs(i, diff, next, count)
-	}
-	for i := 0; i < n; i++ {
-		for j := i + 1; j < n; j++ {
-			diff := A[j] - A[i]
-			dfs(j+1, diff, A[j]+diff, 2)
+	res := 2
+	dp := [2001][20001]int{}
+	for j := 0; j < n; j++ {
+		for i := 0; i < j; i++ {
+			d := A[j] - A[i] + 10000 // delta
+			dp[j][d] = max(1, dp[i][d]) + 1
+			res = max(res, dp[j][d])
 		}
 	}
 	return res
