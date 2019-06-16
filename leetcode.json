@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 719,
-	"Updated": "2019-06-16T13:44:24.196742544+08:00",
+	"Updated": "2019-06-16T15:38:26.878240596+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 237,
 			"Total": 251
 		},
 		"Medium": {
-			"Solved": 405,
+			"Solved": 406,
 			"Total": 425
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 178
 		},
 		"Total": {
-			"Solved": 814,
+			"Solved": 815,
 			"Total": 854
 		}
 	},
@@ -12351,9 +12351,9 @@
 			"TitleSlug": "longest-arithmetic-sequence",
 			"PassRate": "47%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -12421,7 +12421,7 @@
 			"ID": 1033,
 			"Title": "Moving Stones Until Consecutive",
 			"TitleSlug": "moving-stones-until-consecutive",
-			"PassRate": "34%",
+			"PassRate": "35%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -12709,7 +12709,7 @@
 			"ID": 1057,
 			"Title": "Campus Bikes",
 			"TitleSlug": "campus-bikes",
-			"PassRate": "58%",
+			"PassRate": "59%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -13069,7 +13069,7 @@
 			"ID": 1087,
 			"Title": "Brace Expansion",
 			"TitleSlug": "brace-expansion",
-			"PassRate": "53%",
+			"PassRate": "54%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -13093,7 +13093,7 @@
 			"ID": 1089,
 			"Title": "Duplicate Zeros",
 			"TitleSlug": "duplicate-zeros",
-			"PassRate": "57%",
+			"PassRate": "58%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -13105,7 +13105,7 @@
 			"ID": 1090,
 			"Title": "Largest Values From Labels",
 			"TitleSlug": "largest-values-from-labels",
-			"PassRate": "51%",
+			"PassRate": "52%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -13117,7 +13117,7 @@
 			"ID": 1091,
 			"Title": "Shortest Path in Binary Matrix",
 			"TitleSlug": "shortest-path-in-binary-matrix",
-			"PassRate": "28%",
+			"PassRate": "29%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -13129,7 +13129,7 @@
 			"ID": 1092,
 			"Title": "Shortest Common Supersequence",
 			"TitleSlug": "shortest-common-supersequence",
-			"PassRate": "36%",
+			"PassRate": "38%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
