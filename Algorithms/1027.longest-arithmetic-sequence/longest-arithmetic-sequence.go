@@ -1,17 +1,53 @@
 package problem1027
 
-// ref: https://leetcode.com/problems/longest-arithmetic-sequence/discuss/274611/JavaC%2B%2BPython-DP
 func longestArithSeqLength(A []int) int {
 	n := len(A)
-	res := 2
-	dp := [2001][20001]int{}
-	for j := 0; j < n; j++ {
-		for i := 0; i < j; i++ {
-			d := A[j] - A[i] + 10000 // delta
-			dp[j][d] = max(1, dp[i][d]) + 1
-			res = max(res, dp[j][d])
+	exist, same := make(map[int][]int, n), make(map[int]int, n)
+	res := 0
+	for i := 0; i < n; i++ {
+		if _, ok := exist[A[i]]; ok {
+			exist[A[i]] = append(exist[A[i]], i)
+		} else {
+			exist[A[i]] = []int{i}
+		}
+		same[A[i]]++
+		if same[A[i]] > res {
+			res = same[A[i]]
 		}
 	}
+
+	for i := 0; i < n; i++ {
+		for j := i + 1; j < n; j++ {
+			diff := A[j] - A[i]
+			if diff != 0 {
+				p, index := 2, j
+				for {
+					if indexes, ok := exist[A[index]+diff]; ok {
+						breakFlag := true
+						for k := 0; k < len(indexes); k++ {
+							if indexes[k] > index {
+								p++
+								index = indexes[k]
+								breakFlag = false
+								break
+							}
+						}
+
+						if breakFlag {
+							break
+						}
+					} else {
+						break
+					}
+				}
+
+				if p > res {
+					res = p
+				}
+			}
+		}
+	}
+
 	return res
 }
 
