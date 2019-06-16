@@ -3,14 +3,18 @@ package problem1027
 func longestArithSeqLength(A []int) int {
 	n := len(A)
 
-	indexes := make(map[int][]int, n)
+	indexes := [10001][]int{}
 	for i := 0; i < n; i++ {
 		indexes[A[i]] = append(indexes[A[i]], i)
 	}
 
 	var dfs func(int, int) int
 	dfs = func(j, diff int) int {
-		for _, k := range indexes[A[j]+diff] {
+		next := A[j] + diff
+		if next < 0 || 10000 < next {
+			return 0
+		}
+		for _, k := range indexes[next] {
 			if j < k {
 				return 1 + dfs(k, diff)
 			}
