@@ -2,7 +2,6 @@ package problem1028
 
 import (
 	"strconv"
-	"strings"
 
 	"github.com/aQuaYi/LeetCode-in-Go/kit"
 )
@@ -11,48 +10,37 @@ import (
 type TreeNode = kit.TreeNode
 
 func recoverFromPreorder(S string) *TreeNode {
-	m := make(map[int][]*TreeNode, 100)
-
-	index := strings.IndexByte(S, '-')
-	if index == -1 {
-		val, _ := strconv.Atoi(S)
-		return &TreeNode{
-			Val: val,
+	next := func() (int, *TreeNode) {
+		level := 0
+		for S[level] == '-' {
+			level++
 		}
-	}
-
-	v := S[:index]
-	S = S[index:]
-	val, _ := strconv.Atoi(v)
-	m[0] = append(m[0], &TreeNode{
-		Val: val,
-	})
-
-	level, val := 0, 0
-	for S != "" {
-		level, val, S = next(S)
-		node := &TreeNode{Val: val}
-		m[level] = append(m[level], node)
-		p := m[level-1][len(m[level-1])-1]
-		if p.Left == nil {
-			p.Left = node
-		} else {
-			p.Right = node
+		end := level
+		for end < len(S) && S[end] != '-' {
+			end++
 		}
+		val, _ := strconv.Atoi(S[level:end])
+		S = S[end:]
+		return level, &TreeNode{Val: val}
 	}
 
-	return m[0][0]
-}
+	stack, top := make([]*TreeNode, 1000), -1
 
-func next(S string) (int, int, string) {
-	level := 0
-	for S[level] == '-' {
-		level++
+	for len(S) > 0 {
+		level, node := next()
+		for top >= level { // top is the level of stack[top]
+			top--
+		}
+		if top >= 0 {
+			if stack[top].Left == nil {
+				stack[top].Left = node
+			} else {
+				stack[top].Right = node
+			}
+		}
+		top++
+		stack[top] = node
 	}
-	end := level
-	for end < len(S) && S[end] != '-' {
-		end++
-	}
-	value, _ := strconv.Atoi(S[level:end])
-	return level, value, S[end:]
+
+	return stack[0]
 }
