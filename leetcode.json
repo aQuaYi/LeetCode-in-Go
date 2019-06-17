@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 719,
-	"Updated": "2019-06-17T19:36:16.827722665+08:00",
+	"Updated": "2019-06-17T20:58:41.96722999+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 237,
@@ -12,11 +12,11 @@
 			"Total": 425
 		},
 		"Hard": {
-			"Solved": 172,
+			"Solved": 173,
 			"Total": 178
 		},
 		"Total": {
-			"Solved": 815,
+			"Solved": 816,
 			"Total": 854
 		}
 	},
@@ -517,7 +517,7 @@
 			"ID": 41,
 			"Title": "First Missing Positive",
 			"TitleSlug": "first-missing-positive",
-			"PassRate": "28%",
+			"PassRate": "29%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -1633,7 +1633,7 @@
 			"ID": 134,
 			"Title": "Gas Station",
 			"TitleSlug": "gas-station",
-			"PassRate": "33%",
+			"PassRate": "34%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -6373,7 +6373,7 @@
 			"ID": 529,
 			"Title": "Minesweeper",
 			"TitleSlug": "minesweeper",
-			"PassRate": "53%",
+			"PassRate": "52%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12363,9 +12363,9 @@
 			"TitleSlug": "recover-a-tree-from-preorder-traversal",
 			"PassRate": "70%",
 			"Difficulty": "Hard",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -13069,7 +13069,7 @@
 			"ID": 1087,
 			"Title": "Brace Expansion",
 			"TitleSlug": "brace-expansion",
-			"PassRate": "55%",
+			"PassRate": "54%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -13117,7 +13117,7 @@
 			"ID": 1091,
 			"Title": "Shortest Path in Binary Matrix",
 			"TitleSlug": "shortest-path-in-binary-matrix",
-			"PassRate": "32%",
+			"PassRate": "33%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
