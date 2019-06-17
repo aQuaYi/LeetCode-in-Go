@@ -2,6 +2,7 @@ package problem1028
 
 import (
 	"strconv"
+	"strings"
 
 	"github.com/aQuaYi/LeetCode-in-Go/kit"
 )
@@ -10,18 +11,22 @@ import (
 type TreeNode = kit.TreeNode
 
 func recoverFromPreorder(S string) *TreeNode {
-	m := make(map[int][]*TreeNode, 1000)
+	m := make(map[int][]*TreeNode, 100)
 
-	for i := 0; i < len(S); i++ {
-		if S[i] == '-' {
-			v := S[:i]
-			S = S[i:]
-			val, _ := strconv.Atoi(v)
-			m[0] = append(m[0], &TreeNode{
-				Val: val,
-			})
+	index := strings.IndexByte(S, '-')
+	if index == -1 {
+		val, _ := strconv.Atoi(S)
+		return &TreeNode{
+			Val: val,
 		}
 	}
+
+	v := S[:index]
+	S = S[index:]
+	val, _ := strconv.Atoi(v)
+	m[0] = append(m[0], &TreeNode{
+		Val: val,
+	})
 
 	level, val := 0, 0
 	for S != "" {

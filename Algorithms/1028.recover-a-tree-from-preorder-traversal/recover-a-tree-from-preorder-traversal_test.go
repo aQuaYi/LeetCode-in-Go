@@ -14,6 +14,11 @@ var tcs = []struct {
 }{
 
 	{
+		"3",
+		[]int{3},
+	},
+
+	{
 		"1-2--3--4-5--6--7",
 		[]int{1, 2, 5, 3, 4, 6, 7},
 	},
@@ -36,7 +41,7 @@ func Test_recoverFromPreorder(t *testing.T) {
 
 	for _, tc := range tcs {
 		ans := recoverFromPreorder(tc.S)
-		ast.Equal(tc.ans, kit.Tree2Preorder(ans), "输入:%v", tc)
+		ast.Equal(tc.ans, kit.Tree2ints(ans), "输入:%v", tc)
 	}
 }
 
