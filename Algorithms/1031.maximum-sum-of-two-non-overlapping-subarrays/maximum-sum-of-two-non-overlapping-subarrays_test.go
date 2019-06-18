@@ -1,7 +1,6 @@
 package problem1031
 
 import (
-	"reflect"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -66,38 +65,5 @@ func Benchmark_maxSumTwoNoOverlap(b *testing.B) {
 		for _, tc := range tcs {
 			maxSumTwoNoOverlap(tc.A, tc.L, tc.M)
 		}
-	}
-}
-
-func Test_sums(t *testing.T) {
-	type args struct {
-		A []int
-		l int
-	}
-	tests := []struct {
-		name string
-		args args
-		want []*entry
-	}{
-		{
-			"test",
-			args{
-				A: []int{0, 1, 2, 3},
-				l: 3,
-			},
-			[]*entry{
-				&entry{6, 1, 3},
-				&entry{3, 0, 2},
-			},
-		},
-
-		// TODO: Add test cases.
-	}
-	for _, tt := range tests {
-		t.Run(tt.name, func(t *testing.T) {
-			if got := sums(tt.args.A, tt.args.l); !reflect.DeepEqual(got, tt.want) {
-				t.Errorf("sums() = %v, want %v", got, tt.want)
-			}
-		})
 	}
 }
