@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 679,
-	"Updated": "2019-06-19T20:12:03.781424292+08:00",
+	"Updated": "2019-06-19T22:07:50.996262863+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 237,
 			"Total": 251
 		},
 		"Medium": {
-			"Solved": 407,
+			"Solved": 408,
 			"Total": 425
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 178
 		},
 		"Total": {
-			"Solved": 817,
+			"Solved": 818,
 			"Total": 854
 		}
 	},
@@ -8233,7 +8233,7 @@
 			"ID": 684,
 			"Title": "Redundant Connection",
 			"TitleSlug": "redundant-connection",
-			"PassRate": "51%",
+			"PassRate": "52%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -8437,7 +8437,7 @@
 			"ID": 701,
 			"Title": "Insert into a Binary Search Tree",
 			"TitleSlug": "insert-into-a-binary-search-tree",
-			"PassRate": "75%",
+			"PassRate": "76%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10729,7 +10729,7 @@
 			"ID": 892,
 			"Title": "Surface Area of 3D Shapes",
 			"TitleSlug": "surface-area-of-3d-shapes",
-			"PassRate": "56%",
+			"PassRate": "55%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11713,7 +11713,7 @@
 			"ID": 974,
 			"Title": "Subarray Sums Divisible by K",
 			"TitleSlug": "subarray-sums-divisible-by-k",
-			"PassRate": "44%",
+			"PassRate": "45%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12435,7 +12435,7 @@
 			"TitleSlug": "coloring-a-border",
 			"PassRate": "42%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -12697,7 +12697,7 @@
 			"ID": 1056,
 			"Title": "Confusing Number",
 			"TitleSlug": "confusing-number",
-			"PassRate": "51%",
+			"PassRate": "52%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -12733,7 +12733,7 @@
 			"ID": 1059,
 			"Title": "All Paths from Source Lead to Destination",
 			"TitleSlug": "all-paths-from-source-lead-to-destination",
-			"PassRate": "46%",
+			"PassRate": "45%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -13045,7 +13045,7 @@
 			"ID": 1085,
 			"Title": "Sum of Digits in the Minimum Number",
 			"TitleSlug": "sum-of-digits-in-the-minimum-number",
-			"PassRate": "78%",
+			"PassRate": "77%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": true,
