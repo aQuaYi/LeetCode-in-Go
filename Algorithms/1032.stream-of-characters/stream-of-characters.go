@@ -2,16 +2,17 @@ package problem1032
 
 // StreamChecker check letters
 type StreamChecker struct {
-	dic [][]*char
+	dic  [][]*char
+	time int
 }
 
 type char struct {
-	index int // alphabet order
-	isEnd bool
-	next  *char
+	index, queryTime int // alphabet order
+	isEnd            bool
+	next             *char
 }
 
-func makeLetters(word string) *char {
+func makeChars(word string) *char {
 	n := len(word)
 	head := &char{
 		index: int(word[0] - 'a'),
@@ -32,7 +33,7 @@ func makeLetters(word string) *char {
 func Constructor(words []string) StreamChecker {
 	dic := make([][]*char, 26)
 	for _, word := range words {
-		l := makeLetters(word)
+		l := makeChars(word)
 		dic[l.index] = append(dic[l.index], l)
 	}
 	return StreamChecker{
@@ -42,6 +43,8 @@ func Constructor(words []string) StreamChecker {
 
 // Query returns true if letter in words
 func (sc *StreamChecker) Query(letter byte) bool {
+	time := sc.time
+	sc.time++
 	index := int(letter - 'a')
 
 	chars := sc.dic[index]
@@ -49,7 +52,8 @@ func (sc *StreamChecker) Query(letter byte) bool {
 
 	res := false
 	for _, c := range chars {
-		res = res || c.isEnd
+		c.queryTime = time
+		res = res || (c.isEnd && c.check())
 		c = c.next
 		sc.dic[c.index] = append(sc.dic[c.index], c)
 	}
@@ -57,8 +61,15 @@ func (sc *StreamChecker) Query(letter byte) bool {
 	return res
 }
 
-/**
- * Your StreamChecker object will be instantiated and called as such:
- * obj := Constructor(words);
- * param_1 := obj.Query(letter);
- */
+func (c *char) check() bool {
+	head := c.next
+	qt := head.queryTime
+	for !head.isEnd {
+		head = head.next
+		qt++
+		if qt != head.queryTime {
+			return false
+		}
+	}
+	return true
+}
