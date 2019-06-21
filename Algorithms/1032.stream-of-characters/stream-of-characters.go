@@ -2,39 +2,64 @@ package problem1032
 
 // StreamChecker check letters
 type StreamChecker struct {
-	dic    [][]string
-	querys []byte
+	tree   *trie
+	stream []int8
+	max    int
 }
 
 // Constructor returns StreamChecker
 func Constructor(words []string) StreamChecker {
-	dic := make([][]string, 26)
 	maxLen := 0
+	tree := &trie{}
 	for _, word := range words {
-		Len := len(word)
-		maxLen = max(maxLen, Len)
-		index := int(word[Len-1] - 'a')
-		dic[index] = append(dic[index], word)
+		maxLen = max(maxLen, len(word))
+		tree.insert(word)
 	}
 	return StreamChecker{
-		dic:    dic,
-		querys: make([]byte, 0, 40001),
+		tree:   tree,
+		stream: make([]int8, 0, 40001),
+		max:    maxLen,
 	}
 }
 
 // Query returns true if letter in words
 func (sc *StreamChecker) Query(letter byte) bool {
-	sc.querys = append(sc.querys, letter)
-	index := int(letter - 'a')
-	words := sc.dic[index]
-	for _, w := range words {
-		lq, lw := len(sc.querys), len(w)
-		if lq-lw >= 0 && w == string(sc.querys[lq-lw:]) {
+	sc.stream = append(sc.stream, int8(letter-'a'))
+	n := len(sc.stream)
+	cur := sc.tree
+	for i := 1; i <= sc.max && i <= n; i++ {
+		index := sc.stream[n-i]
+		if cur.next[index] == nil {
+			return false
+		}
+		cur = cur.next[index]
+		if cur.isWord {
 			return true
 		}
 	}
-
 	return false
+}
+
+// TODO:   var isWord = &trie{}
+
+type trie struct {
+	next   [26]*trie
+	isWord bool
+}
+
+func (t *trie) insert(word string) {
+	n := len(word)
+	cur := t
+	for i := n - 1; i >= 0; i-- {
+		index := int(word[i] - 'a')
+		if cur.next[index] == nil {
+			cur.next[index] = &trie{}
+		}
+		cur = cur.next[index]
+		if i == 0 {
+			cur.isWord = true
+		}
+	}
 }
 
 func max(a, b int) int {
