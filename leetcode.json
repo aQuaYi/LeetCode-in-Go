@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 669,
-	"Updated": "2019-06-21T21:12:48.36149612+08:00",
+	"Updated": "2019-06-21T21:54:29.215999989+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 237,
 			"Total": 251
 		},
 		"Medium": {
-			"Solved": 408,
+			"Solved": 409,
 			"Total": 425
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 178
 		},
 		"Total": {
-			"Solved": 819,
+			"Solved": 820,
 			"Total": 854
 		}
 	},
@@ -10957,7 +10957,7 @@
 			"ID": 911,
 			"Title": "Online Election",
 			"TitleSlug": "online-election",
-			"PassRate": "46%",
+			"PassRate": "47%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12447,9 +12447,9 @@
 			"TitleSlug": "uncrossed-lines",
 			"PassRate": "51%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
