@@ -2,7 +2,6 @@ package problem1032
 
 // StreamChecker check letters
 type StreamChecker struct {
-	max    int
 	trie   *trie
 	stream []int8
 }
@@ -16,7 +15,6 @@ func Constructor(words []string) StreamChecker {
 		t.insert(w)
 	}
 	return StreamChecker{
-		max:    m,
 		trie:   t,
 		stream: make([]int8, 0, 1024),
 	}
@@ -26,8 +24,8 @@ func Constructor(words []string) StreamChecker {
 func (sc *StreamChecker) Query(letter byte) bool {
 	sc.stream = append(sc.stream, int8(letter-'a'))
 	n, t := len(sc.stream), sc.trie
-	for i := 1; i <= sc.max && i <= n; i++ {
-		index := sc.stream[n-i]
+	for i := n - 1; i >= 0; i-- {
+		index := sc.stream[i]
 		if t.next[index] == nil {
 			return false
 		}
@@ -46,16 +44,15 @@ type trie struct {
 
 func (t *trie) insert(word string) {
 	n := len(word)
+	// reversely insert
 	for i := n - 1; i >= 0; i-- {
 		index := int(word[i] - 'a')
 		if t.next[index] == nil {
 			t.next[index] = &trie{}
 		}
 		t = t.next[index]
-		if i == 0 {
-			t.isWord = true
-		}
 	}
+	t.isWord = true
 }
 
 func max(a, b int) int {
