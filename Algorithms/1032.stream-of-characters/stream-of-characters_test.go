@@ -94,3 +94,14 @@ func Test_Case_6(t *testing.T) {
 		ast.Equal(expects[i], streamChecker.Query(q), "%d:%s", i, string(querys[:i+1]))
 	}
 }
+
+func Test_Case_7(t *testing.T) {
+	ast := assert.New(t)
+	//
+	words := []string{"cd"}
+	streamChecker := Constructor(words)
+	//
+	ast.False(streamChecker.Query('c')) // return false
+	ast.False(streamChecker.Query('a')) // return false
+	ast.False(streamChecker.Query('d')) // return false
+}
