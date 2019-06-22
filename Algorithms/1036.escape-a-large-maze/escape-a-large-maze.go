@@ -26,7 +26,6 @@ func isEscapePossible(blocked [][]int, source []int, target []int) bool {
 		sx, sy := source[0], source[1]
 		points, hasSeen[sx<<32+sy] = append(points, source), true
 		//
-		cutOff := 0
 		for len(points) > 0 {
 			size := len(points)
 			for i := 0; i < size; i++ {
@@ -45,10 +44,10 @@ func isEscapePossible(blocked [][]int, source []int, target []int) bool {
 					}
 				}
 			}
-			if cutOff+len(points) > MAX {
+			if len(hasSeen) > MAX {
 				return true
 			}
-			cutOff, points = cutOff+size, points[size:]
+			points = points[size:]
 		}
 		return false
 	}
