@@ -16,7 +16,7 @@ func isEscapePossible(blocked [][]int, source []int, target []int) bool {
 		x, y := b[0], b[1]
 		isBlocked[x<<32+y] = true
 	}
-
+	// BFS
 	isOpen := func(source, target []int) bool {
 		tx, ty := target[0], target[1]
 		//
@@ -26,7 +26,7 @@ func isEscapePossible(blocked [][]int, source []int, target []int) bool {
 		sx, sy := source[0], source[1]
 		points, hasSeen[sx<<32+sy] = append(points, source), true
 		//
-		count := 0
+		cutOff := 0
 		for len(points) > 0 {
 			size := len(points)
 			for i := 0; i < size; i++ {
@@ -45,11 +45,10 @@ func isEscapePossible(blocked [][]int, source []int, target []int) bool {
 					}
 				}
 			}
-			count += size
-			if count > MAX {
+			if cutOff+len(points) > MAX {
 				return true
 			}
-			points = points[size:]
+			cutOff, points = cutOff+size, points[size:]
 		}
 		return false
 	}
