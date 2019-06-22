@@ -6,10 +6,9 @@ var dy = []int{1, -1, 0, 0}
 // M is length and width of the large maze
 const M = 1e6
 
-// MAX 代表了 blocked 能够围起来的最大数量
-// 题目里面的说了 len(blocked)<=200
-// 这样的话，能够围起来的点，不会超过 20000 个
-const MAX = 20000
+// MAX is the largest number of points that can be enclosed by blocked
+// because of len(blocked)<=200
+const MAX = 19900
 
 func isEscapePossible(blocked [][]int, source []int, target []int) bool {
 	isBlocked := make(map[int]bool, len(blocked))
@@ -46,11 +45,11 @@ func isEscapePossible(blocked [][]int, source []int, target []int) bool {
 					}
 				}
 			}
-			points = points[size:]
 			count += size
-			if count >= MAX {
+			if count > MAX {
 				return true
 			}
+			points = points[size:]
 		}
 		return false
 	}
