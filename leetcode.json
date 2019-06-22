@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 669,
-	"Updated": "2019-06-22T11:27:58.669617564+08:00",
+	"Updated": "2019-06-22T16:51:39.125954295+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 237,
@@ -12,11 +12,11 @@
 			"Total": 425
 		},
 		"Hard": {
-			"Solved": 174,
+			"Solved": 175,
 			"Total": 178
 		},
 		"Total": {
-			"Solved": 820,
+			"Solved": 821,
 			"Total": 854
 		}
 	},
@@ -1153,7 +1153,7 @@
 			"ID": 94,
 			"Title": "Binary Tree Inorder Traversal",
 			"TitleSlug": "binary-tree-inorder-traversal",
-			"PassRate": "56%",
+			"PassRate": "57%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -8485,7 +8485,7 @@
 			"ID": 705,
 			"Title": "Design HashSet",
 			"TitleSlug": "design-hashset",
-			"PassRate": "54%",
+			"PassRate": "53%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9541,7 +9541,7 @@
 			"ID": 793,
 			"Title": "Preimage Size of Factorial Zeroes Function",
 			"TitleSlug": "preimage-size-of-factorial-zeroes-function",
-			"PassRate": "38%",
+			"PassRate": "39%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10477,7 +10477,7 @@
 			"ID": 871,
 			"Title": "Minimum Number of Refueling Stops",
 			"TitleSlug": "minimum-number-of-refueling-stops",
-			"PassRate": "28%",
+			"PassRate": "29%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12459,7 +12459,7 @@
 			"TitleSlug": "escape-a-large-maze",
 			"PassRate": "36%",
 			"Difficulty": "Hard",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -12649,7 +12649,7 @@
 			"ID": 1052,
 			"Title": "Grumpy Bookstore Owner",
 			"TitleSlug": "grumpy-bookstore-owner",
-			"PassRate": "52%",
+			"PassRate": "51%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -12745,7 +12745,7 @@
 			"ID": 1060,
 			"Title": "Missing Element in Sorted Array",
 			"TitleSlug": "missing-element-in-sorted-array",
-			"PassRate": "52%",
+			"PassRate": "53%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -12769,7 +12769,7 @@
 			"ID": 1062,
 			"Title": "Longest Repeating Substring",
 			"TitleSlug": "longest-repeating-substring",
-			"PassRate": "50%",
+			"PassRate": "51%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
