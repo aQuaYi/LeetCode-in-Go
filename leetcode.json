@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 669,
-	"Updated": "2019-06-23T13:26:45.289042067+08:00",
+	"Updated": "2019-06-23T15:50:17.210218383+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 237,
 			"Total": 251
 		},
 		"Medium": {
-			"Solved": 410,
+			"Solved": 411,
 			"Total": 427
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 180
 		},
 		"Total": {
-			"Solved": 822,
+			"Solved": 823,
 			"Total": 858
 		}
 	},
@@ -1897,7 +1897,7 @@
 			"ID": 156,
 			"Title": "Binary Tree Upside Down",
 			"TitleSlug": "binary-tree-upside-down",
-			"PassRate": "50%",
+			"PassRate": "51%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -3829,7 +3829,7 @@
 			"ID": 317,
 			"Title": "Shortest Distance from All Buildings",
 			"TitleSlug": "shortest-distance-from-all-buildings",
-			"PassRate": "38%",
+			"PassRate": "37%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -5269,7 +5269,7 @@
 			"ID": 437,
 			"Title": "Path Sum III",
 			"TitleSlug": "path-sum-iii",
-			"PassRate": "42%",
+			"PassRate": "43%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -8905,7 +8905,7 @@
 			"ID": 740,
 			"Title": "Delete and Earn",
 			"TitleSlug": "delete-and-earn",
-			"PassRate": "45%",
+			"PassRate": "46%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12495,9 +12495,9 @@
 			"TitleSlug": "minimum-score-triangulation-of-polygon",
 			"PassRate": "41%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -13165,7 +13165,7 @@
 			"ID": 1095,
 			"Title": "Find in Mountain Array",
 			"TitleSlug": "find-in-mountain-array",
-			"PassRate": "27%",
+			"PassRate": "28%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -13177,7 +13177,7 @@
 			"ID": 1096,
 			"Title": "Brace Expansion II",
 			"TitleSlug": "brace-expansion-ii",
-			"PassRate": "46%",
+			"PassRate": "49%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
