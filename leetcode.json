@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 669,
-	"Updated": "2019-06-22T16:51:39.125954295+08:00",
+	"Updated": "2019-06-23T12:43:19.701820295+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 237,
@@ -9,15 +9,15 @@
 		},
 		"Medium": {
 			"Solved": 409,
-			"Total": 425
+			"Total": 427
 		},
 		"Hard": {
 			"Solved": 175,
-			"Total": 178
+			"Total": 180
 		},
 		"Total": {
 			"Solved": 821,
-			"Total": 854
+			"Total": 858
 		}
 	},
 	"Problems": [
@@ -3349,7 +3349,7 @@
 			"ID": 277,
 			"Title": "Find the Celebrity",
 			"TitleSlug": "find-the-celebrity",
-			"PassRate": "36%",
+			"PassRate": "37%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -3445,7 +3445,7 @@
 			"ID": 285,
 			"Title": "Inorder Successor in BST",
 			"TitleSlug": "inorder-successor-in-bst",
-			"PassRate": "34%",
+			"PassRate": "35%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -5749,7 +5749,7 @@
 			"ID": 477,
 			"Title": "Total Hamming Distance",
 			"TitleSlug": "total-hamming-distance",
-			"PassRate": "48%",
+			"PassRate": "49%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -5881,7 +5881,7 @@
 			"ID": 488,
 			"Title": "Zuma Game",
 			"TitleSlug": "zuma-game",
-			"PassRate": "38%",
+			"PassRate": "39%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -6217,7 +6217,7 @@
 			"ID": 516,
 			"Title": "Longest Palindromic Subsequence",
 			"TitleSlug": "longest-palindromic-subsequence",
-			"PassRate": "46%",
+			"PassRate": "47%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -6817,7 +6817,7 @@
 			"ID": 566,
 			"Title": "Reshape the Matrix",
 			"TitleSlug": "reshape-the-matrix",
-			"PassRate": "58%",
+			"PassRate": "59%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -7525,7 +7525,7 @@
 			"ID": 625,
 			"Title": "Minimum Factorization",
 			"TitleSlug": "minimum-factorization",
-			"PassRate": "31%",
+			"PassRate": "32%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -10189,7 +10189,7 @@
 			"ID": 847,
 			"Title": "Shortest Path Visiting All Nodes",
 			"TitleSlug": "shortest-path-visiting-all-nodes",
-			"PassRate": "46%",
+			"PassRate": "47%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12013,7 +12013,7 @@
 			"ID": 999,
 			"Title": "Available Captures for Rook",
 			"TitleSlug": "available-captures-for-rook",
-			"PassRate": "65%",
+			"PassRate": "66%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12409,7 +12409,7 @@
 			"ID": 1032,
 			"Title": "Stream of Characters",
 			"TitleSlug": "stream-of-characters",
-			"PassRate": "40%",
+			"PassRate": "41%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12649,7 +12649,7 @@
 			"ID": 1052,
 			"Title": "Grumpy Bookstore Owner",
 			"TitleSlug": "grumpy-bookstore-owner",
-			"PassRate": "51%",
+			"PassRate": "52%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -12733,7 +12733,7 @@
 			"ID": 1059,
 			"Title": "All Paths from Source Lead to Destination",
 			"TitleSlug": "all-paths-from-source-lead-to-destination",
-			"PassRate": "46%",
+			"PassRate": "45%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -12889,7 +12889,7 @@
 			"ID": 1072,
 			"Title": "Flip Columns For Maximum Number of Equal Rows",
 			"TitleSlug": "flip-columns-for-maximum-number-of-equal-rows",
-			"PassRate": "55%",
+			"PassRate": "56%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -13135,6 +13135,54 @@
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 1093,
+			"Title": "Statistics from a Large Sample",
+			"TitleSlug": "statistics-from-a-large-sample",
+			"PassRate": "36%",
+			"Difficulty": "Medium",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 1094,
+			"Title": "Car Pooling",
+			"TitleSlug": "car-pooling",
+			"PassRate": "54%",
+			"Difficulty": "Medium",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 1095,
+			"Title": "Find in Mountain Array",
+			"TitleSlug": "find-in-mountain-array",
+			"PassRate": "26%",
+			"Difficulty": "Hard",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 1096,
+			"Title": "Brace Expansion II",
+			"TitleSlug": "brace-expansion-ii",
+			"PassRate": "46%",
+			"Difficulty": "Hard",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
 			"HasNoGoOption": false
 		}
 	]
