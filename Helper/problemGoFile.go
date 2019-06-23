@@ -16,7 +16,7 @@ func parseFunction(fc string) (fcName, para, ansType, nfc string) {
 			fcName = "myFunc"
 			para = "p int"
 			ansType = "int"
-			nfc = "func myFunc(p int) int {\n\n}"
+			nfc = "func myFunc(p int) int {\n\nreturn nil\n}"
 		}
 	}()
 
@@ -29,7 +29,7 @@ func parseFunction(fc string) (fcName, para, ansType, nfc string) {
 	fcName = fc[a+1 : b]
 	para = fc[b+1 : c]
 	ansType = strings.TrimSpace(fc[c+1 : d])
-	nfc = fmt.Sprintf("func %s(%s) %s {\n\n}", fcName, para, ansType)
+	nfc = fmt.Sprintf("func %s(%s) %s {\n\nreturn nil\n}", fcName, para, ansType)
 
 	return
 }
