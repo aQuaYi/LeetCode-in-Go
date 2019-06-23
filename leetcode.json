@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 669,
-	"Updated": "2019-06-23T12:43:19.701820295+08:00",
+	"Updated": "2019-06-23T13:26:45.289042067+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 237,
 			"Total": 251
 		},
 		"Medium": {
-			"Solved": 409,
+			"Solved": 410,
 			"Total": 427
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 180
 		},
 		"Total": {
-			"Solved": 821,
+			"Solved": 822,
 			"Total": 858
 		}
 	},
@@ -3829,7 +3829,7 @@
 			"ID": 317,
 			"Title": "Shortest Distance from All Buildings",
 			"TitleSlug": "shortest-distance-from-all-buildings",
-			"PassRate": "37%",
+			"PassRate": "38%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -12483,7 +12483,7 @@
 			"TitleSlug": "binary-search-tree-to-greater-sum-tree",
 			"PassRate": "79%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -13141,7 +13141,7 @@
 			"ID": 1093,
 			"Title": "Statistics from a Large Sample",
 			"TitleSlug": "statistics-from-a-large-sample",
-			"PassRate": "36%",
+			"PassRate": "37%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -13153,7 +13153,7 @@
 			"ID": 1094,
 			"Title": "Car Pooling",
 			"TitleSlug": "car-pooling",
-			"PassRate": "54%",
+			"PassRate": "55%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -13165,7 +13165,7 @@
 			"ID": 1095,
 			"Title": "Find in Mountain Array",
 			"TitleSlug": "find-in-mountain-array",
-			"PassRate": "26%",
+			"PassRate": "27%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
