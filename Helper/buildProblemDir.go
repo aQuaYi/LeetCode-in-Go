@@ -94,18 +94,31 @@ var typeMap = map[string]string{
 
 func creatGo(p problem, function, ansType string) {
 	fileFormat := `package %s
-
+%s
 %s
 `
 
-	content := fmt.Sprintf(fileFormat, p.packageName(), function)
+	treeNodeDefine := ""
+	if strings.Contains(function, "*TreeNode") {
+		treeNodeDefine = `
+import "github.com/aQuaYi/LeetCode-in-Go/kit"
 
-	returns := "\treturn nil\n}"
-	if v, ok := typeMap[ansType]; ok {
-		returns = fmt.Sprintf("\treturn %s\n}", v)
+// TreeNode is pre-defined...
+// type TreeNode struct {
+//     Val int
+//     Left *TreeNode
+//     Right *TreeNode
+// }
+type TreeNode = kit.TreeNode
+
+`
 	}
 
-	content = strings.Replace(content, "}", returns, -1)
+	content := fmt.Sprintf(fileFormat, p.packageName(), treeNodeDefine, function)
+
+	if v, ok := typeMap[ansType]; ok {
+		content = strings.Replace(content, "nil", v, 1)
+	}
 
 	filename := fmt.Sprintf("%s/%s.go", p.Dir(), p.TitleSlug)
 
