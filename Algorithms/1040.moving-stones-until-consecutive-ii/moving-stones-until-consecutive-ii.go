@@ -19,6 +19,7 @@ func low(s []int) int {
 		(s[n-1]-s[1] == n-2 && s[1]-s[0] > 2) {
 		return 2
 	}
+	// sliding window is s[i:j]
 	width, i, j := 0, 0, 1
 	for ; j < n; j++ {
 		if s[j]-s[i] < n {
@@ -35,13 +36,6 @@ func low(s []int) int {
 
 func max(a, b int) int {
 	if a > b {
-		return a
-	}
-	return b
-}
-
-func min(a, b int) int {
-	if a < b {
 		return a
 	}
 	return b
