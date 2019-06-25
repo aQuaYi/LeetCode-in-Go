@@ -6,7 +6,7 @@ func maxSumAfterPartitioning(A []int, K int) int {
 	dp := make([]int, n+1)
 	// A's length grows up from 1 to n
 	for l := 1; l <= n; l++ {
-		m := 0 // max value of last k item in A[:l]
+		m := 0 // max value of last k items in A[:l]
 		for k := 1; k <= K && 0 <= l-k; k++ {
 			m = max(m, A[l-k])
 			sum := dp[l-k] + m*k
