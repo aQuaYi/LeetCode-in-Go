@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 669,
-	"Updated": "2019-06-26T19:47:01.273910249+08:00",
+	"Updated": "2019-06-26T20:13:21.523666304+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 237,
+			"Solved": 238,
 			"Total": 251
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 180
 		},
 		"Total": {
-			"Solved": 825,
+			"Solved": 826,
 			"Total": 858
 		}
 	},
@@ -12291,9 +12291,9 @@
 			"TitleSlug": "sum-of-root-to-leaf-binary-numbers",
 			"PassRate": "55%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
