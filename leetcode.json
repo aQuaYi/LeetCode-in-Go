@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 669,
-	"Updated": "2019-06-26T21:08:18.442769808+08:00",
+	"Updated": "2019-06-26T21:37:02.154781437+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 239,
+			"Solved": 240,
 			"Total": 251
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 180
 		},
 		"Total": {
-			"Solved": 827,
+			"Solved": 828,
 			"Total": 858
 		}
 	},
@@ -12375,7 +12375,7 @@
 			"TitleSlug": "two-city-scheduling",
 			"PassRate": "53%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,

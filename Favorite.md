@@ -1,4 +1,4 @@
-# 我收藏的 314 题
+# 我收藏的 315 题
 
 |题号|题目|通过率|难度|收藏|
 |:-:|:-|:-: | :-: | :-: |
@@ -307,6 +307,7 @@
 |[1019](https://leetcode.com/problems/next-greater-node-in-linked-list/)|[Next Greater Node In Linked List](./Algorithms/1019.next-greater-node-in-linked-list)|56%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[1022](https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/)|[Sum of Root To Leaf Binary Numbers](./Algorithms/1022.sum-of-root-to-leaf-binary-numbers)|55%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |[1024](https://leetcode.com/problems/video-stitching/)|[Video Stitching](./Algorithms/1024.video-stitching)|47%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|[1025](https://leetcode.com/problems/divisor-game/)|[Divisor Game](./Algorithms/1025.divisor-game)|63%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |[1026](https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/)|[Maximum Difference Between Node and Ancestor](./Algorithms/1026.maximum-difference-between-node-and-ancestor)|59%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[1027](https://leetcode.com/problems/longest-arithmetic-sequence/)|[Longest Arithmetic Sequence](./Algorithms/1027.longest-arithmetic-sequence)|47%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[1028](https://leetcode.com/problems/recover-a-tree-from-preorder-traversal/)|[Recover a Tree From Preorder Traversal](./Algorithms/1028.recover-a-tree-from-preorder-traversal)|70%|Hard|[❤](https://leetcode.com/list/oussv5j)|
