@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 669,
-	"Updated": "2019-06-26T20:13:21.523666304+08:00",
+	"Updated": "2019-06-26T20:30:50.908382595+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 238,
+			"Solved": 239,
 			"Total": 251
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 180
 		},
 		"Total": {
-			"Solved": 826,
+			"Solved": 827,
 			"Total": 858
 		}
 	},
@@ -7885,7 +7885,7 @@
 			"ID": 655,
 			"Title": "Print Binary Tree",
 			"TitleSlug": "print-binary-tree",
-			"PassRate": "51%",
+			"PassRate": "52%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11245,7 +11245,7 @@
 			"ID": 935,
 			"Title": "Knight Dialer",
 			"TitleSlug": "knight-dialer",
-			"PassRate": "40%",
+			"PassRate": "41%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12327,7 +12327,7 @@
 			"TitleSlug": "divisor-game",
 			"PassRate": "63%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -12769,7 +12769,7 @@
 			"ID": 1062,
 			"Title": "Longest Repeating Substring",
 			"TitleSlug": "longest-repeating-substring",
-			"PassRate": "51%",
+			"PassRate": "50%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
