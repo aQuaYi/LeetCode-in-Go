@@ -11,21 +11,16 @@ import "github.com/aQuaYi/LeetCode-in-Go/kit"
 type TreeNode = kit.TreeNode
 
 func sumRootToLeaf(root *TreeNode) int {
-	res := 0
-	dfs(root, 0, &res)
-	return res
+	return dfs(root, 0)
 }
 
-func dfs(node *TreeNode, num int, res *int) {
-	num = num*2 + node.Val
-	if node.Left == nil && node.Right == nil {
-		*res += num
-		return
+func dfs(node *TreeNode, b int) int {
+	if node == nil {
+		return 0
 	}
-	if node.Left != nil {
-		dfs(node.Left, num, res)
+	b = b*2 + node.Val
+	if node.Left == node.Right { // both nil
+		return b
 	}
-	if node.Right != nil {
-		dfs(node.Right, num, res)
-	}
+	return dfs(node.Left, b) + dfs(node.Right, b)
 }
