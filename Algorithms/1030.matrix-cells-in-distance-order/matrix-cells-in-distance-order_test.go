@@ -96,7 +96,7 @@ func absBit(n int) int {
 	return (n ^ x) - x
 }
 
-func Benchmark_abs_bit(b *testing.B) {
+func Benchmark_absBit(b *testing.B) {
 	for i := 1; i < b.N; i++ {
 		for j := -limit; j <= limit; j++ {
 			absBit(j)
