@@ -1,31 +1,21 @@
 package problem1030
 
-func abs(n int) int {
-	y := n >> 63
-	return (n ^ y) - y
-}
-
-var tmp map[int][][]int = make(map[int][][]int)
-var result [10000][]int
-
 func allCellsDistOrder(R int, C int, r0 int, c0 int) [][]int {
-
-	for indexR := 0; indexR < R; indexR++ {
-		for indexC := 0; indexC < C; indexC++ {
-			index := abs(indexR-r0) + abs(indexC-c0)
-			tmp[index] = append(tmp[index], []int{indexR, indexC})
+	dist := [200][][]int{}
+	for r := 0; r < R; r++ {
+		for c := 0; c < C; c++ {
+			d := abs(r-r0) + abs(c-c0)
+			dist[d] = append(dist[d], []int{r, c})
 		}
 	}
-	indexResult := 0
-	for index := 0; index <= R+C; index++ {
-		val := tmp[index]
-		num := len(val)
-		end := indexResult + num
-		copy(result[indexResult:end], val)
-		indexResult = end
-
-		delete(tmp, index)
+	res := make([][]int, 0, R*C)
+	for d := 0; len(dist[d]) > 0; d++ {
+		res = append(res, dist[d]...)
 	}
+	return res
+}
 
-	return result[:indexResult]
+func abs(n int) int {
+	x := n >> 63
+	return (n ^ x) - x
 }
