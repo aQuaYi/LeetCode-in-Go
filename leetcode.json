@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 669,
-	"Updated": "2019-06-27T16:51:34.701326304+08:00",
+	"Updated": "2019-06-27T20:29:22.774308426+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 240,
+			"Solved": 241,
 			"Total": 251
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 180
 		},
 		"Total": {
-			"Solved": 828,
+			"Solved": 829,
 			"Total": 858
 		}
 	},
@@ -10201,7 +10201,7 @@
 			"ID": 848,
 			"Title": "Shifting Letters",
 			"TitleSlug": "shifting-letters",
-			"PassRate": "40%",
+			"PassRate": "41%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11749,7 +11749,7 @@
 			"ID": 977,
 			"Title": "Squares of a Sorted Array",
 			"TitleSlug": "squares-of-a-sorted-array",
-			"PassRate": "72%",
+			"PassRate": "71%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12387,7 +12387,7 @@
 			"TitleSlug": "matrix-cells-in-distance-order",
 			"PassRate": "65%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -12649,7 +12649,7 @@
 			"ID": 1052,
 			"Title": "Grumpy Bookstore Owner",
 			"TitleSlug": "grumpy-bookstore-owner",
-			"PassRate": "52%",
+			"PassRate": "51%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -13057,7 +13057,7 @@
 			"ID": 1086,
 			"Title": "High Five",
 			"TitleSlug": "high-five",
-			"PassRate": "76%",
+			"PassRate": "77%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": true,
