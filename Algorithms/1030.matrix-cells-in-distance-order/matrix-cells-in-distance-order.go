@@ -1,5 +1,7 @@
 package problem1030
 
+var res = [10000][]int{}
+
 func allCellsDistOrder(R int, C int, r0 int, c0 int) [][]int {
 	dist := [200][][]int{}
 	for r := 0; r < R; r++ {
@@ -8,14 +10,18 @@ func allCellsDistOrder(R int, C int, r0 int, c0 int) [][]int {
 			dist[d] = append(dist[d], []int{r, c})
 		}
 	}
-	res := make([][]int, 0, R*C)
+	begin, end := 0, 0
 	for d := 0; len(dist[d]) > 0; d++ {
-		res = append(res, dist[d]...)
+		end += len(dist[d])
+		copy(res[begin:end], dist[d])
+		begin = end
 	}
-	return res
+	return res[:end]
 }
 
 func abs(n int) int {
-	x := n >> 63
-	return (n ^ x) - x
+	if n < 0 {
+		return -n
+	}
+	return n
 }
