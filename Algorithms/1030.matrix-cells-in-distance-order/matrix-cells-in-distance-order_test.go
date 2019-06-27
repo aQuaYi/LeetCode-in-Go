@@ -80,3 +80,26 @@ func Benchmark_allCellsDistOrder(b *testing.B) {
 		}
 	}
 }
+
+var limit = 10000
+
+func Benchmark_abs_normal(b *testing.B) {
+	for i := 1; i < b.N; i++ {
+		for j := -limit; j <= limit; j++ {
+			abs(j)
+		}
+	}
+}
+
+func absBit(n int) int {
+	x := n >> 63
+	return (n ^ x) - x
+}
+
+func Benchmark_abs_bit(b *testing.B) {
+	for i := 1; i < b.N; i++ {
+		for j := -limit; j <= limit; j++ {
+			absBit(j)
+		}
+	}
+}
