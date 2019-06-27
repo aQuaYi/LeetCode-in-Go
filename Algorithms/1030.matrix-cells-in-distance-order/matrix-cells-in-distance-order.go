@@ -1,33 +1,29 @@
 package problem1030
 
-import "sort"
+var dr = []int{-1, 0, 0, 1}
+var dc = []int{0, -1, 1, 0}
 
 func allCellsDistOrder(R int, C int, r0 int, c0 int) [][]int {
-	d := func(point []int) int {
-		return dist(point[0], point[1], r0, c0)
-	}
 	RC := R * C
-	res := make([][]int, 0, RC)
-	for i := 0; i < R; i++ {
-		for j := 0; j < C; j++ {
-			res = append(res, []int{i, j})
-		}
-	}
+	res := make([][]int, 1, RC)
+	hasSeen := [10000]bool{}
+	res[0], hasSeen[r0*100+c0] = []int{r0, c0}, true
 
-	sort.SliceStable(res, func(i int, j int) bool {
-		return d(res[i]) < d(res[j])
-	})
+	b, e := 0, len(res)
+	for b < e {
+		for i := b; i < e; i++ {
+			pr, pc := res[i][0], res[i][1]
+			for k := 0; k < 4; k++ {
+				r, c := pr+dr[k], pc+dc[k]
+				if 0 <= r && r < R &&
+					0 <= c && c < C &&
+					!hasSeen[r*100+c] {
+					res, hasSeen[r*100+c] = append(res, []int{r, c}), true
+				}
+			}
+		}
+		b, e = e, len(res)
+	}
 
 	return res
-}
-
-func dist(r1, c1, r2, c2 int) int {
-	return abs(r1-r2) + abs(c1-c2)
-}
-
-func abs(a int) int {
-	if a < 0 {
-		return -a
-	}
-	return a
 }
