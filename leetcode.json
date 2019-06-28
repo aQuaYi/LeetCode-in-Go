@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 669,
-	"Updated": "2019-06-28T16:52:26.120312437+08:00",
+	"Updated": "2019-06-28T17:23:01.514341244+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 241,
+			"Solved": 242,
 			"Total": 251
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 180
 		},
 		"Total": {
-			"Solved": 829,
+			"Solved": 830,
 			"Total": 858
 		}
 	},
@@ -12423,7 +12423,7 @@
 			"TitleSlug": "moving-stones-until-consecutive",
 			"PassRate": "35%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
