@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 669,
-	"Updated": "2019-06-29T19:39:22.352083171+08:00",
+	"Updated": "2019-06-29T20:14:39.991395267+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 242,
+			"Solved": 243,
 			"Total": 251
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 180
 		},
 		"Total": {
-			"Solved": 830,
+			"Solved": 831,
 			"Total": 858
 		}
 	},
@@ -12471,7 +12471,7 @@
 			"TitleSlug": "valid-boomerang",
 			"PassRate": "37%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -13057,7 +13057,7 @@
 			"ID": 1086,
 			"Title": "High Five",
 			"TitleSlug": "high-five",
-			"PassRate": "77%",
+			"PassRate": "76%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": true,
