@@ -10,22 +10,14 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-<<<<<<< HEAD
 |**Accepted**|243|413|175|831|
-=======
-|**Accepted**|242|413|175|830|
->>>>>>> d723bc432c93215fd5a4b89d3797cf8b6e836a96
 |**Total**|251|427|180|858|
 
 ## 题解
 
 |题号|题目|通过率|难度|收藏|
 |:-:|:-|:-: | :-: | :-: |
-<<<<<<< HEAD
 |[1096](https://leetcode.com/problems/brace-expansion-ii/)| * Brace Expansion II|52%|Hard||
-=======
-|[1096](https://leetcode.com/problems/brace-expansion-ii/)| * Brace Expansion II :new: |51%|Hard||
->>>>>>> d723bc432c93215fd5a4b89d3797cf8b6e836a96
 |[1095](https://leetcode.com/problems/find-in-mountain-array/)| * Find in Mountain Array|32%|Hard||
 |[1094](https://leetcode.com/problems/car-pooling/)| * Car Pooling|57%|Medium||
 |[1093](https://leetcode.com/problems/statistics-from-a-large-sample/)| * Statistics from a Large Sample|41%|Medium||
