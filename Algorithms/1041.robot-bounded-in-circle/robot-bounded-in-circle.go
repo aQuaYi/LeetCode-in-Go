@@ -1,12 +1,13 @@
 package problem1041
 
 func isRobotBounded(instructions string) bool {
+	print(north, east, south, west)
 	r := newRobot()
 	for _, i := range instructions {
 		r.receive(i)
 	}
-	return (r.x == 0 && r.y == 0) ||
-		(r.d != north)
+	return (r.x == 0 && r.y == 0) || // 每轮都会回到原点，就永远会回到原点
+		(r.d != north) // 第一轮后，没有回到原点，但是方向改变，至多 4 轮后，还是会回到原点
 }
 
 type direction int
@@ -56,5 +57,5 @@ func (r *robot) turn(instruction rune) {
 	} else {
 		r.d--
 	}
-	r.d = r.d % 4
+	r.d = (r.d + 4) % 4
 }
