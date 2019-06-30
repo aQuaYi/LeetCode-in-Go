@@ -55,7 +55,7 @@ func (r *robot) turn(instruction rune) {
 	if instruction == 'R' {
 		r.d++
 	} else {
-		r.d--
+		r.d += 3
 	}
-	r.d = (r.d + 4) % 4
+	r.d %= 4
 }
