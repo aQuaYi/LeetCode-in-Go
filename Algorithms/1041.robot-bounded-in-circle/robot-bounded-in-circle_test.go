@@ -13,6 +13,11 @@ var tcs = []struct {
 }{
 
 	{
+		"GLRLLGLL",
+		true,
+	},
+
+	{
 		"GLGLGGLGL",
 		false,
 	},

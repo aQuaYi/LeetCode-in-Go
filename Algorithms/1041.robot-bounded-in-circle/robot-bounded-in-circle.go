@@ -12,5 +12,5 @@ func isRobotBounded(instructions string) bool {
 			r++
 		}
 	}
-	return g == 0 || l != r
+	return g == 0 || (l-r)%4 != 0
 }
