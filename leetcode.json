@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 669,
-	"Updated": "2019-06-30T18:42:43.686252123+08:00",
+	"Updated": "2019-06-30T19:38:50.958378827+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 243,
+			"Solved": 244,
 			"Total": 253
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 181
 		},
 		"Total": {
-			"Solved": 831,
+			"Solved": 832,
 			"Total": 862
 		}
 	},
@@ -4741,7 +4741,7 @@
 			"ID": 393,
 			"Title": "UTF-8 Validation",
 			"TitleSlug": "utf-8-validation",
-			"PassRate": "36%",
+			"PassRate": "35%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11677,7 +11677,7 @@
 			"ID": 971,
 			"Title": "Flip Binary Tree To Match Preorder Traversal",
 			"TitleSlug": "flip-binary-tree-to-match-preorder-traversal",
-			"PassRate": "43%",
+			"PassRate": "42%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12519,7 +12519,7 @@
 			"TitleSlug": "robot-bounded-in-circle",
 			"PassRate": "43%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
