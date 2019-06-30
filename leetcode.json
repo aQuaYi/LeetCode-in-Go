@@ -1,23 +1,23 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 669,
-	"Updated": "2019-06-29T20:20:30.563971869+08:00",
+	"Updated": "2019-06-30T18:42:43.686252123+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 243,
-			"Total": 251
+			"Total": 253
 		},
 		"Medium": {
 			"Solved": 413,
-			"Total": 427
+			"Total": 428
 		},
 		"Hard": {
 			"Solved": 175,
-			"Total": 180
+			"Total": 181
 		},
 		"Total": {
 			"Solved": 831,
-			"Total": 858
+			"Total": 862
 		}
 	},
 	"Problems": [
@@ -1081,7 +1081,7 @@
 			"ID": 88,
 			"Title": "Merge Sorted Array",
 			"TitleSlug": "merge-sorted-array",
-			"PassRate": "35%",
+			"PassRate": "36%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -1537,7 +1537,7 @@
 			"ID": 126,
 			"Title": "Word Ladder II",
 			"TitleSlug": "word-ladder-ii",
-			"PassRate": "17%",
+			"PassRate": "18%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -4105,7 +4105,7 @@
 			"ID": 340,
 			"Title": "Longest Substring with At Most K Distinct Characters",
 			"TitleSlug": "longest-substring-with-at-most-k-distinct-characters",
-			"PassRate": "39%",
+			"PassRate": "40%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -4741,7 +4741,7 @@
 			"ID": 393,
 			"Title": "UTF-8 Validation",
 			"TitleSlug": "utf-8-validation",
-			"PassRate": "35%",
+			"PassRate": "36%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -6529,7 +6529,7 @@
 			"ID": 542,
 			"Title": "01 Matrix",
 			"TitleSlug": "01-matrix",
-			"PassRate": "35%",
+			"PassRate": "36%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -7081,7 +7081,7 @@
 			"ID": 588,
 			"Title": "Design In-Memory File System",
 			"TitleSlug": "design-in-memory-file-system",
-			"PassRate": "39%",
+			"PassRate": "40%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -9745,7 +9745,7 @@
 			"ID": 810,
 			"Title": "Chalkboard XOR Game",
 			"TitleSlug": "chalkboard-xor-game",
-			"PassRate": "45%",
+			"PassRate": "44%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11677,7 +11677,7 @@
 			"ID": 971,
 			"Title": "Flip Binary Tree To Match Preorder Traversal",
 			"TitleSlug": "flip-binary-tree-to-match-preorder-traversal",
-			"PassRate": "42%",
+			"PassRate": "43%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11881,7 +11881,7 @@
 			"ID": 988,
 			"Title": "Smallest String Starting From Leaf",
 			"TitleSlug": "smallest-string-starting-from-leaf",
-			"PassRate": "46%",
+			"PassRate": "45%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12109,7 +12109,7 @@
 			"ID": 1007,
 			"Title": "Minimum Domino Rotations For Equal Row",
 			"TitleSlug": "minimum-domino-rotations-for-equal-row",
-			"PassRate": "47%",
+			"PassRate": "48%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12385,7 +12385,7 @@
 			"ID": 1030,
 			"Title": "Matrix Cells in Distance Order",
 			"TitleSlug": "matrix-cells-in-distance-order",
-			"PassRate": "65%",
+			"PassRate": "64%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12769,7 +12769,7 @@
 			"ID": 1062,
 			"Title": "Longest Repeating Substring",
 			"TitleSlug": "longest-repeating-substring",
-			"PassRate": "50%",
+			"PassRate": "51%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -13105,7 +13105,7 @@
 			"ID": 1090,
 			"Title": "Largest Values From Labels",
 			"TitleSlug": "largest-values-from-labels",
-			"PassRate": "55%",
+			"PassRate": "56%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -13183,6 +13183,126 @@
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 0,
+			"Title": "",
+			"TitleSlug": "",
+			"PassRate": "",
+			"Difficulty": "",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": false,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 0,
+			"Title": "",
+			"TitleSlug": "",
+			"PassRate": "",
+			"Difficulty": "",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": false,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 1099,
+			"Title": "Two Sum Less Than K",
+			"TitleSlug": "two-sum-less-than-k",
+			"PassRate": "65%",
+			"Difficulty": "Easy",
+			"IsAccepted": false,
+			"IsPaid": true,
+			"IsFavor": false,
+			"IsNew": false,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 1100,
+			"Title": "Find K-Length Substrings With No Repeated Characters",
+			"TitleSlug": "find-k-length-substrings-with-no-repeated-characters",
+			"PassRate": "71%",
+			"Difficulty": "Medium",
+			"IsAccepted": false,
+			"IsPaid": true,
+			"IsFavor": false,
+			"IsNew": false,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 1101,
+			"Title": "The Earliest Moment When Everyone Become Friends",
+			"TitleSlug": "the-earliest-moment-when-everyone-become-friends",
+			"PassRate": "59%",
+			"Difficulty": "Medium",
+			"IsAccepted": false,
+			"IsPaid": true,
+			"IsFavor": false,
+			"IsNew": false,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 1102,
+			"Title": "Path With Maximum Minimum Value",
+			"TitleSlug": "path-with-maximum-minimum-value",
+			"PassRate": "30%",
+			"Difficulty": "Medium",
+			"IsAccepted": false,
+			"IsPaid": true,
+			"IsFavor": false,
+			"IsNew": false,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 1103,
+			"Title": "Distribute Candies to People",
+			"TitleSlug": "distribute-candies-to-people",
+			"PassRate": "61%",
+			"Difficulty": "Easy",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 1104,
+			"Title": "Path In Zigzag Labelled Binary Tree",
+			"TitleSlug": "path-in-zigzag-labelled-binary-tree",
+			"PassRate": "69%",
+			"Difficulty": "Easy",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 1105,
+			"Title": "Filling Bookcase Shelves",
+			"TitleSlug": "filling-bookcase-shelves",
+			"PassRate": "44%",
+			"Difficulty": "Medium",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 1106,
+			"Title": "Parsing A Boolean Expression",
+			"TitleSlug": "parsing-a-boolean-expression",
+			"PassRate": "56%",
+			"Difficulty": "Hard",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
 			"HasNoGoOption": false
 		}
 	]
