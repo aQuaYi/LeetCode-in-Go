@@ -1,36 +1,23 @@
 package problem1042
 
-import "sort"
-
 func gardenNoAdj(N int, paths [][]int) []int {
+	connects := make([][]int, N)
 	for _, p := range paths {
-		if p[0] > p[1] {
-			p[0], p[1] = p[1], p[0]
-		}
+		i, j := p[0]-1, p[1]-1
+		connects[i] = append(connects[i], j)
+		connects[j] = append(connects[j], i)
 	}
-	sort.Slice(paths, func(i int, j int) bool {
-		if paths[i][0] == paths[j][0] {
-			return paths[i][1] < paths[j][1]
-		}
-		return paths[i][0] < paths[j][0]
-	})
 	res := make([]int, N)
-	res[0] = 1
-	for _, p := range paths {
-		x, y := p[0]-1, p[1]-1
-		if res[x] == 0 {
-			res[x], res[y] = 1, 2
-			continue
+	for i := 0; i < N; i++ {
+		isUsed := [5]bool{}
+		for _, j := range connects[i] {
+			isUsed[res[j]] = true
 		}
-		res[y] = next(res[x])
+		for color := 4; color >= 1; color-- {
+			if !isUsed[color] {
+				res[i] = color
+			}
+		}
 	}
-
 	return res
-}
-
-func next(i int) int {
-	if i == 4 {
-		return 1
-	}
-	return i + 1
 }
