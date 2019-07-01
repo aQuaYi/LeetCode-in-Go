@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 615,
-	"Updated": "2019-07-01T20:35:37.210703636+08:00",
+	"Updated": "2019-07-01T22:04:43.561169653+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 244,
+			"Solved": 245,
 			"Total": 253
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 181
 		},
 		"Total": {
-			"Solved": 832,
+			"Solved": 833,
 			"Total": 862
 		}
 	},
@@ -12531,9 +12531,9 @@
 			"TitleSlug": "flower-planting-with-no-adjacent",
 			"PassRate": "48%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -12997,7 +12997,7 @@
 			"ID": 1081,
 			"Title": "Smallest Subsequence of Distinct Characters",
 			"TitleSlug": "smallest-subsequence-of-distinct-characters",
-			"PassRate": "42%",
+			"PassRate": "43%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
