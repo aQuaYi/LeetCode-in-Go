@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 613,
-	"Updated": "2019-07-03T20:39:26.490355391+08:00",
+	"Updated": "2019-07-03T21:56:18.277034893+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 247,
@@ -6253,7 +6253,7 @@
 			"ID": 519,
 			"Title": "Random Flip Matrix",
 			"TitleSlug": "random-flip-matrix",
-			"PassRate": "32%",
+			"PassRate": "33%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,

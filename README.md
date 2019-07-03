@@ -3,6 +3,7 @@
 [![LeetCode 排名](https://img.shields.io/badge/aQuaYi-613-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
+ [![Go](https://img.shields.io/badge/Golang-1.12-blue.svg)](https://golang.google.cn)
 
 ## 进度
 
@@ -483,7 +484,7 @@
 |[0522](https://leetcode.com/problems/longest-uncommon-subsequence-ii/)|[Longest Uncommon Subsequence II](./Algorithms/0522.longest-uncommon-subsequence-ii)|32%|Medium||
 |[0521](https://leetcode.com/problems/longest-uncommon-subsequence-i/)|[Longest Uncommon Subsequence I](./Algorithms/0521.longest-uncommon-subsequence-i)|56%|Easy||
 |[0520](https://leetcode.com/problems/detect-capital/)|[Detect Capital](./Algorithms/0520.detect-capital)|52%|Easy||
-|[0519](https://leetcode.com/problems/random-flip-matrix/)|[Random Flip Matrix](./Algorithms/0519.random-flip-matrix)|32%|Medium||
+|[0519](https://leetcode.com/problems/random-flip-matrix/)|[Random Flip Matrix](./Algorithms/0519.random-flip-matrix)|33%|Medium||
 |[0518](https://leetcode.com/problems/coin-change-2/)|[Coin Change 2](./Algorithms/0518.coin-change-2)|43%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0517](https://leetcode.com/problems/super-washing-machines/)|[Super Washing Machines](./Algorithms/0517.super-washing-machines)|36%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0516](https://leetcode.com/problems/longest-palindromic-subsequence/)|[Longest Palindromic Subsequence](./Algorithms/0516.longest-palindromic-subsequence)|47%|Medium|[❤](https://leetcode.com/list/oussv5j)|

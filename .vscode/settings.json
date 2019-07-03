@@ -51,6 +51,7 @@
         "checked",
         "chromedp",
         "clean",
+        "codecov",
         "count",
         "ctaagt",
         "ctxt",

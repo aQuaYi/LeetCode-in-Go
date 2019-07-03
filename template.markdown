@@ -3,6 +3,7 @@
 [![LeetCode 排名](https://img.shields.io/badge/{{.Username}}-{{.Ranking}}-blue.svg)](https://leetcode.com/{{.Username}}/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
+ [![Go](https://img.shields.io/badge/Golang-1.12-blue.svg)](https://golang.google.cn)
 
 ## 进度
 
