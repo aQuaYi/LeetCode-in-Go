@@ -12,19 +12,21 @@ func longestStrChain(words []string) int {
 	res := 0
 	var dfs func(int, string)
 	dfs = func(count int, w1 string) {
+		res = max(res, count)
 		l := len(w1) + 1
-		if len(lengths[l]) == 0 {
-			res = max(res, count)
-			return
-		}
-		for _, w2 := range lengths[l] {
+		for i, w2 := range lengths[l] {
 			if isPredecessor(w1, w2) {
 				dfs(count+1, w2)
+				lengths[l][i] = ""
 			}
 		}
 	}
-	for _, w1 := range lengths[minLen] {
-		dfs(1, w1)
+	for i := 0; i < 17; i++ {
+		for _, w1 := range lengths[i] {
+			if w1 != "" {
+				dfs(1, w1)
+			}
+		}
 	}
 	return res
 }
