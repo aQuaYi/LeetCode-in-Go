@@ -1,54 +1,53 @@
 package problem1048
 
 func longestStrChain(words []string) int {
-	lengths := make([][]string, 18)
-	minLen := 18
-	for _, w := range words {
-		l := len(w)
-		minLen = min(minLen, l)
-		lengths[l] = append(lengths[l], w)
+	indexs := make([][]int, 17)
+	count := make([]int, len(words))
+	for i, word := range words {
+		l := len(word)
+		indexs[l] = append(indexs[l], i)
+		count[i] = 1
 	}
 
-	res := 0
-	var dfs func(int, string)
-	dfs = func(count int, w1 string) {
-		res = max(res, count)
-		l := len(w1) + 1
-		for i, w2 := range lengths[l] {
-			if isPredecessor(w1, w2) {
-				dfs(count+1, w2)
-				lengths[l][i] = ""
+	res := 1
+	for length := 1; length+1 <= 16; length++ {
+		for _, i := range indexs[length] {
+			for _, j := range indexs[length+1] {
+				if count[j] > count[i] {
+					// because of isPredecessor is expensive
+					continue
+				}
+				if isPredecessor(words[i], words[j]) {
+					count[j] = count[i] + 1
+				}
 			}
 		}
 	}
-	for i := 0; i < 17; i++ {
-		for _, w1 := range lengths[i] {
-			if w1 != "" {
-				dfs(1, w1)
-			}
-		}
+
+	for _, v := range count {
+		res = max(res, v)
 	}
 	return res
 }
 
 func isPredecessor(w1, w2 string) bool {
-	for i := 0; i < len(w2); i++ {
-		if w1[:i] == w2[:i] && w1[i:] == w2[i+1:] {
-			return true
+	n := len(w1)
+	diff := 0
+	i, j := 0, 0
+	for i < n && diff <= 1 {
+		if w1[i] != w2[j] {
+			diff++
+		} else {
+			i++
 		}
+		j++
 	}
-	return false
+	return diff == 1 ||
+		i == j // w1[:i]==w2[:i]
 }
 
 func max(a, b int) int {
 	if a > b {
-		return a
-	}
-	return b
-}
-
-func min(a, b int) int {
-	if a < b {
 		return a
 	}
 	return b
