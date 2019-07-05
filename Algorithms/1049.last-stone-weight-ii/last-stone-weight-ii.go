@@ -7,8 +7,8 @@ func lastStoneWeightII(stones []int) int {
 	for width := 1; width <= n; width++ {
 		for i := 1; i+width-1 <= n; i++ {
 			j := i + width - 1
-			dp[i][j] = min(abs(stones[i-1]-dp[i+1][j]),
-				abs(stones[j-1]-dp[i][j-1]))
+			dp[i][j] = 3000
+
 		}
 	}
 
