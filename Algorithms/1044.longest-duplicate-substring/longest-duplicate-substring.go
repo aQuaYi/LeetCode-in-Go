@@ -8,7 +8,23 @@ func longestDupSubstring(S string) string {
 		chars[b] = append(chars[b], i)
 	}
 
-	dfs = func()
+	alpha := numberify(S)
+	var dfs func(int)
+	dfs = func(b int) {
+		indexs := chars[b]
+		incIndexs := inc(indexs)
+		seen := [26]bool{}
+		for k := 0; k < len(indexs); k++ {
+			i := indexs[k]
+			c := alpha[i+1]
+			if seen[c] {
+				continue
+			}
+			next := intersect(incIndexs, chars[c])
+
+			seen[c] = true
+		}
+	}
 	res := ""
 	for c := 0; c < 26; c++ {
 		indexs := chars[c]
@@ -74,4 +90,12 @@ func min(a, b int) int {
 		return a
 	}
 	return b
+}
+
+func numberify(S string) []int {
+	res := make([]int, len(S))
+	for i, r := range S {
+		res[i] = int(r - 'a')
+	}
+	return res
 }
