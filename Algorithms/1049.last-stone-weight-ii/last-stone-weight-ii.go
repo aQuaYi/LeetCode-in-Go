@@ -1,27 +1,25 @@
 package problem1049
 
 func lastStoneWeightII(stones []int) int {
-	dp := [3001]bool{}
-	dp[0] = true
+	hasSum := [3001]bool{}
+	hasSum[0] = true
 	sum := 0
 	for _, s := range stones {
 		sum += s
 		for i := sum; i >= s; i-- {
-			// 把所有可能的 sum 组合都记录下来
-			dp[i] = dp[i] || dp[i-s]
+			// record all sum of any choose form stones
+			hasSum[i] = hasSum[i] || hasSum[i-s]
 		}
 	}
-	// 此时 sum 是 sum(stones)
-	// stones 分成两组后，重量分别是 part 和 sum-part
-	// 答案是 sum-part - part
-	// 最好的情况是 part = sum/2
-	// 如果不行的话，就看看 part-- 行不行
-	// 以此类推直到 part = 0
+	// now, sum is sum(stones)
+	// take stones to two group，weights are part and sum-part
+	// result is sum-part - part
+	// best is part = sum/2
+	// if not, check part--
+	// until part = 0
 	part := sum / 2
-	for ; part >= 0; part-- {
-		if dp[part] {
-			break
-		}
+	for part >= 0 && !hasSum[part] {
+		part--
 	}
 	return sum - part - part
 }
