@@ -1,49 +1,30 @@
 package problem1044
 
-import "math"
-
-// ref: https://leetcode.com/problems/longest-duplicate-substring/discuss/290871/Python-Binary-Search
 func longestDupSubstring(S string) string {
-	A := numberify(S)
-	mod := 1<<63 - 1
+	res := ""
 
-	test := func(L int) int {
-		p := int(math.Mod(math.Pow(26, float64(L)), float64(mod)))
-		cur := 0
-		for i := 0; i < L; i++ {
-			cur = (cur*26 + A[i]) % mod
-		}
-		seen := make(map[int]bool, len(S)-L)
-		seen[cur] = true
-		for i := L; i < len(S); i++ {
-			cur = (cur*26 + A[i] - A[i-L]*p) % mod
-			if seen[cur] {
-				return i - L + 1
+	isExist := func(L int) bool {
+		seen := make(map[string]bool, len(S)-L+2)
+		for i := 0; i+L <= len(S); i++ {
+			sub := S[i : i+L]
+			if seen[sub] {
+				res = sub
+				return true
 			}
-			seen[cur] = true
+			seen[sub] = true
 		}
-		return 0
+		return false
 	}
 
-	res, lo, hi := 0, 0, len(S)
+	lo, hi := 0, len(S)
 	for lo < hi {
 		mi := (lo + hi + 1) / 2
-		pos := test(mi)
-		if pos > 0 {
+		if isExist(mi) {
 			lo = mi
-			res = pos
 		} else {
 			hi = mi - 1
 		}
 	}
 
-	return S[res : res+lo]
-}
-
-func numberify(S string) []int {
-	res := make([]int, len(S))
-	for i, r := range S {
-		res[i] = int(r - 'a')
-	}
 	return res
 }
