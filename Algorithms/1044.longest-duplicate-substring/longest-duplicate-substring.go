@@ -7,41 +7,38 @@ func longestDupSubstring(S string) string {
 		b := int(r - 'a')
 		chars[b] = append(chars[b], i)
 	}
-
+	res := ""
 	alpha := numberify(S)
-	var dfs func(int)
-	dfs = func(b int) {
-		indexs := chars[b]
+	var dfs func(string, int, []int)
+	dfs = func(s string, b int, indexs []int) {
 		incIndexs := inc(indexs)
 		seen := [26]bool{}
-		for k := 0; k < len(indexs); k++ {
-			i := indexs[k]
+		for _, i := range indexs {
+			if i+1 >= n {
+				continue
+			}
 			c := alpha[i+1]
 			if seen[c] {
 				continue
 			}
 			next := intersect(incIndexs, chars[c])
-
+			if len(next) < 2 {
+				continue
+			}
+			t := s + string(c+'a')
+			if len(res) <= len(s) {
+				res = t
+			}
+			dfs(t, c, next)
 			seen[c] = true
 		}
 	}
-	res := ""
-	for c := 0; c < 26; c++ {
-		indexs := chars[c]
-		for i := 0; i < len(indexs); i++ {
-			if indexs[i]+1 == n {
-				continue
-			}
-			next := S[indexs[i]+1]
-			tmp := make([]int, 0, len(indexs))
-			for j := 0; j < len(indexs); j++ {
-				if indexs[j]+1 < n && next == S[indexs[j]+1] {
-					tmp = append(tmp, indexs[j]+1)
-				}
-			}
 
-		}
+	us := unique(S)
+	for _, b := range us {
+		dfs(string(b+'a'), b, chars[b])
 	}
+
 	return res
 }
 
@@ -60,10 +57,11 @@ func unique(S string) []int {
 }
 
 func inc(A []int) []int {
+	res := make([]int, len(A))
 	for i := range A {
-		A[i]++
+		res[i] = A[i] + 1
 	}
-	return A
+	return res
 }
 
 func intersect(A, B []int) []int {
