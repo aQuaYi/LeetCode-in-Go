@@ -1,93 +1,43 @@
 package problem1044
 
+import "math"
+
+// ref: https://leetcode.com/problems/longest-duplicate-substring/discuss/290871/Python-Binary-Search
 func longestDupSubstring(S string) string {
-	n := len(S)
-	chars := make([][]int, 26)
-	for i, r := range S {
-		b := int(r - 'a')
-		chars[b] = append(chars[b], i)
+	A := numberify(S)
+	mod := 1<<63 - 1
+
+	test := func(L int) int {
+		p := int(math.Mod(math.Pow(26, float64(L)), float64(mod)))
+		cur := 0
+		for i := 0; i < L; i++ {
+			cur = (cur*26 + A[i]) % mod
+		}
+		seen := make(map[int]bool, len(S)-L)
+		seen[cur] = true
+		for i := L; i < len(S); i++ {
+			cur = (cur*26 + A[i] - A[i-L]*p) % mod
+			if seen[cur] {
+				return i - L + 1
+			}
+			seen[cur] = true
+		}
+		return 0
 	}
-	res := ""
-	alpha := numberify(S)
-	var dfs func(string, int, []int)
-	dfs = func(s string, b int, indexs []int) {
-		incIndexs := inc(indexs)
-		seen := [26]bool{}
-		for _, i := range indexs {
-			if i+1 >= n {
-				continue
-			}
-			c := alpha[i+1]
-			if seen[c] {
-				continue
-			}
-			next := intersect(incIndexs, chars[c])
-			if len(next) < 2 {
-				continue
-			}
-			t := s + string(c+'a')
-			if len(res) <= len(s) {
-				res = t
-			}
-			dfs(t, c, next)
-			seen[c] = true
+
+	res, lo, hi := 0, 0, len(S)
+	for lo < hi {
+		mi := (lo + hi + 1) / 2
+		pos := test(mi)
+		if pos > 0 {
+			lo = mi
+			res = pos
+		} else {
+			hi = mi - 1
 		}
 	}
 
-	us := unique(S)
-	for _, b := range us {
-		dfs(string(b+'a'), b, chars[b])
-	}
-
-	return res
-}
-
-func unique(S string) []int {
-	res := make([]int, 0, len(S))
-	has := [26]bool{}
-	for _, r := range S {
-		b := int(r - 'a')
-		if has[b] {
-			continue
-		}
-		res = append(res, b)
-		has[b] = true
-	}
-	return res
-}
-
-func inc(A []int) []int {
-	res := make([]int, len(A))
-	for i := range A {
-		res[i] = A[i] + 1
-	}
-	return res
-}
-
-func intersect(A, B []int) []int {
-	m, n := len(A), len(B)
-	res := make([]int, 0, min(m, n))
-	i, j := 0, 0
-	for i < m && j < n {
-		switch {
-		case A[i] < B[j]:
-			i++
-		case A[i] > B[j]:
-			j++
-		default:
-			res = append(res, A[i])
-			i++
-			j++
-		}
-	}
-	return res
-}
-
-func min(a, b int) int {
-	if a < b {
-		return a
-	}
-	return b
+	return S[res : res+lo]
 }
 
 func numberify(S string) []int {
