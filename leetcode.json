@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 610,
-	"Updated": "2019-07-07T14:06:33.272315458+08:00",
+	"Updated": "2019-07-07T14:20:44.420809373+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 247,
+			"Solved": 248,
 			"Total": 253
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 181
 		},
 		"Total": {
-			"Solved": 838,
+			"Solved": 839,
 			"Total": 866
 		}
 	},
@@ -8269,7 +8269,7 @@
 			"ID": 687,
 			"Title": "Longest Univalue Path",
 			"TitleSlug": "longest-univalue-path",
-			"PassRate": "33%",
+			"PassRate": "34%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12639,7 +12639,7 @@
 			"TitleSlug": "height-checker",
 			"PassRate": "69%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -13321,7 +13321,7 @@
 			"ID": 1108,
 			"Title": "Defanging an IP Address",
 			"TitleSlug": "defanging-an-ip-address",
-			"PassRate": "94%",
+			"PassRate": "93%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
