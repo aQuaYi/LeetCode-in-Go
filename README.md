@@ -11,7 +11,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|248|415|176|839|
+|**Accepted**|248|416|176|840|
 |**Total**|253|432|181|866|
 
 ## 题解
@@ -19,8 +19,8 @@
 |题号|题目|通过率|难度|收藏|
 |:-:|:-|:-: | :-: | :-: |
 |[1111](https://leetcode.com/problems/maximum-nesting-depth-of-two-valid-parentheses-strings/)| * Maximum Nesting Depth of Two Valid Parentheses Strings :new: |80%|Medium||
-|[1110](https://leetcode.com/problems/delete-nodes-and-return-forest/)| * Delete Nodes And Return Forest :new: |55%|Medium||
-|[1109](https://leetcode.com/problems/corporate-flight-bookings/)| * Corporate Flight Bookings :new: |38%|Medium||
+|[1110](https://leetcode.com/problems/delete-nodes-and-return-forest/)| * Delete Nodes And Return Forest :new: |56%|Medium||
+|[1109](https://leetcode.com/problems/corporate-flight-bookings/)| * Corporate Flight Bookings :new: |39%|Medium||
 |[1108](https://leetcode.com/problems/defanging-an-ip-address/)| * Defanging an IP Address :new: |93%|Easy||
 |[1106](https://leetcode.com/problems/parsing-a-boolean-expression/)| * Parsing A Boolean Expression|59%|Hard||
 |[1105](https://leetcode.com/problems/filling-bookcase-shelves/)| * Filling Bookcase Shelves|53%|Medium||
@@ -44,7 +44,7 @@
 |[1071](https://leetcode.com/problems/greatest-common-divisor-of-strings/)| * Greatest Common Divisor of Strings|53%|Easy||
 |[1054](https://leetcode.com/problems/distant-barcodes/)| * Distant Barcodes|38%|Medium||
 |[1053](https://leetcode.com/problems/previous-permutation-with-one-swap/)| * Previous Permutation With One Swap|47%|Medium||
-|[1052](https://leetcode.com/problems/grumpy-bookstore-owner/)| * Grumpy Bookstore Owner|52%|Medium||
+|[1052](https://leetcode.com/problems/grumpy-bookstore-owner/)|[Grumpy Bookstore Owner](./Algorithms/1052.grumpy-bookstore-owner)|52%|Medium||
 |[1051](https://leetcode.com/problems/height-checker/)|[Height Checker](./Algorithms/1051.height-checker)|69%|Easy||
 |[1049](https://leetcode.com/problems/last-stone-weight-ii/)|[Last Stone Weight II](./Algorithms/1049.last-stone-weight-ii)|39%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[1048](https://leetcode.com/problems/longest-string-chain/)|[Longest String Chain](./Algorithms/1048.longest-string-chain)|47%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -358,7 +358,7 @@
 |[0725](https://leetcode.com/problems/split-linked-list-in-parts/)|[Split Linked List in Parts](./Algorithms/0725.split-linked-list-in-parts)|49%|Medium||
 |[0724](https://leetcode.com/problems/find-pivot-index/)|[Find Pivot Index](./Algorithms/0724.find-pivot-index)|41%|Easy||
 |[0722](https://leetcode.com/problems/remove-comments/)|[Remove Comments](./Algorithms/0722.remove-comments)|31%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|[0721](https://leetcode.com/problems/accounts-merge/)|[Accounts Merge](./Algorithms/0721.accounts-merge)|40%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|[0721](https://leetcode.com/problems/accounts-merge/)|[Accounts Merge](./Algorithms/0721.accounts-merge)|41%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0720](https://leetcode.com/problems/longest-word-in-dictionary/)|[Longest Word in Dictionary](./Algorithms/0720.longest-word-in-dictionary)|45%|Easy||
 |[0719](https://leetcode.com/problems/find-k-th-smallest-pair-distance/)|[Find K-th Smallest Pair Distance](./Algorithms/0719.find-k-th-smallest-pair-distance)|29%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0718](https://leetcode.com/problems/maximum-length-of-repeated-subarray/)|[Maximum Length of Repeated Subarray](./Algorithms/0718.maximum-length-of-repeated-subarray)|46%|Medium|[❤](https://leetcode.com/list/oussv5j)|

@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 610,
-	"Updated": "2019-07-07T14:23:20.596332582+08:00",
+	"Updated": "2019-07-07T15:33:25.973223891+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 248,
 			"Total": 253
 		},
 		"Medium": {
-			"Solved": 415,
+			"Solved": 416,
 			"Total": 432
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 181
 		},
 		"Total": {
-			"Solved": 839,
+			"Solved": 840,
 			"Total": 866
 		}
 	},
@@ -8677,7 +8677,7 @@
 			"ID": 721,
 			"Title": "Accounts Merge",
 			"TitleSlug": "accounts-merge",
-			"PassRate": "40%",
+			"PassRate": "41%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12651,7 +12651,7 @@
 			"TitleSlug": "grumpy-bookstore-owner",
 			"PassRate": "52%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -13249,7 +13249,7 @@
 			"ID": 1102,
 			"Title": "Path With Maximum Minimum Value",
 			"TitleSlug": "path-with-maximum-minimum-value",
-			"PassRate": "40%",
+			"PassRate": "41%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -13333,7 +13333,7 @@
 			"ID": 1109,
 			"Title": "Corporate Flight Bookings",
 			"TitleSlug": "corporate-flight-bookings",
-			"PassRate": "38%",
+			"PassRate": "39%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -13345,7 +13345,7 @@
 			"ID": 1110,
 			"Title": "Delete Nodes And Return Forest",
 			"TitleSlug": "delete-nodes-and-return-forest",
-			"PassRate": "55%",
+			"PassRate": "56%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
