@@ -2,19 +2,22 @@ package problem1052
 
 func maxSatisfied(customers []int, grumpy []int, X int) int {
 	n := len(customers)
-	// s := make([]int, n+1)
-	unsatisfying := make([]int, n+1)
-	sum, satisfying := 0, 0
+	sum := 0
+	// dis[i] is all dissatisfied customers in first i minutes
+	dis := make([]int, n+1)
 	for i := 1; i <= n; i++ {
 		sum += customers[i-1]
-		unsatisfying[i] = unsatisfying[i-1] + customers[i-1]*grumpy[i-1]
-		satisfying = sum - unsatisfying[i]
+		dis[i] = dis[i-1] + customers[i-1]*grumpy[i-1]
 	}
-	maxUnsatisfying := 0
+
+	maxDisInX := 0
 	for i := X; i <= n; i++ {
-		maxUnsatisfying = max(maxUnsatisfying, unsatisfying[i]-unsatisfying[i-X])
+		maxDisInX = max(maxDisInX, dis[i]-dis[i-X])
 	}
-	return satisfying + maxUnsatisfying
+
+	satisfied := sum - dis[n]
+
+	return satisfied + maxDisInX
 }
 
 func max(a, b int) int {
