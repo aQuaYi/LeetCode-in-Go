@@ -7,6 +7,9 @@ func maxSatisfied(customers []int, grumpy []int, X int) int {
 		satisfied += customers[i] * (1 - grumpy[i])
 		dis += customers[i] * grumpy[i]
 		if i-X >= 0 {
+			// NOTICE: len(A[i-X+1:i+1]) = X
+			// for keeping dis's length is X
+			// subscrip A[i-X]*grumpy[i-X]
 			dis -= customers[i-X] * grumpy[i-X]
 		}
 		maxDis = max(maxDis, dis)
