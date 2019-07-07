@@ -9,10 +9,13 @@ import (
 // tcs is testcase slice
 var tcs = []struct {
 	heights []int
-	ans int
+	ans     int
 }{
 
-
+	{
+		[]int{1, 1, 4, 2, 1, 3},
+		3,
+	},
 
 	// 可以有多个 testcase
 }
