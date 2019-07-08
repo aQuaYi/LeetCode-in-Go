@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 598,
-	"Updated": "2019-07-08T19:45:28.439543541+08:00",
+	"Updated": "2019-07-08T20:05:24.01874899+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 248,
 			"Total": 253
 		},
 		"Medium": {
-			"Solved": 416,
+			"Solved": 417,
 			"Total": 432
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 181
 		},
 		"Total": {
-			"Solved": 840,
+			"Solved": 841,
 			"Total": 866
 		}
 	},
@@ -12663,7 +12663,7 @@
 			"TitleSlug": "previous-permutation-with-one-swap",
 			"PassRate": "47%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -13345,7 +13345,7 @@
 			"ID": 1110,
 			"Title": "Delete Nodes And Return Forest",
 			"TitleSlug": "delete-nodes-and-return-forest",
-			"PassRate": "58%",
+			"PassRate": "59%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
