@@ -5,13 +5,15 @@ func prevPermOpt1(A []int) []int {
 	stack, top := make([]int, n), 0
 	stack[top] = 0
 
-	for i := 1; i < n; i++ {
+	for i := n - 1; i >= 0; i-- {
 		if A[i] <= A[stack[top]] {
 			top++
 			stack[top] = i
 			continue
 		}
-		for top-1 >= 0 && A[i] > A[stack[top-1]] {
+		for top-1 >= 0 &&
+			A[stack[top]] < A[stack[top-1]] &&
+			A[stack[top-1]] < A[i] {
 			top--
 		}
 		j := stack[top]
