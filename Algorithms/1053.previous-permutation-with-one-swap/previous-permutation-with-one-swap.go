@@ -3,9 +3,9 @@ package problem1053
 func prevPermOpt1(A []int) []int {
 	n := len(A)
 	stack, top := make([]int, n), 0
-	stack[top] = 0
+	stack[top] = n - 1
 
-	for i := n - 1; i >= 0; i-- {
+	for i := n - 2; i >= 0; i-- {
 		if A[i] <= A[stack[top]] {
 			top++
 			stack[top] = i
