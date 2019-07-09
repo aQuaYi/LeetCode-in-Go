@@ -6,30 +6,30 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func Test_SumRange(t *testing.T) {
+var nums = []int{1, 3, 5}
+var numsnil = []int{}
+
+func Test_NumArray(t *testing.T) {
 	ast := assert.New(t)
+	numArray := Constructor(nums)
 
-	nums := []int{1, 3, 5}
+	ast.Equal(9, numArray.SumRange(0, 2))
+	numArray.Update(1, 2)
+	ast.Equal(8, numArray.SumRange(0, 2))
+	ast.Equal(7, numArray.SumRange(1, 2))
+	ast.Equal(1, numArray.SumRange(0, 0))
 
-	na := Constructor(nums)
+	numArray1 := Constructor(numsnil)
+	ast.Nil(numArray1.root)
 
-	ast.Equal(9, na.SumRange(0, 2), "update 前，SumRange(0, 2)")
-
-	na.Update(1, 2)
-
-	ast.Equal(8, na.SumRange(0, 2), "update 后，SumRange(0, 2)")
 }
 
-func Test_SumRange_2(t *testing.T) {
-	ast := assert.New(t)
-
-	nums := []int{-1}
-
-	na := Constructor(nums)
-
-	ast.Equal(-1, na.SumRange(0, 0), "update 前，SumRange(0, 0)")
-
-	na.Update(0, 1)
-
-	ast.Equal(1, na.SumRange(0, 0), "update 后，SumRange(0, 2)")
+func Benchmark_NumArray(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		numArray := Constructor(nums)
+		numArray.SumRange(0, 2)
+		numArray.Update(1, 2)
+		numArray.SumRange(0, 2)
+		numArray.SumRange(1, 2)
+	}
 }
