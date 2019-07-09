@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 597,
-	"Updated": "2019-07-09T19:49:17.40893458+08:00",
+	"Updated": "2019-07-09T23:24:39.334340367+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 248,
 			"Total": 253
 		},
 		"Medium": {
-			"Solved": 417,
+			"Solved": 418,
 			"Total": 432
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 181
 		},
 		"Total": {
-			"Solved": 841,
+			"Solved": 842,
 			"Total": 866
 		}
 	},
@@ -3037,7 +3037,7 @@
 			"ID": 251,
 			"Title": "Flatten 2D Vector",
 			"TitleSlug": "flatten-2d-vector",
-			"PassRate": "43%",
+			"PassRate": "44%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -12675,9 +12675,9 @@
 			"TitleSlug": "distant-barcodes",
 			"PassRate": "38%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -12769,7 +12769,7 @@
 			"ID": 1062,
 			"Title": "Longest Repeating Substring",
 			"TitleSlug": "longest-repeating-substring",
-			"PassRate": "51%",
+			"PassRate": "50%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
