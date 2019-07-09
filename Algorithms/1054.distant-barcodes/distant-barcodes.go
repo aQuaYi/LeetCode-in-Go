@@ -1,15 +1,11 @@
 package problem1054
 
+import "sort"
+
 func rearrangeBarcodes(A []int) []int {
 	n := len(A)
-	for i := 1; i < n; i++ {
-		if A[i] != A[i-1] {
-			continue
-		}
-		j := n - 1
-		for A[j] == A[i] {
-			j--
-		}
+	sort.Ints(A)
+	for i, j := 1, (n-1)/2*2; i < j; i, j = i+2, j-2 {
 		A[i], A[j] = A[j], A[i]
 	}
 	return A
