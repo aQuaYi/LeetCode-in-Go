@@ -20,7 +20,3 @@ Note:
 
 1. The array is only modifiable by the update function.
 1. You may assume the number of calls to update and sumRange function is distributed evenly.
-
-## 解题思路
-
-见程序注释
