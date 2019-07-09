@@ -3,25 +3,30 @@ package problem1054
 func rearrangeBarcodes(A []int) []int {
 	n := len(A)
 
-	// odds in left, evens in right
-	i, j := 0, n-1
-	for i < j {
-		if A[i]%2 == 0 {
-			A[i], A[j] = A[j], A[i]
-			j--
-		} else {
-			i++
+	count := [10001]int{}
+	max, maxA := 0, 0
+	for _, a := range A {
+		count[a]++
+		if max < count[a] {
+			max, maxA = count[a], a
 		}
 	}
-	i, j = 0, n/2*2-1
-	if A[n/2]%2 == 1 {
-		i, j = 1, n-1
-	}
-	for i < j {
-		A[i], A[j] = A[j], A[i]
-		i += 2
-		j -= 2
+
+	res := make([]int, n)
+	for i := 0; i < max*2; i += 2 {
+		res[i] = maxA
 	}
 
-	return A
+	i := 1
+	for _, a := range A {
+		if a == maxA {
+			continue
+		}
+		for res[i] != 0 {
+			i++
+		}
+		res[i] = a
+	}
+
+	return res
 }
