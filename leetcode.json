@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 596,
-	"Updated": "2019-07-10T19:18:31.633079573+08:00",
+	"Updated": "2019-07-10T19:54:04.947331889+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 248,
+			"Solved": 249,
 			"Total": 253
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 181
 		},
 		"Total": {
-			"Solved": 842,
+			"Solved": 843,
 			"Total": 866
 		}
 	},
@@ -913,7 +913,7 @@
 			"ID": 74,
 			"Title": "Search a 2D Matrix",
 			"TitleSlug": "search-a-2d-matrix",
-			"PassRate": "34%",
+			"PassRate": "35%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -4297,7 +4297,7 @@
 			"ID": 356,
 			"Title": "Line Reflection",
 			"TitleSlug": "line-reflection",
-			"PassRate": "31%",
+			"PassRate": "30%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -12879,7 +12879,7 @@
 			"TitleSlug": "greatest-common-divisor-of-strings",
 			"PassRate": "53%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
