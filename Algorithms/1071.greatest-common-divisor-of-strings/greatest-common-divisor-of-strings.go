@@ -7,9 +7,8 @@ func gcdOfStrings(s1, s2 string) string {
 		s1, s2 = s2, s1
 	}
 	len1, len2 := len(s1), len(s2)
-	max := len2 / 2
 	res := ""
-	for p := 1; p <= max; p++ {
+	for p := 1; p <= len2; p++ {
 		if len2%p != 0 || len1%(len2/p) != 0 {
 			continue
 		}
