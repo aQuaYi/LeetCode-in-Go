@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 596,
-	"Updated": "2019-07-10T19:54:04.947331889+08:00",
+	"Updated": "2019-07-10T20:25:43.709468068+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 249,
@@ -4297,7 +4297,7 @@
 			"ID": 356,
 			"Title": "Line Reflection",
 			"TitleSlug": "line-reflection",
-			"PassRate": "30%",
+			"PassRate": "31%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -12457,7 +12457,7 @@
 			"ID": 1036,
 			"Title": "Escape a Large Maze",
 			"TitleSlug": "escape-a-large-maze",
-			"PassRate": "36%",
+			"PassRate": "35%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12881,7 +12881,7 @@
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},

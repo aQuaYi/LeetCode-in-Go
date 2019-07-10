@@ -1,4 +1,4 @@
-# 我收藏的 321 题
+# 我收藏的 322 题
 
 |题号|题目|通过率|难度|收藏|
 |:-:|:-|:-: | :-: | :-: |
@@ -323,3 +323,4 @@
 |[1048](https://leetcode.com/problems/longest-string-chain/)|[Longest String Chain](./Algorithms/1048.longest-string-chain)|47%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[1049](https://leetcode.com/problems/last-stone-weight-ii/)|[Last Stone Weight II](./Algorithms/1049.last-stone-weight-ii)|39%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[1054](https://leetcode.com/problems/distant-barcodes/)|[Distant Barcodes](./Algorithms/1054.distant-barcodes)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|[1071](https://leetcode.com/problems/greatest-common-divisor-of-strings/)|[Greatest Common Divisor of Strings](./Algorithms/1071.greatest-common-divisor-of-strings)|53%|Easy|[❤](https://leetcode.com/list/oussv5j)|

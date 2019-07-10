@@ -3,22 +3,19 @@ package problem1071
 import "strings"
 
 func gcdOfStrings(s1, s2 string) string {
-	if len(s1) < len(s2) {
-		s1, s2 = s2, s1
+	if len(s1) > len(s2) {
+		return gcd(s1, s2)
 	}
-	len1, len2 := len(s1), len(s2)
-	res := ""
-	for p := 1; p <= len2; p++ {
-		if len2%p != 0 || len1%(len2/p) != 0 {
-			continue
-		}
-		tmp := s2[:len2/p]
-		if s2 == strings.Repeat(tmp, p) &&
-			s1 == strings.Repeat(tmp, len1*p/len2) {
-			res = tmp
-			break
-		}
-	}
+	return gcd(s2, s1)
+}
 
-	return res
+func gcd(s1, s2 string) string {
+	l1, l2 := len(s1), len(s2)
+	if l1%l2 == 0 {
+		if s1 == strings.Repeat(s2, l1/l2) {
+			return s2
+		}
+		return ""
+	}
+	return gcd(s2, s1[l1/l2*l2:])
 }
