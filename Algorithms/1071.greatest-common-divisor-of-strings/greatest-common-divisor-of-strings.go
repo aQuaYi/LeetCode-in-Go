@@ -6,16 +6,16 @@ func gcdOfStrings(s1, s2 string) string {
 	if len(s1) < len(s2) {
 		s1, s2 = s2, s1
 	}
-	l1, l2 := len(s1), len(s2)
-	max := l2 / 2
+	len1, len2 := len(s1), len(s2)
+	max := len2 / 2
 	res := ""
-	for i := 1; i <= max; i++ {
-		if l2%i != 0 || l1%i != 0 {
+	for p := 1; p <= max; p++ {
+		if len2%p != 0 || len1%(len2/p) != 0 {
 			continue
 		}
-		tmp := s2[:l2/i]
-		if s2 == strings.Repeat(tmp, i) &&
-			s1 == strings.Repeat(tmp, l1/i) {
+		tmp := s2[:len2/p]
+		if s2 == strings.Repeat(tmp, p) &&
+			s1 == strings.Repeat(tmp, len1*p/len2) {
 			res = tmp
 			break
 		}
