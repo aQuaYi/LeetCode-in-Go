@@ -2,19 +2,22 @@ package problem1072
 
 import "strings"
 
-func maxEqualRowsAfterFlips(matrix [][]int) int {
+func maxEqualRowsAfterFlips(A [][]int) int {
 	count := make(map[string]int, 300)
-	xor := make(map[string]string, 300)
-	for _, m := range matrix {
-		a, b := convert(m)
-		count[a]++
-		xor[a] = b
+	var sb strings.Builder
+	for _, r := range A {
+		sb.Reset()
+		r0 := r[0]
+		for _, x := range r {
+			sb.WriteByte(byte(x ^ r0 + '0'))
+		}
+		count[sb.String()]++
 	}
 
 	res := 0
 
-	for a, c := range count {
-		res = max(res, c+count[xor[a]])
+	for _, c := range count {
+		res = max(res, c)
 	}
 
 	return res
@@ -25,13 +28,4 @@ func max(a, b int) int {
 		return a
 	}
 	return b
-}
-
-func convert(nums []int) (string, string) {
-	var x, xor strings.Builder
-	for _, n := range nums {
-		x.WriteByte(byte(n + '0'))
-		xor.WriteByte(byte(1 - n + '0'))
-	}
-	return x.String(), xor.String()
 }
