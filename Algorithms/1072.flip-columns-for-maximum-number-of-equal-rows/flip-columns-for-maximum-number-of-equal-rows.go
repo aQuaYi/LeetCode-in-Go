@@ -6,12 +6,12 @@ func maxEqualRowsAfterFlips(A [][]int) int {
 	count := make(map[string]int, 300)
 	var sb strings.Builder
 	for _, r := range A {
-		sb.Reset()
 		r0 := r[0]
 		for _, x := range r {
 			sb.WriteByte(byte(x ^ r0 + '0'))
 		}
 		count[sb.String()]++
+		sb.Reset()
 	}
 
 	res := 0
