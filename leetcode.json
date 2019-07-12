@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 588,
-	"Updated": "2019-07-12T19:46:50.305397753+08:00",
+	"Updated": "2019-07-12T20:42:24.791388303+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 250,
 			"Total": 253
 		},
 		"Medium": {
-			"Solved": 419,
+			"Solved": 420,
 			"Total": 432
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 181
 		},
 		"Total": {
-			"Solved": 845,
+			"Solved": 846,
 			"Total": 866
 		}
 	},
@@ -481,7 +481,7 @@
 			"ID": 38,
 			"Title": "Count and Say",
 			"TitleSlug": "count-and-say",
-			"PassRate": "40%",
+			"PassRate": "41%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12903,9 +12903,9 @@
 			"TitleSlug": "adding-two-negabinary-numbers",
 			"PassRate": "31%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
