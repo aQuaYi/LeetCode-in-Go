@@ -20,8 +20,8 @@ func addNegabinary(A, B []int) []int {
 	res = reverse(res)
 
 	// cut leading zero
-	i, m := 0, len(res)
-	for i+1 < m && res[i] == 0 {
+	i, end := 0, len(res)-1
+	for i < end && res[i] == 0 {
 		i++
 	}
 	return res[i:]
