@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 591,
-	"Updated": "2019-07-12T17:04:37.98446159+08:00",
+	"Updated": "2019-07-12T17:17:26.900353666+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 249,
+			"Solved": 250,
 			"Total": 253
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 181
 		},
 		"Total": {
-			"Solved": 844,
+			"Solved": 845,
 			"Total": 866
 		}
 	},
@@ -12963,7 +12963,7 @@
 			"TitleSlug": "occurrences-after-bigram",
 			"PassRate": "66%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
