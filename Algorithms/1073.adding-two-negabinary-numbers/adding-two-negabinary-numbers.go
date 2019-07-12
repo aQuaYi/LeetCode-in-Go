@@ -32,7 +32,12 @@ func addNegabinary(A, B []int) []int {
 		res = append(res, 1, 1)
 	}
 
-	return reverse(res)
+	res = reverse(res)
+	i, m := 0, len(res)
+	for i+1 < m && res[i] == 0 {
+		i++
+	}
+	return res[i:]
 }
 
 func reverse(A []int) []int {
