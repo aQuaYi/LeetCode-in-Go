@@ -1,38 +1,25 @@
 package problem1073
 
 func addNegabinary(A, B []int) []int {
-	A, B = reverse(A), reverse(B)
-	if len(A) < len(B) {
-		A, B = B, A
-	}
-	res := make([]int, 0, len(A)+2)
+	i, j := len(A)-1, len(B)-1
+	res := make([]int, 0, i+j)
 	carry := 0
-	n := len(B)
-	for i, a := range A {
-		res = append(res, a)
-		if i < n {
-			res[i] += B[i]
+	for i >= 0 || j >= 0 || carry != 0 {
+		if i >= 0 {
+			carry += A[i]
+			i--
 		}
-		res[i] += carry
-		carry = 0
-		switch res[i] {
-		case -1:
-			res[i], carry = 1, 1
-		case 2:
-			res[i], carry = 0, -1
-		case 3:
-			res[i], carry = 1, -1
+		if j >= 0 {
+			carry += B[j]
+			j--
 		}
-	}
-
-	switch carry {
-	case 1:
-		res = append(res, 1)
-	case -1:
-		res = append(res, 1, 1)
+		res = append(res, carry&1)
+		carry = -(carry >> 1)
 	}
 
 	res = reverse(res)
+
+	// cut leading zero
 	i, m := 0, len(res)
 	for i+1 < m && res[i] == 0 {
 		i++
