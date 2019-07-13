@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 588,
-	"Updated": "2019-07-13T21:08:01.507144741+08:00",
+	"Updated": "2019-07-13T23:17:39.713625926+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 250,
@@ -12,11 +12,11 @@
 			"Total": 432
 		},
 		"Hard": {
-			"Solved": 176,
+			"Solved": 177,
 			"Total": 181
 		},
 		"Total": {
-			"Solved": 846,
+			"Solved": 847,
 			"Total": 866
 		}
 	},
@@ -12013,7 +12013,7 @@
 			"ID": 999,
 			"Title": "Available Captures for Rook",
 			"TitleSlug": "available-captures-for-rook",
-			"PassRate": "65%",
+			"PassRate": "66%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12915,7 +12915,7 @@
 			"TitleSlug": "number-of-submatrices-that-sum-to-target",
 			"PassRate": "58%",
 			"Difficulty": "Hard",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
