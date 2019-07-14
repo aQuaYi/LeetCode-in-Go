@@ -1,4 +1,4 @@
-# 我收藏的 324 题
+# 我收藏的 325 题
 
 |题号|题目|通过率|难度|收藏|
 |:-:|:-|:-: | :-: | :-: |
@@ -326,3 +326,4 @@
 |[1071](https://leetcode.com/problems/greatest-common-divisor-of-strings/)|[Greatest Common Divisor of Strings](./Algorithms/1071.greatest-common-divisor-of-strings)|53%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |[1072](https://leetcode.com/problems/flip-columns-for-maximum-number-of-equal-rows/)|[Flip Columns For Maximum Number of Equal Rows](./Algorithms/1072.flip-columns-for-maximum-number-of-equal-rows)|57%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[1073](https://leetcode.com/problems/adding-two-negabinary-numbers/)|[Adding Two Negabinary Numbers](./Algorithms/1073.adding-two-negabinary-numbers)|31%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|[1074](https://leetcode.com/problems/number-of-submatrices-that-sum-to-target/)|[Number of Submatrices That Sum to Target](./Algorithms/1074.number-of-submatrices-that-sum-to-target)|58%|Hard|[❤](https://leetcode.com/list/oussv5j)|
