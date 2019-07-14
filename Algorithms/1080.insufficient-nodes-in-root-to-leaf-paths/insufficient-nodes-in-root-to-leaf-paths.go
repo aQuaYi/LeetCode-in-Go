@@ -22,32 +22,29 @@ func sufficientSubset(root *TreeNode, limit int) *TreeNode {
 }
 
 func dfs(node *TreeNode, pre, limit int) int {
-	if node == nil {
-		return 0
+	if node.Left == nil && node.Right == nil {
+		return node.Val
 	}
 
 	pre += node.Val
-	l := dfs(node.Left, pre, limit)
-	if pre+l < limit {
-		node.Left = nil
-	}
-	r := dfs(node.Right, pre, limit)
-	if pre+r < limit {
-		node.Right = nil
+
+	l, r := math.MinInt64, math.MinInt64
+
+	if node.Left != nil {
+		l = dfs(node.Left, pre, limit)
+		if pre+l < limit {
+			node.Left = nil
+		}
 	}
 
-	max := math.MinInt64
-	if node.Left != nil && max < l {
-		max = l
-	}
-	if node.Right != nil && max < r {
-		max = r
+	if node.Right != nil {
+		r = dfs(node.Right, pre, limit)
+		if pre+r < limit {
+			node.Right = nil
+		}
 	}
 
-	if max == math.MinInt64 {
-		return node.Val
-	}
-	return max + node.Val
+	return max(l, r) + node.Val
 }
 
 func max(a, b int) int {
