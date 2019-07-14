@@ -3,55 +3,36 @@ package problem1081
 import "strings"
 
 func smallestSubsequence(text string) string {
-	rec := make([][]int, 26)
-	count := 0
+	n := len(text)
+
+	last := [26]int{}
 	for i, b := range text {
-		c := b - 'a'
-		rec[c] = append(rec[c], i)
-		if len(rec[c]) == 1 {
-			count++
-		}
+		last[b-'a'] = i
 	}
 
-	clean := func(flag int) {
-		for i := 0; i < 26; i++ {
-			if len(rec[i]) == 0 {
-				continue
-			}
-			j := 0
-			for j < len(rec[i]) && rec[i][j] < flag {
-				j++
-			}
-			rec[i] = rec[i][j:]
+	stack, top := make([]int, n), -1
+	hasSeen := [26]bool{}
+	for i := 0; i < n; i++ {
+		c := int(text[i] - 'a')
+		if hasSeen[c] {
+			continue
 		}
-	}
-
-	beforeAll := func(index int) bool {
-		ok := true
-		for i := 0; i < 26 && ok; i++ {
-			if len(rec[i]) == 0 {
-				continue
-			}
-			ok = index <= rec[i][len(rec[i])-1]
+		for top >= 0 &&
+			stack[top] > c &&
+			i < last[stack[top]] {
+			pop := stack[top]
+			top--
+			hasSeen[pop] = false
 		}
-		return ok
+		top++
+		stack[top] = c
+		hasSeen[c] = true
 	}
 
 	var sb strings.Builder
-	for i := 0; i < count; i++ {
-		for j := 0; j < 26; j++ {
-			if len(rec[j]) == 0 {
-				continue
-			}
-			index := rec[j][0]
-			if beforeAll(index) {
-				sb.WriteByte(byte(j + 'a'))
-				rec[j] = nil
-				clean(index)
-				break
-			}
-		}
+	for i := 0; i <= top; i++ {
+		c := byte(stack[i] + 'a')
+		sb.WriteByte(c)
 	}
-
 	return sb.String()
 }
