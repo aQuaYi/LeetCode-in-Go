@@ -1,23 +1,23 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 588,
-	"Updated": "2019-07-14T11:37:52.849115555+08:00",
+	"Updated": "2019-07-14T12:26:29.744467062+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 251,
-			"Total": 253
+			"Total": 254
 		},
 		"Medium": {
-			"Solved": 420,
-			"Total": 432
+			"Solved": 421,
+			"Total": 434
 		},
 		"Hard": {
 			"Solved": 177,
-			"Total": 181
+			"Total": 182
 		},
 		"Total": {
-			"Solved": 848,
-			"Total": 866
+			"Solved": 849,
+			"Total": 870
 		}
 	},
 	"Problems": [
@@ -697,7 +697,7 @@
 			"ID": 56,
 			"Title": "Merge Intervals",
 			"TitleSlug": "merge-intervals",
-			"PassRate": "35%",
+			"PassRate": "36%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12061,7 +12061,7 @@
 			"ID": 1003,
 			"Title": "Check If Word Is Valid After Substitutions",
 			"TitleSlug": "check-if-word-is-valid-after-substitutions",
-			"PassRate": "52%",
+			"PassRate": "51%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12805,7 +12805,7 @@
 			"ID": 1065,
 			"Title": "Index Pairs of a String",
 			"TitleSlug": "index-pairs-of-a-string",
-			"PassRate": "57%",
+			"PassRate": "58%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -12975,9 +12975,9 @@
 			"TitleSlug": "letter-tile-possibilities",
 			"PassRate": "76%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -13465,7 +13465,7 @@
 			"ID": 1120,
 			"Title": "Maximum Average Subtree",
 			"TitleSlug": "maximum-average-subtree",
-			"PassRate": "60%",
+			"PassRate": "59%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -13483,6 +13483,54 @@
 			"IsPaid": true,
 			"IsFavor": false,
 			"IsNew": false,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 1122,
+			"Title": "Relative Sort Array",
+			"TitleSlug": "relative-sort-array",
+			"PassRate": "67%",
+			"Difficulty": "Easy",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 1123,
+			"Title": "Lowest Common Ancestor of Deepest Leaves",
+			"TitleSlug": "lowest-common-ancestor-of-deepest-leaves",
+			"PassRate": "62%",
+			"Difficulty": "Medium",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 1124,
+			"Title": "Longest Well-Performing Interval",
+			"TitleSlug": "longest-well-performing-interval",
+			"PassRate": "14%",
+			"Difficulty": "Medium",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 1125,
+			"Title": "Smallest Sufficient Team",
+			"TitleSlug": "smallest-sufficient-team",
+			"PassRate": "22%",
+			"Difficulty": "Hard",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
 			"HasNoGoOption": false
 		}
 	]
