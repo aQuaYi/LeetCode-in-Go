@@ -1,6 +1,10 @@
 package problem1080
 
-import "github.com/aQuaYi/LeetCode-in-Go/kit"
+import (
+	"math"
+
+	"github.com/aQuaYi/LeetCode-in-Go/kit"
+)
 
 // TreeNode is pre-defined...
 // type TreeNode struct {
@@ -11,6 +15,34 @@ import "github.com/aQuaYi/LeetCode-in-Go/kit"
 type TreeNode = kit.TreeNode
 
 func sufficientSubset(root *TreeNode, limit int) *TreeNode {
+	if dfs(root, 0, limit) < limit {
+		return nil
+	}
+	return root
+}
 
-	return nil
+func dfs(node *TreeNode, pre, limit int) int {
+	if node == nil {
+		return 0
+	}
+
+	pre += node.Val
+	l := dfs(node.Left, pre, limit)
+	if pre+l < limit {
+		node.Left = nil
+	}
+	r := dfs(node.Right, pre, limit)
+	if pre+r < limit {
+		node.Right = nil
+	}
+
+	max := math.MinInt64
+	if node.Left != nil && max < l {
+		max = l
+	}
+	if node.Right != nil && max < r {
+		max = r
+	}
+
+	return max + node.Val
 }

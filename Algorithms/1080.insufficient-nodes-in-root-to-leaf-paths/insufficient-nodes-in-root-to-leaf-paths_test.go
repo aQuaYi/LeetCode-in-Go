@@ -35,7 +35,7 @@ var tcs = []struct {
 	{
 		[]int{1, 2, -3, -5, kit.NULL, 4, kit.NULL},
 		100,
-		[]int{},
+		nil,
 	},
 
 	// 可以有多个 testcase
@@ -46,8 +46,7 @@ func Test_sufficientSubset(t *testing.T) {
 
 	for _, tc := range tcs {
 		root := kit.Ints2TreeNode(tc.root)
-		ans := kit.Ints2TreeNode(tc.ans)
-		ast.Equal(ans, sufficientSubset(root, tc.limit), "输入:%v", tc)
+		ast.Equal(tc.ans, kit.Tree2ints(sufficientSubset(root, tc.limit)), "输入:%v", tc)
 	}
 }
 
