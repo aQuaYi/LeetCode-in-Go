@@ -13,21 +13,8 @@ func smallestSubsequence(text string) string {
 		}
 	}
 
-	flag := -1
-	beforeAll := func() bool {
-		ok := true
-		for i := 0; i < 26 && ok; i++ {
-			if len(rec[i]) == 0 {
-				continue
-			}
-
-		}
-		return ok
-	}
-
-	var sb strings.Builder
-	for i := 0; i < count; i++ {
-		for j := 0; j < 26; j++ {
+	clean := func(flag int) {
+		for i := 0; i < 26; i++ {
 			if len(rec[i]) == 0 {
 				continue
 			}
@@ -35,9 +22,35 @@ func smallestSubsequence(text string) string {
 			for j < len(rec[i]) && rec[i][j] < flag {
 				j++
 			}
-			index := rec[i][0]
+			rec[i] = rec[i][j:]
 		}
+	}
 
+	beforeAll := func(index int) bool {
+		ok := true
+		for i := 0; i < 26 && ok; i++ {
+			if len(rec[i]) == 0 {
+				continue
+			}
+			ok = index <= rec[i][len(rec[i])-1]
+		}
+		return ok
+	}
+
+	var sb strings.Builder
+	for i := 0; i < count; i++ {
+		for j := 0; j < 26; j++ {
+			if len(rec[j]) == 0 {
+				continue
+			}
+			index := rec[j][0]
+			if beforeAll(index) {
+				sb.WriteByte(byte(j + 'a'))
+				rec[j] = nil
+				clean(index)
+				break
+			}
+		}
 	}
 
 	return sb.String()
