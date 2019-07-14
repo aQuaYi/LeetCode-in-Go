@@ -44,5 +44,15 @@ func dfs(node *TreeNode, pre, limit int) int {
 		max = r
 	}
 
+	if max == math.MinInt64 {
+		return node.Val
+	}
 	return max + node.Val
+}
+
+func max(a, b int) int {
+	if a > b {
+		return a
+	}
+	return b
 }
