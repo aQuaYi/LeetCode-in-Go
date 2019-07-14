@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
-	"Ranking": 588,
-	"Updated": "2019-07-14T16:51:42.439165513+08:00",
+	"Ranking": 572,
+	"Updated": "2019-07-14T18:47:56.061792965+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 251,
 			"Total": 254
 		},
 		"Medium": {
-			"Solved": 422,
+			"Solved": 423,
 			"Total": 434
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 182
 		},
 		"Total": {
-			"Solved": 850,
+			"Solved": 851,
 			"Total": 870
 		}
 	},
@@ -10321,7 +10321,7 @@
 			"ID": 858,
 			"Title": "Mirror Reflection",
 			"TitleSlug": "mirror-reflection",
-			"PassRate": "52%",
+			"PassRate": "51%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11029,7 +11029,7 @@
 			"ID": 917,
 			"Title": "Reverse Only Letters",
 			"TitleSlug": "reverse-only-letters",
-			"PassRate": "56%",
+			"PassRate": "55%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12999,7 +12999,7 @@
 			"TitleSlug": "smallest-subsequence-of-distinct-characters",
 			"PassRate": "43%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -13513,7 +13513,7 @@
 			"ID": 1124,
 			"Title": "Longest Well-Performing Interval",
 			"TitleSlug": "longest-well-performing-interval",
-			"PassRate": "20%",
+			"PassRate": "21%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -13525,7 +13525,7 @@
 			"ID": 1125,
 			"Title": "Smallest Sufficient Team",
 			"TitleSlug": "smallest-sufficient-team",
-			"PassRate": "32%",
+			"PassRate": "33%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
