@@ -1,49 +1,44 @@
 package problem1081
 
-import (
-	"sort"
-	"strings"
-)
+import "strings"
 
 func smallestSubsequence(text string) string {
 	rec := make([][]int, 26)
+	count := 0
 	for i, b := range text {
 		c := b - 'a'
 		rec[c] = append(rec[c], i)
-	}
-
-	letters := make([]*letter, 0, 26)
-	for i := 0; i < 26; i++ {
-		if len(rec[i]) == 0 {
-			continue
+		if len(rec[c]) == 1 {
+			count++
 		}
-		letters = append(letters, &letter{
-			char:   byte(i + 'a'),
-			indexs: rec[i],
-		})
 	}
 
-	sort.Slice(letters, func(i int, j int) bool {
-		return isLess(letters[i], letters[j])
-	})
+	flag := -1
+	beforeAll := func() bool {
+		ok := true
+		for i := 0; i < 26 && ok; i++ {
+			if len(rec[i]) == 0 {
+				continue
+			}
+
+		}
+		return ok
+	}
 
 	var sb strings.Builder
-	for _, l := range letters {
-		sb.WriteByte(l.char)
+	for i := 0; i < count; i++ {
+		for j := 0; j < 26; j++ {
+			if len(rec[i]) == 0 {
+				continue
+			}
+			j := 0
+			for j < len(rec[i]) && rec[i][j] < flag {
+				j++
+			}
+			index := rec[i][0]
+		}
+
 	}
 
 	return sb.String()
-}
-
-type letter struct {
-	char   byte
-	indexs []int
-}
-
-func isLess(a, b *letter) bool {
-	if a.indexs[0] < b.indexs[len(b.indexs)-1] &&
-		b.indexs[0] < a.indexs[len(a.indexs)-1] {
-		return a.char < b.char
-	}
-	return false
 }
