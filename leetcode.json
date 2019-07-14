@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 588,
-	"Updated": "2019-07-14T15:31:46.168204654+08:00",
+	"Updated": "2019-07-14T16:50:27.400225559+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 251,
 			"Total": 254
 		},
 		"Medium": {
-			"Solved": 421,
+			"Solved": 422,
 			"Total": 434
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 182
 		},
 		"Total": {
-			"Solved": 849,
+			"Solved": 850,
 			"Total": 870
 		}
 	},
@@ -5761,7 +5761,7 @@
 			"ID": 478,
 			"Title": "Generate Random Point in a Circle",
 			"TitleSlug": "generate-random-point-in-a-circle",
-			"PassRate": "37%",
+			"PassRate": "36%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12805,7 +12805,7 @@
 			"ID": 1065,
 			"Title": "Index Pairs of a String",
 			"TitleSlug": "index-pairs-of-a-string",
-			"PassRate": "58%",
+			"PassRate": "57%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -12987,9 +12987,9 @@
 			"TitleSlug": "insufficient-nodes-in-root-to-leaf-paths",
 			"PassRate": "42%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -13477,7 +13477,7 @@
 			"ID": 1121,
 			"Title": "Divide Array Into Increasing Sequences",
 			"TitleSlug": "divide-array-into-increasing-sequences",
-			"PassRate": "48%",
+			"PassRate": "49%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -13525,7 +13525,7 @@
 			"ID": 1125,
 			"Title": "Smallest Sufficient Team",
 			"TitleSlug": "smallest-sufficient-team",
-			"PassRate": "30%",
+			"PassRate": "32%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
