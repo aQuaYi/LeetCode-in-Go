@@ -2,18 +2,18 @@ package problem1081
 
 import "strings"
 
-func smallestSubsequence(text string) string {
-	n := len(text)
+func smallestSubsequence(S string) string {
+	n := len(S)
 
 	last := [26]int{}
-	for i, b := range text {
-		last[b-'a'] = i
+	for i, c := range S {
+		last[c-'a'] = i
 	}
 
 	stack, top := make([]int, n), -1
 	hasSeen := [26]bool{}
 	for i := 0; i < n; i++ {
-		c := int(text[i] - 'a')
+		c := int(S[i] - 'a')
 		if hasSeen[c] {
 			continue
 		}
@@ -31,8 +31,9 @@ func smallestSubsequence(text string) string {
 
 	var sb strings.Builder
 	for i := 0; i <= top; i++ {
-		c := byte(stack[i] + 'a')
-		sb.WriteByte(c)
+		b := byte(stack[i] + 'a')
+		sb.WriteByte(b)
 	}
+
 	return sb.String()
 }
