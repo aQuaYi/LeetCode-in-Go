@@ -41,5 +41,9 @@ type letter struct {
 }
 
 func isLess(a, b *letter) bool {
-	return a.char < b.char && a.indexs[0] < b.indexs[len(b.indexs)-1]
+	if a.indexs[0] < b.indexs[len(b.indexs)-1] &&
+		b.indexs[0] < a.indexs[len(a.indexs)-1] {
+		return a.char < b.char
+	}
+	return false
 }
