@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 575,
-	"Updated": "2019-07-15T19:24:57.601662486+08:00",
+	"Updated": "2019-07-15T20:31:34.641854219+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 251,
+			"Solved": 252,
 			"Total": 254
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 182
 		},
 		"Total": {
-			"Solved": 851,
+			"Solved": 852,
 			"Total": 870
 		}
 	},
@@ -5017,7 +5017,7 @@
 			"ID": 416,
 			"Title": "Partition Equal Subset Sum",
 			"TitleSlug": "partition-equal-subset-sum",
-			"PassRate": "40%",
+			"PassRate": "41%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -13095,9 +13095,9 @@
 			"TitleSlug": "duplicate-zeros",
 			"PassRate": "58%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -13441,7 +13441,7 @@
 			"ID": 1118,
 			"Title": "Number of Days in a Month",
 			"TitleSlug": "number-of-days-in-a-month",
-			"PassRate": "56%",
+			"PassRate": "57%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": true,
