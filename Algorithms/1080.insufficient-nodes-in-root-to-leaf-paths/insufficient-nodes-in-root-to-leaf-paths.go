@@ -16,7 +16,7 @@ func sufficientSubset(root *TreeNode, limit int) *TreeNode {
 	if root == nil {
 		return nil
 	}
-	if root.Left == nil && root.Right == nil {
+	if root.Left == root.Right { // both nil
 		if root.Val < limit {
 			return nil
 		}
