@@ -3,25 +3,27 @@ package problem1089
 func duplicateZeros(A []int) {
 	n := len(A)
 	//
-	i, count := 0, 0
-	for i+count < n {
+	count := 0
+	for i := 0; i < n; i++ {
 		if A[i] == 0 {
 			count++
 		}
-		i++
 	}
-	i--
-	//
-	j := n - 1
-	for count > 0 {
-		if A[i] == 0 {
-			A[j-1], A[j] = 0, 0
-			j -= 2
-			count--
-		} else {
+	// copy A[i] to A[j]
+	copy := func(i, j int) {
+		if j < n {
 			A[j] = A[i]
+		}
+	}
+	//
+	i, j := n-1, n+count-1
+	for i < j {
+		copy(i, j)
+		if A[i] == 0 {
 			j--
+			copy(i, j)
 		}
 		i--
+		j--
 	}
 }
