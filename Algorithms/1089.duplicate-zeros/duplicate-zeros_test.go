@@ -29,7 +29,8 @@ func Test_duplicateZeros(t *testing.T) {
 	ast := assert.New(t)
 
 	for _, tc := range tcs {
-		ast.Equal(tc.ans, duplicateZeros(tc.arr), "输入:%v", tc)
+		duplicateZeros(tc.arr)
+		ast.Equal(tc.ans, tc.arr, "输入:%v", tc)
 	}
 }
 
