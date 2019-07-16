@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 576,
-	"Updated": "2019-07-16T22:02:08.633955205+08:00",
+	"Updated": "2019-07-16T22:41:32.100185969+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 252,
 			"Total": 254
 		},
 		"Medium": {
-			"Solved": 423,
+			"Solved": 424,
 			"Total": 434
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 182
 		},
 		"Total": {
-			"Solved": 852,
+			"Solved": 853,
 			"Total": 870
 		}
 	},
@@ -12889,7 +12889,7 @@
 			"ID": 1072,
 			"Title": "Flip Columns For Maximum Number of Equal Rows",
 			"TitleSlug": "flip-columns-for-maximum-number-of-equal-rows",
-			"PassRate": "57%",
+			"PassRate": "56%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -13107,7 +13107,7 @@
 			"TitleSlug": "largest-values-from-labels",
 			"PassRate": "56%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
