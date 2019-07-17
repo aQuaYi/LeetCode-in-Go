@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 570,
-	"Updated": "2019-07-17T21:39:22.722554907+08:00",
+	"Updated": "2019-07-17T22:11:33.92126564+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 252,
 			"Total": 254
 		},
 		"Medium": {
-			"Solved": 424,
+			"Solved": 425,
 			"Total": 434
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 182
 		},
 		"Total": {
-			"Solved": 853,
+			"Solved": 854,
 			"Total": 870
 		}
 	},
@@ -2305,7 +2305,7 @@
 			"ID": 190,
 			"Title": "Reverse Bits",
 			"TitleSlug": "reverse-bits",
-			"PassRate": "31%",
+			"PassRate": "32%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9961,7 +9961,7 @@
 			"ID": 828,
 			"Title": "Unique Letter String",
 			"TitleSlug": "unique-letter-string",
-			"PassRate": "40%",
+			"PassRate": "39%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11737,7 +11737,7 @@
 			"ID": 976,
 			"Title": "Largest Perimeter Triangle",
 			"TitleSlug": "largest-perimeter-triangle",
-			"PassRate": "57%",
+			"PassRate": "56%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -13119,7 +13119,7 @@
 			"TitleSlug": "shortest-path-in-binary-matrix",
 			"PassRate": "36%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
