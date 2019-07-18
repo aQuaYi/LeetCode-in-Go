@@ -1,5 +1,7 @@
 package problem1093
 
+import "sort"
+
 func sampleStats(count []int) []float64 {
 	return []float64{
 		minimum(count),
@@ -47,21 +49,26 @@ func mean(count []int) float64 {
 
 // median ：中位数，排序后，位于正中间的数。
 func median(count []int) float64 {
-	t := make([]int, 0, 256)
+	k := make([]int, 0, 256)
+	c := make([]int, 0, 256)
+	sum := 0
 	for i := 0; i < len(count); i++ {
 		if count[i] == 0 {
 			continue
 		}
-		for j := 0; j < count[i]; j++ {
-			t = append(t, i)
-		}
+		sum += count[i]
+		k = append(k, i)
+		c = append(c, sum)
 	}
-	n := len(t)
-	if n%2 == 1 {
-		return float64(t[n/2])
+	if sum%2 == 1 {
+		h := sum/2 + 1
+		i := sort.SearchInts(c, h)
+		return float64(k[i])
 	}
-	h := n / 2
-	return float64(t[h-1]+t[h]) / 2
+	h := sum / 2
+	i := sort.SearchInts(c, h)
+	j := sort.SearchInts(c, h+1)
+	return float64(k[i]+k[j]) / 2
 }
 
 // mode   ：出现次数最多的数
