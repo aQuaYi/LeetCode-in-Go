@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 567,
-	"Updated": "2019-07-18T21:57:54.2136274+08:00",
+	"Updated": "2019-07-18T23:03:14.929461456+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 252,
 			"Total": 254
 		},
 		"Medium": {
-			"Solved": 425,
+			"Solved": 426,
 			"Total": 434
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 182
 		},
 		"Total": {
-			"Solved": 854,
+			"Solved": 855,
 			"Total": 870
 		}
 	},
@@ -12781,7 +12781,7 @@
 			"ID": 1063,
 			"Title": "Number of Valid Subarrays",
 			"TitleSlug": "number-of-valid-subarrays",
-			"PassRate": "74%",
+			"PassRate": "73%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -13143,7 +13143,7 @@
 			"TitleSlug": "statistics-from-a-large-sample",
 			"PassRate": "42%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -13261,7 +13261,7 @@
 			"ID": 1103,
 			"Title": "Distribute Candies to People",
 			"TitleSlug": "distribute-candies-to-people",
-			"PassRate": "62%",
+			"PassRate": "61%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
