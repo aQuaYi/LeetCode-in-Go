@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 566,
-	"Updated": "2019-07-19T19:42:18.347418064+08:00",
+	"Updated": "2019-07-19T21:02:44.189870343+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 252,
@@ -12,11 +12,11 @@
 			"Total": 434
 		},
 		"Hard": {
-			"Solved": 177,
+			"Solved": 178,
 			"Total": 182
 		},
 		"Total": {
-			"Solved": 855,
+			"Solved": 856,
 			"Total": 870
 		}
 	},
@@ -11305,7 +11305,7 @@
 			"ID": 940,
 			"Title": "Distinct Subsequences II",
 			"TitleSlug": "distinct-subsequences-ii",
-			"PassRate": "40%",
+			"PassRate": "39%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -13131,7 +13131,7 @@
 			"TitleSlug": "shortest-common-supersequence",
 			"PassRate": "47%",
 			"Difficulty": "Hard",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -13285,7 +13285,7 @@
 			"ID": 1105,
 			"Title": "Filling Bookcase Shelves",
 			"TitleSlug": "filling-bookcase-shelves",
-			"PassRate": "54%",
+			"PassRate": "53%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
