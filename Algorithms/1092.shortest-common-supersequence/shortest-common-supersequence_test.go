@@ -16,7 +16,7 @@ var tcs = []struct {
 	{
 		"abaa",
 		"aaaa",
-		"abaaa",
+		"aabaa",
 	},
 
 	{
