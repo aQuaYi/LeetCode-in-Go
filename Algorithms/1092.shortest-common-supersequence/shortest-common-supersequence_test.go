@@ -20,6 +20,12 @@ var tcs = []struct {
 	},
 
 	{
+		"cab",
+		"abac",
+		"cabac",
+	},
+
+	{
 		"abac",
 		"cab",
 		"cabac",
