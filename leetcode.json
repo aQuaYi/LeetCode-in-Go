@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 566,
-	"Updated": "2019-07-20T11:17:59.068514434+08:00",
+	"Updated": "2019-07-20T11:50:38.328303849+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 252,
 			"Total": 254
 		},
 		"Medium": {
-			"Solved": 426,
+			"Solved": 427,
 			"Total": 434
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 182
 		},
 		"Total": {
-			"Solved": 856,
+			"Solved": 857,
 			"Total": 870
 		}
 	},
@@ -13155,7 +13155,7 @@
 			"TitleSlug": "car-pooling",
 			"PassRate": "57%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
