@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 566,
-	"Updated": "2019-07-19T21:02:44.189870343+08:00",
+	"Updated": "2019-07-20T11:17:59.068514434+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 252,
@@ -277,7 +277,7 @@
 			"ID": 21,
 			"Title": "Merge Two Sorted Lists",
 			"TitleSlug": "merge-two-sorted-lists",
-			"PassRate": "47%",
+			"PassRate": "48%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -2809,7 +2809,7 @@
 			"ID": 232,
 			"Title": "Implement Queue using Stacks",
 			"TitleSlug": "implement-queue-using-stacks",
-			"PassRate": "43%",
+			"PassRate": "44%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -7273,7 +7273,7 @@
 			"ID": 604,
 			"Title": "Design Compressed String Iterator",
 			"TitleSlug": "design-compressed-string-iterator",
-			"PassRate": "34%",
+			"PassRate": "35%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -9733,7 +9733,7 @@
 			"ID": 809,
 			"Title": "Expressive Words",
 			"TitleSlug": "expressive-words",
-			"PassRate": "43%",
+			"PassRate": "44%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10657,7 +10657,7 @@
 			"ID": 886,
 			"Title": "Possible Bipartition",
 			"TitleSlug": "possible-bipartition",
-			"PassRate": "40%",
+			"PassRate": "41%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11305,7 +11305,7 @@
 			"ID": 940,
 			"Title": "Distinct Subsequences II",
 			"TitleSlug": "distinct-subsequences-ii",
-			"PassRate": "39%",
+			"PassRate": "40%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12229,7 +12229,7 @@
 			"ID": 1017,
 			"Title": "Convert to Base -2",
 			"TitleSlug": "convert-to-base-2",
-			"PassRate": "56%",
+			"PassRate": "57%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12721,7 +12721,7 @@
 			"ID": 1058,
 			"Title": "Minimize Rounding Error to Meet Target",
 			"TitleSlug": "minimize-rounding-error-to-meet-target",
-			"PassRate": "41%",
+			"PassRate": "40%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -12781,7 +12781,7 @@
 			"ID": 1063,
 			"Title": "Number of Valid Subarrays",
 			"TitleSlug": "number-of-valid-subarrays",
-			"PassRate": "74%",
+			"PassRate": "72%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -12997,7 +12997,7 @@
 			"ID": 1081,
 			"Title": "Smallest Subsequence of Distinct Characters",
 			"TitleSlug": "smallest-subsequence-of-distinct-characters",
-			"PassRate": "43%",
+			"PassRate": "42%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -13133,7 +13133,7 @@
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -13477,7 +13477,7 @@
 			"ID": 1121,
 			"Title": "Divide Array Into Increasing Sequences",
 			"TitleSlug": "divide-array-into-increasing-sequences",
-			"PassRate": "51%",
+			"PassRate": "52%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -13494,7 +13494,7 @@
 			"IsAccepted": false,
 			"IsPaid": false,
 			"IsFavor": false,
-			"IsNew": true,
+			"IsNew": false,
 			"HasNoGoOption": false
 		},
 		{
@@ -13506,7 +13506,7 @@
 			"IsAccepted": false,
 			"IsPaid": false,
 			"IsFavor": false,
-			"IsNew": true,
+			"IsNew": false,
 			"HasNoGoOption": false
 		},
 		{
@@ -13518,7 +13518,7 @@
 			"IsAccepted": false,
 			"IsPaid": false,
 			"IsFavor": false,
-			"IsNew": true,
+			"IsNew": false,
 			"HasNoGoOption": false
 		},
 		{
@@ -13530,7 +13530,7 @@
 			"IsAccepted": false,
 			"IsPaid": false,
 			"IsFavor": false,
-			"IsNew": true,
+			"IsNew": false,
 			"HasNoGoOption": false
 		}
 	]
