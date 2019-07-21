@@ -1,5 +1,15 @@
 package problem1095
 
+// MountainArray is required
+type MountainArray []int
+
+func (m *MountainArray) get(index int) int {
+	return (*m)[index]
+}
+func (m *MountainArray) length() int {
+	return len(*m)
+}
+
 /**
  * // This is the MountainArray's API interface.
  * // You should not implement it, or speculate about its implementation
@@ -38,7 +48,7 @@ func findInMountainArray(target int, ma *MountainArray) int {
 
 	if m0 < target {
 		lo, hi := 1, high-1
-		for lo < hi {
+		for lo <= hi {
 			mid := (lo + hi) / 2
 			mm := ma.get(mid)
 			if mm == target {
@@ -58,7 +68,7 @@ func findInMountainArray(target int, ma *MountainArray) int {
 	}
 
 	lo, hi = high+1, n-2
-	for lo < hi {
+	for lo <= hi {
 		mid := (lo + hi) / 2
 		mm := ma.get(mid)
 		if mm == target {
@@ -71,14 +81,4 @@ func findInMountainArray(target int, ma *MountainArray) int {
 	}
 	return -1
 
-}
-
-// MountainArray is required
-type MountainArray []int
-
-func (m *MountainArray) get(index int) int {
-	return (*m)[index]
-}
-func (m *MountainArray) length() int {
-	return len(*m)
 }
