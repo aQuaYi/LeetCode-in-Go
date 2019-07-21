@@ -19,6 +19,7 @@ func (m *MountainArray) length() int {
  * func (this *MountainArray) get(index int) int {}
  * func (this *MountainArray) length() int {}
  */
+
 func findInMountainArray(target int, ma *MountainArray) int {
 	n := ma.length()
 
@@ -44,20 +45,20 @@ func searchPeak(lo, hi int, ma *MountainArray) int {
 }
 
 func searchLeft(lo, hi, target int, ma *MountainArray) int {
-	less := func(m, target int) bool {
-		return m < target
+	less := func(a, b int) bool {
+		return a < b
 	}
 	return binarySearch(lo, hi, target, ma, less)
 }
 
 func searchRight(lo, hi, target int, ma *MountainArray) int {
-	less := func(m, target int) bool {
-		return m > target
+	less := func(a, b int) bool {
+		return a > b
 	}
 	return binarySearch(lo, hi, target, ma, less)
 }
 
-func binarySearch(lo, hi, target int, ma *MountainArray, less func(m, target int) bool) int {
+func binarySearch(lo, hi, target int, ma *MountainArray, less func(a, b int) bool) int {
 	for lo <= hi {
 		mid := (lo + hi) / 2
 		m := ma.get(mid)
