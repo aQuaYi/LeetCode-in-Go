@@ -21,64 +21,53 @@ func (m *MountainArray) length() int {
  */
 func findInMountainArray(target int, ma *MountainArray) int {
 	n := ma.length()
-	lo, hi := 1, n-2
+
+	peak := searchPeak(0, n-1, ma)
+
+	index := searchLeft(0, peak, target, ma)
+	if index != -1 {
+		return index
+	}
+	return searchRight(peak, n-1, target, ma)
+}
+
+func searchPeak(lo, hi int, ma *MountainArray) int {
 	for lo < hi {
 		mid := (lo + hi - 1) / 2
-		if ma.get(mid-1) < ma.get(mid) {
+		if ma.get(mid) < ma.get(mid+1) {
 			lo = mid + 1
 		} else {
-			hi = mid - 1
+			hi = mid
 		}
 	}
-	high := lo - 1
-	mh := ma.get(high)
+	return lo
+}
 
-	if mh < target {
-		return -1
+func searchLeft(lo, hi, target int, ma *MountainArray) int {
+	less := func(m, target int) bool {
+		return m < target
 	}
+	return binarySearch(lo, hi, target, ma, less)
+}
 
-	if mh == target {
-		return high
+func searchRight(lo, hi, target int, ma *MountainArray) int {
+	less := func(m, target int) bool {
+		return m > target
 	}
+	return binarySearch(lo, hi, target, ma, less)
+}
 
-	m0 := ma.get(0)
-	if m0 == target {
-		return 0
-	}
-
-	if m0 < target {
-		lo, hi := 1, high-1
-		for lo <= hi {
-			mid := (lo + hi) / 2
-			mm := ma.get(mid)
-			if mm == target {
-				return mid
-			} else if mm < target {
-				lo = mid + 1
-			} else {
-				hi = mid - 1
-			}
-		}
-		return -1
-	}
-
-	me := ma.get(n - 1)
-	if me == target {
-		return n - 1
-	}
-
-	lo, hi = high+1, n-2
+func binarySearch(lo, hi, target int, ma *MountainArray, less func(m, target int) bool) int {
 	for lo <= hi {
 		mid := (lo + hi) / 2
-		mm := ma.get(mid)
-		if mm == target {
+		m := ma.get(mid)
+		if m == target {
 			return mid
-		} else if mm > target {
+		} else if less(m, target) {
 			lo = mid + 1
 		} else {
 			hi = mid - 1
 		}
 	}
 	return -1
-
 }
