@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 556,
-	"Updated": "2019-07-22T16:59:30.941367353+08:00",
+	"Updated": "2019-07-22T17:27:30.448355038+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 252,
+			"Solved": 253,
 			"Total": 255
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 182
 		},
 		"Total": {
-			"Solved": 858,
+			"Solved": 859,
 			"Total": 874
 		}
 	},
@@ -12673,7 +12673,7 @@
 			"ID": 1054,
 			"Title": "Distant Barcodes",
 			"TitleSlug": "distant-barcodes",
-			"PassRate": "39%",
+			"PassRate": "38%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -13263,7 +13263,7 @@
 			"TitleSlug": "distribute-candies-to-people",
 			"PassRate": "61%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
