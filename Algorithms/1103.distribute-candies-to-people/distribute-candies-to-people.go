@@ -21,7 +21,8 @@ func distributeCandies(candies, people int) []int {
 		res[i] = candiesOf(i)
 	}
 
-	res[k%people] += candies - k*(k+1)/2 // remaining
+	// remaining
+	res[k%people] += candies - k*(k+1)/2
 
 	return res
 }
