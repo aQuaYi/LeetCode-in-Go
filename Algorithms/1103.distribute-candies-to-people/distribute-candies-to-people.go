@@ -2,26 +2,32 @@ package problem1103
 
 import "math"
 
-func distributeCandies(candies int, num int) []int {
-	res := make([]int, num)
-	l := length(candies)
-	for i := 0; i < num && i < l; i++ {
-		res[i] = candy(i, num, l)
+func distributeCandies(candies, people int) []int {
+	res := make([]int, people)
+
+	k := root(candies)
+
+	// res[i] = (i+1) + (i+1+p) + (i+1+p*2) + ... + (i+1+n*p)
+	// n = (k-i-1)/p , p = people
+	candiesOf := func(i int) int {
+		c0 := i + 1
+		n := (k - c0) / people
+		cn := c0 + n*people
+		return (n + 1) * (c0 + cn) / 2
 	}
-	r := candies - l*(l+1)/2
-	res[l%num] += r
+
+	// i<k for in case k<people
+	for i := 0; i < people && i < k; i++ {
+		res[i] = candiesOf(i)
+	}
+
+	res[k%people] += candies - k*(k+1)/2 // remaining
+
 	return res
 }
 
-func length(candies int) int {
+// root returns k for k*(k+1)/2 = candies
+func root(candies int) int {
 	delta := float64(1 + 8*candies)
-	l := int((math.Sqrt(delta) - 1) / 2)
-	return l
-}
-
-func candy(i, d, l int) int {
-	a1 := i + 1
-	n := (l-a1)/d + 1
-	an := a1 + (n-1)*d
-	return n * (a1 + an) / 2
+	return int((math.Sqrt(delta) - 1) / 2)
 }
