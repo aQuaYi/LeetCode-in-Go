@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 559,
-	"Updated": "2019-07-23T19:58:14.018843795+08:00",
+	"Updated": "2019-07-23T20:32:09.288738527+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 253,
 			"Total": 255
 		},
 		"Medium": {
-			"Solved": 427,
+			"Solved": 428,
 			"Total": 437
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 182
 		},
 		"Total": {
-			"Solved": 859,
+			"Solved": 860,
 			"Total": 874
 		}
 	},
@@ -13275,7 +13275,7 @@
 			"TitleSlug": "path-in-zigzag-labelled-binary-tree",
 			"PassRate": "70%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,

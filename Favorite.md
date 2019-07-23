@@ -4,7 +4,7 @@
 |:-:|:-|:-: | :-: | :-: |
 |[0085](https://leetcode.com/problems/maximal-rectangle/)|[Maximal Rectangle](./Algorithms/0085.maximal-rectangle)|33%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0087](https://leetcode.com/problems/scramble-string/)|[Scramble String](./Algorithms/0087.scramble-string)|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|[0090](https://leetcode.com/problems/subsets-ii/)|[Subsets II](./Algorithms/0090.subsets-ii)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|[0090](https://leetcode.com/problems/subsets-ii/)|[Subsets II](./Algorithms/0090.subsets-ii)|43%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0091](https://leetcode.com/problems/decode-ways/)|[Decode Ways](./Algorithms/0091.decode-ways)|22%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0093](https://leetcode.com/problems/restore-ip-addresses/)|[Restore IP Addresses](./Algorithms/0093.restore-ip-addresses)|31%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0095](https://leetcode.com/problems/unique-binary-search-trees-ii/)|[Unique Binary Search Trees II](./Algorithms/0095.unique-binary-search-trees-ii)|36%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -16,7 +16,7 @@
 |[0106](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)|[Construct Binary Tree from Inorder and Postorder Traversal](./Algorithms/0106.construct-binary-tree-from-inorder-and-postorder-traversal)|40%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0114](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/)|[Flatten Binary Tree to Linked List](./Algorithms/0114.flatten-binary-tree-to-linked-list)|43%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0115](https://leetcode.com/problems/distinct-subsequences/)|[Distinct Subsequences](./Algorithms/0115.distinct-subsequences)|35%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|[0120](https://leetcode.com/problems/triangle/)|[Triangle](./Algorithms/0120.triangle)|39%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|[0120](https://leetcode.com/problems/triangle/)|[Triangle](./Algorithms/0120.triangle)|40%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0124](https://leetcode.com/problems/binary-tree-maximum-path-sum/)|[Binary Tree Maximum Path Sum](./Algorithms/0124.binary-tree-maximum-path-sum)|30%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0126](https://leetcode.com/problems/word-ladder-ii/)|[Word Ladder II](./Algorithms/0126.word-ladder-ii)|18%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0127](https://leetcode.com/problems/word-ladder/)|[Word Ladder](./Algorithms/0127.word-ladder)|24%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -208,7 +208,7 @@
 |[0753](https://leetcode.com/problems/cracking-the-safe/)|[Cracking the Safe](./Algorithms/0753.cracking-the-safe)|46%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0754](https://leetcode.com/problems/reach-a-number/)|[Reach a Number](./Algorithms/0754.reach-a-number)|32%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |[0756](https://leetcode.com/problems/pyramid-transition-matrix/)|[Pyramid Transition Matrix](./Algorithms/0756.pyramid-transition-matrix)|52%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|[0770](https://leetcode.com/problems/basic-calculator-iv/)|[Basic Calculator IV](./Algorithms/0770.basic-calculator-iv)|45%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|[0770](https://leetcode.com/problems/basic-calculator-iv/)|[Basic Calculator IV](./Algorithms/0770.basic-calculator-iv)|46%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0784](https://leetcode.com/problems/letter-case-permutation/)|[Letter Case Permutation](./Algorithms/0784.letter-case-permutation)|57%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |[0785](https://leetcode.com/problems/is-graph-bipartite/)|[Is Graph Bipartite?](./Algorithms/0785.is-graph-bipartite)|43%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0786](https://leetcode.com/problems/k-th-smallest-prime-fraction/)|[K-th Smallest Prime Fraction](./Algorithms/0786.k-th-smallest-prime-fraction)|40%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -287,7 +287,7 @@
 |[0972](https://leetcode.com/problems/equal-rational-numbers/)|[Equal Rational Numbers](./Algorithms/0972.equal-rational-numbers)|40%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0974](https://leetcode.com/problems/subarray-sums-divisible-by-k/)|[Subarray Sums Divisible by K](./Algorithms/0974.subarray-sums-divisible-by-k)|45%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0975](https://leetcode.com/problems/odd-even-jump/)|[Odd Even Jump](./Algorithms/0975.odd-even-jump)|46%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|[0976](https://leetcode.com/problems/largest-perimeter-triangle/)|[Largest Perimeter Triangle](./Algorithms/0976.largest-perimeter-triangle)|57%|Easy|[❤](https://leetcode.com/list/oussv5j)|
+|[0976](https://leetcode.com/problems/largest-perimeter-triangle/)|[Largest Perimeter Triangle](./Algorithms/0976.largest-perimeter-triangle)|56%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |[0978](https://leetcode.com/problems/longest-turbulent-subarray/)|[Longest Turbulent Subarray](./Algorithms/0978.longest-turbulent-subarray)|45%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0979](https://leetcode.com/problems/distribute-coins-in-binary-tree/)|[Distribute Coins in Binary Tree](./Algorithms/0979.distribute-coins-in-binary-tree)|67%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0980](https://leetcode.com/problems/unique-paths-iii/)|[Unique Paths III](./Algorithms/0980.unique-paths-iii)|71%|Hard|[❤](https://leetcode.com/list/oussv5j)|
