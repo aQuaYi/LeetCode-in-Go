@@ -13,6 +13,46 @@ var tcs = []struct {
 }{
 
 	{
+		"a{b,c}{d,e}f{g,h},z",
+		[]string{"abdfg", "abdfh", "abefg", "abefh", "acdfg", "acdfh", "acefg", "acefh", "z"},
+	},
+
+	{
+		"{{a,b},{b,c}}",
+		[]string{"a", "b", "c"},
+	},
+
+	{
+		"a",
+		[]string{"a"},
+	},
+
+	{
+		"w",
+		[]string{"w"},
+	},
+
+	{
+		"{a,b,c}",
+		[]string{"a", "b", "c"},
+	},
+
+	{
+		"{a,b}{c,d}",
+		[]string{"ac", "ad", "bc", "bd"},
+	},
+
+	{
+		"a{b,c}{d,e}f{g,h}",
+		[]string{"abdfg", "abdfh", "abefg", "abefh", "acdfg", "acdfh", "acefg", "acefh"},
+	},
+
+	{
+		"ab{{{c}}}",
+		[]string{"abc"},
+	},
+
+	{
 		"{a,b}{c,{d,e}}",
 		[]string{"ac", "ad", "ae", "bc", "bd", "be"},
 	},
