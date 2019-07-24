@@ -9,8 +9,6 @@ var pres = []string{"a{", "b{", "c{", "d{", "e{", "f{", "g{", "h{", "i{", "j{", 
 var nows = []string{"a*{", "b*{", "c*{", "d*{", "e*{", "f*{", "g*{", "h*{", "i*{", "j*{", "k*{", "l*{", "m*{", "n*{", "o*{", "p*{", "q*{", "r*{", "s*{", "t*{", "u*{", "v*{", "w*{", "x*{", "y*{", "z*{", "}*{", "}*a", "}*b", "}*c", "}*d", "}*e", "}*f", "}*g", "}*h", "}*i", "}*j", "}*k", "}*l", "}*m", "}*n", "}*o", "}*p", "}*q", "}*r", "}*s", "}*t", "}*u", "}*v", "}*w", "}*x", "}*y", "}*z"}
 
 func braceExpansionII(exp string) []string {
-	exp = outBrace(exp)
-
 	for i, p := range pres {
 		exp = strings.Replace(exp, p, nows[i], -1)
 	}
@@ -20,6 +18,7 @@ func braceExpansionII(exp string) []string {
 }
 
 func split(exp string, topSymbol byte) []string {
+	exp = outBrace(exp)
 	count := 0
 	bytes := []byte(exp)
 	for i, b := range bytes {
@@ -39,8 +38,6 @@ func split(exp string, topSymbol byte) []string {
 }
 
 func doAdd(exp string) []string {
-	exp = outBrace(exp)
-	//
 	if !strings.ContainsRune(exp, '{') {
 		return strings.Split(exp, "+")
 	}
@@ -54,7 +51,6 @@ func doAdd(exp string) []string {
 }
 
 func doMultiply(exp string) []string {
-	exp = outBrace(exp)
 	strs := split(exp, '*')
 	res := []string{""}
 	for _, s := range strs {
