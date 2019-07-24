@@ -28,7 +28,7 @@ func split(exp string, topSymbol byte) []string {
 		case '}':
 			count--
 		case topSymbol:
-			if count == 0 {
+			if count == 0 { // it's top now
 				bytes[i] = '@'
 			}
 		}
