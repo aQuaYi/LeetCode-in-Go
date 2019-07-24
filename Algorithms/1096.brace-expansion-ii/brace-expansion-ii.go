@@ -8,25 +8,18 @@ import (
 var pres = []string{"a{", "b{", "c{", "d{", "e{", "f{", "g{", "h{", "i{", "j{", "k{", "l{", "m{", "n{", "o{", "p{", "q{", "r{", "s{", "t{", "u{", "v{", "w{", "x{", "y{", "z{", "}{", "}a", "}b", "}c", "}d", "}e", "}f", "}g", "}h", "}i", "}j", "}k", "}l", "}m", "}n", "}o", "}p", "}q", "}r", "}s", "}t", "}u", "}v", "}w", "}x", "}y", "}z"}
 var nows = []string{"a*{", "b*{", "c*{", "d*{", "e*{", "f*{", "g*{", "h*{", "i*{", "j*{", "k*{", "l*{", "m*{", "n*{", "o*{", "p*{", "q*{", "r*{", "s*{", "t*{", "u*{", "v*{", "w*{", "x*{", "y*{", "z*{", "}*{", "}*a", "}*b", "}*c", "}*d", "}*e", "}*f", "}*g", "}*h", "}*i", "}*j", "}*k", "}*l", "}*m", "}*n", "}*o", "}*p", "}*q", "}*r", "}*s", "}*t", "}*u", "}*v", "}*w", "}*x", "}*y", "}*z"}
 
-type optFn func([]string, []string) []string
-
 func braceExpansionII(exp string) []string {
 	exp = outBrace(exp)
 
 	for i, p := range pres {
 		exp = strings.Replace(exp, p, nows[i], -1)
 	}
+	exp = strings.Replace(exp, ",", "+", -1)
 
-	return add(exp)
+	return unique(doAdd(exp))
 }
 
-func add(exp string) []string {
-	exp = outBrace(exp)
-
-	if !strings.ContainsRune(exp, '{') {
-		return strings.Split(exp, ",")
-	}
-
+func split(exp string, topSymbol byte) []string {
 	count := 0
 	bytes := []byte(exp)
 	for i, b := range bytes {
@@ -35,44 +28,39 @@ func add(exp string) []string {
 			count++
 		case '}':
 			count--
-		case ',':
+		case topSymbol:
 			if count == 0 {
 				bytes[i] = '@'
 			}
 		}
 	}
 	exp = string(bytes)
-	strs := strings.Split(exp, "@")
+	return strings.Split(exp, "@")
+}
+
+func doAdd(exp string) []string {
+	exp = outBrace(exp)
+	//
+	if !strings.ContainsRune(exp, '{') {
+		return strings.Split(exp, "+")
+	}
+	//
+	strs := split(exp, '+')
 	res := []string{}
 	for _, s := range strs {
-		res = merge(res, mul(s))
+		res = add(res, doMultiply(s))
 	}
-	return unique(res)
+	return res
 }
 
-func mul(exp string) []string {
+func doMultiply(exp string) []string {
 	exp = outBrace(exp)
-	count := 0
-	bytes := []byte(exp)
-	for i, b := range bytes {
-		switch b {
-		case '{':
-			count++
-		case '}':
-			count--
-		case '*':
-			if count == 0 {
-				bytes[i] = '@'
-			}
-		}
-	}
-	exp = string(bytes)
-	strs := strings.Split(exp, "@")
+	strs := split(exp, '*')
 	res := []string{""}
 	for _, s := range strs {
-		res = multiply(res, add(s))
+		res = multiply(res, doAdd(s))
 	}
-	return unique(res)
+	return res
 }
 
 func outBrace(exp string) string {
@@ -96,7 +84,7 @@ func outBrace(exp string) string {
 	return exp
 }
 
-func merge(A, B []string) []string {
+func add(A, B []string) []string {
 	return append(A, B...)
 }
 
