@@ -7,7 +7,7 @@ import (
 
 func braceExpansionII(exp string) []string {
 	n := len(exp)
-
+	//
 	bytes := make([]byte, 1, n*2)
 	bytes[0] = exp[0]
 	pre := exp[0]
@@ -27,7 +27,6 @@ func braceExpansionII(exp string) []string {
 		}
 		pre = cur
 	}
-
 	exp = string(bytes)
 
 	return unique(doAdd(exp))
@@ -37,8 +36,13 @@ func isLetter(r byte) bool {
 	return 'a' <= r && r <= 'z'
 }
 
-func split(exp string, topSymbol byte) []string {
+// split exp with symbol out of brace
+func split(exp string, symbol byte) []string {
+	exp = removeOuterBrace(exp)
 	count := 0
+	isOutOfBrace := func() bool {
+		return count == 0
+	}
 	bytes := []byte(exp)
 	for i, b := range bytes {
 		switch b {
@@ -46,8 +50,8 @@ func split(exp string, topSymbol byte) []string {
 			count++
 		case '}':
 			count--
-		case topSymbol:
-			if count == 0 { // it's top now
+		case symbol:
+			if isOutOfBrace() {
 				bytes[i] = '@'
 			}
 		}
@@ -57,10 +61,8 @@ func split(exp string, topSymbol byte) []string {
 }
 
 func doAdd(exp string) []string {
-	exp = removeOuterBrace(exp)
 	if !strings.ContainsRune(exp, '*') {
-		exp = strings.Replace(exp, "{", "", -1)
-		exp = strings.Replace(exp, "}", "", -1)
+		exp = removeAllBraces(exp)
 		return strings.Split(exp, "+")
 	}
 	exps := split(exp, '+')
@@ -72,10 +74,8 @@ func doAdd(exp string) []string {
 }
 
 func doMultiply(exp string) []string {
-	exp = removeOuterBrace(exp)
 	if !strings.ContainsRune(exp, '+') {
-		exp = strings.Replace(exp, "{", "", -1)
-		exp = strings.Replace(exp, "}", "", -1)
+		exp = removeAllBraces(exp)
 		exp = strings.Replace(exp, "*", "", -1)
 		return []string{exp}
 	}
@@ -85,6 +85,11 @@ func doMultiply(exp string) []string {
 		res = multiply(res, doAdd(e))
 	}
 	return res
+}
+
+func removeAllBraces(exp string) string {
+	exp = strings.Replace(exp, "{", "", -1)
+	return strings.Replace(exp, "}", "", -1)
 }
 
 func removeOuterBrace(exp string) string {
