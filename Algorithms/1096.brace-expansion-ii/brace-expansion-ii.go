@@ -5,20 +5,39 @@ import (
 	"strings"
 )
 
-var pres = []string{"a{", "b{", "c{", "d{", "e{", "f{", "g{", "h{", "i{", "j{", "k{", "l{", "m{", "n{", "o{", "p{", "q{", "r{", "s{", "t{", "u{", "v{", "w{", "x{", "y{", "z{", "}{", "}a", "}b", "}c", "}d", "}e", "}f", "}g", "}h", "}i", "}j", "}k", "}l", "}m", "}n", "}o", "}p", "}q", "}r", "}s", "}t", "}u", "}v", "}w", "}x", "}y", "}z"}
-var nows = []string{"a*{", "b*{", "c*{", "d*{", "e*{", "f*{", "g*{", "h*{", "i*{", "j*{", "k*{", "l*{", "m*{", "n*{", "o*{", "p*{", "q*{", "r*{", "s*{", "t*{", "u*{", "v*{", "w*{", "x*{", "y*{", "z*{", "}*{", "}*a", "}*b", "}*c", "}*d", "}*e", "}*f", "}*g", "}*h", "}*i", "}*j", "}*k", "}*l", "}*m", "}*n", "}*o", "}*p", "}*q", "}*r", "}*s", "}*t", "}*u", "}*v", "}*w", "}*x", "}*y", "}*z"}
-
 func braceExpansionII(exp string) []string {
-	for i, p := range pres {
-		exp = strings.Replace(exp, p, nows[i], -1)
+	n := len(exp)
+
+	bytes := make([]byte, 1, n*2)
+	bytes[0] = exp[0]
+	pre := exp[0]
+	for i := 1; i < n; i++ {
+		cur := exp[i]
+		// add '*' symbol
+		if (isLetter(pre) && cur == '{') ||
+			(pre == '}' && cur == '{') ||
+			(pre == '}' && isLetter(cur)) {
+			bytes = append(bytes, '*')
+		}
+		// replace ',' with '+' symbol
+		if cur == ',' {
+			bytes = append(bytes, '+')
+		} else {
+			bytes = append(bytes, cur)
+		}
+		pre = cur
 	}
-	exp = strings.Replace(exp, ",", "+", -1)
+
+	exp = string(bytes)
 
 	return unique(doAdd(exp))
 }
 
+func isLetter(r byte) bool {
+	return 'a' <= r && r <= 'z'
+}
+
 func split(exp string, topSymbol byte) []string {
-	exp = outBrace(exp)
 	count := 0
 	bytes := []byte(exp)
 	for i, b := range bytes {
@@ -38,35 +57,43 @@ func split(exp string, topSymbol byte) []string {
 }
 
 func doAdd(exp string) []string {
-	if !strings.ContainsRune(exp, '{') {
+	exp = removeOuterBrace(exp)
+	if !strings.ContainsRune(exp, '*') {
+		exp = strings.Replace(exp, "{", "", -1)
+		exp = strings.Replace(exp, "}", "", -1)
 		return strings.Split(exp, "+")
 	}
-	//
-	strs := split(exp, '+')
+	exps := split(exp, '+')
 	res := []string{}
-	for _, s := range strs {
-		res = add(res, doMultiply(s))
+	for _, e := range exps {
+		res = add(res, doMultiply(e))
 	}
 	return res
 }
 
 func doMultiply(exp string) []string {
-	strs := split(exp, '*')
+	exp = removeOuterBrace(exp)
+	if !strings.ContainsRune(exp, '+') {
+		exp = strings.Replace(exp, "{", "", -1)
+		exp = strings.Replace(exp, "}", "", -1)
+		exp = strings.Replace(exp, "*", "", -1)
+		return []string{exp}
+	}
+	exps := split(exp, '*')
 	res := []string{""}
-	for _, s := range strs {
-		res = multiply(res, doAdd(s))
+	for _, e := range exps {
+		res = multiply(res, doAdd(e))
 	}
 	return res
 }
 
-func outBrace(exp string) string {
+func removeOuterBrace(exp string) string {
 	n := len(exp)
 	if exp[0] != '{' ||
 		exp[n-1] != '}' {
 		return exp
 	}
-	count := 1
-	i := 1
+	count, i := 1, 1
 	for ; i < n && count > 0; i++ {
 		if exp[i] == '{' {
 			count++
