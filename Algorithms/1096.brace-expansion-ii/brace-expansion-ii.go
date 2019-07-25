@@ -7,7 +7,7 @@ import (
 
 func braceExpansionII(exp string) []string {
 	n := len(exp)
-	//
+
 	bytes := make([]byte, 1, n*2)
 	bytes[0] = exp[0]
 	pre := exp[0]
