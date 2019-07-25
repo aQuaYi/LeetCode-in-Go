@@ -36,12 +36,13 @@ func isLetter(r byte) bool {
 	return 'a' <= r && r <= 'z'
 }
 
-// split exp with symbol out of brace
+// split exp with symbol NOT in braces
+// because braces change priority
 func split(exp string, symbol byte) []string {
 	exp = removeOuterBrace(exp)
 	count := 0
-	isOutOfBrace := func() bool {
-		return count == 0
+	isInBraces := func() bool {
+		return count > 0
 	}
 	bytes := []byte(exp)
 	for i, b := range bytes {
@@ -51,7 +52,7 @@ func split(exp string, symbol byte) []string {
 		case '}':
 			count--
 		case symbol:
-			if isOutOfBrace() {
+			if !isInBraces() {
 				bytes[i] = '@'
 			}
 		}
