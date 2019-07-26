@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 556,
-	"Updated": "2019-07-26T19:56:14.717009709+08:00",
+	"Updated": "2019-07-26T23:08:04.590641118+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 252,
 			"Total": 254
 		},
 		"Medium": {
-			"Solved": 429,
+			"Solved": 430,
 			"Total": 438
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 182
 		},
 		"Total": {
-			"Solved": 861,
+			"Solved": 862,
 			"Total": 874
 		}
 	},
@@ -10681,7 +10681,7 @@
 			"ID": 888,
 			"Title": "Fair Candy Swap",
 			"TitleSlug": "fair-candy-swap",
-			"PassRate": "56%",
+			"PassRate": "57%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12229,7 +12229,7 @@
 			"ID": 1017,
 			"Title": "Convert to Base -2",
 			"TitleSlug": "convert-to-base-2",
-			"PassRate": "56%",
+			"PassRate": "57%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -13069,7 +13069,7 @@
 			"ID": 1087,
 			"Title": "Brace Expansion",
 			"TitleSlug": "brace-expansion",
-			"PassRate": "58%",
+			"PassRate": "59%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -13287,9 +13287,9 @@
 			"TitleSlug": "filling-bookcase-shelves",
 			"PassRate": "54%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
