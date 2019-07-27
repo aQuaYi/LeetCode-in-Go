@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 556,
-	"Updated": "2019-07-27T11:38:43.343459151+08:00",
+	"Updated": "2019-07-27T12:08:56.19340042+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 252,
+			"Solved": 253,
 			"Total": 254
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 182
 		},
 		"Total": {
-			"Solved": 862,
+			"Solved": 863,
 			"Total": 874
 		}
 	},
@@ -2749,7 +2749,7 @@
 			"ID": 227,
 			"Title": "Basic Calculator II",
 			"TitleSlug": "basic-calculator-ii",
-			"PassRate": "34%",
+			"PassRate": "33%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12709,7 +12709,7 @@
 			"ID": 1057,
 			"Title": "Campus Bikes",
 			"TitleSlug": "campus-bikes",
-			"PassRate": "58%",
+			"PassRate": "59%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -13491,7 +13491,7 @@
 			"TitleSlug": "relative-sort-array",
 			"PassRate": "68%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -13501,7 +13501,7 @@
 			"ID": 1123,
 			"Title": "Lowest Common Ancestor of Deepest Leaves",
 			"TitleSlug": "lowest-common-ancestor-of-deepest-leaves",
-			"PassRate": "64%",
+			"PassRate": "63%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
