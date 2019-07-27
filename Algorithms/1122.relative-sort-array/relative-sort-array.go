@@ -1,24 +1,27 @@
 package problem1122
 
+import "sort"
+
 func relativeSortArray(A, B []int) []int {
-	count := [1001]int{}
-	for _, a := range A {
-		count[a]++
+	serial := [1001]int{}
+	for i, b := range B {
+		serial[b] = i + 1
 	}
 
-	res := make([]int, 0, len(A))
-	for _, b := range B {
-		for count[b] > 0 {
-			res = append(res, b)
-			count[b]--
+	indexOf := func(i int) int {
+		Ai := A[i]
+		sAi := serial[Ai]
+		if sAi > 0 {
+			return sAi
 		}
-	}
-	for i := 0; i < 1001; i++ {
-		for count[i] > 0 {
-			res = append(res, i)
-			count[i]--
-		}
+		return 1000 + Ai
 	}
 
-	return res
+	less := func(i, j int) bool {
+		return indexOf(i) < indexOf(j)
+	}
+
+	sort.Slice(A, less)
+
+	return A
 }
