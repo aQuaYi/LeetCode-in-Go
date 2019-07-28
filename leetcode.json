@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 557,
-	"Updated": "2019-07-28T18:16:49.826149387+08:00",
+	"Updated": "2019-07-28T19:35:05.371672734+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 253,
 			"Total": 255
 		},
 		"Medium": {
-			"Solved": 430,
+			"Solved": 431,
 			"Total": 441
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 182
 		},
 		"Total": {
-			"Solved": 863,
+			"Solved": 864,
 			"Total": 878
 		}
 	},
@@ -12613,7 +12613,7 @@
 			"ID": 1049,
 			"Title": "Last Stone Weight II",
 			"TitleSlug": "last-stone-weight-ii",
-			"PassRate": "39%",
+			"PassRate": "40%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -13165,7 +13165,7 @@
 			"ID": 1095,
 			"Title": "Find in Mountain Array",
 			"TitleSlug": "find-in-mountain-array",
-			"PassRate": "33%",
+			"PassRate": "34%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -13335,7 +13335,7 @@
 			"TitleSlug": "corporate-flight-bookings",
 			"PassRate": "47%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -13621,7 +13621,7 @@
 			"ID": 1133,
 			"Title": "Largest Unique Number",
 			"TitleSlug": "largest-unique-number",
-			"PassRate": "70%",
+			"PassRate": "71%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -13693,7 +13693,7 @@
 			"ID": 1139,
 			"Title": "Largest 1-Bordered Square",
 			"TitleSlug": "largest-1-bordered-square",
-			"PassRate": "36%",
+			"PassRate": "37%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -13705,7 +13705,7 @@
 			"ID": 1140,
 			"Title": "Stone Game II",
 			"TitleSlug": "stone-game-ii",
-			"PassRate": "55%",
+			"PassRate": "56%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
