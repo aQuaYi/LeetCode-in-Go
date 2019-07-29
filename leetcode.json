@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 555,
-	"Updated": "2019-07-29T19:54:58.582329515+08:00",
+	"Updated": "2019-07-29T20:45:47.610688149+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 253,
 			"Total": 255
 		},
 		"Medium": {
-			"Solved": 431,
+			"Solved": 432,
 			"Total": 441
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 182
 		},
 		"Total": {
-			"Solved": 864,
+			"Solved": 865,
 			"Total": 878
 		}
 	},
@@ -7825,7 +7825,7 @@
 			"ID": 650,
 			"Title": "2 Keys Keyboard",
 			"TitleSlug": "2-keys-keyboard",
-			"PassRate": "46%",
+			"PassRate": "47%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11509,7 +11509,7 @@
 			"ID": 957,
 			"Title": "Prison Cells After N Days",
 			"TitleSlug": "prison-cells-after-n-days",
-			"PassRate": "38%",
+			"PassRate": "37%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -13347,7 +13347,7 @@
 			"TitleSlug": "delete-nodes-and-return-forest",
 			"PassRate": "62%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -13657,7 +13657,7 @@
 			"ID": 1136,
 			"Title": "Parallel Courses",
 			"TitleSlug": "parallel-courses",
-			"PassRate": "56%",
+			"PassRate": "57%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": true,
