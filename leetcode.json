@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 555,
-	"Updated": "2019-07-30T16:41:38.704780088+08:00",
+	"Updated": "2019-07-30T17:09:38.158628935+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 253,
 			"Total": 255
 		},
 		"Medium": {
-			"Solved": 432,
+			"Solved": 433,
 			"Total": 441
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 182
 		},
 		"Total": {
-			"Solved": 865,
+			"Solved": 866,
 			"Total": 878
 		}
 	},
@@ -13359,7 +13359,7 @@
 			"TitleSlug": "maximum-nesting-depth-of-two-valid-parentheses-strings",
 			"PassRate": "64%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -13705,7 +13705,7 @@
 			"ID": 1140,
 			"Title": "Stone Game II",
 			"TitleSlug": "stone-game-ii",
-			"PassRate": "59%",
+			"PassRate": "60%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
