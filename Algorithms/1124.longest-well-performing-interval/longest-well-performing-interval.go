@@ -12,15 +12,13 @@ func longestWPI(hours []int) int {
 		//
 		if count > 0 {
 			res = i + 1
-		} else if count < 0 {
+		} else {
 			if rec[1-count] > 0 {
-				res = max(res, i-rec[1-count])
+				res = max(res, i-rec[1-count]+1)
 			}
-			if rec[-count] == 0 { // just record negative count
-				rec[-count] = i
+			if rec[-count] == 0 {
+				rec[-count] = i + 1
 			}
-		} else if hours[0] <= 8 {
-			res = i
 		}
 	}
 	return res
