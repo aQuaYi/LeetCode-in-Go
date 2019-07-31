@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
-	"Ranking": 554,
-	"Updated": "2019-07-31T16:43:30.168085221+08:00",
+	"Ranking": 552,
+	"Updated": "2019-07-31T21:16:39.202956556+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 253,
 			"Total": 255
 		},
 		"Medium": {
-			"Solved": 434,
+			"Solved": 435,
 			"Total": 441
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 182
 		},
 		"Total": {
-			"Solved": 867,
+			"Solved": 868,
 			"Total": 878
 		}
 	},
@@ -10465,7 +10465,7 @@
 			"ID": 870,
 			"Title": "Advantage Shuffle",
 			"TitleSlug": "advantage-shuffle",
-			"PassRate": "42%",
+			"PassRate": "43%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -13515,7 +13515,7 @@
 			"TitleSlug": "longest-well-performing-interval",
 			"PassRate": "29%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
@@ -13705,7 +13705,7 @@
 			"ID": 1140,
 			"Title": "Stone Game II",
 			"TitleSlug": "stone-game-ii",
-			"PassRate": "60%",
+			"PassRate": "61%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
