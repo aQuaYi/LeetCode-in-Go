@@ -20,20 +20,16 @@ func dfs(node *TreeNode) (*TreeNode, int) {
 		return nil, 0
 	}
 
-	if node.Left == nil && node.Right == nil {
-		return node, 1
-	}
-
 	l, ld := dfs(node.Left)
 	r, rd := dfs(node.Right)
-
-	if ld == rd {
-		return node, ld + 1
-	}
 
 	if ld > rd {
 		return l, ld + 1
 	}
 
-	return r, rd + 1
+	if rd > ld {
+		return r, rd + 1
+	}
+
+	return node, ld + 1
 }
