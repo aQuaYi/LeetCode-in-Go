@@ -74,3 +74,10 @@ func Test_Problem0090(t *testing.T) {
 		ast.Equal(a.one, subsetsWithDup(p.nums), "输入:%v", p)
 	}
 }
+
+func Benchmark_subsetsWithDup(b *testing.B) {
+	A := []int{1, 2, 3, 6, 5, 4, 7, 8, 9, 5, 6, 3, 2, 4}
+	for i := 1; i < b.N; i++ {
+		subsetsWithDup(A)
+	}
+}
