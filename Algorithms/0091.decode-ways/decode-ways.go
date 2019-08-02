@@ -5,19 +5,29 @@ func numDecodings(s string) int {
 
 	dp := make([]int, n+1)
 	// dp[i] 表示 s[:i+1] 的组成方式数
-	dp[0] = 1
-	one := int(s[0] - '0')
-	for i := 1; i <= n; i++ {
+	dp[0], dp[1] = 1, 1
+	if s[0] == '0' {
+		dp[1] = 0
+	}
+	two, one := 0, int(s[0]-'0')
+	for i := 2; i <= n; i++ {
 		last := int(s[i-1] - '0')
-		two, one := one*10+last, last
-		dp[i] = dp[i-1]*check(one) + dp[i-2]*check(two)
+		two, one = one*10+last, last
+		dp[i] = dp[i-2]*checkTwo(two) + dp[i-1]*checkOne(one)
 	}
 
 	return dp[n]
 }
 
-func check(code int) int {
-	if 1 <= code && code <= 26 {
+func checkTwo(code int) int {
+	if 10 <= code && code <= 26 {
+		return 1
+	}
+	return 0
+}
+
+func checkOne(code int) int {
+	if 1 <= code && code <= 9 {
 		return 1
 	}
 	return 0
