@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
-	"Ranking": 553,
-	"Updated": "2019-08-02T16:57:24.428846955+08:00",
+	"Ranking": 555,
+	"Updated": "2019-08-02T20:08:30.699402383+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 253,
@@ -1121,7 +1121,7 @@
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": true,
+			"IsFavor": false,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -11749,7 +11749,7 @@
 			"ID": 977,
 			"Title": "Squares of a Sorted Array",
 			"TitleSlug": "squares-of-a-sorted-array",
-			"PassRate": "72%",
+			"PassRate": "71%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12409,7 +12409,7 @@
 			"ID": 1032,
 			"Title": "Stream of Characters",
 			"TitleSlug": "stream-of-characters",
-			"PassRate": "41%",
+			"PassRate": "42%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -13127,7 +13127,7 @@
 		},
 		{
 			"ID": 1092,
-			"Title": "Shortest Common Supersequence",
+			"Title": "Shortest Common Supersequence ",
 			"TitleSlug": "shortest-common-supersequence",
 			"PassRate": "47%",
 			"Difficulty": "Hard",
@@ -13261,7 +13261,7 @@
 			"ID": 1103,
 			"Title": "Distribute Candies to People",
 			"TitleSlug": "distribute-candies-to-people",
-			"PassRate": "61%",
+			"PassRate": "60%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -13741,7 +13741,7 @@
 			"ID": 1143,
 			"Title": "Longest Common Subsequence",
 			"TitleSlug": "longest-common-subsequence",
-			"PassRate": "55%",
+			"PassRate": "54%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
