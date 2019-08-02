@@ -1,214 +1,127 @@
 package problem0091
 
 import (
-	"fmt"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
 )
 
-type question struct {
-	para
-	ans
+// tcs is testcase slice
+var tcs = []struct {
+	s   string
+	ans int
+}{
+
+	{
+		"546313216586746123648561321321564321657651231365456475642312356486765123156465132546543213546316543465465465465427",
+		5038848,
+	},
+
+	{
+		"27",
+		1,
+	},
+
+	{
+		"1",
+		1,
+	},
+
+	{
+		"203",
+		1,
+	},
+
+	{
+		"119",
+		3,
+	},
+
+	{
+		"2011",
+		2,
+	},
+
+	{
+		"1192",
+		3,
+	},
+
+	{
+		"1102",
+		1,
+	},
+
+	{
+		"1128",
+		3,
+	},
+
+	{
+		"1",
+		1,
+	},
+
+	{
+		"12",
+		2,
+	},
+
+	{
+		"121",
+		3,
+	},
+
+	{
+		"1212",
+		5,
+	},
+
+	{
+		"12121",
+		8,
+	},
+
+	{
+		"121212",
+		13,
+	},
+
+	{
+		"1212121",
+		21,
+	},
+
+	{
+		"12121212",
+		34,
+	},
+
+	{
+		"12",
+		2,
+	},
+
+	{
+		"226",
+		3,
+	},
+
+	// 可以有多个 testcase
 }
 
-// para 是参数
-type para struct {
-	s string
-}
-
-// ans 是答案
-type ans struct {
-	one int
-}
-
-func Test_Problem0091(t *testing.T) {
+func Test_numDecodings(t *testing.T) {
 	ast := assert.New(t)
 
-	qs := []question{
-
-		question{
-			para{
-				"27",
-			},
-			ans{
-				1,
-			},
-		},
-		question{
-			para{
-				"",
-			},
-			ans{
-				0,
-			},
-		},
-
-		question{
-			para{
-				"0",
-			},
-			ans{
-				0,
-			},
-		},
-
-		question{
-			para{
-				"1",
-			},
-			ans{
-				1,
-			},
-		},
-
-		question{
-			para{
-				"203",
-			},
-			ans{
-				1,
-			},
-		},
-
-		question{
-			para{
-				"119",
-			},
-			ans{
-				3,
-			},
-		},
-		question{
-			para{
-				"2011",
-			},
-			ans{
-				2,
-			},
-		},
-
-		question{
-			para{
-				"1192",
-			},
-			ans{
-				3,
-			},
-		},
-
-		question{
-			para{
-				"1102",
-			},
-			ans{
-				1,
-			},
-		},
-
-		question{
-			para{
-				"1100",
-			},
-			ans{
-				0,
-			},
-		},
-
-		question{
-			para{
-				"1190",
-			},
-			ans{
-				0,
-			},
-		},
-
-		question{
-			para{
-				"1128",
-			},
-			ans{
-				3,
-			},
-		},
-
-		question{
-			para{
-				"1",
-			},
-			ans{
-				1,
-			},
-		},
-
-		question{
-			para{
-				"12",
-			},
-			ans{
-				2,
-			},
-		},
-
-		question{
-			para{
-				"121",
-			},
-			ans{
-				3,
-			},
-		},
-		question{
-			para{
-				"1212",
-			},
-			ans{
-				5,
-			},
-		},
-
-		question{
-			para{
-				"12121",
-			},
-			ans{
-				8,
-			},
-		},
-
-		question{
-			para{
-				"121212",
-			},
-			ans{
-				13,
-			},
-		},
-
-		question{
-			para{
-				"1212121",
-			},
-			ans{
-				21,
-			},
-		},
-		question{
-			para{
-				"12121212",
-			},
-			ans{
-				34,
-			},
-		},
-		// 如需多个测试，可以复制上方元素。
+	for _, tc := range tcs {
+		ast.Equal(tc.ans, numDecodings(tc.s), "输入:%v", tc)
 	}
+}
 
-	for _, q := range qs {
-		a, p := q.ans, q.para
-		fmt.Printf("~~%v~~\n", p)
-
-		ast.Equal(a.one, numDecodings(p.s), "输入:%v", p)
+func Benchmark_numDecodings(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		for _, tc := range tcs {
+			numDecodings(tc.s)
+		}
 	}
 }

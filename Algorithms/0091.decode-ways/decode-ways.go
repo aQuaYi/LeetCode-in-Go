@@ -2,26 +2,25 @@ package problem0091
 
 func numDecodings(s string) int {
 	n := len(s)
-	if n == 0 {
-		return 0
-	}
 
 	dp := make([]int, n+1)
 	// dp[i] 表示 s[:i+1] 的组成方式数
-	dp[0], dp[1] = 1, one(s[0:1])
-
-	for i := 2; i <= n; i++ {
-		w1, w2 := one(s[i-1:i]), two(s[i-2:i])
-		dp[i] = dp[i-1]*w1 + dp[i-2]*w2
-		if dp[i] == 0 {
-			// 子字符串 s[:i+1] 的组成方式数为 0
-			// 则，s 的组成方式数肯定也为 0
-			// 这时可以提前结束
-			return 0
-		}
+	dp[0] = 1
+	one := int(s[0] - '0')
+	for i := 1; i <= n; i++ {
+		last := int(s[i-1] - '0')
+		two, one := one*10+last, last
+		dp[i] = dp[i-1]*check(one) + dp[i-2]*check(two)
 	}
 
 	return dp[n]
+}
+
+func check(code int) int {
+	if 1 <= code && code <= 26 {
+		return 1
+	}
+	return 0
 }
 
 // 检查 s 是否为合格的单字符
