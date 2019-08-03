@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 552,
-	"Updated": "2019-08-03T18:29:38.020053547+08:00",
+	"Updated": "2019-08-03T20:43:37.593514315+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 253,
@@ -12,11 +12,11 @@
 			"Total": 442
 		},
 		"Hard": {
-			"Solved": 181,
+			"Solved": 182,
 			"Total": 182
 		},
 		"Total": {
-			"Solved": 869,
+			"Solved": 870,
 			"Total": 879
 		}
 	},
@@ -8809,7 +8809,7 @@
 			"ID": 732,
 			"Title": "My Calendar III",
 			"TitleSlug": "my-calendar-iii",
-			"PassRate": "55%",
+			"PassRate": "56%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -13333,7 +13333,7 @@
 			"ID": 1109,
 			"Title": "Corporate Flight Bookings",
 			"TitleSlug": "corporate-flight-bookings",
-			"PassRate": "48%",
+			"PassRate": "47%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -13527,9 +13527,9 @@
 			"TitleSlug": "smallest-sufficient-team",
 			"PassRate": "44%",
 			"Difficulty": "Hard",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
