@@ -2,45 +2,47 @@ package problem1125
 
 import "math"
 
-var workers []int
-var skillCands [][]int
-var dp map[int][]int
-
 func smallestSufficientTeam(reqSkills []string, people [][]string) []int {
-	index := make(map[string]int)
+	index := make(map[string]uint)
 	for i, skill := range reqSkills {
-		index[skill] = i
+		index[skill] = uint(i)
 	}
-	workers = make([]int, len(people))
-	skillCands = make([][]int, len(reqSkills))
+	// encode person's skills to integer
+	personSkills := make([]int, len(people))
+	// collect all candidates of a skill
+	cands := make([][]int, len(reqSkills))
 	for i, p := range people {
+		skills := 0
 		for _, skill := range p {
 			if _, ok := index[skill]; ok {
-				workers[i] |= (1 << uint(index[skill]))
-				skillCands[index[skill]] = append(skillCands[index[skill]], i)
+				skills |= 1 << index[skill]
+				cands[index[skill]] = append(cands[index[skill]], i)
 			}
 		}
+		personSkills[i] = skills
 	}
-	dp = map[int][]int{0: {}}
-	return dfs(1<<uint(len(reqSkills)) - 1)
-}
 
-func dfs(skillsWanted int) []int {
-	if v, ok := dp[skillsWanted]; ok {
-		return v
-	}
-	smallestTeamSize := 61
-	res := []int{}
-	targetSkill := int(math.Log2(float64(skillsWanted & -skillsWanted)))
-	for _, p := range skillCands[targetSkill] {
-		candSkillWanted := skillsWanted &^ workers[p]
-		pre := dfs(candSkillWanted)
-		pre = append(pre, p)
-		if len(pre) < smallestTeamSize {
-			smallestTeamSize = len(pre)
-			res = pre
+	smallestTeam := map[int][]int{0: {}}
+
+	var dfs func(int) []int
+	dfs = func(skills int) []int {
+		if team, ok := smallestTeam[skills]; ok {
+			return team
 		}
+		var minTeam []int
+		minTeamSize := 61 // people.length<=60
+		skill := int(math.Log2(float64(skills & -skills)))
+		for _, c := range cands[skill] {
+			needSkills := skills & (^personSkills[c])
+			team := dfs(needSkills)
+			if minTeamSize > len(team)+1 {
+				minTeamSize = len(team) + 1
+				minTeam = append(team, c)
+			}
+		}
+		smallestTeam[skills] = minTeam
+		return minTeam
 	}
-	dp[skillsWanted] = res
-	return res
+
+	return dfs(1<<uint(len(reqSkills)) - 1)
 }
