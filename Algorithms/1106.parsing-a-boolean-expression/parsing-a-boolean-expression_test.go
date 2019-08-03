@@ -33,6 +33,11 @@ var tcs = []struct {
 	},
 
 	{
+		"&(t,t,t,t,t,t)",
+		true,
+	},
+
+	{
 		"&(t,f)",
 		false,
 	},
