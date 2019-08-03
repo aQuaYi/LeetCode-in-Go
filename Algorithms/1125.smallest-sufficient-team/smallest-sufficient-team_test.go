@@ -14,6 +14,12 @@ var tcs = []struct {
 }{
 
 	{
+		[]string{"rxocajdeo", "mymflnlegtrnr", "xbyqqh", "jarzoaupviqkx", "sfgstfsqlqmfjv", "lpnpelpwy", "pyqrhjamdrias"},
+		[][]string{{"pyqrhjamdrias"}, {"rxocajdeo", "pyqrhjamdrias"}, {}, {"rxocajdeo"}, {"mymflnlegtrnr", "jarzoaupviqkx"}, {}, {"rxocajdeo"}, {}, {"sfgstfsqlqmfjv"}, {"rxocajdeo"}, {"pyqrhjamdrias"}, {}, {}, {}, {"lpnpelpwy"}, {}, {"rxocajdeo", "mymflnlegtrnr"}, {"rxocajdeo"}, {"xbyqqh", "pyqrhjamdrias"}, {"mymflnlegtrnr"}},
+		[]int{3, 4, 8, 14, 18},
+	},
+
+	{
 		[]string{"java", "nodejs", "reactjs"},
 		[][]string{{"java"}, {"nodejs"}, {"nodejs", "reactjs"}},
 		[]int{0, 2},
@@ -32,7 +38,19 @@ func Test_smallestSufficientTeam(t *testing.T) {
 	ast := assert.New(t)
 
 	for _, tc := range tcs {
-		ast.Equal(tc.ans, smallestSufficientTeam(tc.reqs, tc.people), "输入:%v", tc)
+		skillMap := make(map[string]bool, len(tc.reqs))
+		indexs := smallestSufficientTeam(tc.reqs, tc.people)
+		for _, i := range indexs {
+			for _, s := range tc.people[i] {
+				skillMap[s] = true
+			}
+		}
+		for _, r := range tc.reqs {
+			_, ok := skillMap[r]
+			ast.True(ok, "组合中应该含有 %s 技能", r)
+			delete(skillMap, r)
+		}
+		ast.Equal(0, len(skillMap))
 	}
 }
 
