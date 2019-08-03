@@ -3,21 +3,17 @@ package problem1106
 import "strings"
 
 func parseBoolExpr(exp string) bool {
-	if exp == "t" {
-		return true
-	}
-	if exp == "f" {
-		return false
+	if exp == "t" || exp == "f" {
+		return exp == "t"
 	}
 	n := len(exp)
-	symbol, exp := exp[0], exp[2:n-1]
-	subs := split(exp)
-	switch symbol {
+	op, exp := exp[0], exp[2:n-1]
+	switch op {
 	case '&':
-		return and(subs)
+		return and(split(exp))
 	case '|':
-		return or(subs)
-	default:
+		return or(split(exp))
+	default: // !
 		return not(exp)
 	}
 }
@@ -44,15 +40,6 @@ func split(exp string) []string {
 	return strings.Split(exp, "@")
 }
 
-func or(exps []string) bool {
-	for _, e := range exps {
-		if parseBoolExpr(e) {
-			return true
-		}
-	}
-	return false
-}
-
 func and(exps []string) bool {
 	for _, e := range exps {
 		if !parseBoolExpr(e) {
@@ -60,6 +47,15 @@ func and(exps []string) bool {
 		}
 	}
 	return true
+}
+
+func or(exps []string) bool {
+	for _, e := range exps {
+		if parseBoolExpr(e) {
+			return true
+		}
+	}
+	return false
 }
 
 func not(exp string) bool {
