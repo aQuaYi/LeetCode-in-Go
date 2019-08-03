@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 555,
-	"Updated": "2019-08-03T08:38:50.524716233+08:00",
+	"Updated": "2019-08-03T09:25:08.613714472+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 254,
@@ -12,11 +12,11 @@
 			"Total": 441
 		},
 		"Hard": {
-			"Solved": 180,
+			"Solved": 181,
 			"Total": 182
 		},
 		"Total": {
-			"Solved": 868,
+			"Solved": 869,
 			"Total": 879
 		}
 	},
@@ -13299,7 +13299,7 @@
 			"TitleSlug": "parsing-a-boolean-expression",
 			"PassRate": "58%",
 			"Difficulty": "Hard",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
