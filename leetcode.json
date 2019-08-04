@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 552,
-	"Updated": "2019-08-04T10:59:57.918871595+08:00",
+	"Updated": "2019-08-04T15:26:54.983014903+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 253,
@@ -9,15 +9,15 @@
 		},
 		"Medium": {
 			"Solved": 436,
-			"Total": 442
+			"Total": 445
 		},
 		"Hard": {
 			"Solved": 182,
-			"Total": 182
+			"Total": 183
 		},
 		"Total": {
 			"Solved": 871,
-			"Total": 879
+			"Total": 883
 		}
 	},
 	"Problems": [
@@ -9133,7 +9133,7 @@
 			"ID": 759,
 			"Title": "Employee Free Time",
 			"TitleSlug": "employee-free-time",
-			"PassRate": "61%",
+			"PassRate": "62%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -9169,7 +9169,7 @@
 			"ID": 762,
 			"Title": "Prime Number of Set Bits in Binary Representation",
 			"TitleSlug": "prime-number-of-set-bits-in-binary-representation",
-			"PassRate": "59%",
+			"PassRate": "60%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12181,7 +12181,7 @@
 			"ID": 1013,
 			"Title": "Partition Array Into Three Parts With Equal Sum",
 			"TitleSlug": "partition-array-into-three-parts-with-equal-sum",
-			"PassRate": "56%",
+			"PassRate": "55%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12685,7 +12685,7 @@
 			"ID": 1055,
 			"Title": "Shortest Way to Form String",
 			"TitleSlug": "shortest-way-to-form-string",
-			"PassRate": "58%",
+			"PassRate": "59%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -12781,7 +12781,7 @@
 			"ID": 1063,
 			"Title": "Number of Valid Subarrays",
 			"TitleSlug": "number-of-valid-subarrays",
-			"PassRate": "73%",
+			"PassRate": "72%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -13741,8 +13741,56 @@
 			"ID": 1143,
 			"Title": "Longest Common Subsequence",
 			"TitleSlug": "longest-common-subsequence",
-			"PassRate": "56%",
+			"PassRate": "57%",
 			"Difficulty": "Medium",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 1144,
+			"Title": "Decrease Elements To Make Array Zigzag",
+			"TitleSlug": "decrease-elements-to-make-array-zigzag",
+			"PassRate": "35%",
+			"Difficulty": "Medium",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 1145,
+			"Title": "Binary Tree Coloring Game",
+			"TitleSlug": "binary-tree-coloring-game",
+			"PassRate": "38%",
+			"Difficulty": "Medium",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 1146,
+			"Title": "Snapshot Array",
+			"TitleSlug": "snapshot-array",
+			"PassRate": "24%",
+			"Difficulty": "Medium",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 1147,
+			"Title": "Longest Chunked Palindrome Decomposition",
+			"TitleSlug": "longest-chunked-palindrome-decomposition",
+			"PassRate": "54%",
+			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
 			"IsFavor": false,
