@@ -4,7 +4,7 @@ import (
 	"math"
 )
 
-func shortestAlternatingPaths(n int, reds [][]int, blues [][]int) []int {
+func shortestAlternatingPaths(n int, redEdges, blueEdges [][]int) []int {
 	res := make([]int, n)
 	for i := range res {
 		res[i] = math.MaxInt64
@@ -35,11 +35,11 @@ func shortestAlternatingPaths(n int, reds [][]int, blues [][]int) []int {
 		}
 	}
 
-	redEdge := trans(n, reds)
-	blueEdge := trans(n, blues)
+	red := trans(n, redEdges)
+	blue := trans(n, blueEdges)
 
-	bfs(make([]int, 1, n*2), redEdge, blueEdge)
-	bfs(make([]int, 1, n*2), blueEdge, redEdge)
+	bfs(make([]int, 1, n*2), red, blue)
+	bfs(make([]int, 1, n*2), blue, red)
 
 	for i := range res {
 		if res[i] == math.MaxInt64 {
