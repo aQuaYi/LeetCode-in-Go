@@ -15,8 +15,7 @@ func mctFromLeafValues(A []int) int {
 			pop, top = stack[top], top-1
 			res += pop * min(stack[top], a)
 		}
-		top++
-		stack[top] = a
+		stack[top+1], top = a, top+1
 	}
 
 	for top >= 2 {
