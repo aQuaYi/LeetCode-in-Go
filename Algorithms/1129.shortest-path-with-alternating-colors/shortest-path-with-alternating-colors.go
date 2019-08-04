@@ -1,41 +1,48 @@
 package problem1129
 
+import (
+	"math"
+)
+
 func shortestAlternatingPaths(n int, reds [][]int, blues [][]int) []int {
-	isRed := convert(n, reds)
-	isBlue := convert(n, blues)
+	hasRedEdge := convert(n, reds)
+	hasBlueEdge := convert(n, blues)
 
 	res := make([]int, n)
 	for i := range res {
-		res[i] = n
+		res[i] = math.MaxInt64
 	}
 
-	bfs := func(g []int, isCur, isNext [][]bool) {
-		hasSeen := make([]bool, n)
+	bfs := func(g []int, hasCur, hasNext [][]bool) {
+		seenCur := make([]bool, n)
+		seenNext := make([]bool, n)
 		count := 0
 		for len(g) > 0 {
 			size := len(g)
 			for k := 0; k < size; k++ {
 				i := g[k]
 				res[i] = min(res[i], count)
-				hasSeen[i] = true
 				for j := 0; j < n; j++ {
-					if hasSeen[j] || !isCur[i][j] {
+					if seenCur[j] || !hasCur[i][j] {
 						continue
 					}
+					seenCur[j] = true
 					g = append(g, j)
 				}
 			}
 			g = g[size:]
-			isCur, isNext = isNext, isCur
 			count++
+			// exchange colors
+			hasCur, hasNext = hasNext, hasCur
+			seenCur, seenNext = seenNext, seenCur
 		}
 	}
 
-	bfs([]int{0}, isRed, isBlue)
-	bfs([]int{0}, isBlue, isRed)
+	bfs(make([]int, 1, n*2), hasRedEdge, hasBlueEdge)
+	bfs(make([]int, 1, n*2), hasBlueEdge, hasRedEdge)
 
 	for i := range res {
-		if res[i] == n {
+		if res[i] == math.MaxInt64 {
 			res[i] = -1
 		}
 	}
@@ -43,16 +50,17 @@ func shortestAlternatingPaths(n int, reds [][]int, blues [][]int) []int {
 	return res
 }
 
-func convert(n int, edges [][]int) [][]bool {
-	res := make([][]bool, n)
-	for i := range res {
-		res[i] = make([]bool, n)
+// hasEdge[i][j]==true means has a directed edge form i to j
+func convert(n int, edges [][]int) (hasEdge [][]bool) {
+	hasEdge = make([][]bool, n)
+	for i := range hasEdge {
+		hasEdge[i] = make([]bool, n)
 	}
 	for _, e := range edges {
 		i, j := e[0], e[1]
-		res[i][j] = true
+		hasEdge[i][j] = true
 	}
-	return res
+	return hasEdge
 }
 
 func min(a, b int) int {
