@@ -11,20 +11,24 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|253|436|182|871|
-|**Total**|255|442|182|879|
+|**Accepted**|253|437|182|872|
+|**Total**|255|445|183|883|
 
 ## 题解
 
 |题号|题目|通过率|难度|收藏|
 |:-:|:-|:-: | :-: | :-: |
-|[1143](https://leetcode.com/problems/longest-common-subsequence/)| * Longest Common Subsequence :new: |56%|Medium||
+|[1147](https://leetcode.com/problems/longest-chunked-palindrome-decomposition/)| * Longest Chunked Palindrome Decomposition :new: |55%|Hard||
+|[1146](https://leetcode.com/problems/snapshot-array/)| * Snapshot Array :new: |24%|Medium||
+|[1145](https://leetcode.com/problems/binary-tree-coloring-game/)| * Binary Tree Coloring Game :new: |38%|Medium||
+|[1144](https://leetcode.com/problems/decrease-elements-to-make-array-zigzag/)| * Decrease Elements To Make Array Zigzag :new: |35%|Medium||
+|[1143](https://leetcode.com/problems/longest-common-subsequence/)| * Longest Common Subsequence :new: |57%|Medium||
 |[1140](https://leetcode.com/problems/stone-game-ii/)| * Stone Game II|60%|Medium||
 |[1139](https://leetcode.com/problems/largest-1-bordered-square/)| * Largest 1-Bordered Square|42%|Medium||
 |[1138](https://leetcode.com/problems/alphabet-board-path/)| * Alphabet Board Path|41%|Medium||
 |[1137](https://leetcode.com/problems/n-th-tribonacci-number/)| * N-th Tribonacci Number|62%|Easy||
 |[1131](https://leetcode.com/problems/maximum-of-absolute-value-expression/)| * Maximum of Absolute Value Expression|50%|Medium||
-|[1130](https://leetcode.com/problems/minimum-cost-tree-from-leaf-values/)| * Minimum Cost Tree From Leaf Values|58%|Medium||
+|[1130](https://leetcode.com/problems/minimum-cost-tree-from-leaf-values/)|[Minimum Cost Tree From Leaf Values](./Algorithms/1130.minimum-cost-tree-from-leaf-values)|58%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[1129](https://leetcode.com/problems/shortest-path-with-alternating-colors/)|[Shortest Path with Alternating Colors](./Algorithms/1129.shortest-path-with-alternating-colors)|35%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[1128](https://leetcode.com/problems/number-of-equivalent-domino-pairs/)| * Number of Equivalent Domino Pairs|43%|Easy||
 |[1125](https://leetcode.com/problems/smallest-sufficient-team/)|[Smallest Sufficient Team](./Algorithms/1125.smallest-sufficient-team)|44%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -94,7 +98,7 @@
 |[1016](https://leetcode.com/problems/binary-string-with-substrings-representing-1-to-n/)|[Binary String With Substrings Representing 1 To N](./Algorithms/1016.binary-string-with-substrings-representing-1-to-n)|59%|Medium||
 |[1015](https://leetcode.com/problems/smallest-integer-divisible-by-k/)|[Smallest Integer Divisible by K](./Algorithms/1015.smallest-integer-divisible-by-k)|29%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[1014](https://leetcode.com/problems/best-sightseeing-pair/)|[Best Sightseeing Pair](./Algorithms/1014.best-sightseeing-pair)|49%|Medium||
-|[1013](https://leetcode.com/problems/partition-array-into-three-parts-with-equal-sum/)|[Partition Array Into Three Parts With Equal Sum](./Algorithms/1013.partition-array-into-three-parts-with-equal-sum)|56%|Easy||
+|[1013](https://leetcode.com/problems/partition-array-into-three-parts-with-equal-sum/)|[Partition Array Into Three Parts With Equal Sum](./Algorithms/1013.partition-array-into-three-parts-with-equal-sum)|55%|Easy||
 |[1012](https://leetcode.com/problems/numbers-with-repeated-digits/)|[Numbers With Repeated Digits](./Algorithms/1012.numbers-with-repeated-digits)|35%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[1011](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/)|[Capacity To Ship Packages Within D Days](./Algorithms/1011.capacity-to-ship-packages-within-d-days)|53%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[1010](https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/)|[Pairs of Songs With Total Durations Divisible by 60](./Algorithms/1010.pairs-of-songs-with-total-durations-divisible-by-60)|45%|Easy||
@@ -341,7 +345,7 @@
 |[0765](https://leetcode.com/problems/couples-holding-hands/)|[Couples Holding Hands](./Algorithms/0765.couples-holding-hands)|51%|Hard||
 |[0764](https://leetcode.com/problems/largest-plus-sign/)|[Largest Plus Sign](./Algorithms/0764.largest-plus-sign)|43%|Medium||
 |[0763](https://leetcode.com/problems/partition-labels/)|[Partition Labels](./Algorithms/0763.partition-labels)|71%|Medium||
-|[0762](https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation/)|[Prime Number of Set Bits in Binary Representation](./Algorithms/0762.prime-number-of-set-bits-in-binary-representation)|59%|Easy||
+|[0762](https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation/)|[Prime Number of Set Bits in Binary Representation](./Algorithms/0762.prime-number-of-set-bits-in-binary-representation)|60%|Easy||
 |[0761](https://leetcode.com/problems/special-binary-string/)|[Special Binary String](./Algorithms/0761.special-binary-string)|52%|Hard||
 |[0757](https://leetcode.com/problems/set-intersection-size-at-least-two/)|[Set Intersection Size At Least Two](./Algorithms/0757.set-intersection-size-at-least-two)|37%|Hard||
 |[0756](https://leetcode.com/problems/pyramid-transition-matrix/)|[Pyramid Transition Matrix](./Algorithms/0756.pyramid-transition-matrix)|52%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -657,7 +661,7 @@
 |[0316](https://leetcode.com/problems/remove-duplicate-letters/)|[Remove Duplicate Letters](./Algorithms/0316.remove-duplicate-letters)|33%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0315](https://leetcode.com/problems/count-of-smaller-numbers-after-self/)|[Count of Smaller Numbers After Self](./Algorithms/0315.count-of-smaller-numbers-after-self)|38%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0313](https://leetcode.com/problems/super-ugly-number/)|[Super Ugly Number](./Algorithms/0313.super-ugly-number)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|[0312](https://leetcode.com/problems/burst-balloons/)|[Burst Balloons](./Algorithms/0312.burst-balloons)|47%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|[0312](https://leetcode.com/problems/burst-balloons/)|[Burst Balloons](./Algorithms/0312.burst-balloons)|48%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0310](https://leetcode.com/problems/minimum-height-trees/)|[Minimum Height Trees](./Algorithms/0310.minimum-height-trees)|30%|Medium||
 |[0309](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)|[Best Time to Buy and Sell Stock with Cooldown](./Algorithms/0309.best-time-to-buy-and-sell-stock-with-cooldown)|44%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0307](https://leetcode.com/problems/range-sum-query-mutable/)|[Range Sum Query - Mutable](./Algorithms/0307.range-sum-query-mutable)|29%|Medium||

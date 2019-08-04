@@ -1,4 +1,4 @@
-# 我收藏的 330 题
+# 我收藏的 331 题
 
 |题号|题目|通过率|难度|收藏|
 |:-:|:-|:-: | :-: | :-: |
@@ -72,7 +72,7 @@
 |[0300](https://leetcode.com/problems/longest-increasing-subsequence/)|[Longest Increasing Subsequence](./Algorithms/0300.longest-increasing-subsequence)|41%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0301](https://leetcode.com/problems/remove-invalid-parentheses/)|[Remove Invalid Parentheses](./Algorithms/0301.remove-invalid-parentheses)|39%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0309](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)|[Best Time to Buy and Sell Stock with Cooldown](./Algorithms/0309.best-time-to-buy-and-sell-stock-with-cooldown)|44%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|[0312](https://leetcode.com/problems/burst-balloons/)|[Burst Balloons](./Algorithms/0312.burst-balloons)|47%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|[0312](https://leetcode.com/problems/burst-balloons/)|[Burst Balloons](./Algorithms/0312.burst-balloons)|48%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0313](https://leetcode.com/problems/super-ugly-number/)|[Super Ugly Number](./Algorithms/0313.super-ugly-number)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0315](https://leetcode.com/problems/count-of-smaller-numbers-after-self/)|[Count of Smaller Numbers After Self](./Algorithms/0315.count-of-smaller-numbers-after-self)|38%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0316](https://leetcode.com/problems/remove-duplicate-letters/)|[Remove Duplicate Letters](./Algorithms/0316.remove-duplicate-letters)|33%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -332,3 +332,4 @@
 |[1105](https://leetcode.com/problems/filling-bookcase-shelves/)|[Filling Bookcase Shelves](./Algorithms/1105.filling-bookcase-shelves)|54%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[1125](https://leetcode.com/problems/smallest-sufficient-team/)|[Smallest Sufficient Team](./Algorithms/1125.smallest-sufficient-team)|44%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[1129](https://leetcode.com/problems/shortest-path-with-alternating-colors/)|[Shortest Path with Alternating Colors](./Algorithms/1129.shortest-path-with-alternating-colors)|35%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|[1130](https://leetcode.com/problems/minimum-cost-tree-from-leaf-values/)|[Minimum Cost Tree From Leaf Values](./Algorithms/1130.minimum-cost-tree-from-leaf-values)|58%|Medium|[❤](https://leetcode.com/list/oussv5j)|

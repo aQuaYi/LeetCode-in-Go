@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 552,
-	"Updated": "2019-08-04T15:26:54.983014903+08:00",
+	"Updated": "2019-08-04T16:56:25.692521149+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 253,
 			"Total": 255
 		},
 		"Medium": {
-			"Solved": 436,
+			"Solved": 437,
 			"Total": 445
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 183
 		},
 		"Total": {
-			"Solved": 871,
+			"Solved": 872,
 			"Total": 883
 		}
 	},
@@ -3769,7 +3769,7 @@
 			"ID": 312,
 			"Title": "Burst Balloons",
 			"TitleSlug": "burst-balloons",
-			"PassRate": "47%",
+			"PassRate": "48%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -13465,7 +13465,7 @@
 			"ID": 1120,
 			"Title": "Maximum Average Subtree",
 			"TitleSlug": "maximum-average-subtree",
-			"PassRate": "59%",
+			"PassRate": "60%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -13587,9 +13587,9 @@
 			"TitleSlug": "minimum-cost-tree-from-leaf-values",
 			"PassRate": "58%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -13789,7 +13789,7 @@
 			"ID": 1147,
 			"Title": "Longest Chunked Palindrome Decomposition",
 			"TitleSlug": "longest-chunked-palindrome-decomposition",
-			"PassRate": "54%",
+			"PassRate": "55%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
