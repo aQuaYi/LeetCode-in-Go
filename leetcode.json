@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 552,
-	"Updated": "2019-08-04T08:08:09.235955351+08:00",
+	"Updated": "2019-08-04T10:59:57.918871595+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 253,
 			"Total": 255
 		},
 		"Medium": {
-			"Solved": 435,
+			"Solved": 436,
 			"Total": 442
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 182
 		},
 		"Total": {
-			"Solved": 870,
+			"Solved": 871,
 			"Total": 879
 		}
 	},
@@ -12397,7 +12397,7 @@
 			"ID": 1031,
 			"Title": "Maximum Sum of Two Non-Overlapping Subarrays",
 			"TitleSlug": "maximum-sum-of-two-non-overlapping-subarrays",
-			"PassRate": "55%",
+			"PassRate": "54%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12781,7 +12781,7 @@
 			"ID": 1063,
 			"Title": "Number of Valid Subarrays",
 			"TitleSlug": "number-of-valid-subarrays",
-			"PassRate": "72%",
+			"PassRate": "73%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -13575,9 +13575,9 @@
 			"TitleSlug": "shortest-path-with-alternating-colors",
 			"PassRate": "35%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -13681,7 +13681,7 @@
 			"ID": 1138,
 			"Title": "Alphabet Board Path",
 			"TitleSlug": "alphabet-board-path",
-			"PassRate": "42%",
+			"PassRate": "41%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
