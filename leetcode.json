@@ -1,7 +1,12 @@
 {
 	"Username": "aQuaYi",
+<<<<<<< HEAD
 	"Ranking": 548,
 	"Updated": "2019-08-06T17:04:49.893114941+08:00",
+=======
+	"Ranking": 552,
+	"Updated": "2019-08-04T16:56:25.692521149+08:00",
+>>>>>>> 38bbe0897dde70e1fca503b76f54733d89b6bd91
 	"Record": {
 		"Easy": {
 			"Solved": 253,
@@ -10573,7 +10578,7 @@
 			"ID": 879,
 			"Title": "Profitable Schemes",
 			"TitleSlug": "profitable-schemes",
-			"PassRate": "36%",
+			"PassRate": "37%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -13633,7 +13638,7 @@
 			"ID": 1134,
 			"Title": "Armstrong Number",
 			"TitleSlug": "armstrong-number",
-			"PassRate": "80%",
+			"PassRate": "79%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -13645,7 +13650,11 @@
 			"ID": 1135,
 			"Title": "Connecting Cities With Minimum Cost",
 			"TitleSlug": "connecting-cities-with-minimum-cost",
+<<<<<<< HEAD
 			"PassRate": "48%",
+=======
+			"PassRate": "47%",
+>>>>>>> 38bbe0897dde70e1fca503b76f54733d89b6bd91
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -13681,7 +13690,7 @@
 			"ID": 1138,
 			"Title": "Alphabet Board Path",
 			"TitleSlug": "alphabet-board-path",
-			"PassRate": "42%",
+			"PassRate": "41%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -13741,7 +13750,11 @@
 			"ID": 1143,
 			"Title": "Longest Common Subsequence",
 			"TitleSlug": "longest-common-subsequence",
+<<<<<<< HEAD
 			"PassRate": "59%",
+=======
+			"PassRate": "57%",
+>>>>>>> 38bbe0897dde70e1fca503b76f54733d89b6bd91
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -13753,7 +13766,10 @@
 			"ID": 1144,
 			"Title": "Decrease Elements To Make Array Zigzag",
 			"TitleSlug": "decrease-elements-to-make-array-zigzag",
+<<<<<<< HEAD
 			"PassRate": "39%",
+=======
+			"PassRate": "35%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -13762,6 +13778,32 @@
 			"HasNoGoOption": false
 		},
 		{
+			"ID": 1145,
+			"Title": "Binary Tree Coloring Game",
+			"TitleSlug": "binary-tree-coloring-game",
+			"PassRate": "38%",
+			"Difficulty": "Medium",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 1146,
+			"Title": "Snapshot Array",
+			"TitleSlug": "snapshot-array",
+			"PassRate": "24%",
+>>>>>>> 38bbe0897dde70e1fca503b76f54733d89b6bd91
+			"Difficulty": "Medium",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+<<<<<<< HEAD
 			"ID": 1145,
 			"Title": "Binary Tree Coloring Game",
 			"TitleSlug": "binary-tree-coloring-game",
@@ -13790,6 +13832,12 @@
 			"Title": "Longest Chunked Palindrome Decomposition",
 			"TitleSlug": "longest-chunked-palindrome-decomposition",
 			"PassRate": "58%",
+=======
+			"ID": 1147,
+			"Title": "Longest Chunked Palindrome Decomposition",
+			"TitleSlug": "longest-chunked-palindrome-decomposition",
+			"PassRate": "55%",
+>>>>>>> 38bbe0897dde70e1fca503b76f54733d89b6bd91
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
