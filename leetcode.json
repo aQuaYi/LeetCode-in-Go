@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 548,
-	"Updated": "2019-08-06T19:42:18.42704473+08:00",
+	"Updated": "2019-08-06T20:26:55.251543855+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 254,
 			"Total": 255
 		},
 		"Medium": {
-			"Solved": 437,
+			"Solved": 438,
 			"Total": 445
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 183
 		},
 		"Total": {
-			"Solved": 873,
+			"Solved": 874,
 			"Total": 883
 		}
 	},
@@ -8149,7 +8149,7 @@
 			"ID": 677,
 			"Title": "Map Sum Pairs",
 			"TitleSlug": "map-sum-pairs",
-			"PassRate": "51%",
+			"PassRate": "52%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12313,7 +12313,7 @@
 			"ID": 1024,
 			"Title": "Video Stitching",
 			"TitleSlug": "video-stitching",
-			"PassRate": "46%",
+			"PassRate": "47%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -13129,7 +13129,7 @@
 			"ID": 1092,
 			"Title": "Shortest Common Supersequence ",
 			"TitleSlug": "shortest-common-supersequence",
-			"PassRate": "48%",
+			"PassRate": "47%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -13599,9 +13599,9 @@
 			"TitleSlug": "maximum-of-absolute-value-expression",
 			"PassRate": "50%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
