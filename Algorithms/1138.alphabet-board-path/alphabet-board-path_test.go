@@ -13,18 +13,28 @@ var tcs = []struct {
 }{
 
 	{
+		"dfdsfkjdfleiwllsgoidkjflsdfjdfierwsd",
+		"RRR!LLLD!RRRU!DDD!LLLUU!D!RRRRU!LU!LLLD!RD!RRRUU!LD!LDDD!LUU!!RRD!LLUU!RRRD!LU!U!LLLDD!RRRRU!LLLL!RD!RRD!UUU!LLLD!RRRR!LU!LLLD!RRR!RU!LLDDD!D!RU!UUU!",
+	},
+
+	{
+		"zz",
+		"DDDDD!!",
+	},
+
+	{
 		"zdz",
-		"DDDDD!UUUUURRR!DDDDLLLD!",
+		"DDDDD!URRRUUUU!LLLDDDDD!",
 	},
 
 	{
 		"zb",
-		"DDDDD!UUUUUR!",
+		"DDDDD!URUUUU!",
 	},
 
 	{
 		"lazy",
-		"RDD!LUU!DDDDD!RRRRU!",
+		"RDD!LUU!DDDDD!URRRR!",
 	},
 
 	{
@@ -167,14 +177,24 @@ func Test_move(t *testing.T) {
 			want: "LLLLDDD",
 		},
 		{
-			name: "y to a",
+			name: "y to z",
 			args: args{
 				x1: 4,
 				y1: 4,
-				x2: 0,
+				x2: 5,
 				y2: 0,
 			},
-			want: "LLLLUUUU",
+			want: "LLLLD",
+		},
+		{
+			name: "z to n",
+			args: args{
+				x1: 5,
+				y1: 0,
+				x2: 2,
+				y2: 3,
+			},
+			want: "URRRUU",
 		},
 	}
 	for _, tt := range tests {
