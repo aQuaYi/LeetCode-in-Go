@@ -22,14 +22,13 @@ func coordinate(r rune) (x, y int) {
 
 // move form [x1,y1] to [x2,y2]
 func move(x1, y1, x2, y2 int) string {
-	var sb strings.Builder
-	for x1 < x2 {
-		x1++
-		sb.WriteByte('D')
+	if x1 == x2 && y1 == y2 {
+		return ""
 	}
-	for x1 > x2 {
-		x1--
+	var sb strings.Builder
+	if x1 == 5 {
 		sb.WriteByte('U')
+		x1--
 	}
 	for y1 < y2 {
 		y1++
@@ -38,6 +37,14 @@ func move(x1, y1, x2, y2 int) string {
 	for y1 > y2 {
 		y1--
 		sb.WriteByte('L')
+	}
+	for x1 < x2 {
+		x1++
+		sb.WriteByte('D')
+	}
+	for x1 > x2 {
+		x1--
+		sb.WriteByte('U')
 	}
 	return sb.String()
 }
