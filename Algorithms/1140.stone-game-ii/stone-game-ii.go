@@ -7,22 +7,28 @@ func stoneGameII(A []int) int {
 		sum[i+1] = sum[i] + A[i]
 	}
 
-	var cur func(i, M int) int
-	cur = func(i, M int) int {
+	mem := [101][65]int{}
+
+	var dp func(int, int) int
+	dp = func(i, m int) int {
 		if i >= n {
 			return 0
 		}
+		if mem[i][m] > 0 {
+			return mem[i][m]
+		}
 		res := 0
-		for x := 1; x <= 2*M; x++ {
+		for x := 1; x <= 2*m; x++ {
 			res = max(
 				res,
-				sum[n]-sum[i]-cur(i+x, max(M, x)),
+				sum[n]-sum[i]-dp(i+x, max(m, x)),
 			)
 		}
+		mem[i][m] = res
 		return res
 	}
 
-	return cur(0, 1)
+	return dp(0, 1)
 }
 
 func max(a, b int) int {
