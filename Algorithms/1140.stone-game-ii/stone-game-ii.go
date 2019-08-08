@@ -2,17 +2,19 @@ package problem1140
 
 func stoneGameII(A []int) int {
 	n := len(A)
-	sum := make([]int, n+1)
-	for i := 0; i < n; i++ {
-		sum[i+1] = sum[i] + A[i]
+
+	for i := n - 2; i >= 0; i-- {
+		A[i] += A[i+1]
 	}
 
-	mem := [101][65]int{}
+	// new A[i] = sum of old A[i:]
+
+	mem := [101][33]int{}
 
 	var dp func(int, int) int
 	dp = func(i, m int) int {
-		if i >= n {
-			return 0
+		if i+2*m >= n {
+			return A[i]
 		}
 		if mem[i][m] > 0 {
 			return mem[i][m]
@@ -21,7 +23,7 @@ func stoneGameII(A []int) int {
 		for x := 1; x <= 2*m; x++ {
 			res = max(
 				res,
-				sum[n]-sum[i]-dp(i+x, max(m, x)),
+				A[i]-dp(i+x, max(m, x)),
 			)
 		}
 		mem[i][m] = res
