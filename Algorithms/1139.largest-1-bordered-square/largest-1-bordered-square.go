@@ -3,40 +3,32 @@ package problem1139
 func largest1BorderedSquare(A [][]int) int {
 	m, n := len(A), len(A[0])
 
-	isBorderOk := func(x, y, dx, dy, w int) bool {
-		xMax, yMax := x+w, y+w
-		for x < xMax && y < yMax {
-			if A[x][y] == 0 {
-				return false
+	h := [101][101]int{}
+	v := [101][101]int{}
+
+	for i := 1; i <= m; i++ {
+		for j := 1; j <= n; j++ {
+			if A[i-1][j-1] == 1 {
+				h[i][j] = h[i][j-1] + 1
+				v[i][j] = v[i-1][j] + 1
 			}
-			x += dx
-			y += dy
 		}
-		return true
 	}
 
-	isOk := func(x, y, w int) bool {
-		return isBorderOk(x, y, 0, 1, w) &&
-			isBorderOk(x, y, 1, 0, w) &&
-			isBorderOk(x+w-1, y, 0, 1, w) &&
-			isBorderOk(x, y+w-1, 1, 0, w)
-	}
-
-	res := 0
-	for i := 0; i+res <= m; i++ {
-		for j := 0; j+res <= n; j++ {
-			w := min(m-i, n-j)
-			for w > res {
-				if isOk(i, j, w) {
-					res = w
-					break
+	for w := min(m, n); w > 0; w-- {
+		for i := 1; i+w-1 <= m; i++ {
+			for j := 1; j+w-1 <= n; j++ {
+				if v[i+w-1][j] >= w && // left border
+					v[i+w-1][j+w-1] >= w && // right
+					h[i][j+w-1] >= w && // top
+					h[i+w-1][j+w-1] >= w { // buttom
+					return w * w
 				}
-				w--
 			}
 		}
 	}
 
-	return res * res
+	return 0
 }
 
 func min(a, b int) int {
