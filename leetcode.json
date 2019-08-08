@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 548,
-	"Updated": "2019-08-08T21:37:31.497475453+08:00",
+	"Updated": "2019-08-08T22:20:46.946543059+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 254,
+			"Solved": 255,
 			"Total": 255
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 183
 		},
 		"Total": {
-			"Solved": 877,
+			"Solved": 878,
 			"Total": 883
 		}
 	},
@@ -12781,7 +12781,7 @@
 			"ID": 1063,
 			"Title": "Number of Valid Subarrays",
 			"TitleSlug": "number-of-valid-subarrays",
-			"PassRate": "73%",
+			"PassRate": "72%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -13671,9 +13671,9 @@
 			"TitleSlug": "n-th-tribonacci-number",
 			"PassRate": "61%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
