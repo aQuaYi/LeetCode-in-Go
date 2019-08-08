@@ -11,7 +11,7 @@
 
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
-|**Accepted**|254|440|182|876|
+|**Accepted**|254|441|182|877|
 |**Total**|255|445|183|883|
 
 ## 题解
@@ -23,7 +23,7 @@
 |[1145](https://leetcode.com/problems/binary-tree-coloring-game/)| * Binary Tree Coloring Game :new: |44%|Medium||
 |[1144](https://leetcode.com/problems/decrease-elements-to-make-array-zigzag/)| * Decrease Elements To Make Array Zigzag :new: |40%|Medium||
 |[1143](https://leetcode.com/problems/longest-common-subsequence/)| * Longest Common Subsequence :new: |59%|Medium||
-|[1140](https://leetcode.com/problems/stone-game-ii/)| * Stone Game II|60%|Medium||
+|[1140](https://leetcode.com/problems/stone-game-ii/)|[Stone Game II](./Algorithms/1140.stone-game-ii)|60%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[1139](https://leetcode.com/problems/largest-1-bordered-square/)|[Largest 1-Bordered Square](./Algorithms/1139.largest-1-bordered-square)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[1138](https://leetcode.com/problems/alphabet-board-path/)|[Alphabet Board Path](./Algorithms/1138.alphabet-board-path)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[1137](https://leetcode.com/problems/n-th-tribonacci-number/)| * N-th Tribonacci Number|61%|Easy||
