@@ -1,12 +1,12 @@
 package problem1139
 
-func largest1BorderedSquare(grid [][]int) int {
-	m, n := len(grid), len(grid[0])
+func largest1BorderedSquare(A [][]int) int {
+	m, n := len(A), len(A[0])
 
 	isBorderOk := func(x, y, dx, dy, w int) bool {
-		xMax := x + w
-		for x < xMax {
-			if grid[x][y] == 0 {
+		xMax, yMax := x+w, y+w
+		for x < xMax && y < yMax {
+			if A[x][y] == 0 {
 				return false
 			}
 			x += dx
@@ -29,7 +29,9 @@ func largest1BorderedSquare(grid [][]int) int {
 			for w > res {
 				if isOk(i, j, w) {
 					res = w
+					break
 				}
+				w--
 			}
 		}
 	}
