@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 548,
-	"Updated": "2019-08-08T15:55:53.478557169+08:00",
+	"Updated": "2019-08-08T16:46:24.248657885+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 254,
 			"Total": 255
 		},
 		"Medium": {
-			"Solved": 439,
+			"Solved": 440,
 			"Total": 445
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 183
 		},
 		"Total": {
-			"Solved": 875,
+			"Solved": 876,
 			"Total": 883
 		}
 	},
@@ -12613,7 +12613,7 @@
 			"ID": 1049,
 			"Title": "Last Stone Weight II",
 			"TitleSlug": "last-stone-weight-ii",
-			"PassRate": "39%",
+			"PassRate": "40%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -13695,9 +13695,9 @@
 			"TitleSlug": "largest-1-bordered-square",
 			"PassRate": "42%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
