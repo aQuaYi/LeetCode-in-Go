@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 548,
-	"Updated": "2019-08-09T19:47:34.799246877+08:00",
+	"Updated": "2019-08-09T21:15:42.427103635+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 255,
 			"Total": 255
 		},
 		"Medium": {
-			"Solved": 441,
+			"Solved": 442,
 			"Total": 445
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 183
 		},
 		"Total": {
-			"Solved": 878,
+			"Solved": 879,
 			"Total": 883
 		}
 	},
@@ -10249,7 +10249,7 @@
 			"ID": 852,
 			"Title": "Peak Index in a Mountain Array",
 			"TitleSlug": "peak-index-in-a-mountain-array",
-			"PassRate": "69%",
+			"PassRate": "70%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12613,7 +12613,7 @@
 			"ID": 1049,
 			"Title": "Last Stone Weight II",
 			"TitleSlug": "last-stone-weight-ii",
-			"PassRate": "40%",
+			"PassRate": "39%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -13297,7 +13297,7 @@
 			"ID": 1106,
 			"Title": "Parsing A Boolean Expression",
 			"TitleSlug": "parsing-a-boolean-expression",
-			"PassRate": "58%",
+			"PassRate": "57%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -13743,7 +13743,7 @@
 			"TitleSlug": "longest-common-subsequence",
 			"PassRate": "59%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": true,
