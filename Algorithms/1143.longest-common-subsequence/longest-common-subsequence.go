@@ -1,18 +1,24 @@
 package problem1143
 
-func longestCommonSubsequence(A, B string) int {
-	m, n := len(A), len(B)
-	dp := [1001][1001]int{}
-	for i := 1; i <= m; i++ {
-		for j := 1; j <= n; j++ {
-			if A[i-1] == B[j-1] {
-				dp[i][j] = dp[i-1][j-1] + 1
+func longestCommonSubsequence(s1, s2 string) int {
+	m, n := len(s1), len(s2)
+	A, B := []byte(s1), []byte(s2)
+
+	cur := make([]int, m+1)
+	prev := make([]int, m+1)
+
+	for j := 0; j < n; j++ {
+		for i := 0; i < m; i++ {
+			rec := max(prev[i+1], cur[i])
+			if A[i] == B[j] {
+				cur[i+1] = max(rec, prev[i]+1)
 			} else {
-				dp[i][j] = max(dp[i-1][j], dp[i][j-1])
+				cur[i+1] = rec
 			}
 		}
+		cur, prev = prev, cur
 	}
-	return dp[m][n]
+	return prev[m]
 }
 
 func max(a, b int) int {
