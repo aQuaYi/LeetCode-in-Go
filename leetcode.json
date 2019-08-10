@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 548,
-	"Updated": "2019-08-10T18:38:52.16656264+08:00",
+	"Updated": "2019-08-10T20:00:22.511321541+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 255,
 			"Total": 255
 		},
 		"Medium": {
-			"Solved": 443,
+			"Solved": 444,
 			"Total": 445
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 183
 		},
 		"Total": {
-			"Solved": 880,
+			"Solved": 881,
 			"Total": 883
 		}
 	},
@@ -12085,7 +12085,7 @@
 			"ID": 1005,
 			"Title": "Maximize Sum Of Array After K Negations",
 			"TitleSlug": "maximize-sum-of-array-after-k-negations",
-			"PassRate": "49%",
+			"PassRate": "50%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12697,7 +12697,7 @@
 			"ID": 1056,
 			"Title": "Confusing Number",
 			"TitleSlug": "confusing-number",
-			"PassRate": "51%",
+			"PassRate": "50%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -13767,9 +13767,9 @@
 			"TitleSlug": "binary-tree-coloring-game",
 			"PassRate": "44%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
