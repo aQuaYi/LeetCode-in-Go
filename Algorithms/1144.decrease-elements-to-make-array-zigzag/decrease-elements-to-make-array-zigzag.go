@@ -2,35 +2,29 @@ package problem1144
 
 import "math"
 
-func movesToMakeZigzag(nums []int) int {
+func movesToMakeZigzag(A []int) int {
 	return min(
-		search(0, nums),
-		search(1, nums),
+		move(math.MaxInt64, 0, A),
+		move(A[0], 1, A),
 	)
 }
 
 // decrease A[i] to satisfy A[i-1] > A[i] < A[i+1]
-func search(i int, A []int) int {
-	var prev, next int
-	if i == 0 {
-		prev = math.MaxInt64
-	} else {
-		prev = A[i-1]
-	}
+func move(left, i int, A []int) int {
 	n := len(A)
 	res := 0
-	for i < n {
-		if i+1 == n {
-			next = math.MaxInt64
-		} else {
-			next = A[i+1]
-		}
-		minVal := min(prev, next)
+	for i+1 < n {
+		right := A[i+1]
+		minVal := min(left, right)
 		if A[i] >= minVal {
 			res += A[i] - minVal + 1
 		}
-		prev = next
+		left = right
 		i += 2
+	}
+	if i+1 == n &&
+		A[i] >= left {
+		res += A[i] - left + 1
 	}
 	return res
 }
