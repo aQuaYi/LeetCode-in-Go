@@ -13,28 +13,29 @@ import (
 type TreeNode = kit.TreeNode
 
 func btreeGameWinningMove(root *TreeNode, n int, x int) bool {
-	node := find(root, x)
-	l, r := count(node.Left), count(node.Right)
-	p := n - 1 - l - r
+	var left, right int
+
+	var dfs func(*TreeNode) int
+	dfs = func(node *TreeNode) int {
+		if node == nil {
+			return 0
+		}
+		l, r := dfs(node.Left), dfs(node.Right)
+		if node.Val == x {
+			left, right = l, r
+		}
+		return l + r + 1
+	}
+
+	dfs(root)
+
+	up := n - left - right - 1
 	n /= 2
-	return l > n || r > n || p > n
+
+	return left > n || right > n || up > n
 }
 
-func find(node *TreeNode, x int) *TreeNode {
-	if node == nil || node.Val == x {
-		return node
-	}
-	l, r := find(node.Left, x), find(node.Right, x)
-	if l == nil {
-		return r
-	}
-	return l
-}
-
-// count node and its children
-func count(node *TreeNode) int {
-	if node == nil {
-		return 0
-	}
-	return 1 + count(node.Left) + count(node.Right)
-}
+// node-x split tree into 3 parts:
+// node-x.Left, node-x.Right and up(node-x parent plus node-x brother)
+// second player must takes the biggest part
+// second player win the game if his part > n/2
