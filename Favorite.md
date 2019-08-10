@@ -84,7 +84,7 @@
 |[0327](https://leetcode.com/problems/count-of-range-sum/)|[Count of Range Sum](./Algorithms/0327.count-of-range-sum)|33%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0328](https://leetcode.com/problems/odd-even-linked-list/)|[Odd Even Linked List](./Algorithms/0328.odd-even-linked-list)|49%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0329](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/)|[Longest Increasing Path in a Matrix](./Algorithms/0329.longest-increasing-path-in-a-matrix)|40%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|[0331](https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/)|[Verify Preorder Serialization of a Binary Tree](./Algorithms/0331.verify-preorder-serialization-of-a-binary-tree)|38%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|[0331](https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/)|[Verify Preorder Serialization of a Binary Tree](./Algorithms/0331.verify-preorder-serialization-of-a-binary-tree)|39%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0332](https://leetcode.com/problems/reconstruct-itinerary/)|[Reconstruct Itinerary](./Algorithms/0332.reconstruct-itinerary)|32%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0334](https://leetcode.com/problems/increasing-triplet-subsequence/)|[Increasing Triplet Subsequence](./Algorithms/0334.increasing-triplet-subsequence)|39%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0336](https://leetcode.com/problems/palindrome-pairs/)|[Palindrome Pairs](./Algorithms/0336.palindrome-pairs)|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -240,7 +240,7 @@
 |[0849](https://leetcode.com/problems/maximize-distance-to-closest-person/)|[Maximize Distance to Closest Person](./Algorithms/0849.maximize-distance-to-closest-person)|41%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |[0850](https://leetcode.com/problems/rectangle-area-ii/)|[Rectangle Area II](./Algorithms/0850.rectangle-area-ii)|45%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0851](https://leetcode.com/problems/loud-and-rich/)|[Loud and Rich](./Algorithms/0851.loud-and-rich)|48%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|[0852](https://leetcode.com/problems/peak-index-in-a-mountain-array/)|[Peak Index in a Mountain Array](./Algorithms/0852.peak-index-in-a-mountain-array)|70%|Easy|[❤](https://leetcode.com/list/oussv5j)|
+|[0852](https://leetcode.com/problems/peak-index-in-a-mountain-array/)|[Peak Index in a Mountain Array](./Algorithms/0852.peak-index-in-a-mountain-array)|69%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |[0854](https://leetcode.com/problems/k-similar-strings/)|[K-Similar Strings](./Algorithms/0854.k-similar-strings)|34%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0857](https://leetcode.com/problems/minimum-cost-to-hire-k-workers/)|[Minimum Cost to Hire K Workers](./Algorithms/0857.minimum-cost-to-hire-k-workers)|47%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0862](https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/)|[Shortest Subarray with Sum at Least K](./Algorithms/0862.shortest-subarray-with-sum-at-least-k)|22%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -248,7 +248,7 @@
 |[0864](https://leetcode.com/problems/shortest-path-to-get-all-keys/)|[Shortest Path to Get All Keys](./Algorithms/0864.shortest-path-to-get-all-keys)|36%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0866](https://leetcode.com/problems/prime-palindrome/)|[Prime Palindrome](./Algorithms/0866.prime-palindrome)|20%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0879](https://leetcode.com/problems/profitable-schemes/)|[Profitable Schemes](./Algorithms/0879.profitable-schemes)|36%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|[0895](https://leetcode.com/problems/maximum-frequency-stack/)|[Maximum Frequency Stack](./Algorithms/0895.maximum-frequency-stack)|56%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|[0895](https://leetcode.com/problems/maximum-frequency-stack/)|[Maximum Frequency Stack](./Algorithms/0895.maximum-frequency-stack)|57%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0896](https://leetcode.com/problems/monotonic-array/)|[Monotonic Array](./Algorithms/0896.monotonic-array)|55%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |[0897](https://leetcode.com/problems/increasing-order-search-tree/)|[Increasing Order Search Tree](./Algorithms/0897.increasing-order-search-tree)|65%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |[0898](https://leetcode.com/problems/bitwise-ors-of-subarrays/)|[Bitwise ORs of Subarrays](./Algorithms/0898.bitwise-ors-of-subarrays)|35%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -292,7 +292,7 @@
 |[0982](https://leetcode.com/problems/triples-with-bitwise-and-equal-to-zero/)|[Triples with Bitwise AND Equal To Zero](./Algorithms/0982.triples-with-bitwise-and-equal-to-zero)|54%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0983](https://leetcode.com/problems/minimum-cost-for-tickets/)|[Minimum Cost For Tickets](./Algorithms/0983.minimum-cost-for-tickets)|57%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0986](https://leetcode.com/problems/interval-list-intersections/)|[Interval List Intersections](./Algorithms/0986.interval-list-intersections)|63%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|[0991](https://leetcode.com/problems/broken-calculator/)|[Broken Calculator](./Algorithms/0991.broken-calculator)|41%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|[0991](https://leetcode.com/problems/broken-calculator/)|[Broken Calculator](./Algorithms/0991.broken-calculator)|40%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0992](https://leetcode.com/problems/subarrays-with-k-different-integers/)|[Subarrays with K Different Integers](./Algorithms/0992.subarrays-with-k-different-integers)|44%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0996](https://leetcode.com/problems/number-of-squareful-arrays/)|[Number of Squareful Arrays](./Algorithms/0996.number-of-squareful-arrays)|47%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[1000](https://leetcode.com/problems/minimum-cost-to-merge-stones/)|[Minimum Cost to Merge Stones](./Algorithms/1000.minimum-cost-to-merge-stones)|33%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -310,11 +310,11 @@
 |[1027](https://leetcode.com/problems/longest-arithmetic-sequence/)|[Longest Arithmetic Sequence](./Algorithms/1027.longest-arithmetic-sequence)|49%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[1028](https://leetcode.com/problems/recover-a-tree-from-preorder-traversal/)|[Recover a Tree From Preorder Traversal](./Algorithms/1028.recover-a-tree-from-preorder-traversal)|69%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[1030](https://leetcode.com/problems/matrix-cells-in-distance-order/)|[Matrix Cells in Distance Order](./Algorithms/1030.matrix-cells-in-distance-order)|64%|Easy|[❤](https://leetcode.com/list/oussv5j)|
-|[1031](https://leetcode.com/problems/maximum-sum-of-two-non-overlapping-subarrays/)|[Maximum Sum of Two Non-Overlapping Subarrays](./Algorithms/1031.maximum-sum-of-two-non-overlapping-subarrays)|55%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|[1031](https://leetcode.com/problems/maximum-sum-of-two-non-overlapping-subarrays/)|[Maximum Sum of Two Non-Overlapping Subarrays](./Algorithms/1031.maximum-sum-of-two-non-overlapping-subarrays)|54%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[1032](https://leetcode.com/problems/stream-of-characters/)|[Stream of Characters](./Algorithms/1032.stream-of-characters)|42%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[1035](https://leetcode.com/problems/uncrossed-lines/)|[Uncrossed Lines](./Algorithms/1035.uncrossed-lines)|51%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[1039](https://leetcode.com/problems/minimum-score-triangulation-of-polygon/)|[Minimum Score Triangulation of Polygon](./Algorithms/1039.minimum-score-triangulation-of-polygon)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|[1040](https://leetcode.com/problems/moving-stones-until-consecutive-ii/)|[Moving Stones Until Consecutive II](./Algorithms/1040.moving-stones-until-consecutive-ii)|49%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|[1040](https://leetcode.com/problems/moving-stones-until-consecutive-ii/)|[Moving Stones Until Consecutive II](./Algorithms/1040.moving-stones-until-consecutive-ii)|48%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[1042](https://leetcode.com/problems/flower-planting-with-no-adjacent/)|[Flower Planting With No Adjacent](./Algorithms/1042.flower-planting-with-no-adjacent)|48%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |[1043](https://leetcode.com/problems/partition-array-for-maximum-sum/)|[Partition Array for Maximum Sum](./Algorithms/1043.partition-array-for-maximum-sum)|62%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[1044](https://leetcode.com/problems/longest-duplicate-substring/)|[Longest Duplicate Substring](./Algorithms/1044.longest-duplicate-substring)|22%|Hard|[❤](https://leetcode.com/list/oussv5j)|
@@ -324,7 +324,7 @@
 |[1071](https://leetcode.com/problems/greatest-common-divisor-of-strings/)|[Greatest Common Divisor of Strings](./Algorithms/1071.greatest-common-divisor-of-strings)|54%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |[1072](https://leetcode.com/problems/flip-columns-for-maximum-number-of-equal-rows/)|[Flip Columns For Maximum Number of Equal Rows](./Algorithms/1072.flip-columns-for-maximum-number-of-equal-rows)|57%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[1073](https://leetcode.com/problems/adding-two-negabinary-numbers/)|[Adding Two Negabinary Numbers](./Algorithms/1073.adding-two-negabinary-numbers)|31%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|[1074](https://leetcode.com/problems/number-of-submatrices-that-sum-to-target/)|[Number of Submatrices That Sum to Target](./Algorithms/1074.number-of-submatrices-that-sum-to-target)|57%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|[1074](https://leetcode.com/problems/number-of-submatrices-that-sum-to-target/)|[Number of Submatrices That Sum to Target](./Algorithms/1074.number-of-submatrices-that-sum-to-target)|58%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[1079](https://leetcode.com/problems/letter-tile-possibilities/)|[Letter Tile Possibilities](./Algorithms/1079.letter-tile-possibilities)|75%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[1080](https://leetcode.com/problems/insufficient-nodes-in-root-to-leaf-paths/)|[Insufficient Nodes in Root to Leaf Paths](./Algorithms/1080.insufficient-nodes-in-root-to-leaf-paths)|42%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[1089](https://leetcode.com/problems/duplicate-zeros/)|[Duplicate Zeros](./Algorithms/1089.duplicate-zeros)|59%|Easy|[❤](https://leetcode.com/list/oussv5j)|

@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 548,
-	"Updated": "2019-08-10T11:44:55.634490281+08:00",
+	"Updated": "2019-08-10T12:27:06.868641309+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 255,
 			"Total": 255
 		},
 		"Medium": {
-			"Solved": 442,
+			"Solved": 443,
 			"Total": 445
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 183
 		},
 		"Total": {
-			"Solved": 879,
+			"Solved": 880,
 			"Total": 883
 		}
 	},
@@ -1069,7 +1069,7 @@
 			"ID": 87,
 			"Title": "Scramble String",
 			"TitleSlug": "scramble-string",
-			"PassRate": "32%",
+			"PassRate": "31%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -13755,7 +13755,7 @@
 			"TitleSlug": "decrease-elements-to-make-array-zigzag",
 			"PassRate": "40%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
