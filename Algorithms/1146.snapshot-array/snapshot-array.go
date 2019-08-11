@@ -11,6 +11,7 @@ type SnapshotArray struct {
 func Constructor(length int) SnapshotArray {
 	return SnapshotArray{
 		size: length,
+		rec:  make(map[int]map[int]int, 256),
 	}
 }
 
@@ -32,5 +33,13 @@ func (sa *SnapshotArray) Snap() int {
 
 // Get returns val in the snap
 func (sa *SnapshotArray) Get(index int, snapID int) int {
-	return sa.rec[snapID][index]
+	res, ok := sa.rec[snapID][index]
+	for !ok && snapID > 0 {
+		snapID--
+		res, ok = sa.rec[snapID][index]
+	}
+	if ok {
+		return res
+	}
+	return 0
 }
