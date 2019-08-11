@@ -23,7 +23,7 @@ func Test_SnapshotArray(t *testing.T) {
 
 	ast.Equal(0, sa.Get(1, 0))
 
-	ast.Equal(0, sa.Get(2, 1))
+	ast.Equal(0, sa.Get(2, 0))
 
 }
 
