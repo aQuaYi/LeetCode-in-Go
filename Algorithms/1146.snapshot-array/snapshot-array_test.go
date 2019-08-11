@@ -26,3 +26,29 @@ func Test_SnapshotArray(t *testing.T) {
 	ast.Equal(0, sa.Get(2, 1))
 
 }
+
+func Test_SnapshotArray_2(t *testing.T) {
+	ast := assert.New(t)
+
+	sa := Constructor(3)
+
+	sa.Set(1, 14)
+
+	ast.Equal(0, sa.Snap())
+	ast.Equal(1, sa.Snap())
+	ast.Equal(2, sa.Snap())
+
+	sa.Set(0, 14)
+
+	ast.Equal(3, sa.Snap())
+	ast.Equal(4, sa.Snap())
+
+	sa.Set(2, 0)
+	sa.Set(0, 5)
+
+	ast.Equal(14, sa.Get(0, 3))
+
+	ast.Equal(5, sa.Snap())
+	ast.Equal(6, sa.Snap())
+
+}
