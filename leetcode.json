@@ -1,23 +1,23 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 548,
-	"Updated": "2019-08-11T10:48:44.953700871+08:00",
+	"Updated": "2019-08-11T12:51:48.710621531+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 255,
-			"Total": 255
+			"Total": 256
 		},
 		"Medium": {
-			"Solved": 444,
-			"Total": 445
+			"Solved": 445,
+			"Total": 447
 		},
 		"Hard": {
 			"Solved": 182,
-			"Total": 183
+			"Total": 184
 		},
 		"Total": {
-			"Solved": 881,
-			"Total": 883
+			"Solved": 882,
+			"Total": 887
 		}
 	},
 	"Problems": [
@@ -6889,7 +6889,7 @@
 			"ID": 572,
 			"Title": "Subtree of Another Tree",
 			"TitleSlug": "subtree-of-another-tree",
-			"PassRate": "41%",
+			"PassRate": "42%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11329,7 +11329,7 @@
 			"ID": 942,
 			"Title": "DI String Match",
 			"TitleSlug": "di-string-match",
-			"PassRate": "69%",
+			"PassRate": "70%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -13779,9 +13779,9 @@
 			"TitleSlug": "snapshot-array",
 			"PassRate": "29%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
@@ -13861,12 +13861,60 @@
 			"ID": 1153,
 			"Title": "String Transforms Into Another String",
 			"TitleSlug": "string-transforms-into-another-string",
-			"PassRate": "22%",
+			"PassRate": "23%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": true,
 			"IsFavor": false,
 			"IsNew": false,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 1154,
+			"Title": "Day of the Year",
+			"TitleSlug": "ordinal-number-of-date",
+			"PassRate": "52%",
+			"Difficulty": "Easy",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 1155,
+			"Title": "Number of Dice Rolls With Target Sum",
+			"TitleSlug": "number-of-dice-rolls-with-target-sum",
+			"PassRate": "46%",
+			"Difficulty": "Medium",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 1156,
+			"Title": "Swap For Longest Repeated Character Substring",
+			"TitleSlug": "swap-for-maximum-repeated-substring",
+			"PassRate": "38%",
+			"Difficulty": "Medium",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 1157,
+			"Title": "Online Majority Element In Subarray",
+			"TitleSlug": "online-majority-element-in-subarray",
+			"PassRate": "16%",
+			"Difficulty": "Hard",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": true,
 			"HasNoGoOption": false
 		}
 	]
