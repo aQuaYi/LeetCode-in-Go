@@ -2,41 +2,40 @@ package problem1146
 
 // SnapshotArray can snap a array
 type SnapshotArray struct {
-	size      int
-	snapCount int
-	rec       map[int]map[int]int
+	count int
+	rec   []map[int]int
 }
 
 // Constructor resturn s a SnapshotArray
 func Constructor(length int) SnapshotArray {
+	rec := make([]map[int]int, length)
+	for i := range rec {
+		m := make(map[int]int, 32)
+		rec[i] = m
+	}
 	return SnapshotArray{
-		size: length,
-		rec:  make(map[int]map[int]int, 256),
+		rec: rec,
 	}
 }
 
 // Set val in index
 func (sa *SnapshotArray) Set(index int, val int) {
-	m, ok := sa.rec[sa.snapCount]
-	if !ok {
-		m = make(map[int]int, sa.size)
-		sa.rec[sa.snapCount] = m
-	}
-	m[index] = val
+	sa.rec[index][sa.count] = val
 }
 
 // Snap make snapshot
 func (sa *SnapshotArray) Snap() int {
-	sa.snapCount++
-	return sa.snapCount - 1
+	sa.count++
+	return sa.count - 1
 }
 
 // Get returns val in the snap
-func (sa *SnapshotArray) Get(index int, snapID int) int {
-	res, ok := sa.rec[snapID][index]
-	for !ok && snapID > 0 {
-		snapID--
-		res, ok = sa.rec[snapID][index]
+func (sa *SnapshotArray) Get(index int, snap int) int {
+	rec := sa.rec[index]
+	res, ok := rec[snap]
+	for !ok && snap > 0 {
+		snap--
+		res, ok = rec[snap]
 	}
 	if ok {
 		return res
