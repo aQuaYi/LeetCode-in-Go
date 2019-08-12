@@ -1,6 +1,17 @@
 package problem1147
 
-func longestDecomposition(text string) int {
+import "strings"
 
-	return 0
+func longestDecomposition(S string) int {
+	if S == "" {
+		return 0
+	}
+	n := len(S)
+	for i := 1; i*2 <= n; i++ {
+		left := S[:i]
+		if strings.HasSuffix(S, left) {
+			return 2 + longestDecomposition(S[i:n-i])
+		}
+	}
+	return 1
 }
