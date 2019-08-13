@@ -1,7 +1,11 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 548,
+<<<<<<< HEAD
 	"Updated": "2019-08-13T19:37:00.441802618+08:00",
+=======
+	"Updated": "2019-08-12T16:37:05.613623192+08:00",
+>>>>>>> 710c3222312d4eb8def088036f47303c12d4a53f
 	"Record": {
 		"Easy": {
 			"Solved": 255,
@@ -8149,7 +8153,7 @@
 			"ID": 677,
 			"Title": "Map Sum Pairs",
 			"TitleSlug": "map-sum-pairs",
-			"PassRate": "52%",
+			"PassRate": "51%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12781,7 +12785,7 @@
 			"ID": 1063,
 			"Title": "Number of Valid Subarrays",
 			"TitleSlug": "number-of-valid-subarrays",
-			"PassRate": "72%",
+			"PassRate": "73%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -13825,7 +13829,11 @@
 			"ID": 1150,
 			"Title": "Check If a Number Is Majority Element in a Sorted Array",
 			"TitleSlug": "check-if-a-number-is-majority-element-in-a-sorted-array",
+<<<<<<< HEAD
 			"PassRate": "70%",
+=======
+			"PassRate": "71%",
+>>>>>>> 710c3222312d4eb8def088036f47303c12d4a53f
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -13837,7 +13845,11 @@
 			"ID": 1151,
 			"Title": "Minimum Swaps to Group All 1's Together",
 			"TitleSlug": "minimum-swaps-to-group-all-1s-together",
+<<<<<<< HEAD
 			"PassRate": "53%",
+=======
+			"PassRate": "52%",
+>>>>>>> 710c3222312d4eb8def088036f47303c12d4a53f
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -13849,7 +13861,11 @@
 			"ID": 1152,
 			"Title": "Analyze User Website Visit Pattern",
 			"TitleSlug": "analyze-user-website-visit-pattern",
+<<<<<<< HEAD
 			"PassRate": "36%",
+=======
+			"PassRate": "35%",
+>>>>>>> 710c3222312d4eb8def088036f47303c12d4a53f
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -13861,7 +13877,11 @@
 			"ID": 1153,
 			"Title": "String Transforms Into Another String",
 			"TitleSlug": "string-transforms-into-another-string",
+<<<<<<< HEAD
 			"PassRate": "26%",
+=======
+			"PassRate": "25%",
+>>>>>>> 710c3222312d4eb8def088036f47303c12d4a53f
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -13897,7 +13917,11 @@
 			"ID": 1156,
 			"Title": "Swap For Longest Repeated Character Substring",
 			"TitleSlug": "swap-for-longest-repeated-character-substring",
+<<<<<<< HEAD
 			"PassRate": "45%",
+=======
+			"PassRate": "44%",
+>>>>>>> 710c3222312d4eb8def088036f47303c12d4a53f
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -13909,7 +13933,11 @@
 			"ID": 1157,
 			"Title": "Online Majority Element In Subarray",
 			"TitleSlug": "online-majority-element-in-subarray",
+<<<<<<< HEAD
 			"PassRate": "29%",
+=======
+			"PassRate": "27%",
+>>>>>>> 710c3222312d4eb8def088036f47303c12d4a53f
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
