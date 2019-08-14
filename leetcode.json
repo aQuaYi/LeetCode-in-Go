@@ -1,7 +1,11 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 548,
+<<<<<<< HEAD
 	"Updated": "2019-08-14T17:22:26.026107233+08:00",
+=======
+	"Updated": "2019-08-13T19:57:52.019228781+08:00",
+>>>>>>> 0fe2dc0516cf2e85f9dcf587c9aeb8b5f61a417d
 	"Record": {
 		"Easy": {
 			"Solved": 256,
@@ -13825,7 +13829,11 @@
 			"ID": 1150,
 			"Title": "Check If a Number Is Majority Element in a Sorted Array",
 			"TitleSlug": "check-if-a-number-is-majority-element-in-a-sorted-array",
+<<<<<<< HEAD
 			"PassRate": "69%",
+=======
+			"PassRate": "70%",
+>>>>>>> 0fe2dc0516cf2e85f9dcf587c9aeb8b5f61a417d
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -13837,7 +13845,11 @@
 			"ID": 1151,
 			"Title": "Minimum Swaps to Group All 1's Together",
 			"TitleSlug": "minimum-swaps-to-group-all-1s-together",
+<<<<<<< HEAD
 			"PassRate": "54%",
+=======
+			"PassRate": "53%",
+>>>>>>> 0fe2dc0516cf2e85f9dcf587c9aeb8b5f61a417d
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -13861,7 +13873,11 @@
 			"ID": 1153,
 			"Title": "String Transforms Into Another String",
 			"TitleSlug": "string-transforms-into-another-string",
+<<<<<<< HEAD
 			"PassRate": "27%",
+=======
+			"PassRate": "26%",
+>>>>>>> 0fe2dc0516cf2e85f9dcf587c9aeb8b5f61a417d
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -13909,7 +13925,11 @@
 			"ID": 1157,
 			"Title": "Online Majority Element In Subarray",
 			"TitleSlug": "online-majority-element-in-subarray",
+<<<<<<< HEAD
 			"PassRate": "30%",
+=======
+			"PassRate": "29%",
+>>>>>>> 0fe2dc0516cf2e85f9dcf587c9aeb8b5f61a417d
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
