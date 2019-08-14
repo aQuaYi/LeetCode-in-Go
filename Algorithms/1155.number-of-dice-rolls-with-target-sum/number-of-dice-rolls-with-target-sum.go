@@ -7,9 +7,10 @@ func numRollsToTarget(d int, f int, target int) int {
 	dp[0][0] = 1
 
 	for i := 1; i <= d; i++ {
-		max := i * f
-		for j := i; j <= target && j <= max; j++ {
-			for k := 1; k <= f && k <= j; k++ {
+		maxJ := min(target, i*f)
+		for j := i; j <= maxJ; j++ {
+			maxK := min(f, j)
+			for k := 1; k <= maxK; k++ {
 				dp[i][j] += dp[i-1][j-k]
 			}
 			dp[i][j] %= mod
@@ -17,4 +18,11 @@ func numRollsToTarget(d int, f int, target int) int {
 	}
 
 	return dp[d][target]
+}
+
+func min(a, b int) int {
+	if a < b {
+		return a
+	}
+	return b
 }
