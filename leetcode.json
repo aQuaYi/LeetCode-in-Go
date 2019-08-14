@@ -1,18 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 548,
-<<<<<<< HEAD
-	"Updated": "2019-08-14T17:22:26.026107233+08:00",
-=======
-	"Updated": "2019-08-13T19:57:52.019228781+08:00",
->>>>>>> 0fe2dc0516cf2e85f9dcf587c9aeb8b5f61a417d
+	"Updated": "2019-08-14T22:55:01.603343502+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 256,
 			"Total": 256
 		},
 		"Medium": {
-			"Solved": 445,
+			"Solved": 446,
 			"Total": 447
 		},
 		"Hard": {
@@ -20,7 +16,7 @@
 			"Total": 184
 		},
 		"Total": {
-			"Solved": 884,
+			"Solved": 885,
 			"Total": 887
 		}
 	},
@@ -185,7 +181,7 @@
 			"ID": 13,
 			"Title": "Roman to Integer",
 			"TitleSlug": "roman-to-integer",
-			"PassRate": "52%",
+			"PassRate": "53%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -437,7 +433,7 @@
 			"ID": 34,
 			"Title": "Find First and Last Position of Element in Sorted Array",
 			"TitleSlug": "find-first-and-last-position-of-element-in-sorted-array",
-			"PassRate": "33%",
+			"PassRate": "34%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9413,7 +9409,7 @@
 			"ID": 782,
 			"Title": "Transform to Chessboard",
 			"TitleSlug": "transform-to-chessboard",
-			"PassRate": "39%",
+			"PassRate": "40%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -10673,7 +10669,7 @@
 			"ID": 887,
 			"Title": "Super Egg Drop",
 			"TitleSlug": "super-egg-drop",
-			"PassRate": "24%",
+			"PassRate": "25%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -13097,7 +13093,7 @@
 			"ID": 1089,
 			"Title": "Duplicate Zeros",
 			"TitleSlug": "duplicate-zeros",
-			"PassRate": "59%",
+			"PassRate": "58%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -13337,7 +13333,7 @@
 			"ID": 1109,
 			"Title": "Corporate Flight Bookings",
 			"TitleSlug": "corporate-flight-bookings",
-			"PassRate": "48%",
+			"PassRate": "47%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -13349,7 +13345,7 @@
 			"ID": 1110,
 			"Title": "Delete Nodes And Return Forest",
 			"TitleSlug": "delete-nodes-and-return-forest",
-			"PassRate": "62%",
+			"PassRate": "63%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -13697,7 +13693,7 @@
 			"ID": 1139,
 			"Title": "Largest 1-Bordered Square",
 			"TitleSlug": "largest-1-bordered-square",
-			"PassRate": "42%",
+			"PassRate": "43%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -13829,11 +13825,7 @@
 			"ID": 1150,
 			"Title": "Check If a Number Is Majority Element in a Sorted Array",
 			"TitleSlug": "check-if-a-number-is-majority-element-in-a-sorted-array",
-<<<<<<< HEAD
 			"PassRate": "69%",
-=======
-			"PassRate": "70%",
->>>>>>> 0fe2dc0516cf2e85f9dcf587c9aeb8b5f61a417d
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -13845,11 +13837,7 @@
 			"ID": 1151,
 			"Title": "Minimum Swaps to Group All 1's Together",
 			"TitleSlug": "minimum-swaps-to-group-all-1s-together",
-<<<<<<< HEAD
 			"PassRate": "54%",
-=======
-			"PassRate": "53%",
->>>>>>> 0fe2dc0516cf2e85f9dcf587c9aeb8b5f61a417d
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -13873,11 +13861,7 @@
 			"ID": 1153,
 			"Title": "String Transforms Into Another String",
 			"TitleSlug": "string-transforms-into-another-string",
-<<<<<<< HEAD
 			"PassRate": "27%",
-=======
-			"PassRate": "26%",
->>>>>>> 0fe2dc0516cf2e85f9dcf587c9aeb8b5f61a417d
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -13903,9 +13887,9 @@
 			"TitleSlug": "number-of-dice-rolls-with-target-sum",
 			"PassRate": "49%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": true,
 			"HasNoGoOption": false
 		},
@@ -13925,11 +13909,7 @@
 			"ID": 1157,
 			"Title": "Online Majority Element In Subarray",
 			"TitleSlug": "online-majority-element-in-subarray",
-<<<<<<< HEAD
 			"PassRate": "30%",
-=======
-			"PassRate": "29%",
->>>>>>> 0fe2dc0516cf2e85f9dcf587c9aeb8b5f61a417d
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
