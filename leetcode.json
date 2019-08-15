@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 548,
-	"Updated": "2019-08-15T16:00:58.940509081+08:00",
+	"Updated": "2019-08-15T17:14:37.082582094+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 256,
 			"Total": 256
 		},
 		"Medium": {
-			"Solved": 446,
+			"Solved": 447,
 			"Total": 447
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 184
 		},
 		"Total": {
-			"Solved": 885,
+			"Solved": 886,
 			"Total": 887
 		}
 	},
@@ -4177,7 +4177,7 @@
 			"ID": 346,
 			"Title": "Moving Average from Data Stream",
 			"TitleSlug": "moving-average-from-data-stream",
-			"PassRate": "66%",
+			"PassRate": "67%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -7909,7 +7909,7 @@
 			"ID": 657,
 			"Title": "Robot Return to Origin",
 			"TitleSlug": "robot-return-to-origin",
-			"PassRate": "71%",
+			"PassRate": "72%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -8485,7 +8485,7 @@
 			"ID": 705,
 			"Title": "Design HashSet",
 			"TitleSlug": "design-hashset",
-			"PassRate": "54%",
+			"PassRate": "55%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -8845,7 +8845,7 @@
 			"ID": 735,
 			"Title": "Asteroid Collision",
 			"TitleSlug": "asteroid-collision",
-			"PassRate": "38%",
+			"PassRate": "39%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11485,7 +11485,7 @@
 			"ID": 955,
 			"Title": "Delete Columns to Make Sorted II",
 			"TitleSlug": "delete-columns-to-make-sorted-ii",
-			"PassRate": "31%",
+			"PassRate": "32%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12889,7 +12889,7 @@
 			"ID": 1072,
 			"Title": "Flip Columns For Maximum Number of Equal Rows",
 			"TitleSlug": "flip-columns-for-maximum-number-of-equal-rows",
-			"PassRate": "58%",
+			"PassRate": "57%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -13899,7 +13899,7 @@
 			"TitleSlug": "swap-for-longest-repeated-character-substring",
 			"PassRate": "46%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": true,
