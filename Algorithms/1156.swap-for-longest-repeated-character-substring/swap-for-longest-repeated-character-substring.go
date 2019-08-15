@@ -28,13 +28,13 @@ func maxRepOpt1(text string) int {
 			con = 1
 		}
 		prev := r[0]
-		res = max(res, prev[2]+ext)
+		res = max(res, ext+prev[2])
 		for i := 1; i < len(r); i++ {
 			cur := r[i]
 			if prev[1] == cur[0] {
-				res = max(res, prev[2]+cur[2]+con)
+				res = max(res, con+prev[2]+cur[2])
 			} else {
-				res = max(res, cur[2]+ext)
+				res = max(res, ext+cur[2])
 			}
 			prev = cur
 		}
