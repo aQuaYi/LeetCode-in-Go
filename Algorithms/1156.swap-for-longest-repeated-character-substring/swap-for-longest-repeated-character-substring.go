@@ -3,11 +3,11 @@ package problem1156
 import "strings"
 
 func maxRepOpt1(text string) int {
-	rec := [26][][]int{}
+	rec := [26][][3]int{}
 	segments, index := split(text), 0
 	for _, s := range segments {
 		b, n := int(s[0]-'a'), len(s)
-		rec[b] = append(rec[b], []int{index, index + n + 1, n})
+		rec[b] = append(rec[b], [3]int{index, index + n + 1, n})
 		index += n
 	}
 
@@ -17,8 +17,16 @@ func maxRepOpt1(text string) int {
 		if n == 0 {
 			continue
 		}
-		ext := min(n-1, 1)         // extension a lonely segment
-		con := max(0, min(n-2, 1)) // connect two neighbor segments
+		// extension a lonely segment
+		ext := 0
+		if n > 1 {
+			ext = 1
+		}
+		// connect two neighbor segments
+		con := 0
+		if n > 2 {
+			con = 1
+		}
 		prev := r[0]
 		res = max(res, prev[2]+ext)
 		for i := 1; i < len(r); i++ {
