@@ -2,22 +2,22 @@ package problem1155
 
 const mod = 1e9 + 7
 
-func numRollsToTarget(d int, f int, target int) int {
+func numRollsToTarget(dices, faces, target int) int {
 	dp := [31][1001]int{}
 	dp[0][0] = 1
 
-	for i := 1; i <= d; i++ {
-		maxJ := min(target, i*f)
-		for j := i; j <= maxJ; j++ {
-			maxK := min(f, j)
-			for k := 1; k <= maxK; k++ {
-				dp[i][j] += dp[i-1][j-k]
+	for d := 1; d <= dices; d++ {
+		maxT := min(target, d*faces)
+		for t := d; t <= maxT; t++ {
+			maxF := min(faces, t)
+			for f := 1; f <= maxF; f++ {
+				dp[d][t] += dp[d-1][t-f]
 			}
-			dp[i][j] %= mod
+			dp[d][t] %= mod
 		}
 	}
 
-	return dp[d][target]
+	return dp[dices][target]
 }
 
 func min(a, b int) int {
