@@ -1,22 +1,18 @@
 package problem0315
 
-type entry struct {
-	num, index int
-}
-
 func countSmaller(nums []int) []int {
 	n := len(nums)
-	enum := make([]entry, n)
+	enum := make([][2]int, n)
 	for i, n := range nums {
-		enum[i] = entry{num: n, index: i}
+		enum[i] = [2]int{n, i}
 	}
 
 	count := make([]int, n)
 
-	var sort func([]entry) []entry
-	var merge func([]entry, []entry) []entry
+	var sort func([][2]int) [][2]int
+	var merge func([][2]int, [][2]int) [][2]int
 
-	sort = func(es []entry) []entry {
+	sort = func(es [][2]int) [][2]int {
 		size := len(es)
 		if size < 2 {
 			return es
@@ -25,14 +21,14 @@ func countSmaller(nums []int) []int {
 		return merge(sort(es[:mid]), sort(es[mid:]))
 	}
 
-	merge = func(left, right []entry) []entry {
+	merge = func(left, right [][2]int) [][2]int {
 		m, n := len(left), len(right)
-		res := make([]entry, 0, m+n)
-		var pop entry
+		res := make([][2]int, 0, m+n)
+		var pop [2]int
 		for len(left) > 0 && len(right) > 0 {
-			if left[0].num > right[0].num {
+			if left[0][0] > right[0][0] {
 				pop, left = left[0], left[1:]
-				count[pop.index] += len(right)
+				count[pop[1]] += len(right)
 			} else {
 				pop, right = right[0], right[1:]
 			}
