@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 548,
-	"Updated": "2019-08-19T15:58:18.123257304+08:00",
+	"Updated": "2019-08-19T20:32:14.86828032+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 256,
@@ -1333,7 +1333,7 @@
 			"ID": 109,
 			"Title": "Convert Sorted List to Binary Search Tree",
 			"TitleSlug": "convert-sorted-list-to-binary-search-tree",
-			"PassRate": "41%",
+			"PassRate": "42%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -7909,7 +7909,7 @@
 			"ID": 657,
 			"Title": "Robot Return to Origin",
 			"TitleSlug": "robot-return-to-origin",
-			"PassRate": "72%",
+			"PassRate": "71%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12337,7 +12337,7 @@
 			"ID": 1026,
 			"Title": "Maximum Difference Between Node and Ancestor",
 			"TitleSlug": "maximum-difference-between-node-and-ancestor",
-			"PassRate": "60%",
+			"PassRate": "61%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
