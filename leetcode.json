@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 548,
-	"Updated": "2019-08-19T20:32:14.86828032+08:00",
+	"Updated": "2019-08-19T21:06:32.580293446+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 256,
+			"Solved": 257,
 			"Total": 257
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 185
 		},
 		"Total": {
-			"Solved": 886,
+			"Solved": 887,
 			"Total": 891
 		}
 	},
@@ -10669,7 +10669,7 @@
 			"ID": 887,
 			"Title": "Super Egg Drop",
 			"TitleSlug": "super-egg-drop",
-			"PassRate": "25%",
+			"PassRate": "24%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -13947,7 +13947,7 @@
 			"TitleSlug": "find-words-that-can-be-formed-by-characters",
 			"PassRate": "72%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,

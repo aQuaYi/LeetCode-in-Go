@@ -306,7 +306,7 @@
 |[1022](https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/)|[Sum of Root To Leaf Binary Numbers](./Algorithms/1022.sum-of-root-to-leaf-binary-numbers)|58%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |[1024](https://leetcode.com/problems/video-stitching/)|[Video Stitching](./Algorithms/1024.video-stitching)|46%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[1025](https://leetcode.com/problems/divisor-game/)|[Divisor Game](./Algorithms/1025.divisor-game)|64%|Easy|[❤](https://leetcode.com/list/oussv5j)|
-|[1026](https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/)|[Maximum Difference Between Node and Ancestor](./Algorithms/1026.maximum-difference-between-node-and-ancestor)|60%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|[1026](https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/)|[Maximum Difference Between Node and Ancestor](./Algorithms/1026.maximum-difference-between-node-and-ancestor)|61%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[1027](https://leetcode.com/problems/longest-arithmetic-sequence/)|[Longest Arithmetic Sequence](./Algorithms/1027.longest-arithmetic-sequence)|49%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[1028](https://leetcode.com/problems/recover-a-tree-from-preorder-traversal/)|[Recover a Tree From Preorder Traversal](./Algorithms/1028.recover-a-tree-from-preorder-traversal)|69%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[1030](https://leetcode.com/problems/matrix-cells-in-distance-order/)|[Matrix Cells in Distance Order](./Algorithms/1030.matrix-cells-in-distance-order)|64%|Easy|[❤](https://leetcode.com/list/oussv5j)|
