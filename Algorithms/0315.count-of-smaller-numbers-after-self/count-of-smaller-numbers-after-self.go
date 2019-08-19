@@ -1,54 +1,50 @@
 package problem0315
 
-type Node struct {
-	left, right         *Node
-	val, smaller, count int
-}
-
-func (root *Node) insert(val int) int {
-	sum := 0
-
-	for root.val != val {
-		if root.val > val {
-			if root.left == nil {
-				root.left = &Node{
-					val: val,
-				}
-			}
-
-			root.smaller++
-			root = root.left
-		} else {
-			if root.right == nil {
-				root.right = &Node{
-					val: val,
-				}
-			}
-
-			sum += root.smaller + root.count
-			root = root.right
-		}
-	}
-
-	root.count++
-	return sum + root.smaller
+type entry struct {
+	num, index int
 }
 
 func countSmaller(nums []int) []int {
-	size := len(nums)
-	res := make([]int, size)
+	n := len(nums)
+	enum := make([]entry, n)
+	for i, n := range nums {
+		enum[i] = entry{num: n, index: i}
+	}
 
-	if size <= 1 {
+	count := make([]int, n)
+
+	var sort func([]entry) []entry
+	var merge func([]entry, []entry) []entry
+
+	sort = func(es []entry) []entry {
+		size := len(es)
+		if size < 2 {
+			return es
+		}
+		mid := size / 2
+		return merge(sort(es[:mid]), sort(es[mid:]))
+	}
+
+	merge = func(left, right []entry) []entry {
+		m, n := len(left), len(right)
+		res := make([]entry, 0, m+n)
+		var pop entry
+		for len(left) > 0 && len(right) > 0 {
+			if left[0].num > right[0].num {
+				pop, left = left[0], left[1:]
+				count[pop.index] += len(right)
+			} else {
+				pop, right = right[0], right[1:]
+			}
+			res = append(res, pop)
+		}
+		res = append(res, left...)
+		res = append(res, right...)
+
 		return res
 	}
 
-	root := &Node{
-		val: nums[size-1],
-	}
+	sort(enum)
 
-	for i := size - 1; i >= 0; i-- {
-		res[i] = root.insert(nums[i])
-	}
-
-	return res
+	return count
 }
