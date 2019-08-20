@@ -15,16 +15,14 @@ import (
 type TreeNode = kit.TreeNode
 
 func maxLevelSum(root *TreeNode) int {
-	res, maxSum := 0, math.MinInt64
-	queue := make([]*TreeNode, 1, 1<<12)
+	queue := make([]*TreeNode, 1, 1<<10)
 	queue[0] = root
 
+	res, max := 0, math.MinInt64
+	level, sum := 1, 0
 	// BFS
-	level := 0
 	for len(queue) > 0 {
 		size := len(queue)
-		level++
-		sum := 0
 		for i := 0; i < size; i++ {
 			node := queue[i]
 			sum += node.Val
@@ -36,10 +34,11 @@ func maxLevelSum(root *TreeNode) int {
 			}
 		}
 
-		if maxSum < sum {
-			maxSum = sum
-			res = level
+		if max < sum {
+			res, max = level, sum
 		}
+
+		level, sum = level+1, 0
 
 		queue = queue[size:]
 	}
