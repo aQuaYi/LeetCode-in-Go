@@ -13,20 +13,7 @@ func countSmaller(nums []int) []int {
 	}
 
 	count := make([]int, n)
-
-	var sort func([]entry) []entry
-	var merge func([]entry, []entry) []entry
-
-	sort = func(es []entry) []entry {
-		size := len(es)
-		if size < 2 {
-			return es
-		}
-		mid := size / 2
-		return merge(sort(es[:mid]), sort(es[mid:]))
-	}
-
-	merge = func(left, right []entry) []entry {
+	merge := func(left, right []entry) []entry {
 		res := make([]entry, 0, len(left)+len(right))
 		var pop entry
 		for len(left) > 0 && len(right) > 0 {
@@ -44,6 +31,16 @@ func countSmaller(nums []int) []int {
 		res = append(res, left...)
 		res = append(res, right...)
 		return res
+	}
+
+	var sort func([]entry) []entry
+	sort = func(es []entry) []entry {
+		size := len(es)
+		if size < 2 {
+			return es
+		}
+		mid := size / 2
+		return merge(sort(es[:mid]), sort(es[mid:]))
 	}
 
 	sort(enum)
