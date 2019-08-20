@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 524,
-	"Updated": "2019-08-20T16:59:41.26196776+08:00",
+	"Updated": "2019-08-20T17:25:27.642925874+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 257,
 			"Total": 257
 		},
 		"Medium": {
-			"Solved": 447,
+			"Solved": 448,
 			"Total": 449
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 185
 		},
 		"Total": {
-			"Solved": 887,
+			"Solved": 888,
 			"Total": 891
 		}
 	},
@@ -10393,7 +10393,7 @@
 			"ID": 864,
 			"Title": "Shortest Path to Get All Keys",
 			"TitleSlug": "shortest-path-to-get-all-keys",
-			"PassRate": "37%",
+			"PassRate": "36%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -13959,7 +13959,7 @@
 			"TitleSlug": "maximum-level-sum-of-a-binary-tree",
 			"PassRate": "73%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
