@@ -17,6 +17,10 @@ func maxDistance(grid [][]int) int {
 		}
 	}
 
+	if len(queue) == n*n {
+		return -1
+	}
+
 	dist := -1
 	for len(queue) > 0 {
 		dist++
