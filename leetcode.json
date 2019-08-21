@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 526,
-	"Updated": "2019-08-21T20:19:49.500278475+08:00",
+	"Updated": "2019-08-21T20:56:00.610119681+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 257,
 			"Total": 257
 		},
 		"Medium": {
-			"Solved": 448,
+			"Solved": 449,
 			"Total": 449
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 185
 		},
 		"Total": {
-			"Solved": 888,
+			"Solved": 889,
 			"Total": 891
 		}
 	},
@@ -13971,7 +13971,7 @@
 			"TitleSlug": "as-far-from-land-as-possible",
 			"PassRate": "36%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
