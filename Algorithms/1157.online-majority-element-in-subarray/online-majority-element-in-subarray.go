@@ -1,29 +1,42 @@
 package problem1157
 
+import (
+	"math/rand"
+	"sort"
+)
+
+// ref: https://leetcode.com/problems/online-majority-element-in-subarray/discuss/355848/Python-Binary-Search-%2B-Find-the-Majority-Element
+
 // MajorityChecker is ..
 type MajorityChecker struct {
 	arr []int
+	a2i map[int][]int
 }
 
 // Constructor is ...
 func Constructor(arr []int) MajorityChecker {
-	return MajorityChecker{arr: arr}
+	a2i := make(map[int][]int, 64)
+	for i, a := range arr {
+		a2i[a] = append(a2i[a], i)
+	}
+	return MajorityChecker{
+		arr: arr,
+		a2i: a2i,
+	}
 }
 
 // Query is ...
 func (mc *MajorityChecker) Query(left int, right int, threshold int) int {
-	count := make(map[int]int, threshold)
-	for i := left; i <= right; i++ {
-		count[mc.arr[i]]++
-		if count[mc.arr[i]] >= threshold {
-			return mc.arr[i]
+	for i := 0; i < 20; i++ {
+		index := rand.Intn(right-left+1) + left
+		a := mc.arr[index]
+		indexs := mc.a2i[a]
+		n := len(indexs)
+		l := sort.Search(n, func(i int) bool { return indexs[i] >= left })
+		r := sort.Search(n, func(i int) bool { return indexs[i] > right })
+		if r-l >= threshold {
+			return a
 		}
 	}
 	return -1
 }
-
-/**
- * Your MajorityChecker object will be instantiated and called as such:
- * obj := Constructor(arr);
- * param_1 := obj.Query(left,right,threshold);
- */
