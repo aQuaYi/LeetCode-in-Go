@@ -30,10 +30,10 @@ func (mc *MajorityChecker) Query(left int, right int, threshold int) int {
 	for i := 0; i < 20; i++ {
 		index := rand.Intn(right-left+1) + left
 		a := mc.arr[index]
-		indexs := mc.a2i[a]
-		n := len(indexs)
-		l := sort.Search(n, func(i int) bool { return indexs[i] >= left })
-		r := sort.Search(n, func(i int) bool { return indexs[i] > right })
+		a2i := mc.a2i[a]
+		n := len(a2i)
+		l := sort.Search(n, func(i int) bool { return a2i[i] >= left })
+		r := sort.Search(n, func(i int) bool { return a2i[i] > right })
 		if r-l >= threshold {
 			return a
 		}
