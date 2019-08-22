@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
-	"Ranking": 526,
-	"Updated": "2019-08-22T16:29:47.716546136+08:00",
+	"Ranking": 524,
+	"Updated": "2019-08-22T22:17:14.461579524+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 257,
@@ -12,11 +12,11 @@
 			"Total": 449
 		},
 		"Hard": {
-			"Solved": 183,
+			"Solved": 184,
 			"Total": 185
 		},
 		"Total": {
-			"Solved": 889,
+			"Solved": 890,
 			"Total": 891
 		}
 	},
@@ -7909,7 +7909,7 @@
 			"ID": 657,
 			"Title": "Robot Return to Origin",
 			"TitleSlug": "robot-return-to-origin",
-			"PassRate": "71%",
+			"PassRate": "72%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -13285,7 +13285,7 @@
 			"ID": 1105,
 			"Title": "Filling Bookcase Shelves",
 			"TitleSlug": "filling-bookcase-shelves",
-			"PassRate": "54%",
+			"PassRate": "55%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -13911,7 +13911,7 @@
 			"TitleSlug": "online-majority-element-in-subarray",
 			"PassRate": "31%",
 			"Difficulty": "Hard",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
