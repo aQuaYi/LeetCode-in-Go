@@ -144,10 +144,10 @@ func creatGoTest(p problem, fcName, para, ansType string) {
 
 	testFuncFormat := `
 func Test_%s(t *testing.T) {
-	ast := assert.New(t)
+	a := assert.New(t)
 
 	for _, tc := range tcs {
-		ast.Equal(tc.ans, %s(%s), "输入:%s", tc)
+		a.Equal(tc.ans, %s(%s), "输入:%s", tc)
 	}
 }`
 	tcPara := getTcPara(para)
