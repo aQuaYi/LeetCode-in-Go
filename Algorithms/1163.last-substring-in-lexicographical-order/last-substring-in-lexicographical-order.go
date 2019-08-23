@@ -15,6 +15,9 @@ func lastSubstring(s string) string {
 				mark = double
 				double = mark + mark
 			}
+			if strings.HasSuffix(s, mark) {
+				break
+			}
 			m, k = mark, 'z'
 		}
 		mark = m + string(k)
