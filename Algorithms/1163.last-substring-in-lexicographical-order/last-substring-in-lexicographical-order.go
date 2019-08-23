@@ -18,7 +18,7 @@ func lastSubstring(s string) string {
 			if strings.HasSuffix(s, mark) {
 				break
 			}
-			m, k = mark, 'z'
+			m = mark
 		}
 		mark = m + string(k)
 		count = strings.Count(s, mark)
