@@ -1,4 +1,4 @@
-# 我收藏的 339 题
+# 我收藏的 340 题
 
 |题号|题目|通过率|难度|收藏|
 |:-:|:-|:-: | :-: | :-: |
@@ -341,3 +341,4 @@
 |[1146](https://leetcode.com/problems/snapshot-array/)|[Snapshot Array](./Algorithms/1146.snapshot-array)|30%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[1155](https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/)|[Number of Dice Rolls With Target Sum](./Algorithms/1155.number-of-dice-rolls-with-target-sum)|49%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[1157](https://leetcode.com/problems/online-majority-element-in-subarray/)|[Online Majority Element In Subarray](./Algorithms/1157.online-majority-element-in-subarray)|31%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|[1163](https://leetcode.com/problems/last-substring-in-lexicographical-order/)|[Last Substring in Lexicographical Order](./Algorithms/1163.last-substring-in-lexicographical-order)|28%|Hard|[❤](https://leetcode.com/list/oussv5j)|
