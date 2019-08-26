@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 517,
-	"Updated": "2019-08-26T16:58:55.959451303+08:00",
+	"Updated": "2019-08-26T17:16:25.983076456+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 257,
+			"Solved": 258,
 			"Total": 259
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 186
 		},
 		"Total": {
-			"Solved": 891,
+			"Solved": 892,
 			"Total": 895
 		}
 	},
@@ -14067,7 +14067,7 @@
 			"TitleSlug": "compare-strings-by-frequency-of-the-smallest-character",
 			"PassRate": "63%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
