@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 514,
-	"Updated": "2019-08-27T16:50:11.755533991+08:00",
+	"Updated": "2019-08-27T17:22:53.716308063+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 258,
 			"Total": 258
 		},
 		"Medium": {
-			"Solved": 449,
+			"Solved": 450,
 			"Total": 451
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 186
 		},
 		"Total": {
-			"Solved": 892,
+			"Solved": 893,
 			"Total": 895
 		}
 	},
@@ -4417,7 +4417,7 @@
 			"ID": 366,
 			"Title": "Find Leaves of Binary Tree",
 			"TitleSlug": "find-leaves-of-binary-tree",
-			"PassRate": "66%",
+			"PassRate": "67%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -14055,7 +14055,7 @@
 			"TitleSlug": "invalid-transactions",
 			"PassRate": "25%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
