@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 509,
-	"Updated": "2019-08-28T14:04:14.716953462+08:00",
+	"Updated": "2019-08-28T14:51:56.831096556+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 258,
 			"Total": 258
 		},
 		"Medium": {
-			"Solved": 450,
+			"Solved": 451,
 			"Total": 451
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 186
 		},
 		"Total": {
-			"Solved": 893,
+			"Solved": 894,
 			"Total": 895
 		}
 	},
@@ -11293,7 +11293,7 @@
 			"ID": 939,
 			"Title": "Minimum Area Rectangle",
 			"TitleSlug": "minimum-area-rectangle",
-			"PassRate": "51%",
+			"PassRate": "50%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -14079,7 +14079,7 @@
 			"TitleSlug": "remove-zero-sum-consecutive-nodes-from-linked-list",
 			"PassRate": "45%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
