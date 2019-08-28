@@ -61,7 +61,7 @@ func Test_removeZeroSumSublists(t *testing.T) {
 
 	for _, tc := range tcs {
 		head := kit.Ints2List(tc.head)
-		ans := removeZeroSumSublists(head)
+		ans := kit.List2Ints(removeZeroSumSublists(head))
 		a.Equal(tc.ans, ans, "输入:%v", tc)
 	}
 }
