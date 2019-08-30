@@ -46,16 +46,19 @@ func Test_2(t *testing.T) {
 	a.Equal(1, d.Pop())
 }
 
+//["DinnerPlates","push","push","popAtStack","pop","push","push","pop","pop"]
+// [[1],[1],[2],[1],[],[1],[2],[],[]]
+// TODO: finish this
 func Test_3(t *testing.T) {
 	a := assert.New(t)
 	//
-	d := Constructor(2)
+	d := Constructor(1)
 	//
-	for i := 1; i <= 5; i++ {
+	for i := 1; i <= 2; i++ {
 		d.Push(i)
 	}
 	//
-	a.Equal(2, d.PopAtStack(0))
+	a.Equal(2, d.PopAtStack(1))
 	//
 	d.Push(20)
 	d.Push(21)
