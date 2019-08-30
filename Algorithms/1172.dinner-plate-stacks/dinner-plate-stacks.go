@@ -4,37 +4,36 @@ import "container/heap"
 
 // DinnerPlates is ...
 type DinnerPlates struct {
-	cap    int
-	plates *PQ
-	rec    []*stack
+	cap     int
+	plates  PQ
+	inOrder []*plate
 }
 
 func (d *DinnerPlates) isEmpty() bool {
-	return len(*d.plates) == 0
+	return len(d.plates) == 0
 }
 
 // Constructor is ...
 func Constructor(capacity int) DinnerPlates {
-	pq := make(PQ, 0, 1024)
 	return DinnerPlates{
-		cap:    capacity,
-		plates: &pq,
-		rec:    make([]*stack, 0, 1024),
+		cap:     capacity,
+		plates:  make(PQ, 0, 2048),
+		inOrder: make([]*plate, 0, 2048),
 	}
 }
 
 // Push is ...
 func (d *DinnerPlates) Push(val int) {
-	if d.isEmpty() || (*d.plates)[0].isFull() {
-		id := len(d.rec)
-		s := newStack(id, d.cap)
-		s.push(val)
-		heap.Push(d.plates, s)
-		d.rec = append(d.rec, s)
+	if d.isEmpty() || d.plates[0].isFull() {
+		id := len(d.inOrder)
+		p := newPlate(id, d.cap)
+		p.push(val)
+		heap.Push(&d.plates, p)
+		d.inOrder = append(d.inOrder, p)
 	} else {
-		s := (*d.plates)[0]
+		s := d.plates[0]
 		s.push(val)
-		heap.Fix(d.plates, 0)
+		heap.Fix(&d.plates, 0)
 	}
 }
 
@@ -43,13 +42,13 @@ func (d *DinnerPlates) Pop() int {
 	if d.isEmpty() {
 		return -1
 	}
-	n := len(d.rec)
-	s := d.rec[n-1]
+	n := len(d.inOrder)
+	s := d.inOrder[n-1]
 	if s.isEmpty() {
-		d.rec = d.rec[:n-1]
+		d.inOrder = d.inOrder[:n-1]
 		s.id = -1
-		heap.Fix(d.plates, s.index)
-		heap.Pop(d.plates)
+		heap.Fix(&d.plates, s.index)
+		heap.Pop(&d.plates)
 		return d.Pop()
 	}
 	res := s.pop()
@@ -58,54 +57,55 @@ func (d *DinnerPlates) Pop() int {
 
 // PopAtStack is ...
 func (d *DinnerPlates) PopAtStack(id int) int {
-	if id > len(d.rec)-1 || // TODO: 添加 test case
-		d.rec[id] == nil {
+	if id > len(d.inOrder)-1 ||
+		d.inOrder[id] == nil {
 		return -1
 	}
-	s := d.rec[id]
+	s := d.inOrder[id]
 	if s.isEmpty() {
 		return -1
 	}
 	res := s.pop()
-	heap.Fix(d.plates, s.index)
+	heap.Fix(&d.plates, s.index)
 	return res
 }
 
-// stack 是 priorityQueue 中的元素
-type stack struct {
-	id, cap int
-	vals    []int
-	index   int
+// plate 是 priorityQueue 中的元素
+type plate struct {
+	id, cap, top, index int
+	vals                []int
 }
 
-func newStack(id, cap int) *stack {
-	return &stack{
+func newPlate(id, cap int) *plate {
+	return &plate{
 		id:   id,
 		cap:  cap,
-		vals: make([]int, 0, cap),
+		top:  -1,
+		vals: make([]int, cap),
 	}
 }
 
-func (s *stack) isFull() bool {
-	return len(s.vals) == s.cap
+func (s *plate) isFull() bool {
+	return s.top == s.cap-1
 }
 
-func (s *stack) isEmpty() bool {
-	return len(s.vals) == 0
+func (s *plate) isEmpty() bool {
+	return s.top == -1
 }
 
-func (s *stack) pop() (top int) {
-	n := len(s.vals)
-	s.vals, top = s.vals[:n-1], s.vals[n-1]
-	return top
+func (s *plate) pop() int {
+	res := s.vals[s.top]
+	s.top--
+	return res
 }
 
-func (s *stack) push(num int) {
-	s.vals = append(s.vals, num)
+func (s *plate) push(num int) {
+	s.top++
+	s.vals[s.top] = num
 }
 
 // PQ implements heap.Interface and holds entries.
-type PQ []*stack
+type PQ []*plate
 
 func (pq PQ) Len() int { return len(pq) }
 
@@ -130,7 +130,7 @@ func (pq PQ) Swap(i, j int) {
 
 // Push 往 pq 中放 entry
 func (pq *PQ) Push(x interface{}) {
-	temp := x.(*stack)
+	temp := x.(*plate)
 	temp.index = len(*pq)
 	*pq = append(*pq, temp)
 }
