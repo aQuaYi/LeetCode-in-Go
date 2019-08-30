@@ -13,6 +13,11 @@ var tcs = []struct {
 }{
 
 	{
+		[]string{"alice,120,800,mtv", "alice,20,800,mtv", "alice,50,100,beijing"},
+		[]string{"alice,20,800,mtv", "alice,50,100,beijing"},
+	},
+
+	{
 		[]string{"alice,20,800,mtv", "alice,50,100,beijing"},
 		[]string{"alice,20,800,mtv", "alice,50,100,beijing"},
 	},
