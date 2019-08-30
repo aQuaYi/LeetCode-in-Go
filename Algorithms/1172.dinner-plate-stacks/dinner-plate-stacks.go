@@ -46,18 +46,23 @@ func (d *DinnerPlates) Pop() int {
 	n := len(d.rec)
 	s := d.rec[n-1]
 	res := s.pop()
-	if s.isEmpty() {
+	for n > 0 && s.isEmpty() {
 		d.rec = d.rec[:n-1]
 		s.id = -1
 		heap.Fix(d.plates, s.index)
 		heap.Pop(d.plates)
+		n--
+		if n-1 >= 0 {
+			s = d.rec[n-1]
+		}
 	}
 	return res
 }
 
 // PopAtStack is ...
 func (d *DinnerPlates) PopAtStack(id int) int {
-	if d.rec[id] == nil {
+	if id > len(d.rec)-1 || // TODO: 添加 test case
+		d.rec[id] == nil {
 		return -1
 	}
 	s := d.rec[id]
