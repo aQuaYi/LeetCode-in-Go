@@ -1,144 +1,110 @@
 package problem1172
 
-import "container/heap"
-
 // DinnerPlates is ...
 type DinnerPlates struct {
-	cap     int
-	plates  PQ
-	inOrder []*plate
-}
-
-func (d *DinnerPlates) isEmpty() bool {
-	return len(d.plates) == 0
+	cap int
+	// plate's index of next push
+	in int
+	// plate's index of next pop
+	// when out is -1, plates is empty, unable to pop
+	out    int
+	plates []*plate
 }
 
 // Constructor is ...
 func Constructor(capacity int) DinnerPlates {
+	plates := make([]*plate, 1, 1024)
+	plates[0] = newPlate(capacity)
 	return DinnerPlates{
-		cap:     capacity,
-		plates:  make(PQ, 0, 2048),
-		inOrder: make([]*plate, 0, 2048),
+		cap:    capacity,
+		in:     0,
+		out:    -1, // not possible to pop at beginning
+		plates: plates,
 	}
 }
 
 // Push is ...
 func (d *DinnerPlates) Push(val int) {
-	if d.isEmpty() || d.plates[0].isFull() {
-		id := len(d.inOrder)
-		p := newPlate(id, d.cap)
-		p.push(val)
-		heap.Push(&d.plates, p)
-		d.inOrder = append(d.inOrder, p)
-	} else {
-		s := d.plates[0]
-		s.push(val)
-		heap.Fix(&d.plates, 0)
+	d.plates[d.in].push(val)
+	// after push into a empty plate at end
+	// d.out need point to the last nonempty plate
+	if d.out < d.in {
+		d.out = d.in
+	}
+	// make d.in to be the index of left-most nonfull plate
+	for d.in < len(d.plates) && d.plates[d.in].isFull() {
+		d.in++
+	}
+	// if no nonfull plate , create a new plate
+	// JUST NOW, d.out < d.in
+	if d.in == len(d.plates) {
+		d.plates = append(d.plates, newPlate(d.cap))
 	}
 }
 
-// Pop is ...
+// Pop is a special condition of PopAtStack
 func (d *DinnerPlates) Pop() int {
-	if d.isEmpty() {
+	if d.out == -1 {
 		return -1
 	}
-	n := len(d.inOrder)
-	s := d.inOrder[n-1]
-	if s.isEmpty() {
-		d.inOrder = d.inOrder[:n-1]
-		s.id = -1
-		heap.Fix(&d.plates, s.index)
-		heap.Pop(&d.plates)
-		return d.Pop()
-	}
-	res := s.pop()
-	return res
+	return d.PopAtStack(d.out)
 }
 
 // PopAtStack is ...
-func (d *DinnerPlates) PopAtStack(id int) int {
-	if id > len(d.inOrder)-1 ||
-		d.inOrder[id] == nil {
+func (d *DinnerPlates) PopAtStack(i int) (res int) {
+	if len(d.plates) <= i {
 		return -1
 	}
-	s := d.inOrder[id]
-	if s.isEmpty() {
+	p := d.plates[i]
+	// set value and remove it from the plate
+	if p.isEmpty() {
 		return -1
 	}
-	res := s.pop()
-	heap.Fix(&d.plates, s.index)
+	res = p.pop()
+	// make d.in to be the index of left-most nonfull plate
+	d.in = min(d.in, i)
+	// PopAtStack could make some empty plate in d.plates
+	// need jump over these holes
+	// make sure d.plates[d.out] have val to pop
+	for d.out >= 0 && d.plates[d.out].isEmpty() {
+		d.out--
+	}
 	return res
 }
 
-// plate 是 priorityQueue 中的元素
+func min(a, b int) int {
+	if a < b {
+		return a
+	}
+	return b
+}
+
 type plate struct {
-	id, cap, top, index int
-	vals                []int
+	cap   int
+	stack []int
 }
 
-func newPlate(id, cap int) *plate {
+func newPlate(cap int) *plate {
 	return &plate{
-		id:   id,
-		cap:  cap,
-		top:  -1,
-		vals: make([]int, cap),
+		cap:   cap,
+		stack: make([]int, 0, cap),
 	}
 }
 
-func (s *plate) isFull() bool {
-	return s.top == s.cap-1
+func (p *plate) push(val int) {
+	p.stack = append(p.stack, val)
 }
 
-func (s *plate) isEmpty() bool {
-	return s.top == -1
-}
-
-func (s *plate) pop() int {
-	res := s.vals[s.top]
-	s.top--
+func (p *plate) pop() (res int) {
+	n := len(p.stack)
+	p.stack, res = p.stack[:n-1], p.stack[n-1]
 	return res
 }
 
-func (s *plate) push(num int) {
-	s.top++
-	s.vals[s.top] = num
+func (p *plate) isEmpty() bool {
+	return len(p.stack) == 0
 }
 
-// PQ implements heap.Interface and holds entries.
-type PQ []*plate
-
-func (pq PQ) Len() int { return len(pq) }
-
-func (pq PQ) Less(i, j int) bool {
-	switch {
-	case pq[i].isFull() && pq[j].isFull():
-		return pq[i].id > pq[j].id
-	case pq[i].isFull():
-		return false
-	case pq[j].isFull():
-		return true
-	default:
-		return pq[i].id < pq[j].id
-	}
-}
-
-func (pq PQ) Swap(i, j int) {
-	pq[i], pq[j] = pq[j], pq[i]
-	pq[i].index = i
-	pq[j].index = j
-}
-
-// Push 往 pq 中放 entry
-func (pq *PQ) Push(x interface{}) {
-	temp := x.(*plate)
-	temp.index = len(*pq)
-	*pq = append(*pq, temp)
-}
-
-// Pop 从 pq 中取出最优先的 entry
-func (pq *PQ) Pop() interface{} {
-	temp := (*pq)[len(*pq)-1]
-	temp.index = -1 // for safety
-	*pq = (*pq)[0 : len(*pq)-1]
-	return temp
+func (p *plate) isFull() bool {
+	return len(p.stack) == p.cap
 }
