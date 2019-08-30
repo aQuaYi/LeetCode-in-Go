@@ -45,17 +45,14 @@ func (d *DinnerPlates) Pop() int {
 	}
 	n := len(d.rec)
 	s := d.rec[n-1]
-	res := s.pop()
-	for n > 0 && s.isEmpty() {
+	if s.isEmpty() {
 		d.rec = d.rec[:n-1]
 		s.id = -1
 		heap.Fix(d.plates, s.index)
 		heap.Pop(d.plates)
-		n--
-		if n-1 >= 0 {
-			s = d.rec[n-1]
-		}
+		return d.Pop()
 	}
+	res := s.pop()
 	return res
 }
 
