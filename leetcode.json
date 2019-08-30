@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 508,
-	"Updated": "2019-08-30T15:10:13.886499437+08:00",
+	"Updated": "2019-08-30T21:43:41.617822411+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 258,
@@ -12,11 +12,11 @@
 			"Total": 451
 		},
 		"Hard": {
-			"Solved": 185,
+			"Solved": 186,
 			"Total": 186
 		},
 		"Total": {
-			"Solved": 894,
+			"Solved": 895,
 			"Total": 895
 		}
 	},
@@ -8509,7 +8509,7 @@
 			"ID": 707,
 			"Title": "Design Linked List",
 			"TitleSlug": "design-linked-list",
-			"PassRate": "21%",
+			"PassRate": "20%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9517,7 +9517,7 @@
 			"ID": 791,
 			"Title": "Custom Sort String",
 			"TitleSlug": "custom-sort-string",
-			"PassRate": "63%",
+			"PassRate": "62%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9841,7 +9841,7 @@
 			"ID": 818,
 			"Title": "Race Car",
 			"TitleSlug": "race-car",
-			"PassRate": "35%",
+			"PassRate": "36%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9961,7 +9961,7 @@
 			"ID": 828,
 			"Title": "Unique Letter String",
 			"TitleSlug": "unique-letter-string",
-			"PassRate": "40%",
+			"PassRate": "41%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11917,7 +11917,7 @@
 			"ID": 991,
 			"Title": "Broken Calculator",
 			"TitleSlug": "broken-calculator",
-			"PassRate": "40%",
+			"PassRate": "41%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -14091,7 +14091,7 @@
 			"TitleSlug": "dinner-plate-stacks",
 			"PassRate": "42%",
 			"Difficulty": "Hard",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
