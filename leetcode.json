@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 512,
-	"Updated": "2019-09-02T19:46:36.50638376+08:00",
+	"Updated": "2019-09-02T20:05:16.099436299+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 259,
+			"Solved": 260,
 			"Total": 260
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 187
 		},
 		"Total": {
-			"Solved": 896,
+			"Solved": 897,
 			"Total": 899
 		}
 	},
@@ -14139,7 +14139,7 @@
 			"TitleSlug": "diet-plan-performance",
 			"PassRate": "44%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
