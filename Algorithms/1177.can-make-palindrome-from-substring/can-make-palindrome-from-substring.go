@@ -13,23 +13,14 @@ func canMakePaliQueries(s string, queries [][]int) []bool {
 	}
 
 	res := make([]bool, n)
-	hasSeen := make(map[int]bool, n)
 	for i, q := range queries {
 		lo, hi, k := q[0], q[1], q[2]
 		if k >= 13 {
 			res[i] = true
 			continue
 		}
-		m := mark(lo, hi, k)
-		r, ok := hasSeen[m]
-		if ok {
-			res[i] = r
-			continue
-		}
 		remains := bits(cnt[hi+1] ^ cnt[lo])
-		r = remains/2 <= k
-		res[i] = r
-		hasSeen[m] = r
+		res[i] = remains/2 <= k
 	}
 
 	return res
@@ -42,8 +33,4 @@ func bits(n int) int {
 		n >>= 1
 	}
 	return res
-}
-
-func mark(lo, hi, k int) int {
-	return lo<<22 + hi<<4 + k
 }
