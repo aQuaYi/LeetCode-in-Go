@@ -10,13 +10,13 @@ func canMakePaliQueries(s string, queries [][]int) []bool {
 	}
 
 	count := func(left, right int) int {
-		single := 0
+		diff := 0
 		for _, indexes := range indexesOf {
 			l := sort.SearchInts(indexes, left)
 			r := sort.SearchInts(indexes, right+1)
-			single += (r - l) % 2
+			diff += (r - l) % 2
 		}
-		return single / 2
+		return diff / 2
 	}
 
 	n := len(queries)
