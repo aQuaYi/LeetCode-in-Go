@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 509,
-	"Updated": "2019-09-03T19:54:43.334227612+08:00",
+	"Updated": "2019-09-03T23:33:00.652769282+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 260,
 			"Total": 260
 		},
 		"Medium": {
-			"Solved": 451,
+			"Solved": 452,
 			"Total": 452
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 187
 		},
 		"Total": {
-			"Solved": 897,
+			"Solved": 898,
 			"Total": 899
 		}
 	},
@@ -853,7 +853,7 @@
 			"ID": 69,
 			"Title": "Sqrt(x)",
 			"TitleSlug": "sqrtx",
-			"PassRate": "31%",
+			"PassRate": "32%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -5221,7 +5221,7 @@
 			"ID": 433,
 			"Title": "Minimum Genetic Mutation",
 			"TitleSlug": "minimum-genetic-mutation",
-			"PassRate": "38%",
+			"PassRate": "39%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11917,7 +11917,7 @@
 			"ID": 991,
 			"Title": "Broken Calculator",
 			"TitleSlug": "broken-calculator",
-			"PassRate": "40%",
+			"PassRate": "41%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12553,7 +12553,7 @@
 			"ID": 1044,
 			"Title": "Longest Duplicate Substring",
 			"TitleSlug": "longest-duplicate-substring",
-			"PassRate": "23%",
+			"PassRate": "22%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12769,7 +12769,7 @@
 			"ID": 1062,
 			"Title": "Longest Repeating Substring",
 			"TitleSlug": "longest-repeating-substring",
-			"PassRate": "52%",
+			"PassRate": "53%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -14151,9 +14151,9 @@
 			"TitleSlug": "can-make-palindrome-from-substring",
 			"PassRate": "30%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
