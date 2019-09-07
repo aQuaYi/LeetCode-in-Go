@@ -1,7 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 509,
-	"Updated": "2019-09-07T12:33:41.485958835+08:00",
+	"Updated": "2019-09-07T14:47:56.034053207+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 259,
@@ -12,11 +12,11 @@
 			"Total": 452
 		},
 		"Hard": {
-			"Solved": 186,
+			"Solved": 187,
 			"Total": 187
 		},
 		"Total": {
-			"Solved": 897,
+			"Solved": 898,
 			"Total": 898
 		}
 	},
@@ -397,7 +397,7 @@
 			"ID": 31,
 			"Title": "Next Permutation",
 			"TitleSlug": "next-permutation",
-			"PassRate": "30%",
+			"PassRate": "31%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -8845,7 +8845,7 @@
 			"ID": 735,
 			"Title": "Asteroid Collision",
 			"TitleSlug": "asteroid-collision",
-			"PassRate": "38%",
+			"PassRate": "39%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -13861,7 +13861,7 @@
 			"ID": 1153,
 			"Title": "String Transforms Into Another String",
 			"TitleSlug": "string-transforms-into-another-string",
-			"PassRate": "29%",
+			"PassRate": "28%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -13945,7 +13945,7 @@
 			"ID": 1160,
 			"Title": "Find Words That Can Be Formed by Characters",
 			"TitleSlug": "find-words-that-can-be-formed-by-characters",
-			"PassRate": "68%",
+			"PassRate": "69%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -14077,7 +14077,7 @@
 			"ID": 1171,
 			"Title": "Remove Zero Sum Consecutive Nodes from Linked List",
 			"TitleSlug": "remove-zero-sum-consecutive-nodes-from-linked-list",
-			"PassRate": "43%",
+			"PassRate": "42%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -14161,9 +14161,9 @@
 			"ID": 1178,
 			"Title": "Number of Valid Words for Each Puzzle",
 			"TitleSlug": "number-of-valid-words-for-each-puzzle",
-			"PassRate": "32%",
+			"PassRate": "33%",
 			"Difficulty": "Hard",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
