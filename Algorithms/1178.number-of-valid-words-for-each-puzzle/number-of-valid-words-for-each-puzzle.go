@@ -9,13 +9,9 @@ func findNumOfValidWords(words []string, puzzles []string) []int {
 	res := make([]int, len(puzzles))
 
 	for i, p := range puzzles {
-		first := 1 << uint(p[0]-'a')
-		pm := mask(p)
-		for wm, c := range count {
-			if first&wm != 0 &&
-				pm&wm == wm {
-				res[i] += c
-			}
+		subs := subsWithHead(p)
+		for _, s := range subs {
+			res[i] += count[s]
 		}
 	}
 
@@ -26,6 +22,19 @@ func mask(w string) int {
 	res := 0
 	for _, l := range w {
 		res |= 1 << uint(l-'a')
+	}
+	return res
+}
+
+func subsWithHead(p string) []int {
+	n := len(p)
+	res := make([]int, 1, 128)
+	res[0] = 1 << uint(p[0]-'a')
+	for i := 1; i < n; i++ {
+		x := 1 << uint(p[i]-'a')
+		for _, r := range res {
+			res = append(res, r|x)
+		}
 	}
 	return res
 }
