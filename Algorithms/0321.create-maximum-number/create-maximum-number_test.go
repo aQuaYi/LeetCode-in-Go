@@ -1,7 +1,7 @@
 package problem0321
 
 import (
-	"fmt"
+	"reflect"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -78,7 +78,6 @@ func Test_maxNumber(t *testing.T) {
 	ast := assert.New(t)
 
 	for _, tc := range tcs {
-		fmt.Printf("~~%v~~\n", tc)
 		ast.Equal(tc.ans, maxNumber(tc.nums1, tc.nums2, tc.k), "输入:%v", tc)
 	}
 }
@@ -88,5 +87,45 @@ func Benchmark_maxNumber(b *testing.B) {
 		for _, tc := range tcs {
 			maxNumber(tc.nums1, tc.nums2, tc.k)
 		}
+	}
+}
+
+func Test_choose(t *testing.T) {
+	type args struct {
+		A []int
+		k int
+	}
+	tests := []struct {
+		name string
+		args args
+		want []int
+	}{
+
+		{
+			"5选前3",
+			args{
+				[]int{9, 1, 7, 5, 2},
+				3,
+			},
+			[]int{9, 7, 5},
+		},
+
+		{
+			"5选后3",
+			args{
+				[]int{5, 2, 7, 1, 9},
+				3,
+			},
+			[]int{7, 1, 9},
+		},
+
+		//
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := choose(tt.args.A, tt.args.k); !reflect.DeepEqual(got, tt.want) {
+				t.Errorf("choose() = %v, want %v", got, tt.want)
+			}
+		})
 	}
 }

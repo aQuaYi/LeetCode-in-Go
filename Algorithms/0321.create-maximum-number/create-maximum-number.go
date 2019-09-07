@@ -1,85 +1,74 @@
 package problem0321
 
-func maxNumber(nums1, nums2 []int, k int) []int {
-	m, n := len(nums1), len(nums2)
-
+func maxNumber(A, B []int, k int) []int {
+	m, n := len(A), len(B)
 	res := make([]int, k)
-	var temp []int
-
-	for i := max(0, k-n); i <= m && i <= k; i++ {
-		temp = combine(choose(i, nums1), choose(k-i, nums2))
-		if isBigger(temp, res) {
-			copy(res, temp)
+	for i := max(0, k-n); i <= m && k-i >= 0; i++ {
+		temp := combine(choose(A, i), choose(B, k-i))
+		if isBigger(temp, res, 0, 0) {
+			res = temp
 		}
 	}
-
 	return res
 }
 
-// 从 nums 当中挑选 k 个数，其组成的 []int 最大
-// 不满足 0 <= k <= len(nums) 会 panic
-func choose(k int, nums []int) []int {
-	if k == len(nums) {
-		return nums
-	}
-
-	res := make([]int, k)
-	// idx 是 res 上次获取的 nums 的值的索引号
-	idx := -1
-	for i := 0; i < k; i++ {
-		idx++
-		// res[i] 是 nums[idx:len(nums)-k+i+1] 中的最大值
-		res[i] = nums[idx]
-		for j := idx + 1; j <= len(nums)-k+i; j++ {
-			if res[i] < nums[j] {
-				res[i] = nums[j]
-				idx = j
-			}
+func choose(A []int, k int) []int {
+	stack, top := make([]int, k), -1
+	n := len(A)
+	for i := 0; i < n; i++ {
+		for top >= 0 && stack[top] < A[i] &&
+			top+n-i >= k {
+			// 此时，stack 中 有 top+1 个元素
+			// 需要保证消去 stack[top] 后的 top 个元素
+			// 和 A[i:] 中的 n-i 个元素
+			// 能够组成 k 个元素
+			// 所以，top+(n-i)>=k
+			top--
+		}
+		if top+1 < k {
+			// 如果 stack 中的元素，还没有 k 个的话
+			// 先用 A[i] 填上空缺
+			top++
+			stack[top] = A[i]
 		}
 	}
-
-	return res
+	return stack
 }
 
 // 混合 nums1 和 nums2 使得其组成的 []int 最大
-func combine(nums1, nums2 []int) []int {
-	size1 := len(nums1)
-	size2 := len(nums2)
-	res := make([]int, 0, size1+size2)
+func combine(A, B []int) []int {
+	m, n := len(A), len(B)
+	res := make([]int, 0, m+n)
 
 	var i, j int
-	for i < size1 && j < size2 {
-		if nums1[i] > nums2[j] || isBigger(nums1[i:], nums2[j:]) {
-			res = append(res, nums1[i])
+	for i < m && j < n {
+		if isBigger(A, B, i, j) {
+			res = append(res, A[i])
 			i++
 		} else {
-			res = append(res, nums2[j])
+			res = append(res, B[j])
 			j++
 		}
 	}
 
-	res = append(res, nums1[i:]...)
-	res = append(res, nums2[j:]...)
+	res = append(res, A[i:]...)
+	res = append(res, B[j:]...)
 
 	return res
 }
 
-func isBigger(a1, a2 []int) bool {
-	s1 := len(a1)
-	s2 := len(a2)
-	if s1 > s2 {
-		return !isBigger(a2, a1)
-	}
-
-	for i := 0; i < s1; i++ {
-		if a1[i] > a2[i] {
+func isBigger(A, B []int, i, j int) bool {
+	m, n := len(A), len(B)
+	for i < m && j < n {
+		if A[i] > B[j] {
 			return true
-		} else if a1[i] < a2[i] {
+		} else if A[i] < B[j] {
 			return false
 		}
+		i++
+		j++
 	}
-
-	return false
+	return m-i > n-j
 }
 
 func max(a, b int) int {
