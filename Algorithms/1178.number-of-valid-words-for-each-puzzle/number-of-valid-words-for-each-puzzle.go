@@ -1,46 +1,52 @@
 package problem1178
 
-import "strings"
-
 func findNumOfValidWords(words []string, puzzles []string) []int {
-	m := len(words)
-	lss := make([][]string, m)
+	m, n := len(words), len(puzzles)
+
+	ws := make([]word, m)
 	for i, w := range words {
-		lss[i] = unique(w)
+		ws[i] = makeWord(w)
 	}
 
-	n := len(puzzles)
-	res := make([]int, n)
+	ps := make([]word, n)
 	for i, p := range puzzles {
-		for j, w := range words {
-			res[i] += valid(p, w, lss[j])
+		ps[i] = makeWord(p)
+	}
+
+	res := make([]int, n)
+
+	for i, p := range ps {
+		for _, w := range ws {
+			res[i] += valid(p, w)
 		}
 	}
 
 	return res
 }
 
-func unique(w string) []string {
-	n := len(w)
-	lm := make(map[string]bool, n)
-	for i := 0; i < n; i++ {
-		lm[w[i:i+1]] = true
+func valid(p, w word) int {
+	if p.first&w.total != 0 &&
+		p.total&w.total == w.total {
+		return 1
 	}
-	ls := make([]string, 0, n)
-	for l := range lm {
-		ls = append(ls, l)
-	}
-	return ls
+	return 0
 }
 
-func valid(p, w string, ls []string) int {
-	if !strings.Contains(w, p[:1]) {
-		return 0
+type word struct {
+	first, total int
+}
+
+func makeWord(w string) word {
+	return word{
+		first: 1 << uint(w[0]-'a'),
+		total: convert(w),
 	}
-	for _, l := range ls {
-		if !strings.Contains(p, l) {
-			return 0
-		}
+}
+
+func convert(w string) int {
+	res := 0
+	for _, l := range w {
+		res |= 1 << uint(l-'a')
 	}
-	return 1
+	return res
 }
