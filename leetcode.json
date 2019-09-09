@@ -1,7 +1,11 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 518,
+<<<<<<< HEAD
 	"Updated": "2019-09-09T14:19:25.142542837+08:00",
+=======
+	"Updated": "2019-09-08T19:31:16.920313497+08:00",
+>>>>>>> 05e7d5f302f7e1a59af008cef3d1af255b6e860f
 	"Record": {
 		"Easy": {
 			"Solved": 259,
@@ -12301,7 +12305,7 @@
 			"ID": 1023,
 			"Title": "Camelcase Matching",
 			"TitleSlug": "camelcase-matching",
-			"PassRate": "56%",
+			"PassRate": "55%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -14197,7 +14201,11 @@
 			"ID": 1181,
 			"Title": "Before and After Puzzle",
 			"TitleSlug": "before-and-after-puzzle",
+<<<<<<< HEAD
 			"PassRate": "40%",
+=======
+			"PassRate": "39%",
+>>>>>>> 05e7d5f302f7e1a59af008cef3d1af255b6e860f
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -14209,7 +14217,11 @@
 			"ID": 1182,
 			"Title": "Shortest Distance to Target Color",
 			"TitleSlug": "shortest-distance-to-target-color",
+<<<<<<< HEAD
 			"PassRate": "46%",
+=======
+			"PassRate": "45%",
+>>>>>>> 05e7d5f302f7e1a59af008cef3d1af255b6e860f
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -14221,7 +14233,11 @@
 			"ID": 1183,
 			"Title": "Maximum Number of Ones",
 			"TitleSlug": "maximum-number-of-ones",
+<<<<<<< HEAD
 			"PassRate": "40%",
+=======
+			"PassRate": "37%",
+>>>>>>> 05e7d5f302f7e1a59af008cef3d1af255b6e860f
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -14245,7 +14261,11 @@
 			"ID": 1185,
 			"Title": "Day of the Week",
 			"TitleSlug": "day-of-the-week",
+<<<<<<< HEAD
 			"PassRate": "67%",
+=======
+			"PassRate": "65%",
+>>>>>>> 05e7d5f302f7e1a59af008cef3d1af255b6e860f
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -14257,7 +14277,11 @@
 			"ID": 1186,
 			"Title": "Maximum Subarray Sum with One Deletion",
 			"TitleSlug": "maximum-subarray-sum-with-one-deletion",
+<<<<<<< HEAD
 			"PassRate": "29%",
+=======
+			"PassRate": "25%",
+>>>>>>> 05e7d5f302f7e1a59af008cef3d1af255b6e860f
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -14269,7 +14293,11 @@
 			"ID": 1187,
 			"Title": "Make Array Strictly Increasing",
 			"TitleSlug": "make-array-strictly-increasing",
+<<<<<<< HEAD
 			"PassRate": "36%",
+=======
+			"PassRate": "31%",
+>>>>>>> 05e7d5f302f7e1a59af008cef3d1af255b6e860f
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
