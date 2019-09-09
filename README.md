@@ -5,10 +5,6 @@
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
  [![Go](https://img.shields.io/badge/Golang-1.13-blue.svg)](https://golang.google.cn)
 
-## 感谢所有贡献值的辛苦付出
-
-<a href="https://github.com/aQuaYi/LeetCode-in-Go/graphs/contributors"><img src="https://opencollective.com/leetcode-in-go/contributors.svg?width=890&button=true"/></a>
-
 ## 进度
 
 > 统计规则：1.免费题，2.算法题，3.能提交 Go 解答
@@ -971,3 +967,7 @@
 - [Stack](./kit/Stack.go)
 - [TreeNode](./kit/TreeNode.go)
 - [Master](./kit/master.go)
+
+## 感谢所有贡献值的辛苦付出
+
+<a href="https://github.com/aQuaYi/LeetCode-in-Go/graphs/contributors"><img src="https://opencollective.com/leetcode-in-go/contributors.svg?width=890&button=true"/></a>
