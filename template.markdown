@@ -40,6 +40,8 @@
 - [TreeNode](./kit/TreeNode.go)
 - [Master](./kit/master.go)
 
-## 感谢所有贡献值的辛苦付出
+## 致谢
+
+感谢所有贡献值的辛苦付出
 
 <a href="https://github.com/aQuaYi/LeetCode-in-Go/graphs/contributors"><img src="https://opencollective.com/leetcode-in-go/contributors.svg?width=890&button=true"/></a>
