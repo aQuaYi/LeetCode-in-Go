@@ -1,7 +1,7 @@
 package problem0321
 
 import (
-	"fmt"
+	"reflect"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -14,6 +14,13 @@ var tcs = []struct {
 	k     int
 	ans   []int
 }{
+
+	{
+		[]int{6, 3, 9, 0, 5, 6},
+		[]int{2, 2, 5, 2, 1, 4, 4, 5, 7, 8, 9, 3, 1, 6, 9, 7, 0},
+		23,
+		[]int{6, 3, 9, 2, 2, 5, 2, 1, 4, 4, 5, 7, 8, 9, 3, 1, 6, 9, 7, 0, 5, 6, 0},
+	},
 
 	{
 		[]int{1, 6, 5, 4, 7, 3, 9, 5, 3, 7, 8, 4, 1, 1, 4},
@@ -71,27 +78,8 @@ func Test_maxNumber(t *testing.T) {
 	ast := assert.New(t)
 
 	for _, tc := range tcs {
-		fmt.Printf("~~%v~~\n", tc)
 		ast.Equal(tc.ans, maxNumber(tc.nums1, tc.nums2, tc.k), "输入:%v", tc)
 	}
-}
-func Test_outOf(t *testing.T) {
-	ast := assert.New(t)
-
-	nums, k := []int{3, 8, 4, 6, 5, 8}, 3
-	actual := selecting(k, nums)
-	expected := []int{8, 6, 8}
-	ast.Equal(expected, actual, "输入，%v, %d", nums, k)
-}
-
-func Test_combine(t *testing.T) {
-	ast := assert.New(t)
-
-	nums1 := []int{6, 7}
-	nums2 := []int{6, 0, 4}
-	actual := combine(nums1, nums2)
-	expected := []int{6, 7, 6, 0, 4}
-	ast.Equal(expected, actual, "输入，%v,%v", nums1, nums2)
 }
 
 func Benchmark_maxNumber(b *testing.B) {
@@ -99,5 +87,45 @@ func Benchmark_maxNumber(b *testing.B) {
 		for _, tc := range tcs {
 			maxNumber(tc.nums1, tc.nums2, tc.k)
 		}
+	}
+}
+
+func Test_choose(t *testing.T) {
+	type args struct {
+		A []int
+		k int
+	}
+	tests := []struct {
+		name string
+		args args
+		want []int
+	}{
+
+		{
+			"6选3",
+			args{
+				[]int{8, 9, 1, 7, 5, 2},
+				3,
+			},
+			[]int{9, 7, 5},
+		},
+
+		{
+			"5选3",
+			args{
+				[]int{5, 2, 7, 1, 9},
+				3,
+			},
+			[]int{7, 1, 9},
+		},
+
+		//
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := choose(tt.args.A, tt.args.k); !reflect.DeepEqual(got, tt.want) {
+				t.Errorf("choose() = %v, want %v", got, tt.want)
+			}
+		})
 	}
 }
