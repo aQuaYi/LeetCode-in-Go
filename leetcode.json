@@ -1,23 +1,23 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 534,
-	"Updated": "2019-09-15T11:52:29.843092637+08:00",
+	"Updated": "2019-09-15T12:11:32.145164456+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 260,
-			"Total": 261
+			"Solved": 261,
+			"Total": 262
 		},
 		"Medium": {
 			"Solved": 452,
-			"Total": 453
+			"Total": 455
 		},
 		"Hard": {
 			"Solved": 187,
-			"Total": 188
+			"Total": 189
 		},
 		"Total": {
-			"Solved": 899,
-			"Total": 902
+			"Solved": 900,
+			"Total": 906
 		}
 	},
 	"Problems": [
@@ -14247,7 +14247,7 @@
 			"TitleSlug": "day-of-the-week",
 			"PassRate": "65%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": true,
@@ -14275,6 +14275,66 @@
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": true,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 0,
+			"Title": "",
+			"TitleSlug": "",
+			"PassRate": "",
+			"Difficulty": "",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": false,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 1189,
+			"Title": "Maximum Number of Balloons",
+			"TitleSlug": "maximum-number-of-balloons",
+			"PassRate": "62%",
+			"Difficulty": "Easy",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": false,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 1190,
+			"Title": "Reverse Substrings Between Each Pair of Parentheses",
+			"TitleSlug": "reverse-substrings-between-each-pair-of-parentheses",
+			"PassRate": "52%",
+			"Difficulty": "Medium",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": false,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 1191,
+			"Title": "K-Concatenation Maximum Sum",
+			"TitleSlug": "k-concatenation-maximum-sum",
+			"PassRate": "15%",
+			"Difficulty": "Medium",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": false,
+			"HasNoGoOption": false
+		},
+		{
+			"ID": 1192,
+			"Title": "Critical Connections in a Network",
+			"TitleSlug": "critical-connections-in-a-network",
+			"PassRate": "29%",
+			"Difficulty": "Hard",
+			"IsAccepted": false,
+			"IsPaid": false,
+			"IsFavor": false,
+			"IsNew": false,
 			"HasNoGoOption": false
 		}
 	]
