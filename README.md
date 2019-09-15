@@ -18,9 +18,9 @@
 
 |题号|题目|通过率|难度|收藏|
 |:-:|:-|:-: | :-: | :-: |
-|[1192](https://leetcode.com/problems/critical-connections-in-a-network/)| * Critical Connections in a Network|29%|Hard||
-|[1191](https://leetcode.com/problems/k-concatenation-maximum-sum/)| * K-Concatenation Maximum Sum|15%|Medium||
-|[1190](https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/)| * Reverse Substrings Between Each Pair of Parentheses|52%|Medium||
+|[1192](https://leetcode.com/problems/critical-connections-in-a-network/)| * Critical Connections in a Network|34%|Hard||
+|[1191](https://leetcode.com/problems/k-concatenation-maximum-sum/)| * K-Concatenation Maximum Sum|19%|Medium||
+|[1190](https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/)| * Reverse Substrings Between Each Pair of Parentheses|54%|Medium||
 |[1189](https://leetcode.com/problems/maximum-number-of-balloons/)| * Maximum Number of Balloons|62%|Easy||
 |[1187](https://leetcode.com/problems/make-array-strictly-increasing/)| * Make Array Strictly Increasing :new: |39%|Hard||
 |[1186](https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/)| * Maximum Subarray Sum with One Deletion :new: |31%|Medium||
@@ -35,7 +35,7 @@
 |[1169](https://leetcode.com/problems/invalid-transactions/)|[Invalid Transactions](./Algorithms/1169.invalid-transactions)|26%|Medium||
 |[1163](https://leetcode.com/problems/last-substring-in-lexicographical-order/)|[Last Substring in Lexicographical Order](./Algorithms/1163.last-substring-in-lexicographical-order)|29%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[1162](https://leetcode.com/problems/as-far-from-land-as-possible/)|[As Far from Land as Possible](./Algorithms/1162.as-far-from-land-as-possible)|38%|Medium||
-|[1161](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/)|[Maximum Level Sum of a Binary Tree](./Algorithms/1161.maximum-level-sum-of-a-binary-tree)|71%|Medium||
+|[1161](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/)|[Maximum Level Sum of a Binary Tree](./Algorithms/1161.maximum-level-sum-of-a-binary-tree)|72%|Medium||
 |[1160](https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/)|[Find Words That Can Be Formed by Characters](./Algorithms/1160.find-words-that-can-be-formed-by-characters)|68%|Easy||
 |[1157](https://leetcode.com/problems/online-majority-element-in-subarray/)|[Online Majority Element In Subarray](./Algorithms/1157.online-majority-element-in-subarray)|32%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[1156](https://leetcode.com/problems/swap-for-longest-repeated-character-substring/)|[Swap For Longest Repeated Character Substring](./Algorithms/1156.swap-for-longest-repeated-character-substring)|46%|Medium||
@@ -46,7 +46,7 @@
 |[1145](https://leetcode.com/problems/binary-tree-coloring-game/)|[Binary Tree Coloring Game](./Algorithms/1145.binary-tree-coloring-game)|47%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[1144](https://leetcode.com/problems/decrease-elements-to-make-array-zigzag/)|[Decrease Elements To Make Array Zigzag](./Algorithms/1144.decrease-elements-to-make-array-zigzag)|42%|Medium||
 |[1143](https://leetcode.com/problems/longest-common-subsequence/)|[Longest Common Subsequence](./Algorithms/1143.longest-common-subsequence)|57%|Medium||
-|[1140](https://leetcode.com/problems/stone-game-ii/)|[Stone Game II](./Algorithms/1140.stone-game-ii)|60%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|[1140](https://leetcode.com/problems/stone-game-ii/)|[Stone Game II](./Algorithms/1140.stone-game-ii)|59%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[1139](https://leetcode.com/problems/largest-1-bordered-square/)|[Largest 1-Bordered Square](./Algorithms/1139.largest-1-bordered-square)|43%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[1138](https://leetcode.com/problems/alphabet-board-path/)|[Alphabet Board Path](./Algorithms/1138.alphabet-board-path)|43%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[1137](https://leetcode.com/problems/n-th-tribonacci-number/)|[N-th Tribonacci Number](./Algorithms/1137.n-th-tribonacci-number)|59%|Easy|[❤](https://leetcode.com/list/oussv5j)|
@@ -66,7 +66,7 @@
 |[1105](https://leetcode.com/problems/filling-bookcase-shelves/)|[Filling Bookcase Shelves](./Algorithms/1105.filling-bookcase-shelves)|55%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[1104](https://leetcode.com/problems/path-in-zigzag-labelled-binary-tree/)|[Path In Zigzag Labelled Binary Tree](./Algorithms/1104.path-in-zigzag-labelled-binary-tree)|70%|Medium||
 |[1103](https://leetcode.com/problems/distribute-candies-to-people/)|[Distribute Candies to People](./Algorithms/1103.distribute-candies-to-people)|60%|Easy||
-|[1096](https://leetcode.com/problems/brace-expansion-ii/)|[Brace Expansion II](./Algorithms/1096.brace-expansion-ii)|56%|Hard||
+|[1096](https://leetcode.com/problems/brace-expansion-ii/)|[Brace Expansion II](./Algorithms/1096.brace-expansion-ii)|57%|Hard||
 |[1095](https://leetcode.com/problems/find-in-mountain-array/)|[Find in Mountain Array](./Algorithms/1095.find-in-mountain-array)|34%|Hard||
 |[1094](https://leetcode.com/problems/car-pooling/)|[Car Pooling](./Algorithms/1094.car-pooling)|57%|Medium||
 |[1093](https://leetcode.com/problems/statistics-from-a-large-sample/)|[Statistics from a Large Sample](./Algorithms/1093.statistics-from-a-large-sample)|44%|Medium||
@@ -470,7 +470,7 @@
 |[0637](https://leetcode.com/problems/average-of-levels-in-binary-tree/)|[Average of Levels in Binary Tree](./Algorithms/0637.average-of-levels-in-binary-tree)|59%|Easy||
 |[0636](https://leetcode.com/problems/exclusive-time-of-functions/)|[Exclusive Time of Functions](./Algorithms/0636.exclusive-time-of-functions)|49%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0633](https://leetcode.com/problems/sum-of-square-numbers/)|[Sum of Square Numbers](./Algorithms/0633.sum-of-square-numbers)|32%|Easy||
-|[0632](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/)|[Smallest Range Covering Elements from K Lists](./Algorithms/0632.smallest-range-covering-elements-from-k-lists)|49%|Hard||
+|[0632](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/)|[Smallest Range Covering Elements from K Lists](./Algorithms/0632.smallest-range-covering-elements-from-k-lists)|48%|Hard||
 |[0630](https://leetcode.com/problems/course-schedule-iii/)|[Course Schedule III](./Algorithms/0630.course-schedule-iii)|32%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0629](https://leetcode.com/problems/k-inverse-pairs-array/)|[K Inverse Pairs Array](./Algorithms/0629.k-inverse-pairs-array)|29%|Hard||
 |[0628](https://leetcode.com/problems/maximum-product-of-three-numbers/)|[Maximum Product of Three Numbers](./Algorithms/0628.maximum-product-of-three-numbers)|46%|Easy|[❤](https://leetcode.com/list/oussv5j)|
@@ -846,7 +846,7 @@
 |[0081](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/)|[Search in Rotated Sorted Array II](./Algorithms/0081.search-in-rotated-sorted-array-ii)|32%|Medium||
 |[0080](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)|[Remove Duplicates from Sorted Array II](./Algorithms/0080.remove-duplicates-from-sorted-array-ii)|41%|Medium||
 |[0079](https://leetcode.com/problems/word-search/)|[Word Search](./Algorithms/0079.word-search)|32%|Medium||
-|[0078](https://leetcode.com/problems/subsets/)|[Subsets](./Algorithms/0078.subsets)|54%|Medium||
+|[0078](https://leetcode.com/problems/subsets/)|[Subsets](./Algorithms/0078.subsets)|55%|Medium||
 |[0077](https://leetcode.com/problems/combinations/)|[Combinations](./Algorithms/0077.combinations)|49%|Medium||
 |[0076](https://leetcode.com/problems/minimum-window-substring/)|[Minimum Window Substring](./Algorithms/0076.minimum-window-substring)|31%|Hard||
 |[0075](https://leetcode.com/problems/sort-colors/)|[Sort Colors](./Algorithms/0075.sort-colors)|43%|Medium||
@@ -974,6 +974,6 @@
 
 ## 致谢
 
-感谢所有贡献值的辛苦付出
+感谢所有贡献者的辛苦付出
 
 <a href="https://github.com/aQuaYi/LeetCode-in-Go/graphs/contributors"><img src="https://opencollective.com/leetcode-in-go/contributors.svg?width=890&button=false"/></a>
