@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 534,
-	"Updated": "2019-09-16T20:11:10.507876728+08:00",
+	"Updated": "2019-09-16T20:25:04.895019736+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 261,
+			"Solved": 262,
 			"Total": 262
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 189
 		},
 		"Total": {
-			"Solved": 900,
+			"Solved": 901,
 			"Total": 906
 		}
 	},
@@ -14295,7 +14295,7 @@
 			"TitleSlug": "maximum-number-of-balloons",
 			"PassRate": "63%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
