@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
-	"Ranking": 524,
-	"Updated": "2019-09-18T16:31:40.024590134+08:00",
+	"Ranking": 525,
+	"Updated": "2019-09-18T19:56:18.18476355+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 262,
 			"Total": 262
 		},
 		"Medium": {
-			"Solved": 452,
+			"Solved": 453,
 			"Total": 455
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 189
 		},
 		"Total": {
-			"Solved": 901,
+			"Solved": 902,
 			"Total": 906
 		}
 	},
@@ -6721,7 +6721,7 @@
 			"ID": 558,
 			"Title": "Quad Tree Intersection",
 			"TitleSlug": "quad-tree-intersection",
-			"PassRate": "42%",
+			"PassRate": "41%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -14259,7 +14259,7 @@
 			"TitleSlug": "maximum-subarray-sum-with-one-deletion",
 			"PassRate": "32%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
