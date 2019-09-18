@@ -13,6 +13,11 @@ var tcs = []struct {
 }{
 
 	{
+		"nlaeolko",
+		0,
+	},
+
+	{
 		"nlaebolko",
 		1,
 	},
