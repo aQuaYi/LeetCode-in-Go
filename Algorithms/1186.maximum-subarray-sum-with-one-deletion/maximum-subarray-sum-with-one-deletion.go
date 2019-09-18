@@ -1,23 +1,34 @@
 package problem1186
 
 func maximumSum(A []int) int {
+	sum, curMin := 0, 1000000
 	res, maxA := 0, -1000000
-	last, cur := 0, 0
 	for _, a := range A {
-		if a < 0 {
-			res = max(res, last+cur)
-			last, cur = cur, 0
-		}else{
-			cur += a
+		sum += a
+		curMin = min(curMin, a)
+
+		if sum-min(curMin, 0) <= 0 {
+			sum = 0
+			curMin = 1000000
+		} else {
+			res = max(res, sum-min(curMin, 0))
 		}
-		maxA= max(maxA, a)
+
+		maxA = max(maxA, a)
 	}
 
-	if maxA<=0 {
-			return maxA
+	if maxA <= 0 {
+		return maxA
 	}
 
-	return max(res, last+cur)
+return max(res, sum-min(curMin,0))
+}
+
+func min(a, b int) int {
+	if a < b {
+		return a
+	}
+	return b
 }
 
 func max(a, b int) int {
