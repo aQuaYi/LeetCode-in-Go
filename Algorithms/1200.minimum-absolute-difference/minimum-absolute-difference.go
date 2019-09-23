@@ -8,21 +8,18 @@ import (
 func minimumAbsDifference(A []int) [][]int {
 	sort.Ints(A)
 	n := len(A)
-	isExist := make(map[int]bool, n)
 
 	minDiff := math.MaxInt64
 	for i := 1; i < n; i++ {
 		minDiff = min(minDiff, A[i]-A[i-1])
-		isExist[A[i]] = true
 	}
 
 	res := make([][]int, 0, n)
 
-	for i := 0; i < n-1; i++ {
-		if !isExist[A[i]+minDiff] {
-			continue
+	for i := 1; i < n; i++ {
+		if A[i]-A[i-1] == minDiff {
+			res = append(res, []int{A[i-1], A[i]})
 		}
-		res = append(res, []int{A[i], A[i] + minDiff})
 	}
 
 	return res
