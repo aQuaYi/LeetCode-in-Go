@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 530,
-	"Updated": "2019-09-23T16:03:48.173501566+08:00",
+	"Updated": "2019-09-23T16:43:38.57124715+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 262,
+			"Solved": 263,
 			"Total": 263
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 190
 		},
 		"Total": {
-			"Solved": 902,
+			"Solved": 903,
 			"Total": 910
 		}
 	},
@@ -14427,7 +14427,7 @@
 			"TitleSlug": "minimum-absolute-difference",
 			"PassRate": "67%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
