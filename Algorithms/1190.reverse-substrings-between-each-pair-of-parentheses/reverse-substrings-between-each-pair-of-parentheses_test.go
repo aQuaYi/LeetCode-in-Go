@@ -13,6 +13,21 @@ var tcs = []struct {
 }{
 
 	{
+		"(x(ab)y(cd)z)",
+		"zcdyabx",
+	},
+
+	{
+		"(uoy(love)mi(hate)ko)",
+		"okhateimloveyou",
+	},
+
+	{
+		"(u(love)i(love)k)",
+		"kloveiloveu",
+	},
+
+	{
 		"(abcd)",
 		"dcba",
 	},
