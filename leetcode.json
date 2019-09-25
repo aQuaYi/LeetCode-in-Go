@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 528,
-	"Updated": "2019-09-25T16:02:26.846703337+08:00",
+	"Updated": "2019-09-25T17:05:19.17997928+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 263,
 			"Total": 263
 		},
 		"Medium": {
-			"Solved": 453,
+			"Solved": 454,
 			"Total": 457
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 190
 		},
 		"Total": {
-			"Solved": 903,
+			"Solved": 904,
 			"Total": 910
 		}
 	},
@@ -13705,7 +13705,7 @@
 			"ID": 1140,
 			"Title": "Stone Game II",
 			"TitleSlug": "stone-game-ii",
-			"PassRate": "59%",
+			"PassRate": "60%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -14005,7 +14005,7 @@
 			"ID": 1165,
 			"Title": "Single-Row Keyboard",
 			"TitleSlug": "single-row-keyboard",
-			"PassRate": "84%",
+			"PassRate": "85%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -14307,9 +14307,9 @@
 			"TitleSlug": "reverse-substrings-between-each-pair-of-parentheses",
 			"PassRate": "57%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
-			"IsFavor": false,
+			"IsFavor": true,
 			"IsNew": false,
 			"HasNoGoOption": false
 		},
