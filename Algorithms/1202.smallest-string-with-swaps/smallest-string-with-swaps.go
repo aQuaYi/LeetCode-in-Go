@@ -13,6 +13,7 @@ func smallestStringWithSwaps(s string, pairs [][]int) string {
 	groups := make(map[int][]int, n)
 	for c, p := range uf.parent {
 		p = uf.find(p)
+		// 相连的索引值，全部放在一起
 		groups[p] = append(groups[p], c)
 	}
 
@@ -20,16 +21,17 @@ func smallestStringWithSwaps(s string, pairs [][]int) string {
 	res := make([]byte, n)
 	for _, g := range groups {
 		size := len(g)
-		t := make([]int, size)
-		copy(t, g)
-		if size > 1 {
-			sort.Slice(t, func(i, j int) bool {
-				return bytes[t[i]] < bytes[t[j]]
-			})
-			sort.Ints(g)
-		}
+		a := make([]int, size)
+		copy(a, g)
+		// a 中的索引值，按照其在 bytes 中对应的字符大小来排序
+		sort.Slice(a, func(i, j int) bool {
+			return bytes[a[i]] < bytes[a[j]]
+		})
+		// g 中的索引值，按照其自身的大小排序
+		sort.Ints(g)
+		// 越小的位置，放入的值也越小
 		for i := 0; i < size; i++ {
-			res[g[i]] = bytes[t[i]]
+			res[g[i]] = bytes[a[i]]
 		}
 	}
 
