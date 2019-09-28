@@ -13,11 +13,11 @@ var tcs = []struct {
 	ans   string
 }{
 
-	// {
-	// 	"dcab",
-	// 	[][]int{{0, 3}, {1, 2}},
-	// 	"bacd",
-	// },
+	{
+		"dcab",
+		[][]int{{0, 3}, {1, 2}},
+		"bacd",
+	},
 
 	{
 		"dcab",

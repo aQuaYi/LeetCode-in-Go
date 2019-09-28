@@ -4,58 +4,59 @@ import "sort"
 
 func smallestStringWithSwaps(s string, pairs [][]int) string {
 	n := len(s)
-	un := newUnion(n)
+	uf := newUnionFind(n)
 
 	for _, p := range pairs {
-		un.unite(p[0], p[1])
+		uf.connect(p[0], p[1])
 	}
 
-	group := make(map[int][]int, n)
-	for c, p := range un.parent {
-		group[un.find(p)] = append(group[un.find(p)], c)
+	groups := make(map[int][]int, n)
+	for c, p := range uf.parent {
+		p = uf.find(p)
+		groups[p] = append(groups[p], c)
 	}
 
 	bytes := []byte(s)
 	res := make([]byte, n)
-	for _, children := range group {
-		size := len(children)
+	for _, g := range groups {
+		size := len(g)
 		t := make([]int, size)
-		copy(t, children)
+		copy(t, g)
 		if size > 1 {
 			sort.Slice(t, func(i, j int) bool {
 				return bytes[t[i]] < bytes[t[j]]
 			})
-			sort.Ints(children)
+			sort.Ints(g)
 		}
 		for i := 0; i < size; i++ {
-			res[children[i]] = bytes[t[i]]
+			res[g[i]] = bytes[t[i]]
 		}
 	}
 
 	return string(res)
 }
 
-type union struct {
+type unionFind struct {
 	parent []int
 }
 
-func newUnion(size int) *union {
+func newUnionFind(size int) *unionFind {
 	parent := make([]int, size)
 	for i := range parent {
 		parent[i] = i
 	}
-	return &union{
+	return &unionFind{
 		parent: parent,
 	}
 }
 
-func (u *union) unite(x, y int) {
-	u.parent[u.find(x)] = u.find(y)
+func (uf *unionFind) connect(x, y int) {
+	uf.parent[uf.find(x)] = uf.find(y)
 }
 
-func (u *union) find(i int) int {
-	if u.parent[i] != i {
-		u.parent[i] = u.find(u.parent[i])
+func (uf *unionFind) find(i int) int {
+	if uf.parent[i] != i {
+		uf.parent[i] = uf.find(uf.parent[i])
 	}
-	return u.parent[i]
+	return uf.parent[i]
 }
