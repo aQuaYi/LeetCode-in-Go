@@ -1,6 +1,6 @@
 # [LeetCode](https://leetcode.com) 的 Go 解答
 
-[![LeetCode 排名](https://img.shields.io/badge/aQuaYi-531-blue.svg)](https://leetcode.com/aQuaYi/)
+[![Financial Contributors on Open Collective](https://opencollective.com/LeetCode-in-Go/all/badge.svg?label=financial+contributors)](https://opencollective.com/LeetCode-in-Go) [![LeetCode 排名](https://img.shields.io/badge/aQuaYi-531-blue.svg)](https://leetcode.com/aQuaYi/)
 [![codecov](https://codecov.io/gh/aQuaYi/LeetCode-in-Go/branch/master/graph/badge.svg)](https://codecov.io/gh/aQuaYi/LeetCode-in-Go)
 [![Build Status](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go.svg?branch=master)](https://www.travis-ci.org/aQuaYi/LeetCode-in-Go)
  [![Go](https://img.shields.io/badge/Go-1.13-blue.svg)](https://golang.google.cn)
@@ -981,3 +981,33 @@
 感谢所有贡献者的辛苦付出
 
 <a href="https://github.com/aQuaYi/LeetCode-in-Go/graphs/contributors"><img src="https://opencollective.com/leetcode-in-go/contributors.svg?width=890&button=false"/></a>
+
+## Contributors
+
+### Code Contributors
+
+This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)].
+<a href="https://github.com/aQuaYi/LeetCode-in-Go/graphs/contributors"><img src="https://opencollective.com/LeetCode-in-Go/contributors.svg?width=890&button=false" /></a>
+
+### Financial Contributors
+
+Become a financial contributor and help us sustain our community. [[Contribute](https://opencollective.com/LeetCode-in-Go/contribute)]
+
+#### Individuals
+
+<a href="https://opencollective.com/LeetCode-in-Go"><img src="https://opencollective.com/LeetCode-in-Go/individuals.svg?width=890"></a>
+
+#### Organizations
+
+Support this project with your organization. Your logo will show up here with a link to your website. [[Contribute](https://opencollective.com/LeetCode-in-Go/contribute)]
+
+<a href="https://opencollective.com/LeetCode-in-Go/organization/0/website"><img src="https://opencollective.com/LeetCode-in-Go/organization/0/avatar.svg"></a>
+<a href="https://opencollective.com/LeetCode-in-Go/organization/1/website"><img src="https://opencollective.com/LeetCode-in-Go/organization/1/avatar.svg"></a>
+<a href="https://opencollective.com/LeetCode-in-Go/organization/2/website"><img src="https://opencollective.com/LeetCode-in-Go/organization/2/avatar.svg"></a>
+<a href="https://opencollective.com/LeetCode-in-Go/organization/3/website"><img src="https://opencollective.com/LeetCode-in-Go/organization/3/avatar.svg"></a>
+<a href="https://opencollective.com/LeetCode-in-Go/organization/4/website"><img src="https://opencollective.com/LeetCode-in-Go/organization/4/avatar.svg"></a>
+<a href="https://opencollective.com/LeetCode-in-Go/organization/5/website"><img src="https://opencollective.com/LeetCode-in-Go/organization/5/avatar.svg"></a>
+<a href="https://opencollective.com/LeetCode-in-Go/organization/6/website"><img src="https://opencollective.com/LeetCode-in-Go/organization/6/avatar.svg"></a>
+<a href="https://opencollective.com/LeetCode-in-Go/organization/7/website"><img src="https://opencollective.com/LeetCode-in-Go/organization/7/avatar.svg"></a>
+<a href="https://opencollective.com/LeetCode-in-Go/organization/8/website"><img src="https://opencollective.com/LeetCode-in-Go/organization/8/avatar.svg"></a>
+<a href="https://opencollective.com/LeetCode-in-Go/organization/9/website"><img src="https://opencollective.com/LeetCode-in-Go/organization/9/avatar.svg"></a>
