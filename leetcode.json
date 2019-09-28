@@ -1,14 +1,14 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 531,
-	"Updated": "2019-09-28T20:27:14.595355039+08:00",
+	"Updated": "2019-09-28T21:44:53.507020233+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 263,
 			"Total": 263
 		},
 		"Medium": {
-			"Solved": 454,
+			"Solved": 455,
 			"Total": 457
 		},
 		"Hard": {
@@ -16,7 +16,7 @@
 			"Total": 190
 		},
 		"Total": {
-			"Solved": 904,
+			"Solved": 905,
 			"Total": 910
 		}
 	},
@@ -4909,7 +4909,7 @@
 			"ID": 407,
 			"Title": "Trapping Rain Water II",
 			"TitleSlug": "trapping-rain-water-ii",
-			"PassRate": "39%",
+			"PassRate": "40%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -14451,7 +14451,7 @@
 			"TitleSlug": "smallest-string-with-swaps",
 			"PassRate": "38%",
 			"Difficulty": "Medium",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
