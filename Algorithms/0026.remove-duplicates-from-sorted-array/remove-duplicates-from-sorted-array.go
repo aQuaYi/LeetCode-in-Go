@@ -7,7 +7,8 @@ func removeDuplicates(a []int) int {
 			continue
 		}
 		left++
-		a[left], a[right] = a[right], a[left]
+		//a[left], a[right] = a[right], a[left]
+		a[left] = a[right]
 	}
 	return left + 1
 }
