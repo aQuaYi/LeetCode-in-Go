@@ -20,13 +20,13 @@ Output: "bb"
 ```go
 func isPalindromic(s *string, i, j int ) bool {
     for  i< j {
-        if (*s)[i] != (*s)[j] {
-            return false
+        if (*s)[i] == (*s)[j] {
+            return true
         } 
         i++
         j--
     }
-    return true
+    return false
 }
 ```
 但是，这样就没有利用回文的一下特点，假定回文的长度为l，x为任意字符
