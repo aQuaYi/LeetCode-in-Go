@@ -2,6 +2,7 @@ package problem0768
 
 import (
 	"sort"
+	"fmt"
 )
 
 func maxChunksToSorted(arr []int) int {
@@ -20,14 +21,14 @@ func convert(arr []int) []int {
 	for i := range a {
 		a[i] = []int{arr[i], i}
 	}
-
+	fmt.Println(a)
 	sort.Slice(a, func(i int, j int) bool {
 		if a[i][0] == a[j][0] {
 			return a[i][1] < a[j][1]
 		}
 		return a[i][0] < a[j][0]
 	})
-
+	fmt.Println(a)
 	res := make([]int, len(arr))
 
 	for i := range a {

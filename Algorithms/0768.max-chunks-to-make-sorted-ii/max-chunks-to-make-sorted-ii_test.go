@@ -34,6 +34,10 @@ var tcs = []struct {
 	},
 
 	// 可以有多个 testcase
+	{
+		[]int{5,4,3,2,1},
+		1,
+	},
 }
 
 func Test_maxChunksToSorted(t *testing.T) {
