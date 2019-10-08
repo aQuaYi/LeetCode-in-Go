@@ -8,7 +8,7 @@ import (
 
 // tcs is testcase slice
 var tcs = []struct {
-	arr []int
+	A   []int
 	ans bool
 }{
 
@@ -34,14 +34,14 @@ func Test_uniqueOccurrences(t *testing.T) {
 	a := assert.New(t)
 
 	for _, tc := range tcs {
-		a.Equal(tc.ans, uniqueOccurrences(tc.arr), "输入:%v", tc)
+		a.Equal(tc.ans, uniqueOccurrences(tc.A), "输入:%v", tc)
 	}
 }
 
 func Benchmark_uniqueOccurrences(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		for _, tc := range tcs {
-			uniqueOccurrences(tc.arr)
+			uniqueOccurrences(tc.A)
 		}
 	}
 }
