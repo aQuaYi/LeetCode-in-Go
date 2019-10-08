@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 586,
-	"Updated": "2019-10-08T19:54:29.657044091+08:00",
+	"Updated": "2019-10-08T20:05:20.3604464+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 263,
+			"Solved": 264,
 			"Total": 265
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 193
 		},
 		"Total": {
-			"Solved": 905,
+			"Solved": 906,
 			"Total": 919
 		}
 	},
@@ -14511,7 +14511,7 @@
 			"TitleSlug": "unique-number-of-occurrences",
 			"PassRate": "73%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
