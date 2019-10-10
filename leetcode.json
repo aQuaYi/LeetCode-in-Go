@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 588,
-	"Updated": "2019-10-10T20:40:52.824419691+08:00",
+	"Updated": "2019-10-10T21:08:33.22829398+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 264,
+			"Solved": 265,
 			"Total": 265
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 193
 		},
 		"Total": {
-			"Solved": 906,
+			"Solved": 907,
 			"Total": 919
 		}
 	},
@@ -10645,7 +10645,7 @@
 			"ID": 885,
 			"Title": "Spiral Matrix III",
 			"TitleSlug": "spiral-matrix-iii",
-			"PassRate": "66%",
+			"PassRate": "65%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -14631,7 +14631,7 @@
 			"TitleSlug": "play-with-chips",
 			"PassRate": "62%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
