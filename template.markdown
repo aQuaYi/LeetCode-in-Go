@@ -45,3 +45,7 @@
 感谢所有贡献者的辛苦付出
 
 <a href="https://github.com/aQuaYi/LeetCode-in-Go/graphs/contributors"><img src="https://opencollective.com/leetcode-in-go/contributors.svg?width=890&button=false"/></a>
+
+感谢 JetBrains
+
+[![GoLand](GoLand.png)]( https://www.jetbrains.com/?from=LeetCode-in-Go)
