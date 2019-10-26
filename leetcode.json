@@ -1,11 +1,7 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 633,
-<<<<<<< HEAD
-	"Updated": "2019-10-26T15:57:50.095360574+08:00",
-=======
-	"Updated": "2019-10-25T14:11:21.285479948+08:00",
->>>>>>> eb9793b373378fa24061aef9f3e8200d3299891a
+	"Updated": "2019-10-26T15:59:42.146492028+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 264,
@@ -9941,7 +9937,7 @@
 			"ID": 826,
 			"Title": "Most Profit Assigning Work",
 			"TitleSlug": "most-profit-assigning-work",
-			"PassRate": "37%",
+			"PassRate": "36%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12485,7 +12481,7 @@
 			"ID": 1038,
 			"Title": "Binary Search Tree to Greater Sum Tree",
 			"TitleSlug": "binary-search-tree-to-greater-sum-tree",
-			"PassRate": "78%",
+			"PassRate": "77%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -13241,7 +13237,7 @@
 			"ID": 1101,
 			"Title": "The Earliest Moment When Everyone Become Friends",
 			"TitleSlug": "the-earliest-moment-when-everyone-become-friends",
-			"PassRate": "64%",
+			"PassRate": "65%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -13517,7 +13513,7 @@
 			"ID": 1124,
 			"Title": "Longest Well-Performing Interval",
 			"TitleSlug": "longest-well-performing-interval",
-			"PassRate": "32%",
+			"PassRate": "31%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -13673,7 +13669,7 @@
 			"ID": 1137,
 			"Title": "N-th Tribonacci Number",
 			"TitleSlug": "n-th-tribonacci-number",
-			"PassRate": "57%",
+			"PassRate": "58%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -14309,7 +14305,7 @@
 			"ID": 1190,
 			"Title": "Reverse Substrings Between Each Pair of Parentheses",
 			"TitleSlug": "reverse-substrings-between-each-pair-of-parentheses",
-			"PassRate": "56%",
+			"PassRate": "57%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -14501,7 +14497,7 @@
 			"ID": 1206,
 			"Title": "Design Skiplist",
 			"TitleSlug": "design-skiplist",
-			"PassRate": "60%",
+			"PassRate": "59%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -14758,11 +14754,7 @@
 			"IsAccepted": false,
 			"IsPaid": false,
 			"IsFavor": false,
-<<<<<<< HEAD
 			"IsNew": false,
-=======
-			"IsNew": true,
->>>>>>> eb9793b373378fa24061aef9f3e8200d3299891a
 			"HasNoGoOption": false
 		},
 		{
@@ -14805,11 +14797,7 @@
 			"ID": 1231,
 			"Title": "Divide Chocolate",
 			"TitleSlug": "divide-chocolate",
-<<<<<<< HEAD
 			"PassRate": "49%",
-=======
-			"PassRate": "50%",
->>>>>>> eb9793b373378fa24061aef9f3e8200d3299891a
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -14833,11 +14821,7 @@
 			"ID": 1233,
 			"Title": "Remove Sub-Folders from the Filesystem",
 			"TitleSlug": "remove-sub-folders-from-the-filesystem",
-<<<<<<< HEAD
 			"PassRate": "52%",
-=======
-			"PassRate": "53%",
->>>>>>> eb9793b373378fa24061aef9f3e8200d3299891a
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -14861,11 +14845,7 @@
 			"ID": 1235,
 			"Title": "Maximum Profit in Job Scheduling",
 			"TitleSlug": "maximum-profit-in-job-scheduling",
-<<<<<<< HEAD
 			"PassRate": "43%",
-=======
-			"PassRate": "44%",
->>>>>>> eb9793b373378fa24061aef9f3e8200d3299891a
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
