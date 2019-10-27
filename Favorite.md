@@ -135,7 +135,7 @@
 |[0477](https://leetcode.com/problems/total-hamming-distance/)|[Total Hamming Distance](./Algorithms/0477.total-hamming-distance)|49%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0480](https://leetcode.com/problems/sliding-window-median/)|[Sliding Window Median](./Algorithms/0480.sliding-window-median)|34%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0483](https://leetcode.com/problems/smallest-good-base/)|[Smallest Good Base](./Algorithms/0483.smallest-good-base)|34%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|[0488](https://leetcode.com/problems/zuma-game/)|[Zuma Game](./Algorithms/0488.zuma-game)|39%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|[0488](https://leetcode.com/problems/zuma-game/)|[Zuma Game](./Algorithms/0488.zuma-game)|40%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0491](https://leetcode.com/problems/increasing-subsequences/)|[Increasing Subsequences](./Algorithms/0491.increasing-subsequences)|43%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0492](https://leetcode.com/problems/construct-the-rectangle/)|[Construct the Rectangle](./Algorithms/0492.construct-the-rectangle)|48%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |[0494](https://leetcode.com/problems/target-sum/)|[Target Sum](./Algorithms/0494.target-sum)|45%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -226,13 +226,13 @@
 |[0818](https://leetcode.com/problems/race-car/)|[Race Car](./Algorithms/0818.race-car)|36%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0820](https://leetcode.com/problems/short-encoding-of-words/)|[Short Encoding of Words](./Algorithms/0820.short-encoding-of-words)|48%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0826](https://leetcode.com/problems/most-profit-assigning-work/)|[Most Profit Assigning Work](./Algorithms/0826.most-profit-assigning-work)|36%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|[0827](https://leetcode.com/problems/making-a-large-island/)|[Making A Large Island](./Algorithms/0827.making-a-large-island)|44%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|[0827](https://leetcode.com/problems/making-a-large-island/)|[Making A Large Island](./Algorithms/0827.making-a-large-island)|43%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0828](https://leetcode.com/problems/unique-letter-string/)|[Unique Letter String](./Algorithms/0828.unique-letter-string)|41%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0829](https://leetcode.com/problems/consecutive-numbers-sum/)|[Consecutive Numbers Sum](./Algorithms/0829.consecutive-numbers-sum)|34%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0834](https://leetcode.com/problems/sum-of-distances-in-tree/)|[Sum of Distances in Tree](./Algorithms/0834.sum-of-distances-in-tree)|41%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0837](https://leetcode.com/problems/new-21-game/)|[New 21 Game](./Algorithms/0837.new-21-game)|32%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0838](https://leetcode.com/problems/push-dominoes/)|[Push Dominoes](./Algorithms/0838.push-dominoes)|45%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|[0839](https://leetcode.com/problems/similar-string-groups/)|[Similar String Groups](./Algorithms/0839.similar-string-groups)|35%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|[0839](https://leetcode.com/problems/similar-string-groups/)|[Similar String Groups](./Algorithms/0839.similar-string-groups)|36%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0843](https://leetcode.com/problems/guess-the-word/)|[Guess the Word](./Algorithms/0843.guess-the-word)|45%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0846](https://leetcode.com/problems/hand-of-straights/)|[Hand of Straights](./Algorithms/0846.hand-of-straights)|50%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0847](https://leetcode.com/problems/shortest-path-visiting-all-nodes/)|[Shortest Path Visiting All Nodes](./Algorithms/0847.shortest-path-visiting-all-nodes)|48%|Hard|[❤](https://leetcode.com/list/oussv5j)|
