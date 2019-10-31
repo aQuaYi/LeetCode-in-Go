@@ -1,10 +1,10 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 646,
-	"Updated": "2019-10-31T20:16:26.00519046+08:00",
+	"Updated": "2019-10-31T20:28:18.942556908+08:00",
 	"Record": {
 		"Easy": {
-			"Solved": 264,
+			"Solved": 265,
 			"Total": 267
 		},
 		"Medium": {
@@ -16,7 +16,7 @@
 			"Total": 196
 		},
 		"Total": {
-			"Solved": 907,
+			"Solved": 908,
 			"Total": 932
 		}
 	},
@@ -14679,7 +14679,7 @@
 			"TitleSlug": "split-a-string-in-balanced-strings",
 			"PassRate": "78%",
 			"Difficulty": "Easy",
-			"IsAccepted": false,
+			"IsAccepted": true,
 			"IsPaid": false,
 			"IsFavor": false,
 			"IsNew": false,
