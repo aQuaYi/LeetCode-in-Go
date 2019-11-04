@@ -3,6 +3,7 @@
 	"Ranking": 646,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	"Updated": "2019-11-04T10:45:59.277308869+08:00",
 	"Record": {
 		"Easy": {
@@ -17,6 +18,9 @@
 >>>>>>> 2c637bd0cefff19bf2e8a7ecb78a176daa6e7743
 =======
 	"Updated": "2019-11-04T10:48:38.161189957+08:00",
+=======
+	"Updated": "2019-11-04T14:00:44.592159995+08:00",
+>>>>>>> develop
 	"Record": {
 		"Easy": {
 			"Solved": 265,
@@ -3433,7 +3437,7 @@
 			"ID": 282,
 			"Title": "Expression Add Operators",
 			"TitleSlug": "expression-add-operators",
-			"PassRate": "33%",
+			"PassRate": "34%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -9961,7 +9965,7 @@
 			"ID": 826,
 			"Title": "Most Profit Assigning Work",
 			"TitleSlug": "most-profit-assigning-work",
-			"PassRate": "36%",
+			"PassRate": "37%",
 			"Difficulty": "Medium",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -11353,7 +11357,7 @@
 			"ID": 942,
 			"Title": "DI String Match",
 			"TitleSlug": "di-string-match",
-			"PassRate": "69%",
+			"PassRate": "70%",
 			"Difficulty": "Easy",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12481,7 +12485,7 @@
 			"ID": 1036,
 			"Title": "Escape a Large Maze",
 			"TitleSlug": "escape-a-large-maze",
-			"PassRate": "34%",
+			"PassRate": "35%",
 			"Difficulty": "Hard",
 			"IsAccepted": true,
 			"IsPaid": false,
@@ -12853,7 +12857,7 @@
 			"ID": 1067,
 			"Title": "Digit Count in Range",
 			"TitleSlug": "digit-count-in-range",
-			"PassRate": "37%",
+			"PassRate": "38%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -13849,7 +13853,7 @@
 			"ID": 1150,
 			"Title": "Check If a Number Is Majority Element in a Sorted Array",
 			"TitleSlug": "check-if-a-number-is-majority-element-in-a-sorted-array",
-			"PassRate": "61%",
+			"PassRate": "60%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -14425,7 +14429,7 @@
 			"ID": 1198,
 			"Title": "Find Smallest Common Element in All Rows",
 			"TitleSlug": "find-smallest-common-element-in-all-rows",
-			"PassRate": "74%",
+			"PassRate": "73%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": true,
@@ -14713,7 +14717,7 @@
 			"ID": 1222,
 			"Title": "Queens That Can Attack the King",
 			"TitleSlug": "queens-that-can-attack-the-king",
-			"PassRate": "69%",
+			"PassRate": "68%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -15001,7 +15005,7 @@
 			"ID": 1245,
 			"Title": "Tree Diameter",
 			"TitleSlug": "tree-diameter",
-			"PassRate": "50%",
+			"PassRate": "51%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -15013,7 +15017,7 @@
 			"ID": 1246,
 			"Title": "Palindrome Removal",
 			"TitleSlug": "palindrome-removal",
-			"PassRate": "40%",
+			"PassRate": "41%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -15025,7 +15029,7 @@
 			"ID": 1247,
 			"Title": "Minimum Swaps to Make Strings Equal",
 			"TitleSlug": "minimum-swaps-to-make-strings-equal",
-			"PassRate": "54%",
+			"PassRate": "55%",
 			"Difficulty": "Easy",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -15037,7 +15041,7 @@
 			"ID": 1248,
 			"Title": "Count Number of Nice Subarrays",
 			"TitleSlug": "count-number-of-nice-subarrays",
-			"PassRate": "48%",
+			"PassRate": "49%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -15049,7 +15053,7 @@
 			"ID": 1249,
 			"Title": "Minimum Remove to Make Valid Parentheses",
 			"TitleSlug": "minimum-remove-to-make-valid-parentheses",
-			"PassRate": "54%",
+			"PassRate": "55%",
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -15061,12 +15065,16 @@
 			"ID": 1250,
 			"Title": "Check If It Is a Good Array",
 			"TitleSlug": "check-if-it-is-a-good-array",
+<<<<<<< HEAD
 			"PassRate": "44%",
 <<<<<<< HEAD
 =======
 			"PassRate": "47%",
 >>>>>>> 2c637bd0cefff19bf2e8a7ecb78a176daa6e7743
 =======
+>>>>>>> develop
+=======
+			"PassRate": "45%",
 >>>>>>> develop
 			"Difficulty": "Hard",
 			"IsAccepted": false,
