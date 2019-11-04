@@ -9,47 +9,6 @@
 
 > 统计规则：1.免费题，2.算法题，3.能提交 Go 解答
 
-<<<<<<< HEAD
-|              | Easy  | Medium | Hard  | Total |
-| :----------: | :---: | :----: | :---: | :---: |
-| **Accepted** |  265  |  456   |  187  |  908  |
-|  **Total**   |  269  |  473   |  198  |  940  |
-
-## 题解
-
-|                                                 题号                                                  | 题目                                                             | 通过率 |  难度  | 收藏  |
-| :---------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------- | :----: | :----: | :---: |
-|                  [1250](https://leetcode.com/problems/check-if-it-is-a-good-array/)                   | * Check If It Is a Good Array                                    |  44%   |  Hard  |       |
-|            [1249](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/)            | * Minimum Remove to Make Valid Parentheses                       |  54%   | Medium |       |
-|                 [1248](https://leetcode.com/problems/count-number-of-nice-subarrays/)                 | * Count Number of Nice Subarrays                                 |  48%   | Medium |       |
-|              [1247](https://leetcode.com/problems/minimum-swaps-to-make-strings-equal/)               | * Minimum Swaps to Make Strings Equal                            |  54%   |  Easy  |       |
-|                       [1246](https://leetcode.com/problems/palindrome-removal/)                       | * Palindrome Removal                                             |  40%   |  Hard  |       |
-|                         [1245](https://leetcode.com/problems/tree-diameter/)                          | * Tree Diameter                                                  |  50%   | Medium |       |
-|                      [1244](https://leetcode.com/problems/design-a-leaderboard/)                      | * Design A Leaderboard                                           |  50%   | Medium |       |
-|                      [1243](https://leetcode.com/problems/array-transformation/)                      | * Array Transformation                                           |  51%   |  Easy  |       |
-|           [1240](https://leetcode.com/problems/tiling-a-rectangle-with-the-fewest-squares/)           | * Tiling a Rectangle with the Fewest Squares                     |  48%   |  Hard  |       |
-| [1239](https://leetcode.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters/) | * Maximum Length of a Concatenated String with Unique Characters |  40%   | Medium |       |
-|         [1238](https://leetcode.com/problems/circular-permutation-in-binary-representation/)          | * Circular Permutation in Binary Representation                  |  57%   | Medium |       |
-|      [1237](https://leetcode.com/problems/find-positive-integer-solution-for-a-given-equation/)       | * Find Positive Integer Solution for a Given Equation            |  65%   |  Easy  |       |
-|                [1235](https://leetcode.com/problems/maximum-profit-in-job-scheduling/)                | * Maximum Profit in Job Scheduling                               |  44%   |  Hard  |       |
-|           [1234](https://leetcode.com/problems/replace-the-substring-for-balanced-string/)            | * Replace the Substring for Balanced String                      |  29%   | Medium |       |
-|             [1233](https://leetcode.com/problems/remove-sub-folders-from-the-filesystem/)             | * Remove Sub-Folders from the Filesystem                         |  53%   | Medium |       |
-|                 [1232](https://leetcode.com/problems/check-if-it-is-a-straight-line/)                 | * Check If It Is a Straight Line                                 |  47%   |  Easy  |       |
-|              [1227](https://leetcode.com/problems/airplane-seat-assignment-probability/)              | * Airplane Seat Assignment Probability                           |  60%   | Medium |       |
-|                    [1224](https://leetcode.com/problems/maximum-equal-frequency/)                     | * Maximum Equal Frequency                                        |  31%   |  Hard  |       |
-|                      [1223](https://leetcode.com/problems/dice-roll-simulation/)                      | * Dice Roll Simulation                                           |  42%   | Medium |       |
-<<<<<<< HEAD
-|[1222](https://leetcode.com/problems/queens-that-can-attack-the-king/)| * Queens That Can Attack the King|69%|Medium||
-|[1221](https://leetcode.com/problems/split-a-string-in-balanced-strings/)|[Split a String in Balanced Strings](./Algorithms/1221.split-a-string-in-balanced-strings)|78%|Easy||
-|[1220](https://leetcode.com/problems/count-vowels-permutation/)| * Count Vowels Permutation|51%|Hard||
-|[1219](https://leetcode.com/problems/path-with-maximum-gold/)| * Path with Maximum Gold|61%|Medium||
-=======
-|[1222](https://leetcode.com/problems/queens-that-can-attack-the-king/)| * Queens That Can Attack the King|68%|Medium||
-|[1221](https://leetcode.com/problems/split-a-string-in-balanced-strings/)|[Split a String in Balanced Strings](./Algorithms/1221.split-a-string-in-balanced-strings)|78%|Easy||
-|[1220](https://leetcode.com/problems/count-vowels-permutation/)| * Count Vowels Permutation|52%|Hard||
-|[1219](https://leetcode.com/problems/path-with-maximum-gold/)| * Path with Maximum Gold|60%|Medium||
->>>>>>> 2c637bd0cefff19bf2e8a7ecb78a176daa6e7743
-=======
 |     |Easy|Medium|Hard|Total|
 |:---:|:---:|:---:|:---:|:---:|
 |**Accepted**|265|456|187|908|
@@ -82,7 +41,6 @@
 |[1221](https://leetcode.com/problems/split-a-string-in-balanced-strings/)|[Split a String in Balanced Strings](./Algorithms/1221.split-a-string-in-balanced-strings)|78%|Easy||
 |[1220](https://leetcode.com/problems/count-vowels-permutation/)| * Count Vowels Permutation|51%|Hard||
 |[1219](https://leetcode.com/problems/path-with-maximum-gold/)| * Path with Maximum Gold|61%|Medium||
->>>>>>> develop
 |[1218](https://leetcode.com/problems/longest-arithmetic-subsequence-of-given-difference/)| * Longest Arithmetic Subsequence of Given Difference|38%|Medium||
 |[1217](https://leetcode.com/problems/play-with-chips/)|[Play with Chips](./Algorithms/1217.play-with-chips)|63%|Easy||
 |[1210](https://leetcode.com/problems/minimum-moves-to-reach-target-with-rotations/)| * Minimum Moves to Reach Target with Rotations|43%|Hard||
@@ -127,18 +85,8 @@
 |[1138](https://leetcode.com/problems/alphabet-board-path/)|[Alphabet Board Path](./Algorithms/1138.alphabet-board-path)|44%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[1137](https://leetcode.com/problems/n-th-tribonacci-number/)|[N-th Tribonacci Number](./Algorithms/1137.n-th-tribonacci-number)|58%|Easy|[❤](https://leetcode.com/list/oussv5j)|
 |[1131](https://leetcode.com/problems/maximum-of-absolute-value-expression/)|[Maximum of Absolute Value Expression](./Algorithms/1131.maximum-of-absolute-value-expression)|52%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-<<<<<<< HEAD
-<<<<<<< HEAD
 |[1130](https://leetcode.com/problems/minimum-cost-tree-from-leaf-values/)|[Minimum Cost Tree From Leaf Values](./Algorithms/1130.minimum-cost-tree-from-leaf-values)|62%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[1129](https://leetcode.com/problems/shortest-path-with-alternating-colors/)|[Shortest Path with Alternating Colors](./Algorithms/1129.shortest-path-with-alternating-colors)|37%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-=======
-|[1130](https://leetcode.com/problems/minimum-cost-tree-from-leaf-values/)|[Minimum Cost Tree From Leaf Values](./Algorithms/1130.minimum-cost-tree-from-leaf-values)|61%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|[1129](https://leetcode.com/problems/shortest-path-with-alternating-colors/)|[Shortest Path with Alternating Colors](./Algorithms/1129.shortest-path-with-alternating-colors)|36%|Medium|[❤](https://leetcode.com/list/oussv5j)|
->>>>>>> 2c637bd0cefff19bf2e8a7ecb78a176daa6e7743
-=======
-|[1130](https://leetcode.com/problems/minimum-cost-tree-from-leaf-values/)|[Minimum Cost Tree From Leaf Values](./Algorithms/1130.minimum-cost-tree-from-leaf-values)|62%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|[1129](https://leetcode.com/problems/shortest-path-with-alternating-colors/)|[Shortest Path with Alternating Colors](./Algorithms/1129.shortest-path-with-alternating-colors)|37%|Medium|[❤](https://leetcode.com/list/oussv5j)|
->>>>>>> develop
 |[1128](https://leetcode.com/problems/number-of-equivalent-domino-pairs/)|[Number of Equivalent Domino Pairs](./Algorithms/1128.number-of-equivalent-domino-pairs)|46%|Easy||
 |[1125](https://leetcode.com/problems/smallest-sufficient-team/)|[Smallest Sufficient Team](./Algorithms/1125.smallest-sufficient-team)|44%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[1124](https://leetcode.com/problems/longest-well-performing-interval/)|[Longest Well-Performing Interval](./Algorithms/1124.longest-well-performing-interval)|31%|Medium||

@@ -1,31 +1,11 @@
 {
 	"Username": "aQuaYi",
 	"Ranking": 646,
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-	"Updated": "2019-11-04T10:45:59.277308869+08:00",
+	"Updated": "2019-11-04T14:04:33.052643567+08:00",
 	"Record": {
 		"Easy": {
 			"Solved": 265,
 			"Total": 269
-=======
-	"Updated": "2019-10-31T20:28:18.942556908+08:00",
-	"Record": {
-		"Easy": {
-			"Solved": 265,
-			"Total": 267
->>>>>>> 2c637bd0cefff19bf2e8a7ecb78a176daa6e7743
-=======
-	"Updated": "2019-11-04T10:48:38.161189957+08:00",
-=======
-	"Updated": "2019-11-04T14:00:44.592159995+08:00",
->>>>>>> develop
-	"Record": {
-		"Easy": {
-			"Solved": 265,
-			"Total": 269
->>>>>>> develop
 		},
 		"Medium": {
 			"Solved": 456,
@@ -37,15 +17,7 @@
 		},
 		"Total": {
 			"Solved": 908,
-<<<<<<< HEAD
-<<<<<<< HEAD
 			"Total": 940
-=======
-			"Total": 932
->>>>>>> 2c637bd0cefff19bf2e8a7ecb78a176daa6e7743
-=======
-			"Total": 940
->>>>>>> develop
 		}
 	},
 	"Problems": [
@@ -14909,15 +14881,7 @@
 			"ID": 1238,
 			"Title": "Circular Permutation in Binary Representation",
 			"TitleSlug": "circular-permutation-in-binary-representation",
-<<<<<<< HEAD
-<<<<<<< HEAD
 			"PassRate": "57%",
-=======
-			"PassRate": "56%",
->>>>>>> 2c637bd0cefff19bf2e8a7ecb78a176daa6e7743
-=======
-			"PassRate": "57%",
->>>>>>> develop
 			"Difficulty": "Medium",
 			"IsAccepted": false,
 			"IsPaid": false,
@@ -14941,10 +14905,6 @@
 			"ID": 1240,
 			"Title": "Tiling a Rectangle with the Fewest Squares",
 			"TitleSlug": "tiling-a-rectangle-with-the-fewest-squares",
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> develop
 			"PassRate": "48%",
 			"Difficulty": "Hard",
 			"IsAccepted": false,
@@ -15065,17 +15025,7 @@
 			"ID": 1250,
 			"Title": "Check If It Is a Good Array",
 			"TitleSlug": "check-if-it-is-a-good-array",
-<<<<<<< HEAD
-			"PassRate": "44%",
-<<<<<<< HEAD
-=======
-			"PassRate": "47%",
->>>>>>> 2c637bd0cefff19bf2e8a7ecb78a176daa6e7743
-=======
->>>>>>> develop
-=======
 			"PassRate": "45%",
->>>>>>> develop
 			"Difficulty": "Hard",
 			"IsAccepted": false,
 			"IsPaid": false,
