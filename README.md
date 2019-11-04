@@ -18,12 +18,12 @@
 
 |题号|题目|通过率|难度|收藏|
 |:-:|:-|:-: | :-: | :-: |
-|[1250](https://leetcode.com/problems/check-if-it-is-a-good-array/)| * Check If It Is a Good Array|44%|Hard||
-|[1249](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/)| * Minimum Remove to Make Valid Parentheses|54%|Medium||
-|[1248](https://leetcode.com/problems/count-number-of-nice-subarrays/)| * Count Number of Nice Subarrays|48%|Medium||
-|[1247](https://leetcode.com/problems/minimum-swaps-to-make-strings-equal/)| * Minimum Swaps to Make Strings Equal|54%|Easy||
-|[1246](https://leetcode.com/problems/palindrome-removal/)| * Palindrome Removal|40%|Hard||
-|[1245](https://leetcode.com/problems/tree-diameter/)| * Tree Diameter|50%|Medium||
+|[1250](https://leetcode.com/problems/check-if-it-is-a-good-array/)| * Check If It Is a Good Array|45%|Hard||
+|[1249](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/)| * Minimum Remove to Make Valid Parentheses|55%|Medium||
+|[1248](https://leetcode.com/problems/count-number-of-nice-subarrays/)| * Count Number of Nice Subarrays|49%|Medium||
+|[1247](https://leetcode.com/problems/minimum-swaps-to-make-strings-equal/)| * Minimum Swaps to Make Strings Equal|55%|Easy||
+|[1246](https://leetcode.com/problems/palindrome-removal/)| * Palindrome Removal|41%|Hard||
+|[1245](https://leetcode.com/problems/tree-diameter/)| * Tree Diameter|51%|Medium||
 |[1244](https://leetcode.com/problems/design-a-leaderboard/)| * Design A Leaderboard|50%|Medium||
 |[1243](https://leetcode.com/problems/array-transformation/)| * Array Transformation|51%|Easy||
 |[1240](https://leetcode.com/problems/tiling-a-rectangle-with-the-fewest-squares/)| * Tiling a Rectangle with the Fewest Squares|48%|Hard||
@@ -37,7 +37,7 @@
 |[1227](https://leetcode.com/problems/airplane-seat-assignment-probability/)| * Airplane Seat Assignment Probability|61%|Medium||
 |[1224](https://leetcode.com/problems/maximum-equal-frequency/)| * Maximum Equal Frequency|31%|Hard||
 |[1223](https://leetcode.com/problems/dice-roll-simulation/)| * Dice Roll Simulation|42%|Medium||
-|[1222](https://leetcode.com/problems/queens-that-can-attack-the-king/)| * Queens That Can Attack the King|69%|Medium||
+|[1222](https://leetcode.com/problems/queens-that-can-attack-the-king/)| * Queens That Can Attack the King|68%|Medium||
 |[1221](https://leetcode.com/problems/split-a-string-in-balanced-strings/)|[Split a String in Balanced Strings](./Algorithms/1221.split-a-string-in-balanced-strings)|78%|Easy||
 |[1220](https://leetcode.com/problems/count-vowels-permutation/)| * Count Vowels Permutation|51%|Hard||
 |[1219](https://leetcode.com/problems/path-with-maximum-gold/)| * Path with Maximum Gold|61%|Medium||
@@ -132,7 +132,7 @@
 |[1039](https://leetcode.com/problems/minimum-score-triangulation-of-polygon/)|[Minimum Score Triangulation of Polygon](./Algorithms/1039.minimum-score-triangulation-of-polygon)|44%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[1038](https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/)|[Binary Search Tree to Greater Sum Tree](./Algorithms/1038.binary-search-tree-to-greater-sum-tree)|77%|Medium||
 |[1037](https://leetcode.com/problems/valid-boomerang/)|[Valid Boomerang](./Algorithms/1037.valid-boomerang)|37%|Easy||
-|[1036](https://leetcode.com/problems/escape-a-large-maze/)|[Escape a Large Maze](./Algorithms/1036.escape-a-large-maze)|34%|Hard||
+|[1036](https://leetcode.com/problems/escape-a-large-maze/)|[Escape a Large Maze](./Algorithms/1036.escape-a-large-maze)|35%|Hard||
 |[1035](https://leetcode.com/problems/uncrossed-lines/)|[Uncrossed Lines](./Algorithms/1035.uncrossed-lines)|52%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[1034](https://leetcode.com/problems/coloring-a-border/)|[Coloring A Border](./Algorithms/1034.coloring-a-border)|43%|Medium||
 |[1033](https://leetcode.com/problems/moving-stones-until-consecutive/)|[Moving Stones Until Consecutive](./Algorithms/1033.moving-stones-until-consecutive)|38%|Easy||
@@ -226,7 +226,7 @@
 |[0945](https://leetcode.com/problems/minimum-increment-to-make-array-unique/)|[Minimum Increment to Make Array Unique](./Algorithms/0945.minimum-increment-to-make-array-unique)|44%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0944](https://leetcode.com/problems/delete-columns-to-make-sorted/)|[Delete Columns to Make Sorted](./Algorithms/0944.delete-columns-to-make-sorted)|69%|Easy||
 |[0943](https://leetcode.com/problems/find-the-shortest-superstring/)|[Find the Shortest Superstring](./Algorithms/0943.find-the-shortest-superstring)|40%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|[0942](https://leetcode.com/problems/di-string-match/)|[DI String Match](./Algorithms/0942.di-string-match)|69%|Easy||
+|[0942](https://leetcode.com/problems/di-string-match/)|[DI String Match](./Algorithms/0942.di-string-match)|70%|Easy||
 |[0941](https://leetcode.com/problems/valid-mountain-array/)|[Valid Mountain Array](./Algorithms/0941.valid-mountain-array)|35%|Easy||
 |[0940](https://leetcode.com/problems/distinct-subsequences-ii/)|[Distinct Subsequences II](./Algorithms/0940.distinct-subsequences-ii)|40%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0939](https://leetcode.com/problems/minimum-area-rectangle/)|[Minimum Area Rectangle](./Algorithms/0939.minimum-area-rectangle)|51%|Medium|[❤](https://leetcode.com/list/oussv5j)|
@@ -342,7 +342,7 @@
 |[0829](https://leetcode.com/problems/consecutive-numbers-sum/)|[Consecutive Numbers Sum](./Algorithms/0829.consecutive-numbers-sum)|35%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0828](https://leetcode.com/problems/unique-letter-string/)|[Unique Letter String](./Algorithms/0828.unique-letter-string)|41%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0827](https://leetcode.com/problems/making-a-large-island/)|[Making A Large Island](./Algorithms/0827.making-a-large-island)|44%|Hard|[❤](https://leetcode.com/list/oussv5j)|
-|[0826](https://leetcode.com/problems/most-profit-assigning-work/)|[Most Profit Assigning Work](./Algorithms/0826.most-profit-assigning-work)|36%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|[0826](https://leetcode.com/problems/most-profit-assigning-work/)|[Most Profit Assigning Work](./Algorithms/0826.most-profit-assigning-work)|37%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0825](https://leetcode.com/problems/friends-of-appropriate-ages/)|[Friends Of Appropriate Ages](./Algorithms/0825.friends-of-appropriate-ages)|39%|Medium||
 |[0824](https://leetcode.com/problems/goat-latin/)|[Goat Latin](./Algorithms/0824.goat-latin)|59%|Easy||
 |[0823](https://leetcode.com/problems/binary-trees-with-factors/)|[Binary Trees With Factors](./Algorithms/0823.binary-trees-with-factors)|33%|Medium||
@@ -734,7 +734,7 @@
 |[0289](https://leetcode.com/problems/game-of-life/)|[Game of Life](./Algorithms/0289.game-of-life)|48%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0287](https://leetcode.com/problems/find-the-duplicate-number/)|[Find the Duplicate Number](./Algorithms/0287.find-the-duplicate-number)|51%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0283](https://leetcode.com/problems/move-zeroes/)|[Move Zeroes](./Algorithms/0283.move-zeroes)|55%|Easy||
-|[0282](https://leetcode.com/problems/expression-add-operators/)|[Expression Add Operators](./Algorithms/0282.expression-add-operators)|33%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|[0282](https://leetcode.com/problems/expression-add-operators/)|[Expression Add Operators](./Algorithms/0282.expression-add-operators)|34%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0279](https://leetcode.com/problems/perfect-squares/)|[Perfect Squares](./Algorithms/0279.perfect-squares)|43%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0275](https://leetcode.com/problems/h-index-ii/)|[H-Index II](./Algorithms/0275.h-index-ii)|35%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0274](https://leetcode.com/problems/h-index/)|[H-Index](./Algorithms/0274.h-index)|34%|Medium||
