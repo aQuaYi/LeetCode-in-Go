@@ -64,7 +64,7 @@
 |[0273](https://leetcode.com/problems/integer-to-english-words/)|[Integer to English Words](./Algorithms/0273.integer-to-english-words)|25%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0275](https://leetcode.com/problems/h-index-ii/)|[H-Index II](./Algorithms/0275.h-index-ii)|35%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0279](https://leetcode.com/problems/perfect-squares/)|[Perfect Squares](./Algorithms/0279.perfect-squares)|43%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|[0282](https://leetcode.com/problems/expression-add-operators/)|[Expression Add Operators](./Algorithms/0282.expression-add-operators)|33%|Hard|[❤](https://leetcode.com/list/oussv5j)|
+|[0282](https://leetcode.com/problems/expression-add-operators/)|[Expression Add Operators](./Algorithms/0282.expression-add-operators)|34%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0287](https://leetcode.com/problems/find-the-duplicate-number/)|[Find the Duplicate Number](./Algorithms/0287.find-the-duplicate-number)|51%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0289](https://leetcode.com/problems/game-of-life/)|[Game of Life](./Algorithms/0289.game-of-life)|48%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0292](https://leetcode.com/problems/nim-game/)|[Nim Game](./Algorithms/0292.nim-game)|55%|Easy|[❤](https://leetcode.com/list/oussv5j)|
@@ -225,7 +225,7 @@
 |[0815](https://leetcode.com/problems/bus-routes/)|[Bus Routes](./Algorithms/0815.bus-routes)|41%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0818](https://leetcode.com/problems/race-car/)|[Race Car](./Algorithms/0818.race-car)|37%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0820](https://leetcode.com/problems/short-encoding-of-words/)|[Short Encoding of Words](./Algorithms/0820.short-encoding-of-words)|48%|Medium|[❤](https://leetcode.com/list/oussv5j)|
-|[0826](https://leetcode.com/problems/most-profit-assigning-work/)|[Most Profit Assigning Work](./Algorithms/0826.most-profit-assigning-work)|36%|Medium|[❤](https://leetcode.com/list/oussv5j)|
+|[0826](https://leetcode.com/problems/most-profit-assigning-work/)|[Most Profit Assigning Work](./Algorithms/0826.most-profit-assigning-work)|37%|Medium|[❤](https://leetcode.com/list/oussv5j)|
 |[0827](https://leetcode.com/problems/making-a-large-island/)|[Making A Large Island](./Algorithms/0827.making-a-large-island)|44%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0828](https://leetcode.com/problems/unique-letter-string/)|[Unique Letter String](./Algorithms/0828.unique-letter-string)|41%|Hard|[❤](https://leetcode.com/list/oussv5j)|
 |[0829](https://leetcode.com/problems/consecutive-numbers-sum/)|[Consecutive Numbers Sum](./Algorithms/0829.consecutive-numbers-sum)|35%|Hard|[❤](https://leetcode.com/list/oussv5j)|
