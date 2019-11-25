@@ -51,6 +51,7 @@ func getAlgorithms() *algorithms {
 
 	// 如果，没有登录的话，也能获取数据，但是用户名，就不是本人
 	if res.User != getConfig().Username {
+		log.Printf("res.User = %s\n", res.User)
 		log.Fatal("没有获取到本人的数据")
 	}
 
