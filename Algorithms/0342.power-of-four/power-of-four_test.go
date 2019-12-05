@@ -13,6 +13,7 @@ var tcs = []struct {
 	ans bool
 }{
 
+	{2, false},
 	{16, true},
 	{5, false},
 	{-5, false},
