@@ -1,13 +1,19 @@
 package problem0342
 
-func isPowerOfFour(n int) bool {
-	if n < 1 {
+func isPowerOfFour(num int) bool {
+	if num <= 0 {
 		return false
 	}
 
-	for n%4 == 0 {
-		n /= 4
+	// 如果 num 不是2的N次方, 那么也不是4的N次方
+	if num&(num-1) != 0 {
+		return false
 	}
-	
-	return n == 1
+
+	// 过滤
+	if num&0x55555555 == 0 {
+		return false
+	}
+
+	return true
 }
