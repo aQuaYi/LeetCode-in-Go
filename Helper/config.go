@@ -14,6 +14,7 @@ const (
 type config struct {
 	Username string
 	Password string
+	Cookie string
 
 	// 以下是电子邮件设置
 	SMTP          string

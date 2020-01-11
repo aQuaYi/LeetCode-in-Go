@@ -23,7 +23,7 @@ func newReq() *request.Request {
 // 登录 leetcode
 // 返回的 req 带有 cookie
 func signin() *request.Request {
-	log.Println("正在登录中...")
+	// log.Println("正在登录中...")
 	cfg := getConfig()
 
 	// 对 req 赋值
@@ -31,25 +31,29 @@ func signin() *request.Request {
 
 	// 配置request
 	req.Headers = map[string]string{
+		"Content-Type":    "application/json",
 		"Accept-Encoding": "",
-		"Referer":         "https://leetcode.com/",
+		"cookie":          cfg.Cookie,
+		"Referer":         "https://leetcode.com/accounts/login/",
+		"origin":          "https://leetcode.com",
 	}
 
 	// login
-	csrfToken := getCSRFToken(req)
+	// csrfToken := getCSRFToken(req)
 
-	log.Printf("csrfToken: %s", csrfToken)
+	// log.Printf("csrfToken: %s", csrfToken)
 
-	req.Data = map[string]string{
-		"csrfmiddlewaretoken": csrfToken,
-		"login":               cfg.Username,
-		"password":            cfg.Password,
-	}
-	if err := login(req); err != nil {
-		log.Fatal(err)
-	}
+	// req.Data = map[string]string{
+	// 	"csrfmiddlewaretoken": csrfToken,
+	// 	"login":               cfg.Username,
+	// 	"password":            cfg.Password,
+	// 	"next":                "problems",
+	// }
+	// if err := login(req); err != nil {
+	// 	log.Fatal(err)
+	// }
 
-	log.Println("成功登录")
+	// log.Println("成功登录")
 
 	return req
 }

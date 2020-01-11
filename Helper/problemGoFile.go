@@ -9,7 +9,7 @@ import (
 )
 
 func parseFunction(fc string) (fcName, para, ansType, nfc string) {
-	log.Println("准备分解函数:", fc)
+	log.Println("正在分解函数")
 
 	defer func() { // 必须要先声明defer，否则不能捕获到panic异常
 		if err := recover(); err != nil {
