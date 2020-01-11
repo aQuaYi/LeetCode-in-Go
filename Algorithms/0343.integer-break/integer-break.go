@@ -1,5 +1,6 @@
 package problem0343
 
+// https://blog.csdn.net/fuxuemingzhu/article/details/80486238
 func integerBreak(n int) int {
 	if n == 2 {
 		return 1
@@ -9,26 +10,11 @@ func integerBreak(n int) int {
 		return 2
 	}
 
-	switch n % 3 {
-	case 0:
-		return pow3(n / 3)
-	case 1:
-		return 4 * pow3(n/3-1)
-	default:
-		return 2 * pow3(n/3)
+	res := 1
+	for n > 4 {
+		res *= 3
+		n -= 3
 	}
 
-}
-
-func pow3(n int) int {
-	if n == 0 {
-		return 1
-	}
-
-	res := pow3(n >> 1)
-	if n&1 == 0 {
-		return res * res
-	}
-
-	return res * res * 3
+	return res * n
 }
