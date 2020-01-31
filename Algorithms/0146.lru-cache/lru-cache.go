@@ -35,7 +35,7 @@ func Constructor(capacity int) LRUCache {
 func (c *LRUCache) Get(key int) int {
 	// check if list node exists
 	if node, ok := c.m[key]; ok {
-		val := node.Value.(*list.Element).Value.(Pair).value
+		val := node.Value.(*list.Element).Value.(*Pair).value
 		// move node to front
 		c.l.MoveToFront(node)
 		return val
@@ -55,7 +55,7 @@ func (c *LRUCache) Put(key int, value int) {
 		// delete the last list node if the list is full
 		if c.l.Len() == c.cap {
 			// get the key that we want to delete
-			idx := c.l.Back().Value.(*list.Element).Value.(Pair).key
+			idx := c.l.Back().Value.(*list.Element).Value.(*Pair).key
 			// delete the node pointer in the hash map by key
 			delete(c.m, idx)
 			// remove the last list node
@@ -63,7 +63,7 @@ func (c *LRUCache) Put(key int, value int) {
 		}
 		// initialize a list node
 		node := &list.Element{
-			Value: Pair{
+			Value: &Pair{
 				key:   key,
 				value: value,
 			},
