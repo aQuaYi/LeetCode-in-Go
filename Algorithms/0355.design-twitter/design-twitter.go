@@ -1,100 +1,111 @@
 package problem0355
 
-import "sort"
-import "time"
+import "container/heap"
 
-type tweet struct {
-	id   int
-	time int64
+type Tweet struct {
+	tweetId   int
+	userId    int
+	postion   int
+	timeStamp int
 }
 
-// tweets 用于排序
-type tweets []tweet
-
-func (t tweets) Len() int {
-	return len(t)
-}
-func (t tweets) Less(i, j int) bool {
-	return t[i].time > t[j].time
-}
-func (t tweets) Swap(i, j int) {
-	t[i], t[j] = t[j], t[i]
-}
-
-// Twitter is twitter user
 type Twitter struct {
-	userTweets map[int]tweets
-	follow     map[int][]int
+	tweets    map[int][]Tweet
+	follows   map[int]map[int]bool
+	timeStamp int
 }
 
-// Constructor initialize your data structure here.
+type MaxHeap []Tweet
+
+func (this MaxHeap) Len() int {
+	return len(this)
+}
+
+func (this MaxHeap) Less(i, j int) bool {
+	return this[i].timeStamp > this[j].timeStamp
+}
+
+func (this MaxHeap) Swap(i, j int) {
+	this[i], this[j] = this[j], this[i]
+}
+
+func (this *MaxHeap) Push(x interface{}) {
+	*this = append(*this, x.(Tweet))
+}
+
+func (this *MaxHeap) Pop() interface{} {
+	tweet := (*this)[len(*this)-1]
+	*this = (*this)[:len(*this)-1]
+
+	return tweet
+}
+
+/** Initialize your data structure here. */
 func Constructor() Twitter {
-	t := make(map[int]tweets)
-	f := make(map[int][]int)
-	return Twitter{userTweets: t, follow: f}
+	return Twitter{
+		tweets:  make(map[int][]Tweet),
+		follows: make(map[int]map[int]bool),
+	}
 }
 
-// PostTweet compose a new tweet.
-func (t *Twitter) PostTweet(userID int, tweetID int) {
-	t.userTweets[userID] = append(
-		t.userTweets[userID],
-		tweet{
-			id:   tweetID,
-			time: time.Now().UnixNano(),
-		},
-	)
+/** Compose a new tweet. */
+func (this *Twitter) PostTweet(userId int, tweetId int) {
+	this.timeStamp++
+	postion := len(this.tweets[userId])
+	tweet := Tweet{tweetId, userId, postion, this.timeStamp}
+	this.tweets[userId] = append(this.tweets[userId], tweet)
 }
 
-// GetNewsFeed retrieve the 10 most recent tweet ids in the user's news feed. Each item in the news feed must be posted by users who the user followed or by the user herself. Tweets must be ordered from most recent to least recent.
-func (t *Twitter) GetNewsFeed(userID int) []int {
-	// 获取本人的 tweets
-	temp := make(tweets, len(t.userTweets[userID]))
-	copy(temp, t.userTweets[userID])
-	// 获取 followee 的 tweets
-	for _, id := range t.follow[userID] {
-		temp = append(temp, t.userTweets[id]...)
+/** Retrieve the 10 most recent tweet ids in the user's news feed. Each item in the news feed must be posted by users who the user followed or by the user herself. Tweets must be ordered from most recent to least recent. */
+func (this *Twitter) GetNewsFeed(userId int) []int {
+	maxHeap := MaxHeap{}
+	for followeeId := range this.follows[userId] {
+		if len(this.tweets[followeeId]) == 0 {
+			continue
+		}
+
+		maxHeap = append(maxHeap, this.tweets[followeeId][len(this.tweets[followeeId])-1])
 	}
-	// 按照时间排序
-	sort.Sort(temp)
-	// 获取最近的 10 条或更少的内容
-	res := make([]int, 0, 10)
-	for i := 0; i < len(temp) && i < 10; i++ {
-		res = append(res, temp[i].id)
+
+	if len(this.tweets[userId]) > 0 {
+		maxHeap = append(maxHeap, this.tweets[userId][len(this.tweets[userId])-1])
 	}
+
+	heap.Init(&maxHeap)
+
+	res := []int{}
+	for i := 0; i < 10 && len(maxHeap) > 0; i++ {
+		tweet := heap.Pop(&maxHeap).(Tweet)
+		res = append(res, tweet.tweetId)
+		if tweet.postion != 0 {
+			heap.Push(&maxHeap, this.tweets[tweet.userId][tweet.postion-1])
+		}
+	}
+
 	return res
 }
 
-// Follow followee. If the operation is invalid, it should be a no-op.
-func (t *Twitter) Follow(followerID int, followeeID int) {
-	// 不能 follow 自己
-	if followerID == followeeID {
+/** Follower follows a followee. If the operation is invalid, it should be a no-op. */
+func (this *Twitter) Follow(followerId int, followeeId int) {
+	if followerId == followeeId {
 		return
 	}
-	// 不能重复 follow
-	for _, id := range t.follow[followerID] {
-		if id == followeeID {
-			return
-		}
+
+	if len(this.follows[followerId]) == 0 {
+		m := make(map[int]bool)
+		this.follows[followerId] = m
 	}
 
-	t.follow[followerID] = append(t.follow[followerID], followeeID)
-}
-
-// Unfollow follower unfollows a followee. If the operation is invalid, it should be a no-op.
-func (t *Twitter) Unfollow(followerID int, followeeID int) {
-	for i, id := range t.follow[followerID] {
-		if id == followeeID {
-			// 删除 followeeID 记录
-			t.follow[followerID] = append(t.follow[followerID][:i], t.follow[followerID][i+1:]...)
-		}
+	if _, ok := this.follows[followerId][followeeId]; !ok {
+		this.follows[followerId][followeeId] = true
 	}
 }
 
-/**
- * Your Twitter object will be instantiated and called as such:
- * obj := Constructor();
- * obj.PostTweet(userID,tweetID);
- * param_2 := obj.GetNewsFeed(userID);
- * obj.Follow(followerID,followeeID);
- * obj.Unfollow(followerID,followeeID);
- */
+/** Follower unfollows a followee. If the operation is invalid, it should be a no-op. */
+func (this *Twitter) Unfollow(followerId int, followeeId int) {
+	if followerId == followeeId {
+		return
+	}
+
+	delete(this.follows[followerId], followeeId)
+}
