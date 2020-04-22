@@ -6,13 +6,18 @@ func superPow(a int, b []int) int {
 
 	// return a^k mod base
 	powmod := func(a, k int) int {
-		a %= base
-		res := 1
-
-		for i := 0; i < k; i++ {
-			res = (res * a) % base
+		if k == 0 {
+			return 1
 		}
-		return res
+
+		// k 为奇数
+		if k%2 == 1 {
+			return (a * powmod(a, k-1)) % base
+		}
+
+		// k 为偶数
+		sub := powmod(a, k/2)
+		return (sub * sub) % base
 	}
 
 	n := len(b)
