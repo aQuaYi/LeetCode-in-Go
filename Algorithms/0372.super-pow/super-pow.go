@@ -5,7 +5,8 @@ func superPow(a int, b []int) int {
 	base := 1337
 
 	// return a^k mod base
-	powmod := func(a, k int) int {
+	var powmod func(a, k int) int
+	powmod = func(a, k int) int {
 		if k == 0 {
 			return 1
 		}
